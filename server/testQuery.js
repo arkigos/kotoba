@@ -8,3 +8,4 @@ const { Word } = require('./models');  // Import the Word model
     console.error('Error querying words:', error);
   }
 })();
+

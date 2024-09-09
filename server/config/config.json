@@ -1,14 +1,23 @@
 {
   "development": {
-    "dialect": "sqlite",
-    "storage": "./database.sqlite"
+    "username": "postgres",
+    "password": "#$RE34re",
+    "database": "kotoba",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
   },
   "test": {
     "dialect": "sqlite",
     "storage": ":memory:"
   },
   "production": {
-    "dialect": "sqlite",
-    "storage": "./database.sqlite"
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   }
 }
