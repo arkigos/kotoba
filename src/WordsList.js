@@ -14,6 +14,7 @@ function WordsList() {
   const [menuOpen, setMenuOpen] = useState(false); // State for the hamburger menu
   const [hoveredIndex, setHoveredIndex] = useState(null); // State for tracking hovered sidebar item
   const [showFurigana, setShowFurigana] = useState(true); // State for showing/hiding furigana
+  const [showBackgroundImage, setShowBackgroundImage] = useState(true); // State for toggling background image
 
   useEffect(() => {
     // Fetch words from the API
@@ -90,6 +91,10 @@ function WordsList() {
     setShowFurigana(!showFurigana); // Toggle furigana visibility
   };
 
+  const toggleBackgroundImage = () => {
+    setShowBackgroundImage(!showBackgroundImage); // Toggle background image visibility
+  };
+
   const stripFurigana = (wordHtml) => {
     const parser = new DOMParser();
     const doc = parser.parseFromString(wordHtml, 'text/html');
@@ -138,42 +143,52 @@ function WordsList() {
               />
               Show English First
             </label>
+            <label>
+              <input
+                type="checkbox"
+                checked={showBackgroundImage}
+                onChange={toggleBackgroundImage}
+              />
+              Show Background Image
+            </label>
           </div>
         )}
       </div>
 
       {/* Sidebar */}
       <div className="sidebar">
-  <ul>
-    {words.map((word, index) => (
-      <li
-        key={word.id}
-        className={index === currentIndex ? 'active' : ''}
-        onClick={() => handleSidebarClick(index)}
-        onMouseOver={() => handleMouseOver(index)}
-        onMouseOut={handleMouseOut}
-        dangerouslySetInnerHTML={{
-          __html:
-            hoveredIndex === index
-              ? showEnglishFirst // If hovered, reverse the display logic
-                ? stripFurigana(word.word) // Show word if English is shown first
-                : word.english // Show English if word is shown first
-              : showEnglishFirst // If not hovered, follow the regular display logic
-              ? word.english // Show English first if checked
-              : stripFurigana(word.word) // Show word first if unchecked
-        }}
-      />
-    ))}
-  </ul>
-</div>
+        <ul>
+          {words.map((word, index) => (
+            <li
+              key={word.id}
+              className={index === currentIndex ? 'active' : ''}
+              onClick={() => handleSidebarClick(index)}
+              onMouseOver={() => handleMouseOver(index)}
+              onMouseOut={handleMouseOut}
+              dangerouslySetInnerHTML={{
+                __html:
+                  hoveredIndex === index
+                    ? showEnglishFirst // If hovered, reverse the display logic
+                      ? stripFurigana(word.word) // Show word without furigana if English is shown first
+                      : word.english // Show English if word is shown first
+                    : showEnglishFirst // If not hovered, follow the regular display logic
+                    ? word.english // Show English first if checked
+                    : stripFurigana(word.word) // Show word without furigana if unchecked
+              }}
+            />
+          ))}
+        </ul>
+      </div>
 
       {/* Main Content */}
-      <div className="word-content">
-        <img
-          className="word-image"
-          src={`${baseImageUrl}${currentWord.id}.jpg`}
-          alt={currentWord.word || currentWord.sentence}
-        />
+      <div className="word-content" style={{ backgroundColor: showBackgroundImage ? 'transparent' : 'black' }}>
+        {showBackgroundImage && (
+          <img
+            className="word-image"
+            src={`${baseImageUrl}${currentWord.id}.jpg`}
+            alt={currentWord.word || currentWord.sentence}
+          />
+        )}
         <h1
           className="word"
           onClick={handleToggle}
@@ -201,3 +216,4 @@ function WordsList() {
 }
 
 export default WordsList;
+
