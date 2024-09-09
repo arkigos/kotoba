@@ -18,40 +18,57 @@ function WordsList() {
   const [showFurigana, setShowFurigana] = useState(true); // State for showing/hiding furigana
   const [showBackgroundImage, setShowBackgroundImage] = useState(true); // State for toggling background image
 
+  
   // Memoize loadLesson to avoid unnecessary re-renders
-  const loadLesson = useCallback((lessonFile) => {
-    fetch(`/api/lesson/${lessonFile}`)
-      .then((response) => response.json())
-      .then((data) => {
-        setWords(data);
-        if (data.length > 0) {
-          setShowEnglish(false); // Reset display on new lesson
-          if (autoPlayAudio) {
-            const initialAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${data[0].id}.mp3`);
-            setAudio(initialAudio);
-            initialAudio.play();
-          }
+  const loadLesson = useCallback((currentLesson) => {
+    console.log(`Fetching lesson file: ${currentLesson}`); // Debugging
+    fetch(`/api/lesson/lesson_${currentLesson}.json`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Failed to fetch lesson: ${currentLesson}`);
         }
+        return response.json();
+      })
+      .then((data) => {
+        console.log('Lesson data fetched:', data); // Debugging
+        setWords(data);
+        setCurrentIndex(0);
+          if (autoPlayAudio) {
+            const initialAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${data[0].id}.mp3`);
+            setAudio(initialAudio);
+            initialAudio.play().catch((error) => console.error('Audio play blocked:', error));
+          }
       })
       .catch((error) => console.error('Error fetching lesson:', error));
-  }, [autoPlayAudio, currentLesson]);
+  }, [autoPlayAudio]);
 
-  // Load lessons on mount
+  // Fetch lessons and load the first one when the component first mounts
   useEffect(() => {
     fetch('/api/lessons.json')
       .then((response) => response.json())
       .then((data) => {
         setLessons(data.lessons);
-        loadLesson(data.lessons[0].file); // Load the first lesson by default
+        const firstLesson = data.lessons[1];
+        setCurrentLesson(firstLesson.id); // Set the first lesson as current
+        loadLesson(firstLesson.id); // Load the first lesson
       })
       .catch((error) => console.error('Error fetching lessons:', error));
-  }, [loadLesson]);
+  }, []); // Runs once on mount, no dependencies
 
   // Audio handling and lesson switching
+  const handleLessonChange = (e) => {
+    const selectedLesson = parseInt(e.target.value);
+    console.log(`Switching to lesson ${selectedLesson})`); // Debugging
+    setCurrentLesson(selectedLesson);
+    loadLesson(selectedLesson);
+
+  };
+
+  // Audio handling for next and previous
   const handleNext = () => {
     const nextIndex = (currentIndex + 1) % words.length;
     setCurrentIndex(nextIndex);
-    const nextAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${words[nextIndex].id}.mp3`);
+    const nextAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[nextIndex].id}.mp3`);
     setAudio(nextAudio);
     if (autoPlayAudio) nextAudio.play();
   };
@@ -59,23 +76,14 @@ function WordsList() {
   const handlePrevious = () => {
     const prevIndex = (currentIndex - 1 + words.length) % words.length;
     setCurrentIndex(prevIndex);
-    const prevAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${words[prevIndex].id}.mp3`);
+    const prevAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[prevIndex].id}.mp3`);
     setAudio(prevAudio);
     if (autoPlayAudio) prevAudio.play();
   };
 
-  const handleLessonChange = (e) => {
-    const selectedLesson = parseInt(e.target.value);
-    const lesson = lessons.find((lesson) => lesson.id === selectedLesson);
-    if (lesson && lesson.file) {
-      setCurrentLesson(selectedLesson);
-      loadLesson(lesson.file);
-    }
-  };
-
   const handleSidebarClick = (index) => {
     setCurrentIndex(index);
-    const clickedAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${words[index].id}.mp3`);
+    const clickedAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[index].id}.mp3`);
     setAudio(clickedAudio);
     if (autoPlayAudio) clickedAudio.play();
   };
@@ -202,7 +210,7 @@ function WordsList() {
           <img
             className="word-image"
             src={`${baseImageUrl}lesson_${currentLesson}/image_${currentLesson}_${currentWord.id}.jpg`}
-            alt={currentWord.word || currentWord.sentence}
+            alt={currentWord.word}
           />
         )}
         <h1
