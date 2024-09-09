@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import './WordsList.css';
 
-const baseImageUrl = '/images/';
 const baseAudioUrl = '/audio/';
+const baseImageUrl = '/images/';
 
 function WordsList() {
+  const [lessons, setLessons] = useState([]);
+  const [currentLesson, setCurrentLesson] = useState(1); // Default to lesson 1
   const [words, setWords] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showEnglish, setShowEnglish] = useState(false);
@@ -16,63 +18,66 @@ function WordsList() {
   const [showFurigana, setShowFurigana] = useState(true); // State for showing/hiding furigana
   const [showBackgroundImage, setShowBackgroundImage] = useState(true); // State for toggling background image
 
-  useEffect(() => {
-    // Fetch words from the API
-    fetch('/api/words')
-      .then(response => response.json())
-      .then(data => {
+  // Memoize loadLesson to avoid unnecessary re-renders
+  const loadLesson = useCallback((lessonFile) => {
+    fetch(`/api/lesson/${lessonFile}`)
+      .then((response) => response.json())
+      .then((data) => {
         setWords(data);
         if (data.length > 0) {
-          setShowEnglish(showEnglishFirst); // Set display based on checkbox
+          setShowEnglish(false); // Reset display on new lesson
           if (autoPlayAudio) {
-            const initialAudio = new Audio(`${baseAudioUrl}audio_${data[0].id}.mp3`);
+            const initialAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${data[0].id}.mp3`);
             setAudio(initialAudio);
             initialAudio.play();
           }
         }
       })
-      .catch(error => console.error('Error fetching words:', error));
-  }, [autoPlayAudio, showEnglishFirst]); // Dependencies include the checkbox states
+      .catch((error) => console.error('Error fetching lesson:', error));
+  }, [autoPlayAudio, currentLesson]);
 
+  // Load lessons on mount
   useEffect(() => {
-    // Play audio whenever the word is shown if autoPlayAudio is true
-    if (audio && autoPlayAudio) {
-      audio.play();
-    }
-  }, [audio, autoPlayAudio]);
+    fetch('/api/lessons.json')
+      .then((response) => response.json())
+      .then((data) => {
+        setLessons(data.lessons);
+        loadLesson(data.lessons[0].file); // Load the first lesson by default
+      })
+      .catch((error) => console.error('Error fetching lessons:', error));
+  }, [loadLesson]);
 
-  const handleToggle = () => {
-    setShowEnglish(!showEnglish);
-  };
-
+  // Audio handling and lesson switching
   const handleNext = () => {
     const nextIndex = (currentIndex + 1) % words.length;
     setCurrentIndex(nextIndex);
-    setShowEnglish(showEnglishFirst); // Reset display order based on checkbox
-    const nextAudio = new Audio(`${baseAudioUrl}audio_${words[nextIndex].id}.mp3`);
+    const nextAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${words[nextIndex].id}.mp3`);
     setAudio(nextAudio);
+    if (autoPlayAudio) nextAudio.play();
   };
 
   const handlePrevious = () => {
     const prevIndex = (currentIndex - 1 + words.length) % words.length;
     setCurrentIndex(prevIndex);
-    setShowEnglish(showEnglishFirst); // Reset display order based on checkbox
-    const prevAudio = new Audio(`${baseAudioUrl}audio_${words[prevIndex].id}.mp3`);
+    const prevAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${words[prevIndex].id}.mp3`);
     setAudio(prevAudio);
+    if (autoPlayAudio) prevAudio.play();
   };
 
-  const handleReplay = () => {
-    if (audio) {
-      audio.currentTime = 0;
-      audio.play();
+  const handleLessonChange = (e) => {
+    const selectedLesson = parseInt(e.target.value);
+    const lesson = lessons.find((lesson) => lesson.id === selectedLesson);
+    if (lesson && lesson.file) {
+      setCurrentLesson(selectedLesson);
+      loadLesson(lesson.file);
     }
   };
 
   const handleSidebarClick = (index) => {
     setCurrentIndex(index);
-    setShowEnglish(showEnglishFirst); // Reset to showing Japanese/English based on checkbox
-    const clickedAudio = new Audio(`${baseAudioUrl}audio_${words[index].id}.mp3`);
+    const clickedAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${words[index].id}.mp3`);
     setAudio(clickedAudio);
+    if (autoPlayAudio) clickedAudio.play();
   };
 
   const handleMouseOver = (index) => {
@@ -99,7 +104,6 @@ function WordsList() {
     const parser = new DOMParser();
     const doc = parser.parseFromString(wordHtml, 'text/html');
     const rtElements = doc.querySelectorAll('rt');
-    
     rtElements.forEach(rt => rt.remove()); // Remove all <rt> tags
     return doc.body.innerHTML; // Return the HTML without <rt> tags
   };
@@ -120,6 +124,18 @@ function WordsList() {
 
   return (
     <div className="container">
+      {/* Dropdown for Lesson Selection */}
+      <div className="lesson-dropdown">
+        <label htmlFor="lesson-select">Lesson:</label>
+        <select id="lesson-select" value={currentLesson} onChange={handleLessonChange}>
+          {lessons.map((lesson) => (
+            <option key={lesson.id} value={lesson.id}>
+              {lesson.name}
+            </option>
+          ))}
+        </select>
+      </div>
+
       {/* Hamburger Menu */}
       <div className="hamburger-menu">
         <button className="hamburger-icon" onClick={toggleMenu}>
@@ -173,7 +189,7 @@ function WordsList() {
                       : word.english // Show English if word is shown first
                     : showEnglishFirst // If not hovered, follow the regular display logic
                     ? word.english // Show English first if checked
-                    : stripFurigana(word.word) // Show word without furigana if unchecked
+                    : stripFurigana(word.word), // Show word without furigana if unchecked
               }}
             />
           ))}
@@ -185,22 +201,22 @@ function WordsList() {
         {showBackgroundImage && (
           <img
             className="word-image"
-            src={`${baseImageUrl}${currentWord.id}.jpg`}
+            src={`${baseImageUrl}lesson_${currentLesson}/image_${currentLesson}_${currentWord.id}.jpg`}
             alt={currentWord.word || currentWord.sentence}
           />
         )}
         <h1
           className="word"
-          onClick={handleToggle}
+          onClick={() => setShowEnglish(!showEnglish)}
           dangerouslySetInnerHTML={{
-            __html: showEnglish ? currentWord.english : renderWordWithFurigana(currentWord.word)
+            __html: showEnglish ? currentWord.english : renderWordWithFurigana(currentWord.word),
           }}
         />
         <div className="buttons-container">
           <button className="previous-button" onClick={handlePrevious}>
             Previous
           </button>
-          <button className="replay-button" onClick={handleReplay}>
+          <button className="replay-button" onClick={() => audio && audio.play()}>
             Replay Audio
           </button>
           <button className="toggle-furigana-button" onClick={toggleFurigana}>
@@ -216,4 +232,3 @@ function WordsList() {
 }
 
 export default WordsList;
-

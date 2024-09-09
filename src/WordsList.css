@@ -215,6 +215,59 @@
   }
 }
 
+/* Lesson Dropdown Styling */
+.lesson-dropdown {
+  position: absolute;
+  top: 10px;
+  right: 60px; /* Position next to the hamburger menu */
+  z-index: 100;
+}
+
+.lesson-dropdown label {
+  color: white;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.lesson-dropdown select {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.lesson-dropdown select:hover {
+  border-color: #007bff;
+}
+
+.lesson-dropdown select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .lesson-dropdown {
+    top: 15px;
+    right: 80px;
+  }
+
+  .lesson-dropdown label {
+    font-size: 14px;
+  }
+
+  .lesson-dropdown select {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+
+
 /* Extra small phones (portrait) */
 @media (max-width: 480px) {
   .word {

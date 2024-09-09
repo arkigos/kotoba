@@ -1,26 +1,29 @@
 const express = require('express');
 const path = require('path');
-const fs = require('fs'); // To read the words.json file
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware to serve static files (audio, images, and build)
+// Serve static files (audio, images, etc.) from the server/public folder
 app.use('/audio', express.static(path.join(__dirname, 'public/audio')));
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
-app.use(express.static(path.join(__dirname, '../build')));
+app.use(express.static(path.join(__dirname, '../build'))); // For serving React build
 
-// Load the JSON data from words.json
-const wordsFilePath = path.join(__dirname, 'data/words.json');
-const words = JSON.parse(fs.readFileSync(wordsFilePath, 'utf8'));
+// Load lesson files dynamically
+app.get('/api/lessons.json', (req, res) => {
+  const lessonsFilePath = path.join(__dirname, 'data/lessons.json');
+  const lessons = JSON.parse(fs.readFileSync(lessonsFilePath, 'utf8'));
+  res.json(lessons);
+});
 
-// API route to fetch words from the JSON file
-app.get('/api/words', (req, res) => {
-  try {
-    res.json(words); // Send the JSON data as the response
-  } catch (error) {
-    console.error('Error fetching words:', error);
-    res.status(500).json({ error: 'Failed to fetch words' });
+app.get('/api/lesson/:lessonFile', (req, res) => {
+  const lessonFilePath = path.join(__dirname, `data/${req.params.lessonFile}`);
+  if (fs.existsSync(lessonFilePath)) {
+    const lesson = JSON.parse(fs.readFileSync(lessonFilePath, 'utf8'));
+    res.json(lesson);
+  } else {
+    res.status(404).send({ error: 'Lesson file not found' });
   }
 });
 
