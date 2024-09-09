@@ -1,0 +1,20 @@
+runtime: nodejs18
+instance_class: F1
+
+automatic_scaling:
+  target_cpu_utilization: 0.75
+  min_instances: 1
+  max_instances: 2
+
+handlers:
+  - url: /api/.*
+    script: auto
+
+  # Serve static files from the build directory
+  - url: /static
+    static_dir: build/static
+
+  # Catch-all handler to serve index.html for all other routes (SPA routing)
+  - url: /.*
+    static_files: build/index.html
+    upload: build/index.html
