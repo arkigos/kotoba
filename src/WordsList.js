@@ -9,6 +9,10 @@ function WordsList() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showEnglish, setShowEnglish] = useState(false);
   const [audio, setAudio] = useState(null); // Store the audio object
+  const [autoPlayAudio, setAutoPlayAudio] = useState(true); // State for audio autoplay
+  const [showEnglishFirst, setShowEnglishFirst] = useState(false); // State for word/English display order
+  const [menuOpen, setMenuOpen] = useState(false); // State for the hamburger menu
+  const [showFurigana, setShowFurigana] = useState(true); // State for showing/hiding furigana
 
   useEffect(() => {
     // Fetch words from the API
@@ -17,63 +21,69 @@ function WordsList() {
       .then(data => {
         setWords(data);
         if (data.length > 0) {
-          // Create the first audio object and play it
-          const initialAudio = new Audio(`${baseAudioUrl}audio_${data[0].id}.mp3`);
-          setAudio(initialAudio);
-          initialAudio.play();
+          setShowEnglish(showEnglishFirst); // Set display based on checkbox
+          if (autoPlayAudio) {
+            const initialAudio = new Audio(`${baseAudioUrl}audio_${data[0].id}.mp3`);
+            setAudio(initialAudio);
+            initialAudio.play();
+          }
         }
       })
       .catch(error => console.error('Error fetching words:', error));
-  }, []);
+  }, [autoPlayAudio, showEnglishFirst]); // Dependencies include the checkbox states
 
   useEffect(() => {
-    // Play audio whenever the word is shown
-    if (audio) {
+    // Play audio whenever the word is shown if autoPlayAudio is true
+    if (audio && autoPlayAudio) {
       audio.play();
     }
-  }, [audio]);
+  }, [audio, autoPlayAudio]);
 
   const handleToggle = () => {
-    // Toggle between showing the Japanese word and English translation
     setShowEnglish(!showEnglish);
   };
 
   const handleNext = () => {
-    // Move to the next word
     const nextIndex = (currentIndex + 1) % words.length;
     setCurrentIndex(nextIndex);
-    setShowEnglish(false); // Reset to showing Japanese when moving to the next word
-
-    // Update and play the audio for the next word
+    setShowEnglish(showEnglishFirst); // Reset display order based on checkbox
     const nextAudio = new Audio(`${baseAudioUrl}audio_${words[nextIndex].id}.mp3`);
     setAudio(nextAudio);
   };
 
   const handlePrevious = () => {
-    // Move to the previous word
     const prevIndex = (currentIndex - 1 + words.length) % words.length;
     setCurrentIndex(prevIndex);
-    setShowEnglish(false); // Reset to showing Japanese when moving to the previous word
-
-    // Update and play the audio for the previous word
+    setShowEnglish(showEnglishFirst); // Reset display order based on checkbox
     const prevAudio = new Audio(`${baseAudioUrl}audio_${words[prevIndex].id}.mp3`);
     setAudio(prevAudio);
   };
 
   const handleReplay = () => {
-    // Replay the current audio
     if (audio) {
-      audio.currentTime = 0; // Reset the audio to the beginning
+      audio.currentTime = 0;
       audio.play();
     }
   };
 
-  const handleSidebarClick = (index) => {
-    // Handle clicking on an item in the sidebar
-    setCurrentIndex(index);
-    setShowEnglish(false); // Reset to showing Japanese when navigating via sidebar
-    const clickedAudio = new Audio(`${baseAudioUrl}audio_${words[index].id}.mp3`);
-    setAudio(clickedAudio);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen); // Open/close the hamburger menu
+  };
+
+  const toggleFurigana = () => {
+    setShowFurigana(!showFurigana); // Toggle furigana visibility
+  };
+
+  const renderWordWithFurigana = (wordHtml) => {
+    // If furigana should be hidden, strip out <rt> content
+    if (!showFurigana) {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(wordHtml, 'text/html');
+      const rtElements = doc.querySelectorAll('rt');
+      rtElements.forEach(rt => rt.textContent = ''); // Clear the content of <rt> tags
+      return doc.body.innerHTML;
+    }
+    return wordHtml; // Return the full HTML with furigana
   };
 
   if (words.length === 0) {
@@ -84,27 +94,74 @@ function WordsList() {
 
   return (
     <div className="container">
+      {/* Hamburger Menu */}
+      <div className="hamburger-menu">
+        <button className="hamburger-icon" onClick={toggleMenu}>
+          ☰
+        </button>
+        {menuOpen && (
+          <div className="menu">
+            <label>
+              <input
+                type="checkbox"
+                checked={autoPlayAudio}
+                onChange={(e) => setAutoPlayAudio(e.target.checked)}
+              />
+              Play Audio Automatically
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                checked={showEnglishFirst}
+                onChange={(e) => setShowEnglishFirst(e.target.checked)}
+              />
+              Show English First
+            </label>
+          </div>
+        )}
+      </div>
+
       {/* Sidebar */}
       <div className="sidebar">
         <ul>
           {words.map((word, index) => (
-            <li key={word.id} className={index === currentIndex ? 'active' : ''} onClick={() => handleSidebarClick(index)}>
-              {word.word} {/* Display either the word or sentence */}
-            </li>
+            <li
+              key={word.id}
+              className={index === currentIndex ? 'active' : ''}
+              onClick={() => setCurrentIndex(index)}
+              dangerouslySetInnerHTML={{ __html: word.word }}
+            />
           ))}
         </ul>
       </div>
 
       {/* Main Content */}
       <div className="word-content">
-        <img className="word-image" src={`${baseImageUrl}${currentWord.id}.jpg`} alt={currentWord.word || currentWord.sentence} />
-        <h1 className="word" onClick={handleToggle}>
-          {showEnglish ? currentWord.english : currentWord.word || currentWord.sentence}
-        </h1>
+        <img
+          className="word-image"
+          src={`${baseImageUrl}${currentWord.id}.jpg`}
+          alt={currentWord.word || currentWord.sentence}
+        />
+        <h1
+          className="word"
+          onClick={handleToggle}
+          dangerouslySetInnerHTML={{
+            __html: showEnglish ? currentWord.english : renderWordWithFurigana(currentWord.word)
+          }}
+        />
         <div className="buttons-container">
-          <button className="previous-button" onClick={handlePrevious}>Previous</button>
-          <button className="replay-button" onClick={handleReplay}>Replay Audio</button>
-          <button className="next-button" onClick={handleNext}>Next</button>
+          <button className="previous-button" onClick={handlePrevious}>
+            Previous
+          </button>
+          <button className="replay-button" onClick={handleReplay}>
+            Replay Audio
+          </button>
+          <button className="toggle-furigana-button" onClick={toggleFurigana}>
+            {showFurigana ? 'Hide Furigana' : 'Show Furigana'}
+          </button>
+          <button className="next-button" onClick={handleNext}>
+            Next
+          </button>
         </div>
       </div>
     </div>

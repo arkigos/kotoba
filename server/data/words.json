@@ -1,353 +1,61 @@
 [
-  {
-    "id": 1,
-    "word": "犬",
-    "hiragana": "いぬ",
-    "english": "dog",
-    "prompt": "A cute dog"
-  },
-  {
-    "id": 2,
-    "word": "です",
-    "hiragana": "です",
-    "english": "is",
-    "prompt": "A simple equation: 1+1=2" 
-  },
-  {
-    "id": 3,
-    "word": "これ",
-    "hiragana": "これ",
-    "english": "this",
-    "prompt": "A hand pointing to something nearby" 
-  },
-  {
-    "id": 4,
-    "word": "猫",
-    "hiragana": "ねこ",
-    "english": "cat",
-    "prompt": "A fluffy cat"
-  },
-  {
-    "id": 5,
-    "word": "は",
-    "hiragana": "は",
-    "english": "(topic marker)",
-    "prompt": "A simple diagram showing the subject of a sentence"
-  },
-  {
-    "id": 6, 
-    "word": "これは犬です。",
-    "hiragana": "これはいぬです。",
-    "english": "This is a dog.",
-    "prompt": "Someone pointing at a dog"
-  },
-  {
-    "id": 7, 
-    "word": "これは猫です。",
-    "hiragana": "これはねこです。",
-    "english": "This is a cat.",
-    "prompt": "Someone pointing at a cat"
-  },
-  {
-    "id": 8, 
-    "word": "犬です。",
-    "hiragana": "いぬです。",
-    "english": "It is a dog.",
-    "prompt": "A dog"
-  },
-  {
-    "id": 9,
-    "word": "猫です。",
-    "hiragana": "ねこです。",
-    "english": "It is a cat.",
-    "prompt": "A cat"
-  },
-  {
-    "id": 10,
-    "word": "これは犬ですか。",
-    "hiragana": "これはいぬですか。",
-    "english": "Is this a dog?",
-    "prompt": "Someone pointing at a dog with a questioning look"
-  },
-  {
-    "id": 11,
-    "word": "魚",
-    "hiragana": "さかな",
-    "english": "fish",
-    "prompt": "A fish swimming in water"
-  },
-  {
-    "id": 12,
-    "word": "食べます",
-    "hiragana": "たべます",
-    "english": "eat",
-    "prompt": "A person eating a meal"
-  },
-  {
-    "id": 13,
-    "word": "を",
-    "hiragana": "を",
-    "english": "(object marker)",
-    "prompt": "An arrow pointing from a verb to an object"
-  },
-  {
-    "id": 14,
-    "word": "好き",
-    "hiragana": "すき",
-    "english": "like",
-    "prompt": "A heart symbol"
-  },
-  {
-    "id": 15,
-    "word": "か",
-    "hiragana": "か",
-    "english": "(question marker)",
-    "prompt": "A question mark"
-  },
-  {
-    "id": 16, 
-    "word": "これは魚ですか。",
-    "hiragana": "これはさかなですか。",
-    "english": "Is this a fish?",
-    "prompt": "Someone pointing at a fish with a questioning look"
-  },
-  {
-    "id": 17, 
-    "word": "魚を食べます。",
-    "hiragana": "さかなをたべます。",
-    "english": "Eat fish.",
-    "prompt": "Someone eating fish"
-  },
-  {
-    "id": 18, 
-    "word": "犬は魚を食べますか。",
-    "hiragana": "いぬはさかなをたべますか。",
-    "english": "Does the dog eat fish?",
-    "prompt": "A dog looking at a fish"
-  },
-  {
-    "id": 19,
-    "word": "猫は魚が好きです。",
-    "hiragana": "ねこはさかながすきです。",
-    "english": "The cat likes fish.",
-    "prompt": "A cat looking happy near a fish"
-  },
-  {
-    "id": 20,
-    "word": "犬は魚が好きですか。",
-    "hiragana": "いぬはさかながすきですか。",
-    "english": "Does the dog like fish?",
-    "prompt": "A dog being offered a fish"
-  },
-  {
-    "id": 21,
-    "word": "鳥",
-    "hiragana": "とり",
-    "english": "bird",
-    "prompt": "A bird singing on a branch"
-  },
-  {
-    "id": 22,
-    "word": "見ます",
-    "hiragana": "みます",
-    "english": "see",
-    "prompt": "Someone looking at something with interest"
-  },
-  {
-    "id": 23,
-    "word": "空",
-    "hiragana": "そら",
-    "english": "sky",
-    "prompt": "A clear blue sky"
-  },
-  {
-    "id": 24,
-    "word": "に",
-    "hiragana": "に",
-    "english": "in/at/on (location)",
-    "prompt": "A map with a location marked"
-  },
-  {
-    "id": 25,
-    "word": "を",
-    "hiragana": "を",
-    "english": "(object marker)",
-    "prompt": "An arrow pointing from a verb to an object"
-  },
-  {
-    "id": 26,
-    "word": "鳥は空にいます。",
-    "hiragana": "とりはそらにいます。",
-    "english": "The bird is in the sky.",
-    "prompt": "A bird flying in the sky"
-  },
-  {
-    "id": 27,
-    "word": "鳥を見ます。",
-    "hiragana": "とりをみます。",
-    "english": "I see a bird.",
-    "prompt": "Someone looking at a bird"
-  },
-  {
-    "id": 28,
-    "word": "犬は鳥を見ます。",
-    "hiragana": "いぬはとりをみます。",
-    "english": "The dog sees the bird.",
-    "prompt": "A dog looking intently at a bird"
-  },
-  {
-    "id": 29,
-    "word": "猫は鳥を見ますか。",
-    "hiragana": "ねこはとりをみますか。",
-    "english": "Does the cat see the bird?",
-    "prompt": "A cat looking up at a bird"
-  },
-  {
-    "id": 30,
-    "word": "魚は空にいません。",
-    "hiragana": "さかなはそらにいません。",
-    "english": "The fish is not in the sky.",
-    "prompt": "A fish out of water"
-  },
-  {
-    "id": 31,
-    "word": "本",
-    "hiragana": "ほん",
-    "english": "book",
-    "prompt": "An open book"
-  },
-  {
-    "id": 32,
-    "word": "読みます",
-    "hiragana": "よみます",
-    "english": "read",
-    "prompt": "Someone engrossed in a book"
-  },
-  {
-    "id": 33,
-    "word": "と",
-    "hiragana": "と",
-    "english": "and",
-    "prompt": "The plus sign (+)"
-  },
-  {
-    "id": 34,
-    "word": "私",
-    "hiragana": "わたし",
-    "english": "I",
-    "prompt": "A mirror reflecting a person"
-  },
-  {
-    "id": 35,
-    "word": "図書館",
-    "hiragana": "としょかん",
-    "english": "library",
-    "prompt": "A library with bookshelves"
-  },
-  {
-    "id": 36,
-    "word": "私は本を読みます。",
-    "hiragana": "わたしはほんをよみます。",
-    "english": "I read a book.",
-    "prompt": "Someone reading a book"
-  },
-  {
-    "id": 37,
-    "word": "図書館で本を読みます。",
-    "hiragana": "としょかんでほんをよみます。",
-    "english": "I read a book at the library.",
-    "prompt": "Someone reading a book in a library"
-  },
-  {
-    "id": 38,
-    "word": "猫と犬は図書館にいません。",
-    "hiragana": "ねこといぬはとしょかんにいません。",
-    "english": "The cat and dog are not at the library.",
-    "prompt": "A 'no pets allowed' sign at a library"
-  },
-  {
-    "id": 39,
-    "word": "魚は本を読みますか。",
-    "hiragana": "さかなはほんをよみますか。",
-    "english": "Does the fish read a book?",
-    "prompt": "A fish near a book, looking confused"
-  },
-  {
-    "id": 40,
-    "word": "鳥は空にいます。魚は水にいます。",
-    "hiragana": "とりはそらにいます。さかなはみずにいます。",
-    "english": "The bird is in the sky. The fish is in the water.",
-    "prompt": "A bird in the sky and a fish in the water"
-  },
-  {
-    "id": 41,
-    "word": "車",
-    "hiragana": "くるま",
-    "english": "car",
-    "prompt": "A car"
-  },
-  {
-    "id": 42,
-    "word": "運転します",
-    "hiragana": "うんてんします",
-    "english": "drive",
-    "prompt": "Someone driving a car"
-  },
-  {
-    "id": 43,
-    "word": "自転車",
-    "hiragana": "じてんしゃ",
-    "english": "bicycle",
-    "prompt": "A bicycle"
-  },
-  {
-    "id": 44,
-    "word": "乗ります",
-    "hiragana": "のります",
-    "english": "ride",
-    "prompt": "Someone riding a bicycle"
-  },
-  {
-    "id": 45,
-    "word": "が",
-    "hiragana": "が",
-    "english": "(subject marker)",
-    "prompt": "A simple diagram showing the subject of a sentence"
-  },
-  {
-    "id": 46,
-    "word": "私は車を運転します。",
-    "hiragana": "わたしはくるまをうんてんします。",
-    "english": "I drive a car.",
-    "prompt": "Someone driving a car"
-  },
-  {
-    "id": 47,
-    "word": "彼は自転車に乗ります。",
-    "hiragana": "かれはじてんしゃにのります。",
-    "english": "He rides a bicycle.",
-    "prompt": "A man riding a bicycle"
-  },
-  {
-    "id": 48,
-    "word": "犬は車に乗りません。",
-    "hiragana": "いぬはくるまにの りません。",
-    "english": "The dog does not ride in the car.",
-    "prompt": "A dog looking hesitant to get into a car"
-  },
-  {
-    "id": 49,
-    "word": "猫は自転車に乗りません。",
-    "hiragana": "ねこはじてんしゃにの りません。",
-    "english": "The cat does not ride a bicycle.",
-    "prompt": "A cat looking confused by a bicycle"
-  },
-  {
-    "id": 50,
-    "word": "鳥は空を飛びます。",
-    "hiragana": "とりはそらをとびます。",
-    "english": "The bird flies in the sky.",
-    "prompt": "A bird soaring through the sky"
-  }
-]
+  { "id": 1, "word": "<ruby>本<rt>ほん</rt></ruby>", "hiragana": "ほん", "english": "book", "prompt": "A book" },
+  { "id": 2, "word": "<ruby>猫<rt>ねこ</rt></ruby>", "hiragana": "ねこ", "english": "cat", "prompt": "A cat" },
+  { "id": 3, "word": "<ruby>大<rt>おお</rt></ruby>きい", "hiragana": "おおきい", "english": "big", "prompt": "Something big" },
+  { "id": 4, "word": "<ruby>小<rt>ちい</rt></ruby>さい", "hiragana": "ちいさい", "english": "small", "prompt": "Something small" },
+  { "id": 5, "word": "<ruby>犬<rt>いぬ</rt></ruby>", "hiragana": "いぬ", "english": "dog", "prompt": "A dog" },
+  
+  { "id": 6, "word": "<ruby>本<rt>ほん</rt></ruby>が<ruby>大<rt>おお</rt></ruby>きいです。", "hiragana": "ほんがおおきいです。", "english": "The book is big.", "prompt": "A big book" },
+  { "id": 7, "word": "<ruby>本<rt>ほん</rt></ruby>が<ruby>小<rt>ちい</rt></ruby>さいです。", "hiragana": "ほんがちいさいです。", "english": "The book is small.", "prompt": "A small book" },
+  { "id": 8, "word": "<ruby>犬<rt>いぬ</rt></ruby>が<ruby>大<rt>おお</rt></ruby>きいです。", "hiragana": "いぬがおおきいです。", "english": "The dog is big.", "prompt": "A big dog" },
+  { "id": 9, "word": "<ruby>犬<rt>いぬ</rt></ruby>が<ruby>小<rt>ちい</rt></ruby>さいです。", "hiragana": "いぬがちいさいです。", "english": "The dog is small.", "prompt": "A small dog" },
+  { "id": 10, "word": "<ruby>猫<rt>ねこ</rt></ruby>と<ruby>犬<rt>いぬ</rt></ruby>。", "hiragana": "ねこといぬ。", "english": "A cat and a dog.", "prompt": "A cat and a dog together" },
 
+  { "id": 11, "word": "<ruby>車<rt>くるま</rt></ruby>", "hiragana": "くるま", "english": "car", "prompt": "A car" },
+  { "id": 12, "word": "<ruby>家<rt>いえ</rt></ruby>", "hiragana": "いえ", "english": "house", "prompt": "A house" },
+  { "id": 13, "word": "<ruby>空<rt>そら</rt></ruby>", "hiragana": "そら", "english": "sky", "prompt": "The sky" },
+  { "id": 14, "word": "<ruby>木<rt>き</rt></ruby>", "hiragana": "き", "english": "tree", "prompt": "A tree" },
+  { "id": 15, "word": "<ruby>花<rt>はな</rt></ruby>", "hiragana": "はな", "english": "flower", "prompt": "A flower" },
+
+  { "id": 16, "word": "<ruby>大<rt>おお</rt></ruby>きい<ruby>車<rt>くるま</rt></ruby>。", "hiragana": "おおきいくるま。", "english": "A big car.", "prompt": "A big car" },
+  { "id": 17, "word": "<ruby>小<rt>ちい</rt></ruby>さい<ruby>花<rt>はな</rt></ruby>。", "hiragana": "ちいさいはな。", "english": "A small flower.", "prompt": "A small flower" },
+  { "id": 18, "word": "<ruby>花<rt>はな</rt></ruby>と<ruby>木<rt>き</rt></ruby>。", "hiragana": "はなとき。", "english": "A flower and a tree.", "prompt": "A flower and a tree together" },
+  { "id": 19, "word": "<ruby>家<rt>いえ</rt></ruby>の<ruby>空<rt>そら</rt></ruby>。", "hiragana": "いえのそら。", "english": "The sky above the house.", "prompt": "The sky above a house" },
+  { "id": 20, "word": "<ruby>犬<rt>いぬ</rt></ruby>と<ruby>車<rt>くるま</rt></ruby>。", "hiragana": "いぬとくるま。", "english": "A dog and a car.", "prompt": "A dog and a car together" },
+
+  { "id": 21, "word": "<ruby>水<rt>みず</rt></ruby>", "hiragana": "みず", "english": "water", "prompt": "Water" },
+  { "id": 22, "word": "<ruby>火<rt>ひ</rt></ruby>", "hiragana": "ひ", "english": "fire", "prompt": "Fire" },
+  { "id": 23, "word": "<ruby>山<rt>やま</rt></ruby>", "hiragana": "やま", "english": "mountain", "prompt": "A mountain" },
+  { "id": 24, "word": "<ruby>川<rt>かわ</rt></ruby>", "hiragana": "かわ", "english": "river", "prompt": "A river" },
+  { "id": 25, "word": "<ruby>町<rt>まち</rt></ruby>", "hiragana": "まち", "english": "town", "prompt": "A town" },
+
+  { "id": 26, "word": "<ruby>山<rt>やま</rt></ruby>と<ruby>川<rt>かわ</rt></ruby>。", "hiragana": "やまとかわ。", "english": "A mountain and a river.", "prompt": "A mountain and a river together" },
+  { "id": 27, "word": "<ruby>大<rt>おお</rt></ruby>きい<ruby>川<rt>かわ</rt></ruby>。", "hiragana": "おおきいかわ。", "english": "A big river.", "prompt": "A big river" },
+  { "id": 28, "word": "<ruby>小<rt>ちい</rt></ruby>さい<ruby>町<rt>まち</rt></ruby>。", "hiragana": "ちいさいまち。", "english": "A small town.", "prompt": "A small town" },
+  { "id": 29, "word": "<ruby>町<rt>まち</rt></ruby>の<ruby>火<rt>ひ</rt></ruby>。", "hiragana": "まちのひ。", "english": "The town's fire.", "prompt": "Fire in a town" },
+  { "id": 30, "word": "<ruby>水<rt>みず</rt></ruby>と<ruby>火<rt>ひ</rt></ruby>。", "hiragana": "みずとひ。", "english": "Water and fire.", "prompt": "Water and fire together" },
+  
+  { "id": 31, "word": "<ruby>雨<rt>あめ</rt></ruby>", "hiragana": "あめ", "english": "rain", "prompt": "Rain" },
+  { "id": 32, "word": "<ruby>風<rt>かぜ</rt></ruby>", "hiragana": "かぜ", "english": "wind", "prompt": "Wind" },
+  { "id": 33, "word": "<ruby>父<rt>ちち</rt></ruby>", "hiragana": "ちち", "english": "father", "prompt": "A father" },
+  { "id": 34, "word": "<ruby>母<rt>はは</rt></ruby>", "hiragana": "はは", "english": "mother", "prompt": "A mother" },
+  { "id": 35, "word": "<ruby>友<rt>とも</rt></ruby>だち", "hiragana": "ともだち", "english": "friend", "prompt": "A friend" },
+
+  { "id": 36, "word": "<ruby>雨<rt>あめ</rt></ruby>と<ruby>風<rt>かぜ</rt></ruby>。", "hiragana": "あめとかぜ。", "english": "Rain and wind.", "prompt": "Rain and wind together" },
+  { "id": 37, "word": "<ruby>父<rt>ちち</rt></ruby>と<ruby>母<rt>はは</rt></ruby>。", "hiragana": "ちちとはは。", "english": "Father and mother.", "prompt": "A father and a mother together" },
+  { "id": 38, "word": "<ruby>友<rt>とも</rt></ruby>だちは<ruby>大<rt>おお</rt></ruby>きいです。", "hiragana": "ともだちはおおきいです。", "english": "The friend is big.", "prompt": "A big friend" },
+  { "id": 39, "word": "<ruby>猫<rt>ねこ</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さい<ruby>友<rt>とも</rt></ruby>だちです。", "hiragana": "ねこはちいさいともだちです。", "english": "The cat is a small friend.", "prompt": "A small friend cat" },
+  { "id": 40, "word": "<ruby>山<rt>やま</rt></ruby>に<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ります。", "hiragana": "やまにあめがふります。", "english": "Rain falls on the mountain.", "prompt": "Rain falling on a mountain" },
+  
+  { "id": 41, "word": "<ruby>手<rt>て</rt></ruby>", "hiragana": "て", "english": "hand", "prompt": "A hand" },
+  { "id": 42, "word": "<ruby>目<rt>め</rt></ruby>", "hiragana": "め", "english": "eye", "prompt": "An eye" },
+  { "id": 43, "word": "<ruby>口<rt>くち</rt></ruby>", "hiragana": "くち", "english": "mouth", "prompt": "A mouth" },
+  { "id": 44, "word": "<ruby>耳<rt>みみ</rt></ruby>", "hiragana": "みみ", "english": "ear", "prompt": "An ear" },
+  { "id": 45, "word": "<ruby>頭<rt>あたま</rt></ruby>", "hiragana": "あたま", "english": "head", "prompt": "A head" },
+  
+  { "id": 46, "word": "<ruby>頭<rt>あたま</rt></ruby>と<ruby>手<rt>て</rt></ruby>。", "hiragana": "あたまとて。", "english": "A head and a hand.", "prompt": "A head and a hand together" },
+  { "id": 47, "word": "<ruby>大<rt>おお</rt></ruby>きい<ruby>手<rt>て</rt></ruby>。", "hiragana": "おおきいて。", "english": "A big hand.", "prompt": "A big hand" },
+  { "id": 48, "word": "<ruby>小<rt>ちい</rt></ruby>さい<ruby>耳<rt>みみ</rt></ruby>。", "hiragana": "ちいさいみみ。", "english": "A small ear.", "prompt": "A small ear" },
+  { "id": 49, "word": "<ruby>目<rt>め</rt></ruby>と<ruby>口<rt>くち</rt></ruby>。", "hiragana": "めとくち。", "english": "An eye and a mouth.", "prompt": "An eye and a mouth together" },
+  { "id": 50, "word": "<ruby>母<rt>はは</rt></ruby>の<ruby>目<rt>め</rt></ruby>。", "hiragana": "ははのめ。", "english": "Mother's eye.", "prompt": "A mother's eye" }
+]
