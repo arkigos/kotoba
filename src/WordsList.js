@@ -33,6 +33,7 @@ function WordsList() {
         console.log('Lesson data fetched:', data); // Debugging
         setWords(data);
         setCurrentIndex(0);
+        setShowEnglish(showEnglishFirst);
           if (autoPlayAudio) {
             const initialAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${data[0].id}.mp3`);
             setAudio(initialAudio);
@@ -70,6 +71,7 @@ function WordsList() {
     setCurrentIndex(nextIndex);
     const nextAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[nextIndex].id}.mp3`);
     setAudio(nextAudio);
+    setShowEnglish(showEnglishFirst);
     if (autoPlayAudio) nextAudio.play();
   };
 
@@ -78,6 +80,7 @@ function WordsList() {
     setCurrentIndex(prevIndex);
     const prevAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[prevIndex].id}.mp3`);
     setAudio(prevAudio);
+    setShowEnglish(showEnglishFirst);
     if (autoPlayAudio) prevAudio.play();
   };
 
@@ -85,6 +88,7 @@ function WordsList() {
     setCurrentIndex(index);
     const clickedAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[index].id}.mp3`);
     setAudio(clickedAudio);
+    setShowEnglish(showEnglishFirst);
     if (autoPlayAudio) clickedAudio.play();
   };
 
