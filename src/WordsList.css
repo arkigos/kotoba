@@ -1,11 +1,10 @@
-/* Container for sidebar and word content */
+/* General Layout */
 .container {
   display: flex;
   height: 100vh;
   width: 100vw;
 }
 
-/* Sidebar Styling */
 .sidebar {
   width: 250px;
   background-color: #333;
@@ -35,7 +34,6 @@
   background-color: #007bff; /* Highlight the active word */
 }
 
-/* Word content styling */
 .word-content {
   position: relative;
   flex-grow: 1;
@@ -59,11 +57,6 @@
   filter: brightness(50%); /* Dim the background image for contrast */
 }
 
-/* If background image is hidden */
-.word-content.no-image {
-  background-color: black; /* Use black background when the image is hidden */
-}
-
 .word {
   z-index: 1;
   font-size: 5vw;
@@ -76,7 +69,6 @@
   transform: scale(1.05);
 }
 
-/* Buttons styling */
 .buttons-container {
   display: flex;
   gap: 20px;
@@ -98,7 +90,7 @@
   background-color: #ccc;
 }
 
-/* Scrollbar styling */
+/* Scrollbar Styling */
 .sidebar {
   scrollbar-width: thin;
   scrollbar-color: #007bff #333;
@@ -151,7 +143,7 @@
   margin-bottom: 10px;
 }
 
-/* Furigana toggle button */
+/* Toggle Furigana Button */
 .toggle-furigana-button {
   background-color: white;
   color: black;
@@ -167,17 +159,84 @@
   background-color: #ccc;
 }
 
-/* Optional styles for better mobile responsiveness */
+/* Responsive Design for Mobile (Phone-sized screens) */
 @media (max-width: 768px) {
   .sidebar {
-    width: 200px;
+    width: 50px; /* Shrink sidebar to a smaller size */
+    padding: 0;
+  }
+
+  .sidebar ul {
+    padding-left: 10px;
+  }
+
+  .sidebar li {
+    padding: 10px; /* Adjust padding for touch targets */
+    font-size: 12px; /* Make text smaller */
+  }
+
+  .sidebar li.active {
+    background-color: #0056b3; /* Adjust highlight for smaller screen */
+  }
+
+  .word-content {
+    padding: 20px; /* Add padding for mobile */
   }
 
   .word {
-    font-size: 4vw;
+    font-size: 8vw; /* Larger text on mobile */
   }
 
-  .word-image {
-    height: 200px;
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Stack buttons vertically on mobile */
+  }
+
+  .previous-button, .next-button, .replay-button {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+    width: 100%; /* Full-width buttons on mobile */
+    padding: 15px; /* Larger padding for better touch interaction */
+  }
+
+  .hamburger-menu {
+    top: 15px;
+    right: 15px; /* Keep hamburger accessible on smaller screens */
+  }
+
+  .hamburger-icon {
+    font-size: 28px; /* Reduce size on mobile */
+  }
+
+  .menu {
+    padding: 10px; /* Adjust menu padding on mobile */
+    top: 60px; /* Adjust position for menu on smaller screens */
+    right: 15px;
+  }
+}
+
+/* Extra small phones (portrait) */
+@media (max-width: 480px) {
+  .word {
+    font-size: 10vw; /* Further increase text size for tiny screens */
+  }
+
+  .buttons-container {
+    gap: 5px; /* Reduce button gap */
+  }
+
+  .previous-button, .next-button, .replay-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .hamburger-menu {
+    top: 10px;
+    right: 10px;
+  }
+
+  .menu {
+    top: 50px;
+    right: 10px;
   }
 }
