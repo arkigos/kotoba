@@ -1,33 +1,44 @@
-const { DataTypes } = require('sequelize');
-const sequelize = require('./path_to_your_sequelize_instance');
+'use strict';
 
-// Define the Word model
-const Word = sequelize.define('Word', {
-  id: {
-    type: DataTypes.INTEGER,
-    autoIncrement: true,
-    primaryKey: true,
-    allowNull: false,
+module.exports = {
+  async up(queryInterface, Sequelize) {
+    await queryInterface.createTable('Words', {
+      id: {
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+        type: Sequelize.INTEGER
+      },
+      word: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
+      hiragana: {
+        type: Sequelize.STRING,
+        allowNull: true
+      },
+      english: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
+      prompt: {
+        type: Sequelize.TEXT,
+        allowNull: true
+      },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.NOW
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.NOW
+      }
+    });
   },
-  word: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  hiragana: {
-    type: DataTypes.STRING,
-    allowNull: true,
-  },
-  english: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  prompt: {
-    type: DataTypes.TEXT,
-    allowNull: true,
-  },
-}, {
-  tableName: 'Words',  // Ensure it uses the correct table name (pluralized)
-  timestamps: true,    // Enable timestamps (since your table has createdAt and updatedAt)
-});
 
-module.exports = Word;
+  async down(queryInterface, Sequelize) {
+    await queryInterface.dropTable('Words');
+  }
+};
