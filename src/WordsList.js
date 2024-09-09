@@ -12,7 +12,6 @@ function WordsList() {
   const [autoPlayAudio, setAutoPlayAudio] = useState(true); // State for audio autoplay
   const [showEnglishFirst, setShowEnglishFirst] = useState(false); // State for word/English display order
   const [menuOpen, setMenuOpen] = useState(false); // State for the hamburger menu
-  const [showFurigana, setShowFurigana] = useState(true); // State for showing/hiding furigana
 
   useEffect(() => {
     // Fetch words from the API
@@ -68,22 +67,6 @@ function WordsList() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen); // Open/close the hamburger menu
-  };
-
-  const toggleFurigana = () => {
-    setShowFurigana(!showFurigana); // Toggle furigana visibility
-  };
-
-  const renderWordWithFurigana = (wordHtml) => {
-    // If furigana should be hidden, strip out <rt> content
-    if (!showFurigana) {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(wordHtml, 'text/html');
-      const rtElements = doc.querySelectorAll('rt');
-      rtElements.forEach(rt => rt.textContent = ''); // Clear the content of <rt> tags
-      return doc.body.innerHTML;
-    }
-    return wordHtml; // Return the full HTML with furigana
   };
 
   if (words.length === 0) {
@@ -146,7 +129,7 @@ function WordsList() {
           className="word"
           onClick={handleToggle}
           dangerouslySetInnerHTML={{
-            __html: showEnglish ? currentWord.english : renderWordWithFurigana(currentWord.word)
+            __html: showEnglish ? currentWord.english : currentWord.word
           }}
         />
         <div className="buttons-container">
@@ -155,9 +138,6 @@ function WordsList() {
           </button>
           <button className="replay-button" onClick={handleReplay}>
             Replay Audio
-          </button>
-          <button className="toggle-furigana-button" onClick={toggleFurigana}>
-            {showFurigana ? 'Hide Furigana' : 'Show Furigana'}
           </button>
           <button className="next-button" onClick={handleNext}>
             Next
