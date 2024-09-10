@@ -1,8 +1,9 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import './WordsList.css';
 
+
 const baseAudioUrl = '/audio/';
-const baseImageUrl = '/images/';
+const baseImageUrl = 'https://res.cloudinary.com/hgcstx3uy/image/upload/images/';
 
 function WordsList() {
   const [lessons, setLessons] = useState([]);
@@ -213,7 +214,7 @@ function WordsList() {
         {showBackgroundImage && (
           <img
             className="word-image"
-            src={`${baseImageUrl}lesson_${currentLesson}/image_${currentLesson}_${currentWord.id}.jpg`}
+            src={`${baseImageUrl}image_${currentLesson}_${currentWord.id}.jpg.png`} 
             alt={currentWord.word}
           />
         )}
