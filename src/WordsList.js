@@ -21,8 +21,9 @@ function WordsList() {
 
   // Memoize loadLesson to avoid unnecessary re-renders
   const loadLesson = useCallback((currentLesson, allWords) => {
-    console.log(`Fetching lesson file: ${currentLesson}`); // Debugging
+    console.log(`Loading lesson: ${currentLesson}`); // Debugging
     const lessonWords = allWords[currentLesson];
+    if (!lessonWords) return; // Exit if lessonWords is undefined
     setWords(lessonWords);
     setCurrentIndex(0);
     setShowEnglish(showEnglishFirst);
@@ -34,15 +35,18 @@ function WordsList() {
   }, [autoPlayAudio, showEnglishFirst]);
 
   // Preload images from all lessons
-  const preloadImages = (lessons) => {
+  const preloadImages = (allWords) => {
     const preloaded = new Set();
-    lessons.forEach((lesson, lessonIndex) => {
-      lesson.words.forEach((word) => {
-        const img = new Image();
-        const imgSrc = `${baseImageUrl}image_${lessonIndex}_${word.id}.jpg`;
-        img.src = imgSrc;
-        img.onload = () => preloaded.add(imgSrc); // Add to preloaded set when the image is loaded
-      });
+    Object.keys(allWords).forEach(lessonId => {
+      const lessonWords = allWords[lessonId];
+      if (lessonWords) {
+        lessonWords.forEach(word => {
+          const img = new Image();
+          const imgSrc = `${baseImageUrl}image_${lessonId}_${word.id}.jpg.png`;
+          img.src = imgSrc;
+          img.onload = () => preloaded.add(imgSrc); // Add to preloaded set when the image is loaded
+        });
+      }
     });
     setPreloadedImages(preloaded);
     console.log('Preloaded images:', preloaded); // Debugging
@@ -51,30 +55,32 @@ function WordsList() {
   // Fetch lessons and preload all images when the component first mounts
   useEffect(() => {
     fetch('/api/lessons.json')
-      .then((response) => response.json())
-      .then((data) => {
+      .then(response => response.json())
+      .then(async data => {
+        if (!data.lessons || !Array.isArray(data.lessons)) {
+          throw new Error('Invalid lessons data');
+        }
+
         setLessons(data.lessons);
         const allWords = {};
 
         // Fetch all lesson data and preload images
-        const promises = data.lessons.map((lesson) =>
+        await Promise.all(data.lessons.map(lesson =>
           fetch(`/api/lesson/lesson_${lesson.id}.json`)
-            .then((response) => response.json())
-            .then((lessonWords) => {
-              allWords[lesson.id] = lessonWords;
+            .then(response => response.json())
+            .then(lessonWords => {
+              if (lessonWords && Array.isArray(lessonWords)) {
+                allWords[lesson.id] = lessonWords;
+              }
             })
-        );
+        ));
 
-        Promise.all(promises)
-          .then(() => {
-            preloadImages(data.lessons);
-            const firstLesson = data.lessons[0];
-            setCurrentLesson(firstLesson.id);
-            loadLesson(firstLesson.id, allWords);
-          })
-          .catch((error) => console.error('Error fetching all lessons:', error));
+        preloadImages(allWords);
+        const firstLesson = data.lessons[0];
+        setCurrentLesson(firstLesson.id);
+        loadLesson(firstLesson.id, allWords);
       })
-      .catch((error) => console.error('Error fetching lessons:', error));
+      .catch(error => console.error('Error fetching lessons:', error));
   }, [loadLesson]);
 
   // Audio handling and lesson switching
