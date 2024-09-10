@@ -17,66 +17,72 @@ function WordsList() {
   const [hoveredIndex, setHoveredIndex] = useState(null); // State for tracking hovered sidebar item
   const [showFurigana, setShowFurigana] = useState(true); // State for showing/hiding furigana
   const [showBackgroundImage, setShowBackgroundImage] = useState(true); // State for toggling background image
-  const [preloadedImages, setPreloadedImages] = useState([]); // State for preloaded images
+  const [preloadedImages, setPreloadedImages] = useState(new Set()); // Store preloaded images
 
-  
   // Memoize loadLesson to avoid unnecessary re-renders
-  const loadLesson = useCallback((currentLesson) => {
+  const loadLesson = useCallback((currentLesson, allWords) => {
     console.log(`Fetching lesson file: ${currentLesson}`); // Debugging
-    fetch(`/api/lesson/lesson_${currentLesson}.json`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Failed to fetch lesson: ${currentLesson}`);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        console.log('Lesson data fetched:', data); // Debugging
-        setWords(data);
-        setCurrentIndex(0);
-        setShowEnglish(showEnglishFirst);
-        
-          if (autoPlayAudio) {
-            const initialAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${data[0].id}.mp3`);
-            setAudio(initialAudio);
-            initialAudio.play().catch((error) => console.error('Audio play blocked:', error));
-          }
-        preloadImages(data);
-      })
-      .catch((error) => console.error('Error fetching lesson:', error));
-  }, [autoPlayAudio,showEnglishFirst]);
+    const lessonWords = allWords[currentLesson];
+    setWords(lessonWords);
+    setCurrentIndex(0);
+    setShowEnglish(showEnglishFirst);
+    if (autoPlayAudio && lessonWords.length > 0) {
+      const initialAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${lessonWords[0].id}.mp3`);
+      setAudio(initialAudio);
+      initialAudio.play().catch((error) => console.error('Audio play blocked:', error));
+    }
+  }, [autoPlayAudio, showEnglishFirst]);
 
-  // Preload images
-  const preloadImages = (words) => {
-    const images = words.map(word => {
-      const img = new Image();
-      img.src = `${baseImageUrl}image_${currentLesson}_${word.id}.jpg.png`; // Adjust the URL if needed
-      return img;
+  // Preload images from all lessons
+  const preloadImages = (lessons) => {
+    const preloaded = new Set();
+    lessons.forEach((lesson, lessonIndex) => {
+      lesson.words.forEach((word) => {
+        const img = new Image();
+        const imgSrc = `${baseImageUrl}image_${lessonIndex}_${word.id}.jpg`;
+        img.src = imgSrc;
+        img.onload = () => preloaded.add(imgSrc); // Add to preloaded set when the image is loaded
+      });
     });
-    console.log('Preloading images:', images); // Debugging
-    setPreloadedImages(images);
+    setPreloadedImages(preloaded);
+    console.log('Preloaded images:', preloaded); // Debugging
   };
 
-  // Fetch lessons and load the first one when the component first mounts
+  // Fetch lessons and preload all images when the component first mounts
   useEffect(() => {
     fetch('/api/lessons.json')
       .then((response) => response.json())
       .then((data) => {
         setLessons(data.lessons);
-        const firstLesson = data.lessons[1];
-        setCurrentLesson(firstLesson.id); // Set the first lesson as current
-        loadLesson(firstLesson.id); // Load the first lesson
+        const allWords = {};
+
+        // Fetch all lesson data and preload images
+        const promises = data.lessons.map((lesson) =>
+          fetch(`/api/lesson/lesson_${lesson.id}.json`)
+            .then((response) => response.json())
+            .then((lessonWords) => {
+              allWords[lesson.id] = lessonWords;
+            })
+        );
+
+        Promise.all(promises)
+          .then(() => {
+            preloadImages(data.lessons);
+            const firstLesson = data.lessons[0];
+            setCurrentLesson(firstLesson.id);
+            loadLesson(firstLesson.id, allWords);
+          })
+          .catch((error) => console.error('Error fetching all lessons:', error));
       })
       .catch((error) => console.error('Error fetching lessons:', error));
-  }, []); // Runs once on mount, no dependencies
+  }, [loadLesson]);
 
   // Audio handling and lesson switching
   const handleLessonChange = (e) => {
     const selectedLesson = parseInt(e.target.value);
-    console.log(`Switching to lesson ${selectedLesson})`); // Debugging
+    console.log(`Switching to lesson ${selectedLesson}`); // Debugging
     setCurrentLesson(selectedLesson);
     loadLesson(selectedLesson);
-
   };
 
   // Audio handling for next and previous
