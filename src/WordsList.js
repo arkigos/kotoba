@@ -41,7 +41,7 @@ function WordsList() {
           }
       })
       .catch((error) => console.error('Error fetching lesson:', error));
-  }, [autoPlayAudio]);
+  }, [autoPlayAudio,showEnglishFirst]);
 
   // Fetch lessons and load the first one when the component first mounts
   useEffect(() => {
