@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import './WordsList.css';
 
-
 const baseAudioUrl = '/audio/';
 const baseImageUrl = 'https://res.cloudinary.com/hgcstx3uy/image/upload/images/';
 
@@ -18,6 +17,7 @@ function WordsList() {
   const [hoveredIndex, setHoveredIndex] = useState(null); // State for tracking hovered sidebar item
   const [showFurigana, setShowFurigana] = useState(true); // State for showing/hiding furigana
   const [showBackgroundImage, setShowBackgroundImage] = useState(true); // State for toggling background image
+  const [preloadedImages, setPreloadedImages] = useState([]); // State for preloaded images
 
   
   // Memoize loadLesson to avoid unnecessary re-renders
@@ -35,14 +35,27 @@ function WordsList() {
         setWords(data);
         setCurrentIndex(0);
         setShowEnglish(showEnglishFirst);
+        
           if (autoPlayAudio) {
             const initialAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${data[0].id}.mp3`);
             setAudio(initialAudio);
             initialAudio.play().catch((error) => console.error('Audio play blocked:', error));
           }
+        preloadImages(data);
       })
       .catch((error) => console.error('Error fetching lesson:', error));
   }, [autoPlayAudio,showEnglishFirst]);
+
+  // Preload images
+  const preloadImages = (words) => {
+    const images = words.map(word => {
+      const img = new Image();
+      img.src = `${baseImageUrl}image_${currentLesson}_${word.id}.jpg.png`; // Adjust the URL if needed
+      return img;
+    });
+    console.log('Preloading images:', images); // Debugging
+    setPreloadedImages(images);
+  };
 
   // Fetch lessons and load the first one when the component first mounts
   useEffect(() => {
