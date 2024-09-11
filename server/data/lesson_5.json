@@ -1,7 +1,7 @@
 [
   { "id": 1, "word": "<ruby>買<rt>か</rt></ruby>う", "hiragana": "かう", "english": "buy", "prompt": "Someone buying something at a store" },
   { "id": 2, "word": "<ruby>売<rt>う</rt></ruby>る", "hiragana": "うる", "english": "sell", "prompt": "A shopkeeper selling goods to customers" },
-  
+
   { "id": 3, "word": "りんご", "hiragana": "りんご", "english": "apple", "prompt": "An image of apples" },
   { "id": 4, "word": "りんごを<ruby>買<rt>か</rt></ruby>います", "hiragana": "りんごをかいます", "english": "I buy an apple", "prompt": "Someone buying an apple at the store" },
 
@@ -21,18 +21,18 @@
   { "id": 15, "word": "二つラーメンが<ruby>欲<rt>ほ</rt></ruby>しい", "hiragana": "ふたつらーめんがほしい", "english": "I want 2 ramen", "prompt": "Someone expressing they want two servings of ramen" },
 
   { "id": 16, "word": "<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>", "hiragana": "ぎゅうにゅう", "english": "milk", "prompt": "An image of milk cartons" },
-  { "id": 17, "word": "<ruby>牛乳<rt>を買</rt></ruby>います", "hiragana": "ぎゅうにゅうをかいます", "english": "I buy milk", "prompt": "Someone buying milk at the store" },
+  { "id": 17, "word": "<ruby>牛乳<rt>を</rt></ruby><ruby>買<rt>か</rt></ruby>います", "hiragana": "ぎゅうにゅうをかいます", "english": "I buy milk", "prompt": "Someone buying milk at the store" },
   { "id": 18, "word": "<ruby>牛乳<rt>を</rt>二つ<ruby>買<rt>か</rt></ruby>います", "hiragana": "ぎゅうにゅうをふたつかいます", "english": "I buy two milk", "prompt": "Someone buying two milk at the store" },
 
   { "id": 19, "word": "いくらですか", "hiragana": "いくらですか", "english": "How much is it?", "prompt": "Someone asking the price of an item at a store" },
   { "id": 20, "word": "ラーメンはいくらですか", "hiragana": "らーめんはいくらですか", "english": "How much is the ramen?", "prompt": "Someone asking the price of ramen at the store" },
-  { "id": 21, "word": "<ruby>牛乳<rt>は</rt>いくら<rt>ですか</rt></ruby>", "hiragana": "ぎゅうにゅうはいくらですか", "english": "How much is the milk?", "prompt": "Someone asking the price of milk at the store" },
+  { "id": 21, "word": "<ruby>牛乳<rt>は</rt>いくら</ruby>ですか", "hiragana": "ぎゅうにゅうはいくらですか", "english": "How much is the milk?", "prompt": "Someone asking the price of milk at the store" },
 
   { "id": 22, "word": "<ruby>お菓子<rt>おかし</rt></ruby>", "hiragana": "おかし", "english": "snack", "prompt": "An image of snacks" },
   { "id": 23, "word": "<ruby>お菓子<rt>を</rt></ruby><ruby>買<rt>か</rt></ruby>います", "hiragana": "おかしをかいます", "english": "I buy snacks", "prompt": "Someone buying snacks at the store" },
   { "id": 24, "word": "<ruby>お菓子<rt>を</rt></ruby>五つ<ruby>買<rt>か</rt></ruby>います", "hiragana": "おかしをいつつかいます", "english": "I buy five snacks", "prompt": "Someone buying five snacks at the store" },
 
-  { "id": 25, "word": "お菓子が二つ<ruby>欲<rt>ほ</rt></ruby>しい", "hiragana": "ふたつおかしがほしい", "english": "I want 2 snacks", "prompt": "Someone expressing they want two snacks" },
+  { "id": 25, "word": "二つ<ruby>お菓子<rt>が</rt>欲<rt>ほ</rt></ruby>しい", "hiragana": "ふたつおかしがほしい", "english": "I want 2 snacks", "prompt": "Someone expressing they want two snacks" },
   { "id": 26, "word": "<ruby>卵<rt>たまご</rt></ruby>", "hiragana": "たまご", "english": "egg", "prompt": "An image of eggs" },
   { "id": 27, "word": "<ruby>卵<rt>を</rt></ruby>買<ruby>か</ruby>います", "hiragana": "たまごをかいます", "english": "I buy eggs", "prompt": "Someone buying eggs at the store" },
   
@@ -50,10 +50,10 @@
   { "id": 35, "word": "<ruby>お茶<rt>おちゃ</rt></ruby>", "hiragana": "おちゃ", "english": "tea", "prompt": "An image of tea" },
   { "id": 36, "word": "<ruby>お茶<rt>を</rt></ruby>買<ruby>か</rt></ruby>います", "hiragana": "おちゃをかいます", "english": "I buy tea", "prompt": "Someone buying tea at the store" },
 
-  { "id": 37, "word": "<ruby>お茶<rt>が</rt>欲<rt>ほ</rt>しいです</ruby>", "hiragana": "おちゃがほしいです", "english": "I want tea", "prompt": "Someone expressing they want tea" },
+  { "id": 37, "word": "お茶が<ruby>欲<rt>ほ</rt></ruby>しいです", "hiragana": "おちゃがほしいです", "english": "I want tea", "prompt": "Someone expressing they want tea" },
 
   { "id": 38, "word": "<ruby>百円<rt>ひゃくえん</rt></ruby>", "hiragana": "ひゃくえん", "english": "hundred yen", "prompt": "The number 100 and the yen symbol" },
-  { "id": 39, "word": "<ruby>お茶<rt>は</rt>百円<ruby>です</ruby>", "hiragana": "おちゃはひゃくえんです", "english": "The tea is one hundred yen", "prompt": "Someone saying the price of the tea" },
+  { "id": 39, "word": "<ruby>お茶<rt>は</rt></ruby>百円<です>", "hiragana": "おちゃはひゃくえんです", "english": "The tea is one hundred yen", "prompt": "Someone saying the price of the tea" },
 
   { "id": 40, "word": "パンを二つ買<ruby>か</rt></ruby>います", "hiragana": "ぱんをふたつかいます", "english": "I buy two bread", "prompt": "Someone buying two bread" },
   { "id": 41, "word": "三つ<ruby>お菓子<rt>を</rt></ruby>売<ruby>う</rt></ruby>ります", "hiragana": "みつおかしをうります", "english": "I sell three snacks", "prompt": "Someone selling three snacks at the store" },
@@ -66,10 +66,10 @@
   { "id": 45, "word": "<ruby>肉<rt>にく</rt></ruby>", "hiragana": "にく", "english": "meat", "prompt": "An image of meat" },
   { "id": 46, "word": "<ruby>肉<rt>を</rt></ruby>買<ruby>か</rt></ruby>います", "hiragana": "にくをかいます", "english": "I buy meat", "prompt": "Someone buying meat at the store" },
 
-  { "id": 47, "word": "<ruby>肉<rt>が</rt>欲<rt>ほ</rt>しいです</ruby>", "hiragana": "にくがほしいです", "english": "I want meat", "prompt": "Someone expressing they want meat" },
+  { "id": 47, "word": "肉が<ruby>欲<rt>ほ</rt></ruby>しいです", "hiragana": "にくがほしいです", "english": "I want meat", "prompt": "Someone expressing they want meat" },
 
   { "id": 48, "word": "<ruby>五百円<rt>ごひゃくえん</rt></ruby>", "hiragana": "ごひゃくえん", "english": "five hundred yen", "prompt": "The number 500 and the yen symbol" },
-  { "id": 49, "word": "<ruby>肉<rt>は</rt>五百円<rt>です</rt></ruby>", "hiragana": "にくはごひゃくえんです", "english": "The meat is five hundred yen", "prompt": "Someone saying the price of the meat" },
+  { "id": 49, "word": "<ruby>肉<rt>は</rt></ruby>五百円<です>", "hiragana": "にくはごひゃくえんです", "english": "The meat is five hundred yen", "prompt": "Someone saying the price of the meat" },
 
   { "id": 50, "word": "六つ<ruby>肉<rt>を</rt></ruby>買<ruby>か</rt></ruby>います", "hiragana": "むつにくをかいます", "english": "I buy six meat", "prompt": "Someone buying six meat" }
 ]
