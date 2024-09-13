@@ -11,19 +11,38 @@ app.use('/images', express.static(path.join(__dirname, 'public/images')));
 app.use(express.static(path.join(__dirname, '../build'))); // For serving React build
 
 // Load lesson files dynamically
-app.get('/api/lessons.json', (req, res) => {
-  const lessonsFilePath = path.join(__dirname, 'data/lessons.json');
-  const lessons = JSON.parse(fs.readFileSync(lessonsFilePath, 'utf8'));
-  res.json(lessons);
+app.get('/api/:langCode/lessons.json', (req, res) => {
+  const langCode = req.params.langCode; // Extract the language code
+  const lessonsFilePath = path.join(__dirname, `data/${langCode}/lessons.json`);
+  
+  if (fs.existsSync(lessonsFilePath)) {
+    const lessons = JSON.parse(fs.readFileSync(lessonsFilePath, 'utf8'));
+    res.json(lessons);
+  } else {
+    res.status(404).send({ error: 'Lessons file not found for this language' });
+  }
 });
 
-app.get('/api/lesson/:lessonFile', (req, res) => {
-  const lessonFilePath = path.join(__dirname, `data/${req.params.lessonFile}`);
+app.get('/api/:langCode/:lessonFile', (req, res) => {
+  const { langCode, lessonFile } = req.params;
+  const lessonFilePath = path.join(__dirname, `data/${langCode}/${lessonFile}`);
+
   if (fs.existsSync(lessonFilePath)) {
     const lesson = JSON.parse(fs.readFileSync(lessonFilePath, 'utf8'));
     res.json(lesson);
   } else {
-    res.status(404).send({ error: 'Lesson file not found' });
+    res.status(404).send({ error: 'Lesson file not found for this language' });
+  }
+});
+
+app.get('/server/data/languages.json', (req, res) => {
+  const languagesFilePath = path.join(__dirname, 'data/languages.json'); // Path to your languages.json file
+  
+  if (fs.existsSync(languagesFilePath)) {
+    const languages = JSON.parse(fs.readFileSync(languagesFilePath, 'utf8'));
+    res.json(languages);
+  } else {
+    res.status(404).send({ error: 'Languages file not found' });
   }
 });
 
@@ -36,3 +55,6 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+
+

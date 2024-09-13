@@ -1,9 +1,48 @@
 {
     "lessons": [
-      {
-        "id": 0,
-        "name": "The Store",
-        "file": "lesson_5.json"
-      }
+        {
+            "id": 0,
+            "name": "At the market!",
+            "file": "lesson_0.json",
+            "params": {
+                "level": 2,
+                "casual": 1,
+                "interjections": 1,
+                "colloquial": 0
+            }
+        },
+        {
+            "id": 2,
+            "name": "Out to Dinner",
+            "file": "lesson_2.json",
+            "params": {
+                "level": 1,
+                "casual": 0,
+                "interjections": 0,
+                "colloquial": 0
+            }
+        },
+        {
+            "id": 1,
+            "name": "Concert with Friends",
+            "file": "lesson_1.json",
+            "params": {
+                "level": 2,
+                "casual": 1,
+                "interjections": 1,
+                "colloquial": 0
+            }
+        },
+        {
+            "id": 3,
+            "name": "Lesson 1",
+            "file": "lesson_3.json",
+            "params": {
+                "level": 0,
+                "casual": 0,
+                "interjections": 0,
+                "colloquial": 0
+            }
+        }
     ]
-  }
+}

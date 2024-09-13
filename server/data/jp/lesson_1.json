@@ -1,61 +1,352 @@
 [
-  { "id": 1, "word": "<ruby>本<rt>ほん</rt></ruby>", "hiragana": "ほん", "english": "book", "prompt": "A book" },
-  { "id": 2, "word": "<ruby>猫<rt>ねこ</rt></ruby>", "hiragana": "ねこ", "english": "cat", "prompt": "A cat" },
-  { "id": 3, "word": "<ruby>大<rt>おお</rt></ruby>きい", "hiragana": "おおきい", "english": "big", "prompt": "Something big" },
-  { "id": 4, "word": "<ruby>小<rt>ちい</rt></ruby>さい", "hiragana": "ちい さい", "english": "small", "prompt": "Something small" },
-  { "id": 5, "word": "<ruby>犬<rt>いぬ</rt></ruby>", "hiragana": "いぬ", "english": "dog", "prompt": "A dog" },
-  
-  { "id": 6, "word": "<ruby>本<rt>ほん</rt></ruby>が<ruby>大<rt>おお</rt></ruby>きいです。", "hiragana": "ほんがおおきいです。", "english": "The book is big.", "prompt": "A big book" },
-  { "id": 7, "word": "<ruby>本<rt>ほん</rt></ruby>が<ruby>小<rt>ちい</rt></ruby>さいです。", "hiragana": "ほんがちいさいです。", "english": "The book is small.", "prompt": "A small book" },
-  { "id": 8, "word": "<ruby>犬<rt>いぬ</rt></ruby>が<ruby>大<rt>おお</rt></ruby>きいです。", "hiragana": "いぬがおおきいです。", "english": "The dog is big.", "prompt": "A big dog" },
-  { "id": 9, "word": "<ruby>犬<rt>いぬ</rt></ruby>が<ruby>小<rt>ちい</rt></ruby>さいです。", "hiragana": "いぬがちいさいです。", "english": "The dog is small.", "prompt": "A small dog" },
-  { "id": 10, "word": "<ruby>猫<rt>ねこ</rt></ruby>と<ruby>犬<rt>いぬ</rt></ruby>。", "hiragana": "ねこといぬ。", "english": "A cat and a dog.", "prompt": "A cat and a dog together" },
-
-  { "id": 11, "word": "<ruby>車<rt>くるま</rt></ruby>", "hiragana": "くるま", "english": "car", "prompt": "A car" },
-  { "id": 12, "word": "<ruby>家<rt>いえ</rt></ruby>", "hiragana": "いえ", "english": "house", "prompt": "A house" },
-  { "id": 13, "word": "<ruby>空<rt>そら</rt></ruby>", "hiragana": "そら", "english": "sky", "prompt": "The sky" },
-  { "id": 14, "word": "<ruby>木<rt>き</rt></ruby>", "hiragana": "き", "english": "tree", "prompt": "A tree" },
-  { "id": 15, "word": "<ruby>花<rt>はな</rt></ruby>", "hiragana": "はな", "english": "flower", "prompt": "A flower" },
-
-  { "id": 16, "word": "<ruby>大<rt>おお</rt></ruby>きい<ruby>車<rt>くるま</rt></ruby>。", "hiragana": "おおきいくるま。", "english": "A big car.", "prompt": "A big car" },
-  { "id": 17, "word": "<ruby>小<rt>ちい</rt></ruby>さい<ruby>花<rt>はな</rt></ruby>。", "hiragana": "ちいさいはな。", "english": "A small flower.", "prompt": "A small flower" },
-  { "id": 18, "word": "<ruby>花<rt>はな</rt></ruby>と<ruby>木<rt>き</rt></ruby>。", "hiragana": "はなとき。", "english": "A flower and a tree.", "prompt": "A flower and a tree together" },
-  { "id": 19, "word": "<ruby>家<rt>いえ</rt></ruby>の<ruby>空<rt>そら</rt></ruby>。", "hiragana": "いえのそら。", "english": "The sky above the house.", "prompt": "The sky above a house" },
-  { "id": 20, "word": "<ruby>犬<rt>いぬ</rt></ruby>と<ruby>車<rt>くるま</rt></ruby>。", "hiragana": "いぬとくるま。", "english": "A dog and a car.", "prompt": "A dog and a car together" },
-
-  { "id": 21, "word": "<ruby>水<rt>みず</rt></ruby>", "hiragana": "みず", "english": "water", "prompt": "Water" },
-  { "id": 22, "word": "<ruby>火<rt>ひ</rt></ruby>", "hiragana": "ひ", "english": "fire", "prompt": "Fire" },
-  { "id": 23, "word": "<ruby>山<rt>やま</rt></ruby>", "hiragana": "やま", "english": "mountain", "prompt": "A mountain" },
-  { "id": 24, "word": "<ruby>川<rt>かわ</rt></ruby>", "hiragana": "かわ", "english": "river", "prompt": "A river" },
-  { "id": 25, "word": "<ruby>町<rt>まち</rt></ruby>", "hiragana": "まち", "english": "town", "prompt": "A town" },
-
-  { "id": 26, "word": "<ruby>山<rt>やま</rt></ruby>と<ruby>川<rt>かわ</rt></ruby>。", "hiragana": "やまとかわ。", "english": "A mountain and a river.", "prompt": "A mountain and a river together" },
-  { "id": 27, "word": "<ruby>大<rt>おお</rt></ruby>きい<ruby>川<rt>かわ</rt></ruby>。", "hiragana": "おおきいかわ。", "english": "A big river.", "prompt": "A big river" },
-  { "id": 28, "word": "<ruby>小<rt>ちい</rt></ruby>さい<ruby>町<rt>まち</rt></ruby>。", "hiragana": "ちいさいまち。", "english": "A small town.", "prompt": "A small town" },
-  { "id": 29, "word": "<ruby>町<rt>まち</rt></ruby>の<ruby>火<rt>ひ</rt></ruby>。", "hiragana": "まちのひ。", "english": "The town's fire.", "prompt": "Fire in a town" },
-  { "id": 30, "word": "<ruby>水<rt>みず</rt></ruby>と<ruby>火<rt>ひ</rt></ruby>。", "hiragana": "みずとひ。", "english": "Water and fire.", "prompt": "Water and fire together" },
-  
-  { "id": 31, "word": "<ruby>雨<rt>あめ</rt></ruby>", "hiragana": "あめ", "english": "rain", "prompt": "Rain" },
-  { "id": 32, "word": "<ruby>風<rt>かぜ</rt></ruby>", "hiragana": "かぜ", "english": "wind", "prompt": "Wind" },
-  { "id": 33, "word": "<ruby>父<rt>ちち</rt></ruby>", "hiragana": "ちち", "english": "father", "prompt": "A father" },
-  { "id": 34, "word": "<ruby>母<rt>はは</rt></ruby>", "hiragana": "はは", "english": "mother", "prompt": "A mother" },
-  { "id": 35, "word": "<ruby>友<rt>とも</rt></ruby>だち", "hiragana": "ともだち", "english": "friend", "prompt": "A friend" },
-
-  { "id": 36, "word": "<ruby>雨<rt>あめ</rt></ruby>と<ruby>風<rt>かぜ</rt></ruby>。", "hiragana": "あめとかぜ。", "english": "Rain and wind.", "prompt": "Rain and wind together" },
-  { "id": 37, "word": "<ruby>父<rt>ちち</rt></ruby>と<ruby>母<rt>はは</rt></ruby>。", "hiragana": "ちちとはは。", "english": "Father and mother.", "prompt": "A father and a mother together" },
-  { "id": 38, "word": "<ruby>友<rt>とも</rt></ruby>だちは<ruby>大<rt>おお</rt></ruby>きいです。", "hiragana": "ともだちはおおきいです。", "english": "The friend is big.", "prompt": "A big friend" },
-  { "id": 39, "word": "<ruby>猫<rt>ねこ</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さい<ruby>友<rt>とも</rt></ruby>だちです。", "hiragana": "ねこはちいさいともだちです。", "english": "The cat is a small friend.", "prompt": "A small friend cat" },
-  { "id": 40, "word": "<ruby>山<rt>やま</rt></ruby>に<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ります。", "hiragana": "やまにあめがふります。", "english": "Rain falls on the mountain.", "prompt": "Rain falling on a mountain" },
-  
-  { "id": 41, "word": "<ruby>手<rt>て</rt></ruby>", "hiragana": "て", "english": "hand", "prompt": "A hand" },
-  { "id": 42, "word": "<ruby>目<rt>め</rt></ruby>", "hiragana": "meh", "english": "eye", "prompt": "An eye" },
-  { "id": 43, "word": "<ruby>口<rt>くち</rt></ruby>", "hiragana": "くち", "english": "mouth", "prompt": "A mouth" },
-  { "id": 44, "word": "<ruby>耳<rt>みみ</rt></ruby>", "hiragana": "みみ", "english": "ear", "prompt": "An ear" },
-  { "id": 45, "word": "<ruby>頭<rt>あたま</rt></ruby>", "hiragana": "あたま", "english": "head", "prompt": "A head" },
-  
-  { "id": 46, "word": "<ruby>頭<rt>あたま</rt></ruby>と<ruby>手<rt>て</rt></ruby>。", "hiragana": "あたまとて。", "english": "A head and a hand.", "prompt": "A head and a hand together" },
-  { "id": 47, "word": "<ruby>大<rt>おお</rt></ruby>きい<ruby>手<rt>て</rt></ruby>。", "hiragana": "おおきいて。", "english": "A big hand.", "prompt": "A big hand" },
-  { "id": 48, "word": "<ruby>小<rt>ちい</rt></ruby>さい<ruby>耳<rt>みみ</rt></ruby>。", "hiragana": "ちいさいみみ。", "english": "A small ear.", "prompt": "A small ear" },
-  { "id": 49, "word": "<ruby>目<rt>め</rt></ruby>と<ruby>口<rt>くち</rt></ruby>。", "hiragana": "めとくち。", "english": "An eye and a mouth.", "prompt": "An eye and a mouth together" },
-  { "id": 50, "word": "<ruby>母<rt>はは</rt></ruby>の<ruby>目<rt>め</rt></ruby>。", "hiragana": "ははのめ。", "english": "Mother's eye.", "prompt": "A mother's eye" }
+    {
+        "id": 1,
+        "line": "<ruby>本<rt>ほん</rt></ruby>",
+        "tts": "ほん",
+        "english": "book",
+        "prompt": "A book"
+    },
+    {
+        "id": 2,
+        "line": "<ruby>猫<rt>ねこ</rt></ruby>",
+        "tts": "ねこ",
+        "english": "cat",
+        "prompt": "A cat"
+    },
+    {
+        "id": 3,
+        "line": "<ruby>大<rt>おお</rt></ruby>きい",
+        "tts": "おおきい",
+        "english": "big",
+        "prompt": "Something big"
+    },
+    {
+        "id": 4,
+        "line": "<ruby>小<rt>ちい</rt></ruby>さい",
+        "tts": "ちい さい",
+        "english": "small",
+        "prompt": "Something small"
+    },
+    {
+        "id": 5,
+        "line": "<ruby>犬<rt>いぬ</rt></ruby>",
+        "tts": "いぬ",
+        "english": "dog",
+        "prompt": "A dog"
+    },
+    {
+        "id": 6,
+        "line": "<ruby>本<rt>ほん</rt></ruby>が<ruby>大<rt>おお</rt></ruby>きいです。",
+        "tts": "ほんがおおきいです。",
+        "english": "The book is big.",
+        "prompt": "A big book"
+    },
+    {
+        "id": 7,
+        "line": "<ruby>本<rt>ほん</rt></ruby>が<ruby>小<rt>ちい</rt></ruby>さいです。",
+        "tts": "ほんがちいさいです。",
+        "english": "The book is small.",
+        "prompt": "A small book"
+    },
+    {
+        "id": 8,
+        "line": "<ruby>犬<rt>いぬ</rt></ruby>が<ruby>大<rt>おお</rt></ruby>きいです。",
+        "tts": "いぬがおおきいです。",
+        "english": "The dog is big.",
+        "prompt": "A big dog"
+    },
+    {
+        "id": 9,
+        "line": "<ruby>犬<rt>いぬ</rt></ruby>が<ruby>小<rt>ちい</rt></ruby>さいです。",
+        "tts": "いぬがちいさいです。",
+        "english": "The dog is small.",
+        "prompt": "A small dog"
+    },
+    {
+        "id": 10,
+        "line": "<ruby>猫<rt>ねこ</rt></ruby>と<ruby>犬<rt>いぬ</rt></ruby>。",
+        "tts": "ねこといぬ。",
+        "english": "A cat and a dog.",
+        "prompt": "A cat and a dog together"
+    },
+    {
+        "id": 11,
+        "line": "<ruby>車<rt>くるま</rt></ruby>",
+        "tts": "くるま",
+        "english": "car",
+        "prompt": "A car"
+    },
+    {
+        "id": 12,
+        "line": "<ruby>家<rt>いえ</rt></ruby>",
+        "tts": "いえ",
+        "english": "house",
+        "prompt": "A house"
+    },
+    {
+        "id": 13,
+        "line": "<ruby>空<rt>そら</rt></ruby>",
+        "tts": "そら",
+        "english": "sky",
+        "prompt": "The sky"
+    },
+    {
+        "id": 14,
+        "line": "<ruby>木<rt>き</rt></ruby>",
+        "tts": "き",
+        "english": "tree",
+        "prompt": "A tree"
+    },
+    {
+        "id": 15,
+        "line": "<ruby>花<rt>はな</rt></ruby>",
+        "tts": "はな",
+        "english": "flower",
+        "prompt": "A flower"
+    },
+    {
+        "id": 16,
+        "line": "<ruby>大<rt>おお</rt></ruby>きい<ruby>車<rt>くるま</rt></ruby>。",
+        "tts": "おおきいくるま。",
+        "english": "A big car.",
+        "prompt": "A big car"
+    },
+    {
+        "id": 17,
+        "line": "<ruby>小<rt>ちい</rt></ruby>さい<ruby>花<rt>はな</rt></ruby>。",
+        "tts": "ちいさいはな。",
+        "english": "A small flower.",
+        "prompt": "A small flower"
+    },
+    {
+        "id": 18,
+        "line": "<ruby>花<rt>はな</rt></ruby>と<ruby>木<rt>き</rt></ruby>。",
+        "tts": "はなとき。",
+        "english": "A flower and a tree.",
+        "prompt": "A flower and a tree together"
+    },
+    {
+        "id": 19,
+        "line": "<ruby>家<rt>いえ</rt></ruby>の<ruby>空<rt>そら</rt></ruby>。",
+        "tts": "いえのそら。",
+        "english": "The sky above the house.",
+        "prompt": "The sky above a house"
+    },
+    {
+        "id": 20,
+        "line": "<ruby>犬<rt>いぬ</rt></ruby>と<ruby>車<rt>くるま</rt></ruby>。",
+        "tts": "いぬとくるま。",
+        "english": "A dog and a car.",
+        "prompt": "A dog and a car together"
+    },
+    {
+        "id": 21,
+        "line": "<ruby>水<rt>みず</rt></ruby>",
+        "tts": "みず",
+        "english": "water",
+        "prompt": "Water"
+    },
+    {
+        "id": 22,
+        "line": "<ruby>火<rt>ひ</rt></ruby>",
+        "tts": "ひ",
+        "english": "fire",
+        "prompt": "Fire"
+    },
+    {
+        "id": 23,
+        "line": "<ruby>山<rt>やま</rt></ruby>",
+        "tts": "やま",
+        "english": "mountain",
+        "prompt": "A mountain"
+    },
+    {
+        "id": 24,
+        "line": "<ruby>川<rt>かわ</rt></ruby>",
+        "tts": "かわ",
+        "english": "river",
+        "prompt": "A river"
+    },
+    {
+        "id": 25,
+        "line": "<ruby>町<rt>まち</rt></ruby>",
+        "tts": "まち",
+        "english": "town",
+        "prompt": "A town"
+    },
+    {
+        "id": 26,
+        "line": "<ruby>山<rt>やま</rt></ruby>と<ruby>川<rt>かわ</rt></ruby>。",
+        "tts": "やまとかわ。",
+        "english": "A mountain and a river.",
+        "prompt": "A mountain and a river together"
+    },
+    {
+        "id": 27,
+        "line": "<ruby>大<rt>おお</rt></ruby>きい<ruby>川<rt>かわ</rt></ruby>。",
+        "tts": "おおきいかわ。",
+        "english": "A big river.",
+        "prompt": "A big river"
+    },
+    {
+        "id": 28,
+        "line": "<ruby>小<rt>ちい</rt></ruby>さい<ruby>町<rt>まち</rt></ruby>。",
+        "tts": "ちいさいまち。",
+        "english": "A small town.",
+        "prompt": "A small town"
+    },
+    {
+        "id": 29,
+        "line": "<ruby>町<rt>まち</rt></ruby>の<ruby>火<rt>ひ</rt></ruby>。",
+        "tts": "まちのひ。",
+        "english": "The town's fire.",
+        "prompt": "Fire in a town"
+    },
+    {
+        "id": 30,
+        "line": "<ruby>水<rt>みず</rt></ruby>と<ruby>火<rt>ひ</rt></ruby>。",
+        "tts": "みずとひ。",
+        "english": "Water and fire.",
+        "prompt": "Water and fire together"
+    },
+    {
+        "id": 31,
+        "line": "<ruby>雨<rt>あめ</rt></ruby>",
+        "tts": "あめ",
+        "english": "rain",
+        "prompt": "Rain"
+    },
+    {
+        "id": 32,
+        "line": "<ruby>風<rt>かぜ</rt></ruby>",
+        "tts": "かぜ",
+        "english": "wind",
+        "prompt": "Wind"
+    },
+    {
+        "id": 33,
+        "line": "<ruby>父<rt>ちち</rt></ruby>",
+        "tts": "ちち",
+        "english": "father",
+        "prompt": "A father"
+    },
+    {
+        "id": 34,
+        "line": "<ruby>母<rt>はは</rt></ruby>",
+        "tts": "はは",
+        "english": "mother",
+        "prompt": "A mother"
+    },
+    {
+        "id": 35,
+        "line": "<ruby>友<rt>とも</rt></ruby>だち",
+        "tts": "ともだち",
+        "english": "friend",
+        "prompt": "A friend"
+    },
+    {
+        "id": 36,
+        "line": "<ruby>雨<rt>あめ</rt></ruby>と<ruby>風<rt>かぜ</rt></ruby>。",
+        "tts": "あめとかぜ。",
+        "english": "Rain and wind.",
+        "prompt": "Rain and wind together"
+    },
+    {
+        "id": 37,
+        "line": "<ruby>父<rt>ちち</rt></ruby>と<ruby>母<rt>はは</rt></ruby>。",
+        "tts": "ちちとはは。",
+        "english": "Father and mother.",
+        "prompt": "A father and a mother together"
+    },
+    {
+        "id": 38,
+        "line": "<ruby>友<rt>とも</rt></ruby>だちは<ruby>大<rt>おお</rt></ruby>きいです。",
+        "tts": "ともだちはおおきいです。",
+        "english": "The friend is big.",
+        "prompt": "A big friend"
+    },
+    {
+        "id": 39,
+        "line": "<ruby>猫<rt>ねこ</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さい<ruby>友<rt>とも</rt></ruby>だちです。",
+        "tts": "ねこはちいさいともだちです。",
+        "english": "The cat is a small friend.",
+        "prompt": "A small friend cat"
+    },
+    {
+        "id": 40,
+        "line": "<ruby>山<rt>やま</rt></ruby>に<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ります。",
+        "tts": "やまにあめがふります。",
+        "english": "Rain falls on the mountain.",
+        "prompt": "Rain falling on a mountain"
+    },
+    {
+        "id": 41,
+        "line": "<ruby>手<rt>て</rt></ruby>",
+        "tts": "て",
+        "english": "hand",
+        "prompt": "A hand"
+    },
+    {
+        "id": 42,
+        "line": "<ruby>目<rt>め</rt></ruby>",
+        "tts": "meh",
+        "english": "eye",
+        "prompt": "An eye"
+    },
+    {
+        "id": 43,
+        "line": "<ruby>口<rt>くち</rt></ruby>",
+        "tts": "くち",
+        "english": "mouth",
+        "prompt": "A mouth"
+    },
+    {
+        "id": 44,
+        "line": "<ruby>耳<rt>みみ</rt></ruby>",
+        "tts": "みみ",
+        "english": "ear",
+        "prompt": "An ear"
+    },
+    {
+        "id": 45,
+        "line": "<ruby>頭<rt>あたま</rt></ruby>",
+        "tts": "あたま",
+        "english": "head",
+        "prompt": "A head"
+    },
+    {
+        "id": 46,
+        "line": "<ruby>頭<rt>あたま</rt></ruby>と<ruby>手<rt>て</rt></ruby>。",
+        "tts": "あたまとて。",
+        "english": "A head and a hand.",
+        "prompt": "A head and a hand together"
+    },
+    {
+        "id": 47,
+        "line": "<ruby>大<rt>おお</rt></ruby>きい<ruby>手<rt>て</rt></ruby>。",
+        "tts": "おおきいて。",
+        "english": "A big hand.",
+        "prompt": "A big hand"
+    },
+    {
+        "id": 48,
+        "line": "<ruby>小<rt>ちい</rt></ruby>さい<ruby>耳<rt>みみ</rt></ruby>。",
+        "tts": "ちいさいみみ。",
+        "english": "A small ear.",
+        "prompt": "A small ear"
+    },
+    {
+        "id": 49,
+        "line": "<ruby>目<rt>め</rt></ruby>と<ruby>口<rt>くち</rt></ruby>。",
+        "tts": "めとくち。",
+        "english": "An eye and a mouth.",
+        "prompt": "An eye and a mouth together"
+    },
+    {
+        "id": 50,
+        "line": "<ruby>母<rt>はは</rt></ruby>の<ruby>目<rt>め</rt></ruby>。",
+        "tts": "ははのめ。",
+        "english": "Mother's eye.",
+        "prompt": "A mother's eye"
+    }
 ]

@@ -105,12 +105,57 @@
   border-radius: 10px;
 }
 
+/* Dropdowns and Hamburger Container */
+.header-container {
+  position: absolute; /* Change to absolute */
+  top: 10px;
+  right: 10px; /* Anchor to the top right */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add some space between elements */
+  z-index: 100; /* Ensure the menu is on top */
+}
+
+/* Lesson Dropdown Styling */
+.language-dropdown,
+.lesson-dropdown {
+  margin: 0; /* Remove margin to avoid unnecessary space */
+}
+
+.language-dropdown label,
+.lesson-dropdown label {
+  color: white;
+  font-size: 16px;
+  margin-right: 5px; /* Slightly reduce space */
+}
+
+.language-dropdown select,
+.lesson-dropdown select {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.language-dropdown select:hover,
+.lesson-dropdown select:hover {
+  border-color: #007bff;
+}
+
+.language-dropdown select:focus,
+.lesson-dropdown select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
 /* Hamburger Menu */
 .hamburger-menu {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 100; /* Ensure the menu is on top */
+  padding-left: 15px; /* Space for alignment */
 }
 
 .hamburger-icon {
@@ -213,60 +258,13 @@
     top: 60px; /* Adjust position for menu on smaller screens */
     right: 15px;
   }
-}
 
-/* Lesson Dropdown Styling */
-.lesson-dropdown {
-  position: absolute;
-  top: 10px;
-  right: 60px; /* Position next to the hamburger menu */
-  z-index: 100;
-}
-
-.lesson-dropdown label {
-  color: white;
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-.lesson-dropdown select {
-  background-color: #333;
-  color: white;
-  border: 1px solid #555;
-  padding: 8px 12px;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
-.lesson-dropdown select:hover {
-  border-color: #007bff;
-}
-
-.lesson-dropdown select:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-/* Responsive adjustments for mobile */
-@media (max-width: 768px) {
-  .lesson-dropdown {
-    top: 15px;
-    right: 80px;
-  }
-
-  .lesson-dropdown label {
-    font-size: 14px;
-  }
-
-  .lesson-dropdown select {
-    font-size: 14px;
-    padding: 6px 10px;
+  .header-container {
+    flex-direction: column; /* Stack dropdowns on smaller screens */
+    align-items: flex-start; /* Align dropdowns to the left on mobile */
+    right: 0; /* Adjust to allow for alignment on mobile */
   }
 }
-
 
 /* Extra small phones (portrait) */
 @media (max-width: 480px) {

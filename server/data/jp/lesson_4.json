@@ -1,75 +1,352 @@
 [
-  { "id": 1, "word": "<ruby>猫<rt>ねこ</rt></ruby>", "hiragana": "ねこ", "english": "cat", "prompt": "A cat sitting quietly" },
-  { "id": 2, "word": "<ruby>犬<rt>いぬ</rt></ruby>", "hiragana": "いぬ", "english": "dog", "prompt": "A dog standing or sitting" },
-  { "id": 3, "word": "<ruby>赤<rt>あか</rt></ruby>い", "hiragana": "あかい", "english": "red", "prompt": "The vibrant color red" },
-
-  { "id": 4, "word": "<ruby>猫<rt>ねこ</rt></ruby>がいる", "hiragana": "ねこがいる", "english": "There is a cat", "prompt": "A cat in a natural setting" },
-  { "id": 5, "word": "<ruby>犬<rt>いぬ</rt></ruby>がいる", "hiragana": "いぬがいる", "english": "There is a dog", "prompt": "A dog in a park or yard" },
-
-  { "id": 6, "word": "<ruby>赤<rt>あか</rt></ruby>い<ruby>猫<rt>ねこ</rt></ruby>", "hiragana": "あかいねこ", "english": "red cat", "prompt": "A cat with red fur" },
-  { "id": 7, "word": "<ruby>白<rt>しろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>", "hiragana": "しろいいぬ", "english": "white dog", "prompt": "A dog with white fur in a winter scene" },
-  { "id": 8, "word": "<ruby>青<rt>あお</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>", "hiragana": "あおいいぬ", "english": "blue dog", "prompt": "A dog with blue fur by a blue lake" },
-
-  { "id": 9, "word": "これは<ruby>猫<rt>ねこ</rt></ruby>です", "hiragana": "これはねこです", "english": "This is a cat", "prompt": "Pointing at a cat" },
-  { "id": 10, "word": "それは<ruby>犬<rt>いぬ</rt></ruby>です", "hiragana": "それはいぬです", "english": "That is a dog", "prompt": "Pointing at a dog" },
-  { "id": 11, "word": "あれは<ruby>赤<rt>あか</rt></ruby>い<ruby>猫<rt>ねこ</rt></ruby>です", "hiragana": "あれはあかいねこです", "english": "That over there is a red cat", "prompt": "Pointing at a red cat from a distance" },
-
-  { "id": 12, "word": "これは<ruby>白<rt>しろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>です", "hiragana": "これはしろいいぬです", "english": "This is a white dog", "prompt": "Pointing at a white dog" },
-  { "id": 13, "word": "それは<ruby>青<rt>あお</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>です", "hiragana": "それはあおいいぬです", "english": "That is a blue dog", "prompt": "Pointing at a blue dog" },
-
-  { "id": 14, "word": "あれは<ruby>黒<rt>くろ</rt></ruby>い<ruby>猫<rt>ねこ</rt></ruby>です", "hiragana": "あれはくろいねこです", "english": "That over there is a black cat", "prompt": "Pointing at a black cat from a distance" },
-  { "id": 15, "word": "これは<ruby>小<rt>ちい</rt></ruby>さい<ruby>犬<rt>いぬ</rt></ruby>です", "hiragana": "これはちいさいいぬです", "english": "This is a small dog", "prompt": "Pointing at a small dog" },
-
-  { "id": 16, "word": "それは<ruby>大<rt>おお</rt></ruby>きい<ruby>猫<rt>ねこ</rt></ruby>です", "hiragana": "それはおおきいねこです", "english": "That is a big cat", "prompt": "Pointing at a big cat" },
-  { "id": 17, "word": "あれは<ruby>赤<rt>あか</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>です", "hiragana": "あれはあかいさかなです", "english": "That over there is a red fish", "prompt": "Pointing at a red fish from a distance" },
-  
-  { "id": 18, "word": "これは<ruby>白<rt>しろ</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>です", "hiragana": "これはしろいさかなです", "english": "This is a white fish", "prompt": "Pointing at a white fish" },
-  { "id": 19, "word": "それは<ruby>青<rt>あお</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>です", "hiragana": "それはあおいさかなです", "english": "That is a blue fish", "prompt": "Pointing at a blue fish" },
-
-  { "id": 20, "word": "これは<ruby>黒<rt>くろ</rt></ruby>い<ruby>猫<rt>ねこ</rt></ruby>です", "hiragana": "これはくろいねこです", "english": "This is a black cat", "prompt": "Pointing at a black cat" },
-  { "id": 21, "word": "それは<ruby>小<rt>ちい</rt></ruby>さい<ruby>犬<rt>いぬ</rt></ruby>です", "hiragana": "それはちいさいいぬです", "english": "That is a small dog", "prompt": "Pointing at a small dog" },
-
-  { "id": 22, "word": "あれは<ruby>鳥<rt>とり</rt></ruby>です", "hiragana": "あれはとりです", "english": "That over there is a bird", "prompt": "Pointing at a bird from a distance" },
-  { "id": 23, "word": "これは<ruby>大<rt>おお</rt></ruby>きい<ruby>猫<rt>ねこ</rt></ruby>です", "hiragana": "これはおおきいねこです", "english": "This is a big cat", "prompt": "Pointing at a big cat" },
-
-  { "id": 24, "word": "それは<ruby>赤<rt>あか</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>です", "hiragana": "それはあかいさかなです", "english": "That is a red fish", "prompt": "Pointing at a red fish" },
-  { "id": 25, "word": "これは<ruby>白<rt>しろ</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>です", "hiragana": "これはしろいさかなです", "english": "This is a white fish", "prompt": "Pointing at a white fish" },
-
-  { "id": 26, "word": "あれは<ruby>黒<rt>くろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>です", "hiragana": "あれはくろいいぬです", "english": "That over there is a black dog", "prompt": "Pointing at a black dog from a distance" },
-  { "id": 27, "word": "これは<ruby>青<rt>あお</rt></ruby>い<ruby>猫<rt>ねこ</rt></ruby>です", "hiragana": "これはあおいねこです", "english": "This is a blue cat", "prompt": "Pointing at a blue cat" },
-
-  { "id": 28, "word": "それは<ruby>小<rt>ちい</rt></ruby>さい<ruby>鳥<rt>とり</rt></ruby>です", "hiragana": "それはちいさいとりです", "english": "That is a small bird", "prompt": "Pointing at a small bird" },
-  
-  { "id": 29, "word": "これは<ruby>青<rt>あお</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>です", "hiragana": "これはあおいさかなです", "english": "This is a blue fish", "prompt": "Pointing at a blue fish" },
-  { "id": 30, "word": "これは<ruby>黒<rt>くろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>です", "hiragana": "これはくろいいぬです", "english": "This is a black dog", "prompt": "Pointing at a black dog" },
-
-  { "id": 31, "word": "それは<ruby>白<rt>しろ</rt></ruby>い<ruby>鳥<rt>とり</rt></ruby>です", "hiragana": "それはしろいとりです", "english": "That is a white bird", "prompt": "Pointing at a white bird" },
-  { "id": 32, "word": "あれは<ruby>赤<rt>あか</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>です", "hiragana": "あれはあかいいぬです", "english": "That over there is a red dog", "prompt": "Pointing at a red dog from a distance" },
-
-  { "id": 33, "word": "これは<ruby>青<rt>あお</rt></ruby>い<ruby>鳥<rt>とり</rt></ruby>ですか", "hiragana": "これはあおいとりですか", "english": "Is this a blue bird", "prompt": "Pointing at a blue bird and asking a question" },
-  { "id": 34, "word": "それは<ruby>白<rt>しろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>ですか", "hiragana": "それはしろいいぬですか", "english": "Is that a white dog", "prompt": "Pointing at a white dog and asking a question" },
-
-  { "id": 35, "word": "あれは<ruby>赤<rt>あか</rt></ruby>い<ruby>鳥<rt>とり</rt></ruby>ですか", "hiragana": "あれはあかいとりですか", "english": "Is that over there a red bird", "prompt": "Pointing at a red bird from a distance and asking a question" },
-  { "id": 36, "word": "これは<ruby>小<rt>ちい</rt></ruby>さい<ruby>猫<rt>ねこ</rt></ruby>ですか", "hiragana": "これはちいさいねこですか", "english": "Is this a small cat", "prompt": "Pointing at a small cat and asking a question" },
-
-  { "id": 37, "word": "それは<ruby>黒<rt>くろ</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>ですか", "hiragana": "それはくろいさかなですか", "english": "Is that a black fish", "prompt": "Pointing at a black fish and asking a question" },
-  { "id": 38, "word": "あれは<ruby>青<rt>あお</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>ですか", "hiragana": "あれはあおいいぬですか", "english": "Is that over there a blue dog", "prompt": "Pointing at a blue dog from a distance and asking a question" },
-
-  { "id": 39, "word": "これは<ruby>赤<rt>あか</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>ですか", "hiragana": "これはあかいさかなですか", "english": "Is this a red fish", "prompt": "Pointing at a red fish and asking a question" },
-  { "id": 40, "word": "それは<ruby>小<rt>ちい</rt></ruby>さい<ruby>鳥<rt>とり</rt></ruby>ですか", "hiragana": "それはちいさいとりですか", "english": "Is that a small bird", "prompt": "Pointing at a small bird and asking a question" },
-
-  { "id": 41, "word": "これは<ruby>白<rt>しろ</rt></ruby>い<ruby>猫<rt>ねこ</rt></ruby>ですか", "hiragana": "これはしろいねこですか", "english": "Is this a white cat", "prompt": "Pointing at a white cat and asking a question" },
-  { "id": 42, "word": "それは<ruby>黒<rt>くろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>ですか", "hiragana": "それはくろいいぬですか", "english": "Is that a black dog", "prompt": "Pointing at a black dog and asking a question" },
-
-  { "id": 43, "word": "<ruby>赤<rt>あか</rt></ruby>い<ruby>鳥<rt>とり</rt></ruby>はどこですか", "hiragana": "あかいとりはどこですか", "english": "Where is the red bird", "prompt": "Looking around and asking where the red bird is" },
-  { "id": 44, "word": "<ruby>小<rt>ちい</rt></ruby>さい<ruby>魚<rt>さかな</rt></ruby>はどこですか", "hiragana": "ちいさいさかなはどこですか", "english": "Where is the small fish", "prompt": "Looking around and asking where the small fish is" },
-
-  { "id": 45, "word": "<ruby>大<rt>おお</rt></ruby>きい<ruby>猫<rt>ねこ</rt></ruby>はどこですか", "hiragana": "おおきいねこはどこですか", "english": "Where is the big cat", "prompt": "Looking around and asking where the big cat is" },
-  { "id": 46, "word": "<ruby>黒<rt>くろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>はどこですか", "hiragana": "くろいいぬはどこですか", "english": "Where is the black dog", "prompt": "Looking around and asking where the black dog is" },
-  
-  { "id": 47, "word": "<ruby>青<rt>あお</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>はどこですか", "hiragana": "あおいさかなはどこですか", "english": "Where is the blue fish", "prompt": "Looking around and asking where the blue fish is" },
-  { "id": 48, "word": "<ruby>赤<rt>あか</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>はどこですか", "hiragana": "あかいいぬはどこですか", "english": "Where is the red dog", "prompt": "Looking around and asking where the red dog is" },
-
-  { "id": 49, "word": "<ruby>白<rt>しろ</rt></ruby>い<ruby>鳥<rt>とり</rt></ruby>はどこですか", "hiragana": "しろいとりはどこですか", "english": "Where is the white bird", "prompt": "Looking around and asking where the white bird is" },
-  { "id": 50, "word": "<ruby>小<rt>ちい</rt></ruby>さい<ruby>猫<rt>ねこ</rt></ruby>はどこですか", "hiragana": "ちいさいねこはどこですか", "english": "Where is the small cat", "prompt": "Looking around and asking where the small cat is" }
+    {
+        "id": 1,
+        "line": "<ruby>猫<rt>ねこ</rt></ruby>",
+        "tts": "ねこ",
+        "english": "cat",
+        "prompt": "A cat sitting quietly"
+    },
+    {
+        "id": 2,
+        "line": "<ruby>犬<rt>いぬ</rt></ruby>",
+        "tts": "いぬ",
+        "english": "dog",
+        "prompt": "A dog standing or sitting"
+    },
+    {
+        "id": 3,
+        "line": "<ruby>赤<rt>あか</rt></ruby>い",
+        "tts": "あかい",
+        "english": "red",
+        "prompt": "The vibrant color red"
+    },
+    {
+        "id": 4,
+        "line": "<ruby>猫<rt>ねこ</rt></ruby>がいる",
+        "tts": "ねこがいる",
+        "english": "There is a cat",
+        "prompt": "A cat in a natural setting"
+    },
+    {
+        "id": 5,
+        "line": "<ruby>犬<rt>いぬ</rt></ruby>がいる",
+        "tts": "いぬがいる",
+        "english": "There is a dog",
+        "prompt": "A dog in a park or yard"
+    },
+    {
+        "id": 6,
+        "line": "<ruby>赤<rt>あか</rt></ruby>い<ruby>猫<rt>ねこ</rt></ruby>",
+        "tts": "あかいねこ",
+        "english": "red cat",
+        "prompt": "A cat with red fur"
+    },
+    {
+        "id": 7,
+        "line": "<ruby>白<rt>しろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>",
+        "tts": "しろいいぬ",
+        "english": "white dog",
+        "prompt": "A dog with white fur in a winter scene"
+    },
+    {
+        "id": 8,
+        "line": "<ruby>青<rt>あお</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>",
+        "tts": "あおいいぬ",
+        "english": "blue dog",
+        "prompt": "A dog with blue fur by a blue lake"
+    },
+    {
+        "id": 9,
+        "line": "これは<ruby>猫<rt>ねこ</rt></ruby>です",
+        "tts": "これはねこです",
+        "english": "This is a cat",
+        "prompt": "Pointing at a cat"
+    },
+    {
+        "id": 10,
+        "line": "それは<ruby>犬<rt>いぬ</rt></ruby>です",
+        "tts": "それはいぬです",
+        "english": "That is a dog",
+        "prompt": "Pointing at a dog"
+    },
+    {
+        "id": 11,
+        "line": "あれは<ruby>赤<rt>あか</rt></ruby>い<ruby>猫<rt>ねこ</rt></ruby>です",
+        "tts": "あれはあかいねこです",
+        "english": "That over there is a red cat",
+        "prompt": "Pointing at a red cat from a distance"
+    },
+    {
+        "id": 12,
+        "line": "これは<ruby>白<rt>しろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>です",
+        "tts": "これはしろいいぬです",
+        "english": "This is a white dog",
+        "prompt": "Pointing at a white dog"
+    },
+    {
+        "id": 13,
+        "line": "それは<ruby>青<rt>あお</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>です",
+        "tts": "それはあおいいぬです",
+        "english": "That is a blue dog",
+        "prompt": "Pointing at a blue dog"
+    },
+    {
+        "id": 14,
+        "line": "あれは<ruby>黒<rt>くろ</rt></ruby>い<ruby>猫<rt>ねこ</rt></ruby>です",
+        "tts": "あれはくろいねこです",
+        "english": "That over there is a black cat",
+        "prompt": "Pointing at a black cat from a distance"
+    },
+    {
+        "id": 15,
+        "line": "これは<ruby>小<rt>ちい</rt></ruby>さい<ruby>犬<rt>いぬ</rt></ruby>です",
+        "tts": "これはちいさいいぬです",
+        "english": "This is a small dog",
+        "prompt": "Pointing at a small dog"
+    },
+    {
+        "id": 16,
+        "line": "それは<ruby>大<rt>おお</rt></ruby>きい<ruby>猫<rt>ねこ</rt></ruby>です",
+        "tts": "それはおおきいねこです",
+        "english": "That is a big cat",
+        "prompt": "Pointing at a big cat"
+    },
+    {
+        "id": 17,
+        "line": "あれは<ruby>赤<rt>あか</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>です",
+        "tts": "あれはあかいさかなです",
+        "english": "That over there is a red fish",
+        "prompt": "Pointing at a red fish from a distance"
+    },
+    {
+        "id": 18,
+        "line": "これは<ruby>白<rt>しろ</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>です",
+        "tts": "これはしろいさかなです",
+        "english": "This is a white fish",
+        "prompt": "Pointing at a white fish"
+    },
+    {
+        "id": 19,
+        "line": "それは<ruby>青<rt>あお</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>です",
+        "tts": "それはあおいさかなです",
+        "english": "That is a blue fish",
+        "prompt": "Pointing at a blue fish"
+    },
+    {
+        "id": 20,
+        "line": "これは<ruby>黒<rt>くろ</rt></ruby>い<ruby>猫<rt>ねこ</rt></ruby>です",
+        "tts": "これはくろいねこです",
+        "english": "This is a black cat",
+        "prompt": "Pointing at a black cat"
+    },
+    {
+        "id": 21,
+        "line": "それは<ruby>小<rt>ちい</rt></ruby>さい<ruby>犬<rt>いぬ</rt></ruby>です",
+        "tts": "それはちいさいいぬです",
+        "english": "That is a small dog",
+        "prompt": "Pointing at a small dog"
+    },
+    {
+        "id": 22,
+        "line": "あれは<ruby>鳥<rt>とり</rt></ruby>です",
+        "tts": "あれはとりです",
+        "english": "That over there is a bird",
+        "prompt": "Pointing at a bird from a distance"
+    },
+    {
+        "id": 23,
+        "line": "これは<ruby>大<rt>おお</rt></ruby>きい<ruby>猫<rt>ねこ</rt></ruby>です",
+        "tts": "これはおおきいねこです",
+        "english": "This is a big cat",
+        "prompt": "Pointing at a big cat"
+    },
+    {
+        "id": 24,
+        "line": "それは<ruby>赤<rt>あか</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>です",
+        "tts": "それはあかいさかなです",
+        "english": "That is a red fish",
+        "prompt": "Pointing at a red fish"
+    },
+    {
+        "id": 25,
+        "line": "これは<ruby>白<rt>しろ</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>です",
+        "tts": "これはしろいさかなです",
+        "english": "This is a white fish",
+        "prompt": "Pointing at a white fish"
+    },
+    {
+        "id": 26,
+        "line": "あれは<ruby>黒<rt>くろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>です",
+        "tts": "あれはくろいいぬです",
+        "english": "That over there is a black dog",
+        "prompt": "Pointing at a black dog from a distance"
+    },
+    {
+        "id": 27,
+        "line": "これは<ruby>青<rt>あお</rt></ruby>い<ruby>猫<rt>ねこ</rt></ruby>です",
+        "tts": "これはあおいねこです",
+        "english": "This is a blue cat",
+        "prompt": "Pointing at a blue cat"
+    },
+    {
+        "id": 28,
+        "line": "それは<ruby>小<rt>ちい</rt></ruby>さい<ruby>鳥<rt>とり</rt></ruby>です",
+        "tts": "それはちいさいとりです",
+        "english": "That is a small bird",
+        "prompt": "Pointing at a small bird"
+    },
+    {
+        "id": 29,
+        "line": "これは<ruby>青<rt>あお</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>です",
+        "tts": "これはあおいさかなです",
+        "english": "This is a blue fish",
+        "prompt": "Pointing at a blue fish"
+    },
+    {
+        "id": 30,
+        "line": "これは<ruby>黒<rt>くろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>です",
+        "tts": "これはくろいいぬです",
+        "english": "This is a black dog",
+        "prompt": "Pointing at a black dog"
+    },
+    {
+        "id": 31,
+        "line": "それは<ruby>白<rt>しろ</rt></ruby>い<ruby>鳥<rt>とり</rt></ruby>です",
+        "tts": "それはしろいとりです",
+        "english": "That is a white bird",
+        "prompt": "Pointing at a white bird"
+    },
+    {
+        "id": 32,
+        "line": "あれは<ruby>赤<rt>あか</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>です",
+        "tts": "あれはあかいいぬです",
+        "english": "That over there is a red dog",
+        "prompt": "Pointing at a red dog from a distance"
+    },
+    {
+        "id": 33,
+        "line": "これは<ruby>青<rt>あお</rt></ruby>い<ruby>鳥<rt>とり</rt></ruby>ですか",
+        "tts": "これはあおいとりですか",
+        "english": "Is this a blue bird",
+        "prompt": "Pointing at a blue bird and asking a question"
+    },
+    {
+        "id": 34,
+        "line": "それは<ruby>白<rt>しろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>ですか",
+        "tts": "それはしろいいぬですか",
+        "english": "Is that a white dog",
+        "prompt": "Pointing at a white dog and asking a question"
+    },
+    {
+        "id": 35,
+        "line": "あれは<ruby>赤<rt>あか</rt></ruby>い<ruby>鳥<rt>とり</rt></ruby>ですか",
+        "tts": "あれはあかいとりですか",
+        "english": "Is that over there a red bird",
+        "prompt": "Pointing at a red bird from a distance and asking a question"
+    },
+    {
+        "id": 36,
+        "line": "これは<ruby>小<rt>ちい</rt></ruby>さい<ruby>猫<rt>ねこ</rt></ruby>ですか",
+        "tts": "これはちいさいねこですか",
+        "english": "Is this a small cat",
+        "prompt": "Pointing at a small cat and asking a question"
+    },
+    {
+        "id": 37,
+        "line": "それは<ruby>黒<rt>くろ</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>ですか",
+        "tts": "それはくろいさかなですか",
+        "english": "Is that a black fish",
+        "prompt": "Pointing at a black fish and asking a question"
+    },
+    {
+        "id": 38,
+        "line": "あれは<ruby>青<rt>あお</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>ですか",
+        "tts": "あれはあおいいぬですか",
+        "english": "Is that over there a blue dog",
+        "prompt": "Pointing at a blue dog from a distance and asking a question"
+    },
+    {
+        "id": 39,
+        "line": "これは<ruby>赤<rt>あか</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>ですか",
+        "tts": "これはあかいさかなですか",
+        "english": "Is this a red fish",
+        "prompt": "Pointing at a red fish and asking a question"
+    },
+    {
+        "id": 40,
+        "line": "それは<ruby>小<rt>ちい</rt></ruby>さい<ruby>鳥<rt>とり</rt></ruby>ですか",
+        "tts": "それはちいさいとりですか",
+        "english": "Is that a small bird",
+        "prompt": "Pointing at a small bird and asking a question"
+    },
+    {
+        "id": 41,
+        "line": "これは<ruby>白<rt>しろ</rt></ruby>い<ruby>猫<rt>ねこ</rt></ruby>ですか",
+        "tts": "これはしろいねこですか",
+        "english": "Is this a white cat",
+        "prompt": "Pointing at a white cat and asking a question"
+    },
+    {
+        "id": 42,
+        "line": "それは<ruby>黒<rt>くろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>ですか",
+        "tts": "それはくろいいぬですか",
+        "english": "Is that a black dog",
+        "prompt": "Pointing at a black dog and asking a question"
+    },
+    {
+        "id": 43,
+        "line": "<ruby>赤<rt>あか</rt></ruby>い<ruby>鳥<rt>とり</rt></ruby>はどこですか",
+        "tts": "あかいとりはどこですか",
+        "english": "Where is the red bird",
+        "prompt": "Looking around and asking where the red bird is"
+    },
+    {
+        "id": 44,
+        "line": "<ruby>小<rt>ちい</rt></ruby>さい<ruby>魚<rt>さかな</rt></ruby>はどこですか",
+        "tts": "ちいさいさかなはどこですか",
+        "english": "Where is the small fish",
+        "prompt": "Looking around and asking where the small fish is"
+    },
+    {
+        "id": 45,
+        "line": "<ruby>大<rt>おお</rt></ruby>きい<ruby>猫<rt>ねこ</rt></ruby>はどこですか",
+        "tts": "おおきいねこはどこですか",
+        "english": "Where is the big cat",
+        "prompt": "Looking around and asking where the big cat is"
+    },
+    {
+        "id": 46,
+        "line": "<ruby>黒<rt>くろ</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>はどこですか",
+        "tts": "くろいいぬはどこですか",
+        "english": "Where is the black dog",
+        "prompt": "Looking around and asking where the black dog is"
+    },
+    {
+        "id": 47,
+        "line": "<ruby>青<rt>あお</rt></ruby>い<ruby>魚<rt>さかな</rt></ruby>はどこですか",
+        "tts": "あおいさかなはどこですか",
+        "english": "Where is the blue fish",
+        "prompt": "Looking around and asking where the blue fish is"
+    },
+    {
+        "id": 48,
+        "line": "<ruby>赤<rt>あか</rt></ruby>い<ruby>犬<rt>いぬ</rt></ruby>はどこですか",
+        "tts": "あかいいぬはどこですか",
+        "english": "Where is the red dog",
+        "prompt": "Looking around and asking where the red dog is"
+    },
+    {
+        "id": 49,
+        "line": "<ruby>白<rt>しろ</rt></ruby>い<ruby>鳥<rt>とり</rt></ruby>はどこですか",
+        "tts": "しろいとりはどこですか",
+        "english": "Where is the white bird",
+        "prompt": "Looking around and asking where the white bird is"
+    },
+    {
+        "id": 50,
+        "line": "<ruby>小<rt>ちい</rt></ruby>さい<ruby>猫<rt>ねこ</rt></ruby>はどこですか",
+        "tts": "ちいさいねこはどこですか",
+        "english": "Where is the small cat",
+        "prompt": "Looking around and asking where the small cat is"
+    }
 ]
