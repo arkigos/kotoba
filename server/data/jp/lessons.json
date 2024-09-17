@@ -2,69 +2,63 @@
     "lessons": [
         {
             "id": 0,
-            "name": "Functionals",
+            "name": "Introducing Yourself",
             "file": "lesson_0.json",
             "params": {
-              "level": 0, 
-              "casual": 0,
-              "colloquial": 0,
-              "interjections": 0
+                "level": "Beginner",
+                "casual": 1,
+                "prompt": "Introducing Yourself: \"What is your name? Where are you from?\""
             }
-          },
-      {
-        "id": 1,
-        "name": "Basics",
-        "file": "lesson_1.json",
-        "params": {
-          "level": 0, 
-          "casual": 0,
-          "colloquial": 0,
-          "interjections": 0
+        },
+        {
+            "id": 1,
+            "name": "Daily Routine",
+            "file": "lesson_1.json",
+            "params": {
+                "level": "Beginner",
+                "casual": 1,
+                "prompt": "Daily Routine: \"What do you do every day?\""
+            }
+        },
+        {
+            "id": 2,
+            "name": "Family Members",
+            "file": "lesson_2.json",
+            "params": {
+                "level": "Beginner",
+                "casual": 1,
+                "prompt": "Family Members: \"Who are the people in your family?\""
+            }
+        },
+        {
+            "id": 3,
+            "name": "Telling the Time",
+            "file": "lesson_3.json",
+            "params": {
+                "level": "Beginner",
+                "casual": 1,
+                "prompt": "Telling the Time: \"What time is it now?\""
+            }
+        },
+        {
+            "id": 4,
+            "name": "Shopping for Food",
+            "file": "lesson_4.json",
+            "params": {
+                "level": "Beginner",
+                "casual": 1,
+                "prompt": "Shopping for Food: \"What food do you want to buy?\""
+            }
+        },
+        {
+            "id": 5,
+            "name": "Describing Your House",
+            "file": "lesson_5.json",
+            "params": {
+                "level": "Beginner",
+                "casual": 1,
+                "prompt": "Describing Your House: \"Where do you live?\""
+            }
         }
-      },
-      {
-        "id": 2,
-        "name": "Travel",
-        "file": "lesson_2.json",
-        "params": {
-          "level": 0, 
-          "casual": 0,
-          "colloquial": 0,
-          "interjections": 0
-        }
-      },
-      {
-        "id": 3,
-        "name": "Hello!",
-        "file": "lesson_3.json",
-        "params": {
-          "level": 0, 
-          "casual": 0,
-          "colloquial": 0,
-          "interjections": 0
-        }
-      },
-      {
-        "id": 4,
-        "name": "Animals and Colors",
-        "file": "lesson_4.json",
-        "params": {
-          "level": 0, 
-          "casual": 0,
-          "colloquial": 0,
-          "interjections": 0
-        }
-      },
-      {
-        "id": 5,
-        "name": "The Store",
-        "file": "lesson_5.json",
-        "params": {
-          "level": 0, 
-          "casual": 0,
-          "colloquial": 0,
-          "interjections": 0
-        }
-      }
     ]
-  }
+}

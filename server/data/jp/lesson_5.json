@@ -1,625 +1,352 @@
 [
     {
-        "id": 1,
-        "english": "I go to the store.",
-        "tts": "わたしはみせにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>店<rt>みせ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to a store."
+      "id": 1,
+      "line": "私は<ruby>アパート<rt>アパート</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。",
+      "tts": "わたしはアパートにすんでいます。",
+      "english": "I live in an apartment.",
+      "prompt": "Show the exterior of an apartment building, focusing on a specific window as if someone lives there."
     },
     {
-        "id": 2,
-        "english": "You go to the store.",
-        "tts": "あなたはみせにいく。",
-        "line": "あなたは<ruby>店<rt>みせ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to a store."
+      "id": 2,
+      "line": "私は<ruby>小<rt>ちい</rt></ruby>さい<ruby>アパート<rt>アパート</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。",
+      "tts": "わたしはちいさいアパートにすんでいます。",
+      "english": "I live in a small apartment.",
+      "prompt": "Show a cozy, minimally furnished apartment, highlighting its small size."
     },
     {
-        "id": 3,
-        "english": "We go to the store.",
-        "tts": "わたしたちはみせにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>店<rt>みせ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to a store."
+      "id": 3,
+      "line": "私は<ruby>静<rt>しず</rt></ruby>かな<ruby>アパート<rt>アパート</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。",
+      "tts": "わたしはしずかなアパートにすんでいます。",
+      "english": "I live in a quiet apartment.",
+      "prompt": "Show a peaceful scene inside an apartment with minimal noise, perhaps sunlight streaming through the window."
     },
     {
-        "id": 4,
-        "english": "I buy food.",
-        "tts": "わたしはたべものをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a person buying food."
+      "id": 4,
+      "line": "私は<ruby>静<rt>しず</rt></ruby>かな<ruby>町<rt>まち</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。",
+      "tts": "わたしはしずかなまちにすんでいます。",
+      "english": "I live in a quiet town.",
+      "prompt": "Show a serene street scene in a small town with few people, maybe a park or a local shop."
     },
     {
-        "id": 5,
-        "english": "You buy food.",
-        "tts": "あなたはたべものをかう。",
-        "line": "あなたは<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of another person buying food."
+      "id": 5,
+      "line": "私は<ruby>新<rt>あたら</rt></ruby>しい<ruby>町<rt>まち</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。",
+      "tts": "わたしはあたらしいまちにすんでいます。",
+      "english": "I live in a new town.",
+      "prompt": "Show a developing town with modern buildings and infrastructure, conveying a sense of newness."
     },
     {
-        "id": 6,
-        "english": "We buy food.",
-        "tts": "わたしたちはたべものをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a group of people buying food."
+      "id": 6,
+      "line": "あなたは<ruby>静<rt>しず</rt></ruby>かな<ruby>町<rt>まち</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいますか。",
+      "tts": "あなたはしずかなまちにすんでいますか。",
+      "english": "Do you live in a quiet town?",
+      "prompt": "Show a person looking thoughtful, pondering the question of living in a quiet town."
     },
     {
-        "id": 7,
-        "english": "I buy snacks.",
-        "tts": "わたしはおやつをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>はおやつを<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a person buying snacks."
+      "id": 7,
+      "line": "あなたは<ruby>新<rt>あたら</rt></ruby>しい<ruby>町<rt>まち</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいますか。",
+      "tts": "あなたはあたらしいまちにすんでいますか。",
+      "english": "Do you live in a new town?",
+      "prompt": "Show a person looking curious, wondering if the other person lives in a new town."
     },
     {
-        "id": 8,
-        "english": "You buy snacks.",
-        "tts": "あなたはおやつをかう。",
-        "line": "あなたはおやつを<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of another person buying snacks."
+      "id": 8,
+      "line": "あなたは<ruby>新<rt>あたら</rt></ruby>しい<ruby>アパート<rt>アパート</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいますか。",
+      "tts": "あなたはあたらしいアパートにすんでいますか。",
+      "english": "Do you live in a new apartment?",
+      "prompt": "Show a person gesturing towards a modern apartment building, asking if the other person lives there."
     },
     {
-        "id": 9,
-        "english": "We buy snacks.",
-        "tts": "わたしたちはおやつをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちはおやつを<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a group of people buying snacks."
+      "id": 9,
+      "line": "あなたは<ruby>小<rt>ちい</rt></ruby>さい<ruby>アパート<rt>アパート</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいますか。",
+      "tts": "あなたはちいさいアパートにすんでいますか。",
+      "english": "Do you live in a small apartment?",
+      "prompt": "Show a person making a small gesture with their hands, inquiring about the size of the other person's apartment."
     },
     {
-        "id": 10,
-        "english": "I go to buy snacks.",
-        "tts": "わたしはおやつをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>はおやつを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to buy snacks."
+      "id": 10,
+      "line": "あなたは<ruby>アパート<rt>アパート</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいますか？",
+      "tts": "あなたはアパートにすんでいますか。",
+      "english": "Do you live in an apartment?",
+      "prompt": "Show a person simply asking the question directly, curious about the other person's living situation."
     },
     {
-        "id": 11,
-        "english": "You go to buy snacks.",
-        "tts": "あなたはおやつをかいにいく。",
-        "line": "あなたはおやつを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to buy snacks."
+      "id": 11,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>静<rt>しず</rt></ruby>かです。",
+      "tts": "わたしのいえはしずかです。",
+      "english": "My house is quiet.",
+      "prompt": "Show a peaceful and quiet scene inside a house, maybe with soft lighting and minimal furniture."
     },
     {
-        "id": 12,
-        "english": "We go to buy snacks.",
-        "tts": "わたしたちはおやつをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちはおやつを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to buy snacks."
+      "id": 12,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>新<rt>あたら</rt></ruby>しいです。",
+      "tts": "わたしのいえはあたらしいです。",
+      "english": "My house is new.",
+      "prompt": "Show a modern house with sleek design and new appliances, emphasizing its newness."
     },
     {
-        "id": 13,
-        "english": "I buy fruits.",
-        "tts": "わたしはくだものをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>果<rt>くだ</rt></ruby>ものを<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a person buying fruits."
+      "id": 13,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さいです。",
+      "tts": "わたしのいえはちいさいです。",
+      "english": "My house is small.",
+      "prompt": "Show a cozy house with limited space, potentially a charming cottage or a tiny home."
     },
     {
-        "id": 14,
-        "english": "You buy fruits.",
-        "tts": "あなたはくだものをかう。",
-        "line": "あなたは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of another person buying fruits."
+      "id": 14,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>町<rt>まち</rt></ruby>にあります。",
+      "tts": "わたしのいえはまちにあります。",
+      "english": "My house is in town.",
+      "prompt": "Show a house situated in a town setting, surrounded by other houses and buildings."
     },
     {
-        "id": 15,
-        "english": "We buy fruits.",
-        "tts": "わたしたちはくだものをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a group of people buying fruits."
+      "id": 15,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くにあります。",
+      "tts": "わたしのいえはえきのちかくにあります。",
+      "english": "My house is near the station.",
+      "prompt": "Show a house located within a short walking distance of a train station, highlighting its convenience."
     },
     {
-        "id": 16,
-        "english": "I go to buy fruits.",
-        "tts": "わたしはくだものをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>果<rt>くだ</rt></ruby>ものを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to buy fruits."
+      "id": 16,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>町<rt>まち</rt></ruby>にありますか。",
+      "tts": "あなたのいえはまちにありますか。",
+      "english": "Is your house in town?",
+      "prompt": "Show a person asking the question while gesturing towards a general town area, inquiring about the location."
     },
     {
-        "id": 17,
-        "english": "You go to buy fruits.",
-        "tts": "あなたはくだものをかいにいく。",
-        "line": "あなたは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to buy fruits."
+      "id": 17,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くにありますか。",
+      "tts": "あなたのいえはえきのちかくにありますか。",
+      "english": "Is your house near the station?",
+      "prompt": "Show a person pointing towards a train station, asking if the other person's house is nearby."
     },
     {
-        "id": 18,
-        "english": "We go to buy fruits.",
-        "tts": "わたしたちはくだものをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to buy fruits."
+      "id": 18,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さいですか。",
+      "tts": "あなたのいえはちいさいですか。",
+      "english": "Is your house small?",
+      "prompt": "Show a person making a small gesture with their hands, asking about the size of the other person's house."
     },
     {
-        "id": 19,
-        "english": "I buy vegetables.",
-        "tts": "わたしはやさいをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a person buying vegetables."
+      "id": 19,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>新<rt>あたら</rt></ruby>しいですか。",
+      "tts": "あなたのいえはあたらしいですか。",
+      "english": "Is your house new?",
+      "prompt": "Show a person looking curious, asking if the other person's house is new."
     },
     {
-        "id": 20,
-        "english": "You buy vegetables.",
-        "tts": "あなたはやさいをかう。",
-        "line": "あなたは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of another person buying vegetables."
+      "id": 20,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>静<rt>しず</rt></ruby>かですか。",
+      "tts": "あなたのいえはしずかですか。",
+      "english": "Is your house quiet?",
+      "prompt": "Show a person cupping their ear, asking if the other person's house is typically quiet."
     },
     {
-        "id": 21,
-        "english": "We buy vegetables.",
-        "tts": "わたしたちはやさいをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a group of people buying vegetables."
+      "id": 21,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>から<ruby>遠<rt>とお</rt></ruby>いです。",
+      "tts": "わたしのいえはえきからとおいです。",
+      "english": "My house is far from the station.",
+      "prompt": "Show a house located at a considerable distance from a train station, highlighting its inconvenience."
     },
     {
-        "id": 22,
-        "english": "I go to buy vegetables.",
-        "tts": "わたしはやさいをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to buy vegetables."
+      "id": 22,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>公園<rt>こうえん</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くです。",
+      "tts": "わたしのいえはこうえんのちかくです。",
+      "english": "My house is near a park.",
+      "prompt": "Show a house located close to a park, with children playing or people relaxing."
     },
     {
-        "id": 23,
-        "english": "You go to buy vegetables.",
-        "tts": "あなたはやさいをかいにいく。",
-        "line": "あなたは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to buy vegetables."
+      "id": 23,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>コンビニ<rt>コンビニ</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くです。",
+      "tts": "わたしのいえはコンビニのちかくです。",
+      "english": "My house is near a convenience store.",
+      "prompt": "Show a house located a short walk away from a convenience store, highlighting its accessibility."
     },
     {
-        "id": 24,
-        "english": "We go to buy vegetables.",
-        "tts": "わたしたちはやさいをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to buy vegetables."
+      "id": 24,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>スーパー<rt>スーパー</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くです。",
+      "tts": "わたしのいえはスーパーのちかくです。",
+      "english": "My house is near a supermarket.",
+      "prompt": "Show a house situated near a supermarket, emphasizing the convenience of grocery shopping."
     },
     {
-        "id": 25,
-        "english": "I sell snacks.",
-        "tts": "わたしはおやつをうる。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>はおやつを<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of a person selling snacks."
+      "id": 25,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>レストラン<rt>レストラン</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くです。",
+      "tts": "わたしのいえはレストランのちかくです。",
+      "english": "My house is near a restaurant.",
+      "prompt": "Show a house located close to various restaurants, highlighting the culinary options available."
     },
     {
-        "id": 26,
-        "english": "You sell snacks.",
-        "tts": "あなたはおやつをうる。",
-        "line": "あなたはおやつを<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of another person selling snacks."
+      "id": 26,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>公園<rt>こうえん</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くですか。",
+      "tts": "あなたのいえはこうえんのちかくですか。",
+      "english": "Is your house near a park?",
+      "prompt": "Show a person gesturing towards a park, inquiring about the proximity of the other person's house."
     },
     {
-        "id": 27,
-        "english": "We sell snacks.",
-        "tts": "わたしたちはおやつをうる。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちはおやつを<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of a group of people selling snacks."
+      "id": 27,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>コンビニ<rt>コンビニ</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くですか。",
+      "tts": "あなたのいえはコンビニのちかくですか。",
+      "english": "Is your house near a convenience store?",
+      "prompt": "Show a person miming buying something at a convenience store, asking if the other person lives nearby."
     },
     {
-        "id": 28,
-        "english": "I go to sell snacks.",
-        "tts": "わたしはおやつをうりにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>はおやつを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to sell snacks."
+      "id": 28,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>スーパー<rt>スーパー</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くですか。",
+      "tts": "あなたのいえはスーパーのちかくですか。",
+      "english": "Is your house near a supermarket?",
+      "prompt": "Show a person pushing a shopping cart, asking if the other person's house is near a supermarket."
     },
     {
-        "id": 29,
-        "english": "You go to sell snacks.",
-        "tts": "あなたはおやつをうりにいく。",
-        "line": "あなたはおやつを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to sell snacks."
+      "id": 29,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>レストラン<rt>レストラン</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くですか。",
+      "tts": "あなたのいえはレストランのちかくですか。",
+      "english": "Is your house near restaurants?",
+      "prompt": "Show a person looking excited about food, asking if the other person's house is near restaurants."
     },
     {
-        "id": 30,
-        "english": "We go to sell snacks.",
-        "tts": "わたしたちはおやつをうりにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちはおやつを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to sell snacks."
+      "id": 30,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>から<ruby>遠<rt>とお</rt></ruby>いですか。",
+      "tts": "あなたのいえはえきからとおいですか。",
+      "english": "Is your house far from the station?",
+      "prompt": "Show a person looking concerned about distance, asking if the other person's house is far from the station."
     },
     {
-        "id": 31,
-        "english": "I sell fruits.",
-        "tts": "わたしはくだものをうる。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>果<rt>くだ</rt></ruby>ものを<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of a person selling fruits."
+      "id": 31,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>便利<rt>べんり</rt></ruby>ですよ。",
+      "tts": "わたしのいえはべんりですよ。",
+      "english": "My house is convenient.",
+      "prompt": "Show various convenient locations near a house, such as a bus stop, a shop, and a park."
     },
     {
-        "id": 32,
-        "english": "You sell fruits.",
-        "tts": "あなたはくだものをうる。",
-        "line": "あなたは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of another person selling fruits."
+      "id": 32,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>快適<rt>かいてき</rt></ruby>ですよ。",
+      "tts": "わたしのいえはかいてきですよ。",
+      "english": "My house is comfortable.",
+      "prompt": "Show a cozy living room with comfortable furniture, warm lighting, and a relaxed atmosphere."
     },
     {
-        "id": 33,
-        "english": "We sell fruits.",
-        "tts": "わたしたちはくだものをうる。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of a group of people selling fruits."
+      "id": 33,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>広<rt>ひろ</rt></ruby>いですよ。",
+      "tts": "わたしのいえはひろいですよ。",
+      "english": "My house is spacious.",
+      "prompt": "Show a grand house with high ceilings, large rooms, and a sense of openness."
     },
     {
-        "id": 34,
-        "english": "I go to sell fruits.",
-        "tts": "わたしはくだものをうりにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>果<rt>くだ</rt></ruby>ものを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to sell fruits."
+      "id": 34,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>明<rt>あか</rt></ruby>るいですよ。",
+      "tts": "わたしのいえはあかるいですよ。",
+      "english": "My house is bright.",
+      "prompt": "Show a house with large windows allowing plenty of natural light to illuminate the interior."
     },
     {
-        "id": 35,
-        "english": "You go to sell fruits.",
-        "tts": "あなたはくだものをうりにいく。",
-        "line": "あなたは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to sell fruits."
+      "id": 35,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>綺麗<rt>きれい</rt></ruby>ですよ。",
+      "tts": "わたしのいえはきれいですよ。",
+      "english": "My house is clean.",
+      "prompt": "Show a spotless house with everything tidy and organized, highlighting its cleanliness."
     },
     {
-        "id": 36,
-        "english": "We go to sell fruits.",
-        "tts": "わたしたちはくだものをうりにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to sell fruits."
+      "id": 36,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>便利<rt>べんり</rt></ruby>ですか。",
+      "tts": "あなたのいえはべんりですか。",
+      "english": "Is your house convenient?",
+      "prompt": "Show a person asking while miming easy access to different amenities, inquiring about the convenience."
     },
     {
-        "id": 37,
-        "english": "I sell vegetables.",
-        "tts": "わたしはやさいをうる。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>野菜<rt>やさい</rt></ruby>を<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of a person selling vegetables."
+      "id": 37,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>快適<rt>かいてき</rt></ruby>ですか。",
+      "tts": "あなたのいえはかいてきですか。",
+      "english": "Is your house comfortable?",
+      "prompt": "Show a person relaxing comfortably, asking if the other person's house offers the same level of comfort."
     },
     {
-        "id": 38,
-        "english": "You sell vegetables.",
-        "tts": "あなたはやさいをうる。",
-        "line": "あなたは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of another person selling vegetables."
+      "id": 38,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>広<rt>ひろ</rt></ruby>いですか。",
+      "tts": "あなたのいえはひろいですか。",
+      "english": "Is your house spacious?",
+      "prompt": "Show a person gesturing with open arms, inquiring about the spaciousness of the other person's house."
     },
     {
-        "id": 39,
-        "english": "We sell vegetables.",
-        "tts": "わたしたちはやさいをうる。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of a group of people selling vegetables."
+      "id": 39,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>明<rt>あか</rt></ruby>るいですか。",
+      "tts": "あなたのいえはあかるいですか。",
+      "english": "Is your house bright?",
+      "prompt": "Show a person squinting as if entering a bright place, asking if the other person's house is well-lit."
     },
     {
-        "id": 1,
-        "english": "I go to the store.",
-        "tts": "わたしはみせにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>店<rt>みせ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to a store."
+      "id": 40,
+      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>綺麗<rt>きれい</rt></ruby>ですか。",
+      "tts": "あなたのいえはきれいですか。",
+      "english": "Is your house clean?",
+      "prompt": "Show a person pretending to dust, playfully inquiring about the cleanliness of the other person's house."
     },
     {
-        "id": 2,
-        "english": "You go to the store.",
-        "tts": "あなたはみせにいく。",
-        "line": "あなたは<ruby>店<rt>みせ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to a store."
+      "id": 41,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>綺麗<rt>きれい</rt></ruby>で<ruby>広<rt>ひろ</rt></ruby>いです。",
+      "tts": "わたしのいえはきれいでひろいです。",
+      "english": "My house is clean and spacious.",
+      "prompt": "Show a house that is both sparkling clean and impressively spacious."
     },
     {
-        "id": 3,
-        "english": "We go to the store.",
-        "tts": "わたしたちはみせにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>店<rt>みせ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to a store."
+      "id": 42,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>静<rt>しず</rt></ruby>かで<ruby>快適<rt>かいてき</rt></ruby>です。",
+      "tts": "わたしのいえはしずかでかいてきです。",
+      "english": "My house is quiet and comfortable.",
+      "prompt": "Show a serene and comfortable living space, highlighting the peace and relaxation it offers."
     },
     {
-        "id": 4,
-        "english": "I buy food.",
-        "tts": "わたしはたべものをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a person buying food."
+      "id": 43,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>から<ruby>遠<rt>とお</rt></ruby>くて<ruby>不便<rt>ふべん</rt></ruby>です。",
+      "tts": "わたしのいえはえきからとおくてふべんです。",
+      "english": "My house is far from the station and inconvenient.",
+      "prompt": "Show a map highlighting the long distance between a house and the nearest train station."
     },
     {
-        "id": 5,
-        "english": "You buy food.",
-        "tts": "あなたはたべものをかう。",
-        "line": "あなたは<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of another person buying food."
+      "id": 44,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>スーパー<rt>スーパー</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くで<ruby>便利<rt>べんり</rt></ruby>です。",
+      "tts": "わたしのいえはスーパーのちかくでべんりです。",
+      "english": "My house is near a supermarket and convenient.",
+      "prompt": "Show a person walking out of a supermarket with groceries, happy about the proximity to their house."
     },
     {
-        "id": 6,
-        "english": "We buy food.",
-        "tts": "わたしたちはたべものをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a group of people buying food."
+      "id": 45,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>公園<rt>こうえん</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くで<ruby>静<rt>しず</rt></ruby>かです。",
+      "tts": "わたしのいえはこうえんのちかくでしょうがです。",
+      "english": "My house is near a park and quiet.",
+      "prompt": "Show a quiet residential street with houses facing a peaceful park."
     },
     {
-        "id": 7,
-        "english": "I buy snacks.",
-        "tts": "わたしはおやつをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>はおやつを<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a person buying snacks."
+      "id": 46,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>コンビニ<rt>コンビニ</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くで<ruby>便利<rt>べんり</rt></ruby>です。",
+      "tts": "わたしのいえはコンビニのちかくでべんりです。",
+      "english": "My house is near a convenience store and convenient.",
+      "prompt": "Show a late-night scene with a person quickly running to a convenience store near their house."
     },
     {
-        "id": 8,
-        "english": "You buy snacks.",
-        "tts": "あなたはおやつをかう。",
-        "line": "あなたはおやつを<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of another person buying snacks."
+      "id": 47,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>レストラン<rt>レストラン</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くで<ruby>便利<rt>べんり</rt></ruby>です。",
+      "tts": "わたしのいえはレストランのちかくでべんりです。",
+      "english": "My house is near restaurants and convenient.",
+      "prompt": "Show a vibrant street with a variety of restaurants and a person walking towards their nearby house."
     },
     {
-        "id": 9,
-        "english": "We buy snacks.",
-        "tts": "わたしたちはおやつをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちはおやつを<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a group of people buying snacks."
+      "id": 48,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>から<ruby>遠<rt>とお</rt></ruby>くて<ruby>静<rt>しず</rt></ruby>かです。",
+      "tts": "わたしのいえはえきからとおくてしずかです。",
+      "english": "My house is far from the station and quiet.",
+      "prompt": "Show a secluded house in a peaceful area, far from the hustle and bustle of a train station."
     },
     {
-        "id": 10,
-        "english": "I go to buy snacks.",
-        "tts": "わたしはおやつをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>はおやつを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to buy snacks."
+      "id": 49,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>明<rt>あか</rt></ruby>るくて<ruby>広<rt>ひろ</rt></ruby>いです。",
+      "tts": "わたしのいえはあかるくてひろいです。",
+      "english": "My house is bright and spacious.",
+      "prompt": "Show a house with sunlight flooding through large windows into a spacious living area."
     },
     {
-        "id": 11,
-        "english": "You go to buy snacks.",
-        "tts": "あなたはおやつをかいにいく。",
-        "line": "あなたはおやつを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to buy snacks."
-    },
-    {
-        "id": 12,
-        "english": "We go to buy snacks.",
-        "tts": "わたしたちはおやつをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちはおやつを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to buy snacks."
-    },
-    {
-        "id": 13,
-        "english": "I buy fruits.",
-        "tts": "わたしはくだものをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>果<rt>くだ</rt></ruby>ものを<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a person buying fruits."
-    },
-    {
-        "id": 14,
-        "english": "You buy fruits.",
-        "tts": "あなたはくだものをかう。",
-        "line": "あなたは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of another person buying fruits."
-    },
-    {
-        "id": 15,
-        "english": "We buy fruits.",
-        "tts": "わたしたちはくだものをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a group of people buying fruits."
-    },
-    {
-        "id": 16,
-        "english": "I go to buy fruits.",
-        "tts": "わたしはくだものをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>果<rt>くだ</rt></ruby>ものを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to buy fruits."
-    },
-    {
-        "id": 17,
-        "english": "You go to buy fruits.",
-        "tts": "あなたはくだものをかいにいく。",
-        "line": "あなたは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to buy fruits."
-    },
-    {
-        "id": 18,
-        "english": "We go to buy fruits.",
-        "tts": "わたしたちはくだものをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to buy fruits."
-    },
-    {
-        "id": 19,
-        "english": "I buy vegetables.",
-        "tts": "わたしはやさいをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a person buying vegetables."
-    },
-    {
-        "id": 20,
-        "english": "You buy vegetables.",
-        "tts": "あなたはやさいをかう。",
-        "line": "あなたは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of another person buying vegetables."
-    },
-    {
-        "id": 21,
-        "english": "We buy vegetables.",
-        "tts": "わたしたちはやさいをかう。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>う。",
-        "prompt": "An illustration of a group of people buying vegetables."
-    },
-    {
-        "id": 22,
-        "english": "I go to buy vegetables.",
-        "tts": "わたしはやさいをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to buy vegetables."
-    },
-    {
-        "id": 23,
-        "english": "You go to buy vegetables.",
-        "tts": "あなたはやさいをかいにいく。",
-        "line": "あなたは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to buy vegetables."
-    },
-    {
-        "id": 24,
-        "english": "We go to buy vegetables.",
-        "tts": "わたしたちはやさいをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to buy vegetables."
-    },
-    {
-        "id": 25,
-        "english": "I sell snacks.",
-        "tts": "わたしはおやつをうる。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>はおやつを<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of a person selling snacks."
-    },
-    {
-        "id": 26,
-        "english": "You sell snacks.",
-        "tts": "あなたはおやつをうる。",
-        "line": "あなたはおやつを<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of another person selling snacks."
-    },
-    {
-        "id": 27,
-        "english": "We sell snacks.",
-        "tts": "わたしたちはおやつをうる。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちはおやつを<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of a group of people selling snacks."
-    },
-    {
-        "id": 28,
-        "english": "I go to sell snacks.",
-        "tts": "わたしはおやつをうりにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>はおやつを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to sell snacks."
-    },
-    {
-        "id": 29,
-        "english": "You go to sell snacks.",
-        "tts": "あなたはおやつをうりにいく。",
-        "line": "あなたはおやつを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to sell snacks."
-    },
-    {
-        "id": 30,
-        "english": "We go to sell snacks.",
-        "tts": "わたしたちはおやつをうりにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちはおやつを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to sell snacks."
-    },
-    {
-        "id": 31,
-        "english": "I sell fruits.",
-        "tts": "わたしはくだものをうる。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>果<rt>くだ</rt></ruby>ものを<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of a person selling fruits."
-    },
-    {
-        "id": 32,
-        "english": "You sell fruits.",
-        "tts": "あなたはくだものをうる。",
-        "line": "あなたは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of another person selling fruits."
-    },
-    {
-        "id": 33,
-        "english": "We sell fruits.",
-        "tts": "わたしたちはくだものをうる。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of a group of people selling fruits."
-    },
-    {
-        "id": 34,
-        "english": "I go to sell fruits.",
-        "tts": "わたしはくだものをうりにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>果<rt>くだ</rt></ruby>ものを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to sell fruits."
-    },
-    {
-        "id": 35,
-        "english": "You go to sell fruits.",
-        "tts": "あなたはくだものをうりにいく。",
-        "line": "あなたは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to sell fruits."
-    },
-    {
-        "id": 36,
-        "english": "We go to sell fruits.",
-        "tts": "わたしたちはくだものをうりにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>果<rt>くだ</rt></ruby>ものを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to sell fruits."
-    },
-    {
-        "id": 37,
-        "english": "I sell vegetables.",
-        "tts": "わたしはやさいをうる。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>野菜<rt>やさい</rt></ruby>を<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of a person selling vegetables."
-    },
-    {
-        "id": 38,
-        "english": "You sell vegetables.",
-        "tts": "あなたはやさいをうる。",
-        "line": "あなたは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of another person selling vegetables."
-    },
-    {
-        "id": 39,
-        "english": "We sell vegetables.",
-        "tts": "わたしたちはやさいをうる。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>売<rt>う</rt></ruby>る。",
-        "prompt": "An illustration of a group of people selling vegetables."
-    },
-    {
-        "id": 40,
-        "english": "I go to sell vegetables.",
-        "tts": "わたしはやさいをうりにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>野菜<rt>やさい</rt></ruby>を<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to sell vegetables."
-    },
-    {
-        "id": 41,
-        "english": "You go to sell vegetables.",
-        "tts": "あなたはやさいをうりにいく。",
-        "line": "あなたは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to sell vegetables."
-    },
-    {
-        "id": 42,
-        "english": "We go to sell vegetables.",
-        "tts": "わたしたちはやさいをうりにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to sell vegetables."
-    },
-    {
-        "id": 43,
-        "english": "I go to the store to buy snacks.",
-        "tts": "わたしはみせにおやつをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>店<rt>みせ</rt></ruby>におやつを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to the store to buy snacks."
-    },
-    {
-        "id": 44,
-        "english": "You go to the store to buy snacks.",
-        "tts": "あなたはみせにおやつをかいにいく。",
-        "line": "あなたは<ruby>店<rt>みせ</rt></ruby>におやつを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to the store to buy snacks."
-    },
-    {
-        "id": 45,
-        "english": "We go to the store to buy snacks.",
-        "tts": "わたしたちはみせにおやつをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>店<rt>みせ</rt></ruby>におやつを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to the store to buy snacks."
-    },
-    {
-        "id": 46,
-        "english": "I go to the store to sell snacks.",
-        "tts": "わたしはみせにおやつをうりにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>店<rt>みせ</rt></ruby>におやつを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to the store to sell snacks."
-    },
-    {
-        "id": 47,
-        "english": "You go to the store to sell snacks.",
-        "tts": "あなたはみせにおやつをうりにいく。",
-        "line": "あなたは<ruby>店<rt>みせ</rt></ruby>におやつを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to the store to sell snacks."
-    },
-    {
-        "id": 48,
-        "english": "We go to the store to sell snacks.",
-        "tts": "わたしたちはみせにおやつをうりにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>たちは<ruby>店<rt>みせ</rt></ruby>におやつを<ruby>売<rt>う</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a group of people going to the store to sell snacks."
-    },
-    {
-        "id": 49,
-        "english": "I go to the store to buy fruits.",
-        "tts": "わたしはみせにくだものをかいにいく。",
-        "line": "<ruby>私<rt>わたし</rt></ruby>は<ruby>店<rt>みせ</rt></ruby>に<ruby>果<rt>くだ</rt></ruby>ものを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of a person going to the store to buy fruits."
-    },
-    {
-        "id": 50,
-        "english": "You go to the store to buy fruits.",
-        "tts": "あなたはみせにくだものをかいにいく。",
-        "line": "あなたは<ruby>店<rt>みせ</rt></ruby>に<ruby>果<rt>くだ</rt></ruby>ものを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く。",
-        "prompt": "An illustration of another person going to the store to buy fruits."
+      "id": 50,
+      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>綺麗<rt>きれい</rt></ruby>で<ruby>快適<rt>かいてき</rt></ruby>です。",
+      "tts": "わたしのいえはきれいでかいてきです。",
+      "english": "My house is clean and comfortable.",
+      "prompt": "Show a meticulously clean house with plush furniture and a warm, inviting atmosphere."
     }
-]
+  ]
