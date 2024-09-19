@@ -1,5 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import './WordsList.css';
+import { Cloudinary, Image } from '@cloudinary/url-gen';
+import { AdvancedImage } from '@cloudinary/react'; 
 
 function WordsList() {
   const [lessons, setLessons] = useState([]);
@@ -14,7 +16,6 @@ function WordsList() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [showFurigana, setShowFurigana] = useState(true);
   const [showBackgroundImage, setShowBackgroundImage] = useState(true);
-  const [preloadedImages, setPreloadedImages] = useState([]);
   const [languages, setLanguages] = useState([]);
   const [selectedLanguage, setSelectedLanguage] = useState('jp');
 
@@ -22,7 +23,11 @@ function WordsList() {
   const [showText, setShowText] = useState(true); // Default checked
   const [randomizeWords, setRandomizeWords] = useState(false); // Default unchecked
 
-  const baseImageUrl = `https://res.cloudinary.com/hgcstx3uy/image/upload/${selectedLanguage}/images/`;
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'hgcstx3uy' 
+    }
+  });
   const baseAudioUrl = `/audio/${selectedLanguage}/`;
 
   const loadLesson = useCallback((currentLesson, langCode) => {
@@ -45,20 +50,9 @@ function WordsList() {
           setAudio(initialAudio);
           initialAudio.play().catch((error) => console.error('Audio play blocked:', error));
         }
-        preloadImages(data);
       })
       .catch((error) => console.error('Error fetching lesson:', error));
   }, [autoPlayAudio, showEnglishFirst, baseAudioUrl]);
-
-  const preloadImages = (words) => {
-    const images = words.map(word => {
-      const img = new Image();
-      img.src = `${baseImageUrl}image_${currentLesson}_${word.id}.png`;
-      return img;
-    });
-    console.log('Preloading images:', images);
-    setPreloadedImages(images);
-  };
 
   useEffect(() => {
     fetch(`/api/${selectedLanguage}/lessons.json`)
@@ -153,6 +147,9 @@ function WordsList() {
 
   const displayedWords = randomizeWords ? randomizeArray(words) : words; // Use randomization logic.
   const currentWord = displayedWords[currentIndex];
+
+  // Create Cloudinary Image instance 
+  const myImage = cld.image(`${selectedLanguage}/images/image_${currentLesson}_${currentWord.id}.png`); 
 
   return (
     <div className="container">
@@ -268,9 +265,9 @@ function WordsList() {
       {/* Main Content */}
       <div className="word-content" style={{ backgroundColor: showBackgroundImage ? 'transparent' : 'black' }}>
         {showBackgroundImage && (
-          <img
+          <AdvancedImage 
             className="word-image"
-            src={`${baseImageUrl}image_${currentLesson}_${currentWord.id}.png`}
+            cldImg={myImage}
             alt={currentWord.word}
           />
         )}
