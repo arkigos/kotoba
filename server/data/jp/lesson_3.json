@@ -1,352 +1,1100 @@
 [
-    {
-      "id": 1,
-      "line": "<ruby>今<rt>いま</rt></ruby><ruby>何時<rt>なんじ</rt></ruby>ですか。",
-      "tts": "いまなんじですか。",
-      "english": "What time is it now?",
-      "prompt": "Show a person looking at their wrist but they don't have a watch, turning to their friend with a questioning look."
-    },
-    {
-      "id": 2,
-      "line": "<ruby>今<rt>いま</rt></ruby> 1 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "いま いちじ です。",
-      "english": "It's 1 o'clock now.",
-      "prompt": "Show a clock face with its hands clearly pointing to 1 o'clock."
-    },
-    {
-      "id": 3,
-      "line": "<ruby>今<rt>いま</rt></ruby> 2 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "いま にじ です。",
-      "english": "It's 2 o'clock now.",
-      "prompt": "Show a clock face, maybe a big clock tower, with its hands pointing to 2 o'clock."
-    },
-    {
-      "id": 4,
-      "line": "<ruby>今<rt>いま</rt></ruby> 3 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "いま さんじ です。",
-      "english": "It's 3 o'clock now.",
-      "prompt": "Show the hands of a clock moving slowly as they approach 3 o'clock, finally landing on the hour."
-    },
-    {
-      "id": 5,
-      "line": "<ruby>今<rt>いま</rt></ruby> 4 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "いま よじ です。",
-      "english": "It's 4 o'clock now.",
-      "prompt": "Show a phone screen with the time clearly displayed as 4:00." 
-    },
-    {
-      "id": 6,
-      "line": "<ruby>今<rt>いま</rt></ruby> 5 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "いま ごじ です。",
-      "english": "It's 5 o'clock now.",
-      "prompt": "Show a sunset scene with the sky awash in orange and pink hues, hinting at the time being 5 o'clock." 
-    },
-    {
-      "id": 7,
-      "line": "<ruby>今<rt>いま</rt></ruby> 6 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "いま ろくじ です。",
-      "english": "It's 6 o'clock now.",
-      "prompt": "Show a family sitting down for dinner, suggesting it's around 6 o'clock, a common dinner time." 
-    },
-    {
-      "id": 8,
-      "line": "<ruby>今<rt>いま</rt></ruby> 7 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "いま しちじ です。",
-      "english": "It's 7 o'clock now.",
-      "prompt": "Show a person waking up to an alarm clock that reads 7:00, the start of a new day." 
-    },
-    {
-      "id": 9,
-      "line": "<ruby>今<rt>いま</rt></ruby> 8 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "いま はちじ です。",
-      "english": "It's 8 o'clock now.",
-      "prompt": "Show a busy street scene with people commuting to work, signifying the time around 8 o'clock in the morning."
-    },
-    {
-      "id": 10,
-      "line": "<ruby>今<rt>いま</rt></ruby> 9 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "いま くじ です。",
-      "english": "It's 9 o'clock now.",
-      "prompt": "Show an office setting with everyone at their desks working, implying it's 9 o'clock, the typical start of the workday."
-    },
-    {
-      "id": 11,
-      "line": "<ruby>今<rt>いま</rt></ruby> 10 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "いま じゅうじ です。",
-      "english": "It's 10 o'clock now.",
-      "prompt": "Show a classroom with students focused on a lesson, suggesting it's 10 o'clock, a typical school hour." 
-    },
-    {
-      "id": 12,
-      "line": "<ruby>今<rt>いま</rt></ruby> 11 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "いま じゅういちじ です。",
-      "english": "It's 11 o'clock now.",
-      "prompt": "Show a bustling restaurant scene with people having lunch, implying it's 11 o'clock, a common lunch hour."
-    },
-    {
-      "id": 13,
-      "line": "<ruby>今<rt>いま</rt></ruby> 12 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "いま じゅうにじ です。",
-      "english": "It's 12 o'clock now.",
-      "prompt": "Show the sun directly overhead, indicating that it is noon or 12 o'clock."
-    },
-    {
-      "id": 14,
-      "line": " 1 <ruby>時<rt>じ</rt></ruby><ruby>半<rt>はん</rt></ruby>です。",
-      "tts": "いちじはんです。",
-      "english": "It's 1:30.",
-      "prompt": "Show a clock face where the minute hand is pointing at the six and the hour hand is halfway between the one and the two." 
-    },
-    {
-      "id": 15,
-      "line": " 2 <ruby>時<rt>じ</rt></ruby> 15 <ruby>分<rt>ふん</rt></ruby>です。",
-      "tts": "にじじゅうごふんです。",
-      "english": "It's 2:15.",
-      "prompt": "Show a digital clock displaying 02:15."
-    },
-    {
-      "id": 16,
-      "line": "<ruby>午前<rt>ごぜん</rt></ruby> 8 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "ごぜんはちじです。",
-      "english": "It's 8 AM.",
-      "prompt": "Show a sunrise with a golden glow, birds chirping, and a sense of a fresh start to the day."
-    },
-    {
-      "id": 17,
-      "line": "<ruby>午後<rt>ごご</rt></ruby> 2 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "ごごにじです。",
-      "english": "It's 2 PM.",
-      "prompt": "Show children getting out of school, some playing, others getting picked up, indicative of the afternoon."
-    },
-    {
-      "id": 18,
-      "line": "<ruby>夜<rt>よる</rt></ruby> 9 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "よるくじです。",
-      "english": "It's 9 PM.",
-      "prompt": "Show a city skyline lit up against a dark night sky, with stars twinkling above."
-    },
-    {
-      "id": 19,
-      "line": "<ruby>朝<rt>あさ</rt></ruby> 6 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "あさろくじです。",
-      "english": "It's 6 AM.",
-      "prompt": "Show a person stretching in bed as sunlight gently streams through their window."
-    },
-    {
-      "id": 20,
-      "line": "<ruby>昼<rt>ひる</rt></ruby> 12 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "ひるじゅうにじです。",
-      "english": "It's 12 PM.",
-      "prompt": "Show people having a picnic in a park, enjoying the sunshine and their lunch break."
-    },
-    {
-      "id": 21,
-      "line": "<ruby>夕方<rt>ゆうがた</rt></ruby> 5 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "ゆうがたごじです。",
-      "english": "It's 5 PM.",
-      "prompt": "Show people leaving work, some heading to their cars, others walking towards a bus stop."
-    },
-    {
-      "id": 22,
-      "line": "<ruby>午前中<rt>ごぜんちゅう</rt></ruby>です。",
-      "tts": "ごぜんちゅうです。",
-      "english": "It's morning.",
-      "prompt": "Show a rooster crowing, dew on the grass, and the sun slowly rising above the horizon."
-    },
-    {
-      "id": 23,
-      "line": "<ruby>午後<rt>ごご</rt></ruby>です。",
-      "tts": "ごごです。",
-      "english": "It's afternoon.",
-      "prompt": "Show children playing in a park, a gentle breeze rustling through the leaves, the sun high in the sky."
-    },
-    {
-      "id": 24,
-      "line": "<ruby>夜<rt>よる</rt></ruby>です。",
-      "tts": "よるです。",
-      "english": "It's night.",
-      "prompt": "Show a clear night sky with a full moon and countless stars, owls hooting in the distance."
-    },
-    {
-      "id": 25,
-      "line": "もうすぐ 1 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "もうすぐ いちじ です。",
-      "english": "It's almost 1 o'clock.",
-      "prompt": "Show a clock face where the minute hand is nearing the 12, about to strike 1 o'clock."
-    },
-    {
-      "id": 26,
-      "line": "<ruby>後<rt>あと</rt></ruby> 5 <ruby>分<rt>ふん</rt></ruby>で 3 <ruby>時<rt>じ</rt></ruby>です。",
-      "tts": "あと ごふん で さんじ です。",
-      "english": "It's 3 o'clock in 5 minutes.",
-      "prompt": "Show a clock face where the minute hand is at the 55, five minutes away from 3 o'clock." 
-    },
-    {
-      "id": 27,
-      "line": "<ruby>今<rt>いま</rt></ruby>から<ruby>何時<rt>なんじ</rt></ruby>ですか？",
-      "tts": "いまからなんじですか",
-      "english": "What time is it starting from now?",
-      "prompt": "Show a person looking at their watch and then at a schedule or timetable, trying to figure out the time difference."
-    },
-    {
-      "id": 28,
-      "line": " 7 <ruby>時<rt>じ</rt></ruby>から 8 <ruby>時<rt>じ</rt></ruby>までです。",
-      "tts": "しちじからはちじまでです。",
-      "english": "It's from 7 o'clock to 8 o'clock.",
-      "prompt": "Show a clock face with the hour hand moving from the 7 to the 8, highlighting the duration of an event."
-    },
-    {
-      "id": 29,
-      "line": " 1 <ruby>時間<rt>じかん</rt></ruby><ruby>後<rt>あと</rt></ruby>です。",
-      "tts": "いちじかんあとです。",
-      "english": "It's in one hour.",
-      "prompt": "Show a person setting a timer on their phone for one hour."
-    },
-    {
-      "id": 30,
-      "line": " 30 <ruby>分<rt>ふん</rt></ruby><ruby>後<rt>あと</rt></ruby>です。",
-      "tts": "さんじゅっぷんあとです。",
-      "english": "It's in 30 minutes.",
-      "prompt": "Show a microwave clock with 30 seconds left, implying that something will be ready in 30 minutes."
-    },
-    {
-      "id": 31,
-      "line": "<ruby>後<rt>あと</rt></ruby>どれくらいですか。",
-      "tts": "あとどれくらいですか。",
-      "english": "How much longer?",
-      "prompt": "Show a child looking impatiently at a parent, asking how much longer they have to wait for something."
-    },
-    {
-      "id": 32,
-      "line": "もう<ruby>すぐ<rt>すぐ</rt></ruby>です。",
-      "tts": "もうすぐです。",
-      "english": "It's soon.",
-      "prompt": "Show a person tapping their foot impatiently, waiting for something that's about to happen."
-    },
-    {
-      "id": 33,
-      "line": "まだ<ruby>時間<rt>じかん</rt></ruby>があります。",
-      "tts": "まだじかんがあります。",
-      "english": "There's still time.",
-      "prompt": "Show a person relaxing, reading a book, with a relaxed demeanor, implying they have plenty of time."
-    },
-    {
-      "id": 34,
-      "line": "<ruby>時間<rt>じかん</rt></ruby>を<ruby>守<rt>まも</rt></ruby>ってください。",
-      "tts": "じかんをまもってください。",
-      "english": "Please be on time.",
-      "prompt": "Show a person pointing at a clock with a serious expression, emphasizing the importance of punctuality."
-    },
-    {
-      "id": 35,
-      "line": "<ruby>遅刻<rt>ちこく</rt></ruby>しないでください。",
-      "tts": "ちこくしないでください。",
-      "english": "Please don't be late.",
-      "prompt": "Show a person running frantically, clearly late for something important."
-    },
-    {
-      "id": 36,
-      "line": "<ruby>早<rt>はや</rt></ruby>いですね！",
-      "tts": "はやいですね！",
-      "english": "You're early!",
-      "prompt": "Show a surprised expression on a person's face as someone arrives unexpectedly early."
-    },
-    {
-      "id": 37,
-      "line": " 5 <ruby>分前<rt>ふんまえ</rt></ruby>です。",
-      "tts": "ごふんまえです。",
-      "english": "It's 5 minutes ago.",
-      "prompt": "Show a digital clock flashing between 5:00 and 5:05, implying that 5 minutes have just passed."
-    },
-    {
-      "id": 38,
-      "line": " 10 <ruby>時<rt>じ</rt></ruby>ちょっと<ruby>前<rt>まえ</rt></ruby>です。",
-      "tts": "じゅうじちょっとまえです。",
-      "english": "It's a little before 10 o'clock.",
-      "prompt": "Show a clock face where the minute hand is a few minutes before the 12, indicating a time slightly before 10 o'clock."
-    },
-    {
-      "id": 39,
-      "line": " 8 <ruby>時<rt>じ</rt></ruby>ちょっと<ruby>過<rt>す</rt></ruby>ぎです。",
-      "tts": "はちじちょっとすぎです。",
-      "english": "It's a little after 8 o'clock.",
-      "prompt": "Show a clock face with the minute hand slightly past the 12, representing a time shortly after 8 o'clock." 
-    },
-    {
-      "id": 40,
-      "line": "<ruby>大体<rt>だいたい</rt></ruby> 3 <ruby>時<rt>じ</rt></ruby>くらいです。",
-      "tts": "だいたいさんじくらいです。",
-      "english": "It's around 3 o'clock.",
-      "prompt": "Show a person glancing at a wristwatch and giving an approximate time, suggesting it's roughly 3 o'clock." 
-    },
-    {
-      "id": 41,
-      "line": "<ruby>今<rt>いま</rt></ruby> 4 <ruby>時<rt>じ</rt></ruby><ruby>半<rt>はん</rt></ruby>です。",
-      "tts": "いま よじはんです。",
-      "english": "It's 4:30 now.",
-      "prompt": "Show a clock face with its hands clearly pointing to 4:30."
-    },
-    {
-      "id": 42,
-      "line": "<ruby>後<rt>あと</rt></ruby> 15 <ruby>分<rt>ふん</rt></ruby>で 8 <ruby>時<rt>じ</rt></ruby><ruby>半<rt>はん</rt></ruby>です。",
-      "tts": "あと じゅうごふん で はちじはんです。",
-      "english": "It's 8:30 in 15 minutes.",
-      "prompt": "Show a clock face where the minute hand is at the 40, fifteen minutes away from 8:30." 
-    },
-    {
-      "id": 43,
-      "line": "<ruby>午前<rt>ごぜん</rt></ruby> 10 <ruby>時<rt>じ</rt></ruby><ruby>半<rt>はん</rt></ruby>から<ruby>午後<rt>ごご</rt></ruby> 1 <ruby>時<rt>じ</rt></ruby>までです。",
-      "tts": "ごぜんじゅうじはんからごごいちじまでです。",
-      "english": "It's from 10:30 AM to 1 PM.",
-      "prompt": "Show a schedule or timetable highlighting an event that lasts from 10:30 AM to 1 PM."
-    },
-    {
-      "id": 44,
-      "line": "もう<ruby>すぐ<rt>すぐ</rt></ruby> 12 <ruby>時<rt>じ</rt></ruby><ruby>半<rt>はん</rt></ruby>です。",
-      "tts": "もうすぐじゅうにじはんです。",
-      "english": "It's almost 12:30.",
-      "prompt": "Show a clock face where the minute hand is about to reach the 6, almost 12:30."
-    },
-    {
-      "id": 45,
-      "line": "<ruby>大体<rt>だいたい</rt></ruby> 6 <ruby>時<rt>じ</rt></ruby> 15 <ruby>分<rt>ふん</rt></ruby>くらいです。",
-      "tts": "だいたい ろくじじゅうごふん くらいです。",
-      "english": "It's around 6:15.",
-      "prompt": "Show a person checking their phone for the time and casually mentioning it's approximately 6:15."
-    },
-    {
-      "id": 46,
-      "line": "<ruby>午後<rt>ごご</rt></ruby> 2 <ruby>時<rt>じ</rt></ruby> 15 <ruby>分<rt>ふん</rt></ruby>から<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>ます。",
-      "tts": "ごごにじじゅうごふん から えいが を みます。",
-      "english": "I will watch a movie from 2:15 PM.",
-      "prompt": "Show a movie ticket with '2:15 PM' printed on it, highlighting the start time."
-    },
-    {
-      "id": 47,
-      "line": "<ruby>午前<rt>ごぜん</rt></ruby> 9 <ruby>時<rt>じ</rt></ruby>に<ruby>仕事<rt>しごと</rt></ruby>を<ruby>始<rt>はじ</rt></ruby>めます。",
-      "tts": "ごぜんくじにしごとをはじめます。",
-      "english": "I start work at 9 AM.",
-      "prompt": "Show a person sitting at their desk, starting their workday as a clock on the wall shows 9 AM." 
-    },
-    {
-      "id": 48,
-      "line": "<ruby>夕方<rt>ゆうがた</rt></ruby> 6 <ruby>時<rt>じ</rt></ruby>に<ruby>晩御飯<rt>ばんごはん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べます。",
-      "tts": "ゆうがたろくじにばんごはんをたべます。",
-      "english": "I eat dinner at 6 PM.",
-      "prompt": "Show a family gathered around a dinner table, enjoying a meal together, as the sun sets outside." 
-    },
-    {
-      "id": 49,
-      "line": "<ruby>夜<rt>よる</rt></ruby> 11 <ruby>時<rt>じ</rt></ruby>に<ruby>寝<rt>ね</rt></ruby>ます。",
-      "tts": "よるじゅういちじにねます。",
-      "english": "I go to bed at 11 PM.",
-      "prompt": "Show a person turning off the lights and getting into bed, ready for sleep."
-    },
-    {
-      "id": 50,
-      "line": "<ruby>朝<rt>あさ</rt></ruby> 7 <ruby>時<rt>じ</rt></ruby>に<ruby>起<rt>お</rt></ruby>きます。",
-      "tts": "あさしちじにおきます。",
-      "english": "I wake up at 7 AM.",
-      "prompt": "Show a person yawning and stretching as they wake up to a bright, sunny morning."
-    }
-  ]
+  {
+    "id": 1,
+    "line": [
+      "いま",
+      " ",
+      "なんじ",
+      " ",
+      "です",
+      " ",
+      "か",
+      "。"
+    ],
+    "tts": "いま なんじ です か。",
+    "explain": [
+      "now",
+      " ",
+      "what time",
+      " ",
+      "is",
+      " ",
+      "question marker",
+      "."
+    ],
+    "english": "What time is it now?",
+    "prompt": "A person looks at their watch with a puzzled expression, wondering what time it is.",
+    "fact": "This is a polite way to ask for the current time."
+  },
+  {
+    "id": 2,
+    "line": [
+      "いま",
+      " ",
+      "は",
+      " ",
+      "なんじ",
+      " ",
+      "です",
+      " ",
+      "か",
+      "。"
+    ],
+    "tts": "いま わ なんじ です か。",
+    "explain": [
+      "now",
+      " ",
+      "topic marker",
+      " ",
+      "what time",
+      " ",
+      "is",
+      " ",
+      "question marker",
+      "."
+    ],
+    "english": "What time is it now?",
+    "prompt": "Someone asks for the time, emphasizing the 'now' as if they've been waiting for a while.",
+    "fact": "Using 'は' as a topic marker emphasizes 'now' in this sentence."
+  },
+  {
+    "id": 3,
+    "line": [
+      "いま",
+      " ",
+      "は",
+      " ",
+      "じゅうじ",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "いま わ じゅうじ です。",
+    "explain": [
+      "now",
+      " ",
+      "topic marker",
+      " ",
+      "10 o'clock",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 10 o'clock now.",
+    "prompt": "A clock tower chimes ten times, and someone confirms the time.",
+    "fact": "This sentence structure is used to state the current time."
+  },
+  {
+    "id": 4,
+    "line": [
+      "いま",
+      " ",
+      "は",
+      " ",
+      "じゅうじ",
+      " ",
+      "です",
+      " ",
+      "か",
+      "。"
+    ],
+    "tts": "いま わ じゅうじ です か。",
+    "explain": [
+      "now",
+      " ",
+      "topic marker",
+      " ",
+      "10 o'clock",
+      " ",
+      "is",
+      " ",
+      "question marker",
+      "."
+    ],
+    "english": "Is it 10 o'clock now?",
+    "prompt": "Someone squints at a clock in the distance, unsure if it's showing 10 o'clock.",
+    "fact": "This is a way to confirm if the current time is 10 o'clock."
+  },
+  {
+    "id": 5,
+    "line": [
+      "ごぜん",
+      " ",
+      "じゅうじ",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "ごぜん じゅうじ です。",
+    "explain": [
+      "AM",
+      " ",
+      "10 o'clock",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 10 AM.",
+    "prompt": "Sunlight streams through a window, and someone announces it's 10 in the morning.",
+    "fact": "Using 'ごぜん' clarifies that it is 10 o'clock in the morning."
+  },
+  {
+    "id": 6,
+    "line": [
+      "ごぜん",
+      " ",
+      "じゅうじ",
+      " ",
+      "です",
+      " ",
+      "か",
+      "。"
+    ],
+    "tts": "ごぜん じゅうじ です か。",
+    "explain": [
+      "AM",
+      " ",
+      "10 o'clock",
+      " ",
+      "is",
+      " ",
+      "question marker",
+      "."
+    ],
+    "english": "Is it 10 AM?",
+    "prompt": "Someone yawns and rubs their eyes, wondering if it's already 10 in the morning.",
+    "fact": "This is how you ask if the time is 10 AM."
+  },
+  {
+    "id": 7,
+    "line": [
+      "はい",
+      "、",
+      "ごぜん",
+      " ",
+      "じゅうじ",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "はい、ごぜん じゅうじ です。",
+    "explain": [
+      "yes",
+      ",",
+      "AM",
+      " ",
+      "10 o'clock",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "Yes, it is 10 AM.",
+    "prompt": "Someone confirms that it is indeed 10 o'clock in the morning.",
+    "fact": "'はい' is used to express agreement or affirmation."
+  },
+  {
+    "id": 8,
+    "line": [
+      "いいえ",
+      "、",
+      "ごぜん",
+      " ",
+      "じゅうじ",
+      " ",
+      "じゃ",
+      " ",
+      "ありません",
+      "。"
+    ],
+    "tts": "いいえ、ごぜん じゅうじ じゃ ありません。",
+    "explain": [
+      "no",
+      ",",
+      "AM",
+      " ",
+      "10 o'clock",
+      " ",
+      "negative verb conjugation",
+      " ",
+      "is not",
+      "."
+    ],
+    "english": "No, it is not 10 AM.",
+    "prompt": "Someone shakes their head, correcting the assumption that it's 10 in the morning.",
+    "fact": "'じゃ ありません' is a more polite way to say 'is not' than 'ではありません'."
+  },
+  {
+    "id": 9,
+    "line": [
+      "ごご",
+      " ",
+      "じゅうじ",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "ごご じゅうじ です。",
+    "explain": [
+      "PM",
+      " ",
+      "10 o'clock",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 10 PM.",
+    "prompt": "The city lights twinkle outside, and someone mentions it's 10 in the evening.",
+    "fact": "'ごご' is used to indicate the time is in the PM."
+  },
+  {
+    "id": 10,
+    "line": [
+      "ごご",
+      " ",
+      "よじ",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "ごご よじ です。",
+    "explain": [
+      "PM",
+      " ",
+      "4 o'clock",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 4 PM.",
+    "prompt": "The sun starts to set, casting a warm glow, and someone says it's 4 in the afternoon.",
+    "fact": "While 'よじ' is the traditional Japanese reading for 4 o'clock, 'よんじ' is also commonly used."
+  },
+  {
+    "id": 11,
+    "line": [
+      "ごご",
+      " ",
+      "よじ",
+      " ",
+      "です",
+      " ",
+      "か",
+      "。"
+    ],
+    "tts": "ごご よじ です か。",
+    "explain": [
+      "PM",
+      " ",
+      "4 o'clock",
+      " ",
+      "is",
+      " ",
+      "question marker",
+      "."
+    ],
+    "english": "Is it 4 PM?",
+    "prompt": "Someone glances at the clock, wondering if it's already time to leave work.",
+    "fact": "This is a common way to confirm if the current time is 4 PM."
+  },
+  {
+    "id": 12,
+    "line": [
+      "はい",
+      "、",
+      "ごご",
+      " ",
+      "よじ",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "はい、ごご よじ です。",
+    "explain": [
+      "yes",
+      ",",
+      "PM",
+      " ",
+      "4 o'clock",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "Yes, it is 4 PM.",
+    "prompt": "Someone nods in agreement, confirming that it is indeed 4 PM.",
+    "fact": "This is a simple confirmation that the time is 4 PM."
+  },
+  {
+    "id": 13,
+    "line": [
+      "いま",
+      " ",
+      "なんぷん",
+      " ",
+      "です",
+      " ",
+      "か",
+      "。"
+    ],
+    "tts": "いま なんぷん です か。",
+    "explain": [
+      "now",
+      " ",
+      "what minute",
+      " ",
+      "is",
+      " ",
+      "question marker",
+      "."
+    ],
+    "english": "What minute is it now?",
+    "prompt": "Someone stares intently at the minute hand of a clock, trying to figure out the exact minute.",
+    "fact": "This is a direct way to ask for the current minute."
+  },
+  {
+    "id": 14,
+    "line": [
+      "いま",
+      " ",
+      "は",
+      " ",
+      "なんぷん",
+      " ",
+      "です",
+      " ",
+      "か",
+      "。"
+    ],
+    "tts": "いま わ なんぷん です か。",
+    "explain": [
+      "now",
+      " ",
+      "topic marker",
+      " ",
+      "what minute",
+      " ",
+      "is",
+      " ",
+      "question marker",
+      "."
+    ],
+    "english": "What minute is it now?",
+    "prompt": "A train is about to leave, and someone anxiously asks for the exact minute.",
+    "fact": "Adding 'は' as a topic marker emphasizes the urgency of knowing the current minute."
+  },
+  {
+    "id": 15,
+    "line": [
+      "いま",
+      " ",
+      "は",
+      " ",
+      "ごふん",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "いま わ ごふん です。",
+    "explain": [
+      "now",
+      " ",
+      "topic marker",
+      " ",
+      "5 minutes",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 5 minutes past the hour.",
+    "prompt": "The minute hand of a clock points directly at the 1, and someone states the time.",
+    "fact": "This sentence structure indicates it's 5 minutes past a certain hour."
+  },
+  {
+    "id": 16,
+    "line": [
+      "いま",
+      " ",
+      "は",
+      " ",
+      "じゅうごふん",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "いま わ じゅうごふん です。",
+    "explain": [
+      "now",
+      " ",
+      "topic marker",
+      " ",
+      "15 minutes",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 15 minutes past the hour.",
+    "prompt": "The minute hand rests on the 3, and someone tells the time.",
+    "fact": "This signifies that it's a quarter past a particular hour."
+  },
+  {
+    "id": 17,
+    "line": [
+      "いま",
+      " ",
+      "は",
+      " ",
+      "さんじゅうごふん",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "いま わ さんじゅうごふん です。",
+    "explain": [
+      "now",
+      " ",
+      "topic marker",
+      " ",
+      "35 minutes",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 35 minutes past the hour.",
+    "prompt": "The minute hand is nearing the 7, and someone states the time.",
+    "fact": "This means it's 25 minutes to the next hour."
+  },
+  {
+    "id": 18,
+    "line": [
+      "ごぜん",
+      " ",
+      "じゅうじ",
+      " ",
+      "ごふん",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "ごぜん じゅうじ ごふん です。",
+    "explain": [
+      "AM",
+      " ",
+      "10 o'clock",
+      " ",
+      "5 minutes",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 10:05 AM.",
+    "prompt": "The clock shows 10:05 AM, and someone announces the time.",
+    "fact": "This is a clear way to state the time as 5 minutes past 10 in the morning."
+  },
+  {
+    "id": 19,
+    "line": [
+      "ごぜん",
+      " ",
+      "じゅうじ",
+      " ",
+      "じゅうごふん",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "ごぜん じゅうじ じゅうごふん です。",
+    "explain": [
+      "AM",
+      " ",
+      "10 o'clock",
+      " ",
+      "15 minutes",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 10:15 AM.",
+    "prompt": "Someone checks their watch and confirms it's a quarter past 10 in the morning.",
+    "fact": "This indicates the time is 15 minutes past 10 AM."
+  },
+  {
+    "id": 20,
+    "line": [
+      "ごぜん",
+      " ",
+      "じゅうじ",
+      " ",
+      "さんじゅうごふん",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "ごぜん じゅうじ さんじゅうごふん です。",
+    "explain": [
+      "AM",
+      " ",
+      "10 o'clock",
+      " ",
+      "35 minutes",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 10:35 AM.",
+    "prompt": "The clock on the wall shows 10:35 AM, and someone states the time.",
+    "fact": "This tells us it's 25 minutes to 11 in the morning."
+  },
+  {
+    "id": 21,
+    "line": [
+      "ごご",
+      " ",
+      "よじ",
+      " ",
+      "ごふん",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "ごご よじ ごふん です。",
+    "explain": [
+      "PM",
+      " ",
+      "4 o'clock",
+      " ",
+      "5 minutes",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 4:05 PM.",
+    "prompt": "The minute hand on the clock ticks past the 1, and someone says it's 4:05 PM.",
+    "fact": "This indicates it's 5 minutes past 4 in the afternoon."
+  },
+  {
+    "id": 22,
+    "line": [
+      "ごご",
+      " ",
+      "よじ",
+      " ",
+      "じゅうごふん",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "ごご よじ じゅうごふん です。",
+    "explain": [
+      "PM",
+      " ",
+      "4 o'clock",
+      " ",
+      "15 minutes",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 4:15 PM.",
+    "prompt": "A bell chimes, signaling it's a quarter past 4 in the afternoon.",
+    "fact": "This means it's 15 minutes past 4 PM."
+  },
+  {
+    "id": 23,
+    "line": [
+      "ごご",
+      " ",
+      "よじ",
+      " ",
+      "さんじゅうごふん",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "ごご よじ さんじゅうごふん です。",
+    "explain": [
+      "PM",
+      " ",
+      "4 o'clock",
+      " ",
+      "35 minutes",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 4:35 PM.",
+    "prompt": "The sun begins to dip lower in the sky, and someone mentions it's 4:35 PM.",
+    "fact": "This tells us it's 25 minutes to 5 in the afternoon."
+  },
+  {
+    "id": 24,
+    "line": [
+      "いま",
+      " ",
+      "は",
+      " ",
+      "ごぜん",
+      " ",
+      "じゅういちじ",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "いま わ ごぜん じゅういちじ です。",
+    "explain": [
+      "now",
+      " ",
+      "topic marker",
+      " ",
+      "AM",
+      " ",
+      "11 o'clock",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 11 AM now.",
+    "prompt": "Sunlight streams through the window, indicating it's late morning, and someone confirms it's 11 AM.",
+    "fact": "This emphasizes that the current time is 11 AM."
+  },
+  {
+    "id": 25,
+    "line": [
+      "いま",
+      " ",
+      "は",
+      " ",
+      "ごぜん",
+      " ",
+      "じゅうにじ",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "いま わ ごぜん じゅうにじ です。",
+    "explain": [
+      "now",
+      " ",
+      "topic marker",
+      " ",
+      "AM",
+      " ",
+      "12 o'clock",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 12 PM now.",
+    "prompt": "The sun is directly overhead, and someone announces it's noon.",
+    "fact": "This clarifies that it's currently midday."
+  },
+  {
+    "id": 26,
+    "line": [
+      "いま",
+      " ",
+      "は",
+      " ",
+      "ごご",
+      " ",
+      "いちじ",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "いま わ ごご いちじ です。",
+    "explain": [
+      "now",
+      " ",
+      "topic marker",
+      " ",
+      "PM",
+      " ",
+      "1 o'clock",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 1 PM now.",
+    "prompt": "People are returning from their lunch breaks, and someone mentions it's 1 PM.",
+    "fact": "This indicates it's currently 1 o'clock in the afternoon."
+  },
+  {
+    "id": 27,
+    "line": [
+      "いま",
+      " ",
+      "は",
+      " ",
+      "ごご",
+      " ",
+      "にじ",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "いま わ ごご にじ です。",
+    "explain": [
+      "now",
+      " ",
+      "topic marker",
+      " ",
+      "PM",
+      " ",
+      "2 o'clock",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 2 PM now.",
+    "prompt": "The afternoon sun casts long shadows, and someone states it's 2 PM.",
+    "fact": "This confirms that the current time is 2 o'clock in the afternoon."
+  },
+  {
+    "id": 28,
+    "line": [
+      "いま",
+      " ",
+      "は",
+      " ",
+      "ごご",
+      " ",
+      "さんじ",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "いま わ ごご さんじ です。",
+    "explain": [
+      "now",
+      " ",
+      "topic marker",
+      " ",
+      "PM",
+      " ",
+      "3 o'clock",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "It is 3 PM now.",
+    "prompt": "Children in school uniforms walk home, and someone mentions it's 3 PM.",
+    "fact": "This indicates it's currently 3 o'clock in the afternoon."
+  },
+  {
+    "id": 29,
+    "line": [
+      "ごぜん",
+      " ",
+      "じゅういちじ",
+      " ",
+      "じゅうごふん",
+      " ",
+      "です",
+      " ",
+      "か",
+      "。"
+    ],
+    "tts": "ごぜん じゅういちじ じゅうごふん です か。",
+    "explain": [
+      "AM",
+      " ",
+      "11 o'clock",
+      " ",
+      "15 minutes",
+      " ",
+      "is",
+      " ",
+      "question marker",
+      "."
+    ],
+    "english": "Is it 11:15 AM?",
+    "prompt": "Someone glances at their watch, wondering if it's already a quarter past 11 in the morning.",
+    "fact": "This is a way to confirm if the current time is 11:15 AM."
+  },
+  {
+    "id": 30,
+    "line": [
+      "ごぜん",
+      " ",
+      "じゅうにじ",
+      " ",
+      "さんじゅうごふん",
+      " ",
+      "です",
+      " ",
+      "か",
+      "。"
+    ],
+    "tts": "ごぜん じゅうにじ さんじゅうごふん です か。",
+    "explain": [
+      "AM",
+      " ",
+      "12 o'clock",
+      " ",
+      "35 minutes",
+      " ",
+      "is",
+      " ",
+      "question marker",
+      "."
+    ],
+    "english": "Is it 12:35 PM?",
+    "prompt": "Someone looks up at the clock, unsure if it's 25 minutes to 1 in the afternoon.",
+    "fact": "This is how you ask if the time is 12:35 PM."
+  },
+  {
+    "id": 31,
+    "line": [
+      "ごご",
+      " ",
+      "いちじ",
+      " ",
+      "ごふん",
+      " ",
+      "です",
+      " ",
+      "か",
+      "。"
+    ],
+    "tts": "ごご いちじ ごふん です か。",
+    "explain": [
+      "PM",
+      " ",
+      "1 o'clock",
+      " ",
+      "5 minutes",
+      " ",
+      "is",
+      " ",
+      "question marker",
+      "."
+    ],
+    "english": "Is it 1:05 PM?",
+    "prompt": "Someone checks their phone, wondering if it's 5 minutes past 1 in the afternoon.",
+    "fact": "This is a common way to confirm if the current time is 1:05 PM."
+  },
+  {
+    "id": 32,
+    "line": [
+      "ごご",
+      " ",
+      "にじ",
+      " ",
+      "じゅうごふん",
+      " ",
+      "です",
+      " ",
+      "か",
+      "。"
+    ],
+    "tts": "ごご にじ じゅうごふん です か。",
+    "explain": [
+      "PM",
+      " ",
+      "2 o'clock",
+      " ",
+      "15 minutes",
+      " ",
+      "is",
+      " ",
+      "question marker",
+      "."
+    ],
+    "english": "Is it 2:15 PM?",
+    "prompt": "Someone squints at a clock in the distance, trying to determine if it's a quarter past 2 in the afternoon.",
+    "fact": "This is how you ask if the time is 2:15 PM."
+  },
+  {
+    "id": 33,
+    "line": [
+      "ごご",
+      " ",
+      "さんじ",
+      " ",
+      "さんじゅうごふん",
+      " ",
+      "です",
+      " ",
+      "か",
+      "。"
+    ],
+    "tts": "ごご さんじ さんじゅうごふん です か。",
+    "explain": [
+      "PM",
+      " ",
+      "3 o'clock",
+      " ",
+      "35 minutes",
+      " ",
+      "is",
+      " ",
+      "question marker",
+      "."
+    ],
+    "english": "Is it 3:35 PM?",
+    "prompt": "Someone checks their watch, wondering if it's 25 minutes to 4 in the afternoon.",
+    "fact": "This is a way to confirm if the current time is 3:35 PM."
+  },
+  {
+    "id": 34,
+    "line": [
+      "はい",
+      "、",
+      "ごぜん",
+      " ",
+      "じゅういちじ",
+      " ",
+      "じゅうごふん",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "はい、ごぜん じゅういちじ じゅうごふん です。",
+    "explain": [
+      "yes",
+      ",",
+      "AM",
+      " ",
+      "11 o'clock",
+      " ",
+      "15 minutes",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "Yes, it is 11:15 AM.",
+    "prompt": "Someone nods in agreement, confirming that it is indeed a quarter past 11 in the morning.",
+    "fact": "This is a simple confirmation that the time is 11:15 AM."
+  },
+  {
+    "id": 35,
+    "line": [
+      "いいえ",
+      "、",
+      "ごぜん",
+      " ",
+      "じゅうにじ",
+      " ",
+      "さんじゅうごふん",
+      " ",
+      "じゃ",
+      " ",
+      "ありません",
+      "。"
+    ],
+    "tts": "いいえ、ごぜん じゅうにじ さんじゅうごふん じゃ ありません。",
+    "explain": [
+      "no",
+      ",",
+      "AM",
+      " ",
+      "12 o'clock",
+      " ",
+      "35 minutes",
+      " ",
+      "negative verb conjugation",
+      " ",
+      "is not",
+      "."
+    ],
+    "english": "No, it is not 12:35 PM.",
+    "prompt": "Someone shakes their head, correcting the assumption that it's 25 minutes to 1 in the afternoon.",
+    "fact": "'じゃ ありません' is a more polite way to say 'is not' than 'ではありません'."
+  },
+  {
+    "id": 36,
+    "line": [
+      "はい",
+      "、",
+      "ごご",
+      " ",
+      "いちじ",
+      " ",
+      "ごふん",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "はい、ごご いちじ ごふん です。",
+    "explain": [
+      "yes",
+      ",",
+      "PM",
+      " ",
+      "1 o'clock",
+      " ",
+      "5 minutes",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "Yes, it is 1:05 PM.",
+    "prompt": "Someone confirms that it is indeed 5 minutes past 1 in the afternoon.",
+    "fact": "This is a simple confirmation that the time is 1:05 PM."
+  },
+  {
+    "id": 37,
+    "line": [
+      "いいえ",
+      "、",
+      "ごご",
+      " ",
+      "にじ",
+      " ",
+      "じゅうごふん",
+      " ",
+      "じゃ",
+      " ",
+      "ありません",
+      "。"
+    ],
+    "tts": "いいえ、ごご にじ じゅうごふん じゃ ありません。",
+    "explain": [
+      "no",
+      ",",
+      "PM",
+      " ",
+      "2 o'clock",
+      " ",
+      "15 minutes",
+      " ",
+      "negative verb conjugation",
+      " ",
+      "is not",
+      "."
+    ],
+    "english": "No, it is not 2:15 PM.",
+    "prompt": "Someone shakes their head, correcting the assumption that it's a quarter past 2 in the afternoon.",
+    "fact": "'じゃ ありません' is a more polite way to say 'is not' than 'ではありません'."
+  },
+  {
+    "id": 38,
+    "line": [
+      "はい",
+      "、",
+      "ごご",
+      " ",
+      "さんじ",
+      " ",
+      "さんじゅうごふん",
+      " ",
+      "です",
+      "。"
+    ],
+    "tts": "はい、ごご さんじ さんじゅうごふん です。",
+    "explain": [
+      "yes",
+      ",",
+      "PM",
+      " ",
+      "3 o'clock",
+      " ",
+      "35 minutes",
+      " ",
+      "is",
+      "."
+    ],
+    "english": "Yes, it is 3:35 PM.",
+    "prompt": "Someone nods in agreement, confirming that it is indeed 25 minutes to 4 in the afternoon.",
+    "fact": "This is a simple confirmation that the time is 3:35 PM."
+  }
+]

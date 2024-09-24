@@ -1,352 +1,1271 @@
 [
-    {
-      "id": 1,
-      "line": "私は<ruby>アパート<rt>アパート</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。",
-      "tts": "わたしはアパートにすんでいます。",
-      "english": "I live in an apartment.",
-      "prompt": "Show the exterior of an apartment building, focusing on a specific window as if someone lives there."
-    },
-    {
-      "id": 2,
-      "line": "私は<ruby>小<rt>ちい</rt></ruby>さい<ruby>アパート<rt>アパート</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。",
-      "tts": "わたしはちいさいアパートにすんでいます。",
-      "english": "I live in a small apartment.",
-      "prompt": "Show a cozy, minimally furnished apartment, highlighting its small size."
-    },
-    {
-      "id": 3,
-      "line": "私は<ruby>静<rt>しず</rt></ruby>かな<ruby>アパート<rt>アパート</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。",
-      "tts": "わたしはしずかなアパートにすんでいます。",
-      "english": "I live in a quiet apartment.",
-      "prompt": "Show a peaceful scene inside an apartment with minimal noise, perhaps sunlight streaming through the window."
-    },
-    {
-      "id": 4,
-      "line": "私は<ruby>静<rt>しず</rt></ruby>かな<ruby>町<rt>まち</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。",
-      "tts": "わたしはしずかなまちにすんでいます。",
-      "english": "I live in a quiet town.",
-      "prompt": "Show a serene street scene in a small town with few people, maybe a park or a local shop."
-    },
-    {
-      "id": 5,
-      "line": "私は<ruby>新<rt>あたら</rt></ruby>しい<ruby>町<rt>まち</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。",
-      "tts": "わたしはあたらしいまちにすんでいます。",
-      "english": "I live in a new town.",
-      "prompt": "Show a developing town with modern buildings and infrastructure, conveying a sense of newness."
-    },
-    {
-      "id": 6,
-      "line": "あなたは<ruby>静<rt>しず</rt></ruby>かな<ruby>町<rt>まち</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいますか。",
-      "tts": "あなたはしずかなまちにすんでいますか。",
-      "english": "Do you live in a quiet town?",
-      "prompt": "Show a person looking thoughtful, pondering the question of living in a quiet town."
-    },
-    {
-      "id": 7,
-      "line": "あなたは<ruby>新<rt>あたら</rt></ruby>しい<ruby>町<rt>まち</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいますか。",
-      "tts": "あなたはあたらしいまちにすんでいますか。",
-      "english": "Do you live in a new town?",
-      "prompt": "Show a person looking curious, wondering if the other person lives in a new town."
-    },
-    {
-      "id": 8,
-      "line": "あなたは<ruby>新<rt>あたら</rt></ruby>しい<ruby>アパート<rt>アパート</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいますか。",
-      "tts": "あなたはあたらしいアパートにすんでいますか。",
-      "english": "Do you live in a new apartment?",
-      "prompt": "Show a person gesturing towards a modern apartment building, asking if the other person lives there."
-    },
-    {
-      "id": 9,
-      "line": "あなたは<ruby>小<rt>ちい</rt></ruby>さい<ruby>アパート<rt>アパート</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいますか。",
-      "tts": "あなたはちいさいアパートにすんでいますか。",
-      "english": "Do you live in a small apartment?",
-      "prompt": "Show a person making a small gesture with their hands, inquiring about the size of the other person's apartment."
-    },
-    {
-      "id": 10,
-      "line": "あなたは<ruby>アパート<rt>アパート</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいますか？",
-      "tts": "あなたはアパートにすんでいますか。",
-      "english": "Do you live in an apartment?",
-      "prompt": "Show a person simply asking the question directly, curious about the other person's living situation."
-    },
-    {
-      "id": 11,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>静<rt>しず</rt></ruby>かです。",
-      "tts": "わたしのいえはしずかです。",
-      "english": "My house is quiet.",
-      "prompt": "Show a peaceful and quiet scene inside a house, maybe with soft lighting and minimal furniture."
-    },
-    {
-      "id": 12,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>新<rt>あたら</rt></ruby>しいです。",
-      "tts": "わたしのいえはあたらしいです。",
-      "english": "My house is new.",
-      "prompt": "Show a modern house with sleek design and new appliances, emphasizing its newness."
-    },
-    {
-      "id": 13,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さいです。",
-      "tts": "わたしのいえはちいさいです。",
-      "english": "My house is small.",
-      "prompt": "Show a cozy house with limited space, potentially a charming cottage or a tiny home."
-    },
-    {
-      "id": 14,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>町<rt>まち</rt></ruby>にあります。",
-      "tts": "わたしのいえはまちにあります。",
-      "english": "My house is in town.",
-      "prompt": "Show a house situated in a town setting, surrounded by other houses and buildings."
-    },
-    {
-      "id": 15,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くにあります。",
-      "tts": "わたしのいえはえきのちかくにあります。",
-      "english": "My house is near the station.",
-      "prompt": "Show a house located within a short walking distance of a train station, highlighting its convenience."
-    },
-    {
-      "id": 16,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>町<rt>まち</rt></ruby>にありますか。",
-      "tts": "あなたのいえはまちにありますか。",
-      "english": "Is your house in town?",
-      "prompt": "Show a person asking the question while gesturing towards a general town area, inquiring about the location."
-    },
-    {
-      "id": 17,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くにありますか。",
-      "tts": "あなたのいえはえきのちかくにありますか。",
-      "english": "Is your house near the station?",
-      "prompt": "Show a person pointing towards a train station, asking if the other person's house is nearby."
-    },
-    {
-      "id": 18,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さいですか。",
-      "tts": "あなたのいえはちいさいですか。",
-      "english": "Is your house small?",
-      "prompt": "Show a person making a small gesture with their hands, asking about the size of the other person's house."
-    },
-    {
-      "id": 19,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>新<rt>あたら</rt></ruby>しいですか。",
-      "tts": "あなたのいえはあたらしいですか。",
-      "english": "Is your house new?",
-      "prompt": "Show a person looking curious, asking if the other person's house is new."
-    },
-    {
-      "id": 20,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>静<rt>しず</rt></ruby>かですか。",
-      "tts": "あなたのいえはしずかですか。",
-      "english": "Is your house quiet?",
-      "prompt": "Show a person cupping their ear, asking if the other person's house is typically quiet."
-    },
-    {
-      "id": 21,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>から<ruby>遠<rt>とお</rt></ruby>いです。",
-      "tts": "わたしのいえはえきからとおいです。",
-      "english": "My house is far from the station.",
-      "prompt": "Show a house located at a considerable distance from a train station, highlighting its inconvenience."
-    },
-    {
-      "id": 22,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>公園<rt>こうえん</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くです。",
-      "tts": "わたしのいえはこうえんのちかくです。",
-      "english": "My house is near a park.",
-      "prompt": "Show a house located close to a park, with children playing or people relaxing."
-    },
-    {
-      "id": 23,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>コンビニ<rt>コンビニ</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くです。",
-      "tts": "わたしのいえはコンビニのちかくです。",
-      "english": "My house is near a convenience store.",
-      "prompt": "Show a house located a short walk away from a convenience store, highlighting its accessibility."
-    },
-    {
-      "id": 24,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>スーパー<rt>スーパー</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くです。",
-      "tts": "わたしのいえはスーパーのちかくです。",
-      "english": "My house is near a supermarket.",
-      "prompt": "Show a house situated near a supermarket, emphasizing the convenience of grocery shopping."
-    },
-    {
-      "id": 25,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>レストラン<rt>レストラン</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くです。",
-      "tts": "わたしのいえはレストランのちかくです。",
-      "english": "My house is near a restaurant.",
-      "prompt": "Show a house located close to various restaurants, highlighting the culinary options available."
-    },
-    {
-      "id": 26,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>公園<rt>こうえん</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くですか。",
-      "tts": "あなたのいえはこうえんのちかくですか。",
-      "english": "Is your house near a park?",
-      "prompt": "Show a person gesturing towards a park, inquiring about the proximity of the other person's house."
-    },
-    {
-      "id": 27,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>コンビニ<rt>コンビニ</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くですか。",
-      "tts": "あなたのいえはコンビニのちかくですか。",
-      "english": "Is your house near a convenience store?",
-      "prompt": "Show a person miming buying something at a convenience store, asking if the other person lives nearby."
-    },
-    {
-      "id": 28,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>スーパー<rt>スーパー</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くですか。",
-      "tts": "あなたのいえはスーパーのちかくですか。",
-      "english": "Is your house near a supermarket?",
-      "prompt": "Show a person pushing a shopping cart, asking if the other person's house is near a supermarket."
-    },
-    {
-      "id": 29,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>レストラン<rt>レストラン</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くですか。",
-      "tts": "あなたのいえはレストランのちかくですか。",
-      "english": "Is your house near restaurants?",
-      "prompt": "Show a person looking excited about food, asking if the other person's house is near restaurants."
-    },
-    {
-      "id": 30,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>から<ruby>遠<rt>とお</rt></ruby>いですか。",
-      "tts": "あなたのいえはえきからとおいですか。",
-      "english": "Is your house far from the station?",
-      "prompt": "Show a person looking concerned about distance, asking if the other person's house is far from the station."
-    },
-    {
-      "id": 31,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>便利<rt>べんり</rt></ruby>ですよ。",
-      "tts": "わたしのいえはべんりですよ。",
-      "english": "My house is convenient.",
-      "prompt": "Show various convenient locations near a house, such as a bus stop, a shop, and a park."
-    },
-    {
-      "id": 32,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>快適<rt>かいてき</rt></ruby>ですよ。",
-      "tts": "わたしのいえはかいてきですよ。",
-      "english": "My house is comfortable.",
-      "prompt": "Show a cozy living room with comfortable furniture, warm lighting, and a relaxed atmosphere."
-    },
-    {
-      "id": 33,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>広<rt>ひろ</rt></ruby>いですよ。",
-      "tts": "わたしのいえはひろいですよ。",
-      "english": "My house is spacious.",
-      "prompt": "Show a grand house with high ceilings, large rooms, and a sense of openness."
-    },
-    {
-      "id": 34,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>明<rt>あか</rt></ruby>るいですよ。",
-      "tts": "わたしのいえはあかるいですよ。",
-      "english": "My house is bright.",
-      "prompt": "Show a house with large windows allowing plenty of natural light to illuminate the interior."
-    },
-    {
-      "id": 35,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>綺麗<rt>きれい</rt></ruby>ですよ。",
-      "tts": "わたしのいえはきれいですよ。",
-      "english": "My house is clean.",
-      "prompt": "Show a spotless house with everything tidy and organized, highlighting its cleanliness."
-    },
-    {
-      "id": 36,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>便利<rt>べんり</rt></ruby>ですか。",
-      "tts": "あなたのいえはべんりですか。",
-      "english": "Is your house convenient?",
-      "prompt": "Show a person asking while miming easy access to different amenities, inquiring about the convenience."
-    },
-    {
-      "id": 37,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>快適<rt>かいてき</rt></ruby>ですか。",
-      "tts": "あなたのいえはかいてきですか。",
-      "english": "Is your house comfortable?",
-      "prompt": "Show a person relaxing comfortably, asking if the other person's house offers the same level of comfort."
-    },
-    {
-      "id": 38,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>広<rt>ひろ</rt></ruby>いですか。",
-      "tts": "あなたのいえはひろいですか。",
-      "english": "Is your house spacious?",
-      "prompt": "Show a person gesturing with open arms, inquiring about the spaciousness of the other person's house."
-    },
-    {
-      "id": 39,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>明<rt>あか</rt></ruby>るいですか。",
-      "tts": "あなたのいえはあかるいですか。",
-      "english": "Is your house bright?",
-      "prompt": "Show a person squinting as if entering a bright place, asking if the other person's house is well-lit."
-    },
-    {
-      "id": 40,
-      "line": "あなたの<ruby>家<rt>いえ</rt></ruby>は<ruby>綺麗<rt>きれい</rt></ruby>ですか。",
-      "tts": "あなたのいえはきれいですか。",
-      "english": "Is your house clean?",
-      "prompt": "Show a person pretending to dust, playfully inquiring about the cleanliness of the other person's house."
-    },
-    {
-      "id": 41,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>綺麗<rt>きれい</rt></ruby>で<ruby>広<rt>ひろ</rt></ruby>いです。",
-      "tts": "わたしのいえはきれいでひろいです。",
-      "english": "My house is clean and spacious.",
-      "prompt": "Show a house that is both sparkling clean and impressively spacious."
-    },
-    {
-      "id": 42,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>静<rt>しず</rt></ruby>かで<ruby>快適<rt>かいてき</rt></ruby>です。",
-      "tts": "わたしのいえはしずかでかいてきです。",
-      "english": "My house is quiet and comfortable.",
-      "prompt": "Show a serene and comfortable living space, highlighting the peace and relaxation it offers."
-    },
-    {
-      "id": 43,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>から<ruby>遠<rt>とお</rt></ruby>くて<ruby>不便<rt>ふべん</rt></ruby>です。",
-      "tts": "わたしのいえはえきからとおくてふべんです。",
-      "english": "My house is far from the station and inconvenient.",
-      "prompt": "Show a map highlighting the long distance between a house and the nearest train station."
-    },
-    {
-      "id": 44,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>スーパー<rt>スーパー</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くで<ruby>便利<rt>べんり</rt></ruby>です。",
-      "tts": "わたしのいえはスーパーのちかくでべんりです。",
-      "english": "My house is near a supermarket and convenient.",
-      "prompt": "Show a person walking out of a supermarket with groceries, happy about the proximity to their house."
-    },
-    {
-      "id": 45,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>公園<rt>こうえん</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くで<ruby>静<rt>しず</rt></ruby>かです。",
-      "tts": "わたしのいえはこうえんのちかくでしょうがです。",
-      "english": "My house is near a park and quiet.",
-      "prompt": "Show a quiet residential street with houses facing a peaceful park."
-    },
-    {
-      "id": 46,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>コンビニ<rt>コンビニ</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くで<ruby>便利<rt>べんり</rt></ruby>です。",
-      "tts": "わたしのいえはコンビニのちかくでべんりです。",
-      "english": "My house is near a convenience store and convenient.",
-      "prompt": "Show a late-night scene with a person quickly running to a convenience store near their house."
-    },
-    {
-      "id": 47,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>レストラン<rt>レストラン</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くで<ruby>便利<rt>べんり</rt></ruby>です。",
-      "tts": "わたしのいえはレストランのちかくでべんりです。",
-      "english": "My house is near restaurants and convenient.",
-      "prompt": "Show a vibrant street with a variety of restaurants and a person walking towards their nearby house."
-    },
-    {
-      "id": 48,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>から<ruby>遠<rt>とお</rt></ruby>くて<ruby>静<rt>しず</rt></ruby>かです。",
-      "tts": "わたしのいえはえきからとおくてしずかです。",
-      "english": "My house is far from the station and quiet.",
-      "prompt": "Show a secluded house in a peaceful area, far from the hustle and bustle of a train station."
-    },
-    {
-      "id": 49,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>明<rt>あか</rt></ruby>るくて<ruby>広<rt>ひろ</rt></ruby>いです。",
-      "tts": "わたしのいえはあかるくてひろいです。",
-      "english": "My house is bright and spacious.",
-      "prompt": "Show a house with sunlight flooding through large windows into a spacious living area."
-    },
-    {
-      "id": 50,
-      "line": "私の<ruby>家<rt>いえ</rt></ruby>は<ruby>綺麗<rt>きれい</rt></ruby>で<ruby>快適<rt>かいてき</rt></ruby>です。",
-      "tts": "わたしのいえはきれいでかいてきです。",
-      "english": "My house is clean and comfortable.",
-      "prompt": "Show a meticulously clean house with plush furniture and a warm, inviting atmosphere."
-    }
-  ]
+  {
+    "id": 1,
+    "line": [
+      "私",
+      "は",
+      "アパート",
+      "に",
+      "住ん",
+      "で",
+      "い",
+      "ます",
+      "。"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "アパート",
+      "に",
+      "すん",
+      "で",
+      "い",
+      "ます",
+      "。"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "apartment",
+      "in/at",
+      "live",
+      "continuation",
+      "am/is/are",
+      "polite marker",
+      "."
+    ],
+    "english": "I live in an apartment.",
+    "prompt": "Imagine a person standing in front of a modest apartment building. They are holding keys and smiling slightly.",
+    "fact": "This is a basic sentence structure for stating one's residence."
+  },
+  {
+    "id": 2,
+    "line": [
+      "私",
+      "は",
+      "小さい",
+      "アパート",
+      "に",
+      "住ん",
+      "で",
+      "い",
+      "ます",
+      "。"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "ちいさい",
+      "アパート",
+      "に",
+      "すん",
+      "で",
+      "い",
+      "ます",
+      "。"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "small",
+      "apartment",
+      "in/at",
+      "live",
+      "continuation",
+      "am/is/are",
+      "polite marker",
+      "."
+    ],
+    "english": "I live in a small apartment.",
+    "prompt": "Picture a cozy studio apartment with minimal furniture and limited space.",
+    "fact": "Adding an adjective like '小さい' before a noun is a common way to describe it."
+  },
+  {
+    "id": 3,
+    "line": [
+      "私",
+      "は",
+      "静か",
+      "な",
+      "アパート",
+      "に",
+      "住ん",
+      "で",
+      "い",
+      "ます",
+      "。"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "しずか",
+      "な",
+      "アパート",
+      "に",
+      "すん",
+      "で",
+      "い",
+      "ます",
+      "。"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "quiet",
+      "adjective particle",
+      "apartment",
+      "in/at",
+      "live",
+      "continuation",
+      "am/is/are",
+      "polite marker",
+      "."
+    ],
+    "english": "I live in a quiet apartment.",
+    "prompt": "Imagine a peaceful apartment with minimal noise from neighbors or the street outside.",
+    "fact": "'な' is used to connect adjectives to nouns."
+  },
+  {
+    "id": 4,
+    "line": [
+      "私",
+      "は",
+      "東京",
+      "の",
+      "静か",
+      "な",
+      "アパート",
+      "に",
+      "住ん",
+      "で",
+      "い",
+      "ます",
+      "。"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "とうきょう",
+      "の",
+      "しずか",
+      "な",
+      "アパート",
+      "に",
+      "すん",
+      "で",
+      "い",
+      "ます",
+      "。"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "Tokyo",
+      "possessive particle",
+      "quiet",
+      "adjective particle",
+      "apartment",
+      "in/at",
+      "live",
+      "continuation",
+      "am/is/are",
+      "polite marker",
+      "."
+    ],
+    "english": "I live in a quiet apartment in Tokyo.",
+    "prompt": "Visualize a serene apartment located in a peaceful neighborhood of bustling Tokyo.",
+    "fact": "'の' indicates possession, showing the apartment is located in Tokyo."
+  },
+  {
+    "id": 5,
+    "line": [
+      "東京",
+      "の",
+      "静か",
+      "な",
+      "アパート",
+      "は",
+      "便利",
+      "です",
+      "。"
+    ],
+    "tts": [
+      "とうきょう",
+      "の",
+      "しずか",
+      "な",
+      "アパート",
+      "わ",
+      "べんり",
+      "です",
+      "。"
+    ],
+    "explain": [
+      "Tokyo",
+      "possessive particle",
+      "quiet",
+      "adjective particle",
+      "apartment",
+      "topic marker",
+      "convenient",
+      "is/are",
+      "."
+    ],
+    "english": "The quiet apartment in Tokyo is convenient.",
+    "prompt": "Imagine the speaker pointing out their apartment on a map of Tokyo, highlighting its proximity to train stations and shops.",
+    "fact": "This sentence uses 'は' to emphasize the convenience of the Tokyo apartment."
+  },
+  {
+    "id": 6,
+    "line": [
+      "あなた",
+      "は",
+      "アパート",
+      "に",
+      "住ん",
+      "で",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "アパート",
+      "に",
+      "すん",
+      "で",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "apartment",
+      "in/at",
+      "live",
+      "continuation",
+      "am/is/are",
+      "polite marker",
+      "question marker",
+      "."
+    ],
+    "english": "Do you live in an apartment?",
+    "prompt": "Imagine two people having a conversation, one asking the other about their living situation.",
+    "fact": "'か' at the end of a sentence turns it into a question."
+  },
+  {
+    "id": 7,
+    "line": [
+      "あなた",
+      "は",
+      "静か",
+      "な",
+      "アパート",
+      "に",
+      "住ん",
+      "で",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "しずか",
+      "な",
+      "アパート",
+      "に",
+      "すん",
+      "で",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "quiet",
+      "adjective particle",
+      "apartment",
+      "in/at",
+      "live",
+      "continuation",
+      "am/is/are",
+      "polite marker",
+      "question marker",
+      "."
+    ],
+    "english": "Do you live in a quiet apartment?",
+    "prompt": "Imagine someone asking another person about their living environment, specifically if it's peaceful.",
+    "fact": "This question focuses on a specific quality of the apartment, its quietness."
+  },
+  {
+    "id": 8,
+    "line": [
+      "東京",
+      "の",
+      "アパート",
+      "は",
+      "便利",
+      "です",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "とうきょう",
+      "の",
+      "アパート",
+      "わ",
+      "べんり",
+      "です",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "Tokyo",
+      "possessive particle",
+      "apartment",
+      "topic marker",
+      "convenient",
+      "is/are",
+      "question marker",
+      "."
+    ],
+    "english": "Are apartments in Tokyo convenient?",
+    "prompt": "Imagine someone unfamiliar with Tokyo asking about the convenience of living in apartments there.",
+    "fact": "This is a general question about apartments in Tokyo, not a specific one."
+  },
+  {
+    "id": 9,
+    "line": [
+      "私",
+      "の",
+      "家",
+      "は",
+      "アパート",
+      "です",
+      "。"
+    ],
+    "tts": [
+      "わたし",
+      "の",
+      "いえ",
+      "わ",
+      "アパート",
+      "です",
+      "。"
+    ],
+    "explain": [
+      "I",
+      "possessive particle",
+      "house/home",
+      "topic marker",
+      "apartment",
+      "is/are",
+      "."
+    ],
+    "english": "My home is an apartment.",
+    "prompt": "Imagine someone clarifying that their residence, referred to as '家', is specifically an apartment.",
+    "fact": "This sentence emphasizes that '家' in this context refers to an apartment."
+  },
+  {
+    "id": 10,
+    "line": [
+      "私",
+      "の",
+      "家",
+      "は",
+      "小さい",
+      "です",
+      "。"
+    ],
+    "tts": [
+      "わたし",
+      "の",
+      "いえ",
+      "わ",
+      "ちいさい",
+      "です",
+      "。"
+    ],
+    "explain": [
+      "I",
+      "possessive particle",
+      "house/home",
+      "topic marker",
+      "small",
+      "is/are",
+      "."
+    ],
+    "english": "My home is small.",
+    "prompt": "Picture a person standing in a small, cozy house, gesturing to the limited space.",
+    "fact": "This sentence describes the speaker's '家' as small."
+  },
+  {
+    "id": 11,
+    "line": [
+      "私",
+      "の",
+      "家",
+      "は",
+      "静か",
+      "です",
+      "。"
+    ],
+    "tts": [
+      "わたし",
+      "の",
+      "いえ",
+      "わ",
+      "しずか",
+      "です",
+      "。"
+    ],
+    "explain": [
+      "I",
+      "possessive particle",
+      "house/home",
+      "topic marker",
+      "quiet",
+      "is/are",
+      "."
+    ],
+    "english": "My home is quiet.",
+    "prompt": "Imagine a peaceful atmosphere inside a house, with no loud noises disturbing the tranquility.",
+    "fact": "This sentence highlights the peaceful environment of the speaker's home."
+  },
+  {
+    "id": 12,
+    "line": [
+      "私",
+      "の",
+      "家",
+      "は",
+      "東京",
+      "に",
+      "あり",
+      "ます",
+      "。"
+    ],
+    "tts": [
+      "わたし",
+      "の",
+      "いえ",
+      "わ",
+      "とうきょう",
+      "に",
+      "あり",
+      "ます",
+      "。"
+    ],
+    "explain": [
+      "I",
+      "possessive particle",
+      "house/home",
+      "topic marker",
+      "Tokyo",
+      "in/at",
+      "exist/be located",
+      "polite marker",
+      "."
+    ],
+    "english": "My home is in Tokyo.",
+    "prompt": "Imagine someone pointing to a spot on a map of Tokyo, indicating the location of their home.",
+    "fact": "This sentence uses 'あります' to indicate the location of something."
+  },
+  {
+    "id": 13,
+    "line": [
+      "東京",
+      "の",
+      "家",
+      "は",
+      "便利",
+      "です",
+      "。"
+    ],
+    "tts": [
+      "とうきょう",
+      "の",
+      "いえ",
+      "わ",
+      "べんり",
+      "です",
+      "。"
+    ],
+    "explain": [
+      "Tokyo",
+      "possessive particle",
+      "house/home",
+      "topic marker",
+      "convenient",
+      "is/are",
+      "."
+    ],
+    "english": "Homes in Tokyo are convenient.",
+    "prompt": "Imagine someone talking about the advantages of living in Tokyo, highlighting the convenience of homes there.",
+    "fact": "This is a general statement about homes in Tokyo."
+  },
+  {
+    "id": 14,
+    "line": [
+      "あなた",
+      "の",
+      "家",
+      "は",
+      "アパート",
+      "です",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "あなた",
+      "の",
+      "いえ",
+      "わ",
+      "アパート",
+      "です",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "you",
+      "possessive particle",
+      "house/home",
+      "topic marker",
+      "apartment",
+      "is/are",
+      "question marker",
+      "."
+    ],
+    "english": "Is your home an apartment?",
+    "prompt": "Imagine someone asking another person about their living situation, specifically if their '家' is an apartment.",
+    "fact": "This question seeks to clarify the type of residence the listener has."
+  },
+  {
+    "id": 15,
+    "line": [
+      "あなた",
+      "の",
+      "家",
+      "は",
+      "静か",
+      "です",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "あなた",
+      "の",
+      "いえ",
+      "わ",
+      "しずか",
+      "です",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "you",
+      "possessive particle",
+      "house/home",
+      "topic marker",
+      "quiet",
+      "is/are",
+      "question marker",
+      "."
+    ],
+    "english": "Is your home quiet?",
+    "prompt": "Imagine someone inquiring about the atmosphere at the listener's home, specifically if it's peaceful.",
+    "fact": "This question focuses on the environment of the listener's home."
+  },
+  {
+    "id": 16,
+    "line": [
+      "家",
+      "は",
+      "静か",
+      "です",
+      "。"
+    ],
+    "tts": [
+      "いえ",
+      "わ",
+      "しずか",
+      "です",
+      "。"
+    ],
+    "explain": [
+      "house/home",
+      "topic marker",
+      "quiet",
+      "is/are",
+      "."
+    ],
+    "english": "The house is quiet.",
+    "prompt": "Imagine a peaceful and still house, with no sounds of activity.",
+    "fact": "This is a simple statement about the quietness of a house."
+  },
+  {
+    "id": 17,
+    "line": [
+      "アパート",
+      "は",
+      "静か",
+      "です",
+      "。"
+    ],
+    "tts": [
+      "アパート",
+      "わ",
+      "しずか",
+      "です",
+      "。"
+    ],
+    "explain": [
+      "apartment",
+      "topic marker",
+      "quiet",
+      "is/are",
+      "."
+    ],
+    "english": "The apartment is quiet.",
+    "prompt": "Imagine a serene apartment with minimal noise from neighbors or the street.",
+    "fact": "This sentence states that an apartment is quiet."
+  },
+  {
+    "id": 18,
+    "line": [
+      "東京",
+      "は",
+      "静か",
+      "です",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "とうきょう",
+      "わ",
+      "しずか",
+      "です",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "Tokyo",
+      "topic marker",
+      "quiet",
+      "is/are",
+      "question marker",
+      "."
+    ],
+    "english": "Is Tokyo quiet?",
+    "prompt": "Imagine someone looking surprised while asking if Tokyo, known for its bustling atmosphere, is actually quiet.",
+    "fact": "This question expresses surprise or disbelief about Tokyo being quiet."
+  },
+  {
+    "id": 19,
+    "line": [
+      "東京",
+      "は",
+      "賑やか",
+      "です",
+      "。"
+    ],
+    "tts": [
+      "とうきょう",
+      "わ",
+      "にぎやか",
+      "です",
+      "。"
+    ],
+    "explain": [
+      "Tokyo",
+      "topic marker",
+      "lively/bustling",
+      "is/are",
+      "."
+    ],
+    "english": "Tokyo is lively.",
+    "prompt": "Imagine the vibrant streets of Tokyo filled with people, lights, and sounds.",
+    "fact": "This sentence describes Tokyo as a lively and bustling city."
+  },
+  {
+    "id": 20,
+    "line": [
+      "東京",
+      "の",
+      "静か",
+      "な",
+      "アパート",
+      "は",
+      "いい",
+      "です",
+      "ね",
+      "。"
+    ],
+    "tts": [
+      "とうきょう",
+      "の",
+      "しずか",
+      "な",
+      "アパート",
+      "わ",
+      "いい",
+      "です",
+      "ね",
+      "。"
+    ],
+    "explain": [
+      "Tokyo",
+      "possessive particle",
+      "quiet",
+      "adjective particle",
+      "apartment",
+      "topic marker",
+      "good",
+      "is/are",
+      "agreement particle",
+      "."
+    ],
+    "english": "A quiet apartment in Tokyo is good, isn't it?",
+    "prompt": "Imagine two people agreeing that having a peaceful living space in a busy city like Tokyo is desirable.",
+    "fact": "'ね' at the end of the sentence seeks agreement from the listener."
+  },
+  {
+    "id": 21,
+    "line": [
+      "静か",
+      "な",
+      "アパート",
+      "は",
+      "いい",
+      "です",
+      "ね",
+      "。"
+    ],
+    "tts": [
+      "しずか",
+      "な",
+      "アパート",
+      "わ",
+      "いい",
+      "です",
+      "ね",
+      "。"
+    ],
+    "explain": [
+      "quiet",
+      "adjective particle",
+      "apartment",
+      "topic marker",
+      "good",
+      "is/are",
+      "agreement particle",
+      "."
+    ],
+    "english": "A quiet apartment is good, isn't it?",
+    "prompt": "Imagine someone sighing in contentment while thinking about the peace and quiet of a tranquil apartment.",
+    "fact": "This sentence expresses a general appreciation for quiet apartments."
+  },
+  {
+    "id": 22,
+    "line": [
+      "小さい",
+      "アパート",
+      "は",
+      "いい",
+      "です",
+      "ね",
+      "。"
+    ],
+    "tts": [
+      "ちいさい",
+      "アパート",
+      "わ",
+      "いい",
+      "です",
+      "ね",
+      "。"
+    ],
+    "explain": [
+      "small",
+      "apartment",
+      "topic marker",
+      "good",
+      "is/are",
+      "agreement particle",
+      "."
+    ],
+    "english": "A small apartment is good, isn't it?",
+    "prompt": "Imagine someone admiring a small, cozy apartment, appreciating its minimalist and manageable size.",
+    "fact": "This sentence expresses a preference for small apartments."
+  },
+  {
+    "id": 23,
+    "line": [
+      "東京",
+      "の",
+      "アパート",
+      "は",
+      "いい",
+      "です",
+      "ね",
+      "。"
+    ],
+    "tts": [
+      "とうきょう",
+      "の",
+      "アパート",
+      "わ",
+      "いい",
+      "です",
+      "ね",
+      "。"
+    ],
+    "explain": [
+      "Tokyo",
+      "possessive particle",
+      "apartment",
+      "topic marker",
+      "good",
+      "is/are",
+      "agreement particle",
+      "."
+    ],
+    "english": "Apartments in Tokyo are good, aren't they?",
+    "prompt": "Imagine two people discussing the advantages of living in Tokyo apartments, agreeing on their appeal.",
+    "fact": "This sentence expresses a general positive sentiment about Tokyo apartments."
+  },
+  {
+    "id": 24,
+    "line": [
+      "東京",
+      "は",
+      "いい",
+      "です",
+      "ね",
+      "。"
+    ],
+    "tts": [
+      "とうきょう",
+      "わ",
+      "いい",
+      "です",
+      "ね",
+      "。"
+    ],
+    "explain": [
+      "Tokyo",
+      "topic marker",
+      "good",
+      "is/are",
+      "agreement particle",
+      "."
+    ],
+    "english": "Tokyo is good, isn't it?",
+    "prompt": "Imagine two people reminiscing about their positive experiences in Tokyo, agreeing on its overall appeal.",
+    "fact": "This sentence expresses a shared positive feeling about Tokyo."
+  },
+  {
+    "id": 25,
+    "line": [
+      "静か",
+      "です",
+      "ね",
+      "。"
+    ],
+    "tts": [
+      "しずか",
+      "です",
+      "ね",
+      "。"
+    ],
+    "explain": [
+      "quiet",
+      "is/are",
+      "agreement particle",
+      "."
+    ],
+    "english": "It's quiet, isn't it?",
+    "prompt": "Imagine someone commenting on the peaceful atmosphere of a place, inviting agreement from the listener.",
+    "fact": "This sentence is a simple observation about the quietness of a place."
+  },
+  {
+    "id": 26,
+    "line": [
+      "あなた",
+      "は",
+      "東京",
+      "に",
+      "住ん",
+      "で",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "とうきょう",
+      "に",
+      "すん",
+      "で",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "Tokyo",
+      "in/at",
+      "live",
+      "continuation",
+      "am/is/are",
+      "polite marker",
+      "question marker",
+      "."
+    ],
+    "english": "Do you live in Tokyo?",
+    "prompt": "Imagine one person asking another directly if they reside in Tokyo.",
+    "fact": "This is a straightforward question about the listener's residence."
+  },
+  {
+    "id": 27,
+    "line": [
+      "あなた",
+      "は",
+      "アパート",
+      "に",
+      "住ん",
+      "で",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "アパート",
+      "に",
+      "すん",
+      "で",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "apartment",
+      "in/at",
+      "live",
+      "continuation",
+      "am/is/are",
+      "polite marker",
+      "question marker",
+      "."
+    ],
+    "english": "Do you live in an apartment?",
+    "prompt": "Imagine someone inquiring about another person's living situation, specifically if they reside in an apartment.",
+    "fact": "This question seeks to understand the type of dwelling the listener lives in."
+  },
+  {
+    "id": 28,
+    "line": [
+      "あなた",
+      "は",
+      "静か",
+      "な",
+      "家",
+      "に",
+      "住ん",
+      "で",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "しずか",
+      "な",
+      "いえ",
+      "に",
+      "すん",
+      "で",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "quiet",
+      "adjective particle",
+      "house/home",
+      "in/at",
+      "live",
+      "continuation",
+      "am/is/are",
+      "polite marker",
+      "question marker",
+      "."
+    ],
+    "english": "Do you live in a quiet home?",
+    "prompt": "Imagine someone asking about the environment of the listener's home, specifically if it's peaceful and tranquil.",
+    "fact": "This question focuses on the atmosphere of the listener's residence."
+  },
+  {
+    "id": 29,
+    "line": [
+      "あなた",
+      "の",
+      "家",
+      "は",
+      "東京",
+      "に",
+      "あり",
+      "ます",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "あなた",
+      "の",
+      "いえ",
+      "わ",
+      "とうきょう",
+      "に",
+      "あり",
+      "ます",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "you",
+      "possessive particle",
+      "house/home",
+      "topic marker",
+      "Tokyo",
+      "in/at",
+      "exist/be located",
+      "polite marker",
+      "question marker",
+      "."
+    ],
+    "english": "Is your home in Tokyo?",
+    "prompt": "Imagine someone inquiring about the location of the listener's home, specifically if it's situated in Tokyo.",
+    "fact": "This question seeks to confirm the geographical location of the listener's residence."
+  },
+  {
+    "id": 30,
+    "line": [
+      "あなた",
+      "の",
+      "家",
+      "は",
+      "便利",
+      "です",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "あなた",
+      "の",
+      "いえ",
+      "わ",
+      "べんり",
+      "です",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "you",
+      "possessive particle",
+      "house/home",
+      "topic marker",
+      "convenient",
+      "is/are",
+      "question marker",
+      "."
+    ],
+    "english": "Is your home convenient?",
+    "prompt": "Imagine someone asking about the practicality of the listener's home's location, such as proximity to amenities.",
+    "fact": "This question explores the convenience factor of the listener's residence."
+  },
+  {
+    "id": 31,
+    "line": [
+      "あなた",
+      "の",
+      "家",
+      "は",
+      "小さい",
+      "です",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "あなた",
+      "の",
+      "いえ",
+      "わ",
+      "ちいさい",
+      "です",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "you",
+      "possessive particle",
+      "house/home",
+      "topic marker",
+      "small",
+      "is/are",
+      "question marker",
+      "."
+    ],
+    "english": "Is your home small?",
+    "prompt": "Imagine someone curiously asking about the size of the listener's home.",
+    "fact": "This question directly asks about the size of the listener's residence."
+  },
+  {
+    "id": 32,
+    "line": [
+      "あなた",
+      "は",
+      "賑やか",
+      "な",
+      "場所",
+      "に",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "にぎやか",
+      "な",
+      "ばしょ",
+      "に",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "lively/bustling",
+      "adjective particle",
+      "place",
+      "in/at",
+      "be (present)",
+      "polite marker",
+      "question marker",
+      "."
+    ],
+    "english": "Are you in a lively place?",
+    "prompt": "Imagine someone asking if the listener is currently in a bustling environment, like a crowded market.",
+    "fact": "This question inquires about the listener's current location and its atmosphere."
+  },
+  {
+    "id": 33,
+    "line": [
+      "あなた",
+      "は",
+      "静か",
+      "な",
+      "場所",
+      "に",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "しずか",
+      "な",
+      "ばしょ",
+      "に",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "quiet",
+      "adjective particle",
+      "place",
+      "in/at",
+      "be (present)",
+      "polite marker",
+      "question marker",
+      "."
+    ],
+    "english": "Are you in a quiet place?",
+    "prompt": "Imagine someone asking if the listener is currently in a peaceful environment, like a library or a park.",
+    "fact": "This question checks if the listener is in a calm and peaceful location."
+  },
+  {
+    "id": 34,
+    "line": [
+      "あなた",
+      "は",
+      "どこ",
+      "に",
+      "住ん",
+      "で",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "どこ",
+      "に",
+      "すん",
+      "で",
+      "い",
+      "ます",
+      "か",
+      "。"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "where",
+      "in/at",
+      "live",
+      "continuation",
+      "am/is/are",
+      "polite marker",
+      "question marker",
+      "."
+    ],
+    "english": "Where do you live?",
+    "prompt": "Imagine someone asking another person directly about their place of residence.",
+    "fact": "This is a common question to ask someone's address or general living area."
+  }
+]

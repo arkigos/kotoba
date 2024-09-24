@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
 import './WordsList.css';
-import { Cloudinary, Image } from '@cloudinary/url-gen';
-import { AdvancedImage } from '@cloudinary/react'; 
+import { Cloudinary } from '@cloudinary/url-gen';
+import { AdvancedImage } from '@cloudinary/react';
 
 function WordsList() {
   const [lessons, setLessons] = useState([]);
@@ -13,25 +13,23 @@ function WordsList() {
   const [autoPlayAudio, setAutoPlayAudio] = useState(true);
   const [showEnglishFirst, setShowEnglishFirst] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [showFurigana, setShowFurigana] = useState(true);
+  const [hoveredWordIndex, setHoveredWordIndex] = useState(null);
   const [showBackgroundImage, setShowBackgroundImage] = useState(true);
   const [languages, setLanguages] = useState([]);
   const [selectedLanguage, setSelectedLanguage] = useState('jp');
-
-  // New states for text visibility and randomization
-  const [showText, setShowText] = useState(true); // Default checked
-  const [randomizeWords, setRandomizeWords] = useState(false); // Default unchecked
+  const [showText, setShowText] = useState(true);
+  const [randomizeWords, setRandomizeWords] = useState(false);
+  const [randomizedIndices, setRandomizedIndices] = useState([]);
 
   const cld = new Cloudinary({
     cloud: {
-      cloudName: 'hgcstx3uy' 
+      cloudName: 'hgcstx3uy' // Replace with your Cloudinary cloud name
     }
   });
   const baseAudioUrl = `/audio/${selectedLanguage}/`;
+  const tooltipRef = useRef(null); 
 
   const loadLesson = useCallback((currentLesson, langCode) => {
-    console.log(`Fetching lesson file: ${currentLesson}`);
     fetch(`/api/${langCode}/lesson_${currentLesson}.json`)
       .then((response) => {
         if (!response.ok) {
@@ -40,19 +38,30 @@ function WordsList() {
         return response.json();
       })
       .then((data) => {
-        console.log('Lesson data fetched:', data);
         setWords(data);
+        if (randomizeWords) {
+          setRandomizedIndices(generateRandomSequence(data.length));
+        }
         setCurrentIndex(0);
         setShowEnglish(showEnglishFirst);
-        
-        if (autoPlayAudio) {
+
+        if (autoPlayAudio && data.length > 0) {
           const initialAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${data[0].id}.mp3`);
           setAudio(initialAudio);
           initialAudio.play().catch((error) => console.error('Audio play blocked:', error));
         }
       })
       .catch((error) => console.error('Error fetching lesson:', error));
-  }, [autoPlayAudio, showEnglishFirst, baseAudioUrl]);
+  }, [autoPlayAudio, showEnglishFirst, baseAudioUrl, randomizeWords]);
+
+  const generateRandomSequence = (length) => {
+    let sequence = Array.from({ length }, (_, i) => i);
+    for (let i = length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [sequence[i], sequence[j]] = [sequence[j], sequence[i]];
+    }
+    return sequence;
+  };
 
   useEffect(() => {
     fetch(`/api/${selectedLanguage}/lessons.json`)
@@ -73,83 +82,71 @@ function WordsList() {
         setLanguages(data);
       })
       .catch((error) => console.error('Error fetching languages:', error));
-  }, [selectedLanguage, loadLesson]); 
+  }, [selectedLanguage, loadLesson]);
 
   const handleLessonChange = (e) => {
     const selectedLesson = parseInt(e.target.value);
-    console.log(`Switching to lesson ${selectedLesson}`);
     setCurrentLesson(selectedLesson);
     loadLesson(selectedLesson, selectedLanguage);
   };
 
   const handleLanguageChange = (e) => {
     const selectedLangCode = e.target.value;
-    console.log(`Switching to language ${selectedLangCode}`);
     setSelectedLanguage(selectedLangCode);
   };
 
   const handleNext = () => {
     const nextIndex = (currentIndex + 1) % words.length;
     setCurrentIndex(nextIndex);
-    const nextAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[nextIndex].id}.mp3`);
-    setAudio(nextAudio);
-    setShowEnglish(showEnglishFirst);
-    if (autoPlayAudio) nextAudio.play();
+    playAudioForIndex(nextIndex);
   };
 
   const handlePrevious = () => {
     const prevIndex = (currentIndex - 1 + words.length) % words.length;
     setCurrentIndex(prevIndex);
-    const prevAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[prevIndex].id}.mp3`);
-    setAudio(prevAudio);
-    setShowEnglish(showEnglishFirst);
-    if (autoPlayAudio) prevAudio.play();
+    playAudioForIndex(prevIndex);
   };
 
   const handleSidebarClick = (index) => {
     setCurrentIndex(index);
-    const clickedAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[index].id}.mp3`);
-    setAudio(clickedAudio);
+    playAudioForIndex(index);
+  };
+
+  const playAudioForIndex = (index) => {
+    const actualIndex = randomizeWords ? randomizedIndices[index] : index;
+    const nextAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[actualIndex].id}.mp3`);
+    setAudio(nextAudio);
     setShowEnglish(showEnglishFirst);
-    if (autoPlayAudio) clickedAudio.play();
+    if (autoPlayAudio) nextAudio.play();
   };
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const toggleFurigana = () => {
-    setShowFurigana(!showFurigana);
-  };
-
   const toggleBackgroundImage = () => {
     setShowBackgroundImage(!showBackgroundImage);
   };
 
-  const stripFurigana = (text) => {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(text, 'text/html');
-    doc.querySelectorAll('rt').forEach(rt => rt.remove());
-    return doc.body.innerHTML;
+  const handleWordContainerClick = () => {
+    setShowEnglish(!showEnglish);
   };
 
-  // Function to return a shuffled array
-  const randomizeArray = (array) => {
-    return array
-      .map(value => ({ value, sort: Math.random() })) // Add random sorting
-      .sort((a, b) => a.sort - b.sort)
-      .map(({ value }) => value); // Extract the values back
+  const handleWordPartMouseMove = (e) => {
+    const tooltip = tooltipRef.current;
+    if (tooltip) {
+      tooltip.style.left = `${e.clientX}px`;
+      tooltip.style.top = `${e.clientY}px`;
+    }
   };
 
   if (words.length === 0) {
     return <div>Loading...</div>;
   }
 
-  const displayedWords = randomizeWords ? randomizeArray(words) : words; // Use randomization logic.
-  const currentWord = displayedWords[currentIndex];
-
-  // Create Cloudinary Image instance 
-  const myImage = cld.image(`${selectedLanguage}/images/image_${currentLesson}_${currentWord.id}.png`); 
+  const displayedWords = words;
+  const currentWord = displayedWords[randomizeWords ? randomizedIndices[currentIndex] : currentIndex];
+  const myImage = cld.image(`${selectedLanguage}/images/image_${currentLesson}_${currentWord.id}.png`);
 
   return (
     <div className="container">
@@ -177,8 +174,8 @@ function WordsList() {
           </select>
         </div>
 
-        {/* Hamburger Menu */}
-        <div className="hamburger-menu">
+{/* Hamburger Menu */}
+<div className="hamburger-menu">
           <button className="hamburger-icon" onClick={toggleMenu}>
             ☰
           </button>
@@ -211,14 +208,6 @@ function WordsList() {
               <label>
                 <input
                   type="checkbox"
-                  checked={showFurigana}
-                  onChange={toggleFurigana}
-                />
-                Show Furigana
-              </label>
-              <label>
-                <input
-                  type="checkbox"
                   checked={showText}
                   onChange={(e) => setShowText(e.target.checked)}
                 />
@@ -228,7 +217,14 @@ function WordsList() {
                 <input
                   type="checkbox"
                   checked={randomizeWords}
-                  onChange={(e) => setRandomizeWords(e.target.checked)}
+                  onChange={(e) => {
+                    setRandomizeWords(e.target.checked);
+                    if (e.target.checked) {
+                      setRandomizedIndices(generateRandomSequence(words.length));
+                    } else {
+                      setCurrentIndex(0);
+                    }
+                  }}
                 />
                 Randomize
               </label>
@@ -240,49 +236,70 @@ function WordsList() {
       {/* Sidebar */}
       <div className="sidebar">
         <ul>
-          {displayedWords.map((word, index) => (
-            <li
-              key={word.id}
-              className={index === currentIndex ? 'active' : ''}
-              onClick={() => handleSidebarClick(index)}
-              onMouseOver={() => setHoveredIndex(index)}
-              onMouseOut={() => setHoveredIndex(null)}
-              dangerouslySetInnerHTML={{
-                __html:
-                  hoveredIndex === index
-                    ? showEnglishFirst
-                      ? word.english
-                      : showFurigana ? word.line : stripFurigana(word.line)
-                    : showEnglishFirst
-                      ? word.english
-                      : showFurigana ? word.line : stripFurigana(word.line),
-              }}
-            />
-          ))}
+          {displayedWords.map((word, index) => {
+            const displayIndex = randomizeWords ? randomizedIndices[index] : index;
+            return (
+              <li
+                key={word.id}
+                className={displayIndex === currentIndex ? 'active' : ''}
+                onClick={() => handleSidebarClick(displayIndex)}
+              >
+                {showEnglishFirst ? word.english : word.line.join('')}
+              </li>
+            );
+          })}
         </ul>
       </div>
 
       {/* Main Content */}
       <div className="word-content" style={{ backgroundColor: showBackgroundImage ? 'transparent' : 'black' }}>
         {showBackgroundImage && (
-          <AdvancedImage 
+          <AdvancedImage
             className="word-image"
             cldImg={myImage}
-            alt={currentWord.word}
+            alt={currentWord.english}
           />
         )}
-        
-        {showText && ( // Condition to render only if showText is true
-          <h1
-            className="word"
-            onClick={() => setShowEnglish(!showEnglish)}
-            dangerouslySetInnerHTML={{
-              __html: showEnglish ? currentWord.english : showFurigana ? currentWord.line : stripFurigana(currentWord.line),
-            }}
-          />
+
+        {showText && (
+          <div className="word-container">
+            {showEnglish ? ( 
+              <h1 className="word" onClick={handleWordContainerClick}>
+                {currentWord.english}
+              </h1>
+            ) : (
+              currentWord.line.map((wordPart, wordIndex) => (
+                <span
+                  key={wordIndex}
+                  className={`word-part ${hoveredWordIndex === wordIndex ? 'highlighted' : ''}`} // Dynamic class
+                  onClick={handleWordContainerClick} 
+                  onMouseOver={() => setHoveredWordIndex(wordIndex)}
+                  onMouseOut={() => setHoveredWordIndex(null)}
+                  onMouseMove={(e) => {
+                    if (hoveredWordIndex === wordIndex) {
+                      handleWordPartMouseMove(e);
+                    }
+                  }}
+                >
+                  {wordPart}
+                {hoveredWordIndex === wordIndex && (
+                  <div className="tooltip" ref={tooltipRef}>
+                    <div>
+                      {currentWord.tts[wordIndex]}
+                    </div>
+                    <div>
+                      {currentWord.explain[wordIndex]}
+                    </div>
+                  </div>
+                )}
+              </span>
+              ))
+            )}
+          </div>
         )}
-        
-        <div className="buttons-container">
+
+        {/* Buttons Container  */}
+        <div className="buttons-container"> 
           <button className="previous-button" onClick={handlePrevious}>
             Previous
           </button>
@@ -293,6 +310,7 @@ function WordsList() {
             Next
           </button>
         </div>
+
       </div>
     </div>
   );

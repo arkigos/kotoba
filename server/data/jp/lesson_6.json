@@ -1,352 +1,1274 @@
 [
-    {
-        "id": 1,
-        "line": "これ<ruby>は<rt>わ</rt></ruby> <ruby>本<rt>ほん</rt></ruby> です。",
-        "tts": "これは ほんです。",
-        "english": "This is a book.",
-        "prompt": "A person is holding up a book."
-    },
-    {
-        "id": 2,
-        "line": "それ<ruby>は<rt>わ</rt></ruby> <ruby>ペン<rt>ペン</rt></ruby> です。",
-        "tts": "それは ペンです。",
-        "english": "That is a pen.",
-        "prompt": "A person is pointing at a pen on a table."
-    },
-    {
-        "id": 3,
-        "line": "あれ<ruby>は<rt>わ</rt></ruby> <ruby>机<rt>つくえ</rt></ruby> です。",
-        "tts": "あれは つくえです。",
-        "english": "That over there is a desk.",
-        "prompt": "A person is pointing to a desk across the room."
-    },
-    {
-        "id": 4,
-        "line": "これ<ruby>は<rt>わ</rt></ruby> <ruby>何<rt>なん</rt></ruby> ですか？",
-        "tts": "これは なんですか？",
-        "english": "What is this?",
-        "prompt": "A person is holding an unknown object and asking what it is."
-    },
-    {
-        "id": 5,
-        "line": "それ<ruby>は<rt>わ</rt></ruby> <ruby>何<rt>なん</rt></ruby> ですか？",
-        "tts": "それは なんですか？",
-        "english": "What is that?",
-        "prompt": "A person is pointing at an unknown object on the table and asking what it is."
-    },
-    {
-        "id": 6,
-        "line": "あれ<ruby>は<rt>わ</rt></ruby> <ruby>何<rt>なん</rt></ruby> ですか？",
-        "tts": "あれは なんですか？",
-        "english": "What is that over there?",
-        "prompt": "A person is pointing at an unknown object across the room and asking what it is."
-    },
-    {
-        "id": 7,
-        "line": "これ<ruby>は<rt>わ</rt></ruby> <ruby>本<rt>ほん</rt></ruby> ですか？",
-        "tts": "これは ほんですか？",
-        "english": "Is this a book?",
-        "prompt": "A person is holding up an object and asking if it is a book."
-    },
-    {
-        "id": 8,
-        "line": "はい、<ruby>本<rt>ほん</rt></ruby> です。",
-        "tts": "はい、ほんです。",
-        "english": "Yes, it is a book.",
-        "prompt": "Someone confirms that the object is indeed a book."
-    },
-    {
-        "id": 9,
-        "line": "いいえ、<ruby>本<rt>ほん</rt></ruby> じゃ ありません。",
-        "tts": "いいえ、ほんじゃ ありません。",
-        "english": "No, it is not a book.",
-        "prompt": "Someone denies that the object is a book."
-    },
-    {
-        "id": 10,
-        "line": "それ<ruby>は<rt>わ</rt></ruby> <ruby>ノート<rt>ノート</rt></ruby> です。",
-        "tts": "それは ノートです。",
-        "english": "That is a notebook.",
-        "prompt": "Someone clarifies that the object is a notebook."
-    },
-    {
-        "id": 11,
-        "line": "<ruby>ノート<rt>ノート</rt></ruby><ruby>は<rt>わ</rt></ruby> <ruby>どこ<rt>どこ</rt></ruby> ですか？",
-        "tts": "ノートは どこですか？",
-        "english": "Where is the notebook?",
-        "prompt": "Someone is looking for the notebook."
-    },
-    {
-        "id": 12,
-        "line": "<ruby>ノート<rt>ノート</rt></ruby><ruby>は<rt>わ</rt></ruby> ここ です。",
-        "tts": "ノートは ここです。",
-        "english": "The notebook is here.",
-        "prompt": "Someone points to the location of the notebook."
-    },
-    {
-        "id": 13,
-        "line": "<ruby>ペン<rt>ペン</rt></ruby><ruby>は<rt>わ</rt></ruby> <ruby>どこ<rt>どこ</rt></ruby> ですか？",
-        "tts": "ペンは どこですか？",
-        "english": "Where is the pen?",
-        "prompt": "Someone is searching for the pen."
-    },
-    {
-        "id": 14,
-        "line": "<ruby>ペン<rt>ペン</rt></ruby><ruby>は<rt>わ</rt></ruby> そこ です。",
-        "tts": "ペンは そこです。",
-        "english": "The pen is there.",
-        "prompt": "Someone points to the location of the pen."
-    },
-    {
-        "id": 15,
-        "line": "<ruby>机<rt>つくえ</rt></ruby><ruby>は<rt>わ</rt></ruby> <ruby>どこ<rt>どこ</rt></ruby> ですか？",
-        "tts": "つくえは どこですか？",
-        "english": "Where is the desk?",
-        "prompt": "Someone is looking for the desk."
-    },
-    {
-        "id": 16,
-        "line": "<ruby>机<rt>つくえ</rt></ruby><ruby>は<rt>わ</rt></ruby> あそこ です。",
-        "tts": "つくえは あそこです。",
-        "english": "The desk is over there.",
-        "prompt": "Someone points to the desk located further away."
-    },
-    {
-        "id": 17,
-        "line": "これ<ruby>は<rt>わ</rt></ruby> あなたの <ruby>本<rt>ほん</rt></ruby> ですか？",
-        "tts": "これは あなたの ほんですか？",
-        "english": "Is this your book?",
-        "prompt": "Someone is holding a book and asking if it belongs to the other person."
-    },
-    {
-        "id": 18,
-        "line": "はい、<ruby>私<rt>わたし</rt></ruby> の <ruby>本<rt>ほん</rt></ruby> です。",
-        "tts": "はい、わたしの ほんです。",
-        "english": "Yes, it is my book.",
-        "prompt": "The person confirms that the book belongs to them."
-    },
-    {
-        "id": 19,
-        "line": "いいえ、<ruby>私<rt>わたし</rt></ruby> の <ruby>本<rt>ほん</rt></ruby> じゃ ありません。",
-        "tts": "いいえ、わたしの ほんじゃ ありません。",
-        "english": "No, it is not my book.",
-        "prompt": "The person denies that the book belongs to them."
-    },
-    {
-        "id": 20,
-        "line": "あれ<ruby>は<rt>わ</rt></ruby> あなたの <ruby>ペン<rt>ペン</rt></ruby> ですか？",
-        "tts": "あれは あなたの ペンですか？",
-        "english": "Is that over there your pen?",
-        "prompt": "Someone points to a pen further away and asks if it belongs to the other person."
-    },
-    {
-        "id": 21,
-        "line": "はい、<ruby>私<rt>わたし</rt></ruby> の <ruby>ペン<rt>ペン</rt></ruby> です。",
-        "tts": "はい、わたしの ペンです。",
-        "english": "Yes, it is my pen.",
-        "prompt": "The person confirms that the pen is theirs."
-    },
-    {
-        "id": 22,
-        "line": "いいえ、<ruby>田中<rt>たなか</rt></ruby>さん の <ruby>ペン<rt>ペン</rt></ruby> です。",
-        "tts": "いいえ、たなかさん の ペンです。",
-        "english": "No, it is Tanaka-san's pen.",
-        "prompt": "The person clarifies that the pen belongs to Tanaka."
-    },
-    {
-        "id": 23,
-        "line": "<ruby>田中<rt>たなか</rt></ruby>さん の <ruby>机<rt>つくえ</rt></ruby><ruby>は<rt>わ</rt></ruby> <ruby>どこ<rt>どこ</rt></ruby> ですか？",
-        "tts": "たなかさん の つくえは どこですか？",
-        "english": "Where is Tanaka-san's desk?",
-        "prompt": "Someone is looking for Tanaka's desk."
-    },
-    {
-        "id": 24,
-        "line": "<ruby>田中<rt>たなか</rt></ruby>さん の <ruby>机<rt>つくえ</rt></ruby><ruby>は<rt>わ</rt></ruby> あそこ です。",
-        "tts": "たなかさん の つくえは あそこです。",
-        "english": "Tanaka-san's desk is over there.",
-        "prompt": "Someone points to Tanaka's desk located further away."
-    },
-    {
-        "id": 25,
-        "line": "これ <ruby>は<rt>わ</rt></ruby> <ruby>りんご<rt>りんご</rt></ruby> です。",
-        "tts": "これは りんごです。",
-        "english": "This is an apple.",
-        "prompt": "Someone is holding up an apple."
-    },
-    {
-        "id": 26,
-        "line": "それ <ruby>は<rt>わ</rt></ruby> <ruby>みかん<rt>みかん</rt></ruby> です。",
-        "tts": "それは みかんです。",
-        "english": "That is a mandarin orange.",
-        "prompt": "Someone is pointing at a mandarin orange on a table."
-    },
-    {
-        "id": 27,
-        "line": "<ruby>りんご<rt>りんご</rt></ruby> <ruby>は<rt>わ</rt></ruby> <ruby>どこ<rt>どこ</rt></ruby> ですか？",
-        "tts": "りんごは どこですか？",
-        "english": "Where is the apple?",
-        "prompt": "Someone is looking for the apple."
-    },
-    {
-        "id": 28,
-        "line": "<ruby>りんご<rt>りんご</rt></ruby> <ruby>は<rt>わ</rt></ruby> ここ です。",
-        "tts": "りんごは ここです。",
-        "english": "The apple is here.",
-        "prompt": "Someone points to the location of the apple."
-    },
-    {
-        "id": 29,
-        "line": "<ruby>みかん<rt>みかん</rt></ruby> <ruby>も<rt>も</rt></ruby> ここ です。",
-        "tts": "みかんも ここです。",
-        "english": "The mandarin orange is also here.",
-        "prompt": "Someone indicates that the mandarin orange is in the same location as the apple."
-    },
-    {
-        "id": 30,
-        "line": "あれ <ruby>は<rt>わ</rt></ruby> <ruby>何<rt>なん</rt></ruby> ですか？",
-        "tts": "あれは なんですか？",
-        "english": "What is that over there?",
-        "prompt": "Someone points to an unknown object further away and asks what it is."
-    },
-    {
-        "id": 31,
-        "line": "あれ <ruby>は<rt>わ</rt></ruby> <ruby>かばん<rt>かばん</rt></ruby> です。",
-        "tts": "あれは かばんです。",
-        "english": "That over there is a bag.",
-        "prompt": "Someone clarifies that the object is a bag."
-    },
-    {
-        "id": 32,
-        "line": "<ruby>かばん<rt>かばん</rt></ruby> の <ruby>中<rt>なか</rt></ruby> に <ruby>何<rt>なに</rt></ruby> が ありますか？",
-        "tts": "かばん の なか に なに が ありますか？",
-        "english": "What is inside the bag?",
-        "prompt": "Someone is asking about the contents of the bag."
-    },
-    {
-        "id": 33,
-        "line": "<ruby>かばん<rt>かばん</rt></ruby> の <ruby>中<rt>なか</rt></ruby> に <ruby>本<rt>ほん</rt></ruby> が あります。",
-        "tts": "かばん の なか に ほん が あります。",
-        "english": "There is a book inside the bag.",
-        "prompt": "Someone reveals that there is a book in the bag."
-    },
-    {
-        "id": 34,
-        "line": "<ruby>ペン<rt>ペン</rt></ruby> <ruby>も<rt>も</rt></ruby> ありますか？",
-        "tts": "ペンも ありますか？",
-        "english": "Is there also a pen?",
-        "prompt": "Someone is asking if there is a pen in the bag as well."
-    },
-    {
-        "id": 35,
-        "line": "はい、<ruby>ペン<rt>ペン</rt></ruby> <ruby>も<rt>も</rt></ruby> あります。",
-        "tts": "はい、ペンも あります。",
-        "english": "Yes, there is also a pen.",
-        "prompt": "Someone confirms that there is also a pen in the bag."
-    },
-    {
-        "id": 36,
-        "line": "<ruby>ノート<rt>ノート</rt></ruby> <ruby>は<rt>わ</rt></ruby> ありますか？",
-        "tts": "ノートは ありますか？",
-        "english": "Is there a notebook?",
-        "prompt": "Someone is asking if a notebook is present."
-    },
-    {
-        "id": 37,
-        "line": "いいえ、<ruby>ノート<rt>ノート</rt></ruby> <ruby>は<rt>わ</rt></ruby> ありません。",
-        "tts": "いいえ、ノートは ありません。",
-        "english": "No, there is no notebook.",
-        "prompt": "Someone states that a notebook is not present."
-    },
-    {
-        "id": 38,
-        "line": "あれ<ruby>は<rt>わ</rt></ruby> <ruby>私<rt>わたし</rt></ruby> の <ruby>かばん<rt>かばん</rt></ruby> です。",
-        "tts": "あれは わたしの かばんです。",
-        "english": "That over there is my bag.",
-        "prompt": "Someone identifies a bag as theirs."
-    },
-    {
-        "id": 39,
-        "line": "<ruby>田中<rt>たなか</rt></ruby>さん の <ruby>かばん<rt>かばん</rt></ruby> <ruby>は<rt>わ</rt></ruby> <ruby>どれ<rt>どれ</rt></ruby> ですか？",
-        "tts": "たなかさん の かばんは どれですか？",
-        "english": "Which one is Tanaka-san's bag?",
-        "prompt": "Someone wants to know which bag belongs to Tanaka."
-    },
-    {
-        "id": 40,
-        "line": "あの <ruby>黒<rt>くろ</rt></ruby>い <ruby>かばん<rt>かばん</rt></ruby> です。",
-        "tts": "あの くろい かばんです。",
-        "english": "That black bag is Tanaka-san's.",
-        "prompt": "Someone points out a black bag as belonging to Tanaka."
-    },
-    {
-        "id": 41,
-        "line": "この <ruby>りんご<rt>りんご</rt></ruby> <ruby>は<rt>わ</rt></ruby> <ruby>赤<rt>あか</rt></ruby>い です。",
-        "tts": "この りんごは あかいです。",
-        "english": "This apple is red.",
-        "prompt": "Someone is describing an apple as being red."
-    },
-    {
-        "id": 42,
-        "line": "その <ruby>みかん<rt>みかん</rt></ruby> <ruby>は<rt>わ</rt></ruby> <ruby>オレンジ<rt>オレンジ</rt></ruby> です。",
-        "tts": "その みかんは オレンジです。",
-        "english": "That mandarin orange is orange.",
-        "prompt": "Someone is describing a mandarin orange as being orange."
-    },
-    {
-        "id": 43,
-        "line": "<ruby>田中<rt>たなか</rt></ruby>さん の <ruby>かばん<rt>かばん</rt></ruby> <ruby>は<rt>わ</rt></ruby> <ruby>大<rt>おお</rt></ruby>きい です。",
-        "tts": "たなかさん の かばんは おおきいです。",
-        "english": "Tanaka-san's bag is big.",
-        "prompt": "Someone is describing Tanaka's bag as being large."
-    },
-    {
-        "id": 44,
-        "line": "<ruby>私<rt>わたし</rt></ruby> の <ruby>かばん<rt>かばん</rt></ruby> <ruby>は<rt>わ</rt></ruby> <ruby>小<rt>ちい</rt></ruby>さい です。",
-        "tts": "わたしの かばんは ちいさいです。",
-        "english": "My bag is small.",
-        "prompt": "Someone is describing their own bag as being small."
-    },
-    {
-        "id": 45,
-        "line": "この <ruby>本<rt>ほん</rt></ruby> <ruby>は<rt>わ</rt></ruby> <ruby>面白<rt>おもしろ</rt></ruby>い です。",
-        "tts": "この ほんは おもしろいです。",
-        "english": "This book is interesting.",
-        "prompt": "Someone is expressing that they find a book interesting."
-    },
-    {
-        "id": 46,
-        "line": "あの <ruby>ペン<rt>ペン</rt></ruby> <ruby>は<rt>わ</rt></ruby> <ruby>書<rt>か</rt></ruby>き<ruby>易<rt>やす</rt></ruby>い です。",
-        "tts": "あの ペンは かきやすいです。",
-        "english": "That pen is easy to write with.",
-        "prompt": "Someone is commenting on how smooth a pen writes."
-    },
-    {
-        "id": 47,
-        "line": "この <ruby>机<rt>つくえ</rt></ruby> <ruby>は<rt>わ</rt></ruby> <ruby>新<rt>あたら</rt></ruby>しい です。",
-        "tts": "この つくえは あたらしいです。",
-        "english": "This desk is new.",
-        "prompt": "Someone is pointing out that a desk looks brand new."
-    },
-    {
-        "id": 48,
-        "line": "あの <ruby>ノート<rt>ノート</rt></ruby> <ruby>は<rt>わ</rt></ruby> <ruby>古<rt>ふる</rt></ruby>い です。",
-        "tts": "あの ノートは ふるいです。",
-        "english": "That notebook is old.",
-        "prompt": "Someone is commenting on a notebook appearing old and worn."
-    },
-    {
-        "id": 49,
-        "line": "<ruby>田中<rt>たなか</rt></ruby>さん の <ruby>りんご<rt>りんご</rt></ruby> <ruby>は<rt>わ</rt></ruby> <ruby>大<rt>おお</rt></ruby>きい ですか？",
-        "tts": "たなかさん の りんごは おおきいですか？",
-        "english": "Is Tanaka-san's apple big?",
-        "prompt": "Someone is asking about the size of Tanaka's apple."
-    },
-    {
-        "id": 50,
-        "line": "いいえ、<ruby>田中<rt>たなか</rt></ruby>さん の <ruby>りんご<rt>りんご</rt></ruby> <ruby>は<rt>わ</rt></ruby> <ruby>小<rt>ちい</rt></ruby>さい です。",
-        "tts": "いいえ、たなかさん の りんごは ちいさいです。",
-        "english": "No, Tanaka-san's apple is small.",
-        "prompt": "Someone clarifies that Tanaka's apple is small."
-    }
+  {
+    "id": 1,
+    "line": [
+      "これ",
+      "は",
+      "りんご",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "りんご",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "apple",
+      "is/am/are"
+    ],
+    "english": "This is an apple.",
+    "prompt": "Someone points at an apple and says this.",
+    "fact": "This sentence introduces a nearby object, the apple, using the pronoun 'これ' (this)."
+  },
+  {
+    "id": 2,
+    "line": [
+      "それ",
+      "は",
+      "みかん",
+      "です"
+    ],
+    "tts": [
+      "それ",
+      "わ",
+      "みかん",
+      "です"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "orange",
+      "is/am/are"
+    ],
+    "english": "That is an orange.",
+    "prompt": "Someone gestures towards an orange that's a bit further away and says this.",
+    "fact": "The pronoun 'それ' (that) is used to indicate something near the listener."
+  },
+  {
+    "id": 3,
+    "line": [
+      "あれ",
+      "は",
+      "バナナ",
+      "です"
+    ],
+    "tts": [
+      "あれ",
+      "わ",
+      "バナナ",
+      "です"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "banana",
+      "is/am/are"
+    ],
+    "english": "That is a banana.",
+    "prompt": "Someone points at a banana across the room.",
+    "fact": "The pronoun 'あれ' (that) refers to something far from both the speaker and listener."
+  },
+  {
+    "id": 4,
+    "line": [
+      "これ",
+      "は",
+      "本",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "ほん",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "book",
+      "is/am/are"
+    ],
+    "english": "This is a book.",
+    "prompt": "A person holds up a book while saying this.",
+    "fact": "This sentence follows the same structure as the first, but with a different object."
+  },
+  {
+    "id": 5,
+    "line": [
+      "それ",
+      "は",
+      "ノート",
+      "です"
+    ],
+    "tts": [
+      "それ",
+      "わ",
+      "ノート",
+      "です"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "notebook",
+      "is/am/are"
+    ],
+    "english": "That is a notebook.",
+    "prompt": "Someone pushes a notebook towards someone else on the table.",
+    "fact": "Again, 'それ' is used for something closer to the listener."
+  },
+  {
+    "id": 6,
+    "line": [
+      "あれ",
+      "は",
+      "ペン",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "あれ",
+      "わ",
+      "ペン",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "pen",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is that a pen?",
+    "prompt": "Someone points at an object in the distance, unsure if it's a pen.",
+    "fact": "Adding 'か' at the end turns a statement into a question."
+  },
+  {
+    "id": 7,
+    "line": [
+      "はい",
+      "、",
+      "あれ",
+      "は",
+      "ペン",
+      "です"
+    ],
+    "tts": [
+      "はい",
+      "、",
+      "あれ",
+      "わ",
+      "ペン",
+      "です"
+    ],
+    "explain": [
+      "yes",
+      ",",
+      "that",
+      "topic marker",
+      "pen",
+      "is/am/are"
+    ],
+    "english": "Yes, that is a pen.",
+    "prompt": "Someone confirms that the object in the distance is indeed a pen.",
+    "fact": "This is a simple affirmative response to the previous question."
+  },
+  {
+    "id": 8,
+    "line": [
+      "いいえ",
+      "、",
+      "あれ",
+      "は",
+      "えんぴつ",
+      "です"
+    ],
+    "tts": [
+      "いいえ",
+      "、",
+      "あれ",
+      "わ",
+      "えんぴつ",
+      "です"
+    ],
+    "explain": [
+      "no",
+      ",",
+      "that",
+      "topic marker",
+      "pencil",
+      "is/am/are"
+    ],
+    "english": "No, that is a pencil.",
+    "prompt": "Someone corrects the previous statement, saying the object is actually a pencil.",
+    "fact": "This shows a simple correction, using 'いいえ' (no) and providing the correct information."
+  },
+  {
+    "id": 9,
+    "line": [
+      "これ",
+      "は",
+      "ねこ",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "ねこ",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "cat",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is this a cat?",
+    "prompt": "Someone points at a small, furry animal, unsure if it's a cat.",
+    "fact": "This question follows the same pattern as before, asking for confirmation."
+  },
+  {
+    "id": 10,
+    "line": [
+      "いいえ",
+      "、",
+      "それ",
+      "は",
+      "いぬ",
+      "です"
+    ],
+    "tts": [
+      "いいえ",
+      "、",
+      "それ",
+      "わ",
+      "いぬ",
+      "です"
+    ],
+    "explain": [
+      "no",
+      ",",
+      "that",
+      "topic marker",
+      "dog",
+      "is/am/are"
+    ],
+    "english": "No, that is a dog.",
+    "prompt": "Someone clarifies that the animal is actually a dog.",
+    "fact": "This is another correction, highlighting the difference between 'ねこ' (cat) and 'いぬ' (dog)."
+  },
+  {
+    "id": 11,
+    "line": [
+      "あれ",
+      "は",
+      "いぬ",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "あれ",
+      "わ",
+      "いぬ",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "dog",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is that a dog?",
+    "prompt": "Someone points at a dog in the distance.",
+    "fact": "This question confirms if the previously mentioned animal is indeed a dog."
+  },
+  {
+    "id": 12,
+    "line": [
+      "はい",
+      "、",
+      "あれ",
+      "は",
+      "いぬ",
+      "です"
+    ],
+    "tts": [
+      "はい",
+      "、",
+      "あれ",
+      "わ",
+      "いぬ",
+      "です"
+    ],
+    "explain": [
+      "yes",
+      ",",
+      "that",
+      "topic marker",
+      "dog",
+      "is/am/are"
+    ],
+    "english": "Yes, that is a dog.",
+    "prompt": "Someone confirms that the animal in the distance is a dog.",
+    "fact": "This confirms the previous statement."
+  },
+  {
+    "id": 13,
+    "line": [
+      "これ",
+      "は",
+      "なん",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "なん",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "what",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "What is this?",
+    "prompt": "Someone holds up an unknown object, asking for its name.",
+    "fact": "'なん' (what) is used to inquire about the identity of something."
+  },
+  {
+    "id": 14,
+    "line": [
+      "それ",
+      "は",
+      "つくえ",
+      "です"
+    ],
+    "tts": [
+      "それ",
+      "わ",
+      "つくえ",
+      "です"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "desk",
+      "is/am/are"
+    ],
+    "english": "That is a desk.",
+    "prompt": "Someone points at a desk near the listener.",
+    "fact": "This sentence identifies the object from the previous question."
+  },
+  {
+    "id": 15,
+    "line": [
+      "あれ",
+      "は",
+      "なん",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "あれ",
+      "わ",
+      "なん",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "what",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "What is that?",
+    "prompt": "Someone points at an object far away, asking for its identification.",
+    "fact": "This question is similar to the previous one, but refers to a distant object."
+  },
+  {
+    "id": 16,
+    "line": [
+      "あれ",
+      "は",
+      "いす",
+      "です"
+    ],
+    "tts": [
+      "あれ",
+      "わ",
+      "いす",
+      "です"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "chair",
+      "is/am/are"
+    ],
+    "english": "That is a chair.",
+    "prompt": "Someone identifies the distant object as a chair.",
+    "fact": "This sentence provides the answer to the previous question."
+  },
+  {
+    "id": 17,
+    "line": [
+      "これ",
+      "は",
+      "りんご",
+      "ジュース",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "りんご",
+      "ジュース",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "apple",
+      "juice",
+      "is/am/are"
+    ],
+    "english": "This is apple juice.",
+    "prompt": "Someone holds up a glass of apple juice.",
+    "fact": "This sentence introduces a new object, apple juice."
+  },
+  {
+    "id": 18,
+    "line": [
+      "それ",
+      "は",
+      "オレンジ",
+      "ジュース",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "それ",
+      "わ",
+      "オレンジ",
+      "ジュース",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "orange",
+      "juice",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is that orange juice?",
+    "prompt": "Someone points at a glass near the listener, asking if it contains orange juice.",
+    "fact": "This question asks for confirmation about the content of the glass."
+  },
+  {
+    "id": 19,
+    "line": [
+      "はい",
+      "、",
+      "それ",
+      "は",
+      "オレンジ",
+      "ジュース",
+      "です"
+    ],
+    "tts": [
+      "はい",
+      "、",
+      "それ",
+      "わ",
+      "オレンジ",
+      "ジュース",
+      "です"
+    ],
+    "explain": [
+      "yes",
+      ",",
+      "that",
+      "topic marker",
+      "orange",
+      "juice",
+      "is/am/are"
+    ],
+    "english": "Yes, that is orange juice.",
+    "prompt": "Someone confirms that the glass does indeed contain orange juice.",
+    "fact": "This is a straightforward confirmation of the previous question."
+  },
+  {
+    "id": 20,
+    "line": [
+      "あれ",
+      "は",
+      "アップルパイ",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "あれ",
+      "わ",
+      "アップルパイ",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "apple pie",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is that apple pie?",
+    "prompt": "Someone points at a dessert in the distance, unsure if it's apple pie.",
+    "fact": "This question asks for clarification about a distant food item."
+  },
+  {
+    "id": 21,
+    "line": [
+      "いいえ",
+      "、",
+      "あれ",
+      "は",
+      "チーズケーキ",
+      "です"
+    ],
+    "tts": [
+      "いいえ",
+      "、",
+      "あれ",
+      "わ",
+      "チーズケーキ",
+      "です"
+    ],
+    "explain": [
+      "no",
+      ",",
+      "that",
+      "topic marker",
+      "cheesecake",
+      "is/am/are"
+    ],
+    "english": "No, that is cheesecake.",
+    "prompt": "Someone corrects the previous assumption, stating that the dessert is cheesecake.",
+    "fact": "This sentence provides the correct identification of the dessert."
+  },
+  {
+    "id": 22,
+    "line": [
+      "これ",
+      "は",
+      "わたし",
+      "の",
+      "本",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "ほん",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "book",
+      "is/am/are"
+    ],
+    "english": "This is my book.",
+    "prompt": "Someone holds up their book, indicating ownership.",
+    "fact": "The particle 'の' indicates possession, connecting 'わたし' (I) with '本' (book)."
+  },
+  {
+    "id": 23,
+    "line": [
+      "それ",
+      "は",
+      "あなた",
+      "の",
+      "ノート",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "それ",
+      "わ",
+      "あなた",
+      "の",
+      "ノート",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "you",
+      "possessive particle",
+      "notebook",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is that your notebook?",
+    "prompt": "Someone points at a notebook near the listener, inquiring about its ownership.",
+    "fact": "This question uses 'あなた' (you) and 'の' to ask about the listener's possession."
+  },
+  {
+    "id": 24,
+    "line": [
+      "はい",
+      "、",
+      "それ",
+      "は",
+      "わたし",
+      "の",
+      "ノート",
+      "です"
+    ],
+    "tts": [
+      "はい",
+      "、",
+      "それ",
+      "わ",
+      "わたし",
+      "の",
+      "ノート",
+      "です"
+    ],
+    "explain": [
+      "yes",
+      ",",
+      "that",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "notebook",
+      "is/am/are"
+    ],
+    "english": "Yes, that is my notebook.",
+    "prompt": "Someone confirms that the notebook belongs to them.",
+    "fact": "This confirms the ownership of the notebook."
+  },
+  {
+    "id": 25,
+    "line": [
+      "あれ",
+      "は",
+      "先生",
+      "の",
+      "かばん",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "あれ",
+      "わ",
+      "せんせい",
+      "の",
+      "かばん",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "teacher",
+      "possessive particle",
+      "bag",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is that the teacher's bag?",
+    "prompt": "Someone points at a bag, asking if it belongs to the teacher.",
+    "fact": "This question uses '先生' (teacher) and 'の' to inquire about the bag's owner."
+  },
+  {
+    "id": 26,
+    "line": [
+      "いいえ",
+      "、",
+      "あれ",
+      "は",
+      "学生",
+      "の",
+      "かばん",
+      "です"
+    ],
+    "tts": [
+      "いいえ",
+      "、",
+      "あれ",
+      "わ",
+      "がくせい",
+      "の",
+      "かばん",
+      "です"
+    ],
+    "explain": [
+      "no",
+      ",",
+      "that",
+      "topic marker",
+      "student",
+      "possessive particle",
+      "bag",
+      "is/am/are"
+    ],
+    "english": "No, that is a student's bag.",
+    "prompt": "Someone clarifies that the bag belongs to a student, not the teacher.",
+    "fact": "This sentence corrects the previous assumption and identifies the bag's owner as a student."
+  },
+  {
+    "id": 27,
+    "line": [
+      "これ",
+      "は",
+      "おいしい",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "おいしい",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "delicious",
+      "is/am/are"
+    ],
+    "english": "This is delicious.",
+    "prompt": "Someone takes a bite of food and expresses their enjoyment.",
+    "fact": "This sentence expresses a positive opinion about food."
+  },
+  {
+    "id": 28,
+    "line": [
+      "それ",
+      "は",
+      "あまい",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "それ",
+      "わ",
+      "あまい",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "sweet",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is that sweet?",
+    "prompt": "Someone points at a food item, asking if it has a sweet taste.",
+    "fact": "This question inquires about the taste of something."
+  },
+  {
+    "id": 29,
+    "line": [
+      "はい",
+      "、",
+      "それ",
+      "は",
+      "あまく",
+      "です"
+    ],
+    "tts": [
+      "はい",
+      "、",
+      "それ",
+      "わ",
+      "あまく",
+      "です"
+    ],
+    "explain": [
+      "yes",
+      ",",
+      "that",
+      "topic marker",
+      "sweet",
+      "is/am/are"
+    ],
+    "english": "Yes, that is sweet.",
+    "prompt": "Someone confirms that the food item is indeed sweet.",
+    "fact": "This confirms the sweetness of the food."
+  },
+  {
+    "id": 30,
+    "line": [
+      "あれ",
+      "は",
+      "からい",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "あれ",
+      "わ",
+      "からい",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "spicy",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is that spicy?",
+    "prompt": "Someone points at a dish, wondering if it's spicy.",
+    "fact": "This question inquires about the spiciness of the food."
+  },
+  {
+    "id": 31,
+    "line": [
+      "いいえ",
+      "、",
+      "あれ",
+      "は",
+      "すっぱい",
+      "です"
+    ],
+    "tts": [
+      "いいえ",
+      "、",
+      "あれ",
+      "わ",
+      "すっぱい",
+      "です"
+    ],
+    "explain": [
+      "no",
+      ",",
+      "that",
+      "topic marker",
+      "sour",
+      "is/am/are"
+    ],
+    "english": "No, that is sour.",
+    "prompt": "Someone clarifies that the dish is sour, not spicy.",
+    "fact": "This sentence corrects the previous assumption and describes the taste as sour."
+  },
+  {
+    "id": 32,
+    "line": [
+      "これ",
+      "は",
+      "あかい",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "あかい",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "red",
+      "is/am/are"
+    ],
+    "english": "This is red.",
+    "prompt": "Someone points at a red object.",
+    "fact": "This sentence describes the color of an object."
+  },
+  {
+    "id": 33,
+    "line": [
+      "それ",
+      "は",
+      "あおい",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "それ",
+      "わ",
+      "あおい",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "blue",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is that blue?",
+    "prompt": "Someone points at an object, asking if it's blue.",
+    "fact": "This question asks about the color of an object."
+  },
+  {
+    "id": 34,
+    "line": [
+      "いいえ",
+      "、",
+      "それ",
+      "は",
+      "しろい",
+      "です"
+    ],
+    "tts": [
+      "いいえ",
+      "、",
+      "それ",
+      "わ",
+      "しろい",
+      "です"
+    ],
+    "explain": [
+      "no",
+      ",",
+      "that",
+      "topic marker",
+      "white",
+      "is/am/are"
+    ],
+    "english": "No, that is white.",
+    "prompt": "Someone corrects the previous assumption, stating that the object is white.",
+    "fact": "This sentence provides the correct color of the object."
+  },
+  {
+    "id": 35,
+    "line": [
+      "あれ",
+      "は",
+      "くろい",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "あれ",
+      "わ",
+      "くろい",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "black",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is that black?",
+    "prompt": "Someone points at a distant object, asking if it's black.",
+    "fact": "This question asks about the color of a distant object."
+  },
+  {
+    "id": 36,
+    "line": [
+      "はい",
+      "、",
+      "あれ",
+      "は",
+      "くろい",
+      "です"
+    ],
+    "tts": [
+      "はい",
+      "、",
+      "あれ",
+      "わ",
+      "くろい",
+      "です"
+    ],
+    "explain": [
+      "yes",
+      ",",
+      "that",
+      "topic marker",
+      "black",
+      "is/am/are"
+    ],
+    "english": "Yes, that is black.",
+    "prompt": "Someone confirms that the distant object is indeed black.",
+    "fact": "This confirms the color of the distant object."
+  },
+  {
+    "id": 37,
+    "line": [
+      "これ",
+      "は",
+      "わたし",
+      "の",
+      "いえ",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "いえ",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "house",
+      "is/am/are"
+    ],
+    "english": "This is my house.",
+    "prompt": "Someone stands in front of their house, indicating ownership.",
+    "fact": "This sentence introduces someone's house."
+  },
+  {
+    "id": 38,
+    "line": [
+      "それ",
+      "は",
+      "あなた",
+      "の",
+      "くるま",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "それ",
+      "わ",
+      "あなた",
+      "の",
+      "くるま",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "you",
+      "possessive particle",
+      "car",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is that your car?",
+    "prompt": "Someone points at a car, asking if it belongs to the listener.",
+    "fact": "This question asks about the ownership of a car."
+  },
+  {
+    "id": 39,
+    "line": [
+      "あれ",
+      "は",
+      "ゆうびんきょく",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "あれ",
+      "わ",
+      "ゆうびんきょく",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "post office",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is that the post office?",
+    "prompt": "Someone points at a building in the distance, asking if it's the post office.",
+    "fact": "This question asks for confirmation about a building's identity."
+  },
+  {
+    "id": 40,
+    "line": [
+      "はい",
+      "、",
+      "あれ",
+      "は",
+      "ゆうびんきょく",
+      "です"
+    ],
+    "tts": [
+      "はい",
+      "、",
+      "あれ",
+      "わ",
+      "ゆうびんきょく",
+      "です"
+    ],
+    "explain": [
+      "yes",
+      ",",
+      "that",
+      "topic marker",
+      "post office",
+      "is/am/are"
+    ],
+    "english": "Yes, that is the post office.",
+    "prompt": "Someone confirms that the building is indeed the post office.",
+    "fact": "This confirms the identity of the building."
+  },
+  {
+    "id": 41,
+    "line": [
+      "これ",
+      "は",
+      "こうえん",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "こうえん",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "park",
+      "is/am/are"
+    ],
+    "english": "This is a park.",
+    "prompt": "Someone stands in a park, stating its identity.",
+    "fact": "This sentence introduces a park."
+  },
+  {
+    "id": 42,
+    "line": [
+      "それ",
+      "は",
+      "がっこう",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "それ",
+      "わ",
+      "がっこう",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "school",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is that a school?",
+    "prompt": "Someone points at a building, asking if it's a school.",
+    "fact": "This question asks about the identity of a building."
+  },
+  {
+    "id": 43,
+    "line": [
+      "いいえ",
+      "、",
+      "それ",
+      "は",
+      "びょういん",
+      "です"
+    ],
+    "tts": [
+      "いいえ",
+      "、",
+      "それ",
+      "わ",
+      "びょういん",
+      "です"
+    ],
+    "explain": [
+      "no",
+      ",",
+      "that",
+      "topic marker",
+      "hospital",
+      "is/am/are"
+    ],
+    "english": "No, that is a hospital.",
+    "prompt": "Someone corrects the previous assumption, stating that the building is a hospital.",
+    "fact": "This sentence corrects the previous assumption and identifies the building as a hospital."
+  },
+  {
+    "id": 44,
+    "line": [
+      "あれ",
+      "は",
+      "ぎんこう",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "あれ",
+      "わ",
+      "ぎんこう",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "that",
+      "topic marker",
+      "bank",
+      "is/am/are",
+      "question marker"
+    ],
+    "english": "Is that a bank?",
+    "prompt": "Someone points at a building in the distance, asking if it's a bank.",
+    "fact": "This question asks about the identity of a distant building."
+  },
+  {
+    "id": 45,
+    "line": [
+      "はい",
+      "、",
+      "あれ",
+      "は",
+      "ぎんこう",
+      "です"
+    ],
+    "tts": [
+      "はい",
+      "、",
+      "あれ",
+      "わ",
+      "ぎんこう",
+      "です"
+    ],
+    "explain": [
+      "yes",
+      ",",
+      "that",
+      "topic marker",
+      "bank",
+      "is/am/are"
+    ],
+    "english": "Yes, that is a bank.",
+    "prompt": "Someone confirms that the distant building is indeed a bank.",
+    "fact": "This confirms the identity of the distant building as a bank."
+  }
 ]

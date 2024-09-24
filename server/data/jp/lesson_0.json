@@ -1,352 +1,1100 @@
 [
-    {
-      "id": 1,
-      "line": "<ruby>名前<rt>なまえ</rt></ruby>は？",
-      "tts": "なまえ は？",
-      "english": "What is your name?",
-      "prompt": "Show a person tilting their head slightly with a friendly smile, asking for someone's name."
-    },
-    {
-      "id": 2,
-      "line": "私の<ruby>名前<rt>なまえ</rt></ruby>は<ruby>田中<rt>たなか</rt></ruby>です。",
-      "tts": "わたし の なまえ は たなか です。",
-      "english": "My name is Tanaka.",
-      "prompt": "Show a person bowing slightly while introducing themselves as Tanaka."
-    },
-    {
-      "id": 3,
-      "line": "<ruby>出身<rt>しゅっしん</rt></ruby>は？",
-      "tts": "しゅっしん は？",
-      "english": "Where are you from?",
-      "prompt": "Show a globe slowly spinning, prompting the question about someone's origin."
-    },
-    {
-      "id": 4,
-      "line": "私の<ruby>出身<rt>しゅっしん</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>です。",
-      "tts": "わたし の しゅっしん は にほん です。",
-      "english": "I'm from Japan.",
-      "prompt": "Show a map highlighting Japan, emphasizing its geographical location."
-    },
-    {
-      "id": 5,
-      "line": "<ruby>出身<rt>しゅっしん</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>です。",
-      "tts": "しゅっしん は とうきょう です。",
-      "english": "I'm from Tokyo.",
-      "prompt": "Show a bustling city scene with iconic landmarks of Tokyo, like Tokyo Tower or Shibuya crossing."
-    },
-    {
-      "id": 6,
-      "line": "あなたの<ruby>名前<rt>なまえ</rt></ruby>は？",
-      "tts": "あなた の なまえ は？",
-      "english": "What's your name?",
-      "prompt": "Show two people meeting for the first time, one extending their hand for a handshake while asking for the other's name."
-    },
-    {
-      "id": 7,
-      "line": "あなたの<ruby>出身<rt>しゅっしん</rt></ruby>は？",
-      "tts": "あなた の しゅっしん は？",
-      "english": "Where are you from?",
-      "prompt": "Show a person looking at a map with curiosity, inquiring about someone's place of origin."
-    },
-    {
-      "id": 8,
-      "line": "あなたの<ruby>出身<rt>しゅっしん</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>ですか？",
-      "tts": "あなた の しゅっしん は とうきょう です か？",
-      "english": "Are you from Tokyo?",
-      "prompt": "Show a person pointing at a picture of Tokyo, asking if someone is familiar with the city."
-    },
-    {
-      "id": 9,
-      "line": "<ruby>はじめまして<rt>はじめまして</rt></ruby>、<ruby>田中<rt>たなか</rt></ruby>です。",
-      "tts": "はじめまして、たなか です。",
-      "english": "Nice to meet you, I'm Tanaka.",
-      "prompt": "Show a person bowing politely with a warm smile, introducing themselves as Tanaka for the first time."
-    },
-    {
-      "id": 10,
-      "line": "<ruby>はじめまして<rt>はじめまして</rt></ruby>、<ruby>山田<rt>やまだ</rt></ruby>です。",
-      "tts": "はじめまして、やまだ です。",
-      "english": "Nice to meet you, I'm Yamada.",
-      "prompt": "Show a person exchanging business cards with another person, introducing themselves as Yamada."
-    },
-    {
-      "id": 11,
-      "line": "<ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "よろしく おねがい します。",
-      "english": "Pleased to meet you.",
-      "prompt": "Show two people bowing to each other, acknowledging the introduction."
-    },
-    {
-      "id": 12,
-      "line": "<ruby>山田<rt>やまだ</rt></ruby>さん、<ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "やまだ さん、よろしく おねがい します。",
-      "english": "Pleased to meet you, Yamada-san.",
-      "prompt": "Show a person shaking hands with Yamada, acknowledging their introduction."
-    },
-    {
-      "id": 13,
-      "line": "<ruby>田中<rt>たなか</rt></ruby>さん、<ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "たなか さん、よろしく おねがい します。",
-      "english": "Pleased to meet you, Tanaka-san.",
-      "prompt": "Show two people sitting down for a meeting, exchanging polite greetings before starting."
-    },
-    {
-      "id": 14,
-      "line": "私は<ruby>田中<rt>たなか</rt></ruby>です。<ruby>出身<rt>しゅっしん</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>です。",
-      "tts": "わたし は たなか です。しゅっしん は にほん です。",
-      "english": "I'm Tanaka. I'm from Japan.",
-      "prompt": "Show a person holding up a Japanese flag with pride, introducing themselves and their nationality."
-    },
-    {
-      "id": 15,
-      "line": "私は<ruby>山田<rt>やまだ</rt></ruby>です。<ruby>出身<rt>しゅっしん</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>です。",
-      "tts": "わたし は やまだ です。しゅっしん は とうきょう です。",
-      "english": "I'm Yamada. I'm from Tokyo.",
-      "prompt": "Show a person wearing a t-shirt with 'Tokyo' printed on it, introducing themselves and their hometown."
-    },
-    {
-      "id": 16,
-      "line": "あなたは<ruby>田中<rt>たなか</rt></ruby>さんですか？",
-      "tts": "あなた は たなか さん です か？",
-      "english": "Are you Mr./Ms. Tanaka?",
-      "prompt": "Show a person looking at another person with slight uncertainty, trying to confirm their name."
-    },
-    {
-      "id": 17,
-      "line": "あなたは<ruby>山田<rt>やまだ</rt></ruby>さんですか？",
-      "tts": "あなた は やまだ さん です か？",
-      "english": "Are you Mr./Ms. Yamada?",
-      "prompt": "Show a person holding a name tag that says 'Yamada', checking if they've found the right person."
-    },
-    {
-      "id": 18,
-      "line": "あなたは<ruby>日本<rt>にほん</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>ですか？",
-      "tts": "あなた は にほん しゅっしん です か？",
-      "english": "Are you from Japan?",
-      "prompt": "Show a conversation between two people, one asking about the other's nationality."
-    },
-    {
-      "id": 19,
-      "line": "あなたは<ruby>東京<rt>とうきょう</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>ですか？",
-      "tts": "あなた は とうきょう しゅっしん です か？",
-      "english": "Are you from Tokyo?",
-      "prompt": "Show a person pointing at a map of Tokyo, asking if that's where someone is from."
-    },
-    {
-      "id": 20,
-      "line": "<ruby>田中<rt>たなか</rt></ruby>さん、<ruby>日本<rt>にほん</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>ですか？",
-      "tts": "たなか さん、にほん しゅっしん です か？",
-      "english": "Tanaka-san, are you from Japan?",
-      "prompt": "Show a person directly asking Tanaka about their nationality."
-    },
-    {
-      "id": 21,
-      "line": "<ruby>山田<rt>やまだ</rt></ruby>さん、<ruby>東京<rt>とうきょう</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>ですか？",
-      "tts": "やまだ さん、とうきょう しゅっしん です か？",
-      "english": "Yamada-san, are you from Tokyo?",
-      "prompt": "Show a person inquiring specifically about Yamada's hometown."
-    },
-    {
-      "id": 22,
-      "line": "<ruby>田中<rt>たなか</rt></ruby>です。<ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "たなか です。よろしく おねがい します。",
-      "english": "I'm Tanaka. Nice to meet you.",
-      "prompt": "Show a person introducing themselves as Tanaka and offering a handshake."
-    },
-    {
-      "id": 23,
-      "line": "<ruby>山田<rt>やまだ</rt></ruby>です。<ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "やまだ です。よろしく おねがい します。",
-      "english": "I'm Yamada. Nice to meet you.",
-      "prompt": "Show a person bowing politely and saying their name is Yamada, seeking a good first impression."
-    },
-    {
-      "id": 24,
-      "line": "<ruby>日本<rt>にほん</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>です。<ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "にほん しゅっしん です。よろしく おねがい します。",
-      "english": "I'm from Japan. Nice to meet you.",
-      "prompt": "Show a person giving a small gift, perhaps a traditional Japanese item, as a gesture of goodwill while introducing themselves."
-    },
-    {
-      "id": 25,
-      "line": "<ruby>東京<rt>とうきょう</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>です。<ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "とうきょう しゅっしん です。よろしく おねがい します。",
-      "english": "I'm from Tokyo. Nice to meet you.",
-      "prompt": "Show a person enthusiastically talking about their favorite things about Tokyo while introducing themselves."
-    },
-    {
-      "id": 26,
-      "line": "<ruby>田中<rt>たなか</rt></ruby>です。<ruby>日本<rt>にほん</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>です。<ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "たなか です。にほん しゅっしん です。よろしく おねがい します。",
-      "english": "I'm Tanaka, from Japan. Nice to meet you.",
-      "prompt": "Show a person standing in front of a whiteboard that says 'Tanaka (日本)' with a friendly expression."
-    },
-    {
-      "id": 27,
-      "line": "<ruby>山田<rt>やまだ</rt></ruby>です。<ruby>東京<rt>とうきょう</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>です。<ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "やまだ です。とうきょう しゅっしん です。よろしく おねがい します。",
-      "english": "I'm Yamada, from Tokyo. Nice to meet you.",
-      "prompt": "Show a person wearing a badge that says 'Hello! I'm Yamada from Tokyo'."
-    },
-    {
-      "id": 28,
-      "line": "<ruby>田中<rt>たなか</rt></ruby>さん、<ruby>日本<rt>にほん</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>ですね。<ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "たなか さん、にほん しゅっしん です ね。よろしく おねがい します。",
-      "english": "Tanaka-san, you're from Japan, right? Nice to meet you.",
-      "prompt": "Show two people having a casual conversation, one confirming the other's nationality before starting a conversation."
-    },
-    {
-      "id": 29,
-      "line": "<ruby>山田<rt>やまだ</rt></ruby>さん、<ruby>東京<rt>とうきょう</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>ですね。<ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "やまだ さん、とうきょう しゅっしん です ね。よろしく おねがい します。",
-      "english": "Yamada-san, you're from Tokyo, right? Nice to meet you.",
-      "prompt": "Show two people who have just met at a party, one recalling where they think the other is from."
-    },
-    {
-      "id": 30,
-      "line": "はじめまして、<ruby>田中<rt>たなか</rt></ruby>です。 <ruby>日本<rt>にほん</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>です。 <ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "はじめまして、たなか です。 にほん しゅっしん です。 よろしく おねがい します。",
-      "english": "Nice to meet you, I'm Tanaka from Japan. Pleased to meet you.",
-      "prompt": "Show a person standing up in front of a group, introducing themselves in a formal setting."
-    },
-    {
-      "id": 31,
-      "line": "はじめまして、<ruby>山田<rt>やまだ</rt></ruby>です。 <ruby>東京<rt>とうきょう</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>です。 <ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "はじめまして、やまだ です。 とうきょう しゅっしん です。 よろしく おねがい します。",
-      "english": "Nice to meet you, I'm Yamada from Tokyo. Pleased to meet you.",
-      "prompt": "Show a person standing in a classroom, introducing themselves to their new classmates."
-    },
-    {
-      "id": 32,
-      "line": "はじめまして、<ruby>田中<rt>たなか</rt></ruby>です。 <ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "はじめまして、たなか です。 よろしく おねがい します。",
-      "english": "Nice to meet you, I'm Tanaka. Pleased to meet you.",
-      "prompt": "Show a job interview scenario where the candidate introduces themselves politely."
-    },
-    {
-      "id": 33,
-      "line": "はじめまして、<ruby>山田<rt>やまだ</rt></ruby>です。 <ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "はじめまして、やまだ です。 よろしく おねがい します。",
-      "english": "Nice to meet you, I'm Yamada. Pleased to meet you.",
-      "prompt": "Show a new employee being introduced to the team, bowing and greeting everyone politely."
-    },
-    {
-      "id": 34,
-      "line": "<ruby>田中<rt>たなか</rt></ruby>さん、はじめまして。",
-      "tts": "たなか さん、はじめまして。",
-      "english": "Tanaka-san, nice to meet you.",
-      "prompt": "Show a person smiling and extending their hand for a handshake, addressing Tanaka specifically."
-    },
-    {
-      "id": 35,
-      "line": "<ruby>山田<rt>やまだ</rt></ruby>さん、はじめまして。",
-      "tts": "やまだ さん、はじめまして。",
-      "english": "Yamada-san, nice to meet you.",
-      "prompt": "Show a person bowing slightly to Yamada, acknowledging their presence and offering a polite greeting."
-    },
-    {
-      "id": 36,
-      "line": "<ruby>田中<rt>たなか</rt></ruby>さん、<ruby>日本<rt>にほん</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>ですか？ よろしくおねがいします。",
-      "tts": "たなか さん、にほん しゅっしん です か？ よろしく おねがい します。",
-      "english": "Tanaka-san, are you from Japan? Nice to meet you.",
-      "prompt": "Show a casual meeting where someone remembers meeting Tanaka before but wants to confirm their origin."
-    },
-    {
-      "id": 37,
-      "line": "<ruby>山田<rt>やまだ</rt></ruby>さん、<ruby>東京<rt>とうきょう</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>ですか？ よろしくおねがいします。",
-      "tts": "やまだ さん、とうきょう しゅっしん です か？ よろしく おねがい します。",
-      "english": "Yamada-san, are you from Tokyo? Nice to meet you.",
-      "prompt": "Show two people bumping into each other unexpectedly, one recalling that they think the other is from Tokyo."
-    },
-    {
-      "id": 38,
-      "line": "<ruby>田中<rt>たなか</rt></ruby>さん、はじめまして。 <ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "たなか さん、はじめまして。 よろしく おねがい します。",
-      "english": "Tanaka-san, nice to meet you. Pleased to meet you.",
-      "prompt": "Show a formal introduction where one person greets Tanaka politely and seeks a good working relationship."
-    },
-    {
-      "id": 39,
-      "line": "<ruby>山田<rt>やまだ</rt></ruby>さん、はじめまして。 <ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "やまだ さん、はじめまして。 よろしく おねがい します。",
-      "english": "Yamada-san, nice to meet you. Pleased to meet you.",
-      "prompt": "Show a person greeting Yamada at a business meeting, hoping for a productive collaboration."
-    },
-    {
-      "id": 40,
-      "line": "はじめまして。 <ruby>田中<rt>たなか</rt></ruby>です。 <ruby>日本<rt>にほん</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>です。",
-      "tts": "はじめまして。 たなか です。 にほん しゅっしん です。",
-      "english": "Nice to meet you. I'm Tanaka from Japan.",
-      "prompt": "Show a person giving a short self-introduction in a friendly, informal setting."
-    },
-    {
-      "id": 41,
-      "line": "はじめまして。 <ruby>山田<rt>やまだ</rt></ruby>です。 <ruby>東京<rt>とうきょう</rt></ruby><ruby>出身<rt>しゅっしん</rt></ruby>です。",
-      "tts": "はじめまして。 やまだ です。 とうきょう しゅっしん です。",
-      "english": "Nice to meet you. I'm Yamada from Tokyo.",
-      "prompt": "Show a person greeting a new neighbor, introducing themselves and mentioning their hometown."
-    },
-    {
-      "id": 42,
-      "line": "<ruby>田中<rt>たなか</rt></ruby>です。 <ruby>日本<rt>にほん</rt></ruby>から<ruby>来<rt>き</rt></ruby>ました。",
-      "tts": "たなか です。 にほん から きました。",
-      "english": "I'm Tanaka. I came from Japan.",
-      "prompt": "Show a person arriving at an airport, holding a suitcase, indicating they just came from Japan."
-    },
-    {
-      "id": 43,
-      "line": "<ruby>山田<rt>やまだ</rt></ruby>です。 <ruby>東京<rt>とうきょう</rt></ruby>から<ruby>来<rt>き</rt></ruby>ました。",
-      "tts": "やまだ です。 とうきょう から きました。",
-      "english": "I'm Yamada. I came from Tokyo.",
-      "prompt": "Show a person getting off a bus, looking around a new city, indicating they just arrived from Tokyo."
-    },
-    {
-      "id": 44,
-      "line": "<ruby>田中<rt>たなか</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。",
-      "tts": "たなか と もうします。",
-      "english": "My name is Tanaka. (formal)",
-      "prompt": "Show a person giving a presentation at a conference, using a formal self-introduction."
-    },
-    {
-      "id": 45,
-      "line": "<ruby>山田<rt>やまだ</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。",
-      "tts": "やまだ と もうします。",
-      "english": "My name is Yamada. (formal)",
-      "prompt": "Show a person being introduced to an important client, using a polite and formal tone."
-    },
-    {
-      "id": 46,
-      "line": "<ruby>田中<rt>たなか</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。 <ruby>日本<rt>にほん</rt></ruby>から<ruby>来<rt>き</rt></ruby>ました。",
-      "tts": "たなか と もうします。 にほん から きました。",
-      "english": "My name is Tanaka. I came from Japan. (formal)",
-      "prompt": "Show a person giving a formal speech at an international event, introducing themselves and their country."
-    },
-    {
-      "id": 47,
-      "line": "<ruby>山田<rt>やまだ</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。 <ruby>東京<rt>とうきょう</rt></ruby>から<ruby>来<rt>き</rt></ruby>ました。",
-      "tts": "やまだ と もうします。 とうきょう から きました。",
-      "english": "My name is Yamada. I came from Tokyo. (formal)",
-      "prompt": "Show a person attending a business meeting abroad, using a formal introduction to new colleagues."
-    },
-    {
-      "id": 48,
-      "line": "<ruby>田中<rt>たなか</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。 <ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "たなか と もうします。 よろしく おねがい します。",
-      "english": "My name is Tanaka. Pleased to meet you. (formal)",
-      "prompt": "Show a person starting a job interview, introducing themselves formally to the interviewer."
-    },
-    {
-      "id": 49,
-      "line": "<ruby>山田<rt>やまだ</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。 <ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "やまだ と もうします。 よろしく おねがい します。",
-      "english": "My name is Yamada. Pleased to meet you. (formal)",
-      "prompt": "Show a person introducing themselves formally to a potential business partner."
-    },
-    {
-      "id": 50,
-      "line": "はじめまして。 <ruby>田中<rt>たなか</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。 <ruby>日本<rt>にほん</rt></ruby>から<ruby>来<rt>き</rt></ruby>ました。 <ruby>よろしく<rt>よろしく</rt></ruby><ruby>お願<rt>ねが</rt></ruby>いします。",
-      "tts": "はじめまして。 たなか と もうします。 にほん から きました。 よろしく おねがい します。",
-      "english": "Nice to meet you. My name is Tanaka. I came from Japan. Pleased to meet you. (formal)",
-      "prompt": "Show a person giving a presentation at an international conference, introducing themselves and their country formally."
-    }
-  ]
+  {
+    "id": 1,
+    "line": [
+      "はじめまして",
+      "。"
+    ],
+    "tts": [
+      "はじめまして",
+      "。"
+    ],
+    "explain": [
+      "Nice to meet you.",
+      "."
+    ],
+    "english": "Nice to meet you.",
+    "prompt": "Two people meet for the first time and bow to each other.",
+    "fact": "A common phrase used when meeting someone for the first time."
+  },
+  {
+    "id": 2,
+    "line": [
+      "はじめまして",
+      "、",
+      "ケン",
+      "です",
+      "。"
+    ],
+    "tts": [
+      "はじめまして",
+      "、",
+      "けん",
+      "です",
+      "。"
+    ],
+    "explain": [
+      "Nice to meet you",
+      ",",
+      "Ken",
+      "is/am",
+      "."
+    ],
+    "english": "Nice to meet you, I'm Ken.",
+    "prompt": "A man named Ken introduces himself to someone for the first time.",
+    "fact": "This is a standard way to introduce yourself in Japanese."
+  },
+  {
+    "id": 3,
+    "line": [
+      "ケン",
+      "です",
+      "。",
+      "アメリカ",
+      "から",
+      "来",
+      "まし",
+      "た",
+      "。"
+    ],
+    "tts": [
+      "けん",
+      "です",
+      "。",
+      "あめりか",
+      "から",
+      "き",
+      "まし",
+      "た",
+      "。"
+    ],
+    "explain": [
+      "Ken",
+      "is/am",
+      ".",
+      "America",
+      "from",
+      "come",
+      "polite past tense marker",
+      "did",
+      "."
+    ],
+    "english": "I'm Ken. I came from America.",
+    "prompt": "Ken tells someone that he is from America.",
+    "fact": "～から来ました is used to express where someone is from."
+  },
+  {
+    "id": 4,
+    "line": [
+      "アメリカ",
+      "から",
+      "来",
+      "まし",
+      "た",
+      "。",
+      "あなた",
+      "は",
+      "？"
+    ],
+    "tts": [
+      "あめりか",
+      "から",
+      "き",
+      "まし",
+      "た",
+      "。",
+      "あなた",
+      "わ",
+      "？"
+    ],
+    "explain": [
+      "America",
+      "from",
+      "come",
+      "polite past tense marker",
+      "did",
+      ".",
+      "you",
+      "topic marker",
+      "?"
+    ],
+    "english": "I came from America. And you?",
+    "prompt": "After introducing himself, Ken asks the other person where they are from.",
+    "fact": "Using あなた is quite direct and can be considered rude in some contexts. It's better to use the person's name or their title if possible."
+  },
+  {
+    "id": 5,
+    "line": [
+      "あなた",
+      "は",
+      "？",
+      "名前",
+      "は",
+      "？"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "？",
+      "なまえ",
+      "わ",
+      "？"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "?",
+      "name",
+      "topic marker",
+      "?"
+    ],
+    "english": "And you? What's your name?",
+    "prompt": "Ken asks the other person for their name.",
+    "fact": "Repeating the topic marker 'は' is common in casual conversation to emphasize each question."
+  },
+  {
+    "id": 6,
+    "line": [
+      "名前",
+      "は",
+      "？",
+      "ユキ",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "なまえ",
+      "わ",
+      "？",
+      "ゆき",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "name",
+      "topic marker",
+      "?",
+      "Yuki",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "What's your name? Are you Yuki?",
+    "prompt": "Ken asks the other person if their name is Yuki.",
+    "fact": "This is a more specific way of asking someone's name after a general inquiry."
+  },
+  {
+    "id": 7,
+    "line": [
+      "ユキ",
+      "です",
+      "か",
+      "？",
+      "いいえ",
+      "、",
+      "違",
+      "い",
+      "ます",
+      "。"
+    ],
+    "tts": [
+      "ゆき",
+      "です",
+      "か",
+      "？",
+      "いいえ",
+      "、",
+      "ちが",
+      "い",
+      "ます",
+      "。"
+    ],
+    "explain": [
+      "Yuki",
+      "is/am",
+      "question marker",
+      "?",
+      "no",
+      ",",
+      "different",
+      "verb ending",
+      "polite present tense",
+      "."
+    ],
+    "english": "Are you Yuki? No, that's wrong.",
+    "prompt": "The other person clarifies that their name is not Yuki.",
+    "fact": "This shows a polite way to correct someone in Japanese."
+  },
+  {
+    "id": 8,
+    "line": [
+      "いいえ",
+      "、",
+      "違",
+      "い",
+      "ます",
+      "。",
+      "田中",
+      "です",
+      "。"
+    ],
+    "tts": [
+      "いいえ",
+      "、",
+      "ちが",
+      "い",
+      "ます",
+      "。",
+      "たなか",
+      "です",
+      "。"
+    ],
+    "explain": [
+      "no",
+      ",",
+      "different",
+      "verb ending",
+      "polite present tense",
+      ".",
+      "Tanaka",
+      "is/am",
+      "."
+    ],
+    "english": "No, that's wrong. I'm Tanaka.",
+    "prompt": "The other person introduces themselves as Tanaka.",
+    "fact": "This shows the flow of correcting someone and then providing the right information."
+  },
+  {
+    "id": 9,
+    "line": [
+      "田中",
+      "です",
+      "。",
+      "はじめまして",
+      "、",
+      "田中",
+      "さん",
+      "。"
+    ],
+    "tts": [
+      "たなか",
+      "です",
+      "。",
+      "はじめまして",
+      "、",
+      "たなか",
+      "さん",
+      "。"
+    ],
+    "explain": [
+      "Tanaka",
+      "is/am",
+      ".",
+      "Nice to meet you",
+      ",",
+      "Tanaka",
+      "Mr./Ms.",
+      "."
+    ],
+    "english": "I'm Tanaka. Nice to meet you, Mr./Ms. Tanaka.",
+    "prompt": "Tanaka introduces themselves and Ken greets them back.",
+    "fact": "It's common to repeat the other person's name with 'san' when you first meet them."
+  },
+  {
+    "id": 10,
+    "line": [
+      "はじめまして",
+      "、",
+      "田中",
+      "さん",
+      "。",
+      "出身",
+      "は",
+      "？"
+    ],
+    "tts": [
+      "はじめまして",
+      "、",
+      "たなか",
+      "さん",
+      "。",
+      "しゅっしん",
+      "わ",
+      "？"
+    ],
+    "explain": [
+      "Nice to meet you",
+      ",",
+      "Tanaka",
+      "Mr./Ms.",
+      ".",
+      "hometown",
+      "topic marker",
+      "?"
+    ],
+    "english": "Nice to meet you, Mr./Ms. Tanaka. Where are you from?",
+    "prompt": "Ken asks Tanaka about their hometown.",
+    "fact": "This is a typical follow-up question after introductions."
+  },
+  {
+    "id": 11,
+    "line": [
+      "出身",
+      "は",
+      "？",
+      "日本",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "しゅっしん",
+      "わ",
+      "？",
+      "にっぽん",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "hometown",
+      "topic marker",
+      "?",
+      "Japan",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Where are you from? Are you from Japan?",
+    "prompt": "Ken asks Tanaka if they are from Japan.",
+    "fact": "This shows how to ask someone's nationality politely."
+  },
+  {
+    "id": 12,
+    "line": [
+      "日本",
+      "です",
+      "か",
+      "？",
+      "はい",
+      "、",
+      "そう",
+      "です",
+      "。"
+    ],
+    "tts": [
+      "にっぽん",
+      "です",
+      "か",
+      "？",
+      "はい",
+      "、",
+      "そう",
+      "です",
+      "。"
+    ],
+    "explain": [
+      "Japan",
+      "is/am",
+      "question marker",
+      "?",
+      "yes",
+      ",",
+      "that",
+      "is/am",
+      "."
+    ],
+    "english": "Are you from Japan? Yes, that's right.",
+    "prompt": "Tanaka confirms that they are from Japan.",
+    "fact": "This is a polite way to confirm something in Japanese."
+  },
+  {
+    "id": 13,
+    "line": [
+      "はい",
+      "、",
+      "そう",
+      "です",
+      "。",
+      "東京",
+      "です",
+      "。"
+    ],
+    "tts": [
+      "はい",
+      "、",
+      "そう",
+      "です",
+      "。",
+      "とうきょう",
+      "です",
+      "。"
+    ],
+    "explain": [
+      "yes",
+      ",",
+      "that",
+      "is/am",
+      ".",
+      "Tokyo",
+      "is/am",
+      "."
+    ],
+    "english": "Yes, that's right. I'm from Tokyo.",
+    "prompt": "Tanaka specifies that they are from Tokyo.",
+    "fact": "This shows how to provide more specific information after a general confirmation."
+  },
+  {
+    "id": 14,
+    "line": [
+      "東京",
+      "です",
+      "。",
+      "東京",
+      "は",
+      "都会",
+      "です",
+      "ね",
+      "。"
+    ],
+    "tts": [
+      "とうきょう",
+      "です",
+      "。",
+      "とうきょう",
+      "わ",
+      "とかい",
+      "です",
+      "ね",
+      "。"
+    ],
+    "explain": [
+      "Tokyo",
+      "is/am",
+      ".",
+      "Tokyo",
+      "topic marker",
+      "city",
+      "is/am",
+      "confirmation particle",
+      "."
+    ],
+    "english": "I'm from Tokyo. Tokyo is a city, isn't it?",
+    "prompt": "Ken mentions that Tokyo is a city and seeks Tanaka's agreement.",
+    "fact": "The particle 'ね' is used to seek agreement or confirmation."
+  },
+  {
+    "id": 15,
+    "line": [
+      "都会",
+      "です",
+      "ね",
+      "。",
+      "アメリカ",
+      "も",
+      "都会",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "とかい",
+      "です",
+      "ね",
+      "。",
+      "あめりか",
+      "も",
+      "とかい",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "city",
+      "is/am",
+      "confirmation particle",
+      ".",
+      "America",
+      "too",
+      "city",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "It is a city, isn't it? Is America a city too?",
+    "prompt": "Ken asks if America is also a city.",
+    "fact": "This shows how to use 'も' to mean 'too' or 'also'."
+  },
+  {
+    "id": 16,
+    "line": [
+      "アメリカ",
+      "も",
+      "都会",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "あめりか",
+      "も",
+      "とかい",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "America",
+      "too",
+      "city",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is America a city too?",
+    "prompt": "Ken repeats the question about America being a city.",
+    "fact": "Repeating a question can be a way to emphasize it or to make sure the listener understood."
+  },
+  {
+    "id": 17,
+    "line": [
+      "ケン",
+      "さん",
+      "は",
+      "、",
+      "どこ",
+      "出身",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "けん",
+      "さん",
+      "わ",
+      "、",
+      "どこ",
+      "しゅっしん",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "Ken",
+      "Mr./Ms.",
+      "topic marker",
+      ",",
+      "where",
+      "hometown",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Where is Ken from?",
+    "prompt": "Someone asks where Ken is from.",
+    "fact": "This is a straightforward way to ask someone's origin."
+  },
+  {
+    "id": 18,
+    "line": [
+      "ユキ",
+      "さん",
+      "は",
+      "、",
+      "日本人",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "ゆき",
+      "さん",
+      "わ",
+      "、",
+      "にほんじん",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "Yuki",
+      "Mr./Ms.",
+      "topic marker",
+      ",",
+      "Japanese person",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is Yuki Japanese?",
+    "prompt": "Someone asks if Yuki is Japanese.",
+    "fact": "This is a direct way to ask someone's nationality."
+  },
+  {
+    "id": 19,
+    "line": [
+      "田中",
+      "さん",
+      "は",
+      "、",
+      "東京",
+      "出身",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "たなか",
+      "さん",
+      "わ",
+      "、",
+      "とうきょう",
+      "しゅっしん",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "Tanaka",
+      "Mr./Ms.",
+      "topic marker",
+      ",",
+      "Tokyo",
+      "hometown",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is Tanaka from Tokyo?",
+    "prompt": "Someone asks if Tanaka is from Tokyo.",
+    "fact": "This is a clear and simple way to confirm someone's place of origin."
+  },
+  {
+    "id": 20,
+    "line": [
+      "東京",
+      "は",
+      "、",
+      "都会",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "とうきょう",
+      "わ",
+      "、",
+      "とかい",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "Tokyo",
+      "topic marker",
+      ",",
+      "city",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is Tokyo a city?",
+    "prompt": "Someone asks if Tokyo is a city.",
+    "fact": "This is a basic sentence structure for asking a yes/no question."
+  },
+  {
+    "id": 21,
+    "line": [
+      "アメリカ",
+      "は",
+      "、",
+      "都会",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "あめりか",
+      "わ",
+      "、",
+      "とかい",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "America",
+      "topic marker",
+      ",",
+      "city",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is America a city?",
+    "prompt": "Someone asks if America is a city.",
+    "fact": "This question highlights a common misunderstanding about countries and cities."
+  },
+  {
+    "id": 22,
+    "line": [
+      "ケン",
+      "さん",
+      "は",
+      "、",
+      "アメリカ",
+      "出身",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "けん",
+      "さん",
+      "わ",
+      "、",
+      "あめりか",
+      "しゅっしん",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "Ken",
+      "Mr./Ms.",
+      "topic marker",
+      ",",
+      "America",
+      "hometown",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is Ken from America?",
+    "prompt": "Someone asks if Ken is from America.",
+    "fact": "This is a straightforward question about someone's origin."
+  },
+  {
+    "id": 23,
+    "line": [
+      "ユキ",
+      "さん",
+      "は",
+      "、",
+      "日本人",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "ゆき",
+      "さん",
+      "わ",
+      "、",
+      "にほんじん",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "Yuki",
+      "Mr./Ms.",
+      "topic marker",
+      ",",
+      "Japanese person",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is Yuki Japanese?",
+    "prompt": "Someone asks if Yuki is Japanese.",
+    "fact": "This is a direct way to ask someone's nationality."
+  },
+  {
+    "id": 24,
+    "line": [
+      "田中",
+      "さん",
+      "は",
+      "、",
+      "東京",
+      "出身",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "たなか",
+      "さん",
+      "わ",
+      "、",
+      "とうきょう",
+      "しゅっしん",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "Tanaka",
+      "Mr./Ms.",
+      "topic marker",
+      ",",
+      "Tokyo",
+      "hometown",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is Tanaka from Tokyo?",
+    "prompt": "Someone asks if Tanaka is from Tokyo.",
+    "fact": "This is a clear and simple way to confirm someone's place of origin."
+  },
+  {
+    "id": 25,
+    "line": [
+      "東京",
+      "は",
+      "、",
+      "都会",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "とうきょう",
+      "わ",
+      "、",
+      "とかい",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "Tokyo",
+      "topic marker",
+      ",",
+      "city",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is Tokyo a city?",
+    "prompt": "Someone asks if Tokyo is a city.",
+    "fact": "This is a basic sentence structure for asking a yes/no question."
+  },
+  {
+    "id": 26,
+    "line": [
+      "アメリカ",
+      "は",
+      "、",
+      "都会",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "あめりか",
+      "わ",
+      "、",
+      "とかい",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "America",
+      "topic marker",
+      ",",
+      "city",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is America a city?",
+    "prompt": "Someone asks if America is a city.",
+    "fact": "This question highlights a common misunderstanding about countries and cities."
+  },
+  {
+    "id": 27,
+    "line": [
+      "ケン",
+      "さん",
+      "は",
+      "、",
+      "アメリカ",
+      "出身",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "けん",
+      "さん",
+      "わ",
+      "、",
+      "あめりか",
+      "しゅっしん",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "Ken",
+      "Mr./Ms.",
+      "topic marker",
+      ",",
+      "America",
+      "hometown",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is Ken from America?",
+    "prompt": "Someone asks if Ken is from America.",
+    "fact": "This is a straightforward question about someone's origin."
+  },
+  {
+    "id": 28,
+    "line": [
+      "ユキ",
+      "さん",
+      "は",
+      "、",
+      "日本人",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "ゆき",
+      "さん",
+      "わ",
+      "、",
+      "にほんじん",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "Yuki",
+      "Mr./Ms.",
+      "topic marker",
+      ",",
+      "Japanese person",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is Yuki Japanese?",
+    "prompt": "Someone asks if Yuki is Japanese.",
+    "fact": "This is a direct way to ask someone's nationality."
+  },
+  {
+    "id": 29,
+    "line": [
+      "田中",
+      "さん",
+      "は",
+      "、",
+      "東京",
+      "出身",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "たなか",
+      "さん",
+      "わ",
+      "、",
+      "とうきょう",
+      "しゅっしん",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "Tanaka",
+      "Mr./Ms.",
+      "topic marker",
+      ",",
+      "Tokyo",
+      "hometown",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is Tanaka from Tokyo?",
+    "prompt": "Someone asks if Tanaka is from Tokyo.",
+    "fact": "This is a clear and simple way to confirm someone's place of origin."
+  },
+  {
+    "id": 30,
+    "line": [
+      "東京",
+      "は",
+      "、",
+      "都会",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "とうきょう",
+      "わ",
+      "、",
+      "とかい",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "Tokyo",
+      "topic marker",
+      ",",
+      "city",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is Tokyo a city?",
+    "prompt": "Someone asks if Tokyo is a city.",
+    "fact": "This is a basic sentence structure for asking a yes/no question."
+  },
+  {
+    "id": 31,
+    "line": [
+      "アメリカ",
+      "は",
+      "、",
+      "都会",
+      "です",
+      "か",
+      "？"
+    ],
+    "tts": [
+      "あめりか",
+      "わ",
+      "、",
+      "とかい",
+      "です",
+      "か",
+      "？"
+    ],
+    "explain": [
+      "America",
+      "topic marker",
+      ",",
+      "city",
+      "is/am",
+      "question marker",
+      "?"
+    ],
+    "english": "Is America a city?",
+    "prompt": "Someone asks if America is a city.",
+    "fact": "This question highlights a common misunderstanding about countries and cities."
+  }
+]

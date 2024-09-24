@@ -1,352 +1,1274 @@
 [
-    {
-      "id": 1,
-      "line": "私の<ruby>家族<rt>かぞく</rt></ruby>は…",
-      "tts": "わたしの かぞく は…",
-      "english": "The people in my family are...",
-      "prompt": "Show a person holding a framed photo of their family, about to introduce them."
-    },
-    {
-      "id": 2,
-      "line": "これは私の<ruby>父<rt>ちち</rt></ruby>です。",
-      "tts": "これは わたし の ちち です。",
-      "english": "This is my father.",
-      "prompt": "Show a photo of a man who looks like he could be a father figure."
-    },
-    {
-      "id": 3,
-      "line": "これは私の<ruby>母<rt>はは</rt></ruby>です。",
-      "tts": "これは わたし の はは です。",
-      "english": "This is my mother.",
-      "prompt": "Show a photo of a woman who appears kind and motherly."
-    },
-    {
-      "id": 4,
-      "line": "これは私の<ruby>兄<rt>あに</rt></ruby>です。",
-      "tts": "これは わたし の あに です。",
-      "english": "This is my older brother.",
-      "prompt": "Show a photo of two people, one slightly older than the other, who look like they could be siblings."
-    },
-    {
-      "id": 5,
-      "line": "これは私の<ruby>弟<rt>おとうと</rt></ruby>です。",
-      "tts": "これは わたし の おとうと です。",
-      "english": "This is my younger brother.",
-      "prompt": "Show a photo of two people, one visibly younger, playing video games together."
-    },
-    {
-      "id": 6,
-      "line": "これは私の<ruby>姉<rt>あね</rt></ruby>です。",
-      "tts": "これは わたし の あね です。",
-      "english": "This is my older sister.",
-      "prompt": "Show a photo of two smiling women who look alike, suggesting a close sisterly bond."
-    },
-    {
-      "id": 7,
-      "line": "これは私の<ruby>妹<rt>いもうと</rt></ruby>です。",
-      "tts": "これは わたし の いもうと です。",
-      "english": "This is my younger sister.",
-      "prompt": "Show a photo of two young girls, possibly holding hands or giggling together."
-    },
-    {
-      "id": 8,
-      "line": "あなたは<ruby>兄弟<rt>きょうだい</rt></ruby>がいますか？",
-      "tts": "あなた は きょうだい が います か？",
-      "english": "Do you have any siblings?",
-      "prompt": "Show a person looking at someone curiously, wanting to know about their family."
-    },
-    {
-      "id": 9,
-      "line": "私には<ruby>兄弟<rt>きょうだい</rt></ruby>はいません。",
-      "tts": "わたし に は きょうだい は いません。",
-      "english": "I don't have any siblings.",
-      "prompt": "Show a person shaking their head gently, indicating that they are an only child."
-    },
-    {
-      "id": 10,
-      "line": "私には<ruby>兄<rt>あに</rt></ruby>が一人います。",
-      "tts": "わたし に は あに が ひとり います。",
-      "english": "I have one older brother.",
-      "prompt": "Show a photo of a person with their arm around another person who appears to be their older brother."
-    },
-    {
-      "id": 11,
-      "line": "私には<ruby>妹<rt>いもうと</rt></ruby>が二人います。",
-      "tts": "わたし に は いもうと が ふたり います。",
-      "english": "I have two younger sisters.",
-      "prompt": "Show a photo of a person surrounded by two younger girls, highlighting their role as an older sibling."
-    },
-    {
-      "id": 12,
-      "line": "これは私の<ruby>祖父<rt>そふ</rt></ruby>です。",
-      "tts": "これは わたし の そふ です。",
-      "english": "This is my grandfather.",
-      "prompt": "Show a photo of an elderly man with a kind face and perhaps holding a walking stick."
-    },
-    {
-      "id": 13,
-      "line": "これは私の<ruby>祖母<rt>そぼ</rt></ruby>です。",
-      "tts": "これは わたし の そぼ です。",
-      "english": "This is my grandmother.",
-      "prompt": "Show a photo of an elderly woman with a warm smile, possibly baking cookies or knitting."
-    },
-    {
-      "id": 14,
-      "line": "あなたは<ruby>祖父母<rt>そふぼ</rt></ruby>と<ruby>住<rt>す</rt></ruby>んでいますか？",
-      "tts": "あなた は そふぼ と すんで います か？",
-      "english": "Do you live with your grandparents?",
-      "prompt": "Show a person looking thoughtful, considering the question about their living situation."
-    },
-    {
-      "id": 15,
-      "line": "いいえ、<ruby>祖父母<rt>そふぼ</rt></ruby>とは<ruby>別<rt>べつ</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。",
-      "tts": "いいえ、 そふぼ と は べつ に すんで います。",
-      "english": "No, I live separately from my grandparents.",
-      "prompt": "Show two houses, geographically distanced, indicating separate living arrangements."
-    },
-    {
-      "id": 16,
-      "line": "これは私の<ruby>夫<rt>おっと</rt></ruby>です。",
-      "tts": "これは わたし の おっと です。",
-      "english": "This is my husband.",
-      "prompt": "Show a photo of a couple, a man and a woman, smiling happily together, wearing wedding rings."
-    },
-    {
-      "id": 17,
-      "line": "これは私の<ruby>妻<rt>つま</rt></ruby>です。",
-      "tts": "これは わたし の つま です。",
-      "english": "This is my wife.",
-      "prompt": "Show a photo of two women, arms intertwined, with a loving expression on their faces."
-    },
-    {
-      "id": 18,
-      "line": "あなたは<ruby>結婚<rt>けっこん</rt></ruby>していますか？",
-      "tts": "あなた は けっこん して います か？",
-      "english": "Are you married?",
-      "prompt": "Show a person showing a curious but polite expression, inquiring about someone's marital status."
-    },
-    {
-      "id": 19,
-      "line": "はい、<ruby>結婚<rt>けっこん</rt></ruby>しています。",
-      "tts": "はい、けっこん して います。",
-      "english": "Yes, I am married.",
-      "prompt": "Show a person happily showing off a wedding ring on their finger."
-    },
-    {
-      "id": 20,
-      "line": "いいえ、まだ<ruby>独身<rt>どくしん</rt></ruby>です。",
-      "tts": "いいえ、まだ どくしん です。",
-      "english": "No, I am still single.",
-      "prompt": "Show a person smiling and shrugging their shoulders, indicating they are single."
-    },
-    {
-      "id": 21,
-      "line": "これは私の<ruby>子供<rt>こども</rt></ruby>です。",
-      "tts": "これ は わたし の こども です。",
-      "english": "This is my child.",
-      "prompt": "Show a photo of a parent holding a young child, both beaming with love."
-    },
-    {
-      "id": 22,
-      "line": "これは私の<ruby>息子<rt>むすこ</rt></ruby>です。",
-      "tts": "これ は わたし の むすこ です。",
-      "english": "This is my son.",
-      "prompt": "Show a photo of a parent playfully ruffling the hair of a young boy."
-    },
-    {
-      "id": 23,
-      "line": "これは私の<ruby>娘<rt>むすめ</rt></ruby>です。",
-      "tts": "これ は わたし の むすめ です。",
-      "english": "This is my daughter.",
-      "prompt": "Show a photo of a parent and daughter, both dressed up for a special occasion."
-    },
-    {
-      "id": 24,
-      "line": "あなたは<ruby>子供<rt>こども</rt></ruby>がいますか？",
-      "tts": "あなた は こども が います か？",
-      "english": "Do you have any children?",
-      "prompt": "Show a person gently rocking an imaginary baby in their arms, asking the question with a smile."
-    },
-    {
-      "id": 25,
-      "line": "はい、<ruby>息子<rt>むすこ</rt></ruby>が一人います。",
-      "tts": "はい、むすこ が ひとり います。",
-      "english": "Yes, I have one son.",
-      "prompt": "Show a phone wallpaper featuring a photo of a person with their son."
-    },
-    {
-      "id": 26,
-      "line": "いいえ、<ruby>子供<rt>こども</rt></ruby>はまだいません。",
-      "tts": "いいえ、こども は まだ いません。",
-      "english": "No, I don't have any children yet.",
-      "prompt": "Show a person shaking their head gently, indicating they don't have children."
-    },
-    {
-      "id": 27,
-      "line": "私の<ruby>家族<rt>かぞく</rt></ruby>は<ruby>皆<rt>みんな</rt></ruby><ruby>元気<rt>げんき</rt></ruby>です。",
-      "tts": "わたし の かぞく は みんな げんき です。",
-      "english": "Everyone in my family is doing well.",
-      "prompt": "Show a montage of family members engaged in happy activities, highlighting their well-being."
-    },
-    {
-      "id": 28,
-      "line": "私の<ruby>家族<rt>かぞく</rt></ruby>は<ruby>仲良<rt>なかよ</rt></ruby>しです。",
-      "tts": "わたし の かぞく は なかよ し です。",
-      "english": "My family is close-knit.",
-      "prompt": "Show a family laughing and hugging each other, showcasing their strong bond."
-    },
-    {
-      "id": 29,
-      "line": "私たちはよく<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>ご飯<rt>ごはん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べます。",
-      "tts": "わたし たち は よく いっしょ に ごはん を たべます。",
-      "english": "We often eat together.",
-      "prompt": "Show a family gathered around a table, enjoying a meal together, emphasizing their shared meals."
-    },
-    {
-      "id": 30,
-      "line": "私たちは<ruby>毎年<rt>まいとし</rt></ruby><ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>きます。",
-      "tts": "わたし たち は まいとし りょこう に いきます。",
-      "english": "We go on trips every year.",
-      "prompt": "Show a family packing suitcases, looking excited for a trip, indicating their annual travels."
-    },
-    {
-      "id": 31,
-      "line": "これは私の<ruby>ペット<rt>ペット</rt></ruby>の<ruby>犬<rt>いぬ</rt></ruby>です。",
-      "tts": "これ は わたし の ペット の いぬ です。",
-      "english": "This is my pet dog.",
-      "prompt": "Show a person cuddling with a friendly dog, highlighting their companionship."
-    },
-    {
-      "id": 32,
-      "line": "これは私の<ruby>ペット<rt>ペット</rt></ruby>の<ruby>猫<rt>ねこ</rt></ruby>です。",
-      "tts": "これ は わたし の ペット の ねこ です。",
-      "english": "This is my pet cat.",
-      "prompt": "Show a cat curled up on a person's lap, purring contentedly."
-    },
-    {
-      "id": 33,
-      "line": "あなたは<ruby>ペット<rt>ペット</rt></ruby>を<ruby>飼<rt>か</rt></ruby>っていますか？",
-      "tts": "あなた は ペット を かって います か？",
-      "english": "Do you have any pets?",
-      "prompt": "Show a person looking at another person expectantly, curious about whether they have any pets."
-    },
-    {
-      "id": 34,
-      "line": "はい、<ruby>猫<rt>ねこ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>っています。",
-      "tts": "はい、ねこ を かって います。",
-      "english": "Yes, I have a cat.",
-      "prompt": "Show a person holding a cat toy, implying they are a cat owner."
-    },
-    {
-      "id": 35,
-      "line": "いいえ、<ruby>ペット<rt>ペット</rt></ruby>は<ruby>飼<rt>か</rt></ruby>っていません。",
-      "tts": "いいえ、ペット は かって いません。",
-      "english": "No, I don't have any pets.",
-      "prompt": "Show a person shaking their head, indicating they do not have pets."
-    },
-    {
-      "id": 36,
-      "line": "これは私の<ruby>家族<rt>かぞく</rt></ruby>です。",
-      "tts": "これ は わたし の かぞく です。",
-      "english": "This is my family.",
-      "prompt": "Show a group photo of several people of different ages, suggesting a family unit."
-    },
-    {
-      "id": 37,
-      "line": "私の<ruby>家族<rt>かぞく</rt></ruby>は<ruby>大切<rt>たいせつ</rt></ruby>です。",
-      "tts": "わたし の かぞく は たいせつ です。",
-      "english": "My family is precious to me.",
-      "prompt": "Show a person hugging their family members tightly, conveying a sense of love and appreciation."
-    },
-    {
-      "id": 38,
-      "line": "私は<ruby>家族<rt>かぞく</rt></ruby>が<ruby>大好<rt>だいすき</rt></ruby>です。",
-      "tts": "わたし は かぞく が だいすき です。",
-      "english": "I love my family.",
-      "prompt": "Show a person smiling warmly while looking at a photo album filled with family pictures."
-    },
-    {
-      "id": 39,
-      "line": "<ruby>家族<rt>かぞく</rt></ruby>は<ruby>何<rt>なに</rt></ruby>より<ruby>大切<rt>たいせつ</rt></ruby>です。",
-      "tts": "かぞく は なに より たいせつ です。",
-      "english": "Family is more important than anything.",
-      "prompt": "Show a family holding hands, standing strong together against a backdrop of challenges and triumphs."
-    },
-    {
-      "id": 40,
-      "line": "私は<ruby>家族<rt>かぞく</rt></ruby>と<ruby>過<rt>すご</rt></ruby>す<ruby>時間<rt>じかん</rt></ruby>が<ruby>好<rt>す</rt></ruby>きです。",
-      "tts": "わたし は かぞく と すごす じかん が すき です。",
-      "english": "I like spending time with my family.",
-      "prompt": "Show a family playing board games, laughing and enjoying each other's company."
-    },
-    {
-      "id": 41,
-      "line": "これは私の<ruby>父<rt>ちち</rt></ruby>と<ruby>母<rt>はは</rt></ruby>です。",
-      "tts": "これは わたし の ちち と はは です。",
-      "english": "This is my father and mother.",
-      "prompt": "Show a photo of a man and a woman standing close together, suggesting a loving couple."
-    },
-    {
-      "id": 42,
-      "line": "これは私の<ruby>兄<rt>あに</rt></ruby>と<ruby>姉<rt>あね</rt></ruby>です。",
-      "tts": "これは わたし の あに と あね です。",
-      "english": "This is my older brother and older sister.",
-      "prompt": "Show a photo of three people, showcasing the age progression from older to younger siblings."
-    },
-    {
-      "id": 43,
-      "line": "これは私の<ruby>祖父<rt>そふ</rt></ruby>と<ruby>祖母<rt>そぼ</rt></ruby>と<ruby>私<rt>わたし</rt></ruby>です。",
-      "tts": "これは わたし の そふ と そぼ と わたし です。",
-      "english": "This is my grandfather, grandmother, and me.",
-      "prompt": "Show a photo of a person standing between their grandparents, highlighting three generations."
-    },
-    {
-      "id": 44,
-      "line": "私の<ruby>家族<rt>かぞく</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さいですが、<ruby>温<rt>あたた</rt></ruby>かいです。",
-      "tts": "わたし の かぞく は ちいさい です が、あたたかい です。",
-      "english": "My family is small, but warm.",
-      "prompt": "Show a small family gathered around a fireplace, enjoying each other's company in a cozy setting."
-    },
-    {
-      "id": 45,
-      "line": "私の<ruby>家族<rt>かぞく</rt></ruby>は<ruby>賑<rt>にぎ</rt></ruby>やかで、<ruby>楽<rt>たの</rt></ruby>しいです。",
-      "tts": "わたし の かぞく は にぎやか で、たのしい です。",
-      "english": "My family is lively and fun.",
-      "prompt": "Show a family celebrating a birthday party with music, laughter, and general merriment."
-    },
-    {
-      "id": 46,
-      "line": "これは私の<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>家族<rt>かぞく</rt></ruby>です。",
-      "tts": "これ は わたし の たいせつ な かぞく です。",
-      "english": "This is my precious family.",
-      "prompt": "Show a person looking at a family photo with a loving expression, their eyes filled with warmth."
-    },
-    {
-      "id": 47,
-      "line": "私は<ruby>家族<rt>かぞく</rt></ruby>といると<ruby>安心<rt>あんしん</rt></ruby>します。",
-      "tts": "わたし は かぞく と いる と あんしん します。",
-      "english": "I feel at ease when I'm with my family.",
-      "prompt": "Show a person relaxing on a couch with their family, a sense of peace and contentment washing over them."
-    },
-    {
-      "id": 48,
-      "line": "<ruby>家族<rt>かぞく</rt></ruby>は<ruby>いつも<rt>いつも</rt></ruby>私のことを<ruby>応援<rt>おうえん</rt></ruby>してくれます。",
-      "tts": "かぞく は いつも わたし の こと を おうえん して くれます。",
-      "english": "My family always supports me.",
-      "prompt": "Show a montage of different family members encouraging and supporting the person, highlighting their unwavering support."
-    },
-    {
-      "id": 49,
-      "line": "私は<ruby>家族<rt>かぞく</rt></ruby>のために<ruby>頑張<rt>がんば</rt></ruby>ります！",
-      "tts": "わたし は かぞく の ため に がんばり ます！",
-      "english": "I will do my best for my family!",
-      "prompt": "Show a person with a determined expression, working hard at a task, driven by their love for their family."
-    },
-    {
-      "id": 50,
-      "line": "<ruby>家族<rt>かぞく</rt></ruby>って<ruby>良<rt>い</rt></ruby>ですね。",
-      "tts": "かぞく って いい です ね。",
-      "english": "Family is wonderful, isn't it?",
-      "prompt": "Show a person smiling warmly, reflecting on the joys and importance of family."
-    }
-  ]
+  {
+    "id": 1,
+    "line": [
+      "これ",
+      "は",
+      "家族",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "かぞく",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "family",
+      "is/are"
+    ],
+    "english": "This is family.",
+    "prompt": "Someone points at a picture of a family.",
+    "fact": "A simple way to introduce someone or something."
+  },
+  {
+    "id": 2,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "家族",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "かぞく",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "family",
+      "is/are"
+    ],
+    "english": "This is my family.",
+    "prompt": "Someone shows you a picture of their family.",
+    "fact": "'の' indicates possession, connecting '私' (I) with '家族' (family)."
+  },
+  {
+    "id": 3,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "家族",
+      "の",
+      "写真",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "かぞく",
+      "の",
+      "しゃしん",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "family",
+      "possessive particle",
+      "photo",
+      "is/are"
+    ],
+    "english": "This is a photo of my family.",
+    "prompt": "Someone shows you a framed photograph of their family.",
+    "fact": "Using 'の' twice shows possession for both '私' and '家族', indicating the photo belongs to the speaker's family."
+  },
+  {
+    "id": 4,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "家族",
+      "の",
+      "写真",
+      "アルバム",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "かぞく",
+      "の",
+      "しゃしん",
+      "アルバム",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "family",
+      "possessive particle",
+      "photo",
+      "album",
+      "is/are"
+    ],
+    "english": "This is my family photo album.",
+    "prompt": "Someone holds up a photo album filled with family pictures.",
+    "fact": "This sentence structure is common for identifying something that belongs to you or someone else."
+  },
+  {
+    "id": 5,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "父",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "ちち",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "father",
+      "is/are"
+    ],
+    "english": "This is my father.",
+    "prompt": "Someone points to a man in a photo album.",
+    "fact": "You can replace '父' with other family members like '母' (mother), '兄' (older brother), etc."
+  },
+  {
+    "id": 6,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "母",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "はは",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "mother",
+      "is/are"
+    ],
+    "english": "This is my mother.",
+    "prompt": "Someone points to a woman standing next to their father in a picture.",
+    "fact": "This follows the same structure as introducing your father, just changing the family member."
+  },
+  {
+    "id": 7,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "兄",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "あに",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "older brother",
+      "is/are"
+    ],
+    "english": "This is my older brother.",
+    "prompt": "Someone points to a young man standing next to them in a photo.",
+    "fact": "Remember, '兄' specifically refers to an older brother."
+  },
+  {
+    "id": 8,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "姉",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "あね",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "older sister",
+      "is/are"
+    ],
+    "english": "This is my older sister.",
+    "prompt": "Someone points to a young woman standing beside their older brother in a photo.",
+    "fact": "Similar to '兄', '姉' is used for an older sister."
+  },
+  {
+    "id": 9,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "弟",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "おとうと",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "younger brother",
+      "is/are"
+    ],
+    "english": "This is my younger brother.",
+    "prompt": "Someone points to a boy standing in front of them in a photo.",
+    "fact": "'弟' is the counterpart to '兄' and refers to a younger brother."
+  },
+  {
+    "id": 10,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "妹",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "いもうと",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "younger sister",
+      "is/are"
+    ],
+    "english": "This is my younger sister.",
+    "prompt": "Someone points to a little girl standing next to their younger brother in a photo.",
+    "fact": "'妹' is used for a younger sister, contrasting with '姉'."
+  },
+  {
+    "id": 11,
+    "line": [
+      "これ",
+      "は",
+      "あなた",
+      "の",
+      "お父さん",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "あなた",
+      "の",
+      "おとうさん",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "you",
+      "possessive particle",
+      "father",
+      "is/are",
+      "question marker"
+    ],
+    "english": "Is this your father?",
+    "prompt": "You are looking at a photo with someone, and you point to a man in the picture.",
+    "fact": "'お父さん' is a more polite way to say 'father' than '父'."
+  },
+  {
+    "id": 12,
+    "line": [
+      "これ",
+      "は",
+      "あなた",
+      "の",
+      "お母さん",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "あなた",
+      "の",
+      "おかあさん",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "you",
+      "possessive particle",
+      "mother",
+      "is/are",
+      "question marker"
+    ],
+    "english": "Is this your mother?",
+    "prompt": "You are looking at a photo with someone, and you point to a woman who seems to be the man's wife.",
+    "fact": "Similar to 'お父さん', 'お母さん' is a more polite form of '母'."
+  },
+  {
+    "id": 13,
+    "line": [
+      "あなた",
+      "の",
+      "お兄さん",
+      "は",
+      "います",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "の",
+      "おにいさん",
+      "わ",
+      "います",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "possessive particle",
+      "older brother",
+      "topic marker",
+      "exist/have",
+      "question marker"
+    ],
+    "english": "Do you have an older brother?",
+    "prompt": "You are asking someone about their siblings.",
+    "fact": "'います' is used for living things, so it's appropriate for asking about family members."
+  },
+  {
+    "id": 14,
+    "line": [
+      "あなた",
+      "の",
+      "お姉さん",
+      "は",
+      "います",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "の",
+      "おねえさん",
+      "わ",
+      "います",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "possessive particle",
+      "older sister",
+      "topic marker",
+      "exist/have",
+      "question marker"
+    ],
+    "english": "Do you have an older sister?",
+    "prompt": "You are continuing the conversation about the person's siblings.",
+    "fact": "The structure of this question is the same as the previous one, just changing the family member."
+  },
+  {
+    "id": 15,
+    "line": [
+      "あなた",
+      "に",
+      "兄弟",
+      "は",
+      "います",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "に",
+      "きょうだい",
+      "わ",
+      "います",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "to/for",
+      "siblings",
+      "topic marker",
+      "exist/have",
+      "question marker"
+    ],
+    "english": "Do you have any siblings?",
+    "prompt": "You are asking someone if they have brothers or sisters in general.",
+    "fact": "'兄弟' is a general term for siblings, including both brothers and sisters."
+  },
+  {
+    "id": 16,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "祖父",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "そふ",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "grandfather",
+      "is/are"
+    ],
+    "english": "This is my grandfather.",
+    "prompt": "Someone points to an older man in a photo, standing with their parents.",
+    "fact": "Now we're moving on to extended family members."
+  },
+  {
+    "id": 17,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "祖母",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "そぼ",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "grandmother",
+      "is/are"
+    ],
+    "english": "This is my grandmother.",
+    "prompt": "Someone points to an older woman standing next to their grandfather in a photo.",
+    "fact": "This follows the same pattern as introducing other family members."
+  },
+  {
+    "id": 18,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "叔父",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "おじ",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "uncle",
+      "is/are"
+    ],
+    "english": "This is my uncle.",
+    "prompt": "Someone points to a man standing a bit apart from the immediate family in a photo.",
+    "fact": "'叔父' can refer to either your father's brother or your mother's brother."
+  },
+  {
+    "id": 19,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "叔母",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "おば",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "aunt",
+      "is/are"
+    ],
+    "english": "This is my aunt.",
+    "prompt": "Someone points to a woman standing next to their uncle in a photo.",
+    "fact": "Similar to '叔父', '叔母' can refer to either your father's sister or your mother's sister."
+  },
+  {
+    "id": 20,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "いとこ",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "いとこ",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "cousin",
+      "is/are"
+    ],
+    "english": "This is my cousin.",
+    "prompt": "Someone points to a young person standing with their aunt and uncle in a photo.",
+    "fact": "'いとこ' is a gender-neutral term for cousin."
+  },
+  {
+    "id": 21,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "夫",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "おっと",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "husband",
+      "is/are"
+    ],
+    "english": "This is my husband.",
+    "prompt": "Someone points to a man standing next to them in a photo, their wedding rings visible.",
+    "fact": "This is how you introduce your spouse if you are female."
+  },
+  {
+    "id": 22,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "妻",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "つま",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "wife",
+      "is/are"
+    ],
+    "english": "This is my wife.",
+    "prompt": "Someone points to a woman standing next to them in a photo, both of them smiling.",
+    "fact": "This is how you introduce your spouse if you are male."
+  },
+  {
+    "id": 23,
+    "line": [
+      "あなた",
+      "に",
+      "いとこ",
+      "は",
+      "います",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "に",
+      "いとこ",
+      "わ",
+      "います",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "to/for",
+      "cousin",
+      "topic marker",
+      "exist/have",
+      "question marker"
+    ],
+    "english": "Do you have any cousins?",
+    "prompt": "You are asking someone if they have any cousins.",
+    "fact": "This follows the same structure as asking about siblings."
+  },
+  {
+    "id": 24,
+    "line": [
+      "あなた",
+      "に",
+      "叔父さん",
+      "は",
+      "います",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "に",
+      "おじさん",
+      "わ",
+      "います",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "to/for",
+      "uncle",
+      "topic marker",
+      "exist/have",
+      "question marker"
+    ],
+    "english": "Do you have any uncles?",
+    "prompt": "You are asking someone about their uncles.",
+    "fact": "'叔父さん' is a more polite way to say 'uncle' than '叔父'."
+  },
+  {
+    "id": 25,
+    "line": [
+      "あなた",
+      "に",
+      "叔母さん",
+      "は",
+      "います",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "に",
+      "おばさん",
+      "わ",
+      "います",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "to/for",
+      "aunt",
+      "topic marker",
+      "exist/have",
+      "question marker"
+    ],
+    "english": "Do you have any aunts?",
+    "prompt": "You are asking someone about their aunts.",
+    "fact": "'叔母さん' is a more polite way to say 'aunt' than '叔母'."
+  },
+  {
+    "id": 26,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "息子",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "むすこ",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "son",
+      "is/are"
+    ],
+    "english": "This is my son.",
+    "prompt": "Someone points to a young boy who looks like them in a photo.",
+    "fact": "Now we are talking about the speaker's children."
+  },
+  {
+    "id": 27,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "娘",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "むすめ",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "daughter",
+      "is/are"
+    ],
+    "english": "This is my daughter.",
+    "prompt": "Someone points to a young girl standing next to their son in a photo.",
+    "fact": "This follows the same structure as introducing a son."
+  },
+  {
+    "id": 28,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "孫",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "まご",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "grandchild",
+      "is/are"
+    ],
+    "english": "This is my grandchild.",
+    "prompt": "Someone points to a small child in a photo, standing with their son and daughter.",
+    "fact": "'孫' is a gender-neutral term for grandchild."
+  },
+  {
+    "id": 29,
+    "line": [
+      "これ",
+      "は",
+      "私",
+      "の",
+      "家族",
+      "全員",
+      "です"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "わたし",
+      "の",
+      "かぞく",
+      "ぜんいん",
+      "です"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "I/me",
+      "possessive particle",
+      "family",
+      "all members",
+      "is/are"
+    ],
+    "english": "This is my whole family.",
+    "prompt": "Someone gestures to a large group of people in a photo, encompassing everyone they've introduced.",
+    "fact": "'全員' emphasizes that everyone in the photo is part of their family."
+  },
+  {
+    "id": 30,
+    "line": [
+      "これ",
+      "は",
+      "あなた",
+      "の",
+      "お父さん",
+      "と",
+      "お母さん",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "あなた",
+      "の",
+      "おとうさん",
+      "と",
+      "おかあさん",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "you",
+      "possessive particle",
+      "father",
+      "and",
+      "mother",
+      "is/are",
+      "question marker"
+    ],
+    "english": "Are these your father and mother?",
+    "prompt": "You point to a man and a woman standing close together in a photo.",
+    "fact": "'と' is used to connect nouns, in this case, 'father' and 'mother'."
+  },
+  {
+    "id": 31,
+    "line": [
+      "これ",
+      "は",
+      "あなた",
+      "の",
+      "お兄さん",
+      "と",
+      "妹",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "あなた",
+      "の",
+      "おにいさん",
+      "と",
+      "いもうと",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "you",
+      "possessive particle",
+      "older brother",
+      "and",
+      "younger sister",
+      "is/are",
+      "question marker"
+    ],
+    "english": "Are these your older brother and younger sister?",
+    "prompt": "You point to a young man and a girl who seem to be siblings in a photo.",
+    "fact": "You can use 'と' to connect any two family members."
+  },
+  {
+    "id": 32,
+    "line": [
+      "これ",
+      "は",
+      "あなた",
+      "の",
+      "息子",
+      "と",
+      "娘",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "あなた",
+      "の",
+      "むすこ",
+      "と",
+      "むすめ",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "you",
+      "possessive particle",
+      "son",
+      "and",
+      "daughter",
+      "is/are",
+      "question marker"
+    ],
+    "english": "Are these your son and daughter?",
+    "prompt": "You point to a boy and a girl who look like they could be the children of the person you're talking to.",
+    "fact": "This follows the same pattern as the previous examples."
+  },
+  {
+    "id": 33,
+    "line": [
+      "これ",
+      "は",
+      "あなた",
+      "の",
+      "祖父",
+      "と",
+      "祖母",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "あなた",
+      "の",
+      "そふ",
+      "と",
+      "そぼ",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "you",
+      "possessive particle",
+      "grandfather",
+      "and",
+      "grandmother",
+      "is/are",
+      "question marker"
+    ],
+    "english": "Are these your grandfather and grandmother?",
+    "prompt": "You point to an older couple in a photo, assuming they might be the person's grandparents.",
+    "fact": "The structure remains consistent for asking about two family members."
+  },
+  {
+    "id": 34,
+    "line": [
+      "これ",
+      "は",
+      "あなた",
+      "の",
+      "叔父さん",
+      "と",
+      "叔母さん",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "あなた",
+      "の",
+      "おじさん",
+      "と",
+      "おばさん",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "you",
+      "possessive particle",
+      "uncle",
+      "and",
+      "aunt",
+      "is/are",
+      "question marker"
+    ],
+    "english": "Are these your uncle and aunt?",
+    "prompt": "You point to a man and a woman who seem to be a couple, but you're not sure of their relationship to the person.",
+    "fact": "This follows the same pattern as asking about other pairs of family members."
+  },
+  {
+    "id": 35,
+    "line": [
+      "これ",
+      "は",
+      "あなた",
+      "の",
+      "夫",
+      "と",
+      "息子",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "あなた",
+      "の",
+      "おっと",
+      "と",
+      "むすこ",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "you",
+      "possessive particle",
+      "husband",
+      "and",
+      "son",
+      "is/are",
+      "question marker"
+    ],
+    "english": "Are these your husband and son?",
+    "prompt": "You point to a man and a boy who look like they could be father and son in a photo.",
+    "fact": "You can use this structure to ask about any two family members, even if they're not a traditional pair."
+  },
+  {
+    "id": 36,
+    "line": [
+      "これ",
+      "は",
+      "あなた",
+      "の",
+      "妻",
+      "と",
+      "娘",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "あなた",
+      "の",
+      "つま",
+      "と",
+      "むすめ",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "you",
+      "possessive particle",
+      "wife",
+      "and",
+      "daughter",
+      "is/are",
+      "question marker"
+    ],
+    "english": "Are these your wife and daughter?",
+    "prompt": "You point to a woman and a girl who look like they could be mother and daughter in a photo.",
+    "fact": "This follows the same pattern as the previous example."
+  },
+  {
+    "id": 37,
+    "line": [
+      "これ",
+      "は",
+      "あなた",
+      "の",
+      "いとこ",
+      "たち",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "あなた",
+      "の",
+      "いとこ",
+      "たち",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "you",
+      "possessive particle",
+      "cousin",
+      "plural marker",
+      "is/are",
+      "question marker"
+    ],
+    "english": "Are these your cousins?",
+    "prompt": "You point to a group of young people who seem to be around the same age in a photo.",
+    "fact": "'たち' is used after a noun to indicate plurality."
+  },
+  {
+    "id": 38,
+    "line": [
+      "これ",
+      "は",
+      "あなた",
+      "の",
+      "家族",
+      "全員",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "あなた",
+      "の",
+      "かぞく",
+      "ぜんいん",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "you",
+      "possessive particle",
+      "family",
+      "all members",
+      "is/are",
+      "question marker"
+    ],
+    "english": "Is this your whole family?",
+    "prompt": "You gesture to everyone in the photo, asking if they are all part of the person's family.",
+    "fact": "This is a good way to confirm if you've identified everyone in the photo correctly."
+  },
+  {
+    "id": 39,
+    "line": [
+      "これ",
+      "は",
+      "あなた",
+      "の",
+      "お父さん",
+      "と",
+      "あなた",
+      "です",
+      "か"
+    ],
+    "tts": [
+      "これ",
+      "わ",
+      "あなた",
+      "の",
+      "おとうさん",
+      "と",
+      "あなた",
+      "です",
+      "か"
+    ],
+    "explain": [
+      "this",
+      "topic marker",
+      "you",
+      "possessive particle",
+      "father",
+      "and",
+      "you",
+      "is/are",
+      "question marker"
+    ],
+    "english": "Is this your father and you?",
+    "prompt": "You point to a man and the person you're talking to in a photo, noticing a resemblance.",
+    "fact": "This is a common way to ask if someone is in a photo with a family member."
+  }
+]

@@ -1,352 +1,371 @@
 [
-    {
-      "id": 1,
-      "line": "私は<ruby>肉<rt>にく</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはにくをかいたい",
-      "english": "I want to buy meat.",
-      "prompt": "Show a person standing at a butcher counter, looking at different cuts of meat."
-    },
-    {
-      "id": 2,
-      "line": "私は<ruby>魚<rt>さかな</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはさかなをかいたい",
-      "english": "I want to buy fish.",
-      "prompt": "Show a person looking at a display of fresh fish at a fish market."
-    },
-    {
-      "id": 3,
-      "line": "私は<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはやさいをかいたい",
-      "english": "I want to buy vegetables.",
-      "prompt": "Show a person picking out fresh vegetables at a farmer's market."
-    },
-    {
-      "id": 4,
-      "line": "私は<ruby>果物<rt>くだもの</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはくだものをかいたい",
-      "english": "I want to buy fruit.",
-      "prompt": "Show a person selecting fruits from a colorful fruit stand."
-    },
-    {
-      "id": 5,
-      "line": "私は<ruby>パン<rt>パン</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはパンをかいたい",
-      "english": "I want to buy bread.",
-      "prompt": "Show a person choosing bread from a bakery display."
-    },
-    {
-      "id": 6,
-      "line": "あなたは<ruby>肉<rt>にく</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか",
-      "tts": "あなたはにくをかいたいですか",
-      "english": "Do you want to buy meat?",
-      "prompt": "Show a person holding a package of meat, asking their friend if they want to buy some too."
-    },
-    {
-      "id": 7,
-      "line": "あなたは<ruby>魚<rt>さかな</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか",
-      "tts": "あなたはさかなをかいたいですか",
-      "english": "Do you want to buy fish?",
-      "prompt": "Show one person pointing at a fishmonger's selection, asking their companion if they want to buy any."
-    },
-    {
-      "id": 8,
-      "line": "あなたは<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか",
-      "tts": "あなたはやさいをかいたいですか",
-      "english": "Do you want to buy vegetables?",
-      "prompt": "Show someone with a basket of vegetables, asking someone else if they need any."
-    },
-    {
-      "id": 9,
-      "line": "あなたは<ruby>果物<rt>くだもの</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか",
-      "tts": "あなたはくだものをかいたいですか",
-      "english": "Do you want to buy fruit?",
-      "prompt": "Show a person holding a tempting piece of fruit, asking if anyone else wants them to buy some."
-    },
-    {
-      "id": 10,
-      "line": "あなたは<ruby>パン<rt>パン</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか",
-      "tts": "あなたはパンをかいたいですか",
-      "english": "Do you want to buy bread?",
-      "prompt": "Show a person standing near the bakery section, asking their friend if they want to buy bread."
-    },
-    {
-      "id": 11,
-      "line": "私は<ruby>鶏肉<rt>とりにく</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはとりにくをかいたい",
-      "english": "I want to buy chicken.",
-      "prompt": "Show a close-up of raw chicken breasts or a whole chicken, indicating someone's intention to purchase it."
-    },
-    {
-      "id": 12,
-      "line": "私は<ruby>豚肉<rt>ぶたにく</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはぶたにくをかいたい",
-      "english": "I want to buy pork.",
-      "prompt": "Show a selection of pork cuts at a butcher shop, implying someone's interest in buying pork."
-    },
-    {
-      "id": 13,
-      "line": "私は<ruby>牛肉<rt>ぎゅうにく</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはぎゅうにくをかいたい",
-      "english": "I want to buy beef.",
-      "prompt": "Show a person admiring a marbled piece of beef, hinting at their desire to buy beef."
-    },
-    {
-      "id": 14,
-      "line": "私は<ruby>鮭<rt>さけ</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはさけをかいたい",
-      "english": "I want to buy salmon.",
-      "prompt": "Show a fresh salmon fillet on ice, suggesting someone's intention to buy salmon."
-    },
-    {
-      "id": 15,
-      "line": "私は<ruby>鮪<rt>まぐろ</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはまぐろをかいたい",
-      "english": "I want to buy tuna.",
-      "prompt": "Show a display of different cuts of tuna at a fish market, indicating someone's preference for tuna."
-    },
-    {
-      "id": 16,
-      "line": "あなたは<ruby>鶏肉<rt>とりにく</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか",
-      "tts": "あなたはとりにくをかいたいですか",
-      "english": "Do you want to buy chicken?",
-      "prompt": "Show a person holding a shopping list that includes chicken, asking their companion if they need any."
-    },
-    {
-      "id": 17,
-      "line": "あなたは<ruby>豚肉<rt>ぶたにく</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか",
-      "tts": "あなたはぶたにくをかいたいですか",
-      "english": "Do you want to buy pork?",
-      "prompt": "Show a person looking undecided between chicken and pork, asking for their friend's preference."
-    },
-    {
-      "id": 18,
-      "line": "あなたは<ruby>牛肉<rt>ぎゅうにく</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか",
-      "tts": "あなたはぎゅうにくをかいたいですか",
-      "english": "Do you want to buy beef?",
-      "prompt": "Show a person pushing a shopping cart with beef already inside, asking their friend if they want some too."
-    },
-    {
-      "id": 19,
-      "line": "あなたは<ruby>鮭<rt>さけ</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか",
-      "tts": "あなたはさけをかいたいですか",
-      "english": "Do you want to buy salmon?",
-      "prompt": "Show a person pointing at a salmon recipe on their phone, asking their friend if they want to cook it together."
-    },
-    {
-      "id": 20,
-      "line": "あなたは<ruby>鮪<rt>まぐろ</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか",
-      "tts": "あなたはまぐろをかいたいですか",
-      "english": "Do you want to buy tuna?",
-      "prompt": "Show a person reading the label on a can of tuna, asking their friend if they prefer a different brand."
-    },
-    {
-      "id": 21,
-      "line": "私は<ruby>林檎<rt>りんご</rt></ruby>と<ruby>バナナ<rt>バナナ</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはりんごバナナをかいたい",
-      "english": "I want to buy apples and bananas.",
-      "prompt": "Show a person putting apples and bananas into a bag at a grocery store."
-    },
-    {
-      "id": 22,
-      "line": "私は<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>と<ruby>卵<rt>たまご</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはぎゅうにゅうとたまごをかいたい",
-      "english": "I want to buy milk and eggs.",
-      "prompt": "Show a person with a carton of milk and a dozen eggs in their shopping basket."
-    },
-    {
-      "id": 23,
-      "line": "私は<ruby>米<rt>こめ</rt></ruby>と<ruby>味噌汁<rt>みそしる</rt></ruby>の<ruby>材料<rt>ざいりょう</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはこめとみそしるのざいりょうをかいたい",
-      "english": "I want to buy rice and miso soup ingredients.",
-      "prompt": "Show a person holding a bag of rice and looking at miso paste and tofu in a supermarket."
-    },
-    {
-      "id": 24,
-      "line": "私は<ruby>サンドイッチ<rt>サンドイッチ</rt></ruby>と<ruby>サラダ<rt>サラダ</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはサンドイッチとサラダをかいたい",
-      "english": "I want to buy a sandwich and salad.",
-      "prompt": "Show a person choosing between different sandwiches and salads at a deli counter."
-    },
-    {
-      "id": 25,
-      "line": "私は<ruby>珈琲<rt>コーヒー</rt></ruby>と<ruby>ケーキ<rt>ケーキ</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはコーヒーとケーキをかいたい",
-      "english": "I want to buy coffee and cake.",
-      "prompt": "Show a person standing in line at a cafe, deciding between different types of cake."
-    },
-    {
-      "id": 26,
-      "line": "あなたは<ruby>林檎<rt>りんご</rt></ruby>と<ruby>バナナ<rt>バナナ</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "あなたはりんごバナナをかいたいですか",
-      "english": "Do you want to buy apples and bananas?",
-      "prompt": "Show a person holding an apple in one hand and a banana in the other, asking if anyone wants some."
-    },
-    {
-      "id": 27,
-      "line": "あなたは<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>と<ruby>卵<rt>たまご</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "あなたはぎゅうにゅうとたまごをかいたいですか",
-      "english": "Do you want to buy milk and eggs?",
-      "prompt": "Show a person writing 'milk' and 'eggs' on their shopping list, asking their companion if they need any."
-    },
-    {
-      "id": 28,
-      "line": "あなたは<ruby>米<rt>こめ</rt></ruby>と<ruby>味噌汁<rt>みそしる</rt></ruby>の<ruby>材料<rt>ざいりょう</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "あなたはこめとみそしるのざいりょうをかいたいですか",
-      "english": "Do you want to buy rice and miso soup ingredients?",
-      "prompt": "Show a person holding a recipe for miso soup, asking their friend if they want to cook it together."
-    },
-    {
-      "id": 29,
-      "line": "あなたは<ruby>サンドイッチ<rt>サンドイッチ</rt></ruby>と<ruby>サラダ<rt>サラダ</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "あなたはサンドイッチとサラダをかいたいですか",
-      "english": "Do you want to buy a sandwich and salad?",
-      "prompt": "Show a person looking at a menu with sandwich and salad options, asking their friend what they want."
-    },
-    {
-      "id": 30,
-      "line": "あなたは<ruby>珈琲<rt>コーヒー</rt></ruby>と<ruby>ケーキ<rt>ケーキ</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "あなたはコーヒーとケーキをかいたいですか",
-      "english": "Do you want to buy coffee and cake?",
-      "prompt": "Show a person looking through the window of a cafe, asking their friend if they want to go in."
-    },
-    {
-      "id": 31,
-      "line": "私は<ruby>野菜<rt>やさい</rt></ruby>と<ruby>果物<rt>くだもの</rt></ruby>を<ruby>沢山<rt>たくさん</rt></ruby><ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはやさいとくだものをたくさんかいたい",
-      "english": "I want to buy a lot of vegetables and fruits.",
-      "prompt": "Show a person with an overflowing shopping cart full of fresh vegetables and fruits."
-    },
-    {
-      "id": 32,
-      "line": "私は<ruby>今晩<rt>こんばん</rt></ruby>の<ruby>晩御飯<rt>ばんごはん</rt></ruby>の<ruby>材料<rt>ざいりょう</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはこんばんのばんごはんのざいりょうをかいたい",
-      "english": "I want to buy ingredients for dinner tonight.",
-      "prompt": "Show a person browsing the grocery store aisles, looking for inspiration for dinner."
-    },
-    {
-      "id": 33,
-      "line": "私は<ruby>美味<rt>おい</rt></ruby>しい<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはおいしいものをかいたい",
-      "english": "I want to buy something delicious.",
-      "prompt": "Show a person looking longingly at various food displays, trying to decide what to buy."
-    },
-    {
-      "id": 34,
-      "line": "私は<ruby>安<rt>やす</rt></ruby>い<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたい",
-      "tts": "わたしはやすいものをかいたい",
-      "english": "I want to buy something cheap.",
-      "prompt": "Show a person checking the prices of different items carefully, trying to find the best deal."
-    },
-    {
-      "id": 35,
-      "line": "私は<ruby>何<rt>なに</rt></ruby>も<ruby>買<rt>か</rt></ruby>いたくない",
-      "tts": "わたしはなにもかいたくない",
-      "english": "I don't want to buy anything.",
-      "prompt": "Show a person walking through a grocery store with empty hands and a disinterested expression."
-    },
-    {
-      "id": 36,
-      "line": "あなたは<ruby>野菜<rt>やさい</rt></ruby>と<ruby>果物<rt>くだもの</rt></ruby>を<ruby>沢山<rt>たくさん</rt></ruby><ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "あなたはやさいとくだものをたくさんかいたいですか",
-      "english": "Do you want to buy a lot of vegetables and fruits?",
-      "prompt": "Show a person struggling to carry a large bag of groceries overflowing with vegetables and fruits."
-    },
-    {
-      "id": 37,
-      "line": "あなたは<ruby>今晩<rt>こんばん</rt></ruby>の<ruby>晩御飯<rt>ばんごはん</rt></ruby>の<ruby>材料<rt>ざいりょう</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "あなたはこんばんのばんごはんのざいりょうをかいたいですか",
-      "english": "Do you want to buy ingredients for dinner tonight?",
-      "prompt": "Show a person texting their family, asking what they want for dinner tonight."
-    },
-    {
-      "id": 38,
-      "line": "あなたは<ruby>美味<rt>おい</rt></ruby>しい<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "あなたはおいしいものをかいたいですか",
-      "english": "Do you want to buy something delicious?",
-      "prompt": "Show a person with a happy expression, suggesting to their friend that they buy something tasty to eat."
-    },
-    {
-      "id": 39,
-      "line": "あなたは<ruby>安<rt>やす</rt></ruby>い<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "あなたはやすいものをかいたいですか",
-      "english": "Do you want to buy something cheap?",
-      "prompt": "Show a person holding a coupon, suggesting to their friend that they look for discounted items."
-    },
-    {
-      "id": 40,
-      "line": "あなたは<ruby>何<rt>なに</rt></ruby>も<ruby>買<rt>か</rt></ruby>いたくないですか？",
-      "tts": "あなたはなにもかいたくないですか",
-      "english": "Don't you want to buy anything?",
-      "prompt": "Show a person looking surprised because their friend doesn't want to buy anything at the store."
-    },
-    {
-      "id": 41,
-      "line": "あなたは<ruby>魚<rt>さかな</rt></ruby>と<ruby>肉<rt>にく</rt></ruby>とどちらを<ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "あなたはさかなとにくとどちらをかいたいですか",
-      "english": "Which do you want to buy, fish or meat?",
-      "prompt": "Show a person looking back and forth between the fish and meat sections, struggling to choose."
-    },
-    {
-      "id": 42,
-      "line": "あなたは<ruby>林檎<rt>りんご</rt></ruby>と<ruby>バナナ<rt>バナナ</rt></ruby>とどちらを<ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "あなたはりんごバナナどちらをかいたいですか",
-      "english": "Which do you want to buy, apples or bananas?",
-      "prompt": "Show a person holding an apple and a banana, asking someone to choose which one they prefer."
-    },
-    {
-      "id": 43,
-      "line": "<ruby>サンドイッチ<rt>サンドイッチ</rt></ruby>と<ruby>サラダ<rt>サラダ</rt></ruby>とどちらを<ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "サンドイッチとサラダどちらをかいたいですか",
-      "english": "Which do you want to buy, a sandwich or salad?",
-      "prompt": "Show a person pointing at a sandwich menu and a salad bar, asking their friend to choose."
-    },
-    {
-      "id": 44,
-      "line": "<ruby>珈琲<rt>コーヒー</rt></ruby>と<ruby>紅茶<rt>こうちゃ</rt></ruby>とどちらを<ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "コーヒーとこうちゃとどちらをかいたいですか",
-      "english": "Which do you want to buy, coffee or tea?",
-      "prompt": "Show a person standing in front of a coffee and tea selection, asking for their friend's preference."
-    },
-    {
-      "id": 45,
-      "line": "<ruby>鶏肉<rt>とりにく</rt></ruby>と<ruby>豚肉<rt>ぶたにく</rt></ruby>とどちらを<ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "とりにくぶたにくどちらをかいたいですか",
-      "english": "Which do you want to buy, chicken or pork?",
-      "prompt": "Show a person holding recipes for both chicken and pork dishes, asking their friend which one to make."
-    },
-    {
-      "id": 46,
-      "line": "あなたは<ruby>果物<rt>くだもの</rt></ruby>と<ruby>野菜<rt>やさい</rt></ruby>とどちらを<ruby>沢山<rt>たくさん</rt></ruby><ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "あなたはくだものとやさいとどちらをたくさんかいたいですか",
-      "english": "Which do you want to buy more of, fruits or vegetables?",
-      "prompt": "Show a person with a half-full shopping cart, deciding whether to buy more fruits or vegetables."
-    },
-    {
-      "id": 47,
-      "line": "あなたは<ruby>美味<rt>おい</rt></ruby>しい<ruby>物<rt>もの</rt></ruby>と<ruby>安<rt>やす</rt></ruby>い<ruby>物<rt>もの</rt></ruby>とどちらを<ruby>買<rt>か</rt></ruby>いたいですか？",
-      "tts": "あなたはおいしいものとやすいものとどちらをかいたいですか",
-      "english": "Which do you want to buy, something delicious or something cheap?",
-      "prompt": "Show a person looking conflicted between a high-quality, expensive item and a more affordable option."
-    },
-    {
-      "id": 48,
-      "line": "あなたは<ruby>今晩<rt>こんばん</rt></ruby><ruby>何<rt>なに</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたいですか？",
-      "tts": "あなたはこんばんなにをたべたいですか",
-      "english": "What do you want to eat tonight?",
-      "prompt": "Show a person looking at their friend with a questioning look, wondering what to have for dinner."
-    },
-    {
-      "id": 49,
-      "line": "あなたは<ruby>何<rt>なに</rt></ruby>か<ruby>飲<rt>の</rt></ruby>みたいですか？",
-      "tts": "あなたはなにかのみたいですか",
-      "english": "Do you want to drink something?",
-      "prompt": "Show a person holding a bottle of water, offering it to their friend and asking if they are thirsty."
-    },
-    {
-      "id": 50,
-      "line": "あなたは<ruby>何<rt>なに</rt></ruby>か<ruby>甘<rt>あま</rt></ruby>い<ruby>物<rt>もの</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたいですか？",
-      "tts": "あなたはなにかあまいものをたべたいですか",
-      "english": "Do you want to eat something sweet?",
-      "prompt": "Show a person eyeing a dessert display, asking their friend if they want to share something sweet."
-    }
-  ]
+  {
+    "id": 1,
+    "line": ["りんご", "を", "食べ", "ます", "。"],
+    "tts": ["りんご", "を", "たべ", "ます", "。"],
+    "explain": ["apple", "object marker", "to eat", "polite marker", "."],
+    "english": "I eat an apple.",
+    "prompt": "A person takes a bite of a red, shiny apple.",
+    "fact": "This sentence uses the polite form '-masu' to indicate present tense."
+  },
+  {
+    "id": 2,
+    "line": ["みかん", "を", "食べ", "ます", "。"],
+    "tts": ["みかん", "を", "たべ", "ます", "。"],
+    "explain": ["mandarin orange", "object marker", "to eat", "polite marker", "."],
+    "english": "I eat a mandarin orange.",
+    "prompt": "Someone is peeling a mandarin orange and eating its segments.",
+    "fact": "The particle 'を' marks the object of the verb '食べる' (to eat)."
+  },
+  {
+    "id": 3,
+    "line": ["パン", "を", "食べ", "ます", "。"],
+    "tts": ["パン", "を", "たべ", "ます", "。"],
+    "explain": ["bread", "object marker", "to eat", "polite marker", "."],
+    "english": "I eat bread.",
+    "prompt": "Imagine someone taking a bite out of a slice of fresh bread.",
+    "fact": "This sentence structure is very common and can be used to describe eating various foods."
+  },
+  {
+    "id": 4,
+    "line": ["ごはん", "を", "食べ", "ます", "。"],
+    "tts": ["ごはん", "を", "たべ", "ます", "。"],
+    "explain": ["cooked rice", "object marker", "to eat", "polite marker", "."],
+    "english": "I eat rice.",
+    "prompt": "A person is using chopsticks to pick up rice from their bowl.",
+    "fact": "'ごはん' specifically refers to cooked rice, the staple food in Japan."
+  },
+  {
+    "id": 5,
+    "line": ["牛乳", "を", "飲み", "ます", "。"],
+    "tts": ["ぎゅうにゅう", "を", "のみ", "ます", "。"],
+    "explain": ["milk", "object marker", "to drink", "polite marker", "."],
+    "english": "I drink milk.",
+    "prompt": "Someone is drinking a glass of cold milk.",
+    "fact": "The verb '飲む' (to drink) is used for beverages."
+  },
+  {
+    "id": 6,
+    "line": ["水", "を", "飲み", "ます", "。"],
+    "tts": ["みず", "を", "のみ", "ます", "。"],
+    "explain": ["water", "object marker", "to drink", "polite marker", "."],
+    "english": "I drink water.",
+    "prompt": "A person takes a refreshing sip from a glass of water.",
+    "fact": "This sentence is straightforward and commonly used in daily life."
+  },
+  {
+    "id": 7,
+    "line": ["りんご", "を", "買い", "ます", "。"],
+    "tts": ["りんご", "を", "かい", "ます", "。"],
+    "explain": ["apple", "object marker", "to buy", "polite marker", "."],
+    "english": "I buy an apple.",
+    "prompt": "Someone is at a fruit stand, picking out a ripe apple to purchase.",
+    "fact": "The verb '買う' (to buy) is used for purchasing things."
+  },
+  {
+    "id": 8,
+    "line": ["みかん", "を", "買い", "ます", "。"],
+    "tts": ["みかん", "を", "かい", "ます", "。"],
+    "explain": ["mandarin orange", "object marker", "to buy", "polite marker", "."],
+    "english": "I buy a mandarin orange.",
+    "prompt": "Imagine a person adding a net bag of mandarin oranges to their shopping cart.",
+    "fact": "This sentence follows the same structure as the previous one, just with a different object."
+  },
+  {
+    "id": 9,
+    "line": ["パン", "を", "買い", "ます", "。"],
+    "tts": ["パン", "を", "かい", "ます", "。"],
+    "explain": ["bread", "object marker", "to buy", "polite marker", "."],
+    "english": "I buy bread.",
+    "prompt": "A person is at a bakery, selecting a loaf of bread to buy.",
+    "fact": "This sentence is a simple example of how to express buying something in Japanese."
+  },
+  {
+    "id": 10,
+    "line": ["ごはん", "を", "買い", "ます", "か", "。"],
+    "tts": ["ごはん", "を", "かい", "ます", "か", "。"],
+    "explain": ["cooked rice", "object marker", "to buy", "polite marker", "question marker", "."],
+    "english": "Do you buy rice?",
+    "prompt": "Someone is asking their friend if they need to buy rice at the supermarket.",
+    "fact": "Adding 'か' at the end turns the sentence into a question."
+  },
+  {
+    "id": 11,
+    "line": ["牛乳", "を", "買い", "ます", "か", "。"],
+    "tts": ["ぎゅうにゅう", "を", "かい", "ます", "か", "。"],
+    "explain": ["milk", "object marker", "to buy", "polite marker", "question marker", "."],
+    "english": "Do you buy milk?",
+    "prompt": "One person is looking at their empty fridge and asking their roommate if they buy milk.",
+    "fact": "This is a yes/no question, and the answer can be 'はい' (yes) or 'いいえ' (no)."
+  },
+  {
+    "id": 12,
+    "line": ["水", "を", "買い", "ます", "か", "。"],
+    "tts": ["みず", "を", "かい", "ます", "か", "。"],
+    "explain": ["water", "object marker", "to buy", "polite marker", "question marker", "."],
+    "english": "Do you buy water?",
+    "prompt": "Two friends are going on a hike, and one asks the other if they need to buy bottled water.",
+    "fact": "In Japan, it's common to buy bottled water, even though tap water is safe to drink."
+  },
+  {
+    "id": 13,
+    "line": ["何", "を", "買い", "ます", "か", "。"],
+    "tts": ["なに", "を", "かい", "ます", "か", "。"],
+    "explain": ["what", "object marker", "to buy", "polite marker", "question marker", "."],
+    "english": "What do you buy?",
+    "prompt": "A person is at a store, looking at various items, and asks their friend what they are planning to buy.",
+    "fact": "'何' (what) is used to ask about something unknown."
+  },
+  {
+    "id": 14,
+    "line": ["りんご", "を", "三つ", "買い", "ます", "。"],
+    "tts": ["りんご", "を", "みっつ", "かい", "ます", "。"],
+    "explain": ["apple", "object marker", "three", "to buy", "polite marker", "."],
+    "english": "I buy three apples.",
+    "prompt": "Someone carefully selects three red apples from a display at the grocery store.",
+    "fact": "Counters are used to specify the quantity of objects in Japanese."
+  },
+  {
+    "id": 15,
+    "line": ["みかん", "を", "五つ", "買い", "ます", "。"],
+    "tts": ["みかん", "を", "いつつ", "かい", "ます", "。"],
+    "explain": ["mandarin orange", "object marker", "five", "to buy", "polite marker", "."],
+    "english": "I buy five mandarin oranges.",
+    "prompt": "A person is picking out five mandarin oranges from a pile at the fruit vendor's stall.",
+    "fact": "The counter for mandarin oranges changes to 'つ' after the number."
+  },
+  {
+    "id": 16,
+    "line": ["パン", "を", "一つ", "買い", "ます", "。"],
+    "tts": ["パン", "を", "ひとつ", "かい", "ます", "。"],
+    "explain": ["bread", "object marker", "one", "to buy", "polite marker", "."],
+    "english": "I buy one bread.",
+    "prompt": "Imagine someone picking up a single, crusty loaf of bread from the bakery shelf.",
+    "fact": "'一つ' is the counter for one item, and it changes depending on the object being counted."
+  },
+  {
+    "id": 17,
+    "line": ["牛乳", "を", "一本", "買い", "ます", "。"],
+    "tts": ["ぎゅうにゅう", "を", "いっぽん", "かい", "ます", "。"],
+    "explain": ["milk", "object marker", "one bottle", "to buy", "polite marker", "."],
+    "english": "I buy one bottle of milk.",
+    "prompt": "A person grabs a carton of milk from the refrigerated aisle at the supermarket.",
+    "fact": "'一本' is the counter for long, cylindrical objects like bottles."
+  },
+  {
+    "id": 18,
+    "line": ["水", "を", "二本", "買い", "ます", "。"],
+    "tts": ["みず", "を", "にほん", "かい", "ます", "。"],
+    "explain": ["water", "object marker", "two bottles", "to buy", "polite marker", "."],
+    "english": "I buy two bottles of water.",
+    "prompt": "Someone is picking up two bottles of water from a convenience store shelf.",
+    "fact": "The counter '本' is used for bottles, and '二本' means two bottles."
+  },
+  {
+    "id": 19,
+    "line": ["肉", "を", "買い", "ます", "。"],
+    "tts": ["にく", "を", "かい", "ます", "。"],
+    "explain": ["meat", "object marker", "to buy", "polite marker", "."],
+    "english": "I buy meat.",
+    "prompt": "A person is at the butcher shop, selecting cuts of meat for dinner.",
+    "fact": "'肉' is a general term for meat."
+  },
+  {
+    "id": 20,
+    "line": ["魚", "を", "買い", "ます", "。"],
+    "tts": ["さかな", "を", "かい", "ます", "。"],
+    "explain": ["fish", "object marker", "to buy", "polite marker", "."],
+    "english": "I buy fish.",
+    "prompt": "Imagine someone at a fish market, pointing at a fresh fish they want to buy.",
+    "fact": "'魚' can refer to both live fish and fish as food."
+  },
+  {
+    "id": 21,
+    "line": ["野菜", "を", "買い", "ます", "。"],
+    "tts": ["やさい", "を", "かい", "ます", "。"],
+    "explain": ["vegetables", "object marker", "to buy", "polite marker", "."],
+    "english": "I buy vegetables.",
+    "prompt": "A person is filling their bag with fresh vegetables at a farmer's market.",
+    "fact": "'野菜' is a general term for vegetables."
+  },
+  {
+    "id": 22,
+    "line": ["果物", "を", "買い", "ます", "。"],
+    "tts": ["くだもの", "を", "かい", "ます", "。"],
+    "explain": ["fruits", "object marker", "to buy", "polite marker", "."],
+    "english": "I buy fruits.",
+    "prompt": "Someone is browsing the fruit aisle at the supermarket, picking out a variety of colorful fruits.",
+    "fact": "'果物' is a general term for fruits."
+  },
+  {
+    "id": 23,
+    "line": ["肉", "を", "買い", "ます", "か", "。"],
+    "tts": ["にく", "を", "かい", "ます", "か", "。"],
+    "explain": ["meat", "object marker", "to buy", "polite marker", "question marker", "."],
+    "english": "Do you buy meat?",
+    "prompt": "One friend is asking another if they want to split a package of meat at the grocery store.",
+    "fact": "This question can be used to inquire about someone's shopping list or dietary preferences."
+  },
+  {
+    "id": 24,
+    "line": ["魚", "を", "買い", "ます", "か", "。"],
+    "tts": ["さかな", "を", "かい", "ます", "か", "。"],
+    "explain": ["fish", "object marker", "to buy", "polite marker", "question marker", "."],
+    "english": "Do you buy fish?",
+    "prompt": "Someone is planning a dinner party and asking their guest if they eat fish.",
+    "fact": "This question can be a way to find out if someone likes or eats fish."
+  },
+  {
+    "id": 25,
+    "line": ["野菜", "を", "買い", "ます", "か", "。"],
+    "tts": ["やさい", "を", "かい", "ます", "か", "。"],
+    "explain": ["vegetables", "object marker", "to buy", "polite marker", "question marker", "."],
+    "english": "Do you buy vegetables?",
+    "prompt": "A parent is asking their child if they want to pick out some vegetables at the supermarket.",
+    "fact": "This question can be used to encourage healthy eating habits."
+  },
+  {
+    "id": 26,
+    "line": ["果物", "を", "買い", "ます", "か", "。"],
+    "tts": ["くだもの", "を", "かい", "ます", "か", "。"],
+    "explain": ["fruits", "object marker", "to buy", "polite marker", "question marker", "."],
+    "english": "Do you buy fruits?",
+    "prompt": "A roommate is asking another if they need to pick up any fruits from the store.",
+    "fact": "This question can be a way to check if someone needs to replenish their fruit supply."
+  },
+  {
+    "id": 27,
+    "line": ["肉", "を", "二つ", "買い", "ます", "。"],
+    "tts": ["にく", "を", "ふたつ", "かい", "ます", "。"],
+    "explain": ["meat", "object marker", "two", "to buy", "polite marker", "."],
+    "english": "I buy two pieces of meat.",
+    "prompt": "A customer points at two steaks in the butcher's display case and says they'll take them.",
+    "fact": "The counter for meat can vary depending on the cut, but 'つ' is common for general pieces."
+  },
+  {
+    "id": 28,
+    "line": ["魚", "を", "一つ", "買い", "ます", "。"],
+    "tts": ["さかな", "を", "ひとつ", "かい", "ます", "。"],
+    "explain": ["fish", "object marker", "one", "to buy", "polite marker", "."],
+    "english": "I buy one fish.",
+    "prompt": "At a fish market, a buyer selects a single, glistening fish from the ice display.",
+    "fact": "When buying a whole fish, '一つ' is the appropriate counter."
+  },
+  {
+    "id": 29,
+    "line": ["野菜", "を", "三つ", "買い", "ます", "。"],
+    "tts": ["やさい", "を", "みっつ", "かい", "ます", "。"],
+    "explain": ["vegetables", "object marker", "three", "to buy", "polite marker", "."],
+    "english": "I buy three vegetables.",
+    "prompt": "A shopper picks up a tomato, a cucumber, and an onion, making it three vegetables in total.",
+    "fact": "While 'つ' can be used for vegetables, more specific counters exist depending on the type."
+  },
+  {
+    "id": 30,
+    "line": ["果物", "を", "五つ", "買い", "ます", "。"],
+    "tts": ["くだもの", "を", "いつつ", "かい", "ます", "。"],
+    "explain": ["fruits", "object marker", "five", "to buy", "polite marker", "."],
+    "english": "I buy five fruits.",
+    "prompt": "Imagine someone carefully choosing five different fruits from a colorful display at a fruit stand.",
+    "fact": "Similar to vegetables, more specific counters for fruits exist, but 'つ' works generally."
+  },
+  {
+    "id": 31,
+    "line": ["何", "を", "食べ", "ます", "か", "。"],
+    "tts": ["なに", "を", "たべ", "ます", "か", "。"],
+    "explain": ["what", "object marker", "to eat", "polite marker", "question marker", "."],
+    "english": "What do you eat?",
+    "prompt": "A friend asks what the other person is having for lunch, curious about their meal.",
+    "fact": "This is a common question to ask when you want to know what someone is eating."
+  },
+  {
+    "id": 32,
+    "line": ["何", "を", "飲み", "ます", "か", "。"],
+    "tts": ["なに", "を", "のみ", "ます", "か", "。"],
+    "explain": ["what", "object marker", "to drink", "polite marker", "question marker", "."],
+    "english": "What do you drink?",
+    "prompt": "A waiter at a restaurant asks a customer what they would like to drink with their meal.",
+    "fact": "This question is used to inquire about someone's beverage preference."
+  },
+  {
+    "id": 33,
+    "line": ["りんご", "を", "いくつ", "買い", "ます", "か", "。"],
+    "tts": ["りんご", "を", "いくつ", "かい", "ます", "か", "。"],
+    "explain": ["apple", "object marker", "how many", "to buy", "polite marker", "question marker", "."],
+    "english": "How many apples do you buy?",
+    "prompt": "A person is asking their friend how many apples they want to buy from the fruit vendor.",
+    "fact": "'いくつ' is used to ask about the quantity of items when the number is unknown."
+  },
+  {
+    "id": 34,
+    "line": ["みかん", "を", "いくつ", "買い", "ます", "か", "。"],
+    "tts": ["みかん", "を", "いくつ", "かい", "ます", "か", "。"],
+    "explain": ["mandarin orange", "object marker", "how many", "to buy", "polite marker", "question marker", "."],
+    "english": "How many mandarin oranges do you buy?",
+    "prompt": "Someone is at a fruit stand and asking their companion how many mandarin oranges they should get.",
+    "fact": "This question is asking for a specific number of mandarin oranges."
+  },
+  {
+    "id": 35,
+    "line": ["パン", "を", "いくつ", "買い", "ます", "か", "。"],
+    "tts": ["パン", "を", "いくつ", "かい", "ます", "か", "。"],
+    "explain": ["bread", "object marker", "how many", "to buy", "polite marker", "question marker", "."],
+    "english": "How many breads do you buy?",
+    "prompt": "At a bakery, a person asks their friend how many loaves of bread they plan to purchase.",
+    "fact": "While 'bread' is usually uncountable in English, it's countable in Japanese using 'つ'."
+  },
+  {
+    "id": 36,
+    "line": ["牛乳", "を", "何本", "買い", "ます", "か", "。"],
+    "tts": ["ぎゅうにゅう", "を", "なんぼん", "かい", "ます", "か", "。"],
+    "explain": ["milk", "object marker", "how many bottles", "to buy", "polite marker", "question marker", "."],
+    "english": "How many bottles of milk do you buy?",
+    "prompt": "Someone is checking the fridge and asking their roommate how many bottles of milk they usually buy.",
+    "fact": "'何本' is used to ask about the quantity of long, cylindrical objects like bottles."
+  },
+  {
+    "id": 37,
+    "line": ["水", "を", "何本", "買い", "ます", "か", "。"],
+    "tts": ["みず", "を", "なんぼん", "かい", "ます", "か", "。"],
+    "explain": ["water", "object marker", "how many bottles", "to buy", "polite marker", "question marker", "."],
+    "english": "How many bottles of water do you buy?",
+    "prompt": "Two friends are going on a trip, and one asks the other how many bottles of water they should pack.",
+    "fact": "This question is specific to bottled water and asks for the number of bottles."
+  },
+  {
+    "id": 38,
+    "line": ["肉", "を", "いくつ", "買い", "ます", "か", "。"],
+    "tts": ["にく", "を", "いくつ", "かい", "ます", "か", "。"],
+    "explain": ["meat", "object marker", "how many", "to buy", "polite marker", "question marker", "."],
+    "english": "How many pieces of meat do you buy?",
+    "prompt": "At a barbecue, someone asks how many pieces of meat everyone wants to grill.",
+    "fact": "The counter for meat can be flexible, but 'つ' is common for general pieces."
+  },
+  {
+    "id": 39,
+    "line": ["魚", "を", "いくつ", "買い", "ます", "か", "。"],
+    "tts": ["さかな", "を", "いくつ", "かい", "ます", "か", "。"],
+    "explain": ["fish", "object marker", "how many", "to buy", "polite marker", "question marker", "."],
+    "english": "How many fish do you buy?",
+    "prompt": "A customer at a fish market asks the vendor how many fish they are getting for a certain price.",
+    "fact": "This question is asking for the number of whole fish being purchased."
+  },
+  {
+    "id": 40,
+    "line": ["野菜", "を", "いくつ", "買い", "ます", "か", "。"],
+    "tts": ["やさい", "を", "いくつ", "かい", "ます", "か", "。"],
+    "explain": ["vegetables", "object marker", "how many", "to buy", "polite marker", "question marker", "."],
+    "english": "How many vegetables do you buy?",
+    "prompt": "A cooking instructor asks their students how many different types of vegetables they bought for the recipe.",
+    "fact": "This question is asking for the variety or types of vegetables being purchased."
+  },
+  {
+    "id": 41,
+    "line": ["果物", "を", "いくつ", "買い", "ます", "か", "。"],
+    "tts": ["くだもの", "を", "いくつ", "かい", "ます", "か", "。"],
+    "explain": ["fruits", "object marker", "how many", "to buy", "polite marker", "question marker", "."],
+    "english": "How many fruits do you buy?",
+    "prompt": "A person is making a fruit salad and asks their friend how many different fruits they want to include.",
+    "fact": "This question is asking for the number of different kinds of fruits being purchased."
+  }
+]

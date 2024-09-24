@@ -1,352 +1,1164 @@
 [
-    {
-        "id": 1,
-        "line": "¡Hola! ¿Cómo te llamas?",
-        "tts": "¡Hola! ¿Cómo te llamas?",
-        "english": "Hello! What's your name?",
-        "prompt": "A friendly greeting scene where someone asks another person their name."
-    },
-    {
-        "id": 2,
-        "line": "Hola, ¿de dónde eres?",
-        "tts": "Hola, ¿de dónde eres?",
-        "english": "Hello, where are you from?",
-        "prompt": "A scene where two people meet and one asks where the other is from."
-    },
-    {
-        "id": 3,
-        "line": "Me llamo Ana.",
-        "tts": "Me llamo Ana.",
-        "english": "My name is Ana.",
-        "prompt": "A person introducing themselves as Ana."
-    },
-    {
-        "id": 4,
-        "line": "Me llamo Pedro.",
-        "tts": "Me llamo Pedro.",
-        "english": "My name is Pedro.",
-        "prompt": "A person introducing themselves as Pedro."
-    },
-    {
-        "id": 5,
-        "line": "Soy de España.",
-        "tts": "Soy de España.",
-        "english": "I am from Spain.",
-        "prompt": "A person explaining that they are from Spain."
-    },
-    {
-        "id": 6,
-        "line": "Soy de México.",
-        "tts": "Soy de México.",
-        "english": "I am from Mexico.",
-        "prompt": "A person explaining that they are from Mexico."
-    },
-    {
-        "id": 7,
-        "line": "Me llamo Clara.",
-        "tts": "Me llamo Clara.",
-        "english": "My name is Clara.",
-        "prompt": "A person introducing themselves as Clara."
-    },
-    {
-        "id": 8,
-        "line": "Soy de Argentina.",
-        "tts": "Soy de Argentina.",
-        "english": "I am from Argentina.",
-        "prompt": "A person explaining that they are from Argentina."
-    },
-    {
-        "id": 9,
-        "line": "Mi amiga se llama Laura.",
-        "tts": "Mi amiga se llama Laura.",
-        "english": "My friend's name is Laura.",
-        "prompt": "A person introducing their friend named Laura."
-    },
-    {
-        "id": 10,
-        "line": "Laura es de Chile.",
-        "tts": "Laura es de Chile.",
-        "english": "Laura is from Chile.",
-        "prompt": "A person explaining that their friend Laura is from Chile."
-    },
-    {
-        "id": 11,
-        "line": "¿Te llamas Juan?",
-        "tts": "¿Te llamas Juan?",
-        "english": "Is your name Juan?",
-        "prompt": "A person asking if someone's name is Juan."
-    },
-    {
-        "id": 12,
-        "line": "¿Eres de Perú?",
-        "tts": "¿Eres de Perú?",
-        "english": "Are you from Peru?",
-        "prompt": "A person asking if someone is from Peru."
-    },
-    {
-        "id": 13,
-        "line": "Ellos se llaman Carlos y María.",
-        "tts": "Ellos se llaman Carlos y María.",
-        "english": "Their names are Carlos and Maria.",
-        "prompt": "A person introducing two people named Carlos and Maria."
-    },
-    {
-        "id": 14,
-        "line": "Carlos es de Colombia.",
-        "tts": "Carlos es de Colombia.",
-        "english": "Carlos is from Colombia.",
-        "prompt": "A person explaining that Carlos is from Colombia."
-    },
-    {
-        "id": 15,
-        "line": "María es de Bolivia.",
-        "tts": "María es de Bolivia.",
-        "english": "Maria is from Bolivia.",
-        "prompt": "A person explaining that Maria is from Bolivia."
-    },
-    {
-        "id": 16,
-        "line": "Mi hermano se llama Javier.",
-        "tts": "Mi hermano se llama Javier.",
-        "english": "My brother's name is Javier.",
-        "prompt": "A person introducing their brother named Javier."
-    },
-    {
-        "id": 17,
-        "line": "Javier es de Venezuela.",
-        "tts": "Javier es de Venezuela.",
-        "english": "Javier is from Venezuela.",
-        "prompt": "A person explaining that their brother Javier is from Venezuela."
-    },
-    {
-        "id": 18,
-        "line": "Nuestra profesora se llama Marta.",
-        "tts": "Nuestra profesora se llama Marta.",
-        "english": "Our teacher's name is Marta.",
-        "prompt": "A person introducing their teacher named Marta."
-    },
-    {
-        "id": 19,
-        "line": "Marta es de Uruguay.",
-        "tts": "Marta es de Uruguay.",
-        "english": "Marta is from Uruguay.",
-        "prompt": "A person explaining that their teacher Marta is from Uruguay."
-    },
-    {
-        "id": 20,
-        "line": "¿Ellos son de Ecuador?",
-        "tts": "¿Ellos son de Ecuador?",
-        "english": "Are they from Ecuador?",
-        "prompt": "A person asking if a group of people is from Ecuador."
-    },
-    {
-        "id": 21,
-        "line": "¿Carlos y María son de Paraguay?",
-        "tts": "¿Carlos y María son de Paraguay?",
-        "english": "Are Carlos and Maria from Paraguay?",
-        "prompt": "A person asking if Carlos and Maria are from Paraguay."
-    },
-    {
-        "id": 22,
-        "line": "Mis padres se llaman José y Lucía.",
-        "tts": "Mis padres se llaman José y Lucía.",
-        "english": "My parents are named José and Lucía.",
-        "prompt": "A person introducing their parents named José and Lucía."
-    },
-    {
-        "id": 23,
-        "line": "José es de Guatemala.",
-        "tts": "José es de Guatemala.",
-        "english": "José is from Guatemala.",
-        "prompt": "A person explaining that their parent José is from Guatemala."
-    },
-    {
-        "id": 24,
-        "line": "Lucía es de Honduras.",
-        "tts": "Lucía es de Honduras.",
-        "english": "Lucía is from Honduras.",
-        "prompt": "A person explaining that their parent Lucía is from Honduras."
-    },
-    {
-        "id": 25,
-        "line": "Mi prima se llama Isabel.",
-        "tts": "Mi prima se llama Isabel.",
-        "english": "My cousin's name is Isabel.",
-        "prompt": "A person introducing their cousin named Isabel."
-    },
-    {
-        "id": 26,
-        "line": "Isabel es de El Salvador.",
-        "tts": "Isabel es de El Salvador.",
-        "english": "Isabel is from El Salvador.",
-        "prompt": "A person explaining that their cousin Isabel is from El Salvador."
-    },
-    {
-        "id": 27,
-        "line": "¿Tu hermana se llama Sofia?",
-        "tts": "¿Tu hermana se llama Sofia?",
-        "english": "Is your sister's name Sofia?",
-        "prompt": "A person asking if someone's sister is named Sofia."
-    },
-    {
-        "id": 28,
-        "line": "¿Sofia es de Nicaragua?",
-        "tts": "¿Sofia es de Nicaragua?",
-        "english": "Is Sofia from Nicaragua?",
-        "prompt": "A person asking if Sofia is from Nicaragua."
-    },
-    {
-        "id": 29,
-        "line": "Nuestro amigo se llama Diego.",
-        "tts": "Nuestro amigo se llama Diego.",
-        "english": "Our friend's name is Diego.",
-        "prompt": "A person introducing their friend named Diego."
-    },
-    {
-        "id": 30,
-        "line": "Diego es de Costa Rica.",
-        "tts": "Diego es de Costa Rica.",
-        "english": "Diego is from Costa Rica.",
-        "prompt": "A person explaining that their friend Diego is from Costa Rica."
-    },
-    {
-        "id": 31,
-        "line": "Mi hermano menor se llama Andrés.",
-        "tts": "Mi hermano menor se llama Andrés.",
-        "english": "My younger brother's name is Andrés.",
-        "prompt": "A person introducing their younger brother named Andrés."
-    },
-    {
-        "id": 32,
-        "line": "Andrés es de Panamá.",
-        "tts": "Andrés es de Panamá.",
-        "english": "Andrés is from Panama.",
-        "prompt": "A person explaining that their younger brother Andrés is from Panama."
-    },
-    {
-        "id": 33,
-        "line": "¿Tu tío se llama Roberto?",
-        "tts": "¿Tu tío se llama Roberto?",
-        "english": "Is your uncle's name Roberto?",
-        "prompt": "A person asking if someone's uncle is named Roberto."
-    },
-    {
-        "id": 34,
-        "line": "¿Roberto es de Cuba?",
-        "tts": "¿Roberto es de Cuba?",
-        "english": "Is Roberto from Cuba?",
-        "prompt": "A person asking if Roberto is from Cuba."
-    },
-    {
-        "id": 35,
-        "line": "Mi abuela se llama Teresa.",
-        "tts": "Mi abuela se llama Teresa.",
-        "english": "My grandmother's name is Teresa.",
-        "prompt": "A person introducing their grandmother named Teresa."
-    },
-    {
-        "id": 36,
-        "line": "Teresa es de Puerto Rico.",
-        "tts": "Teresa es de Puerto Rico.",
-        "english": "Teresa is from Puerto Rico.",
-        "prompt": "A person explaining that their grandmother Teresa is from Puerto Rico."
-    },
-    {
-        "id": 37,
-        "line": "Mi familia es de América Latina.",
-        "tts": "Mi familia es de América Latina.",
-        "english": "My family is from Latin America.",
-        "prompt": "A person explaining that their family is from Latin America."
-    },
-    {
-        "id": 38,
-        "line": "Laura y Marta son de Sudamérica.",
-        "tts": "Laura y Marta son de Sudamérica.",
-        "english": "Laura and Marta are from South America.",
-        "prompt": "A person explaining that Laura and Marta are from South America."
-    },
-    {
-        "id": 39,
-        "line": "¿Eres tú de España?",
-        "tts": "¿Eres tú de España?",
-        "english": "Are you from Spain?",
-        "prompt": "A person asking if someone is from Spain."
-    },
-    {
-        "id": 40,
-        "line": "¿De dónde es tu hermana?",
-        "tts": "¿De dónde es tu hermana?",
-        "english": "Where is your sister from?",
-        "prompt": "A person asking where someone's sister is from."
-    },
-    {
-        "id": 41,
-        "line": "Mi amiga Clara es de Argentina.",
-        "tts": "Mi amiga Clara es de Argentina.",
-        "english": "My friend Clara is from Argentina.",
-        "prompt": "A person explaining that their friend Clara is from Argentina."
-    },
-    {
-        "id": 42,
-        "line": "Mi primo Carlos es de Colombia.",
-        "tts": "Mi primo Carlos es de Colombia.",
-        "english": "My cousin Carlos is from Colombia.",
-        "prompt": "A person explaining that their cousin Carlos is from Colombia."
-    },
-    {
-        "id": 43,
-        "line": "Marta y Teresa son amigas.",
-        "tts": "Marta y Teresa son amigas.",
-        "english": "Marta and Teresa are friends.",
-        "prompt": "A scene showing Marta and Teresa as friends."
-    },
-    {
-        "id": 44,
-        "line": "Sofia e Isabel son de Centroamérica.",
-        "tts": "Sofia e Isabel son de Centroamérica.",
-        "english": "Sofia and Isabel are from Central America.",
-        "prompt": "A person explaining that Sofia and Isabel are from Central America."
-    },
-    {
-        "id": 45,
-        "line": "Mi hermana y yo somos de México.",
-        "tts": "Mi hermana y yo somos de México.",
-        "english": "My sister and I are from Mexico.",
-        "prompt": "A person explaining that their sister and they are from Mexico."
-    },
-    {
-        "id": 46,
-        "line": "Mi amiga Laura y yo somos de España.",
-        "tts": "Mi amiga Laura y yo somos de España.",
-        "english": "My friend Laura and I are from Spain.",
-        "prompt": "A person explaining that their friend Laura and they are from Spain."
-    },
-    {
-        "id": 47,
-        "line": "Isabel y Diego son amigos.",
-        "tts": "Isabel y Diego son amigos.",
-        "english": "Isabel and Diego are friends.",
-        "prompt": "A scene showing Isabel and Diego as friends."
-    },
-    {
-        "id": 48,
-        "line": "Mi hermano Andrés es de Panamá.",
-        "tts": "Mi hermano Andrés es de Panamá.",
-        "english": "My brother Andrés is from Panama.",
-        "prompt": "A person explaining that their brother Andrés is from Panama."
-    },
-    {
-        "id": 49,
-        "line": "Nuestra profesora Marta es de Uruguay.",
-        "tts": "Nuestra profesora Marta es de Uruguay.",
-        "english": "Our teacher Marta is from Uruguay.",
-        "prompt": "A person explaining that their teacher Marta is from Uruguay."
-    },
-    {
-        "id": 50,
-        "line": "Nuestro amigo Javier es de Venezuela.",
-        "tts": "Nuestro amigo Javier es de Venezuela.",
-        "english": "Our friend Javier is from Venezuela.",
-        "prompt": "A person explaining that their friend Javier is from Venezuela."
-    }
+  {
+    "id": 1,
+    "line": [
+      "Hola",
+      ",",
+      " ",
+      "me",
+      " ",
+      "llamo",
+      " ",
+      "Juan",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Hello",
+      ",",
+      " ",
+      "myself",
+      " ",
+      "call",
+      " ",
+      "Juan",
+      "."
+    ],
+    "english": "Hello, my name is Juan.",
+    "prompt": "A young man named Juan approaches a group of people and greets them.",
+    "fact": "This is a common way to introduce yourself in Spanish."
+  },
+  {
+    "id": 2,
+    "line": [
+      "Hola",
+      ",",
+      " ",
+      "me",
+      " ",
+      "llamo",
+      " ",
+      "María",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Hello",
+      ",",
+      " ",
+      "myself",
+      " ",
+      "call",
+      " ",
+      "María",
+      "."
+    ],
+    "english": "Hello, my name is María.",
+    "prompt": "A young woman named María steps forward and introduces herself to the group.",
+    "fact": "This follows the same structure as the previous introduction."
+  },
+  {
+    "id": 3,
+    "line": [
+      "Hola",
+      ",",
+      " ",
+      "¿",
+      "cómo",
+      " ",
+      "te",
+      " ",
+      "llamas",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "Hello",
+      ",",
+      " ",
+      "",
+      "how",
+      " ",
+      "yourself",
+      " ",
+      "call",
+      ""
+    ],
+    "english": "Hello, what's your name?",
+    "prompt": "Someone in the group smiles and asks for the name of another person.",
+    "fact": "This is a polite way to ask someone's name in Spanish."
+  },
+  {
+    "id": 4,
+    "line": [
+      "Me",
+      " ",
+      "llamo",
+      " ",
+      "Pablo",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Myself",
+      " ",
+      "call",
+      " ",
+      "Pablo",
+      "."
+    ],
+    "english": "My name is Pablo.",
+    "prompt": "A young man responds to the question, introducing himself as Pablo.",
+    "fact": "This is a straightforward response to being asked one's name."
+  },
+  {
+    "id": 5,
+    "line": [
+      "¿",
+      "Y",
+      " ",
+      "tú",
+      ",",
+      " ",
+      "cómo",
+      " ",
+      "te",
+      " ",
+      "llamas",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "",
+      "And",
+      " ",
+      "you",
+      ",",
+      " ",
+      "how",
+      " ",
+      "yourself",
+      " ",
+      "call",
+      ""
+    ],
+    "english": "And you, what's your name?",
+    "prompt": "The person who asked for names turns to another person in the group, prompting them to introduce themselves.",
+    "fact": "The use of \"Y tú\" indicates a continuation of asking for names."
+  },
+  {
+    "id": 6,
+    "line": [
+      "Soy",
+      " ",
+      "Sofía",
+      ",",
+      " ",
+      "¿",
+      "y",
+      " ",
+      "tú",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "Am",
+      " ",
+      "Sofía",
+      ",",
+      " ",
+      "",
+      "and",
+      " ",
+      "you",
+      ""
+    ],
+    "english": "I'm Sofía, and you?",
+    "prompt": "A young woman named Sofía responds, introducing herself and then turning the question back to the person who asked.",
+    "fact": "This shows a reciprocal exchange of names, common in introductions."
+  },
+  {
+    "id": 7,
+    "line": [
+      "Soy",
+      " ",
+      "Pedro",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Am",
+      " ",
+      "Pedro",
+      "."
+    ],
+    "english": "I'm Pedro.",
+    "prompt": "The person who asked for names responds, introducing himself as Pedro.",
+    "fact": "This completes the round of introductions."
+  },
+  {
+    "id": 8,
+    "line": [
+      "Encantado",
+      ",",
+      " ",
+      "Pedro",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Nice to meet you",
+      ",",
+      " ",
+      "Pedro",
+      "."
+    ],
+    "english": "Nice to meet you, Pedro.",
+    "prompt": "Someone in the group, likely Sofía, expresses pleasure at meeting Pedro.",
+    "fact": "This is a polite phrase used after being introduced to someone."
+  },
+  {
+    "id": 9,
+    "line": [
+      "Encantada",
+      ",",
+      " ",
+      "Sofía",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Nice to meet you",
+      ",",
+      " ",
+      "Sofía",
+      "."
+    ],
+    "english": "Nice to meet you, Sofía.",
+    "prompt": "Pedro responds in kind, expressing pleasure at meeting Sofía.",
+    "fact": "This is the feminine form of \"encantado.\""
+  },
+  {
+    "id": 10,
+    "line": [
+      "Mucho",
+      " ",
+      "gusto",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Much",
+      " ",
+      "pleasure",
+      "."
+    ],
+    "english": "Nice to meet you.",
+    "prompt": "Someone else in the group, possibly Juan or María, chimes in with another way of saying \"nice to meet you.\"",
+    "fact": "This is another common phrase for expressing pleasure at meeting someone."
+  },
+  {
+    "id": 11,
+    "line": [
+      "¿",
+      "De",
+      " ",
+      "dónde",
+      " ",
+      "eres",
+      ",",
+      " ",
+      "Pedro",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "",
+      "From",
+      " ",
+      "where",
+      " ",
+      "are",
+      ",",
+      " ",
+      "Pedro",
+      ""
+    ],
+    "english": "Where are you from, Pedro?",
+    "prompt": "The conversation continues, and someone asks Pedro about his origin.",
+    "fact": "This is a typical question to ask when getting to know someone."
+  },
+  {
+    "id": 12,
+    "line": [
+      "Soy",
+      " ",
+      "de",
+      " ",
+      "España",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Am",
+      " ",
+      "from",
+      " ",
+      "Spain",
+      "."
+    ],
+    "english": "I'm from Spain.",
+    "prompt": "Pedro responds, indicating that he is from Spain.",
+    "fact": "This is a straightforward answer to the question about origin."
+  },
+  {
+    "id": 13,
+    "line": [
+      "¿",
+      "Eres",
+      " ",
+      "de",
+      " ",
+      "Madrid",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "",
+      "Are",
+      " ",
+      "from",
+      " ",
+      "Madrid",
+      ""
+    ],
+    "english": "Are you from Madrid?",
+    "prompt": "The person continues the conversation, asking Pedro specifically if he's from Madrid.",
+    "fact": "This shows that the person is familiar with Spain and its cities."
+  },
+  {
+    "id": 14,
+    "line": [
+      "No",
+      ",",
+      " ",
+      "soy",
+      " ",
+      "de",
+      " ",
+      "Barcelona",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "No",
+      ",",
+      " ",
+      "am",
+      " ",
+      "from",
+      " ",
+      "Barcelona",
+      "."
+    ],
+    "english": "No, I'm from Barcelona.",
+    "prompt": "Pedro clarifies that he is from Barcelona, not Madrid.",
+    "fact": "This shows a distinction between two major Spanish cities."
+  },
+  {
+    "id": 15,
+    "line": [
+      "¿",
+      "Y",
+      " ",
+      "tú",
+      ",",
+      " ",
+      "María",
+      ",",
+      " ",
+      "de",
+      " ",
+      "dónde",
+      " ",
+      "eres",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "",
+      "And",
+      " ",
+      "you",
+      ",",
+      " ",
+      "María",
+      ",",
+      " ",
+      "from",
+      " ",
+      "where",
+      " ",
+      "are",
+      ""
+    ],
+    "english": "And you, María, where are you from?",
+    "prompt": "The conversation shifts to María, with someone asking about her origin.",
+    "fact": "This shows the group's interest in getting to know each other better."
+  },
+  {
+    "id": 16,
+    "line": [
+      "Soy",
+      " ",
+      "de",
+      " ",
+      "México",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Am",
+      " ",
+      "from",
+      " ",
+      "Mexico",
+      "."
+    ],
+    "english": "I'm from Mexico.",
+    "prompt": "María responds, stating that she is from Mexico.",
+    "fact": "This introduces another country of origin to the conversation."
+  },
+  {
+    "id": 17,
+    "line": [
+      "¿",
+      "Eres",
+      " ",
+      "de",
+      " ",
+      "Guadalajara",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "",
+      "Are",
+      " ",
+      "from",
+      " ",
+      "Guadalajara",
+      ""
+    ],
+    "english": "Are you from Guadalajara?",
+    "prompt": "Someone asks María specifically if she's from Guadalajara.",
+    "fact": "This shows some knowledge of Mexican cities."
+  },
+  {
+    "id": 18,
+    "line": [
+      "No",
+      ",",
+      " ",
+      "soy",
+      " ",
+      "de",
+      " ",
+      "Ciudad",
+      " ",
+      "de",
+      " ",
+      "México",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "No",
+      ",",
+      " ",
+      "am",
+      " ",
+      "from",
+      " ",
+      "Mexico",
+      " ",
+      "City",
+      " ",
+      "Mexico",
+      "."
+    ],
+    "english": "No, I'm from Mexico City.",
+    "prompt": "María clarifies that she is from Mexico City, not Guadalajara.",
+    "fact": "This distinguishes between two major Mexican cities."
+  },
+  {
+    "id": 19,
+    "line": [
+      "Juan",
+      ",",
+      " ",
+      "¿",
+      "de",
+      " ",
+      "dónde",
+      " ",
+      "eres",
+      " ",
+      "tú",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "Juan",
+      ",",
+      " ",
+      "",
+      "from",
+      " ",
+      "where",
+      " ",
+      "are",
+      " ",
+      "you",
+      ""
+    ],
+    "english": "Juan, where are you from?",
+    "prompt": "The focus shifts to Juan, with someone asking about his origin.",
+    "fact": "This continues the pattern of asking each person about their background."
+  },
+  {
+    "id": 20,
+    "line": [
+      "Soy",
+      " ",
+      "de",
+      " ",
+      "Argentina",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Am",
+      " ",
+      "from",
+      " ",
+      "Argentina",
+      "."
+    ],
+    "english": "I'm from Argentina.",
+    "prompt": "Juan responds, indicating that he is from Argentina.",
+    "fact": "This introduces another South American country to the mix."
+  },
+  {
+    "id": 21,
+    "line": [
+      "Soy",
+      " ",
+      "de",
+      " ",
+      "Buenos",
+      " ",
+      "Aires",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Am",
+      " ",
+      "from",
+      " ",
+      "Buenos",
+      " ",
+      "Aires",
+      "."
+    ],
+    "english": "I'm from Buenos Aires.",
+    "prompt": "Juan specifies that he is from Buenos Aires, Argentina.",
+    "fact": "This provides a more specific location within Argentina."
+  },
+  {
+    "id": 22,
+    "line": [
+      "¿",
+      "Ah",
+      " ",
+      "sí",
+      "?",
+      "  ",
+      "Yo",
+      " ",
+      "soy",
+      " ",
+      "de",
+      " ",
+      "Córdoba",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "",
+      "Ah",
+      " ",
+      "yes",
+      "",
+      "  ",
+      "I",
+      " ",
+      "am",
+      " ",
+      "from",
+      " ",
+      "Córdoba",
+      "."
+    ],
+    "english": "Ah, yes? I'm from Córdoba.",
+    "prompt": "Someone in the group reacts to Juan's statement, revealing that they are from Córdoba.",
+    "fact": "This could imply that the person is also from Argentina, as Córdoba is a city in Argentina."
+  },
+  {
+    "id": 23,
+    "line": [
+      "¿",
+      "Conoces",
+      " ",
+      "a",
+      " ",
+      "alguien",
+      " ",
+      "de",
+      " ",
+      "Córdoba",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "",
+      "Know",
+      " ",
+      "to",
+      " ",
+      "someone",
+      " ",
+      "from",
+      " ",
+      "Córdoba",
+      ""
+    ],
+    "english": "Do you know anyone from Córdoba?",
+    "prompt": "The person from Córdoba asks Juan if he knows anyone from there.",
+    "fact": "This is a common way to try and find common ground with someone from a similar background."
+  },
+  {
+    "id": 24,
+    "line": [
+      "No",
+      ",",
+      " ",
+      "no",
+      " ",
+      "conozco",
+      " ",
+      "a",
+      " ",
+      "nadie",
+      " ",
+      "de",
+      " ",
+      "allí",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "No",
+      ",",
+      " ",
+      "no",
+      " ",
+      "know",
+      " ",
+      "to",
+      " ",
+      "nobody",
+      " ",
+      "from",
+      " ",
+      "there",
+      "."
+    ],
+    "english": "No, I don't know anyone from there.",
+    "prompt": "Juan responds, indicating that he doesn't know anyone from Córdoba.",
+    "fact": "This shows that they don't have any immediate mutual connections."
+  },
+  {
+    "id": 25,
+    "line": [
+      "¿",
+      "Y",
+      " ",
+      "tú",
+      ",",
+      " ",
+      "Sofía",
+      ",",
+      " ",
+      "conoces",
+      " ",
+      "Argentina",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "",
+      "And",
+      " ",
+      "you",
+      ",",
+      " ",
+      "Sofía",
+      ",",
+      " ",
+      "know",
+      " ",
+      "Argentina",
+      ""
+    ],
+    "english": "And you, Sofía, do you know Argentina?",
+    "prompt": "The conversation shifts to Sofía, asking if she's familiar with Argentina.",
+    "fact": "This broadens the conversation beyond just knowing specific people."
+  },
+  {
+    "id": 26,
+    "line": [
+      "Sí",
+      ",",
+      " ",
+      "conozco",
+      " ",
+      "Argentina",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Yes",
+      ",",
+      " ",
+      "know",
+      " ",
+      "Argentina",
+      "."
+    ],
+    "english": "Yes, I know Argentina.",
+    "prompt": "Sofía responds affirmatively, indicating that she is familiar with Argentina.",
+    "fact": "This could mean she's been there or knows about it."
+  },
+  {
+    "id": 27,
+    "line": [
+      "¿",
+      "De",
+      " ",
+      "dónde",
+      " ",
+      "eres",
+      ",",
+      " ",
+      "Sofía",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "",
+      "From",
+      " ",
+      "where",
+      " ",
+      "are",
+      ",",
+      " ",
+      "Sofía",
+      ""
+    ],
+    "english": "Where are you from, Sofía?",
+    "prompt": "Someone asks Sofía about her origin, prompting her to share her background.",
+    "fact": "This shows continued interest in learning about each other's origins."
+  },
+  {
+    "id": 28,
+    "line": [
+      "Soy",
+      " ",
+      "de",
+      " ",
+      "Colombia",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Am",
+      " ",
+      "from",
+      " ",
+      "Colombia",
+      "."
+    ],
+    "english": "I'm from Colombia.",
+    "prompt": "Sofía reveals that she is from Colombia.",
+    "fact": "This introduces another South American country to the group."
+  },
+  {
+    "id": 29,
+    "line": [
+      "¿",
+      "Conoces",
+      " ",
+      "a",
+      " ",
+      "Pablo",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "",
+      "Know",
+      " ",
+      "to",
+      " ",
+      "Pablo",
+      ""
+    ],
+    "english": "Do you know Pablo?",
+    "prompt": "Someone asks Sofía if she knows Pablo.",
+    "fact": "This suggests that there might be a connection between them."
+  },
+  {
+    "id": 30,
+    "line": [
+      "Sí",
+      ",",
+      " ",
+      "Pablo",
+      " ",
+      "es",
+      " ",
+      "de",
+      " ",
+      "Colombia",
+      " ",
+      "también",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Yes",
+      ",",
+      " ",
+      "Pablo",
+      " ",
+      "is",
+      " ",
+      "from",
+      " ",
+      "Colombia",
+      " ",
+      "too",
+      "."
+    ],
+    "english": "Yes, Pablo is from Colombia too.",
+    "prompt": "Sofía confirms that she knows Pablo and that he is also from Colombia.",
+    "fact": "This establishes a connection between Sofía and Pablo."
+  },
+  {
+    "id": 31,
+    "line": [
+      "Somos",
+      " ",
+      "de",
+      " ",
+      "la",
+      " ",
+      "misma",
+      " ",
+      "ciudad",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Are",
+      " ",
+      "from",
+      " ",
+      "the",
+      " ",
+      "same",
+      " ",
+      "city",
+      "."
+    ],
+    "english": "We are from the same city.",
+    "prompt": "Either Sofía or Pablo reveals that they are from the same city in Colombia.",
+    "fact": "This strengthens the connection between Sofía and Pablo."
+  },
+  {
+    "id": 32,
+    "line": [
+      "¡",
+      "Qué",
+      " ",
+      "bueno",
+      "!",
+      " ",
+      "¿",
+      "Y",
+      " ",
+      "Juan",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "",
+      "How",
+      " ",
+      "good",
+      "",
+      " ",
+      "",
+      "And",
+      " ",
+      "Juan",
+      ""
+    ],
+    "english": "How nice! And Juan?",
+    "prompt": "Someone in the group expresses delight at the connection between Sofía and Pablo, then turns the conversation back to Juan.",
+    "fact": "This shows the group's positive reaction to finding commonalities."
+  },
+  {
+    "id": 33,
+    "line": [
+      "Juan",
+      " ",
+      "es",
+      " ",
+      "de",
+      " ",
+      "Argentina",
+      ",",
+      " ",
+      "¿",
+      "recuerdas",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "Juan",
+      " ",
+      "is",
+      " ",
+      "from",
+      " ",
+      "Argentina",
+      ",",
+      " ",
+      "",
+      "remember",
+      ""
+    ],
+    "english": "Juan is from Argentina, remember?",
+    "prompt": "Someone reminds the group that Juan is from Argentina.",
+    "fact": "This suggests that the conversation might have strayed from Juan's background."
+  },
+  {
+    "id": 34,
+    "line": [
+      "Ah",
+      ",",
+      " ",
+      "sí",
+      ",",
+      " ",
+      "es",
+      " ",
+      "cierto",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Ah",
+      ",",
+      " ",
+      "yes",
+      ",",
+      " ",
+      "is",
+      " ",
+      "true",
+      "."
+    ],
+    "english": "Ah, yes, that's right.",
+    "prompt": "The person who asked about Juan acknowledges the reminder.",
+    "fact": "This shows that they were reminded of Juan's origin."
+  },
+  {
+    "id": 35,
+    "line": [
+      "¿",
+      "De",
+      " ",
+      "dónde",
+      " ",
+      "eres",
+      " ",
+      "tú",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "",
+      "From",
+      " ",
+      "where",
+      " ",
+      "are",
+      " ",
+      "you",
+      ""
+    ],
+    "english": "Where are you from?",
+    "prompt": "The person who was reminded about Juan's origin is now asked about their own.",
+    "fact": "This continues the pattern of asking each person about their background."
+  },
+  {
+    "id": 36,
+    "line": [
+      "Soy",
+      " ",
+      "de",
+      " ",
+      "Chile",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "Am",
+      " ",
+      "from",
+      " ",
+      "Chile",
+      "."
+    ],
+    "english": "I'm from Chile.",
+    "prompt": "The person reveals that they are from Chile.",
+    "fact": "This introduces another South American country to the conversation."
+  },
+  {
+    "id": 37,
+    "line": [
+      "¿",
+      "Conoces",
+      " ",
+      "Chile",
+      ",",
+      " ",
+      "Sofía",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "",
+      "Know",
+      " ",
+      "Chile",
+      ",",
+      " ",
+      "Sofía",
+      ""
+    ],
+    "english": "Do you know Chile, Sofía?",
+    "prompt": "The person from Chile asks Sofía if she is familiar with Chile.",
+    "fact": "This is a way to engage Sofía in the conversation and see if she has any connections to Chile."
+  },
+  {
+    "id": 38,
+    "line": [
+      "No",
+      ",",
+      " ",
+      "no",
+      " ",
+      "conozco",
+      " ",
+      "Chile",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "No",
+      ",",
+      " ",
+      "no",
+      " ",
+      "know",
+      " ",
+      "Chile",
+      "."
+    ],
+    "english": "No, I don't know Chile.",
+    "prompt": "Sofía responds that she is not familiar with Chile.",
+    "fact": "This suggests that she might not have been there or have close ties to the country."
+  },
+  {
+    "id": 39,
+    "line": [
+      "¿",
+      "Y",
+      " ",
+      "tú",
+      ",",
+      " ",
+      "Pablo",
+      ",",
+      " ",
+      "conoces",
+      " ",
+      "Chile",
+      "?"
+    ],
+    "tts": "",
+    "explain": [
+      "",
+      "And",
+      " ",
+      "you",
+      ",",
+      " ",
+      "Pablo",
+      ",",
+      " ",
+      "know",
+      " ",
+      "Chile",
+      ""
+    ],
+    "english": "And you, Pablo, do you know Chile?",
+    "prompt": "The person from Chile then asks Pablo if he is familiar with Chile.",
+    "fact": "This continues the pattern of asking each person about their knowledge of different places."
+  },
+  {
+    "id": 40,
+    "line": [
+      "Un",
+      " ",
+      "poco",
+      "."
+    ],
+    "tts": "",
+    "explain": [
+      "A",
+      " ",
+      "little",
+      "."
+    ],
+    "english": "A little.",
+    "prompt": "Pablo responds that he knows Chile a little bit.",
+    "fact": "This suggests that he might have some limited knowledge or experience with Chile."
+  }
 ]

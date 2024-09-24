@@ -1,283 +1,1519 @@
-
 [
   {
     "id": 1,
-    "line": "私は<ruby>毎日<rt>まいにち</rt></ruby><ruby>朝ご飯<rt>あさごはん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べます。",
-    "tts": "わたしは まいにち あさごはん を たべます。",
-    "english": "I eat breakfast every day.",
-    "prompt": "Show a person eating a simple breakfast, like toast and coffee, in their kitchen."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "ご飯",
+      "を",
+      "食べ",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "ごはん",
+      "を",
+      "たべ",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "rice/meal",
+      "object marker",
+      "to eat",
+      "polite marker"
+    ],
+    "english": "I eat rice every day.",
+    "prompt": "Imagine a person sitting at their kitchen table, enjoying a bowl of steaming white rice for dinner.",
+    "fact": "This sentence uses the polite form '-masu' which is appropriate for everyday conversation."
   },
   {
     "id": 2,
-    "line": "私は<ruby>毎日<rt>まいにち</rt></ruby><ruby>珈琲<rt>コーヒー</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みます。",
-    "tts": "わたしは まいにち コーヒー を のみます。",
-    "english": "I drink coffee every day.",
-    "prompt": "Show a person enjoying a cup of coffee, steam rising from the mug."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "パン",
+      "を",
+      "食べ",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "パン",
+      "を",
+      "たべ",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "bread",
+      "object marker",
+      "to eat",
+      "polite marker"
+    ],
+    "english": "I eat bread every day.",
+    "prompt": "Picture someone having toast and jam for breakfast at their kitchen counter.",
+    "fact": "This sentence structure is identical to the previous one, only substituting 'rice' for 'bread'."
   },
   {
     "id": 3,
-    "line": "私は<ruby>毎日<rt>まいにち</rt></ruby><ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みます。",
-    "tts": "わたしは まいにち しんぶん を よみます。",
-    "english": "I read the newspaper every day.",
-    "prompt": "Show a person sitting on a train, engrossed in reading a newspaper."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "学校",
+      "に",
+      "行き",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "がっこう",
+      "に",
+      "いき",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "school",
+      "direction marker",
+      "to go",
+      "polite marker"
+    ],
+    "english": "I go to school every day.",
+    "prompt": "Visualize a student wearing a uniform, walking on the sidewalk towards a school building.",
+    "fact": "'-ni' is used after 'school' to indicate the direction of the verb 'to go'."
   },
   {
     "id": 4,
-    "line": "私は<ruby>毎日<rt>まいにち</rt></ruby><ruby>仕事<rt>しごと</rt></ruby>に<ruby>行<rt>い</rt></ruby>きます。",
-    "tts": "わたしは まいにち しごと に いきます。",
-    "english": "I go to work every day.",
-    "prompt": "Show a person walking briskly into an office building."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "日本語",
+      "を",
+      "勉強",
+      "し",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "にほんご",
+      "を",
+      "べんきょう",
+      "し",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "Japanese language",
+      "object marker",
+      "to study",
+      "verb stem",
+      "polite marker"
+    ],
+    "english": "I study Japanese every day.",
+    "prompt": "Imagine someone sitting at a desk with a Japanese textbook and notebook, diligently practicing their writing.",
+    "fact": "'benkyou suru' is the common verb phrase for 'to study' in Japanese."
   },
   {
     "id": 5,
-    "line": "私は<ruby>毎日<rt>まいにち</rt></ruby><ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ります。",
-    "tts": "わたしは まいにち でんしゃ に のります。",
-    "english": "I ride the train every day.",
-    "prompt": "Show a crowded train car with people standing and holding onto straps."
-  }, 
+    "line": [
+      "あなた",
+      "は",
+      "毎日",
+      "何",
+      "を",
+      "し",
+      "ます",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "まいにち",
+      "なに",
+      "を",
+      "し",
+      "ます",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "everyday",
+      "what",
+      "object marker",
+      "to do",
+      "verb stem",
+      "polite marker",
+      "question marker"
+    ],
+    "english": "What do you do every day?",
+    "prompt": "Think of someone asking their friend about their daily routine, curious about their activities.",
+    "fact": "'nani o shimasu ka' is a standard phrase to ask about someone's actions."
+  },
   {
     "id": 6,
-    "line": "私は<ruby>朝<rt>あさ</rt></ruby><ruby>朝ご飯<rt>あさごはん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べます。",
-    "tts": "わたしは あさ あさごはん を たべます。",
-    "english": "I eat breakfast in the morning.",
-    "prompt": "Show a sunrise with a plate of breakfast in the foreground, bathed in the warm morning light."
+    "line": [
+      "あなた",
+      "は",
+      "毎日",
+      "日本語",
+      "を",
+      "勉強",
+      "し",
+      "ます",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "まいにち",
+      "にほんご",
+      "を",
+      "べんきょう",
+      "し",
+      "ます",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "everyday",
+      "Japanese language",
+      "object marker",
+      "to study",
+      "verb stem",
+      "polite marker",
+      "question marker"
+    ],
+    "english": "Do you study Japanese every day?",
+    "prompt": "Imagine one person asking another if they practice Japanese daily, perhaps to find a study buddy.",
+    "fact": "This sentence directly asks if 'you' study Japanese, using the same structure as previous sentences."
   },
   {
     "id": 7,
-    "line": "あなたは<ruby>毎日<rt>まいにち</rt></ruby><ruby>朝ご飯<rt>あさごはん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べますか？",
-    "tts": "あなたは まいにち あさごはん を たべます か？",
-    "english": "Do you eat breakfast every day?",
-    "prompt": "Show a person setting a table with plates and cutlery for breakfast."
+    "line": [
+      "あなた",
+      "は",
+      "毎日",
+      "学校",
+      "に",
+      "行き",
+      "ます",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "まいにち",
+      "がっこう",
+      "に",
+      "いき",
+      "ます",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "everyday",
+      "school",
+      "direction marker",
+      "to go",
+      "polite marker",
+      "question marker"
+    ],
+    "english": "Do you go to school every day?",
+    "prompt": "Picture two people talking, one asking the other if they attend school regularly.",
+    "fact": "This question is similar to the previous one, but asking about going to school instead of studying."
   },
   {
     "id": 8,
-    "line": "あなたは<ruby>毎日<rt>まいにち</rt></ruby><ruby>珈琲<rt>コーヒー</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みますか？",
-    "tts": "あなたは まいにち コーヒー を のみます か？",
-    "english": "Do you drink coffee every day?",
-    "prompt": "Show a person holding out a mug of coffee as if offering it to someone."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "七時",
+      "に",
+      "起き",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "しちじ",
+      "に",
+      "おき",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "seven o'clock",
+      "time marker",
+      "to wake up",
+      "polite marker"
+    ],
+    "english": "I wake up at seven o'clock every day.",
+    "prompt": "Visualize an alarm clock going off at 7 am, and a person slowly waking up in bed.",
+    "fact": "'-ji' is used after a number to indicate time."
   },
   {
     "id": 9,
-    "line": "あなたは<ruby>毎日<rt>まいにち</rt></ruby><ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みますか？",
-    "tts": "あなたは まいにち しんぶん を よみます か？",
-    "english": "Do you read the newspaper every day?",
-    "prompt": "Show a person holding up a newspaper, pointing at a specific article."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "コーヒー",
+      "を",
+      "飲み",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "コーヒー",
+      "を",
+      "のみ",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "coffee",
+      "object marker",
+      "to drink",
+      "polite marker"
+    ],
+    "english": "I drink coffee every day.",
+    "prompt": "Imagine someone holding a warm mug of coffee, enjoying the aroma and taking a sip.",
+    "fact": "This sentence follows the same structure as eating rice or bread, but with the verb 'to drink'."
   },
   {
     "id": 10,
-    "line": "あなたは<ruby>毎日<rt>まいにち</rt></ruby><ruby>仕事<rt>しごと</rt></ruby>に<ruby>行<rt>い</rt></ruby>きますか？",
-    "tts": "あなたは まいにち しごと に いきます か？",
-    "english": "Do you go to work every day?",
-    "prompt": "Show a person in business attire, carrying a briefcase, looking tired."
+    "line": [
+      "あなた",
+      "は",
+      "毎日",
+      "何時",
+      "に",
+      "起き",
+      "ます",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "まいにち",
+      "なんじ",
+      "に",
+      "おき",
+      "ます",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "everyday",
+      "what time",
+      "time marker",
+      "to wake up",
+      "polite marker",
+      "question marker"
+    ],
+    "english": "What time do you wake up every day?",
+    "prompt": "Think of one person asking another about their daily wake-up time, perhaps to compare schedules.",
+    "fact": "'nanji' is used to ask about a specific time."
   },
   {
     "id": 11,
-    "line": "あなたは<ruby>毎日<rt>まいにち</rt></ruby><ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>りますか？",
-    "tts": "あなたは まいにち でんしゃ に のります か？",
-    "english": "Do you ride the train every day?",
-    "prompt": "Show a train arriving at a platform, doors opening to let passengers on and off."
+    "line": [
+      "あなた",
+      "は",
+      "毎日",
+      "コーヒー",
+      "を",
+      "飲み",
+      "ます",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "まいにち",
+      "コーヒー",
+      "を",
+      "のみ",
+      "ます",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "everyday",
+      "coffee",
+      "object marker",
+      "to drink",
+      "polite marker",
+      "question marker"
+    ],
+    "english": "Do you drink coffee every day?",
+    "prompt": "Imagine someone offering another person a cup of coffee, inquiring if they are a regular coffee drinker.",
+    "fact": "This question directly asks about the listener's coffee drinking habits."
   },
   {
     "id": 12,
-    "line": "あなたは<ruby>朝<rt>あさ</rt></ruby><ruby>朝ご飯<rt>あさごはん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べますか？",
-    "tts": "あなたは あさ あさごはん を たべます か？",
-    "english": "Do you eat breakfast in the morning?",
-    "prompt": "Show a half-eaten plate of breakfast, with the morning sun streaming through a window."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "仕事",
+      "を",
+      "し",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "しごと",
+      "を",
+      "し",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "work/job",
+      "object marker",
+      "to do",
+      "polite marker"
+    ],
+    "english": "I work every day.",
+    "prompt": "Visualize someone in an office setting, sitting at their desk and working on a computer.",
+    "fact": "'shigoto o shimasu' is the standard phrase for 'to work' in Japanese."
   },
   {
     "id": 13,
-    "line": "私は<ruby>家<rt>いえ</rt></ruby>で<ruby>朝ご飯<rt>あさごはん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べます。",
-    "tts": "わたしは いえ で あさごはん を たべます。",
-    "english": "I eat breakfast at home.",
-    "prompt": "Show a person sitting at their kitchen table, enjoying a peaceful breakfast."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "テレビ",
+      "を",
+      "見",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "テレビ",
+      "を",
+      "み",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "TV",
+      "object marker",
+      "to watch/see",
+      "polite marker"
+    ],
+    "english": "I watch TV every day.",
+    "prompt": "Imagine someone relaxing on their couch in the evening, watching their favorite show on television.",
+    "fact": "'terebi o mimasu' is the common phrase for 'to watch TV'."
   },
   {
     "id": 14,
-    "line": "私は<ruby>会社<rt>かいしゃ</rt></ruby>で<ruby>珈琲<rt>コーヒー</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みます。",
-    "tts": "わたしは かいしゃ で コーヒー を のみます。",
-    "english": "I drink coffee at work.",
-    "prompt": "Show a person in office attire taking a sip of coffee from a mug, with their desk in the background."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "音楽",
+      "を",
+      "聴き",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "おんがく",
+      "を",
+      "きき",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "music",
+      "object marker",
+      "to listen",
+      "polite marker"
+    ],
+    "english": "I listen to music every day.",
+    "prompt": "Picture someone wearing headphones, walking down the street while enjoying their favorite music.",
+    "fact": "'ongaku o kikimasu' is the standard phrase for 'to listen to music'."
   },
   {
     "id": 15,
-    "line": "私は<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みます。",
-    "tts": "わたしは でんしゃ で しんぶん を よみます。",
-    "english": "I read the newspaper on the train.",
-    "prompt": "Show a person folded in a train seat, completely absorbed in reading a newspaper."
+    "line": [
+      "あなた",
+      "は",
+      "毎日",
+      "何",
+      "を",
+      "飲み",
+      "ます",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "まいにち",
+      "なに",
+      "を",
+      "のみ",
+      "ます",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "everyday",
+      "what",
+      "object marker",
+      "to drink",
+      "polite marker",
+      "question marker"
+    ],
+    "english": "What do you drink every day?",
+    "prompt": "Imagine one person asking another about their daily beverage choices, curious about their preferences.",
+    "fact": "This question is similar to asking about daily actions, but focuses specifically on drinks."
   },
   {
     "id": 16,
-    "line": "私は 9 <ruby>時<rt>じ</rt></ruby>に<ruby>仕事<rt>しごと</rt></ruby>に<ruby>行<rt>い</rt></ruby>きます。",
-    "tts": "わたしは くじ に しごと に いきます。",
-    "english": "I go to work at 9 o'clock.",
-    "prompt": "Show a clock on a wall striking 9:00 AM, just as a person is leaving their house for work."
+    "line": [
+      "あなた",
+      "は",
+      "毎日",
+      "テレビ",
+      "を",
+      "見",
+      "ます",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "まいにち",
+      "テレビ",
+      "を",
+      "み",
+      "ます",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "everyday",
+      "TV",
+      "object marker",
+      "to watch/see",
+      "polite marker",
+      "question marker"
+    ],
+    "english": "Do you watch TV every day?",
+    "prompt": "Think of two people discussing their evening routines, one asking the other if they watch television daily.",
+    "fact": "This question directly asks about the listener's TV watching habits."
   },
   {
     "id": 17,
-    "line": "私は<ruby>朝<rt>あさ</rt></ruby><ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ります。",
-    "tts": "わたしは あさ でんしゃ に のります。",
-    "english": "I ride the train in the morning.",
-    "prompt": "Show a sunrise visible through the window of a moving train."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "本",
+      "を",
+      "読み",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "ほん",
+      "を",
+      "よみ",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "book",
+      "object marker",
+      "to read",
+      "polite marker"
+    ],
+    "english": "I read a book every day.",
+    "prompt": "Visualize someone curled up on a comfy chair, engrossed in a captivating novel.",
+    "fact": "'hon o yomimasu' is the standard phrase for 'to read a book'."
   },
   {
     "id": 18,
-    "line": "あなたは<ruby>家<rt>いえ</rt></ruby>で<ruby>朝ご飯<rt>あさごはん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べますか？",
-    "tts": "あなたは いえ で あさごはん を たべます か？",
-    "english": "Do you eat breakfast at home?",
-    "prompt": "Show a messy kitchen in the morning, with a plate and a cup indicating someone has already eaten breakfast."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "友達",
+      "と",
+      "話し",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "ともだち",
+      "と",
+      "はな",
+      "します"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "friend",
+      "with",
+      "to talk",
+      "polite marker"
+    ],
+    "english": "I talk with my friends every day.",
+    "prompt": "Imagine a group of friends laughing and chatting together, enjoying each other's company.",
+    "fact": "'tomodachi to hanashimasu' means 'to talk with friends'."
   },
   {
     "id": 19,
-    "line": "あなたは<ruby>会社<rt>かいしゃ</rt></ruby>で<ruby>珈琲<rt>コーヒー</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みますか？",
-    "tts": "あなたは かいしゃ で コーヒー を のみます か？",
-    "english": "Do you drink coffee at work?",
-    "prompt": "Show a coffee break area in an office, with people chatting and enjoying coffee."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "家",
+      "に",
+      "帰り",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "いえ",
+      "に",
+      "かえり",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "home",
+      "direction marker",
+      "to return",
+      "polite marker"
+    ],
+    "english": "I go home every day.",
+    "prompt": "Picture someone unlocking the door to their house after a long day, happy to be home.",
+    "fact": "'ie ni kaerimasu' is the common phrase for 'to go home'."
   },
   {
     "id": 20,
-    "line": "あなたは<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みますか？",
-    "tts": "あなたは でんしゃ で しんぶん を よみます か？",
-    "english": "Do you read the newspaper on the train?",
-    "prompt": "Show a person on a train looking bored, wishing they had a newspaper to read."
+    "line": [
+      "あなた",
+      "は",
+      "毎日",
+      "何時",
+      "に",
+      "家",
+      "に",
+      "帰り",
+      "ます",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "まいにち",
+      "なんじ",
+      "に",
+      "いえ",
+      "に",
+      "かえり",
+      "ます",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "everyday",
+      "what time",
+      "time marker",
+      "home",
+      "direction marker",
+      "to return",
+      "polite marker",
+      "question marker"
+    ],
+    "english": "What time do you go home every day?",
+    "prompt": "Think of two coworkers discussing their end-of-day plans, one asking the other about their usual going-home time.",
+    "fact": "This question combines asking about time with the phrase for going home."
   },
   {
     "id": 21,
-    "line": "あなたは 9 <ruby>時<rt>じ</rt></ruby>に<ruby>仕事<rt>しごと</rt></ruby>に<ruby>行<rt>い</rt></ruby>きますか？",
-    "tts": "あなたは くじ に しごと に いきます か？",
-    "english": "Do you go to work at 9 o'clock?",
-    "prompt": "Show a person rushing to get ready for work, glancing nervously at a clock that shows it's almost 9 o'clock."
+    "line": [
+      "あなた",
+      "は",
+      "毎日",
+      "友達",
+      "と",
+      "話し",
+      "ます",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "まいにち",
+      "ともだち",
+      "と",
+      "はな",
+      "します",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "everyday",
+      "friend",
+      "with",
+      "to talk",
+      "polite marker",
+      "question marker"
+    ],
+    "english": "Do you talk with your friends every day?",
+    "prompt": "Imagine one friend asking another if they talk daily, perhaps to gauge how often they connect.",
+    "fact": "This question directly asks about the listener's frequency of talking with friends."
   },
   {
     "id": 22,
-    "line": "あなたは<ruby>朝<rt>あさ</rt></ruby><ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>りますか？",
-    "tts": "あなたは あさ でんしゃ に のります か？",
-    "english": "Do you take the train in the morning?",
-    "prompt": "Show a crowded train platform during rush hour, with everyone looking sleepy and carrying briefcases."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "お風呂",
+      "に",
+      "入り",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "おふろ",
+      "に",
+      "はいり",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "bath",
+      "direction marker",
+      "to enter/take",
+      "polite marker"
+    ],
+    "english": "I take a bath every day.",
+    "prompt": "Visualize someone relaxing in a steaming hot bath, washing away the day's stress.",
+    "fact": "'ofuro ni hairimasu' is the common phrase for 'to take a bath'."
   },
   {
     "id": 23,
-    "line": "私は 9 <ruby>時<rt>じ</rt></ruby>に<ruby>家<rt>いえ</rt></ruby>で<ruby>朝ご飯<rt>あさごはん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べます。",
-    "tts": "わたしは くじ に いえ で あさごはん を たべます。",
-    "english": "I eat breakfast at home at 9 o'clock.",
-    "prompt": "Show a clock on a kitchen wall showing 9:00 AM as a person is just finishing their breakfast."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "歯",
+      "を",
+      "磨き",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "は",
+      "を",
+      "みがき",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "teeth",
+      "object marker",
+      "to brush",
+      "polite marker"
+    ],
+    "english": "I brush my teeth every day.",
+    "prompt": "Imagine someone standing in front of a mirror, diligently brushing their teeth before bed.",
+    "fact": "'ha o migakimasu' is the standard phrase for 'to brush one's teeth'."
   },
   {
     "id": 24,
-    "line": "私は<ruby>毎日<rt>まいにち</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>で<ruby>珈琲<rt>コーヒー</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みます。",
-    "tts": "わたしは まいにち かいしゃ で コーヒー を のみます。",
-    "english": "I drink coffee at the office every day.",
-    "prompt": "Show a desk in an office with a coffee mug, a laptop, and paperwork, suggesting a typical workday."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "寝",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "ね",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "to sleep",
+      "polite marker"
+    ],
+    "english": "I sleep every day.",
+    "prompt": "Visualize someone soundly asleep in their bed, covers pulled up, with a peaceful expression on their face.",
+    "fact": "'nemasu' is the verb for 'to sleep' in Japanese."
   },
   {
     "id": 25,
-    "line": "私は<ruby>毎日<rt>まいにち</rt></ruby><ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みます。",
-    "tts": "わたしは まいにち でんしゃ で しんぶん を よみます。",
-    "english": "I read the newspaper on the train every day.",
-    "prompt": "Show a pile of discarded newspapers on a train seat, suggesting someone reads them daily on their commute."
+    "line": [
+      "あなた",
+      "は",
+      "毎日",
+      "何時",
+      "に",
+      "寝",
+      "ます",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "まいにち",
+      "なんじ",
+      "に",
+      "ね",
+      "ます",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "everyday",
+      "what time",
+      "time marker",
+      "to sleep",
+      "polite marker",
+      "question marker"
+    ],
+    "english": "What time do you go to sleep every day?",
+    "prompt": "Think of someone asking their roommate about their usual bedtime, perhaps to coordinate quiet hours.",
+    "fact": "This question combines asking about time with the verb for 'to sleep'."
   },
   {
     "id": 26,
-    "line": "私は 9 <ruby>時<rt>じ</rt></ruby>に<ruby>仕事<rt>しごと</rt></ruby>に<ruby>行<rt>い</rt></ruby>きます。",
-    "tts": "わたしは くじ に しごと に いきます。",
-    "english": "I go to work at 9 o'clock.",
-    "prompt": "Show a person clocking in at work, their punch card showing exactly 9:00 AM."
+    "line": [
+      "あなた",
+      "は",
+      "毎日",
+      "お風呂",
+      "に",
+      "入り",
+      "ます",
+      "か"
+    ],
+    "tts": [
+      "あなた",
+      "わ",
+      "まいにち",
+      "おふろ",
+      "に",
+      "はいり",
+      "ます",
+      "か"
+    ],
+    "explain": [
+      "you",
+      "topic marker",
+      "everyday",
+      "bath",
+      "direction marker",
+      "to enter/take",
+      "polite marker",
+      "question marker"
+    ],
+    "english": "Do you take a bath every day?",
+    "prompt": "Imagine two people discussing their evening routines, one asking the other if they take a bath daily.",
+    "fact": "This question directly asks about the listener's bathing habits."
   },
   {
     "id": 27,
-    "line": "私は<ruby>毎日<rt>まいにち</rt></ruby><ruby>朝<rt>あさ</rt></ruby><ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ります。",
-    "tts": "わたしは まいにち あさ でんしゃ に のります。",
-    "english": "I ride the train every morning.",
-    "prompt": "Show a person holding onto a handrail on a crowded train, looking tired but ready for the day."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "ご飯",
+      "を",
+      "食べ",
+      "て",
+      "、",
+      "学校",
+      "に",
+      "行き",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "ごはん",
+      "を",
+      "たべ",
+      "て",
+      "、",
+      "がっこう",
+      "に",
+      "いき",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "rice/meal",
+      "object marker",
+      "to eat",
+      "te-form",
+      "comma",
+      "school",
+      "direction marker",
+      "to go",
+      "polite marker"
+    ],
+    "english": "I eat rice every day, and go to school.",
+    "prompt": "Visualize someone finishing their breakfast of rice, then grabbing their backpack and heading out the door to school.",
+    "fact": "The '-te' form connects two verbs, showing a sequence of actions."
   },
   {
     "id": 28,
-    "line": "あなたは 9 <ruby>時<rt>じ</rt></ruby>に<ruby>家<rt>いえ</rt></ruby>で<ruby>朝ご飯<rt>あさごはん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べますか？",
-    "tts": "あなたは くじ に いえ で あさごはん を たべます か？",
-    "english": "Do you eat breakfast at home at 9 o'clock?",
-    "prompt": "Show a text message conversation where someone asks if their friend wants to meet for breakfast at 9, but the friend replies they eat at home then."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "日本語",
+      "を",
+      "勉強",
+      "し",
+      "て",
+      "、",
+      "コーヒー",
+      "を",
+      "飲み",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "にほんご",
+      "を",
+      "べんきょう",
+      "し",
+      "て",
+      "、",
+      "コーヒー",
+      "を",
+      "のみ",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "Japanese language",
+      "object marker",
+      "to study",
+      "verb stem",
+      "te-form",
+      "comma",
+      "coffee",
+      "object marker",
+      "to drink",
+      "polite marker"
+    ],
+    "english": "I study Japanese every day, and drink coffee.",
+    "prompt": "Imagine someone sitting at their desk, taking a break from their Japanese textbook to enjoy a cup of coffee.",
+    "fact": "Again, '-te' connects the actions of studying and drinking."
   },
   {
     "id": 29,
-    "line": "あなたは<ruby>毎日<rt>まいにち</rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby>で<ruby>珈琲<rt>コーヒー</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みますか？",
-    "tts": "あなたは まいにち かいしゃ で コーヒー を のみます か？",
-    "english": "Do you drink coffee at the office every day?",
-    "prompt": "Show a person pouring coffee for themselves and a coworker, suggesting a daily ritual."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "仕事",
+      "を",
+      "終え",
+      "て",
+      "、",
+      "家",
+      "に",
+      "帰り",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "しごと",
+      "を",
+      "おえ",
+      "て",
+      "、",
+      "いえ",
+      "に",
+      "かえり",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "work/job",
+      "object marker",
+      "to finish",
+      "te-form",
+      "comma",
+      "home",
+      "direction marker",
+      "to return",
+      "polite marker"
+    ],
+    "english": "I finish work every day, and go home.",
+    "prompt": "Visualize someone turning off their computer at the office, packing their bag, and leaving for home after a day's work.",
+    "fact": "This sentence shows the sequence of finishing work and then going home."
   },
   {
     "id": 30,
-    "line": "あなたは<ruby>毎日<rt>まいにち</rt></ruby><ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みますか？",
-    "tts": "あなたは まいにち でんしゃ で しんぶん を よみます か？",
-    "english": "Do you read the newspaper on the train every day?",
-    "prompt": "Show a newsstand at a train station with a sign that says 'Your Daily News Here!'"
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "テレビ",
+      "を",
+      "見",
+      "て",
+      "、",
+      "音楽",
+      "を",
+      "聴き",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "テレビ",
+      "を",
+      "み",
+      "て",
+      "、",
+      "おんがく",
+      "を",
+      "きき",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "TV",
+      "object marker",
+      "to watch/see",
+      "te-form",
+      "comma",
+      "music",
+      "object marker",
+      "to listen",
+      "polite marker"
+    ],
+    "english": "I watch TV every day, and listen to music.",
+    "prompt": "Imagine someone relaxing on their couch, watching television while also enjoying some background music.",
+    "fact": "This sentence connects the actions of watching TV and listening to music."
   },
   {
     "id": 31,
-    "line": "あなたは 9 <ruby>時<rt>じ</rt></ruby>に<ruby>仕事<rt>しごと</rt></ruby>に<ruby>行<rt>い</rt></ruby>きますか？",
-    "tts": "あなたは くじ に しごと に いきます か？",
-    "english": "Do you go to work at 9 o'clock?",
-    "prompt": "Show a person asking a coworker what time they start work, curious if they have the same schedule."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "本",
+      "を",
+      "読ん",
+      "で",
+      "、",
+      "友達",
+      "と",
+      "話し",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "ほん",
+      "を",
+      "よん",
+      "で",
+      "、",
+      "ともだち",
+      "と",
+      "はな",
+      "します"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "book",
+      "object marker",
+      "to read",
+      "te-form",
+      "comma",
+      "friend",
+      "with",
+      "to talk",
+      "polite marker"
+    ],
+    "english": "I read a book every day, and talk with my friends.",
+    "prompt": "Imagine someone finishing a chapter in their book, then putting it down to chat with their friends who have arrived.",
+    "fact": "This sentence connects the actions of reading and talking with friends."
   },
   {
     "id": 32,
-    "line": "あなたは<ruby>毎日<rt>まいにち</rt></ruby><ruby>朝<rt>あさ</rt></ruby><ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>りますか？",
-    "tts": "あなたは まいにち あさ でんしゃ に のります か？",
-    "english": "Do you take the train every morning?",
-    "prompt": "Show a monthly train pass with a photo ID, implying daily use."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "お風呂",
+      "に",
+      "入っ",
+      "て",
+      "、",
+      "歯",
+      "を",
+      "磨き",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "おふろ",
+      "に",
+      "はいっ",
+      "て",
+      "、",
+      "は",
+      "を",
+      "みがき",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "bath",
+      "direction marker",
+      "to enter/take",
+      "te-form",
+      "comma",
+      "teeth",
+      "object marker",
+      "to brush",
+      "polite marker"
+    ],
+    "english": "I take a bath every day, and brush my teeth.",
+    "prompt": "Visualize someone stepping out of the bath, drying off, and then proceeding to brush their teeth.",
+    "fact": "This sentence shows the sequence of taking a bath and then brushing teeth."
   },
   {
     "id": 33,
-    "line": "あなたは 9 <ruby>時<rt>じ</rt></ruby>に<ruby>会社<rt>かいしゃ</rt></ruby>で<ruby>珈琲<rt>コーヒー</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みますか？",
-    "tts": "あなたは くじ に かいしゃ で コーヒー を のみます か？",
-    "english": "Do you drink coffee at the office at 9 o'clock?",
-    "prompt": "Show a group of coworkers clinking coffee mugs together during their 9 o'clock break."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "ご飯",
+      "を",
+      "食べ",
+      "て",
+      "、",
+      "寝",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "ごはん",
+      "を",
+      "たべ",
+      "て",
+      "、",
+      "ね",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "rice/meal",
+      "object marker",
+      "to eat",
+      "te-form",
+      "comma",
+      "to sleep",
+      "polite marker"
+    ],
+    "english": "I eat rice every day, and sleep.",
+    "prompt": "Imagine someone finishing their dinner, feeling full and content, then getting ready for bed.",
+    "fact": "This sentence connects the actions of eating and sleeping."
   },
   {
     "id": 34,
-    "line": "あなたは 9 <ruby>時<rt>じ</rt></ruby>に<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みますか？",
-    "tts": "あなたは くじ に でんしゃ で しんぶん を よみます か？",
-    "english": "Do you read the newspaper on the train at 9 o'clock?",
-    "prompt": "Show a person looking at their watch, which reads 9:00, as they pull out a newspaper on a train."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "コーヒー",
+      "を",
+      "飲ん",
+      "で",
+      "、",
+      "仕事",
+      "を",
+      "し",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "コーヒー",
+      "を",
+      "のん",
+      "で",
+      "、",
+      "しごと",
+      "を",
+      "し",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "coffee",
+      "object marker",
+      "to drink",
+      "te-form",
+      "comma",
+      "work/job",
+      "object marker",
+      "to do",
+      "polite marker"
+    ],
+    "english": "I drink coffee every day, and work.",
+    "prompt": "Visualize someone arriving at their desk, turning on their computer, and taking a sip of coffee before starting their work.",
+    "fact": "This sentence connects the actions of drinking coffee and working."
   },
   {
     "id": 35,
-    "line": "あなたは<ruby>朝<rt>あさ</rt></ruby> 9 <ruby>時<rt>じ</rt></ruby>に<ruby>仕事<rt>しごと</rt></ruby>に<ruby>行<rt>い</rt></ruby>きますか？",
-    "tts": "あなたは あさ くじ に しごと に いきます か？",
-    "english": "Do you go to work at 9 o'clock in the morning?",
-    "prompt": "Show the exterior of an office building with people rushing in, just as the clock strikes 9:00 AM."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "日本語",
+      "を",
+      "勉強",
+      "し",
+      "て",
+      "、",
+      "家",
+      "に",
+      "帰り",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "にほんご",
+      "を",
+      "べんきょう",
+      "し",
+      "て",
+      "、",
+      "いえ",
+      "に",
+      "かえり",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "Japanese language",
+      "object marker",
+      "to study",
+      "verb stem",
+      "te-form",
+      "comma",
+      "home",
+      "direction marker",
+      "to return",
+      "polite marker"
+    ],
+    "english": "I study Japanese every day, and go home.",
+    "prompt": "Imagine someone closing their Japanese textbook after a study session, packing their bag, and heading home.",
+    "fact": "This sentence connects the actions of studying Japanese and going home."
   },
   {
     "id": 36,
-    "line": "あなたは<ruby>朝<rt>あさ</rt></ruby> 9 <ruby>時<rt>じ</rt></ruby>に<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>りますか？",
-    "tts": "あなたは あさ くじ に でんしゃ に のります か？",
-    "english": "Do you take the train at 9 o'clock in the morning?",
-    "prompt": "Show a train schedule with a 9:00 AM departure highlighted."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "テレビ",
+      "を",
+      "見",
+      "て",
+      "、",
+      "お風呂",
+      "に",
+      "入り",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "テレビ",
+      "を",
+      "み",
+      "て",
+      "、",
+      "おふろ",
+      "に",
+      "はいり",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "TV",
+      "object marker",
+      "to watch/see",
+      "te-form",
+      "comma",
+      "bath",
+      "direction marker",
+      "to enter/take",
+      "polite marker"
+    ],
+    "english": "I watch TV every day, and take a bath.",
+    "prompt": "Imagine someone turning off the television after their favorite show ends, and heading to the bathroom for a relaxing bath.",
+    "fact": "This sentence connects the actions of watching TV and taking a bath."
   },
   {
     "id": 37,
-    "line": "あなたは<ruby>朝<rt>あさ</rt></ruby> 9 <ruby>時<rt>じ</rt></ruby>に<ruby>家<rt>いえ</rt></ruby>で<ruby>珈琲<rt>コーヒー</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みますか？",
-    "tts": "あなたは あさ くじ に いえ で コーヒー を のみます か？",
-    "english": "Do you drink coffee at home at 9 o'clock in the morning?",
-    "prompt": "Show a text message notification on a phone that reads 'Coffee time?' at exactly 9:00 AM."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "音楽",
+      "を",
+      "聴い",
+      "て",
+      "、",
+      "歯",
+      "を",
+      "磨き",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "おんがく",
+      "を",
+      "きい",
+      "て",
+      "、",
+      "は",
+      "を",
+      "みがき",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "music",
+      "object marker",
+      "to listen",
+      "te-form",
+      "comma",
+      "teeth",
+      "object marker",
+      "to brush",
+      "polite marker"
+    ],
+    "english": "I listen to music every day, and brush my teeth.",
+    "prompt": "Imagine someone brushing their teeth in the bathroom while listening to their favorite music on a speaker.",
+    "fact": "This sentence connects the actions of listening to music and brushing teeth."
   },
   {
     "id": 38,
-    "line": "あなたは<ruby>朝<rt>あさ</rt></ruby> 9 <ruby>時<rt>じ</rt></ruby>に<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みますか？",
-    "tts": "あなたは あさ くじ に でんしゃ で しんぶん を よみます か？",
-    "english": "Do you read the newspaper on the train at 9 o'clock in the morning?",
-    "prompt": "Show a person on a train engrossed in a newspaper, oblivious to the other passengers and the passing scenery."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "本",
+      "を",
+      "読ん",
+      "で",
+      "、",
+      "寝",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "ほん",
+      "を",
+      "よん",
+      "で",
+      "、",
+      "ね",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "book",
+      "object marker",
+      "to read",
+      "te-form",
+      "comma",
+      "to sleep",
+      "polite marker"
+    ],
+    "english": "I read a book every day, and sleep.",
+    "prompt": "Imagine someone reading a book in bed, feeling their eyelids getting heavy, and eventually drifting off to sleep.",
+    "fact": "This sentence connects the actions of reading and sleeping."
   },
   {
     "id": 39,
-    "line": "あなたは<ruby>朝<rt>あさ</rt></ruby> 9 <ruby>時<rt>じ</rt></ruby>に<ruby>家<rt>いえ</rt></ruby>で<ruby>仕事<rt>しごと</rt></ruby>をしますか？",
-    "tts": "あなたは あさ くじ に いえ で しごと を します か？",
-    "english": "Do you work at home at 9 o'clock in the morning?",
-    "prompt": "Show a home office set up with a computer and paperwork, bathed in the morning sunlight, implying work is about to begin."
-  },
-  {
-    "id": 40,
-    "line": "あなたは<ruby>朝<rt>あさ</rt></ruby> 9 <ruby>時<rt>じ</rt></ruby>に<ruby>会社<rt>かいしゃ</rt></ruby>で<ruby>新聞<rt>しんぶん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みますか？",
-    "tts": "あなたは あさ くじ に かいしゃ で しんぶん を よみます か？",
-    "english": "Do you read the newspaper at the office at 9 o'clock in the morning?",
-    "prompt": "Show a stack of newspapers on a desk in an office, with a person just settling in for the workday."
+    "line": [
+      "私",
+      "は",
+      "毎日",
+      "友達",
+      "と",
+      "話し",
+      "て",
+      "、",
+      "ご飯",
+      "を",
+      "食べ",
+      "ます"
+    ],
+    "tts": [
+      "わたし",
+      "わ",
+      "まいにち",
+      "ともだち",
+      "と",
+      "はな",
+      "して",
+      "、",
+      "ごはん",
+      "を",
+      "たべ",
+      "ます"
+    ],
+    "explain": [
+      "I",
+      "topic marker",
+      "everyday",
+      "friend",
+      "with",
+      "to talk",
+      "te-form",
+      "comma",
+      "rice/meal",
+      "object marker",
+      "to eat",
+      "polite marker"
+    ],
+    "english": "I talk with my friends every day, and eat rice.",
+    "prompt": "Imagine a group of friends sitting around a table, chatting and laughing while enjoying a meal together.",
+    "fact": "This sentence connects the actions of talking with friends and eating rice."
   }
 ]
+      
