@@ -27,7 +27,7 @@ function WordsList() {
     }
   });
   const baseAudioUrl = `/audio/${selectedLanguage}/`;
-  const tooltipRef = useRef(null); 
+  const tooltipRef = useRef(null);
 
   const loadLesson = useCallback((currentLesson, langCode) => {
     fetch(`/api/${langCode}/lesson_${currentLesson}.json`)
@@ -46,9 +46,13 @@ function WordsList() {
         setShowEnglish(showEnglishFirst);
 
         if (autoPlayAudio && data.length > 0) {
-          const initialAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${data[0].id}.mp3`);
+          const initialAudio = new Audio(
+            `${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${data[0].id}.mp3`
+          );
           setAudio(initialAudio);
-          initialAudio.play().catch((error) => console.error('Audio play blocked:', error));
+          initialAudio
+            .play()
+            .catch((error) => console.error('Audio play blocked:', error));
         }
       })
       .catch((error) => console.error('Error fetching lesson:', error));
@@ -114,7 +118,9 @@ function WordsList() {
 
   const playAudioForIndex = (index) => {
     const actualIndex = randomizeWords ? randomizedIndices[index] : index;
-    const nextAudio = new Audio(`${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[actualIndex].id}.mp3`);
+    const nextAudio = new Audio(
+      `${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[actualIndex].id}.mp3`
+    );
     setAudio(nextAudio);
     setShowEnglish(showEnglishFirst);
     if (autoPlayAudio) nextAudio.play();
@@ -145,8 +151,11 @@ function WordsList() {
   }
 
   const displayedWords = words;
-  const currentWord = displayedWords[randomizeWords ? randomizedIndices[currentIndex] : currentIndex];
-  const myImage = cld.image(`${selectedLanguage}/images/image_${currentLesson}_${currentWord.id}.png`);
+  const currentWord =
+    displayedWords[randomizeWords ? randomizedIndices[currentIndex] : currentIndex];
+  const myImage = cld.image(
+    `${selectedLanguage}/images/image_${currentLesson}_${currentWord.id}.png`
+  );
 
   return (
     <div className="container">
@@ -154,7 +163,11 @@ function WordsList() {
       <div className="header-container">
         <div className="language-dropdown">
           <label htmlFor="language-select">Language:</label>
-          <select id="language-select" value={selectedLanguage} onChange={handleLanguageChange}>
+          <select
+            id="language-select"
+            value={selectedLanguage}
+            onChange={handleLanguageChange}
+          >
             {languages.map((language) => (
               <option key={language.code} value={language.code}>
                 {language.language}
@@ -165,7 +178,11 @@ function WordsList() {
 
         <div className="lesson-dropdown">
           <label htmlFor="lesson-select">Lesson:</label>
-          <select id="lesson-select" value={currentLesson} onChange={handleLessonChange}>
+          <select
+            id="lesson-select"
+            value={currentLesson}
+            onChange={handleLessonChange}
+          >
             {lessons.map((lesson) => (
               <option key={lesson.id} value={lesson.id}>
                 {lesson.name}
@@ -174,8 +191,8 @@ function WordsList() {
           </select>
         </div>
 
-{/* Hamburger Menu */}
-<div className="hamburger-menu">
+        {/* Hamburger Menu */}
+        <div className="hamburger-menu">
           <button className="hamburger-icon" onClick={toggleMenu}>
             ☰
           </button>
@@ -252,7 +269,10 @@ function WordsList() {
       </div>
 
       {/* Main Content */}
-      <div className="word-content" style={{ backgroundColor: showBackgroundImage ? 'transparent' : 'black' }}>
+      <div
+        className="word-content"
+        style={{ backgroundColor: showBackgroundImage ? 'transparent' : 'black' }}
+      >
         {showBackgroundImage && (
           <AdvancedImage
             className="word-image"
@@ -263,7 +283,7 @@ function WordsList() {
 
         {showText && (
           <div className="word-container">
-            {showEnglish ? ( 
+            {showEnglish ? (
               <h1 className="word" onClick={handleWordContainerClick}>
                 {currentWord.english}
               </h1>
@@ -271,8 +291,10 @@ function WordsList() {
               currentWord.line.map((wordPart, wordIndex) => (
                 <span
                   key={wordIndex}
-                  className={`word-part ${hoveredWordIndex === wordIndex ? 'highlighted' : ''}`} // Dynamic class
-                  onClick={handleWordContainerClick} 
+                  className={`word-part ${
+                    hoveredWordIndex === wordIndex ? 'highlighted' : ''
+                  }`} // Dynamic class
+                  onClick={handleWordContainerClick}
                   onMouseOver={() => setHoveredWordIndex(wordIndex)}
                   onMouseOut={() => setHoveredWordIndex(null)}
                   onMouseMove={(e) => {
@@ -282,23 +304,19 @@ function WordsList() {
                   }}
                 >
                   {wordPart}
-                {hoveredWordIndex === wordIndex && (
-                  <div className="tooltip" ref={tooltipRef}>
-                    <div>
-                      {currentWord.tts[wordIndex]}
+                  {hoveredWordIndex === wordIndex && (
+                    <div className="tooltip" ref={tooltipRef}>
+                      <div>{currentWord.tts[wordIndex]}</div>
+                      <div>{currentWord.explain[wordIndex]}</div>
                     </div>
-                    <div>
-                      {currentWord.explain[wordIndex]}
-                    </div>
-                  </div>
-                )}
-              </span>
+                  )}
+                </span>
               ))
             )}
           </div>
         )}
-
-        {/* Buttons Container  */}
+        
+        {/* Buttons Container (always visible) */}
         <div className="buttons-container"> 
           <button className="previous-button" onClick={handlePrevious}>
             Previous
@@ -310,6 +328,13 @@ function WordsList() {
             Next
           </button>
         </div>
+
+        {/* Fact Display (only visible if showText is true) */}
+        {showText && (
+          <p className="fact-text">
+            <i>{currentWord.fact}</i>
+          </p>
+        )}
 
       </div>
     </div>
