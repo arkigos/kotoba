@@ -18,8 +18,6 @@ function WordsList() {
   const [languages, setLanguages] = useState([]);
   const [selectedLanguage, setSelectedLanguage] = useState('jp');
   const [showText, setShowText] = useState(true);
-  const [randomizeWords, setRandomizeWords] = useState(false);
-  const [randomizedIndices, setRandomizedIndices] = useState([]);
 
   const cld = new Cloudinary({
     cloud: {
@@ -39,9 +37,6 @@ function WordsList() {
       })
       .then((data) => {
         setWords(data);
-        if (randomizeWords) {
-          setRandomizedIndices(generateRandomSequence(data.length));
-        }
         setCurrentIndex(0);
         setShowEnglish(showEnglishFirst);
 
@@ -56,16 +51,7 @@ function WordsList() {
         }
       })
       .catch((error) => console.error('Error fetching lesson:', error));
-  }, [autoPlayAudio, showEnglishFirst, baseAudioUrl, randomizeWords]);
-
-  const generateRandomSequence = (length) => {
-    let sequence = Array.from({ length }, (_, i) => i);
-    for (let i = length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [sequence[i], sequence[j]] = [sequence[j], sequence[i]];
-    }
-    return sequence;
-  };
+  }, [autoPlayAudio, showEnglishFirst, baseAudioUrl]);
 
   useEffect(() => {
     fetch(`/api/${selectedLanguage}/lessons.json`)
@@ -111,15 +97,20 @@ function WordsList() {
     playAudioForIndex(prevIndex);
   };
 
+  const handleRandom = () => {
+    const randIndex = Math.floor(Math.random() * words.length); 
+    setCurrentIndex(randIndex);
+    playAudioForIndex(randIndex);
+  };
+
   const handleSidebarClick = (index) => {
     setCurrentIndex(index);
     playAudioForIndex(index);
   };
 
-  const playAudioForIndex = (index) => {
-    const actualIndex = randomizeWords ? randomizedIndices[index] : index;
+  const playAudioForIndex = (index) => { 
     const nextAudio = new Audio(
-      `${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[actualIndex].id}.mp3`
+      `${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[index].id}.mp3`
     );
     setAudio(nextAudio);
     setShowEnglish(showEnglishFirst);
@@ -152,7 +143,7 @@ function WordsList() {
 
   const displayedWords = words;
   const currentWord =
-    displayedWords[randomizeWords ? randomizedIndices[currentIndex] : currentIndex];
+    displayedWords[currentIndex];
   const myImage = cld.image(
     `${selectedLanguage}/images/image_${currentLesson}_${currentWord.id}.png`
   );
@@ -180,13 +171,18 @@ function WordsList() {
           <label htmlFor="lesson-select">Lesson:</label>
           <select
             id="lesson-select"
-            value={currentLesson}
+            value={currentLesson} 
             onChange={handleLessonChange}
           >
-            {lessons.map((lesson) => (
-              <option key={lesson.id} value={lesson.id}>
-                {lesson.name}
-              </option>
+            {/* Group lessons by level */}
+            {Object.entries(groupByLevel(lessons)).map(([level, levelLessons]) => (
+              <optgroup key={level} label={level}> {/* Corrected line - just use 'level' */}
+                {levelLessons.map((lesson) => (
+                  <option key={lesson.id} value={lesson.id}>
+                    {lesson.name}
+                  </option>
+                ))}
+              </optgroup>
             ))}
           </select>
         </div>
@@ -230,21 +226,6 @@ function WordsList() {
                 />
                 Show Text
               </label>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={randomizeWords}
-                  onChange={(e) => {
-                    setRandomizeWords(e.target.checked);
-                    if (e.target.checked) {
-                      setRandomizedIndices(generateRandomSequence(words.length));
-                    } else {
-                      setCurrentIndex(0);
-                    }
-                  }}
-                />
-                Randomize
-              </label>
             </div>
           )}
         </div>
@@ -254,12 +235,11 @@ function WordsList() {
       <div className="sidebar">
         <ul>
           {displayedWords.map((word, index) => {
-            const displayIndex = randomizeWords ? randomizedIndices[index] : index;
             return (
               <li
                 key={word.id}
-                className={displayIndex === currentIndex ? 'active' : ''}
-                onClick={() => handleSidebarClick(displayIndex)}
+                className={index === currentIndex ? 'active' : ''}
+                onClick={() => handleSidebarClick(index)}
               >
                 {showEnglishFirst ? word.english : word.line.join('')}
               </li>
@@ -318,16 +298,18 @@ function WordsList() {
         
         {/* Buttons Container (always visible) */}
         <div className="buttons-container"> 
-          <button className="previous-button" onClick={handlePrevious}>
-            Previous
-          </button>
-          <button className="replay-button" onClick={() => audio && audio.play()}>
-            Replay Audio
-          </button>
-          <button className="next-button" onClick={handleNext}>
-            Next
-          </button>
-        </div>
+      <button className="previous-button" onClick={handlePrevious}>
+        Previous
+      </button>
+      <button className="replay-button" onClick={() => audio && audio.play()}>
+        Replay Audio
+      </button>
+      <button className="next-button" onClick={handleNext}>
+        Next
+      </button>
+      <button className="random-button" onClick={handleRandom}>
+        Random
+      </button> </div>
 
         {/* Fact Display (only visible if showText is true) */}
         {showText && (
@@ -339,6 +321,17 @@ function WordsList() {
       </div>
     </div>
   );
+}
+
+function groupByLevel(lessons) {
+  return lessons.reduce((grouped, lesson) => {
+    const level = lesson.params.level; // Access level directly from lesson object 
+    if (!grouped[level]) {
+      grouped[level] = [];
+    }
+    grouped[level].push(lesson);
+    return grouped;
+  }, {});
 }
 
 export default WordsList;
