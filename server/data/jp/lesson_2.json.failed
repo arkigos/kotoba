@@ -2,361 +2,361 @@
   {
     "id": 1,
     "line": ["家族", "は", "います", "か", "。"],
-    "tts": ["かぞく", "わ", "います", "か", "。"],
+    "tts": ["かぞく", "わ", "いま", "す", "か", "。"],
     "explain": ["family", "topic marker", "exist, to be (animate)", "question marker", "period"],
     "english": "Do you have a family?",
     "prompt": "Someone asks if you have a family.",
-    "fact": "In Japanese, questions are formed by adding the particle 'か' at the end of a sentence, without changing the word order."
+    "fact": "This is a polite way to ask if someone has a family.  'います' is used for living things."
   },
   {
     "id": 2,
     "line": ["お", "兄さん", "は", "います", "か", "。"],
-    "tts": ["お", "にいさん", "わ", "います", "か", "。"],
+    "tts": ["お", "にいさん", "わ", "いま", "す", "か", "。"],
     "explain": ["polite prefix", "older brother", "topic marker", "exist, to be (animate)", "question marker", "period"],
     "english": "Do you have an older brother?",
     "prompt": "Someone asks if you have an older brother.",
-    "fact": "The topic marker 'は' can be pronounced 'wa' or 'ha' depending on the context and the speaker's preference."
+    "fact": "The 'お' before '兄さん' adds politeness. This is the standard way to ask this question."
   },
   {
     "id": 3,
     "line": ["お", "姉さん", "は", "います", "か", "。"],
-    "tts": ["お", "ねえさん", "わ", "います", "か", "。"],
+    "tts": ["お", "ねえさん", "わ", "いま", "す", "か", "。"],
     "explain": ["polite prefix", "older sister", "topic marker", "exist, to be (animate)", "question marker", "period"],
     "english": "Do you have an older sister?",
     "prompt": "Someone asks if you have an older sister.",
-    "fact": "Adding the prefix 'お' before words like '兄さん' and '姉さん' is a common way to make your language more polite, especially in formal situations or when talking about someone else's family."
+    "fact": "Similar to the previous question, 'お' adds politeness to '姉さん'."
   },
   {
     "id": 4,
     "line": ["弟", "は", "います", "か", "。"],
-    "tts": ["おとうと", "わ", "います", "か", "。"],
+    "tts": ["おとうと", "わ", "いま", "す", "か", "。"],
     "explain": ["younger brother", "topic marker", "exist, to be (animate)", "question marker", "period"],
     "english": "Do you have a younger brother?",
     "prompt": "Someone asks if you have a younger brother.",
-    "fact": "While 'は' is usually the topic marker, it can sometimes function like the subject marker 'が' (ga), especially when introducing a new subject or in casual conversations."
+    "fact": "Unlike with older siblings, you don't usually use 'お' before '弟' when asking this question."
   },
   {
     "id": 5,
     "line": ["妹", "は", "います", "か", "。"],
-    "tts": ["いもうと", "わ", "います", "か", "。"],
+    "tts": ["いもうと", "わ", "いま", "す", "か", "。"],
     "explain": ["younger sister", "topic marker", "exist, to be (animate)", "question marker", "period"],
     "english": "Do you have a younger sister?",
     "prompt": "Someone asks if you have a younger sister.",
-    "fact": "The verb 'います' is always conjugated in the present tense when used in this type of question about family members, even if you are asking about their existence in general."
+    "fact": "Similar to '弟', you don't usually use 'お' before '妹' in this type of question."
   },
   {
     "id": 6,
     "line": ["家族", "は", "何人", "です", "か", "。"],
-    "tts": ["かぞく", "わ", "なんにん", "です", "か", "。"],
+    "tts": ["かぞく", "わ", "なんにん", "で", "す", "か", "。"],
     "explain": ["family", "topic marker", "how many people", "to be (formal)", "question marker", "period"],
     "english": "How many people are in your family?",
     "prompt": "Someone asks about the size of your family.",
-    "fact": "The verb 'です' is often used to connect a noun or adjective to the subject of a sentence and is a polite way to make a statement."
+    "fact": "'何人' is used to ask about the number of people."
   },
   {
     "id": 7,
     "line": ["お", "兄さん", "は", "何人", "います", "か", "。"],
-    "tts": ["お", "にいさん", "わ", "なんにん", "います", "か", "。"],
+    "tts": ["お", "にいさん", "わ", "なんにん", "いま", "す", "か", "。"],
     "explain": ["polite prefix", "older brother", "topic marker", "how many people", "exist, to be (animate)", "question marker", "period"],
     "english": "How many older brothers do you have?",
     "prompt": "Someone asks how many older brothers you have.",
-    "fact": "When asking about the number of family members, even though 'how many' is the focus, the topic marker 'は' is still used with the family member being asked about."
+    "fact": "This question implies you have at least one older brother. Using 'います' after '何人' is grammatically correct in this context."
   },
   {
     "id": 8,
     "line": ["お", "姉さん", "は", "何人", "います", "か", "。"],
-    "tts": ["お", "ねえさん", "わ", "なんにん", "います", "か", "。"],
+    "tts": ["お", "ねえさん", "わ", "なんにん", "いま", "す", "か", "。"],
     "explain": ["polite prefix", "older sister", "topic marker", "how many people", "exist, to be (animate)", "question marker", "period"],
     "english": "How many older sisters do you have?",
     "prompt": "Someone asks how many older sisters you have.",
-    "fact": "The counter '人' (nin), used for counting people, always comes after the question word '何' (how many) in this type of question."
+    "fact": "Similar to the previous question, this implies you have at least one older sister."
   },
   {
     "id": 9,
     "line": ["弟", "は", "何人", "います", "か", "。"],
-    "tts": ["おとうと", "わ", "なんにん", "います", "か", "。"],
+    "tts": ["おとうと", "わ", "なんにん", "いま", "す", "か", "。"],
     "explain": ["younger brother", "topic marker", "how many people", "exist, to be (animate)", "question marker", "period"],
     "english": "How many younger brothers do you have?",
     "prompt": "Someone asks how many younger brothers you have.",
-    "fact": "Instead of using the possessive particle 'の' (no) to connect the family member and '何人', Japanese grammar uses 'は' to mark the family member as the topic, even though it's being quantified."
+    "fact": "This question structure implies you might have at least one younger brother."
   },
   {
     "id": 10,
     "line": ["妹", "は", "何人", "います", "か", "。"],
-    "tts": ["いもうと", "わ", "なんにん", "います", "か", "。"],
+    "tts": ["いもうと", "わ", "なんにん", "いま", "す", "か", "。"],
     "explain": ["younger sister", "topic marker", "how many people", "exist, to be (animate)", "question marker", "period"],
     "english": "How many younger sisters do you have?",
     "prompt": "Someone asks how many younger sisters you have.",
-    "fact": "The particle 'か' is not only used at the end of sentences to indicate a question but can also be used with other words like '何' to create question phrases like '何か' (something)."
+    "fact": "This implies you might have at least one younger sister."
   },
   {
     "id": 11,
     "line": ["お父さん", "は", "います", "か", "。"],
-    "tts": ["おとうさん", "わ", "います", "か", "。"],
+    "tts": ["おとうさん", "わ", "いま", "す", "か", "。"],
     "explain": ["father", "topic marker", "exist, to be (animate)", "question marker", "period"],
     "english": "Do you have a father?",
     "prompt": "Someone asks if you have a father.",
-    "fact": "The absence of a subject in this sentence (like 'you') is common in Japanese. The listener understands that the question is directed at them based on the context."
+    "fact": "This is a sensitive question as it assumes the listener's father might not be alive or present."
   },
   {
     "id": 12,
     "line": ["お母さん", "は", "います", "か", "。"],
-    "tts": ["おかあさん", "わ", "います", "か", "。"],
+    "tts": ["おかあさん", "わ", "いま", "す", "か", "。"],
     "explain": ["mother", "topic marker", "exist, to be (animate)", "question marker", "period"],
     "english": "Do you have a mother?",
     "prompt": "Someone asks if you have a mother.",
-    "fact": "Although the sentence ends with 'か', it's still important to use a polite tone of voice when asking personal questions like this to avoid sounding rude."
+    "fact": "Similar to the previous question, this can be a sensitive topic."
   },
   {
     "id": 13,
     "line": ["お父さん", "は", "どんな", "人", "です", "か", "。"],
-    "tts": ["おとうさん", "わ", "どんな", "ひと", "です", "か", "。"],
+    "tts": ["おとうさん", "わ", "どんな", "ひと", "で", "す", "か", "。"],
     "explain": ["father", "topic marker", "what kind of", "person", "to be (formal)", "question marker", "period"],
     "english": "What kind of person is your father?",
     "prompt": "Someone is asking about your father's personality or characteristics.",
-    "fact": "The phrase 'どんな人' (donna hito) is used to ask about someone's personality or character traits."
+    "fact": "'どんな人' is used to ask about someone's personality or what they are like."
   },
   {
     "id": 14,
     "line": ["お母さん", "は", "どんな", "人", "です", "か", "。"],
-    "tts": ["おかあさん", "わ", "どんな", "ひと", "です", "か", "。"],
+    "tts": ["おかあさん", "わ", "どんな", "ひと", "で", "す", "か", "。"],
     "explain": ["mother", "topic marker", "what kind of", "person", "to be (formal)", "question marker", "period"],
     "english": "What kind of person is your mother?",
     "prompt": "Someone is curious about your mother's personality or characteristics.",
-    "fact": "In less formal settings, you could replace 'です' with 'だ' to sound more casual, but it's generally safer to stick with 'です' when talking about someone's family."
+    "fact": "This is similar to the previous question, but asking about the mother."
   },
   {
     "id": 15,
     "line": ["犬", "は", "います", "か", "。"],
-    "tts": ["いぬ", "わ", "います", "か", "。"],
+    "tts": ["いぬ", "わ", "いま", "す", "か", "。"],
     "explain": ["dog", "topic marker", "exist, to be (animate)", "question marker", "period"],
     "english": "Do you have a dog?",
     "prompt": "Someone wants to know if you own a dog.",
-    "fact": "While you can use this sentence to ask about owning a dog, it literally translates closer to 'Is there a dog?' This highlights the subtle difference in how Japanese focuses on existence rather than possession."
+    "fact": "This is a common way to ask about pet ownership."
   },
   {
     "id": 16,
     "line": ["猫", "は", "います", "か", "。"],
-    "tts": ["ねこ", "わ", "います", "か", "。"],
+    "tts": ["ねこ", "わ", "いま", "す", "か", "。"],
     "explain": ["cat", "topic marker", "exist, to be (animate)", "question marker", "period"],
     "english": "Do you have a cat?",
     "prompt": "Someone is asking if you have a cat as a pet.",
-    "fact": "Japanese doesn't have articles like 'a' or 'the'. So, '猫' can mean 'cat', 'a cat', or 'the cat' depending on the context."
+    "fact": "This follows the same structure as the previous question, but about cats."
   },
   {
     "id": 17,
     "line": ["ペット", "は", "います", "か", "。"],
-    "tts": ["ペット", "わ", "います", "か", "。"],
+    "tts": ["ペット", "わ", "いま", "す", "か", "。"],
     "explain": ["pet", "topic marker", "exist, to be (animate)", "question marker", "period"],
     "english": "Do you have any pets?",
     "prompt": "Someone wants to know if you have any pets in general.",
-    "fact": "The word 'ペット' is a loanword from English but is fully integrated into Japanese and can be written in katakana as well: ペット."
+    "fact": "This is a general question about pet ownership."
   },
   {
     "id": 18,
     "line": ["ペット", "は", "何", "です", "か", "。"],
-    "tts": ["ペット", "わ", "なん", "です", "か", "。"],
+    "tts": ["ペット", "わ", "なん", "で", "す", "か", "。"],
     "explain": ["pet", "topic marker", "what", "to be (formal)", "question marker", "period"],
     "english": "What kind of pet do you have?",
     "prompt": "Someone is asking about the type of pet you own.",
-    "fact": "The word order in Japanese sentences is typically Subject-Object-Verb, but in questions with '何', the 'what' often comes before the verb."
+    "fact": "This question asks for the specific type of pet."
   },
   {
     "id": 19,
     "line": ["名前", "は", "何", "です", "か", "。"],
-    "tts": ["なまえ", "わ", "なん", "です", "か", "。"],
+    "tts": ["なまえ", "わ", "なん", "で", "す", "か", "。"],
     "explain": ["name", "topic marker", "what", "to be (formal)", "question marker", "period"],
     "english": "What is its name?",
     "prompt": "Someone is asking for the name of your pet.",
-    "fact": "'何' can be used for both things and people. The context helps determine whether you're asking 'what' or 'who'."
+    "fact": "This is a polite way to ask for someone's or something's name."
   },
   {
     "id": 20,
     "line": ["家族", "の", "名前", "は", "何", "です", "か", "。"],
-    "tts": ["かぞく", "の", "なまえ", "わ", "なん", "です", "か", "。"],
+    "tts": ["かぞく", "の", "なまえ", "わ", "なん", "で", "す", "か", "。"],
     "explain": ["family", "possessive particle", "name", "topic marker", "what", "to be (formal)", "question marker", "period"],
     "english": "What is your family name?",
     "prompt": "Someone is asking for your last name.",
-    "fact": "The possessive particle 'の' (no) connects '家族' (family) and '名前' (name), indicating possession."
+    "fact": "'家族の名前' specifically refers to the family name or surname."
   },
   {
     "id": 21,
     "line": ["お父さん", "の", "名前", "は", "何", "です", "か", "。"],
-    "tts": ["おとうさん", "の", "なまえ", "わ", "なん", "です", "か", "。"],
+    "tts": ["おとうさん", "の", "なまえ", "わ", "なん", "で", "す", "か", "。"],
     "explain": ["father", "possessive particle", "name", "topic marker", "what", "to be (formal)", "question marker", "period"],
     "english": "What is your father's name?",
     "prompt": "Someone wants to know your father's name.",
-    "fact": "While in English we might say 'your father's name,' in Japanese, the possessive particle 'の' acts as a linking phrase, making it more literal like 'father - possessive marker - name'."
+    "fact": "This is a straightforward question asking for someone's father's name."
   },
   {
     "id": 22,
     "line": ["お母さん", "の", "名前", "は", "何", "です", "か", "。"],
-    "tts": ["おかあさん", "の", "なまえ", "わ", "なん", "です", "か", "。"],
+    "tts": ["おかあさん", "の", "なまえ", "わ", "なん", "で", "す", "か", "。"],
     "explain": ["mother", "possessive particle", "name", "topic marker", "what", "to be (formal)", "question marker", "period"],
     "english": "What is your mother's name?",
     "prompt": "Someone is asking for your mother's name.",
-    "fact": "The structure of this question highlights that Japanese often places emphasis on the topic ('mother's name') before specifying what information is sought ('what')."
+    "fact": "This follows the same structure as the previous question, but asking about the mother."
   },
   {
     "id": 23,
     "line": ["お", "兄さん", "の", "名前", "は", "何", "です", "か", "。"],
-    "tts": ["お", "にいさん", "の", "なまえ", "わ", "なん", "です", "か", "。"],
+    "tts": ["お", "にいさん", "の", "なまえ", "わ", "なん", "で", "す", "か", "。"],
     "explain": ["polite prefix", "older brother", "possessive particle", "name", "topic marker", "what", "to be (formal)", "question marker", "period"],
     "english": "What is your older brother's name?",
     "prompt": "Someone wants to know your older brother's name.",
-    "fact": "Unlike in English, where we would use a pronoun like 'he' or 'his' after mentioning someone, Japanese often omits pronouns when it's clear who is being talked about."
+    "fact": "This question implies you have an older brother."
   },
   {
     "id": 24,
     "line": ["お", "姉さん", "の", "名前", "は", "何", "です", "か", "。"],
-    "tts": ["お", "ねえさん", "の", "なまえ", "わ", "なん", "です", "か", "。"],
+    "tts": ["お", "ねえさん", "の", "なまえ", "わ", "なん", "で", "す", "か", "。"],
     "explain": ["polite prefix", "older sister", "possessive particle", "name", "topic marker", "what", "to be (formal)", "question marker", "period"],
     "english": "What is your older sister's name?",
     "prompt": "Someone is asking for your older sister's name.",
-    "fact": "When asking for names, the use of 'です' adds a level of formality and politeness. In very casual situations, you might hear 'だ' instead, but 'です' is the safer choice."
+    "fact": "This question implies you have an older sister."
   },
   {
     "id": 25,
     "line": ["弟", "の", "名前", "は", "何", "です", "か", "。"],
-    "tts": ["おとうと", "の", "なまえ", "わ", "なん", "です", "か", "。"],
+    "tts": ["おとうと", "の", "なまえ", "わ", "なん", "で", "す", "か", "。"],
     "explain": ["younger brother", "possessive particle", "name", "topic marker", "what", "to be (formal)", "question marker", "period"],
     "english": "What is your younger brother's name?",
     "prompt": "Someone wants to know your younger brother's name.",
-    "fact": "While the word order is flexible in Japanese, placing 'は' after '名前' instead of after '弟' would make the sentence sound unnatural and confusing."
+    "fact": "This question implies you have a younger brother."
   },
   {
     "id": 26,
     "line": ["妹", "の", "名前", "は", "何", "です", "か", "。"],
-    "tts": ["いもうと", "の", "なまえ", "わ", "なん", "です", "か", "。"],
+    "tts": ["いもうと", "の", "なまえ", "わ", "なん", "で", "す", "か", "。"],
     "explain": ["younger sister", "possessive particle", "name", "topic marker", "what", "to be (formal)", "question marker", "period"],
     "english": "What is your younger sister's name?",
     "prompt": "Someone is asking for your younger sister's name.",
-    "fact": "The question word '何' can also be combined with other words to create more specific questions, such as '何歳' (how old) or '何色' (what color)."
+    "fact": "This question implies you have a younger sister."
   },
   {
     "id": 27,
     "line": ["犬", "の", "名前", "は", "何", "です", "か", "。"],
-    "tts": ["いぬ", "の", "なまえ", "わ", "なん", "です", "か", "。"],
+    "tts": ["いぬ", "の", "なまえ", "わ", "なん", "で", "す", "か", "。"],
     "explain": ["dog", "possessive particle", "name", "topic marker", "what", "to be (formal)", "question marker", "period"],
     "english": "What is your dog's name?",
     "prompt": "Someone wants to know your dog's name.",
-    "fact": "Remember, Japanese doesn't use grammatical gender. So, the same question structure is used whether you are asking about a male or female dog's name."
+    "fact": "This question implies you have a dog."
   },
   {
     "id": 28,
     "line": ["猫", "の", "名前", "は", "何", "です", "か", "。"],
-    "tts": ["ねこ", "の", "なまえ", "わ", "なん", "です", "か", "。"],
+    "tts": ["ねこ", "の", "なまえ", "わ", "なん", "で", "す", "か", "。"],
     "explain": ["cat", "possessive particle", "name", "topic marker", "what", "to be (formal)", "question marker", "period"],
     "english": "What is your cat's name?",
     "prompt": "Someone is asking for your cat's name.",
-    "fact": "The period '。' at the end of the sentence is not just for punctuation, it also indicates a drop in intonation, which is essential for conveying that you're asking a question."
+    "fact": "This question implies you have a cat."
   },
   {
     "id": 29,
     "line": ["家族", "は", "好き", "です", "か", "。"],
-    "tts": ["かぞく", "わ", "すき", "です", "か", "。"],
+    "tts": ["かぞく", "わ", "すき", "で", "す", "か", "。"],
     "explain": ["family", "topic marker", "like", "to be (formal)", "question marker", "period"],
     "english": "Do you like your family?",
     "prompt": "Someone asks if you like your family.",
-    "fact": "While this sentence translates to 'Do you like your family?' in English, in Japanese, it focuses on 'family' as the topic, then inquires about your feeling towards it."
+    "fact": "This is a direct question about your feelings towards your family."
   },
   {
     "id": 30,
     "line": ["お", "兄さん", "は", "好き", "です", "か", "。"],
-    "tts": ["お", "にいさん", "わ", "すき", "です", "か", "。"],
+    "tts": ["お", "にいさん", "わ", "すき", "で", "す", "か", "。"],
     "explain": ["polite prefix", "older brother", "topic marker", "like", "to be (formal)", "question marker", "period"],
     "english": "Do you like your older brother?",
     "prompt": "Someone asks if you like your older brother.",
-    "fact": "The verb '好き' (suki) doesn't change conjugation for different subjects. So, whether you're talking about liking one person or multiple people, '好き' remains the same."
+    "fact": "This question implies you have an older brother."
   },
   {
     "id": 31,
     "line": ["お", "姉さん", "は", "好き", "です", "か", "。"],
-    "tts": ["お", "ねえさん", "わ", "すき", "です", "か", "。"],
+    "tts": ["お", "ねえさん", "わ", "すき", "で", "す", "か", "。"],
     "explain": ["polite prefix", "older sister", "topic marker", "like", "to be (formal)", "question marker", "period"],
     "english": "Do you like your older sister?",
     "prompt": "Someone asks if you like your older sister.",
-    "fact": "You can change the intensity of 'like' by adding adverbs. For example, '大好き' (daisuki) means 'like very much' and 'ちょっと好き' (chotto suki) means 'like a little.'"
+    "fact": "This question implies you have an older sister."
   },
   {
     "id": 32,
     "line": ["弟", "は", "好き", "です", "か", "。"],
-    "tts": ["おとうと", "わ", "すき", "です", "か", "。"],
+    "tts": ["おとうと", "わ", "すき", "で", "す", "か", "。"],
     "explain": ["younger brother", "topic marker", "like", "to be (formal)", "question marker", "period"],
     "english": "Do you like your younger brother?",
     "prompt": "Someone asks if you like your younger brother.",
-    "fact": "In more informal conversations, you can omit 'です' at the end of the sentence, and it will still be grammatically correct. However, using 'です' is always a safe bet for politeness."
+    "fact": "This question implies you have a younger brother."
   },
   {
     "id": 33,
     "line": ["妹", "は", "好き", "です", "か", "。"],
-    "tts": ["いもうと", "わ", "すき", "です", "か", "。"],
+    "tts": ["いもうと", "わ", "すき", "で", "す", "か", "。"],
     "explain": ["younger sister", "topic marker", "like", "to be (formal)", "question marker", "period"],
     "english": "Do you like your younger sister?",
     "prompt": "Someone asks if you like your younger sister.",
-    "fact": "Japanese relies heavily on context. Even though this sentence doesn't explicitly mention 'you,' it is understood from the question structure that the speaker is asking about the listener's feelings."
+    "fact": "This question implies you have a younger sister."
   },
   {
     "id": 34,
     "line": ["お父さん", "は", "好き", "です", "か", "。"],
-    "tts": ["おとうさん", "わ", "すき", "です", "か", "。"],
+    "tts": ["おとうさん", "わ", "すき", "で", "す", "か", "。"],
     "explain": ["father", "topic marker", "like", "to be (formal)", "question marker", "period"],
     "english": "Do you like your father?",
     "prompt": "Someone asks if you like your father.",
-    "fact": "When answering this question negatively, it's crucial to be indirect to avoid being rude. For instance, instead of saying '好きじゃない' (don't like), you could say 'あまり好きじゃない' (don't like very much) or use a more roundabout phrase."
+    "fact": "This is a direct question about your feelings towards your father."
   },
   {
     "id": 35,
     "line": ["お母さん", "は", "好き", "です", "か", "。"],
-    "tts": ["おかあさん", "わ", "すき", "です", "か", "。"],
+    "tts": ["おかあさん", "わ", "すき", "で", "す", "か", "。"],
     "explain": ["mother", "topic marker", "like", "to be (formal)", "question marker", "period"],
     "english": "Do you like your mother?",
     "prompt": "Someone asks if you like your mother.",
-    "fact": "Just like with questions, the word order in a Japanese sentence can be flexible, but changing the position of 'は' or 'か' would alter the meaning or make the sentence ungrammatical."
+    "fact": "This is a direct question about your feelings towards your mother."
   },
   {
     "id": 36,
     "line": ["ペット", "は", "好き", "です", "か", "。"],
-    "tts": ["ペット", "わ", "すき", "です", "か", "。"],
+    "tts": ["ペット", "わ", "すき", "で", "す", "か", "。"],
     "explain": ["pet", "topic marker", "like", "to be (formal)", "question marker", "period"],
     "english": "Do you like pets?",
     "prompt": "Someone asks if you like pets in general.",
-    "fact": "Adding 'generally' or 'in general' to the English translation clarifies that the question is about a general preference for pets and not just a specific pet."
+    "fact": "This is a general question about whether you like pets."
   },
   {
     "id": 37,
     "line": ["犬", "は", "好き", "です", "か", "。"],
-    "tts": ["いぬ", "わ", "すき", "です", "か", "。"],
+    "tts": ["いぬ", "わ", "すき", "で", "す", "か", "。"],
     "explain": ["dog", "topic marker", "like", "to be (formal)", "question marker", "period"],
     "english": "Do you like dogs?",
     "prompt": "Someone asks if you like dogs.",
-    "fact": "Japanese has a specific particle, 'も' (mo), to express 'also' or 'too.' You could use it here to say: '猫も好きですか' (Do you like cats too?)"
+    "fact": "This is a common question to ask someone if they are a dog person."
   },
   {
     "id": 38,
     "line": ["猫", "は", "好き", "です", "か", "。"],
-    "tts": ["ねこ", "わ", "すき", "です", "か", "。"],
+    "tts": ["ねこ", "わ", "すき", "で", "す", "か", "。"],
     "explain": ["cat", "topic marker", "like", "to be (formal)", "question marker", "period"],
     "english": "Do you like cats?",
     "prompt": "Someone asks if you like cats.",
-    "fact": "You can use this basic sentence structure to ask about liking a wide range of things simply by replacing 'cat' with other nouns."
+    "fact": "This is a common question to ask someone if they are a cat person."
   },
   {
     "id": 39,
     "line": ["家族", "と", "住ん", "で", "います", "か", "。"],
-    "tts": ["かぞく", "と", "すん", "で", "います", "か", "。"],
+    "tts": ["かぞく", "と", "すん", "で", "いま", "す", "か", "。"],
     "explain": ["family", "with", "live", "continuative form", "to be (animate)", "question marker", "period"],
     "english": "Do you live with your family?",
     "prompt": "Someone asks if you live with your family.",
-    "fact": "The '-te form' of a verb (in this case, '住んで') has various uses, including connecting actions, showing how something is done, and expressing ongoing states."
+    "fact": "'住んでいます' is the present progressive form of '住む', meaning 'to live'."
   },
   {
     "id": 40,
     "line": ["誰", "と", "住ん", "で", "います", "か", "。"],
-    "tts": ["だれ", "と", "すん", "で", "います", "か", "。"],
+    "tts": ["だれ", "と", "すん", "で", "いま", "す", "か", "。"],
     "explain": ["who", "with", "live", "continuative form", "to be (animate)", "question marker", "period"],
     "english": "Who do you live with?",
     "prompt": "Someone wants to know who you share your living space with.",
-    "fact": "Japanese often uses a combination of verbs to convey a specific meaning. Here, '住んでいる' (sunde iru) expresses the continuous action of living with someone."
+    "fact": "This is a common question to ask about someone's living situation."
   }
 ]
