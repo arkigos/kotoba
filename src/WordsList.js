@@ -9,7 +9,6 @@ function WordsList() {
   const [words, setWords] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showEnglish, setShowEnglish] = useState(false);
-  const [audio, setAudio] = useState(null);
   const [autoPlayAudio, setAutoPlayAudio] = useState(true);
   const [showEnglishFirst, setShowEnglishFirst] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +23,7 @@ function WordsList() {
       cloudName: 'hgcstx3uy' // Replace with your Cloudinary cloud name
     }
   });
-  const baseAudioUrl = `/audio/${selectedLanguage}/`;
+
   const tooltipRef = useRef(null);
 
   const loadLesson = useCallback((currentLesson, langCode) => {
@@ -40,18 +39,20 @@ function WordsList() {
         setCurrentIndex(0);
         setShowEnglish(showEnglishFirst);
 
+        // Play audio AFTER the data has loaded:
         if (autoPlayAudio && data.length > 0) {
-          const initialAudio = new Audio(
-            `${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${data[0].id}.mp3`
-          );
-          setAudio(initialAudio);
-          initialAudio
-            .play()
-            .catch((error) => console.error('Audio play blocked:', error));
+          playAudio(currentLesson, data[0].id, langCode); // Pass langCode here
         }
       })
       .catch((error) => console.error('Error fetching lesson:', error));
-  }, [autoPlayAudio, showEnglishFirst, baseAudioUrl]);
+  }, [autoPlayAudio, showEnglishFirst]); //  No need to include playAudio here
+
+  // Move playAudio INSIDE the component function:
+  const playAudio = (lessonId, wordId, langCode) => { // Add langCode as parameter
+    const myAudio = `https://res.cloudinary.com/hgcstx3uy/raw/upload/${langCode}/audio/audio_${lessonId}_${wordId}.mp3`;
+    const audio = new Audio(myAudio);
+    audio.play().catch((error) => console.error('Audio play blocked:', error));
+  };
 
   useEffect(() => {
     fetch(`/api/${selectedLanguage}/lessons.json`)
@@ -83,38 +84,30 @@ function WordsList() {
   const handleLanguageChange = (e) => {
     const selectedLangCode = e.target.value;
     setSelectedLanguage(selectedLangCode);
+    loadLesson(currentLesson, selectedLangCode); // Reload lesson when language changes
   };
 
   const handleNext = () => {
     const nextIndex = (currentIndex + 1) % words.length;
     setCurrentIndex(nextIndex);
-    playAudioForIndex(nextIndex);
+    playAudio(currentLesson, words[nextIndex].id, selectedLanguage);
   };
 
   const handlePrevious = () => {
     const prevIndex = (currentIndex - 1 + words.length) % words.length;
     setCurrentIndex(prevIndex);
-    playAudioForIndex(prevIndex);
+    playAudio(currentLesson, words[prevIndex].id, selectedLanguage); 
   };
 
   const handleRandom = () => {
-    const randIndex = Math.floor(Math.random() * words.length); 
+    const randIndex = Math.floor(Math.random() * words.length);
     setCurrentIndex(randIndex);
-    playAudioForIndex(randIndex);
+    playAudio(currentLesson, words[randIndex].id, selectedLanguage);
   };
 
   const handleSidebarClick = (index) => {
     setCurrentIndex(index);
-    playAudioForIndex(index);
-  };
-
-  const playAudioForIndex = (index) => { 
-    const nextAudio = new Audio(
-      `${baseAudioUrl}lesson_${currentLesson}/audio_${currentLesson}_${words[index].id}.mp3`
-    );
-    setAudio(nextAudio);
-    setShowEnglish(showEnglishFirst);
-    if (autoPlayAudio) nextAudio.play();
+    playAudio(currentLesson, words[index].id, selectedLanguage);
   };
 
   const toggleMenu = () => {
@@ -145,7 +138,7 @@ function WordsList() {
   const currentWord =
     displayedWords[currentIndex];
   const myImage = cld.image(
-    `${selectedLanguage}/images/image_${currentLesson}_${currentWord.id}.png`
+    `${selectedLanguage}/images/image_${currentLesson}_${currentWord.id}`
   );
 
   return (
@@ -298,18 +291,19 @@ function WordsList() {
         
         {/* Buttons Container (always visible) */}
         <div className="buttons-container"> 
-      <button className="previous-button" onClick={handlePrevious}>
-        Previous
-      </button>
-      <button className="replay-button" onClick={() => audio && audio.play()}>
-        Replay Audio
-      </button>
-      <button className="next-button" onClick={handleNext}>
-        Next
-      </button>
-      <button className="random-button" onClick={handleRandom}>
-        Random
-      </button> </div>
+          <button className="previous-button" onClick={handlePrevious}>
+            Previous
+          </button>
+          <button className="replay-button" onClick={() => playAudio(currentLesson, currentWord.id, selectedLanguage)}> 
+            Replay Audio
+          </button> 
+          <button className="next-button" onClick={handleNext}>
+            Next
+          </button>
+          <button className="random-button" onClick={handleRandom}>
+            Random
+          </button> 
+        </div>
 
         {/* Fact Display (only visible if showText is true) */}
         {showText && (
