@@ -1,7 +1,9 @@
-import React, { useEffect, useState, useCallback, useRef } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import './WordsList.css';
 import { Cloudinary } from '@cloudinary/url-gen';
-import { AdvancedImage } from '@cloudinary/react';
+import WordContent from './WordContent';
+import Header from './Header';
+import Sidebar from './Sidebar';
 
 function WordsList() {
   const [lessons, setLessons] = useState([]);
@@ -20,11 +22,9 @@ function WordsList() {
 
   const cld = new Cloudinary({
     cloud: {
-      cloudName: 'hgcstx3uy' // Replace with your Cloudinary cloud name
+      cloudName: 'hgcstx3uy'
     }
   });
-
-  const tooltipRef = useRef(null);
 
   const loadLesson = useCallback((currentLesson, langCode) => {
     fetch(`/api/${langCode}/lesson_${currentLesson}.json`)
@@ -37,46 +37,47 @@ function WordsList() {
       .then((data) => {
         setWords(data);
         setCurrentIndex(0);
-        setShowEnglish(showEnglishFirst);
+        setShowEnglish(showEnglishFirst); 
 
-        // Play audio AFTER the data has loaded:
         if (autoPlayAudio && data.length > 0) {
-          playAudio(currentLesson, data[0].id, langCode); // Pass langCode here
+          playAudio(currentLesson, data[0].id, langCode);
         }
       })
       .catch((error) => console.error('Error fetching lesson:', error));
-  }, [autoPlayAudio, showEnglishFirst]); //  No need to include playAudio here
+  }, [autoPlayAudio, showEnglishFirst]);
 
-  // Move playAudio INSIDE the component function:
-  const playAudio = (lessonId, wordId, langCode) => { // Add langCode as parameter
+  const playAudio = (lessonId, wordId, langCode) => {
     const myAudio = `https://res.cloudinary.com/hgcstx3uy/raw/upload/${langCode}/audio/audio_${lessonId}_${wordId}.mp3`;
-    const audio = new Audio(myAudio);
-    audio.play().catch((error) => console.error('Audio play blocked:', error));
+    new Audio(myAudio).play().catch((error) => console.error('Audio play blocked:', error));
   };
 
   useEffect(() => {
-    fetch(`/api/${selectedLanguage}/lessons.json`)
-      .then((response) => response.json())
-      .then((data) => {
-        setLessons(data.lessons);
-        if (data.lessons.length > 0) {
-          const firstLesson = data.lessons[0];
+    const fetchData = async () => {
+      try {
+        const lessonsResponse = await fetch(`/api/${selectedLanguage}/lessons.json`);
+        const lessonsData = await lessonsResponse.json();
+
+        const languagesResponse = await fetch('/server/data/languages.json');
+        const languagesData = await languagesResponse.json();
+
+        setLessons(lessonsData.lessons);
+        setLanguages(languagesData);
+
+        if (lessonsData.lessons.length > 0) {
+          const firstLesson = lessonsData.lessons[0];
           setCurrentLesson(firstLesson.id);
           loadLesson(firstLesson.id, selectedLanguage);
         }
-      })
-      .catch((error) => console.error('Error fetching lessons:', error));
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
 
-    fetch('/server/data/languages.json')
-      .then((response) => response.json())
-      .then((data) => {
-        setLanguages(data);
-      })
-      .catch((error) => console.error('Error fetching languages:', error));
+    fetchData();
   }, [selectedLanguage, loadLesson]);
 
   const handleLessonChange = (e) => {
-    const selectedLesson = parseInt(e.target.value);
+    const selectedLesson = parseInt(e.target.value, 10);
     setCurrentLesson(selectedLesson);
     loadLesson(selectedLesson, selectedLanguage);
   };
@@ -84,7 +85,7 @@ function WordsList() {
   const handleLanguageChange = (e) => {
     const selectedLangCode = e.target.value;
     setSelectedLanguage(selectedLangCode);
-    loadLesson(currentLesson, selectedLangCode); // Reload lesson when language changes
+    loadLesson(currentLesson, selectedLangCode);
   };
 
   const handleNext = () => {
@@ -96,7 +97,7 @@ function WordsList() {
   const handlePrevious = () => {
     const prevIndex = (currentIndex - 1 + words.length) % words.length;
     setCurrentIndex(prevIndex);
-    playAudio(currentLesson, words[prevIndex].id, selectedLanguage); 
+    playAudio(currentLesson, words[prevIndex].id, selectedLanguage);
   };
 
   const handleRandom = () => {
@@ -122,210 +123,61 @@ function WordsList() {
     setShowEnglish(!showEnglish);
   };
 
-  const handleWordPartMouseMove = (e) => {
-    const tooltip = tooltipRef.current;
-    if (tooltip) {
-      tooltip.style.left = `${e.clientX}px`;
-      tooltip.style.top = `${e.clientY}px`;
-    }
-  };
-
   if (words.length === 0) {
     return <div>Loading...</div>;
   }
 
-  const displayedWords = words;
-  const currentWord =
-    displayedWords[currentIndex];
+  const currentWord = words[currentIndex];
   const myImage = cld.image(
     `${selectedLanguage}/images/image_${currentLesson}_${currentWord.id}`
   );
 
   return (
     <div className="container">
-      {/* Header Container for Dropdowns and Menu */}
-      <div className="header-container">
-        <div className="language-dropdown">
-          <label htmlFor="language-select">Language:</label>
-          <select
-            id="language-select"
-            value={selectedLanguage}
-            onChange={handleLanguageChange}
-          >
-            {languages.map((language) => (
-              <option key={language.code} value={language.code}>
-                {language.language}
-              </option>
-            ))}
-          </select>
-        </div>
+      <Header
+        languages={languages}
+        selectedLanguage={selectedLanguage}
+        handleLanguageChange={handleLanguageChange}
+        lessons={lessons}
+        currentLesson={currentLesson}
+        handleLessonChange={handleLessonChange}
+        menuOpen={menuOpen}
+        toggleMenu={toggleMenu}
+        autoPlayAudio={autoPlayAudio}
+        setAutoPlayAudio={setAutoPlayAudio}
+        showEnglishFirst={showEnglishFirst}
+        setShowEnglishFirst={setShowEnglishFirst}
+        showBackgroundImage={showBackgroundImage}
+        toggleBackgroundImage={toggleBackgroundImage}
+        showText={showText}
+        setShowText={setShowText}
+      />
 
-        <div className="lesson-dropdown">
-          <label htmlFor="lesson-select">Lesson:</label>
-          <select
-            id="lesson-select"
-            value={currentLesson} 
-            onChange={handleLessonChange}
-          >
-            {/* Group lessons by level */}
-            {Object.entries(groupByLevel(lessons)).map(([level, levelLessons]) => (
-              <optgroup key={level} label={level}> {/* Corrected line - just use 'level' */}
-                {levelLessons.map((lesson) => (
-                  <option key={lesson.id} value={lesson.id}>
-                    {lesson.name}
-                  </option>
-                ))}
-              </optgroup>
-            ))}
-          </select>
-        </div>
+      <Sidebar
+        displayedWords={words} 
+        currentIndex={currentIndex}
+        handleSidebarClick={handleSidebarClick}
+        showEnglishFirst={showEnglishFirst}
+      />
 
-        {/* Hamburger Menu */}
-        <div className="hamburger-menu">
-          <button className="hamburger-icon" onClick={toggleMenu}>
-            ☰
-          </button>
-          {menuOpen && (
-            <div className="menu">
-              <label>
-                <input
-                  type="checkbox"
-                  checked={autoPlayAudio}
-                  onChange={(e) => setAutoPlayAudio(e.target.checked)}
-                />
-                Play Audio Automatically
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={showEnglishFirst}
-                  onChange={(e) => setShowEnglishFirst(e.target.checked)}
-                />
-                Show English First
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={showBackgroundImage}
-                  onChange={toggleBackgroundImage}
-                />
-                Show Background Image
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={showText}
-                  onChange={(e) => setShowText(e.target.checked)}
-                />
-                Show Text
-              </label>
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Sidebar */}
-      <div className="sidebar">
-        <ul>
-          {displayedWords.map((word, index) => {
-            return (
-              <li
-                key={word.id}
-                className={index === currentIndex ? 'active' : ''}
-                onClick={() => handleSidebarClick(index)}
-              >
-                {showEnglishFirst ? word.english : word.line.join('')}
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-
-      {/* Main Content */}
-      <div
-        className="word-content"
-        style={{ backgroundColor: showBackgroundImage ? 'transparent' : 'black' }}
-      >
-        {showBackgroundImage && (
-          <AdvancedImage
-            className="word-image"
-            cldImg={myImage}
-            alt={currentWord.english}
-          />
-        )}
-
-        {showText && (
-          <div className="word-container">
-            {showEnglish ? (
-              <h1 className="word" onClick={handleWordContainerClick}>
-                {currentWord.english}
-              </h1>
-            ) : (
-              currentWord.line.map((wordPart, wordIndex) => (
-                <span
-                  key={wordIndex}
-                  className={`word-part ${
-                    hoveredWordIndex === wordIndex ? 'highlighted' : ''
-                  }`} // Dynamic class
-                  onClick={handleWordContainerClick}
-                  onMouseOver={() => setHoveredWordIndex(wordIndex)}
-                  onMouseOut={() => setHoveredWordIndex(null)}
-                  onMouseMove={(e) => {
-                    if (hoveredWordIndex === wordIndex) {
-                      handleWordPartMouseMove(e);
-                    }
-                  }}
-                >
-                  {wordPart}
-                  {hoveredWordIndex === wordIndex && (
-                    <div className="tooltip" ref={tooltipRef}>
-                      <div>{currentWord.tts[wordIndex]}</div>
-                      <div>{currentWord.explain[wordIndex]}</div>
-                    </div>
-                  )}
-                </span>
-              ))
-            )}
-          </div>
-        )}
-        
-        {/* Buttons Container (always visible) */}
-        <div className="buttons-container"> 
-          <button className="previous-button" onClick={handlePrevious}>
-            Previous
-          </button>
-          <button className="replay-button" onClick={() => playAudio(currentLesson, currentWord.id, selectedLanguage)}> 
-            Replay Audio
-          </button> 
-          <button className="next-button" onClick={handleNext}>
-            Next
-          </button>
-          <button className="random-button" onClick={handleRandom}>
-            Random
-          </button> 
-        </div>
-
-        {/* Fact Display (only visible if showText is true) */}
-        {showText && (
-          <p className="fact-text">
-            <i>{currentWord.fact}</i>
-          </p>
-        )}
-
-      </div>
+      <WordContent
+        currentWord={currentWord}
+        showEnglish={showEnglish}
+        setShowEnglish={handleWordContainerClick} 
+        myImage={myImage}
+        showBackgroundImage={showBackgroundImage}
+        showText={showText}
+        hoveredWordIndex={hoveredWordIndex}
+        setHoveredWordIndex={setHoveredWordIndex}
+        playAudio={playAudio}
+        handleNext={handleNext}
+        handlePrevious={handlePrevious}
+        handleRandom={handleRandom}
+        currentLesson={currentLesson}
+        selectedLanguage={selectedLanguage}
+      />
     </div>
   );
-}
-
-function groupByLevel(lessons) {
-  return lessons.reduce((grouped, lesson) => {
-    const level = lesson.params.level; // Access level directly from lesson object 
-    if (!grouped[level]) {
-      grouped[level] = [];
-    }
-    grouped[level].push(lesson);
-    return grouped;
-  }, {});
 }
 
 export default WordsList;
