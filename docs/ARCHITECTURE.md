@@ -160,7 +160,6 @@ Each card defines:
 - reading/pronunciation parts
 - word-part explanations
 - English meaning
-- image prompt or image reference
 - audio reference when available
 - usage/fact note
 

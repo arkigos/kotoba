@@ -29,7 +29,6 @@ npm run validate:curriculum
 - A card has missing required fields.
 - A card's `line`, `tts`, and `explain` arrays have different lengths.
 - A card has no English meaning.
-- A card has neither an image prompt nor an image reference.
 - A unit uses vocabulary that has not been introduced yet.
 - A unit fails to bring back review-due vocabulary from the spaced repetition bins.
 - A unit introduces grammar that is not its own focus and was not introduced by an earlier unit.
@@ -91,7 +90,6 @@ Automated component or logic tests cover:
 - reveal/hide English
 - show/hide Japanese text
 - aligned tooltip/explanation display
-- missing image fallback
 - missing audio fallback
 - local progress read/write
 
@@ -106,9 +104,8 @@ Automated component or logic tests cover:
 5. Word-part explanations are accessible.
 6. Next and previous navigation changes cards.
 7. Random navigation changes or intentionally reselects a card without crashing.
-8. Image display or placeholder is visible.
-9. Missing audio does not break replay.
-10. Progress persists after reload.
+8. Missing audio does not break replay.
+9. Progress persists after reload.
 
 The e2e test fails on blank screens, uncaught runtime errors, overlapping
 critical controls, or cards with missing required text.

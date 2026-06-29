@@ -17,7 +17,6 @@ Each card presents:
 - aligned reading/pronunciation hints
 - aligned word-part explanations
 - English meaning
-- an image or image prompt
 - audio when available
 - a short usage, grammar, or cultural note when useful
 

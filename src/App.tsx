@@ -465,15 +465,20 @@ export function App() {
     const onKeyDown = (event: KeyboardEvent) => {
       if (isFormTarget(event.target)) return;
 
-      if (event.key === "ArrowRight" || event.key === " ") {
+      if (event.key === " " && event.shiftKey) {
+        event.preventDefault();
+        previousCard();
+      } else if (event.key === "ArrowRight" || event.key === " ") {
         event.preventDefault();
         nextCard();
       } else if (event.key === "ArrowLeft") {
         event.preventDefault();
         previousCard();
-      } else if (event.key.toLowerCase() === "r") {
+      } else if (event.key === "1") {
+        event.preventDefault();
         setShowBack((visible) => !visible);
-      } else if (event.key.toLowerCase() === "a") {
+      } else if (event.key === "2") {
+        event.preventDefault();
         replayAudio();
       } else if (event.key.toLowerCase() === "s") {
         setSettingsOpen((open) => !open);
@@ -758,22 +763,22 @@ export function App() {
           <button title="Previous card" onClick={previousCard} disabled={cardIndex === 0}>
             <ChevronLeft aria-hidden="true" />
             <span>Previous</span>
-            <Keycap>←</Keycap>
+            <Keycap>Shift Space</Keycap>
           </button>
           <button title={revealLabel} onClick={() => setShowBack((visible) => !visible)}>
             {showBack ? <EyeOff aria-hidden="true" /> : <Eye aria-hidden="true" />}
             <span>{revealLabel}</span>
-            <Keycap>R</Keycap>
+            <Keycap>1</Keycap>
           </button>
           <button title="Play audio" onClick={replayAudio}>
             <Volume2 aria-hidden="true" />
             <span>Play Audio</span>
-            <Keycap>A</Keycap>
+            <Keycap>2</Keycap>
           </button>
           <button title="Next card" onClick={nextCard} disabled={cardIndex === unit.cards.length - 1 && !settings.autoAdvanceLoop}>
             <ChevronRight aria-hidden="true" />
             <span>Next</span>
-            <Keycap>Space/→</Keycap>
+            <Keycap>Space</Keycap>
           </button>
           <button title="Restart this unit" onClick={restartUnit}>
             <RotateCcw aria-hidden="true" />

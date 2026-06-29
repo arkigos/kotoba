@@ -242,9 +242,18 @@ describe("practice player", () => {
     fireEvent.keyDown(window, { key: "ArrowRight" });
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "学生です。");
 
-    fireEvent.keyDown(window, { key: "r" });
+    fireEvent.keyDown(window, { key: " ", shiftKey: true });
+    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[0].line.join(""));
+
+    fireEvent.keyDown(window, { key: " " });
+    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[1].line.join(""));
+
+    fireEvent.keyDown(window, { key: "1" });
     expect(screen.getByText("I'm a student.")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /^play audio$/i })).toBeInTheDocument();
+
+    fireEvent.keyDown(window, { key: "2" });
+    expect(lastSpoken()).toMatchObject({ text: unit001.cards[1].line.join(""), lang: "ja-JP" });
 
     fireEvent.keyDown(window, { key: "s" });
     fireEvent.click(screen.getByLabelText(/auto advance/i));
