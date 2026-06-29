@@ -21,6 +21,8 @@
     "audit:curriculum-pacing": "node scripts/audit-curriculum-pacing.mjs",
     "audit:curriculum-pacing:strict": "node scripts/audit-curriculum-pacing.mjs --strict",
     "curriculum:card": "node scripts/generate-card-candidate.mjs",
+    "curriculum:rebuild-a1": "node scripts/rebuild-a1-units.mjs",
+    "curriculum:enforce-a1": "node scripts/enforce-a1-generation-rules.mjs",
     "curriculum:unit-draft": "node scripts/generate-unit-draft.mjs",
     "curriculum:rebuild-foundation": "node scripts/rebuild-foundation-units.mjs",
     "curriculum:add-a1-action-previews": "node scripts/add-a1-action-previews.mjs"

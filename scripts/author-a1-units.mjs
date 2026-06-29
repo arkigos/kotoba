@@ -289,14 +289,14 @@ const pools = {
     ["jitensha", "bicycle"],
   ],
   people: [
-    ["sakura", "Sakura"],
-    ["yuki", "Yuki"],
-    ["tanaka", "Tanaka"],
     ["sensei", "the teacher"],
     ["gakusei", "the student"],
+    ["tomodachi", "the friend"],
+    ["isha", "the doctor"],
     ["haha", "my mother"],
     ["chichi", "my father"],
     ["ane", "my older sister"],
+    ["otouto", "my younger brother"],
   ],
   places: [
     ["koko", "here"],
@@ -352,6 +352,7 @@ const jp = {
   q: () => grammar("？", "？", "question mark"),
   wa: () => grammar("は", "わ", "topic marker"),
   ga: () => grammar("が", "が", "subject marker"),
+  ka: () => grammar("か", "か", "question marker"),
   no: () => grammar("の", "の", "possession or description marker"),
   ni: () => grammar("に", "に", "location or time marker"),
   na: () => grammar("な", "な", "noun-linking marker for na-adjectives"),
@@ -368,8 +369,17 @@ const jp = {
   yo: () => grammar("よ", "よ", "sentence ending giving emphasis or new information"),
 };
 
+function expandedParts(parts) {
+  return parts.flatMap((part) => {
+    if (part.surface === "ですか") return [jp.desu(), jp.ka()];
+    if (part.surface === "ありますか") return [jp.arimasu(), jp.ka()];
+    if (part.surface === "いますか") return [jp.imasu(), jp.ka()];
+    return [part];
+  });
+}
+
 function cardParts(parts) {
-  return parts.filter((part) => part.surface !== "\u3002");
+  return expandedParts(parts).filter((part) => part.surface !== "\u3002");
 }
 
 function cardEnglish(english) {
@@ -399,7 +409,8 @@ function capitalize(value) {
   return value.charAt(0).toUpperCase() + value.slice(1);
 }
 
-const properNouns = new Set(["Sakura", "Yuki", "Tanaka", "Japan", "America"]);
+const properNouns = new Set(["Japan", "America"]);
+const pronounMeanings = new Set(["I", "me", "you", "he", "him", "she", "her"]);
 const uncountableNouns = new Set(["water", "tea", "weather", "rain", "snow", "wind", "sky", "paper", "work", "food"]);
 const countries = new Set(["Japan", "America"]);
 
@@ -416,6 +427,7 @@ function aOrAn(value) {
 }
 
 function nounPhrase(value, definite = false) {
+  if (pronounMeanings.has(value)) return value;
   if (properNouns.has(value) || value.startsWith("the ") || value.startsWith("my ")) return value;
   if (uncountableNouns.has(value)) return definite ? `the ${value}` : value;
   return `${definite ? "the" : aOrAn(value)} ${value}`;
@@ -548,7 +560,7 @@ function countLabel(countId) {
 
 function countObservation(countId, noun) {
   const sentence = countSentence(countId, noun).replace(/\.$/, "");
-  return `${sentence}, aren't there?`;
+  return countWords.get(countId)[1] === 1 ? `${sentence}, isn't there?` : `${sentence}, aren't there?`;
 }
 
 function cycle(list, count) {
@@ -661,6 +673,9 @@ function reviewCard(unitId, index, wordId) {
   }
 
   if (wordId === "watashi") return makeCard(unitId, index, [word("kore"), jp.wa(), word(wordId), jp.desu(), jp.p()], "It's me.", tags, prompt, facts.review);
+  if (wordId === "sakura") return makeCard(unitId, index, [word("kore"), jp.wa(), word(wordId), jp.desu(), jp.p()], "It's you.", tags, prompt, facts.review);
+  if (wordId === "yuki") return makeCard(unitId, index, [word("kore"), jp.wa(), word(wordId), jp.desu(), jp.p()], "It's him.", tags, prompt, facts.review);
+  if (wordId === "tanaka") return makeCard(unitId, index, [word("kore"), jp.wa(), word(wordId), jp.desu(), jp.p()], "It's her.", tags, prompt, facts.review);
   return makeCard(unitId, index, [word("kore"), jp.wa(), word(wordId), jp.desu(), jp.p()], `This is ${nounPhrase(meaning)}.`, tags, prompt, facts.review);
 }
 
@@ -843,7 +858,7 @@ function generateCards(spec) {
   if (spec.id === 18) {
     const anchors = [["tsukue", "desk"], ["isu", "chair"], ["hako", "box"], ["mado", "window"], ["doa", "door"], ["ie", "house"], ["gakkou", "school"], ["mise", "shop"], ["toshokan", "library"], ["kouen", "park"]];
     const items = [["hon", "book"], ["kagi", "key"], ["pen", "pen"], ["chizu", "map"], ["denwa", "telephone"], ["hana_flower", "flower"], ["kaban", "bag"], ["enpitsu", "pencil"], ["tokei", "clock"], ["shashin", "photo"]];
-    const beings = [["neko", "cat"], ["inu", "dog"], ["tori", "bird"], ["akachan", "baby"], ["sakura", "Sakura"]];
+    const beings = [["neko", "cat"], ["inu", "dog"], ["tori", "bird"], ["akachan", "baby"], ["gakusei", "student"]];
     return simpleUnit(spec, [
       { rows: cycle(unitWords, 20), build: (r, i) => { const anchor = anchors[i % anchors.length]; const otherAnchor = anchors[(i + 1) % anchors.length]; const item = items[i % items.length]; const loc = locationPhrase(r[0], anchor, otherAnchor); return makeCard(spec.id, i, [...loc.parts, jp.ni(), word(item[0]), jp.ga(), jp.arimasu(), jp.p()], existenceEnglish(item[1], loc.english), ["Aの上", "Nがあります"], "A thing exists at a relative location.", facts.loc); } },
       { rows: cycle(unitWords, 20), build: (r, i) => { const anchor = anchors[(i + 3) % anchors.length]; const otherAnchor = anchors[(i + 4) % anchors.length]; const being = beings[i % beings.length]; const loc = locationPhrase(r[0], anchor, otherAnchor); return makeCard(spec.id, i, [...loc.parts, jp.ni(), word(being[0]), jp.ga(), jp.imasu(), jp.p()], existenceEnglish(being[1], loc.english, true), ["Aの上", "Nがいます"], "A living being exists at a relative location.", facts.loc); } },

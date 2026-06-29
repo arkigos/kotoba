@@ -50,6 +50,13 @@ function card(unitId, index, parts, english, tags = []) {
   };
 }
 
+function reindex(unitId, cards) {
+  return cards.map((entry, index) => ({
+    ...entry,
+    id: `u${pad(unitId)}-c${pad(index + 1)}`,
+  }));
+}
+
 function makePreviews(unitId, lexicon) {
   const w = (id) => word(lexicon, id);
   const g = grammar;
@@ -136,14 +143,17 @@ for (const { entry, unit } of units) {
   if (previews.length === 0) continue;
 
   const baseCards = unit.cards.filter((existingCard) => !(existingCard.grammarTags ?? []).some((tag) => previewTagsToReplace.has(tag)));
-  const appendedPreviews = previews.map((preview, offset) => ({
-    ...preview,
-    id: `u${pad(unit.id)}-c${pad(baseCards.length + offset + 1)}`,
-  }));
+  const insertAt = Math.min(54, baseCards.length);
+  const previewBlock = previews.map((preview) => ({ ...preview }));
+  const cards = reindex(unit.id, [
+    ...baseCards.slice(0, insertAt),
+    ...previewBlock,
+    ...baseCards.slice(insertAt),
+  ]);
 
   await writeJson(entry.path, {
     ...unit,
-    cards: [...baseCards, ...appendedPreviews],
+    cards,
   });
 }
 

@@ -238,6 +238,42 @@ describe("curriculum word bins", () => {
     expect(allQuestionCards.length).toBeGreaterThan(0);
   });
 
+  it("keeps productive question markers visible across A1", () => {
+    for (let unitId = 1; unitId <= 20; unitId += 1) {
+      const unit = unitModules[unitModulePath(unitId)].default;
+      for (const card of unit.cards) {
+        expect(card.line).not.toContain("ですか");
+        expect(card.line).not.toContain("ありますか");
+        expect(card.line).not.toContain("いますか");
+
+        const questionIndex = card.line.indexOf("？");
+        if (questionIndex >= 0) {
+          expect(card.line.indexOf("か")).toBeGreaterThanOrEqual(0);
+          expect(card.line.indexOf("か")).toBeLessThan(questionIndex);
+        }
+      }
+    }
+  });
+
+  it("keeps pronouns out of generic A1 where/existence question slots", () => {
+    const pronounIds = new Set(["watashi", "sakura", "yuki", "tanaka"]);
+    for (let unitId = 8; unitId <= 20; unitId += 1) {
+      const unit = unitModules[unitModulePath(unitId)].default;
+      for (const card of unit.cards) {
+        const hasPronoun = card.tokens?.some((token) => {
+          const wordId = "wordId" in token && typeof token.wordId === "string" ? token.wordId : undefined;
+          return wordId ? pronounIds.has(wordId) : false;
+        });
+        const isWhereOrExistenceQuestion =
+          card.line.includes("どこ") || card.line.includes("あります") || card.line.includes("います");
+
+        if (hasPronoun && isWhereOrExistenceQuestion && card.line.includes("？")) {
+          expect(card.grammarTags ?? []).toContain("review vocabulary");
+        }
+      }
+    }
+  });
+
   it("uses pronunciation readings for negative copula particles", () => {
     for (const unit of Object.values(unitModules).map((module) => module.default)) {
       for (const card of unit.cards) {
