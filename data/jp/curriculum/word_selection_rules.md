@@ -19,6 +19,12 @@ as a grammar preview. If a learner-facing word appears in a card, it must either
 already be known, be part of the current unit's `newWords`, or be due review
 from an earlier source unit.
 
+Treat vocabulary ids as stable review keys. When an early vocabulary choice is
+recast, update the learner-facing surface/reading/meaning in place rather than
+minting a new id unless the old word truly remains in the course. The Unit 1
+legacy ids `sakura`, `yuki`, and `tanaka` are intentionally retained as stable
+keys for `あなた`, `彼`, and `彼女`.
+
 Productive particles should stay visible. Prefer `です` + `か` as separate card
 parts over a single `ですか` token. Keep early negative copula forms such as
 `ではありません` chunked as set phrases until the course intentionally teaches

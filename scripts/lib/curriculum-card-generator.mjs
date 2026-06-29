@@ -53,17 +53,41 @@ function existingWords(words, ids) {
 }
 
 function indefinite(value) {
-  if (/^(I|you|Sakura|Yuki|Tanaka|Japan|America)$/i.test(value)) return value;
+  if (/^(I|me|you|he|him|she|her|Japan|America)$/i.test(value)) return value;
   return /^[aeiou]/i.test(value) ? `an ${value}` : `a ${value}`;
 }
 
+function complementLabel(word) {
+  if (word.id === "watashi") return "me";
+  if (word.id === "sakura") return "you";
+  if (word.id === "yuki") return "him";
+  if (word.id === "tanaka") return "her";
+  return indefinite(meaning(word));
+}
+
 function subjectLabel(word) {
-  if (/^(Sakura|Yuki|Tanaka|Japan|America)$/i.test(meaning(word))) return meaning(word);
+  if (word.id === "watashi") return "I";
+  if (word.id === "sakura") return "you";
+  if (word.id === "yuki") return "he";
+  if (word.id === "tanaka") return "she";
+  if (/^(Japan|America)$/i.test(meaning(word))) return meaning(word);
   return `the ${meaning(word)}`;
 }
 
+function presentQuestion(subject, complement) {
+  if (subject.id === "watashi") return `Am I ${complement}?`;
+  if (subject.id === "sakura") return `Are you ${complement}?`;
+  return `Is ${subjectLabel(subject)} ${complement}?`;
+}
+
+function presentClause(subject, complement) {
+  if (subject.id === "watashi") return `I am ${complement}`;
+  if (subject.id === "sakura") return `You are ${complement}`;
+  return `${subjectLabel(subject).replace(/^./, (letter) => letter.toUpperCase())} is ${complement}`;
+}
+
 function optionLabel(word) {
-  return indefinite(meaning(word));
+  return complementLabel(word);
 }
 
 function unit2ChoiceFrames(words) {
@@ -154,8 +178,8 @@ export function generateCardCandidate({ source, pacing, unitId, cardNumber, vari
     const word = choose(current, seed);
     return card(
       `u${String(unitId).padStart(3, "0")}-c${String(cardNumber).padStart(3, "0")}-v${variant}`,
-      [token(word), grammar.desu],
-      `It's ${indefinite(meaning(word))}`,
+      [token(word)],
+      meaning(word),
       ["generated", "vocabulary introduction"],
       { band: band.id, introducedWordIds: [word.id], fact: "Current-unit vocabulary is introduced before the unit leans on heavier mixing." },
     );
@@ -167,7 +191,7 @@ export function generateCardCandidate({ source, pacing, unitId, cardNumber, vari
     return card(
       `u${String(unitId).padStart(3, "0")}-c${String(cardNumber).padStart(3, "0")}-v${variant}`,
       [token(subject), grammar.wa, token(comment), grammar.desu],
-      `The ${meaning(subject)} is ${indefinite(meaning(comment))}`,
+      presentClause(subject, complementLabel(comment)),
       ["generated", "current vocabulary drill"],
       { band: band.id, introducedWordIds: [], fact: "`は` marks what the sentence is about, and `です` gives the comment." },
     );
@@ -180,7 +204,7 @@ export function generateCardCandidate({ source, pacing, unitId, cardNumber, vari
     return card(
       `u${String(unitId).padStart(3, "0")}-c${String(cardNumber).padStart(3, "0")}-v${variant}`,
       [token(subject), grammar.wa, token(optionA), grammar.ka, token(optionB), grammar.desu, grammar.ka, grammar.question],
-      `Is ${subjectLabel(subject)} ${optionLabel(optionA)} or ${optionLabel(optionB)}?`,
+      presentQuestion(subject, `${optionLabel(optionA)} or ${optionLabel(optionB)}`),
       ["generated", unit.grammarFocus],
       { band: band.id, introducedWordIds: [], fact: "The unit grammar focus appears after the vocabulary landing zone and before the cutoff." },
     );

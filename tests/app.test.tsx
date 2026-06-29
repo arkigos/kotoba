@@ -18,6 +18,10 @@ function lastSpoken() {
   return spokenCalls().at(-1)?.[0];
 }
 
+function expectEnglishMeaning(text: string) {
+  expect(screen.getAllByText(text).length).toBeGreaterThan(0);
+}
+
 describe("practice player", () => {
   beforeEach(() => {
     vi.useRealTimers();
@@ -143,10 +147,10 @@ describe("practice player", () => {
 
     await user.click(screen.getByRole("button", { name: /settings/i }));
     await user.click(screen.getByLabelText(/start revealed/i));
-    expect(screen.getByText(unit001.cards[0].english)).toBeInTheDocument();
+    expectEnglishMeaning(unit001.cards[0].english);
 
     await user.click(screen.getByRole("button", { name: /^next$/i }));
-    expect(screen.getByText(unit001.cards[1].english)).toBeInTheDocument();
+    expectEnglishMeaning(unit001.cards[1].english);
   });
 
   it("applies study mode presets without adding footer clutter", async () => {
@@ -160,7 +164,7 @@ describe("practice player", () => {
     expect(screen.queryByRole("button", { name: /hide image/i })).not.toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: "Recall" }));
-    expect(screen.getByText(unit001.cards[0].english)).toBeInTheDocument();
+    expectEnglishMeaning(unit001.cards[0].english);
     expect(screen.queryByLabelText(/image/i)).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: /show japanese/i })).toBeInTheDocument();
   });
@@ -175,7 +179,7 @@ describe("practice player", () => {
     await user.selectOptions(screen.getByRole("combobox", { name: /front side/i }), "english");
     await user.selectOptions(screen.getByRole("combobox", { name: /japanese display/i }), "romaji");
 
-    expect(screen.getByText(unit001.cards[0].english)).toBeInTheDocument();
+    expectEnglishMeaning(unit001.cards[0].english);
     await user.click(screen.getByRole("button", { name: /show japanese/i }));
     expect(screen.getByLabelText("Japanese sentence")).toHaveTextContent("watashi");
   });
@@ -262,7 +266,7 @@ describe("practice player", () => {
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[1].line.join(""));
 
     fireEvent.keyDown(window, { key: "1" });
-    expect(screen.getByText(unit001.cards[1].english)).toBeInTheDocument();
+    expectEnglishMeaning(unit001.cards[1].english);
     expect(screen.getByRole("button", { name: /^play audio$/i })).toBeInTheDocument();
 
     fireEvent.keyDown(window, { key: "2" });

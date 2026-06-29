@@ -114,9 +114,9 @@ const verbForms = new Map([
 
 const people = [
   ["watashi", "I", false],
-  ["sakura", "Sakura", true],
-  ["yuki", "Yuki", true],
-  ["tanaka", "Tanaka", true],
+  ["sakura", "you", false],
+  ["yuki", "he", true],
+  ["tanaka", "she", true],
   ["sensei", "The teacher", true],
   ["gakusei", "The student", true],
   ["tomodachi", "My friend", true],
@@ -151,13 +151,14 @@ function timedActionEnglish(person, time, verbId) {
 
 function questionSubject(person) {
   if (person[0] === "watashi") return "I";
-  if (["Sakura", "Yuki", "Tanaka"].includes(person[1])) return person[1];
+  if (["you", "he", "she"].includes(person[1])) return person[1];
   return person[1].replace(/^The /, "the ").replace(/^My /, "my ");
 }
 
 function questionEnglish(person, verbId) {
   const form = verbForms.get(verbId);
   if (person[0] === "watashi") return `Do I ${form[2]}?`;
+  if (!person[2]) return `Do ${questionSubject(person)} ${form[2]}?`;
   return `Does ${questionSubject(person)} ${form[2]}?`;
 }
 

@@ -78,6 +78,13 @@ Each `newWords` entry has:
 
 New words must not duplicate any earlier unit word by obvious surface, reading, and meaning.
 
+Vocabulary `id` values are durable curriculum keys. If an early word is renamed
+or recast for learner-facing quality, prefer preserving the existing id and
+updating its `surface`, `reading`, and `meaning` so review scheduling and saved
+card references do not split across two vocabulary identities. Unit 1 currently
+keeps the legacy ids `sakura`, `yuki`, and `tanaka` as stable keys for the
+learner-facing pronouns `あなた`, `彼`, and `彼女`.
+
 ## Cards
 
 Each card has:

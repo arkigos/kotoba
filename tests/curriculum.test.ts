@@ -156,12 +156,40 @@ describe("curriculum word bins", () => {
     }
   });
 
-  it("opens Unit 1 with complete sentence drills before isolated identity drills", () => {
+  it("opens Unit 1 with vocabulary atoms before one-slot sentence swaps", () => {
     const unit = unitModules[unitModulePath(1)].default;
-    expect(unit.cards[0].english).toBe("I am a student");
-    expect(unit.cards[1].english).toBe("Sakura is a student");
-    expect(unit.cards.slice(0, 7).every((card) => card.line.length >= 4)).toBe(true);
-    expect(unit.cards.slice(0, 7).some((card) => card.english === "It's Sakura")).toBe(false);
+    expect(unit.cards.slice(0, 10).map((card) => card.line.length)).toEqual(Array.from({ length: 10 }, () => 1));
+    expect(unit.cards.slice(0, 12).map((card) => card.english)).toEqual([
+      "I",
+      "student",
+      "teacher",
+      "Japan",
+      "America",
+      "name",
+      "you",
+      "he",
+      "she",
+      "friend",
+      "am; is; are",
+      "topic marker",
+    ]);
+    expect(unit.cards.slice(12, 16).map((card) => card.english)).toEqual([
+      "I am a student",
+      "You are a student",
+      "He is a student",
+      "She is a student",
+    ]);
+  });
+
+  it("keeps legacy name vocabulary out of authored learner-facing text", () => {
+    const visibleNamePattern = /Sakura|Yuki|Tanaka|さくら|ユキ|田中/;
+    for (const unit of Object.values(unitModules).map((module) => module.default)) {
+      for (const card of unit.cards) {
+        expect(card.english).not.toMatch(visibleNamePattern);
+        expect(card.line.join("")).not.toMatch(visibleNamePattern);
+        expect(card.tokens?.map((token) => `${token.surface}${token.explain}`).join(" ")).not.toMatch(visibleNamePattern);
+      }
+    }
   });
 
   it("splits desu and ka in rebuilt foundation questions", () => {

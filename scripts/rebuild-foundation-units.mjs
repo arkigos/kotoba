@@ -28,9 +28,8 @@ const g = {
   dewaArimasenDeshita: () => grammar("ではありませんでした", "でわありませんでした", "was not; polite past negative identity"),
 };
 
-const properIds = new Set(["watashi", "sakura", "yuki", "tanaka", "nihon", "amerika"]);
-const countryIds = new Set(["nihon", "amerika"]);
-const personIds = new Set(["watashi", "sakura", "yuki", "tanaka"]);
+const properIds = new Set(["nihon", "amerika"]);
+const pronounIds = new Set(["watashi", "sakura", "yuki", "tanaka"]);
 const pluralMeanings = new Map([
   ["neko", "cats"],
   ["inu", "dogs"],
@@ -44,17 +43,25 @@ function bareMeaning(word) {
 
 function indefinite(word) {
   const meaning = bareMeaning(word);
+  if (pronounIds.has(word.id)) return meaning;
   if (properIds.has(word.id)) return meaning;
   return /^[aeiou]/i.test(meaning) ? `an ${meaning}` : `a ${meaning}`;
 }
 
 function identityComplement(word) {
-  return word.id === "watashi" ? "me" : indefinite(word);
+  if (word.id === "watashi") return "me";
+  if (word.id === "sakura") return "you";
+  if (word.id === "yuki") return "him";
+  if (word.id === "tanaka") return "her";
+  return indefinite(word);
 }
 
 function subject(word) {
   const meaning = bareMeaning(word);
   if (word.id === "watashi") return "I";
+  if (word.id === "sakura") return "you";
+  if (word.id === "yuki") return "he";
+  if (word.id === "tanaka") return "she";
   if (properIds.has(word.id)) return meaning;
   return `the ${meaning}`;
 }
@@ -64,22 +71,27 @@ function sentenceStart(value) {
 }
 
 function presentClause(word, complement) {
+  if (word.id === "sakura") return `You are ${complement}`;
   return word.id === "watashi" ? `I am ${complement}` : `${sentenceStart(subject(word))} is ${complement}`;
 }
 
 function presentQuestion(word, complement) {
+  if (word.id === "sakura") return `Are you ${complement}?`;
   return word.id === "watashi" ? `Am I ${complement}?` : `Is ${subject(word)} ${complement}?`;
 }
 
 function negativeClause(word, complement) {
+  if (word.id === "sakura") return `You are not ${complement}`;
   return word.id === "watashi" ? `I am not ${complement}` : `${sentenceStart(subject(word))} is not ${complement}`;
 }
 
 function pastClause(word, complement) {
+  if (word.id === "sakura") return `You were ${complement}`;
   return word.id === "watashi" ? `I was ${complement}` : `${sentenceStart(subject(word))} was ${complement}`;
 }
 
 function pastNegativeClause(word, complement) {
+  if (word.id === "sakura") return `You were not ${complement}`;
   return word.id === "watashi" ? `I was not ${complement}` : `${sentenceStart(subject(word))} was not ${complement}`;
 }
 
@@ -89,9 +101,9 @@ function plural(word) {
 
 function possessive(owner) {
   if (owner.id === "watashi") return "my";
-  if (owner.id === "sakura") return "Sakura's";
-  if (owner.id === "yuki") return "Yuki's";
-  if (owner.id === "tanaka") return "Tanaka's";
+  if (owner.id === "sakura") return "your";
+  if (owner.id === "yuki") return "his";
+  if (owner.id === "tanaka") return "her";
   return `the ${bareMeaning(owner)}'s`;
 }
 
@@ -135,6 +147,14 @@ function add(cards, unitId, parts, english, fact, grammarTags) {
   cards.push(makeCard(unitId, cards.length + 1, parts, english, fact, grammarTags));
 }
 
+function vocabIntro(cards, unitId, word) {
+  add(cards, unitId, [token(word)], bareMeaning(word), "New vocabulary appears by itself before sentence context.", ["vocabulary introduction"]);
+}
+
+function grammarIntro(cards, unitId, part, english, fact) {
+  add(cards, unitId, [part], english, fact, ["grammar introduction"]);
+}
+
 function identity(cards, unitId, word, fact = "New vocabulary lands first in a familiar identity sentence.") {
   add(cards, unitId, [token(word), g.desu()], `It's ${identityComplement(word)}`, fact, ["Aです"]);
 }
@@ -144,19 +164,19 @@ function identityQuestion(cards, unitId, word, fact = "`か` turns the identity 
 }
 
 function topic(cards, unitId, left, right, fact, tags = ["AはBです"]) {
-  add(cards, unitId, [token(left), g.wa(), token(right), g.desu()], presentClause(left, indefinite(right)), fact, tags);
+  add(cards, unitId, [token(left), g.wa(), token(right), g.desu()], presentClause(left, identityComplement(right)), fact, tags);
 }
 
 function topicQuestion(cards, unitId, left, right, fact, tags = ["AはBです", "か"]) {
-  add(cards, unitId, [token(left), g.wa(), token(right), g.desu(), g.ka(), g.q()], presentQuestion(left, indefinite(right)), fact, tags);
+  add(cards, unitId, [token(left), g.wa(), token(right), g.desu(), g.ka(), g.q()], presentQuestion(left, identityComplement(right)), fact, tags);
 }
 
 function choice(cards, unitId, first, second, fact, tags = ["AかBですか"]) {
-  add(cards, unitId, [token(first), g.ka(), token(second), g.desu(), g.ka(), g.q()], `Is it ${indefinite(first)} or ${indefinite(second)}?`, fact, tags);
+  add(cards, unitId, [token(first), g.ka(), token(second), g.desu(), g.ka(), g.q()], `Is it ${identityComplement(first)} or ${identityComplement(second)}?`, fact, tags);
 }
 
 function topicChoice(cards, unitId, left, first, second, fact, tags = ["AはBかCですか"]) {
-  add(cards, unitId, [token(left), g.wa(), token(first), g.ka(), token(second), g.desu(), g.ka(), g.q()], `Is ${subject(left)} ${indefinite(first)} or ${indefinite(second)}?`, fact, tags);
+  add(cards, unitId, [token(left), g.wa(), token(first), g.ka(), token(second), g.desu(), g.ka(), g.q()], presentQuestion(left, `${identityComplement(first)} or ${identityComplement(second)}`), fact, tags);
 }
 
 function compound(cards, unitId, first, second, category, englishCategory, fact, tags = ["AとBはCです"]) {
@@ -179,7 +199,7 @@ function topicNegative(cards, unitId, left, right, casual = false) {
     cards,
     unitId,
     [token(left), g.wa(), token(right), casual ? g.jaArimasen() : g.dewaArimasen()],
-    negativeClause(left, indefinite(right)),
+    negativeClause(left, identityComplement(right)),
     casual ? "`じゃありません` is a shorter polite negative." : "`ではありません` is kept as one early set phrase: polite negative identity.",
     [casual ? "AはBじゃありません" : "AはBではありません"],
   );
@@ -190,7 +210,7 @@ function pastIdentity(cards, unitId, word) {
 }
 
 function topicPast(cards, unitId, left, right) {
-  add(cards, unitId, [token(left), g.wa(), token(right), g.deshita()], pastClause(left, indefinite(right)), "A topic can be described in the polite past with `でした`.", ["AはBでした"]);
+  add(cards, unitId, [token(left), g.wa(), token(right), g.deshita()], pastClause(left, identityComplement(right)), "A topic can be described in the polite past with `でした`.", ["AはBでした"]);
 }
 
 function topicPastNegative(cards, unitId, left, right) {
@@ -198,7 +218,7 @@ function topicPastNegative(cards, unitId, left, right) {
     cards,
     unitId,
     [token(left), g.wa(), token(right), g.dewaArimasenDeshita()],
-    pastNegativeClause(left, indefinite(right)),
+    pastNegativeClause(left, identityComplement(right)),
     "`ではありませんでした` is kept as one early set phrase: polite past negative identity.",
     ["AはBではありませんでした"],
   );
@@ -217,24 +237,27 @@ function buildUnit1(spec) {
   const cards = [];
   const vocab = spec.newWords.map((word) => w(words, word.id));
 
-  const openingTopics = [
-    ["watashi", "gakusei"],
-    ["sakura", "gakusei"],
-    ["tanaka", "sensei"],
-    ["yuki", "tomodachi"],
-    ["namae", "sakura"],
-  ];
-  for (const [a, b] of openingTopics) {
-    topic(cards, 1, w(words, a), w(words, b), "Unit 1 starts with complete topic-comment sentences before shorter identity drills.", ["early AはB", "AはBです"]);
-  }
-  add(cards, 1, [token(w(words, "sensei")), g.to(), token(w(words, "gakusei")), g.desu()], "It's a teacher and a student", "`と` joins two nouns.", ["AとB"]);
-  add(cards, 1, [token(w(words, "nihon")), g.to(), token(w(words, "amerika")), g.desu()], "It's Japan and America", "`と` joins two nouns.", ["AとB"]);
+  vocab.forEach((word) => vocabIntro(cards, 1, word));
+  grammarIntro(cards, 1, g.desu(), "am; is; are", "`です` is the polite identity marker.");
+  grammarIntro(cards, 1, g.wa(), "topic marker", "`は` marks what the sentence is about.");
 
+  const subjects = ["watashi", "sakura", "yuki", "tanaka"];
+  const roles = ["gakusei", "sensei", "tomodachi"];
+  for (const role of roles) {
+    for (const subjectId of subjects) {
+      topic(cards, 1, w(words, subjectId), w(words, role), "One slot changes while the sentence frame stays fixed.", ["early AはB", "AはBです"]);
+    }
+  }
+  for (const role of roles) {
+    for (const subjectId of subjects) {
+      topicQuestion(cards, 1, w(words, subjectId), w(words, role), "`です` and `か` stay separate so the question marker is visible.", ["early AはB", "AはBです", "か"]);
+    }
+  }
   vocab.forEach((word) => identityQuestion(cards, 1, word));
-  for (const word of vocab.filter((item) => item.id !== "watashi")) identity(cards, 1, word);
 
   const pairs = [
-    ["sakura", "yuki"],
+    ["watashi", "sakura"],
+    ["yuki", "tanaka"],
     ["sensei", "gakusei"],
     ["nihon", "amerika"],
     ["tanaka", "tomodachi"],
@@ -242,11 +265,10 @@ function buildUnit1(spec) {
     ["sakura", "tomodachi"],
     ["yuki", "gakusei"],
     ["sensei", "tanaka"],
-    ["namae", "sakura"],
-    ["namae", "yuki"],
+    ["tomodachi", "sensei"],
   ];
   for (const [a, b] of pairs) {
-    add(cards, 1, [token(w(words, a)), g.to(), token(w(words, b)), g.desu()], `It's ${indefinite(w(words, a))} and ${indefinite(w(words, b))}`, "`と` joins two nouns.", ["AとB"]);
+    add(cards, 1, [token(w(words, a)), g.to(), token(w(words, b)), g.desu()], `It's ${identityComplement(w(words, a))} and ${identityComplement(w(words, b))}`, "`と` joins two nouns.", ["AとB"]);
   }
   for (const [a, b] of pairs) choice(cards, 1, w(words, a), w(words, b), "`か` can link alternatives inside a question.", ["AかB", "か"]);
 
@@ -257,15 +279,12 @@ function buildUnit1(spec) {
     ["tanaka", "sensei"],
     ["sensei", "sensei"],
     ["gakusei", "gakusei"],
+    ["tomodachi", "tomodachi"],
     ["nihon", "nihon"],
     ["amerika", "amerika"],
-    ["namae", "sakura"],
-    ["tomodachi", "gakusei"],
+    ["watashi", "tomodachi"],
   ];
-  for (const [a, b] of topics) topic(cards, 1, w(words, a), w(words, b), "`は` marks the topic for a simple identity comment.", ["early AはB", "AはBです"]);
-  for (const [a, b] of topics) topicQuestion(cards, 1, w(words, a), w(words, b), "`です` and `か` stay separate so the question marker is visible.", ["early AはB", "AはBです", "か"]);
-  for (const [a, b] of cycle(pairs, 7)) choice(cards, 1, w(words, a), w(words, b), "`か` can ask the listener to choose between two possibilities.", ["AかB", "か"]);
-  for (const [a, b] of cycle(topics, 7)) topic(cards, 1, w(words, a), w(words, b), "`は` marks what the sentence is about.", ["early AはB", "AはBです"]);
+  for (const [a, b] of cycle(topics, 14)) topic(cards, 1, w(words, a), w(words, b), "`は` marks the topic for a simple identity comment.", ["early AはB", "AはBです"]);
 
   return cards;
 }
