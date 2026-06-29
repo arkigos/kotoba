@@ -102,6 +102,22 @@ Cards are authored as one sentence or phrase. Do not include Japanese full-stop
 tokens (`。`) in `line`, `tts`, `explain`, or `tokens`; the practice UI gives the
 sentence its visual boundary.
 
+## Tokenization Rule
+
+Productive particles should remain visible as their own tokens. In foundation
+questions, write `です` and `か` as separate parts rather than a single `ですか`
+chunk so learners can recognize `か` as the question marker.
+
+Early negative copula forms are intentionally chunked:
+
+- `ではありません`: reading `でわありません`, explained as polite negative identity
+- `じゃありません`: explained as contracted polite negative identity
+- `ではありませんでした`: reading `でわありませんでした`, explained as polite past
+  negative identity
+
+These chunks can be decomposed in a later grammar unit, but early units should
+not force learners to scrutinize the internal `は` in `ではありません`.
+
 ## Vocabulary Availability And Review
 
 For unit `N`, usable helper vocabulary comes from every unit already introduced:

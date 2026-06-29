@@ -19,6 +19,11 @@ as a grammar preview. If a learner-facing word appears in a card, it must either
 already be known, be part of the current unit's `newWords`, or be due review
 from an earlier source unit.
 
+Productive particles should stay visible. Prefer `です` + `か` as separate card
+parts over a single `ですか` token. Keep early negative copula forms such as
+`ではありません` chunked as set phrases until the course intentionally teaches
+their internal structure.
+
 ## Selection Process
 
 Before choosing words for unit `N`:

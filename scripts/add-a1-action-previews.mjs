@@ -78,22 +78,6 @@ function makePreviews(unitId, lexicon) {
   };
 
   const plans = {
-    2: [
-      [[w("sensei"), p.to, w("gakusei"), p.wa, masu.eat], "The teacher and student eat"],
-      [[w("sakura"), p.to, w("yuki"), p.wa, masu.read], "Sakura and Yuki read"],
-    ],
-    3: [
-      [[w("haha"), p.to, w("chichi"), p.wa, masu.come], "Mother and father come"],
-      [[w("ane"), p.to, w("otouto"), p.wa, masu.eat], "Older sister and younger brother eat"],
-    ],
-    4: [
-      [[w("isha"), p.wa, masu.come], "The doctor comes"],
-      [[w("kaishain"), p.wa, masu.work], "The company employee works"],
-    ],
-    5: [
-      [[w("asa"), masu.eat], "I eat in the morning"],
-      [[w("yoru"), masu.drink], "I drink at night"],
-    ],
     6: [
       [[w("mizu"), p.wo, masu.drink], "I drink water"],
       [[w("ocha"), p.wo, masu.drink], "I drink tea"],

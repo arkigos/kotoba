@@ -2,10 +2,10 @@ import { cardBandForPosition, vocabularyPoolsForUnit } from "./curriculum-model.
 
 const grammar = {
   desu: { surface: "です", reading: "です", explain: "polite identity marker" },
-  desuKa: { surface: "ですか", reading: "ですか", explain: "polite question ending" },
   wa: { surface: "は", reading: "わ", explain: "topic marker" },
   ka: { surface: "か", reading: "か", explain: "or; question marker" },
   to: { surface: "と", reading: "と", explain: "and" },
+  question: { surface: "？", reading: "？", explain: "question mark" },
 };
 
 function token(word) {
@@ -169,7 +169,7 @@ export function generateCardCandidate({ source, pacing, unitId, cardNumber, vari
       [token(subject), grammar.wa, token(comment), grammar.desu],
       `The ${meaning(subject)} is ${indefinite(meaning(comment))}`,
       ["generated", "current vocabulary drill"],
-      { band: band.id, introducedWordIds: [], fact: "The current word set gets repeated in a familiar frame before late mixed practice." },
+      { band: band.id, introducedWordIds: [], fact: "`は` marks what the sentence is about, and `です` gives the comment." },
     );
   }
 
@@ -179,7 +179,7 @@ export function generateCardCandidate({ source, pacing, unitId, cardNumber, vari
     const [optionA, optionB] = frame.options;
     return card(
       `u${String(unitId).padStart(3, "0")}-c${String(cardNumber).padStart(3, "0")}-v${variant}`,
-      [token(subject), grammar.wa, token(optionA), grammar.ka, token(optionB), grammar.desuKa],
+      [token(subject), grammar.wa, token(optionA), grammar.ka, token(optionB), grammar.desu, grammar.ka, grammar.question],
       `Is ${subjectLabel(subject)} ${optionLabel(optionA)} or ${optionLabel(optionB)}?`,
       ["generated", unit.grammarFocus],
       { band: band.id, introducedWordIds: [], fact: "The unit grammar focus appears after the vocabulary landing zone and before the cutoff." },
@@ -193,6 +193,6 @@ export function generateCardCandidate({ source, pacing, unitId, cardNumber, vari
     [token(frame.first), grammar.to, token(frame.second), grammar.wa, token(frame.category), grammar.desu],
     `${subjectLabel(frame.first)} and ${subjectLabel(frame.second)} are ${frame.categoryEnglish}`,
     ["generated", "review and mix"],
-    { band: band.id, introducedWordIds: [], fact: "Late cards mix known material and due review without first exposures." },
+    { band: band.id, introducedWordIds: [], fact: "`と` joins two nouns before the sentence gives one shared comment." },
   );
 }

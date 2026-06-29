@@ -8,7 +8,8 @@ const unitModules = import.meta.glob<{
   default: {
     cards: Array<{
       grammarTags?: string[];
-      tokens?: Array<{ surface: string; reading: string }>;
+      line: string[];
+      tokens?: Array<{ surface: string; reading: string; explain?: string }>;
       tts: string[];
     }>;
   };
@@ -141,15 +142,38 @@ describe("curriculum word bins", () => {
     ]);
   });
 
-  it("keeps early A1 action previews small and modular", () => {
+  it("keeps foundation units free of hidden action previews", () => {
     const previewTag = "early masu action preview";
-    const unit1 = unitModules[unitModulePath(1)].default;
-    expect(unit1.cards.filter((card) => card.grammarTags?.includes(previewTag))).toHaveLength(0);
+    for (let unitId = 1; unitId <= 5; unitId += 1) {
+      const unit = unitModules[unitModulePath(unitId)].default;
+      expect(unit.cards.filter((card) => card.grammarTags?.includes(previewTag))).toHaveLength(0);
+    }
 
-    for (let unitId = 2; unitId <= 14; unitId += 1) {
+    for (let unitId = 6; unitId <= 14; unitId += 1) {
       const unit = unitModules[unitModulePath(unitId)].default;
       expect(unit.cards.filter((card) => card.grammarTags?.includes(previewTag))).toHaveLength(2);
     }
+  });
+
+  it("splits desu and ka in rebuilt foundation questions", () => {
+    const allQuestionCards = [];
+    for (let unitId = 1; unitId <= 5; unitId += 1) {
+      const unit = unitModules[unitModulePath(unitId)].default;
+      for (const card of unit.cards) {
+        expect(card.tokens?.some((token) => token.surface === "ですか")).toBe(false);
+      }
+
+      const questionCards = unit.cards.filter((card) => card.line.includes("か"));
+      allQuestionCards.push(...questionCards);
+
+      for (const card of questionCards) {
+        const desuIndex = card.line.indexOf("です");
+        const kaIndex = card.line.indexOf("か", Math.max(desuIndex, 0));
+        expect(desuIndex).toBeGreaterThanOrEqual(0);
+        expect(kaIndex).toBeGreaterThan(desuIndex);
+      }
+    }
+    expect(allQuestionCards.length).toBeGreaterThan(0);
   });
 
   it("uses pronunciation readings for negative copula particles", () => {
@@ -158,11 +182,13 @@ describe("curriculum word bins", () => {
         card.tokens?.forEach((token, index) => {
           if (token.surface === "ではありません") {
             expect(token.reading).toBe("でわありません");
+            expect(token.explain).toMatch(/polite negative/);
             expect(card.tts[index]).toBe("でわありません");
           }
 
           if (token.surface === "ではありませんでした") {
             expect(token.reading).toBe("でわありませんでした");
+            expect(token.explain).toMatch(/polite past negative/);
             expect(card.tts[index]).toBe("でわありませんでした");
           }
         });

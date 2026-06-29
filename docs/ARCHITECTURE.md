@@ -135,6 +135,10 @@ Semantic checks are guardrails for obvious bad pairings and inaccurate English.
 They should not prevent goofy-but-valid sentences when the grammar and word
 practice are useful.
 
+Foundation tokenization favors visible productive particles. `ですか` should be
+authored as `です` + `か`, while early negative copula chunks such as
+`ではありません` stay together with pronunciation readings like `でわありません`.
+
 ## Curriculum Runtime Model
 
 The app consumes finished unit data. Unit files already contain the card
