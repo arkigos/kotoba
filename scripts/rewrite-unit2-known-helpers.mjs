@@ -119,37 +119,37 @@ const compoundTopics = [
   ["tanaka", "sakura", "hito", "Tanaka and Sakura are people.", "Are Tanaka and Sakura people?"],
   ["ie", "gakkou", "basho", "Houses and schools are places.", "Are houses and schools places?"],
   ["nihon", "amerika", "basho", "Japan and America are places.", "Are Japan and America places?"],
-  ["hon", "ie", "mono", "Books and houses are things.", "Are books and houses things?"],
-  ["hon", "gakkou", "mono", "Books and schools are things.", "Are books and schools things?"],
-  ["neko", "hon", "mono", "Cats and books are things.", "Are cats and books things?"],
+  ["isha", "gakusei", "hito", "Doctors and students are people.", "Are doctors and students people?"],
+  ["tomodachi", "tanaka", "hito", "The friend and Tanaka are people.", "Are the friend and Tanaka people?"],
+  ["sensei", "tomodachi", "hito", "The teacher and the friend are people.", "Are the teacher and the friend people?"],
 ];
 compoundTopics.forEach(([a, b, c, en]) => push([a, jp.to, b, jp.wa, c, jp.desu, jp.period], en, pair, ["A\u3068B\u306fC\u3067\u3059"]));
 compoundTopics.forEach(([a, b, c, _en, q]) => push([a, jp.to, b, jp.wa, c, jp.desuKa, jp.question], q, pair, ["A\u3068B\u306fC\u3067\u3059\u304b"]));
 
 [
-  ["sakura", "isha", "hito", "Is Sakura a doctor or a person?"],
-  ["yuki", "gakusei", "hito", "Is Yuki a student or a person?"],
-  ["tanaka", "sensei", "hito", "Is Tanaka a teacher or a person?"],
-  ["neko", "inu", "doubutsu", "Is it a cat, a dog, or an animal?"],
-  ["hon", "ie", "mono", "Is it a book, a house, or a thing?"],
-  ["ie", "gakkou", "basho", "Is it a house, a school, or a place?"],
-  ["isha", "sensei", "hito", "Is it a doctor, a teacher, or a person?"],
-  ["nihon", "amerika", "basho", "Is it Japan, America, or a place?"],
-  ["neko", "hon", "mono", "Is it a cat, a book, or a thing?"],
-  ["gakkou", "hon", "mono", "Is it a school, a book, or a thing?"],
-].forEach(([a, b, c, en]) => push([a, jp.ka, b, jp.ka, c, jp.desuKa, jp.question], en, choice, ["A\u304bB\u304bC\u3067\u3059\u304b"]));
+  ["sakura", "yuki", "Is it Sakura or Yuki?"],
+  ["gakusei", "sensei", "Are they a student or a teacher?"],
+  ["tanaka", "isha", "Is it Tanaka or the doctor?"],
+  ["neko", "inu", "Is it a cat or a dog?"],
+  ["hon", "namae", "Is it a book or a name?"],
+  ["ie", "gakkou", "Is it a house or a school?"],
+  ["isha", "sensei", "Is it a doctor or a teacher?"],
+  ["nihon", "amerika", "Is it Japan or America?"],
+  ["tomodachi", "gakusei", "Are they a friend or a student?"],
+  ["tanaka", "tomodachi", "Is it Tanaka or a friend?"],
+].forEach(([a, b, en]) => push([a, jp.ka, b, jp.desuKa, jp.question], en, choice, ["A\u304bB\u3067\u3059\u304b"]));
 
 [
-  ["neko", "doubutsu", "mono", "Is the cat an animal or a thing?"],
-  ["inu", "doubutsu", "mono", "Is the dog an animal or a thing?"],
-  ["ie", "basho", "mono", "Is the house a place or a thing?"],
-  ["gakkou", "basho", "mono", "Is the school a place or a thing?"],
-  ["isha", "hito", "sensei", "Is the doctor a person or a teacher?"],
-  ["sensei", "hito", "isha", "Is the teacher a person or a doctor?"],
-  ["gakusei", "hito", "tomodachi", "Is the student a person or a friend?"],
-  ["nihon", "basho", "mono", "Is Japan a place or a thing?"],
-  ["amerika", "basho", "mono", "Is America a place or a thing?"],
-  ["hon", "mono", "basho", "Is the book a thing or a place?"],
+  ["sakura", "gakusei", "sensei", "Is Sakura a student or a teacher?"],
+  ["yuki", "gakusei", "tomodachi", "Is Yuki a student or a friend?"],
+  ["tanaka", "sensei", "isha", "Is Tanaka a teacher or a doctor?"],
+  ["doubutsu", "neko", "inu", "Is the animal a cat or a dog?"],
+  ["namae", "sakura", "yuki", "Is the name Sakura or Yuki?"],
+  ["tomodachi", "gakusei", "sensei", "Is the friend a student or a teacher?"],
+  ["isha", "tanaka", "sakura", "Is the doctor Tanaka or Sakura?"],
+  ["basho", "nihon", "amerika", "Is the place Japan or America?"],
+  ["namae", "tanaka", "sakura", "Is the name Tanaka or Sakura?"],
+  ["hito", "sensei", "isha", "Is the person a teacher or a doctor?"],
 ].forEach(([a, b, c, en]) => push([a, jp.wa, b, jp.ka, c, jp.desuKa, jp.question], en, choice, ["A\u306fB\u304bC\u3067\u3059\u304b"]));
 
 [
@@ -158,10 +158,10 @@ compoundTopics.forEach(([a, b, c, _en, q]) => push([a, jp.to, b, jp.wa, c, jp.de
   ["sensei", "gakusei", "hito", "The teacher and the student are people"],
   ["isha", "tanaka", "hito", "The doctor and Tanaka are people"],
   ["neko", "inu", "doubutsu", "The cat and the dog are animals"],
-  ["ie", "nihon", "basho", "The house and Japan are places"],
-  ["gakkou", "amerika", "basho", "The school and America are places"],
-  ["hon", "namae", "mono", "The book and the name are things"],
-  ["neko", "hon", "mono", "The cat and the book are things"],
+  ["gakkou", "ie", "basho", "The school and the house are places"],
+  ["amerika", "nihon", "basho", "America and Japan are places"],
+  ["isha", "sensei", "hito", "The doctor and the teacher are people"],
+  ["gakusei", "tomodachi", "hito", "The student and the friend are people"],
   ["ie", "gakkou", "basho", "The house and the school are places"],
 ].forEach(([a, b, c, en]) => push([a, jp.to, b, jp.wa, c, jp.desu, jp.period], en, paired, ["A\u3068B\u306fC\u3067\u3059"]));
 

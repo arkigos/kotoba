@@ -775,11 +775,20 @@ function generateCards(spec) {
 
   if (spec.id === 12) {
     const placeNouns = [["kouen", "park"], ["toshokan", "library"], ["gakkou", "school"], ["mise", "shop"], ["eki", "station"], ["byouin", "hospital"], ["kaisha", "company"], ["heya", "room"], ["ie", "house"], ["basho", "place"]];
+    const questionForNaAdj = (wordId, meaning) => {
+      if (wordId === "genki" || wordId === "shinsetsu") {
+        return { parts: [word("dare"), jp.ga(), word(wordId), jp.desuKa(), jp.q()], english: `Who is ${meaning}?` };
+      }
+      if (wordId === "kantan" || wordId === "taisetsu") {
+        return { parts: [word("nan"), jp.ga(), word(wordId), jp.desuKa(), jp.q()], english: `What is ${meaning}?` };
+      }
+      return { parts: [word("doko"), jp.ga(), word(wordId), jp.desuKa(), jp.q()], english: `Which place is ${meaning}?` };
+    };
     return simpleUnit(spec, [
       { rows: cycle(unitWords, 20), build: (r, i) => makeCard(spec.id, i, [word("koko"), jp.wa(), word(r[0]), jp.desu(), jp.p()], `It is ${r[1]} here.`, ["na-adjective present"], "A na-adjective before `です`.", facts.naAdj) },
       { rows: cycle(unitWords, 20), build: (r, i) => { const noun = placeNouns[i % placeNouns.length]; return makeCard(spec.id, i, [word(r[0]), jp.na(), word(noun[0]), jp.desu(), jp.p()], `It is ${adjectiveNounPhrase(r[1], noun[1])}.`, ["na-adjective before noun"], "A na-adjective linked to a noun with `な`.", facts.naAdj); } },
       { rows: cycle(unitWords, 20), build: (r, i) => { const noun = pools.places[(i + 3) % pools.places.length]; return makeCard(spec.id, i, [word(noun[0]), jp.wa(), word(r[0]), jp.desu(), jp.p()], `${capitalize(noun[1])} is ${r[1]}.`, ["na-adjective present"], "A place described with a na-adjective.", facts.naAdj); } },
-      { rows: cycle(unitWords, 20), build: (r, i) => makeCard(spec.id, i, [word("doko"), jp.ga(), word(r[0]), jp.desuKa(), jp.q()], `Which place is ${r[1]}?`, ["どこ", "na-adjective present"], "A question using a na-adjective as the missing description.", facts.naAdj) },
+      { rows: cycle(unitWords, 20), build: (r, i) => { const question = questionForNaAdj(r[0], r[1]); return makeCard(spec.id, i, question.parts, question.english, ["question words", "na-adjective present"], "A question using a na-adjective as the missing description.", facts.naAdj); } },
     ]);
   }
 

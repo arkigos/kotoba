@@ -4804,7 +4804,7 @@
         "どの",
         "会社",
         "の",
-        "人",
+        "会社員",
         "ですか",
         "？"
       ],
@@ -4814,7 +4814,7 @@
         "どの",
         "かいしゃ",
         "の",
-        "ひと",
+        "かいしゃいん",
         "ですか",
         "？"
       ],
@@ -4824,7 +4824,7 @@
         "which",
         "company",
         "possession or description marker",
-        "person",
+        "company employee",
         "polite question ending",
         "question mark"
       ],
@@ -4858,10 +4858,10 @@
           "explain": "possession or description marker"
         },
         {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
         },
         {
           "surface": "ですか",
@@ -4874,7 +4874,7 @@
           "explain": "question mark"
         }
       ],
-      "english": "Which company's person is Tanaka?",
+      "english": "Which company's employee is Tanaka?",
       "fact": "`誰の` asks whose. It is a compact and very useful combination.",
       "grammarTags": [
         "何",
@@ -5042,41 +5042,41 @@
     {
       "id": "u007-c077",
       "line": [
-        "学生",
+        "ユキ",
         "は",
         "どの",
         "学校",
         "の",
-        "人",
+        "学生",
         "ですか",
         "？"
       ],
       "tts": [
-        "がくせい",
+        "ゆき",
         "わ",
         "どの",
         "がっこう",
         "の",
-        "ひと",
+        "がくせい",
         "ですか",
         "？"
       ],
       "explain": [
-        "student",
+        "Yuki",
         "topic marker",
         "which",
         "school",
         "possession or description marker",
-        "person",
+        "student",
         "polite question ending",
         "question mark"
       ],
       "tokens": [
         {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
         },
         {
           "surface": "は",
@@ -5101,10 +5101,10 @@
           "explain": "possession or description marker"
         },
         {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
         },
         {
           "surface": "ですか",
@@ -5117,7 +5117,7 @@
           "explain": "question mark"
         }
       ],
-      "english": "Which school's person is the student?",
+      "english": "Which school is Yuki a student at?",
       "fact": "`誰` asks about a person, while `どれ` asks you to choose one item from a visible set.",
       "grammarTags": [
         "何",
@@ -5289,9 +5289,8 @@
         "は",
         "誰",
         "の",
-        "物",
-        "ではありません",
-        "か",
+        "本",
+        "ですか",
         "？"
       ],
       "tts": [
@@ -5299,9 +5298,8 @@
         "わ",
         "だれ",
         "の",
-        "もの",
-        "でわありません",
-        "か",
+        "ほん",
+        "ですか",
         "？"
       ],
       "explain": [
@@ -5309,9 +5307,8 @@
         "topic marker",
         "who",
         "possession or description marker",
-        "thing; object",
-        "polite negative identity",
-        "or; question marker",
+        "book",
+        "polite question ending",
         "question mark"
       ],
       "tokens": [
@@ -5338,20 +5335,15 @@
           "explain": "possession or description marker"
         },
         {
-          "surface": "物",
-          "reading": "もの",
-          "explain": "thing; object",
-          "wordId": "mono"
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
         },
         {
-          "surface": "ではありません",
-          "reading": "でわありません",
-          "explain": "polite negative identity"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "or; question marker"
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
         },
         {
           "surface": "？",
@@ -5359,7 +5351,7 @@
           "explain": "question mark"
         }
       ],
-      "english": "Whose thing is this not?",
+      "english": "Whose book is this?",
       "fact": "Question words usually sit where the missing answer would sit in the sentence.",
       "grammarTags": [
         "何",

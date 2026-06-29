@@ -3453,7 +3453,7 @@
           "explain": "polite identity marker"
         }
       ],
-      "english": "This clock is my mother's thing",
+      "english": "This clock is my mother's",
       "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
       "grammarTags": [
         "これ/それ/あれ",
@@ -4295,7 +4295,7 @@
         "は",
         "昨日",
         "の",
-        "物",
+        "写真",
         "でした"
       ],
       "tts": [
@@ -4303,7 +4303,7 @@
         "わ",
         "きのう",
         "の",
-        "もの",
+        "しゃしん",
         "でした"
       ],
       "explain": [
@@ -4311,8 +4311,8 @@
         "topic marker",
         "yesterday",
         "possession or description marker",
-        "thing; object",
-        "polite past identity"
+        "photo",
+        "polite past ending"
       ],
       "tokens": [
         {
@@ -4338,18 +4338,18 @@
           "explain": "possession or description marker"
         },
         {
-          "surface": "物",
-          "reading": "もの",
-          "explain": "thing; object",
-          "wordId": "mono"
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
         },
         {
           "surface": "でした",
           "reading": "でした",
-          "explain": "polite past identity"
+          "explain": "polite past ending"
         }
       ],
-      "english": "This was yesterday's thing",
+      "english": "This was yesterday's photo",
       "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
       "grammarTags": [
         "これ/それ/あれ",
@@ -4360,30 +4360,30 @@
       "id": "u006-c074",
       "line": [
         "その",
-        "時計",
+        "写真",
         "は",
         "先月",
         "の",
-        "物",
+        "写真",
         "でした"
       ],
       "tts": [
         "その",
-        "とけい",
+        "しゃしん",
         "わ",
         "せんげつ",
         "の",
-        "もの",
+        "しゃしん",
         "でした"
       ],
       "explain": [
         "that near you",
-        "clock; watch",
+        "photo",
         "topic marker",
         "last month",
         "possession or description marker",
-        "thing; object",
-        "polite past identity"
+        "photo",
+        "polite past ending"
       ],
       "tokens": [
         {
@@ -4393,10 +4393,10 @@
           "wordId": "sono"
         },
         {
-          "surface": "時計",
-          "reading": "とけい",
-          "explain": "clock; watch",
-          "wordId": "tokei"
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
         },
         {
           "surface": "は",
@@ -4415,18 +4415,18 @@
           "explain": "possession or description marker"
         },
         {
-          "surface": "物",
-          "reading": "もの",
-          "explain": "thing; object",
-          "wordId": "mono"
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
         },
         {
           "surface": "でした",
           "reading": "でした",
-          "explain": "polite past identity"
+          "explain": "polite past ending"
         }
       ],
-      "english": "That clock near you was last month's thing",
+      "english": "That photo near you was last month's photo",
       "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
       "grammarTags": [
         "これ/それ/あれ",
@@ -4441,7 +4441,7 @@
         "は",
         "去年",
         "の",
-        "場所",
+        "店",
         "ではありませんでした"
       ],
       "tts": [
@@ -4450,7 +4450,7 @@
         "わ",
         "きょねん",
         "の",
-        "ばしょ",
+        "みせ",
         "でわありませんでした"
       ],
       "explain": [
@@ -4459,8 +4459,8 @@
         "topic marker",
         "last year",
         "possession or description marker",
-        "place",
-        "polite past negative identity"
+        "shop",
+        "polite past negative ending"
       ],
       "tokens": [
         {
@@ -4492,18 +4492,18 @@
           "explain": "possession or description marker"
         },
         {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
         },
         {
           "surface": "ではありませんでした",
           "reading": "でわありませんでした",
-          "explain": "polite past negative identity"
+          "explain": "polite past negative ending"
         }
       ],
-      "english": "That shop over there was not last year's place",
+      "english": "That shop over there was not last year's shop",
       "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
       "grammarTags": [
         "これ/それ/あれ",

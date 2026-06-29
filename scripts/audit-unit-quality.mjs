@@ -24,6 +24,16 @@ const fatalPatterns = [
   [/\bWhere is the (Japan|America)\?/i, "adds `the` to a country name"],
   [/(ありますですか|いますですか)/, "has a malformed existence question"],
   [/(大きい|小さい|楽しい|難しい|暑い|寒い|新しい|古い)ではありません/, "uses na-adjective negative morphology on an i-adjective"],
+  [/\bor (a |an |the )?(person|thing|place|animal|object)\b/i, "uses a broad category as a choice option"],
+  [/\b(person|thing|place|animal|object) or\b/i, "uses a broad category as a choice option"],
+  [/\b(cat|dog)s? and (a |the )?books? are things\b/i, "mixes living beings and objects under a weak category"],
+  [/\bbooks? and (a |the )?(schools?|houses?) are things\b/i, "mixes objects and places under a weak category"],
+  [/\b(house|school) and (Japan|America) are places\b/i, "mixes local places and countries in a weak place-category pair"],
+  [/\b(Japan|America) and (the )?(house|school) are places\b/i, "mixes countries and local places in a weak place-category pair"],
+  [/\bWhich place is (healthy|kind|simple|important)\?/i, "asks a place-only question for a non-place description"],
+  [/\b(company|school)'s person\b/i, "uses unnatural `company/school's person` English"],
+  [/\bWhose thing\b/i, "uses vague `thing` where a concrete noun is available"],
+  [/\b(yesterday's thing|last month's thing|last year's place)\b/i, "uses vague time-linked thing/place English"],
 ];
 
 const warningPatterns = [
