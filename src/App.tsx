@@ -1,10 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import type { CSSProperties } from "react";
 import {
   BookOpen,
   CheckCircle2,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
+  CircleMinus,
   Eye,
   EyeOff,
   ImageOff,
@@ -305,29 +307,44 @@ export function App() {
     setExpandedLevels((current) => ({ ...current, [level.code]: !current[level.code] }));
   };
 
-  const renderUnitButton = (entry: UnitIndexEntry) => (
-    <button
-      key={entry.id}
-      className={[
-        "unit-button",
-        entry.id === progress.unitId ? "active" : "",
-        progress.completedUnits.includes(entry.id) ? "completed" : "",
-      ]
-        .filter(Boolean)
-        .join(" ")}
-      onClick={() => selectUnit(entry.id)}
-    >
-      <span className="unit-number">{String(entry.id).padStart(3, "0")}</span>
-      <strong>{entry.title}</strong>
-      <small>{progress.cardPositions[String(entry.id)] ? `Card ${progress.cardPositions[String(entry.id)] + 1}` : "Start"}</small>
-      {progress.completedUnits.includes(entry.id) && (
-        <span className="complete-pill">
-          <CheckCircle2 aria-hidden="true" />
-          Complete
-        </span>
-      )}
-    </button>
-  );
+  const getUnitProgressPercent = (entry: UnitIndexEntry) => {
+    if (progress.completedUnits.includes(entry.id)) return 100;
+    if (entry.id === unit.id) return progressPercent;
+
+    const savedPosition = progress.cardPositions[String(entry.id)];
+    if (typeof savedPosition !== "number") return 0;
+
+    return Math.min(99, Math.max(1, Math.round(((savedPosition + 1) / unit.cards.length) * 100)));
+  };
+
+  const renderUnitButton = (entry: UnitIndexEntry) => {
+    const unitProgressPercent = getUnitProgressPercent(entry);
+
+    return (
+      <button
+        key={entry.id}
+        className={[
+          "unit-button",
+          entry.id === progress.unitId ? "active" : "",
+          progress.completedUnits.includes(entry.id) ? "completed" : "",
+        ]
+          .filter(Boolean)
+          .join(" ")}
+        style={{ "--unit-progress": `${unitProgressPercent}%` } as CSSProperties}
+        onClick={() => selectUnit(entry.id)}
+      >
+        <span className="unit-number">{String(entry.id).padStart(3, "0")}</span>
+        <strong>{entry.title}</strong>
+        <small>{progress.cardPositions[String(entry.id)] ? `Card ${progress.cardPositions[String(entry.id)] + 1}` : "Start"}</small>
+        {progress.completedUnits.includes(entry.id) && (
+          <span className="complete-pill">
+            <CheckCircle2 aria-hidden="true" />
+            Complete
+          </span>
+        )}
+      </button>
+    );
+  };
 
   const restartUnit = () => {
     goToCard(0);
@@ -511,11 +528,13 @@ export function App() {
             const isCurrentLevel = currentLevel?.code === level.code;
             const completedInLevel = units.filter((entry) => progress.completedUnits.includes(entry.id)).length;
             const levelTotal = units.length || level.unitEnd - level.unitStart + 1;
+            const levelProgressPercent = levelTotal > 0 ? Math.round((completedInLevel / levelTotal) * 100) : 0;
             return (
               <section key={level.code} className="level-section">
                 <button
                   type="button"
                   className={isCurrentLevel ? "level-toggle active" : "level-toggle"}
+                  style={{ "--level-progress": `${levelProgressPercent}%` } as CSSProperties}
                   onClick={() => toggleLevel(level)}
                   aria-expanded={isExpanded}
                 >
@@ -575,8 +594,12 @@ export function App() {
               </select>
               <span>/ {unit.cards.length}</span>
             </label>
-            <button className="icon-button complete-action" title={completed ? "Mark unit incomplete" : "Mark unit complete"} onClick={toggleComplete}>
-              <CheckCircle2 aria-hidden="true" />
+            <button
+              className={`icon-button ${completed ? "incomplete-action" : "complete-action"}`}
+              title={completed ? "Mark unit incomplete" : "Mark unit complete"}
+              onClick={toggleComplete}
+            >
+              {completed ? <CircleMinus aria-hidden="true" /> : <CheckCircle2 aria-hidden="true" />}
               <span>{completed ? "Mark Incomplete" : "Mark Unit Complete"}</span>
             </button>
             <button className="icon-button" title="Open settings" onClick={() => setSettingsOpen((open) => !open)} aria-expanded={settingsOpen}>
@@ -588,7 +611,12 @@ export function App() {
         </header>
 
         <div className="unit-progress" aria-label={`Unit progress ${progressPercent}%`} role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progressPercent}>
-          <span style={{ width: `${progressPercent}%` }} />
+          <span
+            style={{
+              width: `${progressPercent}%`,
+              backgroundSize: `${10000 / Math.max(progressPercent, 1)}% 100%`,
+            }}
+          />
         </div>
 
         {settingsOpen && (

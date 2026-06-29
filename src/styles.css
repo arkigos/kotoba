@@ -45,6 +45,9 @@ input:focus-visible {
   --shadow: rgba(23, 33, 31, 0.16);
   --complete: #24784f;
   --complete-soft: #dff0e6;
+  --progress-red: #c9493d;
+  --progress-yellow: #edbd45;
+  --progress-green: #2f9f61;
   display: grid;
   grid-template-columns: 300px minmax(0, 1fr);
   height: 100vh;
@@ -74,6 +77,9 @@ input:focus-visible {
   --shadow: rgba(0, 0, 0, 0.38);
   --complete: #8de0a9;
   --complete-soft: #173929;
+  --progress-red: #f07f72;
+  --progress-yellow: #f2cf68;
+  --progress-green: #8de0a9;
   background:
     linear-gradient(135deg, rgba(118, 199, 168, 0.1), transparent 35%),
     linear-gradient(315deg, rgba(229, 163, 132, 0.1), transparent 34%),
@@ -174,6 +180,10 @@ input[type="number"] {
 }
 
 .level-toggle {
+  --row-progress: var(--level-progress, 0%);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
@@ -188,9 +198,28 @@ input[type="number"] {
   cursor: pointer;
 }
 
+.level-toggle::before,
+.unit-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--progress-red) 0%, var(--progress-yellow) 52%, var(--progress-green) 100%);
+  clip-path: inset(0 calc(100% - var(--row-progress)) 0 0);
+  opacity: 0.18;
+  pointer-events: none;
+}
+
 .level-toggle.active {
   border-color: var(--accent);
   background: var(--accent-soft);
+}
+
+.level-toggle > *,
+.unit-button > * {
+  position: relative;
+  z-index: 1;
 }
 
 .level-toggle > span {
@@ -235,6 +264,10 @@ input[type="number"] {
 }
 
 .unit-button {
+  --row-progress: var(--unit-progress, 0%);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
@@ -257,6 +290,10 @@ input[type="number"] {
 .unit-button.completed {
   border-color: color-mix(in srgb, var(--complete) 58%, var(--border));
   background: color-mix(in srgb, var(--complete-soft) 74%, var(--surface));
+}
+
+.unit-button.completed::before {
+  opacity: 0.26;
 }
 
 .unit-button > .unit-number {
@@ -380,6 +417,11 @@ input[type="number"] {
   color: var(--complete);
 }
 
+.incomplete-action {
+  border-color: color-mix(in srgb, var(--warm) 34%, var(--border));
+  color: var(--warm);
+}
+
 .card-jump {
   min-width: 150px;
   background: var(--surface-strong);
@@ -416,7 +458,9 @@ input[type="number"] {
   display: block;
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, var(--accent), var(--complete));
+  background: linear-gradient(90deg, var(--progress-red) 0%, var(--progress-yellow) 52%, var(--progress-green) 100%);
+  background-position: left center;
+  background-repeat: no-repeat;
   transition: width 140ms ease;
 }
 
