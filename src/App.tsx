@@ -162,6 +162,7 @@ function JapaneseLine({
           type="button"
           className={part.wordId ? "token lexical" : "token grammar"}
           aria-label={`Play ${part.surface}`}
+          onMouseDown={(event) => event.preventDefault()}
           onClick={() => onSpeakPart(card.tts[index] ?? part.reading ?? part.surface)}
         >
           {displayedPart(card, index, mode)}

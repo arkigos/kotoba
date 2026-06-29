@@ -88,6 +88,19 @@ describe("practice player", () => {
     expect(lastSpoken()).toMatchObject({ text: "わたし", lang: "ja-JP" });
   });
 
+  it("lets Space advance after a mouse-clicked Japanese token", async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    const token = screen.getByRole("button", { name: `Play ${unit001.cards[0].tokens[0].surface}` });
+    await user.click(token);
+    expect(lastSpoken()).toMatchObject({ text: unit001.cards[0].tts[0], lang: "ja-JP" });
+    expect(document.activeElement).not.toBe(token);
+
+    fireEvent.keyDown(document.activeElement ?? window, { key: " " });
+    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[1].line.join(""));
+  });
+
   it("shows Japanese, romaji, and English meaning in token tooltips", () => {
     render(<App />);
 
