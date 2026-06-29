@@ -16,7 +16,8 @@
     "validate:all": "npm run validate:curriculum && npm run validate:assets && npm run lint:unit-content && npm run audit:unit-quality && npm run audit:level-alignment",
     "lint:unit-content": "node scripts/lint-unit-content.mjs",
     "audit:unit-quality": "node scripts/audit-unit-quality.mjs",
-    "audit:level-alignment": "node scripts/audit-level-alignment.mjs"
+    "audit:level-alignment": "node scripts/audit-level-alignment.mjs",
+    "curriculum:add-a1-action-previews": "node scripts/add-a1-action-previews.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",

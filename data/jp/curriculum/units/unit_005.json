@@ -4485,6 +4485,74 @@
         "Aでした",
         "Aではありませんでした"
       ]
+    },
+    {
+      "id": "u005-c081",
+      "line": [
+        "朝",
+        "食べます"
+      ],
+      "tts": [
+        "あさ",
+        "たべます"
+      ],
+      "explain": [
+        "morning",
+        "eat; will eat"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat; will eat"
+        }
+      ],
+      "english": "I eat in the morning",
+      "fact": "`ます` makes an action polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u005-c082",
+      "line": [
+        "夜",
+        "飲みます"
+      ],
+      "tts": [
+        "よる",
+        "のみます"
+      ],
+      "explain": [
+        "night",
+        "drink; will drink"
+      ],
+      "tokens": [
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "explain": "night",
+          "wordId": "yoru"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink; will drink"
+        }
+      ],
+      "english": "I drink at night",
+      "fact": "`ます` makes an action polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
     }
   ]
 }

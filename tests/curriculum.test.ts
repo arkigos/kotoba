@@ -2,8 +2,16 @@ import { describe, expect, it } from "vitest";
 import { courseLevels, unitIndex } from "../src/data";
 import { helperVocabularyUnitIds, knownVocabularyUnitIds, reviewVocabularyUnitIds, vocabularyPoolsForUnit } from "../src/curriculum/bin";
 
+const unitModules = import.meta.glob<{ default: { cards: Array<{ grammarTags?: string[] }> } }>("../data/jp/curriculum/units/unit_*.json", {
+  eager: true,
+});
+
 function levelForUnit(unitId: number) {
   return courseLevels.levels.find((level) => unitId >= level.unitStart && unitId <= level.unitEnd);
+}
+
+function unitModulePath(unitId: number) {
+  return `../data/jp/curriculum/units/unit_${String(unitId).padStart(3, "0")}.json`;
 }
 
 describe("curriculum word bins", () => {
@@ -87,5 +95,16 @@ describe("curriculum word bins", () => {
       [43, "connecting-actions"],
       [44, "ongoing-resulting-state"],
     ]);
+  });
+
+  it("keeps early A1 action previews small and modular", () => {
+    const previewTag = "early masu action preview";
+    const unit1 = unitModules[unitModulePath(1)].default;
+    expect(unit1.cards.filter((card) => card.grammarTags?.includes(previewTag))).toHaveLength(0);
+
+    for (let unitId = 2; unitId <= 14; unitId += 1) {
+      const unit = unitModules[unitModulePath(unitId)].default;
+      expect(unit.cards.filter((card) => card.grammarTags?.includes(previewTag))).toHaveLength(2);
+    }
   });
 });

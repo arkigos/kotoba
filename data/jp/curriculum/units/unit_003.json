@@ -4568,6 +4568,124 @@
         "AのB",
         "AもBです"
       ]
+    },
+    {
+      "id": "u003-c081",
+      "line": [
+        "母",
+        "と",
+        "父",
+        "は",
+        "来ます"
+      ],
+      "tts": [
+        "はは",
+        "と",
+        "ちち",
+        "わ",
+        "きます"
+      ],
+      "explain": [
+        "mother",
+        "and; with",
+        "father",
+        "topic marker",
+        "come; will come"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and; with"
+        },
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come; will come"
+        }
+      ],
+      "english": "Mother and father come",
+      "fact": "`ます` makes an action polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u003-c082",
+      "line": [
+        "姉",
+        "と",
+        "弟",
+        "は",
+        "食べます"
+      ],
+      "tts": [
+        "あね",
+        "と",
+        "おとうと",
+        "わ",
+        "たべます"
+      ],
+      "explain": [
+        "older sister",
+        "and; with",
+        "younger brother",
+        "topic marker",
+        "eat; will eat"
+      ],
+      "tokens": [
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and; with"
+        },
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat; will eat"
+        }
+      ],
+      "english": "Older sister and younger brother eat",
+      "fact": "`ます` makes an action polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
     }
   ]
 }

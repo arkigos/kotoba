@@ -5367,6 +5367,90 @@
         "どれ",
         "どのN"
       ]
+    },
+    {
+      "id": "u007-c081",
+      "line": [
+        "食べ物",
+        "を",
+        "食べます"
+      ],
+      "tts": [
+        "たべもの",
+        "を",
+        "たべます"
+      ],
+      "explain": [
+        "food",
+        "direct object marker",
+        "eat; will eat"
+      ],
+      "tokens": [
+        {
+          "surface": "食べ物",
+          "reading": "たべもの",
+          "explain": "food",
+          "wordId": "tabemono"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat; will eat"
+        }
+      ],
+      "english": "I eat food",
+      "fact": "`ます` makes an action polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u007-c082",
+      "line": [
+        "飲み物",
+        "を",
+        "飲みます"
+      ],
+      "tts": [
+        "のみもの",
+        "を",
+        "のみます"
+      ],
+      "explain": [
+        "drink",
+        "direct object marker",
+        "drink; will drink"
+      ],
+      "tokens": [
+        {
+          "surface": "飲み物",
+          "reading": "のみもの",
+          "explain": "drink",
+          "wordId": "nomimono"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink; will drink"
+        }
+      ],
+      "english": "I drink a drink",
+      "fact": "`ます` makes an action polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
     }
   ]
 }

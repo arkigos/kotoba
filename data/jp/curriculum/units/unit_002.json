@@ -5075,6 +5075,124 @@
       "grammarTags": [
         "AとBはCです"
       ]
+    },
+    {
+      "id": "u002-c081",
+      "line": [
+        "先生",
+        "と",
+        "学生",
+        "は",
+        "食べます"
+      ],
+      "tts": [
+        "せんせい",
+        "と",
+        "がくせい",
+        "わ",
+        "たべます"
+      ],
+      "explain": [
+        "teacher",
+        "and; with",
+        "student",
+        "topic marker",
+        "eat; will eat"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and; with"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat; will eat"
+        }
+      ],
+      "english": "The teacher and student eat",
+      "fact": "`ます` makes an action polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u002-c082",
+      "line": [
+        "ケン",
+        "と",
+        "ユキ",
+        "は",
+        "読みます"
+      ],
+      "tts": [
+        "けん",
+        "と",
+        "ゆき",
+        "わ",
+        "よみます"
+      ],
+      "explain": [
+        "Ken",
+        "and; with",
+        "Yuki",
+        "topic marker",
+        "read; will read"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and; with"
+        },
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read; will read"
+        }
+      ],
+      "english": "Ken and Yuki read",
+      "fact": "`ます` makes an action polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
     }
   ]
 }

@@ -16,6 +16,10 @@ focus late, after the sentence world has enough usable words.
 Can do: identify people, things, and places; ask simple questions; describe
 static scenes; talk about simple past and time.
 
+Units 2-14 may include one or two fixed `Vます` action-preview cards. These are
+whole-sentence exposure to high-value actions, not formal verb lessons; Unit 21
+still introduces polite verbs as a productive system.
+
 001. First Sentences
     - `Aです`
     - `Aですか`

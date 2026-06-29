@@ -5246,6 +5246,124 @@
       "grammarTags": [
         "review vocabulary"
       ]
+    },
+    {
+      "id": "u012-c101",
+      "line": [
+        "静か",
+        "な",
+        "部屋",
+        "で",
+        "読みます"
+      ],
+      "tts": [
+        "しずか",
+        "な",
+        "へや",
+        "で",
+        "よみます"
+      ],
+      "explain": [
+        "quiet",
+        "links a na-adjective to a noun",
+        "room",
+        "action location marker",
+        "read; will read"
+      ],
+      "tokens": [
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "な",
+          "reading": "な",
+          "explain": "links a na-adjective to a noun"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read; will read"
+        }
+      ],
+      "english": "I read in a quiet room",
+      "fact": "`ます` makes an action polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u012-c102",
+      "line": [
+        "にぎやか",
+        "な",
+        "町",
+        "に",
+        "行きます"
+      ],
+      "tts": [
+        "にぎやか",
+        "な",
+        "まち",
+        "に",
+        "いきます"
+      ],
+      "explain": [
+        "lively",
+        "links a na-adjective to a noun",
+        "town",
+        "destination marker",
+        "go; will go"
+      ],
+      "tokens": [
+        {
+          "surface": "にぎやか",
+          "reading": "にぎやか",
+          "explain": "lively",
+          "wordId": "nigiyaka"
+        },
+        {
+          "surface": "な",
+          "reading": "な",
+          "explain": "links a na-adjective to a noun"
+        },
+        {
+          "surface": "町",
+          "reading": "まち",
+          "explain": "town",
+          "wordId": "machi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go; will go"
+        }
+      ],
+      "english": "I go to a lively town",
+      "fact": "`ます` makes an action polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
     }
   ]
 }

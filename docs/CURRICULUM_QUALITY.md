@@ -49,12 +49,17 @@ certification claims. Treat them as Can-do alignment checks:
   location, time, and counting feel usable. It may lean on `です` early, but
   Units 15-20 should bring in `あります` / `います` and location scenes so the
   level does not become pure noun-labeling.
+- Units 2-14 may include one or two fixed polite-action preview cards using
+  `Vます`. These should feel like usable whole sentences, not miniature verb
+  lessons.
 - A2 should visibly shift into everyday action control: polite verbs, objects,
   destinations, action location, time, frequency, wants, requests, permission,
   prohibition, te-form, and ongoing/resulting state.
 - Do not sprinkle productive action verbs into Unit 1 unless the grammar map is
   intentionally redesigned. A random early verb is usually less useful than a
   clean later bridge into `Vます`.
+- Keep action previews modular. Prefer a stable sentence frame where only the
+  noun, person, place, adjective, or verb slot changes.
 - Use `npm run audit:level-alignment` after authoring or regenerating a level
   band to check verb distribution, `です` reliance, existence practice, and form
   sequencing.

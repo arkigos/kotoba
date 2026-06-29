@@ -52,6 +52,11 @@ topic marking, questions, adjectives, and existence. Do not add action verbs to
 Unit 1 just to satisfy a mix target; introduce productive verbs where the grammar
 map can support real use.
 
+Early A1 may include one or two fixed `Vます` action-preview cards per unit after
+Unit 1. These are whole-sentence previews, not full verb lessons. Keep them
+modular: one stable frame, one swapped noun/person/place/adjective slot, and one
+familiar high-value verb.
+
 ## Grammar-Driven Adjustments
 
 The default mix is not sacred. Adjust it when the grammar concept demands a
