@@ -128,6 +128,13 @@ function Keycap({ children }: { children: string }) {
   );
 }
 
+function progressColorForPercent(percent: number) {
+  const clamped = Math.min(100, Math.max(0, percent));
+  const hue = clamped <= 50 ? 4 + (clamped / 50) * 44 : 48 + ((clamped - 50) / 50) * 88;
+  const lightness = clamped < 50 ? 47 : 43;
+  return `hsl(${Math.round(hue)} 70% ${lightness}%)`;
+}
+
 function JapaneseLine({
   card,
   mode,
@@ -185,6 +192,7 @@ export function App() {
   const settings = progress.settings;
   const completed = progress.completedUnits.includes(unit.id);
   const progressPercent = unit.cards.length > 0 ? Math.round(((cardIndex + 1) / unit.cards.length) * 100) : 0;
+  const progressColor = progressColorForPercent(progressPercent);
 
   useEffect(() => {
     if (unit.id === progress.unitId) {
@@ -330,7 +338,12 @@ export function App() {
         ]
           .filter(Boolean)
           .join(" ")}
-        style={{ "--unit-progress": `${unitProgressPercent}%` } as CSSProperties}
+        style={
+          {
+            "--unit-progress": `${unitProgressPercent}%`,
+            "--progress-color": progressColorForPercent(unitProgressPercent),
+          } as CSSProperties
+        }
         onClick={() => selectUnit(entry.id)}
       >
         <span className="unit-number">{String(entry.id).padStart(3, "0")}</span>
@@ -534,7 +547,12 @@ export function App() {
                 <button
                   type="button"
                   className={isCurrentLevel ? "level-toggle active" : "level-toggle"}
-                  style={{ "--level-progress": `${levelProgressPercent}%` } as CSSProperties}
+                  style={
+                    {
+                      "--level-progress": `${levelProgressPercent}%`,
+                      "--progress-color": progressColorForPercent(levelProgressPercent),
+                    } as CSSProperties
+                  }
                   onClick={() => toggleLevel(level)}
                   aria-expanded={isExpanded}
                 >
@@ -612,10 +630,12 @@ export function App() {
 
         <div className="unit-progress" aria-label={`Unit progress ${progressPercent}%`} role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progressPercent}>
           <span
-            style={{
-              width: `${progressPercent}%`,
-              backgroundSize: `${10000 / Math.max(progressPercent, 1)}% 100%`,
-            }}
+            style={
+              {
+                width: `${progressPercent}%`,
+                "--progress-color": progressColor,
+              } as CSSProperties
+            }
           />
         </div>
 

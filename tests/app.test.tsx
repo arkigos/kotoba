@@ -188,12 +188,12 @@ describe("practice player", () => {
     expect(screen.getByLabelText(/card number/i)).toHaveValue("10");
     expect(screen.getByRole("progressbar", { name: /unit progress/i })).toHaveAttribute("aria-valuenow", "13");
     expect(screen.getByText(/Card 10 \/ 80 · 13% complete/)).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Unit 1: First Sentences/i })).toHaveStyle("--unit-progress: 13%");
+    expect(screen.getByRole("button", { name: /Unit 1: First Sentences/i })).toHaveStyle("--unit-progress: 13%; --progress-color: hsl(15 70% 47%)");
 
     await user.click(screen.getByRole("button", { name: /mark unit complete/i }));
     expect(screen.getByText("Completed")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Unit 1: First Sentences.*Complete/i })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /A1 Survival Foundations.*1\/20 complete/i })).toHaveStyle("--level-progress: 5%");
+    expect(screen.getByRole("button", { name: /A1 Survival Foundations.*1\/20 complete/i })).toHaveStyle("--level-progress: 5%; --progress-color: hsl(8 70% 47%)");
     expect(screen.getByRole("button", { name: /mark incomplete/i })).toHaveClass("incomplete-action");
     await user.click(screen.getByRole("button", { name: /mark incomplete/i }));
     expect(screen.getByText(/cards left/i)).toBeInTheDocument();
