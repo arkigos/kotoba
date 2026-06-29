@@ -7,6 +7,7 @@ import unitSpecs from "../data/jp/curriculum/source/unit_specs.json";
 const unitModules = import.meta.glob<{
   default: {
     cards: Array<{
+      english: string;
       grammarTags?: string[];
       line: string[];
       tokens?: Array<{ surface: string; reading: string; explain?: string }>;
@@ -153,6 +154,14 @@ describe("curriculum word bins", () => {
       const unit = unitModules[unitModulePath(unitId)].default;
       expect(unit.cards.filter((card) => card.grammarTags?.includes(previewTag))).toHaveLength(2);
     }
+  });
+
+  it("opens Unit 1 with complete sentence drills before isolated identity drills", () => {
+    const unit = unitModules[unitModulePath(1)].default;
+    expect(unit.cards[0].english).toBe("I am a student");
+    expect(unit.cards[1].english).toBe("Sakura is a student");
+    expect(unit.cards.slice(0, 7).every((card) => card.line.length >= 4)).toBe(true);
+    expect(unit.cards.slice(0, 7).some((card) => card.english === "It's Sakura")).toBe(false);
   });
 
   it("splits desu and ka in rebuilt foundation questions", () => {
