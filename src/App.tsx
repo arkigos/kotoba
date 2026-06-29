@@ -748,7 +748,7 @@ export function App() {
         )}
 
         <article className="card-stage">
-          <div className={`stage-slot media-slot ${settings.showImage ? "" : "is-hidden"}`} aria-label="Media area">
+          <div key={`media-${card.id}`} className={`stage-slot media-slot ${settings.showImage ? "" : "is-hidden"}`} aria-label="Media area">
             <div className="image-prompt" aria-label="Image prompt" hidden={!settings.showImage}>
               {card.imageRef ? <img src={card.imageRef} alt="" /> : <span>{card.imagePrompt || "Scene queued"}</span>}
             </div>
@@ -760,15 +760,19 @@ export function App() {
             )}
           </div>
 
-          <div className="stage-slot front-slot" aria-label="Front card area">
+          <div key={`front-${card.id}-${settings.cardFront}-${settings.japaneseDisplay}`} className="stage-slot front-slot" aria-label="Front card area">
             {frontContent}
           </div>
 
-          <div className={`stage-slot back-slot ${showBack ? "" : "is-hidden"}`} aria-label="Reveal card area">
+          <div
+            key={`back-${card.id}-${settings.cardFront}-${settings.japaneseDisplay}-${showBack ? "shown" : "hidden"}`}
+            className={`stage-slot back-slot ${showBack ? "is-revealed" : "is-hidden"}`}
+            aria-label="Reveal card area"
+          >
             {showBack ? backContent : <span> </span>}
           </div>
 
-          <div className={`stage-slot note-slot ${settings.showFact ? "" : "is-hidden"}`} aria-label="Card note area">
+          <div key={`note-${card.id}`} className={`stage-slot note-slot ${settings.showFact ? "" : "is-hidden"}`} aria-label="Card note area">
             {settings.showFact ? <p className="fact-note">{card.fact}</p> : <span> </span>}
           </div>
         </article>
