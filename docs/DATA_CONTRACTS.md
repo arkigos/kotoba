@@ -87,6 +87,7 @@ Each card has:
 - `english`: semantic English translation of the target-language `line`.
   It should be natural English, but it must not add an answer, object, owner,
   tense, relationship, or scene detail that is not present in the Japanese.
+  Single-card translations do not end with a plain period.
 - `audioRef`: optional audio reference.
 - `fact`: short usage, grammar, or cultural note.
 - `grammarTags`: grammar patterns used by the card.
@@ -94,6 +95,9 @@ Each card has:
 ## Alignment Rule
 
 For every card, `line`, `tts`, `explain`, and `tokens` must have the same length.
+Cards are authored as one sentence or phrase. Do not include Japanese full-stop
+tokens (`。`) in `line`, `tts`, `explain`, or `tokens`; the practice UI gives the
+sentence its visual boundary.
 
 ## Vocabulary Availability And Review
 

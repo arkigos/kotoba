@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { App } from "../src/App";
+import unit001 from "../data/jp/curriculum/units/unit_001.json";
 
 describe("practice flow e2e", () => {
   beforeEach(() => {
@@ -19,20 +20,20 @@ describe("practice flow e2e", () => {
     const { unmount } = render(<App />);
 
     expect(screen.getByRole("heading", { name: "Unit 1: First Sentences" })).toBeInTheDocument();
-    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "私です。");
+    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[0].line.join(""));
     expect(screen.queryByLabelText(/image/i)).not.toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /show english/i }));
-    expect(screen.getByText("It's me.")).toBeVisible();
+    expect(screen.getByText(unit001.cards[0].english)).toBeVisible();
 
     await user.click(screen.getByRole("button", { name: /hide english/i }));
-    expect(screen.queryByText("It's me.")).not.toBeInTheDocument();
+    expect(screen.queryByText(unit001.cards[0].english)).not.toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /^next$/i }));
-    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "学生です。");
+    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[1].line.join(""));
 
     await user.click(screen.getByRole("button", { name: /previous/i }));
-    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "私です。");
+    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[0].line.join(""));
 
     await user.click(screen.getByRole("button", { name: /^play audio$/i }));
     expect(screen.getByText(/Japanese audio|Audio queued/)).toBeVisible();

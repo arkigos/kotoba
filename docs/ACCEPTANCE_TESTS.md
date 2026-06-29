@@ -29,6 +29,7 @@ npm run validate:curriculum
 - A card has missing required fields.
 - A card's `line`, `tts`, and `explain` arrays have different lengths.
 - A card has no English meaning.
+- A card includes a Japanese full stop or a terminal English period.
 - A unit uses vocabulary that has not been introduced yet.
 - A unit fails to bring back review-due vocabulary from the spaced repetition bins.
 - A unit introduces grammar that is not its own focus and was not introduced by an earlier unit.

@@ -708,6 +708,14 @@ const jp = {
   yo: () => grammar("よ", "よ", "sentence ending giving emphasis"),
 };
 
+function cardParts(parts) {
+  return parts.filter((part) => part.surface !== "\u3002");
+}
+
+function cardEnglish(english) {
+  return english.replace(/\.+$/, "");
+}
+
 function verbToken(id, key = "masu") {
   const form = verbForms.get(id);
   if (!form?.[key]) throw new Error(`Missing ${key} form for ${id}`);
@@ -717,17 +725,18 @@ function verbToken(id, key = "masu") {
 
 function makeCard(unitId, index, parts, english, grammarTags, _visualPrompt, fact) {
   const id = `u${pad(unitId)}-c${pad(index)}`;
+  const visibleParts = cardParts(parts);
   return {
     id,
-    line: parts.map((part) => part.surface),
-    tts: parts.map((part) => part.reading),
-    explain: parts.map((part) => part.explain),
-    tokens: parts.map((part) => {
+    line: visibleParts.map((part) => part.surface),
+    tts: visibleParts.map((part) => part.reading),
+    explain: visibleParts.map((part) => part.explain),
+    tokens: visibleParts.map((part) => {
       const token = { surface: part.surface, reading: part.reading, explain: part.explain };
       if (part.wordId) token.wordId = part.wordId;
       return token;
     }),
-    english,
+    english: cardEnglish(english),
     fact,
     grammarTags,
   };

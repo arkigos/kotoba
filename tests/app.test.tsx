@@ -34,7 +34,7 @@ describe("practice player", () => {
     render(<App />);
     expect(screen.getByRole("heading", { name: "Unit 1: First Sentences" })).toBeInTheDocument();
     expect(screen.getByText(/Aです/)).toBeInTheDocument();
-    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "私です。");
+    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[0].line.join(""));
     expect(screen.queryByLabelText(/language/i)).not.toBeInTheDocument();
     expect(screen.queryByLabelText(/image/i)).not.toBeInTheDocument();
   });
@@ -57,7 +57,7 @@ describe("practice player", () => {
 
   it("defaults to Japanese autoplay audio", () => {
     render(<App />);
-    expect(lastSpoken()).toMatchObject({ text: "私です。", lang: "ja-JP" });
+    expect(lastSpoken()).toMatchObject({ text: unit001.cards[0].line.join(""), lang: "ja-JP" });
   });
 
   it("supports English and both-language audio modes", () => {
@@ -67,16 +67,16 @@ describe("practice player", () => {
     fireEvent.click(screen.getByRole("button", { name: /settings/i }));
     fireEvent.change(screen.getByRole("combobox", { name: /audio/i }), { target: { value: "english" } });
     fireEvent.click(screen.getByRole("button", { name: /^play audio$/i }));
-    expect(lastSpoken()).toMatchObject({ text: "It's me.", lang: "en-US" });
+    expect(lastSpoken()).toMatchObject({ text: unit001.cards[0].english, lang: "en-US" });
 
     fireEvent.change(screen.getByRole("combobox", { name: /audio/i }), { target: { value: "both" } });
     fireEvent.click(screen.getByRole("button", { name: /^play audio$/i }));
-    expect(lastSpoken()).toMatchObject({ text: "私です。", lang: "ja-JP" });
+    expect(lastSpoken()).toMatchObject({ text: unit001.cards[0].line.join(""), lang: "ja-JP" });
     (lastSpoken() as SpeechSynthesisUtterance & { onend: () => void }).onend();
     act(() => {
       vi.advanceTimersByTime(450);
     });
-    expect(lastSpoken()).toMatchObject({ text: "It's me.", lang: "en-US" });
+    expect(lastSpoken()).toMatchObject({ text: unit001.cards[0].english, lang: "en-US" });
     vi.useRealTimers();
   });
 
@@ -103,11 +103,11 @@ describe("practice player", () => {
     render(<App />);
 
     await user.click(screen.getByRole("button", { name: /show english/i }));
-    expect(screen.getByText("It's me.")).toBeInTheDocument();
+    expect(screen.getByText(unit001.cards[0].english)).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /^next$/i }));
-    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "学生です。");
-    expect(screen.queryByText("It's me.")).not.toBeInTheDocument();
+    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[1].line.join(""));
+    expect(screen.queryByText(unit001.cards[0].english)).not.toBeInTheDocument();
   });
 
   it("persists settings, display mode, and per-unit card position", async () => {
@@ -130,10 +130,10 @@ describe("practice player", () => {
 
     await user.click(screen.getByRole("button", { name: /settings/i }));
     await user.click(screen.getByLabelText(/start revealed/i));
-    expect(screen.getByText("It's me.")).toBeInTheDocument();
+    expect(screen.getByText(unit001.cards[0].english)).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /^next$/i }));
-    expect(screen.getByText("I'm a student.")).toBeInTheDocument();
+    expect(screen.getByText(unit001.cards[1].english)).toBeInTheDocument();
   });
 
   it("applies study mode presets without adding footer clutter", async () => {
@@ -147,7 +147,7 @@ describe("practice player", () => {
     expect(screen.queryByRole("button", { name: /hide image/i })).not.toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: "Recall" }));
-    expect(screen.getByText("It's me.")).toBeInTheDocument();
+    expect(screen.getByText(unit001.cards[0].english)).toBeInTheDocument();
     expect(screen.queryByLabelText(/image/i)).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: /show japanese/i })).toBeInTheDocument();
   });
@@ -162,7 +162,7 @@ describe("practice player", () => {
     await user.selectOptions(screen.getByRole("combobox", { name: /front side/i }), "english");
     await user.selectOptions(screen.getByRole("combobox", { name: /japanese display/i }), "romaji");
 
-    expect(screen.getByText("It's me.")).toBeInTheDocument();
+    expect(screen.getByText(unit001.cards[0].english)).toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: /show japanese/i }));
     expect(screen.getByLabelText("Japanese sentence")).toHaveTextContent("watashi");
   });
@@ -175,10 +175,10 @@ describe("practice player", () => {
     await user.click(screen.getByRole("button", { name: /Unit 2: Talking About Things/i }));
     await user.click(screen.getByRole("button", { name: /Unit 1: First Sentences/i }));
 
-    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "学生です。");
+    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[1].line.join(""));
 
     await user.click(screen.getByRole("button", { name: /^restart$/i }));
-    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "私です。");
+    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[0].line.join(""));
   });
 
   it("jumps with the header card control and toggles completion", async () => {
@@ -240,7 +240,7 @@ describe("practice player", () => {
     render(<App />);
 
     fireEvent.keyDown(window, { key: "ArrowRight" });
-    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "学生です。");
+    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[1].line.join(""));
 
     fireEvent.keyDown(window, { key: " ", shiftKey: true });
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[0].line.join(""));
@@ -249,7 +249,7 @@ describe("practice player", () => {
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[1].line.join(""));
 
     fireEvent.keyDown(window, { key: "1" });
-    expect(screen.getByText("I'm a student.")).toBeInTheDocument();
+    expect(screen.getByText(unit001.cards[1].english)).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /^play audio$/i })).toBeInTheDocument();
 
     fireEvent.keyDown(window, { key: "2" });
@@ -261,7 +261,7 @@ describe("practice player", () => {
       vi.advanceTimersByTime(5000);
     });
 
-    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "先生です。");
+    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[2].line.join(""));
     vi.useRealTimers();
   });
 

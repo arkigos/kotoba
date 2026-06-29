@@ -174,6 +174,9 @@ export async function validateCurriculum() {
       assert(Array.isArray(card.explain), `${label}: explain must be an array`, failures);
       assert(card.line?.length === card.tts?.length && card.line?.length === card.explain?.length, `${label}: line/tts/explain length mismatch`, failures);
       assert(Array.isArray(card.tokens) && card.tokens.length === card.line?.length, `${label}: tokens must align to line`, failures);
+      assert(!card.line?.includes("\u3002"), `${label}: omit Japanese full stops on single-card sentences`, failures);
+      assert(!card.tokens?.some((part) => part.surface === "\u3002"), `${label}: omit Japanese full-stop tokens`, failures);
+      assert(!/\.+$/.test(card.english), `${label}: omit terminal English periods on single-card translations`, failures);
 
       for (const part of card.tokens ?? []) {
         if (part.wordId) {

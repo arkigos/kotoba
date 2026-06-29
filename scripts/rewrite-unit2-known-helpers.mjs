@@ -24,6 +24,14 @@ const grammar = {
   [jp.question]: [jp.question, "question mark"],
 };
 
+function cardValues(values) {
+  return values.filter((value) => value !== jp.period);
+}
+
+function cardEnglish(english) {
+  return english.replace(/\.+$/, "");
+}
+
 async function readJson(relativePath) {
   return JSON.parse(await fs.readFile(path.join(root, relativePath), "utf8"));
 }
@@ -44,14 +52,14 @@ function tokenFactory(words) {
 function makeCard(unitId, words) {
   const token = tokenFactory(words);
   return (index, values, english, fact, grammarTags) => {
-    const tokens = values.map(token);
+    const tokens = cardValues(values).map(token);
     return {
       id: `u${String(unitId).padStart(3, "0")}-c${String(index).padStart(3, "0")}`,
       line: tokens.map((part) => part.surface),
       tts: tokens.map((part) => part.reading),
       explain: tokens.map((part) => part.explain),
       tokens,
-      english,
+      english: cardEnglish(english),
       fact,
       grammarTags,
     };
@@ -73,7 +81,7 @@ const warm = "A quick vocabulary warm-up before topic-comment sentences begin.";
 const topic = "`\u306f` marks the topic; older known words can now help the new vocabulary feel useful.";
 const pair = "`\u3068` joins concrete nouns so new and known vocabulary can combine.";
 const choice = "`\u304b` chains choices and keeps the learner comparing categories.";
-const paired = "Paired sentences let known helper vocabulary support the new unit words.";
+const paired = "Single-sentence pair cards let known helper vocabulary support the new unit words.";
 
 [
   ["neko", "It's a cat."],
@@ -145,17 +153,17 @@ compoundTopics.forEach(([a, b, c, _en, q]) => push([a, jp.to, b, jp.wa, c, jp.de
 ].forEach(([a, b, c, en]) => push([a, jp.wa, b, jp.ka, c, jp.desuKa, jp.question], en, choice, ["A\u306fB\u304bC\u3067\u3059\u304b"]));
 
 [
-  ["ken", "hito", "neko", "doubutsu", "Ken is a person. The cat is an animal."],
-  ["yuki", "hito", "inu", "doubutsu", "Yuki is a person. The dog is an animal."],
-  ["sensei", "hito", "hon", "mono", "The teacher is a person. The book is a thing."],
-  ["gakusei", "hito", "gakkou", "basho", "The student is a person. The school is a place."],
-  ["isha", "hito", "ie", "basho", "The doctor is a person. The house is a place."],
-  ["nihon", "basho", "amerika", "basho", "Japan is a place. America is a place."],
-  ["tanaka", "sensei", "isha", "hito", "Tanaka is the teacher. The doctor is a person."],
-  ["tomodachi", "hito", "neko", "doubutsu", "The friend is a person. The cat is an animal."],
-  ["namae", "ken", "hon", "mono", "The name is Ken. The book is a thing."],
-  ["watashi", "gakusei", "gakkou", "basho", "I am a student. The school is a place."],
-].forEach(([a, b, c, d, en]) => push([a, jp.wa, b, jp.desu, jp.period, c, jp.wa, d, jp.desu, jp.period], en, paired, ["A\u306fB\u3067\u3059"]));
+  ["ken", "tomodachi", "hito", "Ken and the friend are people"],
+  ["yuki", "tanaka", "hito", "Yuki and Tanaka are people"],
+  ["sensei", "gakusei", "hito", "The teacher and the student are people"],
+  ["isha", "tanaka", "hito", "The doctor and Tanaka are people"],
+  ["neko", "inu", "doubutsu", "The cat and the dog are animals"],
+  ["ie", "nihon", "basho", "The house and Japan are places"],
+  ["gakkou", "amerika", "basho", "The school and America are places"],
+  ["hon", "namae", "mono", "The book and the name are things"],
+  ["neko", "hon", "mono", "The cat and the book are things"],
+  ["ie", "gakkou", "basho", "The house and the school are places"],
+].forEach(([a, b, c, en]) => push([a, jp.to, b, jp.wa, c, jp.desu, jp.period], en, paired, ["A\u3068B\u306fC\u3067\u3059"]));
 
 if (cards.length !== 80) throw new Error(`unit2 ${cards.length}`);
 
