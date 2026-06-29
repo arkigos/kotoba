@@ -2,7 +2,15 @@ import { describe, expect, it } from "vitest";
 import { courseLevels, unitIndex } from "../src/data";
 import { helperVocabularyUnitIds, knownVocabularyUnitIds, reviewVocabularyUnitIds, vocabularyPoolsForUnit } from "../src/curriculum/bin";
 
-const unitModules = import.meta.glob<{ default: { cards: Array<{ grammarTags?: string[] }> } }>("../data/jp/curriculum/units/unit_*.json", {
+const unitModules = import.meta.glob<{
+  default: {
+    cards: Array<{
+      grammarTags?: string[];
+      tokens?: Array<{ surface: string; reading: string }>;
+      tts: string[];
+    }>;
+  };
+}>("../data/jp/curriculum/units/unit_*.json", {
   eager: true,
 });
 
@@ -105,6 +113,24 @@ describe("curriculum word bins", () => {
     for (let unitId = 2; unitId <= 14; unitId += 1) {
       const unit = unitModules[unitModulePath(unitId)].default;
       expect(unit.cards.filter((card) => card.grammarTags?.includes(previewTag))).toHaveLength(2);
+    }
+  });
+
+  it("uses pronunciation readings for negative copula particles", () => {
+    for (const unit of Object.values(unitModules).map((module) => module.default)) {
+      for (const card of unit.cards) {
+        card.tokens?.forEach((token, index) => {
+          if (token.surface === "ではありません") {
+            expect(token.reading).toBe("でわありません");
+            expect(card.tts[index]).toBe("でわありません");
+          }
+
+          if (token.surface === "ではありませんでした") {
+            expect(token.reading).toBe("でわありませんでした");
+            expect(card.tts[index]).toBe("でわありませんでした");
+          }
+        });
+      }
     }
   });
 });
