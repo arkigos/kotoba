@@ -104,6 +104,13 @@ function phoneticPart(card: PracticeCard, index: number) {
   return toRomaji(card.tts[index] ?? card.tokens[index]?.reading ?? card.line[index] ?? "");
 }
 
+function sentenceLengthClass(card: PracticeCard) {
+  const length = card.line.join("").length;
+  if (length >= 18) return "dense-line";
+  if (length >= 13) return "long-line";
+  return "";
+}
+
 function levelForUnit(unitId: number) {
   return courseLevels.levels.find((level) => unitId >= level.unitStart && unitId <= level.unitEnd);
 }
@@ -144,7 +151,11 @@ function JapaneseLine({
   if (muted) return <div className="japanese-line muted-line">Japanese hidden</div>;
 
   return (
-    <div className={`japanese-line ${mode !== "surface" ? "reading-mode" : ""}`} aria-label="Japanese sentence" data-sentence={card.line.join("")}>
+    <div
+      className={["japanese-line", mode !== "surface" ? "reading-mode" : "", sentenceLengthClass(card)].filter(Boolean).join(" ")}
+      aria-label="Japanese sentence"
+      data-sentence={card.line.join("")}
+    >
       {card.tokens.map((part, index) => (
         <button
           key={`${card.id}-${index}`}

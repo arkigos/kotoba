@@ -334,7 +334,7 @@ input[type="number"] {
   position: relative;
   display: grid;
   grid-template-rows: auto auto minmax(0, 1fr) auto auto;
-  gap: 14px;
+  gap: 12px;
   min-width: 0;
   min-height: 0;
   overflow: auto;
@@ -517,11 +517,12 @@ input[type="number"] {
 
 .card-stage {
   display: grid;
-  grid-template-rows: minmax(260px, auto) minmax(96px, auto) minmax(64px, auto);
-  align-content: center;
+  grid-template-rows: minmax(300px, 1fr) minmax(112px, auto) minmax(58px, auto);
+  align-content: stretch;
   justify-items: center;
-  gap: 18px;
+  gap: 14px;
   min-height: 0;
+  padding: clamp(8px, 2vh, 22px) 0;
 }
 
 .stage-slot {
@@ -529,6 +530,7 @@ input[type="number"] {
   display: grid;
   place-items: center;
   width: 100%;
+  min-width: 0;
 }
 
 .front-slot,
@@ -575,30 +577,61 @@ input[type="number"] {
 }
 
 .japanese-line {
-  min-height: 240px;
+  min-height: 0;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 0.08em;
-  max-width: 1120px;
-  font-size: clamp(4rem, 10vw, 9.5rem);
-  font-weight: 850;
-  line-height: 1;
+  column-gap: 0.055em;
+  row-gap: 0.18em;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  color: color-mix(in srgb, var(--text) 94%, var(--accent));
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "Yu Gothic", Meiryo, serif;
+  font-size: clamp(4.8rem, 9.6vw, 9.8rem);
+  font-weight: 800;
+  line-height: 0.96;
   text-align: center;
+  text-wrap: balance;
+  word-break: keep-all;
 }
 
 .japanese-line.reading-mode {
-  font-size: clamp(3rem, 7vw, 6.8rem);
+  font-family: "Yu Gothic", Meiryo, system-ui, sans-serif;
+  font-size: clamp(3.4rem, 6.9vw, 6.7rem);
+  font-weight: 780;
+  line-height: 1.06;
+}
+
+.japanese-line.long-line {
+  font-size: clamp(3.7rem, 7.2vw, 7.2rem);
+  line-height: 1.04;
+}
+
+.japanese-line.dense-line {
+  font-size: clamp(3.1rem, 6.1vw, 5.7rem);
+  line-height: 1.1;
+}
+
+.japanese-line.reading-mode.long-line {
+  font-size: clamp(2.8rem, 5.3vw, 5.1rem);
+}
+
+.japanese-line.reading-mode.dense-line {
+  font-size: clamp(2.25rem, 4.4vw, 4.2rem);
 }
 
 .muted-line {
   color: var(--soft-muted);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
   font-size: clamp(2rem, 5vw, 4rem);
 }
 
 .prompt-placeholder {
-  min-height: 240px;
+  min-height: 0;
+  height: 100%;
   display: grid;
   place-items: center;
   color: var(--muted);
@@ -610,31 +643,44 @@ input[type="number"] {
 .token {
   position: relative;
   border: 0;
-  border-radius: 6px;
+  border-radius: 0.12em;
   background: transparent;
   color: inherit;
   font: inherit;
   line-height: inherit;
-  padding: 0 0.03em;
+  min-width: 0;
+  max-width: 100%;
+  margin: -0.04em 0;
+  padding: 0.035em 0.025em 0.02em;
+  overflow-wrap: anywhere;
   cursor: pointer;
+  transition:
+    background-color 120ms ease,
+    box-shadow 120ms ease,
+    color 120ms ease,
+    transform 120ms ease;
 }
 
 .token.lexical:hover {
   background: color-mix(in srgb, var(--accent-soft) 84%, var(--surface));
+  box-shadow: inset 0 -0.08em 0 color-mix(in srgb, var(--accent) 58%, transparent);
+  color: var(--accent);
 }
 
 .token.grammar:hover {
   background: var(--warm-soft);
+  box-shadow: inset 0 -0.08em 0 color-mix(in srgb, var(--warm) 58%, transparent);
+  color: var(--warm);
 }
 
 .token-tip {
   position: absolute;
   left: 50%;
-  bottom: calc(100% + 8px);
+  bottom: calc(100% + 12px);
   z-index: 5;
   display: none;
   width: max-content;
-  max-width: 240px;
+  max-width: min(280px, 72vw);
   transform: translateX(-50%);
   border-radius: 8px;
   background: var(--surface-strong);
@@ -643,6 +689,7 @@ input[type="number"] {
   font-size: 0.9rem;
   line-height: 1.25;
   text-align: center;
+  box-shadow: 0 14px 34px var(--shadow);
 }
 
 .token-tip small {
@@ -661,24 +708,32 @@ input[type="number"] {
 
 .english-front,
 .english-meaning {
-  max-width: 980px;
+  max-width: min(980px, 100%);
   margin: 0;
   color: var(--warm);
-  font-size: clamp(2.2rem, 5vw, 4.6rem);
-  font-weight: 850;
-  line-height: 1.15;
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  font-weight: 820;
+  line-height: 1.08;
   text-align: center;
+  text-wrap: balance;
 }
 
 .english-meaning {
-  font-size: clamp(1.45rem, 2.6vw, 2.4rem);
+  max-width: min(880px, 100%);
+  color: color-mix(in srgb, var(--warm) 86%, var(--text));
+  font-size: clamp(1.55rem, 2.7vw, 2.55rem);
+  font-weight: 760;
+  line-height: 1.18;
 }
 
 .fact-note {
-  max-width: 760px;
+  max-width: min(820px, 100%);
   margin: 0;
   color: var(--muted);
+  font-size: clamp(0.95rem, 1.2vw, 1.08rem);
+  line-height: 1.5;
   text-align: center;
+  text-wrap: balance;
 }
 
 .practice-controls {
@@ -805,6 +860,28 @@ input[type="number"] {
     padding: 20px;
   }
 
+  .card-stage {
+    grid-template-rows: minmax(250px, 1fr) minmax(100px, auto) minmax(54px, auto);
+    padding-top: 4px;
+  }
+
+  .japanese-line {
+    font-size: clamp(3.6rem, 14vw, 6.8rem);
+    line-height: 1;
+  }
+
+  .japanese-line.reading-mode {
+    font-size: clamp(2.8rem, 10vw, 5.2rem);
+  }
+
+  .japanese-line.long-line {
+    font-size: clamp(3rem, 11.5vw, 5.2rem);
+  }
+
+  .japanese-line.dense-line {
+    font-size: clamp(2.35rem, 9vw, 4rem);
+  }
+
   .practice-header {
     align-items: stretch;
     flex-direction: column;
@@ -838,6 +915,37 @@ input[type="number"] {
 }
 
 @media (max-width: 520px) {
+  .card-stage {
+    grid-template-rows: minmax(220px, 1fr) minmax(92px, auto) minmax(50px, auto);
+    gap: 12px;
+  }
+
+  .japanese-line {
+    column-gap: 0.04em;
+    row-gap: 0.14em;
+    font-size: clamp(3.2rem, 18vw, 5.8rem);
+  }
+
+  .japanese-line.reading-mode {
+    font-size: clamp(2.35rem, 11vw, 4.4rem);
+  }
+
+  .japanese-line.long-line {
+    font-size: clamp(2.55rem, 13vw, 4.7rem);
+  }
+
+  .japanese-line.dense-line {
+    font-size: clamp(2rem, 10.4vw, 3.5rem);
+  }
+
+  .english-front {
+    font-size: clamp(2.15rem, 11vw, 3.6rem);
+  }
+
+  .english-meaning {
+    font-size: clamp(1.35rem, 7vw, 2rem);
+  }
+
   .settings-panel {
     grid-template-columns: 1fr;
   }
