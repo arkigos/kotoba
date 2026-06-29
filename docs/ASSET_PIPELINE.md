@@ -48,6 +48,8 @@ Reusable scene images keep units visually alive without requiring one unique ima
 
 ## Art Direction
 
-Kotoba image assets should be beautiful, emotionally engaging 2D Japanese watercolor illustrations rather than generic placeholders. Prefer refined anime-influenced character appeal, delicate ink linework, washi paper texture, transparent layered washes, pigment blooming, granulation, muted indigo/vermillion/moss accents, and quiet modern Japanese slice-of-life composition.
+Kotoba image assets should feel like austere, beautiful Japanese ink-and-watercolor artifacts rather than generic placeholders. Prefer intentionally 2D traditional illustration, cool off-white rice paper, mostly grayscale sumi ink, broad economical brush strokes, dry-brush marks, pigment blooms, splotches, granulation, rough edges, and old-timey Japanese school or everyday settings. A slight anime-influenced beauty ideal is welcome in faces and silhouettes, but the result should read as high stylized art, not cartoon.
 
-Images may represent a coherent set of cards rather than one card literally. Avoid text, labels, watermarks, glossy digital rendering, 3D lighting, plastic skin, and generic AI watercolor polish.
+Use color sparingly: tiny muted indigo, vermilion, or yellow accents are enough. Avoid beige/tan/cream/brown/sepia palettes, readable text, labels, watermarks, glossy digital rendering, 3D lighting, plastic skin, chibi/cute mascot energy, generic AI watercolor polish, and non-Japanese architectural cues.
+
+Images may represent a coherent set of cards rather than one card literally. Unit 1 is the prototype direction: five reusable PNG scene images replace the placeholder SVGs while preserving stable card ids and manifest structure.
