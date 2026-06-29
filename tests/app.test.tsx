@@ -36,6 +36,7 @@ describe("practice player", () => {
     expect(screen.getByText(/Aです/)).toBeInTheDocument();
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "私です。");
     expect(screen.queryByLabelText(/language/i)).not.toBeInTheDocument();
+    expect(screen.queryByLabelText(/image/i)).not.toBeInTheDocument();
   });
 
   it("groups units under expandable course levels", async () => {
@@ -147,7 +148,7 @@ describe("practice player", () => {
 
     await user.click(screen.getByRole("button", { name: "Recall" }));
     expect(screen.getByText("It's me.")).toBeInTheDocument();
-    expect(screen.getByLabelText("Image prompt")).toHaveAttribute("hidden");
+    expect(screen.queryByLabelText(/image/i)).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: /show japanese/i })).toBeInTheDocument();
   });
 
@@ -220,16 +221,14 @@ describe("practice player", () => {
 
     expect(screen.queryByRole("button", { name: /random/i })).not.toBeInTheDocument();
     expect(screen.queryByRole("button", { name: /hide image/i })).not.toBeInTheDocument();
-    expect(screen.getByLabelText("Media area")).toBeInTheDocument();
+    expect(screen.queryByLabelText("Media area")).not.toBeInTheDocument();
     expect(screen.getByLabelText("Front card area")).toBeInTheDocument();
     expect(screen.getByLabelText("Reveal card area")).toBeInTheDocument();
     expect(screen.getByLabelText("Card note area")).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /settings/i }));
-    await user.click(screen.getByLabelText(/^image$/i));
     await user.click(screen.getByLabelText(/^notes$/i));
 
-    expect(screen.getByLabelText("Media area")).toBeInTheDocument();
     expect(screen.getByLabelText("Front card area")).toBeInTheDocument();
     expect(screen.getByLabelText("Reveal card area")).toBeInTheDocument();
     expect(screen.getByLabelText("Card note area")).toBeInTheDocument();

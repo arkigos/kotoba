@@ -37,7 +37,7 @@ Owns frozen authored content:
 - unit word lists
 - grammar focus references
 - cards
-- image and audio references
+- audio references
 
 Curriculum files live in the repository and are validated by script.
 
@@ -51,7 +51,6 @@ Owns the main drill loop:
 - reveal/toggle English
 - show/hide Japanese text
 - word-part explanation display
-- image display
 - audio replay
 
 The practice player is the primary screen.
@@ -77,14 +76,12 @@ Owns learner state:
 
 Progress persists in browser storage.
 
-### Media Layer
+### Audio Layer
 
-Owns media lookup:
+Owns audio lookup:
 
-- image references
-- image prompts
 - audio references
-- placeholder rendering for missing media
+- browser speech fallback for missing audio files
 
 ### Validation and Authoring
 
@@ -97,14 +94,14 @@ Owns curriculum quality:
 - word function-distribution checks
 - `line` / `tts` / `explain` alignment
 - card field validation
-- media reference checks
+- audio manifest checks
 
 Codex authors the curriculum and uses validators to verify it.
 
 ## Curriculum Runtime Model
 
 The app consumes finished unit data. Unit files already contain the card
-sequence, word list, grammar focus, explanations, and media references.
+sequence, word list, grammar focus, explanations, and optional audio references.
 
 For unit `N`, available vocabulary includes all words introduced in units `1...N`.
 The review-due vocabulary that must return is determined from:
@@ -143,7 +140,6 @@ data/
         unit_001.json
         unit_002.json
     media/
-      images/
       audio/
 ```
 

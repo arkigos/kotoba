@@ -5,7 +5,6 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const unitDir = path.join(root, "data/jp/curriculum/units");
 const manifestDir = path.join(root, "data/jp/media/manifests");
-const imageRoot = path.join(root, "public/media/jp/images");
 
 function pad(value) {
   return String(value).padStart(3, "0");
@@ -716,9 +715,8 @@ function verbToken(id, key = "masu") {
   return word(id, surface, reading, explain);
 }
 
-function makeCard(unitId, index, parts, english, grammarTags, imagePrompt, fact) {
+function makeCard(unitId, index, parts, english, grammarTags, _visualPrompt, fact) {
   const id = `u${pad(unitId)}-c${pad(index)}`;
-  const imageNumber = String(((index - 1) % 5) + 1).padStart(2, "0");
   return {
     id,
     line: parts.map((part) => part.surface),
@@ -730,8 +728,6 @@ function makeCard(unitId, index, parts, english, grammarTags, imagePrompt, fact)
       return token;
     }),
     english,
-    imagePrompt,
-    imageRef: `/media/jp/images/unit_${pad(unitId)}/scenes/scene-${imageNumber}.svg`,
     fact,
     grammarTags,
   };
@@ -1198,19 +1194,6 @@ function generateCards(spec) {
   throw new Error(`No generator for unit ${spec.id}`);
 }
 
-function sceneSvg(spec, sceneNumber) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-  <rect width="1200" height="800" fill="#f2f6f3"/>
-  <rect x="86" y="86" width="1028" height="628" rx="24" fill="#fffdfa" stroke="#26665d" stroke-width="8"/>
-  <path d="M220 560 H980" stroke="#d8a45f" stroke-width="18" stroke-linecap="round" opacity="0.82"/>
-  <path d="M330 500 C420 390 560 410 650 310 C720 232 820 250 900 190" fill="none" stroke="#8d4a3f" stroke-width="16" stroke-linecap="round" opacity="0.66"/>
-  <circle cx="330" cy="320" r="64" fill="#26665d" opacity="0.88"/>
-  <circle cx="850" cy="430" r="76" fill="#d8a45f" opacity="0.78"/>
-  <text x="600" y="370" font-family="Arial, sans-serif" font-size="48" font-weight="800" text-anchor="middle" fill="#17211f">${escapeXml(spec.title)}</text>
-  <text x="600" y="440" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle" fill="#56635f">Scene ${sceneNumber}</text>
-</svg>`;
-}
-
 for (const spec of specs) {
   for (const [id, surface, reading, meaning, fn] of spec.words) {
     lexicon.set(id, { id, surface, reading, meaning, function: fn });
@@ -1231,19 +1214,12 @@ for (const spec of specs) {
   };
   writeJson(path.join(unitDir, `${unitSlug}.json`), unit);
 
-  const sceneDir = path.join(imageRoot, unitSlug, "scenes");
-  fs.mkdirSync(sceneDir, { recursive: true });
-  for (let scene = 1; scene <= 5; scene += 1) {
-    fs.writeFileSync(path.join(sceneDir, `scene-${String(scene).padStart(2, "0")}.svg`), sceneSvg(spec, scene), "utf8");
-  }
 
   const manifest = {
     unitId: spec.id,
     unitSlug,
     generatedAt: "2026-06-28T00:00:00.000Z",
-    imagePolicy: "five reusable placeholder scene images per unit; cards are assigned by cluster",
     audioPolicy: "audio is queued; app uses browser speech fallback until production audio exists",
-    images: cards.map((card) => ({ cardId: card.id, status: "placeholder", path: card.imageRef, prompt: card.imagePrompt })),
     audio: cards.map((card) => ({ cardId: card.id, status: "queued", path: `/media/jp/audio/${unitSlug}/${card.id}.mp3`, text: card.line.join("") })),
   };
   writeJson(path.join(manifestDir, `${unitSlug}.assets.json`), manifest);

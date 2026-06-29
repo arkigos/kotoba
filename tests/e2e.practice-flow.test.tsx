@@ -20,7 +20,7 @@ describe("practice flow e2e", () => {
 
     expect(screen.getByRole("heading", { name: "Unit 1: First Sentences" })).toBeInTheDocument();
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "私です。");
-    expect(screen.getByLabelText("Image prompt")).toBeVisible();
+    expect(screen.queryByLabelText(/image/i)).not.toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /show english/i }));
     expect(screen.getByText("It's me.")).toBeVisible();
@@ -38,11 +38,7 @@ describe("practice flow e2e", () => {
     expect(screen.getByText(/Japanese audio|Audio queued/)).toBeVisible();
 
     await user.click(screen.getByRole("button", { name: /settings/i }));
-    expect(screen.getByLabelText("Media area")).toBeInTheDocument();
-    await user.click(screen.getByLabelText(/^image$/i));
-    expect(screen.getByLabelText("Media area")).toBeInTheDocument();
-    expect(screen.getByLabelText("Image prompt")).toHaveAttribute("hidden");
-    expect(screen.getByText("Image hidden")).toBeVisible();
+    expect(screen.queryByLabelText("Media area")).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: /show english/i })).toBeVisible();
 
     await user.selectOptions(screen.getByLabelText(/card number/i), "12");

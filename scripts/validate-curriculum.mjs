@@ -169,7 +169,6 @@ export async function validateCurriculum() {
       const label = `unit ${unit.id} card ${card.id ?? cardIndex + 1}`;
       assert(card.id, `${label}: missing id`, failures);
       assert(card.english, `${label}: missing English meaning`, failures);
-      assert(card.imagePrompt || card.imageRef, `${label}: needs imagePrompt or imageRef`, failures);
       assert(Array.isArray(card.line), `${label}: line must be an array`, failures);
       assert(Array.isArray(card.tts), `${label}: tts must be an array`, failures);
       assert(Array.isArray(card.explain), `${label}: explain must be an array`, failures);

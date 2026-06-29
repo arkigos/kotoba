@@ -43,7 +43,6 @@ Each standard unit has:
 - one grammar focus
 - 10 new words selected to support that grammar focus
 - 80-150 cards
-- images or image prompts for cards
 
 The unit title is learner-facing, such as `Unit 6: This And That`.
 The grammar focus remains visible as supporting text, such as:
@@ -130,14 +129,14 @@ Supporting modes:
 - curriculum map
 - word lookup from introduced words
 - grammar focus summary
-- image/audio generation workflow
+- audio generation workflow
 - local progress tracking
 
 The practice player also has lightweight presets over the same settings:
 
-- Reading: Japanese-first with images, notes, and audio.
+- Reading: Japanese-first with notes and audio.
 - Listening: audio-first with prompt text hidden.
-- Recall: English-first with image and notes hidden.
+- Recall: English-first with notes hidden.
 - Rapid: compact Japanese-first review with auto advance.
 
 ## Progress Model
@@ -160,7 +159,6 @@ system.
 Kotoba is focused and immersive:
 
 - sentence first
-- image support without visual clutter
 - fast card movement
 - visible but unobtrusive controls
 - strong readability for Japanese text

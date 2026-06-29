@@ -49,8 +49,6 @@ export type PracticeCard = {
   explain: string[];
   tokens: CardToken[];
   english: string;
-  imagePrompt?: string;
-  imageRef?: string;
   audioRef?: string;
   fact: string;
   grammarTags: string[];
@@ -76,7 +74,6 @@ export type AudioLanguage = "japanese" | "english" | "both";
 export type ThemeMode = "light" | "dark";
 
 export type PracticeSettings = {
-  showImage: boolean;
   showPromptText: boolean;
   cardFront: CardFront;
   japaneseDisplay: JapaneseDisplayMode;

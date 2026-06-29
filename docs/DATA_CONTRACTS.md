@@ -87,7 +87,6 @@ Each card has:
 - `english`: semantic English translation of the target-language `line`.
   It should be natural English, but it must not add an answer, object, owner,
   tense, relationship, or scene detail that is not present in the Japanese.
-- `imagePrompt` or `imageRef`: visual support.
 - `audioRef`: optional audio reference.
 - `fact`: short usage, grammar, or cultural note.
 - `grammarTags`: grammar patterns used by the card.

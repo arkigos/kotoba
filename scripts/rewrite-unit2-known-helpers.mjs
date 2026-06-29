@@ -41,7 +41,7 @@ function tokenFactory(words) {
   };
 }
 
-function makeCard(unitId, words, imageRef) {
+function makeCard(unitId, words) {
   const token = tokenFactory(words);
   return (index, values, english, fact, grammarTags) => {
     const tokens = values.map(token);
@@ -52,10 +52,8 @@ function makeCard(unitId, words, imageRef) {
       explain: tokens.map((part) => part.explain),
       tokens,
       english,
-      imagePrompt: `Watercolor card scene: ${english}`,
       fact,
       grammarTags,
-      ...(imageRef ? { imageRef } : {}),
     };
   };
 }
@@ -63,8 +61,7 @@ function makeCard(unitId, words, imageRef) {
 const unit1 = await readJson("data/jp/curriculum/units/unit_001.json");
 const unit2 = await readJson("data/jp/curriculum/units/unit_002.json");
 const knownWords = [...unit1.newWords, ...unit2.newWords];
-const imageRef = unit2.cards.find((entry) => entry.imageRef)?.imageRef;
-const card = makeCard(2, knownWords, imageRef);
+const card = makeCard(2, knownWords);
 const cards = [];
 let i = 1;
 

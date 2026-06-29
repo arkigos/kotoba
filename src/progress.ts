@@ -3,7 +3,6 @@ import type { PracticeSettings, Progress } from "./types";
 const key = "kotoba.progress.v1";
 
 export const defaultSettings: PracticeSettings = {
-  showImage: true,
   showPromptText: true,
   cardFront: "japanese",
   japaneseDisplay: "surface",

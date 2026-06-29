@@ -43,7 +43,6 @@ Codex:
 - creates the Vite React TypeScript app
 - defines the final unit/card data contracts
 - authors seed Japanese curriculum units
-- creates image prompts and media references
 - preserves audio references
 - writes curriculum validators
 - writes automated tests
@@ -76,7 +75,6 @@ The app supports:
 - reveal/toggle English
 - show/hide Japanese text
 - show aligned word explanations
-- display image or placeholder
 - replay audio when present
 - save local progress
 
@@ -108,8 +106,7 @@ Add validators for:
 - sterile category-card and late bare-identity overuse checks
 - aligned `line`, `tts`, and `explain`
 - required card fields
-- image prompt or image reference
-- media reference shape
+- audio manifest shape
 
 Expose the validator through:
 
@@ -128,7 +125,6 @@ Each seed unit:
 - has 10 new words
 - follows `word_selection_rules.md`
 - contains enough cards to demonstrate long repetitive modular flow
-- includes image prompts or image references
 
 ### 6. Build App Tests
 
@@ -187,7 +183,7 @@ outside the current review bin may still be used when they make the card better.
 
 - The primary screen is the practice experience.
 - The app uses local checked-in curriculum data.
-- Missing audio or images never break the card flow.
+- Missing audio never breaks the card flow.
 - Japanese text is large, readable, and central.
 - Controls are fast and obvious.
 - Progress persists locally.

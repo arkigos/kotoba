@@ -34,21 +34,9 @@ for (const entry of index.units) {
   }
 
   const manifest = await readJson(manifestPath);
-  const imageByCard = new Map(manifest.images.map((asset) => [asset.cardId, asset]));
   const audioByCard = new Map(manifest.audio.map((asset) => [asset.cardId, asset]));
 
   for (const card of unit.cards) {
-    if (!card.imageRef) {
-      failures.push(`${unitSlug} ${card.id}: missing imageRef`);
-    } else if (!(await exists(publicPathFromRef(card.imageRef)))) {
-      failures.push(`${unitSlug} ${card.id}: imageRef does not exist: ${card.imageRef}`);
-    }
-
-    const image = imageByCard.get(card.id);
-    if (!image) {
-      failures.push(`${unitSlug} ${card.id}: missing image manifest entry`);
-    }
-
     const audio = audioByCard.get(card.id);
     if (!audio) {
       failures.push(`${unitSlug} ${card.id}: missing audio manifest entry`);

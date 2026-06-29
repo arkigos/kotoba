@@ -123,7 +123,7 @@ Codex verifies:
 - Controls do not overlap content.
 - Long English meanings do not break layout.
 - Tooltips or explanation panels remain within the viewport.
-- The app is usable without images loaded.
+- The app remains text-first with no image panel or image controls.
 - The primary screen is the practice tool, not a marketing page.
 
 Automated screenshot testing is part of the e2e suite. Manual viewport checks

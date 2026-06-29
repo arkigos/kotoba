@@ -9,7 +9,6 @@ import {
   CircleMinus,
   Eye,
   EyeOff,
-  ImageOff,
   List,
   RotateCcw,
   Settings,
@@ -26,7 +25,6 @@ const studyPresets: Array<{ id: string; label: string; settings: Partial<Practic
     id: "reading",
     label: "Reading",
     settings: {
-      showImage: true,
       showPromptText: true,
       cardFront: "japanese",
       revealByDefault: false,
@@ -40,7 +38,6 @@ const studyPresets: Array<{ id: string; label: string; settings: Partial<Practic
     id: "listening",
     label: "Listening",
     settings: {
-      showImage: true,
       showPromptText: false,
       cardFront: "japanese",
       revealByDefault: false,
@@ -54,7 +51,6 @@ const studyPresets: Array<{ id: string; label: string; settings: Partial<Practic
     id: "recall",
     label: "Recall",
     settings: {
-      showImage: false,
       showPromptText: true,
       cardFront: "english",
       revealByDefault: false,
@@ -68,7 +64,6 @@ const studyPresets: Array<{ id: string; label: string; settings: Partial<Practic
     id: "rapid",
     label: "Rapid",
     settings: {
-      showImage: false,
       showPromptText: true,
       cardFront: "japanese",
       revealByDefault: false,
@@ -484,14 +479,12 @@ export function App() {
         setSettingsOpen((open) => !open);
       } else if (event.key.toLowerCase() === "j") {
         updateSettings({ japaneseDisplay: nextJapaneseDisplayMode(settings.japaneseDisplay) });
-      } else if (event.key.toLowerCase() === "i") {
-        updateSettings({ showImage: !settings.showImage });
       }
     };
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [nextCard, previousCard, replayAudio, settings.japaneseDisplay, settings.showImage, updateSettings]);
+  }, [nextCard, previousCard, replayAudio, settings.japaneseDisplay, updateSettings]);
 
   const primaryIsJapanese = settings.cardFront === "japanese";
   const frontContent = !settings.showPromptText ? (
@@ -649,10 +642,6 @@ export function App() {
               ))}
             </div>
             <label>
-              <input type="checkbox" checked={settings.showImage} onChange={(event) => updateSettings({ showImage: event.target.checked })} />
-              Image
-            </label>
-            <label>
               <input
                 type="checkbox"
                 checked={settings.showPromptText}
@@ -748,18 +737,6 @@ export function App() {
         )}
 
         <article className="card-stage">
-          <div key={`media-${card.id}`} className={`stage-slot media-slot ${settings.showImage ? "" : "is-hidden"}`} aria-label="Media area">
-            <div className="image-prompt" aria-label="Image prompt" hidden={!settings.showImage}>
-              {card.imageRef ? <img src={card.imageRef} alt="" /> : <span>{card.imagePrompt || "Scene queued"}</span>}
-            </div>
-            {!settings.showImage && (
-              <div className="hidden-slot-note">
-                <ImageOff aria-hidden="true" />
-                <span>Image hidden</span>
-              </div>
-            )}
-          </div>
-
           <div key={`front-${card.id}-${settings.cardFront}-${settings.japaneseDisplay}`} className="stage-slot front-slot" aria-label="Front card area">
             {frontContent}
           </div>
