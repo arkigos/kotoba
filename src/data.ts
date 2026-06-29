@@ -1,8 +1,7 @@
-import languagesJson from "../data/languages.json";
 import courseLevelsJson from "../data/jp/curriculum/course_levels.json";
 import unitIndexJson from "../data/jp/curriculum/unit_index.json";
 import unit001Json from "../data/jp/curriculum/units/unit_001.json";
-import type { CourseLevels, CurriculumUnit, Language, UnitIndex } from "./types";
+import type { CourseLevels, CurriculumUnit, UnitIndex } from "./types";
 
 type UnitModule = { default: CurriculumUnit };
 
@@ -12,7 +11,6 @@ const unitModules = import.meta.glob<UnitModule>([
 ]);
 const unitCache = new Map<number, CurriculumUnit>([[1, unit001Json as CurriculumUnit]]);
 
-export const languages = languagesJson as Language[];
 export const courseLevels = courseLevelsJson as CourseLevels;
 export const unitIndex = unitIndexJson as UnitIndex;
 export const initialUnit = unit001Json as CurriculumUnit;

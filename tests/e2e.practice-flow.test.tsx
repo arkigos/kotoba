@@ -34,7 +34,7 @@ describe("practice flow e2e", () => {
     await user.click(screen.getByRole("button", { name: /previous/i }));
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "私です。");
 
-    await user.click(screen.getByRole("button", { name: /^audio$/i }));
+    await user.click(screen.getByRole("button", { name: /^play audio$/i }));
     expect(screen.getByText(/Japanese audio|Audio queued/)).toBeVisible();
 
     await user.click(screen.getByRole("button", { name: /settings/i }));

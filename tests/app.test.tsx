@@ -35,6 +35,7 @@ describe("practice player", () => {
     expect(screen.getByRole("heading", { name: "Unit 1: First Sentences" })).toBeInTheDocument();
     expect(screen.getByText(/Aです/)).toBeInTheDocument();
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "私です。");
+    expect(screen.queryByLabelText(/language/i)).not.toBeInTheDocument();
   });
 
   it("groups units under expandable course levels", async () => {
@@ -43,6 +44,7 @@ describe("practice player", () => {
 
     expect(screen.getByText("Levels")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /A1 Survival Foundations/i })).toHaveAttribute("aria-expanded", "true");
+    expect(screen.getByRole("button", { name: /A1 Survival Foundations.*0\/20 complete/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /A2 Everyday Control/i })).toHaveAttribute("aria-expanded", "false");
 
     await user.click(screen.getByRole("button", { name: /A2 Everyday Control/i }));
@@ -63,11 +65,11 @@ describe("practice player", () => {
 
     fireEvent.click(screen.getByRole("button", { name: /settings/i }));
     fireEvent.change(screen.getByRole("combobox", { name: /audio/i }), { target: { value: "english" } });
-    fireEvent.click(screen.getByRole("button", { name: /^audio$/i }));
+    fireEvent.click(screen.getByRole("button", { name: /^play audio$/i }));
     expect(lastSpoken()).toMatchObject({ text: "It's me.", lang: "en-US" });
 
     fireEvent.change(screen.getByRole("combobox", { name: /audio/i }), { target: { value: "both" } });
-    fireEvent.click(screen.getByRole("button", { name: /^audio$/i }));
+    fireEvent.click(screen.getByRole("button", { name: /^play audio$/i }));
     expect(lastSpoken()).toMatchObject({ text: "私です。", lang: "ja-JP" });
     (lastSpoken() as SpeechSynthesisUtterance & { onend: () => void }).onend();
     act(() => {
@@ -118,6 +120,7 @@ describe("practice player", () => {
     const saved = window.localStorage.getItem("kotoba.progress.v1");
     expect(saved).toContain('"japaneseDisplay":"kana"');
     expect(saved).toContain('"cardPositions":{"1":1}');
+    expect(saved).not.toContain("languageCode");
   });
 
   it("can start cards revealed by default", async () => {
@@ -173,7 +176,7 @@ describe("practice player", () => {
 
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "学生です。");
 
-    await user.click(screen.getByRole("button", { name: /restart/i }));
+    await user.click(screen.getByRole("button", { name: /^restart$/i }));
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "私です。");
   });
 
@@ -183,11 +186,30 @@ describe("practice player", () => {
 
     await user.selectOptions(screen.getByLabelText(/card number/i), "10");
     expect(screen.getByLabelText(/card number/i)).toHaveValue("10");
+    expect(screen.getByRole("progressbar", { name: /unit progress/i })).toHaveAttribute("aria-valuenow", "13");
+    expect(screen.getByText(/Card 10 \/ 80 · 13% complete/)).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /mark unit complete/i }));
     expect(screen.getByText("Completed")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Unit 1: First Sentences.*Complete/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /A1 Survival Foundations.*1\/20 complete/i })).toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: /mark incomplete/i }));
     expect(screen.getByText(/cards left/i)).toBeInTheDocument();
+  });
+
+  it("persists dark mode from settings", async () => {
+    const user = userEvent.setup();
+    const { container, unmount } = render(<App />);
+
+    await user.click(screen.getByRole("button", { name: /settings/i }));
+    await user.click(screen.getByLabelText(/dark mode/i));
+
+    expect(container.querySelector(".app-shell")).toHaveAttribute("data-theme", "dark");
+    expect(window.localStorage.getItem("kotoba.progress.v1")).toContain('"theme":"dark"');
+
+    unmount();
+    const rerendered = render(<App />);
+    expect(rerendered.container.querySelector(".app-shell")).toHaveAttribute("data-theme", "dark");
   });
 
   it("keeps footer actions simple and layout slots stable under settings toggles", async () => {
@@ -221,6 +243,7 @@ describe("practice player", () => {
 
     fireEvent.keyDown(window, { key: "r" });
     expect(screen.getByText("I'm a student.")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /^play audio$/i })).toBeInTheDocument();
 
     fireEvent.keyDown(window, { key: "s" });
     fireEvent.click(screen.getByLabelText(/auto advance/i));

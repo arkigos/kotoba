@@ -15,10 +15,10 @@ export const defaultSettings: PracticeSettings = {
   autoAdvanceOrder: "sequential",
   autoAdvanceLoop: false,
   autoAdvanceDelayMs: 5000,
+  theme: "light",
 };
 
 export const defaultProgress: Progress = {
-  languageCode: "jp",
   unitId: 1,
   cardIndex: 0,
   cardPositions: { "1": 0 },
@@ -60,6 +60,7 @@ function cleanSettings(value: unknown, oldShowJapanese: unknown): PracticeSettin
     audioLanguage,
     autoAdvanceOrder: partial.autoAdvanceOrder === "random" ? "random" : "sequential",
     autoAdvanceDelayMs,
+    theme: partial.theme === "dark" ? "dark" : "light",
   };
 }
 
@@ -75,7 +76,6 @@ export function readProgress(): Progress {
     cardPositions[String(unitId)] = cardPositions[String(unitId)] ?? cardIndex;
 
     return {
-      languageCode: typeof parsed.languageCode === "string" ? parsed.languageCode : defaultProgress.languageCode,
       unitId,
       cardIndex,
       cardPositions,

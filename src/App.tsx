@@ -11,9 +11,10 @@ import {
   List,
   RotateCcw,
   Settings,
+  Sparkles,
   Volume2,
 } from "lucide-react";
-import { courseLevels, getUnit, initialUnit, languages, unitIndex } from "./data";
+import { courseLevels, getUnit, initialUnit, unitIndex } from "./data";
 import { toRomaji } from "./japanese";
 import { defaultProgress, readProgress, writeProgress } from "./progress";
 import type { CourseLevel, JapaneseDisplayMode, PracticeCard, PracticeSettings, Progress, UnitIndexEntry } from "./types";
@@ -117,6 +118,14 @@ function groupedUnitsByLevel() {
   }));
 }
 
+function Keycap({ children }: { children: string }) {
+  return (
+    <kbd className="keycap" aria-hidden="true">
+      {children}
+    </kbd>
+  );
+}
+
 function JapaneseLine({
   card,
   mode,
@@ -173,6 +182,7 @@ export function App() {
   const card = unit.cards[cardIndex];
   const settings = progress.settings;
   const completed = progress.completedUnits.includes(unit.id);
+  const progressPercent = unit.cards.length > 0 ? Math.round(((cardIndex + 1) / unit.cards.length) * 100) : 0;
 
   useEffect(() => {
     if (unit.id === progress.unitId) {
@@ -296,11 +306,26 @@ export function App() {
   };
 
   const renderUnitButton = (entry: UnitIndexEntry) => (
-    <button key={entry.id} className={entry.id === progress.unitId ? "unit-button active" : "unit-button"} onClick={() => selectUnit(entry.id)}>
-      <span>{String(entry.id).padStart(3, "0")}</span>
+    <button
+      key={entry.id}
+      className={[
+        "unit-button",
+        entry.id === progress.unitId ? "active" : "",
+        progress.completedUnits.includes(entry.id) ? "completed" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
+      onClick={() => selectUnit(entry.id)}
+    >
+      <span className="unit-number">{String(entry.id).padStart(3, "0")}</span>
       <strong>{entry.title}</strong>
       <small>{progress.cardPositions[String(entry.id)] ? `Card ${progress.cardPositions[String(entry.id)] + 1}` : "Start"}</small>
-      {progress.completedUnits.includes(entry.id) && <CheckCircle2 aria-label="Completed" />}
+      {progress.completedUnits.includes(entry.id) && (
+        <span className="complete-pill">
+          <CheckCircle2 aria-hidden="true" />
+          Complete
+        </span>
+      )}
     </button>
   );
 
@@ -462,23 +487,18 @@ export function App() {
       : "Show Japanese";
 
   return (
-    <main className="app-shell">
+    <main className="app-shell" data-theme={settings.theme}>
       <aside className="unit-rail" aria-label="Curriculum map">
         <div className="brand-lockup">
-          <BookOpen aria-hidden="true" />
-          <span>Kotoba</span>
+          <span className="brand-mark" aria-hidden="true">
+            <BookOpen />
+            <Sparkles />
+          </span>
+          <span>
+            Kotoba
+            <small>ことば</small>
+          </span>
         </div>
-
-        <label className="field-label" htmlFor="language">
-          Language
-        </label>
-        <select id="language" value={progress.languageCode} onChange={(event) => updateProgress({ languageCode: event.target.value })}>
-          {languages.map((language) => (
-            <option key={language.code} value={language.code}>
-              {language.language}
-            </option>
-          ))}
-        </select>
 
         <div className="rail-heading">
           <List aria-hidden="true" />
@@ -489,6 +509,8 @@ export function App() {
           {levelGroups.map(({ level, units }) => {
             const isExpanded = Boolean(expandedLevels[level.code]);
             const isCurrentLevel = currentLevel?.code === level.code;
+            const completedInLevel = units.filter((entry) => progress.completedUnits.includes(entry.id)).length;
+            const levelTotal = units.length || level.unitEnd - level.unitStart + 1;
             return (
               <section key={level.code} className="level-section">
                 <button
@@ -503,7 +525,7 @@ export function App() {
                     <small>{level.title}</small>
                   </span>
                   <em>
-                    {level.unitStart}-{level.unitEnd}
+                    {completedInLevel}/{levelTotal} complete
                   </em>
                 </button>
 
@@ -553,16 +575,21 @@ export function App() {
               </select>
               <span>/ {unit.cards.length}</span>
             </label>
-            <button className="icon-button" title="Restart this unit" onClick={restartUnit}>
-              <RotateCcw aria-hidden="true" />
-              <span>Restart</span>
+            <button className="icon-button complete-action" title={completed ? "Mark unit incomplete" : "Mark unit complete"} onClick={toggleComplete}>
+              <CheckCircle2 aria-hidden="true" />
+              <span>{completed ? "Mark Incomplete" : "Mark Unit Complete"}</span>
             </button>
             <button className="icon-button" title="Open settings" onClick={() => setSettingsOpen((open) => !open)} aria-expanded={settingsOpen}>
               <Settings aria-hidden="true" />
               <span>Settings</span>
+              <Keycap>S</Keycap>
             </button>
           </div>
         </header>
+
+        <div className="unit-progress" aria-label={`Unit progress ${progressPercent}%`} role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progressPercent}>
+          <span style={{ width: `${progressPercent}%` }} />
+        </div>
 
         {settingsOpen && (
           <section className="settings-panel" aria-label="Practice settings">
@@ -599,6 +626,14 @@ export function App() {
                 }}
               />
               Start revealed
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                checked={settings.theme === "dark"}
+                onChange={(event) => updateSettings({ theme: event.target.checked ? "dark" : "light" })}
+              />
+              Dark mode
             </label>
             <label>
               Front side
@@ -694,26 +729,31 @@ export function App() {
           <button title="Previous card" onClick={previousCard} disabled={cardIndex === 0}>
             <ChevronLeft aria-hidden="true" />
             <span>Previous</span>
+            <Keycap>←</Keycap>
           </button>
           <button title={revealLabel} onClick={() => setShowBack((visible) => !visible)}>
             {showBack ? <EyeOff aria-hidden="true" /> : <Eye aria-hidden="true" />}
             <span>{revealLabel}</span>
+            <Keycap>R</Keycap>
           </button>
-          <button title="Replay audio" onClick={replayAudio}>
+          <button title="Play audio" onClick={replayAudio}>
             <Volume2 aria-hidden="true" />
-            <span>Audio</span>
+            <span>Play Audio</span>
+            <Keycap>A</Keycap>
           </button>
           <button title="Next card" onClick={nextCard} disabled={cardIndex === unit.cards.length - 1 && !settings.autoAdvanceLoop}>
             <ChevronRight aria-hidden="true" />
             <span>Next</span>
+            <Keycap>Space/→</Keycap>
           </button>
-          <button title={completed ? "Mark unit incomplete" : "Mark unit complete"} onClick={toggleComplete}>
-            <CheckCircle2 aria-hidden="true" />
-            <span>{completed ? "Mark Incomplete" : "Mark Unit Complete"}</span>
+          <button title="Restart this unit" onClick={restartUnit}>
+            <RotateCcw aria-hidden="true" />
+            <span>Restart</span>
           </button>
         </footer>
 
         <div className="status-row" aria-live="polite">
+          <span>{`Card ${cardIndex + 1} / ${unit.cards.length} · ${progressPercent}% complete`}</span>
           <span>{completed ? "Completed" : `${unit.cards.length - cardIndex - 1} cards left`}</span>
           {message && <span>{message}</span>}
         </div>

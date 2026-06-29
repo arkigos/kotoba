@@ -1,8 +1,3 @@
-export type Language = {
-  code: string;
-  language: string;
-};
-
 export type UnitIndexEntry = {
   id: number;
   slug: string;
@@ -78,6 +73,8 @@ export type AutoAdvanceOrder = "sequential" | "random";
 
 export type AudioLanguage = "japanese" | "english" | "both";
 
+export type ThemeMode = "light" | "dark";
+
 export type PracticeSettings = {
   showImage: boolean;
   showPromptText: boolean;
@@ -91,10 +88,10 @@ export type PracticeSettings = {
   autoAdvanceOrder: AutoAdvanceOrder;
   autoAdvanceLoop: boolean;
   autoAdvanceDelayMs: number;
+  theme: ThemeMode;
 };
 
 export type Progress = {
-  languageCode: string;
   unitId: number;
   cardIndex: number;
   cardPositions: Record<string, number>;
