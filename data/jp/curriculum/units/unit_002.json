@@ -1,0 +1,5810 @@
+{
+  "id": 2,
+  "slug": "topic-comment",
+  "title": "Unit 2: Talking About Things",
+  "grammarFocus": "AはBです / AはBですか / AとBはCです / AかBかCですか",
+  "newWords": [
+    {
+      "id": "neko",
+      "surface": "猫",
+      "reading": "ねこ",
+      "meaning": "cat",
+      "function": "noun"
+    },
+    {
+      "id": "inu",
+      "surface": "犬",
+      "reading": "いぬ",
+      "meaning": "dog",
+      "function": "noun"
+    },
+    {
+      "id": "doubutsu",
+      "surface": "動物",
+      "reading": "どうぶつ",
+      "meaning": "animal",
+      "function": "noun"
+    },
+    {
+      "id": "hon",
+      "surface": "本",
+      "reading": "ほん",
+      "meaning": "book",
+      "function": "noun"
+    },
+    {
+      "id": "ie",
+      "surface": "家",
+      "reading": "いえ",
+      "meaning": "house; home",
+      "function": "place"
+    },
+    {
+      "id": "gakkou",
+      "surface": "学校",
+      "reading": "がっこう",
+      "meaning": "school",
+      "function": "place"
+    },
+    {
+      "id": "basho",
+      "surface": "場所",
+      "reading": "ばしょ",
+      "meaning": "place",
+      "function": "noun"
+    },
+    {
+      "id": "isha",
+      "surface": "医者",
+      "reading": "いしゃ",
+      "meaning": "doctor",
+      "function": "person"
+    },
+    {
+      "id": "hito",
+      "surface": "人",
+      "reading": "ひと",
+      "meaning": "person",
+      "function": "person"
+    },
+    {
+      "id": "mono",
+      "surface": "物",
+      "reading": "もの",
+      "meaning": "thing; object",
+      "function": "noun"
+    }
+  ],
+  "cards": [
+    {
+      "id": "u002-c001",
+      "line": [
+        "猫",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ねこ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "cat",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's a cat.",
+      "imagePrompt": "Watercolor card scene: It's a cat.",
+      "fact": "`は` points to the topic; the comment after it carries the new information.",
+      "grammarTags": [
+        "Aです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c002",
+      "line": [
+        "犬",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "いぬ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "dog",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's a dog.",
+      "imagePrompt": "Watercolor card scene: It's a dog.",
+      "fact": "`物` is broad: object, item, or thing depending on the sentence around it.",
+      "grammarTags": [
+        "Aです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c003",
+      "line": [
+        "動物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "どうぶつ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "animal",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's an animal.",
+      "imagePrompt": "Watercolor card scene: It's an animal.",
+      "fact": "Japanese categories can feel wider than English categories, so let the full sentence guide the translation.",
+      "grammarTags": [
+        "Aです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c004",
+      "line": [
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "book",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's a book.",
+      "imagePrompt": "Watercolor card scene: It's a book.",
+      "fact": "`場所` covers places of many sizes, from rooms to countries.",
+      "grammarTags": [
+        "Aです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c005",
+      "line": [
+        "家",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "いえ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "house; home",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's a house.",
+      "imagePrompt": "Watercolor card scene: It's a house.",
+      "fact": "Short topic-comment sentences are a strong base for describing people, animals, places, and objects.",
+      "grammarTags": [
+        "Aです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c006",
+      "line": [
+        "学校",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がっこう",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "school",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's a school.",
+      "imagePrompt": "Watercolor card scene: It's a school.",
+      "fact": "A noun before `です` often acts like a label: person, place, animal, object.",
+      "grammarTags": [
+        "Aです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c007",
+      "line": [
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's a place.",
+      "imagePrompt": "Watercolor card scene: It's a place.",
+      "fact": "`は` points to the topic; the comment after it carries the new information.",
+      "grammarTags": [
+        "Aです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c008",
+      "line": [
+        "医者",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "いしゃ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "doctor",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's a doctor.",
+      "imagePrompt": "Watercolor card scene: It's a doctor.",
+      "fact": "`物` is broad: object, item, or thing depending on the sentence around it.",
+      "grammarTags": [
+        "Aです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c009",
+      "line": [
+        "人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "person",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's a person.",
+      "imagePrompt": "Watercolor card scene: It's a person.",
+      "fact": "Japanese categories can feel wider than English categories, so let the full sentence guide the translation.",
+      "grammarTags": [
+        "Aです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c010",
+      "line": [
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's an object.",
+      "imagePrompt": "Watercolor card scene: It's a thing.",
+      "fact": "`場所` covers places of many sizes, from rooms to countries.",
+      "grammarTags": [
+        "Aです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c011",
+      "line": [
+        "猫",
+        "は",
+        "動物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ねこ",
+        "わ",
+        "どうぶつ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "cat",
+        "topic marker",
+        "animal",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The cat is an animal.",
+      "imagePrompt": "Watercolor card scene: The cat is an animal.",
+      "fact": "Short topic-comment sentences are a strong base for describing people, animals, places, and objects.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c012",
+      "line": [
+        "犬",
+        "は",
+        "動物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "いぬ",
+        "わ",
+        "どうぶつ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "dog",
+        "topic marker",
+        "animal",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The dog is an animal.",
+      "imagePrompt": "Watercolor card scene: The dog is an animal.",
+      "fact": "A noun before `です` often acts like a label: person, place, animal, object.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c013",
+      "line": [
+        "本",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ほん",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "book",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The book is an object.",
+      "imagePrompt": "Watercolor card scene: The book is a thing.",
+      "fact": "`は` points to the topic; the comment after it carries the new information.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c014",
+      "line": [
+        "家",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "いえ",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "house; home",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The house is a place.",
+      "imagePrompt": "Watercolor card scene: The house is a place.",
+      "fact": "`物` is broad: object, item, or thing depending on the sentence around it.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c015",
+      "line": [
+        "学校",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がっこう",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "school",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The school is a place.",
+      "imagePrompt": "Watercolor card scene: The school is a place.",
+      "fact": "Japanese categories can feel wider than English categories, so let the full sentence guide the translation.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c016",
+      "line": [
+        "医者",
+        "は",
+        "人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "いしゃ",
+        "わ",
+        "ひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "doctor",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The doctor is a person.",
+      "imagePrompt": "Watercolor card scene: The doctor is a person.",
+      "fact": "`場所` covers places of many sizes, from rooms to countries.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/topic-comment-watercolor-final.png"
+    },
+    {
+      "id": "u002-c017",
+      "line": [
+        "先生",
+        "は",
+        "人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is a person.",
+      "imagePrompt": "Watercolor card scene: The teacher is a person.",
+      "fact": "A noun before `です` often acts like a label: person, place, animal, object.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c018",
+      "line": [
+        "学生",
+        "は",
+        "人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "ひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is a person.",
+      "imagePrompt": "Watercolor card scene: The student is a person.",
+      "fact": "`は` points to the topic; the comment after it carries the new information.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c019",
+      "line": [
+        "日本",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "にほん",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Japan",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Japan is a place.",
+      "imagePrompt": "Watercolor card scene: Japan is a place.",
+      "fact": "`物` is broad: object, item, or thing depending on the sentence around it.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c020",
+      "line": [
+        "アメリカ",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あめりか",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "America",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "アメリカ",
+          "reading": "あめりか",
+          "explain": "America",
+          "wordId": "amerika"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "America is a place.",
+      "imagePrompt": "Watercolor card scene: America is a place.",
+      "fact": "Japanese categories can feel wider than English categories, so let the full sentence guide the translation.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c021",
+      "line": [
+        "猫",
+        "は",
+        "動物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ねこ",
+        "わ",
+        "どうぶつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "cat",
+        "topic marker",
+        "animal",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the cat an animal?",
+      "imagePrompt": "Watercolor card scene: Is the cat an animal?",
+      "fact": "`場所` covers places of many sizes, from rooms to countries.",
+      "grammarTags": [
+        "AはBですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c022",
+      "line": [
+        "犬",
+        "は",
+        "動物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "いぬ",
+        "わ",
+        "どうぶつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "dog",
+        "topic marker",
+        "animal",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the dog an animal?",
+      "imagePrompt": "Watercolor card scene: Is the dog an animal?",
+      "fact": "Short topic-comment sentences are a strong base for describing people, animals, places, and objects.",
+      "grammarTags": [
+        "AはBですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c023",
+      "line": [
+        "本",
+        "は",
+        "物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ほん",
+        "わ",
+        "もの",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "book",
+        "topic marker",
+        "thing; object",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the book an object?",
+      "imagePrompt": "Watercolor card scene: Is the book a thing?",
+      "fact": "A noun before `です` often acts like a label: person, place, animal, object.",
+      "grammarTags": [
+        "AはBですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c024",
+      "line": [
+        "家",
+        "は",
+        "場所",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "いえ",
+        "わ",
+        "ばしょ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "house; home",
+        "topic marker",
+        "place",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the house a place?",
+      "imagePrompt": "Watercolor card scene: Is the house a place?",
+      "fact": "`は` points to the topic; the comment after it carries the new information.",
+      "grammarTags": [
+        "AはBですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c025",
+      "line": [
+        "学校",
+        "は",
+        "場所",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "がっこう",
+        "わ",
+        "ばしょ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "school",
+        "topic marker",
+        "place",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the school a place?",
+      "imagePrompt": "Watercolor card scene: Is the school a place?",
+      "fact": "`物` is broad: object, item, or thing depending on the sentence around it.",
+      "grammarTags": [
+        "AはBですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c026",
+      "line": [
+        "医者",
+        "は",
+        "人",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "いしゃ",
+        "わ",
+        "ひと",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "doctor",
+        "topic marker",
+        "person",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the doctor a person?",
+      "imagePrompt": "Watercolor card scene: Is the doctor a person?",
+      "fact": "Japanese categories can feel wider than English categories, so let the full sentence guide the translation.",
+      "grammarTags": [
+        "AはBですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c027",
+      "line": [
+        "先生",
+        "は",
+        "人",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ひと",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "person",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the teacher a person?",
+      "imagePrompt": "Watercolor card scene: Is the teacher a person?",
+      "fact": "`場所` covers places of many sizes, from rooms to countries.",
+      "grammarTags": [
+        "AはBですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c028",
+      "line": [
+        "学生",
+        "は",
+        "人",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "ひと",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "person",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the student a person?",
+      "imagePrompt": "Watercolor card scene: Is the student a person?",
+      "fact": "Short topic-comment sentences are a strong base for describing people, animals, places, and objects.",
+      "grammarTags": [
+        "AはBですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c029",
+      "line": [
+        "日本",
+        "は",
+        "場所",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "にほん",
+        "わ",
+        "ばしょ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Japan",
+        "topic marker",
+        "place",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is Japan a place?",
+      "imagePrompt": "Watercolor card scene: Is Japan a place?",
+      "fact": "A noun before `です` often acts like a label: person, place, animal, object.",
+      "grammarTags": [
+        "AはBですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c030",
+      "line": [
+        "アメリカ",
+        "は",
+        "場所",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "あめりか",
+        "わ",
+        "ばしょ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "America",
+        "topic marker",
+        "place",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "アメリカ",
+          "reading": "あめりか",
+          "explain": "America",
+          "wordId": "amerika"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is America a place?",
+      "imagePrompt": "Watercolor card scene: Is America a place?",
+      "fact": "`は` points to the topic; the comment after it carries the new information.",
+      "grammarTags": [
+        "AはBですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c031",
+      "line": [
+        "猫",
+        "と",
+        "犬",
+        "は",
+        "動物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ねこ",
+        "と",
+        "いぬ",
+        "わ",
+        "どうぶつ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "cat",
+        "and",
+        "dog",
+        "topic marker",
+        "animal",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Cats and dogs are animals.",
+      "imagePrompt": "Watercolor card scene: Cats and dogs are animals.",
+      "fact": "`物` is broad: object, item, or thing depending on the sentence around it.",
+      "grammarTags": [
+        "AとBはCです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c032",
+      "line": [
+        "先生",
+        "と",
+        "医者",
+        "は",
+        "人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "と",
+        "いしゃ",
+        "わ",
+        "ひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "and",
+        "doctor",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Teachers and doctors are people.",
+      "imagePrompt": "Watercolor card scene: Teachers and doctors are people.",
+      "fact": "Japanese categories can feel wider than English categories, so let the full sentence guide the translation.",
+      "grammarTags": [
+        "AとBはCです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-02.svg"
+    },
+    {
+      "id": "u002-c033",
+      "line": [
+        "学生",
+        "と",
+        "先生",
+        "は",
+        "人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "と",
+        "せんせい",
+        "わ",
+        "ひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "and",
+        "teacher",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Students and teachers are people.",
+      "imagePrompt": "Watercolor card scene: Students and teachers are people.",
+      "fact": "Short topic-comment sentences are a strong base for describing people, animals, places, and objects.",
+      "grammarTags": [
+        "AとBはCです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c034",
+      "line": [
+        "ケン",
+        "と",
+        "ユキ",
+        "は",
+        "人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "と",
+        "ゆき",
+        "わ",
+        "ひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "and",
+        "Yuki",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken and Yuki are people.",
+      "imagePrompt": "Watercolor card scene: Ken and Yuki are people.",
+      "fact": "A noun before `です` often acts like a label: person, place, animal, object.",
+      "grammarTags": [
+        "AとBはCです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c035",
+      "line": [
+        "田中",
+        "と",
+        "ケン",
+        "は",
+        "人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "と",
+        "けん",
+        "わ",
+        "ひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "and",
+        "Ken",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka and Ken are people.",
+      "imagePrompt": "Watercolor card scene: Tanaka and Ken are people.",
+      "fact": "`は` points to the topic; the comment after it carries the new information.",
+      "grammarTags": [
+        "AとBはCです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c036",
+      "line": [
+        "家",
+        "と",
+        "学校",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "いえ",
+        "と",
+        "がっこう",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "house; home",
+        "and",
+        "school",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Houses and schools are places.",
+      "imagePrompt": "Watercolor card scene: Houses and schools are places.",
+      "fact": "`物` is broad: object, item, or thing depending on the sentence around it.",
+      "grammarTags": [
+        "AとBはCです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c037",
+      "line": [
+        "日本",
+        "と",
+        "アメリカ",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "にほん",
+        "と",
+        "あめりか",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Japan",
+        "and",
+        "America",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "アメリカ",
+          "reading": "あめりか",
+          "explain": "America",
+          "wordId": "amerika"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Japan and America are places.",
+      "imagePrompt": "Watercolor card scene: Japan and America are places.",
+      "fact": "Japanese categories can feel wider than English categories, so let the full sentence guide the translation.",
+      "grammarTags": [
+        "AとBはCです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c038",
+      "line": [
+        "本",
+        "と",
+        "家",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ほん",
+        "と",
+        "いえ",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "book",
+        "and",
+        "house; home",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Books and houses are objects.",
+      "imagePrompt": "Watercolor card scene: Books and houses are things.",
+      "fact": "`場所` covers places of many sizes, from rooms to countries.",
+      "grammarTags": [
+        "AとBはCです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c039",
+      "line": [
+        "本",
+        "と",
+        "学校",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ほん",
+        "と",
+        "がっこう",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "book",
+        "and",
+        "school",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Books and schools are objects.",
+      "imagePrompt": "Watercolor card scene: Books and schools are things.",
+      "fact": "Short topic-comment sentences are a strong base for describing people, animals, places, and objects.",
+      "grammarTags": [
+        "AとBはCです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c040",
+      "line": [
+        "猫",
+        "と",
+        "本",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ねこ",
+        "と",
+        "ほん",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "cat",
+        "and",
+        "book",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Cats and books are objects.",
+      "imagePrompt": "Watercolor card scene: Cats and books are things.",
+      "fact": "A noun before `です` often acts like a label: person, place, animal, object.",
+      "grammarTags": [
+        "AとBはCです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c041",
+      "line": [
+        "猫",
+        "と",
+        "犬",
+        "は",
+        "動物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ねこ",
+        "と",
+        "いぬ",
+        "わ",
+        "どうぶつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "cat",
+        "and",
+        "dog",
+        "topic marker",
+        "animal",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Are cats and dogs animals?",
+      "imagePrompt": "Watercolor card scene: Are cats and dogs animals?",
+      "fact": "`は` points to the topic; the comment after it carries the new information.",
+      "grammarTags": [
+        "AとBはCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c042",
+      "line": [
+        "先生",
+        "と",
+        "医者",
+        "は",
+        "人",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "せんせい",
+        "と",
+        "いしゃ",
+        "わ",
+        "ひと",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "teacher",
+        "and",
+        "doctor",
+        "topic marker",
+        "person",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Are teachers and doctors people?",
+      "imagePrompt": "Watercolor card scene: Are teachers and doctors people?",
+      "fact": "`物` is broad: object, item, or thing depending on the sentence around it.",
+      "grammarTags": [
+        "AとBはCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c043",
+      "line": [
+        "学生",
+        "と",
+        "先生",
+        "は",
+        "人",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "がくせい",
+        "と",
+        "せんせい",
+        "わ",
+        "ひと",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "student",
+        "and",
+        "teacher",
+        "topic marker",
+        "person",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Are students and teachers people?",
+      "imagePrompt": "Watercolor card scene: Are students and teachers people?",
+      "fact": "Japanese categories can feel wider than English categories, so let the full sentence guide the translation.",
+      "grammarTags": [
+        "AとBはCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c044",
+      "line": [
+        "ケン",
+        "と",
+        "ユキ",
+        "は",
+        "人",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "けん",
+        "と",
+        "ゆき",
+        "わ",
+        "ひと",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Ken",
+        "and",
+        "Yuki",
+        "topic marker",
+        "person",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Are Ken and Yuki people?",
+      "imagePrompt": "Watercolor card scene: Are Ken and Yuki people?",
+      "fact": "`場所` covers places of many sizes, from rooms to countries.",
+      "grammarTags": [
+        "AとBはCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c045",
+      "line": [
+        "田中",
+        "と",
+        "ケン",
+        "は",
+        "人",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "たなか",
+        "と",
+        "けん",
+        "わ",
+        "ひと",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Tanaka",
+        "and",
+        "Ken",
+        "topic marker",
+        "person",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Are Tanaka and Ken people?",
+      "imagePrompt": "Watercolor card scene: Are Tanaka and Ken people?",
+      "fact": "Short topic-comment sentences are a strong base for describing people, animals, places, and objects.",
+      "grammarTags": [
+        "AとBはCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c046",
+      "line": [
+        "家",
+        "と",
+        "学校",
+        "は",
+        "場所",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "いえ",
+        "と",
+        "がっこう",
+        "わ",
+        "ばしょ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "house; home",
+        "and",
+        "school",
+        "topic marker",
+        "place",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Are houses and schools places?",
+      "imagePrompt": "Watercolor card scene: Are houses and schools places?",
+      "fact": "A noun before `です` often acts like a label: person, place, animal, object.",
+      "grammarTags": [
+        "AとBはCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c047",
+      "line": [
+        "日本",
+        "と",
+        "アメリカ",
+        "は",
+        "場所",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "にほん",
+        "と",
+        "あめりか",
+        "わ",
+        "ばしょ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Japan",
+        "and",
+        "America",
+        "topic marker",
+        "place",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "アメリカ",
+          "reading": "あめりか",
+          "explain": "America",
+          "wordId": "amerika"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Are Japan and America places?",
+      "imagePrompt": "Watercolor card scene: Are Japan and America places?",
+      "fact": "`は` points to the topic; the comment after it carries the new information.",
+      "grammarTags": [
+        "AとBはCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c048",
+      "line": [
+        "本",
+        "と",
+        "家",
+        "は",
+        "物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ほん",
+        "と",
+        "いえ",
+        "わ",
+        "もの",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "book",
+        "and",
+        "house; home",
+        "topic marker",
+        "thing; object",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Are books and houses objects?",
+      "imagePrompt": "Watercolor card scene: Are books and houses things?",
+      "fact": "`物` is broad: object, item, or thing depending on the sentence around it.",
+      "grammarTags": [
+        "AとBはCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-03.svg"
+    },
+    {
+      "id": "u002-c049",
+      "line": [
+        "本",
+        "と",
+        "学校",
+        "は",
+        "物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ほん",
+        "と",
+        "がっこう",
+        "わ",
+        "もの",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "book",
+        "and",
+        "school",
+        "topic marker",
+        "thing; object",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Are books and schools objects?",
+      "imagePrompt": "Watercolor card scene: Are books and schools things?",
+      "fact": "`場所` covers places of many sizes, from rooms to countries.",
+      "grammarTags": [
+        "AとBはCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c050",
+      "line": [
+        "猫",
+        "と",
+        "本",
+        "は",
+        "物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ねこ",
+        "と",
+        "ほん",
+        "わ",
+        "もの",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "cat",
+        "and",
+        "book",
+        "topic marker",
+        "thing; object",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Are cats and books objects?",
+      "imagePrompt": "Watercolor card scene: Are cats and books things?",
+      "fact": "Short topic-comment sentences are a strong base for describing people, animals, places, and objects.",
+      "grammarTags": [
+        "AとBはCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c051",
+      "line": [
+        "ケン",
+        "か",
+        "医者",
+        "か",
+        "人",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "けん",
+        "か",
+        "いしゃ",
+        "か",
+        "ひと",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Ken",
+        "or; question marker",
+        "doctor",
+        "or; question marker",
+        "person",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is Ken a doctor or a person?",
+      "imagePrompt": "Watercolor card scene: Is Ken a doctor or a person?",
+      "fact": "A noun before `です` often acts like a label: person, place, animal, object.",
+      "grammarTags": [
+        "AかBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c052",
+      "line": [
+        "ユキ",
+        "か",
+        "学生",
+        "か",
+        "人",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ゆき",
+        "か",
+        "がくせい",
+        "か",
+        "ひと",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Yuki",
+        "or; question marker",
+        "student",
+        "or; question marker",
+        "person",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is Yuki a student or a person?",
+      "imagePrompt": "Watercolor card scene: Is Yuki a student or a person?",
+      "fact": "`は` points to the topic; the comment after it carries the new information.",
+      "grammarTags": [
+        "AかBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c053",
+      "line": [
+        "田中",
+        "か",
+        "先生",
+        "か",
+        "人",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "たなか",
+        "か",
+        "せんせい",
+        "か",
+        "ひと",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Tanaka",
+        "or; question marker",
+        "teacher",
+        "or; question marker",
+        "person",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is Tanaka a teacher or a person?",
+      "imagePrompt": "Watercolor card scene: Is Tanaka a teacher or a person?",
+      "fact": "`物` is broad: object, item, or thing depending on the sentence around it.",
+      "grammarTags": [
+        "AかBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c054",
+      "line": [
+        "猫",
+        "か",
+        "犬",
+        "か",
+        "動物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ねこ",
+        "か",
+        "いぬ",
+        "か",
+        "どうぶつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "cat",
+        "or; question marker",
+        "dog",
+        "or; question marker",
+        "animal",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it a cat, a dog, or an animal?",
+      "imagePrompt": "Watercolor card scene: Is it a cat, a dog, or an animal?",
+      "fact": "Japanese categories can feel wider than English categories, so let the full sentence guide the translation.",
+      "grammarTags": [
+        "AかBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c055",
+      "line": [
+        "本",
+        "か",
+        "家",
+        "か",
+        "物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ほん",
+        "か",
+        "いえ",
+        "か",
+        "もの",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "book",
+        "or; question marker",
+        "house; home",
+        "or; question marker",
+        "thing; object",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it a book, a house, or an object?",
+      "imagePrompt": "Watercolor card scene: Is it a book, a house, or a thing?",
+      "fact": "`場所` covers places of many sizes, from rooms to countries.",
+      "grammarTags": [
+        "AかBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c056",
+      "line": [
+        "家",
+        "か",
+        "学校",
+        "か",
+        "場所",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "いえ",
+        "か",
+        "がっこう",
+        "か",
+        "ばしょ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "house; home",
+        "or; question marker",
+        "school",
+        "or; question marker",
+        "place",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it a house, a school, or a place?",
+      "imagePrompt": "Watercolor card scene: Is it a house, a school, or a place?",
+      "fact": "Short topic-comment sentences are a strong base for describing people, animals, places, and objects.",
+      "grammarTags": [
+        "AかBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c057",
+      "line": [
+        "医者",
+        "か",
+        "先生",
+        "か",
+        "人",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "いしゃ",
+        "か",
+        "せんせい",
+        "か",
+        "ひと",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "doctor",
+        "or; question marker",
+        "teacher",
+        "or; question marker",
+        "person",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it a doctor, a teacher, or a person?",
+      "imagePrompt": "Watercolor card scene: Is it a doctor, a teacher, or a person?",
+      "fact": "A noun before `です` often acts like a label: person, place, animal, object.",
+      "grammarTags": [
+        "AかBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c058",
+      "line": [
+        "日本",
+        "か",
+        "アメリカ",
+        "か",
+        "場所",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "にほん",
+        "か",
+        "あめりか",
+        "か",
+        "ばしょ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Japan",
+        "or; question marker",
+        "America",
+        "or; question marker",
+        "place",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "アメリカ",
+          "reading": "あめりか",
+          "explain": "America",
+          "wordId": "amerika"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it Japan, America, or a place?",
+      "imagePrompt": "Watercolor card scene: Is it Japan, America, or a place?",
+      "fact": "`は` points to the topic; the comment after it carries the new information.",
+      "grammarTags": [
+        "AかBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c059",
+      "line": [
+        "猫",
+        "か",
+        "本",
+        "か",
+        "物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ねこ",
+        "か",
+        "ほん",
+        "か",
+        "もの",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "cat",
+        "or; question marker",
+        "book",
+        "or; question marker",
+        "thing; object",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it a cat, a book, or an object?",
+      "imagePrompt": "Watercolor card scene: Is it a cat, a book, or a thing?",
+      "fact": "`物` is broad: object, item, or thing depending on the sentence around it.",
+      "grammarTags": [
+        "AかBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c060",
+      "line": [
+        "学校",
+        "か",
+        "本",
+        "か",
+        "物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "がっこう",
+        "か",
+        "ほん",
+        "か",
+        "もの",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "school",
+        "or; question marker",
+        "book",
+        "or; question marker",
+        "thing; object",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it a school, a book, or an object?",
+      "imagePrompt": "Watercolor card scene: Is it a school, a book, or a thing?",
+      "fact": "Japanese categories can feel wider than English categories, so let the full sentence guide the translation.",
+      "grammarTags": [
+        "AかBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c061",
+      "line": [
+        "猫",
+        "は",
+        "動物",
+        "か",
+        "物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ねこ",
+        "わ",
+        "どうぶつ",
+        "か",
+        "もの",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "cat",
+        "topic marker",
+        "animal",
+        "or; question marker",
+        "thing; object",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the cat an animal or an object?",
+      "imagePrompt": "Watercolor card scene: Is the cat an animal or a thing?",
+      "fact": "`場所` covers places of many sizes, from rooms to countries.",
+      "grammarTags": [
+        "AはBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c062",
+      "line": [
+        "犬",
+        "は",
+        "動物",
+        "か",
+        "物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "いぬ",
+        "わ",
+        "どうぶつ",
+        "か",
+        "もの",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "dog",
+        "topic marker",
+        "animal",
+        "or; question marker",
+        "thing; object",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the dog an animal or an object?",
+      "imagePrompt": "Watercolor card scene: Is the dog an animal or a thing?",
+      "fact": "Short topic-comment sentences are a strong base for describing people, animals, places, and objects.",
+      "grammarTags": [
+        "AはBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c063",
+      "line": [
+        "家",
+        "は",
+        "場所",
+        "か",
+        "物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "いえ",
+        "わ",
+        "ばしょ",
+        "か",
+        "もの",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "house; home",
+        "topic marker",
+        "place",
+        "or; question marker",
+        "thing; object",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the house a place or an object?",
+      "imagePrompt": "Watercolor card scene: Is the house a place or a thing?",
+      "fact": "A noun before `です` often acts like a label: person, place, animal, object.",
+      "grammarTags": [
+        "AはBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c064",
+      "line": [
+        "学校",
+        "は",
+        "場所",
+        "か",
+        "物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "がっこう",
+        "わ",
+        "ばしょ",
+        "か",
+        "もの",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "school",
+        "topic marker",
+        "place",
+        "or; question marker",
+        "thing; object",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the school a place or an object?",
+      "imagePrompt": "Watercolor card scene: Is the school a place or a thing?",
+      "fact": "`は` points to the topic; the comment after it carries the new information.",
+      "grammarTags": [
+        "AはBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-04.svg"
+    },
+    {
+      "id": "u002-c065",
+      "line": [
+        "医者",
+        "は",
+        "人",
+        "か",
+        "先生",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "いしゃ",
+        "わ",
+        "ひと",
+        "か",
+        "せんせい",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "doctor",
+        "topic marker",
+        "person",
+        "or; question marker",
+        "teacher",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the doctor a person or a teacher?",
+      "imagePrompt": "Watercolor card scene: Is the doctor a person or a teacher?",
+      "fact": "Japanese categories can feel wider than English categories, so let the full sentence guide the translation.",
+      "grammarTags": [
+        "AはBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c066",
+      "line": [
+        "先生",
+        "は",
+        "人",
+        "か",
+        "医者",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ひと",
+        "か",
+        "いしゃ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "person",
+        "or; question marker",
+        "doctor",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the teacher a person or a doctor?",
+      "imagePrompt": "Watercolor card scene: Is the teacher a person or a doctor?",
+      "fact": "`場所` covers places of many sizes, from rooms to countries.",
+      "grammarTags": [
+        "AはBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c067",
+      "line": [
+        "学生",
+        "は",
+        "人",
+        "か",
+        "友達",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "ひと",
+        "か",
+        "ともだち",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "person",
+        "or; question marker",
+        "friend",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the student a person or a friend?",
+      "imagePrompt": "Watercolor card scene: Is the student a person or a friend?",
+      "fact": "Short topic-comment sentences are a strong base for describing people, animals, places, and objects.",
+      "grammarTags": [
+        "AはBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c068",
+      "line": [
+        "日本",
+        "は",
+        "場所",
+        "か",
+        "物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "にほん",
+        "わ",
+        "ばしょ",
+        "か",
+        "もの",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Japan",
+        "topic marker",
+        "place",
+        "or; question marker",
+        "thing; object",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is Japan a place or an object?",
+      "imagePrompt": "Watercolor card scene: Is Japan a place or a thing?",
+      "fact": "A noun before `です` often acts like a label: person, place, animal, object.",
+      "grammarTags": [
+        "AはBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c069",
+      "line": [
+        "アメリカ",
+        "は",
+        "場所",
+        "か",
+        "物",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "あめりか",
+        "わ",
+        "ばしょ",
+        "か",
+        "もの",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "America",
+        "topic marker",
+        "place",
+        "or; question marker",
+        "thing; object",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "アメリカ",
+          "reading": "あめりか",
+          "explain": "America",
+          "wordId": "amerika"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is America a place or an object?",
+      "imagePrompt": "Watercolor card scene: Is America a place or a thing?",
+      "fact": "`は` points to the topic; the comment after it carries the new information.",
+      "grammarTags": [
+        "AはBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c070",
+      "line": [
+        "本",
+        "は",
+        "物",
+        "か",
+        "場所",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ほん",
+        "わ",
+        "もの",
+        "か",
+        "ばしょ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "book",
+        "topic marker",
+        "thing; object",
+        "or; question marker",
+        "place",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the book an object or a place?",
+      "imagePrompt": "Watercolor card scene: Is the book a thing or a place?",
+      "fact": "`物` is broad: object, item, or thing depending on the sentence around it.",
+      "grammarTags": [
+        "AはBかCですか"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c071",
+      "line": [
+        "ケン",
+        "は",
+        "人",
+        "です",
+        "。",
+        "猫",
+        "は",
+        "動物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "ひと",
+        "です",
+        "。",
+        "ねこ",
+        "わ",
+        "どうぶつ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period",
+        "cat",
+        "topic marker",
+        "animal",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        },
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken is a person. The cat is an animal.",
+      "imagePrompt": "Watercolor card scene: Ken is a person. The cat is an animal.",
+      "fact": "Japanese categories can feel wider than English categories, so let the full sentence guide the translation.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c072",
+      "line": [
+        "ユキ",
+        "は",
+        "人",
+        "です",
+        "。",
+        "犬",
+        "は",
+        "動物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "ひと",
+        "です",
+        "。",
+        "いぬ",
+        "わ",
+        "どうぶつ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period",
+        "dog",
+        "topic marker",
+        "animal",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        },
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki is a person. The dog is an animal.",
+      "imagePrompt": "Watercolor card scene: Yuki is a person. The dog is an animal.",
+      "fact": "`場所` covers places of many sizes, from rooms to countries.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c073",
+      "line": [
+        "先生",
+        "は",
+        "人",
+        "です",
+        "。",
+        "本",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ひと",
+        "です",
+        "。",
+        "ほん",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period",
+        "book",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is a person. The book is an object.",
+      "imagePrompt": "Watercolor card scene: The teacher is a person. The book is a thing.",
+      "fact": "Short topic-comment sentences are a strong base for describing people, animals, places, and objects.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c074",
+      "line": [
+        "学生",
+        "は",
+        "人",
+        "です",
+        "。",
+        "学校",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "ひと",
+        "です",
+        "。",
+        "がっこう",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period",
+        "school",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is a person. The school is a place.",
+      "imagePrompt": "Watercolor card scene: The student is a person. The school is a place.",
+      "fact": "A noun before `です` often acts like a label: person, place, animal, object.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c075",
+      "line": [
+        "医者",
+        "は",
+        "人",
+        "です",
+        "。",
+        "家",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "いしゃ",
+        "わ",
+        "ひと",
+        "です",
+        "。",
+        "いえ",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "doctor",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period",
+        "house; home",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The doctor is a person. The house is a place.",
+      "imagePrompt": "Watercolor card scene: The doctor is a person. The house is a place.",
+      "fact": "`は` points to the topic; the comment after it carries the new information.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c076",
+      "line": [
+        "日本",
+        "は",
+        "場所",
+        "です",
+        "。",
+        "アメリカ",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "にほん",
+        "わ",
+        "ばしょ",
+        "です",
+        "。",
+        "あめりか",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Japan",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period",
+        "America",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        },
+        {
+          "surface": "アメリカ",
+          "reading": "あめりか",
+          "explain": "America",
+          "wordId": "amerika"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Japan is a place. America is a place.",
+      "imagePrompt": "Watercolor card scene: Japan is a place. America is a place.",
+      "fact": "`物` is broad: object, item, or thing depending on the sentence around it.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c077",
+      "line": [
+        "田中",
+        "は",
+        "先生",
+        "です",
+        "。",
+        "医者",
+        "は",
+        "人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "せんせい",
+        "です",
+        "。",
+        "いしゃ",
+        "わ",
+        "ひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "teacher",
+        "polite identity marker",
+        "period",
+        "doctor",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka is the teacher. The doctor is a person.",
+      "imagePrompt": "Watercolor card scene: Tanaka is the teacher. The doctor is a person.",
+      "fact": "Japanese categories can feel wider than English categories, so let the full sentence guide the translation.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c078",
+      "line": [
+        "友達",
+        "は",
+        "人",
+        "です",
+        "。",
+        "猫",
+        "は",
+        "動物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "ひと",
+        "です",
+        "。",
+        "ねこ",
+        "わ",
+        "どうぶつ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period",
+        "cat",
+        "topic marker",
+        "animal",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        },
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The friend is a person. The cat is an animal.",
+      "imagePrompt": "Watercolor card scene: The friend is a person. The cat is an animal.",
+      "fact": "`場所` covers places of many sizes, from rooms to countries.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c079",
+      "line": [
+        "名前",
+        "は",
+        "ケン",
+        "です",
+        "。",
+        "本",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "なまえ",
+        "わ",
+        "けん",
+        "です",
+        "。",
+        "ほん",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "name",
+        "topic marker",
+        "Ken",
+        "polite identity marker",
+        "period",
+        "book",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "名前",
+          "reading": "なまえ",
+          "explain": "name",
+          "wordId": "namae"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The name is Ken. The book is an object.",
+      "imagePrompt": "Watercolor card scene: The name is Ken. The book is a thing.",
+      "fact": "Short topic-comment sentences are a strong base for describing people, animals, places, and objects.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    },
+    {
+      "id": "u002-c080",
+      "line": [
+        "私",
+        "は",
+        "学生",
+        "です",
+        "。",
+        "学校",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "がくせい",
+        "です",
+        "。",
+        "がっこう",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "student",
+        "polite identity marker",
+        "period",
+        "school",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I am a student. The school is a place.",
+      "imagePrompt": "Watercolor card scene: I am a student. The school is a place.",
+      "fact": "A noun before `です` often acts like a label: person, place, animal, object.",
+      "grammarTags": [
+        "AはBです"
+      ],
+      "imageRef": "/media/jp/images/unit_002/scenes/scene-05.svg"
+    }
+  ]
+}

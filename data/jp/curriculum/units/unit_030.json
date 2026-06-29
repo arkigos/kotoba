@@ -1,0 +1,7144 @@
+{
+  "id": 30,
+  "slug": "frequency",
+  "title": "Unit 30: Frequency",
+  "grammarFocus": "毎日 / よく / 時々 / あまり...ません",
+  "newWords": [
+    {
+      "id": "mainichi",
+      "surface": "毎日",
+      "reading": "まいにち",
+      "meaning": "every day",
+      "function": "adverb"
+    },
+    {
+      "id": "maiasa",
+      "surface": "毎朝",
+      "reading": "まいあさ",
+      "meaning": "every morning",
+      "function": "adverb"
+    },
+    {
+      "id": "maiban",
+      "surface": "毎晩",
+      "reading": "まいばん",
+      "meaning": "every night",
+      "function": "adverb"
+    },
+    {
+      "id": "yoku_adv",
+      "surface": "よく",
+      "reading": "よく",
+      "meaning": "often",
+      "function": "adverb"
+    },
+    {
+      "id": "tokidoki",
+      "surface": "時々",
+      "reading": "ときどき",
+      "meaning": "sometimes",
+      "function": "adverb"
+    },
+    {
+      "id": "itsumo",
+      "surface": "いつも",
+      "reading": "いつも",
+      "meaning": "always",
+      "function": "adverb"
+    },
+    {
+      "id": "taitei",
+      "surface": "たいてい",
+      "reading": "たいてい",
+      "meaning": "usually",
+      "function": "adverb"
+    },
+    {
+      "id": "tamani",
+      "surface": "たまに",
+      "reading": "たまに",
+      "meaning": "occasionally",
+      "function": "adverb"
+    },
+    {
+      "id": "hotondo",
+      "surface": "ほとんど",
+      "reading": "ほとんど",
+      "meaning": "almost never",
+      "function": "adverb"
+    },
+    {
+      "id": "mettani",
+      "surface": "めったに",
+      "reading": "めったに",
+      "meaning": "rarely",
+      "function": "adverb"
+    }
+  ],
+  "cards": [
+    {
+      "id": "u030-c001",
+      "line": [
+        "私",
+        "は",
+        "毎日",
+        "食べます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいにち",
+        "たべます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every day",
+        "eat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎日",
+          "reading": "まいにち",
+          "explain": "every day",
+          "wordId": "mainichi"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I eat every day.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c002",
+      "line": [
+        "ケン",
+        "は",
+        "毎朝",
+        "飲みます",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "まいあさ",
+        "のみます",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "every morning",
+        "drink",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎朝",
+          "reading": "まいあさ",
+          "explain": "every morning",
+          "wordId": "maiasa"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken drinks every morning.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c003",
+      "line": [
+        "ユキ",
+        "は",
+        "毎晩",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "まいばん",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "every night",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎晩",
+          "reading": "まいばん",
+          "explain": "every night",
+          "wordId": "maiban"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki goes every night.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c004",
+      "line": [
+        "田中",
+        "は",
+        "よく",
+        "来ます",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "よく",
+        "きます",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "often",
+        "come",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "よく",
+          "reading": "よく",
+          "explain": "often",
+          "wordId": "yoku_adv"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka often comes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c005",
+      "line": [
+        "先生",
+        "は",
+        "時々",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ときどき",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "sometimes",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時々",
+          "reading": "ときどき",
+          "explain": "sometimes",
+          "wordId": "tokidoki"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher sometimes watches.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c006",
+      "line": [
+        "学生",
+        "は",
+        "いつも",
+        "聞きます",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "いつも",
+        "ききます",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "always",
+        "listen",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつも",
+          "reading": "いつも",
+          "explain": "always",
+          "wordId": "itsumo"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student always listens.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c007",
+      "line": [
+        "友達",
+        "は",
+        "たいてい",
+        "読みます",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "たいてい",
+        "よみます",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "usually",
+        "read",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たいてい",
+          "reading": "たいてい",
+          "explain": "usually",
+          "wordId": "taitei"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend usually reads.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c008",
+      "line": [
+        "男の人",
+        "は",
+        "たまに",
+        "書きます",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "たまに",
+        "かきます",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "occasionally",
+        "write",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たまに",
+          "reading": "たまに",
+          "explain": "occasionally",
+          "wordId": "tamani"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man occasionally writes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c009",
+      "line": [
+        "女の人",
+        "は",
+        "ほとんど",
+        "勉強しません",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ほとんど",
+        "べんきょうしません",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "almost never",
+        "do not study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ほとんど",
+          "reading": "ほとんど",
+          "explain": "almost never",
+          "wordId": "hotondo"
+        },
+        {
+          "surface": "勉強しません",
+          "reading": "べんきょうしません",
+          "explain": "do not study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman almost never studies.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c010",
+      "line": [
+        "店員",
+        "は",
+        "めったに",
+        "話しません",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "めったに",
+        "はなしません",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "rarely",
+        "do not speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "めったに",
+          "reading": "めったに",
+          "explain": "rarely",
+          "wordId": "mettani"
+        },
+        {
+          "surface": "話しません",
+          "reading": "はなしません",
+          "explain": "do not speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk rarely speaks.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c011",
+      "line": [
+        "私",
+        "は",
+        "毎日",
+        "買います",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいにち",
+        "かいます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every day",
+        "buy",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎日",
+          "reading": "まいにち",
+          "explain": "every day",
+          "wordId": "mainichi"
+        },
+        {
+          "surface": "買います",
+          "reading": "かいます",
+          "explain": "buy",
+          "wordId": "kau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I buy every day.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c012",
+      "line": [
+        "ケン",
+        "は",
+        "毎朝",
+        "待ちます",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "まいあさ",
+        "まちます",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "every morning",
+        "wait",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎朝",
+          "reading": "まいあさ",
+          "explain": "every morning",
+          "wordId": "maiasa"
+        },
+        {
+          "surface": "待ちます",
+          "reading": "まちます",
+          "explain": "wait",
+          "wordId": "matsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken waits every morning.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c013",
+      "line": [
+        "ユキ",
+        "は",
+        "毎晩",
+        "食べます",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "まいばん",
+        "たべます",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "every night",
+        "eat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎晩",
+          "reading": "まいばん",
+          "explain": "every night",
+          "wordId": "maiban"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki eats every night.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c014",
+      "line": [
+        "田中",
+        "は",
+        "よく",
+        "飲みます",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "よく",
+        "のみます",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "often",
+        "drink",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "よく",
+          "reading": "よく",
+          "explain": "often",
+          "wordId": "yoku_adv"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka often drinks.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c015",
+      "line": [
+        "先生",
+        "は",
+        "時々",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ときどき",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "sometimes",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時々",
+          "reading": "ときどき",
+          "explain": "sometimes",
+          "wordId": "tokidoki"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher sometimes goes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c016",
+      "line": [
+        "学生",
+        "は",
+        "いつも",
+        "来ます",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "いつも",
+        "きます",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "always",
+        "come",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつも",
+          "reading": "いつも",
+          "explain": "always",
+          "wordId": "itsumo"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student always comes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c017",
+      "line": [
+        "友達",
+        "は",
+        "たいてい",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "たいてい",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "usually",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たいてい",
+          "reading": "たいてい",
+          "explain": "usually",
+          "wordId": "taitei"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend usually watches.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c018",
+      "line": [
+        "男の人",
+        "は",
+        "たまに",
+        "聞きます",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "たまに",
+        "ききます",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "occasionally",
+        "listen",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たまに",
+          "reading": "たまに",
+          "explain": "occasionally",
+          "wordId": "tamani"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man occasionally listens.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c019",
+      "line": [
+        "女の人",
+        "は",
+        "ほとんど",
+        "読みません",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ほとんど",
+        "よみません",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "almost never",
+        "do not read",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ほとんど",
+          "reading": "ほとんど",
+          "explain": "almost never",
+          "wordId": "hotondo"
+        },
+        {
+          "surface": "読みません",
+          "reading": "よみません",
+          "explain": "do not read",
+          "wordId": "yomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman almost never reads.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c020",
+      "line": [
+        "店員",
+        "は",
+        "めったに",
+        "書きません",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "めったに",
+        "かきません",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "rarely",
+        "do not write",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "めったに",
+          "reading": "めったに",
+          "explain": "rarely",
+          "wordId": "mettani"
+        },
+        {
+          "surface": "書きません",
+          "reading": "かきません",
+          "explain": "do not write",
+          "wordId": "kaku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk rarely writes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c021",
+      "line": [
+        "私",
+        "は",
+        "毎日",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいにち",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every day",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎日",
+          "reading": "まいにち",
+          "explain": "every day",
+          "wordId": "mainichi"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study every day.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c022",
+      "line": [
+        "ケン",
+        "は",
+        "毎朝",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "まいあさ",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "every morning",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎朝",
+          "reading": "まいあさ",
+          "explain": "every morning",
+          "wordId": "maiasa"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken speaks every morning.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c023",
+      "line": [
+        "ユキ",
+        "は",
+        "毎晩",
+        "買います",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "まいばん",
+        "かいます",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "every night",
+        "buy",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎晩",
+          "reading": "まいばん",
+          "explain": "every night",
+          "wordId": "maiban"
+        },
+        {
+          "surface": "買います",
+          "reading": "かいます",
+          "explain": "buy",
+          "wordId": "kau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki buys every night.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c024",
+      "line": [
+        "田中",
+        "は",
+        "よく",
+        "待ちます",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "よく",
+        "まちます",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "often",
+        "wait",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "よく",
+          "reading": "よく",
+          "explain": "often",
+          "wordId": "yoku_adv"
+        },
+        {
+          "surface": "待ちます",
+          "reading": "まちます",
+          "explain": "wait",
+          "wordId": "matsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka often waits.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c025",
+      "line": [
+        "先生",
+        "は",
+        "時々",
+        "食べます",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ときどき",
+        "たべます",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "sometimes",
+        "eat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時々",
+          "reading": "ときどき",
+          "explain": "sometimes",
+          "wordId": "tokidoki"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher sometimes eats.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c026",
+      "line": [
+        "学生",
+        "は",
+        "いつも",
+        "飲みます",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "いつも",
+        "のみます",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "always",
+        "drink",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつも",
+          "reading": "いつも",
+          "explain": "always",
+          "wordId": "itsumo"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student always drinks.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c027",
+      "line": [
+        "友達",
+        "は",
+        "たいてい",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "たいてい",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "usually",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たいてい",
+          "reading": "たいてい",
+          "explain": "usually",
+          "wordId": "taitei"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend usually goes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c028",
+      "line": [
+        "男の人",
+        "は",
+        "たまに",
+        "来ます",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "たまに",
+        "きます",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "occasionally",
+        "come",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たまに",
+          "reading": "たまに",
+          "explain": "occasionally",
+          "wordId": "tamani"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man occasionally comes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c029",
+      "line": [
+        "女の人",
+        "は",
+        "ほとんど",
+        "見ません",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ほとんど",
+        "みません",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "almost never",
+        "do not watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ほとんど",
+          "reading": "ほとんど",
+          "explain": "almost never",
+          "wordId": "hotondo"
+        },
+        {
+          "surface": "見ません",
+          "reading": "みません",
+          "explain": "do not watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman almost never watches.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c030",
+      "line": [
+        "店員",
+        "は",
+        "めったに",
+        "聞きません",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "めったに",
+        "ききません",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "rarely",
+        "do not listen",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "めったに",
+          "reading": "めったに",
+          "explain": "rarely",
+          "wordId": "mettani"
+        },
+        {
+          "surface": "聞きません",
+          "reading": "ききません",
+          "explain": "do not listen",
+          "wordId": "kiku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk rarely listens.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c031",
+      "line": [
+        "私",
+        "は",
+        "毎日",
+        "読みます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいにち",
+        "よみます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every day",
+        "read",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎日",
+          "reading": "まいにち",
+          "explain": "every day",
+          "wordId": "mainichi"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I read every day.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c032",
+      "line": [
+        "ケン",
+        "は",
+        "毎朝",
+        "書きます",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "まいあさ",
+        "かきます",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "every morning",
+        "write",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎朝",
+          "reading": "まいあさ",
+          "explain": "every morning",
+          "wordId": "maiasa"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken writes every morning.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c033",
+      "line": [
+        "ユキ",
+        "は",
+        "毎晩",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "まいばん",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "every night",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎晩",
+          "reading": "まいばん",
+          "explain": "every night",
+          "wordId": "maiban"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki studies every night.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c034",
+      "line": [
+        "田中",
+        "は",
+        "よく",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "よく",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "often",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "よく",
+          "reading": "よく",
+          "explain": "often",
+          "wordId": "yoku_adv"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka often speaks.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c035",
+      "line": [
+        "先生",
+        "は",
+        "時々",
+        "買います",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ときどき",
+        "かいます",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "sometimes",
+        "buy",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時々",
+          "reading": "ときどき",
+          "explain": "sometimes",
+          "wordId": "tokidoki"
+        },
+        {
+          "surface": "買います",
+          "reading": "かいます",
+          "explain": "buy",
+          "wordId": "kau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher sometimes buys.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c036",
+      "line": [
+        "学生",
+        "は",
+        "いつも",
+        "待ちます",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "いつも",
+        "まちます",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "always",
+        "wait",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつも",
+          "reading": "いつも",
+          "explain": "always",
+          "wordId": "itsumo"
+        },
+        {
+          "surface": "待ちます",
+          "reading": "まちます",
+          "explain": "wait",
+          "wordId": "matsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student always waits.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c037",
+      "line": [
+        "友達",
+        "は",
+        "たいてい",
+        "食べます",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "たいてい",
+        "たべます",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "usually",
+        "eat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たいてい",
+          "reading": "たいてい",
+          "explain": "usually",
+          "wordId": "taitei"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend usually eats.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c038",
+      "line": [
+        "男の人",
+        "は",
+        "たまに",
+        "飲みます",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "たまに",
+        "のみます",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "occasionally",
+        "drink",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たまに",
+          "reading": "たまに",
+          "explain": "occasionally",
+          "wordId": "tamani"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man occasionally drinks.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c039",
+      "line": [
+        "女の人",
+        "は",
+        "ほとんど",
+        "行きません",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ほとんど",
+        "いきません",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "almost never",
+        "do not go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ほとんど",
+          "reading": "ほとんど",
+          "explain": "almost never",
+          "wordId": "hotondo"
+        },
+        {
+          "surface": "行きません",
+          "reading": "いきません",
+          "explain": "do not go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman almost never goes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c040",
+      "line": [
+        "店員",
+        "は",
+        "めったに",
+        "来ません",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "めったに",
+        "きません",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "rarely",
+        "do not come",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "めったに",
+          "reading": "めったに",
+          "explain": "rarely",
+          "wordId": "mettani"
+        },
+        {
+          "surface": "来ません",
+          "reading": "きません",
+          "explain": "do not come",
+          "wordId": "kuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk rarely comes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c041",
+      "line": [
+        "私",
+        "は",
+        "毎日",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいにち",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every day",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎日",
+          "reading": "まいにち",
+          "explain": "every day",
+          "wordId": "mainichi"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I watch every day.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c042",
+      "line": [
+        "ケン",
+        "は",
+        "毎朝",
+        "聞きます",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "まいあさ",
+        "ききます",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "every morning",
+        "listen",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎朝",
+          "reading": "まいあさ",
+          "explain": "every morning",
+          "wordId": "maiasa"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken listens every morning.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c043",
+      "line": [
+        "ユキ",
+        "は",
+        "毎晩",
+        "読みます",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "まいばん",
+        "よみます",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "every night",
+        "read",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎晩",
+          "reading": "まいばん",
+          "explain": "every night",
+          "wordId": "maiban"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki reads every night.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c044",
+      "line": [
+        "田中",
+        "は",
+        "よく",
+        "書きます",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "よく",
+        "かきます",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "often",
+        "write",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "よく",
+          "reading": "よく",
+          "explain": "often",
+          "wordId": "yoku_adv"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka often writes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c045",
+      "line": [
+        "先生",
+        "は",
+        "時々",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ときどき",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "sometimes",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時々",
+          "reading": "ときどき",
+          "explain": "sometimes",
+          "wordId": "tokidoki"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher sometimes studies.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c046",
+      "line": [
+        "学生",
+        "は",
+        "いつも",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "いつも",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "always",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつも",
+          "reading": "いつも",
+          "explain": "always",
+          "wordId": "itsumo"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student always speaks.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c047",
+      "line": [
+        "友達",
+        "は",
+        "たいてい",
+        "買います",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "たいてい",
+        "かいます",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "usually",
+        "buy",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たいてい",
+          "reading": "たいてい",
+          "explain": "usually",
+          "wordId": "taitei"
+        },
+        {
+          "surface": "買います",
+          "reading": "かいます",
+          "explain": "buy",
+          "wordId": "kau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend usually buys.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c048",
+      "line": [
+        "男の人",
+        "は",
+        "たまに",
+        "待ちます",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "たまに",
+        "まちます",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "occasionally",
+        "wait",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たまに",
+          "reading": "たまに",
+          "explain": "occasionally",
+          "wordId": "tamani"
+        },
+        {
+          "surface": "待ちます",
+          "reading": "まちます",
+          "explain": "wait",
+          "wordId": "matsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man occasionally waits.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c049",
+      "line": [
+        "女の人",
+        "は",
+        "ほとんど",
+        "食べません",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ほとんど",
+        "たべません",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "almost never",
+        "do not eat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ほとんど",
+          "reading": "ほとんど",
+          "explain": "almost never",
+          "wordId": "hotondo"
+        },
+        {
+          "surface": "食べません",
+          "reading": "たべません",
+          "explain": "do not eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman almost never eats.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c050",
+      "line": [
+        "店員",
+        "は",
+        "めったに",
+        "飲みません",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "めったに",
+        "のみません",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "rarely",
+        "do not drink",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "めったに",
+          "reading": "めったに",
+          "explain": "rarely",
+          "wordId": "mettani"
+        },
+        {
+          "surface": "飲みません",
+          "reading": "のみません",
+          "explain": "do not drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk rarely drinks.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c051",
+      "line": [
+        "私",
+        "は",
+        "毎日",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいにち",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every day",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎日",
+          "reading": "まいにち",
+          "explain": "every day",
+          "wordId": "mainichi"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go every day.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c052",
+      "line": [
+        "ケン",
+        "は",
+        "毎朝",
+        "来ます",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "まいあさ",
+        "きます",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "every morning",
+        "come",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎朝",
+          "reading": "まいあさ",
+          "explain": "every morning",
+          "wordId": "maiasa"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken comes every morning.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c053",
+      "line": [
+        "ユキ",
+        "は",
+        "毎晩",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "まいばん",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "every night",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎晩",
+          "reading": "まいばん",
+          "explain": "every night",
+          "wordId": "maiban"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki watches every night.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c054",
+      "line": [
+        "田中",
+        "は",
+        "よく",
+        "聞きます",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "よく",
+        "ききます",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "often",
+        "listen",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "よく",
+          "reading": "よく",
+          "explain": "often",
+          "wordId": "yoku_adv"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka often listens.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c055",
+      "line": [
+        "先生",
+        "は",
+        "時々",
+        "読みます",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ときどき",
+        "よみます",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "sometimes",
+        "read",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時々",
+          "reading": "ときどき",
+          "explain": "sometimes",
+          "wordId": "tokidoki"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher sometimes reads.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c056",
+      "line": [
+        "学生",
+        "は",
+        "いつも",
+        "書きます",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "いつも",
+        "かきます",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "always",
+        "write",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつも",
+          "reading": "いつも",
+          "explain": "always",
+          "wordId": "itsumo"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student always writes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c057",
+      "line": [
+        "友達",
+        "は",
+        "たいてい",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "たいてい",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "usually",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たいてい",
+          "reading": "たいてい",
+          "explain": "usually",
+          "wordId": "taitei"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend usually studies.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c058",
+      "line": [
+        "男の人",
+        "は",
+        "たまに",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "たまに",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "occasionally",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たまに",
+          "reading": "たまに",
+          "explain": "occasionally",
+          "wordId": "tamani"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man occasionally speaks.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c059",
+      "line": [
+        "女の人",
+        "は",
+        "ほとんど",
+        "買いません",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ほとんど",
+        "かいません",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "almost never",
+        "do not buy",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ほとんど",
+          "reading": "ほとんど",
+          "explain": "almost never",
+          "wordId": "hotondo"
+        },
+        {
+          "surface": "買いません",
+          "reading": "かいません",
+          "explain": "do not buy",
+          "wordId": "kau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman almost never buys.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c060",
+      "line": [
+        "店員",
+        "は",
+        "めったに",
+        "待ちません",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "めったに",
+        "まちません",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "rarely",
+        "do not wait",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "めったに",
+          "reading": "めったに",
+          "explain": "rarely",
+          "wordId": "mettani"
+        },
+        {
+          "surface": "待ちません",
+          "reading": "まちません",
+          "explain": "do not wait",
+          "wordId": "matsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk rarely waits.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c061",
+      "line": [
+        "私",
+        "は",
+        "毎日",
+        "食べます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいにち",
+        "たべます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every day",
+        "eat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎日",
+          "reading": "まいにち",
+          "explain": "every day",
+          "wordId": "mainichi"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I eat every day.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c062",
+      "line": [
+        "ケン",
+        "は",
+        "毎朝",
+        "飲みます",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "まいあさ",
+        "のみます",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "every morning",
+        "drink",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎朝",
+          "reading": "まいあさ",
+          "explain": "every morning",
+          "wordId": "maiasa"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken drinks every morning.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c063",
+      "line": [
+        "ユキ",
+        "は",
+        "毎晩",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "まいばん",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "every night",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎晩",
+          "reading": "まいばん",
+          "explain": "every night",
+          "wordId": "maiban"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki goes every night.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c064",
+      "line": [
+        "田中",
+        "は",
+        "よく",
+        "来ます",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "よく",
+        "きます",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "often",
+        "come",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "よく",
+          "reading": "よく",
+          "explain": "often",
+          "wordId": "yoku_adv"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka often comes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c065",
+      "line": [
+        "先生",
+        "は",
+        "時々",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ときどき",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "sometimes",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時々",
+          "reading": "ときどき",
+          "explain": "sometimes",
+          "wordId": "tokidoki"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher sometimes watches.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c066",
+      "line": [
+        "学生",
+        "は",
+        "いつも",
+        "聞きます",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "いつも",
+        "ききます",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "always",
+        "listen",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつも",
+          "reading": "いつも",
+          "explain": "always",
+          "wordId": "itsumo"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student always listens.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c067",
+      "line": [
+        "友達",
+        "は",
+        "たいてい",
+        "読みます",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "たいてい",
+        "よみます",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "usually",
+        "read",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たいてい",
+          "reading": "たいてい",
+          "explain": "usually",
+          "wordId": "taitei"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend usually reads.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c068",
+      "line": [
+        "男の人",
+        "は",
+        "たまに",
+        "書きます",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "たまに",
+        "かきます",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "occasionally",
+        "write",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たまに",
+          "reading": "たまに",
+          "explain": "occasionally",
+          "wordId": "tamani"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man occasionally writes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c069",
+      "line": [
+        "女の人",
+        "は",
+        "ほとんど",
+        "勉強しません",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ほとんど",
+        "べんきょうしません",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "almost never",
+        "do not study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ほとんど",
+          "reading": "ほとんど",
+          "explain": "almost never",
+          "wordId": "hotondo"
+        },
+        {
+          "surface": "勉強しません",
+          "reading": "べんきょうしません",
+          "explain": "do not study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman almost never studies.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c070",
+      "line": [
+        "店員",
+        "は",
+        "めったに",
+        "話しません",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "めったに",
+        "はなしません",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "rarely",
+        "do not speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "めったに",
+          "reading": "めったに",
+          "explain": "rarely",
+          "wordId": "mettani"
+        },
+        {
+          "surface": "話しません",
+          "reading": "はなしません",
+          "explain": "do not speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk rarely speaks.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c071",
+      "line": [
+        "私",
+        "は",
+        "毎日",
+        "買います",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいにち",
+        "かいます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every day",
+        "buy",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎日",
+          "reading": "まいにち",
+          "explain": "every day",
+          "wordId": "mainichi"
+        },
+        {
+          "surface": "買います",
+          "reading": "かいます",
+          "explain": "buy",
+          "wordId": "kau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I buy every day.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c072",
+      "line": [
+        "ケン",
+        "は",
+        "毎朝",
+        "待ちます",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "まいあさ",
+        "まちます",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "every morning",
+        "wait",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎朝",
+          "reading": "まいあさ",
+          "explain": "every morning",
+          "wordId": "maiasa"
+        },
+        {
+          "surface": "待ちます",
+          "reading": "まちます",
+          "explain": "wait",
+          "wordId": "matsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken waits every morning.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c073",
+      "line": [
+        "ユキ",
+        "は",
+        "毎晩",
+        "食べます",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "まいばん",
+        "たべます",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "every night",
+        "eat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎晩",
+          "reading": "まいばん",
+          "explain": "every night",
+          "wordId": "maiban"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki eats every night.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c074",
+      "line": [
+        "田中",
+        "は",
+        "よく",
+        "飲みます",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "よく",
+        "のみます",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "often",
+        "drink",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "よく",
+          "reading": "よく",
+          "explain": "often",
+          "wordId": "yoku_adv"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka often drinks.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c075",
+      "line": [
+        "先生",
+        "は",
+        "時々",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ときどき",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "sometimes",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時々",
+          "reading": "ときどき",
+          "explain": "sometimes",
+          "wordId": "tokidoki"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher sometimes goes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c076",
+      "line": [
+        "学生",
+        "は",
+        "いつも",
+        "来ます",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "いつも",
+        "きます",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "always",
+        "come",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつも",
+          "reading": "いつも",
+          "explain": "always",
+          "wordId": "itsumo"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student always comes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c077",
+      "line": [
+        "友達",
+        "は",
+        "たいてい",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "たいてい",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "usually",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たいてい",
+          "reading": "たいてい",
+          "explain": "usually",
+          "wordId": "taitei"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend usually watches.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c078",
+      "line": [
+        "男の人",
+        "は",
+        "たまに",
+        "聞きます",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "たまに",
+        "ききます",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "occasionally",
+        "listen",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たまに",
+          "reading": "たまに",
+          "explain": "occasionally",
+          "wordId": "tamani"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man occasionally listens.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vます"
+      ]
+    },
+    {
+      "id": "u030-c079",
+      "line": [
+        "女の人",
+        "は",
+        "ほとんど",
+        "読みません",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ほとんど",
+        "よみません",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "almost never",
+        "do not read",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ほとんど",
+          "reading": "ほとんど",
+          "explain": "almost never",
+          "wordId": "hotondo"
+        },
+        {
+          "surface": "読みません",
+          "reading": "よみません",
+          "explain": "do not read",
+          "wordId": "yomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman almost never reads.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c080",
+      "line": [
+        "店員",
+        "は",
+        "めったに",
+        "書きません",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "めったに",
+        "かきません",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "rarely",
+        "do not write",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "めったに",
+          "reading": "めったに",
+          "explain": "rarely",
+          "wordId": "mettani"
+        },
+        {
+          "surface": "書きません",
+          "reading": "かきません",
+          "explain": "do not write",
+          "wordId": "kaku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk rarely writes.",
+      "imagePrompt": "Frequency before a polite action.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Unit 30 introduces 毎日 / よく / 時々 / あまり...ません while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "frequency",
+        "Vません"
+      ]
+    },
+    {
+      "id": "u030-c081",
+      "line": [
+        "私",
+        "は",
+        "一時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "いちじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "one o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "一時",
+          "reading": "いちじ",
+          "explain": "one o'clock",
+          "wordId": "ichiji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at one o'clock.",
+      "imagePrompt": "A focused review card for 一時.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c082",
+      "line": [
+        "私",
+        "は",
+        "二時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "にじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "two o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "二時",
+          "reading": "にじ",
+          "explain": "two o'clock",
+          "wordId": "niji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at two o'clock.",
+      "imagePrompt": "A focused review card for 二時.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c083",
+      "line": [
+        "私",
+        "は",
+        "三時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "さんじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "three o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "三時",
+          "reading": "さんじ",
+          "explain": "three o'clock",
+          "wordId": "sanji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at three o'clock.",
+      "imagePrompt": "A focused review card for 三時.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c084",
+      "line": [
+        "私",
+        "は",
+        "四時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "よじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "four o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "四時",
+          "reading": "よじ",
+          "explain": "four o'clock",
+          "wordId": "yoji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at four o'clock.",
+      "imagePrompt": "A focused review card for 四時.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c085",
+      "line": [
+        "私",
+        "は",
+        "五時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ごじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "five o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "五時",
+          "reading": "ごじ",
+          "explain": "five o'clock",
+          "wordId": "goji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at five o'clock.",
+      "imagePrompt": "A focused review card for 五時.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c086",
+      "line": [
+        "私",
+        "は",
+        "六時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ろくじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "six o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "六時",
+          "reading": "ろくじ",
+          "explain": "six o'clock",
+          "wordId": "rokuji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at six o'clock.",
+      "imagePrompt": "A focused review card for 六時.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c087",
+      "line": [
+        "私",
+        "は",
+        "七時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "しちじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "seven o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "七時",
+          "reading": "しちじ",
+          "explain": "seven o'clock",
+          "wordId": "shichiji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at seven o'clock.",
+      "imagePrompt": "A focused review card for 七時.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c088",
+      "line": [
+        "私",
+        "は",
+        "八時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "はちじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "eight o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "八時",
+          "reading": "はちじ",
+          "explain": "eight o'clock",
+          "wordId": "hachiji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at eight o'clock.",
+      "imagePrompt": "A focused review card for 八時.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c089",
+      "line": [
+        "私",
+        "は",
+        "九時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "くじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "nine o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "九時",
+          "reading": "くじ",
+          "explain": "nine o'clock",
+          "wordId": "kuji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at nine o'clock.",
+      "imagePrompt": "A focused review card for 九時.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c090",
+      "line": [
+        "私",
+        "は",
+        "十時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "じゅうじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "ten o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "十時",
+          "reading": "じゅうじ",
+          "explain": "ten o'clock",
+          "wordId": "juuji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at ten o'clock.",
+      "imagePrompt": "A focused review card for 十時.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c091",
+      "line": [
+        "体育館",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "たいいくかん",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "gym",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "体育館",
+          "reading": "たいいくかん",
+          "explain": "gym",
+          "wordId": "taiikukan"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the gym.",
+      "imagePrompt": "A focused review card for 体育館.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c092",
+      "line": [
+        "プール",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "ぷーる",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "pool",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "プール",
+          "reading": "ぷーる",
+          "explain": "pool",
+          "wordId": "puuru"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the pool.",
+      "imagePrompt": "A focused review card for プール.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c093",
+      "line": [
+        "会議室",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "かいぎしつ",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "meeting room",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "会議室",
+          "reading": "かいぎしつ",
+          "explain": "meeting room",
+          "wordId": "kaigishitsu"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the meeting room.",
+      "imagePrompt": "A focused review card for 会議室.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c094",
+      "line": [
+        "広場",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "ひろば",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "plaza",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "広場",
+          "reading": "ひろば",
+          "explain": "plaza",
+          "wordId": "hiroba"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the plaza.",
+      "imagePrompt": "A focused review card for 広場.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c095",
+      "line": [
+        "銭湯",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "せんとう",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "public bath",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "銭湯",
+          "reading": "せんとう",
+          "explain": "public bath",
+          "wordId": "sentou"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the public bath.",
+      "imagePrompt": "A focused review card for 銭湯.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c096",
+      "line": [
+        "旅館",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "りょかん",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "inn",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "旅館",
+          "reading": "りょかん",
+          "explain": "inn",
+          "wordId": "ryokan"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the inn.",
+      "imagePrompt": "A focused review card for 旅館.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c097",
+      "line": [
+        "海岸",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "かいがん",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "beach",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "海岸",
+          "reading": "かいがん",
+          "explain": "beach",
+          "wordId": "kaigan"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the beach.",
+      "imagePrompt": "A focused review card for 海岸.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c098",
+      "line": [
+        "森",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "もり",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "forest",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "森",
+          "reading": "もり",
+          "explain": "forest",
+          "wordId": "mori"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the forest.",
+      "imagePrompt": "A focused review card for 森.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c099",
+      "line": [
+        "喫茶店",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "きっさてん",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "coffee shop",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "喫茶店",
+          "reading": "きっさてん",
+          "explain": "coffee shop",
+          "wordId": "kissaten"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the coffee shop.",
+      "imagePrompt": "A focused review card for 喫茶店.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c100",
+      "line": [
+        "デパート",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "でぱーと",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "department store",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "デパート",
+          "reading": "でぱーと",
+          "explain": "department store",
+          "wordId": "depaato"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the department store.",
+      "imagePrompt": "A focused review card for デパート.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c101",
+      "line": [
+        "私",
+        "は",
+        "会います",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あいます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "meet",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "会います",
+          "reading": "あいます",
+          "explain": "meet",
+          "wordId": "au"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I meet.",
+      "imagePrompt": "A focused review card for 会う.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c102",
+      "line": [
+        "私",
+        "は",
+        "使います",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "つかいます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "use",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "使います",
+          "reading": "つかいます",
+          "explain": "use",
+          "wordId": "tsukau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I use.",
+      "imagePrompt": "A focused review card for 使う.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c103",
+      "line": [
+        "私",
+        "は",
+        "作ります",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "つくります",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "make",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "作ります",
+          "reading": "つくります",
+          "explain": "make",
+          "wordId": "tsukuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I make.",
+      "imagePrompt": "A focused review card for 作る.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c104",
+      "line": [
+        "私",
+        "は",
+        "寝ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ねます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "sleep",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "寝ます",
+          "reading": "ねます",
+          "explain": "sleep",
+          "wordId": "neru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I sleep.",
+      "imagePrompt": "A focused review card for 寝る.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c105",
+      "line": [
+        "私",
+        "は",
+        "起きます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "おきます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "wake up",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "起きます",
+          "reading": "おきます",
+          "explain": "wake up",
+          "wordId": "okiru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I wake up.",
+      "imagePrompt": "A focused review card for 起きる.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c106",
+      "line": [
+        "私",
+        "は",
+        "働きます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "はたらきます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "work",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "work",
+          "wordId": "hataraku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I work.",
+      "imagePrompt": "A focused review card for 働く.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c107",
+      "line": [
+        "私",
+        "は",
+        "休みます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "やすみます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "rest",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "休みます",
+          "reading": "やすみます",
+          "explain": "rest",
+          "wordId": "yasumu_verb"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I rest.",
+      "imagePrompt": "A focused review card for 休む.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c108",
+      "line": [
+        "私",
+        "は",
+        "とても",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "とても",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "very",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "とても",
+          "reading": "とても",
+          "explain": "very",
+          "wordId": "totemo"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I very study.",
+      "imagePrompt": "A focused review card for とても.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c109",
+      "line": [
+        "私",
+        "は",
+        "あまり",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あまり",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "not very; too much",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "あまり",
+          "reading": "あまり",
+          "explain": "not very; too much",
+          "wordId": "amari"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I not very study.",
+      "imagePrompt": "A focused review card for あまり.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c110",
+      "line": [
+        "私",
+        "は",
+        "少し",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "すこし",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "a little",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "少し",
+          "reading": "すこし",
+          "explain": "a little",
+          "wordId": "sukoshi"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I a little study.",
+      "imagePrompt": "A focused review card for 少し.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c111",
+      "line": [
+        "私",
+        "は",
+        "まあまあ",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まあまあ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "so-so",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "まあまあ",
+          "reading": "まあまあ",
+          "explain": "so-so",
+          "wordId": "maa_maa"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I so-so study.",
+      "imagePrompt": "A focused review card for まあまあ.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c112",
+      "line": [
+        "私",
+        "は",
+        "本当に",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ほんとうに",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "really",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本当に",
+          "reading": "ほんとうに",
+          "explain": "really",
+          "wordId": "hontou_ni"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I really study.",
+      "imagePrompt": "A focused review card for 本当に.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c113",
+      "line": [
+        "私",
+        "は",
+        "かなり",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "かなり",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "rather; considerably",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "かなり",
+          "reading": "かなり",
+          "explain": "rather; considerably",
+          "wordId": "kanari"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study quite a bit.",
+      "imagePrompt": "A focused review card for かなり.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-03.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c114",
+      "line": [
+        "私",
+        "は",
+        "全然",
+        "勉強しません",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ぜんぜん",
+        "べんきょうしません",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "not at all",
+        "do not study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "全然",
+          "reading": "ぜんぜん",
+          "explain": "not at all",
+          "wordId": "zenzen"
+        },
+        {
+          "surface": "勉強しません",
+          "reading": "べんきょうしません",
+          "explain": "do not study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I do not study at all.",
+      "imagePrompt": "A focused review card for 全然.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-04.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c115",
+      "line": [
+        "私",
+        "は",
+        "もう",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "もう",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "already; anymore",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "もう",
+          "reading": "もう",
+          "explain": "already; anymore",
+          "wordId": "mou"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I already study.",
+      "imagePrompt": "A focused review card for もう.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-05.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c116",
+      "line": [
+        "私",
+        "は",
+        "まだ",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まだ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "still; not yet",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "まだ",
+          "reading": "まだ",
+          "explain": "still; not yet",
+          "wordId": "mada"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I still study.",
+      "imagePrompt": "A focused review card for まだ.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-01.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u030-c117",
+      "line": [
+        "私",
+        "は",
+        "ちょっと",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ちょっと",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "a little; briefly",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ちょっと",
+          "reading": "ちょっと",
+          "explain": "a little; briefly",
+          "wordId": "chotto"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study a little.",
+      "imagePrompt": "A focused review card for ちょっと.",
+      "imageRef": "/media/jp/images/unit_030/scenes/scene-02.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    }
+  ]
+}

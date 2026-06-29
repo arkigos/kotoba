@@ -1,0 +1,7360 @@
+{
+  "id": 17,
+  "slug": "existence-in-a-place",
+  "title": "Unit 17: Existence In A Place",
+  "grammarFocus": "場所にNがあります / 場所にNがいます",
+  "newWords": [
+    {
+      "id": "daidokoro",
+      "surface": "台所",
+      "reading": "だいどころ",
+      "meaning": "kitchen",
+      "function": "place"
+    },
+    {
+      "id": "niwa",
+      "surface": "庭",
+      "reading": "にわ",
+      "meaning": "garden",
+      "function": "place"
+    },
+    {
+      "id": "kyoushitsu",
+      "surface": "教室",
+      "reading": "きょうしつ",
+      "meaning": "classroom",
+      "function": "place"
+    },
+    {
+      "id": "shokudou",
+      "surface": "食堂",
+      "reading": "しょくどう",
+      "meaning": "cafeteria",
+      "function": "place"
+    },
+    {
+      "id": "toire",
+      "surface": "トイレ",
+      "reading": "といれ",
+      "meaning": "toilet; restroom",
+      "function": "place"
+    },
+    {
+      "id": "michi",
+      "surface": "道",
+      "reading": "みち",
+      "meaning": "road",
+      "function": "place"
+    },
+    {
+      "id": "hashi_bridge",
+      "surface": "橋",
+      "reading": "はし",
+      "meaning": "bridge",
+      "function": "place"
+    },
+    {
+      "id": "kawa",
+      "surface": "川",
+      "reading": "かわ",
+      "meaning": "river",
+      "function": "place"
+    },
+    {
+      "id": "kuukou",
+      "surface": "空港",
+      "reading": "くうこう",
+      "meaning": "airport",
+      "function": "place"
+    },
+    {
+      "id": "hoteru",
+      "surface": "ホテル",
+      "reading": "ほてる",
+      "meaning": "hotel",
+      "function": "place"
+    }
+  ],
+  "cards": [
+    {
+      "id": "u017-c001",
+      "line": [
+        "台所",
+        "に",
+        "鍵",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "だいどころ",
+        "に",
+        "かぎ",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "kitchen",
+        "location or time marker",
+        "key",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "台所",
+          "reading": "だいどころ",
+          "explain": "kitchen",
+          "wordId": "daidokoro"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a key in the kitchen.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c002",
+      "line": [
+        "庭",
+        "に",
+        "かばん",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "にわ",
+        "に",
+        "かばん",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "garden",
+        "location or time marker",
+        "bag",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "庭",
+          "reading": "にわ",
+          "explain": "garden",
+          "wordId": "niwa"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a bag in the garden.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c003",
+      "line": [
+        "教室",
+        "に",
+        "写真",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "きょうしつ",
+        "に",
+        "しゃしん",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "classroom",
+        "location or time marker",
+        "photo",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "教室",
+          "reading": "きょうしつ",
+          "explain": "classroom",
+          "wordId": "kyoushitsu"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a photo in the classroom.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c004",
+      "line": [
+        "食堂",
+        "に",
+        "時計",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "しょくどう",
+        "に",
+        "とけい",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "cafeteria",
+        "location or time marker",
+        "clock; watch",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "食堂",
+          "reading": "しょくどう",
+          "explain": "cafeteria",
+          "wordId": "shokudou"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "explain": "clock; watch",
+          "wordId": "tokei"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a clock in the cafeteria.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c005",
+      "line": [
+        "トイレ",
+        "に",
+        "鉛筆",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "といれ",
+        "に",
+        "えんぴつ",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "toilet; restroom",
+        "location or time marker",
+        "pencil",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "トイレ",
+          "reading": "といれ",
+          "explain": "toilet; restroom",
+          "wordId": "toire"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "鉛筆",
+          "reading": "えんぴつ",
+          "explain": "pencil",
+          "wordId": "enpitsu"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a pencil in the toilet.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c006",
+      "line": [
+        "道",
+        "に",
+        "車",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "みち",
+        "に",
+        "くるま",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "road",
+        "location or time marker",
+        "car",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "道",
+          "reading": "みち",
+          "explain": "road",
+          "wordId": "michi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a car on the road.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c007",
+      "line": [
+        "橋",
+        "に",
+        "自転車",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "はし",
+        "に",
+        "じてんしゃ",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "bridge",
+        "location or time marker",
+        "bicycle",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "橋",
+          "reading": "はし",
+          "explain": "bridge",
+          "wordId": "hashi_bridge"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "自転車",
+          "reading": "じてんしゃ",
+          "explain": "bicycle",
+          "wordId": "jitensha"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a bicycle on the bridge.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c008",
+      "line": [
+        "川",
+        "に",
+        "箱",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "かわ",
+        "に",
+        "はこ",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "river",
+        "location or time marker",
+        "box",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "川",
+          "reading": "かわ",
+          "explain": "river",
+          "wordId": "kawa"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "箱",
+          "reading": "はこ",
+          "explain": "box",
+          "wordId": "hako"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a box in the river.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c009",
+      "line": [
+        "空港",
+        "に",
+        "電話",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "くうこう",
+        "に",
+        "でんわ",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "airport",
+        "location or time marker",
+        "telephone",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "空港",
+          "reading": "くうこう",
+          "explain": "airport",
+          "wordId": "kuukou"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "電話",
+          "reading": "でんわ",
+          "explain": "telephone",
+          "wordId": "denwa"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a telephone at the airport.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c010",
+      "line": [
+        "ホテル",
+        "に",
+        "本",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "ほてる",
+        "に",
+        "ほん",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "hotel",
+        "location or time marker",
+        "book",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ホテル",
+          "reading": "ほてる",
+          "explain": "hotel",
+          "wordId": "hoteru"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a book in the hotel.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c011",
+      "line": [
+        "台所",
+        "に",
+        "鍵",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "だいどころ",
+        "に",
+        "かぎ",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "kitchen",
+        "location or time marker",
+        "key",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "台所",
+          "reading": "だいどころ",
+          "explain": "kitchen",
+          "wordId": "daidokoro"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a key in the kitchen.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c012",
+      "line": [
+        "庭",
+        "に",
+        "かばん",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "にわ",
+        "に",
+        "かばん",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "garden",
+        "location or time marker",
+        "bag",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "庭",
+          "reading": "にわ",
+          "explain": "garden",
+          "wordId": "niwa"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a bag in the garden.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c013",
+      "line": [
+        "教室",
+        "に",
+        "写真",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "きょうしつ",
+        "に",
+        "しゃしん",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "classroom",
+        "location or time marker",
+        "photo",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "教室",
+          "reading": "きょうしつ",
+          "explain": "classroom",
+          "wordId": "kyoushitsu"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a photo in the classroom.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c014",
+      "line": [
+        "食堂",
+        "に",
+        "時計",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "しょくどう",
+        "に",
+        "とけい",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "cafeteria",
+        "location or time marker",
+        "clock; watch",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "食堂",
+          "reading": "しょくどう",
+          "explain": "cafeteria",
+          "wordId": "shokudou"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "explain": "clock; watch",
+          "wordId": "tokei"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a clock in the cafeteria.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c015",
+      "line": [
+        "トイレ",
+        "に",
+        "鉛筆",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "といれ",
+        "に",
+        "えんぴつ",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "toilet; restroom",
+        "location or time marker",
+        "pencil",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "トイレ",
+          "reading": "といれ",
+          "explain": "toilet; restroom",
+          "wordId": "toire"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "鉛筆",
+          "reading": "えんぴつ",
+          "explain": "pencil",
+          "wordId": "enpitsu"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a pencil in the toilet.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c016",
+      "line": [
+        "道",
+        "に",
+        "車",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "みち",
+        "に",
+        "くるま",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "road",
+        "location or time marker",
+        "car",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "道",
+          "reading": "みち",
+          "explain": "road",
+          "wordId": "michi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a car on the road.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c017",
+      "line": [
+        "橋",
+        "に",
+        "自転車",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "はし",
+        "に",
+        "じてんしゃ",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "bridge",
+        "location or time marker",
+        "bicycle",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "橋",
+          "reading": "はし",
+          "explain": "bridge",
+          "wordId": "hashi_bridge"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "自転車",
+          "reading": "じてんしゃ",
+          "explain": "bicycle",
+          "wordId": "jitensha"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a bicycle on the bridge.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c018",
+      "line": [
+        "川",
+        "に",
+        "箱",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "かわ",
+        "に",
+        "はこ",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "river",
+        "location or time marker",
+        "box",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "川",
+          "reading": "かわ",
+          "explain": "river",
+          "wordId": "kawa"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "箱",
+          "reading": "はこ",
+          "explain": "box",
+          "wordId": "hako"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a box in the river.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c019",
+      "line": [
+        "空港",
+        "に",
+        "電話",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "くうこう",
+        "に",
+        "でんわ",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "airport",
+        "location or time marker",
+        "telephone",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "空港",
+          "reading": "くうこう",
+          "explain": "airport",
+          "wordId": "kuukou"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "電話",
+          "reading": "でんわ",
+          "explain": "telephone",
+          "wordId": "denwa"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a telephone at the airport.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c020",
+      "line": [
+        "ホテル",
+        "に",
+        "本",
+        "が",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "ほてる",
+        "に",
+        "ほん",
+        "が",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "hotel",
+        "location or time marker",
+        "book",
+        "subject marker",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ホテル",
+          "reading": "ほてる",
+          "explain": "hotel",
+          "wordId": "hoteru"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a book in the hotel.",
+      "imagePrompt": "A thing exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがあります"
+      ]
+    },
+    {
+      "id": "u017-c021",
+      "line": [
+        "台所",
+        "に",
+        "先生",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "だいどころ",
+        "に",
+        "せんせい",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "kitchen",
+        "location or time marker",
+        "teacher",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "台所",
+          "reading": "だいどころ",
+          "explain": "kitchen",
+          "wordId": "daidokoro"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is in the kitchen.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c022",
+      "line": [
+        "庭",
+        "に",
+        "学生",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "にわ",
+        "に",
+        "がくせい",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "garden",
+        "location or time marker",
+        "student",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "庭",
+          "reading": "にわ",
+          "explain": "garden",
+          "wordId": "niwa"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is in the garden.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c023",
+      "line": [
+        "教室",
+        "に",
+        "母",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "きょうしつ",
+        "に",
+        "はは",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "classroom",
+        "location or time marker",
+        "mother",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "教室",
+          "reading": "きょうしつ",
+          "explain": "classroom",
+          "wordId": "kyoushitsu"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My mother is in the classroom.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c024",
+      "line": [
+        "食堂",
+        "に",
+        "鳥",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "しょくどう",
+        "に",
+        "とり",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "cafeteria",
+        "location or time marker",
+        "bird",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "食堂",
+          "reading": "しょくどう",
+          "explain": "cafeteria",
+          "wordId": "shokudou"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "鳥",
+          "reading": "とり",
+          "explain": "bird",
+          "wordId": "tori"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a bird in the cafeteria.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c025",
+      "line": [
+        "トイレ",
+        "に",
+        "魚",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "といれ",
+        "に",
+        "さかな",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "toilet; restroom",
+        "location or time marker",
+        "fish",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "トイレ",
+          "reading": "といれ",
+          "explain": "toilet; restroom",
+          "wordId": "toire"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "魚",
+          "reading": "さかな",
+          "explain": "fish",
+          "wordId": "sakana"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a fish in the toilet.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c026",
+      "line": [
+        "道",
+        "に",
+        "赤ちゃん",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "みち",
+        "に",
+        "あかちゃん",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "road",
+        "location or time marker",
+        "baby",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "道",
+          "reading": "みち",
+          "explain": "road",
+          "wordId": "michi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "赤ちゃん",
+          "reading": "あかちゃん",
+          "explain": "baby",
+          "wordId": "akachan"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a baby on the road.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c027",
+      "line": [
+        "橋",
+        "に",
+        "ケン",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "はし",
+        "に",
+        "けん",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "bridge",
+        "location or time marker",
+        "Ken",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "橋",
+          "reading": "はし",
+          "explain": "bridge",
+          "wordId": "hashi_bridge"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken is on the bridge.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c028",
+      "line": [
+        "川",
+        "に",
+        "ユキ",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "かわ",
+        "に",
+        "ゆき",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "river",
+        "location or time marker",
+        "Yuki",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "川",
+          "reading": "かわ",
+          "explain": "river",
+          "wordId": "kawa"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki is in the river.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c029",
+      "line": [
+        "空港",
+        "に",
+        "田中",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "くうこう",
+        "に",
+        "たなか",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "airport",
+        "location or time marker",
+        "Tanaka",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "空港",
+          "reading": "くうこう",
+          "explain": "airport",
+          "wordId": "kuukou"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka is at the airport.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c030",
+      "line": [
+        "ホテル",
+        "に",
+        "先生",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "ほてる",
+        "に",
+        "せんせい",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "hotel",
+        "location or time marker",
+        "teacher",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ホテル",
+          "reading": "ほてる",
+          "explain": "hotel",
+          "wordId": "hoteru"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is in the hotel.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c031",
+      "line": [
+        "台所",
+        "に",
+        "学生",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "だいどころ",
+        "に",
+        "がくせい",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "kitchen",
+        "location or time marker",
+        "student",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "台所",
+          "reading": "だいどころ",
+          "explain": "kitchen",
+          "wordId": "daidokoro"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is in the kitchen.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c032",
+      "line": [
+        "庭",
+        "に",
+        "母",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "にわ",
+        "に",
+        "はは",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "garden",
+        "location or time marker",
+        "mother",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "庭",
+          "reading": "にわ",
+          "explain": "garden",
+          "wordId": "niwa"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My mother is in the garden.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c033",
+      "line": [
+        "教室",
+        "に",
+        "鳥",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "きょうしつ",
+        "に",
+        "とり",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "classroom",
+        "location or time marker",
+        "bird",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "教室",
+          "reading": "きょうしつ",
+          "explain": "classroom",
+          "wordId": "kyoushitsu"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "鳥",
+          "reading": "とり",
+          "explain": "bird",
+          "wordId": "tori"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a bird in the classroom.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c034",
+      "line": [
+        "食堂",
+        "に",
+        "魚",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "しょくどう",
+        "に",
+        "さかな",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "cafeteria",
+        "location or time marker",
+        "fish",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "食堂",
+          "reading": "しょくどう",
+          "explain": "cafeteria",
+          "wordId": "shokudou"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "魚",
+          "reading": "さかな",
+          "explain": "fish",
+          "wordId": "sakana"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a fish in the cafeteria.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c035",
+      "line": [
+        "トイレ",
+        "に",
+        "赤ちゃん",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "といれ",
+        "に",
+        "あかちゃん",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "toilet; restroom",
+        "location or time marker",
+        "baby",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "トイレ",
+          "reading": "といれ",
+          "explain": "toilet; restroom",
+          "wordId": "toire"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "赤ちゃん",
+          "reading": "あかちゃん",
+          "explain": "baby",
+          "wordId": "akachan"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is a baby in the toilet.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c036",
+      "line": [
+        "道",
+        "に",
+        "ケン",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "みち",
+        "に",
+        "けん",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "road",
+        "location or time marker",
+        "Ken",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "道",
+          "reading": "みち",
+          "explain": "road",
+          "wordId": "michi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken is on the road.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c037",
+      "line": [
+        "橋",
+        "に",
+        "ユキ",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "はし",
+        "に",
+        "ゆき",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "bridge",
+        "location or time marker",
+        "Yuki",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "橋",
+          "reading": "はし",
+          "explain": "bridge",
+          "wordId": "hashi_bridge"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki is on the bridge.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c038",
+      "line": [
+        "川",
+        "に",
+        "田中",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "かわ",
+        "に",
+        "たなか",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "river",
+        "location or time marker",
+        "Tanaka",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "川",
+          "reading": "かわ",
+          "explain": "river",
+          "wordId": "kawa"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka is in the river.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c039",
+      "line": [
+        "空港",
+        "に",
+        "先生",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "くうこう",
+        "に",
+        "せんせい",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "airport",
+        "location or time marker",
+        "teacher",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "空港",
+          "reading": "くうこう",
+          "explain": "airport",
+          "wordId": "kuukou"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is at the airport.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c040",
+      "line": [
+        "ホテル",
+        "に",
+        "学生",
+        "が",
+        "います",
+        "。"
+      ],
+      "tts": [
+        "ほてる",
+        "に",
+        "がくせい",
+        "が",
+        "います",
+        "。"
+      ],
+      "explain": [
+        "hotel",
+        "location or time marker",
+        "student",
+        "subject marker",
+        "exists for living things; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ホテル",
+          "reading": "ほてる",
+          "explain": "hotel",
+          "wordId": "hoteru"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "exists for living things; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is in the hotel.",
+      "imagePrompt": "A person or animal exists in a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "場所にNがいます"
+      ]
+    },
+    {
+      "id": "u017-c041",
+      "line": [
+        "台所",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "だいどころ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "kitchen",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "台所",
+          "reading": "だいどころ",
+          "explain": "kitchen",
+          "wordId": "daidokoro"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the kitchen?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c042",
+      "line": [
+        "庭",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "にわ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "garden",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "庭",
+          "reading": "にわ",
+          "explain": "garden",
+          "wordId": "niwa"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the garden?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c043",
+      "line": [
+        "教室",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "きょうしつ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "classroom",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "教室",
+          "reading": "きょうしつ",
+          "explain": "classroom",
+          "wordId": "kyoushitsu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the classroom?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c044",
+      "line": [
+        "食堂",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "しょくどう",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "cafeteria",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "食堂",
+          "reading": "しょくどう",
+          "explain": "cafeteria",
+          "wordId": "shokudou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the cafeteria?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c045",
+      "line": [
+        "トイレ",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "といれ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "toilet; restroom",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "トイレ",
+          "reading": "といれ",
+          "explain": "toilet; restroom",
+          "wordId": "toire"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the toilet?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c046",
+      "line": [
+        "道",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "みち",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "road",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "道",
+          "reading": "みち",
+          "explain": "road",
+          "wordId": "michi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the road?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c047",
+      "line": [
+        "橋",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "はし",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "bridge",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "橋",
+          "reading": "はし",
+          "explain": "bridge",
+          "wordId": "hashi_bridge"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the bridge?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c048",
+      "line": [
+        "川",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "かわ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "river",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "川",
+          "reading": "かわ",
+          "explain": "river",
+          "wordId": "kawa"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the river?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c049",
+      "line": [
+        "空港",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "くうこう",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "airport",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "空港",
+          "reading": "くうこう",
+          "explain": "airport",
+          "wordId": "kuukou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the airport?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c050",
+      "line": [
+        "ホテル",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ほてる",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "hotel",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "ホテル",
+          "reading": "ほてる",
+          "explain": "hotel",
+          "wordId": "hoteru"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the hotel?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c051",
+      "line": [
+        "台所",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "だいどころ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "kitchen",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "台所",
+          "reading": "だいどころ",
+          "explain": "kitchen",
+          "wordId": "daidokoro"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the kitchen?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c052",
+      "line": [
+        "庭",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "にわ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "garden",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "庭",
+          "reading": "にわ",
+          "explain": "garden",
+          "wordId": "niwa"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the garden?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c053",
+      "line": [
+        "教室",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "きょうしつ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "classroom",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "教室",
+          "reading": "きょうしつ",
+          "explain": "classroom",
+          "wordId": "kyoushitsu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the classroom?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c054",
+      "line": [
+        "食堂",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "しょくどう",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "cafeteria",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "食堂",
+          "reading": "しょくどう",
+          "explain": "cafeteria",
+          "wordId": "shokudou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the cafeteria?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c055",
+      "line": [
+        "トイレ",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "といれ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "toilet; restroom",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "トイレ",
+          "reading": "といれ",
+          "explain": "toilet; restroom",
+          "wordId": "toire"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the toilet?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c056",
+      "line": [
+        "道",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "みち",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "road",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "道",
+          "reading": "みち",
+          "explain": "road",
+          "wordId": "michi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the road?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c057",
+      "line": [
+        "橋",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "はし",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "bridge",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "橋",
+          "reading": "はし",
+          "explain": "bridge",
+          "wordId": "hashi_bridge"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the bridge?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c058",
+      "line": [
+        "川",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "かわ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "river",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "川",
+          "reading": "かわ",
+          "explain": "river",
+          "wordId": "kawa"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the river?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c059",
+      "line": [
+        "空港",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "くうこう",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "airport",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "空港",
+          "reading": "くうこう",
+          "explain": "airport",
+          "wordId": "kuukou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the airport?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c060",
+      "line": [
+        "ホテル",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ほてる",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "hotel",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "ホテル",
+          "reading": "ほてる",
+          "explain": "hotel",
+          "wordId": "hoteru"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the hotel?",
+      "imagePrompt": "A where-question about a place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u017-c061",
+      "line": [
+        "台所",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "だいどころ",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "kitchen",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "台所",
+          "reading": "だいどころ",
+          "explain": "kitchen",
+          "wordId": "daidokoro"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The kitchen is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c062",
+      "line": [
+        "庭",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "にわ",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "garden",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "庭",
+          "reading": "にわ",
+          "explain": "garden",
+          "wordId": "niwa"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The garden is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c063",
+      "line": [
+        "教室",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "きょうしつ",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "classroom",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "教室",
+          "reading": "きょうしつ",
+          "explain": "classroom",
+          "wordId": "kyoushitsu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The classroom is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c064",
+      "line": [
+        "食堂",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "しょくどう",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "cafeteria",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "食堂",
+          "reading": "しょくどう",
+          "explain": "cafeteria",
+          "wordId": "shokudou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The cafeteria is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c065",
+      "line": [
+        "トイレ",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "といれ",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "toilet; restroom",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "トイレ",
+          "reading": "といれ",
+          "explain": "toilet; restroom",
+          "wordId": "toire"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The toilet is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c066",
+      "line": [
+        "道",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "みち",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "road",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "道",
+          "reading": "みち",
+          "explain": "road",
+          "wordId": "michi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The road is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c067",
+      "line": [
+        "橋",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "はし",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "bridge",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "橋",
+          "reading": "はし",
+          "explain": "bridge",
+          "wordId": "hashi_bridge"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The bridge is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c068",
+      "line": [
+        "川",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "かわ",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "river",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "川",
+          "reading": "かわ",
+          "explain": "river",
+          "wordId": "kawa"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The river is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c069",
+      "line": [
+        "空港",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "くうこう",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "airport",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "空港",
+          "reading": "くうこう",
+          "explain": "airport",
+          "wordId": "kuukou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The airport is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c070",
+      "line": [
+        "ホテル",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "ほてる",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "hotel",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ホテル",
+          "reading": "ほてる",
+          "explain": "hotel",
+          "wordId": "hoteru"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The hotel is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c071",
+      "line": [
+        "台所",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "だいどころ",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "kitchen",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "台所",
+          "reading": "だいどころ",
+          "explain": "kitchen",
+          "wordId": "daidokoro"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The kitchen is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c072",
+      "line": [
+        "庭",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "にわ",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "garden",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "庭",
+          "reading": "にわ",
+          "explain": "garden",
+          "wordId": "niwa"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The garden is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c073",
+      "line": [
+        "教室",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "きょうしつ",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "classroom",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "教室",
+          "reading": "きょうしつ",
+          "explain": "classroom",
+          "wordId": "kyoushitsu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The classroom is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c074",
+      "line": [
+        "食堂",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "しょくどう",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "cafeteria",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "食堂",
+          "reading": "しょくどう",
+          "explain": "cafeteria",
+          "wordId": "shokudou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The cafeteria is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c075",
+      "line": [
+        "トイレ",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "といれ",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "toilet; restroom",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "トイレ",
+          "reading": "といれ",
+          "explain": "toilet; restroom",
+          "wordId": "toire"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The toilet is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c076",
+      "line": [
+        "道",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "みち",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "road",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "道",
+          "reading": "みち",
+          "explain": "road",
+          "wordId": "michi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The road is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c077",
+      "line": [
+        "橋",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "はし",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "bridge",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "橋",
+          "reading": "はし",
+          "explain": "bridge",
+          "wordId": "hashi_bridge"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The bridge is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c078",
+      "line": [
+        "川",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "かわ",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "river",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "川",
+          "reading": "かわ",
+          "explain": "river",
+          "wordId": "kawa"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The river is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c079",
+      "line": [
+        "空港",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "くうこう",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "airport",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "空港",
+          "reading": "くうこう",
+          "explain": "airport",
+          "wordId": "kuukou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The airport is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c080",
+      "line": [
+        "ホテル",
+        "は",
+        "静か",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "ほてる",
+        "わ",
+        "しずか",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "hotel",
+        "topic marker",
+        "quiet",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ホテル",
+          "reading": "ほてる",
+          "explain": "hotel",
+          "wordId": "hoteru"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "静か",
+          "reading": "しずか",
+          "explain": "quiet",
+          "wordId": "shizuka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The hotel is quiet, isn't it?",
+      "imagePrompt": "A familiar description applied to a new place.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "Japanese puts the place before `に` when saying where something exists.",
+      "grammarTags": [
+        "na-adjective present",
+        "ね"
+      ]
+    },
+    {
+      "id": "u017-c081",
+      "line": [
+        "これ",
+        "は",
+        "窓",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "まど",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "window",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "窓",
+          "reading": "まど",
+          "explain": "window",
+          "wordId": "mado"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a window.",
+      "imagePrompt": "A focused review card for 窓.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c082",
+      "line": [
+        "これ",
+        "は",
+        "ドア",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "どあ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "door",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ドア",
+          "reading": "どあ",
+          "explain": "door",
+          "wordId": "doa"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a door.",
+      "imagePrompt": "A focused review card for ドア.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c083",
+      "line": [
+        "これ",
+        "は",
+        "皿",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "さら",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "plate",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "皿",
+          "reading": "さら",
+          "explain": "plate",
+          "wordId": "sara"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a plate.",
+      "imagePrompt": "A focused review card for 皿.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c084",
+      "line": [
+        "これ",
+        "は",
+        "コップ",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "こっぷ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "cup",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "コップ",
+          "reading": "こっぷ",
+          "explain": "cup",
+          "wordId": "koppu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a cup.",
+      "imagePrompt": "A focused review card for コップ.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c085",
+      "line": [
+        "これ",
+        "は",
+        "地図",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ちず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "map",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "地図",
+          "reading": "ちず",
+          "explain": "map",
+          "wordId": "chizu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a map.",
+      "imagePrompt": "A focused review card for 地図.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c086",
+      "line": [
+        "これ",
+        "は",
+        "紙",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "かみ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "paper",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "紙",
+          "reading": "かみ",
+          "explain": "paper",
+          "wordId": "kami"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is paper.",
+      "imagePrompt": "A focused review card for 紙.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c087",
+      "line": [
+        "これ",
+        "は",
+        "ペン",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ぺん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "pen",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ペン",
+          "reading": "ぺん",
+          "explain": "pen",
+          "wordId": "pen"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a pen.",
+      "imagePrompt": "A focused review card for ペン.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c088",
+      "line": [
+        "これ",
+        "は",
+        "花",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "はな",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "flower",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "花",
+          "reading": "はな",
+          "explain": "flower",
+          "wordId": "hana_flower"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a flower.",
+      "imagePrompt": "A focused review card for 花.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c089",
+      "line": [
+        "これ",
+        "は",
+        "暇",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ひま",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "free; not busy",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "暇",
+          "reading": "ひま",
+          "explain": "free; not busy",
+          "wordId": "hima"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This one is free.",
+      "imagePrompt": "A focused review card for 暇.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c090",
+      "line": [
+        "これ",
+        "は",
+        "変",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "へん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "strange",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "変",
+          "reading": "へん",
+          "explain": "strange",
+          "wordId": "hen"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This one is strange.",
+      "imagePrompt": "A focused review card for 変.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c091",
+      "line": [
+        "これ",
+        "は",
+        "すてき",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "すてき",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "lovely",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "すてき",
+          "reading": "すてき",
+          "explain": "lovely",
+          "wordId": "suteki"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This one is lovely.",
+      "imagePrompt": "A focused review card for すてき.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c092",
+      "line": [
+        "これ",
+        "は",
+        "真面目",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "まじめ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "serious",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "真面目",
+          "reading": "まじめ",
+          "explain": "serious",
+          "wordId": "majime"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This one is serious.",
+      "imagePrompt": "A focused review card for 真面目.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c093",
+      "line": [
+        "これ",
+        "は",
+        "丁寧",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ていねい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "polite; careful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "丁寧",
+          "reading": "ていねい",
+          "explain": "polite; careful",
+          "wordId": "teinei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This one is polite.",
+      "imagePrompt": "A focused review card for 丁寧.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c094",
+      "line": [
+        "これ",
+        "は",
+        "失礼",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "しつれい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "rude",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "失礼",
+          "reading": "しつれい",
+          "explain": "rude",
+          "wordId": "shitsurei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This one is rude.",
+      "imagePrompt": "A focused review card for 失礼.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c095",
+      "line": [
+        "これ",
+        "は",
+        "複雑",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ふくざつ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "complex",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "複雑",
+          "reading": "ふくざつ",
+          "explain": "complex",
+          "wordId": "fukuzatsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This one is complex.",
+      "imagePrompt": "A focused review card for 複雑.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c096",
+      "line": [
+        "これ",
+        "は",
+        "特別",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "とくべつ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "special",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "特別",
+          "reading": "とくべつ",
+          "explain": "special",
+          "wordId": "tokubetsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This one is special.",
+      "imagePrompt": "A focused review card for 特別.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c097",
+      "line": [
+        "これ",
+        "は",
+        "普通",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ふつう",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "ordinary",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "普通",
+          "reading": "ふつう",
+          "explain": "ordinary",
+          "wordId": "futsuu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This one is ordinary.",
+      "imagePrompt": "A focused review card for 普通.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c098",
+      "line": [
+        "これ",
+        "は",
+        "残念",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ざんねん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "unfortunate",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "残念",
+          "reading": "ざんねん",
+          "explain": "unfortunate",
+          "wordId": "zannen"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This one is unfortunate.",
+      "imagePrompt": "A focused review card for 残念.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c099",
+      "line": [
+        "これ",
+        "は",
+        "天気",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "てんき",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "weather",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "天気",
+          "reading": "てんき",
+          "explain": "weather",
+          "wordId": "tenki"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is weather.",
+      "imagePrompt": "A focused review card for 天気.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c100",
+      "line": [
+        "これ",
+        "は",
+        "雨",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "あめ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "rain",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "雨",
+          "reading": "あめ",
+          "explain": "rain",
+          "wordId": "ame"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is rain.",
+      "imagePrompt": "A focused review card for 雨.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c101",
+      "line": [
+        "これ",
+        "は",
+        "雪",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ゆき",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "snow",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "雪",
+          "reading": "ゆき",
+          "explain": "snow",
+          "wordId": "yuki_snow"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is snow.",
+      "imagePrompt": "A focused review card for 雪.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c102",
+      "line": [
+        "これ",
+        "は",
+        "風",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "かぜ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "wind",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "風",
+          "reading": "かぜ",
+          "explain": "wind",
+          "wordId": "kaze"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is wind.",
+      "imagePrompt": "A focused review card for 風.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c103",
+      "line": [
+        "これ",
+        "は",
+        "空",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "そら",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "sky",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "空",
+          "reading": "そら",
+          "explain": "sky",
+          "wordId": "sora"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is sky.",
+      "imagePrompt": "A focused review card for 空.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c104",
+      "line": [
+        "海",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "うみ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "sea",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "海",
+          "reading": "うみ",
+          "explain": "sea",
+          "wordId": "umi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the sea?",
+      "imagePrompt": "A focused review card for 海.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c105",
+      "line": [
+        "山",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "やま",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "mountain",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "山",
+          "reading": "やま",
+          "explain": "mountain",
+          "wordId": "yama"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the mountain?",
+      "imagePrompt": "A focused review card for 山.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c106",
+      "line": [
+        "町",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "まち",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "town",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "町",
+          "reading": "まち",
+          "explain": "town",
+          "wordId": "machi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the town?",
+      "imagePrompt": "A focused review card for 町.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c107",
+      "line": [
+        "島",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "しま",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "island",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "島",
+          "reading": "しま",
+          "explain": "island",
+          "wordId": "shima"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the island?",
+      "imagePrompt": "A focused review card for 島.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c108",
+      "line": [
+        "国",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "くに",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "country",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the country?",
+      "imagePrompt": "A focused review card for 国.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c109",
+      "line": [
+        "これ",
+        "は",
+        "私",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "わたし",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "I; me",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's me.",
+      "imagePrompt": "A focused review card for 私.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-04.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c110",
+      "line": [
+        "日本",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "にほん",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Japan",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is Japan?",
+      "imagePrompt": "A focused review card for 日本.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-05.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c111",
+      "line": [
+        "アメリカ",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "あめりか",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "America",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "アメリカ",
+          "reading": "あめりか",
+          "explain": "America",
+          "wordId": "amerika"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is America?",
+      "imagePrompt": "A focused review card for アメリカ.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c112",
+      "line": [
+        "これ",
+        "は",
+        "名前",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "なまえ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "name",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "名前",
+          "reading": "なまえ",
+          "explain": "name",
+          "wordId": "namae"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a name.",
+      "imagePrompt": "A focused review card for 名前.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u017-c113",
+      "line": [
+        "これ",
+        "は",
+        "友達",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ともだち",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "friend",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a friend.",
+      "imagePrompt": "A focused review card for 友達.",
+      "imageRef": "/media/jp/images/unit_017/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    }
+  ]
+}

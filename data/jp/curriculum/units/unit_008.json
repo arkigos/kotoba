@@ -1,0 +1,5516 @@
+{
+  "id": 8,
+  "slug": "where-and-when",
+  "title": "Unit 8: Asking Where And When",
+  "grammarFocus": "どこ / いつ / ここ / そこ / あそこ",
+  "newWords": [
+    {
+      "id": "doko",
+      "surface": "どこ",
+      "reading": "どこ",
+      "meaning": "where",
+      "function": "question"
+    },
+    {
+      "id": "itsu",
+      "surface": "いつ",
+      "reading": "いつ",
+      "meaning": "when",
+      "function": "question"
+    },
+    {
+      "id": "kyou",
+      "surface": "今日",
+      "reading": "きょう",
+      "meaning": "today",
+      "function": "time"
+    },
+    {
+      "id": "ashita",
+      "surface": "明日",
+      "reading": "あした",
+      "meaning": "tomorrow",
+      "function": "time"
+    },
+    {
+      "id": "ima",
+      "surface": "今",
+      "reading": "いま",
+      "meaning": "now",
+      "function": "time"
+    },
+    {
+      "id": "koko",
+      "surface": "ここ",
+      "reading": "ここ",
+      "meaning": "here",
+      "function": "place"
+    },
+    {
+      "id": "soko",
+      "surface": "そこ",
+      "reading": "そこ",
+      "meaning": "there near you",
+      "function": "place"
+    },
+    {
+      "id": "asoko",
+      "surface": "あそこ",
+      "reading": "あそこ",
+      "meaning": "over there",
+      "function": "place"
+    },
+    {
+      "id": "kouen",
+      "surface": "公園",
+      "reading": "こうえん",
+      "meaning": "park",
+      "function": "place"
+    },
+    {
+      "id": "toshokan",
+      "surface": "図書館",
+      "reading": "としょかん",
+      "meaning": "library",
+      "function": "place"
+    }
+  ],
+  "cards": [
+    {
+      "id": "u008-c001",
+      "line": [
+        "ここ",
+        "は",
+        "学校",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "がっこう",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "school",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Here is the school.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c002",
+      "line": [
+        "そこ",
+        "は",
+        "店",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "そこ",
+        "わ",
+        "みせ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "there near you",
+        "topic marker",
+        "shop",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "そこ",
+          "reading": "そこ",
+          "explain": "there near you",
+          "wordId": "soko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There near you is the shop.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c003",
+      "line": [
+        "あそこ",
+        "は",
+        "公園",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あそこ",
+        "わ",
+        "こうえん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "over there",
+        "topic marker",
+        "park",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あそこ",
+          "reading": "あそこ",
+          "explain": "over there",
+          "wordId": "asoko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "公園",
+          "reading": "こうえん",
+          "explain": "park",
+          "wordId": "kouen"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Over there is the park.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c004",
+      "line": [
+        "ここ",
+        "は",
+        "図書館",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "としょかん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "library",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "図書館",
+          "reading": "としょかん",
+          "explain": "library",
+          "wordId": "toshokan"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Here is the library.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c005",
+      "line": [
+        "そこ",
+        "は",
+        "駅",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "そこ",
+        "わ",
+        "えき",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "there near you",
+        "topic marker",
+        "station",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "そこ",
+          "reading": "そこ",
+          "explain": "there near you",
+          "wordId": "soko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "explain": "station",
+          "wordId": "eki"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There near you is the station.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c006",
+      "line": [
+        "あそこ",
+        "は",
+        "病院",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あそこ",
+        "わ",
+        "びょういん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "over there",
+        "topic marker",
+        "hospital",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あそこ",
+          "reading": "あそこ",
+          "explain": "over there",
+          "wordId": "asoko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "病院",
+          "reading": "びょういん",
+          "explain": "hospital",
+          "wordId": "byouin"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Over there is the hospital.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c007",
+      "line": [
+        "ここ",
+        "は",
+        "部屋",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "へや",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "room",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Here is the room.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c008",
+      "line": [
+        "そこ",
+        "は",
+        "会社",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "そこ",
+        "わ",
+        "かいしゃ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "there near you",
+        "topic marker",
+        "company",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "そこ",
+          "reading": "そこ",
+          "explain": "there near you",
+          "wordId": "soko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "explain": "company",
+          "wordId": "kaisha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There near you is the company.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c009",
+      "line": [
+        "あそこ",
+        "は",
+        "家",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あそこ",
+        "わ",
+        "いえ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "over there",
+        "topic marker",
+        "house; home",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あそこ",
+          "reading": "あそこ",
+          "explain": "over there",
+          "wordId": "asoko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Over there is the house.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c010",
+      "line": [
+        "ここ",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "place",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Here is the place.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c011",
+      "line": [
+        "今日",
+        "は",
+        "休み",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "わ",
+        "やすみ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "topic marker",
+        "day off; break",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "休み",
+          "reading": "やすみ",
+          "explain": "day off; break",
+          "wordId": "yasumi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Today is a day off.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c012",
+      "line": [
+        "明日",
+        "は",
+        "テスト",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あした",
+        "わ",
+        "てすと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "tomorrow",
+        "topic marker",
+        "test",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "テスト",
+          "reading": "てすと",
+          "explain": "test",
+          "wordId": "tesuto"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tomorrow is a test.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c013",
+      "line": [
+        "今",
+        "は",
+        "仕事",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "いま",
+        "わ",
+        "しごと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "now",
+        "topic marker",
+        "work; job",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今",
+          "reading": "いま",
+          "explain": "now",
+          "wordId": "ima"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "仕事",
+          "reading": "しごと",
+          "explain": "work; job",
+          "wordId": "shigoto"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Now is work.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c014",
+      "line": [
+        "今日",
+        "は",
+        "誕生日",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "わ",
+        "たんじょうび",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "topic marker",
+        "birthday",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "誕生日",
+          "reading": "たんじょうび",
+          "explain": "birthday",
+          "wordId": "tanjoubi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Today is a birthday.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c015",
+      "line": [
+        "明日",
+        "は",
+        "旅行",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あした",
+        "わ",
+        "りょこう",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "tomorrow",
+        "topic marker",
+        "trip",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "旅行",
+          "reading": "りょこう",
+          "explain": "trip",
+          "wordId": "ryokou"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tomorrow is the trip.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c016",
+      "line": [
+        "今",
+        "は",
+        "休み",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "いま",
+        "わ",
+        "やすみ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "now",
+        "topic marker",
+        "day off; break",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今",
+          "reading": "いま",
+          "explain": "now",
+          "wordId": "ima"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "休み",
+          "reading": "やすみ",
+          "explain": "day off; break",
+          "wordId": "yasumi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Now is a break.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c017",
+      "line": [
+        "今日",
+        "は",
+        "仕事",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "わ",
+        "しごと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "topic marker",
+        "work; job",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "仕事",
+          "reading": "しごと",
+          "explain": "work; job",
+          "wordId": "shigoto"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Today is work.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c018",
+      "line": [
+        "明日",
+        "は",
+        "学校",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あした",
+        "わ",
+        "がっこう",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "tomorrow",
+        "topic marker",
+        "school",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tomorrow is school.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c019",
+      "line": [
+        "今",
+        "は",
+        "テスト",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "いま",
+        "わ",
+        "てすと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "now",
+        "topic marker",
+        "test",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今",
+          "reading": "いま",
+          "explain": "now",
+          "wordId": "ima"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "テスト",
+          "reading": "てすと",
+          "explain": "test",
+          "wordId": "tesuto"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Now is the test.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c020",
+      "line": [
+        "今日",
+        "は",
+        "旅行",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "わ",
+        "りょこう",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "topic marker",
+        "trip",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "旅行",
+          "reading": "りょこう",
+          "explain": "trip",
+          "wordId": "ryokou"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Today is the trip.",
+      "imagePrompt": "A simple place or time word in context.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u008-c021",
+      "line": [
+        "公園",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "こうえん",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "park",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "公園",
+          "reading": "こうえん",
+          "explain": "park",
+          "wordId": "kouen"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the park?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c022",
+      "line": [
+        "図書館",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "としょかん",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "library",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "図書館",
+          "reading": "としょかん",
+          "explain": "library",
+          "wordId": "toshokan"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the library?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c023",
+      "line": [
+        "学校",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "がっこう",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "school",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the school?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c024",
+      "line": [
+        "店",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "みせ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "shop",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the shop?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c025",
+      "line": [
+        "駅",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "えき",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "station",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "explain": "station",
+          "wordId": "eki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the station?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c026",
+      "line": [
+        "病院",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "びょういん",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "hospital",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "病院",
+          "reading": "びょういん",
+          "explain": "hospital",
+          "wordId": "byouin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the hospital?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c027",
+      "line": [
+        "会社",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "かいしゃ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "company",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "explain": "company",
+          "wordId": "kaisha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the company?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c028",
+      "line": [
+        "ケン",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is Ken?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c029",
+      "line": [
+        "ユキ",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is Yuki?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c030",
+      "line": [
+        "田中",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is Tanaka?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c031",
+      "line": [
+        "先生",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the teacher?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c032",
+      "line": [
+        "学生",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the student?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c033",
+      "line": [
+        "母",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "はは",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "mother",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is my mother?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c034",
+      "line": [
+        "父",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ちち",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "father",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is my father?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c035",
+      "line": [
+        "姉",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "あね",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "older sister",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is my older sister?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c036",
+      "line": [
+        "本",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ほん",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "book",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the book?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c037",
+      "line": [
+        "鍵",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "かぎ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "key",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the key?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c038",
+      "line": [
+        "かばん",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "かばん",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "bag",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the bag?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c039",
+      "line": [
+        "写真",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "しゃしん",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "photo",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the photo?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c040",
+      "line": [
+        "時計",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "とけい",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "clock; watch",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "explain": "clock; watch",
+          "wordId": "tokei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the clock?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c041",
+      "line": [
+        "水",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "みず",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "water",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "水",
+          "reading": "みず",
+          "explain": "water",
+          "wordId": "mizu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the water?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c042",
+      "line": [
+        "お茶",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "おちゃ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "tea",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "お茶",
+          "reading": "おちゃ",
+          "explain": "tea",
+          "wordId": "ocha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the tea?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c043",
+      "line": [
+        "鉛筆",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "えんぴつ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "pencil",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "鉛筆",
+          "reading": "えんぴつ",
+          "explain": "pencil",
+          "wordId": "enpitsu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the pencil?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c044",
+      "line": [
+        "車",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "くるま",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "car",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the car?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c045",
+      "line": [
+        "自転車",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "じてんしゃ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "bicycle",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "自転車",
+          "reading": "じてんしゃ",
+          "explain": "bicycle",
+          "wordId": "jitensha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the bicycle?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c046",
+      "line": [
+        "公園",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "こうえん",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "park",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "公園",
+          "reading": "こうえん",
+          "explain": "park",
+          "wordId": "kouen"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the park?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c047",
+      "line": [
+        "図書館",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "としょかん",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "library",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "図書館",
+          "reading": "としょかん",
+          "explain": "library",
+          "wordId": "toshokan"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the library?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c048",
+      "line": [
+        "学校",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "がっこう",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "school",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the school?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c049",
+      "line": [
+        "店",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "みせ",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "shop",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the shop?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c050",
+      "line": [
+        "駅",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "えき",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "station",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "explain": "station",
+          "wordId": "eki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the station?",
+      "imagePrompt": "A where-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "どこですか"
+      ]
+    },
+    {
+      "id": "u008-c051",
+      "line": [
+        "休み",
+        "は",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "やすみ",
+        "わ",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "day off; break",
+        "topic marker",
+        "when",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "休み",
+          "reading": "やすみ",
+          "explain": "day off; break",
+          "wordId": "yasumi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつ",
+          "reading": "いつ",
+          "explain": "when",
+          "wordId": "itsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "When is the day off?",
+      "imagePrompt": "A when-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "いつですか"
+      ]
+    },
+    {
+      "id": "u008-c052",
+      "line": [
+        "テスト",
+        "は",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "てすと",
+        "わ",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "test",
+        "topic marker",
+        "when",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "テスト",
+          "reading": "てすと",
+          "explain": "test",
+          "wordId": "tesuto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつ",
+          "reading": "いつ",
+          "explain": "when",
+          "wordId": "itsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "When is the test?",
+      "imagePrompt": "A when-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "いつですか"
+      ]
+    },
+    {
+      "id": "u008-c053",
+      "line": [
+        "誕生日",
+        "は",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "たんじょうび",
+        "わ",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "birthday",
+        "topic marker",
+        "when",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "誕生日",
+          "reading": "たんじょうび",
+          "explain": "birthday",
+          "wordId": "tanjoubi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつ",
+          "reading": "いつ",
+          "explain": "when",
+          "wordId": "itsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "When is the birthday?",
+      "imagePrompt": "A when-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "いつですか"
+      ]
+    },
+    {
+      "id": "u008-c054",
+      "line": [
+        "旅行",
+        "は",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "りょこう",
+        "わ",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "trip",
+        "topic marker",
+        "when",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "旅行",
+          "reading": "りょこう",
+          "explain": "trip",
+          "wordId": "ryokou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつ",
+          "reading": "いつ",
+          "explain": "when",
+          "wordId": "itsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "When is the trip?",
+      "imagePrompt": "A when-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "いつですか"
+      ]
+    },
+    {
+      "id": "u008-c055",
+      "line": [
+        "仕事",
+        "は",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "しごと",
+        "わ",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "work; job",
+        "topic marker",
+        "when",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "仕事",
+          "reading": "しごと",
+          "explain": "work; job",
+          "wordId": "shigoto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつ",
+          "reading": "いつ",
+          "explain": "when",
+          "wordId": "itsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "When is work?",
+      "imagePrompt": "A when-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "いつですか"
+      ]
+    },
+    {
+      "id": "u008-c056",
+      "line": [
+        "学校",
+        "は",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "がっこう",
+        "わ",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "school",
+        "topic marker",
+        "when",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつ",
+          "reading": "いつ",
+          "explain": "when",
+          "wordId": "itsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "When is school?",
+      "imagePrompt": "A when-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "いつですか"
+      ]
+    },
+    {
+      "id": "u008-c057",
+      "line": [
+        "休み",
+        "は",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "やすみ",
+        "わ",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "day off; break",
+        "topic marker",
+        "when",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "休み",
+          "reading": "やすみ",
+          "explain": "day off; break",
+          "wordId": "yasumi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつ",
+          "reading": "いつ",
+          "explain": "when",
+          "wordId": "itsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "When is the day off?",
+      "imagePrompt": "A when-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "いつですか"
+      ]
+    },
+    {
+      "id": "u008-c058",
+      "line": [
+        "テスト",
+        "は",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "てすと",
+        "わ",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "test",
+        "topic marker",
+        "when",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "テスト",
+          "reading": "てすと",
+          "explain": "test",
+          "wordId": "tesuto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつ",
+          "reading": "いつ",
+          "explain": "when",
+          "wordId": "itsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "When is the test?",
+      "imagePrompt": "A when-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "いつですか"
+      ]
+    },
+    {
+      "id": "u008-c059",
+      "line": [
+        "誕生日",
+        "は",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "たんじょうび",
+        "わ",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "birthday",
+        "topic marker",
+        "when",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "誕生日",
+          "reading": "たんじょうび",
+          "explain": "birthday",
+          "wordId": "tanjoubi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつ",
+          "reading": "いつ",
+          "explain": "when",
+          "wordId": "itsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "When is the birthday?",
+      "imagePrompt": "A when-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "いつですか"
+      ]
+    },
+    {
+      "id": "u008-c060",
+      "line": [
+        "旅行",
+        "は",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "りょこう",
+        "わ",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "trip",
+        "topic marker",
+        "when",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "旅行",
+          "reading": "りょこう",
+          "explain": "trip",
+          "wordId": "ryokou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつ",
+          "reading": "いつ",
+          "explain": "when",
+          "wordId": "itsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "When is the trip?",
+      "imagePrompt": "A when-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "いつですか"
+      ]
+    },
+    {
+      "id": "u008-c061",
+      "line": [
+        "仕事",
+        "は",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "しごと",
+        "わ",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "work; job",
+        "topic marker",
+        "when",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "仕事",
+          "reading": "しごと",
+          "explain": "work; job",
+          "wordId": "shigoto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつ",
+          "reading": "いつ",
+          "explain": "when",
+          "wordId": "itsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "When is work?",
+      "imagePrompt": "A when-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "いつですか"
+      ]
+    },
+    {
+      "id": "u008-c062",
+      "line": [
+        "学校",
+        "は",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "がっこう",
+        "わ",
+        "いつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "school",
+        "topic marker",
+        "when",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつ",
+          "reading": "いつ",
+          "explain": "when",
+          "wordId": "itsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "When is school?",
+      "imagePrompt": "A when-question scene.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "いつですか"
+      ]
+    },
+    {
+      "id": "u008-c063",
+      "line": [
+        "ここ",
+        "は",
+        "公園",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "こうえん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "park",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "公園",
+          "reading": "こうえん",
+          "explain": "park",
+          "wordId": "kouen"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Here is the park.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c064",
+      "line": [
+        "そこ",
+        "は",
+        "図書館",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "そこ",
+        "わ",
+        "としょかん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "there near you",
+        "topic marker",
+        "library",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "そこ",
+          "reading": "そこ",
+          "explain": "there near you",
+          "wordId": "soko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "図書館",
+          "reading": "としょかん",
+          "explain": "library",
+          "wordId": "toshokan"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There near you is the library.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c065",
+      "line": [
+        "あそこ",
+        "は",
+        "学校",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あそこ",
+        "わ",
+        "がっこう",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "over there",
+        "topic marker",
+        "school",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あそこ",
+          "reading": "あそこ",
+          "explain": "over there",
+          "wordId": "asoko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Over there is the school.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c066",
+      "line": [
+        "ここ",
+        "は",
+        "店",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "みせ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "shop",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Here is the shop.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c067",
+      "line": [
+        "そこ",
+        "は",
+        "病院",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "そこ",
+        "わ",
+        "びょういん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "there near you",
+        "topic marker",
+        "hospital",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "そこ",
+          "reading": "そこ",
+          "explain": "there near you",
+          "wordId": "soko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "病院",
+          "reading": "びょういん",
+          "explain": "hospital",
+          "wordId": "byouin"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There near you is the hospital.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c068",
+      "line": [
+        "あそこ",
+        "は",
+        "駅",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あそこ",
+        "わ",
+        "えき",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "over there",
+        "topic marker",
+        "station",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あそこ",
+          "reading": "あそこ",
+          "explain": "over there",
+          "wordId": "asoko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "explain": "station",
+          "wordId": "eki"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Over there is the station.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c069",
+      "line": [
+        "ここ",
+        "は",
+        "会社",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "かいしゃ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "company",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "explain": "company",
+          "wordId": "kaisha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Here is the company.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c070",
+      "line": [
+        "そこ",
+        "は",
+        "部屋",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "そこ",
+        "わ",
+        "へや",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "there near you",
+        "topic marker",
+        "room",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "そこ",
+          "reading": "そこ",
+          "explain": "there near you",
+          "wordId": "soko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There near you is the room.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c071",
+      "line": [
+        "あそこ",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あそこ",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "over there",
+        "topic marker",
+        "place",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あそこ",
+          "reading": "あそこ",
+          "explain": "over there",
+          "wordId": "asoko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Over there is the place.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c072",
+      "line": [
+        "ここ",
+        "は",
+        "家",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "いえ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "house; home",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Here is the house.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c073",
+      "line": [
+        "ここ",
+        "は",
+        "公園",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "こうえん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "park",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "公園",
+          "reading": "こうえん",
+          "explain": "park",
+          "wordId": "kouen"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Here is the park.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c074",
+      "line": [
+        "そこ",
+        "は",
+        "図書館",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "そこ",
+        "わ",
+        "としょかん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "there near you",
+        "topic marker",
+        "library",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "そこ",
+          "reading": "そこ",
+          "explain": "there near you",
+          "wordId": "soko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "図書館",
+          "reading": "としょかん",
+          "explain": "library",
+          "wordId": "toshokan"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There near you is the library.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c075",
+      "line": [
+        "あそこ",
+        "は",
+        "学校",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あそこ",
+        "わ",
+        "がっこう",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "over there",
+        "topic marker",
+        "school",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あそこ",
+          "reading": "あそこ",
+          "explain": "over there",
+          "wordId": "asoko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Over there is the school.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c076",
+      "line": [
+        "ここ",
+        "は",
+        "店",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "みせ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "shop",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Here is the shop.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c077",
+      "line": [
+        "そこ",
+        "は",
+        "病院",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "そこ",
+        "わ",
+        "びょういん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "there near you",
+        "topic marker",
+        "hospital",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "そこ",
+          "reading": "そこ",
+          "explain": "there near you",
+          "wordId": "soko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "病院",
+          "reading": "びょういん",
+          "explain": "hospital",
+          "wordId": "byouin"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There near you is the hospital.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c078",
+      "line": [
+        "あそこ",
+        "は",
+        "駅",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あそこ",
+        "わ",
+        "えき",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "over there",
+        "topic marker",
+        "station",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あそこ",
+          "reading": "あそこ",
+          "explain": "over there",
+          "wordId": "asoko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "explain": "station",
+          "wordId": "eki"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Over there is the station.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c079",
+      "line": [
+        "ここ",
+        "は",
+        "会社",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "かいしゃ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "company",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "explain": "company",
+          "wordId": "kaisha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Here is the company.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c080",
+      "line": [
+        "そこ",
+        "は",
+        "部屋",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "そこ",
+        "わ",
+        "へや",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "there near you",
+        "topic marker",
+        "room",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "そこ",
+          "reading": "そこ",
+          "explain": "there near you",
+          "wordId": "soko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There near you is the room.",
+      "imagePrompt": "A here-there-over-there contrast.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "Question words sit where the missing answer would normally sit in the Japanese sentence.",
+      "grammarTags": [
+        "ここ/そこ/あそこ"
+      ]
+    },
+    {
+      "id": "u008-c081",
+      "line": [
+        "これ",
+        "は",
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "book",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a book.",
+      "imagePrompt": "A focused review card for これ.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u008-c082",
+      "line": [
+        "それ",
+        "は",
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "book",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is a book.",
+      "imagePrompt": "A focused review card for それ.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u008-c083",
+      "line": [
+        "あれ",
+        "は",
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "book",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is a book.",
+      "imagePrompt": "A focused review card for あれ.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u008-c084",
+      "line": [
+        "この",
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "この",
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this",
+        "book",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is this book.",
+      "imagePrompt": "A focused review card for この.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u008-c085",
+      "line": [
+        "その",
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "book",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is that book near you.",
+      "imagePrompt": "A focused review card for その.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u008-c086",
+      "line": [
+        "あの",
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あの",
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that over there",
+        "book",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あの",
+          "reading": "あの",
+          "explain": "that over there",
+          "wordId": "ano"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is that book over there.",
+      "imagePrompt": "A focused review card for あの.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u008-c087",
+      "line": [
+        "これ",
+        "は",
+        "会社員",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "かいしゃいん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "company employee",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a company employee.",
+      "imagePrompt": "A focused review card for 会社員.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u008-c088",
+      "line": [
+        "これ",
+        "は",
+        "子供",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "こども",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "child",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "子供",
+          "reading": "こども",
+          "explain": "child",
+          "wordId": "kodomo"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a child.",
+      "imagePrompt": "A focused review card for 子供.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u008-c089",
+      "line": [
+        "これ",
+        "は",
+        "大人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "おとな",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "adult",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "大人",
+          "reading": "おとな",
+          "explain": "adult",
+          "wordId": "otona"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is an adult.",
+      "imagePrompt": "A focused review card for 大人.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-04.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u008-c090",
+      "line": [
+        "これ",
+        "は",
+        "椅子",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "いす",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "chair",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "椅子",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a chair.",
+      "imagePrompt": "A focused review card for 椅子.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-05.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u008-c091",
+      "line": [
+        "これ",
+        "は",
+        "机",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "つくえ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "desk",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "机",
+          "reading": "つくえ",
+          "explain": "desk",
+          "wordId": "tsukue"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a desk.",
+      "imagePrompt": "A focused review card for 机.",
+      "imageRef": "/media/jp/images/unit_008/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    }
+  ]
+}

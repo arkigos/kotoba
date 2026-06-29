@@ -1,0 +1,8760 @@
+{
+  "id": 32,
+  "slug": "skill-as-description",
+  "title": "Unit 32: Skill As Description",
+  "grammarFocus": "Nが上手です / Nが下手です",
+  "newWords": [
+    {
+      "id": "piano",
+      "surface": "ピアノ",
+      "reading": "ぴあの",
+      "meaning": "piano",
+      "function": "noun"
+    },
+    {
+      "id": "gitaa",
+      "surface": "ギター",
+      "reading": "ぎたー",
+      "meaning": "guitar",
+      "function": "noun"
+    },
+    {
+      "id": "uta",
+      "surface": "歌",
+      "reading": "うた",
+      "meaning": "singing; song",
+      "function": "noun"
+    },
+    {
+      "id": "dansu",
+      "surface": "ダンス",
+      "reading": "だんす",
+      "meaning": "dance",
+      "function": "noun"
+    },
+    {
+      "id": "e_drawing",
+      "surface": "絵",
+      "reading": "え",
+      "meaning": "drawing; picture",
+      "function": "noun"
+    },
+    {
+      "id": "unten",
+      "surface": "運転",
+      "reading": "うんてん",
+      "meaning": "driving",
+      "function": "noun"
+    },
+    {
+      "id": "souji",
+      "surface": "掃除",
+      "reading": "そうじ",
+      "meaning": "cleaning",
+      "function": "noun"
+    },
+    {
+      "id": "keisan",
+      "surface": "計算",
+      "reading": "けいさん",
+      "meaning": "calculation",
+      "function": "noun"
+    },
+    {
+      "id": "eigo",
+      "surface": "英語",
+      "reading": "えいご",
+      "meaning": "English language",
+      "function": "noun"
+    },
+    {
+      "id": "kanji",
+      "surface": "漢字",
+      "reading": "かんじ",
+      "meaning": "kanji",
+      "function": "noun"
+    }
+  ],
+  "cards": [
+    {
+      "id": "u032-c001",
+      "line": [
+        "私",
+        "は",
+        "ピアノ",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ぴあの",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "piano",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ピアノ",
+          "reading": "ぴあの",
+          "explain": "piano",
+          "wordId": "piano"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I am good at piano.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c002",
+      "line": [
+        "私",
+        "は",
+        "ギター",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ぎたー",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "guitar",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ギター",
+          "reading": "ぎたー",
+          "explain": "guitar",
+          "wordId": "gitaa"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I am good at guitar.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c003",
+      "line": [
+        "私",
+        "は",
+        "歌",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "うた",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "singing; song",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "歌",
+          "reading": "うた",
+          "explain": "singing; song",
+          "wordId": "uta"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I am good at singing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c004",
+      "line": [
+        "私",
+        "は",
+        "ダンス",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "だんす",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "dance",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ダンス",
+          "reading": "だんす",
+          "explain": "dance",
+          "wordId": "dansu"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I am good at dance.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c005",
+      "line": [
+        "私",
+        "は",
+        "絵",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "え",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "drawing; picture",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "絵",
+          "reading": "え",
+          "explain": "drawing; picture",
+          "wordId": "e_drawing"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I am good at drawing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c006",
+      "line": [
+        "私",
+        "は",
+        "運転",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "うんてん",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "driving",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "運転",
+          "reading": "うんてん",
+          "explain": "driving",
+          "wordId": "unten"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I am good at driving.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c007",
+      "line": [
+        "私",
+        "は",
+        "掃除",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "そうじ",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "cleaning",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "掃除",
+          "reading": "そうじ",
+          "explain": "cleaning",
+          "wordId": "souji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I am good at cleaning.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c008",
+      "line": [
+        "私",
+        "は",
+        "計算",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "けいさん",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "calculation",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "計算",
+          "reading": "けいさん",
+          "explain": "calculation",
+          "wordId": "keisan"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I am good at calculation.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c009",
+      "line": [
+        "私",
+        "は",
+        "英語",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "えいご",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "English language",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "英語",
+          "reading": "えいご",
+          "explain": "English language",
+          "wordId": "eigo"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I am good at English language.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c010",
+      "line": [
+        "私",
+        "は",
+        "漢字",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "かんじ",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "kanji",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "漢字",
+          "reading": "かんじ",
+          "explain": "kanji",
+          "wordId": "kanji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I am good at kanji.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c011",
+      "line": [
+        "ケン",
+        "は",
+        "ピアノ",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "ぴあの",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "piano",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ピアノ",
+          "reading": "ぴあの",
+          "explain": "piano",
+          "wordId": "piano"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken is bad at piano.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c012",
+      "line": [
+        "ケン",
+        "は",
+        "ギター",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "ぎたー",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "guitar",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ギター",
+          "reading": "ぎたー",
+          "explain": "guitar",
+          "wordId": "gitaa"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken is bad at guitar.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c013",
+      "line": [
+        "ケン",
+        "は",
+        "歌",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "うた",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "singing; song",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "歌",
+          "reading": "うた",
+          "explain": "singing; song",
+          "wordId": "uta"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken is bad at singing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c014",
+      "line": [
+        "ケン",
+        "は",
+        "ダンス",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "だんす",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "dance",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ダンス",
+          "reading": "だんす",
+          "explain": "dance",
+          "wordId": "dansu"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken is bad at dance.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c015",
+      "line": [
+        "ケン",
+        "は",
+        "絵",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "え",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "drawing; picture",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "絵",
+          "reading": "え",
+          "explain": "drawing; picture",
+          "wordId": "e_drawing"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken is bad at drawing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c016",
+      "line": [
+        "ケン",
+        "は",
+        "運転",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "うんてん",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "driving",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "運転",
+          "reading": "うんてん",
+          "explain": "driving",
+          "wordId": "unten"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken is bad at driving.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c017",
+      "line": [
+        "ケン",
+        "は",
+        "掃除",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "そうじ",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "cleaning",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "掃除",
+          "reading": "そうじ",
+          "explain": "cleaning",
+          "wordId": "souji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken is bad at cleaning.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c018",
+      "line": [
+        "ケン",
+        "は",
+        "計算",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "けいさん",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "calculation",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "計算",
+          "reading": "けいさん",
+          "explain": "calculation",
+          "wordId": "keisan"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken is bad at calculation.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c019",
+      "line": [
+        "ケン",
+        "は",
+        "英語",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "えいご",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "English language",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "英語",
+          "reading": "えいご",
+          "explain": "English language",
+          "wordId": "eigo"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken is bad at English language.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c020",
+      "line": [
+        "ケン",
+        "は",
+        "漢字",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "かんじ",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "kanji",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "漢字",
+          "reading": "かんじ",
+          "explain": "kanji",
+          "wordId": "kanji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken is bad at kanji.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c021",
+      "line": [
+        "ユキ",
+        "は",
+        "ピアノ",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "ぴあの",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "piano",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ピアノ",
+          "reading": "ぴあの",
+          "explain": "piano",
+          "wordId": "piano"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki is good at piano.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c022",
+      "line": [
+        "ユキ",
+        "は",
+        "ギター",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "ぎたー",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "guitar",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ギター",
+          "reading": "ぎたー",
+          "explain": "guitar",
+          "wordId": "gitaa"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki is good at guitar.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c023",
+      "line": [
+        "ユキ",
+        "は",
+        "歌",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "うた",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "singing; song",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "歌",
+          "reading": "うた",
+          "explain": "singing; song",
+          "wordId": "uta"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki is good at singing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c024",
+      "line": [
+        "ユキ",
+        "は",
+        "ダンス",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "だんす",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "dance",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ダンス",
+          "reading": "だんす",
+          "explain": "dance",
+          "wordId": "dansu"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki is good at dance.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c025",
+      "line": [
+        "ユキ",
+        "は",
+        "絵",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "え",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "drawing; picture",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "絵",
+          "reading": "え",
+          "explain": "drawing; picture",
+          "wordId": "e_drawing"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki is good at drawing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c026",
+      "line": [
+        "ユキ",
+        "は",
+        "運転",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "うんてん",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "driving",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "運転",
+          "reading": "うんてん",
+          "explain": "driving",
+          "wordId": "unten"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki is good at driving.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c027",
+      "line": [
+        "ユキ",
+        "は",
+        "掃除",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "そうじ",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "cleaning",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "掃除",
+          "reading": "そうじ",
+          "explain": "cleaning",
+          "wordId": "souji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki is good at cleaning.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c028",
+      "line": [
+        "ユキ",
+        "は",
+        "計算",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "けいさん",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "calculation",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "計算",
+          "reading": "けいさん",
+          "explain": "calculation",
+          "wordId": "keisan"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki is good at calculation.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c029",
+      "line": [
+        "ユキ",
+        "は",
+        "英語",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "えいご",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "English language",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "英語",
+          "reading": "えいご",
+          "explain": "English language",
+          "wordId": "eigo"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki is good at English language.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c030",
+      "line": [
+        "ユキ",
+        "は",
+        "漢字",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "かんじ",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "kanji",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "漢字",
+          "reading": "かんじ",
+          "explain": "kanji",
+          "wordId": "kanji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki is good at kanji.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c031",
+      "line": [
+        "田中",
+        "は",
+        "ピアノ",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "ぴあの",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "piano",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ピアノ",
+          "reading": "ぴあの",
+          "explain": "piano",
+          "wordId": "piano"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka is bad at piano.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c032",
+      "line": [
+        "田中",
+        "は",
+        "ギター",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "ぎたー",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "guitar",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ギター",
+          "reading": "ぎたー",
+          "explain": "guitar",
+          "wordId": "gitaa"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka is bad at guitar.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c033",
+      "line": [
+        "田中",
+        "は",
+        "歌",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "うた",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "singing; song",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "歌",
+          "reading": "うた",
+          "explain": "singing; song",
+          "wordId": "uta"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka is bad at singing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c034",
+      "line": [
+        "田中",
+        "は",
+        "ダンス",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "だんす",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "dance",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ダンス",
+          "reading": "だんす",
+          "explain": "dance",
+          "wordId": "dansu"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka is bad at dance.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c035",
+      "line": [
+        "田中",
+        "は",
+        "絵",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "え",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "drawing; picture",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "絵",
+          "reading": "え",
+          "explain": "drawing; picture",
+          "wordId": "e_drawing"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka is bad at drawing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c036",
+      "line": [
+        "田中",
+        "は",
+        "運転",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "うんてん",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "driving",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "運転",
+          "reading": "うんてん",
+          "explain": "driving",
+          "wordId": "unten"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka is bad at driving.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c037",
+      "line": [
+        "田中",
+        "は",
+        "掃除",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "そうじ",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "cleaning",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "掃除",
+          "reading": "そうじ",
+          "explain": "cleaning",
+          "wordId": "souji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka is bad at cleaning.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c038",
+      "line": [
+        "田中",
+        "は",
+        "計算",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "けいさん",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "calculation",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "計算",
+          "reading": "けいさん",
+          "explain": "calculation",
+          "wordId": "keisan"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka is bad at calculation.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c039",
+      "line": [
+        "田中",
+        "は",
+        "英語",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "えいご",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "English language",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "英語",
+          "reading": "えいご",
+          "explain": "English language",
+          "wordId": "eigo"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka is bad at English language.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c040",
+      "line": [
+        "田中",
+        "は",
+        "漢字",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "かんじ",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "kanji",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "漢字",
+          "reading": "かんじ",
+          "explain": "kanji",
+          "wordId": "kanji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka is bad at kanji.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c041",
+      "line": [
+        "先生",
+        "は",
+        "ピアノ",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ぴあの",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "piano",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ピアノ",
+          "reading": "ぴあの",
+          "explain": "piano",
+          "wordId": "piano"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is good at piano.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c042",
+      "line": [
+        "先生",
+        "は",
+        "ギター",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ぎたー",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "guitar",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ギター",
+          "reading": "ぎたー",
+          "explain": "guitar",
+          "wordId": "gitaa"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is good at guitar.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c043",
+      "line": [
+        "先生",
+        "は",
+        "歌",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "うた",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "singing; song",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "歌",
+          "reading": "うた",
+          "explain": "singing; song",
+          "wordId": "uta"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is good at singing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c044",
+      "line": [
+        "先生",
+        "は",
+        "ダンス",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "だんす",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "dance",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ダンス",
+          "reading": "だんす",
+          "explain": "dance",
+          "wordId": "dansu"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is good at dance.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c045",
+      "line": [
+        "先生",
+        "は",
+        "絵",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "え",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "drawing; picture",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "絵",
+          "reading": "え",
+          "explain": "drawing; picture",
+          "wordId": "e_drawing"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is good at drawing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c046",
+      "line": [
+        "先生",
+        "は",
+        "運転",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "うんてん",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "driving",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "運転",
+          "reading": "うんてん",
+          "explain": "driving",
+          "wordId": "unten"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is good at driving.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c047",
+      "line": [
+        "先生",
+        "は",
+        "掃除",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "そうじ",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "cleaning",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "掃除",
+          "reading": "そうじ",
+          "explain": "cleaning",
+          "wordId": "souji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is good at cleaning.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c048",
+      "line": [
+        "先生",
+        "は",
+        "計算",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "けいさん",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "calculation",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "計算",
+          "reading": "けいさん",
+          "explain": "calculation",
+          "wordId": "keisan"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is good at calculation.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c049",
+      "line": [
+        "先生",
+        "は",
+        "英語",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "えいご",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "English language",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "英語",
+          "reading": "えいご",
+          "explain": "English language",
+          "wordId": "eigo"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is good at English language.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c050",
+      "line": [
+        "先生",
+        "は",
+        "漢字",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "かんじ",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "kanji",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "漢字",
+          "reading": "かんじ",
+          "explain": "kanji",
+          "wordId": "kanji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher is good at kanji.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c051",
+      "line": [
+        "学生",
+        "は",
+        "ピアノ",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "ぴあの",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "piano",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ピアノ",
+          "reading": "ぴあの",
+          "explain": "piano",
+          "wordId": "piano"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is bad at piano.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c052",
+      "line": [
+        "学生",
+        "は",
+        "ギター",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "ぎたー",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "guitar",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ギター",
+          "reading": "ぎたー",
+          "explain": "guitar",
+          "wordId": "gitaa"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is bad at guitar.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c053",
+      "line": [
+        "学生",
+        "は",
+        "歌",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "うた",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "singing; song",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "歌",
+          "reading": "うた",
+          "explain": "singing; song",
+          "wordId": "uta"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is bad at singing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c054",
+      "line": [
+        "学生",
+        "は",
+        "ダンス",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "だんす",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "dance",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ダンス",
+          "reading": "だんす",
+          "explain": "dance",
+          "wordId": "dansu"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is bad at dance.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c055",
+      "line": [
+        "学生",
+        "は",
+        "絵",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "え",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "drawing; picture",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "絵",
+          "reading": "え",
+          "explain": "drawing; picture",
+          "wordId": "e_drawing"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is bad at drawing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c056",
+      "line": [
+        "学生",
+        "は",
+        "運転",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "うんてん",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "driving",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "運転",
+          "reading": "うんてん",
+          "explain": "driving",
+          "wordId": "unten"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is bad at driving.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c057",
+      "line": [
+        "学生",
+        "は",
+        "掃除",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "そうじ",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "cleaning",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "掃除",
+          "reading": "そうじ",
+          "explain": "cleaning",
+          "wordId": "souji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is bad at cleaning.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c058",
+      "line": [
+        "学生",
+        "は",
+        "計算",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "けいさん",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "calculation",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "計算",
+          "reading": "けいさん",
+          "explain": "calculation",
+          "wordId": "keisan"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is bad at calculation.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c059",
+      "line": [
+        "学生",
+        "は",
+        "英語",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "えいご",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "English language",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "英語",
+          "reading": "えいご",
+          "explain": "English language",
+          "wordId": "eigo"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is bad at English language.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c060",
+      "line": [
+        "学生",
+        "は",
+        "漢字",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "かんじ",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "kanji",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "漢字",
+          "reading": "かんじ",
+          "explain": "kanji",
+          "wordId": "kanji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student is bad at kanji.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c061",
+      "line": [
+        "友達",
+        "は",
+        "ピアノ",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "ぴあの",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "piano",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ピアノ",
+          "reading": "ぴあの",
+          "explain": "piano",
+          "wordId": "piano"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend is good at piano.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c062",
+      "line": [
+        "友達",
+        "は",
+        "ギター",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "ぎたー",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "guitar",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ギター",
+          "reading": "ぎたー",
+          "explain": "guitar",
+          "wordId": "gitaa"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend is good at guitar.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c063",
+      "line": [
+        "友達",
+        "は",
+        "歌",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "うた",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "singing; song",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "歌",
+          "reading": "うた",
+          "explain": "singing; song",
+          "wordId": "uta"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend is good at singing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c064",
+      "line": [
+        "友達",
+        "は",
+        "ダンス",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "だんす",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "dance",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ダンス",
+          "reading": "だんす",
+          "explain": "dance",
+          "wordId": "dansu"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend is good at dance.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c065",
+      "line": [
+        "友達",
+        "は",
+        "絵",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "え",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "drawing; picture",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "絵",
+          "reading": "え",
+          "explain": "drawing; picture",
+          "wordId": "e_drawing"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend is good at drawing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c066",
+      "line": [
+        "友達",
+        "は",
+        "運転",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "うんてん",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "driving",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "運転",
+          "reading": "うんてん",
+          "explain": "driving",
+          "wordId": "unten"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend is good at driving.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c067",
+      "line": [
+        "友達",
+        "は",
+        "掃除",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "そうじ",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "cleaning",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "掃除",
+          "reading": "そうじ",
+          "explain": "cleaning",
+          "wordId": "souji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend is good at cleaning.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c068",
+      "line": [
+        "友達",
+        "は",
+        "計算",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "けいさん",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "calculation",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "計算",
+          "reading": "けいさん",
+          "explain": "calculation",
+          "wordId": "keisan"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend is good at calculation.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c069",
+      "line": [
+        "友達",
+        "は",
+        "英語",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "えいご",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "English language",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "英語",
+          "reading": "えいご",
+          "explain": "English language",
+          "wordId": "eigo"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend is good at English language.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c070",
+      "line": [
+        "友達",
+        "は",
+        "漢字",
+        "が",
+        "上手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "かんじ",
+        "が",
+        "じょうず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "kanji",
+        "subject marker",
+        "skillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "漢字",
+          "reading": "かんじ",
+          "explain": "kanji",
+          "wordId": "kanji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "上手",
+          "reading": "じょうず",
+          "explain": "skillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend is good at kanji.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c071",
+      "line": [
+        "男の人",
+        "は",
+        "ピアノ",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "ぴあの",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "piano",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ピアノ",
+          "reading": "ぴあの",
+          "explain": "piano",
+          "wordId": "piano"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man is bad at piano.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c072",
+      "line": [
+        "男の人",
+        "は",
+        "ギター",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "ぎたー",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "guitar",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ギター",
+          "reading": "ぎたー",
+          "explain": "guitar",
+          "wordId": "gitaa"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man is bad at guitar.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c073",
+      "line": [
+        "男の人",
+        "は",
+        "歌",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "うた",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "singing; song",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "歌",
+          "reading": "うた",
+          "explain": "singing; song",
+          "wordId": "uta"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man is bad at singing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c074",
+      "line": [
+        "男の人",
+        "は",
+        "ダンス",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "だんす",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "dance",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ダンス",
+          "reading": "だんす",
+          "explain": "dance",
+          "wordId": "dansu"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man is bad at dance.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c075",
+      "line": [
+        "男の人",
+        "は",
+        "絵",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "え",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "drawing; picture",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "絵",
+          "reading": "え",
+          "explain": "drawing; picture",
+          "wordId": "e_drawing"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man is bad at drawing.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c076",
+      "line": [
+        "男の人",
+        "は",
+        "運転",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "うんてん",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "driving",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "運転",
+          "reading": "うんてん",
+          "explain": "driving",
+          "wordId": "unten"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man is bad at driving.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c077",
+      "line": [
+        "男の人",
+        "は",
+        "掃除",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "そうじ",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "cleaning",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "掃除",
+          "reading": "そうじ",
+          "explain": "cleaning",
+          "wordId": "souji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man is bad at cleaning.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c078",
+      "line": [
+        "男の人",
+        "は",
+        "計算",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "けいさん",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "calculation",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "計算",
+          "reading": "けいさん",
+          "explain": "calculation",
+          "wordId": "keisan"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man is bad at calculation.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c079",
+      "line": [
+        "男の人",
+        "は",
+        "英語",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "えいご",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "English language",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "英語",
+          "reading": "えいご",
+          "explain": "English language",
+          "wordId": "eigo"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man is bad at English language.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c080",
+      "line": [
+        "男の人",
+        "は",
+        "漢字",
+        "が",
+        "下手",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "かんじ",
+        "が",
+        "へた",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "kanji",
+        "subject marker",
+        "unskillful",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "漢字",
+          "reading": "かんじ",
+          "explain": "kanji",
+          "wordId": "kanji"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "下手",
+          "reading": "へた",
+          "explain": "unskillful"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man is bad at kanji.",
+      "imagePrompt": "A descriptive preference, skill, want, or need sentence.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Unit 32 introduces Nが上手です / Nが下手です while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Nが上手です"
+      ]
+    },
+    {
+      "id": "u032-c081",
+      "line": [
+        "私",
+        "は",
+        "毎日",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいにち",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every day",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎日",
+          "reading": "まいにち",
+          "explain": "every day",
+          "wordId": "mainichi"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study every day.",
+      "imagePrompt": "A focused review card for 毎日.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c082",
+      "line": [
+        "私",
+        "は",
+        "毎朝",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいあさ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every morning",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎朝",
+          "reading": "まいあさ",
+          "explain": "every morning",
+          "wordId": "maiasa"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study every morning.",
+      "imagePrompt": "A focused review card for 毎朝.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c083",
+      "line": [
+        "私",
+        "は",
+        "毎晩",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいばん",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every night",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎晩",
+          "reading": "まいばん",
+          "explain": "every night",
+          "wordId": "maiban"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study every night.",
+      "imagePrompt": "A focused review card for 毎晩.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c084",
+      "line": [
+        "私",
+        "は",
+        "よく",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "よく",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "often",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "よく",
+          "reading": "よく",
+          "explain": "often",
+          "wordId": "yoku_adv"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I often study.",
+      "imagePrompt": "A focused review card for よく.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c085",
+      "line": [
+        "私",
+        "は",
+        "時々",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ときどき",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "sometimes",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時々",
+          "reading": "ときどき",
+          "explain": "sometimes",
+          "wordId": "tokidoki"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I sometimes study.",
+      "imagePrompt": "A focused review card for 時々.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c086",
+      "line": [
+        "私",
+        "は",
+        "いつも",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "いつも",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "always",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつも",
+          "reading": "いつも",
+          "explain": "always",
+          "wordId": "itsumo"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I always study.",
+      "imagePrompt": "A focused review card for いつも.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c087",
+      "line": [
+        "私",
+        "は",
+        "たいてい",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "たいてい",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "usually",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たいてい",
+          "reading": "たいてい",
+          "explain": "usually",
+          "wordId": "taitei"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I usually study.",
+      "imagePrompt": "A focused review card for たいてい.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c088",
+      "line": [
+        "私",
+        "は",
+        "たまに",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "たまに",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "occasionally",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たまに",
+          "reading": "たまに",
+          "explain": "occasionally",
+          "wordId": "tamani"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I occasionally study.",
+      "imagePrompt": "A focused review card for たまに.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c089",
+      "line": [
+        "私",
+        "は",
+        "ほとんど",
+        "勉強しません",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ほとんど",
+        "べんきょうしません",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "almost never",
+        "do not study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ほとんど",
+          "reading": "ほとんど",
+          "explain": "almost never",
+          "wordId": "hotondo"
+        },
+        {
+          "surface": "勉強しません",
+          "reading": "べんきょうしません",
+          "explain": "do not study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I almost never study.",
+      "imagePrompt": "A focused review card for ほとんど.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c090",
+      "line": [
+        "私",
+        "は",
+        "めったに",
+        "勉強しません",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "めったに",
+        "べんきょうしません",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "rarely",
+        "do not study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "めったに",
+          "reading": "めったに",
+          "explain": "rarely",
+          "wordId": "mettani"
+        },
+        {
+          "surface": "勉強しません",
+          "reading": "べんきょうしません",
+          "explain": "do not study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I rarely study.",
+      "imagePrompt": "A focused review card for めったに.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c091",
+      "line": [
+        "私",
+        "は",
+        "一時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "いちじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "one o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "一時",
+          "reading": "いちじ",
+          "explain": "one o'clock",
+          "wordId": "ichiji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at one o'clock.",
+      "imagePrompt": "A focused review card for 一時.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c092",
+      "line": [
+        "私",
+        "は",
+        "二時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "にじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "two o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "二時",
+          "reading": "にじ",
+          "explain": "two o'clock",
+          "wordId": "niji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at two o'clock.",
+      "imagePrompt": "A focused review card for 二時.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c093",
+      "line": [
+        "私",
+        "は",
+        "三時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "さんじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "three o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "三時",
+          "reading": "さんじ",
+          "explain": "three o'clock",
+          "wordId": "sanji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at three o'clock.",
+      "imagePrompt": "A focused review card for 三時.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c094",
+      "line": [
+        "私",
+        "は",
+        "四時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "よじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "four o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "四時",
+          "reading": "よじ",
+          "explain": "four o'clock",
+          "wordId": "yoji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at four o'clock.",
+      "imagePrompt": "A focused review card for 四時.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c095",
+      "line": [
+        "私",
+        "は",
+        "五時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ごじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "five o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "五時",
+          "reading": "ごじ",
+          "explain": "five o'clock",
+          "wordId": "goji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at five o'clock.",
+      "imagePrompt": "A focused review card for 五時.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c096",
+      "line": [
+        "私",
+        "は",
+        "六時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ろくじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "six o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "六時",
+          "reading": "ろくじ",
+          "explain": "six o'clock",
+          "wordId": "rokuji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at six o'clock.",
+      "imagePrompt": "A focused review card for 六時.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c097",
+      "line": [
+        "私",
+        "は",
+        "七時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "しちじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "seven o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "七時",
+          "reading": "しちじ",
+          "explain": "seven o'clock",
+          "wordId": "shichiji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at seven o'clock.",
+      "imagePrompt": "A focused review card for 七時.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c098",
+      "line": [
+        "私",
+        "は",
+        "八時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "はちじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "eight o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "八時",
+          "reading": "はちじ",
+          "explain": "eight o'clock",
+          "wordId": "hachiji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at eight o'clock.",
+      "imagePrompt": "A focused review card for 八時.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c099",
+      "line": [
+        "私",
+        "は",
+        "九時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "くじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "nine o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "九時",
+          "reading": "くじ",
+          "explain": "nine o'clock",
+          "wordId": "kuji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at nine o'clock.",
+      "imagePrompt": "A focused review card for 九時.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c100",
+      "line": [
+        "私",
+        "は",
+        "十時",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "じゅうじ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "ten o'clock",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "十時",
+          "reading": "じゅうじ",
+          "explain": "ten o'clock",
+          "wordId": "juuji"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study at ten o'clock.",
+      "imagePrompt": "A focused review card for 十時.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Time review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c101",
+      "line": [
+        "私",
+        "は",
+        "ご飯",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ごはん",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "meal; rice",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ご飯",
+          "reading": "ごはん",
+          "explain": "meal; rice",
+          "wordId": "gohan"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at a meal.",
+      "imagePrompt": "A focused review card for ご飯.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c102",
+      "line": [
+        "私",
+        "は",
+        "パン",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ぱん",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "bread",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "パン",
+          "reading": "ぱん",
+          "explain": "bread",
+          "wordId": "pan"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at bread.",
+      "imagePrompt": "A focused review card for パン.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c103",
+      "line": [
+        "私",
+        "は",
+        "肉",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "にく",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "meat",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "肉",
+          "reading": "にく",
+          "explain": "meat",
+          "wordId": "niku"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at meat.",
+      "imagePrompt": "A focused review card for 肉.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c104",
+      "line": [
+        "私",
+        "は",
+        "野菜",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "やさい",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "vegetables",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "野菜",
+          "reading": "やさい",
+          "explain": "vegetables",
+          "wordId": "yasai"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at vegetables.",
+      "imagePrompt": "A focused review card for 野菜.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c105",
+      "line": [
+        "私",
+        "は",
+        "果物",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "くだもの",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "fruit",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "果物",
+          "reading": "くだもの",
+          "explain": "fruit",
+          "wordId": "kudamono"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at fruit.",
+      "imagePrompt": "A focused review card for 果物.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c106",
+      "line": [
+        "私",
+        "は",
+        "手紙",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "てがみ",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "letter",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "手紙",
+          "reading": "てがみ",
+          "explain": "letter",
+          "wordId": "tegami"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at a letter.",
+      "imagePrompt": "A focused review card for 手紙.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c107",
+      "line": [
+        "私",
+        "は",
+        "新聞",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "しんぶん",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "newspaper",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "新聞",
+          "reading": "しんぶん",
+          "explain": "newspaper",
+          "wordId": "shinbun"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at a newspaper.",
+      "imagePrompt": "A focused review card for 新聞.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c108",
+      "line": [
+        "私",
+        "は",
+        "音楽",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "おんがく",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "music",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "音楽",
+          "reading": "おんがく",
+          "explain": "music",
+          "wordId": "ongaku"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at music.",
+      "imagePrompt": "A focused review card for 音楽.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c109",
+      "line": [
+        "私",
+        "は",
+        "映画",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "えいが",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "movie",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "映画",
+          "reading": "えいが",
+          "explain": "movie",
+          "wordId": "eiga"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at a movie.",
+      "imagePrompt": "A focused review card for 映画.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c110",
+      "line": [
+        "私",
+        "は",
+        "コーヒー",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "こーひー",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "coffee",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "コーヒー",
+          "reading": "こーひー",
+          "explain": "coffee",
+          "wordId": "koohii"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at coffee.",
+      "imagePrompt": "A focused review card for コーヒー.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c111",
+      "line": [
+        "私",
+        "は",
+        "祖母",
+        "と",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "そぼ",
+        "と",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "grandmother",
+        "with; and",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "祖母",
+          "reading": "そぼ",
+          "explain": "grandmother",
+          "wordId": "sobo"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "with; and"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I speak with the grandmother.",
+      "imagePrompt": "A focused review card for 祖母.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Person review returns with `と`.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c112",
+      "line": [
+        "私",
+        "は",
+        "祖父",
+        "と",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "そふ",
+        "と",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "grandfather",
+        "with; and",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "祖父",
+          "reading": "そふ",
+          "explain": "grandfather",
+          "wordId": "sofu"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "with; and"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I speak with the grandfather.",
+      "imagePrompt": "A focused review card for 祖父.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Person review returns with `と`.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c113",
+      "line": [
+        "私",
+        "は",
+        "兄",
+        "と",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あに",
+        "と",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "older brother",
+        "with; and",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "兄",
+          "reading": "あに",
+          "explain": "older brother",
+          "wordId": "ani"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "with; and"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I speak with the older brother.",
+      "imagePrompt": "A focused review card for 兄.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Person review returns with `と`.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c114",
+      "line": [
+        "私",
+        "は",
+        "妹",
+        "と",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "いもうと",
+        "と",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "younger sister",
+        "with; and",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "妹",
+          "reading": "いもうと",
+          "explain": "younger sister",
+          "wordId": "imouto"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "with; and"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I speak with the younger sister.",
+      "imagePrompt": "A focused review card for 妹.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Person review returns with `と`.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c115",
+      "line": [
+        "私",
+        "は",
+        "赤ちゃん",
+        "と",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あかちゃん",
+        "と",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "baby",
+        "with; and",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "赤ちゃん",
+          "reading": "あかちゃん",
+          "explain": "baby",
+          "wordId": "akachan"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "with; and"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I speak with the baby.",
+      "imagePrompt": "A focused review card for 赤ちゃん.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Person review returns with `と`.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c116",
+      "line": [
+        "私",
+        "は",
+        "鳥",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "とり",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "bird",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "鳥",
+          "reading": "とり",
+          "explain": "bird",
+          "wordId": "tori"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at a bird.",
+      "imagePrompt": "A focused review card for 鳥.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-01.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c117",
+      "line": [
+        "私",
+        "は",
+        "魚",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "さかな",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "fish",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "魚",
+          "reading": "さかな",
+          "explain": "fish",
+          "wordId": "sakana"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at a fish.",
+      "imagePrompt": "A focused review card for 魚.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-02.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c118",
+      "line": [
+        "私",
+        "は",
+        "馬",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "うま",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "horse",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "馬",
+          "reading": "うま",
+          "explain": "horse",
+          "wordId": "uma"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at a horse.",
+      "imagePrompt": "A focused review card for 馬.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-03.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c119",
+      "line": [
+        "私",
+        "は",
+        "牛",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "うし",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "cow",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "牛",
+          "reading": "うし",
+          "explain": "cow",
+          "wordId": "ushi"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at a cow.",
+      "imagePrompt": "A focused review card for 牛.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-04.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u032-c120",
+      "line": [
+        "私",
+        "は",
+        "虫",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "むし",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "bug",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "虫",
+          "reading": "むし",
+          "explain": "bug",
+          "wordId": "mushi"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at a bug.",
+      "imagePrompt": "A focused review card for 虫.",
+      "imageRef": "/media/jp/images/unit_032/scenes/scene-05.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    }
+  ]
+}

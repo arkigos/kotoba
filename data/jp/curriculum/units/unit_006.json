@@ -1,0 +1,5636 @@
+{
+  "id": 6,
+  "slug": "basic-demonstratives",
+  "title": "Unit 6: This And That",
+  "grammarFocus": "これ / それ / あれ / このN / そのN / あのN",
+  "newWords": [
+    {
+      "id": "kore",
+      "surface": "これ",
+      "reading": "これ",
+      "meaning": "this one",
+      "function": "demonstrative"
+    },
+    {
+      "id": "sore",
+      "surface": "それ",
+      "reading": "それ",
+      "meaning": "that one near you",
+      "function": "demonstrative"
+    },
+    {
+      "id": "are",
+      "surface": "あれ",
+      "reading": "あれ",
+      "meaning": "that one over there",
+      "function": "demonstrative"
+    },
+    {
+      "id": "kono",
+      "surface": "この",
+      "reading": "この",
+      "meaning": "this",
+      "function": "determiner"
+    },
+    {
+      "id": "sono",
+      "surface": "その",
+      "reading": "その",
+      "meaning": "that near you",
+      "function": "determiner"
+    },
+    {
+      "id": "ano",
+      "surface": "あの",
+      "reading": "あの",
+      "meaning": "that over there",
+      "function": "determiner"
+    },
+    {
+      "id": "mizu",
+      "surface": "水",
+      "reading": "みず",
+      "meaning": "water",
+      "function": "noun"
+    },
+    {
+      "id": "ocha",
+      "surface": "お茶",
+      "reading": "おちゃ",
+      "meaning": "tea",
+      "function": "noun"
+    },
+    {
+      "id": "enpitsu",
+      "surface": "鉛筆",
+      "reading": "えんぴつ",
+      "meaning": "pencil",
+      "function": "noun"
+    },
+    {
+      "id": "tokei",
+      "surface": "時計",
+      "reading": "とけい",
+      "meaning": "clock; watch",
+      "function": "noun"
+    }
+  ],
+  "cards": [
+    {
+      "id": "u006-c001",
+      "line": [
+        "これ",
+        "は",
+        "私",
+        "の",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "わたし",
+        "の",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "I; me",
+        "possession or description marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This one is mine.",
+      "imagePrompt": "A close tabletop object the learner is holding.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c002",
+      "line": [
+        "それ",
+        "は",
+        "ユキ",
+        "の",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "ゆき",
+        "の",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "Yuki",
+        "possession or description marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That one near you is Yuki's.",
+      "imagePrompt": "A nearby object beside another learner.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c003",
+      "line": [
+        "あれ",
+        "は",
+        "先生",
+        "の",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "せんせい",
+        "の",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "teacher",
+        "possession or description marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That one over there belongs to the teacher.",
+      "imagePrompt": "A far object near the teacher's desk.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c004",
+      "line": [
+        "この",
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "この",
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this",
+        "book",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is this book.",
+      "imagePrompt": "A simple tabletop study scene for this and that.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c005",
+      "line": [
+        "その",
+        "かばん",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "かばん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "bag",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is that bag near you.",
+      "imagePrompt": "A simple tabletop study scene for this and that.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c006",
+      "line": [
+        "あの",
+        "学校",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あの",
+        "がっこう",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that over there",
+        "school",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あの",
+          "reading": "あの",
+          "explain": "that over there",
+          "wordId": "ano"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is that school over there.",
+      "imagePrompt": "A simple tabletop study scene for this and that.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c007",
+      "line": [
+        "水",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "みず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "water",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "水",
+          "reading": "みず",
+          "explain": "water",
+          "wordId": "mizu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is water.",
+      "imagePrompt": "A simple tabletop study scene for this and that.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c008",
+      "line": [
+        "お茶",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おちゃ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "tea",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "お茶",
+          "reading": "おちゃ",
+          "explain": "tea",
+          "wordId": "ocha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is tea.",
+      "imagePrompt": "A simple tabletop study scene for this and that.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c009",
+      "line": [
+        "鉛筆",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "えんぴつ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "pencil",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "鉛筆",
+          "reading": "えんぴつ",
+          "explain": "pencil",
+          "wordId": "enpitsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is a pencil.",
+      "imagePrompt": "A simple tabletop study scene for this and that.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c010",
+      "line": [
+        "時計",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "とけい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "clock; watch",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "explain": "clock; watch",
+          "wordId": "tokei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is a clock.",
+      "imagePrompt": "A simple tabletop study scene for this and that.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c011",
+      "line": [
+        "これ",
+        "は",
+        "水",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "みず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "water",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "水",
+          "reading": "みず",
+          "explain": "water",
+          "wordId": "mizu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is water.",
+      "imagePrompt": "A scene pointing to water.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c012",
+      "line": [
+        "それ",
+        "は",
+        "お茶",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "おちゃ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "tea",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "お茶",
+          "reading": "おちゃ",
+          "explain": "tea",
+          "wordId": "ocha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is tea.",
+      "imagePrompt": "A scene pointing to tea.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c013",
+      "line": [
+        "あれ",
+        "は",
+        "時計",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "とけい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "clock; watch",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "explain": "clock; watch",
+          "wordId": "tokei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is a clock.",
+      "imagePrompt": "A scene pointing to clock.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c014",
+      "line": [
+        "これ",
+        "は",
+        "鉛筆",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "えんぴつ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "pencil",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "鉛筆",
+          "reading": "えんぴつ",
+          "explain": "pencil",
+          "wordId": "enpitsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a pencil.",
+      "imagePrompt": "A scene pointing to pencil.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c015",
+      "line": [
+        "それ",
+        "は",
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "book",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is a book.",
+      "imagePrompt": "A scene pointing to book.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c016",
+      "line": [
+        "あれ",
+        "は",
+        "椅子",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "いす",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "chair",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "椅子",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is a chair.",
+      "imagePrompt": "A scene pointing to chair.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-01.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c017",
+      "line": [
+        "これ",
+        "は",
+        "机",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "つくえ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "desk",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "机",
+          "reading": "つくえ",
+          "explain": "desk",
+          "wordId": "tsukue"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a desk.",
+      "imagePrompt": "A scene pointing to desk.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c018",
+      "line": [
+        "それ",
+        "は",
+        "自転車",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "じてんしゃ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "bicycle",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "自転車",
+          "reading": "じてんしゃ",
+          "explain": "bicycle",
+          "wordId": "jitensha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is a bicycle.",
+      "imagePrompt": "A scene pointing to bicycle.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c019",
+      "line": [
+        "あれ",
+        "は",
+        "車",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "くるま",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "car",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is a car.",
+      "imagePrompt": "A scene pointing to car.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c020",
+      "line": [
+        "これ",
+        "は",
+        "鍵",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "かぎ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "key",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a key.",
+      "imagePrompt": "A scene pointing to key.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c021",
+      "line": [
+        "それ",
+        "は",
+        "かばん",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "かばん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "bag",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is a bag.",
+      "imagePrompt": "A scene pointing to bag.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c022",
+      "line": [
+        "あれ",
+        "は",
+        "写真",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "しゃしん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "photo",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is a photo.",
+      "imagePrompt": "A scene pointing to photo.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c023",
+      "line": [
+        "これ",
+        "は",
+        "猫",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ねこ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "cat",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a cat.",
+      "imagePrompt": "A scene pointing to cat.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c024",
+      "line": [
+        "それ",
+        "は",
+        "犬",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "いぬ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "dog",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is a dog.",
+      "imagePrompt": "A scene pointing to dog.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c025",
+      "line": [
+        "あれ",
+        "は",
+        "店",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "みせ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "shop",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is a shop.",
+      "imagePrompt": "A scene pointing to shop.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "これ/それ/あれ"
+      ]
+    },
+    {
+      "id": "u006-c026",
+      "line": [
+        "この",
+        "水",
+        "は",
+        "私",
+        "の",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "この",
+        "みず",
+        "わ",
+        "わたし",
+        "の",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this",
+        "water",
+        "topic marker",
+        "I; me",
+        "possession or description marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "水",
+          "reading": "みず",
+          "explain": "water",
+          "wordId": "mizu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This water is mine.",
+      "imagePrompt": "A glass of water close to the speaker.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c027",
+      "line": [
+        "その",
+        "お茶",
+        "は",
+        "友達",
+        "の",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "おちゃ",
+        "わ",
+        "ともだち",
+        "の",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "tea",
+        "topic marker",
+        "friend",
+        "possession or description marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "お茶",
+          "reading": "おちゃ",
+          "explain": "tea",
+          "wordId": "ocha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That tea near you belongs to a friend.",
+      "imagePrompt": "A cup of tea near the listener.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c028",
+      "line": [
+        "あの",
+        "時計",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あの",
+        "とけい",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that over there",
+        "clock; watch",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あの",
+          "reading": "あの",
+          "explain": "that over there",
+          "wordId": "ano"
+        },
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "explain": "clock; watch",
+          "wordId": "tokei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That clock over there is an object.",
+      "imagePrompt": "A clear classification scene for clock.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c029",
+      "line": [
+        "この",
+        "鉛筆",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "この",
+        "えんぴつ",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this",
+        "pencil",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "鉛筆",
+          "reading": "えんぴつ",
+          "explain": "pencil",
+          "wordId": "enpitsu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This pencil is an object.",
+      "imagePrompt": "A clear classification scene for pencil.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c030",
+      "line": [
+        "その",
+        "本",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "ほん",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "book",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That book near you is an object.",
+      "imagePrompt": "A clear classification scene for book.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c031",
+      "line": [
+        "あの",
+        "椅子",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あの",
+        "いす",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that over there",
+        "chair",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あの",
+          "reading": "あの",
+          "explain": "that over there",
+          "wordId": "ano"
+        },
+        {
+          "surface": "椅子",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That chair over there is an object.",
+      "imagePrompt": "A clear classification scene for chair.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c032",
+      "line": [
+        "この",
+        "店",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "この",
+        "みせ",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this",
+        "shop",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This shop is a place.",
+      "imagePrompt": "A clear classification scene for shop.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-02.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c033",
+      "line": [
+        "その",
+        "病院",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "びょういん",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "hospital",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "病院",
+          "reading": "びょういん",
+          "explain": "hospital",
+          "wordId": "byouin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That hospital near you is a place.",
+      "imagePrompt": "A clear classification scene for hospital.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c034",
+      "line": [
+        "あの",
+        "駅",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あの",
+        "えき",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that over there",
+        "station",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あの",
+          "reading": "あの",
+          "explain": "that over there",
+          "wordId": "ano"
+        },
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "explain": "station",
+          "wordId": "eki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That station over there is a place.",
+      "imagePrompt": "A clear classification scene for station.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c035",
+      "line": [
+        "この",
+        "会社",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "この",
+        "かいしゃ",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this",
+        "company",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "explain": "company",
+          "wordId": "kaisha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This company is a place.",
+      "imagePrompt": "A clear classification scene for company.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c036",
+      "line": [
+        "その",
+        "会社員",
+        "は",
+        "人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "かいしゃいん",
+        "わ",
+        "ひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "company employee",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That company employee near you is a person.",
+      "imagePrompt": "A clear classification scene for company employee.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c037",
+      "line": [
+        "あの",
+        "子供",
+        "は",
+        "人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あの",
+        "こども",
+        "わ",
+        "ひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that over there",
+        "child",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あの",
+          "reading": "あの",
+          "explain": "that over there",
+          "wordId": "ano"
+        },
+        {
+          "surface": "子供",
+          "reading": "こども",
+          "explain": "child",
+          "wordId": "kodomo"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That child over there is a person.",
+      "imagePrompt": "A clear classification scene for child.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c038",
+      "line": [
+        "この",
+        "大人",
+        "は",
+        "人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "この",
+        "おとな",
+        "わ",
+        "ひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this",
+        "adult",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "大人",
+          "reading": "おとな",
+          "explain": "adult",
+          "wordId": "otona"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This adult is a person.",
+      "imagePrompt": "A clear classification scene for adult.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c039",
+      "line": [
+        "その",
+        "医者",
+        "は",
+        "人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "いしゃ",
+        "わ",
+        "ひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "doctor",
+        "topic marker",
+        "person",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That doctor near you is a person.",
+      "imagePrompt": "A clear classification scene for doctor.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c040",
+      "line": [
+        "あの",
+        "動物",
+        "は",
+        "犬",
+        "ではありません",
+        "。"
+      ],
+      "tts": [
+        "あの",
+        "どうぶつ",
+        "わ",
+        "いぬ",
+        "ではありません",
+        "。"
+      ],
+      "explain": [
+        "that over there",
+        "animal",
+        "topic marker",
+        "dog",
+        "polite negative identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あの",
+          "reading": "あの",
+          "explain": "that over there",
+          "wordId": "ano"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "ではありません",
+          "reading": "ではありません",
+          "explain": "polite negative identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That animal over there is not a dog.",
+      "imagePrompt": "A distant animal being identified by contrast.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "このN",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u006-c041",
+      "line": [
+        "これ",
+        "は",
+        "水",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "みず",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "water",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "水",
+          "reading": "みず",
+          "explain": "water",
+          "wordId": "mizu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is this water?",
+      "imagePrompt": "A learner checking water.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u006-c042",
+      "line": [
+        "それ",
+        "は",
+        "お茶",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "おちゃ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "tea",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "お茶",
+          "reading": "おちゃ",
+          "explain": "tea",
+          "wordId": "ocha"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is that near you tea?",
+      "imagePrompt": "A learner checking tea.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u006-c043",
+      "line": [
+        "あれ",
+        "は",
+        "時計",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "とけい",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "clock; watch",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "explain": "clock; watch",
+          "wordId": "tokei"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is that over there a clock?",
+      "imagePrompt": "A learner checking clock.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u006-c044",
+      "line": [
+        "これ",
+        "は",
+        "鉛筆",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "えんぴつ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "pencil",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "鉛筆",
+          "reading": "えんぴつ",
+          "explain": "pencil",
+          "wordId": "enpitsu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is this a pencil?",
+      "imagePrompt": "A learner checking pencil.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u006-c045",
+      "line": [
+        "それ",
+        "は",
+        "本",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "ほん",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "book",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is that near you a book?",
+      "imagePrompt": "A learner checking book.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u006-c046",
+      "line": [
+        "あれ",
+        "は",
+        "店",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "みせ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "shop",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is that over there a shop?",
+      "imagePrompt": "A learner checking shop.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u006-c047",
+      "line": [
+        "これ",
+        "は",
+        "猫",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ねこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "cat",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is this a cat?",
+      "imagePrompt": "A learner checking cat.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u006-c048",
+      "line": [
+        "それ",
+        "は",
+        "犬",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "いぬ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "dog",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is that near you a dog?",
+      "imagePrompt": "A learner checking dog.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-03.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u006-c049",
+      "line": [
+        "あれ",
+        "は",
+        "病院",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "びょういん",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "hospital",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "病院",
+          "reading": "びょういん",
+          "explain": "hospital",
+          "wordId": "byouin"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is that over there a hospital?",
+      "imagePrompt": "A learner checking hospital.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u006-c050",
+      "line": [
+        "これ",
+        "は",
+        "椅子",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "いす",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "chair",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "椅子",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is this a chair?",
+      "imagePrompt": "A learner checking chair.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u006-c051",
+      "line": [
+        "これ",
+        "は",
+        "お茶",
+        "ではありません",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "おちゃ",
+        "ではありません",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "tea",
+        "polite negative identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "お茶",
+          "reading": "おちゃ",
+          "explain": "tea",
+          "wordId": "ocha"
+        },
+        {
+          "surface": "ではありません",
+          "reading": "ではありません",
+          "explain": "polite negative identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is not tea.",
+      "imagePrompt": "A calm contrast scene.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "Aではありません"
+      ]
+    },
+    {
+      "id": "u006-c052",
+      "line": [
+        "それ",
+        "は",
+        "水",
+        "ではありません",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "みず",
+        "ではありません",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "water",
+        "polite negative identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "水",
+          "reading": "みず",
+          "explain": "water",
+          "wordId": "mizu"
+        },
+        {
+          "surface": "ではありません",
+          "reading": "ではありません",
+          "explain": "polite negative identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is not water.",
+      "imagePrompt": "A calm contrast scene.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "Aではありません"
+      ]
+    },
+    {
+      "id": "u006-c053",
+      "line": [
+        "あれ",
+        "は",
+        "鉛筆",
+        "ではありません",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "えんぴつ",
+        "ではありません",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "pencil",
+        "polite negative identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "鉛筆",
+          "reading": "えんぴつ",
+          "explain": "pencil",
+          "wordId": "enpitsu"
+        },
+        {
+          "surface": "ではありません",
+          "reading": "ではありません",
+          "explain": "polite negative identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is not a pencil.",
+      "imagePrompt": "A calm contrast scene.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "Aではありません"
+      ]
+    },
+    {
+      "id": "u006-c054",
+      "line": [
+        "これ",
+        "は",
+        "時計",
+        "ではありません",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "とけい",
+        "ではありません",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "clock; watch",
+        "polite negative identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "explain": "clock; watch",
+          "wordId": "tokei"
+        },
+        {
+          "surface": "ではありません",
+          "reading": "ではありません",
+          "explain": "polite negative identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is not a clock.",
+      "imagePrompt": "A calm contrast scene.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "Aではありません"
+      ]
+    },
+    {
+      "id": "u006-c055",
+      "line": [
+        "その",
+        "店",
+        "は",
+        "病院",
+        "ではありません",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "みせ",
+        "わ",
+        "びょういん",
+        "ではありません",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "shop",
+        "topic marker",
+        "hospital",
+        "polite negative identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "病院",
+          "reading": "びょういん",
+          "explain": "hospital",
+          "wordId": "byouin"
+        },
+        {
+          "surface": "ではありません",
+          "reading": "ではありません",
+          "explain": "polite negative identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That shop near you is not a hospital.",
+      "imagePrompt": "A calm contrast scene.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "このN",
+        "Aではありません"
+      ]
+    },
+    {
+      "id": "u006-c056",
+      "line": [
+        "あの",
+        "駅",
+        "は",
+        "会社",
+        "ではありません",
+        "。"
+      ],
+      "tts": [
+        "あの",
+        "えき",
+        "わ",
+        "かいしゃ",
+        "ではありません",
+        "。"
+      ],
+      "explain": [
+        "that over there",
+        "station",
+        "topic marker",
+        "company",
+        "polite negative identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あの",
+          "reading": "あの",
+          "explain": "that over there",
+          "wordId": "ano"
+        },
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "explain": "station",
+          "wordId": "eki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "explain": "company",
+          "wordId": "kaisha"
+        },
+        {
+          "surface": "ではありません",
+          "reading": "ではありません",
+          "explain": "polite negative identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That station over there is not a company.",
+      "imagePrompt": "A calm contrast scene.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "このN",
+        "Aではありません"
+      ]
+    },
+    {
+      "id": "u006-c057",
+      "line": [
+        "この",
+        "子供",
+        "は",
+        "大人",
+        "ではありません",
+        "。"
+      ],
+      "tts": [
+        "この",
+        "こども",
+        "わ",
+        "おとな",
+        "ではありません",
+        "。"
+      ],
+      "explain": [
+        "this",
+        "child",
+        "topic marker",
+        "adult",
+        "polite negative identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "子供",
+          "reading": "こども",
+          "explain": "child",
+          "wordId": "kodomo"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "大人",
+          "reading": "おとな",
+          "explain": "adult",
+          "wordId": "otona"
+        },
+        {
+          "surface": "ではありません",
+          "reading": "ではありません",
+          "explain": "polite negative identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This child is not an adult.",
+      "imagePrompt": "A calm contrast scene.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "このN",
+        "Aではありません"
+      ]
+    },
+    {
+      "id": "u006-c058",
+      "line": [
+        "その",
+        "椅子",
+        "は",
+        "机",
+        "ではありません",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "いす",
+        "わ",
+        "つくえ",
+        "ではありません",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "chair",
+        "topic marker",
+        "desk",
+        "polite negative identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "椅子",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "机",
+          "reading": "つくえ",
+          "explain": "desk",
+          "wordId": "tsukue"
+        },
+        {
+          "surface": "ではありません",
+          "reading": "ではありません",
+          "explain": "polite negative identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That chair near you is not a desk.",
+      "imagePrompt": "A calm contrast scene.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "このN",
+        "Aではありません"
+      ]
+    },
+    {
+      "id": "u006-c059",
+      "line": [
+        "あの",
+        "自転車",
+        "は",
+        "車",
+        "ではありません",
+        "。"
+      ],
+      "tts": [
+        "あの",
+        "じてんしゃ",
+        "わ",
+        "くるま",
+        "ではありません",
+        "。"
+      ],
+      "explain": [
+        "that over there",
+        "bicycle",
+        "topic marker",
+        "car",
+        "polite negative identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あの",
+          "reading": "あの",
+          "explain": "that over there",
+          "wordId": "ano"
+        },
+        {
+          "surface": "自転車",
+          "reading": "じてんしゃ",
+          "explain": "bicycle",
+          "wordId": "jitensha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "ではありません",
+          "reading": "ではありません",
+          "explain": "polite negative identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That bicycle over there is not a car.",
+      "imagePrompt": "A calm contrast scene.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "このN",
+        "Aではありません"
+      ]
+    },
+    {
+      "id": "u006-c060",
+      "line": [
+        "この",
+        "猫",
+        "は",
+        "犬",
+        "ではありません",
+        "。"
+      ],
+      "tts": [
+        "この",
+        "ねこ",
+        "わ",
+        "いぬ",
+        "ではありません",
+        "。"
+      ],
+      "explain": [
+        "this",
+        "cat",
+        "topic marker",
+        "dog",
+        "polite negative identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "ではありません",
+          "reading": "ではありません",
+          "explain": "polite negative identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This cat is not a dog.",
+      "imagePrompt": "A calm contrast scene.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "このN",
+        "Aではありません"
+      ]
+    },
+    {
+      "id": "u006-c061",
+      "line": [
+        "この",
+        "時計",
+        "は",
+        "母",
+        "の",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "この",
+        "とけい",
+        "わ",
+        "はは",
+        "の",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this",
+        "clock; watch",
+        "topic marker",
+        "mother",
+        "possession or description marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "explain": "clock; watch",
+          "wordId": "tokei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This clock is my mother's thing.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c062",
+      "line": [
+        "その",
+        "鉛筆",
+        "は",
+        "学生",
+        "の",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "えんぴつ",
+        "わ",
+        "がくせい",
+        "の",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "pencil",
+        "topic marker",
+        "student",
+        "possession or description marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "鉛筆",
+          "reading": "えんぴつ",
+          "explain": "pencil",
+          "wordId": "enpitsu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That pencil near you belongs to the student.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c063",
+      "line": [
+        "あの",
+        "店",
+        "は",
+        "日本",
+        "の",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あの",
+        "みせ",
+        "わ",
+        "にほん",
+        "の",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that over there",
+        "shop",
+        "topic marker",
+        "Japan",
+        "possession or description marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あの",
+          "reading": "あの",
+          "explain": "that over there",
+          "wordId": "ano"
+        },
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That shop over there is a place in Japan.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c064",
+      "line": [
+        "これ",
+        "は",
+        "ケン",
+        "の",
+        "水",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "けん",
+        "の",
+        "みず",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "Ken",
+        "possession or description marker",
+        "water",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "水",
+          "reading": "みず",
+          "explain": "water",
+          "wordId": "mizu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is Ken's water.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-04.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c065",
+      "line": [
+        "それ",
+        "は",
+        "ユキ",
+        "の",
+        "お茶",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "ゆき",
+        "の",
+        "おちゃ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "Yuki",
+        "possession or description marker",
+        "tea",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "お茶",
+          "reading": "おちゃ",
+          "explain": "tea",
+          "wordId": "ocha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is Yuki's tea.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c066",
+      "line": [
+        "あれ",
+        "は",
+        "田中",
+        "の",
+        "時計",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "たなか",
+        "の",
+        "とけい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "Tanaka",
+        "possession or description marker",
+        "clock; watch",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "explain": "clock; watch",
+          "wordId": "tokei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is Tanaka's clock.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c067",
+      "line": [
+        "この",
+        "本",
+        "も",
+        "私",
+        "の",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "この",
+        "ほん",
+        "も",
+        "わたし",
+        "の",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this",
+        "book",
+        "also; too",
+        "I; me",
+        "possession or description marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This book is also mine.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c068",
+      "line": [
+        "その",
+        "鍵",
+        "も",
+        "友達",
+        "の",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "かぎ",
+        "も",
+        "ともだち",
+        "の",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "key",
+        "also; too",
+        "friend",
+        "possession or description marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That key near you also belongs to a friend.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c069",
+      "line": [
+        "あの",
+        "部屋",
+        "も",
+        "家",
+        "の",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あの",
+        "へや",
+        "も",
+        "いえ",
+        "の",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that over there",
+        "room",
+        "also; too",
+        "house; home",
+        "possession or description marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あの",
+          "reading": "あの",
+          "explain": "that over there",
+          "wordId": "ano"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That room over there is also a place in the house.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c070",
+      "line": [
+        "これ",
+        "は",
+        "昨日",
+        "の",
+        "写真",
+        "でした",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "きのう",
+        "の",
+        "しゃしん",
+        "でした",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "yesterday",
+        "possession or description marker",
+        "photo",
+        "polite past identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "昨日",
+          "reading": "きのう",
+          "explain": "yesterday",
+          "wordId": "kinou"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "でした",
+          "reading": "でした",
+          "explain": "polite past identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This was yesterday's photo.",
+      "imagePrompt": "A learner holding a photo from yesterday.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c071",
+      "line": [
+        "その",
+        "時計",
+        "は",
+        "先月",
+        "の",
+        "テスト",
+        "の",
+        "物",
+        "でした",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "とけい",
+        "わ",
+        "せんげつ",
+        "の",
+        "てすと",
+        "の",
+        "もの",
+        "でした",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "clock; watch",
+        "topic marker",
+        "last month",
+        "possession or description marker",
+        "test",
+        "possession or description marker",
+        "thing; object",
+        "polite past identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "explain": "clock; watch",
+          "wordId": "tokei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先月",
+          "reading": "せんげつ",
+          "explain": "last month",
+          "wordId": "sengetsu"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "テスト",
+          "reading": "てすと",
+          "explain": "test",
+          "wordId": "tesuto"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "でした",
+          "reading": "でした",
+          "explain": "polite past identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That clock near you was for last month's test.",
+      "imagePrompt": "A clock connected to a past test.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c072",
+      "line": [
+        "あの",
+        "自転車",
+        "か",
+        "この",
+        "車",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "あの",
+        "じてんしゃ",
+        "か",
+        "この",
+        "くるま",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "that over there",
+        "bicycle",
+        "or; question marker",
+        "this",
+        "car",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "あの",
+          "reading": "あの",
+          "explain": "that over there",
+          "wordId": "ano"
+        },
+        {
+          "surface": "自転車",
+          "reading": "じてんしゃ",
+          "explain": "bicycle",
+          "wordId": "jitensha"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it that bicycle over there or this car?",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c073",
+      "line": [
+        "これ",
+        "は",
+        "昨日",
+        "の",
+        "物",
+        "でした",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "きのう",
+        "の",
+        "もの",
+        "でした",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "yesterday",
+        "possession or description marker",
+        "thing; object",
+        "polite past identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "昨日",
+          "reading": "きのう",
+          "explain": "yesterday",
+          "wordId": "kinou"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "でした",
+          "reading": "でした",
+          "explain": "polite past identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This was yesterday's thing.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c074",
+      "line": [
+        "その",
+        "時計",
+        "は",
+        "先月",
+        "の",
+        "物",
+        "でした",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "とけい",
+        "わ",
+        "せんげつ",
+        "の",
+        "もの",
+        "でした",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "clock; watch",
+        "topic marker",
+        "last month",
+        "possession or description marker",
+        "thing; object",
+        "polite past identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "explain": "clock; watch",
+          "wordId": "tokei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先月",
+          "reading": "せんげつ",
+          "explain": "last month",
+          "wordId": "sengetsu"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "でした",
+          "reading": "でした",
+          "explain": "polite past identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That clock near you was last month's thing.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c075",
+      "line": [
+        "あの",
+        "店",
+        "は",
+        "去年",
+        "の",
+        "場所",
+        "ではありませんでした",
+        "。"
+      ],
+      "tts": [
+        "あの",
+        "みせ",
+        "わ",
+        "きょねん",
+        "の",
+        "ばしょ",
+        "ではありませんでした",
+        "。"
+      ],
+      "explain": [
+        "that over there",
+        "shop",
+        "topic marker",
+        "last year",
+        "possession or description marker",
+        "place",
+        "polite past negative identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あの",
+          "reading": "あの",
+          "explain": "that over there",
+          "wordId": "ano"
+        },
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "去年",
+          "reading": "きょねん",
+          "explain": "last year",
+          "wordId": "kyonen"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "ではありませんでした",
+          "reading": "ではありませんでした",
+          "explain": "polite past negative identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That shop over there was not last year's place.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c076",
+      "line": [
+        "この",
+        "水",
+        "は",
+        "仕事",
+        "の",
+        "物",
+        "ではありません",
+        "。"
+      ],
+      "tts": [
+        "この",
+        "みず",
+        "わ",
+        "しごと",
+        "の",
+        "もの",
+        "ではありません",
+        "。"
+      ],
+      "explain": [
+        "this",
+        "water",
+        "topic marker",
+        "work; job",
+        "possession or description marker",
+        "thing; object",
+        "polite negative identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "水",
+          "reading": "みず",
+          "explain": "water",
+          "wordId": "mizu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "仕事",
+          "reading": "しごと",
+          "explain": "work; job",
+          "wordId": "shigoto"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "ではありません",
+          "reading": "ではありません",
+          "explain": "polite negative identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This water is not a work item.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "`これ`, `それ`, and `あれ` depend on where the thing is: near me, near you, or away from both of us.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c077",
+      "line": [
+        "その",
+        "お茶",
+        "は",
+        "休み",
+        "の",
+        "物",
+        "でした",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "おちゃ",
+        "わ",
+        "やすみ",
+        "の",
+        "もの",
+        "でした",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "tea",
+        "topic marker",
+        "day off; break",
+        "possession or description marker",
+        "thing; object",
+        "polite past identity",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "お茶",
+          "reading": "おちゃ",
+          "explain": "tea",
+          "wordId": "ocha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "休み",
+          "reading": "やすみ",
+          "explain": "day off; break",
+          "wordId": "yasumi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "でした",
+          "reading": "でした",
+          "explain": "polite past identity"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That tea near you was for the day off.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "`この`, `その`, and `あの` always attach to a noun, like `this book` or `that shop`.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c078",
+      "line": [
+        "あれ",
+        "は",
+        "テスト",
+        "の",
+        "時計",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "てすと",
+        "の",
+        "とけい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "test",
+        "possession or description marker",
+        "clock; watch",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "テスト",
+          "reading": "てすと",
+          "explain": "test",
+          "wordId": "tesuto"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "explain": "clock; watch",
+          "wordId": "tokei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the test clock.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "Japanese demonstratives encode physical distance, but they can also track shared attention in a conversation.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c079",
+      "line": [
+        "この",
+        "鉛筆",
+        "は",
+        "朝",
+        "の",
+        "テスト",
+        "の",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "この",
+        "えんぴつ",
+        "わ",
+        "あさ",
+        "の",
+        "てすと",
+        "の",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this",
+        "pencil",
+        "topic marker",
+        "morning",
+        "possession or description marker",
+        "test",
+        "possession or description marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "鉛筆",
+          "reading": "えんぴつ",
+          "explain": "pencil",
+          "wordId": "enpitsu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "テスト",
+          "reading": "てすと",
+          "explain": "test",
+          "wordId": "tesuto"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This pencil is for the morning test.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "`それ` can point to something the listener mentioned, even when nobody is literally holding it.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    },
+    {
+      "id": "u006-c080",
+      "line": [
+        "その",
+        "本",
+        "は",
+        "夜",
+        "の",
+        "仕事",
+        "の",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "ほん",
+        "わ",
+        "よる",
+        "の",
+        "しごと",
+        "の",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "book",
+        "topic marker",
+        "night",
+        "possession or description marker",
+        "work; job",
+        "possession or description marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "explain": "night",
+          "wordId": "yoru"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "仕事",
+          "reading": "しごと",
+          "explain": "work; job",
+          "wordId": "shigoto"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That book near you is for night work.",
+      "imagePrompt": "A shared-attention scene with older review words.",
+      "imageRef": "/media/jp/images/unit_006/scenes/scene-05.svg",
+      "fact": "`あの` often feels like both speaker and listener are looking toward the same far-off thing.",
+      "grammarTags": [
+        "これ/それ/あれ",
+        "このN"
+      ]
+    }
+  ]
+}

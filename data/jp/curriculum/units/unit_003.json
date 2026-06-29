@@ -1,0 +1,5253 @@
+{
+  "id": 3,
+  "slug": "possession-and-also",
+  "title": "Unit 3: People And Possession",
+  "grammarFocus": "AのB / AもBです",
+  "newWords": [
+    {
+      "id": "kazoku",
+      "surface": "家族",
+      "reading": "かぞく",
+      "meaning": "family",
+      "function": "person"
+    },
+    {
+      "id": "haha",
+      "surface": "母",
+      "reading": "はは",
+      "meaning": "mother",
+      "function": "person"
+    },
+    {
+      "id": "chichi",
+      "surface": "父",
+      "reading": "ちち",
+      "meaning": "father",
+      "function": "person"
+    },
+    {
+      "id": "ane",
+      "surface": "姉",
+      "reading": "あね",
+      "meaning": "older sister",
+      "function": "person"
+    },
+    {
+      "id": "otouto",
+      "surface": "弟",
+      "reading": "おとうと",
+      "meaning": "younger brother",
+      "function": "person"
+    },
+    {
+      "id": "shashin",
+      "surface": "写真",
+      "reading": "しゃしん",
+      "meaning": "photo",
+      "function": "noun"
+    },
+    {
+      "id": "kaban",
+      "surface": "かばん",
+      "reading": "かばん",
+      "meaning": "bag",
+      "function": "noun"
+    },
+    {
+      "id": "kuruma",
+      "surface": "車",
+      "reading": "くるま",
+      "meaning": "car",
+      "function": "noun"
+    },
+    {
+      "id": "heya",
+      "surface": "部屋",
+      "reading": "へや",
+      "meaning": "room",
+      "function": "place"
+    },
+    {
+      "id": "kagi",
+      "surface": "鍵",
+      "reading": "かぎ",
+      "meaning": "key",
+      "function": "noun"
+    }
+  ],
+  "cards": [
+    {
+      "id": "u003-c001",
+      "line": [
+        "家族",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "かぞく",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "family",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's my family.",
+      "imagePrompt": "A gentle domestic scene featuring family.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "`の` can show possession, but it also links nouns like `family photo` or `school book`.",
+      "grammarTags": [
+        "Aです"
+      ]
+    },
+    {
+      "id": "u003-c002",
+      "line": [
+        "母",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "はは",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "mother",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's my mother.",
+      "imagePrompt": "A gentle domestic scene featuring mother.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "Family words like 母 and 父 sound humble when talking about your own family.",
+      "grammarTags": [
+        "Aです"
+      ]
+    },
+    {
+      "id": "u003-c003",
+      "line": [
+        "父",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ちち",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "father",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's my father.",
+      "imagePrompt": "A gentle domestic scene featuring father.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "`も` means `also` and replaces `は` in this pattern.",
+      "grammarTags": [
+        "Aです"
+      ]
+    },
+    {
+      "id": "u003-c004",
+      "line": [
+        "姉",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あね",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "older sister",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's my older sister.",
+      "imagePrompt": "A gentle domestic scene featuring older sister.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "Japanese can build compact noun chains before adding `です`.",
+      "grammarTags": [
+        "Aです"
+      ]
+    },
+    {
+      "id": "u003-c005",
+      "line": [
+        "弟",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとうと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "younger brother",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's my younger brother.",
+      "imagePrompt": "A gentle domestic scene featuring younger brother.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "A name plus `の` quickly makes ownership clear: Ken's bag, Yuki's photo.",
+      "grammarTags": [
+        "Aです"
+      ]
+    },
+    {
+      "id": "u003-c006",
+      "line": [
+        "写真",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "しゃしん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "photo",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's a photo.",
+      "imagePrompt": "A gentle domestic scene featuring photo.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "`の` often answers the quiet question `whose?` or `what kind?`.",
+      "grammarTags": [
+        "Aです"
+      ]
+    },
+    {
+      "id": "u003-c007",
+      "line": [
+        "かばん",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "かばん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "bag",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's a bag.",
+      "imagePrompt": "A gentle domestic scene featuring bag.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "`の` can show possession, but it also links nouns like `family photo` or `school book`.",
+      "grammarTags": [
+        "Aです"
+      ]
+    },
+    {
+      "id": "u003-c008",
+      "line": [
+        "車",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "くるま",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "car",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's a car.",
+      "imagePrompt": "A gentle domestic scene featuring car.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "Family words like 母 and 父 sound humble when talking about your own family.",
+      "grammarTags": [
+        "Aです"
+      ]
+    },
+    {
+      "id": "u003-c009",
+      "line": [
+        "部屋",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "へや",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "room",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's a room.",
+      "imagePrompt": "A gentle domestic scene featuring room.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "`も` means `also` and replaces `は` in this pattern.",
+      "grammarTags": [
+        "Aです"
+      ]
+    },
+    {
+      "id": "u003-c010",
+      "line": [
+        "鍵",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "かぎ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "key",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's a key.",
+      "imagePrompt": "A gentle domestic scene featuring key.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "Japanese can build compact noun chains before adding `です`.",
+      "grammarTags": [
+        "Aです"
+      ]
+    },
+    {
+      "id": "u003-c011",
+      "line": [
+        "母",
+        "は",
+        "先生",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "はは",
+        "わ",
+        "せんせい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "mother",
+        "topic marker",
+        "teacher",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My mother is a teacher.",
+      "imagePrompt": "A clear scene connecting mother with teacher.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "A name plus `の` quickly makes ownership clear: Ken's bag, Yuki's photo.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u003-c012",
+      "line": [
+        "父",
+        "は",
+        "医者",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ちち",
+        "わ",
+        "いしゃ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "father",
+        "topic marker",
+        "doctor",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My father is a doctor.",
+      "imagePrompt": "A clear scene connecting father with doctor.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "`の` often answers the quiet question `whose?` or `what kind?`.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u003-c013",
+      "line": [
+        "姉",
+        "は",
+        "学生",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あね",
+        "わ",
+        "がくせい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "older sister",
+        "topic marker",
+        "student",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My older sister is a student.",
+      "imagePrompt": "A clear scene connecting older sister with student.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "`の` can show possession, but it also links nouns like `family photo` or `school book`.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u003-c014",
+      "line": [
+        "弟",
+        "は",
+        "家族",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとうと",
+        "わ",
+        "かぞく",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "younger brother",
+        "topic marker",
+        "family",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My younger brother is family.",
+      "imagePrompt": "A clear scene connecting younger brother with family.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "Family words like 母 and 父 sound humble when talking about your own family.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u003-c015",
+      "line": [
+        "家族",
+        "は",
+        "友達",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "かぞく",
+        "わ",
+        "ともだち",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "family",
+        "topic marker",
+        "friend",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My family are friends.",
+      "imagePrompt": "A clear scene connecting family with friend.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "`も` means `also` and replaces `は` in this pattern.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u003-c016",
+      "line": [
+        "写真",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "しゃしん",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "photo",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The photo is an object.",
+      "imagePrompt": "A clear scene connecting photo with object.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-01.svg",
+      "fact": "Japanese can build compact noun chains before adding `です`.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u003-c017",
+      "line": [
+        "かばん",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "かばん",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "bag",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The bag is an object.",
+      "imagePrompt": "A clear scene connecting bag with object.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "`の` often answers the quiet question `whose?` or `what kind?`.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u003-c018",
+      "line": [
+        "車",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "くるま",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "car",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The car is an object.",
+      "imagePrompt": "A clear scene connecting car with object.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "`の` can show possession, but it also links nouns like `family photo` or `school book`.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u003-c019",
+      "line": [
+        "部屋",
+        "は",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "へや",
+        "わ",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "room",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The room is a place.",
+      "imagePrompt": "A clear scene connecting room with place.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "Family words like 母 and 父 sound humble when talking about your own family.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u003-c020",
+      "line": [
+        "鍵",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "かぎ",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "key",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The key is an object.",
+      "imagePrompt": "A clear scene connecting key with object.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "`も` means `also` and replaces `は` in this pattern.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u003-c021",
+      "line": [
+        "私",
+        "の",
+        "家族",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "の",
+        "かぞく",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "possession or description marker",
+        "family",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is my family.",
+      "imagePrompt": "A quiet slice-of-life scene for I and family.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "Japanese can build compact noun chains before adding `です`.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c022",
+      "line": [
+        "私",
+        "の",
+        "母",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "の",
+        "はは",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "possession or description marker",
+        "mother",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is my mother.",
+      "imagePrompt": "A quiet slice-of-life scene for I and mother.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "A name plus `の` quickly makes ownership clear: Ken's bag, Yuki's photo.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c023",
+      "line": [
+        "私",
+        "の",
+        "父",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "の",
+        "ちち",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "possession or description marker",
+        "father",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is my father.",
+      "imagePrompt": "A quiet slice-of-life scene for I and father.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "`の` often answers the quiet question `whose?` or `what kind?`.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c024",
+      "line": [
+        "私",
+        "の",
+        "姉",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "の",
+        "あね",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "possession or description marker",
+        "older sister",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is my older sister.",
+      "imagePrompt": "A quiet slice-of-life scene for I and older sister.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "`の` can show possession, but it also links nouns like `family photo` or `school book`.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c025",
+      "line": [
+        "私",
+        "の",
+        "弟",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "の",
+        "おとうと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "possession or description marker",
+        "younger brother",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is my younger brother.",
+      "imagePrompt": "A quiet slice-of-life scene for I and younger brother.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "Family words like 母 and 父 sound humble when talking about your own family.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c026",
+      "line": [
+        "母",
+        "の",
+        "写真",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "はは",
+        "の",
+        "しゃしん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "mother",
+        "possession or description marker",
+        "photo",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's my mother's photo.",
+      "imagePrompt": "A quiet slice-of-life scene for mother and photo.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "`も` means `also` and replaces `は` in this pattern.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c027",
+      "line": [
+        "父",
+        "の",
+        "車",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ちち",
+        "の",
+        "くるま",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "father",
+        "possession or description marker",
+        "car",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's my father's car.",
+      "imagePrompt": "A quiet slice-of-life scene for father and car.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "Japanese can build compact noun chains before adding `です`.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c028",
+      "line": [
+        "姉",
+        "の",
+        "かばん",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あね",
+        "の",
+        "かばん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "older sister",
+        "possession or description marker",
+        "bag",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's my older sister's bag.",
+      "imagePrompt": "A quiet slice-of-life scene for older sister and bag.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "A name plus `の` quickly makes ownership clear: Ken's bag, Yuki's photo.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c029",
+      "line": [
+        "弟",
+        "の",
+        "鍵",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとうと",
+        "の",
+        "かぎ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "younger brother",
+        "possession or description marker",
+        "key",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's my younger brother's key.",
+      "imagePrompt": "A quiet slice-of-life scene for younger brother and key.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "`の` often answers the quiet question `whose?` or `what kind?`.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c030",
+      "line": [
+        "家族",
+        "の",
+        "部屋",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "かぞく",
+        "の",
+        "へや",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "family",
+        "possession or description marker",
+        "room",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's the family's room.",
+      "imagePrompt": "A quiet slice-of-life scene for family and room.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "`の` can show possession, but it also links nouns like `family photo` or `school book`.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c031",
+      "line": [
+        "ケン",
+        "の",
+        "かばん",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "の",
+        "かばん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "possession or description marker",
+        "bag",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's Ken's bag.",
+      "imagePrompt": "A quiet slice-of-life scene for Ken and bag.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "Family words like 母 and 父 sound humble when talking about your own family.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c032",
+      "line": [
+        "ユキ",
+        "の",
+        "写真",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "の",
+        "しゃしん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "possession or description marker",
+        "photo",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's Yuki's photo.",
+      "imagePrompt": "A quiet slice-of-life scene for Yuki and photo.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-02.svg",
+      "fact": "`も` means `also` and replaces `は` in this pattern.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c033",
+      "line": [
+        "田中",
+        "の",
+        "車",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "の",
+        "くるま",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "possession or description marker",
+        "car",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's Tanaka's car.",
+      "imagePrompt": "A quiet slice-of-life scene for Tanaka and car.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "A name plus `の` quickly makes ownership clear: Ken's bag, Yuki's photo.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c034",
+      "line": [
+        "先生",
+        "の",
+        "鍵",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "の",
+        "かぎ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "possession or description marker",
+        "key",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's the teacher's key.",
+      "imagePrompt": "A quiet slice-of-life scene for teacher and key.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "`の` often answers the quiet question `whose?` or `what kind?`.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c035",
+      "line": [
+        "友達",
+        "の",
+        "部屋",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "の",
+        "へや",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "possession or description marker",
+        "room",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's a friend's room.",
+      "imagePrompt": "A quiet slice-of-life scene for friend and room.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "`の` can show possession, but it also links nouns like `family photo` or `school book`.",
+      "grammarTags": [
+        "AのB"
+      ]
+    },
+    {
+      "id": "u003-c036",
+      "line": [
+        "母",
+        "も",
+        "先生",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "はは",
+        "も",
+        "せんせい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "mother",
+        "also; too",
+        "teacher",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My mother is also a teacher.",
+      "imagePrompt": "A paired comparison scene for mother.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "Family words like 母 and 父 sound humble when talking about your own family.",
+      "grammarTags": [
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c037",
+      "line": [
+        "父",
+        "も",
+        "医者",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ちち",
+        "も",
+        "いしゃ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "father",
+        "also; too",
+        "doctor",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My father is also a doctor.",
+      "imagePrompt": "A paired comparison scene for father.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "`も` means `also` and replaces `は` in this pattern.",
+      "grammarTags": [
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c038",
+      "line": [
+        "姉",
+        "も",
+        "学生",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あね",
+        "も",
+        "がくせい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "older sister",
+        "also; too",
+        "student",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My older sister is also a student.",
+      "imagePrompt": "A paired comparison scene for older sister.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "Japanese can build compact noun chains before adding `です`.",
+      "grammarTags": [
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c039",
+      "line": [
+        "弟",
+        "も",
+        "友達",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとうと",
+        "も",
+        "ともだち",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "younger brother",
+        "also; too",
+        "friend",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My younger brother is also a friend.",
+      "imagePrompt": "A paired comparison scene for younger brother.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "A name plus `の` quickly makes ownership clear: Ken's bag, Yuki's photo.",
+      "grammarTags": [
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c040",
+      "line": [
+        "私",
+        "も",
+        "学生",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "も",
+        "がくせい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "also; too",
+        "student",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I am also a student.",
+      "imagePrompt": "A paired comparison scene for I.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "`の` often answers the quiet question `whose?` or `what kind?`.",
+      "grammarTags": [
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c041",
+      "line": [
+        "ケン",
+        "も",
+        "友達",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "も",
+        "ともだち",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "also; too",
+        "friend",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken is also a friend.",
+      "imagePrompt": "A paired comparison scene for Ken.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "`の` can show possession, but it also links nouns like `family photo` or `school book`.",
+      "grammarTags": [
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c042",
+      "line": [
+        "ユキ",
+        "も",
+        "友達",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "も",
+        "ともだち",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "also; too",
+        "friend",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki is also a friend.",
+      "imagePrompt": "A paired comparison scene for Yuki.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "Family words like 母 and 父 sound humble when talking about your own family.",
+      "grammarTags": [
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c043",
+      "line": [
+        "かばん",
+        "も",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "かばん",
+        "も",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "bag",
+        "also; too",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The bag is also an object.",
+      "imagePrompt": "A paired comparison scene for bag.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "`も` means `also` and replaces `は` in this pattern.",
+      "grammarTags": [
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c044",
+      "line": [
+        "車",
+        "も",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "くるま",
+        "も",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "car",
+        "also; too",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The car is also an object.",
+      "imagePrompt": "A paired comparison scene for car.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "Japanese can build compact noun chains before adding `です`.",
+      "grammarTags": [
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c045",
+      "line": [
+        "部屋",
+        "も",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "へや",
+        "も",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "room",
+        "also; too",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The room is also a place.",
+      "imagePrompt": "A paired comparison scene for room.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "A name plus `の` quickly makes ownership clear: Ken's bag, Yuki's photo.",
+      "grammarTags": [
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c046",
+      "line": [
+        "鍵",
+        "も",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "かぎ",
+        "も",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "key",
+        "also; too",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The key is also an object.",
+      "imagePrompt": "A paired comparison scene for key.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "`の` often answers the quiet question `whose?` or `what kind?`.",
+      "grammarTags": [
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c047",
+      "line": [
+        "写真",
+        "も",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "しゃしん",
+        "も",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "photo",
+        "also; too",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The photo is also an object.",
+      "imagePrompt": "A paired comparison scene for photo.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "`の` can show possession, but it also links nouns like `family photo` or `school book`.",
+      "grammarTags": [
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c048",
+      "line": [
+        "私",
+        "の",
+        "家族",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "わたし",
+        "の",
+        "かぞく",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "I; me",
+        "possession or description marker",
+        "family",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is this my family?",
+      "imagePrompt": "A learner checking ownership of family.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-03.svg",
+      "fact": "Family words like 母 and 父 sound humble when talking about your own family.",
+      "grammarTags": [
+        "AのB",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u003-c049",
+      "line": [
+        "母",
+        "の",
+        "写真",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "はは",
+        "の",
+        "しゃしん",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "mother",
+        "possession or description marker",
+        "photo",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it my mother's photo?",
+      "imagePrompt": "A learner checking ownership of photo.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "Japanese can build compact noun chains before adding `です`.",
+      "grammarTags": [
+        "AのB",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u003-c050",
+      "line": [
+        "父",
+        "の",
+        "車",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ちち",
+        "の",
+        "くるま",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "father",
+        "possession or description marker",
+        "car",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it my father's car?",
+      "imagePrompt": "A learner checking ownership of car.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "A name plus `の` quickly makes ownership clear: Ken's bag, Yuki's photo.",
+      "grammarTags": [
+        "AのB",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u003-c051",
+      "line": [
+        "姉",
+        "の",
+        "かばん",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "あね",
+        "の",
+        "かばん",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "older sister",
+        "possession or description marker",
+        "bag",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it my older sister's bag?",
+      "imagePrompt": "A learner checking ownership of bag.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "`の` often answers the quiet question `whose?` or `what kind?`.",
+      "grammarTags": [
+        "AのB",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u003-c052",
+      "line": [
+        "弟",
+        "の",
+        "鍵",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "おとうと",
+        "の",
+        "かぎ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "younger brother",
+        "possession or description marker",
+        "key",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it my younger brother's key?",
+      "imagePrompt": "A learner checking ownership of key.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "`の` can show possession, but it also links nouns like `family photo` or `school book`.",
+      "grammarTags": [
+        "AのB",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u003-c053",
+      "line": [
+        "ケン",
+        "の",
+        "部屋",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "けん",
+        "の",
+        "へや",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Ken",
+        "possession or description marker",
+        "room",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it Ken's room?",
+      "imagePrompt": "A learner checking ownership of room.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "Family words like 母 and 父 sound humble when talking about your own family.",
+      "grammarTags": [
+        "AのB",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u003-c054",
+      "line": [
+        "ユキ",
+        "の",
+        "写真",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ゆき",
+        "の",
+        "しゃしん",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Yuki",
+        "possession or description marker",
+        "photo",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it Yuki's photo?",
+      "imagePrompt": "A learner checking ownership of photo.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "`も` means `also` and replaces `は` in this pattern.",
+      "grammarTags": [
+        "AのB",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u003-c055",
+      "line": [
+        "田中",
+        "の",
+        "車",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "たなか",
+        "の",
+        "くるま",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Tanaka",
+        "possession or description marker",
+        "car",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it Tanaka's car?",
+      "imagePrompt": "A learner checking ownership of car.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "Japanese can build compact noun chains before adding `です`.",
+      "grammarTags": [
+        "AのB",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u003-c056",
+      "line": [
+        "先生",
+        "の",
+        "かばん",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "せんせい",
+        "の",
+        "かばん",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "teacher",
+        "possession or description marker",
+        "bag",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it the teacher's bag?",
+      "imagePrompt": "A learner checking ownership of bag.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "A name plus `の` quickly makes ownership clear: Ken's bag, Yuki's photo.",
+      "grammarTags": [
+        "AのB",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u003-c057",
+      "line": [
+        "友達",
+        "の",
+        "鍵",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ともだち",
+        "の",
+        "かぎ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "friend",
+        "possession or description marker",
+        "key",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it a friend's key?",
+      "imagePrompt": "A learner checking ownership of key.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "`の` often answers the quiet question `whose?` or `what kind?`.",
+      "grammarTags": [
+        "AのB",
+        "Aですか"
+      ]
+    },
+    {
+      "id": "u003-c058",
+      "line": [
+        "私",
+        "の",
+        "母",
+        "も",
+        "先生",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "の",
+        "はは",
+        "も",
+        "せんせい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "possession or description marker",
+        "mother",
+        "also; too",
+        "teacher",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My mother is also a teacher.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "`の` can show possession, but it also links nouns like `family photo` or `school book`.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c059",
+      "line": [
+        "私",
+        "の",
+        "父",
+        "も",
+        "医者",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "の",
+        "ちち",
+        "も",
+        "いしゃ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "possession or description marker",
+        "father",
+        "also; too",
+        "doctor",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My father is also a doctor.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "Family words like 母 and 父 sound humble when talking about your own family.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c060",
+      "line": [
+        "私",
+        "の",
+        "姉",
+        "も",
+        "学生",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "の",
+        "あね",
+        "も",
+        "がくせい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "possession or description marker",
+        "older sister",
+        "also; too",
+        "student",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My older sister is also a student.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "`も` means `also` and replaces `は` in this pattern.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c061",
+      "line": [
+        "ケン",
+        "の",
+        "かばん",
+        "も",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "の",
+        "かばん",
+        "も",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "possession or description marker",
+        "bag",
+        "also; too",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken's bag is also an object.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "Japanese can build compact noun chains before adding `です`.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c062",
+      "line": [
+        "ユキ",
+        "の",
+        "写真",
+        "も",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "の",
+        "しゃしん",
+        "も",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "possession or description marker",
+        "photo",
+        "also; too",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki's photo is also an object.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "A name plus `の` quickly makes ownership clear: Ken's bag, Yuki's photo.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c063",
+      "line": [
+        "田中",
+        "の",
+        "車",
+        "も",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "の",
+        "くるま",
+        "も",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "possession or description marker",
+        "car",
+        "also; too",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka's car is also an object.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "`の` often answers the quiet question `whose?` or `what kind?`.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c064",
+      "line": [
+        "先生",
+        "の",
+        "部屋",
+        "も",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "の",
+        "へや",
+        "も",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "possession or description marker",
+        "room",
+        "also; too",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher's room is also a place.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-04.svg",
+      "fact": "`の` can show possession, but it also links nouns like `family photo` or `school book`.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c065",
+      "line": [
+        "友達",
+        "の",
+        "鍵",
+        "も",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "の",
+        "かぎ",
+        "も",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "possession or description marker",
+        "key",
+        "also; too",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "A friend's key is also an object.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "`も` means `also` and replaces `は` in this pattern.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c066",
+      "line": [
+        "母",
+        "と",
+        "父",
+        "は",
+        "家族",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "はは",
+        "と",
+        "ちち",
+        "わ",
+        "かぞく",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "mother",
+        "and",
+        "father",
+        "topic marker",
+        "family",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My mother and father are family.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "Japanese can build compact noun chains before adding `です`.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c067",
+      "line": [
+        "姉",
+        "と",
+        "弟",
+        "は",
+        "家族",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あね",
+        "と",
+        "おとうと",
+        "わ",
+        "かぞく",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "older sister",
+        "and",
+        "younger brother",
+        "topic marker",
+        "family",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My older sister and younger brother are family.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "A name plus `の` quickly makes ownership clear: Ken's bag, Yuki's photo.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c068",
+      "line": [
+        "かばん",
+        "と",
+        "鍵",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "かばん",
+        "と",
+        "かぎ",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "bag",
+        "and",
+        "key",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The bag and key are objects.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "`の` often answers the quiet question `whose?` or `what kind?`.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c069",
+      "line": [
+        "写真",
+        "と",
+        "車",
+        "は",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "しゃしん",
+        "と",
+        "くるま",
+        "わ",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "photo",
+        "and",
+        "car",
+        "topic marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The photo and car are objects.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "`の` can show possession, but it also links nouns like `family photo` or `school book`.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c070",
+      "line": [
+        "部屋",
+        "は",
+        "家",
+        "の",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "へや",
+        "わ",
+        "いえ",
+        "の",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "room",
+        "topic marker",
+        "house; home",
+        "possession or description marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The room is a place in the house.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "Family words like 母 and 父 sound humble when talking about your own family.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c071",
+      "line": [
+        "家族",
+        "の",
+        "写真",
+        "は",
+        "日本",
+        "の",
+        "物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "かぞく",
+        "の",
+        "しゃしん",
+        "わ",
+        "にほん",
+        "の",
+        "もの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "family",
+        "possession or description marker",
+        "photo",
+        "topic marker",
+        "Japan",
+        "possession or description marker",
+        "thing; object",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The family photo is an object from Japan.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "`も` means `also` and replaces `は` in this pattern.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c072",
+      "line": [
+        "私",
+        "の",
+        "鍵",
+        "か",
+        "ケン",
+        "の",
+        "鍵",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "わたし",
+        "の",
+        "かぎ",
+        "か",
+        "けん",
+        "の",
+        "かぎ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "I; me",
+        "possession or description marker",
+        "key",
+        "or; question marker",
+        "Ken",
+        "possession or description marker",
+        "key",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "鍵",
+          "reading": "かぎ",
+          "explain": "key",
+          "wordId": "kagi"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it my key or Ken's key?",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "Japanese can build compact noun chains before adding `です`.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c073",
+      "line": [
+        "ユキ",
+        "の",
+        "かばん",
+        "か",
+        "姉",
+        "の",
+        "かばん",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ゆき",
+        "の",
+        "かばん",
+        "か",
+        "あね",
+        "の",
+        "かばん",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Yuki",
+        "possession or description marker",
+        "bag",
+        "or; question marker",
+        "older sister",
+        "possession or description marker",
+        "bag",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it Yuki's bag or my older sister's bag?",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "A name plus `の` quickly makes ownership clear: Ken's bag, Yuki's photo.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c074",
+      "line": [
+        "父",
+        "の",
+        "車",
+        "か",
+        "田中",
+        "の",
+        "車",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "ちち",
+        "の",
+        "くるま",
+        "か",
+        "たなか",
+        "の",
+        "くるま",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "father",
+        "possession or description marker",
+        "car",
+        "or; question marker",
+        "Tanaka",
+        "possession or description marker",
+        "car",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "車",
+          "reading": "くるま",
+          "explain": "car",
+          "wordId": "kuruma"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it my father's car or Tanaka's car?",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "`の` often answers the quiet question `whose?` or `what kind?`.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c075",
+      "line": [
+        "母",
+        "の",
+        "写真",
+        "か",
+        "家族",
+        "の",
+        "写真",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "はは",
+        "の",
+        "しゃしん",
+        "か",
+        "かぞく",
+        "の",
+        "しゃしん",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "mother",
+        "possession or description marker",
+        "photo",
+        "or; question marker",
+        "family",
+        "possession or description marker",
+        "photo",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "or; question marker"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is it my mother's photo or the family photo?",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "`の` can show possession, but it also links nouns like `family photo` or `school book`.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c076",
+      "line": [
+        "弟",
+        "の",
+        "部屋",
+        "も",
+        "家",
+        "の",
+        "場所",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "おとうと",
+        "の",
+        "へや",
+        "も",
+        "いえ",
+        "の",
+        "ばしょ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "younger brother",
+        "possession or description marker",
+        "room",
+        "also; too",
+        "house; home",
+        "possession or description marker",
+        "place",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My younger brother's room is also a place in the house.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "Family words like 母 and 父 sound humble when talking about your own family.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c077",
+      "line": [
+        "友達",
+        "の",
+        "家族",
+        "も",
+        "アメリカ",
+        "の",
+        "家族",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "の",
+        "かぞく",
+        "も",
+        "あめりか",
+        "の",
+        "かぞく",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "possession or description marker",
+        "family",
+        "also; too",
+        "America",
+        "possession or description marker",
+        "family",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "アメリカ",
+          "reading": "あめりか",
+          "explain": "America",
+          "wordId": "amerika"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "A friend's family is also a family in America.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "`も` means `also` and replaces `は` in this pattern.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c078",
+      "line": [
+        "私",
+        "の",
+        "名前",
+        "は",
+        "ケン",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "の",
+        "なまえ",
+        "わ",
+        "けん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "possession or description marker",
+        "name",
+        "topic marker",
+        "Ken",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "名前",
+          "reading": "なまえ",
+          "explain": "name",
+          "wordId": "namae"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My name is Ken.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "Japanese can build compact noun chains before adding `です`.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c079",
+      "line": [
+        "ユキ",
+        "の",
+        "友達",
+        "は",
+        "学生",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "の",
+        "ともだち",
+        "わ",
+        "がくせい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "possession or description marker",
+        "friend",
+        "topic marker",
+        "student",
+        "polite identity marker",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki's friend is a student.",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "A name plus `の` quickly makes ownership clear: Ken's bag, Yuki's photo.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    },
+    {
+      "id": "u003-c080",
+      "line": [
+        "田中",
+        "の",
+        "先生",
+        "も",
+        "医者",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "たなか",
+        "の",
+        "せんせい",
+        "も",
+        "いしゃ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Tanaka",
+        "possession or description marker",
+        "teacher",
+        "also; too",
+        "doctor",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "も",
+          "reading": "も",
+          "explain": "also; too"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is Tanaka's teacher also a doctor?",
+      "imagePrompt": "A warm family-and-objects study scene.",
+      "imageRef": "/media/jp/images/unit_003/scenes/scene-05.svg",
+      "fact": "`の` often answers the quiet question `whose?` or `what kind?`.",
+      "grammarTags": [
+        "AのB",
+        "AもBです"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7840 @@
+{
+  "id": 27,
+  "slug": "time-point",
+  "title": "Unit 27: Time Point",
+  "grammarFocus": "時間にVます",
+  "newWords": [
+    {
+      "id": "getsuyoubi",
+      "surface": "月曜日",
+      "reading": "げつようび",
+      "meaning": "Monday",
+      "function": "time"
+    },
+    {
+      "id": "kayoubi",
+      "surface": "火曜日",
+      "reading": "かようび",
+      "meaning": "Tuesday",
+      "function": "time"
+    },
+    {
+      "id": "suiyoubi",
+      "surface": "水曜日",
+      "reading": "すいようび",
+      "meaning": "Wednesday",
+      "function": "time"
+    },
+    {
+      "id": "mokuyoubi",
+      "surface": "木曜日",
+      "reading": "もくようび",
+      "meaning": "Thursday",
+      "function": "time"
+    },
+    {
+      "id": "kinyoubi",
+      "surface": "金曜日",
+      "reading": "きんようび",
+      "meaning": "Friday",
+      "function": "time"
+    },
+    {
+      "id": "doyoubi",
+      "surface": "土曜日",
+      "reading": "どようび",
+      "meaning": "Saturday",
+      "function": "time"
+    },
+    {
+      "id": "nichiyoubi",
+      "surface": "日曜日",
+      "reading": "にちようび",
+      "meaning": "Sunday",
+      "function": "time"
+    },
+    {
+      "id": "hiru",
+      "surface": "昼",
+      "reading": "ひる",
+      "meaning": "noon; daytime",
+      "function": "time"
+    },
+    {
+      "id": "gogo",
+      "surface": "午後",
+      "reading": "ごご",
+      "meaning": "afternoon; p.m.",
+      "function": "time"
+    },
+    {
+      "id": "gozen",
+      "surface": "午前",
+      "reading": "ごぜん",
+      "meaning": "morning; a.m.",
+      "function": "time"
+    }
+  ],
+  "cards": [
+    {
+      "id": "u027-c001",
+      "line": [
+        "私",
+        "は",
+        "月曜日",
+        "に",
+        "食べます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "げつようび",
+        "に",
+        "たべます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "Monday",
+        "destination, time, or location marker",
+        "eat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "月曜日",
+          "reading": "げつようび",
+          "explain": "Monday",
+          "wordId": "getsuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I eat on Monday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c002",
+      "line": [
+        "ケン",
+        "は",
+        "火曜日",
+        "に",
+        "飲みます",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "かようび",
+        "に",
+        "のみます",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "Tuesday",
+        "destination, time, or location marker",
+        "drink",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "火曜日",
+          "reading": "かようび",
+          "explain": "Tuesday",
+          "wordId": "kayoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken drinks on Tuesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c003",
+      "line": [
+        "ユキ",
+        "は",
+        "水曜日",
+        "に",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "すいようび",
+        "に",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "Wednesday",
+        "destination, time, or location marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "水曜日",
+          "reading": "すいようび",
+          "explain": "Wednesday",
+          "wordId": "suiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki goes on Wednesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c004",
+      "line": [
+        "田中",
+        "は",
+        "木曜日",
+        "に",
+        "来ます",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "もくようび",
+        "に",
+        "きます",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "Thursday",
+        "destination, time, or location marker",
+        "come",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "木曜日",
+          "reading": "もくようび",
+          "explain": "Thursday",
+          "wordId": "mokuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka comes on Thursday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c005",
+      "line": [
+        "先生",
+        "は",
+        "金曜日",
+        "に",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "きんようび",
+        "に",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "Friday",
+        "destination, time, or location marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "金曜日",
+          "reading": "きんようび",
+          "explain": "Friday",
+          "wordId": "kinyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher watches on Friday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c006",
+      "line": [
+        "学生",
+        "は",
+        "土曜日",
+        "に",
+        "聞きます",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "どようび",
+        "に",
+        "ききます",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "Saturday",
+        "destination, time, or location marker",
+        "listen",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "土曜日",
+          "reading": "どようび",
+          "explain": "Saturday",
+          "wordId": "doyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student listens on Saturday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c007",
+      "line": [
+        "友達",
+        "は",
+        "日曜日",
+        "に",
+        "読みます",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "にちようび",
+        "に",
+        "よみます",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "Sunday",
+        "destination, time, or location marker",
+        "read",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "日曜日",
+          "reading": "にちようび",
+          "explain": "Sunday",
+          "wordId": "nichiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend reads on Sunday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c008",
+      "line": [
+        "男の人",
+        "は",
+        "昼",
+        "に",
+        "書きます",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "ひる",
+        "に",
+        "かきます",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "noon; daytime",
+        "destination, time, or location marker",
+        "write",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "昼",
+          "reading": "ひる",
+          "explain": "noon; daytime",
+          "wordId": "hiru"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man writes at noon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c009",
+      "line": [
+        "女の人",
+        "は",
+        "午後",
+        "に",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ごご",
+        "に",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "afternoon; p.m.",
+        "destination, time, or location marker",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午後",
+          "reading": "ごご",
+          "explain": "afternoon; p.m.",
+          "wordId": "gogo"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman studies in the afternoon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c010",
+      "line": [
+        "店員",
+        "は",
+        "午前",
+        "に",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "ごぜん",
+        "に",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "morning; a.m.",
+        "destination, time, or location marker",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午前",
+          "reading": "ごぜん",
+          "explain": "morning; a.m.",
+          "wordId": "gozen"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk speaks in the morning.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c011",
+      "line": [
+        "私",
+        "は",
+        "月曜日",
+        "に",
+        "買います",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "げつようび",
+        "に",
+        "かいます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "Monday",
+        "destination, time, or location marker",
+        "buy",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "月曜日",
+          "reading": "げつようび",
+          "explain": "Monday",
+          "wordId": "getsuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "買います",
+          "reading": "かいます",
+          "explain": "buy",
+          "wordId": "kau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I buy on Monday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c012",
+      "line": [
+        "ケン",
+        "は",
+        "火曜日",
+        "に",
+        "待ちます",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "かようび",
+        "に",
+        "まちます",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "Tuesday",
+        "destination, time, or location marker",
+        "wait",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "火曜日",
+          "reading": "かようび",
+          "explain": "Tuesday",
+          "wordId": "kayoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "待ちます",
+          "reading": "まちます",
+          "explain": "wait",
+          "wordId": "matsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken waits on Tuesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c013",
+      "line": [
+        "ユキ",
+        "は",
+        "水曜日",
+        "に",
+        "食べます",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "すいようび",
+        "に",
+        "たべます",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "Wednesday",
+        "destination, time, or location marker",
+        "eat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "水曜日",
+          "reading": "すいようび",
+          "explain": "Wednesday",
+          "wordId": "suiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki eats on Wednesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c014",
+      "line": [
+        "田中",
+        "は",
+        "木曜日",
+        "に",
+        "飲みます",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "もくようび",
+        "に",
+        "のみます",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "Thursday",
+        "destination, time, or location marker",
+        "drink",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "木曜日",
+          "reading": "もくようび",
+          "explain": "Thursday",
+          "wordId": "mokuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka drinks on Thursday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c015",
+      "line": [
+        "先生",
+        "は",
+        "金曜日",
+        "に",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "きんようび",
+        "に",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "Friday",
+        "destination, time, or location marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "金曜日",
+          "reading": "きんようび",
+          "explain": "Friday",
+          "wordId": "kinyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher goes on Friday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c016",
+      "line": [
+        "学生",
+        "は",
+        "土曜日",
+        "に",
+        "来ます",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "どようび",
+        "に",
+        "きます",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "Saturday",
+        "destination, time, or location marker",
+        "come",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "土曜日",
+          "reading": "どようび",
+          "explain": "Saturday",
+          "wordId": "doyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student comes on Saturday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c017",
+      "line": [
+        "友達",
+        "は",
+        "日曜日",
+        "に",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "にちようび",
+        "に",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "Sunday",
+        "destination, time, or location marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "日曜日",
+          "reading": "にちようび",
+          "explain": "Sunday",
+          "wordId": "nichiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend watches on Sunday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c018",
+      "line": [
+        "男の人",
+        "は",
+        "昼",
+        "に",
+        "聞きます",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "ひる",
+        "に",
+        "ききます",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "noon; daytime",
+        "destination, time, or location marker",
+        "listen",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "昼",
+          "reading": "ひる",
+          "explain": "noon; daytime",
+          "wordId": "hiru"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man listens at noon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c019",
+      "line": [
+        "女の人",
+        "は",
+        "午後",
+        "に",
+        "読みます",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ごご",
+        "に",
+        "よみます",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "afternoon; p.m.",
+        "destination, time, or location marker",
+        "read",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午後",
+          "reading": "ごご",
+          "explain": "afternoon; p.m.",
+          "wordId": "gogo"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman reads in the afternoon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c020",
+      "line": [
+        "店員",
+        "は",
+        "午前",
+        "に",
+        "書きます",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "ごぜん",
+        "に",
+        "かきます",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "morning; a.m.",
+        "destination, time, or location marker",
+        "write",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午前",
+          "reading": "ごぜん",
+          "explain": "morning; a.m.",
+          "wordId": "gozen"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk writes in the morning.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c021",
+      "line": [
+        "私",
+        "は",
+        "月曜日",
+        "に",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "げつようび",
+        "に",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "Monday",
+        "destination, time, or location marker",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "月曜日",
+          "reading": "げつようび",
+          "explain": "Monday",
+          "wordId": "getsuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study on Monday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c022",
+      "line": [
+        "ケン",
+        "は",
+        "火曜日",
+        "に",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "かようび",
+        "に",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "Tuesday",
+        "destination, time, or location marker",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "火曜日",
+          "reading": "かようび",
+          "explain": "Tuesday",
+          "wordId": "kayoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken speaks on Tuesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c023",
+      "line": [
+        "ユキ",
+        "は",
+        "水曜日",
+        "に",
+        "買います",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "すいようび",
+        "に",
+        "かいます",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "Wednesday",
+        "destination, time, or location marker",
+        "buy",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "水曜日",
+          "reading": "すいようび",
+          "explain": "Wednesday",
+          "wordId": "suiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "買います",
+          "reading": "かいます",
+          "explain": "buy",
+          "wordId": "kau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki buys on Wednesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c024",
+      "line": [
+        "田中",
+        "は",
+        "木曜日",
+        "に",
+        "待ちます",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "もくようび",
+        "に",
+        "まちます",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "Thursday",
+        "destination, time, or location marker",
+        "wait",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "木曜日",
+          "reading": "もくようび",
+          "explain": "Thursday",
+          "wordId": "mokuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "待ちます",
+          "reading": "まちます",
+          "explain": "wait",
+          "wordId": "matsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka waits on Thursday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c025",
+      "line": [
+        "先生",
+        "は",
+        "金曜日",
+        "に",
+        "食べます",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "きんようび",
+        "に",
+        "たべます",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "Friday",
+        "destination, time, or location marker",
+        "eat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "金曜日",
+          "reading": "きんようび",
+          "explain": "Friday",
+          "wordId": "kinyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher eats on Friday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c026",
+      "line": [
+        "学生",
+        "は",
+        "土曜日",
+        "に",
+        "飲みます",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "どようび",
+        "に",
+        "のみます",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "Saturday",
+        "destination, time, or location marker",
+        "drink",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "土曜日",
+          "reading": "どようび",
+          "explain": "Saturday",
+          "wordId": "doyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student drinks on Saturday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c027",
+      "line": [
+        "友達",
+        "は",
+        "日曜日",
+        "に",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "にちようび",
+        "に",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "Sunday",
+        "destination, time, or location marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "日曜日",
+          "reading": "にちようび",
+          "explain": "Sunday",
+          "wordId": "nichiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend goes on Sunday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c028",
+      "line": [
+        "男の人",
+        "は",
+        "昼",
+        "に",
+        "来ます",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "ひる",
+        "に",
+        "きます",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "noon; daytime",
+        "destination, time, or location marker",
+        "come",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "昼",
+          "reading": "ひる",
+          "explain": "noon; daytime",
+          "wordId": "hiru"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man comes at noon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c029",
+      "line": [
+        "女の人",
+        "は",
+        "午後",
+        "に",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ごご",
+        "に",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "afternoon; p.m.",
+        "destination, time, or location marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午後",
+          "reading": "ごご",
+          "explain": "afternoon; p.m.",
+          "wordId": "gogo"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman watches in the afternoon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c030",
+      "line": [
+        "店員",
+        "は",
+        "午前",
+        "に",
+        "聞きます",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "ごぜん",
+        "に",
+        "ききます",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "morning; a.m.",
+        "destination, time, or location marker",
+        "listen",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午前",
+          "reading": "ごぜん",
+          "explain": "morning; a.m.",
+          "wordId": "gozen"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk listens in the morning.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c031",
+      "line": [
+        "私",
+        "は",
+        "月曜日",
+        "に",
+        "読みます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "げつようび",
+        "に",
+        "よみます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "Monday",
+        "destination, time, or location marker",
+        "read",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "月曜日",
+          "reading": "げつようび",
+          "explain": "Monday",
+          "wordId": "getsuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I read on Monday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c032",
+      "line": [
+        "ケン",
+        "は",
+        "火曜日",
+        "に",
+        "書きます",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "かようび",
+        "に",
+        "かきます",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "Tuesday",
+        "destination, time, or location marker",
+        "write",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "火曜日",
+          "reading": "かようび",
+          "explain": "Tuesday",
+          "wordId": "kayoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken writes on Tuesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c033",
+      "line": [
+        "ユキ",
+        "は",
+        "水曜日",
+        "に",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "すいようび",
+        "に",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "Wednesday",
+        "destination, time, or location marker",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "水曜日",
+          "reading": "すいようび",
+          "explain": "Wednesday",
+          "wordId": "suiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki studies on Wednesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c034",
+      "line": [
+        "田中",
+        "は",
+        "木曜日",
+        "に",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "もくようび",
+        "に",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "Thursday",
+        "destination, time, or location marker",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "木曜日",
+          "reading": "もくようび",
+          "explain": "Thursday",
+          "wordId": "mokuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka speaks on Thursday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c035",
+      "line": [
+        "先生",
+        "は",
+        "金曜日",
+        "に",
+        "買います",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "きんようび",
+        "に",
+        "かいます",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "Friday",
+        "destination, time, or location marker",
+        "buy",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "金曜日",
+          "reading": "きんようび",
+          "explain": "Friday",
+          "wordId": "kinyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "買います",
+          "reading": "かいます",
+          "explain": "buy",
+          "wordId": "kau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher buys on Friday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c036",
+      "line": [
+        "学生",
+        "は",
+        "土曜日",
+        "に",
+        "待ちます",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "どようび",
+        "に",
+        "まちます",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "Saturday",
+        "destination, time, or location marker",
+        "wait",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "土曜日",
+          "reading": "どようび",
+          "explain": "Saturday",
+          "wordId": "doyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "待ちます",
+          "reading": "まちます",
+          "explain": "wait",
+          "wordId": "matsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student waits on Saturday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c037",
+      "line": [
+        "友達",
+        "は",
+        "日曜日",
+        "に",
+        "食べます",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "にちようび",
+        "に",
+        "たべます",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "Sunday",
+        "destination, time, or location marker",
+        "eat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "日曜日",
+          "reading": "にちようび",
+          "explain": "Sunday",
+          "wordId": "nichiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend eats on Sunday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c038",
+      "line": [
+        "男の人",
+        "は",
+        "昼",
+        "に",
+        "飲みます",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "ひる",
+        "に",
+        "のみます",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "noon; daytime",
+        "destination, time, or location marker",
+        "drink",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "昼",
+          "reading": "ひる",
+          "explain": "noon; daytime",
+          "wordId": "hiru"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man drinks at noon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c039",
+      "line": [
+        "女の人",
+        "は",
+        "午後",
+        "に",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ごご",
+        "に",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "afternoon; p.m.",
+        "destination, time, or location marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午後",
+          "reading": "ごご",
+          "explain": "afternoon; p.m.",
+          "wordId": "gogo"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman goes in the afternoon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c040",
+      "line": [
+        "店員",
+        "は",
+        "午前",
+        "に",
+        "来ます",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "ごぜん",
+        "に",
+        "きます",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "morning; a.m.",
+        "destination, time, or location marker",
+        "come",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午前",
+          "reading": "ごぜん",
+          "explain": "morning; a.m.",
+          "wordId": "gozen"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk comes in the morning.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c041",
+      "line": [
+        "私",
+        "は",
+        "月曜日",
+        "に",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "げつようび",
+        "に",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "Monday",
+        "destination, time, or location marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "月曜日",
+          "reading": "げつようび",
+          "explain": "Monday",
+          "wordId": "getsuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I watch on Monday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c042",
+      "line": [
+        "ケン",
+        "は",
+        "火曜日",
+        "に",
+        "聞きます",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "かようび",
+        "に",
+        "ききます",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "Tuesday",
+        "destination, time, or location marker",
+        "listen",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "火曜日",
+          "reading": "かようび",
+          "explain": "Tuesday",
+          "wordId": "kayoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken listens on Tuesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c043",
+      "line": [
+        "ユキ",
+        "は",
+        "水曜日",
+        "に",
+        "読みます",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "すいようび",
+        "に",
+        "よみます",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "Wednesday",
+        "destination, time, or location marker",
+        "read",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "水曜日",
+          "reading": "すいようび",
+          "explain": "Wednesday",
+          "wordId": "suiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki reads on Wednesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c044",
+      "line": [
+        "田中",
+        "は",
+        "木曜日",
+        "に",
+        "書きます",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "もくようび",
+        "に",
+        "かきます",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "Thursday",
+        "destination, time, or location marker",
+        "write",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "木曜日",
+          "reading": "もくようび",
+          "explain": "Thursday",
+          "wordId": "mokuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka writes on Thursday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c045",
+      "line": [
+        "先生",
+        "は",
+        "金曜日",
+        "に",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "きんようび",
+        "に",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "Friday",
+        "destination, time, or location marker",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "金曜日",
+          "reading": "きんようび",
+          "explain": "Friday",
+          "wordId": "kinyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher studies on Friday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c046",
+      "line": [
+        "学生",
+        "は",
+        "土曜日",
+        "に",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "どようび",
+        "に",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "Saturday",
+        "destination, time, or location marker",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "土曜日",
+          "reading": "どようび",
+          "explain": "Saturday",
+          "wordId": "doyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student speaks on Saturday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c047",
+      "line": [
+        "友達",
+        "は",
+        "日曜日",
+        "に",
+        "買います",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "にちようび",
+        "に",
+        "かいます",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "Sunday",
+        "destination, time, or location marker",
+        "buy",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "日曜日",
+          "reading": "にちようび",
+          "explain": "Sunday",
+          "wordId": "nichiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "買います",
+          "reading": "かいます",
+          "explain": "buy",
+          "wordId": "kau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend buys on Sunday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c048",
+      "line": [
+        "男の人",
+        "は",
+        "昼",
+        "に",
+        "待ちます",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "ひる",
+        "に",
+        "まちます",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "noon; daytime",
+        "destination, time, or location marker",
+        "wait",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "昼",
+          "reading": "ひる",
+          "explain": "noon; daytime",
+          "wordId": "hiru"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "待ちます",
+          "reading": "まちます",
+          "explain": "wait",
+          "wordId": "matsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man waits at noon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c049",
+      "line": [
+        "女の人",
+        "は",
+        "午後",
+        "に",
+        "食べます",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ごご",
+        "に",
+        "たべます",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "afternoon; p.m.",
+        "destination, time, or location marker",
+        "eat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午後",
+          "reading": "ごご",
+          "explain": "afternoon; p.m.",
+          "wordId": "gogo"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman eats in the afternoon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c050",
+      "line": [
+        "店員",
+        "は",
+        "午前",
+        "に",
+        "飲みます",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "ごぜん",
+        "に",
+        "のみます",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "morning; a.m.",
+        "destination, time, or location marker",
+        "drink",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午前",
+          "reading": "ごぜん",
+          "explain": "morning; a.m.",
+          "wordId": "gozen"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk drinks in the morning.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c051",
+      "line": [
+        "私",
+        "は",
+        "月曜日",
+        "に",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "げつようび",
+        "に",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "Monday",
+        "destination, time, or location marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "月曜日",
+          "reading": "げつようび",
+          "explain": "Monday",
+          "wordId": "getsuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go on Monday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c052",
+      "line": [
+        "ケン",
+        "は",
+        "火曜日",
+        "に",
+        "来ます",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "かようび",
+        "に",
+        "きます",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "Tuesday",
+        "destination, time, or location marker",
+        "come",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "火曜日",
+          "reading": "かようび",
+          "explain": "Tuesday",
+          "wordId": "kayoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken comes on Tuesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c053",
+      "line": [
+        "ユキ",
+        "は",
+        "水曜日",
+        "に",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "すいようび",
+        "に",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "Wednesday",
+        "destination, time, or location marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "水曜日",
+          "reading": "すいようび",
+          "explain": "Wednesday",
+          "wordId": "suiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki watches on Wednesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c054",
+      "line": [
+        "田中",
+        "は",
+        "木曜日",
+        "に",
+        "聞きます",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "もくようび",
+        "に",
+        "ききます",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "Thursday",
+        "destination, time, or location marker",
+        "listen",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "木曜日",
+          "reading": "もくようび",
+          "explain": "Thursday",
+          "wordId": "mokuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka listens on Thursday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c055",
+      "line": [
+        "先生",
+        "は",
+        "金曜日",
+        "に",
+        "読みます",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "きんようび",
+        "に",
+        "よみます",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "Friday",
+        "destination, time, or location marker",
+        "read",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "金曜日",
+          "reading": "きんようび",
+          "explain": "Friday",
+          "wordId": "kinyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher reads on Friday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c056",
+      "line": [
+        "学生",
+        "は",
+        "土曜日",
+        "に",
+        "書きます",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "どようび",
+        "に",
+        "かきます",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "Saturday",
+        "destination, time, or location marker",
+        "write",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "土曜日",
+          "reading": "どようび",
+          "explain": "Saturday",
+          "wordId": "doyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student writes on Saturday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c057",
+      "line": [
+        "友達",
+        "は",
+        "日曜日",
+        "に",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "にちようび",
+        "に",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "Sunday",
+        "destination, time, or location marker",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "日曜日",
+          "reading": "にちようび",
+          "explain": "Sunday",
+          "wordId": "nichiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend studies on Sunday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c058",
+      "line": [
+        "男の人",
+        "は",
+        "昼",
+        "に",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "ひる",
+        "に",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "noon; daytime",
+        "destination, time, or location marker",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "昼",
+          "reading": "ひる",
+          "explain": "noon; daytime",
+          "wordId": "hiru"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man speaks at noon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c059",
+      "line": [
+        "女の人",
+        "は",
+        "午後",
+        "に",
+        "買います",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ごご",
+        "に",
+        "かいます",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "afternoon; p.m.",
+        "destination, time, or location marker",
+        "buy",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午後",
+          "reading": "ごご",
+          "explain": "afternoon; p.m.",
+          "wordId": "gogo"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "買います",
+          "reading": "かいます",
+          "explain": "buy",
+          "wordId": "kau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman buys in the afternoon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c060",
+      "line": [
+        "店員",
+        "は",
+        "午前",
+        "に",
+        "待ちます",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "ごぜん",
+        "に",
+        "まちます",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "morning; a.m.",
+        "destination, time, or location marker",
+        "wait",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午前",
+          "reading": "ごぜん",
+          "explain": "morning; a.m.",
+          "wordId": "gozen"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "待ちます",
+          "reading": "まちます",
+          "explain": "wait",
+          "wordId": "matsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk waits in the morning.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c061",
+      "line": [
+        "私",
+        "は",
+        "月曜日",
+        "に",
+        "食べます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "げつようび",
+        "に",
+        "たべます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "Monday",
+        "destination, time, or location marker",
+        "eat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "月曜日",
+          "reading": "げつようび",
+          "explain": "Monday",
+          "wordId": "getsuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I eat on Monday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c062",
+      "line": [
+        "ケン",
+        "は",
+        "火曜日",
+        "に",
+        "飲みます",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "かようび",
+        "に",
+        "のみます",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "Tuesday",
+        "destination, time, or location marker",
+        "drink",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "火曜日",
+          "reading": "かようび",
+          "explain": "Tuesday",
+          "wordId": "kayoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken drinks on Tuesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c063",
+      "line": [
+        "ユキ",
+        "は",
+        "水曜日",
+        "に",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "すいようび",
+        "に",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "Wednesday",
+        "destination, time, or location marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "水曜日",
+          "reading": "すいようび",
+          "explain": "Wednesday",
+          "wordId": "suiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki goes on Wednesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c064",
+      "line": [
+        "田中",
+        "は",
+        "木曜日",
+        "に",
+        "来ます",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "もくようび",
+        "に",
+        "きます",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "Thursday",
+        "destination, time, or location marker",
+        "come",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "木曜日",
+          "reading": "もくようび",
+          "explain": "Thursday",
+          "wordId": "mokuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka comes on Thursday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c065",
+      "line": [
+        "先生",
+        "は",
+        "金曜日",
+        "に",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "きんようび",
+        "に",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "Friday",
+        "destination, time, or location marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "金曜日",
+          "reading": "きんようび",
+          "explain": "Friday",
+          "wordId": "kinyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher watches on Friday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c066",
+      "line": [
+        "学生",
+        "は",
+        "土曜日",
+        "に",
+        "聞きます",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "どようび",
+        "に",
+        "ききます",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "Saturday",
+        "destination, time, or location marker",
+        "listen",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "土曜日",
+          "reading": "どようび",
+          "explain": "Saturday",
+          "wordId": "doyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student listens on Saturday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c067",
+      "line": [
+        "友達",
+        "は",
+        "日曜日",
+        "に",
+        "読みます",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "にちようび",
+        "に",
+        "よみます",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "Sunday",
+        "destination, time, or location marker",
+        "read",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "日曜日",
+          "reading": "にちようび",
+          "explain": "Sunday",
+          "wordId": "nichiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend reads on Sunday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c068",
+      "line": [
+        "男の人",
+        "は",
+        "昼",
+        "に",
+        "書きます",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "ひる",
+        "に",
+        "かきます",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "noon; daytime",
+        "destination, time, or location marker",
+        "write",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "昼",
+          "reading": "ひる",
+          "explain": "noon; daytime",
+          "wordId": "hiru"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man writes at noon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c069",
+      "line": [
+        "女の人",
+        "は",
+        "午後",
+        "に",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ごご",
+        "に",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "afternoon; p.m.",
+        "destination, time, or location marker",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午後",
+          "reading": "ごご",
+          "explain": "afternoon; p.m.",
+          "wordId": "gogo"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman studies in the afternoon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c070",
+      "line": [
+        "店員",
+        "は",
+        "午前",
+        "に",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "ごぜん",
+        "に",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "morning; a.m.",
+        "destination, time, or location marker",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午前",
+          "reading": "ごぜん",
+          "explain": "morning; a.m.",
+          "wordId": "gozen"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk speaks in the morning.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c071",
+      "line": [
+        "私",
+        "は",
+        "月曜日",
+        "に",
+        "買います",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "げつようび",
+        "に",
+        "かいます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "Monday",
+        "destination, time, or location marker",
+        "buy",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "月曜日",
+          "reading": "げつようび",
+          "explain": "Monday",
+          "wordId": "getsuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "買います",
+          "reading": "かいます",
+          "explain": "buy",
+          "wordId": "kau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I buy on Monday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c072",
+      "line": [
+        "ケン",
+        "は",
+        "火曜日",
+        "に",
+        "待ちます",
+        "。"
+      ],
+      "tts": [
+        "けん",
+        "わ",
+        "かようび",
+        "に",
+        "まちます",
+        "。"
+      ],
+      "explain": [
+        "Ken",
+        "topic marker",
+        "Tuesday",
+        "destination, time, or location marker",
+        "wait",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "火曜日",
+          "reading": "かようび",
+          "explain": "Tuesday",
+          "wordId": "kayoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "待ちます",
+          "reading": "まちます",
+          "explain": "wait",
+          "wordId": "matsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Ken waits on Tuesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c073",
+      "line": [
+        "ユキ",
+        "は",
+        "水曜日",
+        "に",
+        "食べます",
+        "。"
+      ],
+      "tts": [
+        "ゆき",
+        "わ",
+        "すいようび",
+        "に",
+        "たべます",
+        "。"
+      ],
+      "explain": [
+        "Yuki",
+        "topic marker",
+        "Wednesday",
+        "destination, time, or location marker",
+        "eat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "水曜日",
+          "reading": "すいようび",
+          "explain": "Wednesday",
+          "wordId": "suiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yuki eats on Wednesday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c074",
+      "line": [
+        "田中",
+        "は",
+        "木曜日",
+        "に",
+        "飲みます",
+        "。"
+      ],
+      "tts": [
+        "たなか",
+        "わ",
+        "もくようび",
+        "に",
+        "のみます",
+        "。"
+      ],
+      "explain": [
+        "Tanaka",
+        "topic marker",
+        "Thursday",
+        "destination, time, or location marker",
+        "drink",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "木曜日",
+          "reading": "もくようび",
+          "explain": "Thursday",
+          "wordId": "mokuyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Tanaka drinks on Thursday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c075",
+      "line": [
+        "先生",
+        "は",
+        "金曜日",
+        "に",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "きんようび",
+        "に",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "Friday",
+        "destination, time, or location marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "金曜日",
+          "reading": "きんようび",
+          "explain": "Friday",
+          "wordId": "kinyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The teacher goes on Friday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c076",
+      "line": [
+        "学生",
+        "は",
+        "土曜日",
+        "に",
+        "来ます",
+        "。"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "どようび",
+        "に",
+        "きます",
+        "。"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "Saturday",
+        "destination, time, or location marker",
+        "come",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "土曜日",
+          "reading": "どようび",
+          "explain": "Saturday",
+          "wordId": "doyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The student comes on Saturday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c077",
+      "line": [
+        "友達",
+        "は",
+        "日曜日",
+        "に",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "にちようび",
+        "に",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "Sunday",
+        "destination, time, or location marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "日曜日",
+          "reading": "にちようび",
+          "explain": "Sunday",
+          "wordId": "nichiyoubi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "My friend watches on Sunday.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c078",
+      "line": [
+        "男の人",
+        "は",
+        "昼",
+        "に",
+        "聞きます",
+        "。"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "ひる",
+        "に",
+        "ききます",
+        "。"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "noon; daytime",
+        "destination, time, or location marker",
+        "listen",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "昼",
+          "reading": "ひる",
+          "explain": "noon; daytime",
+          "wordId": "hiru"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The man listens at noon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c079",
+      "line": [
+        "女の人",
+        "は",
+        "午後",
+        "に",
+        "読みます",
+        "。"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "ごご",
+        "に",
+        "よみます",
+        "。"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "afternoon; p.m.",
+        "destination, time, or location marker",
+        "read",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午後",
+          "reading": "ごご",
+          "explain": "afternoon; p.m.",
+          "wordId": "gogo"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The woman reads in the afternoon.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c080",
+      "line": [
+        "店員",
+        "は",
+        "午前",
+        "に",
+        "書きます",
+        "。"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "ごぜん",
+        "に",
+        "かきます",
+        "。"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "morning; a.m.",
+        "destination, time, or location marker",
+        "write",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "午前",
+          "reading": "ごぜん",
+          "explain": "morning; a.m.",
+          "wordId": "gozen"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination, time, or location marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "The shop clerk writes in the morning.",
+      "imagePrompt": "A time point before a polite action.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c081",
+      "line": [
+        "自宅",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "じたく",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "home",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "自宅",
+          "reading": "じたく",
+          "explain": "home",
+          "wordId": "jitaku"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go home.",
+      "imagePrompt": "A focused review card for 自宅.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c082",
+      "line": [
+        "事務所",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "じむしょ",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "office",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "事務所",
+          "reading": "じむしょ",
+          "explain": "office",
+          "wordId": "jimusho"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the office.",
+      "imagePrompt": "A focused review card for 事務所.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c083",
+      "line": [
+        "大学",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "だいがく",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "university",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "大学",
+          "reading": "だいがく",
+          "explain": "university",
+          "wordId": "daigaku"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the university.",
+      "imagePrompt": "A focused review card for 大学.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c084",
+      "line": [
+        "博物館",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "はくぶつかん",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "museum",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "博物館",
+          "reading": "はくぶつかん",
+          "explain": "museum",
+          "wordId": "hakubutsukan"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the museum.",
+      "imagePrompt": "A focused review card for 博物館.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c085",
+      "line": [
+        "本屋",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "ほんや",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "bookstore",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本屋",
+          "reading": "ほんや",
+          "explain": "bookstore",
+          "wordId": "honya"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the bookstore.",
+      "imagePrompt": "A focused review card for 本屋.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c086",
+      "line": [
+        "コンビニ",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "こんびに",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "convenience store",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "コンビニ",
+          "reading": "こんびに",
+          "explain": "convenience store",
+          "wordId": "konbini"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the convenience store.",
+      "imagePrompt": "A focused review card for コンビニ.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c087",
+      "line": [
+        "神社",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "じんじゃ",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "shrine",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "神社",
+          "reading": "じんじゃ",
+          "explain": "shrine",
+          "wordId": "jinja"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the shrine.",
+      "imagePrompt": "A focused review card for 神社.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c088",
+      "line": [
+        "寺",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "てら",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "temple",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "寺",
+          "reading": "てら",
+          "explain": "temple",
+          "wordId": "tera"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the temple.",
+      "imagePrompt": "A focused review card for 寺.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c089",
+      "line": [
+        "工場",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "こうじょう",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "factory",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "工場",
+          "reading": "こうじょう",
+          "explain": "factory",
+          "wordId": "koujou"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the factory.",
+      "imagePrompt": "A focused review card for 工場.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c090",
+      "line": [
+        "大使館",
+        "へ",
+        "行きます",
+        "。"
+      ],
+      "tts": [
+        "たいしかん",
+        "え",
+        "いきます",
+        "。"
+      ],
+      "explain": [
+        "embassy",
+        "destination marker",
+        "go",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "大使館",
+          "reading": "たいしかん",
+          "explain": "embassy",
+          "wordId": "taishikan"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I go to the embassy.",
+      "imagePrompt": "A focused review card for 大使館.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c091",
+      "line": [
+        "私",
+        "は",
+        "歩きます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あるきます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "walk",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "歩きます",
+          "reading": "あるきます",
+          "explain": "walk",
+          "wordId": "aruku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I walk.",
+      "imagePrompt": "A focused review card for 歩く.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c092",
+      "line": [
+        "私",
+        "は",
+        "走ります",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "はしります",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "run",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "走ります",
+          "reading": "はしります",
+          "explain": "run",
+          "wordId": "hashiru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I run.",
+      "imagePrompt": "A focused review card for 走る.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c093",
+      "line": [
+        "私",
+        "は",
+        "泳ぎます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "およぎます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "swim",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "泳ぎます",
+          "reading": "およぎます",
+          "explain": "swim",
+          "wordId": "oyogu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I swim.",
+      "imagePrompt": "A focused review card for 泳ぐ.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c094",
+      "line": [
+        "私",
+        "は",
+        "遊びます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あそびます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "play",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "遊びます",
+          "reading": "あそびます",
+          "explain": "play",
+          "wordId": "asobu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I play.",
+      "imagePrompt": "A focused review card for 遊ぶ.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c095",
+      "line": [
+        "私",
+        "は",
+        "入ります",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "はいります",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "enter",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "入ります",
+          "reading": "はいります",
+          "explain": "enter",
+          "wordId": "hairu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I enter.",
+      "imagePrompt": "A focused review card for 入る.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c096",
+      "line": [
+        "私",
+        "は",
+        "出ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "でます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "leave",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "出ます",
+          "reading": "でます",
+          "explain": "leave",
+          "wordId": "deru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I leave.",
+      "imagePrompt": "A focused review card for 出る.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c097",
+      "line": [
+        "私",
+        "は",
+        "開けます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あけます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "open",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "開けます",
+          "reading": "あけます",
+          "explain": "open",
+          "wordId": "akeru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I open.",
+      "imagePrompt": "A focused review card for 開ける.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c098",
+      "line": [
+        "私",
+        "は",
+        "閉めます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "しめます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "close",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "閉めます",
+          "reading": "しめます",
+          "explain": "close",
+          "wordId": "shimeru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I close.",
+      "imagePrompt": "A focused review card for 閉める.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c099",
+      "line": [
+        "私",
+        "は",
+        "洗います",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あらいます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "wash",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "洗います",
+          "reading": "あらいます",
+          "explain": "wash",
+          "wordId": "arau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I wash.",
+      "imagePrompt": "A focused review card for 洗う.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c100",
+      "line": [
+        "私",
+        "は",
+        "立ちます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "たちます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "stand",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "立ちます",
+          "reading": "たちます",
+          "explain": "stand",
+          "wordId": "tatsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I stand.",
+      "imagePrompt": "A focused review card for 立つ.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c101",
+      "line": [
+        "本",
+        "が",
+        "一つ",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "ひとつ",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "one thing",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "一つ",
+          "reading": "ひとつ",
+          "explain": "one thing",
+          "wordId": "hitotsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There is one book.",
+      "imagePrompt": "A focused review card for 一つ.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c102",
+      "line": [
+        "本",
+        "が",
+        "二つ",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "ふたつ",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "two things",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "二つ",
+          "reading": "ふたつ",
+          "explain": "two things",
+          "wordId": "futatsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There are two books.",
+      "imagePrompt": "A focused review card for 二つ.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c103",
+      "line": [
+        "本",
+        "が",
+        "三つ",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "みっつ",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "three things",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "三つ",
+          "reading": "みっつ",
+          "explain": "three things",
+          "wordId": "mittsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There are three books.",
+      "imagePrompt": "A focused review card for 三つ.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c104",
+      "line": [
+        "本",
+        "が",
+        "四つ",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "よっつ",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "four things",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "四つ",
+          "reading": "よっつ",
+          "explain": "four things",
+          "wordId": "yottsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There are four books.",
+      "imagePrompt": "A focused review card for 四つ.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c105",
+      "line": [
+        "本",
+        "が",
+        "五つ",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "いつつ",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "five things",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "五つ",
+          "reading": "いつつ",
+          "explain": "five things",
+          "wordId": "itsutsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There are five books.",
+      "imagePrompt": "A focused review card for 五つ.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c106",
+      "line": [
+        "本",
+        "が",
+        "六つ",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "むっつ",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "six things",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "六つ",
+          "reading": "むっつ",
+          "explain": "six things",
+          "wordId": "muttsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There are six books.",
+      "imagePrompt": "A focused review card for 六つ.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c107",
+      "line": [
+        "本",
+        "が",
+        "七つ",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "ななつ",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "seven things",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "七つ",
+          "reading": "ななつ",
+          "explain": "seven things",
+          "wordId": "nanatsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There are seven books.",
+      "imagePrompt": "A focused review card for 七つ.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c108",
+      "line": [
+        "本",
+        "が",
+        "八つ",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "やっつ",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "eight things",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "八つ",
+          "reading": "やっつ",
+          "explain": "eight things",
+          "wordId": "yattsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There are eight books.",
+      "imagePrompt": "A focused review card for 八つ.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c109",
+      "line": [
+        "本",
+        "が",
+        "九つ",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "ここのつ",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "nine things",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "九つ",
+          "reading": "ここのつ",
+          "explain": "nine things",
+          "wordId": "kokonotsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There are nine books.",
+      "imagePrompt": "A focused review card for 九つ.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c110",
+      "line": [
+        "本",
+        "が",
+        "十",
+        "あります",
+        "。"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "とお",
+        "あります",
+        "。"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "ten things",
+        "exists; there is",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "十",
+          "reading": "とお",
+          "explain": "ten things",
+          "wordId": "too"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "There are ten books.",
+      "imagePrompt": "A focused review card for 十.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c111",
+      "line": [
+        "ここ",
+        "は",
+        "暑い",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "あつい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "hot",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "暑い",
+          "reading": "あつい",
+          "explain": "hot",
+          "wordId": "atsui"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is hot here.",
+      "imagePrompt": "A focused review card for 暑い.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c112",
+      "line": [
+        "ここ",
+        "は",
+        "寒い",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "さむい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "cold",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "寒い",
+          "reading": "さむい",
+          "explain": "cold",
+          "wordId": "samui"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is cold here.",
+      "imagePrompt": "A focused review card for 寒い.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c113",
+      "line": [
+        "ここ",
+        "は",
+        "忙しい",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "いそがしい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "busy",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "忙しい",
+          "reading": "いそがしい",
+          "explain": "busy",
+          "wordId": "isogashii"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is busy here.",
+      "imagePrompt": "A focused review card for 忙しい.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c114",
+      "line": [
+        "ここ",
+        "は",
+        "楽しい",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "たのしい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "fun",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "楽しい",
+          "reading": "たのしい",
+          "explain": "fun",
+          "wordId": "tanoshii"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is fun here.",
+      "imagePrompt": "A focused review card for 楽しい.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c115",
+      "line": [
+        "ここ",
+        "は",
+        "難しい",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "むずかしい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "difficult",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "難しい",
+          "reading": "むずかしい",
+          "explain": "difficult",
+          "wordId": "muzukashii"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is difficult here.",
+      "imagePrompt": "A focused review card for 難しい.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c116",
+      "line": [
+        "ここ",
+        "は",
+        "易しい",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "やさしい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "easy",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "易しい",
+          "reading": "やさしい",
+          "explain": "easy",
+          "wordId": "yasashii_easy"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is easy here.",
+      "imagePrompt": "A focused review card for 易しい.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-01.svg",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c117",
+      "line": [
+        "ここ",
+        "は",
+        "美味しい",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "おいしい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "delicious",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "美味しい",
+          "reading": "おいしい",
+          "explain": "delicious",
+          "wordId": "oishii"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is delicious here.",
+      "imagePrompt": "A focused review card for 美味しい.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-02.svg",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c118",
+      "line": [
+        "ここ",
+        "は",
+        "早い",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "はやい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "early; fast",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "早い",
+          "reading": "はやい",
+          "explain": "early; fast",
+          "wordId": "hayai"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is early here.",
+      "imagePrompt": "A focused review card for 早い.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-03.svg",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c119",
+      "line": [
+        "ここ",
+        "は",
+        "遅い",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "おそい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "late; slow",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "遅い",
+          "reading": "おそい",
+          "explain": "late; slow",
+          "wordId": "osoi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is late here.",
+      "imagePrompt": "A focused review card for 遅い.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-04.svg",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c120",
+      "line": [
+        "ここ",
+        "は",
+        "明るい",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "あかるい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "bright",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "明るい",
+          "reading": "あかるい",
+          "explain": "bright",
+          "wordId": "akarui"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is bright here.",
+      "imagePrompt": "A focused review card for 明るい.",
+      "imageRef": "/media/jp/images/unit_027/scenes/scene-05.svg",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    }
+  ]
+}

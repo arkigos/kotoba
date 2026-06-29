@@ -1,0 +1,7281 @@
+{
+  "id": 9,
+  "slug": "sentence-endings",
+  "title": "Unit 9: Sentence Endings",
+  "grammarFocus": "ね / よ",
+  "newWords": [
+    {
+      "id": "tenki",
+      "surface": "天気",
+      "reading": "てんき",
+      "meaning": "weather",
+      "function": "noun"
+    },
+    {
+      "id": "ame",
+      "surface": "雨",
+      "reading": "あめ",
+      "meaning": "rain",
+      "function": "noun"
+    },
+    {
+      "id": "yuki_snow",
+      "surface": "雪",
+      "reading": "ゆき",
+      "meaning": "snow",
+      "function": "noun"
+    },
+    {
+      "id": "kaze",
+      "surface": "風",
+      "reading": "かぜ",
+      "meaning": "wind",
+      "function": "noun"
+    },
+    {
+      "id": "sora",
+      "surface": "空",
+      "reading": "そら",
+      "meaning": "sky",
+      "function": "noun"
+    },
+    {
+      "id": "umi",
+      "surface": "海",
+      "reading": "うみ",
+      "meaning": "sea",
+      "function": "place"
+    },
+    {
+      "id": "yama",
+      "surface": "山",
+      "reading": "やま",
+      "meaning": "mountain",
+      "function": "place"
+    },
+    {
+      "id": "machi",
+      "surface": "町",
+      "reading": "まち",
+      "meaning": "town",
+      "function": "place"
+    },
+    {
+      "id": "shima",
+      "surface": "島",
+      "reading": "しま",
+      "meaning": "island",
+      "function": "place"
+    },
+    {
+      "id": "kuni",
+      "surface": "国",
+      "reading": "くに",
+      "meaning": "country",
+      "function": "place"
+    }
+  ],
+  "cards": [
+    {
+      "id": "u009-c001",
+      "line": [
+        "これ",
+        "は",
+        "天気",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "てんき",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "weather",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "天気",
+          "reading": "てんき",
+          "explain": "weather",
+          "wordId": "tenki"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the weather, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c002",
+      "line": [
+        "これ",
+        "は",
+        "雨",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "あめ",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "rain",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "雨",
+          "reading": "あめ",
+          "explain": "rain",
+          "wordId": "ame"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the rain, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c003",
+      "line": [
+        "これ",
+        "は",
+        "雪",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ゆき",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "snow",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "雪",
+          "reading": "ゆき",
+          "explain": "snow",
+          "wordId": "yuki_snow"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the snow, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c004",
+      "line": [
+        "これ",
+        "は",
+        "風",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "かぜ",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "wind",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "風",
+          "reading": "かぜ",
+          "explain": "wind",
+          "wordId": "kaze"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the wind, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c005",
+      "line": [
+        "これ",
+        "は",
+        "空",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "そら",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "sky",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "空",
+          "reading": "そら",
+          "explain": "sky",
+          "wordId": "sora"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the sky, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c006",
+      "line": [
+        "これ",
+        "は",
+        "海",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "うみ",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "sea",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "海",
+          "reading": "うみ",
+          "explain": "sea",
+          "wordId": "umi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the sea, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c007",
+      "line": [
+        "これ",
+        "は",
+        "山",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "やま",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "mountain",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "山",
+          "reading": "やま",
+          "explain": "mountain",
+          "wordId": "yama"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the mountain, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c008",
+      "line": [
+        "これ",
+        "は",
+        "町",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "まち",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "town",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "町",
+          "reading": "まち",
+          "explain": "town",
+          "wordId": "machi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the town, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c009",
+      "line": [
+        "これ",
+        "は",
+        "島",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "しま",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "island",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "島",
+          "reading": "しま",
+          "explain": "island",
+          "wordId": "shima"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the island, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c010",
+      "line": [
+        "これ",
+        "は",
+        "国",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "くに",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "country",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the country, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c011",
+      "line": [
+        "これ",
+        "は",
+        "天気",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "てんき",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "weather",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "天気",
+          "reading": "てんき",
+          "explain": "weather",
+          "wordId": "tenki"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the weather, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c012",
+      "line": [
+        "これ",
+        "は",
+        "雨",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "あめ",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "rain",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "雨",
+          "reading": "あめ",
+          "explain": "rain",
+          "wordId": "ame"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the rain, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c013",
+      "line": [
+        "これ",
+        "は",
+        "雪",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ゆき",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "snow",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "雪",
+          "reading": "ゆき",
+          "explain": "snow",
+          "wordId": "yuki_snow"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the snow, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c014",
+      "line": [
+        "これ",
+        "は",
+        "風",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "かぜ",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "wind",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "風",
+          "reading": "かぜ",
+          "explain": "wind",
+          "wordId": "kaze"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the wind, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c015",
+      "line": [
+        "これ",
+        "は",
+        "空",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "そら",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "sky",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "空",
+          "reading": "そら",
+          "explain": "sky",
+          "wordId": "sora"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the sky, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c016",
+      "line": [
+        "これ",
+        "は",
+        "海",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "うみ",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "sea",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "海",
+          "reading": "うみ",
+          "explain": "sea",
+          "wordId": "umi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the sea, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c017",
+      "line": [
+        "これ",
+        "は",
+        "山",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "やま",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "mountain",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "山",
+          "reading": "やま",
+          "explain": "mountain",
+          "wordId": "yama"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the mountain, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c018",
+      "line": [
+        "これ",
+        "は",
+        "町",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "まち",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "town",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "町",
+          "reading": "まち",
+          "explain": "town",
+          "wordId": "machi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the town, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c019",
+      "line": [
+        "これ",
+        "は",
+        "島",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "しま",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "island",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "島",
+          "reading": "しま",
+          "explain": "island",
+          "wordId": "shima"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the island, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c020",
+      "line": [
+        "これ",
+        "は",
+        "国",
+        "です",
+        "ね",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "くに",
+        "です",
+        "ね",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "country",
+        "polite sentence ending",
+        "sentence ending seeking agreement",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the country, isn't it?",
+      "imagePrompt": "A shared-observation sentence.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c021",
+      "line": [
+        "それ",
+        "は",
+        "天気",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "てんき",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "weather",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "天気",
+          "reading": "てんき",
+          "explain": "weather",
+          "wordId": "tenki"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the weather, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c022",
+      "line": [
+        "それ",
+        "は",
+        "雨",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "あめ",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "rain",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "雨",
+          "reading": "あめ",
+          "explain": "rain",
+          "wordId": "ame"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the rain, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c023",
+      "line": [
+        "それ",
+        "は",
+        "雪",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "ゆき",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "snow",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "雪",
+          "reading": "ゆき",
+          "explain": "snow",
+          "wordId": "yuki_snow"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the snow, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c024",
+      "line": [
+        "それ",
+        "は",
+        "風",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "かぜ",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "wind",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "風",
+          "reading": "かぜ",
+          "explain": "wind",
+          "wordId": "kaze"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the wind, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c025",
+      "line": [
+        "それ",
+        "は",
+        "空",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "そら",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "sky",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "空",
+          "reading": "そら",
+          "explain": "sky",
+          "wordId": "sora"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the sky, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c026",
+      "line": [
+        "それ",
+        "は",
+        "海",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "うみ",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "sea",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "海",
+          "reading": "うみ",
+          "explain": "sea",
+          "wordId": "umi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the sea, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c027",
+      "line": [
+        "それ",
+        "は",
+        "山",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "やま",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "mountain",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "山",
+          "reading": "やま",
+          "explain": "mountain",
+          "wordId": "yama"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the mountain, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c028",
+      "line": [
+        "それ",
+        "は",
+        "町",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "まち",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "town",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "町",
+          "reading": "まち",
+          "explain": "town",
+          "wordId": "machi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the town, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c029",
+      "line": [
+        "それ",
+        "は",
+        "島",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "しま",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "island",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "島",
+          "reading": "しま",
+          "explain": "island",
+          "wordId": "shima"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the island, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c030",
+      "line": [
+        "それ",
+        "は",
+        "国",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "くに",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "country",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the country, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c031",
+      "line": [
+        "それ",
+        "は",
+        "天気",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "てんき",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "weather",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "天気",
+          "reading": "てんき",
+          "explain": "weather",
+          "wordId": "tenki"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the weather, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c032",
+      "line": [
+        "それ",
+        "は",
+        "雨",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "あめ",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "rain",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "雨",
+          "reading": "あめ",
+          "explain": "rain",
+          "wordId": "ame"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the rain, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c033",
+      "line": [
+        "それ",
+        "は",
+        "雪",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "ゆき",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "snow",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "雪",
+          "reading": "ゆき",
+          "explain": "snow",
+          "wordId": "yuki_snow"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the snow, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c034",
+      "line": [
+        "それ",
+        "は",
+        "風",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "かぜ",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "wind",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "風",
+          "reading": "かぜ",
+          "explain": "wind",
+          "wordId": "kaze"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the wind, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c035",
+      "line": [
+        "それ",
+        "は",
+        "空",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "そら",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "sky",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "空",
+          "reading": "そら",
+          "explain": "sky",
+          "wordId": "sora"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the sky, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c036",
+      "line": [
+        "それ",
+        "は",
+        "海",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "うみ",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "sea",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "海",
+          "reading": "うみ",
+          "explain": "sea",
+          "wordId": "umi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the sea, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c037",
+      "line": [
+        "それ",
+        "は",
+        "山",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "やま",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "mountain",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "山",
+          "reading": "やま",
+          "explain": "mountain",
+          "wordId": "yama"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the mountain, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c038",
+      "line": [
+        "それ",
+        "は",
+        "町",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "まち",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "town",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "町",
+          "reading": "まち",
+          "explain": "town",
+          "wordId": "machi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the town, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c039",
+      "line": [
+        "それ",
+        "は",
+        "島",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "しま",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "island",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "島",
+          "reading": "しま",
+          "explain": "island",
+          "wordId": "shima"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the island, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c040",
+      "line": [
+        "それ",
+        "は",
+        "国",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "くに",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "country",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That near you is the country, you know.",
+      "imagePrompt": "A sentence giving a small piece of information.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c041",
+      "line": [
+        "あれ",
+        "は",
+        "空",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "そら",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "sky",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "空",
+          "reading": "そら",
+          "explain": "sky",
+          "wordId": "sora"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the sky, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c042",
+      "line": [
+        "あれ",
+        "は",
+        "海",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "うみ",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "sea",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "海",
+          "reading": "うみ",
+          "explain": "sea",
+          "wordId": "umi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the sea, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c043",
+      "line": [
+        "あれ",
+        "は",
+        "山",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "やま",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "mountain",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "山",
+          "reading": "やま",
+          "explain": "mountain",
+          "wordId": "yama"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the mountain, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c044",
+      "line": [
+        "あれ",
+        "は",
+        "町",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "まち",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "town",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "町",
+          "reading": "まち",
+          "explain": "town",
+          "wordId": "machi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the town, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c045",
+      "line": [
+        "あれ",
+        "は",
+        "島",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "しま",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "island",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "島",
+          "reading": "しま",
+          "explain": "island",
+          "wordId": "shima"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the island, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c046",
+      "line": [
+        "あれ",
+        "は",
+        "国",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "くに",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "country",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the country, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c047",
+      "line": [
+        "あれ",
+        "は",
+        "公園",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "こうえん",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "park",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "公園",
+          "reading": "こうえん",
+          "explain": "park",
+          "wordId": "kouen"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the park, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c048",
+      "line": [
+        "あれ",
+        "は",
+        "図書館",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "としょかん",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "library",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "図書館",
+          "reading": "としょかん",
+          "explain": "library",
+          "wordId": "toshokan"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the library, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c049",
+      "line": [
+        "あれ",
+        "は",
+        "学校",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "がっこう",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "school",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the school, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c050",
+      "line": [
+        "あれ",
+        "は",
+        "店",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "みせ",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "shop",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the shop, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c051",
+      "line": [
+        "あれ",
+        "は",
+        "空",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "そら",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "sky",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "空",
+          "reading": "そら",
+          "explain": "sky",
+          "wordId": "sora"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the sky, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c052",
+      "line": [
+        "あれ",
+        "は",
+        "海",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "うみ",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "sea",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "海",
+          "reading": "うみ",
+          "explain": "sea",
+          "wordId": "umi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the sea, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c053",
+      "line": [
+        "あれ",
+        "は",
+        "山",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "やま",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "mountain",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "山",
+          "reading": "やま",
+          "explain": "mountain",
+          "wordId": "yama"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the mountain, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c054",
+      "line": [
+        "あれ",
+        "は",
+        "町",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "まち",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "town",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "町",
+          "reading": "まち",
+          "explain": "town",
+          "wordId": "machi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the town, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c055",
+      "line": [
+        "あれ",
+        "は",
+        "島",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "しま",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "island",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "島",
+          "reading": "しま",
+          "explain": "island",
+          "wordId": "shima"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the island, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c056",
+      "line": [
+        "あれ",
+        "は",
+        "国",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "くに",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "country",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the country, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c057",
+      "line": [
+        "あれ",
+        "は",
+        "公園",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "こうえん",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "park",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "公園",
+          "reading": "こうえん",
+          "explain": "park",
+          "wordId": "kouen"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the park, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c058",
+      "line": [
+        "あれ",
+        "は",
+        "図書館",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "としょかん",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "library",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "図書館",
+          "reading": "としょかん",
+          "explain": "library",
+          "wordId": "toshokan"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the library, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c059",
+      "line": [
+        "あれ",
+        "は",
+        "学校",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "がっこう",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "school",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the school, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c060",
+      "line": [
+        "あれ",
+        "は",
+        "店",
+        "です",
+        "よ",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "みせ",
+        "です",
+        "よ",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "shop",
+        "polite sentence ending",
+        "sentence ending giving emphasis or new information",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "よ",
+          "reading": "よ",
+          "explain": "sentence ending giving emphasis or new information"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "That over there is the shop, you know.",
+      "imagePrompt": "A demonstrative sentence with emphasis.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "よ"
+      ]
+    },
+    {
+      "id": "u009-c061",
+      "line": [
+        "空",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "そら",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "sky",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "空",
+          "reading": "そら",
+          "explain": "sky",
+          "wordId": "sora"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the sky, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c062",
+      "line": [
+        "海",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "うみ",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "sea",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "海",
+          "reading": "うみ",
+          "explain": "sea",
+          "wordId": "umi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the sea, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c063",
+      "line": [
+        "山",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "やま",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "mountain",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "山",
+          "reading": "やま",
+          "explain": "mountain",
+          "wordId": "yama"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the mountain, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c064",
+      "line": [
+        "町",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "まち",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "town",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "町",
+          "reading": "まち",
+          "explain": "town",
+          "wordId": "machi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the town, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c065",
+      "line": [
+        "島",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "しま",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "island",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "島",
+          "reading": "しま",
+          "explain": "island",
+          "wordId": "shima"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the island, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c066",
+      "line": [
+        "国",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "くに",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "country",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the country, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c067",
+      "line": [
+        "公園",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "こうえん",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "park",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "公園",
+          "reading": "こうえん",
+          "explain": "park",
+          "wordId": "kouen"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the park, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c068",
+      "line": [
+        "図書館",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "としょかん",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "library",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "図書館",
+          "reading": "としょかん",
+          "explain": "library",
+          "wordId": "toshokan"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the library, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c069",
+      "line": [
+        "学校",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "がっこう",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "school",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the school, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c070",
+      "line": [
+        "店",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "みせ",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "shop",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the shop, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c071",
+      "line": [
+        "空",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "そら",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "sky",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "空",
+          "reading": "そら",
+          "explain": "sky",
+          "wordId": "sora"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the sky, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c072",
+      "line": [
+        "海",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "うみ",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "sea",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "海",
+          "reading": "うみ",
+          "explain": "sea",
+          "wordId": "umi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the sea, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c073",
+      "line": [
+        "山",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "やま",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "mountain",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "山",
+          "reading": "やま",
+          "explain": "mountain",
+          "wordId": "yama"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the mountain, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c074",
+      "line": [
+        "町",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "まち",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "town",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "町",
+          "reading": "まち",
+          "explain": "town",
+          "wordId": "machi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the town, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c075",
+      "line": [
+        "島",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "しま",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "island",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "島",
+          "reading": "しま",
+          "explain": "island",
+          "wordId": "shima"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the island, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c076",
+      "line": [
+        "国",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "くに",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "country",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the country, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c077",
+      "line": [
+        "公園",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "こうえん",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "park",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "公園",
+          "reading": "こうえん",
+          "explain": "park",
+          "wordId": "kouen"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the park, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c078",
+      "line": [
+        "図書館",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "としょかん",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "library",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "図書館",
+          "reading": "としょかん",
+          "explain": "library",
+          "wordId": "toshokan"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the library, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c079",
+      "line": [
+        "学校",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "がっこう",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "school",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the school, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c080",
+      "line": [
+        "店",
+        "は",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "tts": [
+        "みせ",
+        "わ",
+        "どこ",
+        "ですか",
+        "ね",
+        "？"
+      ],
+      "explain": [
+        "shop",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "sentence ending seeking agreement",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "ね",
+          "reading": "ね",
+          "explain": "sentence ending seeking agreement"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is the shop, I wonder?",
+      "imagePrompt": "A question softened by `ね`.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "`ね` checks shared feeling or agreement; `よ` presents information with a little emphasis.",
+      "grammarTags": [
+        "どこ",
+        "ね"
+      ]
+    },
+    {
+      "id": "u009-c081",
+      "line": [
+        "何",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "なん",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "what",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "何",
+          "reading": "なん",
+          "explain": "what",
+          "wordId": "nan"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "What is it?",
+      "imagePrompt": "A focused review card for 何.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c082",
+      "line": [
+        "誰",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "だれ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "who",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "誰",
+          "reading": "だれ",
+          "explain": "who",
+          "wordId": "dare"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Who is it?",
+      "imagePrompt": "A focused review card for 誰.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c083",
+      "line": [
+        "どれ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "どれ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "which one",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "どれ",
+          "reading": "どれ",
+          "explain": "which one",
+          "wordId": "dore"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Which one is it?",
+      "imagePrompt": "A focused review card for どれ.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c084",
+      "line": [
+        "どの",
+        "本",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "どの",
+        "ほん",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "which",
+        "book",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "どの",
+          "reading": "どの",
+          "explain": "which",
+          "wordId": "dono"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Which book is it?",
+      "imagePrompt": "A focused review card for どの.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c085",
+      "line": [
+        "これ",
+        "は",
+        "男の人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "おとこのひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "man",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a man.",
+      "imagePrompt": "A focused review card for 男の人.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c086",
+      "line": [
+        "これ",
+        "は",
+        "女の人",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "おんなのひと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "woman",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a woman.",
+      "imagePrompt": "A focused review card for 女の人.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c087",
+      "line": [
+        "これ",
+        "は",
+        "店員",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "てんいん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "shop clerk",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a shop clerk.",
+      "imagePrompt": "A focused review card for 店員.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c088",
+      "line": [
+        "これ",
+        "は",
+        "駅員",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "えきいん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "station attendant",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "駅員",
+          "reading": "えきいん",
+          "explain": "station attendant",
+          "wordId": "ekiin"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a station attendant.",
+      "imagePrompt": "A focused review card for 駅員.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c089",
+      "line": [
+        "これ",
+        "は",
+        "食べ物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "たべもの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "food",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "食べ物",
+          "reading": "たべもの",
+          "explain": "food",
+          "wordId": "tabemono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is food.",
+      "imagePrompt": "A focused review card for 食べ物.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c090",
+      "line": [
+        "これ",
+        "は",
+        "飲み物",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "のみもの",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "drink",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "飲み物",
+          "reading": "のみもの",
+          "explain": "drink",
+          "wordId": "nomimono"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a drink.",
+      "imagePrompt": "A focused review card for 飲み物.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c091",
+      "line": [
+        "昨日",
+        "は",
+        "休み",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "きのう",
+        "わ",
+        "やすみ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "yesterday",
+        "topic marker",
+        "day off; break",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "昨日",
+          "reading": "きのう",
+          "explain": "yesterday",
+          "wordId": "kinou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "休み",
+          "reading": "やすみ",
+          "explain": "day off; break",
+          "wordId": "yasumi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Yesterday is a day off.",
+      "imagePrompt": "A focused review card for 昨日.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c092",
+      "line": [
+        "先月",
+        "は",
+        "休み",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "せんげつ",
+        "わ",
+        "やすみ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "last month",
+        "topic marker",
+        "day off; break",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "先月",
+          "reading": "せんげつ",
+          "explain": "last month",
+          "wordId": "sengetsu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "休み",
+          "reading": "やすみ",
+          "explain": "day off; break",
+          "wordId": "yasumi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Last month is a day off.",
+      "imagePrompt": "A focused review card for 先月.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c093",
+      "line": [
+        "去年",
+        "は",
+        "休み",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "きょねん",
+        "わ",
+        "やすみ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "last year",
+        "topic marker",
+        "day off; break",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "去年",
+          "reading": "きょねん",
+          "explain": "last year",
+          "wordId": "kyonen"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "休み",
+          "reading": "やすみ",
+          "explain": "day off; break",
+          "wordId": "yasumi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Last year is a day off.",
+      "imagePrompt": "A focused review card for 去年.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c094",
+      "line": [
+        "朝",
+        "は",
+        "休み",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あさ",
+        "わ",
+        "やすみ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "morning",
+        "topic marker",
+        "day off; break",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "休み",
+          "reading": "やすみ",
+          "explain": "day off; break",
+          "wordId": "yasumi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Morning is a day off.",
+      "imagePrompt": "A focused review card for 朝.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c095",
+      "line": [
+        "夜",
+        "は",
+        "休み",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "よる",
+        "わ",
+        "やすみ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "night",
+        "topic marker",
+        "day off; break",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "explain": "night",
+          "wordId": "yoru"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "休み",
+          "reading": "やすみ",
+          "explain": "day off; break",
+          "wordId": "yasumi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Night is a day off.",
+      "imagePrompt": "A focused review card for 夜.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c096",
+      "line": [
+        "これ",
+        "は",
+        "誕生日",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "たんじょうび",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "birthday",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "誕生日",
+          "reading": "たんじょうび",
+          "explain": "birthday",
+          "wordId": "tanjoubi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a birthday.",
+      "imagePrompt": "A focused review card for 誕生日.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c097",
+      "line": [
+        "今日",
+        "は",
+        "休み",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "わ",
+        "やすみ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "topic marker",
+        "day off; break",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "休み",
+          "reading": "やすみ",
+          "explain": "day off; break",
+          "wordId": "yasumi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "Today is a day off.",
+      "imagePrompt": "A focused review card for 休み.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c098",
+      "line": [
+        "これ",
+        "は",
+        "旅行",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "りょこう",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "trip",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "旅行",
+          "reading": "りょこう",
+          "explain": "trip",
+          "wordId": "ryokou"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a trip.",
+      "imagePrompt": "A focused review card for 旅行.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c099",
+      "line": [
+        "これ",
+        "は",
+        "仕事",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "しごと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "work; job",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "仕事",
+          "reading": "しごと",
+          "explain": "work; job",
+          "wordId": "shigoto"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is work.",
+      "imagePrompt": "A focused review card for 仕事.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c100",
+      "line": [
+        "これ",
+        "は",
+        "テスト",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "てすと",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "test",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "テスト",
+          "reading": "てすと",
+          "explain": "test",
+          "wordId": "tesuto"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a test.",
+      "imagePrompt": "A focused review card for テスト.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c101",
+      "line": [
+        "これ",
+        "は",
+        "私",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "わたし",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "I; me",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It's me.",
+      "imagePrompt": "A focused review card for 私.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c102",
+      "line": [
+        "これ",
+        "は",
+        "学生",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "がくせい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "student",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a student.",
+      "imagePrompt": "A focused review card for 学生.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c103",
+      "line": [
+        "これ",
+        "は",
+        "先生",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "せんせい",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "teacher",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a teacher.",
+      "imagePrompt": "A focused review card for 先生.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c104",
+      "line": [
+        "日本",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "にほん",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "Japan",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is Japan?",
+      "imagePrompt": "A focused review card for 日本.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c105",
+      "line": [
+        "アメリカ",
+        "は",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "tts": [
+        "あめりか",
+        "わ",
+        "どこ",
+        "ですか",
+        "？"
+      ],
+      "explain": [
+        "America",
+        "topic marker",
+        "where",
+        "polite question ending",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "アメリカ",
+          "reading": "あめりか",
+          "explain": "America",
+          "wordId": "amerika"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "どこ",
+          "reading": "どこ",
+          "explain": "where",
+          "wordId": "doko"
+        },
+        {
+          "surface": "ですか",
+          "reading": "ですか",
+          "explain": "polite question ending"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Where is America?",
+      "imagePrompt": "A focused review card for アメリカ.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c106",
+      "line": [
+        "これ",
+        "は",
+        "名前",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "なまえ",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "name",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "名前",
+          "reading": "なまえ",
+          "explain": "name",
+          "wordId": "namae"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a name.",
+      "imagePrompt": "A focused review card for 名前.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-01.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c107",
+      "line": [
+        "これ",
+        "は",
+        "ケン",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "けん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "Ken",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ケン",
+          "reading": "けん",
+          "explain": "Ken",
+          "wordId": "ken"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is Ken.",
+      "imagePrompt": "A focused review card for ケン.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-02.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c108",
+      "line": [
+        "これ",
+        "は",
+        "ユキ",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ゆき",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "Yuki",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "explain": "Yuki",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is Yuki.",
+      "imagePrompt": "A focused review card for ユキ.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-03.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c109",
+      "line": [
+        "これ",
+        "は",
+        "田中",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "たなか",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "Tanaka",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "田中",
+          "reading": "たなか",
+          "explain": "Tanaka",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is Tanaka.",
+      "imagePrompt": "A focused review card for 田中.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-04.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u009-c110",
+      "line": [
+        "これ",
+        "は",
+        "友達",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ともだち",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "friend",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a friend.",
+      "imagePrompt": "A focused review card for 友達.",
+      "imageRef": "/media/jp/images/unit_009/scenes/scene-05.svg",
+      "fact": "A1 review cards recombine familiar grammar so sentences feel reusable, not isolated.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    }
+  ]
+}

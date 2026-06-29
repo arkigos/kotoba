@@ -1,0 +1,8462 @@
+{
+  "id": 38,
+  "slug": "permission",
+  "title": "Unit 38: Permission",
+  "grammarFocus": "Vてもいいですか / Vてもいいです",
+  "newWords": [
+    {
+      "id": "kariru",
+      "surface": "借りる",
+      "reading": "かりる",
+      "meaning": "borrow",
+      "function": "verb"
+    },
+    {
+      "id": "kaburu",
+      "surface": "かぶる",
+      "reading": "かぶる",
+      "meaning": "wear on the head",
+      "function": "verb"
+    },
+    {
+      "id": "haku",
+      "surface": "履く",
+      "reading": "はく",
+      "meaning": "wear on the feet",
+      "function": "verb"
+    },
+    {
+      "id": "kiru_wear",
+      "surface": "着る",
+      "reading": "きる",
+      "meaning": "wear clothes",
+      "function": "verb"
+    },
+    {
+      "id": "nugu",
+      "surface": "脱ぐ",
+      "reading": "ぬぐ",
+      "meaning": "take off clothes",
+      "function": "verb"
+    },
+    {
+      "id": "ireru_perm",
+      "surface": "入れる",
+      "reading": "いれる",
+      "meaning": "put in; let in",
+      "function": "verb"
+    },
+    {
+      "id": "tsukeru",
+      "surface": "つける",
+      "reading": "つける",
+      "meaning": "turn on; attach",
+      "function": "verb"
+    },
+    {
+      "id": "kesu",
+      "surface": "消す",
+      "reading": "けす",
+      "meaning": "turn off; erase",
+      "function": "verb"
+    },
+    {
+      "id": "shitsumon_suru",
+      "surface": "質問する",
+      "reading": "しつもんする",
+      "meaning": "ask a question",
+      "function": "verb"
+    },
+    {
+      "id": "ryokou_suru",
+      "surface": "旅行する",
+      "reading": "りょこうする",
+      "meaning": "travel",
+      "function": "verb"
+    }
+  ],
+  "cards": [
+    {
+      "id": "u038-c001",
+      "line": [
+        "今日",
+        "学校",
+        "で",
+        "借りて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "きょう",
+        "がっこう",
+        "で",
+        "かりて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "today",
+        "school",
+        "action location marker",
+        "borrow and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "借りて",
+          "reading": "かりて",
+          "explain": "borrow and",
+          "wordId": "kariru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I borrow today at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c002",
+      "line": [
+        "今日",
+        "学校",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "がっこう",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "かぶって",
+          "reading": "かぶって",
+          "explain": "wear and",
+          "wordId": "kaburu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear today at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c003",
+      "line": [
+        "今日",
+        "学校",
+        "で",
+        "履いて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "きょう",
+        "がっこう",
+        "で",
+        "はいて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "today",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "履いて",
+          "reading": "はいて",
+          "explain": "wear and",
+          "wordId": "haku"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I wear today at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c004",
+      "line": [
+        "今日",
+        "学校",
+        "で",
+        "着て",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "がっこう",
+        "で",
+        "きて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "着て",
+          "reading": "きて",
+          "explain": "wear and",
+          "wordId": "kiru_wear"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear today at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c005",
+      "line": [
+        "今日",
+        "学校",
+        "で",
+        "脱いで",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "きょう",
+        "がっこう",
+        "で",
+        "ぬいで",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "today",
+        "school",
+        "action location marker",
+        "take off and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "脱いで",
+          "reading": "ぬいで",
+          "explain": "take off and",
+          "wordId": "nugu"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I take off today at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c006",
+      "line": [
+        "今日",
+        "学校",
+        "で",
+        "入れて",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "がっこう",
+        "で",
+        "いれて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "school",
+        "action location marker",
+        "put in and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "入れて",
+          "reading": "いれて",
+          "explain": "put in and",
+          "wordId": "ireru_perm"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may put in today at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c007",
+      "line": [
+        "今日",
+        "学校",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "きょう",
+        "がっこう",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "today",
+        "school",
+        "action location marker",
+        "turn on and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "つけて",
+          "reading": "つけて",
+          "explain": "turn on and",
+          "wordId": "tsukeru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I turn on today at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c008",
+      "line": [
+        "今日",
+        "学校",
+        "で",
+        "消して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "がっこう",
+        "で",
+        "けして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "school",
+        "action location marker",
+        "turn off and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "消して",
+          "reading": "けして",
+          "explain": "turn off and",
+          "wordId": "kesu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may turn off today at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c009",
+      "line": [
+        "今日",
+        "学校",
+        "で",
+        "質問して",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "きょう",
+        "がっこう",
+        "で",
+        "しつもんして",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "today",
+        "school",
+        "action location marker",
+        "ask a question and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "質問して",
+          "reading": "しつもんして",
+          "explain": "ask a question and",
+          "wordId": "shitsumon_suru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I ask a question today at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c010",
+      "line": [
+        "今日",
+        "学校",
+        "で",
+        "旅行して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "がっこう",
+        "で",
+        "りょこうして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "school",
+        "action location marker",
+        "travel and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "旅行して",
+          "reading": "りょこうして",
+          "explain": "travel and",
+          "wordId": "ryokou_suru"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may travel today at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c011",
+      "line": [
+        "明日",
+        "学校",
+        "で",
+        "借りて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あした",
+        "がっこう",
+        "で",
+        "かりて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "tomorrow",
+        "school",
+        "action location marker",
+        "borrow and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "借りて",
+          "reading": "かりて",
+          "explain": "borrow and",
+          "wordId": "kariru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I borrow tomorrow at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c012",
+      "line": [
+        "明日",
+        "学校",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あした",
+        "がっこう",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "tomorrow",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "かぶって",
+          "reading": "かぶって",
+          "explain": "wear and",
+          "wordId": "kaburu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear tomorrow at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c013",
+      "line": [
+        "明日",
+        "学校",
+        "で",
+        "履いて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あした",
+        "がっこう",
+        "で",
+        "はいて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "tomorrow",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "履いて",
+          "reading": "はいて",
+          "explain": "wear and",
+          "wordId": "haku"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I wear tomorrow at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c014",
+      "line": [
+        "明日",
+        "学校",
+        "で",
+        "着て",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あした",
+        "がっこう",
+        "で",
+        "きて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "tomorrow",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "着て",
+          "reading": "きて",
+          "explain": "wear and",
+          "wordId": "kiru_wear"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear tomorrow at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c015",
+      "line": [
+        "明日",
+        "学校",
+        "で",
+        "脱いで",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あした",
+        "がっこう",
+        "で",
+        "ぬいで",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "tomorrow",
+        "school",
+        "action location marker",
+        "take off and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "脱いで",
+          "reading": "ぬいで",
+          "explain": "take off and",
+          "wordId": "nugu"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I take off tomorrow at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c016",
+      "line": [
+        "明日",
+        "学校",
+        "で",
+        "入れて",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あした",
+        "がっこう",
+        "で",
+        "いれて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "tomorrow",
+        "school",
+        "action location marker",
+        "put in and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "入れて",
+          "reading": "いれて",
+          "explain": "put in and",
+          "wordId": "ireru_perm"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may put in tomorrow at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c017",
+      "line": [
+        "明日",
+        "学校",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あした",
+        "がっこう",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "tomorrow",
+        "school",
+        "action location marker",
+        "turn on and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "つけて",
+          "reading": "つけて",
+          "explain": "turn on and",
+          "wordId": "tsukeru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I turn on tomorrow at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c018",
+      "line": [
+        "明日",
+        "学校",
+        "で",
+        "消して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あした",
+        "がっこう",
+        "で",
+        "けして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "tomorrow",
+        "school",
+        "action location marker",
+        "turn off and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "消して",
+          "reading": "けして",
+          "explain": "turn off and",
+          "wordId": "kesu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may turn off tomorrow at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c019",
+      "line": [
+        "明日",
+        "学校",
+        "で",
+        "質問して",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あした",
+        "がっこう",
+        "で",
+        "しつもんして",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "tomorrow",
+        "school",
+        "action location marker",
+        "ask a question and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "質問して",
+          "reading": "しつもんして",
+          "explain": "ask a question and",
+          "wordId": "shitsumon_suru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I ask a question tomorrow at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c020",
+      "line": [
+        "明日",
+        "学校",
+        "で",
+        "旅行して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あした",
+        "がっこう",
+        "で",
+        "りょこうして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "tomorrow",
+        "school",
+        "action location marker",
+        "travel and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "旅行して",
+          "reading": "りょこうして",
+          "explain": "travel and",
+          "wordId": "ryokou_suru"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may travel tomorrow at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c021",
+      "line": [
+        "朝",
+        "学校",
+        "で",
+        "借りて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あさ",
+        "がっこう",
+        "で",
+        "かりて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "morning",
+        "school",
+        "action location marker",
+        "borrow and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "借りて",
+          "reading": "かりて",
+          "explain": "borrow and",
+          "wordId": "kariru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I borrow in the morning at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c022",
+      "line": [
+        "朝",
+        "学校",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あさ",
+        "がっこう",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "morning",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "かぶって",
+          "reading": "かぶって",
+          "explain": "wear and",
+          "wordId": "kaburu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear in the morning at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c023",
+      "line": [
+        "朝",
+        "学校",
+        "で",
+        "履いて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あさ",
+        "がっこう",
+        "で",
+        "はいて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "morning",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "履いて",
+          "reading": "はいて",
+          "explain": "wear and",
+          "wordId": "haku"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I wear in the morning at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c024",
+      "line": [
+        "朝",
+        "学校",
+        "で",
+        "着て",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あさ",
+        "がっこう",
+        "で",
+        "きて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "morning",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "着て",
+          "reading": "きて",
+          "explain": "wear and",
+          "wordId": "kiru_wear"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear in the morning at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c025",
+      "line": [
+        "朝",
+        "学校",
+        "で",
+        "脱いで",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あさ",
+        "がっこう",
+        "で",
+        "ぬいで",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "morning",
+        "school",
+        "action location marker",
+        "take off and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "脱いで",
+          "reading": "ぬいで",
+          "explain": "take off and",
+          "wordId": "nugu"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I take off in the morning at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c026",
+      "line": [
+        "朝",
+        "学校",
+        "で",
+        "入れて",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あさ",
+        "がっこう",
+        "で",
+        "いれて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "morning",
+        "school",
+        "action location marker",
+        "put in and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "入れて",
+          "reading": "いれて",
+          "explain": "put in and",
+          "wordId": "ireru_perm"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may put in in the morning at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c027",
+      "line": [
+        "朝",
+        "学校",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あさ",
+        "がっこう",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "morning",
+        "school",
+        "action location marker",
+        "turn on and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "つけて",
+          "reading": "つけて",
+          "explain": "turn on and",
+          "wordId": "tsukeru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I turn on in the morning at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c028",
+      "line": [
+        "朝",
+        "学校",
+        "で",
+        "消して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あさ",
+        "がっこう",
+        "で",
+        "けして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "morning",
+        "school",
+        "action location marker",
+        "turn off and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "消して",
+          "reading": "けして",
+          "explain": "turn off and",
+          "wordId": "kesu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may turn off in the morning at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c029",
+      "line": [
+        "朝",
+        "学校",
+        "で",
+        "質問して",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あさ",
+        "がっこう",
+        "で",
+        "しつもんして",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "morning",
+        "school",
+        "action location marker",
+        "ask a question and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "質問して",
+          "reading": "しつもんして",
+          "explain": "ask a question and",
+          "wordId": "shitsumon_suru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I ask a question in the morning at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c030",
+      "line": [
+        "朝",
+        "学校",
+        "で",
+        "旅行して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あさ",
+        "がっこう",
+        "で",
+        "りょこうして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "morning",
+        "school",
+        "action location marker",
+        "travel and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "旅行して",
+          "reading": "りょこうして",
+          "explain": "travel and",
+          "wordId": "ryokou_suru"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may travel in the morning at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c031",
+      "line": [
+        "夜",
+        "学校",
+        "で",
+        "借りて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "よる",
+        "がっこう",
+        "で",
+        "かりて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "night",
+        "school",
+        "action location marker",
+        "borrow and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "explain": "night",
+          "wordId": "yoru"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "借りて",
+          "reading": "かりて",
+          "explain": "borrow and",
+          "wordId": "kariru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I borrow at night at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c032",
+      "line": [
+        "夜",
+        "学校",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "よる",
+        "がっこう",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "night",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "explain": "night",
+          "wordId": "yoru"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "かぶって",
+          "reading": "かぶって",
+          "explain": "wear and",
+          "wordId": "kaburu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear at night at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c033",
+      "line": [
+        "夜",
+        "学校",
+        "で",
+        "履いて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "よる",
+        "がっこう",
+        "で",
+        "はいて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "night",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "explain": "night",
+          "wordId": "yoru"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "履いて",
+          "reading": "はいて",
+          "explain": "wear and",
+          "wordId": "haku"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I wear at night at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c034",
+      "line": [
+        "夜",
+        "学校",
+        "で",
+        "着て",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "よる",
+        "がっこう",
+        "で",
+        "きて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "night",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "explain": "night",
+          "wordId": "yoru"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "着て",
+          "reading": "きて",
+          "explain": "wear and",
+          "wordId": "kiru_wear"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear at night at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c035",
+      "line": [
+        "夜",
+        "学校",
+        "で",
+        "脱いで",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "よる",
+        "がっこう",
+        "で",
+        "ぬいで",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "night",
+        "school",
+        "action location marker",
+        "take off and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "explain": "night",
+          "wordId": "yoru"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "脱いで",
+          "reading": "ぬいで",
+          "explain": "take off and",
+          "wordId": "nugu"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I take off at night at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c036",
+      "line": [
+        "夜",
+        "学校",
+        "で",
+        "入れて",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "よる",
+        "がっこう",
+        "で",
+        "いれて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "night",
+        "school",
+        "action location marker",
+        "put in and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "explain": "night",
+          "wordId": "yoru"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "入れて",
+          "reading": "いれて",
+          "explain": "put in and",
+          "wordId": "ireru_perm"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may put in at night at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c037",
+      "line": [
+        "夜",
+        "学校",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "よる",
+        "がっこう",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "night",
+        "school",
+        "action location marker",
+        "turn on and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "explain": "night",
+          "wordId": "yoru"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "つけて",
+          "reading": "つけて",
+          "explain": "turn on and",
+          "wordId": "tsukeru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I turn on at night at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c038",
+      "line": [
+        "夜",
+        "学校",
+        "で",
+        "消して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "よる",
+        "がっこう",
+        "で",
+        "けして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "night",
+        "school",
+        "action location marker",
+        "turn off and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "explain": "night",
+          "wordId": "yoru"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "消して",
+          "reading": "けして",
+          "explain": "turn off and",
+          "wordId": "kesu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may turn off at night at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c039",
+      "line": [
+        "夜",
+        "学校",
+        "で",
+        "質問して",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "よる",
+        "がっこう",
+        "で",
+        "しつもんして",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "night",
+        "school",
+        "action location marker",
+        "ask a question and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "explain": "night",
+          "wordId": "yoru"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "質問して",
+          "reading": "しつもんして",
+          "explain": "ask a question and",
+          "wordId": "shitsumon_suru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I ask a question at night at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c040",
+      "line": [
+        "夜",
+        "学校",
+        "で",
+        "旅行して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "よる",
+        "がっこう",
+        "で",
+        "りょこうして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "night",
+        "school",
+        "action location marker",
+        "travel and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "夜",
+          "reading": "よる",
+          "explain": "night",
+          "wordId": "yoru"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "旅行して",
+          "reading": "りょこうして",
+          "explain": "travel and",
+          "wordId": "ryokou_suru"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may travel at night at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c041",
+      "line": [
+        "今",
+        "学校",
+        "で",
+        "借りて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "いま",
+        "がっこう",
+        "で",
+        "かりて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "now",
+        "school",
+        "action location marker",
+        "borrow and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今",
+          "reading": "いま",
+          "explain": "now",
+          "wordId": "ima"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "借りて",
+          "reading": "かりて",
+          "explain": "borrow and",
+          "wordId": "kariru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I borrow now at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c042",
+      "line": [
+        "今",
+        "学校",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "いま",
+        "がっこう",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "now",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今",
+          "reading": "いま",
+          "explain": "now",
+          "wordId": "ima"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "かぶって",
+          "reading": "かぶって",
+          "explain": "wear and",
+          "wordId": "kaburu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear now at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c043",
+      "line": [
+        "今",
+        "学校",
+        "で",
+        "履いて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "いま",
+        "がっこう",
+        "で",
+        "はいて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "now",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今",
+          "reading": "いま",
+          "explain": "now",
+          "wordId": "ima"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "履いて",
+          "reading": "はいて",
+          "explain": "wear and",
+          "wordId": "haku"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I wear now at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c044",
+      "line": [
+        "今",
+        "学校",
+        "で",
+        "着て",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "いま",
+        "がっこう",
+        "で",
+        "きて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "now",
+        "school",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今",
+          "reading": "いま",
+          "explain": "now",
+          "wordId": "ima"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "着て",
+          "reading": "きて",
+          "explain": "wear and",
+          "wordId": "kiru_wear"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear now at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c045",
+      "line": [
+        "今",
+        "学校",
+        "で",
+        "脱いで",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "いま",
+        "がっこう",
+        "で",
+        "ぬいで",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "now",
+        "school",
+        "action location marker",
+        "take off and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今",
+          "reading": "いま",
+          "explain": "now",
+          "wordId": "ima"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "脱いで",
+          "reading": "ぬいで",
+          "explain": "take off and",
+          "wordId": "nugu"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I take off now at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c046",
+      "line": [
+        "今",
+        "学校",
+        "で",
+        "入れて",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "いま",
+        "がっこう",
+        "で",
+        "いれて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "now",
+        "school",
+        "action location marker",
+        "put in and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今",
+          "reading": "いま",
+          "explain": "now",
+          "wordId": "ima"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "入れて",
+          "reading": "いれて",
+          "explain": "put in and",
+          "wordId": "ireru_perm"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may put in now at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c047",
+      "line": [
+        "今",
+        "学校",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "いま",
+        "がっこう",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "now",
+        "school",
+        "action location marker",
+        "turn on and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今",
+          "reading": "いま",
+          "explain": "now",
+          "wordId": "ima"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "つけて",
+          "reading": "つけて",
+          "explain": "turn on and",
+          "wordId": "tsukeru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I turn on now at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c048",
+      "line": [
+        "今",
+        "学校",
+        "で",
+        "消して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "いま",
+        "がっこう",
+        "で",
+        "けして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "now",
+        "school",
+        "action location marker",
+        "turn off and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今",
+          "reading": "いま",
+          "explain": "now",
+          "wordId": "ima"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "消して",
+          "reading": "けして",
+          "explain": "turn off and",
+          "wordId": "kesu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may turn off now at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c049",
+      "line": [
+        "今",
+        "学校",
+        "で",
+        "質問して",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "いま",
+        "がっこう",
+        "で",
+        "しつもんして",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "now",
+        "school",
+        "action location marker",
+        "ask a question and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今",
+          "reading": "いま",
+          "explain": "now",
+          "wordId": "ima"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "質問して",
+          "reading": "しつもんして",
+          "explain": "ask a question and",
+          "wordId": "shitsumon_suru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I ask a question now at the school?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c050",
+      "line": [
+        "今",
+        "学校",
+        "で",
+        "旅行して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "いま",
+        "がっこう",
+        "で",
+        "りょこうして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "now",
+        "school",
+        "action location marker",
+        "travel and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今",
+          "reading": "いま",
+          "explain": "now",
+          "wordId": "ima"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "旅行して",
+          "reading": "りょこうして",
+          "explain": "travel and",
+          "wordId": "ryokou_suru"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may travel now at the school.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c051",
+      "line": [
+        "今日",
+        "家",
+        "で",
+        "借りて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "きょう",
+        "いえ",
+        "で",
+        "かりて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "today",
+        "house; home",
+        "action location marker",
+        "borrow and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "借りて",
+          "reading": "かりて",
+          "explain": "borrow and",
+          "wordId": "kariru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I borrow today at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c052",
+      "line": [
+        "今日",
+        "家",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "いえ",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "house; home",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "かぶって",
+          "reading": "かぶって",
+          "explain": "wear and",
+          "wordId": "kaburu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear today at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c053",
+      "line": [
+        "今日",
+        "家",
+        "で",
+        "履いて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "きょう",
+        "いえ",
+        "で",
+        "はいて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "today",
+        "house; home",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "履いて",
+          "reading": "はいて",
+          "explain": "wear and",
+          "wordId": "haku"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I wear today at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c054",
+      "line": [
+        "今日",
+        "家",
+        "で",
+        "着て",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "いえ",
+        "で",
+        "きて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "house; home",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "着て",
+          "reading": "きて",
+          "explain": "wear and",
+          "wordId": "kiru_wear"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear today at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c055",
+      "line": [
+        "今日",
+        "家",
+        "で",
+        "脱いで",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "きょう",
+        "いえ",
+        "で",
+        "ぬいで",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "today",
+        "house; home",
+        "action location marker",
+        "take off and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "脱いで",
+          "reading": "ぬいで",
+          "explain": "take off and",
+          "wordId": "nugu"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I take off today at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c056",
+      "line": [
+        "今日",
+        "家",
+        "で",
+        "入れて",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "いえ",
+        "で",
+        "いれて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "house; home",
+        "action location marker",
+        "put in and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "入れて",
+          "reading": "いれて",
+          "explain": "put in and",
+          "wordId": "ireru_perm"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may put in today at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c057",
+      "line": [
+        "今日",
+        "家",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "きょう",
+        "いえ",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "today",
+        "house; home",
+        "action location marker",
+        "turn on and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "つけて",
+          "reading": "つけて",
+          "explain": "turn on and",
+          "wordId": "tsukeru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I turn on today at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c058",
+      "line": [
+        "今日",
+        "家",
+        "で",
+        "消して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "いえ",
+        "で",
+        "けして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "house; home",
+        "action location marker",
+        "turn off and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "消して",
+          "reading": "けして",
+          "explain": "turn off and",
+          "wordId": "kesu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may turn off today at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c059",
+      "line": [
+        "今日",
+        "家",
+        "で",
+        "質問して",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "きょう",
+        "いえ",
+        "で",
+        "しつもんして",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "today",
+        "house; home",
+        "action location marker",
+        "ask a question and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "質問して",
+          "reading": "しつもんして",
+          "explain": "ask a question and",
+          "wordId": "shitsumon_suru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I ask a question today at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c060",
+      "line": [
+        "今日",
+        "家",
+        "で",
+        "旅行して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "きょう",
+        "いえ",
+        "で",
+        "りょこうして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "today",
+        "house; home",
+        "action location marker",
+        "travel and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "今日",
+          "reading": "きょう",
+          "explain": "today",
+          "wordId": "kyou"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "旅行して",
+          "reading": "りょこうして",
+          "explain": "travel and",
+          "wordId": "ryokou_suru"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may travel today at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c061",
+      "line": [
+        "明日",
+        "家",
+        "で",
+        "借りて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あした",
+        "いえ",
+        "で",
+        "かりて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "tomorrow",
+        "house; home",
+        "action location marker",
+        "borrow and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "借りて",
+          "reading": "かりて",
+          "explain": "borrow and",
+          "wordId": "kariru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I borrow tomorrow at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c062",
+      "line": [
+        "明日",
+        "家",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あした",
+        "いえ",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "tomorrow",
+        "house; home",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "かぶって",
+          "reading": "かぶって",
+          "explain": "wear and",
+          "wordId": "kaburu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear tomorrow at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c063",
+      "line": [
+        "明日",
+        "家",
+        "で",
+        "履いて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あした",
+        "いえ",
+        "で",
+        "はいて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "tomorrow",
+        "house; home",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "履いて",
+          "reading": "はいて",
+          "explain": "wear and",
+          "wordId": "haku"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I wear tomorrow at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c064",
+      "line": [
+        "明日",
+        "家",
+        "で",
+        "着て",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あした",
+        "いえ",
+        "で",
+        "きて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "tomorrow",
+        "house; home",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "着て",
+          "reading": "きて",
+          "explain": "wear and",
+          "wordId": "kiru_wear"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear tomorrow at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c065",
+      "line": [
+        "明日",
+        "家",
+        "で",
+        "脱いで",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あした",
+        "いえ",
+        "で",
+        "ぬいで",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "tomorrow",
+        "house; home",
+        "action location marker",
+        "take off and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "脱いで",
+          "reading": "ぬいで",
+          "explain": "take off and",
+          "wordId": "nugu"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I take off tomorrow at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c066",
+      "line": [
+        "明日",
+        "家",
+        "で",
+        "入れて",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あした",
+        "いえ",
+        "で",
+        "いれて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "tomorrow",
+        "house; home",
+        "action location marker",
+        "put in and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "入れて",
+          "reading": "いれて",
+          "explain": "put in and",
+          "wordId": "ireru_perm"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may put in tomorrow at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c067",
+      "line": [
+        "明日",
+        "家",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あした",
+        "いえ",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "tomorrow",
+        "house; home",
+        "action location marker",
+        "turn on and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "つけて",
+          "reading": "つけて",
+          "explain": "turn on and",
+          "wordId": "tsukeru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I turn on tomorrow at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c068",
+      "line": [
+        "明日",
+        "家",
+        "で",
+        "消して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あした",
+        "いえ",
+        "で",
+        "けして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "tomorrow",
+        "house; home",
+        "action location marker",
+        "turn off and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "消して",
+          "reading": "けして",
+          "explain": "turn off and",
+          "wordId": "kesu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may turn off tomorrow at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c069",
+      "line": [
+        "明日",
+        "家",
+        "で",
+        "質問して",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あした",
+        "いえ",
+        "で",
+        "しつもんして",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "tomorrow",
+        "house; home",
+        "action location marker",
+        "ask a question and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "質問して",
+          "reading": "しつもんして",
+          "explain": "ask a question and",
+          "wordId": "shitsumon_suru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I ask a question tomorrow at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c070",
+      "line": [
+        "明日",
+        "家",
+        "で",
+        "旅行して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あした",
+        "いえ",
+        "で",
+        "りょこうして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "tomorrow",
+        "house; home",
+        "action location marker",
+        "travel and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "明日",
+          "reading": "あした",
+          "explain": "tomorrow",
+          "wordId": "ashita"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "旅行して",
+          "reading": "りょこうして",
+          "explain": "travel and",
+          "wordId": "ryokou_suru"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may travel tomorrow at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c071",
+      "line": [
+        "朝",
+        "家",
+        "で",
+        "借りて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あさ",
+        "いえ",
+        "で",
+        "かりて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "morning",
+        "house; home",
+        "action location marker",
+        "borrow and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "借りて",
+          "reading": "かりて",
+          "explain": "borrow and",
+          "wordId": "kariru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I borrow in the morning at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c072",
+      "line": [
+        "朝",
+        "家",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あさ",
+        "いえ",
+        "で",
+        "かぶって",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "morning",
+        "house; home",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "かぶって",
+          "reading": "かぶって",
+          "explain": "wear and",
+          "wordId": "kaburu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear in the morning at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c073",
+      "line": [
+        "朝",
+        "家",
+        "で",
+        "履いて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あさ",
+        "いえ",
+        "で",
+        "はいて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "morning",
+        "house; home",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "履いて",
+          "reading": "はいて",
+          "explain": "wear and",
+          "wordId": "haku"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I wear in the morning at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c074",
+      "line": [
+        "朝",
+        "家",
+        "で",
+        "着て",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あさ",
+        "いえ",
+        "で",
+        "きて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "morning",
+        "house; home",
+        "action location marker",
+        "wear and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "着て",
+          "reading": "きて",
+          "explain": "wear and",
+          "wordId": "kiru_wear"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may wear in the morning at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c075",
+      "line": [
+        "朝",
+        "家",
+        "で",
+        "脱いで",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あさ",
+        "いえ",
+        "で",
+        "ぬいで",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "morning",
+        "house; home",
+        "action location marker",
+        "take off and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "脱いで",
+          "reading": "ぬいで",
+          "explain": "take off and",
+          "wordId": "nugu"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I take off in the morning at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c076",
+      "line": [
+        "朝",
+        "家",
+        "で",
+        "入れて",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あさ",
+        "いえ",
+        "で",
+        "いれて",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "morning",
+        "house; home",
+        "action location marker",
+        "put in and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "入れて",
+          "reading": "いれて",
+          "explain": "put in and",
+          "wordId": "ireru_perm"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may put in in the morning at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c077",
+      "line": [
+        "朝",
+        "家",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あさ",
+        "いえ",
+        "で",
+        "つけて",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "morning",
+        "house; home",
+        "action location marker",
+        "turn on and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "つけて",
+          "reading": "つけて",
+          "explain": "turn on and",
+          "wordId": "tsukeru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I turn on in the morning at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c078",
+      "line": [
+        "朝",
+        "家",
+        "で",
+        "消して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あさ",
+        "いえ",
+        "で",
+        "けして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "morning",
+        "house; home",
+        "action location marker",
+        "turn off and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "消して",
+          "reading": "けして",
+          "explain": "turn off and",
+          "wordId": "kesu"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may turn off in the morning at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c079",
+      "line": [
+        "朝",
+        "家",
+        "で",
+        "質問して",
+        "もいいですか",
+        "？"
+      ],
+      "tts": [
+        "あさ",
+        "いえ",
+        "で",
+        "しつもんして",
+        "もいいですか",
+        "？"
+      ],
+      "explain": [
+        "morning",
+        "house; home",
+        "action location marker",
+        "ask a question and",
+        "permission phrase",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "質問して",
+          "reading": "しつもんして",
+          "explain": "ask a question and",
+          "wordId": "shitsumon_suru"
+        },
+        {
+          "surface": "もいいですか",
+          "reading": "もいいですか",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "May I ask a question in the morning at the house?",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c080",
+      "line": [
+        "朝",
+        "家",
+        "で",
+        "旅行して",
+        "もいいです",
+        "。"
+      ],
+      "tts": [
+        "あさ",
+        "いえ",
+        "で",
+        "りょこうして",
+        "もいいです",
+        "。"
+      ],
+      "explain": [
+        "morning",
+        "house; home",
+        "action location marker",
+        "travel and",
+        "permission phrase",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "朝",
+          "reading": "あさ",
+          "explain": "morning",
+          "wordId": "asa"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "旅行して",
+          "reading": "りょこうして",
+          "explain": "travel and",
+          "wordId": "ryokou_suru"
+        },
+        {
+          "surface": "もいいです",
+          "reading": "もいいです",
+          "explain": "permission phrase"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "You may travel in the morning at the house.",
+      "imagePrompt": "Permission with a te-form verb.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Unit 38 introduces Vてもいいですか / Vてもいいです while keeping earlier A2 action sentences active.",
+      "grammarTags": [
+        "Vてもいいですか",
+        "Vてもいいです"
+      ]
+    },
+    {
+      "id": "u038-c081",
+      "line": [
+        "私",
+        "は",
+        "見せます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "みせます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "show",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "見せます",
+          "reading": "みせます",
+          "explain": "show",
+          "wordId": "miseru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I show.",
+      "imagePrompt": "A focused review card for 見せる.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c082",
+      "line": [
+        "私",
+        "は",
+        "教えます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "おしえます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "teach",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "教えます",
+          "reading": "おしえます",
+          "explain": "teach",
+          "wordId": "oshieru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I teach.",
+      "imagePrompt": "A focused review card for 教える.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c083",
+      "line": [
+        "私",
+        "は",
+        "貸します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "かします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "lend",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "貸します",
+          "reading": "かします",
+          "explain": "lend",
+          "wordId": "kasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I lend.",
+      "imagePrompt": "A focused review card for 貸す.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c084",
+      "line": [
+        "私",
+        "は",
+        "手伝います",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "てつだいます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "help",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "手伝います",
+          "reading": "てつだいます",
+          "explain": "help",
+          "wordId": "tetsudau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I help.",
+      "imagePrompt": "A focused review card for 手伝う.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c085",
+      "line": [
+        "私",
+        "は",
+        "呼びます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "よびます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "call",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "呼びます",
+          "reading": "よびます",
+          "explain": "call",
+          "wordId": "yobu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I call.",
+      "imagePrompt": "A focused review card for 呼ぶ.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c086",
+      "line": [
+        "私",
+        "は",
+        "測ります",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "はかります",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "measure",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "測ります",
+          "reading": "はかります",
+          "explain": "measure",
+          "wordId": "hakaru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I measure.",
+      "imagePrompt": "A focused review card for 測る.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c087",
+      "line": [
+        "私",
+        "は",
+        "置きます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "おきます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "put",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "置きます",
+          "reading": "おきます",
+          "explain": "put",
+          "wordId": "oku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I put.",
+      "imagePrompt": "A focused review card for 置く.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c088",
+      "line": [
+        "私",
+        "は",
+        "出します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "だします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "take out",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "出します",
+          "reading": "だします",
+          "explain": "take out",
+          "wordId": "dasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I take out.",
+      "imagePrompt": "A focused review card for 出す.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c089",
+      "line": [
+        "私",
+        "は",
+        "入れます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "いれます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "put in",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "入れます",
+          "reading": "いれます",
+          "explain": "put in",
+          "wordId": "ireru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I put in.",
+      "imagePrompt": "A focused review card for 入れる.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c090",
+      "line": [
+        "私",
+        "は",
+        "持ちます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "もちます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "hold",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "持ちます",
+          "reading": "もちます",
+          "explain": "hold",
+          "wordId": "motsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I hold.",
+      "imagePrompt": "A focused review card for 持つ.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c091",
+      "line": [
+        "私",
+        "は",
+        "乗ります",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "のります",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "ride",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "乗ります",
+          "reading": "のります",
+          "explain": "ride",
+          "wordId": "noru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I ride.",
+      "imagePrompt": "A focused review card for 乗る.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c092",
+      "line": [
+        "私",
+        "は",
+        "取ります",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "とります",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "take",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "取ります",
+          "reading": "とります",
+          "explain": "take",
+          "wordId": "toru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I take.",
+      "imagePrompt": "A focused review card for 取る.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c093",
+      "line": [
+        "私",
+        "は",
+        "しゃべります",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "しゃべります",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "chat",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "しゃべります",
+          "reading": "しゃべります",
+          "explain": "chat",
+          "wordId": "shaberu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I chat.",
+      "imagePrompt": "A focused review card for しゃべる.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c094",
+      "line": [
+        "私",
+        "は",
+        "座ります",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "すわります",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "sit",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "座ります",
+          "reading": "すわります",
+          "explain": "sit",
+          "wordId": "suwaru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I sit.",
+      "imagePrompt": "A focused review card for 座る.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c095",
+      "line": [
+        "私",
+        "は",
+        "知ります",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "しります",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "know",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "知ります",
+          "reading": "しります",
+          "explain": "know",
+          "wordId": "shiru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I know.",
+      "imagePrompt": "A focused review card for 知る.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c096",
+      "line": [
+        "私",
+        "は",
+        "習います",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ならいます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "learn",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "習います",
+          "reading": "ならいます",
+          "explain": "learn",
+          "wordId": "narau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I learn.",
+      "imagePrompt": "A focused review card for 習う.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c097",
+      "line": [
+        "私",
+        "は",
+        "選びます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "えらびます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "choose",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "choose",
+          "wordId": "erabu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I choose.",
+      "imagePrompt": "A focused review card for 選ぶ.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c098",
+      "line": [
+        "私",
+        "は",
+        "助けます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "たすけます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "help",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "助けます",
+          "reading": "たすけます",
+          "explain": "help",
+          "wordId": "tasukeru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I help.",
+      "imagePrompt": "A focused review card for 助ける.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c099",
+      "line": [
+        "私",
+        "は",
+        "運びます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "はこびます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "carry",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "運びます",
+          "reading": "はこびます",
+          "explain": "carry",
+          "wordId": "hakobu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I carry.",
+      "imagePrompt": "A focused review card for 運ぶ.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c100",
+      "line": [
+        "私",
+        "は",
+        "探します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "さがします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "search",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "探します",
+          "reading": "さがします",
+          "explain": "search",
+          "wordId": "sagasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I search.",
+      "imagePrompt": "A focused review card for 探す.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c101",
+      "line": [
+        "私",
+        "は",
+        "毎日",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいにち",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every day",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎日",
+          "reading": "まいにち",
+          "explain": "every day",
+          "wordId": "mainichi"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study every day.",
+      "imagePrompt": "A focused review card for 毎日.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c102",
+      "line": [
+        "私",
+        "は",
+        "毎朝",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいあさ",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every morning",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎朝",
+          "reading": "まいあさ",
+          "explain": "every morning",
+          "wordId": "maiasa"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study every morning.",
+      "imagePrompt": "A focused review card for 毎朝.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c103",
+      "line": [
+        "私",
+        "は",
+        "毎晩",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいばん",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every night",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎晩",
+          "reading": "まいばん",
+          "explain": "every night",
+          "wordId": "maiban"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I study every night.",
+      "imagePrompt": "A focused review card for 毎晩.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c104",
+      "line": [
+        "私",
+        "は",
+        "よく",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "よく",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "often",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "よく",
+          "reading": "よく",
+          "explain": "often",
+          "wordId": "yoku_adv"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I often study.",
+      "imagePrompt": "A focused review card for よく.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c105",
+      "line": [
+        "私",
+        "は",
+        "時々",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ときどき",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "sometimes",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時々",
+          "reading": "ときどき",
+          "explain": "sometimes",
+          "wordId": "tokidoki"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I sometimes study.",
+      "imagePrompt": "A focused review card for 時々.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c106",
+      "line": [
+        "私",
+        "は",
+        "いつも",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "いつも",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "always",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつも",
+          "reading": "いつも",
+          "explain": "always",
+          "wordId": "itsumo"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I always study.",
+      "imagePrompt": "A focused review card for いつも.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c107",
+      "line": [
+        "私",
+        "は",
+        "たいてい",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "たいてい",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "usually",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たいてい",
+          "reading": "たいてい",
+          "explain": "usually",
+          "wordId": "taitei"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I usually study.",
+      "imagePrompt": "A focused review card for たいてい.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c108",
+      "line": [
+        "私",
+        "は",
+        "たまに",
+        "勉強します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "たまに",
+        "べんきょうします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "occasionally",
+        "study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たまに",
+          "reading": "たまに",
+          "explain": "occasionally",
+          "wordId": "tamani"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I occasionally study.",
+      "imagePrompt": "A focused review card for たまに.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c109",
+      "line": [
+        "私",
+        "は",
+        "ほとんど",
+        "勉強しません",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ほとんど",
+        "べんきょうしません",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "almost never",
+        "do not study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ほとんど",
+          "reading": "ほとんど",
+          "explain": "almost never",
+          "wordId": "hotondo"
+        },
+        {
+          "surface": "勉強しません",
+          "reading": "べんきょうしません",
+          "explain": "do not study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I almost never study.",
+      "imagePrompt": "A focused review card for ほとんど.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c110",
+      "line": [
+        "私",
+        "は",
+        "めったに",
+        "勉強しません",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "めったに",
+        "べんきょうしません",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "rarely",
+        "do not study",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "めったに",
+          "reading": "めったに",
+          "explain": "rarely",
+          "wordId": "mettani"
+        },
+        {
+          "surface": "勉強しません",
+          "reading": "べんきょうしません",
+          "explain": "do not study",
+          "wordId": "benkyou_suru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I rarely study.",
+      "imagePrompt": "A focused review card for めったに.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c111",
+      "line": [
+        "私",
+        "は",
+        "話します",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "はなします",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "speak",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I speak.",
+      "imagePrompt": "A focused review card for 話す.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c112",
+      "line": [
+        "私",
+        "は",
+        "買います",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "かいます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "buy",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "買います",
+          "reading": "かいます",
+          "explain": "buy",
+          "wordId": "kau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I buy.",
+      "imagePrompt": "A focused review card for 買う.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c113",
+      "line": [
+        "私",
+        "は",
+        "会います",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あいます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "meet",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "会います",
+          "reading": "あいます",
+          "explain": "meet",
+          "wordId": "au"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I meet.",
+      "imagePrompt": "A focused review card for 会う.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c114",
+      "line": [
+        "私",
+        "は",
+        "待ちます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まちます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "wait",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "待ちます",
+          "reading": "まちます",
+          "explain": "wait",
+          "wordId": "matsu"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I wait.",
+      "imagePrompt": "A focused review card for 待つ.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c115",
+      "line": [
+        "私",
+        "は",
+        "使います",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "つかいます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "use",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "使います",
+          "reading": "つかいます",
+          "explain": "use",
+          "wordId": "tsukau"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I use.",
+      "imagePrompt": "A focused review card for 使う.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c116",
+      "line": [
+        "私",
+        "は",
+        "作ります",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "つくります",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "make",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "作ります",
+          "reading": "つくります",
+          "explain": "make",
+          "wordId": "tsukuru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I make.",
+      "imagePrompt": "A focused review card for 作る.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c117",
+      "line": [
+        "私",
+        "は",
+        "寝ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ねます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "sleep",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "寝ます",
+          "reading": "ねます",
+          "explain": "sleep",
+          "wordId": "neru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I sleep.",
+      "imagePrompt": "A focused review card for 寝る.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c118",
+      "line": [
+        "私",
+        "は",
+        "起きます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "おきます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "wake up",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "起きます",
+          "reading": "おきます",
+          "explain": "wake up",
+          "wordId": "okiru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I wake up.",
+      "imagePrompt": "A focused review card for 起きる.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c119",
+      "line": [
+        "私",
+        "は",
+        "働きます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "はたらきます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "work",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "work",
+          "wordId": "hataraku"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I work.",
+      "imagePrompt": "A focused review card for 働く.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c120",
+      "line": [
+        "私",
+        "は",
+        "休みます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "やすみます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "rest",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "休みます",
+          "reading": "やすみます",
+          "explain": "rest",
+          "wordId": "yasumu_verb"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I rest.",
+      "imagePrompt": "A focused review card for 休む.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c121",
+      "line": [
+        "これ",
+        "は",
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "これ",
+        "わ",
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this one",
+        "topic marker",
+        "book",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "これ",
+          "reading": "これ",
+          "explain": "this one",
+          "wordId": "kore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is a book.",
+      "imagePrompt": "A focused review card for これ.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Demonstrative review keeps reference words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c122",
+      "line": [
+        "それ",
+        "は",
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "それ",
+        "わ",
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one near you",
+        "topic marker",
+        "book",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "それ",
+          "reading": "それ",
+          "explain": "that one near you",
+          "wordId": "sore"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the book.",
+      "imagePrompt": "A focused review card for それ.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Demonstrative review keeps reference words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c123",
+      "line": [
+        "あれ",
+        "は",
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あれ",
+        "わ",
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that one over there",
+        "topic marker",
+        "book",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あれ",
+          "reading": "あれ",
+          "explain": "that one over there",
+          "wordId": "are"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "This is the book.",
+      "imagePrompt": "A focused review card for あれ.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Demonstrative review keeps reference words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c124",
+      "line": [
+        "この",
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "この",
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "this",
+        "book",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "この",
+          "reading": "この",
+          "explain": "this",
+          "wordId": "kono"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is this book.",
+      "imagePrompt": "A focused review card for この.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Determiner review stays attached to a noun.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c125",
+      "line": [
+        "その",
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "その",
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that near you",
+        "book",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "その",
+          "reading": "その",
+          "explain": "that near you",
+          "wordId": "sono"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is that book near you.",
+      "imagePrompt": "A focused review card for その.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Determiner review stays attached to a noun.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c126",
+      "line": [
+        "あの",
+        "本",
+        "です",
+        "。"
+      ],
+      "tts": [
+        "あの",
+        "ほん",
+        "です",
+        "。"
+      ],
+      "explain": [
+        "that over there",
+        "book",
+        "polite sentence ending",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "あの",
+          "reading": "あの",
+          "explain": "that over there",
+          "wordId": "ano"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "It is that book over there.",
+      "imagePrompt": "A focused review card for あの.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-01.svg",
+      "fact": "Determiner review stays attached to a noun.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c127",
+      "line": [
+        "私",
+        "は",
+        "水",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "みず",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "water",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "水",
+          "reading": "みず",
+          "explain": "water",
+          "wordId": "mizu"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at water.",
+      "imagePrompt": "A focused review card for 水.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-02.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c128",
+      "line": [
+        "私",
+        "は",
+        "お茶",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "おちゃ",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "tea",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "お茶",
+          "reading": "おちゃ",
+          "explain": "tea",
+          "wordId": "ocha"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at tea.",
+      "imagePrompt": "A focused review card for お茶.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-03.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c129",
+      "line": [
+        "私",
+        "は",
+        "鉛筆",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "えんぴつ",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "pencil",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "鉛筆",
+          "reading": "えんぴつ",
+          "explain": "pencil",
+          "wordId": "enpitsu"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at a pencil.",
+      "imagePrompt": "A focused review card for 鉛筆.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-04.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u038-c130",
+      "line": [
+        "私",
+        "は",
+        "時計",
+        "を",
+        "見ます",
+        "。"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "とけい",
+        "を",
+        "みます",
+        "。"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "clock; watch",
+        "direct object marker",
+        "watch",
+        "period"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時計",
+          "reading": "とけい",
+          "explain": "clock; watch",
+          "wordId": "tokei"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        },
+        {
+          "surface": "。",
+          "reading": "。",
+          "explain": "period"
+        }
+      ],
+      "english": "I look at a clock.",
+      "imagePrompt": "A focused review card for 時計.",
+      "imageRef": "/media/jp/images/unit_038/scenes/scene-05.svg",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    }
+  ]
+}
