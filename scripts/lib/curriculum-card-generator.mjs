@@ -99,8 +99,9 @@ function unit2ChoiceFrames(words) {
     ["yuki", ["gakusei", "tomodachi"]],
     ["tanaka", ["sensei", "isha"]],
     ["tomodachi", ["gakusei", "sensei"]],
-    ["namae", ["sakura", "yuki"]],
     ["basho", ["ie", "gakkou"]],
+    ["isha", ["sensei", "gakusei"]],
+    ["doubutsu", ["inu", "neko"]],
   ];
 
   return frames
@@ -136,8 +137,9 @@ function compatibleChoiceFrame(words, seed) {
 function compatibleCompoundFrame(words, seed) {
   const groups = [
     { ids: ["neko", "inu"], categoryId: "doubutsu", english: "animals" },
-    { ids: ["sensei", "gakusei", "isha", "hito", "sakura", "yuki", "tanaka", "tomodachi"], categoryId: "hito", english: "people" },
-    { ids: ["ie", "gakkou", "nihon", "amerika", "basho"], categoryId: "basho", english: "places" },
+    { ids: ["sensei", "gakusei", "isha", "hito", "tomodachi"], categoryId: "hito", english: "people" },
+    { ids: ["ie", "gakkou"], categoryId: "basho", english: "places" },
+    { ids: ["nihon", "amerika"], categoryId: "basho", english: "places" },
     { ids: ["hon", "mono"], categoryId: "mono", english: "things" },
   ]
     .map((group) => ({

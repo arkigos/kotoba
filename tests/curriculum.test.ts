@@ -159,7 +159,7 @@ describe("curriculum word bins", () => {
   it("opens Unit 1 with vocabulary atoms before one-slot sentence swaps", () => {
     const unit = unitModules[unitModulePath(1)].default;
     expect(unit.cards.slice(0, 10).map((card) => card.line.length)).toEqual(Array.from({ length: 10 }, () => 1));
-    expect(unit.cards.slice(0, 12).map((card) => card.english)).toEqual([
+    expect(unit.cards.slice(0, 13).map((card) => card.english)).toEqual([
       "I",
       "student",
       "teacher",
@@ -172,13 +172,38 @@ describe("curriculum word bins", () => {
       "friend",
       "am; is; are",
       "topic marker",
+      "question marker",
     ]);
-    expect(unit.cards.slice(12, 16).map((card) => card.english)).toEqual([
+    expect(unit.cards.slice(13, 17).map((card) => card.english)).toEqual([
       "I am a student",
       "You are a student",
       "He is a student",
       "She is a student",
     ]);
+  });
+
+  it("keeps Unit 1 off bare to-and-choice fragments", () => {
+    const unit = unitModules[unitModulePath(1)].default;
+    for (const card of unit.cards) {
+      expect(card.line).not.toContain("と");
+      expect(card.grammarTags ?? []).not.toContain("AとB");
+      expect(card.grammarTags ?? []).not.toContain("AかB");
+    }
+  });
+
+  it("keeps early to-compound drills on concrete nouns instead of pronoun pairs", () => {
+    const pronounIds = new Set(["watashi", "sakura", "yuki", "tanaka"]);
+    for (let unitId = 2; unitId <= 5; unitId += 1) {
+      const unit = unitModules[unitModulePath(unitId)].default;
+      for (const card of unit.cards.filter((entry) => entry.grammarTags?.includes("AとBはCです"))) {
+        expect(
+          card.tokens?.some((token) => {
+            const wordId = "wordId" in token && typeof token.wordId === "string" ? token.wordId : undefined;
+            return wordId ? pronounIds.has(wordId) : false;
+          }),
+        ).toBe(false);
+      }
+    }
   });
 
   it("keeps legacy name vocabulary out of authored learner-facing text", () => {
@@ -200,7 +225,7 @@ describe("curriculum word bins", () => {
         expect(card.tokens?.some((token) => token.surface === "ですか")).toBe(false);
       }
 
-      const questionCards = unit.cards.filter((card) => card.line.includes("か"));
+      const questionCards = unit.cards.filter((card) => card.line.length > 1 && card.line.includes("か"));
       allQuestionCards.push(...questionCards);
 
       for (const card of questionCards) {

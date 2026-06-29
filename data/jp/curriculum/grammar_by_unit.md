@@ -23,8 +23,7 @@ still introduces polite verbs as a productive system.
 001. First Sentences
     - `Aです`
     - `Aですか`
-    - early `AとB`
-    - early `AかB`
+    - early `AはBです` preview
 
 002. Talking About Things
     - `AはBです`

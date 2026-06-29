@@ -240,6 +240,7 @@ function buildUnit1(spec) {
   vocab.forEach((word) => vocabIntro(cards, 1, word));
   grammarIntro(cards, 1, g.desu(), "am; is; are", "`です` is the polite identity marker.");
   grammarIntro(cards, 1, g.wa(), "topic marker", "`は` marks what the sentence is about.");
+  grammarIntro(cards, 1, g.ka(), "question marker", "`か` turns the sentence into a question.");
 
   const subjects = ["watashi", "sakura", "yuki", "tanaka"];
   const roles = ["gakusei", "sensei", "tomodachi"];
@@ -255,36 +256,21 @@ function buildUnit1(spec) {
   }
   vocab.forEach((word) => identityQuestion(cards, 1, word));
 
-  const pairs = [
-    ["watashi", "sakura"],
-    ["yuki", "tanaka"],
-    ["sensei", "gakusei"],
-    ["nihon", "amerika"],
-    ["tanaka", "tomodachi"],
-    ["watashi", "gakusei"],
-    ["sakura", "tomodachi"],
-    ["yuki", "gakusei"],
-    ["sensei", "tanaka"],
-    ["tomodachi", "sensei"],
-  ];
-  for (const [a, b] of pairs) {
-    add(cards, 1, [token(w(words, a)), g.to(), token(w(words, b)), g.desu()], `It's ${identityComplement(w(words, a))} and ${identityComplement(w(words, b))}`, "`と` joins two nouns.", ["AとB"]);
-  }
-  for (const [a, b] of pairs) choice(cards, 1, w(words, a), w(words, b), "`か` can link alternatives inside a question.", ["AかB", "か"]);
-
   const topics = [
     ["watashi", "gakusei"],
     ["sakura", "gakusei"],
-    ["yuki", "tomodachi"],
+    ["yuki", "gakusei"],
+    ["tanaka", "gakusei"],
+    ["watashi", "sensei"],
+    ["sakura", "sensei"],
+    ["yuki", "sensei"],
     ["tanaka", "sensei"],
-    ["sensei", "sensei"],
-    ["gakusei", "gakusei"],
-    ["tomodachi", "tomodachi"],
-    ["nihon", "nihon"],
-    ["amerika", "amerika"],
     ["watashi", "tomodachi"],
+    ["sakura", "tomodachi"],
+    ["tanaka", "tomodachi"],
+    ["yuki", "tomodachi"],
   ];
-  for (const [a, b] of cycle(topics, 14)) topic(cards, 1, w(words, a), w(words, b), "`は` marks the topic for a simple identity comment.", ["early AはB", "AはBです"]);
+  for (const [a, b] of cycle(topics, 33)) topic(cards, 1, w(words, a), w(words, b), "`は` marks the topic for a simple identity comment.", ["early AはB", "AはBです"]);
 
   return cards;
 }
@@ -311,14 +297,14 @@ function buildUnit2(spec, previousWords) {
   const compounds = [
     ["neko", "inu", "doubutsu", "animals"],
     ["sensei", "gakusei", "hito", "people"],
-    ["sakura", "yuki", "hito", "people"],
-    ["tanaka", "tomodachi", "hito", "people"],
+    ["isha", "tomodachi", "hito", "people"],
     ["ie", "gakkou", "basho", "places"],
     ["nihon", "amerika", "basho", "places"],
     ["isha", "sensei", "hito", "people"],
     ["gakusei", "tomodachi", "hito", "people"],
-    ["sakura", "tanaka", "hito", "people"],
     ["sensei", "tomodachi", "hito", "people"],
+    ["gakusei", "isha", "hito", "people"],
+    ["gakkou", "ie", "basho", "places"],
   ];
   for (const [a, b, c, en] of compounds) compound(cards, 2, w(words, a), w(words, b), w(words, c), en, "`と` joins two concrete nouns before the topic marker.");
 
@@ -330,9 +316,9 @@ function buildUnit2(spec, previousWords) {
     ["yuki", "gakusei", "tomodachi"],
     ["tanaka", "sensei", "isha"],
     ["tomodachi", "gakusei", "sensei"],
-    ["namae", "sakura", "yuki"],
     ["basho", "ie", "gakkou"],
-    ["isha", "tanaka", "sakura"],
+    ["isha", "sensei", "gakusei"],
+    ["doubutsu", "inu", "neko"],
   ];
   for (const [a, b, c] of choices) topicChoice(cards, 2, w(words, a), w(words, b), w(words, c), "`か` links the choices; the final `か` asks the question.");
 

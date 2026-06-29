@@ -1713,74 +1713,7 @@
     {
       "id": "u002-c033",
       "line": [
-        "あなた",
-        "と",
-        "彼",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "あなた",
-        "と",
-        "かれ",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "you",
-        "and",
-        "he; him",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "You and he are people",
-      "fact": "`と` joins two concrete nouns before the topic marker.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c034",
-      "line": [
-        "彼女",
+        "医者",
         "と",
         "友達",
         "は",
@@ -1788,7 +1721,7 @@
         "です"
       ],
       "tts": [
-        "かのじょ",
+        "いしゃ",
         "と",
         "ともだち",
         "わ",
@@ -1796,7 +1729,7 @@
         "です"
       ],
       "explain": [
-        "she; her",
+        "doctor",
         "and",
         "friend",
         "topic marker",
@@ -1805,10 +1738,10 @@
       ],
       "tokens": [
         {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
         },
         {
           "surface": "と",
@@ -1838,14 +1771,14 @@
           "explain": "polite identity marker"
         }
       ],
-      "english": "She and the friend are people",
+      "english": "The doctor and the friend are people",
       "fact": "`と` joins two concrete nouns before the topic marker.",
       "grammarTags": [
         "AとBはCです"
       ]
     },
     {
-      "id": "u002-c035",
+      "id": "u002-c034",
       "line": [
         "家",
         "と",
@@ -1912,7 +1845,7 @@
       ]
     },
     {
-      "id": "u002-c036",
+      "id": "u002-c035",
       "line": [
         "日本",
         "と",
@@ -1979,7 +1912,7 @@
       ]
     },
     {
-      "id": "u002-c037",
+      "id": "u002-c036",
       "line": [
         "医者",
         "と",
@@ -2046,7 +1979,7 @@
       ]
     },
     {
-      "id": "u002-c038",
+      "id": "u002-c037",
       "line": [
         "学生",
         "と",
@@ -2113,74 +2046,7 @@
       ]
     },
     {
-      "id": "u002-c039",
-      "line": [
-        "あなた",
-        "と",
-        "彼女",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "あなた",
-        "と",
-        "かのじょ",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "you",
-        "and",
-        "she; her",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "You and she are people",
-      "fact": "`と` joins two concrete nouns before the topic marker.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c040",
+      "id": "u002-c038",
       "line": [
         "先生",
         "と",
@@ -2241,6 +2107,140 @@
         }
       ],
       "english": "The teacher and the friend are people",
+      "fact": "`と` joins two concrete nouns before the topic marker.",
+      "grammarTags": [
+        "AとBはCです"
+      ]
+    },
+    {
+      "id": "u002-c039",
+      "line": [
+        "学生",
+        "と",
+        "医者",
+        "は",
+        "人",
+        "です"
+      ],
+      "tts": [
+        "がくせい",
+        "と",
+        "いしゃ",
+        "わ",
+        "ひと",
+        "です"
+      ],
+      "explain": [
+        "student",
+        "and",
+        "doctor",
+        "topic marker",
+        "person",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The student and the doctor are people",
+      "fact": "`と` joins two concrete nouns before the topic marker.",
+      "grammarTags": [
+        "AとBはCです"
+      ]
+    },
+    {
+      "id": "u002-c040",
+      "line": [
+        "学校",
+        "と",
+        "家",
+        "は",
+        "場所",
+        "です"
+      ],
+      "tts": [
+        "がっこう",
+        "と",
+        "いえ",
+        "わ",
+        "ばしょ",
+        "です"
+      ],
+      "explain": [
+        "school",
+        "and",
+        "house; home",
+        "topic marker",
+        "place",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The school and the house are places",
       "fact": "`と` joins two concrete nouns before the topic marker.",
       "grammarTags": [
         "AとBはCです"
@@ -2830,89 +2830,6 @@
     {
       "id": "u002-c048",
       "line": [
-        "名前",
-        "は",
-        "あなた",
-        "か",
-        "彼",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "なまえ",
-        "わ",
-        "あなた",
-        "か",
-        "かれ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "name",
-        "topic marker",
-        "you",
-        "question marker",
-        "he; him",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "名前",
-          "reading": "なまえ",
-          "explain": "name",
-          "wordId": "namae"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the name you or him?",
-      "fact": "`か` links the choices; the final `か` asks the question.",
-      "grammarTags": [
-        "AはBかCですか"
-      ]
-    },
-    {
-      "id": "u002-c049",
-      "line": [
         "場所",
         "は",
         "家",
@@ -2994,13 +2911,13 @@
       ]
     },
     {
-      "id": "u002-c050",
+      "id": "u002-c049",
       "line": [
         "医者",
         "は",
-        "彼女",
+        "先生",
         "か",
-        "あなた",
+        "学生",
         "です",
         "か",
         "？"
@@ -3008,9 +2925,9 @@
       "tts": [
         "いしゃ",
         "わ",
-        "かのじょ",
+        "せんせい",
         "か",
-        "あなた",
+        "がくせい",
         "です",
         "か",
         "？"
@@ -3018,9 +2935,9 @@
       "explain": [
         "doctor",
         "topic marker",
-        "she; her",
+        "teacher",
         "question marker",
-        "you",
+        "student",
         "polite identity marker",
         "question marker",
         "question mark"
@@ -3038,10 +2955,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
         },
         {
           "surface": "か",
@@ -3049,10 +2966,10 @@
           "explain": "question marker"
         },
         {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
         },
         {
           "surface": "です",
@@ -3070,7 +2987,90 @@
           "explain": "question mark"
         }
       ],
-      "english": "Is the doctor her or you?",
+      "english": "Is the doctor a teacher or a student?",
+      "fact": "`か` links the choices; the final `か` asks the question.",
+      "grammarTags": [
+        "AはBかCですか"
+      ]
+    },
+    {
+      "id": "u002-c050",
+      "line": [
+        "動物",
+        "は",
+        "犬",
+        "か",
+        "猫",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "どうぶつ",
+        "わ",
+        "いぬ",
+        "か",
+        "ねこ",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "animal",
+        "topic marker",
+        "dog",
+        "question marker",
+        "cat",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the animal a dog or a cat?",
       "fact": "`か` links the choices; the final `か` asks the question.",
       "grammarTags": [
         "AはBかCですか"
@@ -3213,74 +3213,7 @@
     {
       "id": "u002-c053",
       "line": [
-        "あなた",
-        "と",
-        "彼",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "あなた",
-        "と",
-        "かれ",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "you",
-        "and",
-        "he; him",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "You and he are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c054",
-      "line": [
-        "彼女",
+        "医者",
         "と",
         "友達",
         "は",
@@ -3288,7 +3221,7 @@
         "です"
       ],
       "tts": [
-        "かのじょ",
+        "いしゃ",
         "と",
         "ともだち",
         "わ",
@@ -3296,7 +3229,7 @@
         "です"
       ],
       "explain": [
-        "she; her",
+        "doctor",
         "and",
         "friend",
         "topic marker",
@@ -3305,10 +3238,10 @@
       ],
       "tokens": [
         {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
         },
         {
           "surface": "と",
@@ -3338,14 +3271,14 @@
           "explain": "polite identity marker"
         }
       ],
-      "english": "She and the friend are people",
+      "english": "The doctor and the friend are people",
       "fact": "`と` joins two nouns before the sentence gives one shared comment.",
       "grammarTags": [
         "AとBはCです"
       ]
     },
     {
-      "id": "u002-c055",
+      "id": "u002-c054",
       "line": [
         "家",
         "と",
@@ -3412,7 +3345,7 @@
       ]
     },
     {
-      "id": "u002-c056",
+      "id": "u002-c055",
       "line": [
         "日本",
         "と",
@@ -3479,7 +3412,7 @@
       ]
     },
     {
-      "id": "u002-c057",
+      "id": "u002-c056",
       "line": [
         "医者",
         "と",
@@ -3546,7 +3479,7 @@
       ]
     },
     {
-      "id": "u002-c058",
+      "id": "u002-c057",
       "line": [
         "学生",
         "と",
@@ -3613,74 +3546,7 @@
       ]
     },
     {
-      "id": "u002-c059",
-      "line": [
-        "あなた",
-        "と",
-        "彼女",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "あなた",
-        "と",
-        "かのじょ",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "you",
-        "and",
-        "she; her",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "You and she are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c060",
+      "id": "u002-c058",
       "line": [
         "先生",
         "と",
@@ -3741,6 +3607,140 @@
         }
       ],
       "english": "The teacher and the friend are people",
+      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
+      "grammarTags": [
+        "AとBはCです"
+      ]
+    },
+    {
+      "id": "u002-c059",
+      "line": [
+        "学生",
+        "と",
+        "医者",
+        "は",
+        "人",
+        "です"
+      ],
+      "tts": [
+        "がくせい",
+        "と",
+        "いしゃ",
+        "わ",
+        "ひと",
+        "です"
+      ],
+      "explain": [
+        "student",
+        "and",
+        "doctor",
+        "topic marker",
+        "person",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The student and the doctor are people",
+      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
+      "grammarTags": [
+        "AとBはCです"
+      ]
+    },
+    {
+      "id": "u002-c060",
+      "line": [
+        "学校",
+        "と",
+        "家",
+        "は",
+        "場所",
+        "です"
+      ],
+      "tts": [
+        "がっこう",
+        "と",
+        "いえ",
+        "わ",
+        "ばしょ",
+        "です"
+      ],
+      "explain": [
+        "school",
+        "and",
+        "house; home",
+        "topic marker",
+        "place",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The school and the house are places",
       "fact": "`と` joins two nouns before the sentence gives one shared comment.",
       "grammarTags": [
         "AとBはCです"
@@ -3883,74 +3883,7 @@
     {
       "id": "u002-c063",
       "line": [
-        "あなた",
-        "と",
-        "彼",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "あなた",
-        "と",
-        "かれ",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "you",
-        "and",
-        "he; him",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "You and he are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c064",
-      "line": [
-        "彼女",
+        "医者",
         "と",
         "友達",
         "は",
@@ -3958,7 +3891,7 @@
         "です"
       ],
       "tts": [
-        "かのじょ",
+        "いしゃ",
         "と",
         "ともだち",
         "わ",
@@ -3966,7 +3899,7 @@
         "です"
       ],
       "explain": [
-        "she; her",
+        "doctor",
         "and",
         "friend",
         "topic marker",
@@ -3975,10 +3908,10 @@
       ],
       "tokens": [
         {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
         },
         {
           "surface": "と",
@@ -4008,14 +3941,14 @@
           "explain": "polite identity marker"
         }
       ],
-      "english": "She and the friend are people",
+      "english": "The doctor and the friend are people",
       "fact": "`と` joins two nouns before the sentence gives one shared comment.",
       "grammarTags": [
         "AとBはCです"
       ]
     },
     {
-      "id": "u002-c065",
+      "id": "u002-c064",
       "line": [
         "家",
         "と",
@@ -4082,7 +4015,7 @@
       ]
     },
     {
-      "id": "u002-c066",
+      "id": "u002-c065",
       "line": [
         "日本",
         "と",
@@ -4149,7 +4082,7 @@
       ]
     },
     {
-      "id": "u002-c067",
+      "id": "u002-c066",
       "line": [
         "医者",
         "と",
@@ -4216,7 +4149,7 @@
       ]
     },
     {
-      "id": "u002-c068",
+      "id": "u002-c067",
       "line": [
         "学生",
         "と",
@@ -4283,74 +4216,7 @@
       ]
     },
     {
-      "id": "u002-c069",
-      "line": [
-        "あなた",
-        "と",
-        "彼女",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "あなた",
-        "と",
-        "かのじょ",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "you",
-        "and",
-        "she; her",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "You and she are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c070",
+      "id": "u002-c068",
       "line": [
         "先生",
         "と",
@@ -4411,6 +4277,140 @@
         }
       ],
       "english": "The teacher and the friend are people",
+      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
+      "grammarTags": [
+        "AとBはCです"
+      ]
+    },
+    {
+      "id": "u002-c069",
+      "line": [
+        "学生",
+        "と",
+        "医者",
+        "は",
+        "人",
+        "です"
+      ],
+      "tts": [
+        "がくせい",
+        "と",
+        "いしゃ",
+        "わ",
+        "ひと",
+        "です"
+      ],
+      "explain": [
+        "student",
+        "and",
+        "doctor",
+        "topic marker",
+        "person",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The student and the doctor are people",
+      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
+      "grammarTags": [
+        "AとBはCです"
+      ]
+    },
+    {
+      "id": "u002-c070",
+      "line": [
+        "学校",
+        "と",
+        "家",
+        "は",
+        "場所",
+        "です"
+      ],
+      "tts": [
+        "がっこう",
+        "と",
+        "いえ",
+        "わ",
+        "ばしょ",
+        "です"
+      ],
+      "explain": [
+        "school",
+        "and",
+        "house; home",
+        "topic marker",
+        "place",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "and"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The school and the house are places",
       "fact": "`と` joins two nouns before the sentence gives one shared comment.",
       "grammarTags": [
         "AとBはCです"
