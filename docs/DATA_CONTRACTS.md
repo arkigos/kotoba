@@ -53,6 +53,9 @@ units.
 ## Unit Files
 
 `data/{lang}/curriculum/units/unit_NNN.json` contains an authored unit.
+These frozen unit files are the app-facing artifact. The editable curriculum
+intent lives in `data/{lang}/curriculum/source/`, and source metadata should
+match the frozen unit metadata until a generator rebuild updates the artifacts.
 
 Expected unit fields:
 
@@ -127,6 +130,38 @@ N-32
 Only positive unit numbers that exist are included. Review-due words must return
 in that unit, but they are not counted as the current unit's new drilled
 vocabulary.
+
+## Source Curriculum Model
+
+`data/{lang}/curriculum/source/unit_specs.json` contains the editable authored
+unit plan:
+
+- `schemaVersion`: source schema version.
+- `language`: language code, such as `jp`.
+- `units`: ordered unit specs.
+
+Each source unit spec has:
+
+- `id`
+- `slug`
+- `title`
+- `grammarFocus`
+- `newWords`
+
+These fields must match the app-facing unit index and frozen unit files. Use
+`npm run audit:curriculum-source` to catch drift.
+
+`data/{lang}/curriculum/source/pacing.json` contains generation pacing rules:
+
+- current-unit vocabulary first appears by card 40
+- the unit grammar focus first appears by card 60
+- review-due vocabulary first returns by card 60
+- no learner-facing first exposure appears after card 60
+
+Existing frozen units may temporarily violate these pacing rules while the
+generator is being adopted. Use `npm run audit:curriculum-pacing` to see that
+rebuild debt, and `npm run audit:curriculum-pacing:strict` once generated units
+are expected to conform.
 
 ## Grammar Rule
 

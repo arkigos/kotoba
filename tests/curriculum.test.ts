@@ -1,6 +1,8 @@
 import { describe, expect, it } from "vitest";
 import { courseLevels, unitIndex } from "../src/data";
 import { helperVocabularyUnitIds, knownVocabularyUnitIds, reviewVocabularyUnitIds, vocabularyPoolsForUnit } from "../src/curriculum/bin";
+import pacingRules from "../data/jp/curriculum/source/pacing.json";
+import unitSpecs from "../data/jp/curriculum/source/unit_specs.json";
 
 const unitModules = import.meta.glob<{
   default: {
@@ -23,6 +25,40 @@ function unitModulePath(unitId: number) {
 }
 
 describe("curriculum word bins", () => {
+  it("keeps editable unit specs aligned with the authored unit index", () => {
+    expect(unitSpecs.language).toBe("jp");
+    expect(unitSpecs.units.map((unit) => [unit.id, unit.slug, unit.title, unit.grammarFocus])).toEqual(
+      unitIndex.units.map((unit) => [unit.id, unit.slug, unit.title, unit.grammarFocus]),
+    );
+  });
+
+  it("defines the no-first-exposure pacing cutoff before late review cards", () => {
+    expect(pacingRules.cutoffs.currentWordFirstSeenBy).toBeLessThanOrEqual(40);
+    expect(pacingRules.cutoffs.grammarFocusFirstSeenBy).toBeLessThanOrEqual(60);
+    expect(pacingRules.cutoffs.reviewWordFirstSeenBy).toBeLessThanOrEqual(60);
+    expect(pacingRules.cutoffs.noFirstExposureAfter).toBe(60);
+    expect(pacingRules.cardBands.at(-1)?.id).toBe("review-and-mix");
+  });
+
+  it("can generate a card-position candidate from the curriculum model", async () => {
+    // @ts-expect-error Node authoring scripts live outside the app TypeScript module graph.
+    const { generateCardCandidate } = await import("../scripts/lib/curriculum-card-generator.mjs");
+    const card = generateCardCandidate({
+      source: unitSpecs,
+      pacing: pacingRules,
+      unitId: 2,
+      cardNumber: 50,
+      variant: 0,
+    });
+
+    expect(card.meta.band).toBe("new-grammar-drill");
+    expect(card.meta.introducedWordIds).toEqual([]);
+    expect(card.line).toHaveLength(card.tts.length);
+    expect(card.line).toHaveLength(card.explain.length);
+    expect(card.tokens).toHaveLength(card.line.length);
+    expect(card.grammarTags).toContain(unitSpecs.units[1].grammarFocus);
+  });
+
   it("computes exponential review bins without immediate N-1 obligation", () => {
     expect([1, ...reviewVocabularyUnitIds(1)]).toEqual([1]);
     expect([2, ...reviewVocabularyUnitIds(2)]).toEqual([2]);

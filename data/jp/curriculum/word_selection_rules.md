@@ -14,6 +14,11 @@ The new words must work well together in many short, natural sentences. They
 should not be a random theme list, and they should not duplicate words already
 introduced in earlier units.
 
+Unit vocabulary belongs in the source curriculum model, not hidden inside a card
+as a grammar preview. If a learner-facing word appears in a card, it must either
+already be known, be part of the current unit's `newWords`, or be due review
+from an earlier source unit.
+
 ## Selection Process
 
 Before choosing words for unit `N`:
@@ -164,3 +169,7 @@ Before authoring cards for a unit, confirm:
 - Older known helper words can combine naturally with the new words.
 - Current-unit and review-due words have enough repetition to feel intentionally drilled.
 - The set is common and useful enough for a beginner-to-intermediate journey.
+- Current-unit words are introduced before card 40.
+- New grammar and due SRS returns appear before card 60.
+- Late cards mix known material rather than introducing new learner-facing words
+  or grammar.

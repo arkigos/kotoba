@@ -98,6 +98,43 @@ Owns curriculum quality:
 
 Codex authors the curriculum and uses validators to verify it.
 
+## Curriculum Source Model
+
+Kotoba now keeps a curriculum source layer under
+`data/jp/curriculum/source/`. This layer is the editable model that future
+generators should use before writing frozen unit JSON:
+
+- `unit_specs.json`: unit metadata, grammar focus, and the 10 planned new words
+  for each authored unit
+- `pacing.json`: card-band rules and first-exposure cutoffs
+
+Frozen files under `data/jp/curriculum/units/` are still what the app consumes,
+but they should increasingly be treated as generated artifacts. If a unit's
+vocabulary, grammar focus, or SRS rules change, rebuild affected units from the
+source model instead of hand-editing downstream JSON card by card.
+
+Authoring scripts should compute:
+
+- current vocabulary from the unit spec
+- review-due vocabulary from the SRS formula
+- helper vocabulary from already introduced unit specs
+- available grammar from the grammar sequence through the current unit
+- the pacing band for the requested card position
+
+Useful scripts:
+
+- `npm run audit:curriculum-source`: verifies the source model matches the
+  current frozen units and index
+- `npm run audit:curriculum-pacing`: reports existing first-exposure pacing debt
+- `npm run curriculum:card -- --unit 2 --card 50 --count 5`: generates card
+  candidates for a unit position from the source model
+- `npm run curriculum:unit-draft -- --unit 2 --cards 80`: generates a full draft
+  unit from the source model without overwriting production JSON
+
+Semantic checks are guardrails for obvious bad pairings and inaccurate English.
+They should not prevent goofy-but-valid sentences when the grammar and word
+practice are useful.
+
 ## Curriculum Runtime Model
 
 The app consumes finished unit data. Unit files already contain the card
@@ -133,6 +170,9 @@ data/
   languages.json
   jp/
     curriculum/
+      source/
+        unit_specs.json
+        pacing.json
       grammar_by_unit.md
       word_selection_rules.md
       unit_index.json

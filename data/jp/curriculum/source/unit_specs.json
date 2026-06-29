@@ -1,0 +1,3439 @@
+{
+  "schemaVersion": 1,
+  "language": "jp",
+  "description": "Source curriculum plan for generated Kotoba units. Unit JSON cards are build artifacts derived from this plan plus generation rules.",
+  "units": [
+    {
+      "id": 1,
+      "slug": "simple-identity",
+      "title": "Unit 1: First Sentences",
+      "grammarFocus": "Aです / Aですか / AとB / AかB / early AはB preview",
+      "newWords": [
+        {
+          "id": "watashi",
+          "surface": "私",
+          "reading": "わたし",
+          "meaning": "I; me",
+          "function": "person"
+        },
+        {
+          "id": "gakusei",
+          "surface": "学生",
+          "reading": "がくせい",
+          "meaning": "student",
+          "function": "person"
+        },
+        {
+          "id": "sensei",
+          "surface": "先生",
+          "reading": "せんせい",
+          "meaning": "teacher",
+          "function": "person"
+        },
+        {
+          "id": "nihon",
+          "surface": "日本",
+          "reading": "にほん",
+          "meaning": "Japan",
+          "function": "place"
+        },
+        {
+          "id": "amerika",
+          "surface": "アメリカ",
+          "reading": "あめりか",
+          "meaning": "America",
+          "function": "place"
+        },
+        {
+          "id": "namae",
+          "surface": "名前",
+          "reading": "なまえ",
+          "meaning": "name",
+          "function": "noun"
+        },
+        {
+          "id": "sakura",
+          "surface": "さくら",
+          "reading": "さくら",
+          "meaning": "Sakura",
+          "function": "person"
+        },
+        {
+          "id": "yuki",
+          "surface": "ユキ",
+          "reading": "ゆき",
+          "meaning": "Yuki",
+          "function": "person"
+        },
+        {
+          "id": "tanaka",
+          "surface": "田中",
+          "reading": "たなか",
+          "meaning": "Tanaka",
+          "function": "person"
+        },
+        {
+          "id": "tomodachi",
+          "surface": "友達",
+          "reading": "ともだち",
+          "meaning": "friend",
+          "function": "person"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "topic-comment",
+      "title": "Unit 2: Talking About Things",
+      "grammarFocus": "AはBです / AはBですか / AとBはCです / AかBかCですか",
+      "newWords": [
+        {
+          "id": "neko",
+          "surface": "猫",
+          "reading": "ねこ",
+          "meaning": "cat",
+          "function": "noun"
+        },
+        {
+          "id": "inu",
+          "surface": "犬",
+          "reading": "いぬ",
+          "meaning": "dog",
+          "function": "noun"
+        },
+        {
+          "id": "doubutsu",
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "meaning": "animal",
+          "function": "noun"
+        },
+        {
+          "id": "hon",
+          "surface": "本",
+          "reading": "ほん",
+          "meaning": "book",
+          "function": "noun"
+        },
+        {
+          "id": "ie",
+          "surface": "家",
+          "reading": "いえ",
+          "meaning": "house; home",
+          "function": "place"
+        },
+        {
+          "id": "gakkou",
+          "surface": "学校",
+          "reading": "がっこう",
+          "meaning": "school",
+          "function": "place"
+        },
+        {
+          "id": "basho",
+          "surface": "場所",
+          "reading": "ばしょ",
+          "meaning": "place",
+          "function": "noun"
+        },
+        {
+          "id": "isha",
+          "surface": "医者",
+          "reading": "いしゃ",
+          "meaning": "doctor",
+          "function": "person"
+        },
+        {
+          "id": "hito",
+          "surface": "人",
+          "reading": "ひと",
+          "meaning": "person",
+          "function": "person"
+        },
+        {
+          "id": "mono",
+          "surface": "物",
+          "reading": "もの",
+          "meaning": "thing; object",
+          "function": "noun"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "possession-and-also",
+      "title": "Unit 3: People And Possession",
+      "grammarFocus": "AのB / AもBです",
+      "newWords": [
+        {
+          "id": "kazoku",
+          "surface": "家族",
+          "reading": "かぞく",
+          "meaning": "family",
+          "function": "person"
+        },
+        {
+          "id": "haha",
+          "surface": "母",
+          "reading": "はは",
+          "meaning": "mother",
+          "function": "person"
+        },
+        {
+          "id": "chichi",
+          "surface": "父",
+          "reading": "ちち",
+          "meaning": "father",
+          "function": "person"
+        },
+        {
+          "id": "ane",
+          "surface": "姉",
+          "reading": "あね",
+          "meaning": "older sister",
+          "function": "person"
+        },
+        {
+          "id": "otouto",
+          "surface": "弟",
+          "reading": "おとうと",
+          "meaning": "younger brother",
+          "function": "person"
+        },
+        {
+          "id": "shashin",
+          "surface": "写真",
+          "reading": "しゃしん",
+          "meaning": "photo",
+          "function": "noun"
+        },
+        {
+          "id": "kaban",
+          "surface": "かばん",
+          "reading": "かばん",
+          "meaning": "bag",
+          "function": "noun"
+        },
+        {
+          "id": "kuruma",
+          "surface": "車",
+          "reading": "くるま",
+          "meaning": "car",
+          "function": "noun"
+        },
+        {
+          "id": "heya",
+          "surface": "部屋",
+          "reading": "へや",
+          "meaning": "room",
+          "function": "place"
+        },
+        {
+          "id": "kagi",
+          "surface": "鍵",
+          "reading": "かぎ",
+          "meaning": "key",
+          "function": "noun"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "negative-identity",
+      "title": "Unit 4: Saying What It Is Not",
+      "grammarFocus": "Aではありません / Aじゃありません",
+      "newWords": [
+        {
+          "id": "mise",
+          "surface": "店",
+          "reading": "みせ",
+          "meaning": "shop",
+          "function": "place"
+        },
+        {
+          "id": "byouin",
+          "surface": "病院",
+          "reading": "びょういん",
+          "meaning": "hospital",
+          "function": "place"
+        },
+        {
+          "id": "eki",
+          "surface": "駅",
+          "reading": "えき",
+          "meaning": "station",
+          "function": "place"
+        },
+        {
+          "id": "kaisha",
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "meaning": "company",
+          "function": "place"
+        },
+        {
+          "id": "kaishain",
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "meaning": "company employee",
+          "function": "person"
+        },
+        {
+          "id": "kodomo",
+          "surface": "子供",
+          "reading": "こども",
+          "meaning": "child",
+          "function": "person"
+        },
+        {
+          "id": "otona",
+          "surface": "大人",
+          "reading": "おとな",
+          "meaning": "adult",
+          "function": "person"
+        },
+        {
+          "id": "isu",
+          "surface": "椅子",
+          "reading": "いす",
+          "meaning": "chair",
+          "function": "noun"
+        },
+        {
+          "id": "tsukue",
+          "surface": "机",
+          "reading": "つくえ",
+          "meaning": "desk",
+          "function": "noun"
+        },
+        {
+          "id": "jitensha",
+          "surface": "自転車",
+          "reading": "じてんしゃ",
+          "meaning": "bicycle",
+          "function": "noun"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "past-identity",
+      "title": "Unit 5: Talking About The Past",
+      "grammarFocus": "Aでした / Aではありませんでした",
+      "newWords": [
+        {
+          "id": "kinou",
+          "surface": "昨日",
+          "reading": "きのう",
+          "meaning": "yesterday",
+          "function": "time"
+        },
+        {
+          "id": "sengetsu",
+          "surface": "先月",
+          "reading": "せんげつ",
+          "meaning": "last month",
+          "function": "time"
+        },
+        {
+          "id": "kyonen",
+          "surface": "去年",
+          "reading": "きょねん",
+          "meaning": "last year",
+          "function": "time"
+        },
+        {
+          "id": "asa",
+          "surface": "朝",
+          "reading": "あさ",
+          "meaning": "morning",
+          "function": "time"
+        },
+        {
+          "id": "yoru",
+          "surface": "夜",
+          "reading": "よる",
+          "meaning": "night",
+          "function": "time"
+        },
+        {
+          "id": "tanjoubi",
+          "surface": "誕生日",
+          "reading": "たんじょうび",
+          "meaning": "birthday",
+          "function": "noun"
+        },
+        {
+          "id": "yasumi",
+          "surface": "休み",
+          "reading": "やすみ",
+          "meaning": "day off; break",
+          "function": "time"
+        },
+        {
+          "id": "ryokou",
+          "surface": "旅行",
+          "reading": "りょこう",
+          "meaning": "trip",
+          "function": "noun"
+        },
+        {
+          "id": "shigoto",
+          "surface": "仕事",
+          "reading": "しごと",
+          "meaning": "work; job",
+          "function": "noun"
+        },
+        {
+          "id": "tesuto",
+          "surface": "テスト",
+          "reading": "てすと",
+          "meaning": "test",
+          "function": "noun"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "basic-demonstratives",
+      "title": "Unit 6: This And That",
+      "grammarFocus": "これ / それ / あれ / このN / そのN / あのN",
+      "newWords": [
+        {
+          "id": "kore",
+          "surface": "これ",
+          "reading": "これ",
+          "meaning": "this one",
+          "function": "demonstrative"
+        },
+        {
+          "id": "sore",
+          "surface": "それ",
+          "reading": "それ",
+          "meaning": "that one near you",
+          "function": "demonstrative"
+        },
+        {
+          "id": "are",
+          "surface": "あれ",
+          "reading": "あれ",
+          "meaning": "that one over there",
+          "function": "demonstrative"
+        },
+        {
+          "id": "kono",
+          "surface": "この",
+          "reading": "この",
+          "meaning": "this",
+          "function": "determiner"
+        },
+        {
+          "id": "sono",
+          "surface": "その",
+          "reading": "その",
+          "meaning": "that near you",
+          "function": "determiner"
+        },
+        {
+          "id": "ano",
+          "surface": "あの",
+          "reading": "あの",
+          "meaning": "that over there",
+          "function": "determiner"
+        },
+        {
+          "id": "mizu",
+          "surface": "水",
+          "reading": "みず",
+          "meaning": "water",
+          "function": "noun"
+        },
+        {
+          "id": "ocha",
+          "surface": "お茶",
+          "reading": "おちゃ",
+          "meaning": "tea",
+          "function": "noun"
+        },
+        {
+          "id": "enpitsu",
+          "surface": "鉛筆",
+          "reading": "えんぴつ",
+          "meaning": "pencil",
+          "function": "noun"
+        },
+        {
+          "id": "tokei",
+          "surface": "時計",
+          "reading": "とけい",
+          "meaning": "clock; watch",
+          "function": "noun"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "basic-question-words",
+      "title": "Unit 7: Asking What And Who",
+      "grammarFocus": "何 / 誰 / どれ / どのN",
+      "newWords": [
+        {
+          "id": "nan",
+          "surface": "何",
+          "reading": "なん",
+          "meaning": "what",
+          "function": "question"
+        },
+        {
+          "id": "dare",
+          "surface": "誰",
+          "reading": "だれ",
+          "meaning": "who",
+          "function": "question"
+        },
+        {
+          "id": "dore",
+          "surface": "どれ",
+          "reading": "どれ",
+          "meaning": "which one",
+          "function": "question"
+        },
+        {
+          "id": "dono",
+          "surface": "どの",
+          "reading": "どの",
+          "meaning": "which",
+          "function": "determiner"
+        },
+        {
+          "id": "otokonohito",
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "meaning": "man",
+          "function": "person"
+        },
+        {
+          "id": "onnanohito",
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "meaning": "woman",
+          "function": "person"
+        },
+        {
+          "id": "tenin",
+          "surface": "店員",
+          "reading": "てんいん",
+          "meaning": "shop clerk",
+          "function": "person"
+        },
+        {
+          "id": "ekiin",
+          "surface": "駅員",
+          "reading": "えきいん",
+          "meaning": "station attendant",
+          "function": "person"
+        },
+        {
+          "id": "tabemono",
+          "surface": "食べ物",
+          "reading": "たべもの",
+          "meaning": "food",
+          "function": "noun"
+        },
+        {
+          "id": "nomimono",
+          "surface": "飲み物",
+          "reading": "のみもの",
+          "meaning": "drink",
+          "function": "noun"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "where-and-when",
+      "title": "Unit 8: Asking Where And When",
+      "grammarFocus": "どこ / いつ / ここ / そこ / あそこ",
+      "newWords": [
+        {
+          "id": "doko",
+          "surface": "どこ",
+          "reading": "どこ",
+          "meaning": "where",
+          "function": "question"
+        },
+        {
+          "id": "itsu",
+          "surface": "いつ",
+          "reading": "いつ",
+          "meaning": "when",
+          "function": "question"
+        },
+        {
+          "id": "kyou",
+          "surface": "今日",
+          "reading": "きょう",
+          "meaning": "today",
+          "function": "time"
+        },
+        {
+          "id": "ashita",
+          "surface": "明日",
+          "reading": "あした",
+          "meaning": "tomorrow",
+          "function": "time"
+        },
+        {
+          "id": "ima",
+          "surface": "今",
+          "reading": "いま",
+          "meaning": "now",
+          "function": "time"
+        },
+        {
+          "id": "koko",
+          "surface": "ここ",
+          "reading": "ここ",
+          "meaning": "here",
+          "function": "place"
+        },
+        {
+          "id": "soko",
+          "surface": "そこ",
+          "reading": "そこ",
+          "meaning": "there near you",
+          "function": "place"
+        },
+        {
+          "id": "asoko",
+          "surface": "あそこ",
+          "reading": "あそこ",
+          "meaning": "over there",
+          "function": "place"
+        },
+        {
+          "id": "kouen",
+          "surface": "公園",
+          "reading": "こうえん",
+          "meaning": "park",
+          "function": "place"
+        },
+        {
+          "id": "toshokan",
+          "surface": "図書館",
+          "reading": "としょかん",
+          "meaning": "library",
+          "function": "place"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "sentence-endings",
+      "title": "Unit 9: Sentence Endings",
+      "grammarFocus": "ね / よ",
+      "newWords": [
+        {
+          "id": "tenki",
+          "surface": "天気",
+          "reading": "てんき",
+          "meaning": "weather",
+          "function": "noun"
+        },
+        {
+          "id": "ame",
+          "surface": "雨",
+          "reading": "あめ",
+          "meaning": "rain",
+          "function": "noun"
+        },
+        {
+          "id": "yuki_snow",
+          "surface": "雪",
+          "reading": "ゆき",
+          "meaning": "snow",
+          "function": "noun"
+        },
+        {
+          "id": "kaze",
+          "surface": "風",
+          "reading": "かぜ",
+          "meaning": "wind",
+          "function": "noun"
+        },
+        {
+          "id": "sora",
+          "surface": "空",
+          "reading": "そら",
+          "meaning": "sky",
+          "function": "noun"
+        },
+        {
+          "id": "umi",
+          "surface": "海",
+          "reading": "うみ",
+          "meaning": "sea",
+          "function": "place"
+        },
+        {
+          "id": "yama",
+          "surface": "山",
+          "reading": "やま",
+          "meaning": "mountain",
+          "function": "place"
+        },
+        {
+          "id": "machi",
+          "surface": "町",
+          "reading": "まち",
+          "meaning": "town",
+          "function": "place"
+        },
+        {
+          "id": "shima",
+          "surface": "島",
+          "reading": "しま",
+          "meaning": "island",
+          "function": "place"
+        },
+        {
+          "id": "kuni",
+          "surface": "国",
+          "reading": "くに",
+          "meaning": "country",
+          "function": "place"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "i-adjectives-present",
+      "title": "Unit 10: I-Adjectives, Present",
+      "grammarFocus": "大きいN / Nは大きいです",
+      "newWords": [
+        {
+          "id": "ookii",
+          "surface": "大きい",
+          "reading": "おおきい",
+          "meaning": "big",
+          "function": "adjective"
+        },
+        {
+          "id": "chiisai",
+          "surface": "小さい",
+          "reading": "ちいさい",
+          "meaning": "small",
+          "function": "adjective"
+        },
+        {
+          "id": "atarashii",
+          "surface": "新しい",
+          "reading": "あたらしい",
+          "meaning": "new",
+          "function": "adjective"
+        },
+        {
+          "id": "furui",
+          "surface": "古い",
+          "reading": "ふるい",
+          "meaning": "old",
+          "function": "adjective"
+        },
+        {
+          "id": "takai",
+          "surface": "高い",
+          "reading": "たかい",
+          "meaning": "tall; expensive",
+          "function": "adjective"
+        },
+        {
+          "id": "yasui",
+          "surface": "安い",
+          "reading": "やすい",
+          "meaning": "cheap",
+          "function": "adjective"
+        },
+        {
+          "id": "nagai",
+          "surface": "長い",
+          "reading": "ながい",
+          "meaning": "long",
+          "function": "adjective"
+        },
+        {
+          "id": "mijikai",
+          "surface": "短い",
+          "reading": "みじかい",
+          "meaning": "short",
+          "function": "adjective"
+        },
+        {
+          "id": "akai",
+          "surface": "赤い",
+          "reading": "あかい",
+          "meaning": "red",
+          "function": "adjective"
+        },
+        {
+          "id": "shiroi",
+          "surface": "白い",
+          "reading": "しろい",
+          "meaning": "white",
+          "function": "adjective"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "slug": "i-adjectives-negative-past",
+      "title": "Unit 11: I-Adjectives, Negative And Past",
+      "grammarFocus": "大きくないです / 大きかったです / 大きくなかったです",
+      "newWords": [
+        {
+          "id": "atsui",
+          "surface": "暑い",
+          "reading": "あつい",
+          "meaning": "hot",
+          "function": "adjective"
+        },
+        {
+          "id": "samui",
+          "surface": "寒い",
+          "reading": "さむい",
+          "meaning": "cold",
+          "function": "adjective"
+        },
+        {
+          "id": "isogashii",
+          "surface": "忙しい",
+          "reading": "いそがしい",
+          "meaning": "busy",
+          "function": "adjective"
+        },
+        {
+          "id": "tanoshii",
+          "surface": "楽しい",
+          "reading": "たのしい",
+          "meaning": "fun",
+          "function": "adjective"
+        },
+        {
+          "id": "muzukashii",
+          "surface": "難しい",
+          "reading": "むずかしい",
+          "meaning": "difficult",
+          "function": "adjective"
+        },
+        {
+          "id": "yasashii_easy",
+          "surface": "易しい",
+          "reading": "やさしい",
+          "meaning": "easy",
+          "function": "adjective"
+        },
+        {
+          "id": "oishii",
+          "surface": "美味しい",
+          "reading": "おいしい",
+          "meaning": "delicious",
+          "function": "adjective"
+        },
+        {
+          "id": "hayai",
+          "surface": "早い",
+          "reading": "はやい",
+          "meaning": "early; fast",
+          "function": "adjective"
+        },
+        {
+          "id": "osoi",
+          "surface": "遅い",
+          "reading": "おそい",
+          "meaning": "late; slow",
+          "function": "adjective"
+        },
+        {
+          "id": "akarui",
+          "surface": "明るい",
+          "reading": "あかるい",
+          "meaning": "bright",
+          "function": "adjective"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "slug": "na-adjectives-present",
+      "title": "Unit 12: Na-Adjectives, Present",
+      "grammarFocus": "静かなN / Nは静かです",
+      "newWords": [
+        {
+          "id": "shizuka",
+          "surface": "静か",
+          "reading": "しずか",
+          "meaning": "quiet",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "nigiyaka",
+          "surface": "にぎやか",
+          "reading": "にぎやか",
+          "meaning": "lively",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "kirei",
+          "surface": "きれい",
+          "reading": "きれい",
+          "meaning": "pretty; clean",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "genki",
+          "surface": "元気",
+          "reading": "げんき",
+          "meaning": "healthy; energetic",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "yuumei",
+          "surface": "有名",
+          "reading": "ゆうめい",
+          "meaning": "famous",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "shinsetsu",
+          "surface": "親切",
+          "reading": "しんせつ",
+          "meaning": "kind",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "kantan",
+          "surface": "簡単",
+          "reading": "かんたん",
+          "meaning": "simple",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "taisetsu",
+          "surface": "大切",
+          "reading": "たいせつ",
+          "meaning": "important",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "anzen",
+          "surface": "安全",
+          "reading": "あんぜん",
+          "meaning": "safe",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "kiken",
+          "surface": "危険",
+          "reading": "きけん",
+          "meaning": "dangerous",
+          "function": "adjectival noun"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "slug": "na-adjectives-negative-past",
+      "title": "Unit 13: Na-Adjectives, Negative And Past",
+      "grammarFocus": "静かではありません / 静かでした / 静かではありませんでした",
+      "newWords": [
+        {
+          "id": "hima",
+          "surface": "暇",
+          "reading": "ひま",
+          "meaning": "free; not busy",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "hen",
+          "surface": "変",
+          "reading": "へん",
+          "meaning": "strange",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "suteki",
+          "surface": "すてき",
+          "reading": "すてき",
+          "meaning": "lovely",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "majime",
+          "surface": "真面目",
+          "reading": "まじめ",
+          "meaning": "serious",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "teinei",
+          "surface": "丁寧",
+          "reading": "ていねい",
+          "meaning": "polite; careful",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "shitsurei",
+          "surface": "失礼",
+          "reading": "しつれい",
+          "meaning": "rude",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "fukuzatsu",
+          "surface": "複雑",
+          "reading": "ふくざつ",
+          "meaning": "complex",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "tokubetsu",
+          "surface": "特別",
+          "reading": "とくべつ",
+          "meaning": "special",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "futsuu",
+          "surface": "普通",
+          "reading": "ふつう",
+          "meaning": "ordinary",
+          "function": "adjectival noun"
+        },
+        {
+          "id": "zannen",
+          "surface": "残念",
+          "reading": "ざんねん",
+          "meaning": "unfortunate",
+          "function": "adjectival noun"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "slug": "degree-words",
+      "title": "Unit 14: Degree Words",
+      "grammarFocus": "とても / あまり...ない",
+      "newWords": [
+        {
+          "id": "totemo",
+          "surface": "とても",
+          "reading": "とても",
+          "meaning": "very",
+          "function": "adverb"
+        },
+        {
+          "id": "amari",
+          "surface": "あまり",
+          "reading": "あまり",
+          "meaning": "not very; too much",
+          "function": "adverb"
+        },
+        {
+          "id": "sukoshi",
+          "surface": "少し",
+          "reading": "すこし",
+          "meaning": "a little",
+          "function": "adverb"
+        },
+        {
+          "id": "maa_maa",
+          "surface": "まあまあ",
+          "reading": "まあまあ",
+          "meaning": "so-so",
+          "function": "adverb"
+        },
+        {
+          "id": "hontou_ni",
+          "surface": "本当に",
+          "reading": "ほんとうに",
+          "meaning": "really",
+          "function": "adverb"
+        },
+        {
+          "id": "kanari",
+          "surface": "かなり",
+          "reading": "かなり",
+          "meaning": "rather; considerably",
+          "function": "adverb"
+        },
+        {
+          "id": "zenzen",
+          "surface": "全然",
+          "reading": "ぜんぜん",
+          "meaning": "not at all",
+          "function": "adverb"
+        },
+        {
+          "id": "mou",
+          "surface": "もう",
+          "reading": "もう",
+          "meaning": "already; anymore",
+          "function": "adverb"
+        },
+        {
+          "id": "mada",
+          "surface": "まだ",
+          "reading": "まだ",
+          "meaning": "still; not yet",
+          "function": "adverb"
+        },
+        {
+          "id": "chotto",
+          "surface": "ちょっと",
+          "reading": "ちょっと",
+          "meaning": "a little; briefly",
+          "function": "adverb"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "slug": "existence-for-things",
+      "title": "Unit 15: Existence For Things",
+      "grammarFocus": "Nがあります",
+      "newWords": [
+        {
+          "id": "hako",
+          "surface": "箱",
+          "reading": "はこ",
+          "meaning": "box",
+          "function": "noun"
+        },
+        {
+          "id": "mado",
+          "surface": "窓",
+          "reading": "まど",
+          "meaning": "window",
+          "function": "noun"
+        },
+        {
+          "id": "doa",
+          "surface": "ドア",
+          "reading": "どあ",
+          "meaning": "door",
+          "function": "noun"
+        },
+        {
+          "id": "sara",
+          "surface": "皿",
+          "reading": "さら",
+          "meaning": "plate",
+          "function": "noun"
+        },
+        {
+          "id": "koppu",
+          "surface": "コップ",
+          "reading": "こっぷ",
+          "meaning": "cup",
+          "function": "noun"
+        },
+        {
+          "id": "chizu",
+          "surface": "地図",
+          "reading": "ちず",
+          "meaning": "map",
+          "function": "noun"
+        },
+        {
+          "id": "kami",
+          "surface": "紙",
+          "reading": "かみ",
+          "meaning": "paper",
+          "function": "noun"
+        },
+        {
+          "id": "pen",
+          "surface": "ペン",
+          "reading": "ぺん",
+          "meaning": "pen",
+          "function": "noun"
+        },
+        {
+          "id": "hana_flower",
+          "surface": "花",
+          "reading": "はな",
+          "meaning": "flower",
+          "function": "noun"
+        },
+        {
+          "id": "denwa",
+          "surface": "電話",
+          "reading": "でんわ",
+          "meaning": "telephone",
+          "function": "noun"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "slug": "existence-for-living-things",
+      "title": "Unit 16: Existence For People And Animals",
+      "grammarFocus": "Nがいます",
+      "newWords": [
+        {
+          "id": "sobo",
+          "surface": "祖母",
+          "reading": "そぼ",
+          "meaning": "grandmother",
+          "function": "person"
+        },
+        {
+          "id": "sofu",
+          "surface": "祖父",
+          "reading": "そふ",
+          "meaning": "grandfather",
+          "function": "person"
+        },
+        {
+          "id": "ani",
+          "surface": "兄",
+          "reading": "あに",
+          "meaning": "older brother",
+          "function": "person"
+        },
+        {
+          "id": "imouto",
+          "surface": "妹",
+          "reading": "いもうと",
+          "meaning": "younger sister",
+          "function": "person"
+        },
+        {
+          "id": "akachan",
+          "surface": "赤ちゃん",
+          "reading": "あかちゃん",
+          "meaning": "baby",
+          "function": "person"
+        },
+        {
+          "id": "tori",
+          "surface": "鳥",
+          "reading": "とり",
+          "meaning": "bird",
+          "function": "animal"
+        },
+        {
+          "id": "sakana",
+          "surface": "魚",
+          "reading": "さかな",
+          "meaning": "fish",
+          "function": "animal"
+        },
+        {
+          "id": "uma",
+          "surface": "馬",
+          "reading": "うま",
+          "meaning": "horse",
+          "function": "animal"
+        },
+        {
+          "id": "ushi",
+          "surface": "牛",
+          "reading": "うし",
+          "meaning": "cow",
+          "function": "animal"
+        },
+        {
+          "id": "mushi",
+          "surface": "虫",
+          "reading": "むし",
+          "meaning": "bug",
+          "function": "animal"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "slug": "existence-in-a-place",
+      "title": "Unit 17: Existence In A Place",
+      "grammarFocus": "場所にNがあります / 場所にNがいます",
+      "newWords": [
+        {
+          "id": "daidokoro",
+          "surface": "台所",
+          "reading": "だいどころ",
+          "meaning": "kitchen",
+          "function": "place"
+        },
+        {
+          "id": "niwa",
+          "surface": "庭",
+          "reading": "にわ",
+          "meaning": "garden",
+          "function": "place"
+        },
+        {
+          "id": "kyoushitsu",
+          "surface": "教室",
+          "reading": "きょうしつ",
+          "meaning": "classroom",
+          "function": "place"
+        },
+        {
+          "id": "shokudou",
+          "surface": "食堂",
+          "reading": "しょくどう",
+          "meaning": "cafeteria",
+          "function": "place"
+        },
+        {
+          "id": "toire",
+          "surface": "トイレ",
+          "reading": "といれ",
+          "meaning": "toilet; restroom",
+          "function": "place"
+        },
+        {
+          "id": "michi",
+          "surface": "道",
+          "reading": "みち",
+          "meaning": "road",
+          "function": "place"
+        },
+        {
+          "id": "hashi_bridge",
+          "surface": "橋",
+          "reading": "はし",
+          "meaning": "bridge",
+          "function": "place"
+        },
+        {
+          "id": "kawa",
+          "surface": "川",
+          "reading": "かわ",
+          "meaning": "river",
+          "function": "place"
+        },
+        {
+          "id": "kuukou",
+          "surface": "空港",
+          "reading": "くうこう",
+          "meaning": "airport",
+          "function": "place"
+        },
+        {
+          "id": "hoteru",
+          "surface": "ホテル",
+          "reading": "ほてる",
+          "meaning": "hotel",
+          "function": "place"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "slug": "location-words",
+      "title": "Unit 18: Location Words",
+      "grammarFocus": "上 / 下 / 中 / 前 / 後ろ / 隣 / Aの上",
+      "newWords": [
+        {
+          "id": "ue",
+          "surface": "上",
+          "reading": "うえ",
+          "meaning": "above; on top",
+          "function": "location"
+        },
+        {
+          "id": "shita",
+          "surface": "下",
+          "reading": "した",
+          "meaning": "below; under",
+          "function": "location"
+        },
+        {
+          "id": "naka",
+          "surface": "中",
+          "reading": "なか",
+          "meaning": "inside",
+          "function": "location"
+        },
+        {
+          "id": "mae",
+          "surface": "前",
+          "reading": "まえ",
+          "meaning": "front; before",
+          "function": "location"
+        },
+        {
+          "id": "ushiro",
+          "surface": "後ろ",
+          "reading": "うしろ",
+          "meaning": "behind",
+          "function": "location"
+        },
+        {
+          "id": "tonari",
+          "surface": "隣",
+          "reading": "となり",
+          "meaning": "next to",
+          "function": "location"
+        },
+        {
+          "id": "migi",
+          "surface": "右",
+          "reading": "みぎ",
+          "meaning": "right",
+          "function": "location"
+        },
+        {
+          "id": "hidari",
+          "surface": "左",
+          "reading": "ひだり",
+          "meaning": "left",
+          "function": "location"
+        },
+        {
+          "id": "aida",
+          "surface": "間",
+          "reading": "あいだ",
+          "meaning": "between",
+          "function": "location"
+        },
+        {
+          "id": "chikaku",
+          "surface": "近く",
+          "reading": "ちかく",
+          "meaning": "nearby",
+          "function": "location"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "slug": "basic-numbers-counters",
+      "title": "Unit 19: Basic Numbers And Counters",
+      "grammarFocus": "一つ / 二つ / 三つ / Nが一つあります",
+      "newWords": [
+        {
+          "id": "hitotsu",
+          "surface": "一つ",
+          "reading": "ひとつ",
+          "meaning": "one thing",
+          "function": "quantity"
+        },
+        {
+          "id": "futatsu",
+          "surface": "二つ",
+          "reading": "ふたつ",
+          "meaning": "two things",
+          "function": "quantity"
+        },
+        {
+          "id": "mittsu",
+          "surface": "三つ",
+          "reading": "みっつ",
+          "meaning": "three things",
+          "function": "quantity"
+        },
+        {
+          "id": "yottsu",
+          "surface": "四つ",
+          "reading": "よっつ",
+          "meaning": "four things",
+          "function": "quantity"
+        },
+        {
+          "id": "itsutsu",
+          "surface": "五つ",
+          "reading": "いつつ",
+          "meaning": "five things",
+          "function": "quantity"
+        },
+        {
+          "id": "muttsu",
+          "surface": "六つ",
+          "reading": "むっつ",
+          "meaning": "six things",
+          "function": "quantity"
+        },
+        {
+          "id": "nanatsu",
+          "surface": "七つ",
+          "reading": "ななつ",
+          "meaning": "seven things",
+          "function": "quantity"
+        },
+        {
+          "id": "yattsu",
+          "surface": "八つ",
+          "reading": "やっつ",
+          "meaning": "eight things",
+          "function": "quantity"
+        },
+        {
+          "id": "kokonotsu",
+          "surface": "九つ",
+          "reading": "ここのつ",
+          "meaning": "nine things",
+          "function": "quantity"
+        },
+        {
+          "id": "too",
+          "surface": "十",
+          "reading": "とお",
+          "meaning": "ten things",
+          "function": "quantity"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "slug": "a1-scene-review",
+      "title": "Unit 20: A1 Scene Review",
+      "grammarFocus": "A1 mixed identity, question, time, adjective, existence, and location review",
+      "newWords": [
+        {
+          "id": "ichiba",
+          "surface": "市場",
+          "reading": "いちば",
+          "meaning": "market",
+          "function": "place"
+        },
+        {
+          "id": "kouban",
+          "surface": "交番",
+          "reading": "こうばん",
+          "meaning": "police box",
+          "function": "place"
+        },
+        {
+          "id": "yuubinkyoku",
+          "surface": "郵便局",
+          "reading": "ゆうびんきょく",
+          "meaning": "post office",
+          "function": "place"
+        },
+        {
+          "id": "ginkou",
+          "surface": "銀行",
+          "reading": "ぎんこう",
+          "meaning": "bank",
+          "function": "place"
+        },
+        {
+          "id": "eigakan",
+          "surface": "映画館",
+          "reading": "えいがかん",
+          "meaning": "movie theater",
+          "function": "place"
+        },
+        {
+          "id": "resutoran",
+          "surface": "レストラン",
+          "reading": "れすとらん",
+          "meaning": "restaurant",
+          "function": "place"
+        },
+        {
+          "id": "kafe",
+          "surface": "カフェ",
+          "reading": "かふぇ",
+          "meaning": "cafe",
+          "function": "place"
+        },
+        {
+          "id": "basu",
+          "surface": "バス",
+          "reading": "ばす",
+          "meaning": "bus",
+          "function": "noun"
+        },
+        {
+          "id": "densha",
+          "surface": "電車",
+          "reading": "でんしゃ",
+          "meaning": "train",
+          "function": "noun"
+        },
+        {
+          "id": "chiketto",
+          "surface": "チケット",
+          "reading": "ちけっと",
+          "meaning": "ticket",
+          "function": "noun"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "slug": "polite-verbs-non-past",
+      "title": "Unit 21: Polite Verbs, Non-Past",
+      "grammarFocus": "Vます / polite non-past actions",
+      "newWords": [
+        {
+          "id": "taberu",
+          "surface": "食べる",
+          "reading": "たべる",
+          "meaning": "eat",
+          "function": "verb"
+        },
+        {
+          "id": "nomu",
+          "surface": "飲む",
+          "reading": "のむ",
+          "meaning": "drink",
+          "function": "verb"
+        },
+        {
+          "id": "iku",
+          "surface": "行く",
+          "reading": "いく",
+          "meaning": "go",
+          "function": "verb"
+        },
+        {
+          "id": "kuru",
+          "surface": "来る",
+          "reading": "くる",
+          "meaning": "come",
+          "function": "verb"
+        },
+        {
+          "id": "kaeru_verb",
+          "surface": "帰る",
+          "reading": "かえる",
+          "meaning": "return; go home",
+          "function": "verb"
+        },
+        {
+          "id": "miru",
+          "surface": "見る",
+          "reading": "みる",
+          "meaning": "look; watch; see",
+          "function": "verb"
+        },
+        {
+          "id": "kiku",
+          "surface": "聞く",
+          "reading": "きく",
+          "meaning": "listen; ask",
+          "function": "verb"
+        },
+        {
+          "id": "yomu",
+          "surface": "読む",
+          "reading": "よむ",
+          "meaning": "read",
+          "function": "verb"
+        },
+        {
+          "id": "kaku",
+          "surface": "書く",
+          "reading": "かく",
+          "meaning": "write",
+          "function": "verb"
+        },
+        {
+          "id": "benkyou_suru",
+          "surface": "勉強する",
+          "reading": "べんきょうする",
+          "meaning": "study",
+          "function": "verb"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "slug": "polite-verb-negatives",
+      "title": "Unit 22: Polite Verb Negatives",
+      "grammarFocus": "Vません",
+      "newWords": [
+        {
+          "id": "hanasu",
+          "surface": "話す",
+          "reading": "はなす",
+          "meaning": "speak",
+          "function": "verb"
+        },
+        {
+          "id": "kau",
+          "surface": "買う",
+          "reading": "かう",
+          "meaning": "buy",
+          "function": "verb"
+        },
+        {
+          "id": "au",
+          "surface": "会う",
+          "reading": "あう",
+          "meaning": "meet",
+          "function": "verb"
+        },
+        {
+          "id": "matsu",
+          "surface": "待つ",
+          "reading": "まつ",
+          "meaning": "wait",
+          "function": "verb"
+        },
+        {
+          "id": "tsukau",
+          "surface": "使う",
+          "reading": "つかう",
+          "meaning": "use",
+          "function": "verb"
+        },
+        {
+          "id": "tsukuru",
+          "surface": "作る",
+          "reading": "つくる",
+          "meaning": "make",
+          "function": "verb"
+        },
+        {
+          "id": "neru",
+          "surface": "寝る",
+          "reading": "ねる",
+          "meaning": "sleep",
+          "function": "verb"
+        },
+        {
+          "id": "okiru",
+          "surface": "起きる",
+          "reading": "おきる",
+          "meaning": "wake up",
+          "function": "verb"
+        },
+        {
+          "id": "hataraku",
+          "surface": "働く",
+          "reading": "はたらく",
+          "meaning": "work",
+          "function": "verb"
+        },
+        {
+          "id": "yasumu_verb",
+          "surface": "休む",
+          "reading": "やすむ",
+          "meaning": "rest; take a day off",
+          "function": "verb"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "slug": "polite-verbs-past",
+      "title": "Unit 23: Polite Verbs, Past",
+      "grammarFocus": "Vました / Vませんでした",
+      "newWords": [
+        {
+          "id": "aruku",
+          "surface": "歩く",
+          "reading": "あるく",
+          "meaning": "walk",
+          "function": "verb"
+        },
+        {
+          "id": "hashiru",
+          "surface": "走る",
+          "reading": "はしる",
+          "meaning": "run",
+          "function": "verb"
+        },
+        {
+          "id": "oyogu",
+          "surface": "泳ぐ",
+          "reading": "およぐ",
+          "meaning": "swim",
+          "function": "verb"
+        },
+        {
+          "id": "asobu",
+          "surface": "遊ぶ",
+          "reading": "あそぶ",
+          "meaning": "play",
+          "function": "verb"
+        },
+        {
+          "id": "hairu",
+          "surface": "入る",
+          "reading": "はいる",
+          "meaning": "enter",
+          "function": "verb"
+        },
+        {
+          "id": "deru",
+          "surface": "出る",
+          "reading": "でる",
+          "meaning": "leave; exit",
+          "function": "verb"
+        },
+        {
+          "id": "akeru",
+          "surface": "開ける",
+          "reading": "あける",
+          "meaning": "open",
+          "function": "verb"
+        },
+        {
+          "id": "shimeru",
+          "surface": "閉める",
+          "reading": "しめる",
+          "meaning": "close",
+          "function": "verb"
+        },
+        {
+          "id": "arau",
+          "surface": "洗う",
+          "reading": "あらう",
+          "meaning": "wash",
+          "function": "verb"
+        },
+        {
+          "id": "tatsu",
+          "surface": "立つ",
+          "reading": "たつ",
+          "meaning": "stand",
+          "function": "verb"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "slug": "direct-objects",
+      "title": "Unit 24: Direct Objects",
+      "grammarFocus": "NをVます",
+      "newWords": [
+        {
+          "id": "gohan",
+          "surface": "ご飯",
+          "reading": "ごはん",
+          "meaning": "meal; rice",
+          "function": "noun"
+        },
+        {
+          "id": "pan",
+          "surface": "パン",
+          "reading": "ぱん",
+          "meaning": "bread",
+          "function": "noun"
+        },
+        {
+          "id": "niku",
+          "surface": "肉",
+          "reading": "にく",
+          "meaning": "meat",
+          "function": "noun"
+        },
+        {
+          "id": "yasai",
+          "surface": "野菜",
+          "reading": "やさい",
+          "meaning": "vegetables",
+          "function": "noun"
+        },
+        {
+          "id": "kudamono",
+          "surface": "果物",
+          "reading": "くだもの",
+          "meaning": "fruit",
+          "function": "noun"
+        },
+        {
+          "id": "tegami",
+          "surface": "手紙",
+          "reading": "てがみ",
+          "meaning": "letter",
+          "function": "noun"
+        },
+        {
+          "id": "shinbun",
+          "surface": "新聞",
+          "reading": "しんぶん",
+          "meaning": "newspaper",
+          "function": "noun"
+        },
+        {
+          "id": "ongaku",
+          "surface": "音楽",
+          "reading": "おんがく",
+          "meaning": "music",
+          "function": "noun"
+        },
+        {
+          "id": "eiga",
+          "surface": "映画",
+          "reading": "えいが",
+          "meaning": "movie",
+          "function": "noun"
+        },
+        {
+          "id": "koohii",
+          "surface": "コーヒー",
+          "reading": "こーひー",
+          "meaning": "coffee",
+          "function": "noun"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "slug": "going-to-places",
+      "title": "Unit 25: Going To Places",
+      "grammarFocus": "場所に行きます / 場所へ行きます",
+      "newWords": [
+        {
+          "id": "jitaku",
+          "surface": "自宅",
+          "reading": "じたく",
+          "meaning": "home",
+          "function": "place"
+        },
+        {
+          "id": "jimusho",
+          "surface": "事務所",
+          "reading": "じむしょ",
+          "meaning": "office",
+          "function": "place"
+        },
+        {
+          "id": "daigaku",
+          "surface": "大学",
+          "reading": "だいがく",
+          "meaning": "university",
+          "function": "place"
+        },
+        {
+          "id": "hakubutsukan",
+          "surface": "博物館",
+          "reading": "はくぶつかん",
+          "meaning": "museum",
+          "function": "place"
+        },
+        {
+          "id": "honya",
+          "surface": "本屋",
+          "reading": "ほんや",
+          "meaning": "bookstore",
+          "function": "place"
+        },
+        {
+          "id": "konbini",
+          "surface": "コンビニ",
+          "reading": "こんびに",
+          "meaning": "convenience store",
+          "function": "place"
+        },
+        {
+          "id": "jinja",
+          "surface": "神社",
+          "reading": "じんじゃ",
+          "meaning": "shrine",
+          "function": "place"
+        },
+        {
+          "id": "tera",
+          "surface": "寺",
+          "reading": "てら",
+          "meaning": "temple",
+          "function": "place"
+        },
+        {
+          "id": "koujou",
+          "surface": "工場",
+          "reading": "こうじょう",
+          "meaning": "factory",
+          "function": "place"
+        },
+        {
+          "id": "taishikan",
+          "surface": "大使館",
+          "reading": "たいしかん",
+          "meaning": "embassy",
+          "function": "place"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "slug": "action-location",
+      "title": "Unit 26: Action Location",
+      "grammarFocus": "場所でVます",
+      "newWords": [
+        {
+          "id": "taiikukan",
+          "surface": "体育館",
+          "reading": "たいいくかん",
+          "meaning": "gym",
+          "function": "place"
+        },
+        {
+          "id": "puuru",
+          "surface": "プール",
+          "reading": "ぷーる",
+          "meaning": "pool",
+          "function": "place"
+        },
+        {
+          "id": "kaigishitsu",
+          "surface": "会議室",
+          "reading": "かいぎしつ",
+          "meaning": "meeting room",
+          "function": "place"
+        },
+        {
+          "id": "hiroba",
+          "surface": "広場",
+          "reading": "ひろば",
+          "meaning": "plaza",
+          "function": "place"
+        },
+        {
+          "id": "sentou",
+          "surface": "銭湯",
+          "reading": "せんとう",
+          "meaning": "public bath",
+          "function": "place"
+        },
+        {
+          "id": "ryokan",
+          "surface": "旅館",
+          "reading": "りょかん",
+          "meaning": "inn",
+          "function": "place"
+        },
+        {
+          "id": "kaigan",
+          "surface": "海岸",
+          "reading": "かいがん",
+          "meaning": "beach",
+          "function": "place"
+        },
+        {
+          "id": "mori",
+          "surface": "森",
+          "reading": "もり",
+          "meaning": "forest",
+          "function": "place"
+        },
+        {
+          "id": "kissaten",
+          "surface": "喫茶店",
+          "reading": "きっさてん",
+          "meaning": "coffee shop",
+          "function": "place"
+        },
+        {
+          "id": "depaato",
+          "surface": "デパート",
+          "reading": "でぱーと",
+          "meaning": "department store",
+          "function": "place"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "slug": "time-point",
+      "title": "Unit 27: Time Point",
+      "grammarFocus": "時間にVます",
+      "newWords": [
+        {
+          "id": "getsuyoubi",
+          "surface": "月曜日",
+          "reading": "げつようび",
+          "meaning": "Monday",
+          "function": "time"
+        },
+        {
+          "id": "kayoubi",
+          "surface": "火曜日",
+          "reading": "かようび",
+          "meaning": "Tuesday",
+          "function": "time"
+        },
+        {
+          "id": "suiyoubi",
+          "surface": "水曜日",
+          "reading": "すいようび",
+          "meaning": "Wednesday",
+          "function": "time"
+        },
+        {
+          "id": "mokuyoubi",
+          "surface": "木曜日",
+          "reading": "もくようび",
+          "meaning": "Thursday",
+          "function": "time"
+        },
+        {
+          "id": "kinyoubi",
+          "surface": "金曜日",
+          "reading": "きんようび",
+          "meaning": "Friday",
+          "function": "time"
+        },
+        {
+          "id": "doyoubi",
+          "surface": "土曜日",
+          "reading": "どようび",
+          "meaning": "Saturday",
+          "function": "time"
+        },
+        {
+          "id": "nichiyoubi",
+          "surface": "日曜日",
+          "reading": "にちようび",
+          "meaning": "Sunday",
+          "function": "time"
+        },
+        {
+          "id": "hiru",
+          "surface": "昼",
+          "reading": "ひる",
+          "meaning": "noon; daytime",
+          "function": "time"
+        },
+        {
+          "id": "gogo",
+          "surface": "午後",
+          "reading": "ごご",
+          "meaning": "afternoon; p.m.",
+          "function": "time"
+        },
+        {
+          "id": "gozen",
+          "surface": "午前",
+          "reading": "ごぜん",
+          "meaning": "morning; a.m.",
+          "function": "time"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "slug": "from-and-until",
+      "title": "Unit 28: From And Until",
+      "grammarFocus": "AからBまで",
+      "newWords": [
+        {
+          "id": "ichiji",
+          "surface": "一時",
+          "reading": "いちじ",
+          "meaning": "one o'clock",
+          "function": "time"
+        },
+        {
+          "id": "niji",
+          "surface": "二時",
+          "reading": "にじ",
+          "meaning": "two o'clock",
+          "function": "time"
+        },
+        {
+          "id": "sanji",
+          "surface": "三時",
+          "reading": "さんじ",
+          "meaning": "three o'clock",
+          "function": "time"
+        },
+        {
+          "id": "yoji",
+          "surface": "四時",
+          "reading": "よじ",
+          "meaning": "four o'clock",
+          "function": "time"
+        },
+        {
+          "id": "goji",
+          "surface": "五時",
+          "reading": "ごじ",
+          "meaning": "five o'clock",
+          "function": "time"
+        },
+        {
+          "id": "rokuji",
+          "surface": "六時",
+          "reading": "ろくじ",
+          "meaning": "six o'clock",
+          "function": "time"
+        },
+        {
+          "id": "shichiji",
+          "surface": "七時",
+          "reading": "しちじ",
+          "meaning": "seven o'clock",
+          "function": "time"
+        },
+        {
+          "id": "hachiji",
+          "surface": "八時",
+          "reading": "はちじ",
+          "meaning": "eight o'clock",
+          "function": "time"
+        },
+        {
+          "id": "kuji",
+          "surface": "九時",
+          "reading": "くじ",
+          "meaning": "nine o'clock",
+          "function": "time"
+        },
+        {
+          "id": "juuji",
+          "surface": "十時",
+          "reading": "じゅうじ",
+          "meaning": "ten o'clock",
+          "function": "time"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "slug": "with-someone",
+      "title": "Unit 29: With Someone",
+      "grammarFocus": "人とVます",
+      "newWords": [
+        {
+          "id": "senpai",
+          "surface": "先輩",
+          "reading": "せんぱい",
+          "meaning": "senior; mentor",
+          "function": "person"
+        },
+        {
+          "id": "kouhai",
+          "surface": "後輩",
+          "reading": "こうはい",
+          "meaning": "junior colleague",
+          "function": "person"
+        },
+        {
+          "id": "douryou",
+          "surface": "同僚",
+          "reading": "どうりょう",
+          "meaning": "coworker",
+          "function": "person"
+        },
+        {
+          "id": "joushi",
+          "surface": "上司",
+          "reading": "じょうし",
+          "meaning": "boss",
+          "function": "person"
+        },
+        {
+          "id": "ryoushin",
+          "surface": "両親",
+          "reading": "りょうしん",
+          "meaning": "parents",
+          "function": "person"
+        },
+        {
+          "id": "musuko",
+          "surface": "息子",
+          "reading": "むすこ",
+          "meaning": "son",
+          "function": "person"
+        },
+        {
+          "id": "musume",
+          "surface": "娘",
+          "reading": "むすめ",
+          "meaning": "daughter",
+          "function": "person"
+        },
+        {
+          "id": "koibito",
+          "surface": "恋人",
+          "reading": "こいびと",
+          "meaning": "partner; sweetheart",
+          "function": "person"
+        },
+        {
+          "id": "okusan",
+          "surface": "奥さん",
+          "reading": "おくさん",
+          "meaning": "wife",
+          "function": "person"
+        },
+        {
+          "id": "goshujin",
+          "surface": "ご主人",
+          "reading": "ごしゅじん",
+          "meaning": "husband",
+          "function": "person"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "slug": "frequency",
+      "title": "Unit 30: Frequency",
+      "grammarFocus": "毎日 / よく / 時々 / あまり...ません",
+      "newWords": [
+        {
+          "id": "mainichi",
+          "surface": "毎日",
+          "reading": "まいにち",
+          "meaning": "every day",
+          "function": "adverb"
+        },
+        {
+          "id": "maiasa",
+          "surface": "毎朝",
+          "reading": "まいあさ",
+          "meaning": "every morning",
+          "function": "adverb"
+        },
+        {
+          "id": "maiban",
+          "surface": "毎晩",
+          "reading": "まいばん",
+          "meaning": "every night",
+          "function": "adverb"
+        },
+        {
+          "id": "yoku_adv",
+          "surface": "よく",
+          "reading": "よく",
+          "meaning": "often",
+          "function": "adverb"
+        },
+        {
+          "id": "tokidoki",
+          "surface": "時々",
+          "reading": "ときどき",
+          "meaning": "sometimes",
+          "function": "adverb"
+        },
+        {
+          "id": "itsumo",
+          "surface": "いつも",
+          "reading": "いつも",
+          "meaning": "always",
+          "function": "adverb"
+        },
+        {
+          "id": "taitei",
+          "surface": "たいてい",
+          "reading": "たいてい",
+          "meaning": "usually",
+          "function": "adverb"
+        },
+        {
+          "id": "tamani",
+          "surface": "たまに",
+          "reading": "たまに",
+          "meaning": "occasionally",
+          "function": "adverb"
+        },
+        {
+          "id": "hotondo",
+          "surface": "ほとんど",
+          "reading": "ほとんど",
+          "meaning": "almost never",
+          "function": "adverb"
+        },
+        {
+          "id": "mettani",
+          "surface": "めったに",
+          "reading": "めったに",
+          "meaning": "rarely",
+          "function": "adverb"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "slug": "likes-and-dislikes",
+      "title": "Unit 31: Likes And Dislikes",
+      "grammarFocus": "Nが好きです / Nが嫌いです",
+      "newWords": [
+        {
+          "id": "sushi",
+          "surface": "寿司",
+          "reading": "すし",
+          "meaning": "sushi",
+          "function": "noun"
+        },
+        {
+          "id": "raamen",
+          "surface": "ラーメン",
+          "reading": "らーめん",
+          "meaning": "ramen",
+          "function": "noun"
+        },
+        {
+          "id": "manga",
+          "surface": "漫画",
+          "reading": "まんが",
+          "meaning": "manga",
+          "function": "noun"
+        },
+        {
+          "id": "anime",
+          "surface": "アニメ",
+          "reading": "あにめ",
+          "meaning": "anime",
+          "function": "noun"
+        },
+        {
+          "id": "supootsu",
+          "surface": "スポーツ",
+          "reading": "すぽーつ",
+          "meaning": "sports",
+          "function": "noun"
+        },
+        {
+          "id": "sakkaa",
+          "surface": "サッカー",
+          "reading": "さっかー",
+          "meaning": "soccer",
+          "function": "noun"
+        },
+        {
+          "id": "okashi",
+          "surface": "お菓子",
+          "reading": "おかし",
+          "meaning": "sweets; snacks",
+          "function": "noun"
+        },
+        {
+          "id": "ryouri",
+          "surface": "料理",
+          "reading": "りょうり",
+          "meaning": "cooking; cuisine",
+          "function": "noun"
+        },
+        {
+          "id": "nihongo",
+          "surface": "日本語",
+          "reading": "にほんご",
+          "meaning": "Japanese language",
+          "function": "noun"
+        },
+        {
+          "id": "shumi",
+          "surface": "趣味",
+          "reading": "しゅみ",
+          "meaning": "hobby",
+          "function": "noun"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "slug": "skill-as-description",
+      "title": "Unit 32: Skill As Description",
+      "grammarFocus": "Nが上手です / Nが下手です",
+      "newWords": [
+        {
+          "id": "piano",
+          "surface": "ピアノ",
+          "reading": "ぴあの",
+          "meaning": "piano",
+          "function": "noun"
+        },
+        {
+          "id": "gitaa",
+          "surface": "ギター",
+          "reading": "ぎたー",
+          "meaning": "guitar",
+          "function": "noun"
+        },
+        {
+          "id": "uta",
+          "surface": "歌",
+          "reading": "うた",
+          "meaning": "singing; song",
+          "function": "noun"
+        },
+        {
+          "id": "dansu",
+          "surface": "ダンス",
+          "reading": "だんす",
+          "meaning": "dance",
+          "function": "noun"
+        },
+        {
+          "id": "e_drawing",
+          "surface": "絵",
+          "reading": "え",
+          "meaning": "drawing; picture",
+          "function": "noun"
+        },
+        {
+          "id": "unten",
+          "surface": "運転",
+          "reading": "うんてん",
+          "meaning": "driving",
+          "function": "noun"
+        },
+        {
+          "id": "souji",
+          "surface": "掃除",
+          "reading": "そうじ",
+          "meaning": "cleaning",
+          "function": "noun"
+        },
+        {
+          "id": "keisan",
+          "surface": "計算",
+          "reading": "けいさん",
+          "meaning": "calculation",
+          "function": "noun"
+        },
+        {
+          "id": "eigo",
+          "surface": "英語",
+          "reading": "えいご",
+          "meaning": "English language",
+          "function": "noun"
+        },
+        {
+          "id": "kanji",
+          "surface": "漢字",
+          "reading": "かんじ",
+          "meaning": "kanji",
+          "function": "noun"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "slug": "wanting-things",
+      "title": "Unit 33: Wanting Things",
+      "grammarFocus": "Nが欲しいです",
+      "newWords": [
+        {
+          "id": "okane",
+          "surface": "お金",
+          "reading": "おかね",
+          "meaning": "money",
+          "function": "noun"
+        },
+        {
+          "id": "jikan",
+          "surface": "時間",
+          "reading": "じかん",
+          "meaning": "time",
+          "function": "noun"
+        },
+        {
+          "id": "kasa",
+          "surface": "傘",
+          "reading": "かさ",
+          "meaning": "umbrella",
+          "function": "noun"
+        },
+        {
+          "id": "fuku",
+          "surface": "服",
+          "reading": "ふく",
+          "meaning": "clothes",
+          "function": "noun"
+        },
+        {
+          "id": "kutsu",
+          "surface": "靴",
+          "reading": "くつ",
+          "meaning": "shoes",
+          "function": "noun"
+        },
+        {
+          "id": "keitai",
+          "surface": "携帯",
+          "reading": "けいたい",
+          "meaning": "mobile phone",
+          "function": "noun"
+        },
+        {
+          "id": "pasokon",
+          "surface": "パソコン",
+          "reading": "ぱそこん",
+          "meaning": "computer",
+          "function": "noun"
+        },
+        {
+          "id": "kusuri",
+          "surface": "薬",
+          "reading": "くすり",
+          "meaning": "medicine",
+          "function": "noun"
+        },
+        {
+          "id": "purezento",
+          "surface": "プレゼント",
+          "reading": "ぷれぜんと",
+          "meaning": "present; gift",
+          "function": "noun"
+        },
+        {
+          "id": "jouhou",
+          "surface": "情報",
+          "reading": "じょうほう",
+          "meaning": "information",
+          "function": "noun"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "slug": "wanting-to-do",
+      "title": "Unit 34: Wanting To Do",
+      "grammarFocus": "Vたいです / Vたくないです",
+      "newWords": [
+        {
+          "id": "noru",
+          "surface": "乗る",
+          "reading": "のる",
+          "meaning": "ride; get on",
+          "function": "verb"
+        },
+        {
+          "id": "toru",
+          "surface": "取る",
+          "reading": "とる",
+          "meaning": "take",
+          "function": "verb"
+        },
+        {
+          "id": "shaberu",
+          "surface": "しゃべる",
+          "reading": "しゃべる",
+          "meaning": "chat",
+          "function": "verb"
+        },
+        {
+          "id": "suwaru",
+          "surface": "座る",
+          "reading": "すわる",
+          "meaning": "sit",
+          "function": "verb"
+        },
+        {
+          "id": "shiru",
+          "surface": "知る",
+          "reading": "しる",
+          "meaning": "know",
+          "function": "verb"
+        },
+        {
+          "id": "narau",
+          "surface": "習う",
+          "reading": "ならう",
+          "meaning": "learn",
+          "function": "verb"
+        },
+        {
+          "id": "erabu",
+          "surface": "選ぶ",
+          "reading": "えらぶ",
+          "meaning": "choose",
+          "function": "verb"
+        },
+        {
+          "id": "tasukeru",
+          "surface": "助ける",
+          "reading": "たすける",
+          "meaning": "help; save",
+          "function": "verb"
+        },
+        {
+          "id": "hakobu",
+          "surface": "運ぶ",
+          "reading": "はこぶ",
+          "meaning": "carry",
+          "function": "verb"
+        },
+        {
+          "id": "sagasu",
+          "surface": "探す",
+          "reading": "さがす",
+          "meaning": "search for",
+          "function": "verb"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "slug": "suggestions",
+      "title": "Unit 35: Suggestions",
+      "grammarFocus": "Vましょう / Vましょうか",
+      "newWords": [
+        {
+          "id": "hajimeru",
+          "surface": "始める",
+          "reading": "はじめる",
+          "meaning": "begin",
+          "function": "verb"
+        },
+        {
+          "id": "owaru",
+          "surface": "終わる",
+          "reading": "おわる",
+          "meaning": "finish",
+          "function": "verb"
+        },
+        {
+          "id": "kaimono_suru",
+          "surface": "買い物する",
+          "reading": "かいものする",
+          "meaning": "shop",
+          "function": "verb"
+        },
+        {
+          "id": "sanpo_suru",
+          "surface": "散歩する",
+          "reading": "さんぽする",
+          "meaning": "take a walk",
+          "function": "verb"
+        },
+        {
+          "id": "renshuu_suru",
+          "surface": "練習する",
+          "reading": "れんしゅうする",
+          "meaning": "practice",
+          "function": "verb"
+        },
+        {
+          "id": "junbi_suru",
+          "surface": "準備する",
+          "reading": "じゅんびする",
+          "meaning": "prepare",
+          "function": "verb"
+        },
+        {
+          "id": "denwa_suru",
+          "surface": "電話する",
+          "reading": "でんわする",
+          "meaning": "call by phone",
+          "function": "verb"
+        },
+        {
+          "id": "yoyaku_suru",
+          "surface": "予約する",
+          "reading": "よやくする",
+          "meaning": "reserve",
+          "function": "verb"
+        },
+        {
+          "id": "annai_suru",
+          "surface": "案内する",
+          "reading": "あんないする",
+          "meaning": "guide; show around",
+          "function": "verb"
+        },
+        {
+          "id": "setsumei_suru",
+          "surface": "説明する",
+          "reading": "せつめいする",
+          "meaning": "explain",
+          "function": "verb"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "slug": "please-do",
+      "title": "Unit 36: Please Do",
+      "grammarFocus": "Vてください",
+      "newWords": [
+        {
+          "id": "miseru",
+          "surface": "見せる",
+          "reading": "みせる",
+          "meaning": "show",
+          "function": "verb"
+        },
+        {
+          "id": "oshieru",
+          "surface": "教える",
+          "reading": "おしえる",
+          "meaning": "teach; tell",
+          "function": "verb"
+        },
+        {
+          "id": "kasu",
+          "surface": "貸す",
+          "reading": "かす",
+          "meaning": "lend",
+          "function": "verb"
+        },
+        {
+          "id": "tetsudau",
+          "surface": "手伝う",
+          "reading": "てつだう",
+          "meaning": "help",
+          "function": "verb"
+        },
+        {
+          "id": "yobu",
+          "surface": "呼ぶ",
+          "reading": "よぶ",
+          "meaning": "call",
+          "function": "verb"
+        },
+        {
+          "id": "hakaru",
+          "surface": "測る",
+          "reading": "はかる",
+          "meaning": "measure",
+          "function": "verb"
+        },
+        {
+          "id": "oku",
+          "surface": "置く",
+          "reading": "おく",
+          "meaning": "put; place",
+          "function": "verb"
+        },
+        {
+          "id": "dasu",
+          "surface": "出す",
+          "reading": "だす",
+          "meaning": "take out; submit",
+          "function": "verb"
+        },
+        {
+          "id": "ireru",
+          "surface": "入れる",
+          "reading": "いれる",
+          "meaning": "put in",
+          "function": "verb"
+        },
+        {
+          "id": "motsu",
+          "surface": "持つ",
+          "reading": "もつ",
+          "meaning": "hold; carry",
+          "function": "verb"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "slug": "please-do-not",
+      "title": "Unit 37: Please Do Not",
+      "grammarFocus": "Vないでください",
+      "newWords": [
+        {
+          "id": "sawaru",
+          "surface": "触る",
+          "reading": "さわる",
+          "meaning": "touch",
+          "function": "verb"
+        },
+        {
+          "id": "wasureu",
+          "surface": "忘れる",
+          "reading": "わすれる",
+          "meaning": "forget",
+          "function": "verb"
+        },
+        {
+          "id": "nakusu",
+          "surface": "なくす",
+          "reading": "なくす",
+          "meaning": "lose",
+          "function": "verb"
+        },
+        {
+          "id": "okureru",
+          "surface": "遅れる",
+          "reading": "おくれる",
+          "meaning": "be late",
+          "function": "verb"
+        },
+        {
+          "id": "kowasu",
+          "surface": "壊す",
+          "reading": "こわす",
+          "meaning": "break",
+          "function": "verb"
+        },
+        {
+          "id": "suteru",
+          "surface": "捨てる",
+          "reading": "すてる",
+          "meaning": "throw away",
+          "function": "verb"
+        },
+        {
+          "id": "tomeru",
+          "surface": "止める",
+          "reading": "とめる",
+          "meaning": "stop",
+          "function": "verb"
+        },
+        {
+          "id": "akirameru",
+          "surface": "諦める",
+          "reading": "あきらめる",
+          "meaning": "give up",
+          "function": "verb"
+        },
+        {
+          "id": "shinpai_suru",
+          "surface": "心配する",
+          "reading": "しんぱいする",
+          "meaning": "worry",
+          "function": "verb"
+        },
+        {
+          "id": "muri_suru",
+          "surface": "無理する",
+          "reading": "むりする",
+          "meaning": "overdo it",
+          "function": "verb"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "slug": "permission",
+      "title": "Unit 38: Permission",
+      "grammarFocus": "Vてもいいですか / Vてもいいです",
+      "newWords": [
+        {
+          "id": "kariru",
+          "surface": "借りる",
+          "reading": "かりる",
+          "meaning": "borrow",
+          "function": "verb"
+        },
+        {
+          "id": "kaburu",
+          "surface": "かぶる",
+          "reading": "かぶる",
+          "meaning": "wear on the head",
+          "function": "verb"
+        },
+        {
+          "id": "haku",
+          "surface": "履く",
+          "reading": "はく",
+          "meaning": "wear on the feet",
+          "function": "verb"
+        },
+        {
+          "id": "kiru_wear",
+          "surface": "着る",
+          "reading": "きる",
+          "meaning": "wear clothes",
+          "function": "verb"
+        },
+        {
+          "id": "nugu",
+          "surface": "脱ぐ",
+          "reading": "ぬぐ",
+          "meaning": "take off clothes",
+          "function": "verb"
+        },
+        {
+          "id": "ireru_perm",
+          "surface": "入れる",
+          "reading": "いれる",
+          "meaning": "put in; let in",
+          "function": "verb"
+        },
+        {
+          "id": "tsukeru",
+          "surface": "つける",
+          "reading": "つける",
+          "meaning": "turn on; attach",
+          "function": "verb"
+        },
+        {
+          "id": "kesu",
+          "surface": "消す",
+          "reading": "けす",
+          "meaning": "turn off; erase",
+          "function": "verb"
+        },
+        {
+          "id": "shitsumon_suru",
+          "surface": "質問する",
+          "reading": "しつもんする",
+          "meaning": "ask a question",
+          "function": "verb"
+        },
+        {
+          "id": "ryokou_suru",
+          "surface": "旅行する",
+          "reading": "りょこうする",
+          "meaning": "travel",
+          "function": "verb"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "slug": "prohibition",
+      "title": "Unit 39: Prohibition",
+      "grammarFocus": "Vてはいけません",
+      "newWords": [
+        {
+          "id": "nageru",
+          "surface": "投げる",
+          "reading": "なげる",
+          "meaning": "throw",
+          "function": "verb"
+        },
+        {
+          "id": "sawagu",
+          "surface": "騒ぐ",
+          "reading": "さわぐ",
+          "meaning": "make noise",
+          "function": "verb"
+        },
+        {
+          "id": "tobikomu",
+          "surface": "飛び込む",
+          "reading": "とびこむ",
+          "meaning": "jump in",
+          "function": "verb"
+        },
+        {
+          "id": "noboru",
+          "surface": "登る",
+          "reading": "のぼる",
+          "meaning": "climb",
+          "function": "verb"
+        },
+        {
+          "id": "oriru",
+          "surface": "降りる",
+          "reading": "おりる",
+          "meaning": "get off; descend",
+          "function": "verb"
+        },
+        {
+          "id": "watashu",
+          "surface": "渡す",
+          "reading": "わたす",
+          "meaning": "hand over",
+          "function": "verb"
+        },
+        {
+          "id": "akiramenaide",
+          "surface": "諦めない",
+          "reading": "あきらめない",
+          "meaning": "not giving up",
+          "function": "phrase"
+        },
+        {
+          "id": "ruuru",
+          "surface": "ルール",
+          "reading": "るーる",
+          "meaning": "rule",
+          "function": "noun"
+        },
+        {
+          "id": "kinshi",
+          "surface": "禁止",
+          "reading": "きんし",
+          "meaning": "prohibition",
+          "function": "noun"
+        },
+        {
+          "id": "anzen_ni",
+          "surface": "安全に",
+          "reading": "あんぜんに",
+          "meaning": "safely",
+          "function": "adverb"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "slug": "need-and-suggestions",
+      "title": "Unit 40: Need And Suggestions",
+      "grammarFocus": "Nが必要です / Nはどうですか",
+      "newWords": [
+        {
+          "id": "shorui",
+          "surface": "書類",
+          "reading": "しょるい",
+          "meaning": "documents",
+          "function": "noun"
+        },
+        {
+          "id": "menkyo",
+          "surface": "免許",
+          "reading": "めんきょ",
+          "meaning": "license",
+          "function": "noun"
+        },
+        {
+          "id": "jisho",
+          "surface": "辞書",
+          "reading": "じしょ",
+          "meaning": "dictionary",
+          "function": "noun"
+        },
+        {
+          "id": "shukudai",
+          "surface": "宿題",
+          "reading": "しゅくだい",
+          "meaning": "homework",
+          "function": "noun"
+        },
+        {
+          "id": "mondai",
+          "surface": "問題",
+          "reading": "もんだい",
+          "meaning": "problem",
+          "function": "noun"
+        },
+        {
+          "id": "kotae",
+          "surface": "答え",
+          "reading": "こたえ",
+          "meaning": "answer",
+          "function": "noun"
+        },
+        {
+          "id": "shitsumon",
+          "surface": "質問",
+          "reading": "しつもん",
+          "meaning": "question",
+          "function": "noun"
+        },
+        {
+          "id": "yotei",
+          "surface": "予定",
+          "reading": "よてい",
+          "meaning": "plan; schedule",
+          "function": "noun"
+        },
+        {
+          "id": "juusho",
+          "surface": "住所",
+          "reading": "じゅうしょ",
+          "meaning": "address",
+          "function": "noun"
+        },
+        {
+          "id": "setsumei",
+          "surface": "説明",
+          "reading": "せつめい",
+          "meaning": "explanation",
+          "function": "noun"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "slug": "te-form-ichidan-irregular",
+      "title": "Unit 41: Te-Form Shape, Ichidan And Irregular",
+      "grammarFocus": "食べて / 見て / して / 来て",
+      "newWords": [
+        {
+          "id": "ageru",
+          "surface": "あげる",
+          "reading": "あげる",
+          "meaning": "give",
+          "function": "verb"
+        },
+        {
+          "id": "kangaeru",
+          "surface": "考える",
+          "reading": "かんがえる",
+          "meaning": "think",
+          "function": "verb"
+        },
+        {
+          "id": "oboeru",
+          "surface": "覚える",
+          "reading": "おぼえる",
+          "meaning": "remember; memorize",
+          "function": "verb"
+        },
+        {
+          "id": "dekakeru",
+          "surface": "出かける",
+          "reading": "でかける",
+          "meaning": "go out",
+          "function": "verb"
+        },
+        {
+          "id": "tsukameru",
+          "surface": "つかめる",
+          "reading": "つかめる",
+          "meaning": "grasp",
+          "function": "verb"
+        },
+        {
+          "id": "shiraberu",
+          "surface": "調べる",
+          "reading": "しらべる",
+          "meaning": "look up; investigate",
+          "function": "verb"
+        },
+        {
+          "id": "katazukeru",
+          "surface": "片付ける",
+          "reading": "かたづける",
+          "meaning": "tidy up",
+          "function": "verb"
+        },
+        {
+          "id": "tsutaeru",
+          "surface": "伝える",
+          "reading": "つたえる",
+          "meaning": "tell; convey",
+          "function": "verb"
+        },
+        {
+          "id": "yameru",
+          "surface": "やめる",
+          "reading": "やめる",
+          "meaning": "quit; stop",
+          "function": "verb"
+        },
+        {
+          "id": "tsuzukeru",
+          "surface": "続ける",
+          "reading": "つづける",
+          "meaning": "continue",
+          "function": "verb"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "slug": "te-form-godan",
+      "title": "Unit 42: Te-Form Shape, Godan",
+      "grammarFocus": "飲んで / 行って / 書いて / 話して",
+      "newWords": [
+        {
+          "id": "isogu",
+          "surface": "急ぐ",
+          "reading": "いそぐ",
+          "meaning": "hurry",
+          "function": "verb"
+        },
+        {
+          "id": "kaesu",
+          "surface": "返す",
+          "reading": "かえす",
+          "meaning": "return something",
+          "function": "verb"
+        },
+        {
+          "id": "magaru",
+          "surface": "曲がる",
+          "reading": "まがる",
+          "meaning": "turn",
+          "function": "verb"
+        },
+        {
+          "id": "wataru",
+          "surface": "渡る",
+          "reading": "わたる",
+          "meaning": "cross",
+          "function": "verb"
+        },
+        {
+          "id": "fumu",
+          "surface": "踏む",
+          "reading": "ふむ",
+          "meaning": "step on",
+          "function": "verb"
+        },
+        {
+          "id": "ugoku",
+          "surface": "動く",
+          "reading": "うごく",
+          "meaning": "move",
+          "function": "verb"
+        },
+        {
+          "id": "naosu",
+          "surface": "直す",
+          "reading": "なおす",
+          "meaning": "fix",
+          "function": "verb"
+        },
+        {
+          "id": "morau",
+          "surface": "もらう",
+          "reading": "もらう",
+          "meaning": "receive",
+          "function": "verb"
+        },
+        {
+          "id": "sumu_finish",
+          "surface": "済む",
+          "reading": "すむ",
+          "meaning": "be finished",
+          "function": "verb"
+        },
+        {
+          "id": "yoru_stop",
+          "surface": "寄る",
+          "reading": "よる",
+          "meaning": "stop by",
+          "function": "verb"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "slug": "connecting-actions",
+      "title": "Unit 43: Connecting Actions",
+      "grammarFocus": "Vて、Vます",
+      "newWords": [
+        {
+          "id": "sorekara",
+          "surface": "それから",
+          "reading": "それから",
+          "meaning": "and then",
+          "function": "adverb"
+        },
+        {
+          "id": "saisho",
+          "surface": "最初",
+          "reading": "さいしょ",
+          "meaning": "first",
+          "function": "adverb"
+        },
+        {
+          "id": "tsugi",
+          "surface": "次",
+          "reading": "つぎ",
+          "meaning": "next",
+          "function": "adverb"
+        },
+        {
+          "id": "saigo",
+          "surface": "最後",
+          "reading": "さいご",
+          "meaning": "last",
+          "function": "adverb"
+        },
+        {
+          "id": "ato",
+          "surface": "あと",
+          "reading": "あと",
+          "meaning": "afterward",
+          "function": "adverb"
+        },
+        {
+          "id": "shokuji",
+          "surface": "食事",
+          "reading": "しょくじ",
+          "meaning": "meal",
+          "function": "noun"
+        },
+        {
+          "id": "kaimono",
+          "surface": "買い物",
+          "reading": "かいもの",
+          "meaning": "shopping",
+          "function": "noun"
+        },
+        {
+          "id": "sanpo",
+          "surface": "散歩",
+          "reading": "さんぽ",
+          "meaning": "walk; stroll",
+          "function": "noun"
+        },
+        {
+          "id": "renshuu",
+          "surface": "練習",
+          "reading": "れんしゅう",
+          "meaning": "practice",
+          "function": "noun"
+        },
+        {
+          "id": "junbi",
+          "surface": "準備",
+          "reading": "じゅんび",
+          "meaning": "preparation",
+          "function": "noun"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "slug": "ongoing-resulting-state",
+      "title": "Unit 44: Ongoing And Resulting State",
+      "grammarFocus": "Vています",
+      "newWords": [
+        {
+          "id": "kaigi",
+          "surface": "会議",
+          "reading": "かいぎ",
+          "meaning": "meeting",
+          "function": "noun"
+        },
+        {
+          "id": "jugyou",
+          "surface": "授業",
+          "reading": "じゅぎょう",
+          "meaning": "class; lesson",
+          "function": "noun"
+        },
+        {
+          "id": "shiken",
+          "surface": "試験",
+          "reading": "しけん",
+          "meaning": "exam",
+          "function": "noun"
+        },
+        {
+          "id": "sentaku",
+          "surface": "洗濯",
+          "reading": "せんたく",
+          "meaning": "laundry",
+          "function": "noun"
+        },
+        {
+          "id": "undou",
+          "surface": "運動",
+          "reading": "うんどう",
+          "meaning": "exercise",
+          "function": "noun"
+        },
+        {
+          "id": "kenkyuu",
+          "surface": "研究",
+          "reading": "けんきゅう",
+          "meaning": "research",
+          "function": "noun"
+        },
+        {
+          "id": "sagyou",
+          "surface": "作業",
+          "reading": "さぎょう",
+          "meaning": "task; work",
+          "function": "noun"
+        },
+        {
+          "id": "renraku",
+          "surface": "連絡",
+          "reading": "れんらく",
+          "meaning": "contact; message",
+          "function": "noun"
+        },
+        {
+          "id": "houkoku",
+          "surface": "報告",
+          "reading": "ほうこく",
+          "meaning": "report",
+          "function": "noun"
+        },
+        {
+          "id": "seikatsu",
+          "surface": "生活",
+          "reading": "せいかつ",
+          "meaning": "daily life",
+          "function": "noun"
+        }
+      ]
+    }
+  ]
+}

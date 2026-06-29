@@ -13,10 +13,15 @@
     "validate:curriculum": "node scripts/validate-curriculum.mjs",
     "assets:sync": "node scripts/sync-assets.mjs",
     "validate:assets": "node scripts/validate-assets.mjs",
-    "validate:all": "npm run validate:curriculum && npm run validate:assets && npm run lint:unit-content && npm run audit:unit-quality && npm run audit:level-alignment",
+    "validate:all": "npm run validate:curriculum && npm run audit:curriculum-source && npm run validate:assets && npm run lint:unit-content && npm run audit:unit-quality && npm run audit:level-alignment",
     "lint:unit-content": "node scripts/lint-unit-content.mjs",
     "audit:unit-quality": "node scripts/audit-unit-quality.mjs",
     "audit:level-alignment": "node scripts/audit-level-alignment.mjs",
+    "audit:curriculum-source": "node scripts/audit-curriculum-source.mjs",
+    "audit:curriculum-pacing": "node scripts/audit-curriculum-pacing.mjs",
+    "audit:curriculum-pacing:strict": "node scripts/audit-curriculum-pacing.mjs --strict",
+    "curriculum:card": "node scripts/generate-card-candidate.mjs",
+    "curriculum:unit-draft": "node scripts/generate-unit-draft.mjs",
     "curriculum:add-a1-action-previews": "node scripts/add-a1-action-previews.mjs"
   },
   "dependencies": {

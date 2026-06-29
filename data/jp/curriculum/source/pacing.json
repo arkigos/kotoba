@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "description": "Card-position rules for generated Kotoba units. These rules describe when material may first appear; they do not require every card to be rigidly templated.",
+  "cardBands": [
+    {
+      "id": "new-vocab-introduction",
+      "start": 1,
+      "end": 20,
+      "purpose": "Introduce current-unit vocabulary with already-available grammar."
+    },
+    {
+      "id": "new-vocab-drill",
+      "start": 21,
+      "end": 40,
+      "purpose": "Drill current-unit vocabulary in modular sentence frames."
+    },
+    {
+      "id": "new-grammar-drill",
+      "start": 41,
+      "end": 60,
+      "purpose": "Introduce and drill the unit grammar focus after the word set has been warmed up."
+    },
+    {
+      "id": "review-and-mix",
+      "start": 61,
+      "end": 150,
+      "purpose": "Mix current vocabulary, due SRS vocabulary, helper words, and previously introduced grammar. No first exposures."
+    }
+  ],
+  "cutoffs": {
+    "currentWordFirstSeenBy": 40,
+    "grammarFocusFirstSeenBy": 60,
+    "reviewWordFirstSeenBy": 60,
+    "noFirstExposureAfter": 60
+  },
+  "generationPriorities": [
+    "current-unit vocabulary is introduced first",
+    "current-unit vocabulary is drilled before new grammar carries the lesson",
+    "new grammar appears before the review-and-mix band",
+    "review-due vocabulary returns before the review-and-mix band ends",
+    "late cards should combine known material rather than introduce new learner-facing material"
+  ]
+}
