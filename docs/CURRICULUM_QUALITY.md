@@ -40,6 +40,25 @@ target word, polarity, time, and place should not all advance in the same
 lockstep cycle, because that creates repeated English with only hidden template
 machinery underneath.
 
+## Verb And Level Balance
+
+Kotoba's level labels are CEFR-inspired / JF-aligned signposts, not official
+certification claims. Treat them as Can-do alignment checks:
+
+- A1 should make simple identification, questions, description, existence,
+  location, time, and counting feel usable. It may lean on `です` early, but
+  Units 15-20 should bring in `あります` / `います` and location scenes so the
+  level does not become pure noun-labeling.
+- A2 should visibly shift into everyday action control: polite verbs, objects,
+  destinations, action location, time, frequency, wants, requests, permission,
+  prohibition, te-form, and ongoing/resulting state.
+- Do not sprinkle productive action verbs into Unit 1 unless the grammar map is
+  intentionally redesigned. A random early verb is usually less useful than a
+  clean later bridge into `Vます`.
+- Use `npm run audit:level-alignment` after authoring or regenerating a level
+  band to check verb distribution, `です` reliance, existence practice, and form
+  sequencing.
+
 ## Unit Shape
 
 A strong unit usually has:

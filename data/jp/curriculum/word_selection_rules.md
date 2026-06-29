@@ -46,6 +46,12 @@ Use this as the default distribution for 10 new words:
 The flexible slot may be another noun, verb, adjective, time word, counter,
 place word, phrase, or grammar-supporting expression.
 
+This default mix applies once productive verb grammar is available. Early A1 is
+allowed to be intentionally static while the learner is still getting identity,
+topic marking, questions, adjectives, and existence. Do not add action verbs to
+Unit 1 just to satisfy a mix target; introduce productive verbs where the grammar
+map can support real use.
+
 ## Grammar-Driven Adjustments
 
 The default mix is not sacred. Adjust it when the grammar concept demands a

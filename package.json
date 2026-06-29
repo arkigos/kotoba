@@ -13,9 +13,10 @@
     "validate:curriculum": "node scripts/validate-curriculum.mjs",
     "assets:sync": "node scripts/sync-assets.mjs",
     "validate:assets": "node scripts/validate-assets.mjs",
-    "validate:all": "npm run validate:curriculum && npm run validate:assets && npm run lint:unit-content && npm run audit:unit-quality",
+    "validate:all": "npm run validate:curriculum && npm run validate:assets && npm run lint:unit-content && npm run audit:unit-quality && npm run audit:level-alignment",
     "lint:unit-content": "node scripts/lint-unit-content.mjs",
-    "audit:unit-quality": "node scripts/audit-unit-quality.mjs"
+    "audit:unit-quality": "node scripts/audit-unit-quality.mjs",
+    "audit:level-alignment": "node scripts/audit-level-alignment.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",

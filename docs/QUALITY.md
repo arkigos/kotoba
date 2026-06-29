@@ -11,6 +11,8 @@ of truth. This file remains the everyday quality checklist.
 - Run `npm run test` after behavior or validation changes.
 - Run `npm run test:e2e` after card-flow, persistence, layout, or navigation changes.
 - Run `npm run validate:curriculum` after curriculum data changes.
+- Run `npm run audit:level-alignment` after changing authored unit sequencing,
+  level ranges, or large vocabulary batches.
 - For data-only changes, inspect the edited JSON for valid syntax and aligned arrays.
 - When changing UI behavior, exercise unit selection, next, previous, random, replay audio, explanation display, reveal toggles, and display toggles.
 
