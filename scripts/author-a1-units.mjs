@@ -289,7 +289,7 @@ const pools = {
     ["jitensha", "bicycle"],
   ],
   people: [
-    ["ken", "Ken"],
+    ["sakura", "Sakura"],
     ["yuki", "Yuki"],
     ["tanaka", "Tanaka"],
     ["sensei", "the teacher"],
@@ -399,7 +399,7 @@ function capitalize(value) {
   return value.charAt(0).toUpperCase() + value.slice(1);
 }
 
-const properNouns = new Set(["Ken", "Yuki", "Tanaka", "Japan", "America"]);
+const properNouns = new Set(["Sakura", "Yuki", "Tanaka", "Japan", "America"]);
 const uncountableNouns = new Set(["water", "tea", "weather", "rain", "snow", "wind", "sky", "paper", "work", "food"]);
 const countries = new Set(["Japan", "America"]);
 
@@ -834,7 +834,7 @@ function generateCards(spec) {
   if (spec.id === 18) {
     const anchors = [["tsukue", "desk"], ["isu", "chair"], ["hako", "box"], ["mado", "window"], ["doa", "door"], ["ie", "house"], ["gakkou", "school"], ["mise", "shop"], ["toshokan", "library"], ["kouen", "park"]];
     const items = [["hon", "book"], ["kagi", "key"], ["pen", "pen"], ["chizu", "map"], ["denwa", "telephone"], ["hana_flower", "flower"], ["kaban", "bag"], ["enpitsu", "pencil"], ["tokei", "clock"], ["shashin", "photo"]];
-    const beings = [["neko", "cat"], ["inu", "dog"], ["tori", "bird"], ["akachan", "baby"], ["ken", "Ken"]];
+    const beings = [["neko", "cat"], ["inu", "dog"], ["tori", "bird"], ["akachan", "baby"], ["sakura", "Sakura"]];
     return simpleUnit(spec, [
       { rows: cycle(unitWords, 20), build: (r, i) => { const anchor = anchors[i % anchors.length]; const otherAnchor = anchors[(i + 1) % anchors.length]; const item = items[i % items.length]; const loc = locationPhrase(r[0], anchor, otherAnchor); return makeCard(spec.id, i, [...loc.parts, jp.ni(), word(item[0]), jp.ga(), jp.arimasu(), jp.p()], existenceEnglish(item[1], loc.english), ["Aの上", "Nがあります"], "A thing exists at a relative location.", facts.loc); } },
       { rows: cycle(unitWords, 20), build: (r, i) => { const anchor = anchors[(i + 3) % anchors.length]; const otherAnchor = anchors[(i + 4) % anchors.length]; const being = beings[i % beings.length]; const loc = locationPhrase(r[0], anchor, otherAnchor); return makeCard(spec.id, i, [...loc.parts, jp.ni(), word(being[0]), jp.ga(), jp.imasu(), jp.p()], existenceEnglish(being[1], loc.english, true), ["Aの上", "Nがいます"], "A living being exists at a relative location.", facts.loc); } },

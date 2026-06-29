@@ -13,7 +13,7 @@ const warnings = [];
 const index = await readJson("data/jp/curriculum/unit_index.json");
 
 const weakEnglishPatterns = [
-  /^(me|student|teacher|japan|america|name|ken|yuki|tanaka|friend|cat|dog|animal|book|house|school|place|doctor|person|thing)\.$/i,
+  /^(me|student|teacher|japan|america|name|sakura|yuki|tanaka|friend|cat|dog|animal|book|house|school|place|doctor|person|thing)\.$/i,
   /^yes, it is (name|thing|place|animal)\.$/i,
   /^no, (cat|dog|house|school) is (animal|place|thing)\.$/i,
 ];
@@ -34,7 +34,7 @@ const nonsensePatterns = [
   /No, school is place\./i,
   /Is it name\?/i,
   /Is it student\?/i,
-  /name\. Ken\./i,
+  /name\. Sakura\./i,
   /friend\. Tanaka\./i,
 ];
 

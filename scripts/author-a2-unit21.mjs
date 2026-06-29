@@ -114,7 +114,7 @@ const verbForms = new Map([
 
 const people = [
   ["watashi", "I", false],
-  ["ken", "Ken", true],
+  ["sakura", "Sakura", true],
   ["yuki", "Yuki", true],
   ["tanaka", "Tanaka", true],
   ["sensei", "The teacher", true],
@@ -151,7 +151,7 @@ function timedActionEnglish(person, time, verbId) {
 
 function questionSubject(person) {
   if (person[0] === "watashi") return "I";
-  if (["Ken", "Yuki", "Tanaka"].includes(person[1])) return person[1];
+  if (["Sakura", "Yuki", "Tanaka"].includes(person[1])) return person[1];
   return person[1].replace(/^The /, "the ").replace(/^My /, "my ");
 }
 

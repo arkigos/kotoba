@@ -115,8 +115,8 @@ const compoundTopics = [
   ["neko", "inu", "doubutsu", "Cats and dogs are animals.", "Are cats and dogs animals?"],
   ["sensei", "isha", "hito", "Teachers and doctors are people.", "Are teachers and doctors people?"],
   ["gakusei", "sensei", "hito", "Students and teachers are people.", "Are students and teachers people?"],
-  ["ken", "yuki", "hito", "Ken and Yuki are people.", "Are Ken and Yuki people?"],
-  ["tanaka", "ken", "hito", "Tanaka and Ken are people.", "Are Tanaka and Ken people?"],
+  ["sakura", "yuki", "hito", "Sakura and Yuki are people.", "Are Sakura and Yuki people?"],
+  ["tanaka", "sakura", "hito", "Tanaka and Sakura are people.", "Are Tanaka and Sakura people?"],
   ["ie", "gakkou", "basho", "Houses and schools are places.", "Are houses and schools places?"],
   ["nihon", "amerika", "basho", "Japan and America are places.", "Are Japan and America places?"],
   ["hon", "ie", "mono", "Books and houses are things.", "Are books and houses things?"],
@@ -127,7 +127,7 @@ compoundTopics.forEach(([a, b, c, en]) => push([a, jp.to, b, jp.wa, c, jp.desu, 
 compoundTopics.forEach(([a, b, c, _en, q]) => push([a, jp.to, b, jp.wa, c, jp.desuKa, jp.question], q, pair, ["A\u3068B\u306fC\u3067\u3059\u304b"]));
 
 [
-  ["ken", "isha", "hito", "Is Ken a doctor or a person?"],
+  ["sakura", "isha", "hito", "Is Sakura a doctor or a person?"],
   ["yuki", "gakusei", "hito", "Is Yuki a student or a person?"],
   ["tanaka", "sensei", "hito", "Is Tanaka a teacher or a person?"],
   ["neko", "inu", "doubutsu", "Is it a cat, a dog, or an animal?"],
@@ -153,7 +153,7 @@ compoundTopics.forEach(([a, b, c, _en, q]) => push([a, jp.to, b, jp.wa, c, jp.de
 ].forEach(([a, b, c, en]) => push([a, jp.wa, b, jp.ka, c, jp.desuKa, jp.question], en, choice, ["A\u306fB\u304bC\u3067\u3059\u304b"]));
 
 [
-  ["ken", "tomodachi", "hito", "Ken and the friend are people"],
+  ["sakura", "tomodachi", "hito", "Sakura and the friend are people"],
   ["yuki", "tanaka", "hito", "Yuki and Tanaka are people"],
   ["sensei", "gakusei", "hito", "The teacher and the student are people"],
   ["isha", "tanaka", "hito", "The doctor and Tanaka are people"],

@@ -662,7 +662,7 @@ for (let unitId = 1; unitId <= 21; unitId += 1) {
 
 const people = [
   ["watashi", "I", false],
-  ["ken", "Ken", true],
+  ["sakura", "Sakura", true],
   ["yuki", "Yuki", true],
   ["tanaka", "Tanaka", true],
   ["sensei", "The teacher", true],
@@ -749,7 +749,7 @@ function add(cards, spec, parts, english, tags, prompt, fact) {
 function subjectEnglish(person, lower = false) {
   const text = person[1];
   if (!lower) return text;
-  if (["I", "Ken", "Yuki", "Tanaka"].includes(text)) return text;
+  if (["I", "Sakura", "Yuki", "Tanaka"].includes(text)) return text;
   return text.replace(/^The /, "the ").replace(/^My /, "my ");
 }
 

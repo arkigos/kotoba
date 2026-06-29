@@ -80,7 +80,7 @@ function makePreviews(unitId, lexicon) {
   const plans = {
     2: [
       [[w("sensei"), p.to, w("gakusei"), p.wa, masu.eat], "The teacher and student eat"],
-      [[w("ken"), p.to, w("yuki"), p.wa, masu.read], "Ken and Yuki read"],
+      [[w("sakura"), p.to, w("yuki"), p.wa, masu.read], "Sakura and Yuki read"],
     ],
     3: [
       [[w("haha"), p.to, w("chichi"), p.wa, masu.come], "Mother and father come"],

@@ -19,7 +19,7 @@ const fatalPatterns = [
   [/\bI is\b/i, "uses incorrect first-person be-verb agreement"],
   [/\blistens? (music|a song|the song)\b/i, "uses listen without `to`"],
   [/\bat (often|sometimes|always|usually|rarely|already|still|rather)\b/i, "uses `at` before a frequency/degree adverb"],
-  [/\b(I|Ken|Yuki|Tanaka|teacher|student|friend|man|woman|clerk) (every day|every morning|every night) (eat|eats|drink|drinks|go|goes|watch|watches|listen|listens|read|reads|study|studies)\b/i, "places every-day frequency before the English verb"],
+  [/\b(I|Sakura|Yuki|Tanaka|teacher|student|friend|man|woman|clerk) (every day|every morning|every night) (eat|eats|drink|drinks|go|goes|watch|watches|listen|listens|read|reads|study|studies)\b/i, "places every-day frequency before the English verb"],
   [/\b(almost never|rarely) (do|does) not\b/i, "double-negates an English frequency sentence"],
   [/\bWhere is the (Japan|America)\?/i, "adds `the` to a country name"],
   [/(ありますですか|いますですか)/, "has a malformed existence question"],
