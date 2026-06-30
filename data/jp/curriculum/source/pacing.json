@@ -30,14 +30,14 @@
   "cutoffs": {
     "currentWordFirstSeenBy": 40,
     "grammarFocusFirstSeenBy": 60,
-    "reviewWordFirstSeenBy": 60,
+    "reviewWordPreferredFirstSeenAfter": 30,
     "noFirstExposureAfter": 60
   },
   "generationPriorities": [
     "current-unit vocabulary is introduced first",
     "current-unit vocabulary is drilled before new grammar carries the lesson",
     "new grammar appears before the review-and-mix band",
-    "review-due vocabulary returns before the review-and-mix band ends",
+    "review-due vocabulary returns naturally after the current material has warmed up",
     "late cards should combine known material rather than introduce new learner-facing material"
   ]
 }

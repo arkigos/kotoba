@@ -12,8 +12,8 @@ import {
 } from "./lib/curriculum-model.mjs";
 
 const introTag = "a2 current vocabulary intro";
-const reviewTag = "a2 review vocabulary intro";
-const generatedTags = new Set([introTag, reviewTag, "review vocabulary"]);
+const reviewIntroTag = "a2 review vocabulary intro";
+const generatedTags = new Set([introTag, reviewIntroTag]);
 
 const jp = {
   ka: "\u304b",
@@ -123,19 +123,9 @@ function vocabularyCard(unitId, index, words, tag) {
     explain: parts.map((part) => part.explain),
     tokens: parts,
     english: words.map(vocabularyEnglish).join(" / "),
-    fact: tag === introTag
-      ? "A quick vocabulary landing card before the sentence frame starts."
-      : "A compact review landing card keeps older vocabulary active before mixed practice.",
+    fact: "A quick vocabulary landing card before the sentence frame starts.",
     grammarTags: [tag],
   };
-}
-
-function chunkWords(words, size) {
-  const chunks = [];
-  for (let index = 0; index < words.length; index += size) {
-    chunks.push(words.slice(index, index + size));
-  }
-  return chunks;
 }
 
 function firstGrammarTagPositions(cards) {
@@ -180,7 +170,7 @@ function assertPacing(unitId, cards, currentWords, dueWords, pacing) {
 
   for (const word of dueWords) {
     const firstSeen = firstWords.get(word.id);
-    if (!firstSeen || firstSeen > pacing.cutoffs.reviewWordFirstSeenBy) {
+    if (!firstSeen) {
       throw new Error(`Unit ${unitId}: review word ${word.id} first appears at ${firstSeen ?? "never"}`);
     }
   }
@@ -204,10 +194,7 @@ for (const entry of index.units.filter((unit) => unit.id >= 21 && unit.id <= 44)
 
   const currentIntroCards = spec.newWords.map((word, index) => vocabularyCard(entry.id, index + 1, [word], introTag));
   const dueWords = wordsForUnits(source, reviewVocabularyUnitIds(entry.id));
-  const dueIntroCards = chunkWords(dueWords, 2)
-    .map((words, index) => vocabularyCard(entry.id, index + 1, words, reviewTag));
-
-  let cards = [...currentIntroCards, ...dueIntroCards, ...baseCards];
+  let cards = [...currentIntroCards, ...baseCards];
 
   const firstTags = firstGrammarTagPositions(cards);
   const coveredLateTags = new Set();
@@ -227,7 +214,7 @@ for (const entry of index.units.filter((unit) => unit.id >= 21 && unit.id <= 44)
   }
 
   if (grammarIntroCards.length > 0) {
-    const insertAt = Math.min(currentIntroCards.length + dueIntroCards.length, cards.length);
+    const insertAt = Math.min(currentIntroCards.length, cards.length);
     cards = [...cards.slice(0, insertAt), ...grammarIntroCards, ...cards.slice(insertAt)];
   }
 

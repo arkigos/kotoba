@@ -24,11 +24,14 @@ Prefer sentences that do at least one useful job:
 - make the current grammar pattern easier to feel
 - bring back review-due words in a natural setting
 - create a small scene with visible roles or objects
+- introduce only one genuinely new learner-facing element at a time; known
+  review words are the cushion that makes new vocabulary or grammar feel safe
 
 Avoid overusing:
 
 - bare `Xです` vocabulary introductions after the foundation units
 - sterile category cards such as `X is an object/person/place`
+- review-due vocabulary cards that behave like new-word introductions
 - long chains that exist only because the generator can make them
 - repeated English cards with only tiny noun swaps
 - English translations that add missing answers or scene facts instead of

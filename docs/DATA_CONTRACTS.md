@@ -152,7 +152,9 @@ N-32
 
 Only positive unit numbers that exist are included. Review-due words must return
 in that unit, but they are not counted as the current unit's new drilled
-vocabulary.
+vocabulary. They should not receive vocabulary introduction cards. They are the
+cushion for new material: bring them back in real sentence contexts, usually
+after the current unit's new words and grammar have started to settle.
 
 ## Source Curriculum Model
 
@@ -178,7 +180,7 @@ These fields must match the app-facing unit index and frozen unit files. Use
 
 - current-unit vocabulary first appears by card 40
 - the unit grammar focus first appears by card 60
-- review-due vocabulary first returns by card 60
+- review-due vocabulary returns somewhere in the unit without fake intro cards
 - no learner-facing first exposure appears after card 60
 
 Existing frozen units may temporarily violate these pacing rules while the

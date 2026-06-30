@@ -5,15 +5,13 @@ import {
   readPacingRules,
   readUnitIndex,
   readUnitSpecs,
-  reviewVocabularyUnitIds,
   root,
   unitSpecById,
-  wordsForUnits,
 } from "./lib/curriculum-model.mjs";
 
 const introTag = "a1 current vocabulary intro";
-const reviewTag = "a1 review vocabulary intro";
-const generatedTags = new Set([introTag, reviewTag, "review vocabulary"]);
+const reviewIntroTag = "a1 review vocabulary intro";
+const generatedTags = new Set([introTag, reviewIntroTag]);
 
 function token(word) {
   return {
@@ -80,9 +78,7 @@ function vocabularyCard(unitId, index, word, tag) {
     explain: [part.explain],
     tokens: [part],
     english: vocabularyEnglish(word),
-    fact: tag === introTag
-      ? "A quick vocabulary landing card before the sentence frame starts."
-      : "A quick review card keeps older vocabulary active before mixed practice.",
+    fact: "A quick vocabulary landing card before the sentence frame starts.",
     grammarTags: [tag],
   };
 }
@@ -144,19 +140,10 @@ for (const entry of index.units.filter((unit) => unit.id >= 6 && unit.id <= 20))
   const currentIntroCards = spec.newWords.map((word, index) => vocabularyCard(entry.id, index + 1, word, introTag));
   let cards = [...currentIntroCards, ...baseCards];
 
-  const dueWords = wordsForUnits(source, reviewVocabularyUnitIds(entry.id));
-  const dueIntroCards = dueWords
-    .map((word, index) => vocabularyCard(entry.id, index + 1, word, reviewTag));
-
-  if (dueIntroCards.length > 0) {
-    const insertAt = Math.min(10, cards.length);
-    cards = [...cards.slice(0, insertAt), ...dueIntroCards, ...cards.slice(insertAt)];
-  }
-
   const previewCards = cards.filter((card) => (card.grammarTags ?? []).includes(previewTag));
   if (previewCards.length > 0) {
     cards = cards.filter((card) => !(card.grammarTags ?? []).includes(previewTag));
-    const insertAt = Math.min(10 + dueIntroCards.length, cards.length);
+    const insertAt = Math.min(10, cards.length);
     cards = [...cards.slice(0, insertAt), ...previewCards, ...cards.slice(insertAt)];
   }
 
@@ -178,7 +165,7 @@ for (const entry of index.units.filter((unit) => unit.id >= 6 && unit.id <= 20))
   }
 
   if (grammarIntroCards.length > 0) {
-    const insertAt = Math.min(10 + dueIntroCards.length, cards.length);
+    const insertAt = Math.min(10, cards.length);
     cards = [...cards.slice(0, insertAt), ...grammarIntroCards, ...cards.slice(insertAt)];
   }
 

@@ -330,15 +330,18 @@
       "id": "u027-c011",
       "line": [
         "自宅",
-        "事務所"
+        "へ",
+        "行きます"
       ],
       "tts": [
         "じたく",
-        "じむしょ"
+        "え",
+        "いきます"
       ],
       "explain": [
         "home",
-        "office"
+        "destination marker",
+        "go"
       ],
       "tokens": [
         {
@@ -348,666 +351,25 @@
           "wordId": "jitaku"
         },
         {
-          "surface": "事務所",
-          "reading": "じむしょ",
-          "explain": "office",
-          "wordId": "jimusho"
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
         }
       ],
-      "english": "home / office",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
+      "english": "I go home",
+      "fact": "Place review returns inside an A2 movement sentence. This card is previewed early so the unit's grammar focus appears before mixed practice.",
       "grammarTags": [
-        "a2 review vocabulary intro"
+        "review vocabulary"
       ]
     },
     {
       "id": "u027-c012",
-      "line": [
-        "大学",
-        "博物館"
-      ],
-      "tts": [
-        "だいがく",
-        "はくぶつかん"
-      ],
-      "explain": [
-        "university",
-        "museum"
-      ],
-      "tokens": [
-        {
-          "surface": "大学",
-          "reading": "だいがく",
-          "explain": "university",
-          "wordId": "daigaku"
-        },
-        {
-          "surface": "博物館",
-          "reading": "はくぶつかん",
-          "explain": "museum",
-          "wordId": "hakubutsukan"
-        }
-      ],
-      "english": "university / museum",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c013",
-      "line": [
-        "本屋",
-        "コンビニ"
-      ],
-      "tts": [
-        "ほんや",
-        "こんびに"
-      ],
-      "explain": [
-        "bookstore",
-        "convenience store"
-      ],
-      "tokens": [
-        {
-          "surface": "本屋",
-          "reading": "ほんや",
-          "explain": "bookstore",
-          "wordId": "honya"
-        },
-        {
-          "surface": "コンビニ",
-          "reading": "こんびに",
-          "explain": "convenience store",
-          "wordId": "konbini"
-        }
-      ],
-      "english": "bookstore / convenience store",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c014",
-      "line": [
-        "神社",
-        "寺"
-      ],
-      "tts": [
-        "じんじゃ",
-        "てら"
-      ],
-      "explain": [
-        "shrine",
-        "temple"
-      ],
-      "tokens": [
-        {
-          "surface": "神社",
-          "reading": "じんじゃ",
-          "explain": "shrine",
-          "wordId": "jinja"
-        },
-        {
-          "surface": "寺",
-          "reading": "てら",
-          "explain": "temple",
-          "wordId": "tera"
-        }
-      ],
-      "english": "shrine / temple",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c015",
-      "line": [
-        "工場",
-        "大使館"
-      ],
-      "tts": [
-        "こうじょう",
-        "たいしかん"
-      ],
-      "explain": [
-        "factory",
-        "embassy"
-      ],
-      "tokens": [
-        {
-          "surface": "工場",
-          "reading": "こうじょう",
-          "explain": "factory",
-          "wordId": "koujou"
-        },
-        {
-          "surface": "大使館",
-          "reading": "たいしかん",
-          "explain": "embassy",
-          "wordId": "taishikan"
-        }
-      ],
-      "english": "factory / embassy",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c016",
-      "line": [
-        "歩く",
-        "走る"
-      ],
-      "tts": [
-        "あるく",
-        "はしる"
-      ],
-      "explain": [
-        "walk",
-        "run"
-      ],
-      "tokens": [
-        {
-          "surface": "歩く",
-          "reading": "あるく",
-          "explain": "walk",
-          "wordId": "aruku"
-        },
-        {
-          "surface": "走る",
-          "reading": "はしる",
-          "explain": "run",
-          "wordId": "hashiru"
-        }
-      ],
-      "english": "walk / run",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c017",
-      "line": [
-        "泳ぐ",
-        "遊ぶ"
-      ],
-      "tts": [
-        "およぐ",
-        "あそぶ"
-      ],
-      "explain": [
-        "swim",
-        "play"
-      ],
-      "tokens": [
-        {
-          "surface": "泳ぐ",
-          "reading": "およぐ",
-          "explain": "swim",
-          "wordId": "oyogu"
-        },
-        {
-          "surface": "遊ぶ",
-          "reading": "あそぶ",
-          "explain": "play",
-          "wordId": "asobu"
-        }
-      ],
-      "english": "swim / play",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c018",
-      "line": [
-        "入る",
-        "出る"
-      ],
-      "tts": [
-        "はいる",
-        "でる"
-      ],
-      "explain": [
-        "enter",
-        "leave; exit"
-      ],
-      "tokens": [
-        {
-          "surface": "入る",
-          "reading": "はいる",
-          "explain": "enter",
-          "wordId": "hairu"
-        },
-        {
-          "surface": "出る",
-          "reading": "でる",
-          "explain": "leave; exit",
-          "wordId": "deru"
-        }
-      ],
-      "english": "enter / leave",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c019",
-      "line": [
-        "開ける",
-        "閉める"
-      ],
-      "tts": [
-        "あける",
-        "しめる"
-      ],
-      "explain": [
-        "open",
-        "close"
-      ],
-      "tokens": [
-        {
-          "surface": "開ける",
-          "reading": "あける",
-          "explain": "open",
-          "wordId": "akeru"
-        },
-        {
-          "surface": "閉める",
-          "reading": "しめる",
-          "explain": "close",
-          "wordId": "shimeru"
-        }
-      ],
-      "english": "open / close",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c020",
-      "line": [
-        "洗う",
-        "立つ"
-      ],
-      "tts": [
-        "あらう",
-        "たつ"
-      ],
-      "explain": [
-        "wash",
-        "stand"
-      ],
-      "tokens": [
-        {
-          "surface": "洗う",
-          "reading": "あらう",
-          "explain": "wash",
-          "wordId": "arau"
-        },
-        {
-          "surface": "立つ",
-          "reading": "たつ",
-          "explain": "stand",
-          "wordId": "tatsu"
-        }
-      ],
-      "english": "wash / stand",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c021",
-      "line": [
-        "一つ",
-        "二つ"
-      ],
-      "tts": [
-        "ひとつ",
-        "ふたつ"
-      ],
-      "explain": [
-        "one thing",
-        "two things"
-      ],
-      "tokens": [
-        {
-          "surface": "一つ",
-          "reading": "ひとつ",
-          "explain": "one thing",
-          "wordId": "hitotsu"
-        },
-        {
-          "surface": "二つ",
-          "reading": "ふたつ",
-          "explain": "two things",
-          "wordId": "futatsu"
-        }
-      ],
-      "english": "one / two",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c022",
-      "line": [
-        "三つ",
-        "四つ"
-      ],
-      "tts": [
-        "みっつ",
-        "よっつ"
-      ],
-      "explain": [
-        "three things",
-        "four things"
-      ],
-      "tokens": [
-        {
-          "surface": "三つ",
-          "reading": "みっつ",
-          "explain": "three things",
-          "wordId": "mittsu"
-        },
-        {
-          "surface": "四つ",
-          "reading": "よっつ",
-          "explain": "four things",
-          "wordId": "yottsu"
-        }
-      ],
-      "english": "three / four",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c023",
-      "line": [
-        "五つ",
-        "六つ"
-      ],
-      "tts": [
-        "いつつ",
-        "むっつ"
-      ],
-      "explain": [
-        "five things",
-        "six things"
-      ],
-      "tokens": [
-        {
-          "surface": "五つ",
-          "reading": "いつつ",
-          "explain": "five things",
-          "wordId": "itsutsu"
-        },
-        {
-          "surface": "六つ",
-          "reading": "むっつ",
-          "explain": "six things",
-          "wordId": "muttsu"
-        }
-      ],
-      "english": "five / six",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c024",
-      "line": [
-        "七つ",
-        "八つ"
-      ],
-      "tts": [
-        "ななつ",
-        "やっつ"
-      ],
-      "explain": [
-        "seven things",
-        "eight things"
-      ],
-      "tokens": [
-        {
-          "surface": "七つ",
-          "reading": "ななつ",
-          "explain": "seven things",
-          "wordId": "nanatsu"
-        },
-        {
-          "surface": "八つ",
-          "reading": "やっつ",
-          "explain": "eight things",
-          "wordId": "yattsu"
-        }
-      ],
-      "english": "seven / eight",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c025",
-      "line": [
-        "九つ",
-        "十"
-      ],
-      "tts": [
-        "ここのつ",
-        "とお"
-      ],
-      "explain": [
-        "nine things",
-        "ten things"
-      ],
-      "tokens": [
-        {
-          "surface": "九つ",
-          "reading": "ここのつ",
-          "explain": "nine things",
-          "wordId": "kokonotsu"
-        },
-        {
-          "surface": "十",
-          "reading": "とお",
-          "explain": "ten things",
-          "wordId": "too"
-        }
-      ],
-      "english": "nine / ten",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c026",
-      "line": [
-        "暑い",
-        "寒い"
-      ],
-      "tts": [
-        "あつい",
-        "さむい"
-      ],
-      "explain": [
-        "hot",
-        "cold"
-      ],
-      "tokens": [
-        {
-          "surface": "暑い",
-          "reading": "あつい",
-          "explain": "hot",
-          "wordId": "atsui"
-        },
-        {
-          "surface": "寒い",
-          "reading": "さむい",
-          "explain": "cold",
-          "wordId": "samui"
-        }
-      ],
-      "english": "hot / cold",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c027",
-      "line": [
-        "忙しい",
-        "楽しい"
-      ],
-      "tts": [
-        "いそがしい",
-        "たのしい"
-      ],
-      "explain": [
-        "busy",
-        "fun"
-      ],
-      "tokens": [
-        {
-          "surface": "忙しい",
-          "reading": "いそがしい",
-          "explain": "busy",
-          "wordId": "isogashii"
-        },
-        {
-          "surface": "楽しい",
-          "reading": "たのしい",
-          "explain": "fun",
-          "wordId": "tanoshii"
-        }
-      ],
-      "english": "busy / fun",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c028",
-      "line": [
-        "難しい",
-        "易しい"
-      ],
-      "tts": [
-        "むずかしい",
-        "やさしい"
-      ],
-      "explain": [
-        "difficult",
-        "easy"
-      ],
-      "tokens": [
-        {
-          "surface": "難しい",
-          "reading": "むずかしい",
-          "explain": "difficult",
-          "wordId": "muzukashii"
-        },
-        {
-          "surface": "易しい",
-          "reading": "やさしい",
-          "explain": "easy",
-          "wordId": "yasashii_easy"
-        }
-      ],
-      "english": "difficult / easy",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c029",
-      "line": [
-        "美味しい",
-        "早い"
-      ],
-      "tts": [
-        "おいしい",
-        "はやい"
-      ],
-      "explain": [
-        "delicious",
-        "early; fast"
-      ],
-      "tokens": [
-        {
-          "surface": "美味しい",
-          "reading": "おいしい",
-          "explain": "delicious",
-          "wordId": "oishii"
-        },
-        {
-          "surface": "早い",
-          "reading": "はやい",
-          "explain": "early; fast",
-          "wordId": "hayai"
-        }
-      ],
-      "english": "delicious / early",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c030",
-      "line": [
-        "遅い",
-        "明るい"
-      ],
-      "tts": [
-        "おそい",
-        "あかるい"
-      ],
-      "explain": [
-        "late; slow",
-        "bright"
-      ],
-      "tokens": [
-        {
-          "surface": "遅い",
-          "reading": "おそい",
-          "explain": "late; slow",
-          "wordId": "osoi"
-        },
-        {
-          "surface": "明るい",
-          "reading": "あかるい",
-          "explain": "bright",
-          "wordId": "akarui"
-        }
-      ],
-      "english": "late / bright",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u027-c031",
       "line": [
         "私",
         "は",
@@ -1066,7 +428,7 @@
       ]
     },
     {
-      "id": "u027-c032",
+      "id": "u027-c013",
       "line": [
         "あなた",
         "は",
@@ -1125,7 +487,7 @@
       ]
     },
     {
-      "id": "u027-c033",
+      "id": "u027-c014",
       "line": [
         "彼",
         "は",
@@ -1184,7 +546,7 @@
       ]
     },
     {
-      "id": "u027-c034",
+      "id": "u027-c015",
       "line": [
         "彼女",
         "は",
@@ -1243,7 +605,7 @@
       ]
     },
     {
-      "id": "u027-c035",
+      "id": "u027-c016",
       "line": [
         "先生",
         "は",
@@ -1302,7 +664,7 @@
       ]
     },
     {
-      "id": "u027-c036",
+      "id": "u027-c017",
       "line": [
         "学生",
         "は",
@@ -1361,7 +723,7 @@
       ]
     },
     {
-      "id": "u027-c037",
+      "id": "u027-c018",
       "line": [
         "友達",
         "は",
@@ -1420,7 +782,7 @@
       ]
     },
     {
-      "id": "u027-c038",
+      "id": "u027-c019",
       "line": [
         "男の人",
         "は",
@@ -1479,7 +841,7 @@
       ]
     },
     {
-      "id": "u027-c039",
+      "id": "u027-c020",
       "line": [
         "女の人",
         "は",
@@ -1538,7 +900,7 @@
       ]
     },
     {
-      "id": "u027-c040",
+      "id": "u027-c021",
       "line": [
         "店員",
         "は",
@@ -1597,7 +959,7 @@
       ]
     },
     {
-      "id": "u027-c041",
+      "id": "u027-c022",
       "line": [
         "私",
         "は",
@@ -1656,7 +1018,7 @@
       ]
     },
     {
-      "id": "u027-c042",
+      "id": "u027-c023",
       "line": [
         "あなた",
         "は",
@@ -1715,7 +1077,7 @@
       ]
     },
     {
-      "id": "u027-c043",
+      "id": "u027-c024",
       "line": [
         "彼",
         "は",
@@ -1774,7 +1136,7 @@
       ]
     },
     {
-      "id": "u027-c044",
+      "id": "u027-c025",
       "line": [
         "彼女",
         "は",
@@ -1833,7 +1195,7 @@
       ]
     },
     {
-      "id": "u027-c045",
+      "id": "u027-c026",
       "line": [
         "先生",
         "は",
@@ -1892,7 +1254,7 @@
       ]
     },
     {
-      "id": "u027-c046",
+      "id": "u027-c027",
       "line": [
         "学生",
         "は",
@@ -1951,7 +1313,7 @@
       ]
     },
     {
-      "id": "u027-c047",
+      "id": "u027-c028",
       "line": [
         "友達",
         "は",
@@ -2010,7 +1372,7 @@
       ]
     },
     {
-      "id": "u027-c048",
+      "id": "u027-c029",
       "line": [
         "男の人",
         "は",
@@ -2069,7 +1431,7 @@
       ]
     },
     {
-      "id": "u027-c049",
+      "id": "u027-c030",
       "line": [
         "女の人",
         "は",
@@ -2128,7 +1490,7 @@
       ]
     },
     {
-      "id": "u027-c050",
+      "id": "u027-c031",
       "line": [
         "店員",
         "は",
@@ -2187,7 +1549,7 @@
       ]
     },
     {
-      "id": "u027-c051",
+      "id": "u027-c032",
       "line": [
         "私",
         "は",
@@ -2246,7 +1608,7 @@
       ]
     },
     {
-      "id": "u027-c052",
+      "id": "u027-c033",
       "line": [
         "あなた",
         "は",
@@ -2305,7 +1667,7 @@
       ]
     },
     {
-      "id": "u027-c053",
+      "id": "u027-c034",
       "line": [
         "彼",
         "は",
@@ -2364,7 +1726,7 @@
       ]
     },
     {
-      "id": "u027-c054",
+      "id": "u027-c035",
       "line": [
         "彼女",
         "は",
@@ -2423,7 +1785,7 @@
       ]
     },
     {
-      "id": "u027-c055",
+      "id": "u027-c036",
       "line": [
         "先生",
         "は",
@@ -2482,7 +1844,7 @@
       ]
     },
     {
-      "id": "u027-c056",
+      "id": "u027-c037",
       "line": [
         "学生",
         "は",
@@ -2541,7 +1903,7 @@
       ]
     },
     {
-      "id": "u027-c057",
+      "id": "u027-c038",
       "line": [
         "友達",
         "は",
@@ -2600,7 +1962,7 @@
       ]
     },
     {
-      "id": "u027-c058",
+      "id": "u027-c039",
       "line": [
         "男の人",
         "は",
@@ -2659,7 +2021,7 @@
       ]
     },
     {
-      "id": "u027-c059",
+      "id": "u027-c040",
       "line": [
         "女の人",
         "は",
@@ -2718,7 +2080,7 @@
       ]
     },
     {
-      "id": "u027-c060",
+      "id": "u027-c041",
       "line": [
         "店員",
         "は",
@@ -2777,7 +2139,7 @@
       ]
     },
     {
-      "id": "u027-c061",
+      "id": "u027-c042",
       "line": [
         "私",
         "は",
@@ -2836,7 +2198,7 @@
       ]
     },
     {
-      "id": "u027-c062",
+      "id": "u027-c043",
       "line": [
         "あなた",
         "は",
@@ -2895,7 +2257,7 @@
       ]
     },
     {
-      "id": "u027-c063",
+      "id": "u027-c044",
       "line": [
         "彼",
         "は",
@@ -2954,7 +2316,7 @@
       ]
     },
     {
-      "id": "u027-c064",
+      "id": "u027-c045",
       "line": [
         "彼女",
         "は",
@@ -3013,7 +2375,7 @@
       ]
     },
     {
-      "id": "u027-c065",
+      "id": "u027-c046",
       "line": [
         "先生",
         "は",
@@ -3072,7 +2434,7 @@
       ]
     },
     {
-      "id": "u027-c066",
+      "id": "u027-c047",
       "line": [
         "学生",
         "は",
@@ -3131,7 +2493,7 @@
       ]
     },
     {
-      "id": "u027-c067",
+      "id": "u027-c048",
       "line": [
         "友達",
         "は",
@@ -3190,7 +2552,7 @@
       ]
     },
     {
-      "id": "u027-c068",
+      "id": "u027-c049",
       "line": [
         "男の人",
         "は",
@@ -3249,7 +2611,7 @@
       ]
     },
     {
-      "id": "u027-c069",
+      "id": "u027-c050",
       "line": [
         "女の人",
         "は",
@@ -3308,7 +2670,7 @@
       ]
     },
     {
-      "id": "u027-c070",
+      "id": "u027-c051",
       "line": [
         "店員",
         "は",
@@ -3367,7 +2729,7 @@
       ]
     },
     {
-      "id": "u027-c071",
+      "id": "u027-c052",
       "line": [
         "私",
         "は",
@@ -3426,7 +2788,7 @@
       ]
     },
     {
-      "id": "u027-c072",
+      "id": "u027-c053",
       "line": [
         "あなた",
         "は",
@@ -3485,7 +2847,7 @@
       ]
     },
     {
-      "id": "u027-c073",
+      "id": "u027-c054",
       "line": [
         "彼",
         "は",
@@ -3544,7 +2906,7 @@
       ]
     },
     {
-      "id": "u027-c074",
+      "id": "u027-c055",
       "line": [
         "彼女",
         "は",
@@ -3603,7 +2965,7 @@
       ]
     },
     {
-      "id": "u027-c075",
+      "id": "u027-c056",
       "line": [
         "先生",
         "は",
@@ -3662,7 +3024,7 @@
       ]
     },
     {
-      "id": "u027-c076",
+      "id": "u027-c057",
       "line": [
         "学生",
         "は",
@@ -3721,7 +3083,7 @@
       ]
     },
     {
-      "id": "u027-c077",
+      "id": "u027-c058",
       "line": [
         "友達",
         "は",
@@ -3780,7 +3142,7 @@
       ]
     },
     {
-      "id": "u027-c078",
+      "id": "u027-c059",
       "line": [
         "男の人",
         "は",
@@ -3839,7 +3201,7 @@
       ]
     },
     {
-      "id": "u027-c079",
+      "id": "u027-c060",
       "line": [
         "女の人",
         "は",
@@ -3898,7 +3260,7 @@
       ]
     },
     {
-      "id": "u027-c080",
+      "id": "u027-c061",
       "line": [
         "店員",
         "は",
@@ -3957,7 +3319,7 @@
       ]
     },
     {
-      "id": "u027-c081",
+      "id": "u027-c062",
       "line": [
         "私",
         "は",
@@ -4016,7 +3378,7 @@
       ]
     },
     {
-      "id": "u027-c082",
+      "id": "u027-c063",
       "line": [
         "あなた",
         "は",
@@ -4075,7 +3437,7 @@
       ]
     },
     {
-      "id": "u027-c083",
+      "id": "u027-c064",
       "line": [
         "彼",
         "は",
@@ -4134,7 +3496,7 @@
       ]
     },
     {
-      "id": "u027-c084",
+      "id": "u027-c065",
       "line": [
         "彼女",
         "は",
@@ -4193,7 +3555,7 @@
       ]
     },
     {
-      "id": "u027-c085",
+      "id": "u027-c066",
       "line": [
         "先生",
         "は",
@@ -4252,7 +3614,7 @@
       ]
     },
     {
-      "id": "u027-c086",
+      "id": "u027-c067",
       "line": [
         "学生",
         "は",
@@ -4311,7 +3673,7 @@
       ]
     },
     {
-      "id": "u027-c087",
+      "id": "u027-c068",
       "line": [
         "友達",
         "は",
@@ -4370,7 +3732,7 @@
       ]
     },
     {
-      "id": "u027-c088",
+      "id": "u027-c069",
       "line": [
         "男の人",
         "は",
@@ -4429,7 +3791,7 @@
       ]
     },
     {
-      "id": "u027-c089",
+      "id": "u027-c070",
       "line": [
         "女の人",
         "は",
@@ -4488,7 +3850,7 @@
       ]
     },
     {
-      "id": "u027-c090",
+      "id": "u027-c071",
       "line": [
         "店員",
         "は",
@@ -4547,7 +3909,7 @@
       ]
     },
     {
-      "id": "u027-c091",
+      "id": "u027-c072",
       "line": [
         "私",
         "は",
@@ -4606,7 +3968,7 @@
       ]
     },
     {
-      "id": "u027-c092",
+      "id": "u027-c073",
       "line": [
         "あなた",
         "は",
@@ -4665,7 +4027,7 @@
       ]
     },
     {
-      "id": "u027-c093",
+      "id": "u027-c074",
       "line": [
         "彼",
         "は",
@@ -4724,7 +4086,7 @@
       ]
     },
     {
-      "id": "u027-c094",
+      "id": "u027-c075",
       "line": [
         "彼女",
         "は",
@@ -4783,7 +4145,7 @@
       ]
     },
     {
-      "id": "u027-c095",
+      "id": "u027-c076",
       "line": [
         "先生",
         "は",
@@ -4842,7 +4204,7 @@
       ]
     },
     {
-      "id": "u027-c096",
+      "id": "u027-c077",
       "line": [
         "学生",
         "は",
@@ -4901,7 +4263,7 @@
       ]
     },
     {
-      "id": "u027-c097",
+      "id": "u027-c078",
       "line": [
         "友達",
         "は",
@@ -4960,7 +4322,7 @@
       ]
     },
     {
-      "id": "u027-c098",
+      "id": "u027-c079",
       "line": [
         "男の人",
         "は",
@@ -5019,7 +4381,7 @@
       ]
     },
     {
-      "id": "u027-c099",
+      "id": "u027-c080",
       "line": [
         "女の人",
         "は",
@@ -5078,7 +4440,7 @@
       ]
     },
     {
-      "id": "u027-c100",
+      "id": "u027-c081",
       "line": [
         "店員",
         "は",
@@ -5137,7 +4499,7 @@
       ]
     },
     {
-      "id": "u027-c101",
+      "id": "u027-c082",
       "line": [
         "私",
         "は",
@@ -5196,7 +4558,7 @@
       ]
     },
     {
-      "id": "u027-c102",
+      "id": "u027-c083",
       "line": [
         "あなた",
         "は",
@@ -5255,7 +4617,7 @@
       ]
     },
     {
-      "id": "u027-c103",
+      "id": "u027-c084",
       "line": [
         "彼",
         "は",
@@ -5314,7 +4676,7 @@
       ]
     },
     {
-      "id": "u027-c104",
+      "id": "u027-c085",
       "line": [
         "彼女",
         "は",
@@ -5373,7 +4735,7 @@
       ]
     },
     {
-      "id": "u027-c105",
+      "id": "u027-c086",
       "line": [
         "先生",
         "は",
@@ -5432,7 +4794,7 @@
       ]
     },
     {
-      "id": "u027-c106",
+      "id": "u027-c087",
       "line": [
         "学生",
         "は",
@@ -5491,7 +4853,7 @@
       ]
     },
     {
-      "id": "u027-c107",
+      "id": "u027-c088",
       "line": [
         "友達",
         "は",
@@ -5550,7 +4912,7 @@
       ]
     },
     {
-      "id": "u027-c108",
+      "id": "u027-c089",
       "line": [
         "男の人",
         "は",
@@ -5609,7 +4971,7 @@
       ]
     },
     {
-      "id": "u027-c109",
+      "id": "u027-c090",
       "line": [
         "女の人",
         "は",
@@ -5668,7 +5030,7 @@
       ]
     },
     {
-      "id": "u027-c110",
+      "id": "u027-c091",
       "line": [
         "店員",
         "は",
@@ -5724,6 +5086,1846 @@
       "fact": "Unit 27 introduces 時間にVます while keeping earlier A2 action sentences active.",
       "grammarTags": [
         "時間にVます"
+      ]
+    },
+    {
+      "id": "u027-c092",
+      "line": [
+        "自宅",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "じたく",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "home",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "自宅",
+          "reading": "じたく",
+          "explain": "home",
+          "wordId": "jitaku"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go home",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c093",
+      "line": [
+        "事務所",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "じむしょ",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "office",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "事務所",
+          "reading": "じむしょ",
+          "explain": "office",
+          "wordId": "jimusho"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the office",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c094",
+      "line": [
+        "大学",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "だいがく",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "university",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "大学",
+          "reading": "だいがく",
+          "explain": "university",
+          "wordId": "daigaku"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the university",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c095",
+      "line": [
+        "博物館",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "はくぶつかん",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "museum",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "博物館",
+          "reading": "はくぶつかん",
+          "explain": "museum",
+          "wordId": "hakubutsukan"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the museum",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c096",
+      "line": [
+        "本屋",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "ほんや",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "bookstore",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "本屋",
+          "reading": "ほんや",
+          "explain": "bookstore",
+          "wordId": "honya"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the bookstore",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c097",
+      "line": [
+        "コンビニ",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "こんびに",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "convenience store",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "コンビニ",
+          "reading": "こんびに",
+          "explain": "convenience store",
+          "wordId": "konbini"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the convenience store",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c098",
+      "line": [
+        "神社",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "じんじゃ",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "shrine",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "神社",
+          "reading": "じんじゃ",
+          "explain": "shrine",
+          "wordId": "jinja"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the shrine",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c099",
+      "line": [
+        "寺",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "てら",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "temple",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "寺",
+          "reading": "てら",
+          "explain": "temple",
+          "wordId": "tera"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the temple",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c100",
+      "line": [
+        "工場",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "こうじょう",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "factory",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "工場",
+          "reading": "こうじょう",
+          "explain": "factory",
+          "wordId": "koujou"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the factory",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c101",
+      "line": [
+        "大使館",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "たいしかん",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "embassy",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "大使館",
+          "reading": "たいしかん",
+          "explain": "embassy",
+          "wordId": "taishikan"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the embassy",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c102",
+      "line": [
+        "私",
+        "は",
+        "歩きます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あるきます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "walk"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "歩きます",
+          "reading": "あるきます",
+          "explain": "walk",
+          "wordId": "aruku"
+        }
+      ],
+      "english": "I walk",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c103",
+      "line": [
+        "私",
+        "は",
+        "走ります"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "はしります"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "run"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "走ります",
+          "reading": "はしります",
+          "explain": "run",
+          "wordId": "hashiru"
+        }
+      ],
+      "english": "I run",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c104",
+      "line": [
+        "私",
+        "は",
+        "泳ぎます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "およぎます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "swim"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "泳ぎます",
+          "reading": "およぎます",
+          "explain": "swim",
+          "wordId": "oyogu"
+        }
+      ],
+      "english": "I swim",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c105",
+      "line": [
+        "私",
+        "は",
+        "遊びます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あそびます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "play"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "遊びます",
+          "reading": "あそびます",
+          "explain": "play",
+          "wordId": "asobu"
+        }
+      ],
+      "english": "I play",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c106",
+      "line": [
+        "私",
+        "は",
+        "入ります"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "はいります"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "enter"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "入ります",
+          "reading": "はいります",
+          "explain": "enter",
+          "wordId": "hairu"
+        }
+      ],
+      "english": "I enter",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c107",
+      "line": [
+        "私",
+        "は",
+        "出ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "でます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "leave"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "出ます",
+          "reading": "でます",
+          "explain": "leave",
+          "wordId": "deru"
+        }
+      ],
+      "english": "I leave",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c108",
+      "line": [
+        "私",
+        "は",
+        "開けます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あけます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "open"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "開けます",
+          "reading": "あけます",
+          "explain": "open",
+          "wordId": "akeru"
+        }
+      ],
+      "english": "I open",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c109",
+      "line": [
+        "私",
+        "は",
+        "閉めます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "しめます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "close"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "閉めます",
+          "reading": "しめます",
+          "explain": "close",
+          "wordId": "shimeru"
+        }
+      ],
+      "english": "I close",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c110",
+      "line": [
+        "私",
+        "は",
+        "洗います"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あらいます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "wash"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "洗います",
+          "reading": "あらいます",
+          "explain": "wash",
+          "wordId": "arau"
+        }
+      ],
+      "english": "I wash",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c111",
+      "line": [
+        "私",
+        "は",
+        "立ちます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "たちます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "stand"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "立ちます",
+          "reading": "たちます",
+          "explain": "stand",
+          "wordId": "tatsu"
+        }
+      ],
+      "english": "I stand",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c112",
+      "line": [
+        "本",
+        "が",
+        "一つ",
+        "あります"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "ひとつ",
+        "あります"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "one thing",
+        "exists; there is"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "一つ",
+          "reading": "ひとつ",
+          "explain": "one thing",
+          "wordId": "hitotsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        }
+      ],
+      "english": "There is one book",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c113",
+      "line": [
+        "本",
+        "が",
+        "二つ",
+        "あります"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "ふたつ",
+        "あります"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "two things",
+        "exists; there is"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "二つ",
+          "reading": "ふたつ",
+          "explain": "two things",
+          "wordId": "futatsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        }
+      ],
+      "english": "There are two books",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c114",
+      "line": [
+        "本",
+        "が",
+        "三つ",
+        "あります"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "みっつ",
+        "あります"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "three things",
+        "exists; there is"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "三つ",
+          "reading": "みっつ",
+          "explain": "three things",
+          "wordId": "mittsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        }
+      ],
+      "english": "There are three books",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c115",
+      "line": [
+        "本",
+        "が",
+        "四つ",
+        "あります"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "よっつ",
+        "あります"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "four things",
+        "exists; there is"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "四つ",
+          "reading": "よっつ",
+          "explain": "four things",
+          "wordId": "yottsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        }
+      ],
+      "english": "There are four books",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c116",
+      "line": [
+        "本",
+        "が",
+        "五つ",
+        "あります"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "いつつ",
+        "あります"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "five things",
+        "exists; there is"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "五つ",
+          "reading": "いつつ",
+          "explain": "five things",
+          "wordId": "itsutsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        }
+      ],
+      "english": "There are five books",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c117",
+      "line": [
+        "本",
+        "が",
+        "六つ",
+        "あります"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "むっつ",
+        "あります"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "six things",
+        "exists; there is"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "六つ",
+          "reading": "むっつ",
+          "explain": "six things",
+          "wordId": "muttsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        }
+      ],
+      "english": "There are six books",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c118",
+      "line": [
+        "本",
+        "が",
+        "七つ",
+        "あります"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "ななつ",
+        "あります"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "seven things",
+        "exists; there is"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "七つ",
+          "reading": "ななつ",
+          "explain": "seven things",
+          "wordId": "nanatsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        }
+      ],
+      "english": "There are seven books",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c119",
+      "line": [
+        "本",
+        "が",
+        "八つ",
+        "あります"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "やっつ",
+        "あります"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "eight things",
+        "exists; there is"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "八つ",
+          "reading": "やっつ",
+          "explain": "eight things",
+          "wordId": "yattsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        }
+      ],
+      "english": "There are eight books",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c120",
+      "line": [
+        "本",
+        "が",
+        "九つ",
+        "あります"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "ここのつ",
+        "あります"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "nine things",
+        "exists; there is"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "九つ",
+          "reading": "ここのつ",
+          "explain": "nine things",
+          "wordId": "kokonotsu"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        }
+      ],
+      "english": "There are nine books",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c121",
+      "line": [
+        "本",
+        "が",
+        "十",
+        "あります"
+      ],
+      "tts": [
+        "ほん",
+        "が",
+        "とお",
+        "あります"
+      ],
+      "explain": [
+        "book",
+        "subject marker",
+        "ten things",
+        "exists; there is"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "十",
+          "reading": "とお",
+          "explain": "ten things",
+          "wordId": "too"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "exists; there is"
+        }
+      ],
+      "english": "There are ten books",
+      "fact": "Counter review keeps basic quantities active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c122",
+      "line": [
+        "ここ",
+        "は",
+        "暑い",
+        "です"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "あつい",
+        "です"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "hot",
+        "polite sentence ending"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "暑い",
+          "reading": "あつい",
+          "explain": "hot",
+          "wordId": "atsui"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        }
+      ],
+      "english": "It is hot here",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c123",
+      "line": [
+        "ここ",
+        "は",
+        "寒い",
+        "です"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "さむい",
+        "です"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "cold",
+        "polite sentence ending"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "寒い",
+          "reading": "さむい",
+          "explain": "cold",
+          "wordId": "samui"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        }
+      ],
+      "english": "It is cold here",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c124",
+      "line": [
+        "ここ",
+        "は",
+        "忙しい",
+        "です"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "いそがしい",
+        "です"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "busy",
+        "polite sentence ending"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "忙しい",
+          "reading": "いそがしい",
+          "explain": "busy",
+          "wordId": "isogashii"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        }
+      ],
+      "english": "It is busy here",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c125",
+      "line": [
+        "ここ",
+        "は",
+        "楽しい",
+        "です"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "たのしい",
+        "です"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "fun",
+        "polite sentence ending"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "楽しい",
+          "reading": "たのしい",
+          "explain": "fun",
+          "wordId": "tanoshii"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        }
+      ],
+      "english": "It is fun here",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c126",
+      "line": [
+        "ここ",
+        "は",
+        "難しい",
+        "です"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "むずかしい",
+        "です"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "difficult",
+        "polite sentence ending"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "難しい",
+          "reading": "むずかしい",
+          "explain": "difficult",
+          "wordId": "muzukashii"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        }
+      ],
+      "english": "It is difficult here",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c127",
+      "line": [
+        "ここ",
+        "は",
+        "易しい",
+        "です"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "やさしい",
+        "です"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "easy",
+        "polite sentence ending"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "易しい",
+          "reading": "やさしい",
+          "explain": "easy",
+          "wordId": "yasashii_easy"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        }
+      ],
+      "english": "It is easy here",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c128",
+      "line": [
+        "ここ",
+        "は",
+        "美味しい",
+        "です"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "おいしい",
+        "です"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "delicious",
+        "polite sentence ending"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "美味しい",
+          "reading": "おいしい",
+          "explain": "delicious",
+          "wordId": "oishii"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        }
+      ],
+      "english": "It is delicious here",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c129",
+      "line": [
+        "ここ",
+        "は",
+        "早い",
+        "です"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "はやい",
+        "です"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "early; fast",
+        "polite sentence ending"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "早い",
+          "reading": "はやい",
+          "explain": "early; fast",
+          "wordId": "hayai"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        }
+      ],
+      "english": "It is early here",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c130",
+      "line": [
+        "ここ",
+        "は",
+        "遅い",
+        "です"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "おそい",
+        "です"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "late; slow",
+        "polite sentence ending"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "遅い",
+          "reading": "おそい",
+          "explain": "late; slow",
+          "wordId": "osoi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        }
+      ],
+      "english": "It is late here",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u027-c131",
+      "line": [
+        "ここ",
+        "は",
+        "明るい",
+        "です"
+      ],
+      "tts": [
+        "ここ",
+        "わ",
+        "あかるい",
+        "です"
+      ],
+      "explain": [
+        "here",
+        "topic marker",
+        "bright",
+        "polite sentence ending"
+      ],
+      "tokens": [
+        {
+          "surface": "ここ",
+          "reading": "ここ",
+          "explain": "here",
+          "wordId": "koko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "明るい",
+          "reading": "あかるい",
+          "explain": "bright",
+          "wordId": "akarui"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite sentence ending"
+        }
+      ],
+      "english": "It is bright here",
+      "fact": "Description review stays attached to a simple scene.",
+      "grammarTags": [
+        "review vocabulary"
       ]
     }
   ]

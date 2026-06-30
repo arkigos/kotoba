@@ -34,8 +34,8 @@ for (const unitSpec of source.units) {
 
   for (const word of pools.reviewDue) {
     const firstSeen = firstWords.get(word.id);
-    if (!firstSeen || firstSeen > pacing.cutoffs.reviewWordFirstSeenBy) {
-      warnings.push(`unit ${unit.id}: review-due word ${word.id} first appears at ${firstSeen ?? "never"}, after cutoff ${pacing.cutoffs.reviewWordFirstSeenBy}`);
+    if (!firstSeen) {
+      warnings.push(`unit ${unit.id}: review-due word ${word.id} does not return in this unit`);
     }
   }
 

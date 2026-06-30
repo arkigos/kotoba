@@ -53,7 +53,7 @@ describe("curriculum word bins", () => {
   it("defines the no-first-exposure pacing cutoff before late review cards", () => {
     expect(pacingRules.cutoffs.currentWordFirstSeenBy).toBeLessThanOrEqual(40);
     expect(pacingRules.cutoffs.grammarFocusFirstSeenBy).toBeLessThanOrEqual(60);
-    expect(pacingRules.cutoffs.reviewWordFirstSeenBy).toBeLessThanOrEqual(60);
+    expect(pacingRules.cutoffs.reviewWordPreferredFirstSeenAfter).toBeGreaterThanOrEqual(30);
     expect(pacingRules.cutoffs.noFirstExposureAfter).toBe(60);
     expect(pacingRules.cardBands.at(-1)?.id).toBe("review-and-mix");
   });
@@ -305,7 +305,7 @@ describe("curriculum word bins", () => {
     }
   });
 
-  it("keeps A2 current and review-due vocabulary inside the pacing cutoffs", () => {
+  it("keeps A2 current vocabulary early and review-due vocabulary present", () => {
     for (let unitId = 21; unitId <= 44; unitId += 1) {
       const firstSeen = firstWordPositions(unitId);
       const unitSpec = unitSpecs.units.find((unit) => unit.id === unitId);
@@ -318,9 +318,30 @@ describe("curriculum word bins", () => {
       }
 
       for (const word of wordsForUnitIds(reviewVocabularyUnitIds(unitId))) {
-        expect(firstSeen.get(word.id) ?? Number.POSITIVE_INFINITY, `unit ${unitId} review word ${word.id}`).toBeLessThanOrEqual(
-          pacingRules.cutoffs.reviewWordFirstSeenBy,
-        );
+        expect(firstSeen.get(word.id), `unit ${unitId} review word ${word.id}`).toBeDefined();
+      }
+    }
+  });
+
+  it("does not use intro cards for review-due vocabulary", () => {
+    for (const unit of Object.values(unitModules).map((module) => module.default)) {
+      for (const card of unit.cards) {
+        expect(card.grammarTags ?? []).not.toContain("a1 review vocabulary intro");
+        expect(card.grammarTags ?? []).not.toContain("a2 review vocabulary intro");
+      }
+    }
+  });
+
+  it("does not first-introduce multiple current-unit words on one card", () => {
+    for (const entry of unitIndex.units) {
+      const unit = unitModules[unitModulePath(entry.id)].default;
+      const firstSeen = firstWordPositions(entry.id);
+      for (const [cardIndex, card] of unit.cards.entries()) {
+        const newWordsFirstSeenHere = (card.tokens ?? []).filter((token) => {
+          const wordId = token.wordId;
+          return wordId && unit.newWords.some((word) => word.id === wordId) && firstSeen.get(wordId) === cardIndex + 1;
+        });
+        expect(newWordsFirstSeenHere.length, `unit ${entry.id} card ${cardIndex + 1}`).toBeLessThanOrEqual(1);
       }
     }
   });

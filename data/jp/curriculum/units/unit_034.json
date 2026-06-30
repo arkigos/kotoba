@@ -329,18 +329,38 @@
     {
       "id": "u034-c011",
       "line": [
+        "私",
+        "は",
         "ピアノ",
-        "ギター"
+        "を",
+        "見ます"
       ],
       "tts": [
+        "わたし",
+        "わ",
         "ぴあの",
-        "ぎたー"
+        "を",
+        "みます"
       ],
       "explain": [
+        "I; me",
+        "topic marker",
         "piano",
-        "guitar"
+        "direct object marker",
+        "watch"
       ],
       "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
         {
           "surface": "ピアノ",
           "reading": "ぴあの",
@@ -348,836 +368,25 @@
           "wordId": "piano"
         },
         {
-          "surface": "ギター",
-          "reading": "ぎたー",
-          "explain": "guitar",
-          "wordId": "gitaa"
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
         }
       ],
-      "english": "piano / guitar",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
+      "english": "I look at a piano",
+      "fact": "Noun review returns as an object of a familiar action. This card is previewed early so the unit's grammar focus appears before mixed practice.",
       "grammarTags": [
-        "a2 review vocabulary intro"
+        "review vocabulary"
       ]
     },
     {
       "id": "u034-c012",
-      "line": [
-        "歌",
-        "ダンス"
-      ],
-      "tts": [
-        "うた",
-        "だんす"
-      ],
-      "explain": [
-        "singing; song",
-        "dance"
-      ],
-      "tokens": [
-        {
-          "surface": "歌",
-          "reading": "うた",
-          "explain": "singing; song",
-          "wordId": "uta"
-        },
-        {
-          "surface": "ダンス",
-          "reading": "だんす",
-          "explain": "dance",
-          "wordId": "dansu"
-        }
-      ],
-      "english": "singing / dance",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c013",
-      "line": [
-        "絵",
-        "運転"
-      ],
-      "tts": [
-        "え",
-        "うんてん"
-      ],
-      "explain": [
-        "drawing; picture",
-        "driving"
-      ],
-      "tokens": [
-        {
-          "surface": "絵",
-          "reading": "え",
-          "explain": "drawing; picture",
-          "wordId": "e_drawing"
-        },
-        {
-          "surface": "運転",
-          "reading": "うんてん",
-          "explain": "driving",
-          "wordId": "unten"
-        }
-      ],
-      "english": "drawing / driving",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c014",
-      "line": [
-        "掃除",
-        "計算"
-      ],
-      "tts": [
-        "そうじ",
-        "けいさん"
-      ],
-      "explain": [
-        "cleaning",
-        "calculation"
-      ],
-      "tokens": [
-        {
-          "surface": "掃除",
-          "reading": "そうじ",
-          "explain": "cleaning",
-          "wordId": "souji"
-        },
-        {
-          "surface": "計算",
-          "reading": "けいさん",
-          "explain": "calculation",
-          "wordId": "keisan"
-        }
-      ],
-      "english": "cleaning / calculation",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c015",
-      "line": [
-        "英語",
-        "漢字"
-      ],
-      "tts": [
-        "えいご",
-        "かんじ"
-      ],
-      "explain": [
-        "English language",
-        "kanji"
-      ],
-      "tokens": [
-        {
-          "surface": "英語",
-          "reading": "えいご",
-          "explain": "English language",
-          "wordId": "eigo"
-        },
-        {
-          "surface": "漢字",
-          "reading": "かんじ",
-          "explain": "kanji",
-          "wordId": "kanji"
-        }
-      ],
-      "english": "English language / kanji",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c016",
-      "line": [
-        "毎日",
-        "毎朝"
-      ],
-      "tts": [
-        "まいにち",
-        "まいあさ"
-      ],
-      "explain": [
-        "every day",
-        "every morning"
-      ],
-      "tokens": [
-        {
-          "surface": "毎日",
-          "reading": "まいにち",
-          "explain": "every day",
-          "wordId": "mainichi"
-        },
-        {
-          "surface": "毎朝",
-          "reading": "まいあさ",
-          "explain": "every morning",
-          "wordId": "maiasa"
-        }
-      ],
-      "english": "every day / every morning",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c017",
-      "line": [
-        "毎晩",
-        "よく"
-      ],
-      "tts": [
-        "まいばん",
-        "よく"
-      ],
-      "explain": [
-        "every night",
-        "often"
-      ],
-      "tokens": [
-        {
-          "surface": "毎晩",
-          "reading": "まいばん",
-          "explain": "every night",
-          "wordId": "maiban"
-        },
-        {
-          "surface": "よく",
-          "reading": "よく",
-          "explain": "often",
-          "wordId": "yoku_adv"
-        }
-      ],
-      "english": "every night / often",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c018",
-      "line": [
-        "時々",
-        "いつも"
-      ],
-      "tts": [
-        "ときどき",
-        "いつも"
-      ],
-      "explain": [
-        "sometimes",
-        "always"
-      ],
-      "tokens": [
-        {
-          "surface": "時々",
-          "reading": "ときどき",
-          "explain": "sometimes",
-          "wordId": "tokidoki"
-        },
-        {
-          "surface": "いつも",
-          "reading": "いつも",
-          "explain": "always",
-          "wordId": "itsumo"
-        }
-      ],
-      "english": "sometimes / always",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c019",
-      "line": [
-        "たいてい",
-        "たまに"
-      ],
-      "tts": [
-        "たいてい",
-        "たまに"
-      ],
-      "explain": [
-        "usually",
-        "occasionally"
-      ],
-      "tokens": [
-        {
-          "surface": "たいてい",
-          "reading": "たいてい",
-          "explain": "usually",
-          "wordId": "taitei"
-        },
-        {
-          "surface": "たまに",
-          "reading": "たまに",
-          "explain": "occasionally",
-          "wordId": "tamani"
-        }
-      ],
-      "english": "usually / occasionally",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c020",
-      "line": [
-        "ほとんど",
-        "めったに"
-      ],
-      "tts": [
-        "ほとんど",
-        "めったに"
-      ],
-      "explain": [
-        "almost never",
-        "rarely"
-      ],
-      "tokens": [
-        {
-          "surface": "ほとんど",
-          "reading": "ほとんど",
-          "explain": "almost never",
-          "wordId": "hotondo"
-        },
-        {
-          "surface": "めったに",
-          "reading": "めったに",
-          "explain": "rarely",
-          "wordId": "mettani"
-        }
-      ],
-      "english": "almost never / rarely",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c021",
-      "line": [
-        "体育館",
-        "プール"
-      ],
-      "tts": [
-        "たいいくかん",
-        "ぷーる"
-      ],
-      "explain": [
-        "gym",
-        "pool"
-      ],
-      "tokens": [
-        {
-          "surface": "体育館",
-          "reading": "たいいくかん",
-          "explain": "gym",
-          "wordId": "taiikukan"
-        },
-        {
-          "surface": "プール",
-          "reading": "ぷーる",
-          "explain": "pool",
-          "wordId": "puuru"
-        }
-      ],
-      "english": "gym / pool",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c022",
-      "line": [
-        "会議室",
-        "広場"
-      ],
-      "tts": [
-        "かいぎしつ",
-        "ひろば"
-      ],
-      "explain": [
-        "meeting room",
-        "plaza"
-      ],
-      "tokens": [
-        {
-          "surface": "会議室",
-          "reading": "かいぎしつ",
-          "explain": "meeting room",
-          "wordId": "kaigishitsu"
-        },
-        {
-          "surface": "広場",
-          "reading": "ひろば",
-          "explain": "plaza",
-          "wordId": "hiroba"
-        }
-      ],
-      "english": "meeting room / plaza",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c023",
-      "line": [
-        "銭湯",
-        "旅館"
-      ],
-      "tts": [
-        "せんとう",
-        "りょかん"
-      ],
-      "explain": [
-        "public bath",
-        "inn"
-      ],
-      "tokens": [
-        {
-          "surface": "銭湯",
-          "reading": "せんとう",
-          "explain": "public bath",
-          "wordId": "sentou"
-        },
-        {
-          "surface": "旅館",
-          "reading": "りょかん",
-          "explain": "inn",
-          "wordId": "ryokan"
-        }
-      ],
-      "english": "public bath / inn",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c024",
-      "line": [
-        "海岸",
-        "森"
-      ],
-      "tts": [
-        "かいがん",
-        "もり"
-      ],
-      "explain": [
-        "beach",
-        "forest"
-      ],
-      "tokens": [
-        {
-          "surface": "海岸",
-          "reading": "かいがん",
-          "explain": "beach",
-          "wordId": "kaigan"
-        },
-        {
-          "surface": "森",
-          "reading": "もり",
-          "explain": "forest",
-          "wordId": "mori"
-        }
-      ],
-      "english": "beach / forest",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c025",
-      "line": [
-        "喫茶店",
-        "デパート"
-      ],
-      "tts": [
-        "きっさてん",
-        "でぱーと"
-      ],
-      "explain": [
-        "coffee shop",
-        "department store"
-      ],
-      "tokens": [
-        {
-          "surface": "喫茶店",
-          "reading": "きっさてん",
-          "explain": "coffee shop",
-          "wordId": "kissaten"
-        },
-        {
-          "surface": "デパート",
-          "reading": "でぱーと",
-          "explain": "department store",
-          "wordId": "depaato"
-        }
-      ],
-      "english": "coffee shop / department store",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c026",
-      "line": [
-        "上",
-        "下"
-      ],
-      "tts": [
-        "うえ",
-        "した"
-      ],
-      "explain": [
-        "above; on top",
-        "below; under"
-      ],
-      "tokens": [
-        {
-          "surface": "上",
-          "reading": "うえ",
-          "explain": "above; on top",
-          "wordId": "ue"
-        },
-        {
-          "surface": "下",
-          "reading": "した",
-          "explain": "below; under",
-          "wordId": "shita"
-        }
-      ],
-      "english": "above / below",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c027",
-      "line": [
-        "中",
-        "前"
-      ],
-      "tts": [
-        "なか",
-        "まえ"
-      ],
-      "explain": [
-        "inside",
-        "front; before"
-      ],
-      "tokens": [
-        {
-          "surface": "中",
-          "reading": "なか",
-          "explain": "inside",
-          "wordId": "naka"
-        },
-        {
-          "surface": "前",
-          "reading": "まえ",
-          "explain": "front; before",
-          "wordId": "mae"
-        }
-      ],
-      "english": "inside / front",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c028",
-      "line": [
-        "後ろ",
-        "隣"
-      ],
-      "tts": [
-        "うしろ",
-        "となり"
-      ],
-      "explain": [
-        "behind",
-        "next to"
-      ],
-      "tokens": [
-        {
-          "surface": "後ろ",
-          "reading": "うしろ",
-          "explain": "behind",
-          "wordId": "ushiro"
-        },
-        {
-          "surface": "隣",
-          "reading": "となり",
-          "explain": "next to",
-          "wordId": "tonari"
-        }
-      ],
-      "english": "behind / next to",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c029",
-      "line": [
-        "右",
-        "左"
-      ],
-      "tts": [
-        "みぎ",
-        "ひだり"
-      ],
-      "explain": [
-        "right",
-        "left"
-      ],
-      "tokens": [
-        {
-          "surface": "右",
-          "reading": "みぎ",
-          "explain": "right",
-          "wordId": "migi"
-        },
-        {
-          "surface": "左",
-          "reading": "ひだり",
-          "explain": "left",
-          "wordId": "hidari"
-        }
-      ],
-      "english": "right / left",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c030",
-      "line": [
-        "間",
-        "近く"
-      ],
-      "tts": [
-        "あいだ",
-        "ちかく"
-      ],
-      "explain": [
-        "between",
-        "nearby"
-      ],
-      "tokens": [
-        {
-          "surface": "間",
-          "reading": "あいだ",
-          "explain": "between",
-          "wordId": "aida"
-        },
-        {
-          "surface": "近く",
-          "reading": "ちかく",
-          "explain": "nearby",
-          "wordId": "chikaku"
-        }
-      ],
-      "english": "between / nearby",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c031",
-      "line": [
-        "猫",
-        "犬"
-      ],
-      "tts": [
-        "ねこ",
-        "いぬ"
-      ],
-      "explain": [
-        "cat",
-        "dog"
-      ],
-      "tokens": [
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
-        },
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu"
-        }
-      ],
-      "english": "cat / dog",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c032",
-      "line": [
-        "動物",
-        "本"
-      ],
-      "tts": [
-        "どうぶつ",
-        "ほん"
-      ],
-      "explain": [
-        "animal",
-        "book"
-      ],
-      "tokens": [
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu"
-        },
-        {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
-        }
-      ],
-      "english": "animal / book",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c033",
-      "line": [
-        "家",
-        "学校"
-      ],
-      "tts": [
-        "いえ",
-        "がっこう"
-      ],
-      "explain": [
-        "house; home",
-        "school"
-      ],
-      "tokens": [
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie"
-        },
-        {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou"
-        }
-      ],
-      "english": "house / school",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c034",
-      "line": [
-        "場所",
-        "医者"
-      ],
-      "tts": [
-        "ばしょ",
-        "いしゃ"
-      ],
-      "explain": [
-        "place",
-        "doctor"
-      ],
-      "tokens": [
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        }
-      ],
-      "english": "place / doctor",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c035",
-      "line": [
-        "人",
-        "物"
-      ],
-      "tts": [
-        "ひと",
-        "もの"
-      ],
-      "explain": [
-        "person",
-        "thing; object"
-      ],
-      "tokens": [
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "物",
-          "reading": "もの",
-          "explain": "thing; object",
-          "wordId": "mono"
-        }
-      ],
-      "english": "person / thing",
-      "fact": "A compact review landing card keeps older vocabulary active before mixed practice.",
-      "grammarTags": [
-        "a2 review vocabulary intro"
-      ]
-    },
-    {
-      "id": "u034-c036",
       "line": [
         "私",
         "は",
@@ -1227,7 +436,7 @@
       ]
     },
     {
-      "id": "u034-c037",
+      "id": "u034-c013",
       "line": [
         "私",
         "は",
@@ -1277,7 +486,7 @@
       ]
     },
     {
-      "id": "u034-c038",
+      "id": "u034-c014",
       "line": [
         "私",
         "は",
@@ -1327,7 +536,7 @@
       ]
     },
     {
-      "id": "u034-c039",
+      "id": "u034-c015",
       "line": [
         "私",
         "は",
@@ -1377,7 +586,7 @@
       ]
     },
     {
-      "id": "u034-c040",
+      "id": "u034-c016",
       "line": [
         "私",
         "は",
@@ -1427,7 +636,7 @@
       ]
     },
     {
-      "id": "u034-c041",
+      "id": "u034-c017",
       "line": [
         "私",
         "は",
@@ -1477,7 +686,7 @@
       ]
     },
     {
-      "id": "u034-c042",
+      "id": "u034-c018",
       "line": [
         "私",
         "は",
@@ -1527,7 +736,7 @@
       ]
     },
     {
-      "id": "u034-c043",
+      "id": "u034-c019",
       "line": [
         "私",
         "は",
@@ -1577,7 +786,7 @@
       ]
     },
     {
-      "id": "u034-c044",
+      "id": "u034-c020",
       "line": [
         "私",
         "は",
@@ -1627,7 +836,7 @@
       ]
     },
     {
-      "id": "u034-c045",
+      "id": "u034-c021",
       "line": [
         "私",
         "は",
@@ -1677,7 +886,7 @@
       ]
     },
     {
-      "id": "u034-c046",
+      "id": "u034-c022",
       "line": [
         "あなた",
         "は",
@@ -1727,7 +936,7 @@
       ]
     },
     {
-      "id": "u034-c047",
+      "id": "u034-c023",
       "line": [
         "あなた",
         "は",
@@ -1777,7 +986,7 @@
       ]
     },
     {
-      "id": "u034-c048",
+      "id": "u034-c024",
       "line": [
         "あなた",
         "は",
@@ -1827,7 +1036,7 @@
       ]
     },
     {
-      "id": "u034-c049",
+      "id": "u034-c025",
       "line": [
         "あなた",
         "は",
@@ -1877,7 +1086,7 @@
       ]
     },
     {
-      "id": "u034-c050",
+      "id": "u034-c026",
       "line": [
         "あなた",
         "は",
@@ -1927,7 +1136,7 @@
       ]
     },
     {
-      "id": "u034-c051",
+      "id": "u034-c027",
       "line": [
         "あなた",
         "は",
@@ -1977,7 +1186,7 @@
       ]
     },
     {
-      "id": "u034-c052",
+      "id": "u034-c028",
       "line": [
         "あなた",
         "は",
@@ -2027,7 +1236,7 @@
       ]
     },
     {
-      "id": "u034-c053",
+      "id": "u034-c029",
       "line": [
         "あなた",
         "は",
@@ -2077,7 +1286,7 @@
       ]
     },
     {
-      "id": "u034-c054",
+      "id": "u034-c030",
       "line": [
         "あなた",
         "は",
@@ -2127,7 +1336,7 @@
       ]
     },
     {
-      "id": "u034-c055",
+      "id": "u034-c031",
       "line": [
         "あなた",
         "は",
@@ -2177,7 +1386,7 @@
       ]
     },
     {
-      "id": "u034-c056",
+      "id": "u034-c032",
       "line": [
         "彼",
         "は",
@@ -2227,7 +1436,7 @@
       ]
     },
     {
-      "id": "u034-c057",
+      "id": "u034-c033",
       "line": [
         "彼",
         "は",
@@ -2277,7 +1486,7 @@
       ]
     },
     {
-      "id": "u034-c058",
+      "id": "u034-c034",
       "line": [
         "彼",
         "は",
@@ -2327,7 +1536,7 @@
       ]
     },
     {
-      "id": "u034-c059",
+      "id": "u034-c035",
       "line": [
         "彼",
         "は",
@@ -2377,7 +1586,7 @@
       ]
     },
     {
-      "id": "u034-c060",
+      "id": "u034-c036",
       "line": [
         "彼",
         "は",
@@ -2427,7 +1636,7 @@
       ]
     },
     {
-      "id": "u034-c061",
+      "id": "u034-c037",
       "line": [
         "彼",
         "は",
@@ -2477,7 +1686,7 @@
       ]
     },
     {
-      "id": "u034-c062",
+      "id": "u034-c038",
       "line": [
         "彼",
         "は",
@@ -2527,7 +1736,7 @@
       ]
     },
     {
-      "id": "u034-c063",
+      "id": "u034-c039",
       "line": [
         "彼",
         "は",
@@ -2577,7 +1786,7 @@
       ]
     },
     {
-      "id": "u034-c064",
+      "id": "u034-c040",
       "line": [
         "彼",
         "は",
@@ -2627,7 +1836,7 @@
       ]
     },
     {
-      "id": "u034-c065",
+      "id": "u034-c041",
       "line": [
         "彼",
         "は",
@@ -2677,7 +1886,7 @@
       ]
     },
     {
-      "id": "u034-c066",
+      "id": "u034-c042",
       "line": [
         "彼女",
         "は",
@@ -2727,7 +1936,7 @@
       ]
     },
     {
-      "id": "u034-c067",
+      "id": "u034-c043",
       "line": [
         "彼女",
         "は",
@@ -2777,7 +1986,7 @@
       ]
     },
     {
-      "id": "u034-c068",
+      "id": "u034-c044",
       "line": [
         "彼女",
         "は",
@@ -2827,7 +2036,7 @@
       ]
     },
     {
-      "id": "u034-c069",
+      "id": "u034-c045",
       "line": [
         "彼女",
         "は",
@@ -2877,7 +2086,7 @@
       ]
     },
     {
-      "id": "u034-c070",
+      "id": "u034-c046",
       "line": [
         "彼女",
         "は",
@@ -2927,7 +2136,7 @@
       ]
     },
     {
-      "id": "u034-c071",
+      "id": "u034-c047",
       "line": [
         "彼女",
         "は",
@@ -2977,7 +2186,7 @@
       ]
     },
     {
-      "id": "u034-c072",
+      "id": "u034-c048",
       "line": [
         "彼女",
         "は",
@@ -3027,7 +2236,7 @@
       ]
     },
     {
-      "id": "u034-c073",
+      "id": "u034-c049",
       "line": [
         "彼女",
         "は",
@@ -3077,7 +2286,7 @@
       ]
     },
     {
-      "id": "u034-c074",
+      "id": "u034-c050",
       "line": [
         "彼女",
         "は",
@@ -3127,7 +2336,7 @@
       ]
     },
     {
-      "id": "u034-c075",
+      "id": "u034-c051",
       "line": [
         "彼女",
         "は",
@@ -3177,7 +2386,7 @@
       ]
     },
     {
-      "id": "u034-c076",
+      "id": "u034-c052",
       "line": [
         "先生",
         "は",
@@ -3227,7 +2436,7 @@
       ]
     },
     {
-      "id": "u034-c077",
+      "id": "u034-c053",
       "line": [
         "先生",
         "は",
@@ -3277,7 +2486,7 @@
       ]
     },
     {
-      "id": "u034-c078",
+      "id": "u034-c054",
       "line": [
         "先生",
         "は",
@@ -3327,7 +2536,7 @@
       ]
     },
     {
-      "id": "u034-c079",
+      "id": "u034-c055",
       "line": [
         "先生",
         "は",
@@ -3377,7 +2586,7 @@
       ]
     },
     {
-      "id": "u034-c080",
+      "id": "u034-c056",
       "line": [
         "先生",
         "は",
@@ -3427,7 +2636,7 @@
       ]
     },
     {
-      "id": "u034-c081",
+      "id": "u034-c057",
       "line": [
         "先生",
         "は",
@@ -3477,7 +2686,7 @@
       ]
     },
     {
-      "id": "u034-c082",
+      "id": "u034-c058",
       "line": [
         "先生",
         "は",
@@ -3527,7 +2736,7 @@
       ]
     },
     {
-      "id": "u034-c083",
+      "id": "u034-c059",
       "line": [
         "先生",
         "は",
@@ -3577,7 +2786,7 @@
       ]
     },
     {
-      "id": "u034-c084",
+      "id": "u034-c060",
       "line": [
         "先生",
         "は",
@@ -3627,7 +2836,7 @@
       ]
     },
     {
-      "id": "u034-c085",
+      "id": "u034-c061",
       "line": [
         "先生",
         "は",
@@ -3677,7 +2886,7 @@
       ]
     },
     {
-      "id": "u034-c086",
+      "id": "u034-c062",
       "line": [
         "学生",
         "は",
@@ -3727,7 +2936,7 @@
       ]
     },
     {
-      "id": "u034-c087",
+      "id": "u034-c063",
       "line": [
         "学生",
         "は",
@@ -3777,7 +2986,7 @@
       ]
     },
     {
-      "id": "u034-c088",
+      "id": "u034-c064",
       "line": [
         "学生",
         "は",
@@ -3827,7 +3036,7 @@
       ]
     },
     {
-      "id": "u034-c089",
+      "id": "u034-c065",
       "line": [
         "学生",
         "は",
@@ -3877,7 +3086,7 @@
       ]
     },
     {
-      "id": "u034-c090",
+      "id": "u034-c066",
       "line": [
         "学生",
         "は",
@@ -3927,7 +3136,7 @@
       ]
     },
     {
-      "id": "u034-c091",
+      "id": "u034-c067",
       "line": [
         "学生",
         "は",
@@ -3977,7 +3186,7 @@
       ]
     },
     {
-      "id": "u034-c092",
+      "id": "u034-c068",
       "line": [
         "学生",
         "は",
@@ -4027,7 +3236,7 @@
       ]
     },
     {
-      "id": "u034-c093",
+      "id": "u034-c069",
       "line": [
         "学生",
         "は",
@@ -4077,7 +3286,7 @@
       ]
     },
     {
-      "id": "u034-c094",
+      "id": "u034-c070",
       "line": [
         "学生",
         "は",
@@ -4127,7 +3336,7 @@
       ]
     },
     {
-      "id": "u034-c095",
+      "id": "u034-c071",
       "line": [
         "学生",
         "は",
@@ -4177,7 +3386,7 @@
       ]
     },
     {
-      "id": "u034-c096",
+      "id": "u034-c072",
       "line": [
         "友達",
         "は",
@@ -4227,7 +3436,7 @@
       ]
     },
     {
-      "id": "u034-c097",
+      "id": "u034-c073",
       "line": [
         "友達",
         "は",
@@ -4277,7 +3486,7 @@
       ]
     },
     {
-      "id": "u034-c098",
+      "id": "u034-c074",
       "line": [
         "友達",
         "は",
@@ -4327,7 +3536,7 @@
       ]
     },
     {
-      "id": "u034-c099",
+      "id": "u034-c075",
       "line": [
         "友達",
         "は",
@@ -4377,7 +3586,7 @@
       ]
     },
     {
-      "id": "u034-c100",
+      "id": "u034-c076",
       "line": [
         "友達",
         "は",
@@ -4427,7 +3636,7 @@
       ]
     },
     {
-      "id": "u034-c101",
+      "id": "u034-c077",
       "line": [
         "友達",
         "は",
@@ -4477,7 +3686,7 @@
       ]
     },
     {
-      "id": "u034-c102",
+      "id": "u034-c078",
       "line": [
         "友達",
         "は",
@@ -4527,7 +3736,7 @@
       ]
     },
     {
-      "id": "u034-c103",
+      "id": "u034-c079",
       "line": [
         "友達",
         "は",
@@ -4577,7 +3786,7 @@
       ]
     },
     {
-      "id": "u034-c104",
+      "id": "u034-c080",
       "line": [
         "友達",
         "は",
@@ -4627,7 +3836,7 @@
       ]
     },
     {
-      "id": "u034-c105",
+      "id": "u034-c081",
       "line": [
         "友達",
         "は",
@@ -4677,7 +3886,7 @@
       ]
     },
     {
-      "id": "u034-c106",
+      "id": "u034-c082",
       "line": [
         "男の人",
         "は",
@@ -4727,7 +3936,7 @@
       ]
     },
     {
-      "id": "u034-c107",
+      "id": "u034-c083",
       "line": [
         "男の人",
         "は",
@@ -4777,7 +3986,7 @@
       ]
     },
     {
-      "id": "u034-c108",
+      "id": "u034-c084",
       "line": [
         "男の人",
         "は",
@@ -4827,7 +4036,7 @@
       ]
     },
     {
-      "id": "u034-c109",
+      "id": "u034-c085",
       "line": [
         "男の人",
         "は",
@@ -4877,7 +4086,7 @@
       ]
     },
     {
-      "id": "u034-c110",
+      "id": "u034-c086",
       "line": [
         "男の人",
         "は",
@@ -4927,7 +4136,7 @@
       ]
     },
     {
-      "id": "u034-c111",
+      "id": "u034-c087",
       "line": [
         "男の人",
         "は",
@@ -4977,7 +4186,7 @@
       ]
     },
     {
-      "id": "u034-c112",
+      "id": "u034-c088",
       "line": [
         "男の人",
         "は",
@@ -5027,7 +4236,7 @@
       ]
     },
     {
-      "id": "u034-c113",
+      "id": "u034-c089",
       "line": [
         "男の人",
         "は",
@@ -5077,7 +4286,7 @@
       ]
     },
     {
-      "id": "u034-c114",
+      "id": "u034-c090",
       "line": [
         "男の人",
         "は",
@@ -5127,7 +4336,7 @@
       ]
     },
     {
-      "id": "u034-c115",
+      "id": "u034-c091",
       "line": [
         "男の人",
         "は",
@@ -5174,6 +4383,2672 @@
       "fact": "Unit 34 introduces Vたいです / Vたくないです while keeping earlier A2 action sentences active.",
       "grammarTags": [
         "Vたいです"
+      ]
+    },
+    {
+      "id": "u034-c092",
+      "line": [
+        "私",
+        "は",
+        "ピアノ",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ぴあの",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "piano",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ピアノ",
+          "reading": "ぴあの",
+          "explain": "piano",
+          "wordId": "piano"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a piano",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c093",
+      "line": [
+        "私",
+        "は",
+        "ギター",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ぎたー",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "guitar",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ギター",
+          "reading": "ぎたー",
+          "explain": "guitar",
+          "wordId": "gitaa"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a guitar",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c094",
+      "line": [
+        "私",
+        "は",
+        "歌",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "うた",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "singing; song",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "歌",
+          "reading": "うた",
+          "explain": "singing; song",
+          "wordId": "uta"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a singing",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c095",
+      "line": [
+        "私",
+        "は",
+        "ダンス",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "だんす",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "dance",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ダンス",
+          "reading": "だんす",
+          "explain": "dance",
+          "wordId": "dansu"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a dance",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c096",
+      "line": [
+        "私",
+        "は",
+        "絵",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "え",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "drawing; picture",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "絵",
+          "reading": "え",
+          "explain": "drawing; picture",
+          "wordId": "e_drawing"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a drawing",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c097",
+      "line": [
+        "私",
+        "は",
+        "運転",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "うんてん",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "driving",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "運転",
+          "reading": "うんてん",
+          "explain": "driving",
+          "wordId": "unten"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a driving",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c098",
+      "line": [
+        "私",
+        "は",
+        "掃除",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "そうじ",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "cleaning",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "掃除",
+          "reading": "そうじ",
+          "explain": "cleaning",
+          "wordId": "souji"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a cleaning",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c099",
+      "line": [
+        "私",
+        "は",
+        "計算",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "けいさん",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "calculation",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "計算",
+          "reading": "けいさん",
+          "explain": "calculation",
+          "wordId": "keisan"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a calculation",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c100",
+      "line": [
+        "私",
+        "は",
+        "英語",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "えいご",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "English language",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "英語",
+          "reading": "えいご",
+          "explain": "English language",
+          "wordId": "eigo"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at an English language",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c101",
+      "line": [
+        "私",
+        "は",
+        "漢字",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "かんじ",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "kanji",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "漢字",
+          "reading": "かんじ",
+          "explain": "kanji",
+          "wordId": "kanji"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a kanji",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c102",
+      "line": [
+        "私",
+        "は",
+        "毎日",
+        "勉強します"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいにち",
+        "べんきょうします"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every day",
+        "study"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎日",
+          "reading": "まいにち",
+          "explain": "every day",
+          "wordId": "mainichi"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        }
+      ],
+      "english": "I study every day",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c103",
+      "line": [
+        "私",
+        "は",
+        "毎朝",
+        "勉強します"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいあさ",
+        "べんきょうします"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every morning",
+        "study"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎朝",
+          "reading": "まいあさ",
+          "explain": "every morning",
+          "wordId": "maiasa"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        }
+      ],
+      "english": "I study every morning",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c104",
+      "line": [
+        "私",
+        "は",
+        "毎晩",
+        "勉強します"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まいばん",
+        "べんきょうします"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "every night",
+        "study"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "毎晩",
+          "reading": "まいばん",
+          "explain": "every night",
+          "wordId": "maiban"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        }
+      ],
+      "english": "I study every night",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c105",
+      "line": [
+        "私",
+        "は",
+        "よく",
+        "勉強します"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "よく",
+        "べんきょうします"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "often",
+        "study"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "よく",
+          "reading": "よく",
+          "explain": "often",
+          "wordId": "yoku_adv"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        }
+      ],
+      "english": "I often study",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c106",
+      "line": [
+        "私",
+        "は",
+        "時々",
+        "勉強します"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ときどき",
+        "べんきょうします"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "sometimes",
+        "study"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "時々",
+          "reading": "ときどき",
+          "explain": "sometimes",
+          "wordId": "tokidoki"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        }
+      ],
+      "english": "I sometimes study",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c107",
+      "line": [
+        "私",
+        "は",
+        "いつも",
+        "勉強します"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "いつも",
+        "べんきょうします"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "always",
+        "study"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いつも",
+          "reading": "いつも",
+          "explain": "always",
+          "wordId": "itsumo"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        }
+      ],
+      "english": "I always study",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c108",
+      "line": [
+        "私",
+        "は",
+        "たいてい",
+        "勉強します"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "たいてい",
+        "べんきょうします"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "usually",
+        "study"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たいてい",
+          "reading": "たいてい",
+          "explain": "usually",
+          "wordId": "taitei"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        }
+      ],
+      "english": "I usually study",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c109",
+      "line": [
+        "私",
+        "は",
+        "たまに",
+        "勉強します"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "たまに",
+        "べんきょうします"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "occasionally",
+        "study"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "たまに",
+          "reading": "たまに",
+          "explain": "occasionally",
+          "wordId": "tamani"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        }
+      ],
+      "english": "I occasionally study",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c110",
+      "line": [
+        "私",
+        "は",
+        "ほとんど",
+        "勉強しません"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ほとんど",
+        "べんきょうしません"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "almost never",
+        "do not study"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ほとんど",
+          "reading": "ほとんど",
+          "explain": "almost never",
+          "wordId": "hotondo"
+        },
+        {
+          "surface": "勉強しません",
+          "reading": "べんきょうしません",
+          "explain": "do not study",
+          "wordId": "benkyou_suru"
+        }
+      ],
+      "english": "I almost never study",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c111",
+      "line": [
+        "私",
+        "は",
+        "めったに",
+        "勉強しません"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "めったに",
+        "べんきょうしません"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "rarely",
+        "do not study"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "めったに",
+          "reading": "めったに",
+          "explain": "rarely",
+          "wordId": "mettani"
+        },
+        {
+          "surface": "勉強しません",
+          "reading": "べんきょうしません",
+          "explain": "do not study",
+          "wordId": "benkyou_suru"
+        }
+      ],
+      "english": "I rarely study",
+      "fact": "Adverb review modifies a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c112",
+      "line": [
+        "体育館",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "たいいくかん",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "gym",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "体育館",
+          "reading": "たいいくかん",
+          "explain": "gym",
+          "wordId": "taiikukan"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the gym",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c113",
+      "line": [
+        "プール",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "ぷーる",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "pool",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "プール",
+          "reading": "ぷーる",
+          "explain": "pool",
+          "wordId": "puuru"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the pool",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c114",
+      "line": [
+        "会議室",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "かいぎしつ",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "meeting room",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "会議室",
+          "reading": "かいぎしつ",
+          "explain": "meeting room",
+          "wordId": "kaigishitsu"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the meeting room",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c115",
+      "line": [
+        "広場",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "ひろば",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "plaza",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "広場",
+          "reading": "ひろば",
+          "explain": "plaza",
+          "wordId": "hiroba"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the plaza",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c116",
+      "line": [
+        "銭湯",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "せんとう",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "public bath",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "銭湯",
+          "reading": "せんとう",
+          "explain": "public bath",
+          "wordId": "sentou"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the public bath",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c117",
+      "line": [
+        "旅館",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "りょかん",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "inn",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "旅館",
+          "reading": "りょかん",
+          "explain": "inn",
+          "wordId": "ryokan"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the inn",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c118",
+      "line": [
+        "海岸",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "かいがん",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "beach",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "海岸",
+          "reading": "かいがん",
+          "explain": "beach",
+          "wordId": "kaigan"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the beach",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c119",
+      "line": [
+        "森",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "もり",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "forest",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "森",
+          "reading": "もり",
+          "explain": "forest",
+          "wordId": "mori"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the forest",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c120",
+      "line": [
+        "喫茶店",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "きっさてん",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "coffee shop",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "喫茶店",
+          "reading": "きっさてん",
+          "explain": "coffee shop",
+          "wordId": "kissaten"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the coffee shop",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c121",
+      "line": [
+        "デパート",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "でぱーと",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "department store",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "デパート",
+          "reading": "でぱーと",
+          "explain": "department store",
+          "wordId": "depaato"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the department store",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c122",
+      "line": [
+        "私",
+        "は",
+        "上",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "うえ",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "above; on top",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "上",
+          "reading": "うえ",
+          "explain": "above; on top",
+          "wordId": "ue"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at an above",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c123",
+      "line": [
+        "私",
+        "は",
+        "下",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "した",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "below; under",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "下",
+          "reading": "した",
+          "explain": "below; under",
+          "wordId": "shita"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a below",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c124",
+      "line": [
+        "私",
+        "は",
+        "中",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "なか",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "inside",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "中",
+          "reading": "なか",
+          "explain": "inside",
+          "wordId": "naka"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at an inside",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c125",
+      "line": [
+        "私",
+        "は",
+        "前",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まえ",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "front; before",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "前",
+          "reading": "まえ",
+          "explain": "front; before",
+          "wordId": "mae"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a front",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c126",
+      "line": [
+        "私",
+        "は",
+        "後ろ",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "うしろ",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "behind",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "後ろ",
+          "reading": "うしろ",
+          "explain": "behind",
+          "wordId": "ushiro"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a behind",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c127",
+      "line": [
+        "私",
+        "は",
+        "隣",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "となり",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "next to",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "隣",
+          "reading": "となり",
+          "explain": "next to",
+          "wordId": "tonari"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a next to",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c128",
+      "line": [
+        "私",
+        "は",
+        "右",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "みぎ",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "right",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "右",
+          "reading": "みぎ",
+          "explain": "right",
+          "wordId": "migi"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a right",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c129",
+      "line": [
+        "私",
+        "は",
+        "左",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ひだり",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "left",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "左",
+          "reading": "ひだり",
+          "explain": "left",
+          "wordId": "hidari"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a left",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c130",
+      "line": [
+        "私",
+        "は",
+        "間",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あいだ",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "between",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "間",
+          "reading": "あいだ",
+          "explain": "between",
+          "wordId": "aida"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a between",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c131",
+      "line": [
+        "私",
+        "は",
+        "近く",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ちかく",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "nearby",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "近く",
+          "reading": "ちかく",
+          "explain": "nearby",
+          "wordId": "chikaku"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a nearby",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c132",
+      "line": [
+        "私",
+        "は",
+        "猫",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ねこ",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "cat",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a cat",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c133",
+      "line": [
+        "私",
+        "は",
+        "犬",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "いぬ",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "dog",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a dog",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c134",
+      "line": [
+        "私",
+        "は",
+        "動物",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "どうぶつ",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "animal",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at an animal",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c135",
+      "line": [
+        "私",
+        "は",
+        "本",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ほん",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "book",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a book",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c136",
+      "line": [
+        "家",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "いえ",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "house; home",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the house",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c137",
+      "line": [
+        "学校",
+        "へ",
+        "行きます"
+      ],
+      "tts": [
+        "がっこう",
+        "え",
+        "いきます"
+      ],
+      "explain": [
+        "school",
+        "destination marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "へ",
+          "reading": "え",
+          "explain": "destination marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to the school",
+      "fact": "Place review returns inside an A2 movement sentence.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c138",
+      "line": [
+        "私",
+        "は",
+        "場所",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ばしょ",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "place",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a place",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c139",
+      "line": [
+        "私",
+        "は",
+        "医者",
+        "と",
+        "話します"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "いしゃ",
+        "と",
+        "はなします"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "doctor",
+        "with; and",
+        "speak"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "with; and"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        }
+      ],
+      "english": "I speak with the doctor",
+      "fact": "Person review returns with `と`.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c140",
+      "line": [
+        "私",
+        "は",
+        "人",
+        "と",
+        "話します"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ひと",
+        "と",
+        "はなします"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "person",
+        "with; and",
+        "speak"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "と",
+          "reading": "と",
+          "explain": "with; and"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        }
+      ],
+      "english": "I speak with the person",
+      "fact": "Person review returns with `と`.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u034-c141",
+      "line": [
+        "私",
+        "は",
+        "物",
+        "を",
+        "見ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "もの",
+        "を",
+        "みます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "thing; object",
+        "direct object marker",
+        "watch"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "物",
+          "reading": "もの",
+          "explain": "thing; object",
+          "wordId": "mono"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "watch",
+          "wordId": "miru"
+        }
+      ],
+      "english": "I look at a thing",
+      "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
       ]
     }
   ]
