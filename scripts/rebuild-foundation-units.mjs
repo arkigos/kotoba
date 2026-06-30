@@ -19,6 +19,7 @@ const g = {
   ka: () => grammar("か", "か", "question marker"),
   q: () => grammar("？", "？", "question mark"),
   wa: () => grammar("は", "わ", "topic marker"),
+  ga: () => grammar("が", "が", "subject marker"),
   to: () => grammar("と", "と", "and"),
   no: () => grammar("の", "の", "possession or description marker"),
   mo: () => grammar("も", "も", "also; too"),
@@ -30,6 +31,8 @@ const g = {
 
 const properIds = new Set(["nihon", "amerika"]);
 const pronounIds = new Set(["watashi", "sakura", "yuki", "tanaka"]);
+const noArticleIds = new Set(["mizu", "ocha", "tenki", "ame", "yuki_snow", "kaze", "tabemono", "nomimono", "kinou", "sengetsu", "kyonen", "asa", "yoru", "shigoto"]);
+const bareSubjectIds = new Set(["kinou", "sengetsu", "kyonen", "asa", "yoru"]);
 const pluralMeanings = new Map([
   ["neko", "cats"],
   ["inu", "dogs"],
@@ -45,6 +48,7 @@ function indefinite(word) {
   const meaning = bareMeaning(word);
   if (pronounIds.has(word.id)) return meaning;
   if (properIds.has(word.id)) return meaning;
+  if (noArticleIds.has(word.id)) return meaning;
   return /^[aeiou]/i.test(meaning) ? `an ${meaning}` : `a ${meaning}`;
 }
 
@@ -70,8 +74,15 @@ function subject(word) {
   if (word.id === "chichi") return "my father";
   if (word.id === "ane") return "my older sister";
   if (word.id === "otouto") return "my younger brother";
+  if (bareSubjectIds.has(word.id)) return meaning;
   if (properIds.has(word.id)) return meaning;
   return `the ${meaning}`;
+}
+
+function questionSubject(word) {
+  if (word.id === "watashi") return "I";
+  if (word.id === "sakura") return "you";
+  return subject(word);
 }
 
 function sentenceStart(value) {
@@ -86,6 +97,12 @@ function presentClause(word, complement) {
 function presentQuestion(word, complement) {
   if (word.id === "sakura") return `Are you ${complement}?`;
   return word.id === "watashi" ? `Am I ${complement}?` : `Is ${subject(word)} ${complement}?`;
+}
+
+function whoQuestion(word) {
+  if (word.id === "watashi") return "Who am I?";
+  if (word.id === "sakura") return "Who are you?";
+  return `Who is ${questionSubject(word)}?`;
 }
 
 function negativeClause(word, complement) {
@@ -449,128 +466,170 @@ function buildUnit3(spec, previousWords) {
   return cards;
 }
 
+
 function buildUnit4(spec, previousWords) {
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
-  spec.newWords.forEach((word) => identity(cards, 4, w(words, word.id)));
+  const currentIds = spec.newWords.map((word) => word.id);
+  currentIds.forEach((id) => identity(cards, 4, w(words, id)));
+  currentIds.forEach((id) => negativeIdentity(cards, 4, w(words, id), true));
 
-  const negatives = [
-    "mise", "byouin", "eki", "kaisha", "kaishain", "kodomo", "otona", "isu", "tsukue", "jitensha",
-  ];
-  negatives.forEach((id, index) => negativeIdentity(cards, 4, w(words, id), index % 4 === 3));
-
-  const topicNegatives = [
-    ["neko", "inu"],
-    ["inu", "neko"],
-    ["hon", "doubutsu"],
-    ["ie", "gakkou"],
-    ["gakkou", "ie"],
-    ["isha", "gakusei"],
-    ["hito", "mono"],
-    ["mono", "hito"],
-    ["doubutsu", "hon"],
-    ["basho", "hito"],
-    ["mise", "byouin"],
-    ["byouin", "eki"],
-    ["eki", "kaisha"],
-    ["kaishain", "kodomo"],
-    ["kodomo", "otona"],
-    ["isu", "tsukue"],
-    ["jitensha", "kuruma"],
-    ["sensei", "gakusei"],
-    ["sakura", "isha"],
-    ["tanaka", "kodomo"],
-  ];
-  for (const [a, b] of topicNegatives) topicNegative(cards, 4, w(words, a), w(words, b));
-
-  const review = [
-    ["neko", "doubutsu"],
-    ["inu", "doubutsu"],
-    ["hon", "mono"],
-    ["ie", "basho"],
-    ["gakkou", "basho"],
-    ["isha", "hito"],
-    ["sensei", "hito"],
-    ["gakusei", "hito"],
-    ["nihon", "basho"],
-    ["amerika", "basho"],
-  ];
-  for (const [a, b] of review) topic(cards, 4, w(words, a), w(words, b), "`は` keeps the topic clear before the identity comment.", ["SRS review", "AはBです"]);
-
-  for (const [a, b] of cycle(topicNegatives, 30)) topicNegative(cards, 4, w(words, a), w(words, b), true);
+  const rowsBySubject = new Map([
+    ["mise", ["gakkou", "ie", "basho", "byouin", "eki", "kaisha"]],
+    ["byouin", ["gakkou", "ie", "basho", "mise", "eki", "kaisha"]],
+    ["eki", ["gakkou", "ie", "basho", "mise", "byouin", "kaisha"]],
+    ["kaisha", ["gakkou", "ie", "basho", "mise", "byouin", "eki"]],
+    ["kaishain", ["isha", "hito", "gakusei", "sensei", "tomodachi", "kodomo"]],
+    ["kodomo", ["isha", "hito", "gakusei", "sensei", "tomodachi", "otona"]],
+    ["otona", ["isha", "hito", "gakusei", "sensei", "tomodachi", "kodomo"]],
+    ["isu", ["hon", "mono", "neko", "inu", "doubutsu", "tsukue"]],
+    ["tsukue", ["hon", "mono", "neko", "inu", "doubutsu", "isu"]],
+    ["jitensha", ["hon", "mono", "neko", "inu", "doubutsu", "kuruma"]],
+  ]);
+  for (const subjectId of currentIds) {
+    for (const complementId of rowsBySubject.get(subjectId)) {
+      topicNegative(cards, 4, w(words, subjectId), w(words, complementId), true);
+    }
+  }
   return cards;
 }
 
 function buildUnit5(spec, previousWords) {
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
-  spec.newWords.forEach((word) => identity(cards, 5, w(words, word.id)));
+  const currentIds = spec.newWords.map((word) => word.id);
+  currentIds.forEach((id) => identity(cards, 5, w(words, id)));
+  currentIds.forEach((id) => pastIdentity(cards, 5, w(words, id)));
 
-  const pastRows = [
-    ["kinou", "yasumi"],
-    ["sengetsu", "ryokou"],
-    ["kyonen", "shigoto"],
-    ["asa", "tesuto"],
-    ["yoru", "tanjoubi"],
-    ["tanjoubi", "yasumi"],
-    ["yasumi", "ryokou"],
-    ["ryokou", "shigoto"],
-    ["shigoto", "tesuto"],
-    ["tesuto", "tanjoubi"],
+  const rowsBySubject = new Map([
+    ["kinou", ["yasumi", "tesuto", "shigoto", "ryokou", "tanjoubi", "gakusei"]],
+    ["sengetsu", ["ryokou", "yasumi", "shigoto", "tesuto", "tanjoubi", "sensei"]],
+    ["kyonen", ["shigoto", "ryokou", "yasumi", "tesuto", "tanjoubi", "tomodachi"]],
+    ["asa", ["tesuto", "shigoto", "yasumi", "ryokou", "tanjoubi", "haha"]],
+    ["yoru", ["tanjoubi", "tesuto", "shigoto", "yasumi", "ryokou", "chichi"]],
+    ["tanjoubi", ["yasumi", "ryokou", "shigoto", "tesuto", "kazoku"]],
+    ["yasumi", ["ryokou", "tesuto", "shigoto", "tanjoubi", "shashin"]],
+    ["ryokou", ["shigoto", "yasumi", "tesuto", "tanjoubi", "kuruma"]],
+    ["shigoto", ["tesuto", "tanjoubi", "yasumi", "ryokou", "kagi"]],
+    ["tesuto", ["tanjoubi"]],
+  ]);
+  for (const subjectId of currentIds) {
+    const complements = rowsBySubject.get(subjectId);
+    complements.slice(0, 4).forEach((complementId) => topicPast(cards, 5, w(words, subjectId), w(words, complementId)));
+    complements.slice(4).forEach((complementId) => topicPastNegative(cards, 5, w(words, subjectId), w(words, complementId)));
+  }
+
+  const possessivePastRows = [
+    ["watashi", "tanjoubi"],
+    ["sakura", "yasumi"],
+    ["yuki", "ryokou"],
+    ["tanaka", "shigoto"],
+    ["nihon", "tesuto"],
+    ["amerika", "ryokou"],
+    ["ane", "namae"],
+    ["otouto", "kaban"],
+    ["watashi", "heya"],
   ];
-  pastRows.forEach(([a, b]) => topicPast(cards, 5, w(words, a), w(words, b)));
-
-  const reviewPossession = [
-    ["watashi", "namae"],
-    ["watashi", "shashin"],
-    ["sakura", "kaban"],
-    ["yuki", "kagi"],
-    ["tanaka", "kuruma"],
-    ["haha", "kaban"],
-    ["chichi", "kuruma"],
-    ["ane", "heya"],
-    ["otouto", "hon"],
-    ["sensei", "namae"],
-    ["gakusei", "kagi"],
-    ["tomodachi", "shashin"],
-    ["kazoku", "shashin"],
-    ["sakura", "hon"],
-    ["yuki", "kaban"],
-  ];
-  reviewPossession.forEach(([a, b]) => possession(cards, 5, w(words, a), w(words, b)));
-
-  const unit1Review = [
-    ["watashi", "gakusei"],
-    ["sakura", "tomodachi"],
-    ["yuki", "gakusei"],
-    ["tanaka", "sensei"],
-    ["nihon", "basho"],
-    ["amerika", "basho"],
-    ["tomodachi", "gakusei"],
-    ["tomodachi", "hito"],
-    ["sensei", "hito"],
-    ["gakusei", "hito"],
-  ];
-  unit1Review.forEach(([a, b]) => topic(cards, 5, w(words, a), w(words, b), "`は` keeps the topic clear before the identity comment.", ["SRS review", "AはBです"]));
-
-  const pastNegatives = [
-    ["kinou", "tesuto"],
-    ["sengetsu", "yasumi"],
-    ["kyonen", "ryokou"],
-    ["asa", "shigoto"],
-    ["yoru", "tesuto"],
-    ["tanjoubi", "shigoto"],
-    ["yasumi", "tesuto"],
-    ["ryokou", "yasumi"],
-    ["shigoto", "tanjoubi"],
-    ["tesuto", "ryokou"],
-  ];
-  pastNegatives.forEach(([a, b]) => topicPastNegative(cards, 5, w(words, a), w(words, b)));
-
-  for (const id of ["kinou", "sengetsu", "kyonen", "asa", "yoru"]) pastIdentity(cards, 5, w(words, id));
-  for (const [a, b] of cycle([...pastRows, ...pastNegatives], 20)) topicPast(cards, 5, w(words, a), w(words, b));
+  for (const [ownerId, itemId] of possessivePastRows) {
+    add(cards, 5, [token(w(words, ownerId)), g.no(), token(w(words, itemId)), g.deshita()], "It was " + possessive(w(words, ownerId)) + " " + bareMeaning(w(words, itemId)), "Possession review returns inside the Unit 5 past frame.", ["AのB", "Aでした"]);
+  }
   return cards;
 }
+
+function demonstrativeEnglish(id) {
+  if (id === "kore" || id === "kono") return "this";
+  if (id === "sore" || id === "sono") return "that near you";
+  return "that over there";
+}
+
+function demonstrativeTopic(cards, unitId, demonstrative, noun) {
+  add(cards, unitId, [token(demonstrative), g.wa(), token(noun), g.desu()], sentenceStart(demonstrativeEnglish(demonstrative.id)) + " is " + indefinite(noun), "A demonstrative points at one familiar noun.", ["kore/sore/are", "A wa B desu"]);
+}
+
+function determinerIdentity(cards, unitId, determiner, noun) {
+  add(cards, unitId, [token(determiner), token(noun), g.desu()], "It is " + demonstrativeEnglish(determiner.id) + " " + bareMeaning(noun), "A determiner sits directly before the noun it points to.", ["kono/sono/ano N"]);
+}
+
+function buildUnit6(spec, previousWords) {
+  const words = byId([...previousWords, ...spec.newWords]);
+  const cards = [];
+  const currentIds = spec.newWords.map((word) => word.id);
+  currentIds.forEach((id) => vocabIntro(cards, 6, w(words, id)));
+
+  const rowsByWord = new Map([
+    ["kore", ["mise", "byouin", "eki", "kaisha", "kaishain", "kodomo", "otona"]],
+    ["sore", ["isu", "tsukue", "jitensha", "neko", "inu", "doubutsu", "hon"]],
+    ["are", ["ie", "gakkou", "basho", "isha", "hito", "mono", "kaban"]],
+    ["kono", ["mise", "byouin", "eki", "kaisha", "mizu", "ocha", "enpitsu"]],
+    ["sono", ["isu", "tsukue", "jitensha", "hon", "mizu", "ocha", "tokei"]],
+    ["ano", ["ie", "gakkou", "basho", "kaban", "kuruma", "shashin", "tokei"]],
+    ["mizu", ["kore", "sore", "are", "kono", "sono", "ano", "kore"]],
+    ["ocha", ["kore", "sore", "are", "kono", "sono", "ano", "sore"]],
+    ["enpitsu", ["kore", "sore", "are", "kono", "sono", "ano", "are"]],
+    ["tokei", ["kore", "sore", "are", "kono", "sono", "ano", "kore"]],
+  ]);
+
+  for (const currentId of currentIds) {
+    for (const partnerId of rowsByWord.get(currentId)) {
+      const current = w(words, currentId);
+      const partner = w(words, partnerId);
+      if (["kore", "sore", "are"].includes(currentId)) demonstrativeTopic(cards, 6, current, partner);
+      else if (["kono", "sono", "ano"].includes(currentId)) determinerIdentity(cards, 6, current, partner);
+      else if (["kore", "sore", "are"].includes(partnerId)) demonstrativeTopic(cards, 6, partner, current);
+      else determinerIdentity(cards, 6, partner, current);
+    }
+  }
+
+  return cards;
+}
+
+function questionWordCard(cards, unitId, words, questionId, contextId) {
+  const context = w(words, contextId);
+  const question = w(words, questionId);
+  if (questionId === "nan") {
+    add(cards, unitId, [token(context), g.wa(), token(question), g.desu(), g.ka(), g.q()], "What is " + questionSubject(context) + "?", "What asks for the identity of the topic.", ["nan", "A wa B desu ka"]);
+  } else if (questionId === "dare") {
+    add(cards, unitId, [token(context), g.wa(), token(question), g.desu(), g.ka(), g.q()], whoQuestion(context), "Who asks for the person behind the topic.", ["dare", "A wa B desu ka"]);
+  } else if (questionId === "dore") {
+    add(cards, unitId, [token(question), g.ga(), token(context), g.desu(), g.ka(), g.q()], "Which one is " + indefinite(context) + "?", "Which-one questions can point to a concrete known noun.", ["dore", "ka"]);
+  }
+}
+
+function whichNounCard(cards, unitId, words, determinerId, nounId) {
+  add(cards, unitId, [token(w(words, determinerId)), token(w(words, nounId)), g.desu(), g.ka(), g.q()], "Which " + bareMeaning(w(words, nounId)) + " is it?", "Which sits before the noun being asked about.", ["dono N", "ka"]);
+}
+
+function buildUnit7(spec, previousWords) {
+  const words = byId([...previousWords, ...spec.newWords]);
+  const cards = [];
+  const currentIds = spec.newWords.map((word) => word.id);
+  currentIds.forEach((id) => vocabIntro(cards, 7, w(words, id)));
+
+  const rowsByWord = new Map([
+    ["nan", ["kinou", "sengetsu", "kyonen", "asa", "yoru", "tanjoubi", "yasumi"]],
+    ["dare", ["watashi", "sakura", "yuki", "tanaka", "haha", "chichi", "ane"]],
+    ["dore", ["shashin", "kaban", "kuruma", "heya", "kagi", "hon", "tesuto"]],
+    ["dono", ["ryokou", "shigoto", "tesuto", "shashin", "kaban", "kuruma", "heya"]],
+    ["otokonohito", ["kazoku", "haha", "chichi", "ane", "otouto", "gakusei", "sensei"]],
+    ["onnanohito", ["kazoku", "haha", "chichi", "ane", "otouto", "tomodachi", "isha"]],
+    ["tenin", ["mise", "kaisha", "gakkou", "byouin", "eki", "shigoto", "hito"]],
+    ["ekiin", ["eki", "kaisha", "gakkou", "mise", "byouin", "shigoto", "hito"]],
+    ["tabemono", ["kore", "sore", "are", "hon", "mono", "mizu", "ocha"]],
+    ["nomimono", ["kore", "sore", "are", "hon", "mono", "mizu", "ocha"]],
+  ]);
+
+  for (const currentId of currentIds) {
+    for (const partnerId of rowsByWord.get(currentId)) {
+      if (["nan", "dare", "dore"].includes(currentId)) questionWordCard(cards, 7, words, currentId, partnerId);
+      else if (currentId === "dono") whichNounCard(cards, 7, words, currentId, partnerId);
+      else if (["otokonohito", "onnanohito", "tenin", "ekiin"].includes(currentId)) topic(cards, 7, w(words, currentId), w(words, partnerId), "A new person word stays in the topic slot while the comment changes.", ["A wa B desu"]);
+      else topicQuestion(cards, 7, w(words, currentId), w(words, partnerId), "A new noun stays in the topic slot while the comment changes.", ["A wa B desu", "ka"]);
+    }
+  }
+
+  return cards;
+}
+
 
 function assertUnit(unit, expectedCards = 80) {
   if (unit.cards.length !== expectedCards) throw new Error(`unit ${unit.id}: expected ${expectedCards} cards, got ${unit.cards.length}`);
@@ -586,7 +645,7 @@ const source = await readJson("data/jp/curriculum/source/unit_specs.json");
 const specs = new Map(source.units.map((unit) => [unit.id, unit]));
 const previousWords = [];
 
-for (let unitId = 1; unitId <= 5; unitId += 1) {
+for (let unitId = 1; unitId <= 7; unitId += 1) {
   const existing = await readJson(`data/jp/curriculum/units/unit_${pad(unitId)}.json`);
   const spec = specs.get(unitId);
   if (!spec) throw new Error(`Missing source spec for unit ${unitId}`);
@@ -597,6 +656,8 @@ for (let unitId = 1; unitId <= 5; unitId += 1) {
     [3, buildUnit3],
     [4, buildUnit4],
     [5, buildUnit5],
+    [6, buildUnit6],
+    [7, buildUnit7],
   ]);
   const cards = builders.get(unitId)(spec, previousWords);
   const unit = { ...existing, ...spec, cards };
@@ -605,4 +666,4 @@ for (let unitId = 1; unitId <= 5; unitId += 1) {
   previousWords.push(...spec.newWords);
 }
 
-console.log("Rebuilt foundation units 1-5.");
+console.log("Rebuilt foundation units 1-7.");

@@ -171,12 +171,12 @@ describe("curriculum word bins", () => {
 
   it("keeps foundation units free of hidden action previews", () => {
     const previewTag = "early masu action preview";
-    for (let unitId = 1; unitId <= 5; unitId += 1) {
+    for (let unitId = 1; unitId <= 7; unitId += 1) {
       const unit = unitModules[unitModulePath(unitId)].default;
       expect(unit.cards.filter((card) => card.grammarTags?.includes(previewTag))).toHaveLength(0);
     }
 
-    for (let unitId = 6; unitId <= 14; unitId += 1) {
+    for (let unitId = 8; unitId <= 14; unitId += 1) {
       const unit = unitModules[unitModulePath(unitId)].default;
       expect(unit.cards.filter((card) => card.grammarTags?.includes(previewTag))).toHaveLength(2);
     }
