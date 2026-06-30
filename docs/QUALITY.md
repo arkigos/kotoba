@@ -13,6 +13,9 @@ of truth. This file remains the everyday quality checklist.
 - Run `npm run validate:curriculum` after curriculum data changes.
 - Run `npm run audit:level-alignment` after changing authored unit sequencing,
   level ranges, or large vocabulary batches.
+- Run `npm run audit:curriculum-pacing` after generator or curriculum pacing
+  changes; use `npm run audit:word-distribution:strict` when a rebuilt level
+  is expected to satisfy the current-word exposure floor.
 - For data-only changes, inspect the edited JSON for valid syntax and aligned arrays.
 - When changing UI behavior, exercise unit selection, next, previous, random, replay audio, explanation display, reveal toggles, and display toggles.
 
@@ -34,6 +37,8 @@ of truth. This file remains the everyday quality checklist.
 - For authored curriculum units, confirm review-due words from `N`, `N-2`, `N-4`, `N-8`, `N-16`, `N-32`, and so on return.
 - Do not treat older vocabulary bins as isolated review prompts; they should be woven into natural sentence drilling.
 - All introduced vocabulary is available as helper vocabulary, but current-unit and review-due words should dominate the unit.
+- Current-unit words need enough contact to stick: balanced or regenerated units should give each current word at least 8 card appearances.
+- Review-due words should usually return around 4 times, but current-unit exposure wins when a crowded review bin forces a tradeoff.
 - Check that new grammar appears after the unit's new words have been introduced with previously available grammar.
 - Check for sterile card drift: too many `X is an object/person/place` cards means the unit needs more possession, contrast, time, social context, or practical questions.
 - After the foundation units, avoid introducing every word with bare `Xです`; use cumulative grammar to make the first encounter more meaningful.

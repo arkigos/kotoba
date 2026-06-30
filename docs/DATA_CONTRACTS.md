@@ -182,13 +182,14 @@ These fields must match the app-facing unit index and frozen unit files. Use
 - the unit grammar focus first appears by card 60
 - review-due vocabulary returns somewhere in the unit without fake intro cards
 - no learner-facing first exposure appears after card 60
-- current-unit words should generally appear about 8 times in a standard unit
-- scheduled review-due words should generally appear about 4 times in a standard unit
+- current-unit words should appear at least 8 times in a balanced or regenerated unit
+- scheduled review-due words should aim for about 4 appearances in a standard unit, bending only when the due review pool gets too crowded
 
 Existing frozen units may temporarily violate these pacing rules while the
-generator is being adopted. Use `npm run audit:curriculum-pacing` to see that
-rebuild debt, and `npm run audit:curriculum-pacing:strict` once generated units
-are expected to conform.
+generator is being adopted. Use `npm run audit:curriculum-pacing` for
+first-exposure pacing, `npm run audit:word-distribution` to see rebuild debt,
+and `npm run audit:word-distribution:strict` when a rebuilt level is expected
+to satisfy the 8-current / 4-review distribution target.
 
 ## Grammar Rule
 

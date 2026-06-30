@@ -92,6 +92,20 @@ export function firstWordPositions(unit) {
   return positions;
 }
 
+export function wordAppearanceCounts(unit) {
+  const counts = new Map();
+  for (const card of unit.cards ?? []) {
+    const wordIds = new Set();
+    for (const token of card.tokens ?? []) {
+      if (token.wordId) wordIds.add(token.wordId);
+    }
+    for (const wordId of wordIds) {
+      counts.set(wordId, (counts.get(wordId) ?? 0) + 1);
+    }
+  }
+  return counts;
+}
+
 export function firstGrammarTagPositions(unit) {
   const positions = new Map();
   for (const [cardIndex, card] of unit.cards.entries()) {
