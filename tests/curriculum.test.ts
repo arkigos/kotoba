@@ -10,9 +10,10 @@ const unitModules = import.meta.glob<{
       english: string;
       grammarTags?: string[];
       line: string[];
-      tokens?: Array<{ surface: string; reading: string; explain?: string }>;
+      tokens?: Array<{ surface: string; reading: string; explain?: string; wordId?: string }>;
       tts: string[];
     }>;
+    newWords: Array<{ id: string }>;
   };
 }>("../data/jp/curriculum/units/unit_*.json", {
   eager: true,
@@ -24,6 +25,21 @@ function levelForUnit(unitId: number) {
 
 function unitModulePath(unitId: number) {
   return `../data/jp/curriculum/units/unit_${String(unitId).padStart(3, "0")}.json`;
+}
+
+function wordsForUnitIds(unitIds: number[]) {
+  return unitSpecs.units.flatMap((unit) => (unitIds.includes(unit.id) ? unit.newWords : []));
+}
+
+function firstWordPositions(unitId: number) {
+  const unit = unitModules[unitModulePath(unitId)].default;
+  const positions = new Map<string, number>();
+  for (const [cardIndex, card] of unit.cards.entries()) {
+    for (const token of card.tokens ?? []) {
+      if (token.wordId && !positions.has(token.wordId)) positions.set(token.wordId, cardIndex + 1);
+    }
+  }
+  return positions;
 }
 
 describe("curriculum word bins", () => {
@@ -251,6 +267,60 @@ describe("curriculum word bins", () => {
           expect(card.line.indexOf("か")).toBeGreaterThanOrEqual(0);
           expect(card.line.indexOf("か")).toBeLessThan(questionIndex);
         }
+      }
+    }
+  });
+
+  it("keeps productive question markers visible across A2", () => {
+    const questionMark = "\uff1f";
+    const questionMarker = "\u304b";
+    const hiddenQuestionEndings = [
+      "\u3042\u308a\u307e\u305b\u3093\u3067\u3057\u305f\u304b",
+      "\u3042\u308a\u307e\u305b\u3093\u304b",
+      "\u3042\u308a\u307e\u3059\u304b",
+      "\u3044\u307e\u305b\u3093\u3067\u3057\u305f\u304b",
+      "\u3044\u307e\u305b\u3093\u304b",
+      "\u3044\u307e\u3059\u304b",
+      "\u307e\u305b\u3093\u3067\u3057\u305f\u304b",
+      "\u307e\u3057\u305f\u304b",
+      "\u307e\u305b\u3093\u304b",
+      "\u307e\u3057\u3087\u3046\u304b",
+      "\u307e\u3059\u304b",
+      "\u3067\u3057\u305f\u304b",
+      "\u3067\u3059\u304b",
+    ];
+
+    for (let unitId = 21; unitId <= 44; unitId += 1) {
+      const unit = unitModules[unitModulePath(unitId)].default;
+      for (const card of unit.cards) {
+        expect(card.line.some((part) => hiddenQuestionEndings.some((ending) => part.endsWith(ending)))).toBe(false);
+
+        const questionIndex = card.line.indexOf(questionMark);
+        if (questionIndex >= 0) {
+          const kaIndex = card.line.indexOf(questionMarker);
+          expect(kaIndex).toBeGreaterThanOrEqual(0);
+          expect(kaIndex).toBeLessThan(questionIndex);
+        }
+      }
+    }
+  });
+
+  it("keeps A2 current and review-due vocabulary inside the pacing cutoffs", () => {
+    for (let unitId = 21; unitId <= 44; unitId += 1) {
+      const firstSeen = firstWordPositions(unitId);
+      const unitSpec = unitSpecs.units.find((unit) => unit.id === unitId);
+      expect(unitSpec).toBeDefined();
+
+      for (const word of unitSpec?.newWords ?? []) {
+        expect(firstSeen.get(word.id) ?? Number.POSITIVE_INFINITY, `unit ${unitId} current word ${word.id}`).toBeLessThanOrEqual(
+          pacingRules.cutoffs.currentWordFirstSeenBy,
+        );
+      }
+
+      for (const word of wordsForUnitIds(reviewVocabularyUnitIds(unitId))) {
+        expect(firstSeen.get(word.id) ?? Number.POSITIVE_INFINITY, `unit ${unitId} review word ${word.id}`).toBeLessThanOrEqual(
+          pacingRules.cutoffs.reviewWordFirstSeenBy,
+        );
       }
     }
   });
