@@ -42,6 +42,16 @@ function firstWordPositions(unitId: number) {
   return positions;
 }
 
+function wordAppearanceCounts(unitId: number) {
+  const unit = unitModules[unitModulePath(unitId)].default;
+  const counts = new Map<string, number>();
+  for (const card of unit.cards) {
+    const wordIds = new Set((card.tokens ?? []).flatMap((token) => (token.wordId ? [token.wordId] : [])));
+    for (const wordId of wordIds) counts.set(wordId, (counts.get(wordId) ?? 0) + 1);
+  }
+  return counts;
+}
+
 describe("curriculum word bins", () => {
   it("keeps editable unit specs aligned with the authored unit index", () => {
     expect(unitSpecs.language).toBe("jp");
@@ -343,6 +353,20 @@ describe("curriculum word bins", () => {
         });
         expect(newWordsFirstSeenHere.length, `unit ${entry.id} card ${cardIndex + 1}`).toBeLessThanOrEqual(1);
       }
+    }
+  });
+
+  it("balances Unit 3 new and review word exposure around the curriculum targets", () => {
+    const counts = wordAppearanceCounts(3);
+    const unit = unitModules[unitModulePath(3)].default;
+    const reviewWords = unitModules[unitModulePath(1)].default.newWords;
+
+    for (const word of unit.newWords) {
+      expect(counts.get(word.id), `new word ${word.id}`).toBe(pacingRules.distributionTargets.currentWordAppearances);
+    }
+
+    for (const word of reviewWords) {
+      expect(counts.get(word.id), `review word ${word.id}`).toBe(pacingRules.distributionTargets.reviewWordAppearances);
     }
   });
 

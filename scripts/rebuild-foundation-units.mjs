@@ -112,6 +112,8 @@ function possessive(owner) {
   if (owner.id === "sakura") return "your";
   if (owner.id === "yuki") return "his";
   if (owner.id === "tanaka") return "her";
+  if (owner.id === "nihon") return "Japan's";
+  if (owner.id === "amerika") return "America's";
   if (owner.id === "haha") return "my mother's";
   if (owner.id === "chichi") return "my father's";
   if (owner.id === "ane") return "my older sister's";
@@ -349,49 +351,22 @@ function buildUnit3(spec, previousWords) {
   const cards = [];
   spec.newWords.forEach((word) => identity(cards, 3, w(words, word.id), "One new word lands in an old identity frame before it has to do harder work."));
 
-  const knownPossessives = [
-    ["watashi", "namae"],
-    ["watashi", "hon"],
-    ["sakura", "namae"],
-    ["sakura", "hon"],
-    ["yuki", "hon"],
-    ["tanaka", "hon"],
-    ["sensei", "namae"],
-    ["gakusei", "hon"],
-    ["tomodachi", "hon"],
-  ];
-  for (const [a, b] of knownPossessives) possession(cards, 3, w(words, a), w(words, b));
-
-  const oneNewPossessives = [
-    ["watashi", "shashin"],
-    ["sakura", "kaban"],
+  const firstReviewReturn = [
+    ["watashi", "kazoku"],
+    ["gakusei", "shashin"],
+    ["sensei", "kaban"],
+    ["nihon", "kuruma"],
+    ["amerika", "heya"],
+    ["kazoku", "namae"],
+    ["sakura", "heya"],
     ["yuki", "kagi"],
     ["tanaka", "kuruma"],
-    ["haha", "hon"],
-    ["chichi", "hon"],
-    ["ane", "hon"],
-    ["otouto", "hon"],
-    ["watashi", "heya"],
-    ["kazoku", "hon"],
+    ["tomodachi", "shashin"],
   ];
-  for (const [a, b] of oneNewPossessives) possession(cards, 3, w(words, a), w(words, b));
+  for (const [a, b] of firstReviewReturn) possession(cards, 3, w(words, a), w(words, b));
 
-  const knownAlsoRows = [
-    ["watashi", "gakusei"],
-    ["sakura", "tomodachi"],
-    ["yuki", "tomodachi"],
-    ["tanaka", "sensei"],
-    ["sensei", "hito"],
-    ["gakusei", "hito"],
-    ["nihon", "basho"],
-    ["amerika", "basho"],
-    ["neko", "doubutsu"],
-    ["inu", "doubutsu"],
-    ["hon", "mono"],
-  ];
-  for (const [a, b] of knownAlsoRows) also(cards, 3, w(words, a), w(words, b));
-
-  const oneNewAlsoRows = [
+  const oneNewCushionRows = [
+    ["hito", "kazoku", "possession"],
     ["haha", "hito"],
     ["chichi", "hito"],
     ["ane", "hito"],
@@ -401,37 +376,76 @@ function buildUnit3(spec, previousWords) {
     ["kuruma", "mono"],
     ["heya", "basho"],
     ["kagi", "mono"],
+  ];
+  for (const [a, b, mode] of oneNewCushionRows) {
+    if (mode === "possession") possession(cards, 3, w(words, a), w(words, b));
+    else also(cards, 3, w(words, a), w(words, b));
+  }
+
+  const oneNewQuestions = [
+    ["kazoku", "namae", "possession"],
+    ["haha", "hito"],
+    ["chichi", "hito"],
+    ["ane", "hito"],
+    ["otouto", "hito"],
     ["shashin", "mono"],
+    ["kaban", "mono"],
+    ["kuruma", "mono"],
+    ["heya", "basho"],
+    ["kagi", "mono"],
   ];
-  for (const [a, b] of oneNewAlsoRows) also(cards, 3, w(words, a), w(words, b));
+  for (const [a, b, mode] of oneNewQuestions) {
+    if (mode === "possession") {
+      add(cards, 3, [token(w(words, a)), g.no(), token(w(words, b)), g.desu(), g.ka(), g.q()], `Is it ${possessive(w(words, a))} ${bareMeaning(w(words, b))}?`, "`ã®` stays visible while the final `ã‹` asks the question.", ["Aã®B", "ã‹"]);
+    } else {
+      topicQuestion(cards, 3, w(words, a), w(words, b), "`ã§ã™` and `ã‹` stay separate in questions.", ["Aã¯Bã§ã™", "ã‹"]);
+    }
+  }
 
-  const reviewQuestions = [
-    ["watashi", "gakusei"],
-    ["sakura", "tomodachi"],
-    ["yuki", "gakusei"],
-    ["tanaka", "sensei"],
-    ["nihon", "basho"],
-    ["amerika", "basho"],
-    ["tomodachi", "gakusei"],
-    ["tomodachi", "hito"],
-    ["sensei", "hito"],
-    ["gakusei", "hito"],
-  ];
-  for (const [a, b] of reviewQuestions) topicQuestion(cards, 3, w(words, a), w(words, b), "`です` and `か` stay separate in questions.", ["SRS review", "AはBです", "か"]);
-
-  const mixedPossessives = [
-    ["haha", "kaban"],
-    ["chichi", "kuruma"],
-    ["ane", "heya"],
-    ["otouto", "hon"],
-    ["sensei", "kagi"],
-    ["gakusei", "kagi"],
+  const topUpRows = [
+    ["gakusei", "kazoku"],
+    ["sensei", "kazoku"],
+    ["tomodachi", "kazoku"],
+    ["watashi", "haha"],
+    ["sakura", "haha"],
+    ["yuki", "haha"],
+    ["haha", "namae"],
+    ["isha", "haha"],
+    ["watashi", "chichi"],
+    ["sakura", "chichi"],
+    ["tanaka", "chichi"],
+    ["chichi", "namae"],
+    ["isha", "chichi"],
+    ["watashi", "ane"],
+    ["yuki", "ane"],
+    ["tanaka", "ane"],
+    ["hito", "ane"],
+    ["isha", "ane"],
+    ["sakura", "otouto"],
+    ["yuki", "otouto"],
+    ["tanaka", "otouto"],
+    ["hito", "otouto"],
+    ["isha", "otouto"],
+    ["nihon", "shashin"],
+    ["amerika", "shashin"],
     ["tomodachi", "shashin"],
-    ["kazoku", "shashin"],
-    ["sakura", "hon"],
-    ["yuki", "kaban"],
+    ["gakusei", "kaban"],
+    ["sensei", "kaban"],
+    ["nihon", "kaban"],
+    ["hito", "kaban"],
+    ["amerika", "kuruma"],
+    ["nihon", "kuruma"],
+    ["sensei", "kuruma"],
+    ["gakusei", "heya"],
+    ["tomodachi", "heya"],
+    ["amerika", "heya"],
+    ["hito", "kagi"],
+    ["isha", "kagi"],
+    ["gakkou", "kagi"],
+    ["ie", "kagi"],
   ];
-  for (const [a, b] of cycle([...oneNewPossessives, ...mixedPossessives], 20)) possession(cards, 3, w(words, a), w(words, b));
+  for (const [a, b] of topUpRows) possession(cards, 3, w(words, a), w(words, b));
+
   return cards;
 }
 

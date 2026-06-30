@@ -182,6 +182,8 @@ These fields must match the app-facing unit index and frozen unit files. Use
 - the unit grammar focus first appears by card 60
 - review-due vocabulary returns somewhere in the unit without fake intro cards
 - no learner-facing first exposure appears after card 60
+- current-unit words should generally appear about 8 times in a standard unit
+- scheduled review-due words should generally appear about 4 times in a standard unit
 
 Existing frozen units may temporarily violate these pacing rules while the
 generator is being adopted. Use `npm run audit:curriculum-pacing` to see that
