@@ -82,5 +82,11 @@ A strong unit usually has:
 6. Mixed cards that feel like questions, claims, memories, ownership, action, or
    contrast.
 
+For rebuilt foundation units, review is not an ending dump. Current-unit words
+must appear before the late stretch, due review must return before the unit is
+almost over, and the final cards must still contain current-unit material.
+Generic `person is object/place/time` review cards are quality failures even if
+they satisfy the data contract.
+
 Do not add more units by volume alone. Units 1-7 are the taste baseline: new
 units should be at least as natural as Unit 6 after its polish pass.

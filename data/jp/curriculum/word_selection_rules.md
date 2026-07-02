@@ -191,3 +191,5 @@ Before authoring cards for a unit, confirm:
 - New grammar and due SRS returns appear before card 60.
 - Late cards mix known material rather than introducing new learner-facing words
   or grammar.
+- Foundation review-due words must be woven into the body of the unit, not
+  appended as a tail. The final stretch should still drill current-unit words.

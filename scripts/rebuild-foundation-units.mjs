@@ -40,7 +40,7 @@ const verbForms = new Map([
   ["nomu", ["飲みます", "のみます", "drink", "drinks"]],
   ["yomu", ["読みます", "よみます", "read", "reads"]],
   ["kaku", ["書きます", "かきます", "write", "writes"]],
-  ["miru", ["見ます", "みます", "look at", "looks at"]],
+  ["miru", ["見ます", "みます", "look", "looks"]],
   ["kiku", ["聞きます", "ききます", "listen", "listens"]],
   ["iku", ["行きます", "いきます", "go", "goes"]],
   ["kuru", ["来ます", "きます", "come", "comes"]],
@@ -243,14 +243,21 @@ function subjectAction(cards, unitId, actor, verb) {
 }
 
 function objectAction(cards, unitId, object, verb) {
-  const action = verbForms.get(verb.id)[2];
+  const action = verb.id === "miru" ? "look at" : verb.id === "kiku" ? "listen to" : verbForms.get(verb.id)[2];
   add(cards, unitId, [token(object), g.wo(), verbToken(verb)], `I ${action} ${indefinite(object)}`, "A familiar object cushions the current verb.", ["early Vます action", "NをVます"]);
+}
+
+function placePhrase(place, prep) {
+  if (place.id === "ie" && prep === "to") return "home";
+  if (place.id === "ie" && prep === "at") return "at home";
+  if (place.id === "heya" && prep === "at") return "in a room";
+  return `${prep} ${indefinite(place)}`;
 }
 
 function placeAction(cards, unitId, place, verb, particle = g.ni()) {
   const action = verbForms.get(verb.id)[2];
   const prep = particle.surface === "で" ? "at" : "to";
-  add(cards, unitId, [token(place), particle, verbToken(verb)], `I ${action} ${prep} ${indefinite(place)}`, "A familiar place cushions the current verb.", ["early Vます action"]);
+  add(cards, unitId, [token(place), particle, verbToken(verb)], `I ${action} ${placePhrase(place, prep)}`, "A familiar place cushions the current verb.", ["early Vます action"]);
 }
 
 function subjectPlaceAction(cards, unitId, actor, place, verb, particle = g.ni()) {
@@ -261,7 +268,7 @@ function subjectPlaceAction(cards, unitId, actor, place, verb, particle = g.ni()
     cards,
     unitId,
     [token(actor), g.wa(), token(place), particle, verbToken(verb)],
-    `${sentenceStart(subject(actor))} ${action} ${prep} ${indefinite(place)}`,
+    `${sentenceStart(subject(actor))} ${action} ${placePhrase(place, prep)}`,
     "A familiar subject and place keep the current verb in motion.",
     ["early V\u307e\u3059 action"],
   );
@@ -273,10 +280,30 @@ function compound(cards, unitId, first, second, category, englishCategory) {
 
 function drillVerb(cards, unitId, words, verb, count = 7) {
   const people = ["watashi", "sakura", "yuki", "tanaka", "sensei", "gakusei", "tomodachi", "isha", "haha", "chichi"].filter((id) => words.has(id));
-  const objects = ["hon", "mizu", "ocha", "shashin", "kaban", "tabemono", "nomimono"].filter((id) => words.has(id));
-  const places = ["ie", "gakkou", "mise", "byouin", "eki", "kaisha", "heya"].filter((id) => words.has(id));
+  const objectIdsByVerb = new Map([
+    ["yomu", ["hon"]],
+    ["kaku", ["hon"]],
+    ["miru", ["shashin", "hon", "kaban"]],
+    ["taberu", ["tabemono"]],
+    ["nomu", ["mizu", "ocha", "nomimono"]],
+    ["kau", ["hon", "mizu", "ocha", "shashin", "kaban", "tabemono", "nomimono"]],
+    ["tsukau", ["hon", "kaban", "mizu"]],
+  ]);
+  const placeIdsByVerb = new Map([
+    ["iku", ["ie", "gakkou", "mise", "byouin", "eki", "kaisha", "heya"]],
+    ["kuru", ["ie", "gakkou", "mise", "byouin", "eki", "kaisha", "heya"]],
+    ["hataraku", ["kaisha", "mise", "byouin"]],
+    ["benkyou_suru", ["gakkou", "heya", "ie"]],
+    ["matsu", ["eki", "ie", "gakkou", "mise", "byouin", "kaisha"]],
+  ]);
+  const objects = (objectIdsByVerb.get(verb.id) ?? ["hon", "mizu", "ocha", "shashin", "kaban", "tabemono", "nomimono"]).filter((id) =>
+    words.has(id),
+  );
+  const places = (placeIdsByVerb.get(verb.id) ?? ["ie", "gakkou", "mise", "byouin", "eki", "kaisha", "heya"]).filter((id) =>
+    words.has(id),
+  );
   for (let index = 0; index < count; index += 1) {
-    if (["yomu", "kaku", "miru", "kiku", "taberu", "nomu", "kau", "tsukau"].includes(verb.id) && objects.length > 0 && index % 2 === 0) {
+    if (["yomu", "kaku", "miru", "taberu", "nomu", "kau", "tsukau"].includes(verb.id) && objects.length > 0 && index % 2 === 0) {
       objectAction(cards, unitId, w(words, cycle(objects, index)), verb);
     } else if (["iku", "kuru", "hataraku", "benkyou_suru", "matsu"].includes(verb.id) && places.length > 0 && index % 2 === 0) {
       placeAction(cards, unitId, w(words, cycle(places, index)), verb, ["hataraku", "benkyou_suru", "matsu"].includes(verb.id) ? g.de() : g.ni());
@@ -294,15 +321,79 @@ function currentVerbs(spec) {
   return spec.newWords.filter(isVerb);
 }
 
-function addReview(cards, unitId, words, reviewWords) {
+function addReviewWord(cards, unitId, words, reviewWord, index) {
   const anchors = ["watashi", "sakura", "yuki", "tanaka", "sensei", "gakusei", "tomodachi", "isha", "haha", "chichi"].filter((id) => words.has(id));
-  const repeats = reviewWords.length > 15 ? 2 : 3;
+  const anchor = w(words, cycle(anchors, index));
+
+  if (isVerb(reviewWord)) {
+    if (["yomu", "kaku"].includes(reviewWord.id) && words.has("hon")) objectAction(cards, unitId, w(words, "hon"), reviewWord);
+    else if (reviewWord.id === "miru" && words.has("shashin")) objectAction(cards, unitId, w(words, "shashin"), reviewWord);
+    else if (reviewWord.id === "hataraku" && words.has("kaisha")) placeAction(cards, unitId, w(words, "kaisha"), reviewWord, g.de());
+    else if (reviewWord.id === "benkyou_suru" && words.has("gakkou")) placeAction(cards, unitId, w(words, "gakkou"), reviewWord, g.de());
+    else subjectAction(cards, unitId, anchor, reviewWord);
+    return;
+  }
+
+  if (reviewWord.function === "place") {
+    if (words.has("basho")) topic(cards, unitId, reviewWord, w(words, "basho"));
+    else if (words.has("iku")) placeAction(cards, unitId, reviewWord, w(words, "iku"), g.ni());
+    else identity(cards, unitId, reviewWord);
+    return;
+  }
+
+  if (["neko", "inu"].includes(reviewWord.id) && words.has("doubutsu")) {
+    topic(cards, unitId, reviewWord, w(words, "doubutsu"));
+    return;
+  }
+
+  if (reviewWord.id === "doubutsu" && words.has("neko")) {
+    topicQuestion(cards, unitId, w(words, "neko"), reviewWord);
+    return;
+  }
+
+  if (reviewWord.id === "hon" && words.has("yomu")) {
+    objectAction(cards, unitId, reviewWord, w(words, "yomu"));
+    return;
+  }
+
+  if (reviewWord.id === "isha" && words.has("sensei")) {
+    topic(cards, unitId, reviewWord, w(words, "sensei"));
+    return;
+  }
+
+  if (reviewWord.id === "kazoku" && words.has("tomodachi")) {
+    topic(cards, unitId, w(words, "tomodachi"), reviewWord);
+    return;
+  }
+
+  if (["haha", "chichi", "ane", "otouto"].includes(reviewWord.id)) {
+    identity(cards, unitId, reviewWord);
+    return;
+  }
+
+  if (["shashin", "kaban", "isu", "tsukue"].includes(reviewWord.id)) {
+    identity(cards, unitId, reviewWord);
+    return;
+  }
+
+  if (["kinou", "sengetsu", "kyonen", "asa", "yoru", "yasumi", "ryokou", "shigoto"].includes(reviewWord.id)) {
+    identity(cards, unitId, reviewWord);
+    return;
+  }
+
+  if (pronounIds.has(reviewWord.id) && words.has("gakusei")) {
+    topic(cards, unitId, reviewWord, w(words, "gakusei"));
+    return;
+  }
+
+  identity(cards, unitId, reviewWord);
+}
+
+function addReview(cards, unitId, words, reviewWords, repeatsOverride) {
+  const repeats = repeatsOverride ?? (reviewWords.length > 15 ? 2 : 3);
   for (let repeat = 0; repeat < repeats; repeat += 1) {
     for (const [index, reviewWord] of reviewWords.entries()) {
-      const anchor = w(words, cycle(anchors, index + repeat));
-      if (isVerb(reviewWord)) subjectAction(cards, unitId, anchor, reviewWord);
-      else if (reviewWord.function === "place") placeAction(cards, unitId, reviewWord, w(words, "iku"), g.ni());
-      else topic(cards, unitId, anchor, reviewWord);
+      addReviewWord(cards, unitId, words, reviewWord, index + repeat);
     }
   }
 }
@@ -379,13 +470,13 @@ function buildUnit3(spec, previousWords, reviewWords) {
   }
   objectAction(cards, 3, w(words, "shashin"), w(words, "miru"));
   subjectAction(cards, 3, w(words, "watashi"), w(words, "kiku"));
+  addReview(cards, 3, words, reviewWords);
   currentNonVerbs(spec).forEach((word, index) => {
     const current = w(words, word.id);
     for (let repeat = 0; repeat < 4; repeat += 1) possession(cards, 3, w(words, cycle(["watashi", "sakura", "yuki", "tanaka"], index + repeat)), current);
     for (let repeat = 0; repeat < 3; repeat += 1) also(cards, 3, current, w(words, cycle(["gakusei", "sensei", "isha", "tomodachi"], index + repeat)));
   });
   currentVerbs(spec).forEach((word) => drillVerb(cards, 3, words, w(words, word.id), 10));
-  addReview(cards, 3, words, reviewWords);
   return cards;
 }
 
@@ -456,6 +547,7 @@ function buildUnit4(spec, previousWords, reviewWords) {
       }
       if ((index + round) % 4 === 2) cycle(reviewRows, round + index)();
     }
+    if (round === 1) addReview(cards, 4, words, reviewWords, 1);
   }
 
   for (let index = 0; index < 4; index += 1) {
@@ -465,7 +557,11 @@ function buildUnit4(spec, previousWords, reviewWords) {
   for (let index = 0; index < 4; index += 1) {
     negativeTopic(cards, 4, w(words, cycle(objectIds, index)), w(words, cycle(["hon", "kaban", "doubutsu", "neko"], index)));
   }
-  addReview(cards, 4, words, reviewWords);
+  for (let index = 0; index < 12; index += 1) {
+    const nounId = cycle(wovenNouns, index * 2);
+    negativeTopic(cards, 4, w(words, nounId), w(words, cycle(complementById.get(nounId), index + 1)));
+    if (index % 2 === 0) movement(151 + index, index % 4 === 0 ? "iku" : "kuru");
+  }
   return cards;
 }
 
@@ -477,12 +573,12 @@ function buildUnit5(spec, previousWords, reviewWords) {
   currentNonVerbs(spec).forEach((word) => identity(cards, 5, w(words, word.id)));
   placeAction(cards, 5, w(words, "kaisha"), w(words, "hataraku"), g.de());
   placeAction(cards, 5, w(words, "gakkou"), w(words, "benkyou_suru"), g.de());
+  addReview(cards, 5, words, reviewWords);
   currentNonVerbs(spec).forEach((word, index) => {
     const current = w(words, word.id);
     for (let repeat = 0; repeat < 7; repeat += 1) pastTopic(cards, 5, current, w(words, cycle(["yasumi", "ryokou", "shigoto", "gakusei", "sensei", "tomodachi"], index + repeat)));
   });
   currentVerbs(spec).forEach((word) => drillVerb(cards, 5, words, w(words, word.id), 16));
-  addReview(cards, 5, words, reviewWords);
   return cards;
 }
 
@@ -502,11 +598,21 @@ function buildUnit6(spec, previousWords, reviewWords) {
   const cards = [];
   warmReview(cards, 6, previous);
   const nounIds = ["hon", "ie", "gakkou", "mise", "byouin", "eki", "mizu", "ocha", "shashin", "kaban"].filter((id) => words.has(id));
+  demonstrativeTopic(cards, 6, w(words, "kore"), w(words, "hon"));
+  demonstrativeTopic(cards, 6, w(words, "sore"), w(words, "hon"));
+  demonstrativeTopic(cards, 6, w(words, "are"), w(words, "hon"));
+  determinerIdentity(cards, 6, w(words, "kono"), w(words, "hon"));
+  determinerIdentity(cards, 6, w(words, "sono"), w(words, "hon"));
+  determinerIdentity(cards, 6, w(words, "ano"), w(words, "hon"));
+  demonstrativeTopic(cards, 6, w(words, "kore"), w(words, "mizu"));
+  demonstrativeTopic(cards, 6, w(words, "sore"), w(words, "ocha"));
+  objectAction(cards, 6, w(words, "mizu"), w(words, "kau"));
+  objectAction(cards, 6, w(words, "hon"), w(words, "tsukau"));
+  addReview(cards, 6, words, reviewWords);
   for (const id of ["kore", "sore", "are"]) for (let index = 0; index < 7; index += 1) demonstrativeTopic(cards, 6, w(words, id), w(words, cycle(nounIds, index)));
   for (const id of ["kono", "sono", "ano"]) for (let index = 0; index < 7; index += 1) determinerIdentity(cards, 6, w(words, id), w(words, cycle(nounIds, index)));
   for (const id of ["mizu", "ocha"]) for (let index = 0; index < 7; index += 1) demonstrativeTopic(cards, 6, w(words, cycle(["kore", "sore", "are"], index)), w(words, id));
   currentVerbs(spec).forEach((word) => drillVerb(cards, 6, words, w(words, word.id), 16));
-  addReview(cards, 6, words, reviewWords);
   return cards;
 }
 
@@ -531,6 +637,17 @@ function buildUnit7(spec, previousWords, reviewWords) {
   warmReview(cards, 7, previous);
   const contexts = ["watashi", "sakura", "yuki", "tanaka", "haha", "chichi", "sensei", "gakusei"];
   const nouns = ["hon", "shashin", "kaban", "mizu", "ocha", "tabemono", "nomimono"].filter((id) => words.has(id));
+  questionWordCard(cards, 7, words, "nan", "watashi");
+  questionWordCard(cards, 7, words, "dare", "yuki");
+  questionWordCard(cards, 7, words, "dore", "hon");
+  whichNounCard(cards, 7, words, "dono", "hon");
+  topicQuestion(cards, 7, w(words, "otokonohito"), w(words, "gakusei"));
+  topicQuestion(cards, 7, w(words, "onnanohito"), w(words, "sensei"));
+  questionWordCard(cards, 7, words, "dore", "tabemono");
+  whichNounCard(cards, 7, words, "dono", "nomimono");
+  subjectAction(cards, 7, w(words, "watashi"), w(words, "hanasu"));
+  placeAction(cards, 7, w(words, "gakkou"), w(words, "matsu"), g.de());
+  addReview(cards, 7, words, reviewWords);
   for (let index = 0; index < 7; index += 1) questionWordCard(cards, 7, words, "nan", cycle(contexts, index));
   for (let index = 0; index < 7; index += 1) questionWordCard(cards, 7, words, "dare", cycle(contexts, index + 2));
   for (let index = 0; index < 7; index += 1) questionWordCard(cards, 7, words, "dore", cycle(nouns, index));
@@ -539,7 +656,6 @@ function buildUnit7(spec, previousWords, reviewWords) {
     for (let index = 0; index < 7; index += 1) topicQuestion(cards, 7, w(words, id), w(words, cycle(["gakusei", "sensei", "tomodachi", "mizu", "ocha", "hon"], index)));
   }
   currentVerbs(spec).forEach((word) => drillVerb(cards, 7, words, w(words, word.id), 16));
-  addReview(cards, 7, words, reviewWords);
   return cards;
 }
 
@@ -548,12 +664,39 @@ function reviewWordsFor(source, unitId) {
   return reviewVocabularyUnitIds(unitId).flatMap((id) => byUnit.get(id) ?? []);
 }
 
-function assertUnit(unit) {
+function assertUnit(unit, reviewWords = []) {
   if (unit.cards.length < 80 || unit.cards.length > 150) throw new Error(`unit ${unit.id}: expected 80-150 cards, got ${unit.cards.length}`);
+  const currentWordIds = new Set(unit.newWords.map((word) => word.id));
+  const firstWordPositions = new Map();
+  const badEnglishIdentity = /\b(I am|You are|He is|She is|The teacher is|The student is|The friend is|The doctor is|My mother is|My father is)\b (a cat|a dog|an animal|a book|a photo|a bag|a chair|a desk|a place|a house|a school|a shop|a hospital|a station|a company|a name|me|you|him|her|my mother|my father|my older sister|my younger brother|yesterday|last month|last year|morning|night|day off|a trip|work)$/;
   for (const [index, card] of unit.cards.entries()) {
     if (card.id !== `u${pad(unit.id)}-c${pad(index + 1)}`) throw new Error(`unit ${unit.id}: bad card id ${card.id}`);
     if (card.line.length !== card.tts.length || card.line.length !== card.explain.length || card.line.length !== card.tokens.length) {
       throw new Error(`unit ${unit.id} ${card.id}: alignment mismatch`);
+    }
+    for (const token of card.tokens ?? []) {
+      if (token.wordId && !firstWordPositions.has(token.wordId)) firstWordPositions.set(token.wordId, index + 1);
+    }
+    if (unit.id <= 7 && badEnglishIdentity.test(card.english)) {
+      throw new Error(`unit ${unit.id} ${card.id}: suspicious identity sentence "${card.english}"`);
+    }
+  }
+  if (unit.id <= 7) {
+    for (const word of unit.newWords) {
+      const firstSeen = firstWordPositions.get(word.id);
+      if (!firstSeen || firstSeen > 60) {
+        throw new Error(`unit ${unit.id}: current word ${word.id} first appears too late at card ${firstSeen ?? "never"}`);
+      }
+    }
+    const currentCardsInTail = unit.cards.slice(-20).filter((card) => card.tokens?.some((token) => currentWordIds.has(token.wordId))).length;
+    if (currentCardsInTail < 8) {
+      throw new Error(`unit ${unit.id}: expected at least 8 current-word cards in final 20, got ${currentCardsInTail}`);
+    }
+    for (const word of reviewWords) {
+      const firstSeen = firstWordPositions.get(word.id);
+      if (firstSeen && firstSeen > 80) {
+        throw new Error(`unit ${unit.id}: review word ${word.id} first appears too late at card ${firstSeen}`);
+      }
     }
   }
 }
@@ -576,9 +719,10 @@ for (let unitId = 1; unitId <= 7; unitId += 1) {
     [6, buildUnit6],
     [7, buildUnit7],
   ]);
-  const cards = builders.get(unitId)(spec, previousWords, reviewWordsFor(source, unitId));
+  const reviewWords = reviewWordsFor(source, unitId);
+  const cards = builders.get(unitId)(spec, previousWords, reviewWords);
   const unit = { ...existing, ...spec, cards };
-  assertUnit(unit);
+  assertUnit(unit, reviewWords);
   await writeJson(`data/jp/curriculum/units/unit_${pad(unitId)}.json`, unit);
   previousWords.push(...spec.newWords);
 }

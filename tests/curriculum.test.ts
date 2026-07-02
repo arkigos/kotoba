@@ -239,6 +239,41 @@ describe("curriculum word bins", () => {
     expect(unit.cards.slice(0, 40).some((card) => card.english.includes("not"))).toBe(true);
   });
 
+  it("keeps foundation current words and due review out of late-only positions", () => {
+    for (let unitId = 1; unitId <= 7; unitId += 1) {
+      const unit = unitModules[unitModulePath(unitId)].default;
+      const firstSeen = firstWordPositions(unitId);
+      const currentWordIds = new Set(unit.newWords.map((word) => word.id));
+      const currentCardsInTail = unit.cards
+        .slice(-20)
+        .filter((card) => card.tokens?.some((token) => typeof token.wordId === "string" && currentWordIds.has(token.wordId))).length;
+
+      for (const word of unit.newWords) {
+        expect(firstSeen.get(word.id) ?? Number.POSITIVE_INFINITY, `unit ${unitId} current word ${word.id}`).toBeLessThanOrEqual(60);
+      }
+
+      for (const word of wordsForUnitIds(reviewVocabularyUnitIds(unitId))) {
+        expect(firstSeen.get(word.id) ?? Number.POSITIVE_INFINITY, `unit ${unitId} review word ${word.id}`).toBeLessThanOrEqual(80);
+      }
+
+      expect(currentCardsInTail, `unit ${unitId}`).toBeGreaterThanOrEqual(8);
+    }
+  });
+
+  it("rejects obvious foundation review-tail nonsense and broken verb pairings", () => {
+    const badIdentityPattern =
+      /\b(I am|You are|He is|She is|The teacher is|The student is|The friend is|The doctor is|My mother is|My father is)\b (a cat|a dog|an animal|a book|a photo|a bag|a chair|a desk|a place|a house|a school|a shop|a hospital|a station|a company|a name|me|you|him|her|my mother|my father|my older sister|my younger brother|yesterday|last month|last year|morning|night|day off|a trip|work)$/;
+    const brokenVerbPattern = /listen a|looks at$|look at$|study at a station|study at a hospital|use tea|use a photo/;
+
+    for (let unitId = 1; unitId <= 7; unitId += 1) {
+      const unit = unitModules[unitModulePath(unitId)].default;
+      for (const [cardIndex, card] of unit.cards.entries()) {
+        expect(card.english, `unit ${unitId} card ${cardIndex + 1}`).not.toMatch(badIdentityPattern);
+        expect(card.english, `unit ${unitId} card ${cardIndex + 1}`).not.toMatch(brokenVerbPattern);
+      }
+    }
+  });
+
   it("keeps Unit 1 off bare to-and-choice fragments", () => {
     const unit = unitModules[unitModulePath(1)].default;
     for (const card of unit.cards) {
