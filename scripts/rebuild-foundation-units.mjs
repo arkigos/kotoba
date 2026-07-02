@@ -186,12 +186,22 @@ function w(words, id) {
   return word;
 }
 
-function vocabIntro(cards, unitId, word) {
-  add(cards, unitId, [token(word)], bareMeaning(word), "New vocabulary appears by itself before sentence context.", ["vocabulary introduction"]);
-}
-
 function grammarIntro(cards, unitId, part, english, fact) {
   add(cards, unitId, [part], english, fact, ["grammar introduction"]);
+}
+
+function warmReview(cards, unitId, words) {
+  const rows = [
+    () => words.has("watashi") && words.has("gakusei") && topic(cards, unitId, w(words, "watashi"), w(words, "gakusei")),
+    () => words.has("sakura") && words.has("sensei") && topicQuestion(cards, unitId, w(words, "sakura"), w(words, "sensei")),
+    () => words.has("neko") && words.has("doubutsu") && topic(cards, unitId, w(words, "neko"), w(words, "doubutsu")),
+    () => words.has("ie") && words.has("basho") && topic(cards, unitId, w(words, "ie"), w(words, "basho")),
+    () => words.has("hon") && words.has("yomu") && objectAction(cards, unitId, w(words, "hon"), w(words, "yomu")),
+    () => words.has("watashi") && words.has("taberu") && subjectAction(cards, unitId, w(words, "watashi"), w(words, "taberu")),
+    () => words.has("gakkou") && words.has("basho") && topicQuestion(cards, unitId, w(words, "gakkou"), w(words, "basho")),
+    () => words.has("shashin") && words.has("miru") && objectAction(cards, unitId, w(words, "shashin"), w(words, "miru")),
+  ];
+  for (const row of rows) row();
 }
 
 function identity(cards, unitId, word) {
@@ -243,6 +253,20 @@ function placeAction(cards, unitId, place, verb, particle = g.ni()) {
   add(cards, unitId, [token(place), particle, verbToken(verb)], `I ${action} ${prep} ${indefinite(place)}`, "A familiar place cushions the current verb.", ["early Vます action"]);
 }
 
+function subjectPlaceAction(cards, unitId, actor, place, verb, particle = g.ni()) {
+  const form = verbForms.get(verb.id);
+  const action = actor.id === "watashi" || actor.id === "sakura" ? form[2] : form[3];
+  const prep = particle.explain === "action location marker" ? "at" : "to";
+  add(
+    cards,
+    unitId,
+    [token(actor), g.wa(), token(place), particle, verbToken(verb)],
+    `${sentenceStart(subject(actor))} ${action} ${prep} ${indefinite(place)}`,
+    "A familiar subject and place keep the current verb in motion.",
+    ["early V\u307e\u3059 action"],
+  );
+}
+
 function compound(cards, unitId, first, second, category, englishCategory) {
   add(cards, unitId, [token(first), g.to(), token(second), g.wa(), token(category), g.desu()], `${sentenceStart(subject(first))} and ${subject(second)} are ${englishCategory}`, "`と` joins two concrete nouns before the topic marker.", ["AとBはCです"]);
 }
@@ -273,8 +297,8 @@ function currentVerbs(spec) {
 function addReview(cards, unitId, words, reviewWords) {
   const anchors = ["watashi", "sakura", "yuki", "tanaka", "sensei", "gakusei", "tomodachi", "isha", "haha", "chichi"].filter((id) => words.has(id));
   const repeats = reviewWords.length > 15 ? 2 : 3;
-  for (const [index, reviewWord] of reviewWords.entries()) {
-    for (let repeat = 0; repeat < repeats; repeat += 1) {
+  for (let repeat = 0; repeat < repeats; repeat += 1) {
+    for (const [index, reviewWord] of reviewWords.entries()) {
       const anchor = w(words, cycle(anchors, index + repeat));
       if (isVerb(reviewWord)) subjectAction(cards, unitId, anchor, reviewWord);
       else if (reviewWord.function === "place") placeAction(cards, unitId, reviewWord, w(words, "iku"), g.ni());
@@ -286,26 +310,31 @@ function addReview(cards, unitId, words, reviewWords) {
 function buildUnit1(spec) {
   const words = byId(spec.newWords);
   const cards = [];
-  spec.newWords.forEach((word) => vocabIntro(cards, 1, word));
-  grammarIntro(cards, 1, g.desu(), "am; is; are", "`です` is the polite identity marker.");
-  grammarIntro(cards, 1, g.wa(), "topic marker", "`は` marks what the sentence is about.");
-  grammarIntro(cards, 1, g.ka(), "question marker", "`か` turns the sentence into a question.");
+  for (const id of ["watashi", "gakusei", "sensei", "namae", "sakura", "yuki", "tanaka", "tomodachi"]) {
+    identity(cards, 1, w(words, id));
+  }
+  subjectAction(cards, 1, w(words, "watashi"), w(words, "taberu"));
+  subjectAction(cards, 1, w(words, "sakura"), w(words, "nomu"));
 
   const subjects = ["watashi", "sakura", "yuki", "tanaka"];
   const roles = ["gakusei", "sensei", "tomodachi"];
   for (const role of roles) for (const subjectId of subjects) topic(cards, 1, w(words, subjectId), w(words, role));
   for (const role of roles) for (const subjectId of subjects) topicQuestion(cards, 1, w(words, subjectId), w(words, role));
-  currentNonVerbs(spec).forEach((word) => identity(cards, 1, w(words, word.id)));
   currentVerbs(spec).forEach((word) => drillVerb(cards, 1, words, w(words, word.id), 12));
   for (let index = 0; cards.length < 80; index += 1) topic(cards, 1, w(words, cycle(subjects, index)), w(words, cycle(roles, index)));
   return cards;
 }
 
 function buildUnit2(spec, previousWords) {
+  const previous = byId(previousWords);
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
-  spec.newWords.forEach((word) => vocabIntro(cards, 2, w(words, word.id)));
-  currentNonVerbs(spec).forEach((word) => identity(cards, 2, w(words, word.id)));
+  warmReview(cards, 2, previous);
+  for (const id of ["neko", "inu", "doubutsu", "hon", "ie", "gakkou", "basho", "isha"]) {
+    identity(cards, 2, w(words, id));
+  }
+  objectAction(cards, 2, w(words, "hon"), w(words, "yomu"));
+  subjectAction(cards, 2, w(words, "watashi"), w(words, "kaku"));
   const statements = [
     ["neko", "doubutsu"],
     ["inu", "doubutsu"],
@@ -341,10 +370,15 @@ function buildUnit2(spec, previousWords) {
 }
 
 function buildUnit3(spec, previousWords, reviewWords) {
+  const previous = byId(previousWords);
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
-  spec.newWords.forEach((word) => vocabIntro(cards, 3, w(words, word.id)));
-  currentNonVerbs(spec).forEach((word) => identity(cards, 3, w(words, word.id)));
+  warmReview(cards, 3, previous);
+  for (const id of ["kazoku", "haha", "chichi", "ane", "otouto", "shashin", "kaban", "heya"]) {
+    identity(cards, 3, w(words, id));
+  }
+  objectAction(cards, 3, w(words, "shashin"), w(words, "miru"));
+  subjectAction(cards, 3, w(words, "watashi"), w(words, "kiku"));
   currentNonVerbs(spec).forEach((word, index) => {
     const current = w(words, word.id);
     for (let repeat = 0; repeat < 4; repeat += 1) possession(cards, 3, w(words, cycle(["watashi", "sakura", "yuki", "tanaka"], index + repeat)), current);
@@ -356,24 +390,93 @@ function buildUnit3(spec, previousWords, reviewWords) {
 }
 
 function buildUnit4(spec, previousWords, reviewWords) {
+  const previous = byId(previousWords);
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
-  spec.newWords.forEach((word) => vocabIntro(cards, 4, w(words, word.id)));
-  currentNonVerbs(spec).forEach((word) => identity(cards, 4, w(words, word.id)));
-  currentNonVerbs(spec).forEach((word, index) => {
-    const current = w(words, word.id);
-    for (let repeat = 0; repeat < 7; repeat += 1) negativeTopic(cards, 4, current, w(words, cycle(["gakkou", "ie", "basho", "isha", "gakusei", "sensei", "hon", "doubutsu"], index + repeat)));
-  });
-  currentVerbs(spec).forEach((word) => drillVerb(cards, 4, words, w(words, word.id), 16));
+  warmReview(cards, 4, previous);
+
+  const firstNegativeRows = [
+    ["mise", "gakkou"],
+    ["byouin", "ie"],
+    ["eki", "gakkou"],
+    ["kaisha", "basho"],
+    ["kodomo", "sensei"],
+    ["otona", "gakusei"],
+    ["isu", "hon"],
+    ["tsukue", "kaban"],
+  ];
+  for (const [left, right] of firstNegativeRows) negativeTopic(cards, 4, w(words, left), w(words, right));
+  placeAction(cards, 4, w(words, "gakkou"), w(words, "iku"));
+  placeAction(cards, 4, w(words, "ie"), w(words, "kuru"));
+
+  const placeIds = ["mise", "byouin", "eki", "kaisha"];
+  const personIds = ["kodomo", "otona"];
+  const objectIds = ["isu", "tsukue"];
+  const movementActorIds = ["watashi", "sakura", "yuki", "tanaka", "sensei", "gakusei", "tomodachi", "isha"].filter((id) =>
+    words.has(id),
+  );
+  function movement(offset, verbId) {
+    subjectPlaceAction(
+      cards,
+      4,
+      w(words, cycle(movementActorIds, offset)),
+      w(words, cycle(placeIds, Math.floor(offset / movementActorIds.length))),
+      w(words, verbId),
+    );
+  }
+  const complementById = new Map([
+    ["mise", ["gakkou", "ie", "basho", "heya"]],
+    ["byouin", ["ie", "gakkou", "basho", "heya"]],
+    ["eki", ["gakkou", "ie", "basho", "byouin"]],
+    ["kaisha", ["gakkou", "ie", "basho", "mise"]],
+    ["kodomo", ["sensei", "isha", "gakusei", "otona"]],
+    ["otona", ["gakusei", "kodomo", "sensei", "tomodachi"]],
+    ["isu", ["hon", "kaban", "tsukue", "doubutsu"]],
+    ["tsukue", ["kaban", "hon", "isu", "doubutsu"]],
+  ]);
+  const wovenNouns = ["mise", "kodomo", "byouin", "isu", "eki", "otona", "kaisha", "tsukue"];
+  const reviewRows = [
+    () => topic(cards, 4, w(words, "neko"), w(words, "doubutsu")),
+    () => topicQuestion(cards, 4, w(words, "ie"), w(words, "basho")),
+    () => objectAction(cards, 4, w(words, "hon"), w(words, "yomu")),
+    () => possession(cards, 4, w(words, "watashi"), w(words, "kaban")),
+    () => also(cards, 4, w(words, "haha"), w(words, "sensei")),
+    () => objectAction(cards, 4, w(words, "shashin"), w(words, "miru")),
+  ];
+
+  for (let round = 0; round < 5; round += 1) {
+    for (let index = 0; index < wovenNouns.length; index += 1) {
+      const nounId = cycle(wovenNouns, index + round * 3);
+      negativeTopic(cards, 4, w(words, nounId), w(words, cycle(complementById.get(nounId), round + index)));
+      if ((index + round) % 2 === 0) {
+        movement(round * wovenNouns.length + index, (round + index) % 4 === 0 ? "kuru" : "iku");
+      }
+      if ((index + round) % 3 === 1) {
+        movement(53 + round * wovenNouns.length + index, (round + index) % 2 === 0 ? "kuru" : "iku");
+      }
+      if ((index + round) % 4 === 2) cycle(reviewRows, round + index)();
+    }
+  }
+
+  for (let index = 0; index < 4; index += 1) {
+    negativeTopic(cards, 4, w(words, cycle([...placeIds, ...personIds, ...objectIds], index)), w(words, cycle(["gakkou", "sensei", "hon", "basho"], index)));
+    movement(101 + index, index % 2 === 0 ? "iku" : "kuru");
+  }
+  for (let index = 0; index < 4; index += 1) {
+    negativeTopic(cards, 4, w(words, cycle(objectIds, index)), w(words, cycle(["hon", "kaban", "doubutsu", "neko"], index)));
+  }
   addReview(cards, 4, words, reviewWords);
   return cards;
 }
 
 function buildUnit5(spec, previousWords, reviewWords) {
+  const previous = byId(previousWords);
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
-  spec.newWords.forEach((word) => vocabIntro(cards, 5, w(words, word.id)));
+  warmReview(cards, 5, previous);
   currentNonVerbs(spec).forEach((word) => identity(cards, 5, w(words, word.id)));
+  placeAction(cards, 5, w(words, "kaisha"), w(words, "hataraku"), g.de());
+  placeAction(cards, 5, w(words, "gakkou"), w(words, "benkyou_suru"), g.de());
   currentNonVerbs(spec).forEach((word, index) => {
     const current = w(words, word.id);
     for (let repeat = 0; repeat < 7; repeat += 1) pastTopic(cards, 5, current, w(words, cycle(["yasumi", "ryokou", "shigoto", "gakusei", "sensei", "tomodachi"], index + repeat)));
@@ -394,9 +497,10 @@ function determinerIdentity(cards, unitId, determiner, noun) {
 }
 
 function buildUnit6(spec, previousWords, reviewWords) {
+  const previous = byId(previousWords);
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
-  spec.newWords.forEach((word) => vocabIntro(cards, 6, w(words, word.id)));
+  warmReview(cards, 6, previous);
   const nounIds = ["hon", "ie", "gakkou", "mise", "byouin", "eki", "mizu", "ocha", "shashin", "kaban"].filter((id) => words.has(id));
   for (const id of ["kore", "sore", "are"]) for (let index = 0; index < 7; index += 1) demonstrativeTopic(cards, 6, w(words, id), w(words, cycle(nounIds, index)));
   for (const id of ["kono", "sono", "ano"]) for (let index = 0; index < 7; index += 1) determinerIdentity(cards, 6, w(words, id), w(words, cycle(nounIds, index)));
@@ -409,9 +513,11 @@ function buildUnit6(spec, previousWords, reviewWords) {
 function questionWordCard(cards, unitId, words, questionId, contextId) {
   const context = w(words, contextId);
   const question = w(words, questionId);
-  if (questionId === "nan") add(cards, unitId, [token(context), g.wa(), token(question), g.desu(), g.ka(), g.q()], `What is ${subject(context)}?`, "What asks for the identity of the topic.", ["nan", "AはBですか"]);
-  else if (questionId === "dare") add(cards, unitId, [token(context), g.wa(), token(question), g.desu(), g.ka(), g.q()], `Who is ${subject(context)}?`, "Who asks for the person behind the topic.", ["dare", "AはBですか"]);
-  else if (questionId === "dore") add(cards, unitId, [token(question), g.ga(), token(context), g.desu(), g.ka(), g.q()], `Which one is ${indefinite(context)}?`, "Which-one questions can point to a concrete known noun.", ["dore", "か"]);
+  const questionSubject =
+    context.id === "watashi" ? "am I" : context.id === "sakura" ? "are you" : `is ${subject(context)}`;
+  if (questionId === "nan") add(cards, unitId, [token(context), g.wa(), token(question), g.desu(), g.ka(), g.q()], `What ${questionSubject}?`, "What asks for the identity of the topic.", ["nan", "A\u306fB\u3067\u3059\u304b"]);
+  else if (questionId === "dare") add(cards, unitId, [token(context), g.wa(), token(question), g.desu(), g.ka(), g.q()], `Who ${questionSubject}?`, "Who asks for the person behind the topic.", ["dare", "A\u306fB\u3067\u3059\u304b"]);
+  else if (questionId === "dore") add(cards, unitId, [token(question), g.ga(), token(context), g.desu(), g.ka(), g.q()], `Which one is ${indefinite(context)}?`, "Which-one questions can point to a concrete known noun.", ["dore", "\u304b"]);
 }
 
 function whichNounCard(cards, unitId, words, determinerId, nounId) {
@@ -419,9 +525,10 @@ function whichNounCard(cards, unitId, words, determinerId, nounId) {
 }
 
 function buildUnit7(spec, previousWords, reviewWords) {
+  const previous = byId(previousWords);
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
-  spec.newWords.forEach((word) => vocabIntro(cards, 7, w(words, word.id)));
+  warmReview(cards, 7, previous);
   const contexts = ["watashi", "sakura", "yuki", "tanaka", "haha", "chichi", "sensei", "gakusei"];
   const nouns = ["hon", "shashin", "kaban", "mizu", "ocha", "tabemono", "nomimono"].filter((id) => words.has(id));
   for (let index = 0; index < 7; index += 1) questionWordCard(cards, 7, words, "nan", cycle(contexts, index));

@@ -62,15 +62,15 @@
     },
     {
       "id": "hataraku",
-      "surface": "??",
-      "reading": "????",
+      "surface": "働く",
+      "reading": "はたらく",
       "meaning": "work",
       "function": "verb"
     },
     {
       "id": "benkyou_suru",
-      "surface": "????",
-      "reading": "???????",
+      "surface": "勉強する",
+      "reading": "べんきょうする",
       "meaning": "study",
       "function": "verb"
     }
@@ -79,255 +79,417 @@
     {
       "id": "u005-c001",
       "line": [
-        "昨日"
+        "私",
+        "は",
+        "学生",
+        "です"
       ],
       "tts": [
-        "きのう"
+        "わたし",
+        "わ",
+        "がくせい",
+        "です"
       ],
       "explain": [
-        "yesterday"
+        "I; me",
+        "topic marker",
+        "student",
+        "polite identity marker"
       ],
       "tokens": [
         {
-          "surface": "昨日",
-          "reading": "きのう",
-          "explain": "yesterday",
-          "wordId": "kinou"
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
         }
       ],
-      "english": "yesterday",
-      "fact": "New vocabulary appears by itself before sentence context.",
+      "english": "I am a student",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "vocabulary introduction"
+        "AはBです"
       ]
     },
     {
       "id": "u005-c002",
       "line": [
-        "先月"
+        "あなた",
+        "は",
+        "先生",
+        "です",
+        "か",
+        "？"
       ],
       "tts": [
-        "せんげつ"
+        "あなた",
+        "わ",
+        "せんせい",
+        "です",
+        "か",
+        "？"
       ],
       "explain": [
-        "last month"
+        "you",
+        "topic marker",
+        "teacher",
+        "polite identity marker",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
         {
-          "surface": "先月",
-          "reading": "せんげつ",
-          "explain": "last month",
-          "wordId": "sengetsu"
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
         }
       ],
-      "english": "last month",
-      "fact": "New vocabulary appears by itself before sentence context.",
+      "english": "Are you a teacher?",
+      "fact": "`です` and `か` stay separate so the question marker is visible.",
       "grammarTags": [
-        "vocabulary introduction"
+        "AはBです",
+        "か"
       ]
     },
     {
       "id": "u005-c003",
       "line": [
-        "去年"
+        "猫",
+        "は",
+        "動物",
+        "です"
       ],
       "tts": [
-        "きょねん"
+        "ねこ",
+        "わ",
+        "どうぶつ",
+        "です"
       ],
       "explain": [
-        "last year"
+        "cat",
+        "topic marker",
+        "animal",
+        "polite identity marker"
       ],
       "tokens": [
         {
-          "surface": "去年",
-          "reading": "きょねん",
-          "explain": "last year",
-          "wordId": "kyonen"
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
         }
       ],
-      "english": "last year",
-      "fact": "New vocabulary appears by itself before sentence context.",
+      "english": "The cat is an animal",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "vocabulary introduction"
+        "AはBです"
       ]
     },
     {
       "id": "u005-c004",
       "line": [
-        "朝"
+        "家",
+        "は",
+        "場所",
+        "です"
       ],
       "tts": [
-        "あさ"
+        "いえ",
+        "わ",
+        "ばしょ",
+        "です"
       ],
       "explain": [
-        "morning"
+        "house; home",
+        "topic marker",
+        "place",
+        "polite identity marker"
       ],
       "tokens": [
         {
-          "surface": "朝",
-          "reading": "あさ",
-          "explain": "morning",
-          "wordId": "asa"
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
         }
       ],
-      "english": "morning",
-      "fact": "New vocabulary appears by itself before sentence context.",
+      "english": "The house is a place",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "vocabulary introduction"
+        "AはBです"
       ]
     },
     {
       "id": "u005-c005",
       "line": [
-        "夜"
+        "本",
+        "を",
+        "読みます"
       ],
       "tts": [
-        "よる"
+        "ほん",
+        "を",
+        "よみます"
       ],
       "explain": [
-        "night"
+        "book",
+        "direct object marker",
+        "read"
       ],
       "tokens": [
         {
-          "surface": "夜",
-          "reading": "よる",
-          "explain": "night",
-          "wordId": "yoru"
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
         }
       ],
-      "english": "night",
-      "fact": "New vocabulary appears by itself before sentence context.",
+      "english": "I read a book",
+      "fact": "A familiar object cushions the current verb.",
       "grammarTags": [
-        "vocabulary introduction"
+        "early Vます action",
+        "NをVます"
       ]
     },
     {
       "id": "u005-c006",
       "line": [
-        "休み"
+        "私",
+        "は",
+        "食べます"
       ],
       "tts": [
-        "やすみ"
+        "わたし",
+        "わ",
+        "たべます"
       ],
       "explain": [
-        "day off; break"
+        "I; me",
+        "topic marker",
+        "eat"
       ],
       "tokens": [
         {
-          "surface": "休み",
-          "reading": "やすみ",
-          "explain": "day off; break",
-          "wordId": "yasumi"
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
         }
       ],
-      "english": "day off",
-      "fact": "New vocabulary appears by itself before sentence context.",
+      "english": "I eat",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
       "grammarTags": [
-        "vocabulary introduction"
+        "early Vます action"
       ]
     },
     {
       "id": "u005-c007",
       "line": [
-        "旅行"
+        "学校",
+        "は",
+        "場所",
+        "です",
+        "か",
+        "？"
       ],
       "tts": [
-        "りょこう"
+        "がっこう",
+        "わ",
+        "ばしょ",
+        "です",
+        "か",
+        "？"
       ],
       "explain": [
-        "trip"
+        "school",
+        "topic marker",
+        "place",
+        "polite identity marker",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
         {
-          "surface": "旅行",
-          "reading": "りょこう",
-          "explain": "trip",
-          "wordId": "ryokou"
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
         }
       ],
-      "english": "trip",
-      "fact": "New vocabulary appears by itself before sentence context.",
+      "english": "Is the school a place?",
+      "fact": "`です` and `か` stay separate so the question marker is visible.",
       "grammarTags": [
-        "vocabulary introduction"
+        "AはBです",
+        "か"
       ]
     },
     {
       "id": "u005-c008",
       "line": [
-        "仕事"
+        "写真",
+        "を",
+        "見ます"
       ],
       "tts": [
-        "しごと"
+        "しゃしん",
+        "を",
+        "みます"
       ],
       "explain": [
-        "work; job"
+        "photo",
+        "direct object marker",
+        "look at"
       ],
       "tokens": [
         {
-          "surface": "仕事",
-          "reading": "しごと",
-          "explain": "work; job",
-          "wordId": "shigoto"
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "look at",
+          "wordId": "miru"
         }
       ],
-      "english": "work",
-      "fact": "New vocabulary appears by itself before sentence context.",
+      "english": "I look at a photo",
+      "fact": "A familiar object cushions the current verb.",
       "grammarTags": [
-        "vocabulary introduction"
+        "early Vます action",
+        "NをVます"
       ]
     },
     {
       "id": "u005-c009",
-      "line": [
-        "??"
-      ],
-      "tts": [
-        "????"
-      ],
-      "explain": [
-        "work"
-      ],
-      "tokens": [
-        {
-          "surface": "??",
-          "reading": "????",
-          "explain": "work",
-          "wordId": "hataraku"
-        }
-      ],
-      "english": "work",
-      "fact": "New vocabulary appears by itself before sentence context.",
-      "grammarTags": [
-        "vocabulary introduction"
-      ]
-    },
-    {
-      "id": "u005-c010",
-      "line": [
-        "????"
-      ],
-      "tts": [
-        "???????"
-      ],
-      "explain": [
-        "study"
-      ],
-      "tokens": [
-        {
-          "surface": "????",
-          "reading": "???????",
-          "explain": "study",
-          "wordId": "benkyou_suru"
-        }
-      ],
-      "english": "study",
-      "fact": "New vocabulary appears by itself before sentence context.",
-      "grammarTags": [
-        "vocabulary introduction"
-      ]
-    },
-    {
-      "id": "u005-c011",
       "line": [
         "昨日",
         "です"
@@ -360,7 +522,7 @@
       ]
     },
     {
-      "id": "u005-c012",
+      "id": "u005-c010",
       "line": [
         "先月",
         "です"
@@ -393,7 +555,7 @@
       ]
     },
     {
-      "id": "u005-c013",
+      "id": "u005-c011",
       "line": [
         "去年",
         "です"
@@ -426,7 +588,7 @@
       ]
     },
     {
-      "id": "u005-c014",
+      "id": "u005-c012",
       "line": [
         "朝",
         "です"
@@ -459,7 +621,7 @@
       ]
     },
     {
-      "id": "u005-c015",
+      "id": "u005-c013",
       "line": [
         "夜",
         "です"
@@ -492,7 +654,7 @@
       ]
     },
     {
-      "id": "u005-c016",
+      "id": "u005-c014",
       "line": [
         "休み",
         "です"
@@ -525,7 +687,7 @@
       ]
     },
     {
-      "id": "u005-c017",
+      "id": "u005-c015",
       "line": [
         "旅行",
         "です"
@@ -558,7 +720,7 @@
       ]
     },
     {
-      "id": "u005-c018",
+      "id": "u005-c016",
       "line": [
         "仕事",
         "です"
@@ -588,6 +750,90 @@
       "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
+      ]
+    },
+    {
+      "id": "u005-c017",
+      "line": [
+        "会社",
+        "で",
+        "働きます"
+      ],
+      "tts": [
+        "かいしゃ",
+        "で",
+        "はたらきます"
+      ],
+      "explain": [
+        "company",
+        "action location marker",
+        "work"
+      ],
+      "tokens": [
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "explain": "company",
+          "wordId": "kaisha"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "work",
+          "wordId": "hataraku"
+        }
+      ],
+      "english": "I work at a company",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u005-c018",
+      "line": [
+        "学校",
+        "で",
+        "勉強します"
+      ],
+      "tts": [
+        "がっこう",
+        "で",
+        "べんきょうします"
+      ],
+      "explain": [
+        "school",
+        "action location marker",
+        "study"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "勉強します",
+          "reading": "べんきょうします",
+          "explain": "study",
+          "wordId": "benkyou_suru"
+        }
+      ],
+      "english": "I study at a school",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
       ]
     },
     {
@@ -4789,56 +5035,6 @@
       "line": [
         "あなた",
         "は",
-        "家族",
-        "です"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "かぞく",
-        "です"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "family",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "家族",
-          "reading": "かぞく",
-          "explain": "family",
-          "wordId": "kazoku"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "You are a family",
-      "fact": "One slot changes while the sentence frame stays fixed.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u005-c109",
-      "line": [
-        "あなた",
-        "は",
         "母",
         "です"
       ],
@@ -4885,57 +5081,7 @@
       ]
     },
     {
-      "id": "u005-c110",
-      "line": [
-        "彼",
-        "は",
-        "母",
-        "です"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "はは",
-        "です"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "mother",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "母",
-          "reading": "はは",
-          "explain": "mother",
-          "wordId": "haha"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "He is my mother",
-      "fact": "One slot changes while the sentence frame stays fixed.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u005-c111",
+      "id": "u005-c109",
       "line": [
         "彼",
         "は",
@@ -4985,57 +5131,7 @@
       ]
     },
     {
-      "id": "u005-c112",
-      "line": [
-        "彼女",
-        "は",
-        "父",
-        "です"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "ちち",
-        "です"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "father",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "父",
-          "reading": "ちち",
-          "explain": "father",
-          "wordId": "chichi"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "She is my father",
-      "fact": "One slot changes while the sentence frame stays fixed.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u005-c113",
+      "id": "u005-c110",
       "line": [
         "彼女",
         "は",
@@ -5085,57 +5181,7 @@
       ]
     },
     {
-      "id": "u005-c114",
-      "line": [
-        "先生",
-        "は",
-        "姉",
-        "です"
-      ],
-      "tts": [
-        "せんせい",
-        "わ",
-        "あね",
-        "です"
-      ],
-      "explain": [
-        "teacher",
-        "topic marker",
-        "older sister",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "姉",
-          "reading": "あね",
-          "explain": "older sister",
-          "wordId": "ane"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The teacher is my older sister",
-      "fact": "One slot changes while the sentence frame stays fixed.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u005-c115",
+      "id": "u005-c111",
       "line": [
         "先生",
         "は",
@@ -5185,57 +5231,7 @@
       ]
     },
     {
-      "id": "u005-c116",
-      "line": [
-        "学生",
-        "は",
-        "弟",
-        "です"
-      ],
-      "tts": [
-        "がくせい",
-        "わ",
-        "おとうと",
-        "です"
-      ],
-      "explain": [
-        "student",
-        "topic marker",
-        "younger brother",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "弟",
-          "reading": "おとうと",
-          "explain": "younger brother",
-          "wordId": "otouto"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The student is my younger brother",
-      "fact": "One slot changes while the sentence frame stays fixed.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u005-c117",
+      "id": "u005-c112",
       "line": [
         "学生",
         "は",
@@ -5285,57 +5281,7 @@
       ]
     },
     {
-      "id": "u005-c118",
-      "line": [
-        "友達",
-        "は",
-        "写真",
-        "です"
-      ],
-      "tts": [
-        "ともだち",
-        "わ",
-        "しゃしん",
-        "です"
-      ],
-      "explain": [
-        "friend",
-        "topic marker",
-        "photo",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "写真",
-          "reading": "しゃしん",
-          "explain": "photo",
-          "wordId": "shashin"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The friend is a photo",
-      "fact": "One slot changes while the sentence frame stays fixed.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u005-c119",
+      "id": "u005-c113",
       "line": [
         "友達",
         "は",
@@ -5385,57 +5331,7 @@
       ]
     },
     {
-      "id": "u005-c120",
-      "line": [
-        "医者",
-        "は",
-        "かばん",
-        "です"
-      ],
-      "tts": [
-        "いしゃ",
-        "わ",
-        "かばん",
-        "です"
-      ],
-      "explain": [
-        "doctor",
-        "topic marker",
-        "bag",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "かばん",
-          "reading": "かばん",
-          "explain": "bag",
-          "wordId": "kaban"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The doctor is a bag",
-      "fact": "One slot changes while the sentence frame stays fixed.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u005-c121",
+      "id": "u005-c114",
       "line": [
         "部屋",
         "に",
@@ -5477,49 +5373,7 @@
       ]
     },
     {
-      "id": "u005-c122",
-      "line": [
-        "部屋",
-        "に",
-        "行きます"
-      ],
-      "tts": [
-        "へや",
-        "に",
-        "いきます"
-      ],
-      "explain": [
-        "room",
-        "destination or time marker",
-        "go"
-      ],
-      "tokens": [
-        {
-          "surface": "部屋",
-          "reading": "へや",
-          "explain": "room",
-          "wordId": "heya"
-        },
-        {
-          "surface": "に",
-          "reading": "に",
-          "explain": "destination or time marker"
-        },
-        {
-          "surface": "行きます",
-          "reading": "いきます",
-          "explain": "go",
-          "wordId": "iku"
-        }
-      ],
-      "english": "I go to a room",
-      "fact": "A familiar place cushions the current verb.",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u005-c123",
+      "id": "u005-c115",
       "line": [
         "母",
         "は",
@@ -5561,49 +5415,7 @@
       ]
     },
     {
-      "id": "u005-c124",
-      "line": [
-        "父",
-        "は",
-        "見ます"
-      ],
-      "tts": [
-        "ちち",
-        "わ",
-        "みます"
-      ],
-      "explain": [
-        "father",
-        "topic marker",
-        "look at"
-      ],
-      "tokens": [
-        {
-          "surface": "父",
-          "reading": "ちち",
-          "explain": "father",
-          "wordId": "chichi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "見ます",
-          "reading": "みます",
-          "explain": "look at",
-          "wordId": "miru"
-        }
-      ],
-      "english": "My father looks at",
-      "fact": "A current verb gets real sentence practice with a familiar subject.",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u005-c125",
+      "id": "u005-c116",
       "line": [
         "父",
         "は",
@@ -5645,49 +5457,7 @@
       ]
     },
     {
-      "id": "u005-c126",
-      "line": [
-        "私",
-        "は",
-        "聞きます"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "ききます"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "listen"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "聞きます",
-          "reading": "ききます",
-          "explain": "listen",
-          "wordId": "kiku"
-        }
-      ],
-      "english": "I listen",
-      "fact": "A current verb gets real sentence practice with a familiar subject.",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u005-c127",
+      "id": "u005-c117",
       "line": [
         "私",
         "は",
@@ -5737,57 +5507,7 @@
       ]
     },
     {
-      "id": "u005-c128",
-      "line": [
-        "あなた",
-        "は",
-        "私",
-        "です"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "わたし",
-        "です"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "I; me",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "You are me",
-      "fact": "One slot changes while the sentence frame stays fixed.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u005-c129",
+      "id": "u005-c118",
       "line": [
         "あなた",
         "は",
@@ -5837,57 +5557,7 @@
       ]
     },
     {
-      "id": "u005-c130",
-      "line": [
-        "彼",
-        "は",
-        "学生",
-        "です"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "がくせい",
-        "です"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "student",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "He is a student",
-      "fact": "One slot changes while the sentence frame stays fixed.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u005-c131",
+      "id": "u005-c119",
       "line": [
         "彼",
         "は",
@@ -5937,57 +5607,7 @@
       ]
     },
     {
-      "id": "u005-c132",
-      "line": [
-        "彼女",
-        "は",
-        "先生",
-        "です"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "せんせい",
-        "です"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "teacher",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "She is a teacher",
-      "fact": "One slot changes while the sentence frame stays fixed.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u005-c133",
+      "id": "u005-c120",
       "line": [
         "彼女",
         "は",
@@ -6037,57 +5657,7 @@
       ]
     },
     {
-      "id": "u005-c134",
-      "line": [
-        "先生",
-        "は",
-        "名前",
-        "です"
-      ],
-      "tts": [
-        "せんせい",
-        "わ",
-        "なまえ",
-        "です"
-      ],
-      "explain": [
-        "teacher",
-        "topic marker",
-        "name",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "名前",
-          "reading": "なまえ",
-          "explain": "name",
-          "wordId": "namae"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The teacher is a name",
-      "fact": "One slot changes while the sentence frame stays fixed.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u005-c135",
+      "id": "u005-c121",
       "line": [
         "先生",
         "は",
@@ -6137,57 +5707,7 @@
       ]
     },
     {
-      "id": "u005-c136",
-      "line": [
-        "学生",
-        "は",
-        "あなた",
-        "です"
-      ],
-      "tts": [
-        "がくせい",
-        "わ",
-        "あなた",
-        "です"
-      ],
-      "explain": [
-        "student",
-        "topic marker",
-        "you",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The student is you",
-      "fact": "One slot changes while the sentence frame stays fixed.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u005-c137",
+      "id": "u005-c122",
       "line": [
         "学生",
         "は",
@@ -6237,57 +5757,7 @@
       ]
     },
     {
-      "id": "u005-c138",
-      "line": [
-        "友達",
-        "は",
-        "彼",
-        "です"
-      ],
-      "tts": [
-        "ともだち",
-        "わ",
-        "かれ",
-        "です"
-      ],
-      "explain": [
-        "friend",
-        "topic marker",
-        "he; him",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The friend is him",
-      "fact": "One slot changes while the sentence frame stays fixed.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u005-c139",
+      "id": "u005-c123",
       "line": [
         "友達",
         "は",
@@ -6337,57 +5807,7 @@
       ]
     },
     {
-      "id": "u005-c140",
-      "line": [
-        "医者",
-        "は",
-        "彼女",
-        "です"
-      ],
-      "tts": [
-        "いしゃ",
-        "わ",
-        "かのじょ",
-        "です"
-      ],
-      "explain": [
-        "doctor",
-        "topic marker",
-        "she; her",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The doctor is her",
-      "fact": "One slot changes while the sentence frame stays fixed.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u005-c141",
+      "id": "u005-c124",
       "line": [
         "医者",
         "は",
@@ -6437,7 +5857,917 @@
       ]
     },
     {
+      "id": "u005-c125",
+      "line": [
+        "母",
+        "は",
+        "食べます"
+      ],
+      "tts": [
+        "はは",
+        "わ",
+        "たべます"
+      ],
+      "explain": [
+        "mother",
+        "topic marker",
+        "eat"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        }
+      ],
+      "english": "My mother eats",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u005-c126",
+      "line": [
+        "父",
+        "は",
+        "飲みます"
+      ],
+      "tts": [
+        "ちち",
+        "わ",
+        "のみます"
+      ],
+      "explain": [
+        "father",
+        "topic marker",
+        "drink"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        }
+      ],
+      "english": "My father drinks",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u005-c127",
+      "line": [
+        "あなた",
+        "は",
+        "家族",
+        "です"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "かぞく",
+        "です"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "family",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "You are a family",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u005-c128",
+      "line": [
+        "彼",
+        "は",
+        "母",
+        "です"
+      ],
+      "tts": [
+        "かれ",
+        "わ",
+        "はは",
+        "です"
+      ],
+      "explain": [
+        "he; him",
+        "topic marker",
+        "mother",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "explain": "he; him",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "He is my mother",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u005-c129",
+      "line": [
+        "彼女",
+        "は",
+        "父",
+        "です"
+      ],
+      "tts": [
+        "かのじょ",
+        "わ",
+        "ちち",
+        "です"
+      ],
+      "explain": [
+        "she; her",
+        "topic marker",
+        "father",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "She is my father",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u005-c130",
+      "line": [
+        "先生",
+        "は",
+        "姉",
+        "です"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "あね",
+        "です"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "older sister",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The teacher is my older sister",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u005-c131",
+      "line": [
+        "学生",
+        "は",
+        "弟",
+        "です"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "おとうと",
+        "です"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "younger brother",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The student is my younger brother",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u005-c132",
+      "line": [
+        "友達",
+        "は",
+        "写真",
+        "です"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "しゃしん",
+        "です"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "photo",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "写真",
+          "reading": "しゃしん",
+          "explain": "photo",
+          "wordId": "shashin"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The friend is a photo",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u005-c133",
+      "line": [
+        "医者",
+        "は",
+        "かばん",
+        "です"
+      ],
+      "tts": [
+        "いしゃ",
+        "わ",
+        "かばん",
+        "です"
+      ],
+      "explain": [
+        "doctor",
+        "topic marker",
+        "bag",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "かばん",
+          "reading": "かばん",
+          "explain": "bag",
+          "wordId": "kaban"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The doctor is a bag",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u005-c134",
+      "line": [
+        "部屋",
+        "に",
+        "行きます"
+      ],
+      "tts": [
+        "へや",
+        "に",
+        "いきます"
+      ],
+      "explain": [
+        "room",
+        "destination or time marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to a room",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u005-c135",
+      "line": [
+        "父",
+        "は",
+        "見ます"
+      ],
+      "tts": [
+        "ちち",
+        "わ",
+        "みます"
+      ],
+      "explain": [
+        "father",
+        "topic marker",
+        "look at"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "見ます",
+          "reading": "みます",
+          "explain": "look at",
+          "wordId": "miru"
+        }
+      ],
+      "english": "My father looks at",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u005-c136",
+      "line": [
+        "私",
+        "は",
+        "聞きます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ききます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "listen"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        }
+      ],
+      "english": "I listen",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u005-c137",
+      "line": [
+        "あなた",
+        "は",
+        "私",
+        "です"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "わたし",
+        "です"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "I; me",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "You are me",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u005-c138",
+      "line": [
+        "彼",
+        "は",
+        "学生",
+        "です"
+      ],
+      "tts": [
+        "かれ",
+        "わ",
+        "がくせい",
+        "です"
+      ],
+      "explain": [
+        "he; him",
+        "topic marker",
+        "student",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "explain": "he; him",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "He is a student",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u005-c139",
+      "line": [
+        "彼女",
+        "は",
+        "先生",
+        "です"
+      ],
+      "tts": [
+        "かのじょ",
+        "わ",
+        "せんせい",
+        "です"
+      ],
+      "explain": [
+        "she; her",
+        "topic marker",
+        "teacher",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "She is a teacher",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u005-c140",
+      "line": [
+        "先生",
+        "は",
+        "名前",
+        "です"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "なまえ",
+        "です"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "name",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "名前",
+          "reading": "なまえ",
+          "explain": "name",
+          "wordId": "namae"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The teacher is a name",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u005-c141",
+      "line": [
+        "学生",
+        "は",
+        "あなた",
+        "です"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "あなた",
+        "です"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "you",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The student is you",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
       "id": "u005-c142",
+      "line": [
+        "友達",
+        "は",
+        "彼",
+        "です"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "かれ",
+        "です"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "he; him",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "explain": "he; him",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The friend is him",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u005-c143",
+      "line": [
+        "医者",
+        "は",
+        "彼女",
+        "です"
+      ],
+      "tts": [
+        "いしゃ",
+        "わ",
+        "かのじょ",
+        "です"
+      ],
+      "explain": [
+        "doctor",
+        "topic marker",
+        "she; her",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The doctor is her",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u005-c144",
       "line": [
         "母",
         "は",
@@ -6487,49 +6817,7 @@
       ]
     },
     {
-      "id": "u005-c143",
-      "line": [
-        "母",
-        "は",
-        "食べます"
-      ],
-      "tts": [
-        "はは",
-        "わ",
-        "たべます"
-      ],
-      "explain": [
-        "mother",
-        "topic marker",
-        "eat"
-      ],
-      "tokens": [
-        {
-          "surface": "母",
-          "reading": "はは",
-          "explain": "mother",
-          "wordId": "haha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu"
-        }
-      ],
-      "english": "My mother eats",
-      "fact": "A current verb gets real sentence practice with a familiar subject.",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u005-c144",
+      "id": "u005-c145",
       "line": [
         "父",
         "は",
@@ -6565,48 +6853,6 @@
         }
       ],
       "english": "My father eats",
-      "fact": "A current verb gets real sentence practice with a familiar subject.",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u005-c145",
-      "line": [
-        "父",
-        "は",
-        "飲みます"
-      ],
-      "tts": [
-        "ちち",
-        "わ",
-        "のみます"
-      ],
-      "explain": [
-        "father",
-        "topic marker",
-        "drink"
-      ],
-      "tokens": [
-        {
-          "surface": "父",
-          "reading": "ちち",
-          "explain": "father",
-          "wordId": "chichi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu"
-        }
-      ],
-      "english": "My father drinks",
       "fact": "A current verb gets real sentence practice with a familiar subject.",
       "grammarTags": [
         "early Vます action"

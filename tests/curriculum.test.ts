@@ -197,30 +197,46 @@ describe("curriculum word bins", () => {
     }
   });
 
-  it("opens Unit 1 with vocabulary atoms before one-slot sentence swaps", () => {
+  it("opens Unit 1 in sentence context before one-slot sentence swaps", () => {
     const unit = unitModules[unitModulePath(1)].default;
-    expect(unit.cards.slice(0, 10).map((card) => card.line.length)).toEqual(Array.from({ length: 10 }, () => 1));
-    expect(unit.cards.slice(0, 13).map((card) => card.english)).toEqual([
-      "I",
-      "student",
-      "teacher",
-      "name",
-      "you",
-      "he",
-      "she",
-      "friend",
-      "eat",
-      "drink",
-      "am; is; are",
-      "topic marker",
-      "question marker",
+    expect(unit.cards.slice(0, 10).every((card) => card.line.length > 1)).toBe(true);
+    expect(unit.cards.slice(0, 10).map((card) => card.english)).toEqual([
+      "It's me",
+      "It's a student",
+      "It's a teacher",
+      "It's a name",
+      "It's you",
+      "It's him",
+      "It's her",
+      "It's a friend",
+      "I eat",
+      "You drink",
     ]);
-    expect(unit.cards.slice(13, 17).map((card) => card.english)).toEqual([
+    expect(unit.cards.slice(10, 14).map((card) => card.english)).toEqual([
       "I am a student",
       "You are a student",
       "He is a student",
       "She is a student",
     ]);
+  });
+
+  it("keeps rebuilt foundation units off cold vocabulary intro cards", () => {
+    for (let unitId = 1; unitId <= 7; unitId += 1) {
+      const unit = unitModules[unitModulePath(unitId)].default;
+      expect(unit.cards.some((card) => card.grammarTags?.includes("vocabulary introduction")), `unit ${unitId}`).toBe(false);
+      expect(unit.cards.some((card) => card.line.length === 1), `unit ${unitId}`).toBe(false);
+    }
+  });
+
+  it("interleaves Unit 4 negative identity with movement verbs", () => {
+    const unit = unitModules[unitModulePath(4)].default;
+    const firstSeen = firstWordPositions(4);
+    const firstMovementCards = unit.cards.slice(0, 30).filter((card) => card.tokens?.some((token) => token.wordId === "iku" || token.wordId === "kuru"));
+
+    expect(firstSeen.get("iku")).toBeLessThanOrEqual(20);
+    expect(firstSeen.get("kuru")).toBeLessThanOrEqual(20);
+    expect(firstMovementCards.length).toBeGreaterThanOrEqual(4);
+    expect(unit.cards.slice(0, 40).some((card) => card.english.includes("not"))).toBe(true);
   });
 
   it("keeps Unit 1 off bare to-and-choice fragments", () => {

@@ -68,6 +68,12 @@ short `Vます` action practice with known people, objects, places, or time word
 Keep the frames modular: one stable sentence shape, one swapped noun/person/place
 slot, and one current or already-known high-value verb.
 
+Do not open rebuilt foundation units with isolated vocabulary atoms. Start with
+immediate sentence context: review/helper words first when the unit has earlier
+material available, then weave current words into short familiar frames. First
+exposures should still be gentle and mostly one new learner-facing element at a
+time, but the card should feel like Japanese, not a glossary row.
+
 Units 8-14 may still include one or two fixed `Vます` action-preview cards. Those
 preview cards should reuse known verb identities from Units 1-7 rather than
 introducing hidden new verb vocabulary.
@@ -180,6 +186,8 @@ Before authoring cards for a unit, confirm:
 - Current-unit and review-due words have enough repetition to feel intentionally drilled.
 - The set is common and useful enough for a beginner-to-intermediate journey.
 - Current-unit words are introduced before card 40.
+- Current-unit words first appear in sentence context rather than single-token
+  vocabulary cards.
 - New grammar and due SRS returns appear before card 60.
 - Late cards mix known material rather than introducing new learner-facing words
   or grammar.

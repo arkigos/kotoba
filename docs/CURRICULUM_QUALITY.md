@@ -71,11 +71,16 @@ certification claims. Treat them as Can-do alignment checks:
 
 A strong unit usually has:
 
-1. A short landing zone for new words with familiar grammar.
-2. Practical cards that use current words with older grammar.
-3. Required review-due words woven into real sentence contexts.
-4. The new grammar focus after the learner has enough nouns to use it.
-5. Mixed cards that feel like questions, claims, memories, ownership, or contrast.
+1. Immediate sentence context, with review/helper vocabulary cushioning the
+   opening whenever earlier words exist.
+2. Current words introduced one learner-facing element at a time in short
+   familiar frames, not isolated atom cards.
+3. Practical cards that keep current words active while rotating noun, person,
+   place, verb, polarity, and question axes.
+4. Required review-due words woven into real sentence contexts.
+5. The new grammar focus after the learner has enough words to use it.
+6. Mixed cards that feel like questions, claims, memories, ownership, action, or
+   contrast.
 
 Do not add more units by volume alone. Units 1-7 are the taste baseline: new
 units should be at least as natural as Unit 6 after its polish pass.
