@@ -52,10 +52,10 @@ certification claims. Treat them as Can-do alignment checks:
   location, time, counting, and basic action sentences feel usable. It may lean
   on `です` early, but no unit should become pure noun-labeling.
 - Every A1 unit needs a verb lane. Units 1-7 are the foundation baseline and
-  include a denser block of early whole-sentence action cards using `Vます` /
-  `Vました`. Units 8-14 include at least two action bridge cards; Units 15-20 may
-  satisfy the lane with `あります` / `います` existence practice when that is the
-  grammar focus.
+  include two real current-unit verb words with repeated short `Vます` action
+  cards. Units 8-14 include at least two action bridge cards that reuse known
+  verb identities; Units 15-20 may satisfy the lane with `あります` / `います`
+  existence practice when that is the grammar focus.
 - A2 should visibly shift into everyday action control: polite verbs, objects,
   destinations, action location, time, frequency, wants, requests, permission,
   prohibition, te-form, and ongoing/resulting state.

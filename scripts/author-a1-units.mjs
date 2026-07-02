@@ -278,15 +278,15 @@ for (const spec of specs) {
 const pools = {
   nouns: [
     ["hon", "book"],
-    ["kagi", "key"],
     ["kaban", "bag"],
     ["shashin", "photo"],
-    ["tokei", "clock"],
     ["mizu", "water"],
     ["ocha", "tea"],
-    ["enpitsu", "pencil"],
-    ["kuruma", "car"],
-    ["jitensha", "bicycle"],
+    ["neko", "cat"],
+    ["inu", "dog"],
+    ["doubutsu", "animal"],
+    ["tabemono", "food"],
+    ["nomimono", "drink"],
   ],
   people: [
     ["sensei", "the teacher"],
@@ -712,14 +712,14 @@ function generateCards(spec) {
     ];
     const timeRows = [
       ["kyou", "yasumi", "Today is a day off."],
-      ["ashita", "tesuto", "Tomorrow is a test."],
+      ["ashita", "shigoto", "Tomorrow is work."],
       ["ima", "shigoto", "Now is work."],
-      ["kyou", "tanjoubi", "Today is a birthday."],
+      ["kyou", "yasumi", "Today is a day off."],
       ["ashita", "ryokou", "Tomorrow is the trip."],
       ["ima", "yasumi", "Now is a break."],
       ["kyou", "shigoto", "Today is work."],
       ["ashita", "gakkou", "Tomorrow is school."],
-      ["ima", "tesuto", "Now is the test."],
+      ["ima", "gakkou", "Now is school."],
       ["kyou", "ryokou", "Today is the trip."],
     ];
     const contrastRows = [
@@ -737,7 +737,7 @@ function generateCards(spec) {
     return simpleUnit(spec, [
       { rows: [...sceneRows, ...timeRows], build: (r, i) => makeCard(spec.id, i, [word(r[0]), jp.wa(), word(r[1]), jp.desu(), jp.p()], r[2], ["AはBです"], "A simple place or time word in context.", facts.question) },
       { rows: cycle([...pools.places.slice(3), ...pools.people, ...pools.nouns], 30), build: (r, i) => makeCard(spec.id, i, [word(r[0]), jp.wa(), word("doko"), jp.desuKa(), jp.q()], `Where is ${nounPhrase(r[1], true)}?`, ["どこですか"], "A where-question scene.", facts.question) },
-      { rows: cycle([["yasumi", "the day off"], ["tesuto", "the test"], ["tanjoubi", "the birthday"], ["ryokou", "the trip"], ["shigoto", "work"], ["gakkou", "school"]], 12), build: (r, i) => makeCard(spec.id, i, [word(r[0]), jp.wa(), word("itsu"), jp.desuKa(), jp.q()], `When is ${r[1]}?`, ["いつですか"], "A when-question scene.", facts.question) },
+      { rows: cycle([["yasumi", "the day off"], ["ryokou", "the trip"], ["shigoto", "work"], ["gakkou", "school"], ["asa", "morning"], ["yoru", "night"]], 12), build: (r, i) => makeCard(spec.id, i, [word(r[0]), jp.wa(), word("itsu"), jp.desuKa(), jp.q()], `When is ${r[1]}?`, ["いつですか"], "A when-question scene.", facts.question) },
       { rows: cycle(contrastRows, 18), build: (r, i) => makeCard(spec.id, i, [word(r[0]), jp.wa(), word(r[1]), jp.desu(), jp.p()], r[2], ["ここ/そこ/あそこ"], "A here-there-over-there contrast.", facts.question) },
     ]);
   }
@@ -845,7 +845,7 @@ function generateCards(spec) {
   }
 
   if (spec.id === 17) {
-    const things = [["hon", "book"], ["kagi", "key"], ["kaban", "bag"], ["shashin", "photo"], ["tokei", "clock"], ["enpitsu", "pencil"], ["kuruma", "car"], ["jitensha", "bicycle"], ["hako", "box"], ["denwa", "telephone"]];
+    const things = [["hon", "book"], ["kaban", "bag"], ["shashin", "photo"], ["mizu", "water"], ["ocha", "tea"], ["neko", "cat"], ["inu", "dog"], ["doubutsu", "animal"], ["hako", "box"], ["denwa", "telephone"]];
     const beings = [...pools.people.slice(0, 6), ["tori", "bird"], ["sakana", "fish"], ["akachan", "baby"]];
     return simpleUnit(spec, [
       { rows: cycle(unitWords, 20), build: (r, i) => { const thing = things[i % things.length]; return makeCard(spec.id, i, [word(r[0]), jp.ni(), word(thing[0]), jp.ga(), jp.arimasu(), jp.p()], existenceEnglish(thing[1], containmentLocation(r[0], r[1])), ["場所にNがあります"], "A thing exists in a new place.", facts.place); } },
@@ -857,7 +857,7 @@ function generateCards(spec) {
 
   if (spec.id === 18) {
     const anchors = [["tsukue", "desk"], ["isu", "chair"], ["hako", "box"], ["mado", "window"], ["doa", "door"], ["ie", "house"], ["gakkou", "school"], ["mise", "shop"], ["toshokan", "library"], ["kouen", "park"]];
-    const items = [["hon", "book"], ["kagi", "key"], ["pen", "pen"], ["chizu", "map"], ["denwa", "telephone"], ["hana_flower", "flower"], ["kaban", "bag"], ["enpitsu", "pencil"], ["tokei", "clock"], ["shashin", "photo"]];
+    const items = [["hon", "book"], ["kaban", "bag"], ["pen", "pen"], ["chizu", "map"], ["denwa", "telephone"], ["hana_flower", "flower"], ["mizu", "water"], ["ocha", "tea"], ["tabemono", "food"], ["shashin", "photo"]];
     const beings = [["neko", "cat"], ["inu", "dog"], ["tori", "bird"], ["akachan", "baby"], ["gakusei", "student"]];
     return simpleUnit(spec, [
       { rows: cycle(unitWords, 20), build: (r, i) => { const anchor = anchors[i % anchors.length]; const otherAnchor = anchors[(i + 1) % anchors.length]; const item = items[i % items.length]; const loc = locationPhrase(r[0], anchor, otherAnchor); return makeCard(spec.id, i, [...loc.parts, jp.ni(), word(item[0]), jp.ga(), jp.arimasu(), jp.p()], existenceEnglish(item[1], loc.english), ["Aの上", "Nがあります"], "A thing exists at a relative location.", facts.loc); } },
@@ -868,7 +868,7 @@ function generateCards(spec) {
   }
 
   if (spec.id === 19) {
-    const things = [["hon", "book"], ["kagi", "key"], ["pen", "pen"], ["sara", "plate"], ["koppu", "cup"], ["hako", "box"], ["hana_flower", "flower"], ["chizu", "map"], ["enpitsu", "pencil"], ["mado", "window"]];
+    const things = [["hon", "book"], ["kaban", "bag"], ["pen", "pen"], ["sara", "plate"], ["koppu", "cup"], ["hako", "box"], ["hana_flower", "flower"], ["chizu", "map"], ["mizu", "water"], ["mado", "window"]];
     return simpleUnit(spec, [
       { rows: cycle(unitWords, 20), build: (r, i) => { const thing = things[i % things.length]; return makeCard(spec.id, i, [word(thing[0]), jp.ga(), word(r[0]), jp.arimasu(), jp.p()], countSentence(r[0], thing[1]), ["basic counters"], "A native counter before `あります`.", facts.count); } },
       { rows: cycle(unitWords, 20), build: (r, i) => { const place = pools.places[i % pools.places.length]; const thing = things[(i + 3) % things.length]; return makeCard(spec.id, i, [word(place[0]), jp.ni(), word(thing[0]), jp.ga(), word(r[0]), jp.arimasu(), jp.p()], countSentence(r[0], thing[1], place[1]), ["場所にNがあります", "basic counters"], "A counted object in a place.", facts.count); } },
@@ -883,7 +883,7 @@ function generateCards(spec) {
     { rows: cycle([...places, ...transport], 20), build: (r, i) => makeCard(spec.id, i, [word(r[0]), jp.wa(), word("doko"), jp.desuKa(), jp.q()], `Where is ${nounPhrase(r[1], true)}?`, ["A1 review", "どこ"], "A practical A1 place question.", facts.review) },
     { rows: cycle(places, 20), build: (r, i) => { const item = transport[i % transport.length]; return makeCard(spec.id, i, [word(r[0]), jp.ni(), word(item[0]), jp.ga(), jp.arimasu(), jp.p()], `There is a ${item[1]} at the ${r[1]}.`, ["A1 review", "Nがあります"], "A practical existence sentence.", facts.review); } },
     { rows: cycle([...places, ...transport], 20), build: (r, i) => { const adj = ["ookii", "chiisai", "atarashii", "furui", "shizuka", "nigiyaka", "kirei", "taisetsu"][i % 8]; return makeCard(spec.id, i, [word(r[0]), jp.wa(), word(adj), jp.desu(), jp.ne(), jp.p()], `${capitalize(nounPhrase(r[1], true))} is ${bareMeaning(lexicon.get(adj).meaning)}, isn't it?`, ["A1 review", "ね"], "A description with a familiar sentence ending.", facts.review); } },
-    { rows: cycle(places, 20), build: (r, i) => { const locId = ["mae", "ushiro", "tonari", "chikaku", "migi", "hidari", "naka", "ue"][i % 8]; const item = ["basu", "densha", "chiketto", "denwa", "pen", "kagi", "hako", "hon"][i % 8]; const loc = locationPhrase(locId, r); const itemMeaning = bareMeaning(lexicon.get(item).meaning); return makeCard(spec.id, i, [...loc.parts, jp.ni(), word(item), jp.ga(), jp.arimasu(), jp.p()], existenceEnglish(itemMeaning, loc.english), ["A1 review", "location nouns"], "A mixed A1 scene sentence.", facts.review); } },
+    { rows: cycle(places, 20), build: (r, i) => { const locId = ["mae", "ushiro", "tonari", "chikaku", "migi", "hidari", "naka", "ue"][i % 8]; const item = ["basu", "densha", "chiketto", "denwa", "pen", "kaban", "hako", "hon"][i % 8]; const loc = locationPhrase(locId, r); const itemMeaning = bareMeaning(lexicon.get(item).meaning); return makeCard(spec.id, i, [...loc.parts, jp.ni(), word(item), jp.ga(), jp.arimasu(), jp.p()], existenceEnglish(itemMeaning, loc.english), ["A1 review", "location nouns"], "A mixed A1 scene sentence.", facts.review); } },
   ]);
 }
 

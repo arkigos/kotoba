@@ -7688,90 +7688,6 @@
     {
       "id": "u033-c132",
       "line": [
-        "日本",
-        "へ",
-        "行きます"
-      ],
-      "tts": [
-        "にほん",
-        "え",
-        "いきます"
-      ],
-      "explain": [
-        "Japan",
-        "destination marker",
-        "go"
-      ],
-      "tokens": [
-        {
-          "surface": "日本",
-          "reading": "にほん",
-          "explain": "Japan",
-          "wordId": "nihon"
-        },
-        {
-          "surface": "へ",
-          "reading": "え",
-          "explain": "destination marker"
-        },
-        {
-          "surface": "行きます",
-          "reading": "いきます",
-          "explain": "go",
-          "wordId": "iku"
-        }
-      ],
-      "english": "I go to the Japan",
-      "fact": "Place review returns inside an A2 movement sentence.",
-      "grammarTags": [
-        "review vocabulary"
-      ]
-    },
-    {
-      "id": "u033-c133",
-      "line": [
-        "アメリカ",
-        "へ",
-        "行きます"
-      ],
-      "tts": [
-        "あめりか",
-        "え",
-        "いきます"
-      ],
-      "explain": [
-        "America",
-        "destination marker",
-        "go"
-      ],
-      "tokens": [
-        {
-          "surface": "アメリカ",
-          "reading": "あめりか",
-          "explain": "America",
-          "wordId": "amerika"
-        },
-        {
-          "surface": "へ",
-          "reading": "え",
-          "explain": "destination marker"
-        },
-        {
-          "surface": "行きます",
-          "reading": "いきます",
-          "explain": "go",
-          "wordId": "iku"
-        }
-      ],
-      "english": "I go to the America",
-      "fact": "Place review returns inside an A2 movement sentence.",
-      "grammarTags": [
-        "review vocabulary"
-      ]
-    },
-    {
-      "id": "u033-c134",
-      "line": [
         "私",
         "は",
         "名前",
@@ -7824,6 +7740,90 @@
       ],
       "english": "I look at a name",
       "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u033-c133",
+      "line": [
+        "私",
+        "は",
+        "食べます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "たべます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "eat"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        }
+      ],
+      "english": "I eat",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u033-c134",
+      "line": [
+        "私",
+        "は",
+        "飲みます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "のみます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "drink"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        }
+      ],
+      "english": "I drink",
+      "fact": "Verb review keeps earlier A2 action words active.",
       "grammarTags": [
         "review vocabulary"
       ]

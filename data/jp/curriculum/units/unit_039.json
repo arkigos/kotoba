@@ -7528,124 +7528,6 @@
       "line": [
         "私",
         "は",
-        "店員",
-        "と",
-        "話します"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "てんいん",
-        "と",
-        "はなします"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "shop clerk",
-        "with; and",
-        "speak"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "店員",
-          "reading": "てんいん",
-          "explain": "shop clerk",
-          "wordId": "tenin"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "with; and"
-        },
-        {
-          "surface": "話します",
-          "reading": "はなします",
-          "explain": "speak",
-          "wordId": "hanasu"
-        }
-      ],
-      "english": "I speak with the shop clerk",
-      "fact": "Person review returns with `と`.",
-      "grammarTags": [
-        "review vocabulary"
-      ]
-    },
-    {
-      "id": "u039-c143",
-      "line": [
-        "私",
-        "は",
-        "駅員",
-        "と",
-        "話します"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "えきいん",
-        "と",
-        "はなします"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "station attendant",
-        "with; and",
-        "speak"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "駅員",
-          "reading": "えきいん",
-          "explain": "station attendant",
-          "wordId": "ekiin"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "with; and"
-        },
-        {
-          "surface": "話します",
-          "reading": "はなします",
-          "explain": "speak",
-          "wordId": "hanasu"
-        }
-      ],
-      "english": "I speak with the station attendant",
-      "fact": "Person review returns with `と`.",
-      "grammarTags": [
-        "review vocabulary"
-      ]
-    },
-    {
-      "id": "u039-c144",
-      "line": [
-        "私",
-        "は",
         "食べ物",
         "を",
         "見ます"
@@ -7701,7 +7583,7 @@
       ]
     },
     {
-      "id": "u039-c145",
+      "id": "u039-c143",
       "line": [
         "私",
         "は",
@@ -7755,6 +7637,90 @@
       ],
       "english": "I look at a drink",
       "fact": "Noun review returns as an object of a familiar action.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u039-c144",
+      "line": [
+        "私",
+        "は",
+        "話します"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "はなします"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "speak"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak",
+          "wordId": "hanasu"
+        }
+      ],
+      "english": "I speak",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u039-c145",
+      "line": [
+        "私",
+        "は",
+        "待ちます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "まちます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "wait"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "待ちます",
+          "reading": "まちます",
+          "explain": "wait",
+          "wordId": "matsu"
+        }
+      ],
+      "english": "I wait",
+      "fact": "Verb review keeps earlier A2 action words active.",
       "grammarTags": [
         "review vocabulary"
       ]

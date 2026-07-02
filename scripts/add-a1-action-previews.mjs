@@ -58,7 +58,9 @@ function reindex(unitId, cards) {
 }
 
 function makePreviews(unitId, lexicon) {
-  const w = (id) => word(lexicon, id);
+  if (unitId <= 7) return [];
+
+  const w = (id) => (lexicon.has(id) ? word(lexicon, id) : grammar(`__missing_${id}`, `__missing_${id}`, "removed preview-only helper"));
   const g = grammar;
   const masu = {
     eat: g("\u98df\u3079\u307e\u3059", "\u305f\u3079\u307e\u3059", "eat; will eat"),

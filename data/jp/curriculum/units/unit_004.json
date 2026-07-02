@@ -33,13 +33,6 @@
       "function": "place"
     },
     {
-      "id": "kaishain",
-      "surface": "会社員",
-      "reading": "かいしゃいん",
-      "meaning": "company employee",
-      "function": "person"
-    },
-    {
       "id": "kodomo",
       "surface": "子供",
       "reading": "こども",
@@ -68,16 +61,273 @@
       "function": "noun"
     },
     {
-      "id": "jitensha",
-      "surface": "自転車",
-      "reading": "じてんしゃ",
-      "meaning": "bicycle",
-      "function": "noun"
+      "id": "iku",
+      "surface": "??",
+      "reading": "??",
+      "meaning": "go",
+      "function": "verb"
+    },
+    {
+      "id": "kuru",
+      "surface": "??",
+      "reading": "??",
+      "meaning": "come",
+      "function": "verb"
     }
   ],
   "cards": [
     {
       "id": "u004-c001",
+      "line": [
+        "店"
+      ],
+      "tts": [
+        "みせ"
+      ],
+      "explain": [
+        "shop"
+      ],
+      "tokens": [
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        }
+      ],
+      "english": "shop",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u004-c002",
+      "line": [
+        "病院"
+      ],
+      "tts": [
+        "びょういん"
+      ],
+      "explain": [
+        "hospital"
+      ],
+      "tokens": [
+        {
+          "surface": "病院",
+          "reading": "びょういん",
+          "explain": "hospital",
+          "wordId": "byouin"
+        }
+      ],
+      "english": "hospital",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u004-c003",
+      "line": [
+        "駅"
+      ],
+      "tts": [
+        "えき"
+      ],
+      "explain": [
+        "station"
+      ],
+      "tokens": [
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "explain": "station",
+          "wordId": "eki"
+        }
+      ],
+      "english": "station",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u004-c004",
+      "line": [
+        "会社"
+      ],
+      "tts": [
+        "かいしゃ"
+      ],
+      "explain": [
+        "company"
+      ],
+      "tokens": [
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "explain": "company",
+          "wordId": "kaisha"
+        }
+      ],
+      "english": "company",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u004-c005",
+      "line": [
+        "子供"
+      ],
+      "tts": [
+        "こども"
+      ],
+      "explain": [
+        "child"
+      ],
+      "tokens": [
+        {
+          "surface": "子供",
+          "reading": "こども",
+          "explain": "child",
+          "wordId": "kodomo"
+        }
+      ],
+      "english": "child",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u004-c006",
+      "line": [
+        "大人"
+      ],
+      "tts": [
+        "おとな"
+      ],
+      "explain": [
+        "adult"
+      ],
+      "tokens": [
+        {
+          "surface": "大人",
+          "reading": "おとな",
+          "explain": "adult",
+          "wordId": "otona"
+        }
+      ],
+      "english": "adult",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u004-c007",
+      "line": [
+        "椅子"
+      ],
+      "tts": [
+        "いす"
+      ],
+      "explain": [
+        "chair"
+      ],
+      "tokens": [
+        {
+          "surface": "椅子",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
+        }
+      ],
+      "english": "chair",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u004-c008",
+      "line": [
+        "机"
+      ],
+      "tts": [
+        "つくえ"
+      ],
+      "explain": [
+        "desk"
+      ],
+      "tokens": [
+        {
+          "surface": "机",
+          "reading": "つくえ",
+          "explain": "desk",
+          "wordId": "tsukue"
+        }
+      ],
+      "english": "desk",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u004-c009",
+      "line": [
+        "??"
+      ],
+      "tts": [
+        "??"
+      ],
+      "explain": [
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "??",
+          "reading": "??",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "go",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u004-c010",
+      "line": [
+        "??"
+      ],
+      "tts": [
+        "??"
+      ],
+      "explain": [
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "??",
+          "reading": "??",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "come",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u004-c011",
       "line": [
         "店",
         "です"
@@ -104,13 +354,13 @@
         }
       ],
       "english": "It's a shop",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u004-c002",
+      "id": "u004-c012",
       "line": [
         "病院",
         "です"
@@ -137,13 +387,13 @@
         }
       ],
       "english": "It's a hospital",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u004-c003",
+      "id": "u004-c013",
       "line": [
         "駅",
         "です"
@@ -170,13 +420,13 @@
         }
       ],
       "english": "It's a station",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u004-c004",
+      "id": "u004-c014",
       "line": [
         "会社",
         "です"
@@ -203,46 +453,13 @@
         }
       ],
       "english": "It's a company",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u004-c005",
-      "line": [
-        "会社員",
-        "です"
-      ],
-      "tts": [
-        "かいしゃいん",
-        "です"
-      ],
-      "explain": [
-        "company employee",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "会社員",
-          "reading": "かいしゃいん",
-          "explain": "company employee",
-          "wordId": "kaishain"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It's a company employee",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
-      "grammarTags": [
-        "Aです"
-      ]
-    },
-    {
-      "id": "u004-c006",
+      "id": "u004-c015",
       "line": [
         "子供",
         "です"
@@ -269,13 +486,13 @@
         }
       ],
       "english": "It's a child",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u004-c007",
+      "id": "u004-c016",
       "line": [
         "大人",
         "です"
@@ -302,13 +519,13 @@
         }
       ],
       "english": "It's an adult",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u004-c008",
+      "id": "u004-c017",
       "line": [
         "椅子",
         "です"
@@ -335,13 +552,13 @@
         }
       ],
       "english": "It's a chair",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u004-c009",
+      "id": "u004-c018",
       "line": [
         "机",
         "です"
@@ -368,880 +585,13 @@
         }
       ],
       "english": "It's a desk",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
-      ]
-    },
-    {
-      "id": "u004-c010",
-      "line": [
-        "自転車",
-        "です"
-      ],
-      "tts": [
-        "じてんしゃ",
-        "です"
-      ],
-      "explain": [
-        "bicycle",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "自転車",
-          "reading": "じてんしゃ",
-          "explain": "bicycle",
-          "wordId": "jitensha"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It's a bicycle",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
-      "grammarTags": [
-        "Aです"
-      ]
-    },
-    {
-      "id": "u004-c011",
-      "line": [
-        "店",
-        "じゃありません"
-      ],
-      "tts": [
-        "みせ",
-        "じゃありません"
-      ],
-      "explain": [
-        "shop",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "店",
-          "reading": "みせ",
-          "explain": "shop",
-          "wordId": "mise"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "It's not a shop",
-      "fact": "`じゃありません` is a contracted polite negative identity phrase.",
-      "grammarTags": [
-        "Aじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c012",
-      "line": [
-        "病院",
-        "じゃありません"
-      ],
-      "tts": [
-        "びょういん",
-        "じゃありません"
-      ],
-      "explain": [
-        "hospital",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "病院",
-          "reading": "びょういん",
-          "explain": "hospital",
-          "wordId": "byouin"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "It's not a hospital",
-      "fact": "`じゃありません` is a contracted polite negative identity phrase.",
-      "grammarTags": [
-        "Aじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c013",
-      "line": [
-        "駅",
-        "じゃありません"
-      ],
-      "tts": [
-        "えき",
-        "じゃありません"
-      ],
-      "explain": [
-        "station",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "駅",
-          "reading": "えき",
-          "explain": "station",
-          "wordId": "eki"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "It's not a station",
-      "fact": "`じゃありません` is a contracted polite negative identity phrase.",
-      "grammarTags": [
-        "Aじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c014",
-      "line": [
-        "会社",
-        "じゃありません"
-      ],
-      "tts": [
-        "かいしゃ",
-        "じゃありません"
-      ],
-      "explain": [
-        "company",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "会社",
-          "reading": "かいしゃ",
-          "explain": "company",
-          "wordId": "kaisha"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "It's not a company",
-      "fact": "`じゃありません` is a contracted polite negative identity phrase.",
-      "grammarTags": [
-        "Aじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c015",
-      "line": [
-        "会社員",
-        "じゃありません"
-      ],
-      "tts": [
-        "かいしゃいん",
-        "じゃありません"
-      ],
-      "explain": [
-        "company employee",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "会社員",
-          "reading": "かいしゃいん",
-          "explain": "company employee",
-          "wordId": "kaishain"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "It's not a company employee",
-      "fact": "`じゃありません` is a contracted polite negative identity phrase.",
-      "grammarTags": [
-        "Aじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c016",
-      "line": [
-        "子供",
-        "じゃありません"
-      ],
-      "tts": [
-        "こども",
-        "じゃありません"
-      ],
-      "explain": [
-        "child",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "子供",
-          "reading": "こども",
-          "explain": "child",
-          "wordId": "kodomo"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "It's not a child",
-      "fact": "`じゃありません` is a contracted polite negative identity phrase.",
-      "grammarTags": [
-        "Aじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c017",
-      "line": [
-        "大人",
-        "じゃありません"
-      ],
-      "tts": [
-        "おとな",
-        "じゃありません"
-      ],
-      "explain": [
-        "adult",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "大人",
-          "reading": "おとな",
-          "explain": "adult",
-          "wordId": "otona"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "It's not an adult",
-      "fact": "`じゃありません` is a contracted polite negative identity phrase.",
-      "grammarTags": [
-        "Aじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c018",
-      "line": [
-        "椅子",
-        "じゃありません"
-      ],
-      "tts": [
-        "いす",
-        "じゃありません"
-      ],
-      "explain": [
-        "chair",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "椅子",
-          "reading": "いす",
-          "explain": "chair",
-          "wordId": "isu"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "It's not a chair",
-      "fact": "`じゃありません` is a contracted polite negative identity phrase.",
-      "grammarTags": [
-        "Aじゃありません"
       ]
     },
     {
       "id": "u004-c019",
-      "line": [
-        "机",
-        "じゃありません"
-      ],
-      "tts": [
-        "つくえ",
-        "じゃありません"
-      ],
-      "explain": [
-        "desk",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "It's not a desk",
-      "fact": "`じゃありません` is a contracted polite negative identity phrase.",
-      "grammarTags": [
-        "Aじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c020",
-      "line": [
-        "自転車",
-        "じゃありません"
-      ],
-      "tts": [
-        "じてんしゃ",
-        "じゃありません"
-      ],
-      "explain": [
-        "bicycle",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "自転車",
-          "reading": "じてんしゃ",
-          "explain": "bicycle",
-          "wordId": "jitensha"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "It's not a bicycle",
-      "fact": "`じゃありません` is a contracted polite negative identity phrase.",
-      "grammarTags": [
-        "Aじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c021",
-      "line": [
-        "店",
-        "に",
-        "行きます"
-      ],
-      "tts": [
-        "みせ",
-        "に",
-        "いきます"
-      ],
-      "explain": [
-        "shop",
-        "destination marker",
-        "go; will go"
-      ],
-      "tokens": [
-        {
-          "surface": "店",
-          "reading": "みせ",
-          "explain": "shop",
-          "wordId": "mise"
-        },
-        {
-          "surface": "に",
-          "reading": "に",
-          "explain": "destination marker"
-        },
-        {
-          "surface": "行きます",
-          "reading": "いきます",
-          "explain": "go; will go"
-        }
-      ],
-      "english": "I go to the shop",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u004-c022",
-      "line": [
-        "病院",
-        "に",
-        "行きます"
-      ],
-      "tts": [
-        "びょういん",
-        "に",
-        "いきます"
-      ],
-      "explain": [
-        "hospital",
-        "destination marker",
-        "go; will go"
-      ],
-      "tokens": [
-        {
-          "surface": "病院",
-          "reading": "びょういん",
-          "explain": "hospital",
-          "wordId": "byouin"
-        },
-        {
-          "surface": "に",
-          "reading": "に",
-          "explain": "destination marker"
-        },
-        {
-          "surface": "行きます",
-          "reading": "いきます",
-          "explain": "go; will go"
-        }
-      ],
-      "english": "I go to the hospital",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u004-c023",
-      "line": [
-        "駅",
-        "で",
-        "待ちます"
-      ],
-      "tts": [
-        "えき",
-        "で",
-        "まちます"
-      ],
-      "explain": [
-        "station",
-        "action location marker",
-        "wait"
-      ],
-      "tokens": [
-        {
-          "surface": "駅",
-          "reading": "えき",
-          "explain": "station",
-          "wordId": "eki"
-        },
-        {
-          "surface": "で",
-          "reading": "で",
-          "explain": "action location marker"
-        },
-        {
-          "surface": "待ちます",
-          "reading": "まちます",
-          "explain": "wait"
-        }
-      ],
-      "english": "I wait at the station",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u004-c024",
-      "line": [
-        "会社",
-        "で",
-        "働きます"
-      ],
-      "tts": [
-        "かいしゃ",
-        "で",
-        "はたらきます"
-      ],
-      "explain": [
-        "company",
-        "action location marker",
-        "work"
-      ],
-      "tokens": [
-        {
-          "surface": "会社",
-          "reading": "かいしゃ",
-          "explain": "company",
-          "wordId": "kaisha"
-        },
-        {
-          "surface": "で",
-          "reading": "で",
-          "explain": "action location marker"
-        },
-        {
-          "surface": "働きます",
-          "reading": "はたらきます",
-          "explain": "work"
-        }
-      ],
-      "english": "I work at the company",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u004-c025",
-      "line": [
-        "会社員",
-        "は",
-        "働きます"
-      ],
-      "tts": [
-        "かいしゃいん",
-        "わ",
-        "はたらきます"
-      ],
-      "explain": [
-        "company employee",
-        "topic marker",
-        "work"
-      ],
-      "tokens": [
-        {
-          "surface": "会社員",
-          "reading": "かいしゃいん",
-          "explain": "company employee",
-          "wordId": "kaishain"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "働きます",
-          "reading": "はたらきます",
-          "explain": "work"
-        }
-      ],
-      "english": "The company employee works",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u004-c026",
-      "line": [
-        "子供",
-        "は",
-        "来ます"
-      ],
-      "tts": [
-        "こども",
-        "わ",
-        "きます"
-      ],
-      "explain": [
-        "child",
-        "topic marker",
-        "come; will come"
-      ],
-      "tokens": [
-        {
-          "surface": "子供",
-          "reading": "こども",
-          "explain": "child",
-          "wordId": "kodomo"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "来ます",
-          "reading": "きます",
-          "explain": "come; will come"
-        }
-      ],
-      "english": "The child comes",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u004-c027",
-      "line": [
-        "大人",
-        "は",
-        "行きます"
-      ],
-      "tts": [
-        "おとな",
-        "わ",
-        "いきます"
-      ],
-      "explain": [
-        "adult",
-        "topic marker",
-        "go; will go"
-      ],
-      "tokens": [
-        {
-          "surface": "大人",
-          "reading": "おとな",
-          "explain": "adult",
-          "wordId": "otona"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "行きます",
-          "reading": "いきます",
-          "explain": "go; will go"
-        }
-      ],
-      "english": "The adult goes",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u004-c028",
-      "line": [
-        "椅子",
-        "を",
-        "使います"
-      ],
-      "tts": [
-        "いす",
-        "を",
-        "つかいます"
-      ],
-      "explain": [
-        "chair",
-        "direct object marker",
-        "use"
-      ],
-      "tokens": [
-        {
-          "surface": "椅子",
-          "reading": "いす",
-          "explain": "chair",
-          "wordId": "isu"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "使います",
-          "reading": "つかいます",
-          "explain": "use"
-        }
-      ],
-      "english": "I use the chair",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u004-c029",
-      "line": [
-        "机",
-        "で",
-        "書きます"
-      ],
-      "tts": [
-        "つくえ",
-        "で",
-        "かきます"
-      ],
-      "explain": [
-        "desk",
-        "action location marker",
-        "write; will write"
-      ],
-      "tokens": [
-        {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
-        },
-        {
-          "surface": "で",
-          "reading": "で",
-          "explain": "action location marker"
-        },
-        {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write; will write"
-        }
-      ],
-      "english": "I write at the desk",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u004-c030",
-      "line": [
-        "自転車",
-        "を",
-        "使います"
-      ],
-      "tts": [
-        "じてんしゃ",
-        "を",
-        "つかいます"
-      ],
-      "explain": [
-        "bicycle",
-        "direct object marker",
-        "use"
-      ],
-      "tokens": [
-        {
-          "surface": "自転車",
-          "reading": "じてんしゃ",
-          "explain": "bicycle",
-          "wordId": "jitensha"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "使います",
-          "reading": "つかいます",
-          "explain": "use"
-        }
-      ],
-      "english": "I use the bicycle",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u004-c031",
-      "line": [
-        "店",
-        "で",
-        "買います"
-      ],
-      "tts": [
-        "みせ",
-        "で",
-        "かいます"
-      ],
-      "explain": [
-        "shop",
-        "action location marker",
-        "buy"
-      ],
-      "tokens": [
-        {
-          "surface": "店",
-          "reading": "みせ",
-          "explain": "shop",
-          "wordId": "mise"
-        },
-        {
-          "surface": "で",
-          "reading": "で",
-          "explain": "action location marker"
-        },
-        {
-          "surface": "買います",
-          "reading": "かいます",
-          "explain": "buy"
-        }
-      ],
-      "english": "I buy at the shop",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u004-c032",
-      "line": [
-        "病院",
-        "で",
-        "待ちます"
-      ],
-      "tts": [
-        "びょういん",
-        "で",
-        "まちます"
-      ],
-      "explain": [
-        "hospital",
-        "action location marker",
-        "wait"
-      ],
-      "tokens": [
-        {
-          "surface": "病院",
-          "reading": "びょういん",
-          "explain": "hospital",
-          "wordId": "byouin"
-        },
-        {
-          "surface": "で",
-          "reading": "で",
-          "explain": "action location marker"
-        },
-        {
-          "surface": "待ちます",
-          "reading": "まちます",
-          "explain": "wait"
-        }
-      ],
-      "english": "I wait at the hospital",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u004-c033",
       "line": [
         "店",
         "は",
@@ -1285,13 +635,13 @@
         }
       ],
       "english": "The shop is not a school",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c034",
+      "id": "u004-c020",
       "line": [
         "店",
         "は",
@@ -1335,13 +685,13 @@
         }
       ],
       "english": "The shop is not a house",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c035",
+      "id": "u004-c021",
       "line": [
         "店",
         "は",
@@ -1385,29 +735,29 @@
         }
       ],
       "english": "The shop is not a place",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c036",
+      "id": "u004-c022",
       "line": [
         "店",
         "は",
-        "病院",
+        "医者",
         "じゃありません"
       ],
       "tts": [
         "みせ",
         "わ",
-        "びょういん",
+        "いしゃ",
         "じゃありません"
       ],
       "explain": [
         "shop",
         "topic marker",
-        "hospital",
+        "doctor",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
@@ -1423,10 +773,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "病院",
-          "reading": "びょういん",
-          "explain": "hospital",
-          "wordId": "byouin"
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
         },
         {
           "surface": "じゃありません",
@@ -1434,30 +784,30 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The shop is not a hospital",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The shop is not a doctor",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c037",
+      "id": "u004-c023",
       "line": [
         "店",
         "は",
-        "駅",
+        "学生",
         "じゃありません"
       ],
       "tts": [
         "みせ",
         "わ",
-        "えき",
+        "がくせい",
         "じゃありません"
       ],
       "explain": [
         "shop",
         "topic marker",
-        "station",
+        "student",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
@@ -1473,10 +823,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "駅",
-          "reading": "えき",
-          "explain": "station",
-          "wordId": "eki"
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
         },
         {
           "surface": "じゃありません",
@@ -1484,30 +834,30 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The shop is not a station",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The shop is not a student",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c038",
+      "id": "u004-c024",
       "line": [
         "店",
         "は",
-        "会社",
+        "先生",
         "じゃありません"
       ],
       "tts": [
         "みせ",
         "わ",
-        "かいしゃ",
+        "せんせい",
         "じゃありません"
       ],
       "explain": [
         "shop",
         "topic marker",
-        "company",
+        "teacher",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
@@ -1523,10 +873,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "会社",
-          "reading": "かいしゃ",
-          "explain": "company",
-          "wordId": "kaisha"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
         },
         {
           "surface": "じゃありません",
@@ -1534,38 +884,38 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The shop is not a company",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The shop is not a teacher",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c039",
+      "id": "u004-c025",
       "line": [
-        "病院",
+        "店",
         "は",
-        "学校",
+        "本",
         "じゃありません"
       ],
       "tts": [
-        "びょういん",
+        "みせ",
         "わ",
-        "がっこう",
+        "ほん",
         "じゃありません"
       ],
       "explain": [
-        "hospital",
+        "shop",
         "topic marker",
-        "school",
+        "book",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
         {
-          "surface": "病院",
-          "reading": "びょういん",
-          "explain": "hospital",
-          "wordId": "byouin"
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
         },
         {
           "surface": "は",
@@ -1573,10 +923,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou"
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
         },
         {
           "surface": "じゃありません",
@@ -1584,14 +934,14 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The hospital is not a school",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The shop is not a book",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c040",
+      "id": "u004-c026",
       "line": [
         "病院",
         "は",
@@ -1635,13 +985,13 @@
         }
       ],
       "english": "The hospital is not a house",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c041",
+      "id": "u004-c027",
       "line": [
         "病院",
         "は",
@@ -1685,29 +1035,29 @@
         }
       ],
       "english": "The hospital is not a place",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c042",
+      "id": "u004-c028",
       "line": [
         "病院",
         "は",
-        "店",
+        "医者",
         "じゃありません"
       ],
       "tts": [
         "びょういん",
         "わ",
-        "みせ",
+        "いしゃ",
         "じゃありません"
       ],
       "explain": [
         "hospital",
         "topic marker",
-        "shop",
+        "doctor",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
@@ -1723,10 +1073,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "店",
-          "reading": "みせ",
-          "explain": "shop",
-          "wordId": "mise"
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
         },
         {
           "surface": "じゃありません",
@@ -1734,30 +1084,30 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The hospital is not a shop",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The hospital is not a doctor",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c043",
+      "id": "u004-c029",
       "line": [
         "病院",
         "は",
-        "駅",
+        "学生",
         "じゃありません"
       ],
       "tts": [
         "びょういん",
         "わ",
-        "えき",
+        "がくせい",
         "じゃありません"
       ],
       "explain": [
         "hospital",
         "topic marker",
-        "station",
+        "student",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
@@ -1773,10 +1123,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "駅",
-          "reading": "えき",
-          "explain": "station",
-          "wordId": "eki"
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
         },
         {
           "surface": "じゃありません",
@@ -1784,30 +1134,30 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The hospital is not a station",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The hospital is not a student",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c044",
+      "id": "u004-c030",
       "line": [
         "病院",
         "は",
-        "会社",
+        "先生",
         "じゃありません"
       ],
       "tts": [
         "びょういん",
         "わ",
-        "かいしゃ",
+        "せんせい",
         "じゃありません"
       ],
       "explain": [
         "hospital",
         "topic marker",
-        "company",
+        "teacher",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
@@ -1823,10 +1173,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "会社",
-          "reading": "かいしゃ",
-          "explain": "company",
-          "wordId": "kaisha"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
         },
         {
           "surface": "じゃありません",
@@ -1834,38 +1184,38 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The hospital is not a company",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The hospital is not a teacher",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c045",
+      "id": "u004-c031",
       "line": [
-        "駅",
+        "病院",
         "は",
-        "学校",
+        "本",
         "じゃありません"
       ],
       "tts": [
-        "えき",
+        "びょういん",
         "わ",
-        "がっこう",
+        "ほん",
         "じゃありません"
       ],
       "explain": [
-        "station",
+        "hospital",
         "topic marker",
-        "school",
+        "book",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
         {
-          "surface": "駅",
-          "reading": "えき",
-          "explain": "station",
-          "wordId": "eki"
+          "surface": "病院",
+          "reading": "びょういん",
+          "explain": "hospital",
+          "wordId": "byouin"
         },
         {
           "surface": "は",
@@ -1873,10 +1223,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou"
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
         },
         {
           "surface": "じゃありません",
@@ -1884,38 +1234,38 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The station is not a school",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The hospital is not a book",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c046",
+      "id": "u004-c032",
       "line": [
-        "駅",
+        "病院",
         "は",
-        "家",
+        "動物",
         "じゃありません"
       ],
       "tts": [
-        "えき",
+        "びょういん",
         "わ",
-        "いえ",
+        "どうぶつ",
         "じゃありません"
       ],
       "explain": [
-        "station",
+        "hospital",
         "topic marker",
-        "house; home",
+        "animal",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
         {
-          "surface": "駅",
-          "reading": "えき",
-          "explain": "station",
-          "wordId": "eki"
+          "surface": "病院",
+          "reading": "びょういん",
+          "explain": "hospital",
+          "wordId": "byouin"
         },
         {
           "surface": "は",
@@ -1923,10 +1273,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie"
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
         },
         {
           "surface": "じゃありません",
@@ -1934,14 +1284,14 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The station is not a house",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The hospital is not an animal",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c047",
+      "id": "u004-c033",
       "line": [
         "駅",
         "は",
@@ -1985,29 +1335,29 @@
         }
       ],
       "english": "The station is not a place",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c048",
+      "id": "u004-c034",
       "line": [
         "駅",
         "は",
-        "店",
+        "医者",
         "じゃありません"
       ],
       "tts": [
         "えき",
         "わ",
-        "みせ",
+        "いしゃ",
         "じゃありません"
       ],
       "explain": [
         "station",
         "topic marker",
-        "shop",
+        "doctor",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
@@ -2023,10 +1373,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "店",
-          "reading": "みせ",
-          "explain": "shop",
-          "wordId": "mise"
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
         },
         {
           "surface": "じゃありません",
@@ -2034,30 +1384,30 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The station is not a shop",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The station is not a doctor",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c049",
+      "id": "u004-c035",
       "line": [
         "駅",
         "は",
-        "病院",
+        "学生",
         "じゃありません"
       ],
       "tts": [
         "えき",
         "わ",
-        "びょういん",
+        "がくせい",
         "じゃありません"
       ],
       "explain": [
         "station",
         "topic marker",
-        "hospital",
+        "student",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
@@ -2073,10 +1423,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "病院",
-          "reading": "びょういん",
-          "explain": "hospital",
-          "wordId": "byouin"
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
         },
         {
           "surface": "じゃありません",
@@ -2084,44 +1434,233 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The station is not a hospital",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The station is not a student",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c050",
+      "id": "u004-c036",
       "line": [
         "駅",
         "は",
+        "先生",
+        "じゃありません"
+      ],
+      "tts": [
+        "えき",
+        "わ",
+        "せんせい",
+        "じゃありません"
+      ],
+      "explain": [
+        "station",
+        "topic marker",
+        "teacher",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "explain": "station",
+          "wordId": "eki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The station is not a teacher",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c037",
+      "line": [
+        "駅",
+        "は",
+        "本",
+        "じゃありません"
+      ],
+      "tts": [
+        "えき",
+        "わ",
+        "ほん",
+        "じゃありません"
+      ],
+      "explain": [
+        "station",
+        "topic marker",
+        "book",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "explain": "station",
+          "wordId": "eki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The station is not a book",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c038",
+      "line": [
+        "駅",
+        "は",
+        "動物",
+        "じゃありません"
+      ],
+      "tts": [
+        "えき",
+        "わ",
+        "どうぶつ",
+        "じゃありません"
+      ],
+      "explain": [
+        "station",
+        "topic marker",
+        "animal",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "explain": "station",
+          "wordId": "eki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The station is not an animal",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c039",
+      "line": [
+        "駅",
+        "は",
+        "学校",
+        "じゃありません"
+      ],
+      "tts": [
+        "えき",
+        "わ",
+        "がっこう",
+        "じゃありません"
+      ],
+      "explain": [
+        "station",
+        "topic marker",
+        "school",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "explain": "station",
+          "wordId": "eki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The station is not a school",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c040",
+      "line": [
         "会社",
+        "は",
+        "医者",
         "じゃありません"
       ],
       "tts": [
-        "えき",
-        "わ",
         "かいしゃ",
+        "わ",
+        "いしゃ",
         "じゃありません"
       ],
       "explain": [
-        "station",
-        "topic marker",
         "company",
+        "topic marker",
+        "doctor",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
-        {
-          "surface": "駅",
-          "reading": "えき",
-          "explain": "station",
-          "wordId": "eki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
         {
           "surface": "会社",
           "reading": "かいしゃ",
@@ -2129,19 +1668,230 @@
           "wordId": "kaisha"
         },
         {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
           "surface": "じゃありません",
           "reading": "じゃありません",
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The station is not a company",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The company is not a doctor",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c051",
+      "id": "u004-c041",
+      "line": [
+        "会社",
+        "は",
+        "学生",
+        "じゃありません"
+      ],
+      "tts": [
+        "かいしゃ",
+        "わ",
+        "がくせい",
+        "じゃありません"
+      ],
+      "explain": [
+        "company",
+        "topic marker",
+        "student",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "explain": "company",
+          "wordId": "kaisha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The company is not a student",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c042",
+      "line": [
+        "会社",
+        "は",
+        "先生",
+        "じゃありません"
+      ],
+      "tts": [
+        "かいしゃ",
+        "わ",
+        "せんせい",
+        "じゃありません"
+      ],
+      "explain": [
+        "company",
+        "topic marker",
+        "teacher",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "explain": "company",
+          "wordId": "kaisha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The company is not a teacher",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c043",
+      "line": [
+        "会社",
+        "は",
+        "本",
+        "じゃありません"
+      ],
+      "tts": [
+        "かいしゃ",
+        "わ",
+        "ほん",
+        "じゃありません"
+      ],
+      "explain": [
+        "company",
+        "topic marker",
+        "book",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "explain": "company",
+          "wordId": "kaisha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The company is not a book",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c044",
+      "line": [
+        "会社",
+        "は",
+        "動物",
+        "じゃありません"
+      ],
+      "tts": [
+        "かいしゃ",
+        "わ",
+        "どうぶつ",
+        "じゃありません"
+      ],
+      "explain": [
+        "company",
+        "topic marker",
+        "animal",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "explain": "company",
+          "wordId": "kaisha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The company is not an animal",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c045",
       "line": [
         "会社",
         "は",
@@ -2185,13 +1935,13 @@
         }
       ],
       "english": "The company is not a school",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c052",
+      "id": "u004-c046",
       "line": [
         "会社",
         "は",
@@ -2235,613 +1985,13 @@
         }
       ],
       "english": "The company is not a house",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c053",
-      "line": [
-        "会社",
-        "は",
-        "場所",
-        "じゃありません"
-      ],
-      "tts": [
-        "かいしゃ",
-        "わ",
-        "ばしょ",
-        "じゃありません"
-      ],
-      "explain": [
-        "company",
-        "topic marker",
-        "place",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "会社",
-          "reading": "かいしゃ",
-          "explain": "company",
-          "wordId": "kaisha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The company is not a place",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c054",
-      "line": [
-        "会社",
-        "は",
-        "店",
-        "じゃありません"
-      ],
-      "tts": [
-        "かいしゃ",
-        "わ",
-        "みせ",
-        "じゃありません"
-      ],
-      "explain": [
-        "company",
-        "topic marker",
-        "shop",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "会社",
-          "reading": "かいしゃ",
-          "explain": "company",
-          "wordId": "kaisha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "店",
-          "reading": "みせ",
-          "explain": "shop",
-          "wordId": "mise"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The company is not a shop",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c055",
-      "line": [
-        "会社",
-        "は",
-        "病院",
-        "じゃありません"
-      ],
-      "tts": [
-        "かいしゃ",
-        "わ",
-        "びょういん",
-        "じゃありません"
-      ],
-      "explain": [
-        "company",
-        "topic marker",
-        "hospital",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "会社",
-          "reading": "かいしゃ",
-          "explain": "company",
-          "wordId": "kaisha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "病院",
-          "reading": "びょういん",
-          "explain": "hospital",
-          "wordId": "byouin"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The company is not a hospital",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c056",
-      "line": [
-        "会社",
-        "は",
-        "駅",
-        "じゃありません"
-      ],
-      "tts": [
-        "かいしゃ",
-        "わ",
-        "えき",
-        "じゃありません"
-      ],
-      "explain": [
-        "company",
-        "topic marker",
-        "station",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "会社",
-          "reading": "かいしゃ",
-          "explain": "company",
-          "wordId": "kaisha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "駅",
-          "reading": "えき",
-          "explain": "station",
-          "wordId": "eki"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The company is not a station",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c057",
-      "line": [
-        "会社員",
-        "は",
-        "医者",
-        "じゃありません"
-      ],
-      "tts": [
-        "かいしゃいん",
-        "わ",
-        "いしゃ",
-        "じゃありません"
-      ],
-      "explain": [
-        "company employee",
-        "topic marker",
-        "doctor",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "会社員",
-          "reading": "かいしゃいん",
-          "explain": "company employee",
-          "wordId": "kaishain"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The company employee is not a doctor",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c058",
-      "line": [
-        "会社員",
-        "は",
-        "人",
-        "じゃありません"
-      ],
-      "tts": [
-        "かいしゃいん",
-        "わ",
-        "ひと",
-        "じゃありません"
-      ],
-      "explain": [
-        "company employee",
-        "topic marker",
-        "person",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "会社員",
-          "reading": "かいしゃいん",
-          "explain": "company employee",
-          "wordId": "kaishain"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The company employee is not a person",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c059",
-      "line": [
-        "会社員",
-        "は",
-        "学生",
-        "じゃありません"
-      ],
-      "tts": [
-        "かいしゃいん",
-        "わ",
-        "がくせい",
-        "じゃありません"
-      ],
-      "explain": [
-        "company employee",
-        "topic marker",
-        "student",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "会社員",
-          "reading": "かいしゃいん",
-          "explain": "company employee",
-          "wordId": "kaishain"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The company employee is not a student",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c060",
-      "line": [
-        "会社員",
-        "は",
-        "先生",
-        "じゃありません"
-      ],
-      "tts": [
-        "かいしゃいん",
-        "わ",
-        "せんせい",
-        "じゃありません"
-      ],
-      "explain": [
-        "company employee",
-        "topic marker",
-        "teacher",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "会社員",
-          "reading": "かいしゃいん",
-          "explain": "company employee",
-          "wordId": "kaishain"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The company employee is not a teacher",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c061",
-      "line": [
-        "会社員",
-        "は",
-        "友達",
-        "じゃありません"
-      ],
-      "tts": [
-        "かいしゃいん",
-        "わ",
-        "ともだち",
-        "じゃありません"
-      ],
-      "explain": [
-        "company employee",
-        "topic marker",
-        "friend",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "会社員",
-          "reading": "かいしゃいん",
-          "explain": "company employee",
-          "wordId": "kaishain"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The company employee is not a friend",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c062",
-      "line": [
-        "会社員",
-        "は",
-        "子供",
-        "じゃありません"
-      ],
-      "tts": [
-        "かいしゃいん",
-        "わ",
-        "こども",
-        "じゃありません"
-      ],
-      "explain": [
-        "company employee",
-        "topic marker",
-        "child",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "会社員",
-          "reading": "かいしゃいん",
-          "explain": "company employee",
-          "wordId": "kaishain"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "子供",
-          "reading": "こども",
-          "explain": "child",
-          "wordId": "kodomo"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The company employee is not a child",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c063",
-      "line": [
-        "子供",
-        "は",
-        "医者",
-        "じゃありません"
-      ],
-      "tts": [
-        "こども",
-        "わ",
-        "いしゃ",
-        "じゃありません"
-      ],
-      "explain": [
-        "child",
-        "topic marker",
-        "doctor",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "子供",
-          "reading": "こども",
-          "explain": "child",
-          "wordId": "kodomo"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The child is not a doctor",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c064",
-      "line": [
-        "子供",
-        "は",
-        "人",
-        "じゃありません"
-      ],
-      "tts": [
-        "こども",
-        "わ",
-        "ひと",
-        "じゃありません"
-      ],
-      "explain": [
-        "child",
-        "topic marker",
-        "person",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "子供",
-          "reading": "こども",
-          "explain": "child",
-          "wordId": "kodomo"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The child is not a person",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c065",
+      "id": "u004-c047",
       "line": [
         "子供",
         "は",
@@ -2885,13 +2035,13 @@
         }
       ],
       "english": "The child is not a student",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c066",
+      "id": "u004-c048",
       "line": [
         "子供",
         "は",
@@ -2935,29 +2085,29 @@
         }
       ],
       "english": "The child is not a teacher",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c067",
+      "id": "u004-c049",
       "line": [
         "子供",
         "は",
-        "友達",
+        "本",
         "じゃありません"
       ],
       "tts": [
         "こども",
         "わ",
-        "ともだち",
+        "ほん",
         "じゃありません"
       ],
       "explain": [
         "child",
         "topic marker",
-        "friend",
+        "book",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
@@ -2973,10 +2123,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
         },
         {
           "surface": "じゃありません",
@@ -2984,30 +2134,30 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The child is not a friend",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The child is not a book",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c068",
+      "id": "u004-c050",
       "line": [
         "子供",
         "は",
-        "大人",
+        "動物",
         "じゃありません"
       ],
       "tts": [
         "こども",
         "わ",
-        "おとな",
+        "どうぶつ",
         "じゃありません"
       ],
       "explain": [
         "child",
         "topic marker",
-        "adult",
+        "animal",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
@@ -3023,10 +2173,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "大人",
-          "reading": "おとな",
-          "explain": "adult",
-          "wordId": "otona"
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
         },
         {
           "surface": "じゃありません",
@@ -3034,38 +2184,38 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The child is not an adult",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The child is not an animal",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c069",
+      "id": "u004-c051",
       "line": [
-        "大人",
+        "子供",
         "は",
-        "医者",
+        "学校",
         "じゃありません"
       ],
       "tts": [
-        "おとな",
+        "こども",
         "わ",
-        "いしゃ",
+        "がっこう",
         "じゃありません"
       ],
       "explain": [
-        "adult",
+        "child",
         "topic marker",
-        "doctor",
+        "school",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
         {
-          "surface": "大人",
-          "reading": "おとな",
-          "explain": "adult",
-          "wordId": "otona"
+          "surface": "子供",
+          "reading": "こども",
+          "explain": "child",
+          "wordId": "kodomo"
         },
         {
           "surface": "は",
@@ -3073,10 +2223,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
         },
         {
           "surface": "じゃありません",
@@ -3084,38 +2234,38 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The adult is not a doctor",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The child is not a school",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c070",
+      "id": "u004-c052",
       "line": [
-        "大人",
+        "子供",
         "は",
-        "人",
+        "家",
         "じゃありません"
       ],
       "tts": [
-        "おとな",
+        "こども",
         "わ",
-        "ひと",
+        "いえ",
         "じゃありません"
       ],
       "explain": [
-        "adult",
+        "child",
         "topic marker",
-        "person",
+        "house; home",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
         {
-          "surface": "大人",
-          "reading": "おとな",
-          "explain": "adult",
-          "wordId": "otona"
+          "surface": "子供",
+          "reading": "こども",
+          "explain": "child",
+          "wordId": "kodomo"
         },
         {
           "surface": "は",
@@ -3123,10 +2273,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
         },
         {
           "surface": "じゃありません",
@@ -3134,38 +2284,38 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The adult is not a person",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The child is not a house",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c071",
+      "id": "u004-c053",
       "line": [
-        "大人",
+        "子供",
         "は",
-        "学生",
+        "場所",
         "じゃありません"
       ],
       "tts": [
-        "おとな",
+        "こども",
         "わ",
-        "がくせい",
+        "ばしょ",
         "じゃありません"
       ],
       "explain": [
-        "adult",
+        "child",
         "topic marker",
-        "student",
+        "place",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
         {
-          "surface": "大人",
-          "reading": "おとな",
-          "explain": "adult",
-          "wordId": "otona"
+          "surface": "子供",
+          "reading": "こども",
+          "explain": "child",
+          "wordId": "kodomo"
         },
         {
           "surface": "は",
@@ -3173,10 +2323,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
         },
         {
           "surface": "じゃありません",
@@ -3184,14 +2334,14 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The adult is not a student",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The child is not a place",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c072",
+      "id": "u004-c054",
       "line": [
         "大人",
         "は",
@@ -3235,29 +2385,29 @@
         }
       ],
       "english": "The adult is not a teacher",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c073",
+      "id": "u004-c055",
       "line": [
         "大人",
         "は",
-        "友達",
+        "本",
         "じゃありません"
       ],
       "tts": [
         "おとな",
         "わ",
-        "ともだち",
+        "ほん",
         "じゃありません"
       ],
       "explain": [
         "adult",
         "topic marker",
-        "friend",
+        "book",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
@@ -3273,10 +2423,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
         },
         {
           "surface": "じゃありません",
@@ -3284,30 +2434,30 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The adult is not a friend",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The adult is not a book",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c074",
+      "id": "u004-c056",
       "line": [
         "大人",
         "は",
-        "子供",
+        "動物",
         "じゃありません"
       ],
       "tts": [
         "おとな",
         "わ",
-        "こども",
+        "どうぶつ",
         "じゃありません"
       ],
       "explain": [
         "adult",
         "topic marker",
-        "child",
+        "animal",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
@@ -3323,10 +2473,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "子供",
-          "reading": "こども",
-          "explain": "child",
-          "wordId": "kodomo"
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
         },
         {
           "surface": "じゃありません",
@@ -3334,14 +2484,214 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The adult is not a child",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The adult is not an animal",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c075",
+      "id": "u004-c057",
+      "line": [
+        "大人",
+        "は",
+        "学校",
+        "じゃありません"
+      ],
+      "tts": [
+        "おとな",
+        "わ",
+        "がっこう",
+        "じゃありません"
+      ],
+      "explain": [
+        "adult",
+        "topic marker",
+        "school",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "大人",
+          "reading": "おとな",
+          "explain": "adult",
+          "wordId": "otona"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The adult is not a school",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c058",
+      "line": [
+        "大人",
+        "は",
+        "家",
+        "じゃありません"
+      ],
+      "tts": [
+        "おとな",
+        "わ",
+        "いえ",
+        "じゃありません"
+      ],
+      "explain": [
+        "adult",
+        "topic marker",
+        "house; home",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "大人",
+          "reading": "おとな",
+          "explain": "adult",
+          "wordId": "otona"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The adult is not a house",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c059",
+      "line": [
+        "大人",
+        "は",
+        "場所",
+        "じゃありません"
+      ],
+      "tts": [
+        "おとな",
+        "わ",
+        "ばしょ",
+        "じゃありません"
+      ],
+      "explain": [
+        "adult",
+        "topic marker",
+        "place",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "大人",
+          "reading": "おとな",
+          "explain": "adult",
+          "wordId": "otona"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The adult is not a place",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c060",
+      "line": [
+        "大人",
+        "は",
+        "医者",
+        "じゃありません"
+      ],
+      "tts": [
+        "おとな",
+        "わ",
+        "いしゃ",
+        "じゃありません"
+      ],
+      "explain": [
+        "adult",
+        "topic marker",
+        "doctor",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "大人",
+          "reading": "おとな",
+          "explain": "adult",
+          "wordId": "otona"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The adult is not a doctor",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c061",
       "line": [
         "椅子",
         "は",
@@ -3385,163 +2735,13 @@
         }
       ],
       "english": "The chair is not a book",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c076",
-      "line": [
-        "椅子",
-        "は",
-        "物",
-        "じゃありません"
-      ],
-      "tts": [
-        "いす",
-        "わ",
-        "もの",
-        "じゃありません"
-      ],
-      "explain": [
-        "chair",
-        "topic marker",
-        "thing; object",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "椅子",
-          "reading": "いす",
-          "explain": "chair",
-          "wordId": "isu"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "物",
-          "reading": "もの",
-          "explain": "thing; object",
-          "wordId": "mono"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The chair is not a thing",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c077",
-      "line": [
-        "椅子",
-        "は",
-        "猫",
-        "じゃありません"
-      ],
-      "tts": [
-        "いす",
-        "わ",
-        "ねこ",
-        "じゃありません"
-      ],
-      "explain": [
-        "chair",
-        "topic marker",
-        "cat",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "椅子",
-          "reading": "いす",
-          "explain": "chair",
-          "wordId": "isu"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The chair is not a cat",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c078",
-      "line": [
-        "椅子",
-        "は",
-        "犬",
-        "じゃありません"
-      ],
-      "tts": [
-        "いす",
-        "わ",
-        "いぬ",
-        "じゃありません"
-      ],
-      "explain": [
-        "chair",
-        "topic marker",
-        "dog",
-        "is not; contracted polite negative identity"
-      ],
-      "tokens": [
-        {
-          "surface": "椅子",
-          "reading": "いす",
-          "explain": "chair",
-          "wordId": "isu"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
-        }
-      ],
-      "english": "The chair is not a dog",
-      "fact": "`じゃありません` is a shorter polite negative.",
-      "grammarTags": [
-        "AはBじゃありません"
-      ]
-    },
-    {
-      "id": "u004-c079",
+      "id": "u004-c062",
       "line": [
         "椅子",
         "は",
@@ -3585,29 +2785,29 @@
         }
       ],
       "english": "The chair is not an animal",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c080",
+      "id": "u004-c063",
       "line": [
         "椅子",
         "は",
-        "机",
+        "学校",
         "じゃありません"
       ],
       "tts": [
         "いす",
         "わ",
-        "つくえ",
+        "がっこう",
         "じゃありません"
       ],
       "explain": [
         "chair",
         "topic marker",
-        "desk",
+        "school",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
@@ -3623,10 +2823,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
         },
         {
           "surface": "じゃありません",
@@ -3634,38 +2834,38 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The chair is not a desk",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The chair is not a school",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c081",
+      "id": "u004-c064",
       "line": [
-        "机",
+        "椅子",
         "は",
-        "本",
+        "家",
         "じゃありません"
       ],
       "tts": [
-        "つくえ",
+        "いす",
         "わ",
-        "ほん",
+        "いえ",
         "じゃありません"
       ],
       "explain": [
-        "desk",
+        "chair",
         "topic marker",
-        "book",
+        "house; home",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
         {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
+          "surface": "椅子",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
         },
         {
           "surface": "は",
@@ -3673,10 +2873,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
         },
         {
           "surface": "じゃありません",
@@ -3684,38 +2884,38 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The desk is not a book",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The chair is not a house",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c082",
+      "id": "u004-c065",
       "line": [
-        "机",
+        "椅子",
         "は",
-        "物",
+        "場所",
         "じゃありません"
       ],
       "tts": [
-        "つくえ",
+        "いす",
         "わ",
-        "もの",
+        "ばしょ",
         "じゃありません"
       ],
       "explain": [
-        "desk",
+        "chair",
         "topic marker",
-        "thing; object",
+        "place",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
         {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
+          "surface": "椅子",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
         },
         {
           "surface": "は",
@@ -3723,10 +2923,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "物",
-          "reading": "もの",
-          "explain": "thing; object",
-          "wordId": "mono"
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
         },
         {
           "surface": "じゃありません",
@@ -3734,38 +2934,38 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The desk is not a thing",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The chair is not a place",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c083",
+      "id": "u004-c066",
       "line": [
-        "机",
+        "椅子",
         "は",
-        "猫",
+        "医者",
         "じゃありません"
       ],
       "tts": [
-        "つくえ",
+        "いす",
         "わ",
-        "ねこ",
+        "いしゃ",
         "じゃありません"
       ],
       "explain": [
-        "desk",
+        "chair",
         "topic marker",
-        "cat",
+        "doctor",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
         {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
+          "surface": "椅子",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
         },
         {
           "surface": "は",
@@ -3773,10 +2973,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
         },
         {
           "surface": "じゃありません",
@@ -3784,38 +2984,38 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The desk is not a cat",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The chair is not a doctor",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c084",
+      "id": "u004-c067",
       "line": [
-        "机",
+        "椅子",
         "は",
-        "犬",
+        "学生",
         "じゃありません"
       ],
       "tts": [
-        "つくえ",
+        "いす",
         "わ",
-        "いぬ",
+        "がくせい",
         "じゃありません"
       ],
       "explain": [
-        "desk",
+        "chair",
         "topic marker",
-        "dog",
+        "student",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
         {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
+          "surface": "椅子",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
         },
         {
           "surface": "は",
@@ -3823,10 +3023,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu"
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
         },
         {
           "surface": "じゃありません",
@@ -3834,14 +3034,14 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The desk is not a dog",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The chair is not a student",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c085",
+      "id": "u004-c068",
       "line": [
         "机",
         "は",
@@ -3885,29 +3085,29 @@
         }
       ],
       "english": "The desk is not an animal",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
       ]
     },
     {
-      "id": "u004-c086",
+      "id": "u004-c069",
       "line": [
         "机",
         "は",
-        "椅子",
+        "学校",
         "じゃありません"
       ],
       "tts": [
         "つくえ",
         "わ",
-        "いす",
+        "がっこう",
         "じゃありません"
       ],
       "explain": [
         "desk",
         "topic marker",
-        "chair",
+        "school",
         "is not; contracted polite negative identity"
       ],
       "tokens": [
@@ -3923,10 +3123,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "椅子",
-          "reading": "いす",
-          "explain": "chair",
-          "wordId": "isu"
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
         },
         {
           "surface": "じゃありません",
@@ -3934,88 +3134,831 @@
           "explain": "is not; contracted polite negative identity"
         }
       ],
-      "english": "The desk is not a chair",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "The desk is not a school",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
       "grammarTags": [
         "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c070",
+      "line": [
+        "机",
+        "は",
+        "家",
+        "じゃありません"
+      ],
+      "tts": [
+        "つくえ",
+        "わ",
+        "いえ",
+        "じゃありません"
+      ],
+      "explain": [
+        "desk",
+        "topic marker",
+        "house; home",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "机",
+          "reading": "つくえ",
+          "explain": "desk",
+          "wordId": "tsukue"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The desk is not a house",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c071",
+      "line": [
+        "机",
+        "は",
+        "場所",
+        "じゃありません"
+      ],
+      "tts": [
+        "つくえ",
+        "わ",
+        "ばしょ",
+        "じゃありません"
+      ],
+      "explain": [
+        "desk",
+        "topic marker",
+        "place",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "机",
+          "reading": "つくえ",
+          "explain": "desk",
+          "wordId": "tsukue"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The desk is not a place",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c072",
+      "line": [
+        "机",
+        "は",
+        "医者",
+        "じゃありません"
+      ],
+      "tts": [
+        "つくえ",
+        "わ",
+        "いしゃ",
+        "じゃありません"
+      ],
+      "explain": [
+        "desk",
+        "topic marker",
+        "doctor",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "机",
+          "reading": "つくえ",
+          "explain": "desk",
+          "wordId": "tsukue"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The desk is not a doctor",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c073",
+      "line": [
+        "机",
+        "は",
+        "学生",
+        "じゃありません"
+      ],
+      "tts": [
+        "つくえ",
+        "わ",
+        "がくせい",
+        "じゃありません"
+      ],
+      "explain": [
+        "desk",
+        "topic marker",
+        "student",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "机",
+          "reading": "つくえ",
+          "explain": "desk",
+          "wordId": "tsukue"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The desk is not a student",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c074",
+      "line": [
+        "机",
+        "は",
+        "先生",
+        "じゃありません"
+      ],
+      "tts": [
+        "つくえ",
+        "わ",
+        "せんせい",
+        "じゃありません"
+      ],
+      "explain": [
+        "desk",
+        "topic marker",
+        "teacher",
+        "is not; contracted polite negative identity"
+      ],
+      "tokens": [
+        {
+          "surface": "机",
+          "reading": "つくえ",
+          "explain": "desk",
+          "wordId": "tsukue"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "じゃありません",
+          "reading": "じゃありません",
+          "explain": "is not; contracted polite negative identity"
+        }
+      ],
+      "english": "The desk is not a teacher",
+      "fact": "`じゃありません` is a compact polite negative identity phrase.",
+      "grammarTags": [
+        "AはBじゃありません"
+      ]
+    },
+    {
+      "id": "u004-c075",
+      "line": [
+        "家",
+        "に",
+        "行きます"
+      ],
+      "tts": [
+        "いえ",
+        "に",
+        "いきます"
+      ],
+      "explain": [
+        "house; home",
+        "destination or time marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to a house",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c076",
+      "line": [
+        "あなた",
+        "は",
+        "行きます"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "いきます"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "You go",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c077",
+      "line": [
+        "店",
+        "に",
+        "行きます"
+      ],
+      "tts": [
+        "みせ",
+        "に",
+        "いきます"
+      ],
+      "explain": [
+        "shop",
+        "destination or time marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to a shop",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c078",
+      "line": [
+        "彼女",
+        "は",
+        "行きます"
+      ],
+      "tts": [
+        "かのじょ",
+        "わ",
+        "いきます"
+      ],
+      "explain": [
+        "she; her",
+        "topic marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "She goes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c079",
+      "line": [
+        "駅",
+        "に",
+        "行きます"
+      ],
+      "tts": [
+        "えき",
+        "に",
+        "いきます"
+      ],
+      "explain": [
+        "station",
+        "destination or time marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "explain": "station",
+          "wordId": "eki"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to a station",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c080",
+      "line": [
+        "学生",
+        "は",
+        "行きます"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "いきます"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "The student goes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c081",
+      "line": [
+        "部屋",
+        "に",
+        "行きます"
+      ],
+      "tts": [
+        "へや",
+        "に",
+        "いきます"
+      ],
+      "explain": [
+        "room",
+        "destination or time marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to a room",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c082",
+      "line": [
+        "医者",
+        "は",
+        "行きます"
+      ],
+      "tts": [
+        "いしゃ",
+        "わ",
+        "いきます"
+      ],
+      "explain": [
+        "doctor",
+        "topic marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "The doctor goes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c083",
+      "line": [
+        "学校",
+        "に",
+        "行きます"
+      ],
+      "tts": [
+        "がっこう",
+        "に",
+        "いきます"
+      ],
+      "explain": [
+        "school",
+        "destination or time marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to a school",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c084",
+      "line": [
+        "父",
+        "は",
+        "行きます"
+      ],
+      "tts": [
+        "ちち",
+        "わ",
+        "いきます"
+      ],
+      "explain": [
+        "father",
+        "topic marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "My father goes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c085",
+      "line": [
+        "病院",
+        "に",
+        "行きます"
+      ],
+      "tts": [
+        "びょういん",
+        "に",
+        "いきます"
+      ],
+      "explain": [
+        "hospital",
+        "destination or time marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "病院",
+          "reading": "びょういん",
+          "explain": "hospital",
+          "wordId": "byouin"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to a hospital",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c086",
+      "line": [
+        "あなた",
+        "は",
+        "行きます"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "いきます"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "You go",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
       ]
     },
     {
       "id": "u004-c087",
       "line": [
-        "自転車",
-        "は",
-        "本",
-        "じゃありません"
+        "会社",
+        "に",
+        "行きます"
       ],
       "tts": [
-        "じてんしゃ",
-        "わ",
-        "ほん",
-        "じゃありません"
+        "かいしゃ",
+        "に",
+        "いきます"
       ],
       "explain": [
-        "bicycle",
-        "topic marker",
-        "book",
-        "is not; contracted polite negative identity"
+        "company",
+        "destination or time marker",
+        "go"
       ],
       "tokens": [
         {
-          "surface": "自転車",
-          "reading": "じてんしゃ",
-          "explain": "bicycle",
-          "wordId": "jitensha"
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "explain": "company",
+          "wordId": "kaisha"
         },
         {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
         }
       ],
-      "english": "The bicycle is not a book",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "I go to a company",
+      "fact": "A familiar place cushions the current verb.",
       "grammarTags": [
-        "AはBじゃありません"
+        "early Vます action"
       ]
     },
     {
       "id": "u004-c088",
       "line": [
-        "自転車",
+        "彼女",
         "は",
-        "物",
-        "じゃありません"
+        "行きます"
       ],
       "tts": [
-        "じてんしゃ",
+        "かのじょ",
         "わ",
-        "もの",
-        "じゃありません"
+        "いきます"
       ],
       "explain": [
-        "bicycle",
+        "she; her",
         "topic marker",
-        "thing; object",
-        "is not; contracted polite negative identity"
+        "go"
       ],
       "tokens": [
         {
-          "surface": "自転車",
-          "reading": "じてんしゃ",
-          "explain": "bicycle",
-          "wordId": "jitensha"
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
         },
         {
           "surface": "は",
@@ -4023,49 +3966,800 @@
           "explain": "topic marker"
         },
         {
-          "surface": "物",
-          "reading": "もの",
-          "explain": "thing; object",
-          "wordId": "mono"
-        },
-        {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
         }
       ],
-      "english": "The bicycle is not a thing",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "She goes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
       "grammarTags": [
-        "AはBじゃありません"
+        "early Vます action"
       ]
     },
     {
       "id": "u004-c089",
       "line": [
-        "自転車",
-        "は",
-        "猫",
-        "じゃありません"
+        "家",
+        "に",
+        "行きます"
       ],
       "tts": [
-        "じてんしゃ",
-        "わ",
-        "ねこ",
-        "じゃありません"
+        "いえ",
+        "に",
+        "いきます"
       ],
       "explain": [
-        "bicycle",
-        "topic marker",
-        "cat",
-        "is not; contracted polite negative identity"
+        "house; home",
+        "destination or time marker",
+        "go"
       ],
       "tokens": [
         {
-          "surface": "自転車",
-          "reading": "じてんしゃ",
-          "explain": "bicycle",
-          "wordId": "jitensha"
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to a house",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c090",
+      "line": [
+        "学生",
+        "は",
+        "行きます"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "いきます"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "The student goes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c091",
+      "line": [
+        "家",
+        "に",
+        "来ます"
+      ],
+      "tts": [
+        "いえ",
+        "に",
+        "きます"
+      ],
+      "explain": [
+        "house; home",
+        "destination or time marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "I come to a house",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c092",
+      "line": [
+        "あなた",
+        "は",
+        "来ます"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "きます"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "You come",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c093",
+      "line": [
+        "店",
+        "に",
+        "来ます"
+      ],
+      "tts": [
+        "みせ",
+        "に",
+        "きます"
+      ],
+      "explain": [
+        "shop",
+        "destination or time marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop",
+          "wordId": "mise"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "I come to a shop",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c094",
+      "line": [
+        "彼女",
+        "は",
+        "来ます"
+      ],
+      "tts": [
+        "かのじょ",
+        "わ",
+        "きます"
+      ],
+      "explain": [
+        "she; her",
+        "topic marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "She comes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c095",
+      "line": [
+        "駅",
+        "に",
+        "来ます"
+      ],
+      "tts": [
+        "えき",
+        "に",
+        "きます"
+      ],
+      "explain": [
+        "station",
+        "destination or time marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "駅",
+          "reading": "えき",
+          "explain": "station",
+          "wordId": "eki"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "I come to a station",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c096",
+      "line": [
+        "学生",
+        "は",
+        "来ます"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "きます"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "The student comes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c097",
+      "line": [
+        "部屋",
+        "に",
+        "来ます"
+      ],
+      "tts": [
+        "へや",
+        "に",
+        "きます"
+      ],
+      "explain": [
+        "room",
+        "destination or time marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "I come to a room",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c098",
+      "line": [
+        "医者",
+        "は",
+        "来ます"
+      ],
+      "tts": [
+        "いしゃ",
+        "わ",
+        "きます"
+      ],
+      "explain": [
+        "doctor",
+        "topic marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "The doctor comes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c099",
+      "line": [
+        "学校",
+        "に",
+        "来ます"
+      ],
+      "tts": [
+        "がっこう",
+        "に",
+        "きます"
+      ],
+      "explain": [
+        "school",
+        "destination or time marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "I come to a school",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c100",
+      "line": [
+        "父",
+        "は",
+        "来ます"
+      ],
+      "tts": [
+        "ちち",
+        "わ",
+        "きます"
+      ],
+      "explain": [
+        "father",
+        "topic marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "My father comes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c101",
+      "line": [
+        "病院",
+        "に",
+        "来ます"
+      ],
+      "tts": [
+        "びょういん",
+        "に",
+        "きます"
+      ],
+      "explain": [
+        "hospital",
+        "destination or time marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "病院",
+          "reading": "びょういん",
+          "explain": "hospital",
+          "wordId": "byouin"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "I come to a hospital",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c102",
+      "line": [
+        "あなた",
+        "は",
+        "来ます"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "きます"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "You come",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c103",
+      "line": [
+        "会社",
+        "に",
+        "来ます"
+      ],
+      "tts": [
+        "かいしゃ",
+        "に",
+        "きます"
+      ],
+      "explain": [
+        "company",
+        "destination or time marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "会社",
+          "reading": "かいしゃ",
+          "explain": "company",
+          "wordId": "kaisha"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "I come to a company",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c104",
+      "line": [
+        "彼女",
+        "は",
+        "来ます"
+      ],
+      "tts": [
+        "かのじょ",
+        "わ",
+        "きます"
+      ],
+      "explain": [
+        "she; her",
+        "topic marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "She comes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c105",
+      "line": [
+        "家",
+        "に",
+        "来ます"
+      ],
+      "tts": [
+        "いえ",
+        "に",
+        "きます"
+      ],
+      "explain": [
+        "house; home",
+        "destination or time marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "I come to a house",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c106",
+      "line": [
+        "学生",
+        "は",
+        "来ます"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "きます"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "The student comes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c107",
+      "line": [
+        "私",
+        "は",
+        "猫",
+        "です"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ねこ",
+        "です"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "cat",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
         },
         {
           "surface": "は",
@@ -4079,43 +4773,143 @@
           "wordId": "neko"
         },
         {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
         }
       ],
-      "english": "The bicycle is not a cat",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "I am a cat",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "AはBじゃありません"
+        "AはBです"
       ]
     },
     {
-      "id": "u004-c090",
+      "id": "u004-c108",
       "line": [
-        "自転車",
+        "あなた",
         "は",
-        "犬",
-        "じゃありません"
+        "猫",
+        "です"
       ],
       "tts": [
-        "じてんしゃ",
+        "あなた",
         "わ",
-        "いぬ",
-        "じゃありません"
+        "ねこ",
+        "です"
       ],
       "explain": [
-        "bicycle",
+        "you",
         "topic marker",
-        "dog",
-        "is not; contracted polite negative identity"
+        "cat",
+        "polite identity marker"
       ],
       "tokens": [
         {
-          "surface": "自転車",
-          "reading": "じてんしゃ",
-          "explain": "bicycle",
-          "wordId": "jitensha"
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "You are a cat",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c109",
+      "line": [
+        "彼",
+        "は",
+        "猫",
+        "です"
+      ],
+      "tts": [
+        "かれ",
+        "わ",
+        "ねこ",
+        "です"
+      ],
+      "explain": [
+        "he; him",
+        "topic marker",
+        "cat",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "explain": "he; him",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "He is a cat",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c110",
+      "line": [
+        "あなた",
+        "は",
+        "犬",
+        "です"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "いぬ",
+        "です"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "dog",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
         },
         {
           "surface": "は",
@@ -4129,43 +4923,143 @@
           "wordId": "inu"
         },
         {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
         }
       ],
-      "english": "The bicycle is not a dog",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "You are a dog",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "AはBじゃありません"
+        "AはBです"
       ]
     },
     {
-      "id": "u004-c091",
+      "id": "u004-c111",
       "line": [
-        "自転車",
+        "彼",
         "は",
-        "動物",
-        "じゃありません"
+        "犬",
+        "です"
       ],
       "tts": [
-        "じてんしゃ",
+        "かれ",
         "わ",
-        "どうぶつ",
-        "じゃありません"
+        "いぬ",
+        "です"
       ],
       "explain": [
-        "bicycle",
+        "he; him",
         "topic marker",
-        "animal",
-        "is not; contracted polite negative identity"
+        "dog",
+        "polite identity marker"
       ],
       "tokens": [
         {
-          "surface": "自転車",
-          "reading": "じてんしゃ",
-          "explain": "bicycle",
-          "wordId": "jitensha"
+          "surface": "彼",
+          "reading": "かれ",
+          "explain": "he; him",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "He is a dog",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c112",
+      "line": [
+        "彼女",
+        "は",
+        "犬",
+        "です"
+      ],
+      "tts": [
+        "かのじょ",
+        "わ",
+        "いぬ",
+        "です"
+      ],
+      "explain": [
+        "she; her",
+        "topic marker",
+        "dog",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "She is a dog",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c113",
+      "line": [
+        "彼",
+        "は",
+        "動物",
+        "です"
+      ],
+      "tts": [
+        "かれ",
+        "わ",
+        "どうぶつ",
+        "です"
+      ],
+      "explain": [
+        "he; him",
+        "topic marker",
+        "animal",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "explain": "he; him",
+          "wordId": "yuki"
         },
         {
           "surface": "は",
@@ -4179,43 +5073,43 @@
           "wordId": "doubutsu"
         },
         {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
         }
       ],
-      "english": "The bicycle is not an animal",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "He is an animal",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "AはBじゃありません"
+        "AはBです"
       ]
     },
     {
-      "id": "u004-c092",
+      "id": "u004-c114",
       "line": [
-        "自転車",
+        "彼女",
         "は",
-        "車",
-        "じゃありません"
+        "動物",
+        "です"
       ],
       "tts": [
-        "じてんしゃ",
+        "かのじょ",
         "わ",
-        "くるま",
-        "じゃありません"
+        "どうぶつ",
+        "です"
       ],
       "explain": [
-        "bicycle",
+        "she; her",
         "topic marker",
-        "car",
-        "is not; contracted polite negative identity"
+        "animal",
+        "polite identity marker"
       ],
       "tokens": [
         {
-          "surface": "自転車",
-          "reading": "じてんしゃ",
-          "explain": "bicycle",
-          "wordId": "jitensha"
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
         },
         {
           "surface": "は",
@@ -4223,21 +5117,1025 @@
           "explain": "topic marker"
         },
         {
-          "surface": "車",
-          "reading": "くるま",
-          "explain": "car",
-          "wordId": "kuruma"
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
         },
         {
-          "surface": "じゃありません",
-          "reading": "じゃありません",
-          "explain": "is not; contracted polite negative identity"
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
         }
       ],
-      "english": "The bicycle is not a car",
-      "fact": "`じゃありません` is a shorter polite negative.",
+      "english": "She is an animal",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "AはBじゃありません"
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c115",
+      "line": [
+        "先生",
+        "は",
+        "動物",
+        "です"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "どうぶつ",
+        "です"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "animal",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The teacher is an animal",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c116",
+      "line": [
+        "彼女",
+        "は",
+        "本",
+        "です"
+      ],
+      "tts": [
+        "かのじょ",
+        "わ",
+        "ほん",
+        "です"
+      ],
+      "explain": [
+        "she; her",
+        "topic marker",
+        "book",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "She is a book",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c117",
+      "line": [
+        "先生",
+        "は",
+        "本",
+        "です"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ほん",
+        "です"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "book",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The teacher is a book",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c118",
+      "line": [
+        "学生",
+        "は",
+        "本",
+        "です"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "ほん",
+        "です"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "book",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The student is a book",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c119",
+      "line": [
+        "家",
+        "に",
+        "行きます"
+      ],
+      "tts": [
+        "いえ",
+        "に",
+        "いきます"
+      ],
+      "explain": [
+        "house; home",
+        "destination or time marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to a house",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c120",
+      "line": [
+        "家",
+        "に",
+        "行きます"
+      ],
+      "tts": [
+        "いえ",
+        "に",
+        "いきます"
+      ],
+      "explain": [
+        "house; home",
+        "destination or time marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to a house",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c121",
+      "line": [
+        "家",
+        "に",
+        "行きます"
+      ],
+      "tts": [
+        "いえ",
+        "に",
+        "いきます"
+      ],
+      "explain": [
+        "house; home",
+        "destination or time marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to a house",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c122",
+      "line": [
+        "学校",
+        "に",
+        "行きます"
+      ],
+      "tts": [
+        "がっこう",
+        "に",
+        "いきます"
+      ],
+      "explain": [
+        "school",
+        "destination or time marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to a school",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c123",
+      "line": [
+        "学校",
+        "に",
+        "行きます"
+      ],
+      "tts": [
+        "がっこう",
+        "に",
+        "いきます"
+      ],
+      "explain": [
+        "school",
+        "destination or time marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to a school",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c124",
+      "line": [
+        "学校",
+        "に",
+        "行きます"
+      ],
+      "tts": [
+        "がっこう",
+        "に",
+        "いきます"
+      ],
+      "explain": [
+        "school",
+        "destination or time marker",
+        "go"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "destination or time marker"
+        },
+        {
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
+        }
+      ],
+      "english": "I go to a school",
+      "fact": "A familiar place cushions the current verb.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c125",
+      "line": [
+        "友達",
+        "は",
+        "場所",
+        "です"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "ばしょ",
+        "です"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "place",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The friend is a place",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c126",
+      "line": [
+        "医者",
+        "は",
+        "場所",
+        "です"
+      ],
+      "tts": [
+        "いしゃ",
+        "わ",
+        "ばしょ",
+        "です"
+      ],
+      "explain": [
+        "doctor",
+        "topic marker",
+        "place",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The doctor is a place",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c127",
+      "line": [
+        "母",
+        "は",
+        "場所",
+        "です"
+      ],
+      "tts": [
+        "はは",
+        "わ",
+        "ばしょ",
+        "です"
+      ],
+      "explain": [
+        "mother",
+        "topic marker",
+        "place",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "My mother is a place",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c128",
+      "line": [
+        "医者",
+        "は",
+        "医者",
+        "です"
+      ],
+      "tts": [
+        "いしゃ",
+        "わ",
+        "いしゃ",
+        "です"
+      ],
+      "explain": [
+        "doctor",
+        "topic marker",
+        "doctor",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The doctor is a doctor",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c129",
+      "line": [
+        "母",
+        "は",
+        "医者",
+        "です"
+      ],
+      "tts": [
+        "はは",
+        "わ",
+        "いしゃ",
+        "です"
+      ],
+      "explain": [
+        "mother",
+        "topic marker",
+        "doctor",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "My mother is a doctor",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c130",
+      "line": [
+        "父",
+        "は",
+        "医者",
+        "です"
+      ],
+      "tts": [
+        "ちち",
+        "わ",
+        "いしゃ",
+        "です"
+      ],
+      "explain": [
+        "father",
+        "topic marker",
+        "doctor",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "My father is a doctor",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u004-c131",
+      "line": [
+        "母",
+        "は",
+        "読みます"
+      ],
+      "tts": [
+        "はは",
+        "わ",
+        "よみます"
+      ],
+      "explain": [
+        "mother",
+        "topic marker",
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "My mother reads",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c132",
+      "line": [
+        "父",
+        "は",
+        "読みます"
+      ],
+      "tts": [
+        "ちち",
+        "わ",
+        "よみます"
+      ],
+      "explain": [
+        "father",
+        "topic marker",
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "My father reads",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c133",
+      "line": [
+        "私",
+        "は",
+        "読みます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "よみます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "I read",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c134",
+      "line": [
+        "父",
+        "は",
+        "書きます"
+      ],
+      "tts": [
+        "ちち",
+        "わ",
+        "かきます"
+      ],
+      "explain": [
+        "father",
+        "topic marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "My father writes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c135",
+      "line": [
+        "私",
+        "は",
+        "書きます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "かきます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "I write",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u004-c136",
+      "line": [
+        "あなた",
+        "は",
+        "書きます"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "かきます"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "You write",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
       ]
     }
   ]

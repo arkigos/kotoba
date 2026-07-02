@@ -237,7 +237,7 @@ printTable(rows);
 
 console.log("\nAlignment notes:");
 console.log("- A1 starts simple, but every unit needs a verb lane: Units 1-7 are the denser foundation baseline, later A1 uses action previews or existence practice.");
-console.log("- Early action previews are whole-sentence bridges; a later SRS migration can promote selected core verbs into A1 newWords deliberately.");
+console.log("- Units 1-7 carry two real current-unit verb words each; later A1 action previews reuse those known verb identities as bridges.");
 console.log("- A2 should carry the everyday action load: polite verbs, objects, destinations, time, frequency, wants, requests, permission, te-form, and ongoing state.");
 
 for (const warning of warnings) console.warn(`WARN ${warning}`);

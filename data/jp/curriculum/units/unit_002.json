@@ -61,23 +61,273 @@
       "function": "person"
     },
     {
-      "id": "hito",
-      "surface": "人",
-      "reading": "ひと",
-      "meaning": "person",
-      "function": "person"
+      "id": "yomu",
+      "surface": "??",
+      "reading": "??",
+      "meaning": "read",
+      "function": "verb"
     },
     {
-      "id": "mono",
-      "surface": "物",
-      "reading": "もの",
-      "meaning": "thing; object",
-      "function": "noun"
+      "id": "kaku",
+      "surface": "??",
+      "reading": "??",
+      "meaning": "write",
+      "function": "verb"
     }
   ],
   "cards": [
     {
       "id": "u002-c001",
+      "line": [
+        "猫"
+      ],
+      "tts": [
+        "ねこ"
+      ],
+      "explain": [
+        "cat"
+      ],
+      "tokens": [
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        }
+      ],
+      "english": "cat",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u002-c002",
+      "line": [
+        "犬"
+      ],
+      "tts": [
+        "いぬ"
+      ],
+      "explain": [
+        "dog"
+      ],
+      "tokens": [
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        }
+      ],
+      "english": "dog",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u002-c003",
+      "line": [
+        "動物"
+      ],
+      "tts": [
+        "どうぶつ"
+      ],
+      "explain": [
+        "animal"
+      ],
+      "tokens": [
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        }
+      ],
+      "english": "animal",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u002-c004",
+      "line": [
+        "本"
+      ],
+      "tts": [
+        "ほん"
+      ],
+      "explain": [
+        "book"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        }
+      ],
+      "english": "book",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u002-c005",
+      "line": [
+        "家"
+      ],
+      "tts": [
+        "いえ"
+      ],
+      "explain": [
+        "house; home"
+      ],
+      "tokens": [
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
+        }
+      ],
+      "english": "house",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u002-c006",
+      "line": [
+        "学校"
+      ],
+      "tts": [
+        "がっこう"
+      ],
+      "explain": [
+        "school"
+      ],
+      "tokens": [
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        }
+      ],
+      "english": "school",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u002-c007",
+      "line": [
+        "場所"
+      ],
+      "tts": [
+        "ばしょ"
+      ],
+      "explain": [
+        "place"
+      ],
+      "tokens": [
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        }
+      ],
+      "english": "place",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u002-c008",
+      "line": [
+        "医者"
+      ],
+      "tts": [
+        "いしゃ"
+      ],
+      "explain": [
+        "doctor"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        }
+      ],
+      "english": "doctor",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u002-c009",
+      "line": [
+        "??"
+      ],
+      "tts": [
+        "??"
+      ],
+      "explain": [
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "??",
+          "reading": "??",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "read",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u002-c010",
+      "line": [
+        "??"
+      ],
+      "tts": [
+        "??"
+      ],
+      "explain": [
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "??",
+          "reading": "??",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "write",
+      "fact": "New vocabulary appears by itself before sentence context.",
+      "grammarTags": [
+        "vocabulary introduction"
+      ]
+    },
+    {
+      "id": "u002-c011",
       "line": [
         "猫",
         "です"
@@ -104,13 +354,13 @@
         }
       ],
       "english": "It's a cat",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u002-c002",
+      "id": "u002-c012",
       "line": [
         "犬",
         "です"
@@ -137,13 +387,13 @@
         }
       ],
       "english": "It's a dog",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u002-c003",
+      "id": "u002-c013",
       "line": [
         "動物",
         "です"
@@ -170,13 +420,13 @@
         }
       ],
       "english": "It's an animal",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u002-c004",
+      "id": "u002-c014",
       "line": [
         "本",
         "です"
@@ -203,13 +453,13 @@
         }
       ],
       "english": "It's a book",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u002-c005",
+      "id": "u002-c015",
       "line": [
         "家",
         "です"
@@ -236,13 +486,13 @@
         }
       ],
       "english": "It's a house",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u002-c006",
+      "id": "u002-c016",
       "line": [
         "学校",
         "です"
@@ -269,13 +519,13 @@
         }
       ],
       "english": "It's a school",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u002-c007",
+      "id": "u002-c017",
       "line": [
         "場所",
         "です"
@@ -302,13 +552,13 @@
         }
       ],
       "english": "It's a place",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u002-c008",
+      "id": "u002-c018",
       "line": [
         "医者",
         "です"
@@ -335,79 +585,13 @@
         }
       ],
       "english": "It's a doctor",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
+      "fact": "A new word lands in a familiar identity sentence.",
       "grammarTags": [
         "Aです"
       ]
     },
     {
-      "id": "u002-c009",
-      "line": [
-        "人",
-        "です"
-      ],
-      "tts": [
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It's a person",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
-      "grammarTags": [
-        "Aです"
-      ]
-    },
-    {
-      "id": "u002-c010",
-      "line": [
-        "物",
-        "です"
-      ],
-      "tts": [
-        "もの",
-        "です"
-      ],
-      "explain": [
-        "thing; object",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "物",
-          "reading": "もの",
-          "explain": "thing; object",
-          "wordId": "mono"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It's a thing",
-      "fact": "New vocabulary lands first in a familiar identity sentence.",
-      "grammarTags": [
-        "Aです"
-      ]
-    },
-    {
-      "id": "u002-c011",
+      "id": "u002-c019",
       "line": [
         "猫",
         "は",
@@ -451,13 +635,13 @@
         }
       ],
       "english": "The cat is an animal",
-      "fact": "`は` marks the topic and `です` gives the identity comment.",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
         "AはBです"
       ]
     },
     {
-      "id": "u002-c012",
+      "id": "u002-c020",
       "line": [
         "犬",
         "は",
@@ -501,63 +685,13 @@
         }
       ],
       "english": "The dog is an animal",
-      "fact": "`は` marks the topic and `です` gives the identity comment.",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
         "AはBです"
       ]
     },
     {
-      "id": "u002-c013",
-      "line": [
-        "本",
-        "は",
-        "物",
-        "です"
-      ],
-      "tts": [
-        "ほん",
-        "わ",
-        "もの",
-        "です"
-      ],
-      "explain": [
-        "book",
-        "topic marker",
-        "thing; object",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "物",
-          "reading": "もの",
-          "explain": "thing; object",
-          "wordId": "mono"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The book is a thing",
-      "fact": "`は` marks the topic and `です` gives the identity comment.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u002-c014",
+      "id": "u002-c021",
       "line": [
         "家",
         "は",
@@ -601,13 +735,13 @@
         }
       ],
       "english": "The house is a place",
-      "fact": "`は` marks the topic and `です` gives the identity comment.",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
         "AはBです"
       ]
     },
     {
-      "id": "u002-c015",
+      "id": "u002-c022",
       "line": [
         "学校",
         "は",
@@ -651,489 +785,43 @@
         }
       ],
       "english": "The school is a place",
-      "fact": "`は` marks the topic and `です` gives the identity comment.",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
         "AはBです"
-      ]
-    },
-    {
-      "id": "u002-c016",
-      "line": [
-        "医者",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "いしゃ",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "doctor",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The doctor is a person",
-      "fact": "`は` marks the topic and `です` gives the identity comment.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u002-c017",
-      "line": [
-        "先生",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "せんせい",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "teacher",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The teacher is a person",
-      "fact": "`は` marks the topic and `です` gives the identity comment.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u002-c018",
-      "line": [
-        "学生",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "がくせい",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "student",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The student is a person",
-      "fact": "`は` marks the topic and `です` gives the identity comment.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u002-c019",
-      "line": [
-        "日本",
-        "は",
-        "場所",
-        "です"
-      ],
-      "tts": [
-        "にほん",
-        "わ",
-        "ばしょ",
-        "です"
-      ],
-      "explain": [
-        "Japan",
-        "topic marker",
-        "place",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "日本",
-          "reading": "にほん",
-          "explain": "Japan",
-          "wordId": "nihon"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "Japan is a place",
-      "fact": "`は` marks the topic and `です` gives the identity comment.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u002-c020",
-      "line": [
-        "アメリカ",
-        "は",
-        "場所",
-        "です"
-      ],
-      "tts": [
-        "あめりか",
-        "わ",
-        "ばしょ",
-        "です"
-      ],
-      "explain": [
-        "America",
-        "topic marker",
-        "place",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "アメリカ",
-          "reading": "あめりか",
-          "explain": "America",
-          "wordId": "amerika"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "America is a place",
-      "fact": "`は` marks the topic and `です` gives the identity comment.",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u002-c021",
-      "line": [
-        "先生",
-        "は",
-        "食べます"
-      ],
-      "tts": [
-        "せんせい",
-        "わ",
-        "たべます"
-      ],
-      "explain": [
-        "teacher",
-        "topic marker",
-        "eat; will eat"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat; will eat"
-        }
-      ],
-      "english": "The teacher eats",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u002-c022",
-      "line": [
-        "学生",
-        "は",
-        "読みます"
-      ],
-      "tts": [
-        "がくせい",
-        "わ",
-        "よみます"
-      ],
-      "explain": [
-        "student",
-        "topic marker",
-        "read; will read"
-      ],
-      "tokens": [
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read; will read"
-        }
-      ],
-      "english": "The student reads",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
       ]
     },
     {
       "id": "u002-c023",
       "line": [
-        "猫",
+        "場所",
         "は",
-        "食べます"
-      ],
-      "tts": [
-        "ねこ",
-        "わ",
-        "たべます"
-      ],
-      "explain": [
-        "cat",
-        "topic marker",
-        "eat; will eat"
-      ],
-      "tokens": [
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat; will eat"
-        }
-      ],
-      "english": "The cat eats",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u002-c024",
-      "line": [
-        "犬",
-        "は",
-        "飲みます"
-      ],
-      "tts": [
-        "いぬ",
-        "わ",
-        "のみます"
-      ],
-      "explain": [
-        "dog",
-        "topic marker",
-        "drink; will drink"
-      ],
-      "tokens": [
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink; will drink"
-        }
-      ],
-      "english": "The dog drinks",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u002-c025",
-      "line": [
-        "本",
-        "を",
-        "読みます"
-      ],
-      "tts": [
-        "ほん",
-        "を",
-        "よみます"
-      ],
-      "explain": [
-        "book",
-        "direct object marker",
-        "read; will read"
-      ],
-      "tokens": [
-        {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read; will read"
-        }
-      ],
-      "english": "I read a book",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u002-c026",
-      "line": [
         "学校",
-        "に",
-        "行きます"
+        "です"
       ],
       "tts": [
+        "ばしょ",
+        "わ",
         "がっこう",
-        "に",
-        "いきます"
+        "です"
       ],
       "explain": [
+        "place",
+        "topic marker",
         "school",
-        "destination marker",
-        "go; will go"
+        "polite identity marker"
       ],
       "tokens": [
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
         {
           "surface": "学校",
           "reading": "がっこう",
@@ -1141,81 +829,36 @@
           "wordId": "gakkou"
         },
         {
-          "surface": "に",
-          "reading": "に",
-          "explain": "destination marker"
-        },
-        {
-          "surface": "行きます",
-          "reading": "いきます",
-          "explain": "go; will go"
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
         }
       ],
-      "english": "I go to school",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
+      "english": "The place is a school",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
+        "AはBです"
       ]
     },
     {
-      "id": "u002-c027",
-      "line": [
-        "家",
-        "に",
-        "帰ります"
-      ],
-      "tts": [
-        "いえ",
-        "に",
-        "かえります"
-      ],
-      "explain": [
-        "house; home",
-        "destination marker",
-        "return; go home"
-      ],
-      "tokens": [
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie"
-        },
-        {
-          "surface": "に",
-          "reading": "に",
-          "explain": "destination marker"
-        },
-        {
-          "surface": "帰ります",
-          "reading": "かえります",
-          "explain": "return; go home"
-        }
-      ],
-      "english": "I go home",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u002-c028",
+      "id": "u002-c024",
       "line": [
         "医者",
         "は",
-        "働きます"
+        "先生",
+        "です"
       ],
       "tts": [
         "いしゃ",
         "わ",
-        "はたらきます"
+        "せんせい",
+        "です"
       ],
       "explain": [
         "doctor",
         "topic marker",
-        "work"
+        "teacher",
+        "polite identity marker"
       ],
       "tokens": [
         {
@@ -1230,34 +873,42 @@
           "explain": "topic marker"
         },
         {
-          "surface": "働きます",
-          "reading": "はたらきます",
-          "explain": "work"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
         }
       ],
-      "english": "The doctor works",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
+      "english": "The doctor is a teacher",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
+        "AはBです"
       ]
     },
     {
-      "id": "u002-c029",
+      "id": "u002-c025",
       "line": [
         "先生",
         "は",
-        "書きます"
+        "学生",
+        "です"
       ],
       "tts": [
         "せんせい",
         "わ",
-        "かきます"
+        "がくせい",
+        "です"
       ],
       "explain": [
         "teacher",
         "topic marker",
-        "write; will write"
+        "student",
+        "polite identity marker"
       ],
       "tokens": [
         {
@@ -1272,41 +923,49 @@
           "explain": "topic marker"
         },
         {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write; will write"
-        }
-      ],
-      "english": "The teacher writes",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u002-c030",
-      "line": [
-        "学生",
-        "は",
-        "勉強します"
-      ],
-      "tts": [
-        "がくせい",
-        "わ",
-        "べんきょうします"
-      ],
-      "explain": [
-        "student",
-        "topic marker",
-        "study"
-      ],
-      "tokens": [
-        {
           "surface": "学生",
           "reading": "がくせい",
           "explain": "student",
           "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The teacher is a student",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u002-c026",
+      "line": [
+        "友達",
+        "は",
+        "学生",
+        "です"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "がくせい",
+        "です"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "student",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
         },
         {
           "surface": "は",
@@ -1314,104 +973,25 @@
           "explain": "topic marker"
         },
         {
-          "surface": "勉強します",
-          "reading": "べんきょうします",
-          "explain": "study"
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
         }
       ],
-      "english": "The student studies",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
+      "english": "The friend is a student",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
+        "AはBです"
       ]
     },
     {
-      "id": "u002-c031",
-      "line": [
-        "猫",
-        "を",
-        "見ます"
-      ],
-      "tts": [
-        "ねこ",
-        "を",
-        "みます"
-      ],
-      "explain": [
-        "cat",
-        "direct object marker",
-        "look; see; watch"
-      ],
-      "tokens": [
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "見ます",
-          "reading": "みます",
-          "explain": "look; see; watch"
-        }
-      ],
-      "english": "I look at the cat",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u002-c032",
-      "line": [
-        "犬",
-        "を",
-        "見ます"
-      ],
-      "tts": [
-        "いぬ",
-        "を",
-        "みます"
-      ],
-      "explain": [
-        "dog",
-        "direct object marker",
-        "look; see; watch"
-      ],
-      "tokens": [
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "見ます",
-          "reading": "みます",
-          "explain": "look; see; watch"
-        }
-      ],
-      "english": "I look at the dog",
-      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
-      "grammarTags": [
-        "early masu action preview",
-        "Vます preview"
-      ]
-    },
-    {
-      "id": "u002-c033",
+      "id": "u002-c027",
       "line": [
         "猫",
         "は",
@@ -1471,14 +1051,14 @@
         }
       ],
       "english": "Is the cat an animal?",
-      "fact": "`か` is split out as the question marker.",
+      "fact": "`です` and `か` stay separate so the question marker is visible.",
       "grammarTags": [
         "AはBです",
         "か"
       ]
     },
     {
-      "id": "u002-c034",
+      "id": "u002-c028",
       "line": [
         "犬",
         "は",
@@ -1538,81 +1118,14 @@
         }
       ],
       "english": "Is the dog an animal?",
-      "fact": "`か` is split out as the question marker.",
+      "fact": "`です` and `か` stay separate so the question marker is visible.",
       "grammarTags": [
         "AはBです",
         "か"
       ]
     },
     {
-      "id": "u002-c035",
-      "line": [
-        "本",
-        "は",
-        "物",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "ほん",
-        "わ",
-        "もの",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "book",
-        "topic marker",
-        "thing; object",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "物",
-          "reading": "もの",
-          "explain": "thing; object",
-          "wordId": "mono"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the book a thing?",
-      "fact": "`か` is split out as the question marker.",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u002-c036",
+      "id": "u002-c029",
       "line": [
         "家",
         "は",
@@ -1672,14 +1185,14 @@
         }
       ],
       "english": "Is the house a place?",
-      "fact": "`か` is split out as the question marker.",
+      "fact": "`です` and `か` stay separate so the question marker is visible.",
       "grammarTags": [
         "AはBです",
         "か"
       ]
     },
     {
-      "id": "u002-c037",
+      "id": "u002-c030",
       "line": [
         "学校",
         "は",
@@ -1739,18 +1252,85 @@
         }
       ],
       "english": "Is the school a place?",
-      "fact": "`か` is split out as the question marker.",
+      "fact": "`です` and `か` stay separate so the question marker is visible.",
       "grammarTags": [
         "AはBです",
         "か"
       ]
     },
     {
-      "id": "u002-c038",
+      "id": "u002-c031",
+      "line": [
+        "場所",
+        "は",
+        "学校",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "ばしょ",
+        "わ",
+        "がっこう",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "place",
+        "topic marker",
+        "school",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the place a school?",
+      "fact": "`です` and `か` stay separate so the question marker is visible.",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u002-c032",
       "line": [
         "医者",
         "は",
-        "人",
+        "先生",
         "です",
         "か",
         "？"
@@ -1758,7 +1338,7 @@
       "tts": [
         "いしゃ",
         "わ",
-        "ひと",
+        "せんせい",
         "です",
         "か",
         "？"
@@ -1766,7 +1346,7 @@
       "explain": [
         "doctor",
         "topic marker",
-        "person",
+        "teacher",
         "polite identity marker",
         "question marker",
         "question mark"
@@ -1784,10 +1364,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
         },
         {
           "surface": "です",
@@ -1805,19 +1385,19 @@
           "explain": "question mark"
         }
       ],
-      "english": "Is the doctor a person?",
-      "fact": "`か` is split out as the question marker.",
+      "english": "Is the doctor a teacher?",
+      "fact": "`です` and `か` stay separate so the question marker is visible.",
       "grammarTags": [
         "AはBです",
         "か"
       ]
     },
     {
-      "id": "u002-c039",
+      "id": "u002-c033",
       "line": [
         "先生",
         "は",
-        "人",
+        "学生",
         "です",
         "か",
         "？"
@@ -1825,7 +1405,7 @@
       "tts": [
         "せんせい",
         "わ",
-        "ひと",
+        "がくせい",
         "です",
         "か",
         "？"
@@ -1833,7 +1413,7 @@
       "explain": [
         "teacher",
         "topic marker",
-        "person",
+        "student",
         "polite identity marker",
         "question marker",
         "question mark"
@@ -1851,10 +1431,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
         },
         {
           "surface": "です",
@@ -1872,40 +1452,51 @@
           "explain": "question mark"
         }
       ],
-      "english": "Is the teacher a person?",
-      "fact": "`か` is split out as the question marker.",
+      "english": "Is the teacher a student?",
+      "fact": "`です` and `か` stay separate so the question marker is visible.",
       "grammarTags": [
         "AはBです",
         "か"
       ]
     },
     {
-      "id": "u002-c040",
+      "id": "u002-c034",
       "line": [
-        "学生",
+        "友達",
         "は",
-        "人",
+        "学生",
         "です",
         "か",
         "？"
       ],
       "tts": [
-        "がくせい",
+        "ともだち",
         "わ",
-        "ひと",
+        "がくせい",
         "です",
         "か",
         "？"
       ],
       "explain": [
-        "student",
+        "friend",
         "topic marker",
-        "person",
+        "student",
         "polite identity marker",
         "question marker",
         "question mark"
       ],
       "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
         {
           "surface": "学生",
           "reading": "がくせい",
@@ -1913,17 +1504,6 @@
           "wordId": "gakusei"
         },
         {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
@@ -1939,149 +1519,15 @@
           "explain": "question mark"
         }
       ],
-      "english": "Is the student a person?",
-      "fact": "`か` is split out as the question marker.",
+      "english": "Is the friend a student?",
+      "fact": "`です` and `か` stay separate so the question marker is visible.",
       "grammarTags": [
         "AはBです",
         "か"
       ]
     },
     {
-      "id": "u002-c041",
-      "line": [
-        "日本",
-        "は",
-        "場所",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "にほん",
-        "わ",
-        "ばしょ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "Japan",
-        "topic marker",
-        "place",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "日本",
-          "reading": "にほん",
-          "explain": "Japan",
-          "wordId": "nihon"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is Japan a place?",
-      "fact": "`か` is split out as the question marker.",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u002-c042",
-      "line": [
-        "アメリカ",
-        "は",
-        "場所",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "あめりか",
-        "わ",
-        "ばしょ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "America",
-        "topic marker",
-        "place",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "アメリカ",
-          "reading": "あめりか",
-          "explain": "America",
-          "wordId": "amerika"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is America a place?",
-      "fact": "`か` is split out as the question marker.",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u002-c043",
+      "id": "u002-c035",
       "line": [
         "猫",
         "と",
@@ -2100,7 +1546,7 @@
       ],
       "explain": [
         "cat",
-        "and",
+        "and; with",
         "dog",
         "topic marker",
         "animal",
@@ -2116,7 +1562,7 @@
         {
           "surface": "と",
           "reading": "と",
-          "explain": "and"
+          "explain": "and; with"
         },
         {
           "surface": "犬",
@@ -2148,141 +1594,7 @@
       ]
     },
     {
-      "id": "u002-c044",
-      "line": [
-        "先生",
-        "と",
-        "学生",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "せんせい",
-        "と",
-        "がくせい",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "teacher",
-        "and",
-        "student",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The teacher and the student are people",
-      "fact": "`と` joins two concrete nouns before the topic marker.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c045",
-      "line": [
-        "医者",
-        "と",
-        "友達",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "いしゃ",
-        "と",
-        "ともだち",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "doctor",
-        "and",
-        "friend",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The doctor and the friend are people",
-      "fact": "`と` joins two concrete nouns before the topic marker.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c046",
+      "id": "u002-c036",
       "line": [
         "家",
         "と",
@@ -2301,7 +1613,7 @@
       ],
       "explain": [
         "house; home",
-        "and",
+        "and; with",
         "school",
         "topic marker",
         "place",
@@ -2317,7 +1629,7 @@
         {
           "surface": "と",
           "reading": "と",
-          "explain": "and"
+          "explain": "and; with"
         },
         {
           "surface": "学校",
@@ -2349,687 +1661,64 @@
       ]
     },
     {
-      "id": "u002-c047",
+      "id": "u002-c037",
       "line": [
-        "日本",
-        "と",
-        "アメリカ",
-        "は",
-        "場所",
-        "です"
+        "本",
+        "を",
+        "読みます"
       ],
       "tts": [
-        "にほん",
-        "と",
-        "あめりか",
-        "わ",
-        "ばしょ",
-        "です"
+        "ほん",
+        "を",
+        "よみます"
       ],
       "explain": [
-        "Japan",
-        "and",
-        "America",
-        "topic marker",
-        "place",
-        "polite identity marker"
+        "book",
+        "direct object marker",
+        "read"
       ],
       "tokens": [
         {
-          "surface": "日本",
-          "reading": "にほん",
-          "explain": "Japan",
-          "wordId": "nihon"
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
         },
         {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
         },
         {
-          "surface": "アメリカ",
-          "reading": "あめりか",
-          "explain": "America",
-          "wordId": "amerika"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
         }
       ],
-      "english": "Japan and America are places",
-      "fact": "`と` joins two concrete nouns before the topic marker.",
+      "english": "I read a book",
+      "fact": "A familiar object cushions the current verb.",
       "grammarTags": [
-        "AとBはCです"
+        "early Vます action",
+        "NをVます"
       ]
     },
     {
-      "id": "u002-c048",
-      "line": [
-        "医者",
-        "と",
-        "先生",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "いしゃ",
-        "と",
-        "せんせい",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "doctor",
-        "and",
-        "teacher",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The doctor and the teacher are people",
-      "fact": "`と` joins two concrete nouns before the topic marker.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c049",
-      "line": [
-        "学生",
-        "と",
-        "友達",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "がくせい",
-        "と",
-        "ともだち",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "student",
-        "and",
-        "friend",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The student and the friend are people",
-      "fact": "`と` joins two concrete nouns before the topic marker.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c050",
-      "line": [
-        "先生",
-        "と",
-        "友達",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "せんせい",
-        "と",
-        "ともだち",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "teacher",
-        "and",
-        "friend",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The teacher and the friend are people",
-      "fact": "`と` joins two concrete nouns before the topic marker.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c051",
-      "line": [
-        "学生",
-        "と",
-        "医者",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "がくせい",
-        "と",
-        "いしゃ",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "student",
-        "and",
-        "doctor",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The student and the doctor are people",
-      "fact": "`と` joins two concrete nouns before the topic marker.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c052",
-      "line": [
-        "学校",
-        "と",
-        "家",
-        "は",
-        "場所",
-        "です"
-      ],
-      "tts": [
-        "がっこう",
-        "と",
-        "いえ",
-        "わ",
-        "ばしょ",
-        "です"
-      ],
-      "explain": [
-        "school",
-        "and",
-        "house; home",
-        "topic marker",
-        "place",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The school and the house are places",
-      "fact": "`と` joins two concrete nouns before the topic marker.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c053",
-      "line": [
-        "動物",
-        "は",
-        "猫",
-        "か",
-        "犬",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "どうぶつ",
-        "わ",
-        "ねこ",
-        "か",
-        "いぬ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "animal",
-        "topic marker",
-        "cat",
-        "question marker",
-        "dog",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the animal a cat or a dog?",
-      "fact": "`か` links the choices; the final `か` asks the question.",
-      "grammarTags": [
-        "AはBかCですか"
-      ]
-    },
-    {
-      "id": "u002-c054",
-      "line": [
-        "場所",
-        "は",
-        "日本",
-        "か",
-        "アメリカ",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "ばしょ",
-        "わ",
-        "にほん",
-        "か",
-        "あめりか",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "place",
-        "topic marker",
-        "Japan",
-        "question marker",
-        "America",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "日本",
-          "reading": "にほん",
-          "explain": "Japan",
-          "wordId": "nihon"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "アメリカ",
-          "reading": "あめりか",
-          "explain": "America",
-          "wordId": "amerika"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the place Japan or America?",
-      "fact": "`か` links the choices; the final `か` asks the question.",
-      "grammarTags": [
-        "AはBかCですか"
-      ]
-    },
-    {
-      "id": "u002-c055",
-      "line": [
-        "人",
-        "は",
-        "先生",
-        "か",
-        "医者",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "ひと",
-        "わ",
-        "せんせい",
-        "か",
-        "いしゃ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "person",
-        "topic marker",
-        "teacher",
-        "question marker",
-        "doctor",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the person a teacher or a doctor?",
-      "fact": "`か` links the choices; the final `か` asks the question.",
-      "grammarTags": [
-        "AはBかCですか"
-      ]
-    },
-    {
-      "id": "u002-c056",
+      "id": "u002-c038",
       "line": [
         "あなた",
         "は",
-        "学生",
-        "か",
-        "先生",
-        "です",
-        "か",
-        "？"
+        "読みます"
       ],
       "tts": [
         "あなた",
         "わ",
-        "がくせい",
-        "か",
-        "せんせい",
-        "です",
-        "か",
-        "？"
+        "よみます"
       ],
       "explain": [
         "you",
         "topic marker",
-        "student",
-        "question marker",
-        "teacher",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "read"
       ],
       "tokens": [
         {
@@ -3044,158 +1733,77 @@
           "explain": "topic marker"
         },
         {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
         }
       ],
-      "english": "Are you a student or a teacher?",
-      "fact": "`か` links the choices; the final `か` asks the question.",
+      "english": "You read",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
       "grammarTags": [
-        "AはBかCですか"
+        "early Vます action"
       ]
     },
     {
-      "id": "u002-c057",
+      "id": "u002-c039",
       "line": [
-        "彼",
-        "は",
-        "学生",
-        "か",
-        "友達",
-        "です",
-        "か",
-        "？"
+        "本",
+        "を",
+        "読みます"
       ],
       "tts": [
-        "かれ",
-        "わ",
-        "がくせい",
-        "か",
-        "ともだち",
-        "です",
-        "か",
-        "？"
+        "ほん",
+        "を",
+        "よみます"
       ],
       "explain": [
-        "he; him",
-        "topic marker",
-        "student",
-        "question marker",
-        "friend",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "book",
+        "direct object marker",
+        "read"
       ],
       "tokens": [
         {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
         },
         {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
         },
         {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
         }
       ],
-      "english": "Is he a student or a friend?",
-      "fact": "`か` links the choices; the final `か` asks the question.",
+      "english": "I read a book",
+      "fact": "A familiar object cushions the current verb.",
       "grammarTags": [
-        "AはBかCですか"
+        "early Vます action",
+        "NをVます"
       ]
     },
     {
-      "id": "u002-c058",
+      "id": "u002-c040",
       "line": [
         "彼女",
         "は",
-        "先生",
-        "か",
-        "医者",
-        "です",
-        "か",
-        "？"
+        "読みます"
       ],
       "tts": [
         "かのじょ",
         "わ",
-        "せんせい",
-        "か",
-        "いしゃ",
-        "です",
-        "か",
-        "？"
+        "よみます"
       ],
       "explain": [
         "she; her",
         "topic marker",
-        "teacher",
-        "question marker",
-        "doctor",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "read"
       ],
       "tokens": [
         {
@@ -3210,1875 +1818,34 @@
           "explain": "topic marker"
         },
         {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
         }
       ],
-      "english": "Is she a teacher or a doctor?",
-      "fact": "`か` links the choices; the final `か` asks the question.",
+      "english": "She reads",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
       "grammarTags": [
-        "AはBかCですか"
+        "early Vます action"
       ]
     },
     {
-      "id": "u002-c059",
-      "line": [
-        "友達",
-        "は",
-        "学生",
-        "か",
-        "先生",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "ともだち",
-        "わ",
-        "がくせい",
-        "か",
-        "せんせい",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "friend",
-        "topic marker",
-        "student",
-        "question marker",
-        "teacher",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the friend a student or a teacher?",
-      "fact": "`か` links the choices; the final `か` asks the question.",
-      "grammarTags": [
-        "AはBかCですか"
-      ]
-    },
-    {
-      "id": "u002-c060",
-      "line": [
-        "場所",
-        "は",
-        "家",
-        "か",
-        "学校",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "ばしょ",
-        "わ",
-        "いえ",
-        "か",
-        "がっこう",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "place",
-        "topic marker",
-        "house; home",
-        "question marker",
-        "school",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the place a house or a school?",
-      "fact": "`か` links the choices; the final `か` asks the question.",
-      "grammarTags": [
-        "AはBかCですか"
-      ]
-    },
-    {
-      "id": "u002-c061",
-      "line": [
-        "医者",
-        "は",
-        "先生",
-        "か",
-        "学生",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "いしゃ",
-        "わ",
-        "せんせい",
-        "か",
-        "がくせい",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "doctor",
-        "topic marker",
-        "teacher",
-        "question marker",
-        "student",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the doctor a teacher or a student?",
-      "fact": "`か` links the choices; the final `か` asks the question.",
-      "grammarTags": [
-        "AはBかCですか"
-      ]
-    },
-    {
-      "id": "u002-c062",
-      "line": [
-        "動物",
-        "は",
-        "犬",
-        "か",
-        "猫",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "どうぶつ",
-        "わ",
-        "いぬ",
-        "か",
-        "ねこ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "animal",
-        "topic marker",
-        "dog",
-        "question marker",
-        "cat",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the animal a dog or a cat?",
-      "fact": "`か` links the choices; the final `か` asks the question.",
-      "grammarTags": [
-        "AはBかCですか"
-      ]
-    },
-    {
-      "id": "u002-c063",
-      "line": [
-        "猫",
-        "と",
-        "犬",
-        "は",
-        "動物",
-        "です"
-      ],
-      "tts": [
-        "ねこ",
-        "と",
-        "いぬ",
-        "わ",
-        "どうぶつ",
-        "です"
-      ],
-      "explain": [
-        "cat",
-        "and",
-        "dog",
-        "topic marker",
-        "animal",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The cat and the dog are animals",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c064",
-      "line": [
-        "先生",
-        "と",
-        "学生",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "せんせい",
-        "と",
-        "がくせい",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "teacher",
-        "and",
-        "student",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The teacher and the student are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c065",
-      "line": [
-        "医者",
-        "と",
-        "友達",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "いしゃ",
-        "と",
-        "ともだち",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "doctor",
-        "and",
-        "friend",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The doctor and the friend are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c066",
-      "line": [
-        "家",
-        "と",
-        "学校",
-        "は",
-        "場所",
-        "です"
-      ],
-      "tts": [
-        "いえ",
-        "と",
-        "がっこう",
-        "わ",
-        "ばしょ",
-        "です"
-      ],
-      "explain": [
-        "house; home",
-        "and",
-        "school",
-        "topic marker",
-        "place",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The house and the school are places",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c067",
-      "line": [
-        "日本",
-        "と",
-        "アメリカ",
-        "は",
-        "場所",
-        "です"
-      ],
-      "tts": [
-        "にほん",
-        "と",
-        "あめりか",
-        "わ",
-        "ばしょ",
-        "です"
-      ],
-      "explain": [
-        "Japan",
-        "and",
-        "America",
-        "topic marker",
-        "place",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "日本",
-          "reading": "にほん",
-          "explain": "Japan",
-          "wordId": "nihon"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "アメリカ",
-          "reading": "あめりか",
-          "explain": "America",
-          "wordId": "amerika"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "Japan and America are places",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c068",
-      "line": [
-        "医者",
-        "と",
-        "先生",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "いしゃ",
-        "と",
-        "せんせい",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "doctor",
-        "and",
-        "teacher",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The doctor and the teacher are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c069",
-      "line": [
-        "学生",
-        "と",
-        "友達",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "がくせい",
-        "と",
-        "ともだち",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "student",
-        "and",
-        "friend",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The student and the friend are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c070",
-      "line": [
-        "先生",
-        "と",
-        "友達",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "せんせい",
-        "と",
-        "ともだち",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "teacher",
-        "and",
-        "friend",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The teacher and the friend are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c071",
-      "line": [
-        "学生",
-        "と",
-        "医者",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "がくせい",
-        "と",
-        "いしゃ",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "student",
-        "and",
-        "doctor",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The student and the doctor are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c072",
-      "line": [
-        "学校",
-        "と",
-        "家",
-        "は",
-        "場所",
-        "です"
-      ],
-      "tts": [
-        "がっこう",
-        "と",
-        "いえ",
-        "わ",
-        "ばしょ",
-        "です"
-      ],
-      "explain": [
-        "school",
-        "and",
-        "house; home",
-        "topic marker",
-        "place",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The school and the house are places",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c073",
-      "line": [
-        "猫",
-        "と",
-        "犬",
-        "は",
-        "動物",
-        "です"
-      ],
-      "tts": [
-        "ねこ",
-        "と",
-        "いぬ",
-        "わ",
-        "どうぶつ",
-        "です"
-      ],
-      "explain": [
-        "cat",
-        "and",
-        "dog",
-        "topic marker",
-        "animal",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The cat and the dog are animals",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c074",
-      "line": [
-        "先生",
-        "と",
-        "学生",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "せんせい",
-        "と",
-        "がくせい",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "teacher",
-        "and",
-        "student",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The teacher and the student are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c075",
-      "line": [
-        "医者",
-        "と",
-        "友達",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "いしゃ",
-        "と",
-        "ともだち",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "doctor",
-        "and",
-        "friend",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The doctor and the friend are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c076",
-      "line": [
-        "家",
-        "と",
-        "学校",
-        "は",
-        "場所",
-        "です"
-      ],
-      "tts": [
-        "いえ",
-        "と",
-        "がっこう",
-        "わ",
-        "ばしょ",
-        "です"
-      ],
-      "explain": [
-        "house; home",
-        "and",
-        "school",
-        "topic marker",
-        "place",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The house and the school are places",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c077",
-      "line": [
-        "日本",
-        "と",
-        "アメリカ",
-        "は",
-        "場所",
-        "です"
-      ],
-      "tts": [
-        "にほん",
-        "と",
-        "あめりか",
-        "わ",
-        "ばしょ",
-        "です"
-      ],
-      "explain": [
-        "Japan",
-        "and",
-        "America",
-        "topic marker",
-        "place",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "日本",
-          "reading": "にほん",
-          "explain": "Japan",
-          "wordId": "nihon"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "アメリカ",
-          "reading": "あめりか",
-          "explain": "America",
-          "wordId": "amerika"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "Japan and America are places",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c078",
-      "line": [
-        "医者",
-        "と",
-        "先生",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "いしゃ",
-        "と",
-        "せんせい",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "doctor",
-        "and",
-        "teacher",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The doctor and the teacher are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c079",
-      "line": [
-        "学生",
-        "と",
-        "友達",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "がくせい",
-        "と",
-        "ともだち",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "student",
-        "and",
-        "friend",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The student and the friend are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c080",
-      "line": [
-        "先生",
-        "と",
-        "友達",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "せんせい",
-        "と",
-        "ともだち",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "teacher",
-        "and",
-        "friend",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The teacher and the friend are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c081",
-      "line": [
-        "学生",
-        "と",
-        "医者",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "がくせい",
-        "と",
-        "いしゃ",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "student",
-        "and",
-        "doctor",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The student and the doctor are people",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c082",
-      "line": [
-        "学校",
-        "と",
-        "家",
-        "は",
-        "場所",
-        "です"
-      ],
-      "tts": [
-        "がっこう",
-        "と",
-        "いえ",
-        "わ",
-        "ばしょ",
-        "です"
-      ],
-      "explain": [
-        "school",
-        "and",
-        "house; home",
-        "topic marker",
-        "place",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and"
-        },
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The school and the house are places",
-      "fact": "`と` joins two nouns before the sentence gives one shared comment.",
-      "grammarTags": [
-        "AとBはCです"
-      ]
-    },
-    {
-      "id": "u002-c083",
-      "line": [
-        "猫",
-        "は",
-        "動物",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "ねこ",
-        "わ",
-        "どうぶつ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "cat",
-        "topic marker",
-        "animal",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the cat an animal?",
-      "fact": "`です` gives the comment, and the final `か` makes it a question.",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u002-c084",
-      "line": [
-        "犬",
-        "は",
-        "動物",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "いぬ",
-        "わ",
-        "どうぶつ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "dog",
-        "topic marker",
-        "animal",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the dog an animal?",
-      "fact": "`です` gives the comment, and the final `か` makes it a question.",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u002-c085",
+      "id": "u002-c041",
       "line": [
         "本",
-        "は",
-        "物",
-        "です",
-        "か",
-        "？"
+        "を",
+        "読みます"
       ],
       "tts": [
         "ほん",
-        "わ",
-        "もの",
-        "です",
-        "か",
-        "？"
+        "を",
+        "よみます"
       ],
       "explain": [
         "book",
-        "topic marker",
-        "thing; object",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "direct object marker",
+        "read"
       ],
       "tokens": [
         {
@@ -5088,64 +1855,1290 @@
           "wordId": "hon"
         },
         {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "I read a book",
+      "fact": "A familiar object cushions the current verb.",
+      "grammarTags": [
+        "early Vます action",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u002-c042",
+      "line": [
+        "学生",
+        "は",
+        "読みます"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "よみます"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
           "surface": "は",
           "reading": "わ",
           "explain": "topic marker"
         },
         {
-          "surface": "物",
-          "reading": "もの",
-          "explain": "thing; object",
-          "wordId": "mono"
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "The student reads",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c043",
+      "line": [
+        "本",
+        "を",
+        "読みます"
+      ],
+      "tts": [
+        "ほん",
+        "を",
+        "よみます"
+      ],
+      "explain": [
+        "book",
+        "direct object marker",
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "I read a book",
+      "fact": "A familiar object cushions the current verb.",
+      "grammarTags": [
+        "early Vます action",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u002-c044",
+      "line": [
+        "医者",
+        "は",
+        "読みます"
+      ],
+      "tts": [
+        "いしゃ",
+        "わ",
+        "よみます"
+      ],
+      "explain": [
+        "doctor",
+        "topic marker",
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "The doctor reads",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c045",
+      "line": [
+        "本",
+        "を",
+        "読みます"
+      ],
+      "tts": [
+        "ほん",
+        "を",
+        "よみます"
+      ],
+      "explain": [
+        "book",
+        "direct object marker",
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "I read a book",
+      "fact": "A familiar object cushions the current verb.",
+      "grammarTags": [
+        "early Vます action",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u002-c046",
+      "line": [
+        "あなた",
+        "は",
+        "読みます"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "よみます"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "You read",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c047",
+      "line": [
+        "本",
+        "を",
+        "読みます"
+      ],
+      "tts": [
+        "ほん",
+        "を",
+        "よみます"
+      ],
+      "explain": [
+        "book",
+        "direct object marker",
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "I read a book",
+      "fact": "A familiar object cushions the current verb.",
+      "grammarTags": [
+        "early Vます action",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u002-c048",
+      "line": [
+        "彼女",
+        "は",
+        "読みます"
+      ],
+      "tts": [
+        "かのじょ",
+        "わ",
+        "よみます"
+      ],
+      "explain": [
+        "she; her",
+        "topic marker",
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "She reads",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c049",
+      "line": [
+        "本",
+        "を",
+        "読みます"
+      ],
+      "tts": [
+        "ほん",
+        "を",
+        "よみます"
+      ],
+      "explain": [
+        "book",
+        "direct object marker",
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "I read a book",
+      "fact": "A familiar object cushions the current verb.",
+      "grammarTags": [
+        "early Vます action",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u002-c050",
+      "line": [
+        "学生",
+        "は",
+        "読みます"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "よみます"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "The student reads",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c051",
+      "line": [
+        "本",
+        "を",
+        "読みます"
+      ],
+      "tts": [
+        "ほん",
+        "を",
+        "よみます"
+      ],
+      "explain": [
+        "book",
+        "direct object marker",
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "I read a book",
+      "fact": "A familiar object cushions the current verb.",
+      "grammarTags": [
+        "early Vます action",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u002-c052",
+      "line": [
+        "医者",
+        "は",
+        "読みます"
+      ],
+      "tts": [
+        "いしゃ",
+        "わ",
+        "よみます"
+      ],
+      "explain": [
+        "doctor",
+        "topic marker",
+        "read"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "The doctor reads",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c053",
+      "line": [
+        "本",
+        "を",
+        "書きます"
+      ],
+      "tts": [
+        "ほん",
+        "を",
+        "かきます"
+      ],
+      "explain": [
+        "book",
+        "direct object marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "I write a book",
+      "fact": "A familiar object cushions the current verb.",
+      "grammarTags": [
+        "early Vます action",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u002-c054",
+      "line": [
+        "あなた",
+        "は",
+        "書きます"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "かきます"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "You write",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c055",
+      "line": [
+        "本",
+        "を",
+        "書きます"
+      ],
+      "tts": [
+        "ほん",
+        "を",
+        "かきます"
+      ],
+      "explain": [
+        "book",
+        "direct object marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "I write a book",
+      "fact": "A familiar object cushions the current verb.",
+      "grammarTags": [
+        "early Vます action",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u002-c056",
+      "line": [
+        "彼女",
+        "は",
+        "書きます"
+      ],
+      "tts": [
+        "かのじょ",
+        "わ",
+        "かきます"
+      ],
+      "explain": [
+        "she; her",
+        "topic marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "She writes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c057",
+      "line": [
+        "本",
+        "を",
+        "書きます"
+      ],
+      "tts": [
+        "ほん",
+        "を",
+        "かきます"
+      ],
+      "explain": [
+        "book",
+        "direct object marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "I write a book",
+      "fact": "A familiar object cushions the current verb.",
+      "grammarTags": [
+        "early Vます action",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u002-c058",
+      "line": [
+        "学生",
+        "は",
+        "書きます"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "かきます"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "The student writes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c059",
+      "line": [
+        "本",
+        "を",
+        "書きます"
+      ],
+      "tts": [
+        "ほん",
+        "を",
+        "かきます"
+      ],
+      "explain": [
+        "book",
+        "direct object marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "I write a book",
+      "fact": "A familiar object cushions the current verb.",
+      "grammarTags": [
+        "early Vます action",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u002-c060",
+      "line": [
+        "医者",
+        "は",
+        "書きます"
+      ],
+      "tts": [
+        "いしゃ",
+        "わ",
+        "かきます"
+      ],
+      "explain": [
+        "doctor",
+        "topic marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "The doctor writes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c061",
+      "line": [
+        "本",
+        "を",
+        "書きます"
+      ],
+      "tts": [
+        "ほん",
+        "を",
+        "かきます"
+      ],
+      "explain": [
+        "book",
+        "direct object marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "I write a book",
+      "fact": "A familiar object cushions the current verb.",
+      "grammarTags": [
+        "early Vます action",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u002-c062",
+      "line": [
+        "あなた",
+        "は",
+        "書きます"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "かきます"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "You write",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c063",
+      "line": [
+        "本",
+        "を",
+        "書きます"
+      ],
+      "tts": [
+        "ほん",
+        "を",
+        "かきます"
+      ],
+      "explain": [
+        "book",
+        "direct object marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "I write a book",
+      "fact": "A familiar object cushions the current verb.",
+      "grammarTags": [
+        "early Vます action",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u002-c064",
+      "line": [
+        "彼女",
+        "は",
+        "書きます"
+      ],
+      "tts": [
+        "かのじょ",
+        "わ",
+        "かきます"
+      ],
+      "explain": [
+        "she; her",
+        "topic marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "She writes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c065",
+      "line": [
+        "本",
+        "を",
+        "書きます"
+      ],
+      "tts": [
+        "ほん",
+        "を",
+        "かきます"
+      ],
+      "explain": [
+        "book",
+        "direct object marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "I write a book",
+      "fact": "A familiar object cushions the current verb.",
+      "grammarTags": [
+        "early Vます action",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u002-c066",
+      "line": [
+        "学生",
+        "は",
+        "書きます"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "かきます"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "The student writes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c067",
+      "line": [
+        "本",
+        "を",
+        "書きます"
+      ],
+      "tts": [
+        "ほん",
+        "を",
+        "かきます"
+      ],
+      "explain": [
+        "book",
+        "direct object marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "I write a book",
+      "fact": "A familiar object cushions the current verb.",
+      "grammarTags": [
+        "early Vます action",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u002-c068",
+      "line": [
+        "医者",
+        "は",
+        "書きます"
+      ],
+      "tts": [
+        "いしゃ",
+        "わ",
+        "かきます"
+      ],
+      "explain": [
+        "doctor",
+        "topic marker",
+        "write"
+      ],
+      "tokens": [
+        {
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "The doctor writes",
+      "fact": "A current verb gets real sentence practice with a familiar subject.",
+      "grammarTags": [
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c069",
+      "line": [
+        "猫",
+        "は",
+        "動物",
+        "です"
+      ],
+      "tts": [
+        "ねこ",
+        "わ",
+        "どうぶつ",
+        "です"
+      ],
+      "explain": [
+        "cat",
+        "topic marker",
+        "animal",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
         },
         {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
         }
       ],
-      "english": "Is the book a thing?",
-      "fact": "`です` gives the comment, and the final `か` makes it a question.",
+      "english": "The cat is an animal",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "AはBです",
-        "か"
+        "AはBです"
       ]
     },
     {
-      "id": "u002-c086",
+      "id": "u002-c070",
+      "line": [
+        "犬",
+        "は",
+        "動物",
+        "です"
+      ],
+      "tts": [
+        "いぬ",
+        "わ",
+        "どうぶつ",
+        "です"
+      ],
+      "explain": [
+        "dog",
+        "topic marker",
+        "animal",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The dog is an animal",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u002-c071",
       "line": [
         "家",
         "は",
         "場所",
-        "です",
-        "か",
-        "？"
+        "です"
       ],
       "tts": [
         "いえ",
         "わ",
         "ばしょ",
-        "です",
-        "か",
-        "？"
+        "です"
       ],
       "explain": [
         "house; home",
         "topic marker",
         "place",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "polite identity marker"
       ],
       "tokens": [
         {
@@ -5169,50 +3162,33 @@
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
         }
       ],
-      "english": "Is the house a place?",
-      "fact": "`です` gives the comment, and the final `か` makes it a question.",
+      "english": "The house is a place",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "AはBです",
-        "か"
+        "AはBです"
       ]
     },
     {
-      "id": "u002-c087",
+      "id": "u002-c072",
       "line": [
         "学校",
         "は",
         "場所",
-        "です",
-        "か",
-        "？"
+        "です"
       ],
       "tts": [
         "がっこう",
         "わ",
         "ばしょ",
-        "です",
-        "か",
-        "？"
+        "です"
       ],
       "explain": [
         "school",
         "topic marker",
         "place",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "polite identity marker"
       ],
       "tokens": [
         {
@@ -5236,57 +3212,40 @@
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
         }
       ],
-      "english": "Is the school a place?",
-      "fact": "`です` gives the comment, and the final `か` makes it a question.",
+      "english": "The school is a place",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "AはBです",
-        "か"
+        "AはBです"
       ]
     },
     {
-      "id": "u002-c088",
+      "id": "u002-c073",
       "line": [
-        "医者",
+        "場所",
         "は",
-        "人",
-        "です",
-        "か",
-        "？"
+        "家",
+        "です"
       ],
       "tts": [
-        "いしゃ",
+        "ばしょ",
         "わ",
-        "ひと",
-        "です",
-        "か",
-        "？"
+        "いえ",
+        "です"
       ],
       "explain": [
-        "doctor",
+        "place",
         "topic marker",
-        "person",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "house; home",
+        "polite identity marker"
       ],
       "tokens": [
         {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
         },
         {
           "surface": "は",
@@ -5294,59 +3253,92 @@
           "explain": "topic marker"
         },
         {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house; home",
+          "wordId": "ie"
         },
         {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
         }
       ],
-      "english": "Is the doctor a person?",
-      "fact": "`です` gives the comment, and the final `か` makes it a question.",
+      "english": "The place is a house",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "AはBです",
-        "か"
+        "AはBです"
       ]
     },
     {
-      "id": "u002-c089",
+      "id": "u002-c074",
+      "line": [
+        "場所",
+        "は",
+        "学校",
+        "です"
+      ],
+      "tts": [
+        "ばしょ",
+        "わ",
+        "がっこう",
+        "です"
+      ],
+      "explain": [
+        "place",
+        "topic marker",
+        "school",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学校",
+          "reading": "がっこう",
+          "explain": "school",
+          "wordId": "gakkou"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The place is a school",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u002-c075",
       "line": [
         "先生",
         "は",
-        "人",
-        "です",
-        "か",
-        "？"
+        "学生",
+        "です"
       ],
       "tts": [
         "せんせい",
         "わ",
-        "ひと",
-        "です",
-        "か",
-        "？"
+        "がくせい",
+        "です"
       ],
       "explain": [
         "teacher",
         "topic marker",
-        "person",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "student",
+        "polite identity marker"
       ],
       "tokens": [
         {
@@ -5361,59 +3353,42 @@
           "explain": "topic marker"
         },
         {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
         },
         {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
         }
       ],
-      "english": "Is the teacher a person?",
-      "fact": "`です` gives the comment, and the final `か` makes it a question.",
+      "english": "The teacher is a student",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "AはBです",
-        "か"
+        "AはBです"
       ]
     },
     {
-      "id": "u002-c090",
+      "id": "u002-c076",
       "line": [
         "学生",
         "は",
-        "人",
-        "です",
-        "か",
-        "？"
+        "友達",
+        "です"
       ],
       "tts": [
         "がくせい",
         "わ",
-        "ひと",
-        "です",
-        "か",
-        "？"
+        "ともだち",
+        "です"
       ],
       "explain": [
         "student",
         "topic marker",
-        "person",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "friend",
+        "polite identity marker"
       ],
       "tokens": [
         {
@@ -5428,66 +3403,49 @@
           "explain": "topic marker"
         },
         {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
         },
         {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
         }
       ],
-      "english": "Is the student a person?",
-      "fact": "`です` gives the comment, and the final `か` makes it a question.",
+      "english": "The student is a friend",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "AはBです",
-        "か"
+        "AはBです"
       ]
     },
     {
-      "id": "u002-c091",
+      "id": "u002-c077",
       "line": [
-        "日本",
+        "医者",
         "は",
-        "場所",
-        "です",
-        "か",
-        "？"
+        "先生",
+        "です"
       ],
       "tts": [
-        "にほん",
+        "いしゃ",
         "わ",
-        "ばしょ",
-        "です",
-        "か",
-        "？"
+        "せんせい",
+        "です"
       ],
       "explain": [
-        "Japan",
+        "doctor",
         "topic marker",
-        "place",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "teacher",
+        "polite identity marker"
       ],
       "tokens": [
         {
-          "surface": "日本",
-          "reading": "にほん",
-          "explain": "Japan",
-          "wordId": "nihon"
+          "surface": "医者",
+          "reading": "いしゃ",
+          "explain": "doctor",
+          "wordId": "isha"
         },
         {
           "surface": "は",
@@ -5495,66 +3453,49 @@
           "explain": "topic marker"
         },
         {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
         },
         {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
         }
       ],
-      "english": "Is Japan a place?",
-      "fact": "`です` gives the comment, and the final `か` makes it a question.",
+      "english": "The doctor is a teacher",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "AはBです",
-        "か"
+        "AはBです"
       ]
     },
     {
-      "id": "u002-c092",
+      "id": "u002-c078",
       "line": [
-        "アメリカ",
+        "友達",
         "は",
-        "場所",
-        "です",
-        "か",
-        "？"
+        "学生",
+        "です"
       ],
       "tts": [
-        "あめりか",
+        "ともだち",
         "わ",
-        "ばしょ",
-        "です",
-        "か",
-        "？"
+        "がくせい",
+        "です"
       ],
       "explain": [
-        "America",
+        "friend",
         "topic marker",
-        "place",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "student",
+        "polite identity marker"
       ],
       "tokens": [
         {
-          "surface": "アメリカ",
-          "reading": "あめりか",
-          "explain": "America",
-          "wordId": "amerika"
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
         },
         {
           "surface": "は",
@@ -5562,32 +3503,121 @@
           "explain": "topic marker"
         },
         {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
         },
         {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
         }
       ],
-      "english": "Is America a place?",
-      "fact": "`です` gives the comment, and the final `か` makes it a question.",
+      "english": "The friend is a student",
+      "fact": "One slot changes while the sentence frame stays fixed.",
       "grammarTags": [
-        "AはBです",
-        "か"
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u002-c079",
+      "line": [
+        "猫",
+        "は",
+        "動物",
+        "です"
+      ],
+      "tts": [
+        "ねこ",
+        "わ",
+        "どうぶつ",
+        "です"
+      ],
+      "explain": [
+        "cat",
+        "topic marker",
+        "animal",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "猫",
+          "reading": "ねこ",
+          "explain": "cat",
+          "wordId": "neko"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The cat is an animal",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u002-c080",
+      "line": [
+        "犬",
+        "は",
+        "動物",
+        "です"
+      ],
+      "tts": [
+        "いぬ",
+        "わ",
+        "どうぶつ",
+        "です"
+      ],
+      "explain": [
+        "dog",
+        "topic marker",
+        "animal",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "犬",
+          "reading": "いぬ",
+          "explain": "dog",
+          "wordId": "inu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "動物",
+          "reading": "どうぶつ",
+          "explain": "animal",
+          "wordId": "doubutsu"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The dog is an animal",
+      "fact": "One slot changes while the sentence frame stays fixed.",
+      "grammarTags": [
+        "AはBです"
       ]
     }
   ]

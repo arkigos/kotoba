@@ -448,6 +448,13 @@ const specs = [
   },
 ];
 
+const sourceSpecsById = new Map(readJson("data/jp/curriculum/source/unit_specs.json").units.map((unit) => [unit.id, unit]));
+for (const spec of specs) {
+  const sourceSpec = sourceSpecsById.get(spec.id);
+  if (!sourceSpec) throw new Error(`Missing source spec for unit ${spec.id}`);
+  spec.words = sourceSpec.newWords.map((word) => [word.id, word.surface, word.reading, word.meaning, word.function]);
+}
+
 const verbForms = new Map([
   ["taberu", { masu: ["食べます", "たべます", "eat", "eats"], masen: ["食べません", "たべません", "do not eat", "does not eat"], mashita: ["食べました", "たべました", "ate"], masendeshita: ["食べませんでした", "たべませんでした", "did not eat"], te: ["食べて", "たべて", "eat and"], nai: ["食べない", "たべない", "not eat"], tai: ["食べたい", "たべたい", "want to eat"], takunai: ["食べたくない", "たべたくない", "do not want to eat"], teiru: ["食べています", "たべています", "is eating"] }],
   ["nomu", { masu: ["飲みます", "のみます", "drink", "drinks"], masen: ["飲みません", "のみません", "do not drink", "does not drink"], mashita: ["飲みました", "のみました", "drank"], masendeshita: ["飲みませんでした", "のみませんでした", "did not drink"], te: ["飲んで", "のんで", "drink and"], nai: ["飲まない", "のまない", "not drink"], tai: ["飲みたい", "のみたい", "want to drink"], takunai: ["飲みたくない", "のみたくない", "do not want to drink"], teiru: ["飲んでいます", "のんでいます", "is drinking"] }],
@@ -602,6 +609,20 @@ for (const row of [
   ["morau", "もらい", "もらい", "receive", "godan"],
   ["sumu_finish", "済み", "すみ", "finish", "godan"],
   ["yoru_stop", "寄り", "より", "stop by", "godan"],
+  ["utau", "歌い", "うたい", "sing", "godan"],
+  ["odoru", "踊り", "おどり", "dance", "godan"],
+  ["warau", "笑い", "わらい", "laugh", "godan"],
+  ["naku", "泣き", "なき", "cry", "godan"],
+  ["wakaru", "分かり", "わかり", "understand", "godan"],
+  ["ganbaru", "頑張り", "がんばり", "do one's best", "godan"],
+  ["komaru", "困り", "こまり", "be troubled", "godan"],
+  ["modoru", "戻り", "もどり", "return", "godan"],
+  ["tomaru", "止まり", "とまり", "stop", "godan"],
+  ["yorokobu", "喜び", "よろこび", "be glad", "godan"],
+  ["kanashimu", "悲しみ", "かなしみ", "be sad", "godan"],
+  ["kuraberu", "比べ", "くらべ", "compare", "ichidan"],
+  ["naoru", "治り", "なおり", "get better", "godan"],
+  ["saguru", "探り", "さぐり", "explore", "godan"],
 ]) addSimpleVerbForms(...row);
 
 // Correct common godan te/nai forms used in visible A2 grammar units.
@@ -670,7 +691,7 @@ const people = [
   ["tomodachi", "My friend", true],
   ["otokonohito", "The man", true],
   ["onnanohito", "The woman", true],
-  ["tenin", "The shop clerk", true],
+  ["kodomo", "The child", true],
 ];
 
 const helperObjects = ["gohan", "pan", "niku", "yasai", "kudamono", "tegami", "shinbun", "ongaku", "eiga", "koohii"];

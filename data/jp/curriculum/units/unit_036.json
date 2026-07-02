@@ -7252,65 +7252,6 @@
       "line": [
         "私",
         "は",
-        "会社員",
-        "と",
-        "話します"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "かいしゃいん",
-        "と",
-        "はなします"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "company employee",
-        "with; and",
-        "speak"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "会社員",
-          "reading": "かいしゃいん",
-          "explain": "company employee",
-          "wordId": "kaishain"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "with; and"
-        },
-        {
-          "surface": "話します",
-          "reading": "はなします",
-          "explain": "speak",
-          "wordId": "hanasu"
-        }
-      ],
-      "english": "I speak with the company employee",
-      "fact": "Person review returns with `と`.",
-      "grammarTags": [
-        "review vocabulary"
-      ]
-    },
-    {
-      "id": "u036-c137",
-      "line": [
-        "私",
-        "は",
         "子供",
         "と",
         "話します"
@@ -7366,7 +7307,7 @@
       ]
     },
     {
-      "id": "u036-c138",
+      "id": "u036-c137",
       "line": [
         "私",
         "は",
@@ -7425,7 +7366,7 @@
       ]
     },
     {
-      "id": "u036-c139",
+      "id": "u036-c138",
       "line": [
         "私",
         "は",
@@ -7484,7 +7425,7 @@
       ]
     },
     {
-      "id": "u036-c140",
+      "id": "u036-c139",
       "line": [
         "私",
         "は",
@@ -7543,27 +7484,21 @@
       ]
     },
     {
-      "id": "u036-c141",
+      "id": "u036-c140",
       "line": [
         "私",
         "は",
-        "自転車",
-        "を",
-        "見ます"
+        "行きます"
       ],
       "tts": [
         "わたし",
         "わ",
-        "じてんしゃ",
-        "を",
-        "みます"
+        "いきます"
       ],
       "explain": [
         "I; me",
         "topic marker",
-        "bicycle",
-        "direct object marker",
-        "watch"
+        "go"
       ],
       "tokens": [
         {
@@ -7578,25 +7513,56 @@
           "explain": "topic marker"
         },
         {
-          "surface": "自転車",
-          "reading": "じてんしゃ",
-          "explain": "bicycle",
-          "wordId": "jitensha"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "見ます",
-          "reading": "みます",
-          "explain": "watch",
-          "wordId": "miru"
+          "surface": "行きます",
+          "reading": "いきます",
+          "explain": "go",
+          "wordId": "iku"
         }
       ],
-      "english": "I look at a bicycle",
-      "fact": "Noun review returns as an object of a familiar action.",
+      "english": "I go",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u036-c141",
+      "line": [
+        "私",
+        "は",
+        "来ます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "きます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "come"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come",
+          "wordId": "kuru"
+        }
+      ],
+      "english": "I come",
+      "fact": "Verb review keeps earlier A2 action words active.",
       "grammarTags": [
         "review vocabulary"
       ]

@@ -31,20 +31,6 @@
           "function": "person"
         },
         {
-          "id": "nihon",
-          "surface": "日本",
-          "reading": "にほん",
-          "meaning": "Japan",
-          "function": "place"
-        },
-        {
-          "id": "amerika",
-          "surface": "アメリカ",
-          "reading": "あめりか",
-          "meaning": "America",
-          "function": "place"
-        },
-        {
           "id": "namae",
           "surface": "名前",
           "reading": "なまえ",
@@ -78,6 +64,20 @@
           "reading": "ともだち",
           "meaning": "friend",
           "function": "person"
+        },
+        {
+          "id": "taberu",
+          "surface": "???",
+          "reading": "???",
+          "meaning": "eat",
+          "function": "verb"
+        },
+        {
+          "id": "nomu",
+          "surface": "??",
+          "reading": "??",
+          "meaning": "drink",
+          "function": "verb"
         }
       ]
     },
@@ -144,18 +144,18 @@
           "function": "person"
         },
         {
-          "id": "hito",
-          "surface": "人",
-          "reading": "ひと",
-          "meaning": "person",
-          "function": "person"
+          "id": "yomu",
+          "surface": "??",
+          "reading": "??",
+          "meaning": "read",
+          "function": "verb"
         },
         {
-          "id": "mono",
-          "surface": "物",
-          "reading": "もの",
-          "meaning": "thing; object",
-          "function": "noun"
+          "id": "kaku",
+          "surface": "??",
+          "reading": "??",
+          "meaning": "write",
+          "function": "verb"
         }
       ]
     },
@@ -215,13 +215,6 @@
           "function": "noun"
         },
         {
-          "id": "kuruma",
-          "surface": "車",
-          "reading": "くるま",
-          "meaning": "car",
-          "function": "noun"
-        },
-        {
           "id": "heya",
           "surface": "部屋",
           "reading": "へや",
@@ -229,11 +222,18 @@
           "function": "place"
         },
         {
-          "id": "kagi",
-          "surface": "鍵",
-          "reading": "かぎ",
-          "meaning": "key",
-          "function": "noun"
+          "id": "miru",
+          "surface": "??",
+          "reading": "??",
+          "meaning": "look; watch; see",
+          "function": "verb"
+        },
+        {
+          "id": "kiku",
+          "surface": "??",
+          "reading": "??",
+          "meaning": "listen; ask",
+          "function": "verb"
         }
       ]
     },
@@ -272,13 +272,6 @@
           "function": "place"
         },
         {
-          "id": "kaishain",
-          "surface": "会社員",
-          "reading": "かいしゃいん",
-          "meaning": "company employee",
-          "function": "person"
-        },
-        {
           "id": "kodomo",
           "surface": "子供",
           "reading": "こども",
@@ -307,11 +300,18 @@
           "function": "noun"
         },
         {
-          "id": "jitensha",
-          "surface": "自転車",
-          "reading": "じてんしゃ",
-          "meaning": "bicycle",
-          "function": "noun"
+          "id": "iku",
+          "surface": "??",
+          "reading": "??",
+          "meaning": "go",
+          "function": "verb"
+        },
+        {
+          "id": "kuru",
+          "surface": "??",
+          "reading": "??",
+          "meaning": "come",
+          "function": "verb"
         }
       ]
     },
@@ -357,13 +357,6 @@
           "function": "time"
         },
         {
-          "id": "tanjoubi",
-          "surface": "誕生日",
-          "reading": "たんじょうび",
-          "meaning": "birthday",
-          "function": "noun"
-        },
-        {
           "id": "yasumi",
           "surface": "休み",
           "reading": "やすみ",
@@ -385,11 +378,18 @@
           "function": "noun"
         },
         {
-          "id": "tesuto",
-          "surface": "テスト",
-          "reading": "てすと",
-          "meaning": "test",
-          "function": "noun"
+          "id": "hataraku",
+          "surface": "??",
+          "reading": "????",
+          "meaning": "work",
+          "function": "verb"
+        },
+        {
+          "id": "benkyou_suru",
+          "surface": "????",
+          "reading": "???????",
+          "meaning": "study",
+          "function": "verb"
         }
       ]
     },
@@ -456,18 +456,18 @@
           "function": "noun"
         },
         {
-          "id": "enpitsu",
-          "surface": "鉛筆",
-          "reading": "えんぴつ",
-          "meaning": "pencil",
-          "function": "noun"
+          "id": "kau",
+          "surface": "??",
+          "reading": "??",
+          "meaning": "buy",
+          "function": "verb"
         },
         {
-          "id": "tokei",
-          "surface": "時計",
-          "reading": "とけい",
-          "meaning": "clock; watch",
-          "function": "noun"
+          "id": "tsukau",
+          "surface": "??",
+          "reading": "???",
+          "meaning": "use",
+          "function": "verb"
         }
       ]
     },
@@ -520,20 +520,6 @@
           "function": "person"
         },
         {
-          "id": "tenin",
-          "surface": "店員",
-          "reading": "てんいん",
-          "meaning": "shop clerk",
-          "function": "person"
-        },
-        {
-          "id": "ekiin",
-          "surface": "駅員",
-          "reading": "えきいん",
-          "meaning": "station attendant",
-          "function": "person"
-        },
-        {
           "id": "tabemono",
           "surface": "食べ物",
           "reading": "たべもの",
@@ -546,6 +532,20 @@
           "reading": "のみもの",
           "meaning": "drink",
           "function": "noun"
+        },
+        {
+          "id": "hanasu",
+          "surface": "??",
+          "reading": "???",
+          "meaning": "speak",
+          "function": "verb"
+        },
+        {
+          "id": "matsu",
+          "surface": "??",
+          "reading": "??",
+          "meaning": "wait",
+          "function": "verb"
         }
       ]
     },
@@ -1570,73 +1570,73 @@
       "grammarFocus": "Vます / polite non-past actions",
       "newWords": [
         {
-          "id": "taberu",
-          "surface": "食べる",
-          "reading": "たべる",
-          "meaning": "eat",
-          "function": "verb"
-        },
-        {
-          "id": "nomu",
-          "surface": "飲む",
-          "reading": "のむ",
-          "meaning": "drink",
-          "function": "verb"
-        },
-        {
-          "id": "iku",
-          "surface": "行く",
-          "reading": "いく",
-          "meaning": "go",
-          "function": "verb"
-        },
-        {
-          "id": "kuru",
-          "surface": "来る",
-          "reading": "くる",
-          "meaning": "come",
-          "function": "verb"
-        },
-        {
           "id": "kaeru_verb",
-          "surface": "帰る",
-          "reading": "かえる",
+          "surface": "??",
+          "reading": "???",
           "meaning": "return; go home",
           "function": "verb"
         },
         {
-          "id": "miru",
-          "surface": "見る",
-          "reading": "みる",
-          "meaning": "look; watch; see",
+          "id": "utau",
+          "surface": "??",
+          "reading": "???",
+          "meaning": "sing",
           "function": "verb"
         },
         {
-          "id": "kiku",
-          "surface": "聞く",
-          "reading": "きく",
-          "meaning": "listen; ask",
+          "id": "odoru",
+          "surface": "??",
+          "reading": "???",
+          "meaning": "dance",
           "function": "verb"
         },
         {
-          "id": "yomu",
-          "surface": "読む",
-          "reading": "よむ",
-          "meaning": "read",
+          "id": "warau",
+          "surface": "??",
+          "reading": "???",
+          "meaning": "laugh",
           "function": "verb"
         },
         {
-          "id": "kaku",
-          "surface": "書く",
-          "reading": "かく",
-          "meaning": "write",
+          "id": "naku",
+          "surface": "??",
+          "reading": "??",
+          "meaning": "cry",
           "function": "verb"
         },
         {
-          "id": "benkyou_suru",
-          "surface": "勉強する",
-          "reading": "べんきょうする",
-          "meaning": "study",
+          "id": "wakaru",
+          "surface": "???",
+          "reading": "???",
+          "meaning": "understand",
+          "function": "verb"
+        },
+        {
+          "id": "ganbaru",
+          "surface": "???",
+          "reading": "????",
+          "meaning": "do one's best",
+          "function": "verb"
+        },
+        {
+          "id": "komaru",
+          "surface": "??",
+          "reading": "???",
+          "meaning": "be troubled",
+          "function": "verb"
+        },
+        {
+          "id": "modoru",
+          "surface": "??",
+          "reading": "???",
+          "meaning": "return; go back",
+          "function": "verb"
+        },
+        {
+          "id": "tomaru",
+          "surface": "???",
+          "reading": "???",
+          "meaning": "stop; stay",
           "function": "verb"
         }
       ]
@@ -1648,38 +1648,10 @@
       "grammarFocus": "Vません",
       "newWords": [
         {
-          "id": "hanasu",
-          "surface": "話す",
-          "reading": "はなす",
-          "meaning": "speak",
-          "function": "verb"
-        },
-        {
-          "id": "kau",
-          "surface": "買う",
-          "reading": "かう",
-          "meaning": "buy",
-          "function": "verb"
-        },
-        {
           "id": "au",
           "surface": "会う",
           "reading": "あう",
           "meaning": "meet",
-          "function": "verb"
-        },
-        {
-          "id": "matsu",
-          "surface": "待つ",
-          "reading": "まつ",
-          "meaning": "wait",
-          "function": "verb"
-        },
-        {
-          "id": "tsukau",
-          "surface": "使う",
-          "reading": "つかう",
-          "meaning": "use",
           "function": "verb"
         },
         {
@@ -1704,17 +1676,45 @@
           "function": "verb"
         },
         {
-          "id": "hataraku",
-          "surface": "働く",
-          "reading": "はたらく",
-          "meaning": "work",
-          "function": "verb"
-        },
-        {
           "id": "yasumu_verb",
           "surface": "休む",
           "reading": "やすむ",
           "meaning": "rest; take a day off",
+          "function": "verb"
+        },
+        {
+          "id": "yorokobu",
+          "surface": "??",
+          "reading": "????",
+          "meaning": "be glad",
+          "function": "verb"
+        },
+        {
+          "id": "kanashimu",
+          "surface": "???",
+          "reading": "????",
+          "meaning": "be sad",
+          "function": "verb"
+        },
+        {
+          "id": "kuraberu",
+          "surface": "???",
+          "reading": "????",
+          "meaning": "compare",
+          "function": "verb"
+        },
+        {
+          "id": "naoru",
+          "surface": "??",
+          "reading": "???",
+          "meaning": "get better",
+          "function": "verb"
+        },
+        {
+          "id": "saguru",
+          "surface": "??",
+          "reading": "???",
+          "meaning": "explore; probe",
           "function": "verb"
         }
       ]

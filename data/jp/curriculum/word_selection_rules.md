@@ -62,16 +62,15 @@ Use this as the default distribution for 10 new words:
 The flexible slot may be another noun, verb, adjective, time word, counter,
 place word, phrase, or grammar-supporting expression.
 
-This default mix applies once productive verb grammar is available. Early A1 is
-allowed to be intentionally static while the learner is still getting identity,
-topic marking, questions, adjectives, and existence. Do not add action verbs to
-Unit 1 just to satisfy a mix target; introduce productive verbs where the grammar
-map can support real use.
+Units 1-7 intentionally carry two real current-unit verb words each. These verbs
+are SRS vocabulary, not anonymous grammar previews, and should receive repeated
+short `Vます` action practice with known people, objects, places, or time words.
+Keep the frames modular: one stable sentence shape, one swapped noun/person/place
+slot, and one current or already-known high-value verb.
 
-Early A1 may include one or two fixed `Vます` action-preview cards per unit after
-Unit 1. These are whole-sentence previews, not full verb lessons. Keep them
-modular: one stable frame, one swapped noun/person/place/adjective slot, and one
-familiar high-value verb.
+Units 8-14 may still include one or two fixed `Vます` action-preview cards. Those
+preview cards should reuse known verb identities from Units 1-7 rather than
+introducing hidden new verb vocabulary.
 
 ## Grammar-Driven Adjustments
 

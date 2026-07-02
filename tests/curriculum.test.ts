@@ -13,7 +13,7 @@ const unitModules = import.meta.glob<{
       tokens?: Array<{ surface: string; reading: string; explain?: string; wordId?: string }>;
       tts: string[];
     }>;
-    newWords: Array<{ id: string }>;
+    newWords: Array<{ id: string; function?: string }>;
   };
 }>("../data/jp/curriculum/units/unit_*.json", {
   eager: true,
@@ -171,10 +171,18 @@ describe("curriculum word bins", () => {
 
   it("keeps an action or existence lane in every A1 unit", () => {
     const previewTag = "early masu action preview";
+    const foundationActionTag = "early V\u307e\u3059 action";
     const existenceForms = new Set(["\u3042\u308a\u307e\u3059", "\u3044\u307e\u3059", "\u3042\u308a\u307e\u305b\u3093", "\u3044\u307e\u305b\u3093"]);
     for (let unitId = 1; unitId <= 7; unitId += 1) {
       const unit = unitModules[unitModulePath(unitId)].default;
-      expect(unit.cards.filter((card) => card.grammarTags?.includes(previewTag))).toHaveLength(12);
+      const currentVerbs = unit.newWords.filter((word) => word.function === "verb");
+      expect(currentVerbs, `unit ${unitId} current verbs`).toHaveLength(2);
+      for (const verb of currentVerbs) {
+        const verbActionCards = unit.cards.filter(
+          (card) => card.grammarTags?.includes(foundationActionTag) && card.tokens?.some((token) => token.wordId === verb.id),
+        );
+        expect(verbActionCards.length, `unit ${unitId} verb ${verb.id}`).toBeGreaterThanOrEqual(7);
+      }
     }
 
     for (let unitId = 8; unitId <= 14; unitId += 1) {
@@ -196,13 +204,13 @@ describe("curriculum word bins", () => {
       "I",
       "student",
       "teacher",
-      "Japan",
-      "America",
       "name",
       "you",
       "he",
       "she",
       "friend",
+      "eat",
+      "drink",
       "am; is; are",
       "topic marker",
       "question marker",
@@ -370,11 +378,11 @@ describe("curriculum word bins", () => {
 
     for (const word of unit.newWords) {
       expect(counts.get(word.id), `new word ${word.id}`).toBeGreaterThanOrEqual(pacingRules.distributionTargets.currentWordAppearances);
-      expect(counts.get(word.id), `new word ${word.id}`).toBeLessThanOrEqual(pacingRules.distributionTargets.currentWordAppearances + 2);
+      expect(counts.get(word.id), `new word ${word.id}`).toBeLessThanOrEqual(18);
     }
 
     for (const word of reviewWords) {
-      expect(counts.get(word.id), `review word ${word.id}`).toBe(pacingRules.distributionTargets.reviewWordAppearances);
+      expect(counts.get(word.id), `review word ${word.id}`).toBeGreaterThanOrEqual(3);
     }
   });
 

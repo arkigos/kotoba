@@ -23,23 +23,15 @@ function escapeXml(value) {
   return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 }
 
+const sourceUnit = readJson("data/jp/curriculum/source/unit_specs.json").units.find((unit) => unit.id === 21);
+if (!sourceUnit) throw new Error("Missing source spec for unit 21");
+
 const spec = {
   id: 21,
   slug: "polite-verbs-non-past",
   title: "Unit 21: Polite Verbs, Non-Past",
   grammarFocus: "Vます / polite non-past actions",
-  words: [
-    ["taberu", "食べる", "たべる", "eat", "verb"],
-    ["nomu", "飲む", "のむ", "drink", "verb"],
-    ["iku", "行く", "いく", "go", "verb"],
-    ["kuru", "来る", "くる", "come", "verb"],
-    ["kaeru_verb", "帰る", "かえる", "return; go home", "verb"],
-    ["miru", "見る", "みる", "look; watch; see", "verb"],
-    ["kiku", "聞く", "きく", "listen; ask", "verb"],
-    ["yomu", "読む", "よむ", "read", "verb"],
-    ["kaku", "書く", "かく", "write", "verb"],
-    ["benkyou_suru", "勉強する", "べんきょうする", "study", "verb"],
-  ],
+  words: sourceUnit.newWords.map((word) => [word.id, word.surface, word.reading, word.meaning, word.function]),
 };
 
 const lexicon = new Map();
@@ -110,6 +102,16 @@ const verbForms = new Map([
   ["yomu", ["読みます", "よみます", "read", "reads", "will read"]],
   ["kaku", ["書きます", "かきます", "write", "writes", "will write"]],
   ["benkyou_suru", ["勉強します", "べんきょうします", "study", "studies", "will study"]],
+  ["hataraku", ["働きます", "はたらきます", "work", "works", "will work"]],
+  ["utau", ["歌います", "うたいます", "sing", "sings", "will sing"]],
+  ["odoru", ["踊ります", "おどります", "dance", "dances", "will dance"]],
+  ["warau", ["笑います", "わらいます", "laugh", "laughs", "will laugh"]],
+  ["naku", ["泣きます", "なきます", "cry", "cries", "will cry"]],
+  ["wakaru", ["分かります", "わかります", "understand", "understands", "will understand"]],
+  ["ganbaru", ["頑張ります", "がんばります", "do one's best", "does one's best", "will do one's best"]],
+  ["komaru", ["困ります", "こまります", "be troubled", "is troubled", "will be troubled"]],
+  ["modoru", ["戻ります", "もどります", "return", "returns", "will return"]],
+  ["tomaru", ["止まります", "とまります", "stop", "stops", "will stop"]],
 ]);
 
 const people = [
@@ -122,7 +124,7 @@ const people = [
   ["tomodachi", "My friend", true],
   ["otokonohito", "The man", true],
   ["onnanohito", "The woman", true],
-  ["tenin", "The shop clerk", true],
+  ["kodomo", "The child", true],
 ];
 
 const times = [
@@ -243,14 +245,14 @@ function generateCards() {
   const quantities = wordsByUnit.get(19);
   const nouns = [
     ["hon", "book", "books"],
-    ["kagi", "key", "keys"],
+    ["kaban", "bag", "bags"],
     ["pen", "pen", "pens"],
     ["sara", "plate", "plates"],
     ["koppu", "cup", "cups"],
     ["hako", "box", "boxes"],
     ["hana_flower", "flower", "flowers"],
     ["chizu", "map", "maps"],
-    ["enpitsu", "pencil", "pencils"],
+    ["ocha", "tea", "servings of tea"],
     ["mado", "window", "windows"],
   ];
   for (let index = 0; index < quantities.length; index += 1) {
@@ -259,7 +261,7 @@ function generateCards() {
   }
 
   const places = wordsByUnit.get(17);
-  const reviewThings = [["hon", "book"], ["kagi", "key"], ["kaban", "bag"], ["shashin", "photo"], ["tokei", "clock"]];
+  const reviewThings = [["hon", "book"], ["kaban", "bag"], ["shashin", "photo"], ["hako", "box"], ["denwa", "telephone"]];
   for (let index = 0; index < places.length; index += 1) {
     const thing = reviewThings[index % reviewThings.length];
     add([word(places[index]), jp.ni(), word(thing[0]), jp.ga(), jp.arimasu(), jp.p()], `There is a ${thing[1]} ${placePhrase(places[index])}.`, ["A1 review", "場所にNがあります"], "An A1 place sentence returning inside an A2 unit.", facts.review);
@@ -278,11 +280,11 @@ function generateCards() {
     ["kyonen", [[word("kyonen"), jp.wa(), word("tokubetsu"), jp.deshita(), jp.p()], "Last year was special."]],
     ["asa", [[word("asa"), jp.wa(), word("shizuka"), jp.desu(), jp.p()], "Morning is quiet."]],
     ["yoru", [[word("yoru"), jp.wa(), word("shizuka"), jp.desu(), jp.p()], "Night is quiet."]],
-    ["tanjoubi", [[word("tanjoubi"), jp.wa(), word("itsu"), jp.desuKa(), jp.q()], "When is the birthday?"]],
     ["yasumi", [[word("yasumi"), jp.wa(), word("itsu"), jp.desuKa(), jp.q()], "When is the day off?"]],
     ["ryokou", [[word("ryokou"), jp.wa(), word("itsu"), jp.desuKa(), jp.q()], "When is the trip?"]],
     ["shigoto", [[word("shigoto"), jp.wa(), word("itsu"), jp.desuKa(), jp.q()], "When is work?"]],
-    ["tesuto", [[word("tesuto"), jp.wa(), word("itsu"), jp.desuKa(), jp.q()], "When is the test?"]],
+    ["hataraku", [[word("watashi"), jp.wa(), verbToken("hataraku"), jp.p()], "I work."]],
+    ["benkyou_suru", [[word("watashi"), jp.wa(), verbToken("benkyou_suru"), jp.p()], "I study."]],
   ]);
   for (const eventId of events) {
     const [parts, english] = eventReview.get(eventId);

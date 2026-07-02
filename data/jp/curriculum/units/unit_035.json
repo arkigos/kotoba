@@ -7711,65 +7711,6 @@
     {
       "id": "u035-c139",
       "line": [
-        "私",
-        "は",
-        "車",
-        "を",
-        "見ます"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "くるま",
-        "を",
-        "みます"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "car",
-        "direct object marker",
-        "watch"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "車",
-          "reading": "くるま",
-          "explain": "car",
-          "wordId": "kuruma"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "見ます",
-          "reading": "みます",
-          "explain": "watch",
-          "wordId": "miru"
-        }
-      ],
-      "english": "I look at a car",
-      "fact": "Noun review returns as an object of a familiar action.",
-      "grammarTags": [
-        "review vocabulary"
-      ]
-    },
-    {
-      "id": "u035-c140",
-      "line": [
         "部屋",
         "へ",
         "行きます"
@@ -7810,26 +7751,20 @@
       ]
     },
     {
-      "id": "u035-c141",
+      "id": "u035-c140",
       "line": [
         "私",
         "は",
-        "鍵",
-        "を",
         "見ます"
       ],
       "tts": [
         "わたし",
         "わ",
-        "かぎ",
-        "を",
         "みます"
       ],
       "explain": [
         "I; me",
         "topic marker",
-        "key",
-        "direct object marker",
         "watch"
       ],
       "tokens": [
@@ -7845,25 +7780,56 @@
           "explain": "topic marker"
         },
         {
-          "surface": "鍵",
-          "reading": "かぎ",
-          "explain": "key",
-          "wordId": "kagi"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
           "surface": "見ます",
           "reading": "みます",
           "explain": "watch",
           "wordId": "miru"
         }
       ],
-      "english": "I look at a key",
-      "fact": "Noun review returns as an object of a familiar action.",
+      "english": "I watch",
+      "fact": "Verb review keeps earlier A2 action words active.",
+      "grammarTags": [
+        "review vocabulary"
+      ]
+    },
+    {
+      "id": "u035-c141",
+      "line": [
+        "私",
+        "は",
+        "聞きます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ききます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "listen"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen",
+          "wordId": "kiku"
+        }
+      ],
+      "english": "I listen",
+      "fact": "Verb review keeps earlier A2 action words active.",
       "grammarTags": [
         "review vocabulary"
       ]

@@ -16,8 +16,9 @@ simple action language feeling artificially delayed.
 Every A1 unit must include a small verb lane.
 
 - Units 1-7 are the foundation baseline and include a denser block of early
-  whole-sentence action cards using polite action forms such as `食べます`,
-  `飲みます`, `行きます`, or `読みます`.
+  whole-sentence action cards using real current-unit verb vocabulary. Each of
+  these units carries two verb `newWords`, and their `V??` forms keep the same
+  `wordId` so review history does not split.
 - Units 8-14 include at least two early whole-sentence action bridge cards.
 - Units 15-20 may satisfy the lane through the unit grammar itself when it is
   rich in `あります` / `います` existence practice.
@@ -31,6 +32,6 @@ Every A1 unit must include a small verb lane.
   in every lesson.
 - The level-alignment audit should fail if an authored unit loses both action
   cards and existence practice.
-- A later SRS migration may choose to move some core verbs into A1 `newWords`.
-  That should be handled deliberately across A1 and A2 so duplicate verb
-  concepts do not split review history.
+- Core verbs now live in A1 `newWords` deliberately. A2 verb units must use
+  replacement verb identities rather than reintroducing those same concepts as
+  new words.

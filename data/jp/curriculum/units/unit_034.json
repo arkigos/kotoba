@@ -6938,23 +6938,17 @@
       "line": [
         "私",
         "は",
-        "人",
-        "と",
-        "話します"
+        "読みます"
       ],
       "tts": [
         "わたし",
         "わ",
-        "ひと",
-        "と",
-        "はなします"
+        "よみます"
       ],
       "explain": [
         "I; me",
         "topic marker",
-        "person",
-        "with; and",
-        "speak"
+        "read"
       ],
       "tokens": [
         {
@@ -6969,25 +6963,14 @@
           "explain": "topic marker"
         },
         {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "hito"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "with; and"
-        },
-        {
-          "surface": "話します",
-          "reading": "はなします",
-          "explain": "speak",
-          "wordId": "hanasu"
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read",
+          "wordId": "yomu"
         }
       ],
-      "english": "I speak with the person",
-      "fact": "Person review returns with `と`.",
+      "english": "I read",
+      "fact": "Verb review keeps earlier A2 action words active.",
       "grammarTags": [
         "review vocabulary"
       ]
@@ -6997,23 +6980,17 @@
       "line": [
         "私",
         "は",
-        "物",
-        "を",
-        "見ます"
+        "書きます"
       ],
       "tts": [
         "わたし",
         "わ",
-        "もの",
-        "を",
-        "みます"
+        "かきます"
       ],
       "explain": [
         "I; me",
         "topic marker",
-        "thing; object",
-        "direct object marker",
-        "watch"
+        "write"
       ],
       "tokens": [
         {
@@ -7028,25 +7005,14 @@
           "explain": "topic marker"
         },
         {
-          "surface": "物",
-          "reading": "もの",
-          "explain": "thing; object",
-          "wordId": "mono"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "見ます",
-          "reading": "みます",
-          "explain": "watch",
-          "wordId": "miru"
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "write",
+          "wordId": "kaku"
         }
       ],
-      "english": "I look at a thing",
-      "fact": "Noun review returns as an object of a familiar action.",
+      "english": "I write",
+      "fact": "Verb review keeps earlier A2 action words active.",
       "grammarTags": [
         "review vocabulary"
       ]

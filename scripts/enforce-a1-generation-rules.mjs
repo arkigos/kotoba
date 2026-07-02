@@ -128,7 +128,7 @@ const previewTag = "early masu action preview";
 
 let changed = 0;
 
-for (const entry of index.units.filter((unit) => unit.id >= 6 && unit.id <= 20)) {
+for (const entry of index.units.filter((unit) => unit.id >= 8 && unit.id <= 20)) {
   const spec = unitSpecs.get(entry.id);
   if (!spec) continue;
 

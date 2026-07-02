@@ -180,8 +180,9 @@ These fields must match the app-facing unit index and frozen unit files. Use
 
 - current-unit vocabulary first appears by card 40
 - the unit grammar focus first appears by card 60
-- every A1 unit includes a small verb/existence lane; early action previews or
-  existence practice should appear before the late review band
+- every A1 unit includes a small verb/existence lane; Units 1-7 use real
+  current-unit verbs, and later action previews or existence practice should
+  appear before the late review band
 - review-due vocabulary returns somewhere in the unit without fake intro cards
 - no learner-facing first exposure appears after card 60
 - current-unit words should appear at least 8 times in a balanced or regenerated unit
