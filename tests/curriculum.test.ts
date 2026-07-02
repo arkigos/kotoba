@@ -231,12 +231,23 @@ describe("curriculum word bins", () => {
   it("interleaves Unit 4 negative identity with movement verbs", () => {
     const unit = unitModules[unitModulePath(4)].default;
     const firstSeen = firstWordPositions(4);
-    const firstMovementCards = unit.cards.slice(0, 30).filter((card) => card.tokens?.some((token) => token.wordId === "iku" || token.wordId === "kuru"));
+    const firstMovementCards = unit.cards.slice(0, 40).filter((card) => card.tokens?.some((token) => token.wordId === "iku" || token.wordId === "kuru"));
 
     expect(firstSeen.get("iku")).toBeLessThanOrEqual(20);
     expect(firstSeen.get("kuru")).toBeLessThanOrEqual(20);
     expect(firstMovementCards.length).toBeGreaterThanOrEqual(4);
     expect(unit.cards.slice(0, 40).some((card) => card.english.includes("not"))).toBe(true);
+  });
+
+  it("keeps Unit 4 current vocabulary in a tight 8-12 appearance band", () => {
+    const unit = unitModules[unitModulePath(4)].default;
+    const counts = wordAppearanceCounts(4);
+
+    expect(unit.cards.length).toBeLessThan(100);
+    for (const word of unit.newWords) {
+      expect(counts.get(word.id), `unit 4 current word ${word.id}`).toBeGreaterThanOrEqual(8);
+      expect(counts.get(word.id), `unit 4 current word ${word.id}`).toBeLessThanOrEqual(12);
+    }
   });
 
   it("keeps foundation current words and due review out of late-only positions", () => {

@@ -184,6 +184,9 @@ Before authoring cards for a unit, confirm:
 - The set has a useful spread of nouns, verbs, descriptors, and support words.
 - Older known helper words can combine naturally with the new words.
 - Current-unit and review-due words have enough repetition to feel intentionally drilled.
+- Current-unit words usually land in an 8-12 appearance band, and rebuilt
+  foundation units stay under 100 cards when that can be done without rushing
+  new material or skipping due review.
 - The set is common and useful enough for a beginner-to-intermediate journey.
 - Current-unit words are introduced before card 40.
 - Current-unit words first appear in sentence context rather than single-token

@@ -503,18 +503,6 @@ function buildUnit4(spec, previousWords, reviewWords) {
   const placeIds = ["mise", "byouin", "eki", "kaisha"];
   const personIds = ["kodomo", "otona"];
   const objectIds = ["isu", "tsukue"];
-  const movementActorIds = ["watashi", "sakura", "yuki", "tanaka", "sensei", "gakusei", "tomodachi", "isha"].filter((id) =>
-    words.has(id),
-  );
-  function movement(offset, verbId) {
-    subjectPlaceAction(
-      cards,
-      4,
-      w(words, cycle(movementActorIds, offset)),
-      w(words, cycle(placeIds, Math.floor(offset / movementActorIds.length))),
-      w(words, verbId),
-    );
-  }
   const complementById = new Map([
     ["mise", ["gakkou", "ie", "basho", "heya"]],
     ["byouin", ["ie", "gakkou", "basho", "heya"]],
@@ -525,43 +513,58 @@ function buildUnit4(spec, previousWords, reviewWords) {
     ["isu", ["hon", "kaban", "tsukue", "doubutsu"]],
     ["tsukue", ["kaban", "hon", "isu", "doubutsu"]],
   ]);
-  const wovenNouns = ["mise", "kodomo", "byouin", "isu", "eki", "otona", "kaisha", "tsukue"];
-  const reviewRows = [
-    () => topic(cards, 4, w(words, "neko"), w(words, "doubutsu")),
-    () => topicQuestion(cards, 4, w(words, "ie"), w(words, "basho")),
-    () => objectAction(cards, 4, w(words, "hon"), w(words, "yomu")),
-    () => possession(cards, 4, w(words, "watashi"), w(words, "kaban")),
-    () => also(cards, 4, w(words, "haha"), w(words, "sensei")),
-    () => objectAction(cards, 4, w(words, "shashin"), w(words, "miru")),
+
+  addReview(cards, 4, words, reviewWords, 1);
+
+  const balancedNouns = ["mise", "kodomo", "byouin", "isu", "eki", "otona", "kaisha", "tsukue"];
+  const movementRows = [
+    ["watashi", "mise", "iku"],
+    ["sakura", "byouin", "kuru"],
+    ["yuki", "eki", "iku"],
+    ["tanaka", "kaisha", "kuru"],
+    ["sensei", "mise", "kuru"],
+    ["gakusei", "byouin", "iku"],
+    ["tomodachi", "eki", "kuru"],
+    ["isha", "kaisha", "iku"],
+    ["watashi", "mise", "iku"],
+    ["sakura", "byouin", "kuru"],
+    ["yuki", "eki", "iku"],
+    ["tanaka", "kaisha", "kuru"],
+    ["sensei", "mise", "kuru"],
+    ["gakusei", "byouin", "iku"],
+    ["tomodachi", "eki", "kuru"],
+    ["isha", "kaisha", "iku"],
+    ["watashi", "mise", "iku"],
+    ["sakura", "byouin", "kuru"],
+    ["yuki", "eki", "iku"],
+    ["tanaka", "kaisha", "kuru"],
   ];
 
-  for (let round = 0; round < 5; round += 1) {
-    for (let index = 0; index < wovenNouns.length; index += 1) {
-      const nounId = cycle(wovenNouns, index + round * 3);
-      negativeTopic(cards, 4, w(words, nounId), w(words, cycle(complementById.get(nounId), round + index)));
-      if ((index + round) % 2 === 0) {
-        movement(round * wovenNouns.length + index, (round + index) % 4 === 0 ? "kuru" : "iku");
-      }
-      if ((index + round) % 3 === 1) {
-        movement(53 + round * wovenNouns.length + index, (round + index) % 2 === 0 ? "kuru" : "iku");
-      }
-      if ((index + round) % 4 === 2) cycle(reviewRows, round + index)();
-    }
-    if (round === 1) addReview(cards, 4, words, reviewWords, 1);
+  for (let index = 0; index < movementRows.length; index += 1) {
+    const [actorId, placeId, verbId] = movementRows[index];
+    subjectPlaceAction(cards, 4, w(words, actorId), w(words, placeId), w(words, verbId));
+    const nounId = cycle(balancedNouns, index * 3);
+    negativeTopic(cards, 4, w(words, nounId), w(words, cycle(complementById.get(nounId), index + 1)));
   }
 
-  for (let index = 0; index < 4; index += 1) {
-    negativeTopic(cards, 4, w(words, cycle([...placeIds, ...personIds, ...objectIds], index)), w(words, cycle(["gakkou", "sensei", "hon", "basho"], index)));
-    movement(101 + index, index % 2 === 0 ? "iku" : "kuru");
+  const closingRows = [
+    ["kodomo", "gakusei"],
+    ["otona", "tomodachi"],
+    ["isu", "hon"],
+    ["tsukue", "kaban"],
+    ["kodomo", "sensei"],
+    ["otona", "kodomo"],
+    ["isu", "doubutsu"],
+    ["tsukue", "hon"],
+    ["kodomo", "isha"],
+    ["otona", "gakusei"],
+    ["otona", "sensei"],
+    ["otona", "isha"],
+  ];
+  for (const [left, right] of closingRows) {
+    negativeTopic(cards, 4, w(words, left), w(words, right));
   }
-  for (let index = 0; index < 4; index += 1) {
-    negativeTopic(cards, 4, w(words, cycle(objectIds, index)), w(words, cycle(["hon", "kaban", "doubutsu", "neko"], index)));
-  }
-  for (let index = 0; index < 12; index += 1) {
-    const nounId = cycle(wovenNouns, index * 2);
-    negativeTopic(cards, 4, w(words, nounId), w(words, cycle(complementById.get(nounId), index + 1)));
-    if (index % 2 === 0) movement(151 + index, index % 4 === 0 ? "iku" : "kuru");
-  }
+
   return cards;
 }
 
@@ -668,6 +671,7 @@ function assertUnit(unit, reviewWords = []) {
   if (unit.cards.length < 80 || unit.cards.length > 150) throw new Error(`unit ${unit.id}: expected 80-150 cards, got ${unit.cards.length}`);
   const currentWordIds = new Set(unit.newWords.map((word) => word.id));
   const firstWordPositions = new Map();
+  const wordAppearanceCounts = new Map();
   const badEnglishIdentity = /\b(I am|You are|He is|She is|The teacher is|The student is|The friend is|The doctor is|My mother is|My father is)\b (a cat|a dog|an animal|a book|a photo|a bag|a chair|a desk|a place|a house|a school|a shop|a hospital|a station|a company|a name|me|you|him|her|my mother|my father|my older sister|my younger brother|yesterday|last month|last year|morning|night|day off|a trip|work)$/;
   for (const [index, card] of unit.cards.entries()) {
     if (card.id !== `u${pad(unit.id)}-c${pad(index + 1)}`) throw new Error(`unit ${unit.id}: bad card id ${card.id}`);
@@ -676,6 +680,9 @@ function assertUnit(unit, reviewWords = []) {
     }
     for (const token of card.tokens ?? []) {
       if (token.wordId && !firstWordPositions.has(token.wordId)) firstWordPositions.set(token.wordId, index + 1);
+    }
+    for (const wordId of new Set((card.tokens ?? []).flatMap((token) => (token.wordId ? [token.wordId] : [])))) {
+      wordAppearanceCounts.set(wordId, (wordAppearanceCounts.get(wordId) ?? 0) + 1);
     }
     if (unit.id <= 7 && badEnglishIdentity.test(card.english)) {
       throw new Error(`unit ${unit.id} ${card.id}: suspicious identity sentence "${card.english}"`);
@@ -696,6 +703,15 @@ function assertUnit(unit, reviewWords = []) {
       const firstSeen = firstWordPositions.get(word.id);
       if (firstSeen && firstSeen > 80) {
         throw new Error(`unit ${unit.id}: review word ${word.id} first appears too late at card ${firstSeen}`);
+      }
+    }
+    if (unit.id === 4) {
+      if (unit.cards.length >= 100) throw new Error(`unit ${unit.id}: expected fewer than 100 cards, got ${unit.cards.length}`);
+      for (const word of unit.newWords) {
+        const count = wordAppearanceCounts.get(word.id) ?? 0;
+        if (count < 8 || count > 12) {
+          throw new Error(`unit ${unit.id}: current word ${word.id} expected 8-12 appearances, got ${count}`);
+        }
       }
     }
   }

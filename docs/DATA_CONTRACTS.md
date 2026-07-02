@@ -185,8 +185,11 @@ These fields must match the app-facing unit index and frozen unit files. Use
   appear before the late review band
 - review-due vocabulary returns somewhere in the unit without fake intro cards
 - no learner-facing first exposure appears after card 60
-- current-unit words should appear at least 8 times in a balanced or regenerated unit
+- current-unit words should appear at least 8 times in a balanced or regenerated unit, with 8-12 appearances as the usual target band
 - scheduled review-due words should aim for about 4 appearances in a standard unit, bending only when the due review pool gets too crowded
+
+Foundation units should stay under 100 cards when the 8-12 current-word band
+and review obligations can both be met without rushing new material.
 
 Existing frozen units may temporarily violate these pacing rules while the
 generator is being adopted. Use `npm run audit:curriculum-pacing` for
