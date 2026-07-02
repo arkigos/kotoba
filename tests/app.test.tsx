@@ -204,9 +204,9 @@ describe("practice player", () => {
 
     await user.selectOptions(screen.getByLabelText(/card number/i), "10");
     expect(screen.getByLabelText(/card number/i)).toHaveValue("10");
-    expect(screen.getByRole("progressbar", { name: /unit progress/i })).toHaveAttribute("aria-valuenow", "12");
-    expect(screen.getByText(/Card 10 \/ 82 · 12% complete/)).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Unit 1: First Sentences/i })).toHaveStyle("--unit-progress: 12%; --progress-color: hsl(15 70% 47%)");
+    expect(screen.getByRole("progressbar", { name: /unit progress/i })).toHaveAttribute("aria-valuenow", "11");
+    expect(screen.getByText(/Card 10 \/ 92 · 11% complete/)).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Unit 1: First Sentences/i })).toHaveStyle("--unit-progress: 11%; --progress-color: hsl(14 70% 47%)");
 
     await user.click(screen.getByRole("button", { name: /mark unit complete/i }));
     expect(screen.getByText("Completed")).toBeInTheDocument();

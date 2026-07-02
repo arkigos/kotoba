@@ -329,6 +329,56 @@
     {
       "id": "u007-c011",
       "line": [
+        "男の人",
+        "は",
+        "家族",
+        "です"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "かぞく",
+        "です"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "family",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The man is a family",
+      "fact": "A new person word stays in the topic slot while the comment changes. This card is previewed early so the unit's grammar focus appears before mixed practice.",
+      "grammarTags": [
+        "A wa B desu"
+      ]
+    },
+    {
+      "id": "u007-c012",
+      "line": [
         "食べ物",
         "を",
         "食べます"
@@ -369,7 +419,7 @@
       ]
     },
     {
-      "id": "u007-c012",
+      "id": "u007-c013",
       "line": [
         "飲み物",
         "を",
@@ -411,7 +461,500 @@
       ]
     },
     {
-      "id": "u007-c013",
+      "id": "u007-c014",
+      "line": [
+        "何",
+        "を",
+        "食べます",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "なん",
+        "を",
+        "たべます",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "what",
+        "direct object marker",
+        "eat; will eat",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "何",
+          "reading": "なん",
+          "explain": "what",
+          "wordId": "nan"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat; will eat"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "What do I eat?",
+      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u007-c015",
+      "line": [
+        "誰",
+        "が",
+        "来ます",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "だれ",
+        "が",
+        "きます",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "who",
+        "subject marker",
+        "come; will come",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "誰",
+          "reading": "だれ",
+          "explain": "who",
+          "wordId": "dare"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "来ます",
+          "reading": "きます",
+          "explain": "come; will come"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Who comes?",
+      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u007-c016",
+      "line": [
+        "どれ",
+        "を",
+        "使います",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "どれ",
+        "を",
+        "つかいます",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "which one",
+        "direct object marker",
+        "use",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "どれ",
+          "reading": "どれ",
+          "explain": "which one",
+          "wordId": "dore"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "使います",
+          "reading": "つかいます",
+          "explain": "use"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Which one do I use?",
+      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u007-c017",
+      "line": [
+        "どの",
+        "本",
+        "を",
+        "読みます",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "どの",
+        "ほん",
+        "を",
+        "よみます",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "which",
+        "book",
+        "direct object marker",
+        "read; will read",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "どの",
+          "reading": "どの",
+          "explain": "which",
+          "wordId": "dono"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "read; will read"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Which book do I read?",
+      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u007-c018",
+      "line": [
+        "男の人",
+        "は",
+        "食べます"
+      ],
+      "tts": [
+        "おとこのひと",
+        "わ",
+        "たべます"
+      ],
+      "explain": [
+        "man",
+        "topic marker",
+        "eat; will eat"
+      ],
+      "tokens": [
+        {
+          "surface": "男の人",
+          "reading": "おとこのひと",
+          "explain": "man",
+          "wordId": "otokonohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat; will eat"
+        }
+      ],
+      "english": "The man eats",
+      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u007-c019",
+      "line": [
+        "女の人",
+        "は",
+        "飲みます"
+      ],
+      "tts": [
+        "おんなのひと",
+        "わ",
+        "のみます"
+      ],
+      "explain": [
+        "woman",
+        "topic marker",
+        "drink; will drink"
+      ],
+      "tokens": [
+        {
+          "surface": "女の人",
+          "reading": "おんなのひと",
+          "explain": "woman",
+          "wordId": "onnanohito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink; will drink"
+        }
+      ],
+      "english": "The woman drinks",
+      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u007-c020",
+      "line": [
+        "店員",
+        "は",
+        "話します"
+      ],
+      "tts": [
+        "てんいん",
+        "わ",
+        "はなします"
+      ],
+      "explain": [
+        "shop clerk",
+        "topic marker",
+        "speak"
+      ],
+      "tokens": [
+        {
+          "surface": "店員",
+          "reading": "てんいん",
+          "explain": "shop clerk",
+          "wordId": "tenin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "speak"
+        }
+      ],
+      "english": "The shop clerk speaks",
+      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u007-c021",
+      "line": [
+        "駅員",
+        "は",
+        "聞きます"
+      ],
+      "tts": [
+        "えきいん",
+        "わ",
+        "ききます"
+      ],
+      "explain": [
+        "station attendant",
+        "topic marker",
+        "listen; ask"
+      ],
+      "tokens": [
+        {
+          "surface": "駅員",
+          "reading": "えきいん",
+          "explain": "station attendant",
+          "wordId": "ekiin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "聞きます",
+          "reading": "ききます",
+          "explain": "listen; ask"
+        }
+      ],
+      "english": "The station attendant listens",
+      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u007-c022",
+      "line": [
+        "食べ物",
+        "を",
+        "買います"
+      ],
+      "tts": [
+        "たべもの",
+        "を",
+        "かいます"
+      ],
+      "explain": [
+        "food",
+        "direct object marker",
+        "buy"
+      ],
+      "tokens": [
+        {
+          "surface": "食べ物",
+          "reading": "たべもの",
+          "explain": "food",
+          "wordId": "tabemono"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "買います",
+          "reading": "かいます",
+          "explain": "buy"
+        }
+      ],
+      "english": "I buy food",
+      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u007-c023",
+      "line": [
+        "飲み物",
+        "を",
+        "買います"
+      ],
+      "tts": [
+        "のみもの",
+        "を",
+        "かいます"
+      ],
+      "explain": [
+        "drink",
+        "direct object marker",
+        "buy"
+      ],
+      "tokens": [
+        {
+          "surface": "飲み物",
+          "reading": "のみもの",
+          "explain": "drink",
+          "wordId": "nomimono"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "direct object marker"
+        },
+        {
+          "surface": "買います",
+          "reading": "かいます",
+          "explain": "buy"
+        }
+      ],
+      "english": "I buy a beverage",
+      "fact": "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
+      "grammarTags": [
+        "early masu action preview",
+        "Vます preview"
+      ]
+    },
+    {
+      "id": "u007-c024",
       "line": [
         "何"
       ],
@@ -436,7 +979,7 @@
       ]
     },
     {
-      "id": "u007-c014",
+      "id": "u007-c025",
       "line": [
         "誰"
       ],
@@ -461,7 +1004,7 @@
       ]
     },
     {
-      "id": "u007-c015",
+      "id": "u007-c026",
       "line": [
         "どれ"
       ],
@@ -486,7 +1029,7 @@
       ]
     },
     {
-      "id": "u007-c016",
+      "id": "u007-c027",
       "line": [
         "どの"
       ],
@@ -511,7 +1054,7 @@
       ]
     },
     {
-      "id": "u007-c017",
+      "id": "u007-c028",
       "line": [
         "男の人"
       ],
@@ -536,7 +1079,7 @@
       ]
     },
     {
-      "id": "u007-c018",
+      "id": "u007-c029",
       "line": [
         "女の人"
       ],
@@ -561,7 +1104,7 @@
       ]
     },
     {
-      "id": "u007-c019",
+      "id": "u007-c030",
       "line": [
         "店員"
       ],
@@ -586,7 +1129,7 @@
       ]
     },
     {
-      "id": "u007-c020",
+      "id": "u007-c031",
       "line": [
         "駅員"
       ],
@@ -611,7 +1154,7 @@
       ]
     },
     {
-      "id": "u007-c021",
+      "id": "u007-c032",
       "line": [
         "食べ物"
       ],
@@ -636,7 +1179,7 @@
       ]
     },
     {
-      "id": "u007-c022",
+      "id": "u007-c033",
       "line": [
         "飲み物"
       ],
@@ -661,7 +1204,7 @@
       ]
     },
     {
-      "id": "u007-c023",
+      "id": "u007-c034",
       "line": [
         "昨日",
         "は",
@@ -728,7 +1271,7 @@
       ]
     },
     {
-      "id": "u007-c024",
+      "id": "u007-c035",
       "line": [
         "先月",
         "は",
@@ -795,7 +1338,7 @@
       ]
     },
     {
-      "id": "u007-c025",
+      "id": "u007-c036",
       "line": [
         "去年",
         "は",
@@ -862,7 +1405,7 @@
       ]
     },
     {
-      "id": "u007-c026",
+      "id": "u007-c037",
       "line": [
         "朝",
         "は",
@@ -929,7 +1472,7 @@
       ]
     },
     {
-      "id": "u007-c027",
+      "id": "u007-c038",
       "line": [
         "夜",
         "は",
@@ -996,7 +1539,7 @@
       ]
     },
     {
-      "id": "u007-c028",
+      "id": "u007-c039",
       "line": [
         "誕生日",
         "は",
@@ -1063,7 +1606,7 @@
       ]
     },
     {
-      "id": "u007-c029",
+      "id": "u007-c040",
       "line": [
         "休み",
         "は",
@@ -1130,7 +1673,7 @@
       ]
     },
     {
-      "id": "u007-c030",
+      "id": "u007-c041",
       "line": [
         "私",
         "は",
@@ -1197,7 +1740,7 @@
       ]
     },
     {
-      "id": "u007-c031",
+      "id": "u007-c042",
       "line": [
         "あなた",
         "は",
@@ -1264,7 +1807,7 @@
       ]
     },
     {
-      "id": "u007-c032",
+      "id": "u007-c043",
       "line": [
         "彼",
         "は",
@@ -1331,7 +1874,7 @@
       ]
     },
     {
-      "id": "u007-c033",
+      "id": "u007-c044",
       "line": [
         "彼女",
         "は",
@@ -1398,7 +1941,7 @@
       ]
     },
     {
-      "id": "u007-c034",
+      "id": "u007-c045",
       "line": [
         "母",
         "は",
@@ -1465,7 +2008,7 @@
       ]
     },
     {
-      "id": "u007-c035",
+      "id": "u007-c046",
       "line": [
         "父",
         "は",
@@ -1532,7 +2075,7 @@
       ]
     },
     {
-      "id": "u007-c036",
+      "id": "u007-c047",
       "line": [
         "姉",
         "は",
@@ -1599,7 +2142,7 @@
       ]
     },
     {
-      "id": "u007-c037",
+      "id": "u007-c048",
       "line": [
         "どれ",
         "が",
@@ -1666,7 +2209,7 @@
       ]
     },
     {
-      "id": "u007-c038",
+      "id": "u007-c049",
       "line": [
         "どれ",
         "が",
@@ -1733,7 +2276,7 @@
       ]
     },
     {
-      "id": "u007-c039",
+      "id": "u007-c050",
       "line": [
         "どれ",
         "が",
@@ -1800,7 +2343,7 @@
       ]
     },
     {
-      "id": "u007-c040",
+      "id": "u007-c051",
       "line": [
         "どれ",
         "が",
@@ -1867,7 +2410,7 @@
       ]
     },
     {
-      "id": "u007-c041",
+      "id": "u007-c052",
       "line": [
         "どれ",
         "が",
@@ -1934,7 +2477,7 @@
       ]
     },
     {
-      "id": "u007-c042",
+      "id": "u007-c053",
       "line": [
         "どれ",
         "が",
@@ -2001,7 +2544,7 @@
       ]
     },
     {
-      "id": "u007-c043",
+      "id": "u007-c054",
       "line": [
         "どれ",
         "が",
@@ -2068,7 +2611,7 @@
       ]
     },
     {
-      "id": "u007-c044",
+      "id": "u007-c055",
       "line": [
         "どの",
         "旅行",
@@ -2127,7 +2670,7 @@
       ]
     },
     {
-      "id": "u007-c045",
+      "id": "u007-c056",
       "line": [
         "どの",
         "仕事",
@@ -2186,7 +2729,7 @@
       ]
     },
     {
-      "id": "u007-c046",
+      "id": "u007-c057",
       "line": [
         "どの",
         "テスト",
@@ -2245,7 +2788,7 @@
       ]
     },
     {
-      "id": "u007-c047",
+      "id": "u007-c058",
       "line": [
         "どの",
         "写真",
@@ -2304,7 +2847,7 @@
       ]
     },
     {
-      "id": "u007-c048",
+      "id": "u007-c059",
       "line": [
         "どの",
         "かばん",
@@ -2363,7 +2906,7 @@
       ]
     },
     {
-      "id": "u007-c049",
+      "id": "u007-c060",
       "line": [
         "どの",
         "車",
@@ -2422,7 +2965,7 @@
       ]
     },
     {
-      "id": "u007-c050",
+      "id": "u007-c061",
       "line": [
         "どの",
         "部屋",
@@ -2481,7 +3024,7 @@
       ]
     },
     {
-      "id": "u007-c051",
+      "id": "u007-c062",
       "line": [
         "男の人",
         "は",
@@ -2531,7 +3074,7 @@
       ]
     },
     {
-      "id": "u007-c052",
+      "id": "u007-c063",
       "line": [
         "男の人",
         "は",
@@ -2581,7 +3124,7 @@
       ]
     },
     {
-      "id": "u007-c053",
+      "id": "u007-c064",
       "line": [
         "男の人",
         "は",
@@ -2631,7 +3174,7 @@
       ]
     },
     {
-      "id": "u007-c054",
+      "id": "u007-c065",
       "line": [
         "男の人",
         "は",
@@ -2681,7 +3224,7 @@
       ]
     },
     {
-      "id": "u007-c055",
+      "id": "u007-c066",
       "line": [
         "男の人",
         "は",
@@ -2731,7 +3274,7 @@
       ]
     },
     {
-      "id": "u007-c056",
+      "id": "u007-c067",
       "line": [
         "男の人",
         "は",
@@ -2781,7 +3324,7 @@
       ]
     },
     {
-      "id": "u007-c057",
+      "id": "u007-c068",
       "line": [
         "男の人",
         "は",
@@ -2831,7 +3374,7 @@
       ]
     },
     {
-      "id": "u007-c058",
+      "id": "u007-c069",
       "line": [
         "女の人",
         "は",
@@ -2881,7 +3424,7 @@
       ]
     },
     {
-      "id": "u007-c059",
+      "id": "u007-c070",
       "line": [
         "女の人",
         "は",
@@ -2931,7 +3474,7 @@
       ]
     },
     {
-      "id": "u007-c060",
+      "id": "u007-c071",
       "line": [
         "女の人",
         "は",
@@ -2981,7 +3524,7 @@
       ]
     },
     {
-      "id": "u007-c061",
+      "id": "u007-c072",
       "line": [
         "女の人",
         "は",
@@ -3031,7 +3574,7 @@
       ]
     },
     {
-      "id": "u007-c062",
+      "id": "u007-c073",
       "line": [
         "女の人",
         "は",
@@ -3081,7 +3624,7 @@
       ]
     },
     {
-      "id": "u007-c063",
+      "id": "u007-c074",
       "line": [
         "女の人",
         "は",
@@ -3131,7 +3674,7 @@
       ]
     },
     {
-      "id": "u007-c064",
+      "id": "u007-c075",
       "line": [
         "女の人",
         "は",
@@ -3181,7 +3724,7 @@
       ]
     },
     {
-      "id": "u007-c065",
+      "id": "u007-c076",
       "line": [
         "店員",
         "は",
@@ -3231,7 +3774,7 @@
       ]
     },
     {
-      "id": "u007-c066",
+      "id": "u007-c077",
       "line": [
         "店員",
         "は",
@@ -3281,7 +3824,7 @@
       ]
     },
     {
-      "id": "u007-c067",
+      "id": "u007-c078",
       "line": [
         "店員",
         "は",
@@ -3331,7 +3874,7 @@
       ]
     },
     {
-      "id": "u007-c068",
+      "id": "u007-c079",
       "line": [
         "店員",
         "は",
@@ -3381,7 +3924,7 @@
       ]
     },
     {
-      "id": "u007-c069",
+      "id": "u007-c080",
       "line": [
         "店員",
         "は",
@@ -3431,7 +3974,7 @@
       ]
     },
     {
-      "id": "u007-c070",
+      "id": "u007-c081",
       "line": [
         "店員",
         "は",
@@ -3481,7 +4024,7 @@
       ]
     },
     {
-      "id": "u007-c071",
+      "id": "u007-c082",
       "line": [
         "店員",
         "は",
@@ -3531,7 +4074,7 @@
       ]
     },
     {
-      "id": "u007-c072",
+      "id": "u007-c083",
       "line": [
         "駅員",
         "は",
@@ -3581,7 +4124,7 @@
       ]
     },
     {
-      "id": "u007-c073",
+      "id": "u007-c084",
       "line": [
         "駅員",
         "は",
@@ -3631,7 +4174,7 @@
       ]
     },
     {
-      "id": "u007-c074",
+      "id": "u007-c085",
       "line": [
         "駅員",
         "は",
@@ -3681,7 +4224,7 @@
       ]
     },
     {
-      "id": "u007-c075",
+      "id": "u007-c086",
       "line": [
         "駅員",
         "は",
@@ -3731,7 +4274,7 @@
       ]
     },
     {
-      "id": "u007-c076",
+      "id": "u007-c087",
       "line": [
         "駅員",
         "は",
@@ -3781,7 +4324,7 @@
       ]
     },
     {
-      "id": "u007-c077",
+      "id": "u007-c088",
       "line": [
         "駅員",
         "は",
@@ -3831,7 +4374,7 @@
       ]
     },
     {
-      "id": "u007-c078",
+      "id": "u007-c089",
       "line": [
         "駅員",
         "は",
@@ -3881,7 +4424,7 @@
       ]
     },
     {
-      "id": "u007-c079",
+      "id": "u007-c090",
       "line": [
         "食べ物",
         "は",
@@ -3948,7 +4491,7 @@
       ]
     },
     {
-      "id": "u007-c080",
+      "id": "u007-c091",
       "line": [
         "食べ物",
         "は",
@@ -4015,7 +4558,7 @@
       ]
     },
     {
-      "id": "u007-c081",
+      "id": "u007-c092",
       "line": [
         "食べ物",
         "は",
@@ -4082,7 +4625,7 @@
       ]
     },
     {
-      "id": "u007-c082",
+      "id": "u007-c093",
       "line": [
         "食べ物",
         "は",
@@ -4149,7 +4692,7 @@
       ]
     },
     {
-      "id": "u007-c083",
+      "id": "u007-c094",
       "line": [
         "食べ物",
         "は",
@@ -4216,7 +4759,7 @@
       ]
     },
     {
-      "id": "u007-c084",
+      "id": "u007-c095",
       "line": [
         "食べ物",
         "は",
@@ -4283,7 +4826,7 @@
       ]
     },
     {
-      "id": "u007-c085",
+      "id": "u007-c096",
       "line": [
         "食べ物",
         "は",
@@ -4350,7 +4893,7 @@
       ]
     },
     {
-      "id": "u007-c086",
+      "id": "u007-c097",
       "line": [
         "飲み物",
         "は",
@@ -4417,7 +4960,7 @@
       ]
     },
     {
-      "id": "u007-c087",
+      "id": "u007-c098",
       "line": [
         "飲み物",
         "は",
@@ -4484,7 +5027,7 @@
       ]
     },
     {
-      "id": "u007-c088",
+      "id": "u007-c099",
       "line": [
         "飲み物",
         "は",
@@ -4551,7 +5094,7 @@
       ]
     },
     {
-      "id": "u007-c089",
+      "id": "u007-c100",
       "line": [
         "飲み物",
         "は",
@@ -4618,7 +5161,7 @@
       ]
     },
     {
-      "id": "u007-c090",
+      "id": "u007-c101",
       "line": [
         "飲み物",
         "は",
@@ -4685,7 +5228,7 @@
       ]
     },
     {
-      "id": "u007-c091",
+      "id": "u007-c102",
       "line": [
         "飲み物",
         "は",
@@ -4752,7 +5295,7 @@
       ]
     },
     {
-      "id": "u007-c092",
+      "id": "u007-c103",
       "line": [
         "飲み物",
         "は",

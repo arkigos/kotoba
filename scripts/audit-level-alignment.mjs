@@ -203,8 +203,9 @@ const lateA1Rows = a1Rows.filter((row) => row.id >= 15);
 const a2ActionRows = a2Rows.filter((row) => row.id >= 21 && row.id <= 30);
 
 for (const row of a1Rows) {
-  if (row.verbLaneCount < 2) {
-    failures.push(`unit ${row.id}: A1 units need at least two action/existence lane cards; found ${row.verbLaneCount}.`);
+  const minimumVerbLaneCards = row.id <= 7 ? 10 : 2;
+  if (row.verbLaneCount < minimumVerbLaneCards) {
+    failures.push(`unit ${row.id}: A1 units need at least ${minimumVerbLaneCards} action/existence lane cards; found ${row.verbLaneCount}.`);
   }
 }
 
@@ -235,7 +236,7 @@ console.table(levelSummaries);
 printTable(rows);
 
 console.log("\nAlignment notes:");
-console.log("- A1 starts simple, but every unit needs at least a small verb lane: action previews or existence practice.");
+console.log("- A1 starts simple, but every unit needs a verb lane: Units 1-7 are the denser foundation baseline, later A1 uses action previews or existence practice.");
 console.log("- Early action previews are whole-sentence bridges; a later SRS migration can promote selected core verbs into A1 newWords deliberately.");
 console.log("- A2 should carry the everyday action load: polite verbs, objects, destinations, time, frequency, wants, requests, permission, te-form, and ongoing state.");
 

@@ -15,8 +15,10 @@ simple action language feeling artificially delayed.
 
 Every A1 unit must include a small verb lane.
 
-- Units 1-14 include at least two early whole-sentence action cards using
-  polite action forms such as `食べます`, `飲みます`, `行きます`, or `読みます`.
+- Units 1-7 are the foundation baseline and include a denser block of early
+  whole-sentence action cards using polite action forms such as `食べます`,
+  `飲みます`, `行きます`, or `読みます`.
+- Units 8-14 include at least two early whole-sentence action bridge cards.
 - Units 15-20 may satisfy the lane through the unit grammar itself when it is
   rich in `あります` / `います` existence practice.
 - Action cards should be short and modular. They are allowed to preview useful
