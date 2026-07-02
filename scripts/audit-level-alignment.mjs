@@ -71,6 +71,10 @@ function hasProductiveMasu(card) {
   return hasMasuFamily(card) && !hasExistence(card) && !hasDesuFamily(card);
 }
 
+function hasVerbLane(card) {
+  return hasExistence(card) || hasProductiveMasu(card);
+}
+
 function hasTeForm(card) {
   const tags = card.grammarTags ?? [];
   if (tags.some((tag) => /te-form/i.test(tag) || tag.includes(`V${jp.te}`))) return true;
@@ -107,6 +111,7 @@ function printTable(rows) {
       desu: `${row.desuPct}%`,
       exist: `${row.existencePct}%`,
       action: `${row.productiveMasuPct}%`,
+      lane: row.verbLaneCount,
       te: `${row.tePct}%`,
       tai: `${row.taiPct}%`,
       title: row.title,
@@ -144,6 +149,8 @@ for (const entry of index.units) {
     desuPct: percentage(cards, hasDesuFamily),
     existencePct: percentage(cards, hasExistence),
     productiveMasuPct: percentage(cards, hasProductiveMasu),
+    verbLaneCount: cards.filter(hasVerbLane).length,
+    verbLanePct: percentage(cards, hasVerbLane),
     tePct: percentage(cards, hasTeForm),
     taiPct: percentage(cards, hasTai),
   });
@@ -159,6 +166,7 @@ for (const row of rows) {
       desuWeighted: 0,
       existenceWeighted: 0,
       productiveMasuWeighted: 0,
+      verbLaneWeighted: 0,
       teWeighted: 0,
       taiWeighted: 0,
     });
@@ -171,6 +179,7 @@ for (const row of rows) {
   level.desuWeighted += row.desuPct * row.cards;
   level.existenceWeighted += row.existencePct * row.cards;
   level.productiveMasuWeighted += row.productiveMasuPct * row.cards;
+  level.verbLaneWeighted += row.verbLanePct * row.cards;
   level.teWeighted += row.tePct * row.cards;
   level.taiWeighted += row.taiPct * row.cards;
 }
@@ -183,6 +192,7 @@ const levelSummaries = [...byLevel.entries()].map(([level, summary]) => ({
   desu: `${Math.round(summary.desuWeighted / summary.cards)}%`,
   existence: `${Math.round(summary.existenceWeighted / summary.cards)}%`,
   productiveMasu: `${Math.round(summary.productiveMasuWeighted / summary.cards)}%`,
+  verbLane: `${Math.round(summary.verbLaneWeighted / summary.cards)}%`,
   te: `${Math.round(summary.teWeighted / summary.cards)}%`,
   tai: `${Math.round(summary.taiWeighted / summary.cards)}%`,
 }));
@@ -192,8 +202,10 @@ const a2Rows = rows.filter((row) => row.level === "A2");
 const lateA1Rows = a1Rows.filter((row) => row.id >= 15);
 const a2ActionRows = a2Rows.filter((row) => row.id >= 21 && row.id <= 30);
 
-if (a1Rows.some((row) => row.newVerbCount > 0)) {
-  warnings.push("A1 currently introduces lexical verbs. That can be fine as a planned bridge, but do not add productive action verbs to Unit 1 by accident.");
+for (const row of a1Rows) {
+  if (row.verbLaneCount < 2) {
+    failures.push(`unit ${row.id}: A1 units need at least two action/existence lane cards; found ${row.verbLaneCount}.`);
+  }
 }
 
 const lateA1ExistenceAverage = lateA1Rows.length === 0 ? 0 : Math.round(lateA1Rows.reduce((sum, row) => sum + row.existencePct, 0) / lateA1Rows.length);
@@ -223,8 +235,8 @@ console.table(levelSummaries);
 printTable(rows);
 
 console.log("\nAlignment notes:");
-console.log("- A1 is allowed to be static at the start: identity, things, people, questions, adjectives, existence, places, and counting.");
-console.log("- Do not smuggle productive action verbs into Unit 1 unless the A1 grammar map is intentionally redesigned.");
+console.log("- A1 starts simple, but every unit needs at least a small verb lane: action previews or existence practice.");
+console.log("- Early action previews are whole-sentence bridges; a later SRS migration can promote selected core verbs into A1 newWords deliberately.");
 console.log("- A2 should carry the everyday action load: polite verbs, objects, destinations, time, frequency, wants, requests, permission, te-form, and ongoing state.");
 
 for (const warning of warnings) console.warn(`WARN ${warning}`);

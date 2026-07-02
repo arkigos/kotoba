@@ -4,6 +4,10 @@
 
 Accepted.
 
+Superseded in part by `2026-07-01-a1-every-unit-verb-lane.md`: A1 now requires
+a small verb/existence lane in every unit, including early Unit 1 action
+previews.
+
 ## Context
 
 The authored A1 units lean heavily on `です` while they teach identity,

@@ -45,7 +45,7 @@ function card(unitId, index, parts, english, tags = []) {
     explain: parts.map((part) => part.explain),
     tokens: parts,
     english,
-    fact: "`ます` makes an action polite. For now, treat this as one complete action sentence.",
+    fact: "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
     grammarTags: [previewTag, ...tags],
   };
 }
@@ -61,37 +61,56 @@ function makePreviews(unitId, lexicon) {
   const w = (id) => word(lexicon, id);
   const g = grammar;
   const masu = {
-    eat: g("食べます", "たべます", "eat; will eat"),
-    drink: g("飲みます", "のみます", "drink; will drink"),
-    go: g("行きます", "いきます", "go; will go"),
-    come: g("来ます", "きます", "come; will come"),
-    read: g("読みます", "よみます", "read; will read"),
-    write: g("書きます", "かきます", "write; will write"),
-    see: g("見ます", "みます", "look; see; watch"),
-    listen: g("聞きます", "ききます", "listen; ask"),
-    speak: g("話します", "はなします", "speak"),
-    work: g("働きます", "はたらきます", "work"),
-    study: g("勉強します", "べんきょうします", "study"),
+    eat: g("\u98df\u3079\u307e\u3059", "\u305f\u3079\u307e\u3059", "eat; will eat"),
+    drink: g("\u98f2\u307f\u307e\u3059", "\u306e\u307f\u307e\u3059", "drink; will drink"),
+    go: g("\u884c\u304d\u307e\u3059", "\u3044\u304d\u307e\u3059", "go; will go"),
+    come: g("\u6765\u307e\u3059", "\u304d\u307e\u3059", "come; will come"),
+    read: g("\u8aad\u307f\u307e\u3059", "\u3088\u307f\u307e\u3059", "read; will read"),
+    write: g("\u66f8\u304d\u307e\u3059", "\u304b\u304d\u307e\u3059", "write; will write"),
+    see: g("\u898b\u307e\u3059", "\u307f\u307e\u3059", "look; see; watch"),
+    listen: g("\u805e\u304d\u307e\u3059", "\u304d\u304d\u307e\u3059", "listen; ask"),
+    work: g("\u50cd\u304d\u307e\u3059", "\u306f\u305f\u3089\u304d\u307e\u3059", "work"),
+    study: g("\u52c9\u5f37\u3057\u307e\u3059", "\u3079\u3093\u304d\u3087\u3046\u3057\u307e\u3059", "study"),
+    ate: g("\u98df\u3079\u307e\u3057\u305f", "\u305f\u3079\u307e\u3057\u305f", "ate"),
+    went: g("\u884c\u304d\u307e\u3057\u305f", "\u3044\u304d\u307e\u3057\u305f", "went"),
   };
   const p = {
-    wa: g("は", "わ", "topic marker"),
-    to: g("と", "と", "and; with"),
-    wo: g("を", "を", "direct object marker"),
-    ni: g("に", "に", "destination marker"),
-    de: g("で", "で", "action location marker"),
-    ka: g("か", "か", "question marker"),
-    na: g("な", "な", "links a na-adjective to a noun"),
-    no: g("の", "の", "links a noun-like word to a noun"),
+    wa: g("\u306f", "\u308f", "topic marker"),
+    wo: g("\u3092", "\u3092", "direct object marker"),
+    ni: g("\u306b", "\u306b", "destination marker"),
+    de: g("\u3067", "\u3067", "action location marker"),
+    na: g("\u306a", "\u306a", "links a na-adjective to a noun"),
+    no: g("\u306e", "\u306e", "links a noun-like word to a noun"),
   };
 
   const plans = {
+    1: [
+      [[w("watashi"), p.wa, masu.eat], "I eat"],
+      [[w("sakura"), p.wa, masu.drink], "You drink"],
+    ],
+    2: [
+      [[w("sensei"), p.wa, masu.eat], "The teacher eats"],
+      [[w("gakusei"), p.wa, masu.read], "The student reads"],
+    ],
+    3: [
+      [[w("haha"), p.wa, masu.eat], "My mother eats"],
+      [[w("chichi"), p.wa, masu.drink], "My father drinks"],
+    ],
+    4: [
+      [[w("mise"), p.ni, masu.go], "I go to the shop"],
+      [[w("byouin"), p.ni, masu.go], "I go to the hospital"],
+    ],
+    5: [
+      [[w("kinou"), masu.ate], "I ate yesterday"],
+      [[w("sengetsu"), w("ryokou"), p.ni, masu.went], "I went on a trip last month"],
+    ],
     6: [
       [[w("mizu"), p.wo, masu.drink], "I drink water"],
       [[w("ocha"), p.wo, masu.drink], "I drink tea"],
     ],
     7: [
       [[w("tabemono"), p.wo, masu.eat], "I eat food"],
-      [[w("nomimono"), p.wo, masu.drink], "I drink a drink"],
+      [[w("nomimono"), p.wo, masu.drink], "I drink a beverage"],
     ],
     8: [
       [[w("kyou"), masu.go], "I go today"],
@@ -123,7 +142,7 @@ function makePreviews(unitId, lexicon) {
     ],
   };
 
-  return (plans[unitId] ?? []).map(([parts, english], index) => card(unitId, index + 1, parts, english, ["Vます preview"]));
+  return (plans[unitId] ?? []).map(([parts, english], index) => card(unitId, index + 1, parts, english, ["V\u307e\u3059 preview"]));
 }
 
 const index = await readJson("data/jp/curriculum/unit_index.json");
@@ -143,7 +162,7 @@ for (const { entry, unit } of units) {
   if (previews.length === 0) continue;
 
   const baseCards = unit.cards.filter((existingCard) => !(existingCard.grammarTags ?? []).some((tag) => previewTagsToReplace.has(tag)));
-  const insertAt = Math.min(54, baseCards.length);
+  const insertAt = Math.min(20, baseCards.length);
   const previewBlock = previews.map((preview) => ({ ...preview }));
   const cards = reindex(unit.id, [
     ...baseCards.slice(0, insertAt),

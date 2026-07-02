@@ -169,16 +169,18 @@ describe("curriculum word bins", () => {
     ]);
   });
 
-  it("keeps foundation units free of hidden action previews", () => {
+  it("keeps an action or existence lane in every A1 unit", () => {
     const previewTag = "early masu action preview";
-    for (let unitId = 1; unitId <= 7; unitId += 1) {
-      const unit = unitModules[unitModulePath(unitId)].default;
-      expect(unit.cards.filter((card) => card.grammarTags?.includes(previewTag))).toHaveLength(0);
-    }
-
-    for (let unitId = 8; unitId <= 14; unitId += 1) {
+    const existenceForms = new Set(["\u3042\u308a\u307e\u3059", "\u3044\u307e\u3059", "\u3042\u308a\u307e\u305b\u3093", "\u3044\u307e\u305b\u3093"]);
+    for (let unitId = 1; unitId <= 14; unitId += 1) {
       const unit = unitModules[unitModulePath(unitId)].default;
       expect(unit.cards.filter((card) => card.grammarTags?.includes(previewTag))).toHaveLength(2);
+    }
+
+    for (let unitId = 15; unitId <= 20; unitId += 1) {
+      const unit = unitModules[unitModulePath(unitId)].default;
+      const existenceCards = unit.cards.filter((card) => card.line.some((part) => existenceForms.has(part)));
+      expect(existenceCards.length, `unit ${unitId}`).toBeGreaterThanOrEqual(2);
     }
   });
 
@@ -362,7 +364,10 @@ describe("curriculum word bins", () => {
     const reviewWords = unitModules[unitModulePath(1)].default.newWords;
 
     for (const word of unit.newWords) {
-      expect(counts.get(word.id), `new word ${word.id}`).toBe(pacingRules.distributionTargets.currentWordAppearances);
+      expect(counts.get(word.id), `new word ${word.id}`).toBeGreaterThanOrEqual(pacingRules.distributionTargets.currentWordAppearances);
+      expect(counts.get(word.id), `new word ${word.id}`).toBeLessThanOrEqual(
+        pacingRules.distributionTargets.currentWordAppearances + pacingRules.distributionTargets.tolerance,
+      );
     }
 
     for (const word of reviewWords) {
