@@ -770,117 +770,111 @@ function buildUnit3(spec, previousWords, reviewWords) {
 }
 
 function buildUnit4(spec, previousWords, reviewWords) {
-  const previous = byId(previousWords);
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
-  warmReview(cards, 4, previous);
 
-  const firstNegativeRows = [
-    ["mise", "heya"],
-    ["byouin", "heya"],
-    ["eki", "heya"],
-    ["kaisha", "heya"],
-    ["kodomo", "sensei"],
-    ["otona", "gakusei"],
-    ["isu", "kaban"],
-    ["tsukue", "kaban"],
+  const introRows = [
+    ["negative", "mise", "heya"],
+    ["negative", "byouin", "heya"],
+    ["negative", "eki", "heya"],
+    ["negative", "kaisha", "heya"],
+    ["negative", "kodomo", "sensei"],
+    ["negative", "otona", "gakusei"],
+    ["negative", "isu", "kaban"],
+    ["negative", "tsukue", "kaban"],
+    ["subjectPlace", "watashi", "gakkou", "iku", "ni"],
+    ["subjectPlace", "sakura", "ie", "kuru", "ni"],
   ];
-  for (const [left, right] of firstNegativeRows) negativeTopic(cards, 4, w(words, left), w(words, right));
-  placeAction(cards, 4, w(words, "gakkou"), w(words, "iku"));
-  placeAction(cards, 4, w(words, "ie"), w(words, "kuru"));
-
-  const unit2ReviewRows = [
-    () => topic(cards, 4, w(words, "neko"), w(words, "doubutsu")),
-    () => topicQuestion(cards, 4, w(words, "neko"), w(words, "doubutsu")),
-    () => negativeTopic(cards, 4, w(words, "neko"), w(words, "isu")),
-    () => negativeTopic(cards, 4, w(words, "neko"), w(words, "tsukue")),
-    () => topic(cards, 4, w(words, "inu"), w(words, "doubutsu")),
-    () => topicQuestion(cards, 4, w(words, "inu"), w(words, "doubutsu")),
-    () => negativeTopic(cards, 4, w(words, "inu"), w(words, "isu")),
-    () => negativeTopic(cards, 4, w(words, "inu"), w(words, "tsukue")),
-    () => negativeTopic(cards, 4, w(words, "inu"), w(words, "kodomo")),
-    () => objectAction(cards, 4, w(words, "hon"), w(words, "yomu")),
-    () => objectAction(cards, 4, w(words, "hon"), w(words, "yomu")),
-    () => objectAction(cards, 4, w(words, "hon"), w(words, "yomu")),
-    () => objectAction(cards, 4, w(words, "hon"), w(words, "yomu")),
-    () => subjectAction(cards, 4, w(words, "watashi"), w(words, "kaku")),
-    () => subjectAction(cards, 4, w(words, "sakura"), w(words, "kaku")),
-    () => subjectAction(cards, 4, w(words, "yuki"), w(words, "kaku")),
-    () => subjectAction(cards, 4, w(words, "tanaka"), w(words, "kaku")),
-    () => subjectAction(cards, 4, w(words, "sensei"), w(words, "kaku")),
-    () => subjectPlaceAction(cards, 4, w(words, "isha"), w(words, "byouin"), w(words, "iku")),
-    () => subjectPlaceAction(cards, 4, w(words, "isha"), w(words, "byouin"), w(words, "kuru")),
-    () => negativeTopic(cards, 4, w(words, "isha"), w(words, "kodomo")),
-    () => negativeTopic(cards, 4, w(words, "isha"), w(words, "otona")),
-    () => negativeTopic(cards, 4, w(words, "isha"), w(words, "tsukue")),
-    () => negativeTopic(cards, 4, w(words, "gakkou"), w(words, "mise")),
-    () => negativeTopic(cards, 4, w(words, "gakkou"), w(words, "kaisha")),
-    () => placeAction(cards, 4, w(words, "gakkou"), w(words, "iku")),
-    () => negativeTopic(cards, 4, w(words, "ie"), w(words, "byouin")),
-    () => negativeTopic(cards, 4, w(words, "ie"), w(words, "eki")),
-    () => placeAction(cards, 4, w(words, "ie"), w(words, "kuru")),
-    () => negativeTopic(cards, 4, w(words, "basho"), w(words, "mise")),
-    () => negativeTopic(cards, 4, w(words, "basho"), w(words, "eki")),
-    () => negativeTopic(cards, 4, w(words, "basho"), w(words, "kaisha")),
+  const currentRows = [
+    ["subjectPlace", "watashi", "mise", "iku", "ni"],
+    ["negative", "mise", "shashin"],
+    ["subjectPlace", "sakura", "byouin", "kuru", "ni"],
+    ["negative", "byouin", "kaban"],
+    ["subjectPlace", "yuki", "eki", "iku", "ni"],
+    ["negative", "eki", "shashin"],
+    ["subjectPlace", "tanaka", "kaisha", "kuru", "ni"],
+    ["negative", "kaisha", "tomodachi"],
+    ["negative", "kodomo", "otona"],
+    ["negative", "otona", "kodomo"],
+    ["negative", "isu", "tsukue"],
+    ["negative", "tsukue", "isu"],
+    ["subjectPlace", "sensei", "mise", "kuru", "ni"],
+    ["negative", "mise", "kaban"],
+    ["subjectPlace", "gakusei", "byouin", "iku", "ni"],
+    ["negative", "byouin", "shashin"],
+    ["subjectPlace", "tomodachi", "eki", "kuru", "ni"],
+    ["negative", "eki", "kaban"],
+    ["subjectPlace", "isha", "kaisha", "iku", "ni"],
+    ["negative", "kaisha", "shashin"],
+    ["negative", "kodomo", "isha"],
+    ["negative", "otona", "isha"],
+    ["negative", "isu", "hon"],
+    ["negative", "tsukue", "hon"],
+    ["subjectPlace", "watashi", "byouin", "iku", "ni"],
+    ["subjectPlace", "sakura", "mise", "kuru", "ni"],
+    ["negative", "kodomo", "tomodachi"],
+    ["negative", "otona", "sensei"],
+    ["negative", "isu", "heya"],
+    ["negative", "tsukue", "heya"],
+    ["subjectPlace", "yuki", "kaisha", "iku", "ni"],
+    ["subjectPlace", "tanaka", "eki", "kuru", "ni"],
+    ["negative", "mise", "ie"],
+    ["negative", "byouin", "gakkou"],
+    ["negative", "eki", "ie"],
+    ["negative", "kaisha", "gakkou"],
   ];
-  for (const row of unit2ReviewRows) row();
-
-  const complementById = new Map([
-    ["mise", ["heya", "shashin", "kaban", "tomodachi"]],
-    ["byouin", ["heya", "kaban", "shashin", "tomodachi"]],
-    ["eki", ["heya", "kaban", "shashin", "tomodachi"]],
-    ["kaisha", ["heya", "shashin", "kaban", "tomodachi"]],
-    ["kodomo", ["sensei", "gakusei", "otona", "tomodachi"]],
-    ["otona", ["gakusei", "kodomo", "sensei", "tomodachi"]],
-    ["isu", ["kaban", "tsukue", "shashin", "heya"]],
-    ["tsukue", ["kaban", "isu", "shashin", "heya"]],
-  ]);
-
-  const balancedNouns = ["mise", "kodomo", "byouin", "isu", "eki", "otona", "kaisha", "tsukue"];
-  const movementRows = [
-    ["watashi", "mise", "iku"],
-    ["sakura", "byouin", "kuru"],
-    ["yuki", "eki", "iku"],
-    ["tanaka", "kaisha", "kuru"],
-    ["sensei", "mise", "kuru"],
-    ["gakusei", "byouin", "iku"],
-    ["tomodachi", "eki", "kuru"],
-    ["isha", "kaisha", "iku"],
-    ["watashi", "mise", "iku"],
-    ["sakura", "byouin", "kuru"],
-    ["yuki", "eki", "iku"],
-    ["tanaka", "kaisha", "kuru"],
+  const reviewRows = [
+    ["topic", "neko", "doubutsu"],
+    ["topicQuestion", "inu", "doubutsu"],
+    ["subjectObject", "watashi", "hon", "yomu"],
+    ["subjectObject", "sakura", "hon", "kaku"],
+    ["topic", "ie", "basho"],
+    ["topicQuestion", "gakkou", "basho"],
+    ["topic", "isha", "sensei"],
+    ["negative", "neko", "isu"],
+    ["negative", "inu", "tsukue"],
+    ["subjectObject", "yuki", "hon", "yomu"],
+    ["subjectObject", "tanaka", "hon", "kaku"],
+    ["negative", "gakkou", "kaisha"],
+    ["negative", "ie", "byouin"],
+    ["negative", "isha", "kodomo"],
+    ["topicQuestion", "neko", "doubutsu"],
+    ["topic", "inu", "doubutsu"],
+    ["subjectObjectQuestion", "sensei", "hon", "yomu"],
+    ["subjectObjectQuestion", "gakusei", "hon", "kaku"],
+    ["negative", "basho", "mise"],
+    ["negative", "basho", "eki"],
+    ["subjectPlace", "isha", "byouin", "iku", "ni"],
+    ["subjectPlace", "sensei", "gakkou", "kuru", "ni"],
+    ["topicQuestion", "isha", "sensei"],
+    ["negative", "neko", "tsukue"],
+    ["negative", "inu", "isu"],
+    ["subjectAction", "tomodachi", "yomu"],
+    ["subjectAction", "isha", "kaku"],
+    ["negative", "ie", "eki"],
+    ["negative", "gakkou", "mise"],
+    ["topicQuestion", "ie", "basho"],
+    ["negative", "neko", "byouin"],
+    ["negative", "inu", "kaisha"],
+    ["negative", "doubutsu", "isu"],
+    ["subjectAction", "yuki", "yomu"],
+    ["subjectAction", "tanaka", "kaku"],
   ];
-
-  for (let index = 0; index < movementRows.length; index += 1) {
-    const [actorId, placeId, verbId] = movementRows[index];
-    subjectPlaceAction(cards, 4, w(words, actorId), w(words, placeId), w(words, verbId));
-    const nounId = cycle(balancedNouns, index * 3);
-    negativeTopic(cards, 4, w(words, nounId), w(words, cycle(complementById.get(nounId), index + 1)));
-  }
-
   const closingRows = [
-    ["kodomo", "gakusei"],
-    ["otona", "tomodachi"],
-    ["isu", "shashin"],
-    ["tsukue", "kaban"],
-    ["kodomo", "sensei"],
-    ["otona", "kodomo"],
-    ["isu", "heya"],
-    ["eki", "shashin"],
-    ["kodomo", "tomodachi"],
-    ["otona", "gakusei"],
-    ["otona", "sensei"],
-    ["otona", "tomodachi"],
-    ["isu", "shashin"],
-    ["isu", "heya"],
-    ["tsukue", "shashin"],
-    ["tsukue", "heya"],
-    ["tsukue", "kaban"],
+    ["negative", "kodomo", "gakusei"],
+    ["negative", "otona", "tomodachi"],
+    ["negative", "kodomo", "neko"],
+    ["negative", "otona", "inu"],
+    ["subjectPlace", "sensei", "kaisha", "iku", "ni"],
+    ["subjectPlace", "gakusei", "mise", "kuru", "ni"],
+    ["negative", "isu", "basho"],
+    ["negative", "tsukue", "shashin"],
+    ["negative", "otona", "neko"],
+    ["negative", "kaisha", "ie"],
+    ["negative", "eki", "gakkou"],
   ];
-  for (const [left, right] of closingRows) {
-    negativeTopic(cards, 4, w(words, left), w(words, right));
-  }
+
+  for (const row of [...introRows, ...interleaveRows(currentRows, reviewRows, 2), ...closingRows]) addFoundationRow(cards, 4, words, row);
 
   return cards;
 }
