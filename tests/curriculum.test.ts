@@ -230,8 +230,8 @@ describe("curriculum word bins", () => {
       "She is a student",
       "The teacher is a friend",
       "You are a person",
-      "The student is a teacher",
       "Does he eat?",
+      "The student is a teacher",
     ]);
   });
 

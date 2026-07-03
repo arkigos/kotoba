@@ -162,13 +162,42 @@ export function bareDesuStatementFindings(unit, options = {}) {
     }));
 }
 
+function isTopicMarker(token) {
+  return token?.explain === "topic marker";
+}
+
+function isIdentityMarker(token) {
+  return /identity/.test(token?.explain ?? "");
+}
+
+export function tautologicalIdentityFindings(unit) {
+  return (unit.cards ?? [])
+    .filter((card) => {
+      const tokens = card.tokens ?? [];
+      return tokens[0]?.wordId && tokens[0].wordId === tokens[2]?.wordId && isTopicMarker(tokens[1]) && isIdentityMarker(tokens[3]);
+    })
+    .map((card) => ({
+      kind: "tautological-identity",
+      wordId: card.tokens[0].wordId,
+      text: cardLine(card),
+      id: card.id,
+    }));
+}
+
 export function assertUnitVariety(unit, options = {}) {
   const duplicateFindings = exactDuplicateFindings(unit, options);
   const axisFindings = lockstepAxisFindings(unit, options);
   const exposureGapFindings = wordExposureGapFindings(unit, options);
   const bareDesuFindings = bareDesuStatementFindings(unit, options);
+  const tautologyFindings = tautologicalIdentityFindings(unit);
 
-  if (duplicateFindings.length > 0 || axisFindings.length > 0 || exposureGapFindings.length > 0 || bareDesuFindings.length > 0) {
+  if (
+    duplicateFindings.length > 0 ||
+    axisFindings.length > 0 ||
+    exposureGapFindings.length > 0 ||
+    bareDesuFindings.length > 0 ||
+    tautologyFindings.length > 0
+  ) {
     const messages = [
       ...duplicateFindings.map((finding) => {
         return `unit ${unit.id}: ${finding.kind} repeats ${finding.count}x: ${finding.text} [${finding.ids.join(", ")}]`;
@@ -181,6 +210,9 @@ export function assertUnitVariety(unit, options = {}) {
       }),
       ...bareDesuFindings.map((finding) => {
         return `unit ${unit.id}: bare noun desu frame ${finding.text} for ${finding.wordId} [${finding.id}]`;
+      }),
+      ...tautologyFindings.map((finding) => {
+        return `unit ${unit.id}: tautological identity frame ${finding.text} for ${finding.wordId} [${finding.id}]`;
       }),
     ];
     throw new Error(messages.join("\n"));

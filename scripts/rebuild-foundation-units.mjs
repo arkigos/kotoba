@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { authoredUnitIds, lexiconVocabularyUnitIds, root, readJson, reviewVocabularyUnitIds, wordsForUnits } from "./lib/curriculum-model.mjs";
-import { assertUnitVariety } from "./lib/unit-variety-guardrails.mjs";
+import { assertUnitVariety, tautologicalIdentityFindings } from "./lib/unit-variety-guardrails.mjs";
 
 function pad(value) {
   return String(value).padStart(3, "0");
@@ -471,9 +471,6 @@ function buildUnit1(spec) {
     ["tanaka", "sensei"],
     ["sakura", "sensei"],
     ["yuki", "gakusei"],
-    ["sensei", "sensei"],
-    ["gakusei", "gakusei"],
-    ["tomodachi", "tomodachi"],
     ["yuki", "namae"],
     ["tanaka", "namae"],
     ["gakusei", "namae"],
@@ -495,6 +492,12 @@ function buildUnit1(spec) {
     ["gakusei", "taberu", false],
     ["tanaka", "nomu", true],
     ["watashi", "taberu", true],
+    ["yuki", "taberu", false],
+    ["sakura", "taberu", false],
+    ["sensei", "nomu", true],
+    ["tomodachi", "taberu", true],
+    ["gakusei", "taberu", true],
+    ["tanaka", "taberu", true],
   ];
   const addActionPractice = () => {
     const next = actionRows.shift();
@@ -503,7 +506,7 @@ function buildUnit1(spec) {
     if (question) subjectActionQuestion(cards, 1, w(words, subjectId), w(words, verbId));
     else subjectAction(cards, 1, w(words, subjectId), w(words, verbId));
   };
-  const actionInsertIndexes = new Set([1, 4, 7, 10, 13, 16, 20]);
+  const actionInsertIndexes = new Set([1, 3, 5, 7, 9, 11, 13, 15, 17, 19]);
 
   for (const [index, [subjectId, role]] of topicRows.entries()) {
     topic(cards, 1, w(words, subjectId), w(words, role));
@@ -862,9 +865,15 @@ function buildUnit5(spec, previousWords, reviewWords) {
   placeAction(cards, 5, w(words, "kaisha"), w(words, "hataraku"), g.de());
   placeAction(cards, 5, w(words, "gakkou"), w(words, "benkyou_suru"), g.de());
   addReview(cards, 5, words, reviewWords);
+  const pastComplementsByWord = new Map([
+    ["yasumi", ["ryokou", "shigoto", "kinou", "sengetsu", "kyonen", "asa", "yoru"]],
+    ["ryokou", ["kinou", "sengetsu", "kyonen", "yasumi", "shigoto", "asa", "yoru"]],
+    ["shigoto", ["kinou", "sengetsu", "kyonen", "asa", "yoru", "yasumi", "ryokou"]],
+  ]);
   currentNonVerbs(spec).forEach((word, index) => {
     const current = w(words, word.id);
-    for (let repeat = 0; repeat < 7; repeat += 1) pastTopic(cards, 5, current, w(words, cycle(["yasumi", "ryokou", "shigoto", "gakusei", "sensei", "tomodachi"], index + repeat)));
+    const complements = pastComplementsByWord.get(word.id) ?? ["yasumi", "ryokou", "shigoto", "gakusei", "sensei", "tomodachi"].filter((id) => id !== word.id);
+    for (let repeat = 0; repeat < 7; repeat += 1) pastTopic(cards, 5, current, w(words, cycle(complements, index + repeat)));
   });
   currentVerbs(spec).forEach((word) => drillVerb(cards, 5, words, w(words, word.id), 16));
   return cards;
@@ -958,6 +967,10 @@ function lexiconWordsFor(source, unitId) {
 function assertUnit(unit, reviewWords = []) {
   if (unit.cards.length < 80 || unit.cards.length > 150) throw new Error(`unit ${unit.id}: expected 80-150 cards, got ${unit.cards.length}`);
   if (unit.id <= 3) assertUnitVariety(unit, { allowedBareDesuWordIds: unit.id === 1 ? ["watashi", "sakura", "yuki", "tanaka"] : [] });
+  const tautologyFindings = tautologicalIdentityFindings(unit);
+  if (tautologyFindings.length > 0) {
+    throw new Error(tautologyFindings.map((finding) => `unit ${unit.id}: tautological identity frame ${finding.text} [${finding.id}]`).join("\n"));
+  }
   const currentWordIds = new Set(unit.newWords.map((word) => word.id));
   const firstWordPositions = new Map();
   const wordAppearanceCounts = new Map();

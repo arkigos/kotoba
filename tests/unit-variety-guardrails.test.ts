@@ -129,6 +129,45 @@ describe("unit variety guardrails", () => {
     expect(bareDesuStatementFindings(unit, { allowedBareDesuWordIds: ["hon"] })).toEqual([]);
   });
 
+  it("flags tautological identity frames", async () => {
+    // @ts-expect-error Node authoring scripts live outside the app TypeScript module graph.
+    const { tautologicalIdentityFindings } = await import("../scripts/lib/unit-variety-guardrails.mjs");
+    const unit = {
+      id: 99,
+      cards: [
+        {
+          id: "c001",
+          line: ["gakusei", "wa", "gakusei", "desu"],
+          english: "The student is a student",
+          tokens: [
+            { surface: "gakusei", wordId: "gakusei" },
+            { surface: "wa", explain: "topic marker" },
+            { surface: "gakusei", wordId: "gakusei" },
+            { surface: "desu", explain: "polite identity marker" },
+          ],
+        },
+        {
+          id: "c002",
+          line: ["sensei", "wa", "sensei", "desu", "ka", "?"],
+          english: "Is the teacher a teacher?",
+          tokens: [
+            { surface: "sensei", wordId: "sensei" },
+            { surface: "wa", explain: "topic marker" },
+            { surface: "sensei", wordId: "sensei" },
+            { surface: "desu", explain: "polite identity marker" },
+            { surface: "ka", explain: "question marker" },
+            { surface: "?", explain: "question mark" },
+          ],
+        },
+      ],
+    };
+
+    expect(tautologicalIdentityFindings(unit)).toMatchObject([
+      { kind: "tautological-identity", wordId: "gakusei", text: "gakuseiwagakuseidesu", id: "c001" },
+      { kind: "tautological-identity", wordId: "sensei", text: "senseiwasenseidesuka?", id: "c002" },
+    ]);
+  });
+
   it("flags predictable single-slot learner-axis cycles", async () => {
     // @ts-expect-error Node authoring scripts live outside the app TypeScript module graph.
     const { lockstepAxisFindings } = await import("../scripts/lib/unit-variety-guardrails.mjs");
