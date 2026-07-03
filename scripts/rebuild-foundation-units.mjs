@@ -622,19 +622,109 @@ function buildUnit3(spec, previousWords, reviewWords) {
   const previous = byId(previousWords);
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
-  warmReview(cards, 3, previous);
-  for (const id of ["kazoku", "haha", "chichi", "ane", "otouto", "shashin", "kaban", "heya"]) {
-    identity(cards, 3, w(words, id));
+
+  const rows = [
+    ["possession", "watashi", "kazoku"],
+    ["identity", "haha"],
+    ["identity", "chichi"],
+    ["possession", "watashi", "shashin"],
+    ["possession", "sakura", "kaban"],
+    ["identity", "heya"],
+    ["object", "shashin", "miru"],
+    ["subjectAction", "sensei", "kiku"],
+    ["identity", "ane"],
+    ["identity", "otouto"],
+    ["also", "haha", "sensei"],
+    ["subjectAction", "chichi", "taberu"],
+    ["possession", "yuki", "shashin"],
+    ["topic", "heya", "basho"],
+    ["subjectAction", "ane", "nomu"],
+    ["possession", "tanaka", "kaban"],
+    ["subjectAction", "otouto", "kiku"],
+    ["possession", "sakura", "kazoku"],
+    ["object", "kaban", "miru"],
+    ["possession", "sakura", "heya"],
+    ["identityQuestion", "haha"],
+    ["subjectAction", "watashi", "kiku"],
+    ["possession", "kazoku", "shashin"],
+    ["also", "chichi", "sensei"],
+    ["subjectAction", "sakura", "miru"],
+    ["possession", "tomodachi", "kaban"],
+    ["topicQuestion", "heya", "basho"],
+    ["also", "ane", "gakusei"],
+    ["subjectAction", "yuki", "kiku"],
+    ["identityQuestion", "kazoku"],
+    ["subjectAction", "haha", "nomu"],
+    ["possession", "sensei", "shashin"],
+    ["identityQuestion", "otouto"],
+    ["subjectAction", "chichi", "kiku"],
+    ["possession", "watashi", "kaban"],
+    ["also", "heya", "basho"],
+    ["subjectAction", "tanaka", "miru"],
+    ["topicQuestion", "otouto", "namae"],
+    ["possession", "gakusei", "heya"],
+    ["subjectActionQuestion", "ane", "taberu"],
+    ["identityQuestion", "shashin"],
+    ["subjectAction", "otouto", "nomu"],
+    ["possession", "yuki", "kaban"],
+    ["topicQuestion", "haha", "sensei"],
+    ["subjectActionQuestion", "watashi", "miru"],
+    ["possession", "tomodachi", "heya"],
+    ["topic", "chichi", "namae"],
+    ["subjectActionQuestion", "sakura", "kiku"],
+    ["possession", "tanaka", "shashin"],
+    ["also", "kaban", "hon"],
+    ["subjectActionQuestion", "kazoku", "taberu"],
+    ["topic", "ane", "tomodachi"],
+    ["object", "heya", "miru"],
+    ["subjectActionQuestion", "sensei", "kiku"],
+    ["possession", "kazoku", "kaban"],
+    ["also", "otouto", "gakusei"],
+    ["subjectActionQuestion", "chichi", "nomu"],
+    ["possession", "sensei", "heya"],
+    ["topicQuestion", "kaban", "hon"],
+    ["subjectActionQuestion", "haha", "kiku"],
+    ["topic", "shashin", "hon"],
+    ["subjectActionQuestion", "ane", "miru"],
+    ["topicQuestion", "heya", "gakkou"],
+    ["subjectActionQuestion", "otouto", "kiku"],
+    ["possession", "gakusei", "shashin"],
+    ["subjectAction", "kazoku", "nomu"],
+    ["topicQuestion", "ane", "namae"],
+    ["subjectActionQuestion", "tanaka", "miru"],
+    ["possession", "tomodachi", "shashin"],
+    ["subjectActionQuestion", "chichi", "kiku"],
+    ["topicQuestion", "chichi", "namae"],
+    ["subjectActionQuestion", "sakura", "miru"],
+    ["possession", "yuki", "heya"],
+    ["subjectActionQuestion", "haha", "nomu"],
+    ["topicQuestion", "otouto", "gakusei"],
+    ["subjectActionQuestion", "watashi", "kiku"],
+    ["topicQuestion", "shashin", "kaban"],
+    ["subjectActionQuestion", "kazoku", "nomu"],
+    ["topicQuestion", "kaban", "shashin"],
+    ["subjectActionQuestion", "sensei", "miru"],
+    ["topicQuestion", "haha", "namae"],
+    ["topicQuestion", "chichi", "tomodachi"],
+    ["subjectAction", "ane", "taberu"],
+    ["subjectAction", "otouto", "taberu"],
+    ["topicQuestion", "yuki", "tomodachi"],
+    ["possession", "tanaka", "heya"],
+  ];
+
+  for (const row of rows) {
+    const [type, ...args] = row;
+    if (type === "identity") identity(cards, 3, w(words, args[0]));
+    else if (type === "identityQuestion") identityQuestion(cards, 3, w(words, args[0]));
+    else if (type === "topic") topic(cards, 3, w(words, args[0]), w(words, args[1]));
+    else if (type === "topicQuestion") topicQuestion(cards, 3, w(words, args[0]), w(words, args[1]));
+    else if (type === "possession") possession(cards, 3, w(words, args[0]), w(words, args[1]));
+    else if (type === "also") also(cards, 3, w(words, args[0]), w(words, args[1]));
+    else if (type === "object") objectAction(cards, 3, w(words, args[0]), w(words, args[1]));
+    else if (type === "subjectAction") subjectAction(cards, 3, w(words, args[0]), w(words, args[1]));
+    else if (type === "subjectActionQuestion") subjectActionQuestion(cards, 3, w(words, args[0]), w(words, args[1]));
+    else throw new Error(`Unknown Unit 3 row type ${type}`);
   }
-  objectAction(cards, 3, w(words, "shashin"), w(words, "miru"));
-  subjectAction(cards, 3, w(words, "watashi"), w(words, "kiku"));
-  addReview(cards, 3, words, reviewWords);
-  currentNonVerbs(spec).forEach((word, index) => {
-    const current = w(words, word.id);
-    for (let repeat = 0; repeat < 4; repeat += 1) possession(cards, 3, w(words, cycle(["watashi", "sakura", "yuki", "tanaka"], index + repeat)), current);
-    for (let repeat = 0; repeat < 3; repeat += 1) also(cards, 3, current, w(words, cycle(["gakusei", "sensei", "isha", "tomodachi"], index + repeat)));
-  });
-  currentVerbs(spec).forEach((word) => drillVerb(cards, 3, words, w(words, word.id), 10));
   return cards;
 }
 
@@ -858,7 +948,7 @@ function lexiconWordsFor(source, unitId) {
 
 function assertUnit(unit, reviewWords = []) {
   if (unit.cards.length < 80 || unit.cards.length > 150) throw new Error(`unit ${unit.id}: expected 80-150 cards, got ${unit.cards.length}`);
-  if (unit.id <= 2) assertUnitVariety(unit);
+  if (unit.id <= 3) assertUnitVariety(unit);
   const currentWordIds = new Set(unit.newWords.map((word) => word.id));
   const firstWordPositions = new Map();
   const wordAppearanceCounts = new Map();
@@ -895,7 +985,7 @@ function assertUnit(unit, reviewWords = []) {
         throw new Error(`unit ${unit.id}: review word ${word.id} first appears too late at card ${firstSeen}`);
       }
     }
-    if (unit.id === 4) {
+    if (unit.id === 3 || unit.id === 4) {
       if (unit.cards.length >= 100) throw new Error(`unit ${unit.id}: expected fewer than 100 cards, got ${unit.cards.length}`);
       const currentCounts = Object.fromEntries(unit.newWords.map((word) => [word.id, wordAppearanceCounts.get(word.id) ?? 0]));
       for (const word of unit.newWords) {

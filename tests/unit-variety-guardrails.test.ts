@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import unit001 from "../data/jp/curriculum/units/unit_001.json";
 import unit002 from "../data/jp/curriculum/units/unit_002.json";
+import unit003 from "../data/jp/curriculum/units/unit_003.json";
 
 type TestCard = {
   id: string;
@@ -133,11 +134,12 @@ describe("unit variety guardrails", () => {
     expect(lockstepAxisFindings(unit)).toEqual([]);
   });
 
-  it("keeps rebuilt Units 1 and 2 inside the variety guardrails", async () => {
+  it("keeps rebuilt Units 1 through 3 inside the variety guardrails", async () => {
     // @ts-expect-error Node authoring scripts live outside the app TypeScript module graph.
     const { assertUnitVariety } = await import("../scripts/lib/unit-variety-guardrails.mjs");
 
     expect(() => assertUnitVariety(unit001)).not.toThrow();
     expect(() => assertUnitVariety(unit002)).not.toThrow();
+    expect(() => assertUnitVariety(unit003)).not.toThrow();
   });
 });

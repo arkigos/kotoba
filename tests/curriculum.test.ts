@@ -492,11 +492,12 @@ describe("curriculum word bins", () => {
 
     for (const word of unit.newWords) {
       expect(counts.get(word.id), `new word ${word.id}`).toBeGreaterThanOrEqual(pacingRules.distributionTargets.currentWordAppearances);
-      expect(counts.get(word.id), `new word ${word.id}`).toBeLessThanOrEqual(18);
+      expect(counts.get(word.id), `new word ${word.id}`).toBeLessThanOrEqual(pacingRules.distributionTargets.currentWordMaxAppearances);
     }
 
     for (const word of reviewWords) {
-      expect(counts.get(word.id), `review word ${word.id}`).toBeGreaterThanOrEqual(3);
+      expect(counts.get(word.id), `review word ${word.id}`).toBeGreaterThanOrEqual(pacingRules.distributionTargets.reviewWordAppearances);
+      expect(counts.get(word.id), `review word ${word.id}`).toBeLessThanOrEqual(pacingRules.distributionTargets.reviewWordMaxAppearances);
     }
   });
 
