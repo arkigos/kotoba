@@ -50,7 +50,6 @@ export type PracticeCard = {
   tokens: CardToken[];
   english: string;
   audioRef?: string;
-  fact: string;
   grammarTags: string[];
 };
 
@@ -79,7 +78,6 @@ export type PracticeSettings = {
   showPromptText: boolean;
   cardFront: CardFront;
   japaneseDisplay: JapaneseDisplayMode;
-  showFact: boolean;
   revealByDefault: boolean;
   autoPlayAudio: boolean;
   audioLanguage: AudioLanguage;

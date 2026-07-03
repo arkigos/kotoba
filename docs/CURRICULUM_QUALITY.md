@@ -35,7 +35,7 @@ Avoid overusing:
 - review-due vocabulary cards that behave like new-word introductions
 - long chains that exist only because the generator can make them
 - repeated English cards with only tiny noun swaps
-- English translations that add missing answers or scene facts instead of
+- English translations that add missing answers or scene detail instead of
   translating the Japanese line semantically
 - notes that describe the lesson sequence instead of teaching the learner
 

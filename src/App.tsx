@@ -28,7 +28,6 @@ const studyPresets: Array<{ id: string; label: string; settings: Partial<Practic
       showPromptText: true,
       cardFront: "japanese",
       revealByDefault: false,
-      showFact: true,
       autoPlayAudio: true,
       audioLanguage: "japanese",
       autoAdvance: false,
@@ -41,7 +40,6 @@ const studyPresets: Array<{ id: string; label: string; settings: Partial<Practic
       showPromptText: false,
       cardFront: "japanese",
       revealByDefault: false,
-      showFact: false,
       autoPlayAudio: true,
       audioLanguage: "japanese",
       autoAdvance: false,
@@ -54,7 +52,6 @@ const studyPresets: Array<{ id: string; label: string; settings: Partial<Practic
       showPromptText: true,
       cardFront: "english",
       revealByDefault: false,
-      showFact: false,
       autoPlayAudio: false,
       audioLanguage: "japanese",
       autoAdvance: false,
@@ -67,7 +64,6 @@ const studyPresets: Array<{ id: string; label: string; settings: Partial<Practic
       showPromptText: true,
       cardFront: "japanese",
       revealByDefault: false,
-      showFact: false,
       autoPlayAudio: true,
       audioLanguage: "japanese",
       autoAdvance: true,
@@ -667,10 +663,6 @@ export function App() {
               Prompt text
             </label>
             <label>
-              <input type="checkbox" checked={settings.showFact} onChange={(event) => updateSettings({ showFact: event.target.checked })} />
-              Notes
-            </label>
-            <label>
               <input
                 type="checkbox"
                 checked={settings.revealByDefault}
@@ -766,9 +758,6 @@ export function App() {
             {showBack ? backContent : <span> </span>}
           </div>
 
-          <div key={`note-${card.id}`} className={`stage-slot note-slot ${settings.showFact ? "" : "is-hidden"}`} aria-label="Card note area">
-            {settings.showFact ? <p className="fact-note">{card.fact}</p> : <span> </span>}
-          </div>
         </article>
 
         <footer className="practice-controls">

@@ -45,7 +45,6 @@ function card(unitId, index, parts, english, tags = []) {
     explain: parts.map((part) => part.explain),
     tokens: parts,
     english,
-    fact: "`ます`-family endings make actions polite. For now, treat this as one complete action sentence.",
     grammarTags: [previewTag, ...tags],
   };
 }

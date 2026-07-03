@@ -4,7 +4,7 @@ Kotoba is text-first. The practice app does not display card images, ship image 
 
 ## Current Policy
 
-- Every card has Japanese line data, token explanations, an English meaning, grammar tags, and a learner-facing note.
+- Every card has Japanese line data, token explanations, an English meaning, and grammar tags.
 - Audio manifest entries are maintained for every card.
 - Audio starts as `queued` until production TTS is generated.
 - The app uses browser speech synthesis as an immediate fallback when `audioRef` is not present.

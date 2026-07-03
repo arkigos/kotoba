@@ -25,7 +25,6 @@ function card(id, parts, english, grammarTags, meta) {
     explain: parts.map((part) => part.explain),
     tokens: parts,
     english,
-    fact: meta.fact,
     grammarTags,
     meta,
   };
@@ -183,7 +182,7 @@ export function generateCardCandidate({ source, pacing, unitId, cardNumber, vari
       [token(word)],
       meaning(word),
       ["generated", "vocabulary introduction"],
-      { band: band.id, introducedWordIds: [word.id], fact: "Current-unit vocabulary is introduced before the unit leans on heavier mixing." },
+      { band: band.id, introducedWordIds: [word.id] },
     );
   }
 
@@ -195,7 +194,7 @@ export function generateCardCandidate({ source, pacing, unitId, cardNumber, vari
       [token(subject), grammar.wa, token(comment), grammar.desu],
       presentClause(subject, complementLabel(comment)),
       ["generated", "current vocabulary drill"],
-      { band: band.id, introducedWordIds: [], fact: "`は` marks what the sentence is about, and `です` gives the comment." },
+      { band: band.id, introducedWordIds: [] },
     );
   }
 
@@ -208,7 +207,7 @@ export function generateCardCandidate({ source, pacing, unitId, cardNumber, vari
       [token(subject), grammar.wa, token(optionA), grammar.ka, token(optionB), grammar.desu, grammar.ka, grammar.question],
       presentQuestion(subject, `${optionLabel(optionA)} or ${optionLabel(optionB)}`),
       ["generated", unit.grammarFocus],
-      { band: band.id, introducedWordIds: [], fact: "The unit grammar focus appears after the vocabulary landing zone and before the cutoff." },
+      { band: band.id, introducedWordIds: [] },
     );
   }
 
@@ -219,6 +218,6 @@ export function generateCardCandidate({ source, pacing, unitId, cardNumber, vari
     [token(frame.first), grammar.to, token(frame.second), grammar.wa, token(frame.category), grammar.desu],
     `${subjectLabel(frame.first)} and ${subjectLabel(frame.second)} are ${frame.categoryEnglish}`,
     ["generated", "review and mix"],
-    { band: band.id, introducedWordIds: [], fact: "`と` joins two nouns before the sentence gives one shared comment." },
+    { band: band.id, introducedWordIds: [] },
   );
 }

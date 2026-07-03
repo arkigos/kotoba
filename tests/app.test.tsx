@@ -241,14 +241,11 @@ describe("practice player", () => {
     expect(screen.queryByLabelText("Media area")).not.toBeInTheDocument();
     expect(screen.getByLabelText("Front card area")).toBeInTheDocument();
     expect(screen.getByLabelText("Reveal card area")).toBeInTheDocument();
-    expect(screen.getByLabelText("Card note area")).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /settings/i }));
-    await user.click(screen.getByLabelText(/^notes$/i));
 
     expect(screen.getByLabelText("Front card area")).toBeInTheDocument();
     expect(screen.getByLabelText("Reveal card area")).toBeInTheDocument();
-    expect(screen.getByLabelText("Card note area")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /show english/i })).toBeInTheDocument();
   });
 
@@ -280,14 +277,5 @@ describe("practice player", () => {
 
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[2].line.join(""));
     vi.useRealTimers();
-  });
-
-  it("keeps card notes learner-facing", () => {
-    const banned = /Known units|Review due|warm up|late cards|generator|authoring|bare substitutions/i;
-    for (const unit of [unit001, unit002, unit003, unit004, unit005, unit006, unit007]) {
-      for (const card of unit.cards) {
-        expect(card.fact).not.toMatch(banned);
-      }
-    }
   });
 });

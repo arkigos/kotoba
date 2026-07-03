@@ -205,7 +205,7 @@ Each card defines:
 - word-part explanations
 - English meaning
 - audio reference when available
-- usage/fact note
+- grammar tags
 
 ## Build Outputs
 

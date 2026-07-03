@@ -99,7 +99,6 @@ Each card has:
   tense, relationship, or scene detail that is not present in the Japanese.
   Single-card translations do not end with a plain period.
 - `audioRef`: optional audio reference.
-- `fact`: short usage, grammar, or cultural note.
 - `grammarTags`: grammar patterns used by the card.
 
 ## Alignment Rule

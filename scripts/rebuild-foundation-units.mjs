@@ -155,7 +155,7 @@ function verbToken(word) {
   };
 }
 
-function makeCard(unitId, index, parts, english, fact, grammarTags) {
+function makeCard(unitId, index, parts, english, grammarTags) {
   return {
     id: `u${pad(unitId)}-c${pad(index)}`,
     line: parts.map((part) => part.surface),
@@ -163,13 +163,12 @@ function makeCard(unitId, index, parts, english, fact, grammarTags) {
     explain: parts.map((part) => part.explain),
     tokens: parts,
     english: english.replace(/\.+$/, ""),
-    fact,
     grammarTags,
   };
 }
 
-function add(cards, unitId, parts, english, fact, grammarTags) {
-  cards.push(makeCard(unitId, cards.length + 1, parts, english, fact, grammarTags));
+function add(cards, unitId, parts, english, grammarTags) {
+  cards.push(makeCard(unitId, cards.length + 1, parts, english, grammarTags));
 }
 
 function cycle(items, index) {
@@ -186,8 +185,8 @@ function w(words, id) {
   return word;
 }
 
-function grammarIntro(cards, unitId, part, english, fact) {
-  add(cards, unitId, [part], english, fact, ["grammar introduction"]);
+function grammarIntro(cards, unitId, part, english) {
+  add(cards, unitId, [part], english, ["grammar introduction"]);
 }
 
 function warmReview(cards, unitId, words) {
@@ -205,31 +204,31 @@ function warmReview(cards, unitId, words) {
 }
 
 function identity(cards, unitId, word) {
-  add(cards, unitId, [token(word), g.desu()], `It's ${identityComplement(word)}`, "A new word lands in a familiar identity sentence.", ["Aです"]);
+  add(cards, unitId, [token(word), g.desu()], `It's ${identityComplement(word)}`, ["Aです"]);
 }
 
 function topic(cards, unitId, left, right) {
-  add(cards, unitId, [token(left), g.wa(), token(right), g.desu()], presentClause(left, right), "One slot changes while the sentence frame stays fixed.", ["AはBです"]);
+  add(cards, unitId, [token(left), g.wa(), token(right), g.desu()], presentClause(left, right), ["AはBです"]);
 }
 
 function topicQuestion(cards, unitId, left, right) {
-  add(cards, unitId, [token(left), g.wa(), token(right), g.desu(), g.ka(), g.q()], presentQuestion(left, right), "`です` and `か` stay separate so the question marker is visible.", ["AはBです", "か"]);
+  add(cards, unitId, [token(left), g.wa(), token(right), g.desu(), g.ka(), g.q()], presentQuestion(left, right), ["AはBです", "か"]);
 }
 
 function negativeTopic(cards, unitId, left, right) {
-  add(cards, unitId, [token(left), g.wa(), token(right), g.jaArimasen()], negativeClause(left, right), "`じゃありません` is a compact polite negative identity phrase.", ["AはBじゃありません"]);
+  add(cards, unitId, [token(left), g.wa(), token(right), g.jaArimasen()], negativeClause(left, right), ["AはBじゃありません"]);
 }
 
 function pastTopic(cards, unitId, left, right) {
-  add(cards, unitId, [token(left), g.wa(), token(right), g.deshita()], pastClause(left, right), "`でした` is the polite past identity form.", ["AはBでした"]);
+  add(cards, unitId, [token(left), g.wa(), token(right), g.deshita()], pastClause(left, right), ["AはBでした"]);
 }
 
 function possession(cards, unitId, owner, item) {
-  add(cards, unitId, [token(owner), g.no(), token(item), g.desu()], `It's ${possessive(owner)} ${bareMeaning(item)}`, "`の` links a possessor or descriptor to a noun.", ["AのB"]);
+  add(cards, unitId, [token(owner), g.no(), token(item), g.desu()], `It's ${possessive(owner)} ${bareMeaning(item)}`, ["AのB"]);
 }
 
 function also(cards, unitId, left, right) {
-  add(cards, unitId, [token(left), g.mo(), token(right), g.desu()], `${sentenceStart(subject(left))} is also ${identityComplement(right)}`, "`も` marks that the same comment also applies.", ["AもBです"]);
+  add(cards, unitId, [token(left), g.mo(), token(right), g.desu()], `${sentenceStart(subject(left))} is also ${identityComplement(right)}`, ["AもBです"]);
 }
 
 function actionEnglish(actor, verb) {
@@ -239,12 +238,12 @@ function actionEnglish(actor, verb) {
 }
 
 function subjectAction(cards, unitId, actor, verb) {
-  add(cards, unitId, [token(actor), g.wa(), verbToken(verb)], actionEnglish(actor, verb), "A current verb gets real sentence practice with a familiar subject.", ["early Vます action"]);
+  add(cards, unitId, [token(actor), g.wa(), verbToken(verb)], actionEnglish(actor, verb), ["early Vます action"]);
 }
 
 function objectAction(cards, unitId, object, verb) {
   const action = verb.id === "miru" ? "look at" : verb.id === "kiku" ? "listen to" : verbForms.get(verb.id)[2];
-  add(cards, unitId, [token(object), g.wo(), verbToken(verb)], `I ${action} ${indefinite(object)}`, "A familiar object cushions the current verb.", ["early Vます action", "NをVます"]);
+  add(cards, unitId, [token(object), g.wo(), verbToken(verb)], `I ${action} ${indefinite(object)}`, ["early Vます action", "NをVます"]);
 }
 
 function placePhrase(place, prep) {
@@ -257,7 +256,7 @@ function placePhrase(place, prep) {
 function placeAction(cards, unitId, place, verb, particle = g.ni()) {
   const action = verbForms.get(verb.id)[2];
   const prep = particle.surface === "で" ? "at" : "to";
-  add(cards, unitId, [token(place), particle, verbToken(verb)], `I ${action} ${placePhrase(place, prep)}`, "A familiar place cushions the current verb.", ["early Vます action"]);
+  add(cards, unitId, [token(place), particle, verbToken(verb)], `I ${action} ${placePhrase(place, prep)}`, ["early Vます action"]);
 }
 
 function subjectPlaceAction(cards, unitId, actor, place, verb, particle = g.ni()) {
@@ -269,13 +268,12 @@ function subjectPlaceAction(cards, unitId, actor, place, verb, particle = g.ni()
     unitId,
     [token(actor), g.wa(), token(place), particle, verbToken(verb)],
     `${sentenceStart(subject(actor))} ${action} ${placePhrase(place, prep)}`,
-    "A familiar subject and place keep the current verb in motion.",
     ["early V\u307e\u3059 action"],
   );
 }
 
 function compound(cards, unitId, first, second, category, englishCategory) {
-  add(cards, unitId, [token(first), g.to(), token(second), g.wa(), token(category), g.desu()], `${sentenceStart(subject(first))} and ${subject(second)} are ${englishCategory}`, "`と` joins two concrete nouns before the topic marker.", ["AとBはCです"]);
+  add(cards, unitId, [token(first), g.to(), token(second), g.wa(), token(category), g.desu()], `${sentenceStart(subject(first))} and ${subject(second)} are ${englishCategory}`, ["AとBはCです"]);
 }
 
 function drillVerb(cards, unitId, words, verb, count = 7) {
@@ -615,12 +613,12 @@ function buildUnit5(spec, previousWords, reviewWords) {
 
 function demonstrativeTopic(cards, unitId, demonstrative, noun) {
   const english = demonstrative.id === "kore" || demonstrative.id === "kono" ? "this" : demonstrative.id === "sore" || demonstrative.id === "sono" ? "that near you" : "that over there";
-  add(cards, unitId, [token(demonstrative), g.wa(), token(noun), g.desu()], `${sentenceStart(english)} is ${indefinite(noun)}`, "A demonstrative points at one familiar noun.", ["kore/sore/are", "AはBです"]);
+  add(cards, unitId, [token(demonstrative), g.wa(), token(noun), g.desu()], `${sentenceStart(english)} is ${indefinite(noun)}`, ["kore/sore/are", "AはBです"]);
 }
 
 function determinerIdentity(cards, unitId, determiner, noun) {
   const english = determiner.id === "kono" ? "this" : determiner.id === "sono" ? "that near you" : "that over there";
-  add(cards, unitId, [token(determiner), token(noun), g.desu()], `It is ${english} ${bareMeaning(noun)}`, "A determiner sits directly before the noun it points to.", ["kono/sono/ano N"]);
+  add(cards, unitId, [token(determiner), token(noun), g.desu()], `It is ${english} ${bareMeaning(noun)}`, ["kono/sono/ano N"]);
 }
 
 function buildUnit6(spec, previousWords, reviewWords) {
@@ -652,13 +650,13 @@ function questionWordCard(cards, unitId, words, questionId, contextId) {
   const question = w(words, questionId);
   const questionSubject =
     context.id === "watashi" ? "am I" : context.id === "sakura" ? "are you" : `is ${subject(context)}`;
-  if (questionId === "nan") add(cards, unitId, [token(context), g.wa(), token(question), g.desu(), g.ka(), g.q()], `What ${questionSubject}?`, "What asks for the identity of the topic.", ["nan", "A\u306fB\u3067\u3059\u304b"]);
-  else if (questionId === "dare") add(cards, unitId, [token(context), g.wa(), token(question), g.desu(), g.ka(), g.q()], `Who ${questionSubject}?`, "Who asks for the person behind the topic.", ["dare", "A\u306fB\u3067\u3059\u304b"]);
-  else if (questionId === "dore") add(cards, unitId, [token(question), g.ga(), token(context), g.desu(), g.ka(), g.q()], `Which one is ${indefinite(context)}?`, "Which-one questions can point to a concrete known noun.", ["dore", "\u304b"]);
+  if (questionId === "nan") add(cards, unitId, [token(context), g.wa(), token(question), g.desu(), g.ka(), g.q()], `What ${questionSubject}?`, ["nan", "A\u306fB\u3067\u3059\u304b"]);
+  else if (questionId === "dare") add(cards, unitId, [token(context), g.wa(), token(question), g.desu(), g.ka(), g.q()], `Who ${questionSubject}?`, ["dare", "A\u306fB\u3067\u3059\u304b"]);
+  else if (questionId === "dore") add(cards, unitId, [token(question), g.ga(), token(context), g.desu(), g.ka(), g.q()], `Which one is ${indefinite(context)}?`, ["dore", "\u304b"]);
 }
 
 function whichNounCard(cards, unitId, words, determinerId, nounId) {
-  add(cards, unitId, [token(w(words, determinerId)), token(w(words, nounId)), g.desu(), g.ka(), g.q()], `Which ${bareMeaning(w(words, nounId))} is it?`, "Which sits before the noun being asked about.", ["dono N", "か"]);
+  add(cards, unitId, [token(w(words, determinerId)), token(w(words, nounId)), g.desu(), g.ka(), g.q()], `Which ${bareMeaning(w(words, nounId))} is it?`, ["dono N", "か"]);
 }
 
 function buildUnit7(spec, previousWords, reviewWords) {

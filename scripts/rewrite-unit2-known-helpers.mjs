@@ -51,7 +51,7 @@ function tokenFactory(words) {
 
 function makeCard(unitId, words) {
   const token = tokenFactory(words);
-  return (index, values, english, fact, grammarTags) => {
+  return (index, values, english, grammarTags) => {
     const tokens = cardValues(values).map(token);
     return {
       id: `u${String(unitId).padStart(3, "0")}-c${String(index).padStart(3, "0")}`,
@@ -60,7 +60,6 @@ function makeCard(unitId, words) {
       explain: tokens.map((part) => part.explain),
       tokens,
       english: cardEnglish(english),
-      fact,
       grammarTags,
     };
   };
@@ -73,15 +72,10 @@ const card = makeCard(2, knownWords);
 const cards = [];
 let i = 1;
 
-function push(values, english, fact, grammarTags) {
-  cards.push(card(i++, values, english, fact, grammarTags));
+function push(values, english, grammarTags) {
+  cards.push(card(i++, values, english, grammarTags));
 }
 
-const warm = "A quick vocabulary warm-up before topic-comment sentences begin.";
-const topic = "`\u306f` marks the topic; older known words can now help the new vocabulary feel useful.";
-const pair = "`\u3068` joins concrete nouns so new and known vocabulary can combine.";
-const choice = "`\u304b` chains choices and keeps the learner comparing categories.";
-const paired = "Single-sentence pair cards let known helper vocabulary support the new unit words.";
 
 [
   ["neko", "It's a cat."],
@@ -94,7 +88,7 @@ const paired = "Single-sentence pair cards let known helper vocabulary support t
   ["isha", "It's a doctor."],
   ["hito", "It's a person."],
   ["mono", "It's a thing."],
-].forEach(([a, en]) => push([a, jp.desu, jp.period], en, warm, ["A\u3067\u3059"]));
+].forEach(([a, en]) => push([a, jp.desu, jp.period], en, ["A\u3067\u3059"]));
 
 const topicStatements = [
   ["neko", "doubutsu", "The cat is an animal.", "Is the cat an animal?"],
@@ -108,8 +102,8 @@ const topicStatements = [
   ["nihon", "basho", "Japan is a place.", "Is Japan a place?"],
   ["amerika", "basho", "America is a place.", "Is America a place?"],
 ];
-topicStatements.forEach(([a, b, en]) => push([a, jp.wa, b, jp.desu, jp.period], en, topic, ["A\u306fB\u3067\u3059"]));
-topicStatements.forEach(([a, b, _en, q]) => push([a, jp.wa, b, jp.desuKa, jp.question], q, topic, ["A\u306fB\u3067\u3059\u304b"]));
+topicStatements.forEach(([a, b, en]) => push([a, jp.wa, b, jp.desu, jp.period], en, ["A\u306fB\u3067\u3059"]));
+topicStatements.forEach(([a, b, _en, q]) => push([a, jp.wa, b, jp.desuKa, jp.question], q, ["A\u306fB\u3067\u3059\u304b"]));
 
 const compoundTopics = [
   ["neko", "inu", "doubutsu", "Cats and dogs are animals.", "Are cats and dogs animals?"],
@@ -123,8 +117,8 @@ const compoundTopics = [
   ["tomodachi", "tanaka", "hito", "The friend and Tanaka are people.", "Are the friend and Tanaka people?"],
   ["sensei", "tomodachi", "hito", "The teacher and the friend are people.", "Are the teacher and the friend people?"],
 ];
-compoundTopics.forEach(([a, b, c, en]) => push([a, jp.to, b, jp.wa, c, jp.desu, jp.period], en, pair, ["A\u3068B\u306fC\u3067\u3059"]));
-compoundTopics.forEach(([a, b, c, _en, q]) => push([a, jp.to, b, jp.wa, c, jp.desuKa, jp.question], q, pair, ["A\u3068B\u306fC\u3067\u3059\u304b"]));
+compoundTopics.forEach(([a, b, c, en]) => push([a, jp.to, b, jp.wa, c, jp.desu, jp.period], en, ["A\u3068B\u306fC\u3067\u3059"]));
+compoundTopics.forEach(([a, b, c, _en, q]) => push([a, jp.to, b, jp.wa, c, jp.desuKa, jp.question], q, ["A\u3068B\u306fC\u3067\u3059\u304b"]));
 
 [
   ["sakura", "yuki", "Is it Sakura or Yuki?"],
@@ -137,7 +131,7 @@ compoundTopics.forEach(([a, b, c, _en, q]) => push([a, jp.to, b, jp.wa, c, jp.de
   ["nihon", "amerika", "Is it Japan or America?"],
   ["tomodachi", "gakusei", "Are they a friend or a student?"],
   ["tanaka", "tomodachi", "Is it Tanaka or a friend?"],
-].forEach(([a, b, en]) => push([a, jp.ka, b, jp.desuKa, jp.question], en, choice, ["A\u304bB\u3067\u3059\u304b"]));
+].forEach(([a, b, en]) => push([a, jp.ka, b, jp.desuKa, jp.question], en, ["A\u304bB\u3067\u3059\u304b"]));
 
 [
   ["sakura", "gakusei", "sensei", "Is Sakura a student or a teacher?"],
@@ -150,7 +144,7 @@ compoundTopics.forEach(([a, b, c, _en, q]) => push([a, jp.to, b, jp.wa, c, jp.de
   ["basho", "nihon", "amerika", "Is the place Japan or America?"],
   ["namae", "tanaka", "sakura", "Is the name Tanaka or Sakura?"],
   ["hito", "sensei", "isha", "Is the person a teacher or a doctor?"],
-].forEach(([a, b, c, en]) => push([a, jp.wa, b, jp.ka, c, jp.desuKa, jp.question], en, choice, ["A\u306fB\u304bC\u3067\u3059\u304b"]));
+].forEach(([a, b, c, en]) => push([a, jp.wa, b, jp.ka, c, jp.desuKa, jp.question], en, ["A\u306fB\u304bC\u3067\u3059\u304b"]));
 
 [
   ["sakura", "tomodachi", "hito", "Sakura and the friend are people"],
@@ -163,7 +157,7 @@ compoundTopics.forEach(([a, b, c, _en, q]) => push([a, jp.to, b, jp.wa, c, jp.de
   ["isha", "sensei", "hito", "The doctor and the teacher are people"],
   ["gakusei", "tomodachi", "hito", "The student and the friend are people"],
   ["ie", "gakkou", "basho", "The house and the school are places"],
-].forEach(([a, b, c, en]) => push([a, jp.to, b, jp.wa, c, jp.desu, jp.period], en, paired, ["A\u3068B\u306fC\u3067\u3059"]));
+].forEach(([a, b, c, en]) => push([a, jp.to, b, jp.wa, c, jp.desu, jp.period], en, ["A\u3068B\u306fC\u3067\u3059"]));
 
 if (cards.length !== 80) throw new Error(`unit2 ${cards.length}`);
 

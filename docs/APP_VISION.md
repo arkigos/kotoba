@@ -18,7 +18,6 @@ Each card presents:
 - aligned word-part explanations
 - English meaning
 - audio when available
-- a short usage, grammar, or cultural note when useful
 
 The learner repeatedly sees small modular changes:
 
@@ -133,9 +132,9 @@ Supporting modes:
 
 The practice player also has lightweight presets over the same settings:
 
-- Reading: Japanese-first with notes and audio.
+- Reading: Japanese-first with audio.
 - Listening: audio-first with prompt text hidden.
-- Recall: English-first with notes hidden.
+- Recall: English-first.
 - Rapid: compact Japanese-first review with auto advance.
 
 ## Progress Model

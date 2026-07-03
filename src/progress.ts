@@ -6,7 +6,6 @@ export const defaultSettings: PracticeSettings = {
   showPromptText: true,
   cardFront: "japanese",
   japaneseDisplay: "surface",
-  showFact: true,
   revealByDefault: false,
   autoPlayAudio: true,
   audioLanguage: "japanese",

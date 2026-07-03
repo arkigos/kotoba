@@ -517,7 +517,7 @@ input[type="number"] {
 
 .card-stage {
   display: grid;
-  grid-template-rows: minmax(300px, 1fr) minmax(112px, auto) minmax(58px, auto);
+  grid-template-rows: minmax(330px, 1fr) minmax(130px, auto);
   align-content: stretch;
   justify-items: center;
   gap: 14px;
@@ -534,13 +534,11 @@ input[type="number"] {
 }
 
 .front-slot,
-.back-slot,
-.note-slot {
+.back-slot {
   transition: opacity 120ms ease;
 }
 
-.front-slot,
-.note-slot {
+.front-slot {
   animation: card-arrive 220ms ease-out both;
 }
 
@@ -726,16 +724,6 @@ input[type="number"] {
   line-height: 1.18;
 }
 
-.fact-note {
-  max-width: min(820px, 100%);
-  margin: 0;
-  color: var(--muted);
-  font-size: clamp(0.95rem, 1.2vw, 1.08rem);
-  line-height: 1.5;
-  text-align: center;
-  text-wrap: balance;
-}
-
 .practice-controls {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -826,7 +814,6 @@ input[type="number"] {
 
 @media (prefers-reduced-motion: reduce) {
   .front-slot,
-  .note-slot,
   .back-slot.is-revealed,
   .back-slot.is-revealed > *,
   .back-slot.is-revealed::before {
@@ -861,7 +848,7 @@ input[type="number"] {
   }
 
   .card-stage {
-    grid-template-rows: minmax(250px, 1fr) minmax(100px, auto) minmax(54px, auto);
+    grid-template-rows: minmax(270px, 1fr) minmax(112px, auto);
     padding-top: 4px;
   }
 
@@ -916,7 +903,7 @@ input[type="number"] {
 
 @media (max-width: 520px) {
   .card-stage {
-    grid-template-rows: minmax(220px, 1fr) minmax(92px, auto) minmax(50px, auto);
+    grid-template-rows: minmax(240px, 1fr) minmax(100px, auto);
     gap: 12px;
   }
 

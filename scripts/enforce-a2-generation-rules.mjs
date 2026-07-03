@@ -123,7 +123,6 @@ function vocabularyCard(unitId, index, words, tag) {
     explain: parts.map((part) => part.explain),
     tokens: parts,
     english: words.map(vocabularyEnglish).join(" / "),
-    fact: "A quick vocabulary landing card before the sentence frame starts.",
     grammarTags: [tag],
   };
 }
@@ -206,10 +205,7 @@ for (const entry of index.units.filter((unit) => unit.id >= 21 && unit.id <= 44)
     });
     if (lateTags.length === 0) continue;
 
-    grammarIntroCards.push({
-      ...card,
-      fact: `${card.fact} This card is previewed early so the unit's grammar focus appears before mixed practice.`,
-    });
+    grammarIntroCards.push({ ...card });
     for (const tag of card.grammarTags ?? []) coveredLateTags.add(tag);
   }
 

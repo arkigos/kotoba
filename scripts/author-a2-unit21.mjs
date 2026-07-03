@@ -84,12 +84,6 @@ function cardEnglish(english) {
   return english.replace(/\.+$/, "");
 }
 
-const facts = {
-  masu: "`ます` makes an action sentence polite. In this unit it can mean present or future depending on context.",
-  question: "`ますか` turns a polite action sentence into a yes/no question.",
-  time: "A time word like `今日` or `明日` can appear before a polite verb sentence.",
-  review: "A2 starts moving A1 nouns and descriptions into action sentences.",
-};
 
 const verbForms = new Map([
   ["taberu", ["食べます", "たべます", "eat", "eats", "will eat"]],
@@ -164,7 +158,7 @@ function questionEnglish(person, verbId) {
   return `Does ${questionSubject(person)} ${form[2]}?`;
 }
 
-function makeCard(unitId, index, parts, english, grammarTags, _visualPrompt, fact) {
+function makeCard(unitId, index, parts, english, grammarTags) {
   const id = `u${pad(unitId)}-c${pad(index)}`;
   const visibleParts = cardParts(parts);
   return {
@@ -178,7 +172,6 @@ function makeCard(unitId, index, parts, english, grammarTags, _visualPrompt, fac
       return token;
     }),
     english: cardEnglish(english),
-    fact,
     grammarTags,
   };
 }
@@ -210,27 +203,27 @@ function placePhrase(placeId) {
 function generateCards() {
   const cards = [];
   const verbs = spec.words.map(([id]) => id);
-  const add = (parts, english, tags, prompt, fact) => {
-    cards.push(makeCard(spec.id, cards.length + 1, parts, english, tags, prompt, fact));
+  const add = (parts, english, tags) => {
+    cards.push(makeCard(spec.id, cards.length + 1, parts, english, tags));
   };
 
   for (let index = 0; index < 20; index += 1) {
     const person = people[index % people.length];
     const verbId = verbs[index % verbs.length];
-    add([word(person[0]), jp.wa(), verbToken(verbId), jp.p()], actionEnglish(person, verbId), ["Vます"], "A person doing a simple action.", facts.masu);
+    add([word(person[0]), jp.wa(), verbToken(verbId), jp.p()], actionEnglish(person, verbId), ["Vます"]);
   }
 
   for (let index = 0; index < 20; index += 1) {
     const person = people[(index + 3) % people.length];
     const time = times[index % times.length];
     const verbId = verbs[(index + 2) % verbs.length];
-    add([word(person[0]), jp.wa(), word(time[0]), verbToken(verbId), jp.p()], timedActionEnglish(person, time, verbId), ["Vます", "time words"], "A polite action with a familiar time word.", facts.time);
+    add([word(person[0]), jp.wa(), word(time[0]), verbToken(verbId), jp.p()], timedActionEnglish(person, time, verbId), ["Vます", "time words"]);
   }
 
   for (let index = 0; index < 20; index += 1) {
     const person = people[(index + 5) % people.length];
     const verbId = verbs[(index + 4) % verbs.length];
-    add([word(person[0]), jp.wa(), verbToken(verbId), grammar("か", "か", "question marker"), jp.q()], questionEnglish(person, verbId), ["Vますか"], "A polite action question.", facts.question);
+    add([word(person[0]), jp.wa(), verbToken(verbId), grammar("か", "か", "question marker"), jp.q()], questionEnglish(person, verbId), ["Vますか"]);
   }
 
   for (let index = 0; index < 10; index += 1) {
@@ -239,7 +232,7 @@ function generateCards() {
     const ending = index % 2 === 0 ? jp.ne() : jp.yo();
     const base = actionEnglish(person, verbId).replace(/\.$/, "");
     const english = index % 2 === 0 ? `${base}, right?` : `${base}, you know.`;
-    add([word(person[0]), jp.wa(), verbToken(verbId), ending, jp.p()], english, ["Vます", "ね/よ"], "A polite action with a sentence ending.", facts.masu);
+    add([word(person[0]), jp.wa(), verbToken(verbId), ending, jp.p()], english, ["Vます", "ね/よ"]);
   }
 
   const quantities = wordsByUnit.get(19);
@@ -257,20 +250,20 @@ function generateCards() {
   ];
   for (let index = 0; index < quantities.length; index += 1) {
     const noun = nouns[index % nouns.length];
-    add([word(noun[0]), jp.ga(), word(quantities[index]), jp.arimasu(), jp.p()], countEnglish(quantities[index], noun[1], noun[2]), ["A1 review", "basic counters"], "A counted object review sentence.", facts.review);
+    add([word(noun[0]), jp.ga(), word(quantities[index]), jp.arimasu(), jp.p()], countEnglish(quantities[index], noun[1], noun[2]), ["A1 review", "basic counters"]);
   }
 
   const places = wordsByUnit.get(17);
   const reviewThings = [["hon", "book"], ["kaban", "bag"], ["shashin", "photo"], ["hako", "box"], ["denwa", "telephone"]];
   for (let index = 0; index < places.length; index += 1) {
     const thing = reviewThings[index % reviewThings.length];
-    add([word(places[index]), jp.ni(), word(thing[0]), jp.ga(), jp.arimasu(), jp.p()], `There is a ${thing[1]} ${placePhrase(places[index])}.`, ["A1 review", "場所にNがあります"], "An A1 place sentence returning inside an A2 unit.", facts.review);
+    add([word(places[index]), jp.ni(), word(thing[0]), jp.ga(), jp.arimasu(), jp.p()], `There is a ${thing[1]} ${placePhrase(places[index])}.`, ["A1 review", "場所にNがあります"]);
   }
 
   const adjectives = wordsByUnit.get(13);
   for (let index = 0; index < adjectives.length; index += 1) {
     const place = places[index % places.length];
-    add([word(place), jp.wa(), word(adjectives[index]), jp.desu(), jp.ne(), jp.p()], `The ${bareMeaning(lexicon.get(place).meaning)} is ${bareMeaning(lexicon.get(adjectives[index]).meaning)}, isn't it?`, ["A1 review", "na-adjectives", "ね"], "A familiar description before returning to action sentences.", facts.review);
+    add([word(place), jp.wa(), word(adjectives[index]), jp.desu(), jp.ne(), jp.p()], `The ${bareMeaning(lexicon.get(place).meaning)} is ${bareMeaning(lexicon.get(adjectives[index]).meaning)}, isn't it?`, ["A1 review", "na-adjectives", "ね"]);
   }
 
   const events = wordsByUnit.get(5);
@@ -288,7 +281,7 @@ function generateCards() {
   ]);
   for (const eventId of events) {
     const [parts, english] = eventReview.get(eventId);
-    add(parts, english, ["A1 review", "time words"], "A time word kept alive in the first A2 unit.", facts.review);
+    add(parts, english, ["A1 review", "time words"]);
   }
 
   return cards;

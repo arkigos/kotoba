@@ -30,7 +30,7 @@ of truth. This file remains the everyday quality checklist.
 
 - Lesson item IDs remain stable once referenced by media.
 - Lesson order is intentional.
-- Target-language text, pronunciation hints, explanations, and facts agree with each other.
+- Target-language text, pronunciation hints, explanations, and translations agree with each other.
 - Curriculum planning docs explain sequencing decisions well enough for Codex to continue the work.
 - For authored curriculum units, confirm the unit has one grammar focus and 10 new words.
 - Check the unit's new words against `data/jp/curriculum/word_selection_rules.md`.

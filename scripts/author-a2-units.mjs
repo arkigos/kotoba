@@ -744,7 +744,7 @@ function verbToken(id, key = "masu") {
   return word(id, surface, reading, explain);
 }
 
-function makeCard(unitId, index, parts, english, grammarTags, _visualPrompt, fact) {
+function makeCard(unitId, index, parts, english, grammarTags) {
   const id = `u${pad(unitId)}-c${pad(index)}`;
   const visibleParts = cardParts(parts);
   return {
@@ -758,13 +758,12 @@ function makeCard(unitId, index, parts, english, grammarTags, _visualPrompt, fac
       return token;
     }),
     english: cardEnglish(english),
-    fact,
     grammarTags,
   };
 }
 
-function add(cards, spec, parts, english, tags, prompt, fact) {
-  cards.push(makeCard(spec.id, cards.length + 1, parts, english, tags, prompt, fact));
+function add(cards, spec, parts, english, tags) {
+  cards.push(makeCard(spec.id, cards.length + 1, parts, english, tags));
 }
 
 function subjectEnglish(person, lower = false) {
@@ -935,7 +934,6 @@ function requiredWordIds(unitId) {
 function reviewCard(unitId, index, wordId) {
   const entry = lexicon.get(wordId);
   const tags = ["review vocabulary"];
-  const prompt = `A focused review card for ${entry.surface}.`;
   const meaning = bareMeaning(entry.meaning);
 
   if (entry.function === "verb" && verbForms.has(wordId)) {
@@ -944,7 +942,7 @@ function reviewCard(unitId, index, wordId) {
       haku: "I wear something on my feet.",
       kiru_wear: "I wear clothes.",
     }[wordId] ?? `I ${verbForms.get(wordId).masu[2]}.`;
-    return makeCard(unitId, index, [word("watashi"), jp.wa(), verbToken(wordId), jp.p()], reviewEnglish, tags, prompt, "Verb review keeps earlier A2 action words active.");
+    return makeCard(unitId, index, [word("watashi"), jp.wa(), verbToken(wordId), jp.p()], reviewEnglish, tags);
   }
   if (entry.function === "quantity") {
     const countLabels = new Map([
@@ -960,39 +958,39 @@ function reviewCard(unitId, index, wordId) {
       ["too", "ten"],
     ]);
     const count = countLabels.get(wordId) ?? meaning;
-    return makeCard(unitId, index, [word("hon"), jp.ga(), word(wordId), jp.arimasu(), jp.p()], `There ${count === "one" ? "is" : "are"} ${count} ${count === "one" ? "book" : "books"}.`, tags, prompt, "Counter review keeps basic quantities active.");
+    return makeCard(unitId, index, [word("hon"), jp.ga(), word(wordId), jp.arimasu(), jp.p()], `There ${count === "one" ? "is" : "are"} ${count} ${count === "one" ? "book" : "books"}.`, tags);
   }
   if (["nan", "dare", "doko", "itsu", "dore"].includes(wordId)) {
     const english = { nan: "What is it?", dare: "Who is it?", doko: "Where is it?", itsu: "When is it?", dore: "Which one is it?" }[wordId];
-    return makeCard(unitId, index, [word(wordId), jp.desuKa(), jp.q()], english, tags, prompt, "Question-word review keeps A1 questions available.");
+    return makeCard(unitId, index, [word(wordId), jp.desuKa(), jp.q()], english, tags);
   }
   if (wordId === "dono") {
-    return makeCard(unitId, index, [word("dono"), word("hon"), jp.desuKa(), jp.q()], "Which book is it?", tags, prompt, "Determiner review stays attached to a noun.");
+    return makeCard(unitId, index, [word("dono"), word("hon"), jp.desuKa(), jp.q()], "Which book is it?", tags);
   }
   if (["kore", "sore", "are"].includes(wordId)) {
-    return makeCard(unitId, index, [word(wordId), jp.wa(), word("hon"), jp.desu(), jp.p()], `This is ${wordId === "kore" ? "a" : "the"} book.`, tags, prompt, "Demonstrative review keeps reference words active.");
+    return makeCard(unitId, index, [word(wordId), jp.wa(), word("hon"), jp.desu(), jp.p()], `This is ${wordId === "kore" ? "a" : "the"} book.`, tags);
   }
   if (["kono", "sono", "ano"].includes(wordId)) {
     const english = wordId === "kono" ? "It is this book." : wordId === "sono" ? "It is that book near you." : "It is that book over there.";
-    return makeCard(unitId, index, [word(wordId), word("hon"), jp.desu(), jp.p()], english, tags, prompt, "Determiner review stays attached to a noun.");
+    return makeCard(unitId, index, [word(wordId), word("hon"), jp.desu(), jp.p()], english, tags);
   }
   if (entry.function === "place") {
-    return makeCard(unitId, index, [word(wordId), jp.he(), verbToken("iku"), jp.p()], movementEnglish(people[0], "iku", wordId), tags, prompt, "Place review returns inside an A2 movement sentence.");
+    return makeCard(unitId, index, [word(wordId), jp.he(), verbToken("iku"), jp.p()], movementEnglish(people[0], "iku", wordId), tags);
   }
   if (entry.function === "time" || entry.function === "adverb") {
     const negative = ["zenzen", "hotondo", "mettani"].includes(wordId);
     if (entry.function === "adverb") {
-      return makeCard(unitId, index, [word("watashi"), jp.wa(), word(wordId), negative ? verbToken("benkyou_suru", "masen") : verbToken("benkyou_suru"), jp.p()], frequencySentence(people[0], wordId, "benkyou_suru", negative), tags, prompt, "Adverb review modifies a familiar action.");
+      return makeCard(unitId, index, [word("watashi"), jp.wa(), word(wordId), negative ? verbToken("benkyou_suru", "masen") : verbToken("benkyou_suru"), jp.p()], frequencySentence(people[0], wordId, "benkyou_suru", negative), tags);
     }
-    return makeCard(unitId, index, [word("watashi"), jp.wa(), word(wordId), verbToken("benkyou_suru"), jp.p()], `I study ${timePhrase(wordId)}.`, tags, prompt, "Time review modifies a familiar action.");
+    return makeCard(unitId, index, [word("watashi"), jp.wa(), word(wordId), verbToken("benkyou_suru"), jp.p()], `I study ${timePhrase(wordId)}.`, tags);
   }
   if (entry.function === "person") {
-    return makeCard(unitId, index, [word("watashi"), jp.wa(), word(wordId), jp.to(), verbToken("hanasu"), jp.p()], `I speak with ${nounEnglish(wordId, true)}.`, tags, prompt, "Person review returns with `と`.");
+    return makeCard(unitId, index, [word("watashi"), jp.wa(), word(wordId), jp.to(), verbToken("hanasu"), jp.p()], `I speak with ${nounEnglish(wordId, true)}.`, tags);
   }
   if (entry.function === "adjective" || entry.function === "adjectival noun") {
-    return makeCard(unitId, index, [word("koko"), jp.wa(), word(wordId), jp.desu(), jp.p()], `It is ${meaning} here.`, tags, prompt, "Description review stays attached to a simple scene.");
+    return makeCard(unitId, index, [word("koko"), jp.wa(), word(wordId), jp.desu(), jp.p()], `It is ${meaning} here.`, tags);
   }
-  return makeCard(unitId, index, [word("watashi"), jp.wa(), word(wordId), jp.wo(), verbToken("miru"), jp.p()], `I look at ${nounEnglish(wordId)}.`, tags, prompt, "Noun review returns as an object of a familiar action.");
+  return makeCard(unitId, index, [word("watashi"), jp.wa(), word(wordId), jp.wo(), verbToken("miru"), jp.p()], `I look at ${nounEnglish(wordId)}.`, tags);
 }
 
 function ensureRequiredWords(spec, cards) {
@@ -1012,7 +1010,6 @@ function generateCards(spec) {
   const verbs = currentWords.filter((id) => lexicon.get(id)?.function === "verb" && verbForms.has(id));
   const nouns = currentWords.filter((id) => ["noun", "place", "person", "time", "adverb", "phrase"].includes(lexicon.get(id)?.function));
 
-  const fact = `Unit ${spec.id} introduces ${spec.grammarFocus} while keeping earlier A2 action sentences active.`;
 
   if (spec.id === 22) {
     for (let i = 0; i < 80; i += 1) {
@@ -1020,7 +1017,7 @@ function generateCards(spec) {
       const verbId = verbs[Math.floor(i / people.length) % verbs.length];
       const time = variedTime(i);
       const place = variedPlace(i);
-      add(cards, spec, [word(person[0]), jp.wa(), word(time), word(place), jp.de(), verbToken(verbId, "masen"), jp.p()], `${subjectEnglish(person)} ${verbForms.get(verbId).masen[person[2] ? 3 : 2]} ${timePhrase(time)} at ${placeEnglish(place)}.`, ["Vません"], "A polite negative action.", fact);
+      add(cards, spec, [word(person[0]), jp.wa(), word(time), word(place), jp.de(), verbToken(verbId, "masen"), jp.p()], `${subjectEnglish(person)} ${verbForms.get(verbId).masen[person[2] ? 3 : 2]} ${timePhrase(time)} at ${placeEnglish(place)}.`, ["Vません"]);
     }
     return cards;
   }
@@ -1030,13 +1027,13 @@ function generateCards(spec) {
       const person = people[i % people.length];
       const verbId = verbs[Math.floor(i / people.length) % verbs.length];
       const place = helperPlaces[Math.floor(i / people.length) % helperPlaces.length];
-      add(cards, spec, [word(person[0]), jp.wa(), word("kinou"), word(place), jp.de(), verbToken(verbId, "mashita"), jp.p()], `${subjectEnglish(person)} ${verbForms.get(verbId).mashita[2]} yesterday at ${placeEnglish(place)}.`, ["Vました"], "A polite past action.", fact);
+      add(cards, spec, [word(person[0]), jp.wa(), word("kinou"), word(place), jp.de(), verbToken(verbId, "mashita"), jp.p()], `${subjectEnglish(person)} ${verbForms.get(verbId).mashita[2]} yesterday at ${placeEnglish(place)}.`, ["Vました"]);
     }
     for (let i = 0; i < 40; i += 1) {
       const person = people[(i + 3) % people.length];
       const verbId = verbs[Math.floor(i / people.length) % verbs.length];
       const place = helperPlaces[(Math.floor(i / people.length) + 4) % helperPlaces.length];
-      add(cards, spec, [word(person[0]), jp.wa(), word("kinou"), word(place), jp.de(), verbToken(verbId, "masendeshita"), jp.p()], `${subjectEnglish(person)} ${verbForms.get(verbId).masendeshita[2]} yesterday at ${placeEnglish(place)}.`, ["Vませんでした"], "A polite past negative action.", fact);
+      add(cards, spec, [word(person[0]), jp.wa(), word("kinou"), word(place), jp.de(), verbToken(verbId, "masendeshita"), jp.p()], `${subjectEnglish(person)} ${verbForms.get(verbId).masendeshita[2]} yesterday at ${placeEnglish(place)}.`, ["Vませんでした"]);
     }
     return cards;
   }
@@ -1058,7 +1055,7 @@ function generateCards(spec) {
       const person = people[Math.floor(i / currentWords.length) % people.length];
       const object = currentWords[i % currentWords.length];
       const verbId = objectVerbByWord.get(object);
-      add(cards, spec, [word(person[0]), jp.wa(), word(object), jp.wo(), verbToken(verbId), jp.p()], objectActionEnglish(person, verbId, object), ["NをVます"], "A direct object before a polite action.", fact);
+      add(cards, spec, [word(person[0]), jp.wa(), word(object), jp.wo(), verbToken(verbId), jp.p()], objectActionEnglish(person, verbId, object), ["NをVます"]);
     }
     return cards;
   }
@@ -1069,7 +1066,7 @@ function generateCards(spec) {
       const place = currentWords[i % currentWords.length];
       const particle = i % 2 === 0 ? jp.ni() : jp.he();
       const verbId = i % 3 === 0 ? "iku" : i % 3 === 1 ? "kuru" : "kaeru_verb";
-      add(cards, spec, [word(person[0]), jp.wa(), word(place), particle, verbToken(verbId), jp.p()], movementEnglish(person, verbId, place), ["場所に行きます", "場所へ行きます"], "Movement toward a place.", fact);
+      add(cards, spec, [word(person[0]), jp.wa(), word(place), particle, verbToken(verbId), jp.p()], movementEnglish(person, verbId, place), ["場所に行きます", "場所へ行きます"]);
     }
     return cards;
   }
@@ -1079,7 +1076,7 @@ function generateCards(spec) {
       const person = people[i % people.length];
       const place = currentWords[i % currentWords.length];
       const verbId = ["benkyou_suru", "hanasu", "matsu", "yomu", "kaku", "asobu", "aruku", "hataraku"][i % 8];
-      add(cards, spec, [word(person[0]), jp.wa(), word(place), jp.de(), verbToken(verbId), jp.p()], `${subjectEnglish(person)} ${verbForms.get(verbId).masu[person[2] ? 3 : 2]} at ${placeEnglish(place)}.`, ["場所でVます"], "Action happening at a place.", fact);
+      add(cards, spec, [word(person[0]), jp.wa(), word(place), jp.de(), verbToken(verbId), jp.p()], `${subjectEnglish(person)} ${verbForms.get(verbId).masu[person[2] ? 3 : 2]} at ${placeEnglish(place)}.`, ["場所でVます"]);
     }
     return cards;
   }
@@ -1089,7 +1086,7 @@ function generateCards(spec) {
       const person = people[i % people.length];
       const time = currentWords[i % currentWords.length];
       const verbId = helperVerbs[i % helperVerbs.length];
-      add(cards, spec, [word(person[0]), jp.wa(), word(time), jp.ni(), verbToken(verbId), jp.p()], `${subjectEnglish(person)} ${presentVerbEnglish(person, verbId)} ${timePhrase(time)}.`, ["時間にVます"], "A time point before a polite action.", fact);
+      add(cards, spec, [word(person[0]), jp.wa(), word(time), jp.ni(), verbToken(verbId), jp.p()], `${subjectEnglish(person)} ${presentVerbEnglish(person, verbId)} ${timePhrase(time)}.`, ["時間にVます"]);
     }
     return cards;
   }
@@ -1100,7 +1097,7 @@ function generateCards(spec) {
       const end = currentWords[(i + 3) % currentWords.length];
       const person = people[Math.floor(i / currentWords.length) % people.length];
       const verbId = ["hataraku", "benkyou_suru", "matsu", "yomu"][Math.floor(i / people.length) % 4];
-      add(cards, spec, [word(person[0]), jp.wa(), word(start), jp.kara(), word(end), jp.made(), verbToken(verbId), jp.p()], `${subjectEnglish(person)} ${verbForms.get(verbId).masu[person[2] ? 3 : 2]} from ${bareMeaning(lexicon.get(start).meaning)} until ${bareMeaning(lexicon.get(end).meaning)}.`, ["AからBまで"], "A time span before an action.", fact);
+      add(cards, spec, [word(person[0]), jp.wa(), word(start), jp.kara(), word(end), jp.made(), verbToken(verbId), jp.p()], `${subjectEnglish(person)} ${verbForms.get(verbId).masu[person[2] ? 3 : 2]} from ${bareMeaning(lexicon.get(start).meaning)} until ${bareMeaning(lexicon.get(end).meaning)}.`, ["AからBまで"]);
     }
     return cards;
   }
@@ -1110,7 +1107,7 @@ function generateCards(spec) {
       const person = people[Math.floor(i / currentWords.length) % people.length];
       const partner = currentWords[i % currentWords.length];
       const verbId = ["iku", "hanasu", "taberu", "benkyou_suru", "asobu", "aruku"][Math.floor(i / people.length) % 6];
-      add(cards, spec, [word(person[0]), jp.wa(), word(partner), jp.to(), verbToken(verbId), jp.p()], `${subjectEnglish(person)} ${presentVerbEnglish(person, verbId)} with ${nounEnglish(partner, true)}.`, ["人とVます"], "An action done with someone.", fact);
+      add(cards, spec, [word(person[0]), jp.wa(), word(partner), jp.to(), verbToken(verbId), jp.p()], `${subjectEnglish(person)} ${presentVerbEnglish(person, verbId)} with ${nounEnglish(partner, true)}.`, ["人とVます"]);
     }
     return cards;
   }
@@ -1121,7 +1118,7 @@ function generateCards(spec) {
       const adverb = currentWords[i % currentWords.length];
       const negative = ["hotondo", "mettani"].includes(adverb);
       const verbId = helperVerbs[i % helperVerbs.length];
-      add(cards, spec, [word(person[0]), jp.wa(), word(adverb), negative ? verbToken(verbId, "masen") : verbToken(verbId), jp.p()], frequencySentence(person, adverb, verbId, negative), ["frequency", negative ? "Vません" : "Vます"], "Frequency before a polite action.", fact);
+      add(cards, spec, [word(person[0]), jp.wa(), word(adverb), negative ? verbToken(verbId, "masen") : verbToken(verbId), jp.p()], frequencySentence(person, adverb, verbId, negative), ["frequency", negative ? "Vません" : "Vます"]);
     }
     return cards;
   }
@@ -1139,9 +1136,9 @@ function generateCards(spec) {
       const positive = Math.floor(i / currentWords.length) % 2 === 0;
       if (spec.id === 40 && !positive) {
         const time = variedTime(i);
-        add(cards, spec, [word(time), word(item), jp.wa(), grammar("どう", "どう", "how"), jp.desuKa(), jp.q()], `${pattern[4](item, false, person).replace("?", "")} ${timePhrase(time)}?`, ["Nはどうですか"], "A simple suggestion with `どうですか`.", fact);
+        add(cards, spec, [word(time), word(item), jp.wa(), grammar("どう", "どう", "how"), jp.desuKa(), jp.q()], `${pattern[4](item, false, person).replace("?", "")} ${timePhrase(time)}?`, ["Nはどうですか"]);
       } else {
-        add(cards, spec, [word(person[0]), jp.wa(), word(item), jp.ga(), grammar(positive ? pattern[0][0] : pattern[1][0], positive ? pattern[0][1] : pattern[1][1], positive ? pattern[0][2] : pattern[1][2]), jp.desu(), jp.p()], pattern[4](item, positive, person), [spec.id === 31 ? "Nが好きです" : spec.id === 32 ? "Nが上手です" : spec.id === 33 ? "Nが欲しいです" : "Nが必要です"], "A descriptive preference, skill, want, or need sentence.", fact);
+        add(cards, spec, [word(person[0]), jp.wa(), word(item), jp.ga(), grammar(positive ? pattern[0][0] : pattern[1][0], positive ? pattern[0][1] : pattern[1][1], positive ? pattern[0][2] : pattern[1][2]), jp.desu(), jp.p()], pattern[4](item, positive, person), [spec.id === 31 ? "Nが好きです" : spec.id === 32 ? "Nが上手です" : spec.id === 33 ? "Nが欲しいです" : "Nが必要です"]);
       }
     }
     return cards;
@@ -1154,7 +1151,7 @@ function generateCards(spec) {
       const negative = Math.floor(i / verbs.length) % 4 === 0;
       const want = negative ? `does not want to ${verbForms.get(verbId).masu[2]}` : `wants to ${verbForms.get(verbId).masu[2]}`;
       const iWant = negative ? `do not want to ${verbForms.get(verbId).masu[2]}` : `want to ${verbForms.get(verbId).masu[2]}`;
-      add(cards, spec, [word(person[0]), jp.wa(), negative ? verbToken(verbId, "takunai") : verbToken(verbId, "tai"), jp.desu(), jp.p()], `${subjectEnglish(person)} ${person[2] ? want : iWant}.`, [negative ? "Vたくないです" : "Vたいです"], "Wanting or not wanting to do an action.", fact);
+      add(cards, spec, [word(person[0]), jp.wa(), negative ? verbToken(verbId, "takunai") : verbToken(verbId, "tai"), jp.desu(), jp.p()], `${subjectEnglish(person)} ${person[2] ? want : iWant}.`, [negative ? "Vたくないです" : "Vたいです"]);
     }
     return cards;
   }
@@ -1166,7 +1163,7 @@ function generateCards(spec) {
       const masu = verbForms.get(verbId).masu;
       const surface = masu[0].replace("ます", question ? "ましょうか" : "ましょう");
       const reading = masu[1].replace("ます", question ? "ましょうか" : "ましょう");
-      add(cards, spec, [...timePlaceParts(i), word(verbId, surface, reading, question ? "shall we?" : "let's"), question ? jp.q() : jp.p()], question ? `Shall we ${masu[2]} ${timePlaceEnglish(i)}?` : `Let's ${masu[2]} ${timePlaceEnglish(i)}.`, [question ? "Vましょうか" : "Vましょう"], "A suggestion or offer to act together.", fact);
+      add(cards, spec, [...timePlaceParts(i), word(verbId, surface, reading, question ? "shall we?" : "let's"), question ? jp.q() : jp.p()], question ? `Shall we ${masu[2]} ${timePlaceEnglish(i)}?` : `Let's ${masu[2]} ${timePlaceEnglish(i)}.`, [question ? "Vましょうか" : "Vましょう"]);
     }
     return cards;
   }
@@ -1177,11 +1174,11 @@ function generateCards(spec) {
       const form = verbForms.get(verbId);
       const contextParts = timePlaceParts(i);
       const contextEnglish = timePlaceEnglish(i);
-      if (spec.id === 36) add(cards, spec, [...contextParts, verbToken(verbId, "te"), grammar("ください", "ください", "please do"), jp.p()], `Please ${form.masu[2]} ${contextEnglish}.`, ["Vてください"], "A direct but polite request.", fact);
-      else if (spec.id === 37) add(cards, spec, [...contextParts, verbToken(verbId, "nai"), grammar("でください", "でください", "please do not"), jp.p()], `Please do not ${form.masu[2]} ${contextEnglish}.`, ["Vないでください"], "A polite negative request.", fact);
-      else if (spec.id === 38) add(cards, spec, [...contextParts, verbToken(verbId, "te"), grammar(i % 2 === 0 ? "もいいですか" : "もいいです", i % 2 === 0 ? "もいいですか" : "もいいです", "permission phrase"), i % 2 === 0 ? jp.q() : jp.p()], i % 2 === 0 ? `May I ${form.masu[2]} ${contextEnglish}?` : `You may ${form.masu[2]} ${contextEnglish}.`, ["Vてもいいですか", "Vてもいいです"], "Permission with a te-form verb.", fact);
-      else if (spec.id === 39) add(cards, spec, [...contextParts, verbToken(verbId, "te"), grammar("はいけません", "はいけません", "must not"), jp.p()], `You must not ${form.masu[2]} ${contextEnglish}.`, ["Vてはいけません"], "A prohibition with te-form plus `はいけません`.", fact);
-      else add(cards, spec, [...contextParts, verbToken(verbId, "te"), jp.p()], `${form.masu[2]} ${contextEnglish}, and...`, [spec.id === 41 ? "ichidan te-form" : "godan te-form"], "A te-form shape drill before connected actions.", fact);
+      if (spec.id === 36) add(cards, spec, [...contextParts, verbToken(verbId, "te"), grammar("ください", "ください", "please do"), jp.p()], `Please ${form.masu[2]} ${contextEnglish}.`, ["Vてください"]);
+      else if (spec.id === 37) add(cards, spec, [...contextParts, verbToken(verbId, "nai"), grammar("でください", "でください", "please do not"), jp.p()], `Please do not ${form.masu[2]} ${contextEnglish}.`, ["Vないでください"]);
+      else if (spec.id === 38) add(cards, spec, [...contextParts, verbToken(verbId, "te"), grammar(i % 2 === 0 ? "もいいですか" : "もいいです", i % 2 === 0 ? "もいいですか" : "もいいです", "permission phrase"), i % 2 === 0 ? jp.q() : jp.p()], i % 2 === 0 ? `May I ${form.masu[2]} ${contextEnglish}?` : `You may ${form.masu[2]} ${contextEnglish}.`, ["Vてもいいですか", "Vてもいいです"]);
+      else if (spec.id === 39) add(cards, spec, [...contextParts, verbToken(verbId, "te"), grammar("はいけません", "はいけません", "must not"), jp.p()], `You must not ${form.masu[2]} ${contextEnglish}.`, ["Vてはいけません"]);
+      else add(cards, spec, [...contextParts, verbToken(verbId, "te"), jp.p()], `${form.masu[2]} ${contextEnglish}, and...`, [spec.id === 41 ? "ichidan te-form" : "godan te-form"]);
     }
     return cards;
   }
@@ -1194,7 +1191,7 @@ function generateCards(spec) {
       const person = people[i % people.length];
       const connector = currentWords[i % 5];
       const lead = connector === "sorekara" ? "Then" : capitalize(bareMeaning(lexicon.get(connector).meaning));
-      add(cards, spec, [word(person[0]), jp.wa(), word(connector), verbToken(first, "te"), jp.comma(), verbToken(second), jp.p()], `${lead}, ${subjectEnglish(person, true)} ${presentVerbEnglish(person, first)} and ${presentVerbEnglish(person, second)}.`, ["Vて、Vます"], "Two actions connected by te-form.", fact);
+      add(cards, spec, [word(person[0]), jp.wa(), word(connector), verbToken(first, "te"), jp.comma(), verbToken(second), jp.p()], `${lead}, ${subjectEnglish(person, true)} ${presentVerbEnglish(person, first)} and ${presentVerbEnglish(person, second)}.`, ["Vて、Vます"]);
     }
     return cards;
   }
@@ -1217,7 +1214,7 @@ function generateCards(spec) {
       const topic = currentWords[i % currentWords.length];
       const [surface, reading, english] = ongoing.get(topic);
       const ongoingEnglish = person[2] ? english : english.replace(/^is /, "am ");
-      add(cards, spec, [word(person[0]), jp.wa(), ...timePlaceParts(i), word(topic), jp.wo(), grammar(surface, reading, "is doing now"), jp.p()], `${subjectEnglish(person)} ${ongoingEnglish} ${timePlaceEnglish(i)}.`, ["Vています"], "An ongoing action or resulting state.", fact);
+      add(cards, spec, [word(person[0]), jp.wa(), ...timePlaceParts(i), word(topic), jp.wo(), grammar(surface, reading, "is doing now"), jp.p()], `${subjectEnglish(person)} ${ongoingEnglish} ${timePlaceEnglish(i)}.`, ["Vています"]);
     }
     return cards;
   }
