@@ -33,7 +33,7 @@ const g = {
 
 const properIds = new Set(["nihon", "amerika"]);
 const pronounIds = new Set(["watashi", "sakura", "yuki", "tanaka"]);
-const noArticleIds = new Set(["mizu", "ocha", "tabemono", "nomimono", "kinou", "sengetsu", "kyonen", "asa", "yoru", "yasumi", "shigoto"]);
+const noArticleIds = new Set(["mizu", "ocha", "tabemono", "kinou", "sengetsu", "kyonen", "asa", "yoru", "yasumi", "shigoto"]);
 const bareSubjectIds = new Set(["kinou", "sengetsu", "kyonen", "asa", "yoru"]);
 
 const verbForms = new Map([
@@ -78,6 +78,8 @@ function identityComplement(word) {
   if (word.id === "sakura") return "you";
   if (word.id === "yuki") return "him";
   if (word.id === "tanaka") return "her";
+  if (word.id === "yasumi") return "a day off";
+  if (word.id === "nomimono") return "a drink";
   if (word.id === "haha") return "my mother";
   if (word.id === "chichi") return "my father";
   if (word.id === "ane") return "my older sister";
@@ -91,6 +93,9 @@ function subject(word) {
   if (word.id === "sakura") return "you";
   if (word.id === "yuki") return "he";
   if (word.id === "tanaka") return "she";
+  if (word.id === "kore") return "this";
+  if (word.id === "sore") return "that near you";
+  if (word.id === "are") return "that over there";
   if (word.id === "haha") return "my mother";
   if (word.id === "chichi") return "my father";
   if (word.id === "ane") return "my older sister";
@@ -122,6 +127,12 @@ function pastClause(left, right) {
   if (left.id === "watashi") return `I was ${identityComplement(right)}`;
   if (left.id === "sakura") return `You were ${identityComplement(right)}`;
   return `${sentenceStart(subject(left))} was ${identityComplement(right)}`;
+}
+
+function pastQuestion(left, right) {
+  if (left.id === "watashi") return `Was I ${identityComplement(right)}?`;
+  if (left.id === "sakura") return `Were you ${identityComplement(right)}?`;
+  return `Was ${subject(left)} ${identityComplement(right)}?`;
 }
 
 function possessive(owner) {
@@ -228,6 +239,14 @@ function pastTopic(cards, unitId, left, right) {
   add(cards, unitId, [token(left), g.wa(), token(right), g.deshita()], pastClause(left, right), ["AはBでした"]);
 }
 
+function pastTopicQuestion(cards, unitId, left, right) {
+  add(cards, unitId, [token(left), g.wa(), token(right), g.deshita(), g.ka(), g.q()], pastQuestion(left, right), ["AはBでした", "か"]);
+}
+
+function pastIdentity(cards, unitId, word) {
+  add(cards, unitId, [token(word), g.deshita()], `It was ${identityComplement(word)}`, ["Aでした"]);
+}
+
 function possession(cards, unitId, owner, item) {
   add(cards, unitId, [token(owner), g.no(), token(item), g.desu()], `It's ${possessive(owner)} ${bareMeaning(item)}`, ["AのB"]);
 }
@@ -301,6 +320,16 @@ function subjectPlaceAction(cards, unitId, actor, place, verb, particle = g.ni()
     `${sentenceStart(subject(actor))} ${action} ${placePhrase(place, prep)}`,
     ["early V\u307e\u3059 action"],
   );
+}
+
+function subjectTimeAction(cards, unitId, actor, time, verb) {
+  const form = verbForms.get(verb.id);
+  const action = actor.id === "watashi" || actor.id === "sakura" ? form[2] : form[3];
+  const when = time.id === "asa" ? "in the morning" : time.id === "yoru" ? "at night" : bareMeaning(time);
+  add(cards, unitId, [token(actor), g.wa(), token(time), g.ni(), verbToken(verb)], `${sentenceStart(subject(actor))} ${action} ${when}`, [
+    "early Vます action",
+    "time に",
+  ]);
 }
 
 function compound(cards, unitId, first, second, category, englishCategory) {
@@ -856,26 +885,152 @@ function buildUnit4(spec, previousWords, reviewWords) {
   return cards;
 }
 
+function interleaveRows(primaryRows, supportRows, primaryChunkSize = 2) {
+  const rows = [];
+  let primaryIndex = 0;
+  let supportIndex = 0;
+  while (primaryIndex < primaryRows.length || supportIndex < supportRows.length) {
+    for (let index = 0; index < primaryChunkSize && primaryIndex < primaryRows.length; index += 1) {
+      rows.push(primaryRows[primaryIndex]);
+      primaryIndex += 1;
+    }
+    if (supportIndex < supportRows.length) {
+      rows.push(supportRows[supportIndex]);
+      supportIndex += 1;
+    }
+  }
+  return rows;
+}
+
+function particleById(id) {
+  if (id === "de") return g.de();
+  if (id === "ni") return g.ni();
+  throw new Error(`Unknown particle ${id}`);
+}
+
+function addFoundationRow(cards, unitId, words, row) {
+  const [type, ...args] = row;
+  if (type === "topic") topic(cards, unitId, w(words, args[0]), w(words, args[1]));
+  else if (type === "topicQuestion") topicQuestion(cards, unitId, w(words, args[0]), w(words, args[1]));
+  else if (type === "negative") negativeTopic(cards, unitId, w(words, args[0]), w(words, args[1]));
+  else if (type === "past") pastTopic(cards, unitId, w(words, args[0]), w(words, args[1]));
+  else if (type === "pastQuestion") pastTopicQuestion(cards, unitId, w(words, args[0]), w(words, args[1]));
+  else if (type === "pastIdentity") pastIdentity(cards, unitId, w(words, args[0]));
+  else if (type === "possession") possession(cards, unitId, w(words, args[0]), w(words, args[1]));
+  else if (type === "also") also(cards, unitId, w(words, args[0]), w(words, args[1]));
+  else if (type === "object") objectAction(cards, unitId, w(words, args[0]), w(words, args[1]));
+  else if (type === "subjectAction") subjectAction(cards, unitId, w(words, args[0]), w(words, args[1]));
+  else if (type === "subjectActionQuestion") subjectActionQuestion(cards, unitId, w(words, args[0]), w(words, args[1]));
+  else if (type === "subjectObject") subjectObjectAction(cards, unitId, w(words, args[0]), w(words, args[1]), w(words, args[2]));
+  else if (type === "subjectObjectQuestion") subjectObjectActionQuestion(cards, unitId, w(words, args[0]), w(words, args[1]), w(words, args[2]));
+  else if (type === "subjectPlace") subjectPlaceAction(cards, unitId, w(words, args[0]), w(words, args[1]), w(words, args[2]), particleById(args[3]));
+  else if (type === "subjectTime") subjectTimeAction(cards, unitId, w(words, args[0]), w(words, args[1]), w(words, args[2]));
+  else if (type === "demonstrative") demonstrativeTopic(cards, unitId, w(words, args[0]), w(words, args[1]));
+  else if (type === "determiner") determinerIdentity(cards, unitId, w(words, args[0]), w(words, args[1]));
+  else if (type === "questionWord") questionWordCard(cards, unitId, words, args[0], args[1]);
+  else if (type === "whichNoun") whichNounCard(cards, unitId, words, args[0], args[1]);
+  else throw new Error(`Unknown foundation row type ${type}`);
+}
+
 function buildUnit5(spec, previousWords, reviewWords) {
-  const previous = byId(previousWords);
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
-  warmReview(cards, 5, previous);
-  currentNonVerbs(spec).forEach((word) => identity(cards, 5, w(words, word.id)));
-  placeAction(cards, 5, w(words, "kaisha"), w(words, "hataraku"), g.de());
-  placeAction(cards, 5, w(words, "gakkou"), w(words, "benkyou_suru"), g.de());
-  addReview(cards, 5, words, reviewWords);
-  const pastComplementsByWord = new Map([
-    ["yasumi", ["ryokou", "shigoto", "kinou", "sengetsu", "kyonen", "asa", "yoru"]],
-    ["ryokou", ["kinou", "sengetsu", "kyonen", "yasumi", "shigoto", "asa", "yoru"]],
-    ["shigoto", ["kinou", "sengetsu", "kyonen", "asa", "yoru", "yasumi", "ryokou"]],
-  ]);
-  currentNonVerbs(spec).forEach((word, index) => {
-    const current = w(words, word.id);
-    const complements = pastComplementsByWord.get(word.id) ?? ["yasumi", "ryokou", "shigoto", "gakusei", "sensei", "tomodachi"].filter((id) => id !== word.id);
-    for (let repeat = 0; repeat < 7; repeat += 1) pastTopic(cards, 5, current, w(words, cycle(complements, index + repeat)));
-  });
-  currentVerbs(spec).forEach((word) => drillVerb(cards, 5, words, w(words, word.id), 16));
+
+  const currentRows = [
+    ["pastIdentity", "kinou"],
+    ["pastIdentity", "sengetsu"],
+    ["pastIdentity", "kyonen"],
+    ["pastIdentity", "asa"],
+    ["pastIdentity", "yoru"],
+    ["pastIdentity", "yasumi"],
+    ["pastIdentity", "ryokou"],
+    ["pastIdentity", "shigoto"],
+    ["subjectAction", "sensei", "hataraku"],
+    ["subjectAction", "gakusei", "benkyou_suru"],
+    ["past", "asa", "shigoto"],
+    ["past", "yoru", "yasumi"],
+    ["past", "kinou", "ryokou"],
+    ["subjectTime", "yuki", "asa", "benkyou_suru"],
+    ["subjectTime", "tanaka", "yoru", "hataraku"],
+    ["past", "sengetsu", "shigoto"],
+    ["past", "kyonen", "yasumi"],
+    ["past", "ryokou", "kinou"],
+    ["subjectPlace", "tomodachi", "mise", "hataraku", "de"],
+    ["subjectPlace", "haha", "ie", "benkyou_suru", "de"],
+    ["past", "shigoto", "sengetsu"],
+    ["past", "yasumi", "kyonen"],
+    ["past", "asa", "ryokou"],
+    ["subjectTime", "chichi", "asa", "hataraku"],
+    ["subjectTime", "ane", "yoru", "benkyou_suru"],
+    ["past", "yoru", "shigoto"],
+    ["past", "kinou", "shigoto"],
+    ["past", "sengetsu", "yasumi"],
+    ["subjectPlace", "isha", "byouin", "hataraku", "de"],
+    ["subjectPlace", "otouto", "heya", "benkyou_suru", "de"],
+    ["past", "kyonen", "ryokou"],
+    ["past", "ryokou", "asa"],
+    ["past", "shigoto", "yoru"],
+    ["subjectTime", "watashi", "yoru", "benkyou_suru"],
+    ["subjectTime", "sakura", "asa", "hataraku"],
+    ["past", "yasumi", "sengetsu"],
+    ["past", "asa", "kinou"],
+    ["past", "yoru", "kyonen"],
+    ["subjectPlace", "sensei", "gakkou", "benkyou_suru", "de"],
+    ["subjectPlace", "gakusei", "kaisha", "hataraku", "de"],
+    ["pastQuestion", "kinou", "yasumi"],
+    ["pastQuestion", "sengetsu", "ryokou"],
+    ["pastQuestion", "kyonen", "shigoto"],
+    ["past", "yasumi", "shigoto"],
+    ["pastQuestion", "ryokou", "sengetsu"],
+    ["pastQuestion", "shigoto", "kyonen"],
+    ["pastQuestion", "kinou", "shigoto"],
+    ["pastQuestion", "yasumi", "kinou"],
+    ["pastQuestion", "sengetsu", "yasumi"],
+    ["pastQuestion", "kyonen", "ryokou"],
+    ["subjectPlace", "sensei", "kaisha", "hataraku", "de"],
+    ["subjectPlace", "gakusei", "gakkou", "benkyou_suru", "de"],
+  ];
+  const reviewRows = [
+    ["topic", "neko", "doubutsu"],
+    ["topicQuestion", "inu", "doubutsu"],
+    ["object", "hon", "yomu"],
+    ["subjectObjectQuestion", "tanaka", "hon", "kaku"],
+    ["possession", "watashi", "shashin"],
+    ["subjectAction", "tanaka", "miru"],
+    ["subjectActionQuestion", "yuki", "kiku"],
+    ["negative", "kodomo", "sensei"],
+    ["negative", "otona", "gakusei"],
+    ["subjectPlace", "watashi", "mise", "iku", "ni"],
+    ["subjectPlace", "sakura", "eki", "kuru", "ni"],
+    ["possession", "haha", "kaban"],
+    ["possession", "chichi", "heya"],
+    ["topicQuestion", "gakkou", "basho"],
+    ["negative", "isu", "tsukue"],
+    ["negative", "tsukue", "isu"],
+    ["subjectAction", "tomodachi", "taberu"],
+    ["subjectActionQuestion", "gakusei", "nomu"],
+    ["topic", "isha", "sensei"],
+    ["topicQuestion", "ie", "basho"],
+    ["subjectPlace", "tanaka", "byouin", "iku", "ni"],
+    ["subjectPlace", "yuki", "kaisha", "kuru", "ni"],
+    ["possession", "ane", "shashin"],
+    ["possession", "otouto", "kaban"],
+    ["object", "shashin", "miru"],
+    ["subjectActionQuestion", "sensei", "kiku"],
+    ["negative", "byouin", "eki"],
+    ["negative", "mise", "kaisha"],
+    ["subjectObject", "yuki", "hon", "yomu"],
+    ["subjectObjectQuestion", "sakura", "hon", "kaku"],
+    ["topic", "kazoku", "tomodachi"],
+    ["topicQuestion", "namae", "sensei"],
+    ["topicQuestion", "kaban", "shashin"],
+    ["subjectPlace", "gakusei", "ie", "iku", "ni"],
+    ["subjectPlace", "tomodachi", "gakkou", "kuru", "ni"],
+  ];
+
+  const closingCurrentRows = currentRows.slice(-8);
+  const openingCurrentRows = currentRows.slice(0, -8);
+  for (const row of [...interleaveRows(openingCurrentRows, reviewRows, 2), ...closingCurrentRows]) addFoundationRow(cards, 5, words, row);
   return cards;
 }
 
@@ -885,31 +1040,109 @@ function demonstrativeTopic(cards, unitId, demonstrative, noun) {
 }
 
 function determinerIdentity(cards, unitId, determiner, noun) {
-  const english = determiner.id === "kono" ? "this" : determiner.id === "sono" ? "that near you" : "that over there";
-  add(cards, unitId, [token(determiner), token(noun), g.desu()], `It is ${english} ${bareMeaning(noun)}`, ["kono/sono/ano N"]);
+  const nounText = bareMeaning(noun);
+  const english =
+    determiner.id === "kono" ? `this ${nounText}` : determiner.id === "sono" ? `that ${nounText} near you` : `that ${nounText} over there`;
+  add(cards, unitId, [token(determiner), token(noun), g.desu()], `It is ${english}`, ["kono/sono/ano N"]);
 }
 
 function buildUnit6(spec, previousWords, reviewWords) {
-  const previous = byId(previousWords);
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
-  warmReview(cards, 6, previous);
-  const nounIds = ["hon", "ie", "gakkou", "mise", "byouin", "eki", "mizu", "ocha", "shashin", "kaban"].filter((id) => words.has(id));
-  demonstrativeTopic(cards, 6, w(words, "kore"), w(words, "hon"));
-  demonstrativeTopic(cards, 6, w(words, "sore"), w(words, "hon"));
-  demonstrativeTopic(cards, 6, w(words, "are"), w(words, "hon"));
-  determinerIdentity(cards, 6, w(words, "kono"), w(words, "hon"));
-  determinerIdentity(cards, 6, w(words, "sono"), w(words, "hon"));
-  determinerIdentity(cards, 6, w(words, "ano"), w(words, "hon"));
-  demonstrativeTopic(cards, 6, w(words, "kore"), w(words, "mizu"));
-  demonstrativeTopic(cards, 6, w(words, "sore"), w(words, "ocha"));
-  objectAction(cards, 6, w(words, "mizu"), w(words, "kau"));
-  objectAction(cards, 6, w(words, "hon"), w(words, "tsukau"));
-  addReview(cards, 6, words, reviewWords);
-  for (const id of ["kore", "sore", "are"]) for (let index = 0; index < 7; index += 1) demonstrativeTopic(cards, 6, w(words, id), w(words, cycle(nounIds, index)));
-  for (const id of ["kono", "sono", "ano"]) for (let index = 0; index < 7; index += 1) determinerIdentity(cards, 6, w(words, id), w(words, cycle(nounIds, index)));
-  for (const id of ["mizu", "ocha"]) for (let index = 0; index < 7; index += 1) demonstrativeTopic(cards, 6, w(words, cycle(["kore", "sore", "are"], index)), w(words, id));
-  currentVerbs(spec).forEach((word) => drillVerb(cards, 6, words, w(words, word.id), 16));
+
+  const currentRows = [
+    ["demonstrative", "kore", "hon"],
+    ["demonstrative", "sore", "byouin"],
+    ["demonstrative", "are", "kaban"],
+    ["determiner", "kono", "hon"],
+    ["determiner", "sono", "shashin"],
+    ["determiner", "ano", "kaban"],
+    ["demonstrative", "kore", "mizu"],
+    ["demonstrative", "sore", "ocha"],
+    ["subjectObject", "watashi", "hon", "kau"],
+    ["subjectObject", "sakura", "kaban", "tsukau"],
+    ["subjectObject", "yuki", "ocha", "kau"],
+    ["demonstrative", "sore", "mizu"],
+    ["subjectObject", "tanaka", "kaban", "tsukau"],
+    ["determiner", "kono", "mizu"],
+    ["demonstrative", "are", "ocha"],
+    ["subjectObjectQuestion", "sensei", "shashin", "kau"],
+    ["determiner", "sono", "kaban"],
+    ["determiner", "ano", "hon"],
+    ["subjectObjectQuestion", "gakusei", "mizu", "tsukau"],
+    ["demonstrative", "kore", "kaban"],
+    ["demonstrative", "sore", "shashin"],
+    ["subjectObject", "tomodachi", "shashin", "kau"],
+    ["determiner", "kono", "ocha"],
+    ["demonstrative", "are", "mizu"],
+    ["subjectObject", "isha", "hon", "tsukau"],
+    ["determiner", "sono", "hon"],
+    ["determiner", "ano", "ocha"],
+    ["subjectObjectQuestion", "watashi", "mizu", "kau"],
+    ["demonstrative", "kore", "ocha"],
+    ["demonstrative", "sore", "kaban"],
+    ["subjectObjectQuestion", "sakura", "mizu", "tsukau"],
+    ["determiner", "kono", "kaban"],
+    ["demonstrative", "are", "hon"],
+    ["subjectObject", "yuki", "mizu", "kau"],
+    ["determiner", "sono", "mizu"],
+    ["determiner", "ano", "shashin"],
+    ["subjectObject", "tanaka", "hon", "tsukau"],
+    ["demonstrative", "kore", "shashin"],
+    ["demonstrative", "sore", "hon"],
+    ["subjectObjectQuestion", "sensei", "ocha", "kau"],
+    ["determiner", "kono", "shashin"],
+    ["demonstrative", "are", "isu"],
+    ["subjectObjectQuestion", "gakusei", "kaban", "tsukau"],
+    ["determiner", "sono", "byouin"],
+    ["determiner", "ano", "isu"],
+    ["subjectObject", "tomodachi", "ocha", "kau"],
+    ["demonstrative", "kore", "gakkou"],
+    ["demonstrative", "sore", "ie"],
+    ["subjectObject", "isha", "kaban", "tsukau"],
+    ["determiner", "kono", "gakkou"],
+    ["demonstrative", "are", "mise"],
+    ["subjectObjectQuestion", "watashi", "ocha", "kau"],
+    ["determiner", "sono", "ie"],
+    ["determiner", "ano", "mise"],
+    ["subjectObjectQuestion", "sakura", "kaban", "tsukau"],
+    ["demonstrative", "kore", "byouin"],
+    ["demonstrative", "sore", "eki"],
+    ["subjectObject", "yuki", "shashin", "kau"],
+    ["determiner", "kono", "byouin"],
+    ["demonstrative", "are", "ie"],
+    ["subjectObject", "tanaka", "mizu", "tsukau"],
+    ["determiner", "sono", "eki"],
+    ["determiner", "ano", "byouin"],
+    ["subjectObjectQuestion", "sensei", "mizu", "kau"],
+    ["subjectObjectQuestion", "gakusei", "hon", "tsukau"],
+    ["demonstrative", "kore", "tsukue"],
+    ["demonstrative", "sore", "isu"],
+    ["demonstrative", "are", "tsukue"],
+    ["determiner", "kono", "tsukue"],
+    ["determiner", "sono", "isu"],
+    ["determiner", "ano", "tsukue"],
+  ];
+  const reviewRows = [
+    ["topic", "neko", "doubutsu"],
+    ["topicQuestion", "inu", "doubutsu"],
+    ["negative", "mise", "byouin"],
+    ["negative", "eki", "kaisha"],
+    ["subjectPlace", "watashi", "mise", "iku", "ni"],
+    ["subjectPlace", "sakura", "byouin", "kuru", "ni"],
+    ["topic", "ie", "basho"],
+    ["topicQuestion", "gakkou", "basho"],
+    ["negative", "kodomo", "otona"],
+    ["negative", "isu", "tsukue"],
+    ["subjectPlace", "yuki", "eki", "iku", "ni"],
+    ["subjectPlace", "tanaka", "kaisha", "kuru", "ni"],
+    ["topic", "isha", "sensei"],
+    ["object", "hon", "yomu"],
+    ["subjectObject", "sensei", "hon", "kaku"],
+    ["negative", "tsukue", "kaban"],
+  ];
+
+  for (const row of interleaveRows(currentRows, reviewRows, 4)) addFoundationRow(cards, 6, words, row);
   return cards;
 }
 
@@ -928,31 +1161,112 @@ function whichNounCard(cards, unitId, words, determinerId, nounId) {
 }
 
 function buildUnit7(spec, previousWords, reviewWords) {
-  const previous = byId(previousWords);
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
-  warmReview(cards, 7, previous);
-  const contexts = ["watashi", "sakura", "yuki", "tanaka", "haha", "chichi", "sensei", "gakusei"];
-  const nouns = ["hon", "shashin", "kaban", "mizu", "ocha", "tabemono", "nomimono"].filter((id) => words.has(id));
-  questionWordCard(cards, 7, words, "nan", "watashi");
-  questionWordCard(cards, 7, words, "dare", "yuki");
-  questionWordCard(cards, 7, words, "dore", "hon");
-  whichNounCard(cards, 7, words, "dono", "hon");
-  topicQuestion(cards, 7, w(words, "otokonohito"), w(words, "gakusei"));
-  topicQuestion(cards, 7, w(words, "onnanohito"), w(words, "sensei"));
-  questionWordCard(cards, 7, words, "dore", "tabemono");
-  whichNounCard(cards, 7, words, "dono", "nomimono");
-  subjectAction(cards, 7, w(words, "watashi"), w(words, "hanasu"));
-  placeAction(cards, 7, w(words, "gakkou"), w(words, "matsu"), g.de());
-  addReview(cards, 7, words, reviewWords);
-  for (let index = 0; index < 7; index += 1) questionWordCard(cards, 7, words, "nan", cycle(contexts, index));
-  for (let index = 0; index < 7; index += 1) questionWordCard(cards, 7, words, "dare", cycle(contexts, index + 2));
-  for (let index = 0; index < 7; index += 1) questionWordCard(cards, 7, words, "dore", cycle(nouns, index));
-  for (let index = 0; index < 7; index += 1) whichNounCard(cards, 7, words, "dono", cycle(nouns, index));
-  for (const id of ["otokonohito", "onnanohito", "tabemono", "nomimono"]) {
-    for (let index = 0; index < 7; index += 1) topicQuestion(cards, 7, w(words, id), w(words, cycle(["gakusei", "sensei", "tomodachi", "mizu", "ocha", "hon"], index)));
-  }
-  currentVerbs(spec).forEach((word) => drillVerb(cards, 7, words, w(words, word.id), 16));
+
+  const currentRows = [
+    ["questionWord", "nan", "watashi"],
+    ["questionWord", "dare", "yuki"],
+    ["subjectAction", "chichi", "hanasu"],
+    ["questionWord", "dore", "hon"],
+    ["whichNoun", "dono", "hon"],
+    ["subjectPlace", "sakura", "eki", "matsu", "de"],
+    ["topicQuestion", "otokonohito", "gakusei"],
+    ["topicQuestion", "onnanohito", "sensei"],
+    ["questionWord", "nan", "sakura"],
+    ["questionWord", "dare", "tanaka"],
+    ["subjectAction", "haha", "hanasu"],
+    ["questionWord", "dore", "tabemono"],
+    ["whichNoun", "dono", "nomimono"],
+    ["subjectPlace", "tanaka", "heya", "matsu", "de"],
+    ["topicQuestion", "kore", "tabemono"],
+    ["topicQuestion", "sore", "nomimono"],
+    ["questionWord", "nan", "sensei"],
+    ["questionWord", "dare", "haha"],
+    ["subjectActionQuestion", "sensei", "hanasu"],
+    ["questionWord", "dore", "mizu"],
+    ["whichNoun", "dono", "ocha"],
+    ["subjectPlace", "sensei", "byouin", "matsu", "de"],
+    ["topicQuestion", "otokonohito", "tomodachi"],
+    ["topicQuestion", "onnanohito", "gakusei"],
+    ["questionWord", "nan", "gakusei"],
+    ["questionWord", "dare", "chichi"],
+    ["subjectAction", "gakusei", "hanasu"],
+    ["questionWord", "dore", "ocha"],
+    ["whichNoun", "dono", "mizu"],
+    ["subjectPlace", "gakusei", "mise", "matsu", "de"],
+    ["topicQuestion", "are", "tabemono"],
+    ["topicQuestion", "kore", "nomimono"],
+    ["questionWord", "nan", "haha"],
+    ["questionWord", "dare", "sensei"],
+    ["subjectActionQuestion", "tomodachi", "hanasu"],
+    ["questionWord", "dore", "nomimono"],
+    ["whichNoun", "dono", "tabemono"],
+    ["subjectPlace", "tomodachi", "ie", "matsu", "de"],
+    ["topicQuestion", "otokonohito", "sensei"],
+    ["topicQuestion", "onnanohito", "tomodachi"],
+    ["questionWord", "nan", "chichi"],
+    ["questionWord", "dare", "gakusei"],
+    ["subjectAction", "watashi", "hanasu"],
+    ["questionWord", "dore", "shashin"],
+    ["whichNoun", "dono", "kaban"],
+    ["subjectPlace", "watashi", "kaisha", "matsu", "de"],
+    ["topicQuestion", "sore", "tabemono"],
+    ["topicQuestion", "are", "nomimono"],
+    ["questionWord", "nan", "kazoku"],
+    ["questionWord", "dare", "kazoku"],
+    ["subjectActionQuestion", "sakura", "hanasu"],
+    ["questionWord", "dore", "kaban"],
+    ["whichNoun", "dono", "shashin"],
+    ["subjectPlace", "sakura", "byouin", "matsu", "de"],
+    ["topicQuestion", "otokonohito", "isha"],
+    ["topicQuestion", "onnanohito", "ocha"],
+    ["questionWord", "nan", "tomodachi"],
+    ["questionWord", "dare", "tomodachi"],
+    ["subjectAction", "yuki", "hanasu"],
+    ["questionWord", "dore", "ie"],
+    ["whichNoun", "dono", "ie"],
+    ["subjectPlace", "yuki", "eki", "matsu", "de"],
+    ["topicQuestion", "hon", "tabemono"],
+    ["topicQuestion", "mizu", "nomimono"],
+    ["questionWord", "nan", "otokonohito"],
+    ["questionWord", "dare", "onnanohito"],
+    ["subjectActionQuestion", "tanaka", "hanasu"],
+    ["questionWord", "dore", "gakkou"],
+    ["whichNoun", "dono", "gakkou"],
+    ["subjectPlace", "tanaka", "gakkou", "matsu", "de"],
+    ["topicQuestion", "otokonohito", "namae"],
+    ["topicQuestion", "onnanohito", "namae"],
+    ["topicQuestion", "otokonohito", "otona"],
+    ["topicQuestion", "onnanohito", "otona"],
+    ["topicQuestion", "ocha", "nomimono"],
+    ["subjectObject", "sakura", "tabemono", "taberu"],
+    ["questionWord", "dare", "otokonohito"],
+    ["topicQuestion", "onnanohito", "isha"],
+    ["object", "tabemono", "taberu"],
+    ["topicQuestion", "nomimono", "ocha"],
+  ];
+
+  const reviewRows = [
+    ["past", "kinou", "yasumi"],
+    ["pastQuestion", "ryokou", "sengetsu"],
+    ["pastQuestion", "shigoto", "kyonen"],
+    ["subjectTime", "watashi", "asa", "hataraku"],
+    ["subjectTime", "sakura", "yoru", "benkyou_suru"],
+    ["past", "yasumi", "shigoto"],
+    ["topic", "ane", "tomodachi"],
+    ["topicQuestion", "otouto", "gakusei"],
+    ["topic", "neko", "doubutsu"],
+    ["object", "hon", "yomu"],
+    ["subjectObject", "sakura", "hon", "kaku"],
+    ["possession", "watashi", "shashin"],
+    ["subjectAction", "tanaka", "miru"],
+    ["subjectActionQuestion", "sensei", "kiku"],
+    ["negative", "kodomo", "otona"],
+    ["subjectPlace", "gakusei", "mise", "iku", "ni"],
+  ];
+
+  for (const row of interleaveRows(currentRows, reviewRows, 2)) addFoundationRow(cards, 7, words, row);
   return cards;
 }
 
