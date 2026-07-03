@@ -129,14 +129,20 @@
       "id": "u003-c002",
       "line": [
         "母",
+        "は",
+        "人",
         "です"
       ],
       "tts": [
         "はは",
+        "わ",
+        "ひと",
         "です"
       ],
       "explain": [
         "mother",
+        "topic marker",
+        "person",
         "polite identity marker"
       ],
       "tokens": [
@@ -147,28 +153,45 @@
           "wordId": "haha"
         },
         {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "namae"
+        },
+        {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
         }
       ],
-      "english": "It's my mother",
+      "english": "My mother is a person",
       "grammarTags": [
-        "Aです"
+        "AはBです"
       ]
     },
     {
       "id": "u003-c003",
       "line": [
         "父",
+        "は",
+        "人",
         "です"
       ],
       "tts": [
         "ちち",
+        "わ",
+        "ひと",
         "です"
       ],
       "explain": [
         "father",
+        "topic marker",
+        "person",
         "polite identity marker"
       ],
       "tokens": [
@@ -179,14 +202,25 @@
           "wordId": "chichi"
         },
         {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "namae"
+        },
+        {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
         }
       ],
-      "english": "It's my father",
+      "english": "My father is a person",
       "grammarTags": [
-        "Aです"
+        "AはBです"
       ]
     },
     {
@@ -291,14 +325,20 @@
       "id": "u003-c006",
       "line": [
         "部屋",
+        "は",
+        "場所",
         "です"
       ],
       "tts": [
         "へや",
+        "わ",
+        "ばしょ",
         "です"
       ],
       "explain": [
         "room",
+        "topic marker",
+        "place",
         "polite identity marker"
       ],
       "tokens": [
@@ -309,14 +349,25 @@
           "wordId": "heya"
         },
         {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "場所",
+          "reading": "ばしょ",
+          "explain": "place",
+          "wordId": "basho"
+        },
+        {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
         }
       ],
-      "english": "It's a room",
+      "english": "The room is a place",
       "grammarTags": [
-        "Aです"
+        "AはBです"
       ]
     },
     {
@@ -406,14 +457,20 @@
       "id": "u003-c009",
       "line": [
         "姉",
+        "は",
+        "人",
         "です"
       ],
       "tts": [
         "あね",
+        "わ",
+        "ひと",
         "です"
       ],
       "explain": [
         "older sister",
+        "topic marker",
+        "person",
         "polite identity marker"
       ],
       "tokens": [
@@ -424,28 +481,45 @@
           "wordId": "ane"
         },
         {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "namae"
+        },
+        {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
         }
       ],
-      "english": "It's my older sister",
+      "english": "My older sister is a person",
       "grammarTags": [
-        "Aです"
+        "AはBです"
       ]
     },
     {
       "id": "u003-c010",
       "line": [
         "弟",
+        "は",
+        "人",
         "です"
       ],
       "tts": [
         "おとうと",
+        "わ",
+        "ひと",
         "です"
       ],
       "explain": [
         "younger brother",
+        "topic marker",
+        "person",
         "polite identity marker"
       ],
       "tokens": [
@@ -456,14 +530,25 @@
           "wordId": "otouto"
         },
         {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "namae"
+        },
+        {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
         }
       ],
-      "english": "It's my younger brother",
+      "english": "My younger brother is a person",
       "grammarTags": [
-        "Aです"
+        "AはBです"
       ]
     },
     {
@@ -608,24 +693,35 @@
     {
       "id": "u003-c014",
       "line": [
+        "私",
+        "の",
         "部屋",
-        "は",
-        "場所",
         "です"
       ],
       "tts": [
+        "わたし",
+        "の",
         "へや",
-        "わ",
-        "ばしょ",
         "です"
       ],
       "explain": [
+        "I; me",
+        "possession or description marker",
         "room",
-        "topic marker",
-        "place",
         "polite identity marker"
       ],
       "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
         {
           "surface": "部屋",
           "reading": "へや",
@@ -633,25 +729,14 @@
           "wordId": "heya"
         },
         {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
         }
       ],
-      "english": "The room is a place",
+      "english": "It's my room",
       "grammarTags": [
-        "AはBです"
+        "AのB"
       ]
     },
     {
@@ -929,18 +1014,24 @@
       "id": "u003-c021",
       "line": [
         "母",
+        "は",
+        "友達",
         "です",
         "か",
         "？"
       ],
       "tts": [
         "はは",
+        "わ",
+        "ともだち",
         "です",
         "か",
         "？"
       ],
       "explain": [
         "mother",
+        "topic marker",
+        "friend",
         "polite identity marker",
         "question marker",
         "question mark"
@@ -951,6 +1042,17 @@
           "reading": "はは",
           "explain": "mother",
           "wordId": "haha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
         },
         {
           "surface": "です",
@@ -968,9 +1070,9 @@
           "explain": "question mark"
         }
       ],
-      "english": "Is it my mother?",
+      "english": "Is my mother a friend?",
       "grammarTags": [
-        "Aです",
+        "AはBです",
         "か"
       ]
     },
@@ -1362,24 +1464,35 @@
     {
       "id": "u003-c030",
       "line": [
+        "彼",
+        "の",
         "家族",
-        "です",
-        "か",
-        "？"
+        "です"
       ],
       "tts": [
+        "かれ",
+        "の",
         "かぞく",
-        "です",
-        "か",
-        "？"
+        "です"
       ],
       "explain": [
+        "he; him",
+        "possession or description marker",
         "family",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "polite identity marker"
       ],
       "tokens": [
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "explain": "he; him",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
         {
           "surface": "家族",
           "reading": "かぞく",
@@ -1390,22 +1503,11 @@
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
         }
       ],
-      "english": "Is it a family?",
+      "english": "It's his family",
       "grammarTags": [
-        "Aです",
-        "か"
+        "AのB"
       ]
     },
     {
@@ -1502,18 +1604,24 @@
       "id": "u003-c033",
       "line": [
         "弟",
+        "は",
+        "友達",
         "です",
         "か",
         "？"
       ],
       "tts": [
         "おとうと",
+        "わ",
+        "ともだち",
         "です",
         "か",
         "？"
       ],
       "explain": [
         "younger brother",
+        "topic marker",
+        "friend",
         "polite identity marker",
         "question marker",
         "question mark"
@@ -1524,6 +1632,17 @@
           "reading": "おとうと",
           "explain": "younger brother",
           "wordId": "otouto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
         },
         {
           "surface": "です",
@@ -1541,9 +1660,9 @@
           "explain": "question mark"
         }
       ],
-      "english": "Is it my younger brother?",
+      "english": "Is my younger brother a friend?",
       "grammarTags": [
-        "Aです",
+        "AはBです",
         "か"
       ]
     },
@@ -1904,18 +2023,24 @@
       "id": "u003-c041",
       "line": [
         "写真",
+        "は",
+        "本",
         "です",
         "か",
         "？"
       ],
       "tts": [
         "しゃしん",
+        "わ",
+        "ほん",
         "です",
         "か",
         "？"
       ],
       "explain": [
         "photo",
+        "topic marker",
+        "book",
         "polite identity marker",
         "question marker",
         "question mark"
@@ -1926,6 +2051,17 @@
           "reading": "しゃしん",
           "explain": "photo",
           "wordId": "shashin"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "本",
+          "reading": "ほん",
+          "explain": "book",
+          "wordId": "hon"
         },
         {
           "surface": "です",
@@ -1943,9 +2079,9 @@
           "explain": "question mark"
         }
       ],
-      "english": "Is it a photo?",
+      "english": "Is the photo a book?",
       "grammarTags": [
-        "Aです",
+        "AはBです",
         "か"
       ]
     },
@@ -2217,20 +2353,17 @@
       "line": [
         "父",
         "は",
-        "人",
-        "です"
+        "飲みます"
       ],
       "tts": [
         "ちち",
         "わ",
-        "ひと",
-        "です"
+        "のみます"
       ],
       "explain": [
         "father",
         "topic marker",
-        "person",
-        "polite identity marker"
+        "drink"
       ],
       "tokens": [
         {
@@ -2245,20 +2378,15 @@
           "explain": "topic marker"
         },
         {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "namae"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
         }
       ],
-      "english": "My father is a person",
+      "english": "My father drinks",
       "grammarTags": [
-        "AはBです"
+        "early Vます action"
       ]
     },
     {

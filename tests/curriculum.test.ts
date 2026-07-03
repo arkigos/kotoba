@@ -213,24 +213,24 @@ describe("curriculum word bins", () => {
     expect(unit.cards.slice(0, 10).every((card) => card.line.length > 1)).toBe(true);
     expect(unit.cards.slice(0, 10).map((card) => card.english)).toEqual([
       "It's me",
-      "It's a student",
-      "It's a teacher",
-      "It's a person",
+      "I am a student",
+      "I am a teacher",
+      "I am a person",
       "It's you",
       "It's him",
       "It's her",
-      "It's a friend",
+      "I am a friend",
       "I eat",
       "You drink",
     ]);
     expect(unit.cards.slice(10, 18).map((card) => card.english)).toEqual([
-      "I am a student",
       "He is a teacher",
-      "The teacher drinks",
       "You are a friend",
+      "The teacher drinks",
       "She is a student",
-      "I am a person",
       "The teacher is a friend",
+      "You are a person",
+      "The student is a teacher",
       "Does he eat?",
     ]);
   });
@@ -242,19 +242,19 @@ describe("curriculum word bins", () => {
     expect(unit.cards[0].tokens?.some((token) => token.wordId && currentWordIds.has(token.wordId))).toBe(true);
     expect(unit.cards.slice(0, 14).every((card) => card.tokens?.some((token) => token.wordId && currentWordIds.has(token.wordId)))).toBe(true);
     expect(unit.cards.slice(0, 14).map((card) => card.english)).toEqual([
-      "It's a cat",
+      "The cat eats",
       "The cat is an animal",
-      "It's a dog",
+      "The dog drinks",
       "The dog is an animal",
-      "It's a book",
+      "It's my book",
       "I read a book",
-      "It's a house",
+      "It's my house",
       "The house is a place",
-      "It's a school",
+      "It's the teacher's school",
       "The school is a place",
-      "It's a doctor",
+      "The doctor is a person",
       "The doctor is a teacher",
-      "It's a place",
+      "Is the house a place?",
       "You write a book",
     ]);
   });

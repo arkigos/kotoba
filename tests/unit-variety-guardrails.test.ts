@@ -93,6 +93,42 @@ describe("unit variety guardrails", () => {
     ]);
   });
 
+  it("flags bare noun desu frames", async () => {
+    // @ts-expect-error Node authoring scripts live outside the app TypeScript module graph.
+    const { bareDesuStatementFindings } = await import("../scripts/lib/unit-variety-guardrails.mjs");
+    const unit = {
+      id: 99,
+      cards: [
+        {
+          id: "c001",
+          line: ["hon", "desu"],
+          english: "It's a book",
+          tokens: [
+            { surface: "hon", wordId: "hon" },
+            { surface: "desu", explain: "polite identity marker" },
+          ],
+        },
+        {
+          id: "c002",
+          line: ["hon", "desu", "ka", "?"],
+          english: "Is it a book?",
+          tokens: [
+            { surface: "hon", wordId: "hon" },
+            { surface: "desu", explain: "polite identity marker" },
+            { surface: "ka", explain: "question marker" },
+            { surface: "?", explain: "question mark" },
+          ],
+        },
+      ],
+    };
+
+    expect(bareDesuStatementFindings(unit)).toMatchObject([
+      { kind: "bare-desu-statement", wordId: "hon", text: "hondesu", id: "c001" },
+      { kind: "bare-desu-statement", wordId: "hon", text: "hondesuka?", id: "c002" },
+    ]);
+    expect(bareDesuStatementFindings(unit, { allowedBareDesuWordIds: ["hon"] })).toEqual([]);
+  });
+
   it("flags predictable single-slot learner-axis cycles", async () => {
     // @ts-expect-error Node authoring scripts live outside the app TypeScript module graph.
     const { lockstepAxisFindings } = await import("../scripts/lib/unit-variety-guardrails.mjs");
@@ -138,7 +174,7 @@ describe("unit variety guardrails", () => {
     // @ts-expect-error Node authoring scripts live outside the app TypeScript module graph.
     const { assertUnitVariety } = await import("../scripts/lib/unit-variety-guardrails.mjs");
 
-    expect(() => assertUnitVariety(unit001)).not.toThrow();
+    expect(() => assertUnitVariety(unit001, { allowedBareDesuWordIds: ["watashi", "sakura", "yuki", "tanaka"] })).not.toThrow();
     expect(() => assertUnitVariety(unit002)).not.toThrow();
     expect(() => assertUnitVariety(unit003)).not.toThrow();
   });

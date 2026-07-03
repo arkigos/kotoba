@@ -143,12 +143,32 @@ export function wordExposureGapFindings(unit, options = {}) {
   return findings.sort((a, b) => b.gap - a.gap || a.wordId.localeCompare(b.wordId));
 }
 
+export function bareDesuStatementFindings(unit, options = {}) {
+  const allowedWordIds = new Set(options.allowedBareDesuWordIds ?? []);
+
+  return (unit.cards ?? [])
+    .filter((card) => {
+      const tokens = card.tokens ?? [];
+      if (tokens.length !== 2 && tokens.length !== 4) return false;
+      if (!tokens[0]?.wordId || allowedWordIds.has(tokens[0].wordId)) return false;
+      if (tokens[1]?.wordId) return false;
+      return /identity marker/.test(tokens[1]?.explain ?? "");
+    })
+    .map((card) => ({
+      kind: "bare-desu-statement",
+      wordId: card.tokens[0].wordId,
+      text: cardLine(card),
+      id: card.id,
+    }));
+}
+
 export function assertUnitVariety(unit, options = {}) {
   const duplicateFindings = exactDuplicateFindings(unit, options);
   const axisFindings = lockstepAxisFindings(unit, options);
   const exposureGapFindings = wordExposureGapFindings(unit, options);
+  const bareDesuFindings = bareDesuStatementFindings(unit, options);
 
-  if (duplicateFindings.length > 0 || axisFindings.length > 0 || exposureGapFindings.length > 0) {
+  if (duplicateFindings.length > 0 || axisFindings.length > 0 || exposureGapFindings.length > 0 || bareDesuFindings.length > 0) {
     const messages = [
       ...duplicateFindings.map((finding) => {
         return `unit ${unit.id}: ${finding.kind} repeats ${finding.count}x: ${finding.text} [${finding.ids.join(", ")}]`;
@@ -158,6 +178,9 @@ export function assertUnitVariety(unit, options = {}) {
       }),
       ...exposureGapFindings.map((finding) => {
         return `unit ${unit.id}: ${finding.wordId} has ${finding.gap}-card exposure gap from card ${finding.startCard} to ${finding.endCard}`;
+      }),
+      ...bareDesuFindings.map((finding) => {
+        return `unit ${unit.id}: bare noun desu frame ${finding.text} for ${finding.wordId} [${finding.id}]`;
       }),
     ];
     throw new Error(messages.join("\n"));

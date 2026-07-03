@@ -430,14 +430,19 @@ function addReview(cards, unitId, words, reviewWords, repeatsOverride) {
 function buildUnit1(spec) {
   const words = byId(spec.newWords);
   const cards = [];
-  for (const id of ["watashi", "gakusei", "sensei", "namae", "sakura", "yuki", "tanaka", "tomodachi"]) {
-    identity(cards, 1, w(words, id));
-  }
+  identity(cards, 1, w(words, "watashi"));
+  topic(cards, 1, w(words, "watashi"), w(words, "gakusei"));
+  topic(cards, 1, w(words, "watashi"), w(words, "sensei"));
+  topic(cards, 1, w(words, "watashi"), w(words, "namae"));
+  identity(cards, 1, w(words, "sakura"));
+  identity(cards, 1, w(words, "yuki"));
+  identity(cards, 1, w(words, "tanaka"));
+  topic(cards, 1, w(words, "watashi"), w(words, "tomodachi"));
   subjectAction(cards, 1, w(words, "watashi"), w(words, "taberu"));
   subjectAction(cards, 1, w(words, "sakura"), w(words, "nomu"));
   const personPractice = [
-    () => topic(cards, 1, w(words, "watashi"), w(words, "namae")),
-    () => identityQuestion(cards, 1, w(words, "namae")),
+    () => topic(cards, 1, w(words, "sakura"), w(words, "namae")),
+    () => topicQuestion(cards, 1, w(words, "sakura"), w(words, "namae")),
     () => topic(cards, 1, w(words, "namae"), w(words, "gakusei")),
     () => topic(cards, 1, w(words, "namae"), w(words, "sensei")),
     () => topic(cards, 1, w(words, "namae"), w(words, "tomodachi")),
@@ -451,30 +456,29 @@ function buildUnit1(spec) {
   };
 
   const topicRows = [
-    ["watashi", "gakusei"],
     ["yuki", "sensei"],
     ["sakura", "tomodachi"],
     ["tanaka", "gakusei"],
     ["sensei", "tomodachi"],
     ["gakusei", "sensei"],
     ["tomodachi", "gakusei"],
-    ["watashi", "sensei"],
     ["tanaka", "tomodachi"],
     ["sakura", "gakusei"],
     ["yuki", "tomodachi"],
     ["sensei", "gakusei"],
     ["tomodachi", "sensei"],
     ["gakusei", "tomodachi"],
-    ["watashi", "tomodachi"],
     ["tanaka", "sensei"],
     ["sakura", "sensei"],
     ["yuki", "gakusei"],
     ["sensei", "sensei"],
     ["gakusei", "gakusei"],
     ["tomodachi", "tomodachi"],
-    ["sakura", "namae"],
     ["yuki", "namae"],
     ["tanaka", "namae"],
+    ["gakusei", "namae"],
+    ["sensei", "namae"],
+    ["tomodachi", "namae"],
   ];
   const actionRows = [
     ["sensei", "nomu", false],
@@ -505,12 +509,16 @@ function buildUnit1(spec) {
     topic(cards, 1, w(words, subjectId), w(words, role));
     if ([3, 7, 11, 15].includes(index)) addPersonPractice();
     if (actionInsertIndexes.has(index)) addActionPractice();
+    if (index === 8) subjectAction(cards, 1, w(words, "watashi"), w(words, "nomu"));
   }
   for (const [index, [subjectId, role]] of topicRows.entries()) {
     topicQuestion(cards, 1, w(words, subjectId), w(words, role));
     if ([3, 7, 11, 15].includes(index)) addPersonPractice();
     if (actionInsertIndexes.has(index)) addActionPractice();
+    if (index === 8) topicQuestion(cards, 1, w(words, "watashi"), w(words, "namae"));
   }
+  subjectActionQuestion(cards, 1, w(words, "tomodachi"), w(words, "nomu"));
+  subjectAction(cards, 1, w(words, "gakusei"), w(words, "nomu"));
   return cards;
 }
 
@@ -520,42 +528,42 @@ function buildUnit2(spec, previousWords) {
   const cards = [];
 
   const rows = [
-    ["identity", "neko"],
+    ["subjectAction", "neko", "taberu"],
     ["topic", "neko", "doubutsu"],
-    ["identity", "inu"],
+    ["subjectAction", "inu", "nomu"],
     ["topic", "inu", "doubutsu"],
-    ["identity", "hon"],
+    ["possession", "watashi", "hon"],
     ["object", "watashi", "hon", "yomu"],
-    ["identity", "ie"],
+    ["possession", "watashi", "ie"],
     ["topic", "ie", "basho"],
-    ["identity", "gakkou"],
+    ["possession", "sensei", "gakkou"],
     ["topic", "gakkou", "basho"],
-    ["identity", "isha"],
+    ["topic", "isha", "namae"],
     ["topic", "isha", "sensei"],
-    ["identity", "basho"],
+    ["topicQuestion", "ie", "basho"],
     ["object", "sakura", "hon", "kaku"],
     ["subjectAction", "sensei", "yomu"],
-    ["identityQuestion", "neko"],
-    ["subjectAction", "yuki", "kaku"],
-    ["identityQuestion", "inu"],
     ["topicQuestion", "neko", "doubutsu"],
-    ["subjectAction", "tomodachi", "yomu"],
-    ["identityQuestion", "doubutsu"],
-    ["object", "sensei", "hon", "kaku"],
+    ["subjectAction", "yuki", "kaku"],
     ["topicQuestion", "inu", "doubutsu"],
-    ["identityQuestion", "hon"],
+    ["subjectActionQuestion", "neko", "taberu"],
+    ["subjectAction", "tomodachi", "yomu"],
+    ["topicQuestion", "doubutsu", "namae"],
+    ["object", "sensei", "hon", "kaku"],
+    ["subjectActionQuestion", "inu", "nomu"],
+    ["possession", "sakura", "hon"],
     ["subjectAction", "gakusei", "kaku"],
     ["topic", "doubutsu", "neko"],
-    ["identityQuestion", "ie"],
+    ["possession", "sakura", "ie"],
     ["object", "yuki", "hon", "yomu"],
-    ["topicQuestion", "ie", "basho"],
-    ["identityQuestion", "gakkou"],
+    ["topicQuestion", "ie", "gakkou"],
+    ["possession", "gakusei", "gakkou"],
     ["subjectAction", "tanaka", "yomu"],
     ["topic", "doubutsu", "inu"],
-    ["identityQuestion", "basho"],
+    ["topicQuestion", "basho", "gakkou"],
     ["object", "tomodachi", "hon", "kaku"],
     ["topicQuestion", "gakkou", "basho"],
-    ["identityQuestion", "isha"],
+    ["topicQuestion", "isha", "sensei"],
     ["subjectAction", "isha", "kaku"],
     ["topic", "basho", "ie"],
     ["object", "gakusei", "hon", "yomu"],
@@ -575,9 +583,9 @@ function buildUnit2(spec, previousWords) {
     ["subjectActionQuestion", "yuki", "kaku"],
     ["topicQuestion", "basho", "ie"],
     ["object", "sakura", "hon", "yomu"],
-    ["topic", "isha", "namae"],
+    ["topic", "isha", "tomodachi"],
     ["subjectActionQuestion", "tomodachi", "yomu"],
-    ["topicQuestion", "basho", "gakkou"],
+    ["topicQuestion", "basho", "namae"],
     ["objectQuestion", "sensei", "hon", "kaku"],
     ["topicQuestion", "isha", "namae"],
     ["subjectActionQuestion", "gakusei", "kaku"],
@@ -585,7 +593,7 @@ function buildUnit2(spec, previousWords) {
     ["objectQuestion", "yuki", "hon", "yomu"],
     ["topicQuestion", "inu", "neko"],
     ["subjectActionQuestion", "tanaka", "yomu"],
-    ["topicQuestion", "ie", "gakkou"],
+    ["topicQuestion", "ie", "namae"],
     ["objectQuestion", "tomodachi", "hon", "kaku"],
     ["topicQuestion", "gakkou", "ie"],
     ["subjectActionQuestion", "isha", "kaku"],
@@ -599,7 +607,7 @@ function buildUnit2(spec, previousWords) {
     ["subjectActionQuestion", "sakura", "kaku"],
     ["topic", "isha", "gakusei"],
     ["subjectActionQuestion", "watashi", "kaku"],
-    ["topicQuestion", "gakkou", "namae"],
+    ["topicQuestion", "gakkou", "tomodachi"],
   ];
 
   for (const row of rows) {
@@ -608,6 +616,7 @@ function buildUnit2(spec, previousWords) {
     else if (type === "identityQuestion") identityQuestion(cards, 2, w(words, args[0]));
     else if (type === "topic") topic(cards, 2, w(words, args[0]), w(words, args[1]));
     else if (type === "topicQuestion") topicQuestion(cards, 2, w(words, args[0]), w(words, args[1]));
+    else if (type === "possession") possession(cards, 2, w(words, args[0]), w(words, args[1]));
     else if (type === "compound") compound(cards, 2, w(words, args[0]), w(words, args[1]), w(words, args[2]), args[3]);
     else if (type === "subjectAction") subjectAction(cards, 2, w(words, args[0]), w(words, args[1]));
     else if (type === "subjectActionQuestion") subjectActionQuestion(cards, 2, w(words, args[0]), w(words, args[1]));
@@ -625,26 +634,26 @@ function buildUnit3(spec, previousWords, reviewWords) {
 
   const rows = [
     ["possession", "watashi", "kazoku"],
-    ["identity", "haha"],
-    ["identity", "chichi"],
+    ["topic", "haha", "namae"],
+    ["topic", "chichi", "namae"],
     ["possession", "watashi", "shashin"],
     ["possession", "sakura", "kaban"],
-    ["identity", "heya"],
+    ["topic", "heya", "basho"],
     ["object", "shashin", "miru"],
     ["subjectAction", "sensei", "kiku"],
-    ["identity", "ane"],
-    ["identity", "otouto"],
+    ["topic", "ane", "namae"],
+    ["topic", "otouto", "namae"],
     ["also", "haha", "sensei"],
     ["subjectAction", "chichi", "taberu"],
     ["possession", "yuki", "shashin"],
-    ["topic", "heya", "basho"],
+    ["possession", "watashi", "heya"],
     ["subjectAction", "ane", "nomu"],
     ["possession", "tanaka", "kaban"],
     ["subjectAction", "otouto", "kiku"],
     ["possession", "sakura", "kazoku"],
     ["object", "kaban", "miru"],
     ["possession", "sakura", "heya"],
-    ["identityQuestion", "haha"],
+    ["topicQuestion", "haha", "tomodachi"],
     ["subjectAction", "watashi", "kiku"],
     ["possession", "kazoku", "shashin"],
     ["also", "chichi", "sensei"],
@@ -653,10 +662,10 @@ function buildUnit3(spec, previousWords, reviewWords) {
     ["topicQuestion", "heya", "basho"],
     ["also", "ane", "gakusei"],
     ["subjectAction", "yuki", "kiku"],
-    ["identityQuestion", "kazoku"],
+    ["possession", "yuki", "kazoku"],
     ["subjectAction", "haha", "nomu"],
     ["possession", "sensei", "shashin"],
-    ["identityQuestion", "otouto"],
+    ["topicQuestion", "otouto", "tomodachi"],
     ["subjectAction", "chichi", "kiku"],
     ["possession", "watashi", "kaban"],
     ["also", "heya", "basho"],
@@ -664,13 +673,13 @@ function buildUnit3(spec, previousWords, reviewWords) {
     ["topicQuestion", "otouto", "namae"],
     ["possession", "gakusei", "heya"],
     ["subjectActionQuestion", "ane", "taberu"],
-    ["identityQuestion", "shashin"],
+    ["topicQuestion", "shashin", "hon"],
     ["subjectAction", "otouto", "nomu"],
     ["possession", "yuki", "kaban"],
     ["topicQuestion", "haha", "sensei"],
     ["subjectActionQuestion", "watashi", "miru"],
     ["possession", "tomodachi", "heya"],
-    ["topic", "chichi", "namae"],
+    ["subjectAction", "chichi", "nomu"],
     ["subjectActionQuestion", "sakura", "kiku"],
     ["possession", "tanaka", "shashin"],
     ["also", "kaban", "hon"],
@@ -948,7 +957,7 @@ function lexiconWordsFor(source, unitId) {
 
 function assertUnit(unit, reviewWords = []) {
   if (unit.cards.length < 80 || unit.cards.length > 150) throw new Error(`unit ${unit.id}: expected 80-150 cards, got ${unit.cards.length}`);
-  if (unit.id <= 3) assertUnitVariety(unit);
+  if (unit.id <= 3) assertUnitVariety(unit, { allowedBareDesuWordIds: unit.id === 1 ? ["watashi", "sakura", "yuki", "tanaka"] : [] });
   const currentWordIds = new Set(unit.newWords.map((word) => word.id));
   const firstWordPositions = new Map();
   const wordAppearanceCounts = new Map();
