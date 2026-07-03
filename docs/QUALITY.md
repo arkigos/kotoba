@@ -16,6 +16,9 @@ of truth. This file remains the everyday quality checklist.
 - Run `npm run audit:curriculum-pacing` after generator or curriculum pacing
   changes; use `npm run audit:word-distribution:strict` when a rebuilt level
   is expected to satisfy the current-word exposure floor.
+- Run `npm run audit:foundation-semantics` after changing Units 1-7. This is
+  the human-taste audit for repetition, broad category cards, clustered grammar
+  runs, early multi-current overload, and foundation word distribution.
 - For data-only changes, inspect the edited JSON for valid syntax and aligned arrays.
 - When changing UI behavior, exercise unit selection, next, previous, random, replay audio, explanation display, reveal toggles, and display toggles.
 

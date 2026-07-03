@@ -20,6 +20,7 @@
     "audit:curriculum-source": "node scripts/audit-curriculum-source.mjs",
     "audit:curriculum-pacing": "node scripts/audit-curriculum-pacing.mjs",
     "audit:curriculum-pacing:strict": "node scripts/audit-curriculum-pacing.mjs --strict",
+    "audit:foundation-semantics": "node scripts/audit-foundation-semantics.mjs",
     "audit:word-distribution": "node scripts/audit-curriculum-pacing.mjs --distribution",
     "audit:word-distribution:strict": "node scripts/audit-curriculum-pacing.mjs --strict-distribution",
     "curriculum:card": "node scripts/generate-card-candidate.mjs",
