@@ -37,12 +37,14 @@ Avoid overusing:
 - repeated English cards with only tiny noun swaps
 - English translations that add missing answers or scene detail instead of
   translating the Japanese line semantically
-- notes that describe the lesson sequence instead of teaching the learner
 
 When generating drill-heavy units, rotate sentence axes independently. Subject,
 target word, polarity, time, and place should not all advance in the same
 lockstep cycle, because that creates repeated English with only hidden template
 machinery underneath.
+Exact duplicate cards should stay capped. If a sentence must return, change a
+learner-visible axis: subject, object, question/polarity, time, or nearby frame.
+Do not ship eight copies of the same Japanese line just to hit a word count.
 
 ## Verb And Level Balance
 

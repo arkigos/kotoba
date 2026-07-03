@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { authoredUnitIds, lexiconVocabularyUnitIds, root, readJson, reviewVocabularyUnitIds, wordsForUnits } from "./lib/curriculum-model.mjs";
+import { assertUnitVariety } from "./lib/unit-variety-guardrails.mjs";
 
 function pad(value) {
   return String(value).padStart(3, "0");
@@ -698,6 +699,7 @@ function lexiconWordsFor(source, unitId) {
 
 function assertUnit(unit, reviewWords = []) {
   if (unit.cards.length < 80 || unit.cards.length > 150) throw new Error(`unit ${unit.id}: expected 80-150 cards, got ${unit.cards.length}`);
+  assertUnitVariety(unit);
   const currentWordIds = new Set(unit.newWords.map((word) => word.id));
   const firstWordPositions = new Map();
   const wordAppearanceCounts = new Map();
