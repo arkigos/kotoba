@@ -152,8 +152,9 @@ N-32
 Only positive unit numbers that exist are included. Review-due words must return
 in that unit, but they are not counted as the current unit's new drilled
 vocabulary. They should not receive vocabulary introduction cards. They are the
-cushion for new material: bring them back in real sentence contexts, usually
-after the current unit's new words and grammar have started to settle.
+preferred scaffolding for new material when they fit the same card naturally.
+Already introduced lexicon words may fill the same role when they make the
+sentence clearer. Do not use review-only runs to delay current-unit material.
 
 ## Source Curriculum Model
 

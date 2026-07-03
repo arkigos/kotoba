@@ -26,7 +26,7 @@ Prefer sentences that do at least one useful job:
 - bring back review-due words in a natural setting
 - create a small scene with visible roles or objects
 - introduce only one genuinely new learner-facing element at a time; known
-  review words are the cushion that makes new vocabulary or grammar feel safe
+  review or lexicon words can scaffold the same card
 
 Avoid overusing:
 
@@ -74,10 +74,10 @@ certification claims. Treat them as Can-do alignment checks:
 
 A strong unit usually has:
 
-1. Immediate sentence context, with review/helper vocabulary cushioning the
-   opening whenever earlier words exist.
-2. Current words introduced one learner-facing element at a time in short
-   familiar frames, not isolated atom cards.
+1. Immediate sentence context where the unit's current material appears right
+   away inside familiar grammar.
+2. Current words introduced one learner-facing element at a time, with
+   review-due or lexicon words used as same-card scaffolding when helpful.
 3. Practical cards that keep current words active while rotating noun, person,
    place, verb, polarity, and question axes.
 4. Required review-due words woven into real sentence contexts.

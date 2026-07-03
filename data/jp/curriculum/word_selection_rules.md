@@ -68,11 +68,12 @@ short `Vます` action practice with known people, objects, places, or time word
 Keep the frames modular: one stable sentence shape, one swapped noun/person/place
 slot, and one current or already-known high-value verb.
 
-Do not open rebuilt foundation units with isolated vocabulary atoms. Start with
-immediate sentence context: review/helper words first when the unit has earlier
-material available, then weave current words into short familiar frames. First
-exposures should still be gentle and mostly one new learner-facing element at a
-time, but the card should feel like Japanese, not a glossary row.
+Do not open rebuilt foundation units with isolated vocabulary atoms or pure
+review runs. Start with immediate sentence context: current-unit material appears
+right away inside familiar grammar, and review-due or lexicon words scaffold the
+same card when they make the sentence clearer. First exposures should still be
+gentle and mostly one new learner-facing element at a time, but the card should
+feel like Japanese, not a glossary row.
 
 Units 8-14 may still include one or two fixed `Vます` action-preview cards. Those
 preview cards should reuse known verb identities from Units 1-7 rather than
