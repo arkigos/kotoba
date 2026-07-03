@@ -9,7 +9,8 @@ For unit `N`, author with three vocabulary pools:
 
 - `current`: the 10 new words introduced by unit `N`; these get the spotlight.
 - `reviewDue`: words from `N-2`, `N-4`, `N-8`, `N-16`, and so on; these must return.
-- `helpers`: all words from units `1...N`; these may appear when they make the card clearer or more natural.
+- `helpers` / `lexicon`: already introduced, non-due words; these may appear
+  when they make the card clearer or more natural, with no appearance quota.
 
 The spaced repetition system is curriculum-level. It is a minimum return
 schedule for authored units, not adaptive learner scheduling. Learner-level SRS
@@ -87,6 +88,10 @@ must appear before the late stretch, due review must return before the unit is
 almost over, and the final cards must still contain current-unit material.
 Generic `person is object/place/time` review cards are quality failures even if
 they satisfy the data contract.
+
+SRS review and lexicon helpers are different data pools. Review-due words should
+return deliberately, usually 5-8 times in a balanced unit. Lexicon helpers are
+free scaffolding and should not be counted as review debt.
 
 Do not add more units by volume alone. Units 1-7 are the taste baseline: new
 units should be at least as natural as Unit 6 after its polish pass.

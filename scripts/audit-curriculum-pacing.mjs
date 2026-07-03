@@ -40,6 +40,9 @@ for (const unitSpec of source.units) {
     if ((showDistribution || strictDistribution) && appearances < pacing.distributionTargets.currentWordAppearances) {
       distributionWarnings.push(`unit ${unit.id}: current word ${word.id} appears ${appearances} times, below floor ${pacing.distributionTargets.currentWordAppearances}`);
     }
+    if ((showDistribution || strictDistribution) && pacing.distributionTargets.currentWordMaxAppearances && appearances > pacing.distributionTargets.currentWordMaxAppearances) {
+      distributionWarnings.push(`unit ${unit.id}: current word ${word.id} appears ${appearances} times, above ceiling ${pacing.distributionTargets.currentWordMaxAppearances}`);
+    }
   }
 
   for (const word of pools.reviewDue) {
@@ -52,6 +55,9 @@ for (const unitSpec of source.units) {
     const appearances = wordCounts.get(word.id) ?? 0;
     if ((showDistribution || strictDistribution) && appearances < pacing.distributionTargets.reviewWordAppearances) {
       distributionWarnings.push(`unit ${unit.id}: review-due word ${word.id} appears ${appearances} times, below target ${pacing.distributionTargets.reviewWordAppearances}`);
+    }
+    if ((showDistribution || strictDistribution) && pacing.distributionTargets.reviewWordMaxAppearances && appearances > pacing.distributionTargets.reviewWordMaxAppearances) {
+      distributionWarnings.push(`unit ${unit.id}: review-due word ${word.id} appears ${appearances} times, above ceiling ${pacing.distributionTargets.reviewWordMaxAppearances}`);
     }
   }
 

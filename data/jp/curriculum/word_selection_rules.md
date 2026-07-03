@@ -187,6 +187,8 @@ Before authoring cards for a unit, confirm:
 - Current-unit words usually land in an 8-12 appearance band, and rebuilt
   foundation units stay under 100 cards when that can be done without rushing
   new material or skipping due review.
+- Review-due SRS words usually land in a 5-8 appearance band. Lexicon helper
+  words have no appearance quota; use as many or as few as the sentence needs.
 - The set is common and useful enough for a beginner-to-intermediate journey.
 - Current-unit words are introduced before card 40.
 - Current-unit words first appear in sentence context rather than single-token

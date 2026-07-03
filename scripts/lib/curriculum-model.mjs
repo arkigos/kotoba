@@ -41,6 +41,11 @@ export function reviewVocabularyUnitIds(unitId) {
   return unitIds;
 }
 
+export function lexiconVocabularyUnitIds(unitId, authoredUnitIds) {
+  const reviewUnitIds = new Set(reviewVocabularyUnitIds(unitId));
+  return authoredUnitIds.filter((sourceUnitId) => sourceUnitId < unitId && !reviewUnitIds.has(sourceUnitId));
+}
+
 export function knownVocabularyUnitIds(unitId, authoredUnitIds) {
   return authoredUnitIds.filter((sourceUnitId) => sourceUnitId <= unitId);
 }
@@ -63,6 +68,7 @@ export function vocabularyPoolsForUnit(source, unitId) {
   return {
     current: wordsForUnits(source, [unitId]),
     reviewDue: wordsForUnits(source, reviewVocabularyUnitIds(unitId)),
+    lexicon: wordsForUnits(source, lexiconVocabularyUnitIds(unitId, ids)),
     helpers: wordsForUnits(source, knownVocabularyUnitIds(unitId, ids)),
   };
 }

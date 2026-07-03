@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { courseLevels, unitIndex } from "../src/data";
-import { helperVocabularyUnitIds, knownVocabularyUnitIds, reviewVocabularyUnitIds, vocabularyPoolsForUnit } from "../src/curriculum/bin";
+import { helperVocabularyUnitIds, knownVocabularyUnitIds, lexiconVocabularyUnitIds, reviewVocabularyUnitIds, vocabularyPoolsForUnit } from "../src/curriculum/bin";
 import pacingRules from "../data/jp/curriculum/source/pacing.json";
 import unitSpecs from "../data/jp/curriculum/source/unit_specs.json";
 
@@ -14,6 +14,8 @@ const unitModules = import.meta.glob<{
       tts: string[];
     }>;
     newWords: Array<{ id: string; function?: string }>;
+    reviewWordIds: string[];
+    lexiconWordIds: string[];
   };
 }>("../data/jp/curriculum/units/unit_*.json", {
   eager: true,
@@ -102,12 +104,21 @@ describe("curriculum word bins", () => {
     expect(knownVocabularyUnitIds(1)).toEqual([1]);
     expect(knownVocabularyUnitIds(2)).toEqual([1, 2]);
     expect(knownVocabularyUnitIds(5)).toEqual([1, 2, 3, 4, 5]);
+    expect(lexiconVocabularyUnitIds(5)).toEqual([2, 4]);
     expect(helperVocabularyUnitIds(5)).toEqual([1, 2, 3, 4, 5]);
     expect(vocabularyPoolsForUnit(5)).toEqual({
       current: [5],
       reviewDue: [3, 1],
+      lexicon: [2, 4],
       helpers: [1, 2, 3, 4, 5],
     });
+  });
+
+  it("stores SRS review words separately from free lexicon helpers", () => {
+    const unit = unitModules[unitModulePath(4)].default;
+
+    expect(unit.reviewWordIds).toEqual(wordsForUnitIds([2]).map((word) => word.id));
+    expect(unit.lexiconWordIds).toEqual(wordsForUnitIds([1, 3]).map((word) => word.id));
   });
 
   it("maps authored units into their CEFR-inspired levels", () => {
@@ -247,6 +258,16 @@ describe("curriculum word bins", () => {
     for (const word of unit.newWords) {
       expect(counts.get(word.id), `unit 4 current word ${word.id}`).toBeGreaterThanOrEqual(8);
       expect(counts.get(word.id), `unit 4 current word ${word.id}`).toBeLessThanOrEqual(12);
+    }
+  });
+
+  it("keeps Unit 4 SRS review vocabulary in a strict 5-8 appearance band", () => {
+    const unit = unitModules[unitModulePath(4)].default;
+    const counts = wordAppearanceCounts(4);
+
+    for (const wordId of unit.reviewWordIds) {
+      expect(counts.get(wordId), `unit 4 review word ${wordId}`).toBeGreaterThanOrEqual(5);
+      expect(counts.get(wordId), `unit 4 review word ${wordId}`).toBeLessThanOrEqual(8);
     }
   });
 

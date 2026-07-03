@@ -172,6 +172,10 @@ Each source unit spec has:
 - `title`
 - `grammarFocus`
 - `newWords`
+- `reviewWordIds`: SRS-due vocabulary ids for this unit, computed from `N-2`,
+  `N-4`, `N-8`, and so on.
+- `lexiconWordIds`: already introduced, non-due helper vocabulary ids available
+  for sentence scaffolding.
 
 These fields must match the app-facing unit index and frozen unit files. Use
 `npm run audit:curriculum-source` to catch drift.
@@ -186,7 +190,8 @@ These fields must match the app-facing unit index and frozen unit files. Use
 - review-due vocabulary returns somewhere in the unit without fake intro cards
 - no learner-facing first exposure appears after card 60
 - current-unit words should appear at least 8 times in a balanced or regenerated unit, with 8-12 appearances as the usual target band
-- scheduled review-due words should aim for about 4 appearances in a standard unit, bending only when the due review pool gets too crowded
+- scheduled review-due words should aim for 5-8 appearances in a standard unit, bending only when the due review pool gets too crowded
+- lexicon helper words have no appearance quota
 
 Foundation units should stay under 100 cards when the 8-12 current-word band
 and review obligations can both be met without rushing new material.
@@ -195,7 +200,7 @@ Existing frozen units may temporarily violate these pacing rules while the
 generator is being adopted. Use `npm run audit:curriculum-pacing` for
 first-exposure pacing, `npm run audit:word-distribution` to see rebuild debt,
 and `npm run audit:word-distribution:strict` when a rebuilt level is expected
-to satisfy the 8-current / 4-review distribution target.
+to satisfy the 8-12 current / 5-8 review distribution target.
 
 ## Grammar Rule
 

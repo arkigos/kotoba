@@ -10,6 +10,7 @@ const steps = [
   ["node", ["scripts/author-a2-unit21.mjs"]],
   ["node", ["scripts/author-a2-units.mjs"]],
   ["node", ["scripts/enforce-a2-generation-rules.mjs"]],
+  ["node", ["scripts/sync-curriculum-word-pools.mjs"]],
 ];
 
 function run(command, args) {

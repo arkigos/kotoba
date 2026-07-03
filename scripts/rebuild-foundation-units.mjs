@@ -1,6 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { root, readJson, reviewVocabularyUnitIds } from "./lib/curriculum-model.mjs";
+import { authoredUnitIds, lexiconVocabularyUnitIds, root, readJson, reviewVocabularyUnitIds, wordsForUnits } from "./lib/curriculum-model.mjs";
 
 function pad(value) {
   return String(value).padStart(3, "0");
@@ -487,45 +487,68 @@ function buildUnit4(spec, previousWords, reviewWords) {
   warmReview(cards, 4, previous);
 
   const firstNegativeRows = [
-    ["mise", "gakkou"],
-    ["byouin", "ie"],
-    ["eki", "gakkou"],
-    ["kaisha", "basho"],
+    ["mise", "heya"],
+    ["byouin", "heya"],
+    ["eki", "heya"],
+    ["kaisha", "heya"],
     ["kodomo", "sensei"],
     ["otona", "gakusei"],
-    ["isu", "hon"],
+    ["isu", "kaban"],
     ["tsukue", "kaban"],
   ];
   for (const [left, right] of firstNegativeRows) negativeTopic(cards, 4, w(words, left), w(words, right));
   placeAction(cards, 4, w(words, "gakkou"), w(words, "iku"));
   placeAction(cards, 4, w(words, "ie"), w(words, "kuru"));
 
-  const placeIds = ["mise", "byouin", "eki", "kaisha"];
-  const personIds = ["kodomo", "otona"];
-  const objectIds = ["isu", "tsukue"];
-  const complementById = new Map([
-    ["mise", ["gakkou", "ie", "basho", "heya"]],
-    ["byouin", ["ie", "gakkou", "basho", "heya"]],
-    ["eki", ["gakkou", "ie", "basho", "byouin"]],
-    ["kaisha", ["gakkou", "ie", "basho", "mise"]],
-    ["kodomo", ["sensei", "isha", "gakusei", "otona"]],
-    ["otona", ["gakusei", "kodomo", "sensei", "tomodachi"]],
-    ["isu", ["hon", "kaban", "tsukue", "doubutsu"]],
-    ["tsukue", ["kaban", "hon", "isu", "doubutsu"]],
-  ]);
+  const unit2ReviewRows = [
+    () => topic(cards, 4, w(words, "neko"), w(words, "doubutsu")),
+    () => topicQuestion(cards, 4, w(words, "neko"), w(words, "doubutsu")),
+    () => negativeTopic(cards, 4, w(words, "neko"), w(words, "isu")),
+    () => negativeTopic(cards, 4, w(words, "neko"), w(words, "tsukue")),
+    () => topic(cards, 4, w(words, "inu"), w(words, "doubutsu")),
+    () => topicQuestion(cards, 4, w(words, "inu"), w(words, "doubutsu")),
+    () => negativeTopic(cards, 4, w(words, "inu"), w(words, "isu")),
+    () => negativeTopic(cards, 4, w(words, "inu"), w(words, "tsukue")),
+    () => negativeTopic(cards, 4, w(words, "inu"), w(words, "kodomo")),
+    () => objectAction(cards, 4, w(words, "hon"), w(words, "yomu")),
+    () => objectAction(cards, 4, w(words, "hon"), w(words, "yomu")),
+    () => objectAction(cards, 4, w(words, "hon"), w(words, "yomu")),
+    () => objectAction(cards, 4, w(words, "hon"), w(words, "yomu")),
+    () => subjectAction(cards, 4, w(words, "watashi"), w(words, "kaku")),
+    () => subjectAction(cards, 4, w(words, "sakura"), w(words, "kaku")),
+    () => subjectAction(cards, 4, w(words, "yuki"), w(words, "kaku")),
+    () => subjectAction(cards, 4, w(words, "tanaka"), w(words, "kaku")),
+    () => subjectAction(cards, 4, w(words, "sensei"), w(words, "kaku")),
+    () => subjectPlaceAction(cards, 4, w(words, "isha"), w(words, "byouin"), w(words, "iku")),
+    () => subjectPlaceAction(cards, 4, w(words, "isha"), w(words, "byouin"), w(words, "kuru")),
+    () => negativeTopic(cards, 4, w(words, "isha"), w(words, "kodomo")),
+    () => negativeTopic(cards, 4, w(words, "isha"), w(words, "otona")),
+    () => negativeTopic(cards, 4, w(words, "isha"), w(words, "tsukue")),
+    () => negativeTopic(cards, 4, w(words, "gakkou"), w(words, "mise")),
+    () => negativeTopic(cards, 4, w(words, "gakkou"), w(words, "kaisha")),
+    () => placeAction(cards, 4, w(words, "gakkou"), w(words, "iku")),
+    () => negativeTopic(cards, 4, w(words, "ie"), w(words, "byouin")),
+    () => negativeTopic(cards, 4, w(words, "ie"), w(words, "eki")),
+    () => placeAction(cards, 4, w(words, "ie"), w(words, "kuru")),
+    () => negativeTopic(cards, 4, w(words, "basho"), w(words, "mise")),
+    () => negativeTopic(cards, 4, w(words, "basho"), w(words, "eki")),
+    () => negativeTopic(cards, 4, w(words, "basho"), w(words, "kaisha")),
+  ];
+  for (const row of unit2ReviewRows) row();
 
-  addReview(cards, 4, words, reviewWords, 1);
+  const complementById = new Map([
+    ["mise", ["heya", "shashin", "kaban", "tomodachi"]],
+    ["byouin", ["heya", "kaban", "shashin", "tomodachi"]],
+    ["eki", ["heya", "kaban", "shashin", "tomodachi"]],
+    ["kaisha", ["heya", "shashin", "kaban", "tomodachi"]],
+    ["kodomo", ["sensei", "gakusei", "otona", "tomodachi"]],
+    ["otona", ["gakusei", "kodomo", "sensei", "tomodachi"]],
+    ["isu", ["kaban", "tsukue", "shashin", "heya"]],
+    ["tsukue", ["kaban", "isu", "shashin", "heya"]],
+  ]);
 
   const balancedNouns = ["mise", "kodomo", "byouin", "isu", "eki", "otona", "kaisha", "tsukue"];
   const movementRows = [
-    ["watashi", "mise", "iku"],
-    ["sakura", "byouin", "kuru"],
-    ["yuki", "eki", "iku"],
-    ["tanaka", "kaisha", "kuru"],
-    ["sensei", "mise", "kuru"],
-    ["gakusei", "byouin", "iku"],
-    ["tomodachi", "eki", "kuru"],
-    ["isha", "kaisha", "iku"],
     ["watashi", "mise", "iku"],
     ["sakura", "byouin", "kuru"],
     ["yuki", "eki", "iku"],
@@ -550,16 +573,21 @@ function buildUnit4(spec, previousWords, reviewWords) {
   const closingRows = [
     ["kodomo", "gakusei"],
     ["otona", "tomodachi"],
-    ["isu", "hon"],
+    ["isu", "shashin"],
     ["tsukue", "kaban"],
     ["kodomo", "sensei"],
     ["otona", "kodomo"],
-    ["isu", "doubutsu"],
-    ["tsukue", "hon"],
-    ["kodomo", "isha"],
+    ["isu", "heya"],
+    ["eki", "shashin"],
+    ["kodomo", "tomodachi"],
     ["otona", "gakusei"],
     ["otona", "sensei"],
-    ["otona", "isha"],
+    ["otona", "tomodachi"],
+    ["isu", "shashin"],
+    ["isu", "heya"],
+    ["tsukue", "shashin"],
+    ["tsukue", "heya"],
+    ["tsukue", "kaban"],
   ];
   for (const [left, right] of closingRows) {
     negativeTopic(cards, 4, w(words, left), w(words, right));
@@ -663,8 +691,11 @@ function buildUnit7(spec, previousWords, reviewWords) {
 }
 
 function reviewWordsFor(source, unitId) {
-  const byUnit = new Map(source.units.map((unit) => [unit.id, unit.newWords]));
-  return reviewVocabularyUnitIds(unitId).flatMap((id) => byUnit.get(id) ?? []);
+  return wordsForUnits(source, reviewVocabularyUnitIds(unitId));
+}
+
+function lexiconWordsFor(source, unitId) {
+  return wordsForUnits(source, lexiconVocabularyUnitIds(unitId, authoredUnitIds(source)));
 }
 
 function assertUnit(unit, reviewWords = []) {
@@ -707,10 +738,18 @@ function assertUnit(unit, reviewWords = []) {
     }
     if (unit.id === 4) {
       if (unit.cards.length >= 100) throw new Error(`unit ${unit.id}: expected fewer than 100 cards, got ${unit.cards.length}`);
+      const currentCounts = Object.fromEntries(unit.newWords.map((word) => [word.id, wordAppearanceCounts.get(word.id) ?? 0]));
       for (const word of unit.newWords) {
         const count = wordAppearanceCounts.get(word.id) ?? 0;
         if (count < 8 || count > 12) {
-          throw new Error(`unit ${unit.id}: current word ${word.id} expected 8-12 appearances, got ${count}`);
+          throw new Error(`unit ${unit.id}: current word ${word.id} expected 8-12 appearances, got ${count}; counts ${JSON.stringify(currentCounts)}`);
+        }
+      }
+      const reviewCounts = Object.fromEntries(reviewWords.map((word) => [word.id, wordAppearanceCounts.get(word.id) ?? 0]));
+      for (const word of reviewWords) {
+        const count = wordAppearanceCounts.get(word.id) ?? 0;
+        if (count < 5 || count > 8) {
+          throw new Error(`unit ${unit.id}: SRS review word ${word.id} expected 5-8 appearances, got ${count}; counts ${JSON.stringify(reviewCounts)}`);
         }
       }
     }
@@ -736,8 +775,9 @@ for (let unitId = 1; unitId <= 7; unitId += 1) {
     [7, buildUnit7],
   ]);
   const reviewWords = reviewWordsFor(source, unitId);
+  const lexiconWords = lexiconWordsFor(source, unitId);
   const cards = builders.get(unitId)(spec, previousWords, reviewWords);
-  const unit = { ...existing, ...spec, cards };
+  const unit = { ...existing, ...spec, reviewWordIds: reviewWords.map((word) => word.id), lexiconWordIds: lexiconWords.map((word) => word.id), cards };
   assertUnit(unit, reviewWords);
   await writeJson(`data/jp/curriculum/units/unit_${pad(unitId)}.json`, unit);
   previousWords.push(...spec.newWords);

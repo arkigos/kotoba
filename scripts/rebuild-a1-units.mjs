@@ -9,6 +9,7 @@ const steps = [
   ["node", ["scripts/author-a1-units.mjs"]],
   ["node", ["scripts/add-a1-action-previews.mjs"]],
   ["node", ["scripts/enforce-a1-generation-rules.mjs"]],
+  ["node", ["scripts/sync-curriculum-word-pools.mjs"]],
   ["node", ["scripts/sync-assets.mjs"]],
 ];
 

@@ -52,8 +52,21 @@ function collectWordIds(unit, unitById, unitIds) {
   return ids;
 }
 
+function collectWordIdList(unit, unitById, unitIds) {
+  return [...collectWordIds(unit, unitById, unitIds)];
+}
+
 function knownVocabularyUnitIds(unit, unitById) {
   return [...unitById.keys()].filter((sourceUnitId) => sourceUnitId <= unit.id).sort((a, b) => a - b);
+}
+
+function lexiconVocabularyUnitIds(unit, unitById) {
+  const reviewUnitIds = new Set(reviewVocabularyUnitIds(unit.id));
+  return [...unitById.keys()].filter((sourceUnitId) => sourceUnitId < unit.id && !reviewUnitIds.has(sourceUnitId)).sort((a, b) => a - b);
+}
+
+function sameList(left, right) {
+  return JSON.stringify(left) === JSON.stringify(right);
 }
 
 export async function validateCurriculum() {
@@ -163,8 +176,20 @@ export async function validateCurriculum() {
 
     const currentWordIds = collectWordIds(unit, unitById, [unit.id]);
     const requiredReviewWordIds = collectWordIds(unit, unitById, reviewVocabularyUnitIds(unit.id));
+    const expectedReviewWordIds = collectWordIdList(unit, unitById, reviewVocabularyUnitIds(unit.id));
+    const expectedLexiconWordIds = collectWordIdList(unit, unitById, lexiconVocabularyUnitIds(unit, unitById));
     const allowedWordIds = collectWordIds(unit, unitById, knownVocabularyUnitIds(unit, unitById));
     const usedWordIds = new Set();
+
+    assert(Array.isArray(unit.reviewWordIds), `unit ${unit.id}: reviewWordIds must be an array`, failures);
+    assert(Array.isArray(unit.lexiconWordIds), `unit ${unit.id}: lexiconWordIds must be an array`, failures);
+    if (Array.isArray(unit.reviewWordIds)) {
+      assert(sameList(unit.reviewWordIds, expectedReviewWordIds), `unit ${unit.id}: reviewWordIds must match SRS due words ${expectedReviewWordIds.join(", ")}`, failures);
+    }
+    if (Array.isArray(unit.lexiconWordIds)) {
+      assert(sameList(unit.lexiconWordIds, expectedLexiconWordIds), `unit ${unit.id}: lexiconWordIds must match non-due helper words ${expectedLexiconWordIds.join(", ")}`, failures);
+    }
+
     for (const [cardIndex, card] of unit.cards.entries()) {
       const label = `unit ${unit.id} card ${card.id ?? cardIndex + 1}`;
       assert(card.id, `${label}: missing id`, failures);

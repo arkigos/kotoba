@@ -60,6 +60,8 @@ export type CurriculumUnit = {
   title: string;
   grammarFocus: string;
   newWords: WordEntry[];
+  reviewWordIds: string[];
+  lexiconWordIds: string[];
   cards: PracticeCard[];
 };
 
