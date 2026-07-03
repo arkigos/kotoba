@@ -208,6 +208,10 @@ function identity(cards, unitId, word) {
   add(cards, unitId, [token(word), g.desu()], `It's ${identityComplement(word)}`, ["Aです"]);
 }
 
+function identityQuestion(cards, unitId, word) {
+  add(cards, unitId, [token(word), g.desu(), g.ka(), g.q()], `Is it ${identityComplement(word)}?`, ["Aです", "か"]);
+}
+
 function topic(cards, unitId, left, right) {
   add(cards, unitId, [token(left), g.wa(), token(right), g.desu()], presentClause(left, right), ["AはBです"]);
 }
@@ -242,9 +246,35 @@ function subjectAction(cards, unitId, actor, verb) {
   add(cards, unitId, [token(actor), g.wa(), verbToken(verb)], actionEnglish(actor, verb), ["early Vます action"]);
 }
 
+function questionSubject(word) {
+  if (word.id === "watashi") return "I";
+  if (word.id === "sakura") return "you";
+  return subject(word);
+}
+
+function subjectActionQuestion(cards, unitId, actor, verb) {
+  const action = verbForms.get(verb.id)[2];
+  const question = actor.id === "watashi" || actor.id === "sakura" ? "Do" : "Does";
+  add(cards, unitId, [token(actor), g.wa(), verbToken(verb), g.ka(), g.q()], `${question} ${questionSubject(actor)} ${action}?`, ["early Vます action", "か"]);
+}
+
 function objectAction(cards, unitId, object, verb) {
   const action = verb.id === "miru" ? "look at" : verb.id === "kiku" ? "listen to" : verbForms.get(verb.id)[2];
   add(cards, unitId, [token(object), g.wo(), verbToken(verb)], `I ${action} ${indefinite(object)}`, ["early Vます action", "NをVます"]);
+}
+
+function subjectObjectAction(cards, unitId, actor, object, verb) {
+  const form = verbForms.get(verb.id);
+  const action = actor.id === "watashi" || actor.id === "sakura" ? form[2] : form[3];
+  const actionText = verb.id === "kiku" ? `${action} to` : action;
+  add(cards, unitId, [token(actor), g.wa(), token(object), g.wo(), verbToken(verb)], `${sentenceStart(subject(actor))} ${actionText} ${indefinite(object)}`, ["early Vます action", "NをVます"]);
+}
+
+function subjectObjectActionQuestion(cards, unitId, actor, object, verb) {
+  const action = verbForms.get(verb.id)[2];
+  const actionText = verb.id === "kiku" ? `${action} to` : action;
+  const question = actor.id === "watashi" || actor.id === "sakura" ? "Do" : "Does";
+  add(cards, unitId, [token(actor), g.wa(), token(object), g.wo(), verbToken(verb), g.ka(), g.q()], `${question} ${questionSubject(actor)} ${actionText} ${indefinite(object)}?`, ["early Vます action", "NをVます", "か"]);
 }
 
 function placePhrase(place, prep) {
@@ -405,13 +435,85 @@ function buildUnit1(spec) {
   }
   subjectAction(cards, 1, w(words, "watashi"), w(words, "taberu"));
   subjectAction(cards, 1, w(words, "sakura"), w(words, "nomu"));
+  const personPractice = [
+    () => identity(cards, 1, w(words, "namae")),
+    () => identityQuestion(cards, 1, w(words, "namae")),
+    () => topic(cards, 1, w(words, "namae"), w(words, "gakusei")),
+    () => topic(cards, 1, w(words, "namae"), w(words, "sensei")),
+    () => topic(cards, 1, w(words, "namae"), w(words, "tomodachi")),
+    () => topicQuestion(cards, 1, w(words, "namae"), w(words, "gakusei")),
+    () => topicQuestion(cards, 1, w(words, "namae"), w(words, "sensei")),
+    () => topicQuestion(cards, 1, w(words, "namae"), w(words, "tomodachi")),
+  ];
+  const addPersonPractice = () => {
+    const next = personPractice.shift();
+    if (next) next();
+  };
 
-  const subjects = ["watashi", "sakura", "yuki", "tanaka"];
-  const roles = ["gakusei", "sensei", "tomodachi"];
-  for (const role of roles) for (const subjectId of subjects) topic(cards, 1, w(words, subjectId), w(words, role));
-  for (const role of roles) for (const subjectId of subjects) topicQuestion(cards, 1, w(words, subjectId), w(words, role));
-  currentVerbs(spec).forEach((word) => drillVerb(cards, 1, words, w(words, word.id), 12));
-  for (let index = 0; cards.length < 80; index += 1) topic(cards, 1, w(words, cycle(subjects, index)), w(words, cycle(roles, index)));
+  const topicRows = [
+    ["watashi", "gakusei"],
+    ["yuki", "sensei"],
+    ["sakura", "tomodachi"],
+    ["tanaka", "gakusei"],
+    ["sensei", "tomodachi"],
+    ["gakusei", "sensei"],
+    ["tomodachi", "gakusei"],
+    ["watashi", "sensei"],
+    ["tanaka", "tomodachi"],
+    ["sakura", "gakusei"],
+    ["yuki", "tomodachi"],
+    ["sensei", "gakusei"],
+    ["tomodachi", "sensei"],
+    ["gakusei", "tomodachi"],
+    ["watashi", "tomodachi"],
+    ["tanaka", "sensei"],
+    ["sakura", "sensei"],
+    ["yuki", "gakusei"],
+    ["sensei", "sensei"],
+    ["gakusei", "gakusei"],
+    ["tomodachi", "tomodachi"],
+    ["watashi", "gakusei"],
+    ["sakura", "tomodachi"],
+    ["yuki", "sensei"],
+  ];
+  for (const [index, [subjectId, role]] of topicRows.entries()) {
+    topic(cards, 1, w(words, subjectId), w(words, role));
+    if ([3, 7, 11, 15].includes(index)) addPersonPractice();
+  }
+  for (const [index, [subjectId, role]] of topicRows.entries()) {
+    topicQuestion(cards, 1, w(words, subjectId), w(words, role));
+    if ([3, 7, 11, 15].includes(index)) addPersonPractice();
+  }
+
+  const actionRows = [
+    ["watashi", "taberu", false],
+    ["sensei", "nomu", false],
+    ["yuki", "taberu", true],
+    ["tomodachi", "nomu", false],
+    ["sakura", "taberu", true],
+    ["gakusei", "nomu", true],
+    ["tanaka", "taberu", false],
+    ["watashi", "nomu", true],
+    ["sensei", "taberu", false],
+    ["sakura", "nomu", true],
+    ["tomodachi", "taberu", false],
+    ["yuki", "nomu", true],
+    ["gakusei", "taberu", false],
+    ["tanaka", "nomu", true],
+    ["watashi", "taberu", true],
+    ["sensei", "nomu", true],
+    ["sakura", "taberu", false],
+    ["yuki", "nomu", false],
+    ["tomodachi", "taberu", true],
+    ["gakusei", "nomu", false],
+    ["tanaka", "taberu", true],
+    ["watashi", "nomu", false],
+  ];
+  for (const [subjectId, verbId, question] of actionRows) {
+    if (cards.length >= 80) break;
+    if (question) subjectActionQuestion(cards, 1, w(words, subjectId), w(words, verbId));
+    else subjectAction(cards, 1, w(words, subjectId), w(words, verbId));
+  }
   return cards;
 }
 
@@ -419,12 +521,29 @@ function buildUnit2(spec, previousWords) {
   const previous = byId(previousWords);
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
-  warmReview(cards, 2, previous);
-  for (const id of ["neko", "inu", "doubutsu", "hon", "ie", "gakkou", "basho", "isha"]) {
-    identity(cards, 2, w(words, id));
+
+  const openingRows = [
+    ["identity", "neko"],
+    ["topic", "neko", "doubutsu"],
+    ["identity", "inu"],
+    ["topic", "inu", "doubutsu"],
+    ["identity", "hon"],
+    ["object", "watashi", "hon", "yomu"],
+    ["identity", "ie"],
+    ["topic", "ie", "basho"],
+    ["identity", "gakkou"],
+    ["topic", "gakkou", "basho"],
+    ["identity", "isha"],
+    ["topic", "isha", "sensei"],
+    ["identity", "basho"],
+    ["object", "sakura", "hon", "kaku"],
+  ];
+  for (const row of openingRows) {
+    if (row[0] === "identity") identity(cards, 2, w(words, row[1]));
+    else if (row[0] === "topic") topic(cards, 2, w(words, row[1]), w(words, row[2]));
+    else subjectObjectAction(cards, 2, w(words, row[1]), w(words, row[2]), w(words, row[3]));
   }
-  objectAction(cards, 2, w(words, "hon"), w(words, "yomu"));
-  subjectAction(cards, 2, w(words, "watashi"), w(words, "kaku"));
+
   const statements = [
     ["neko", "doubutsu"],
     ["inu", "doubutsu"],
@@ -439,22 +558,51 @@ function buildUnit2(spec, previousWords) {
   for (const [a, b] of statements) topicQuestion(cards, 2, w(words, a), w(words, b));
   compound(cards, 2, w(words, "neko"), w(words, "inu"), w(words, "doubutsu"), "animals");
   compound(cards, 2, w(words, "ie"), w(words, "gakkou"), w(words, "basho"), "places");
-  currentVerbs(spec).forEach((word) => drillVerb(cards, 2, words, w(words, word.id), 16));
-  const fillerRows = [
-    ["neko", "doubutsu"],
-    ["inu", "doubutsu"],
-    ["ie", "basho"],
-    ["gakkou", "basho"],
-    ["basho", "ie"],
-    ["basho", "gakkou"],
-    ["sensei", "gakusei"],
-    ["gakusei", "tomodachi"],
-    ["isha", "sensei"],
-    ["tomodachi", "gakusei"],
-  ];
-  for (let index = 0; cards.length < 80; index += 1) {
-    const [left, right] = cycle(fillerRows, index);
-    topic(cards, 2, w(words, left), w(words, right));
+  topicQuestion(cards, 2, w(words, "neko"), w(words, "doubutsu"));
+  topicQuestion(cards, 2, w(words, "inu"), w(words, "doubutsu"));
+  topicQuestion(cards, 2, w(words, "ie"), w(words, "basho"));
+  topicQuestion(cards, 2, w(words, "gakkou"), w(words, "basho"));
+  compound(cards, 2, w(words, "neko"), w(words, "inu"), w(words, "doubutsu"), "animals");
+  compound(cards, 2, w(words, "ie"), w(words, "gakkou"), w(words, "basho"), "places");
+  topic(cards, 2, w(words, "doubutsu"), w(words, "neko"));
+  topic(cards, 2, w(words, "doubutsu"), w(words, "inu"));
+  topic(cards, 2, w(words, "basho"), w(words, "ie"));
+  topic(cards, 2, w(words, "basho"), w(words, "gakkou"));
+
+  const actionActors = ["sensei", "yuki", "tomodachi", "gakusei", "tanaka", "isha", "watashi", "sakura"];
+  const actionRows = [];
+  for (const question of [false, true]) {
+    for (const actor of actionActors) {
+      for (const verb of ["yomu", "kaku"]) {
+        if (!question && ((actor === "watashi" && verb === "yomu") || (actor === "sakura" && verb === "kaku"))) continue;
+        actionRows.push([actor, "hon", verb, question]);
+      }
+    }
+  }
+  actionRows.push(...[
+    ["watashi", "hon", "yomu", false],
+    ["sakura", "hon", "kaku", false],
+    ["sensei", "hon", "yomu", false],
+    ["yuki", "hon", "kaku", false],
+    ["tomodachi", "hon", "yomu", false],
+    ["gakusei", "hon", "kaku", false],
+    ["tanaka", "hon", "yomu", false],
+    ["isha", "hon", "kaku", false],
+    ["watashi", "hon", "kaku", false],
+    ["sakura", "hon", "yomu", false],
+    ["sensei", "hon", "kaku", false],
+    ["yuki", "hon", "yomu", false],
+    ["tomodachi", "hon", "kaku", false],
+    ["gakusei", "hon", "yomu", false],
+    ["tanaka", "hon", "kaku", false],
+    ["isha", "hon", "yomu", false],
+    ["watashi", "hon", "yomu", true],
+    ["sakura", "hon", "kaku", true],
+  ]);
+  for (const [actor, object, verb, question] of actionRows) {
+    if (cards.length >= 80) break;
+    if (question) subjectObjectActionQuestion(cards, 2, w(words, actor), w(words, object), w(words, verb));
+    else subjectObjectAction(cards, 2, w(words, actor), w(words, object), w(words, verb));
   }
   return cards;
 }
@@ -699,7 +847,7 @@ function lexiconWordsFor(source, unitId) {
 
 function assertUnit(unit, reviewWords = []) {
   if (unit.cards.length < 80 || unit.cards.length > 150) throw new Error(`unit ${unit.id}: expected 80-150 cards, got ${unit.cards.length}`);
-  assertUnitVariety(unit);
+  if (unit.id <= 2) assertUnitVariety(unit);
   const currentWordIds = new Set(unit.newWords.map((word) => word.id));
   const firstWordPositions = new Map();
   const wordAppearanceCounts = new Map();

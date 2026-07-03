@@ -27,10 +27,10 @@
     },
     {
       "id": "namae",
-      "surface": "名前",
-      "reading": "なまえ",
-      "meaning": "name",
-      "function": "noun"
+      "surface": "人",
+      "reading": "ひと",
+      "meaning": "person",
+      "function": "person"
     },
     {
       "id": "sakura",
@@ -175,22 +175,22 @@
     {
       "id": "u001-c004",
       "line": [
-        "名前",
+        "人",
         "です"
       ],
       "tts": [
-        "なまえ",
+        "ひと",
         "です"
       ],
       "explain": [
-        "name",
+        "person",
         "polite identity marker"
       ],
       "tokens": [
         {
-          "surface": "名前",
-          "reading": "なまえ",
-          "explain": "name",
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
           "wordId": "namae"
         },
         {
@@ -199,7 +199,7 @@
           "explain": "polite identity marker"
         }
       ],
-      "english": "It's a name",
+      "english": "It's a person",
       "grammarTags": [
         "Aです"
       ]
@@ -466,70 +466,21 @@
     {
       "id": "u001-c012",
       "line": [
-        "あなた",
-        "は",
-        "学生",
-        "です"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "がくせい",
-        "です"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "student",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "You are a student",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c013",
-      "line": [
         "彼",
         "は",
-        "学生",
+        "先生",
         "です"
       ],
       "tts": [
         "かれ",
         "わ",
-        "がくせい",
+        "せんせい",
         "です"
       ],
       "explain": [
         "he; him",
         "topic marker",
-        "student",
+        "teacher",
         "polite identity marker"
       ],
       "tokens": [
@@ -545,10 +496,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
         },
         {
           "surface": "です",
@@ -556,7 +507,56 @@
           "explain": "polite identity marker"
         }
       ],
-      "english": "He is a student",
+      "english": "He is a teacher",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c013",
+      "line": [
+        "あなた",
+        "は",
+        "友達",
+        "です"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "ともだち",
+        "です"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "friend",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "You are a friend",
       "grammarTags": [
         "AはBです"
       ]
@@ -613,6 +613,185 @@
     {
       "id": "u001-c015",
       "line": [
+        "人",
+        "です"
+      ],
+      "tts": [
+        "ひと",
+        "です"
+      ],
+      "explain": [
+        "person",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "namae"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "It's a person",
+      "grammarTags": [
+        "Aです"
+      ]
+    },
+    {
+      "id": "u001-c016",
+      "line": [
+        "先生",
+        "は",
+        "友達",
+        "です"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ともだち",
+        "です"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "friend",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The teacher is a friend",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c017",
+      "line": [
+        "学生",
+        "は",
+        "先生",
+        "です"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "せんせい",
+        "です"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "teacher",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The student is a teacher",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c018",
+      "line": [
+        "友達",
+        "は",
+        "学生",
+        "です"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "がくせい",
+        "です"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "student",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The friend is a student",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c019",
+      "line": [
         "私",
         "は",
         "先生",
@@ -660,301 +839,56 @@
       ]
     },
     {
-      "id": "u001-c016",
-      "line": [
-        "あなた",
-        "は",
-        "先生",
-        "です"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "せんせい",
-        "です"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "teacher",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "You are a teacher",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c017",
-      "line": [
-        "彼",
-        "は",
-        "先生",
-        "です"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "せんせい",
-        "です"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "teacher",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "He is a teacher",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c018",
-      "line": [
-        "彼女",
-        "は",
-        "先生",
-        "です"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "せんせい",
-        "です"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "teacher",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "She is a teacher",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c019",
-      "line": [
-        "私",
-        "は",
-        "友達",
-        "です"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "ともだち",
-        "です"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "friend",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "I am a friend",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
       "id": "u001-c020",
       "line": [
-        "あなた",
-        "は",
-        "友達",
-        "です"
+        "人",
+        "です",
+        "か",
+        "？"
       ],
       "tts": [
-        "あなた",
-        "わ",
-        "ともだち",
-        "です"
+        "ひと",
+        "です",
+        "か",
+        "？"
       ],
       "explain": [
-        "you",
-        "topic marker",
-        "friend",
-        "polite identity marker"
+        "person",
+        "polite identity marker",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
         {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "namae"
         },
         {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
         }
       ],
-      "english": "You are a friend",
+      "english": "Is it a person?",
       "grammarTags": [
-        "AはBです"
+        "Aです",
+        "か"
       ]
     },
     {
       "id": "u001-c021",
-      "line": [
-        "彼",
-        "は",
-        "友達",
-        "です"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "ともだち",
-        "です"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "friend",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "He is a friend",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c022",
       "line": [
         "彼女",
         "は",
@@ -1003,7 +937,840 @@
       ]
     },
     {
+      "id": "u001-c022",
+      "line": [
+        "あなた",
+        "は",
+        "学生",
+        "です"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "がくせい",
+        "です"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "student",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "You are a student",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
       "id": "u001-c023",
+      "line": [
+        "彼",
+        "は",
+        "友達",
+        "です"
+      ],
+      "tts": [
+        "かれ",
+        "わ",
+        "ともだち",
+        "です"
+      ],
+      "explain": [
+        "he; him",
+        "topic marker",
+        "friend",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "explain": "he; him",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "He is a friend",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c024",
+      "line": [
+        "先生",
+        "は",
+        "学生",
+        "です"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "がくせい",
+        "です"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "student",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The teacher is a student",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c025",
+      "line": [
+        "人",
+        "は",
+        "学生",
+        "です"
+      ],
+      "tts": [
+        "ひと",
+        "わ",
+        "がくせい",
+        "です"
+      ],
+      "explain": [
+        "person",
+        "topic marker",
+        "student",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "namae"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The person is a student",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c026",
+      "line": [
+        "友達",
+        "は",
+        "先生",
+        "です"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "せんせい",
+        "です"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "teacher",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The friend is a teacher",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c027",
+      "line": [
+        "学生",
+        "は",
+        "友達",
+        "です"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "ともだち",
+        "です"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "friend",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The student is a friend",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c028",
+      "line": [
+        "私",
+        "は",
+        "友達",
+        "です"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ともだち",
+        "です"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "friend",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "I am a friend",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c029",
+      "line": [
+        "彼女",
+        "は",
+        "先生",
+        "です"
+      ],
+      "tts": [
+        "かのじょ",
+        "わ",
+        "せんせい",
+        "です"
+      ],
+      "explain": [
+        "she; her",
+        "topic marker",
+        "teacher",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "She is a teacher",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c030",
+      "line": [
+        "人",
+        "は",
+        "先生",
+        "です"
+      ],
+      "tts": [
+        "ひと",
+        "わ",
+        "せんせい",
+        "です"
+      ],
+      "explain": [
+        "person",
+        "topic marker",
+        "teacher",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "namae"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The person is a teacher",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c031",
+      "line": [
+        "あなた",
+        "は",
+        "先生",
+        "です"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "せんせい",
+        "です"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "teacher",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "You are a teacher",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c032",
+      "line": [
+        "彼",
+        "は",
+        "学生",
+        "です"
+      ],
+      "tts": [
+        "かれ",
+        "わ",
+        "がくせい",
+        "です"
+      ],
+      "explain": [
+        "he; him",
+        "topic marker",
+        "student",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "explain": "he; him",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "He is a student",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c033",
+      "line": [
+        "先生",
+        "は",
+        "先生",
+        "です"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "せんせい",
+        "です"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "teacher",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The teacher is a teacher",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c034",
+      "line": [
+        "学生",
+        "は",
+        "学生",
+        "です"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "がくせい",
+        "です"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "student",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The student is a student",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c035",
+      "line": [
+        "友達",
+        "は",
+        "友達",
+        "です"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "ともだち",
+        "です"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "friend",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The friend is a friend",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c036",
+      "line": [
+        "私",
+        "は",
+        "学生",
+        "です"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "がくせい",
+        "です"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "student",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "I am a student",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c037",
+      "line": [
+        "あなた",
+        "は",
+        "友達",
+        "です"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "ともだち",
+        "です"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "friend",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "You are a friend",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c038",
+      "line": [
+        "彼",
+        "は",
+        "先生",
+        "です"
+      ],
+      "tts": [
+        "かれ",
+        "わ",
+        "せんせい",
+        "です"
+      ],
+      "explain": [
+        "he; him",
+        "topic marker",
+        "teacher",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "explain": "he; him",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "He is a teacher",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c039",
       "line": [
         "私",
         "は",
@@ -1069,337 +1836,7 @@
       ]
     },
     {
-      "id": "u001-c024",
-      "line": [
-        "あなた",
-        "は",
-        "学生",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "がくせい",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "student",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Are you a student?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u001-c025",
-      "line": [
-        "彼",
-        "は",
-        "学生",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "がくせい",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "student",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is he a student?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u001-c026",
-      "line": [
-        "彼女",
-        "は",
-        "学生",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "がくせい",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "student",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is she a student?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u001-c027",
-      "line": [
-        "私",
-        "は",
-        "先生",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "せんせい",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "teacher",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Am I a teacher?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u001-c028",
-      "line": [
-        "あなた",
-        "は",
-        "先生",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "せんせい",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "teacher",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Are you a teacher?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u001-c029",
+      "id": "u001-c040",
       "line": [
         "彼",
         "は",
@@ -1465,139 +1902,7 @@
       ]
     },
     {
-      "id": "u001-c030",
-      "line": [
-        "彼女",
-        "は",
-        "先生",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "せんせい",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "teacher",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is she a teacher?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u001-c031",
-      "line": [
-        "私",
-        "は",
-        "友達",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "ともだち",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "friend",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Am I a friend?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u001-c032",
+      "id": "u001-c041",
       "line": [
         "あなた",
         "は",
@@ -1663,9 +1968,124 @@
       ]
     },
     {
-      "id": "u001-c033",
+      "id": "u001-c042",
       "line": [
-        "彼",
+        "彼女",
+        "は",
+        "学生",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "かのじょ",
+        "わ",
+        "がくせい",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "she; her",
+        "topic marker",
+        "student",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is she a student?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c043",
+      "line": [
+        "人",
+        "は",
+        "友達",
+        "です"
+      ],
+      "tts": [
+        "ひと",
+        "わ",
+        "ともだち",
+        "です"
+      ],
+      "explain": [
+        "person",
+        "topic marker",
+        "friend",
+        "polite identity marker"
+      ],
+      "tokens": [
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "namae"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        }
+      ],
+      "english": "The person is a friend",
+      "grammarTags": [
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u001-c044",
+      "line": [
+        "先生",
         "は",
         "友達",
         "です",
@@ -1673,7 +2093,7 @@
         "？"
       ],
       "tts": [
-        "かれ",
+        "せんせい",
         "わ",
         "ともだち",
         "です",
@@ -1681,7 +2101,7 @@
         "？"
       ],
       "explain": [
-        "he; him",
+        "teacher",
         "topic marker",
         "friend",
         "polite identity marker",
@@ -1690,10 +2110,10 @@
       ],
       "tokens": [
         {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
         },
         {
           "surface": "は",
@@ -1722,14 +2142,278 @@
           "explain": "question mark"
         }
       ],
-      "english": "Is he a friend?",
+      "english": "Is the teacher a friend?",
       "grammarTags": [
         "AはBです",
         "か"
       ]
     },
     {
-      "id": "u001-c034",
+      "id": "u001-c045",
+      "line": [
+        "学生",
+        "は",
+        "先生",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "せんせい",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "teacher",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the student a teacher?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c046",
+      "line": [
+        "友達",
+        "は",
+        "学生",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "がくせい",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "student",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the friend a student?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c047",
+      "line": [
+        "私",
+        "は",
+        "先生",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "せんせい",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "teacher",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Am I a teacher?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c048",
+      "line": [
+        "人",
+        "は",
+        "学生",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "ひと",
+        "わ",
+        "がくせい",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "person",
+        "topic marker",
+        "student",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "namae"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the person a student?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c049",
       "line": [
         "彼女",
         "は",
@@ -1795,62 +2479,30 @@
       ]
     },
     {
-      "id": "u001-c035",
-      "line": [
-        "私",
-        "は",
-        "食べます"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "たべます"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "eat"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu"
-        }
-      ],
-      "english": "I eat",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c036",
+      "id": "u001-c050",
       "line": [
         "あなた",
         "は",
-        "食べます"
+        "学生",
+        "です",
+        "か",
+        "？"
       ],
       "tts": [
         "あなた",
         "わ",
-        "たべます"
+        "がくせい",
+        "です",
+        "か",
+        "？"
       ],
       "explain": [
         "you",
         "topic marker",
-        "eat"
+        "student",
+        "polite identity marker",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
         {
@@ -1865,33 +2517,58 @@
           "explain": "topic marker"
         },
         {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu"
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
         }
       ],
-      "english": "You eat",
+      "english": "Are you a student?",
       "grammarTags": [
-        "early Vます action"
+        "AはBです",
+        "か"
       ]
     },
     {
-      "id": "u001-c037",
+      "id": "u001-c051",
       "line": [
         "彼",
         "は",
-        "食べます"
+        "友達",
+        "です",
+        "か",
+        "？"
       ],
       "tts": [
         "かれ",
         "わ",
-        "たべます"
+        "ともだち",
+        "です",
+        "か",
+        "？"
       ],
       "explain": [
         "he; him",
         "topic marker",
-        "eat"
+        "friend",
+        "polite identity marker",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
         {
@@ -1906,74 +2583,58 @@
           "explain": "topic marker"
         },
         {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu"
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
         }
       ],
-      "english": "He eats",
+      "english": "Is he a friend?",
       "grammarTags": [
-        "early Vます action"
+        "AはBです",
+        "か"
       ]
     },
     {
-      "id": "u001-c038",
-      "line": [
-        "彼女",
-        "は",
-        "食べます"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "たべます"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "eat"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu"
-        }
-      ],
-      "english": "She eats",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c039",
+      "id": "u001-c052",
       "line": [
         "先生",
         "は",
-        "食べます"
+        "学生",
+        "です",
+        "か",
+        "？"
       ],
       "tts": [
         "せんせい",
         "わ",
-        "たべます"
+        "がくせい",
+        "です",
+        "か",
+        "？"
       ],
       "explain": [
         "teacher",
         "topic marker",
-        "eat"
+        "student",
+        "polite identity marker",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
         {
@@ -1988,40 +2649,65 @@
           "explain": "topic marker"
         },
         {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu"
-        }
-      ],
-      "english": "The teacher eats",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c040",
-      "line": [
-        "学生",
-        "は",
-        "食べます"
-      ],
-      "tts": [
-        "がくせい",
-        "わ",
-        "たべます"
-      ],
-      "explain": [
-        "student",
-        "topic marker",
-        "eat"
-      ],
-      "tokens": [
-        {
           "surface": "学生",
           "reading": "がくせい",
           "explain": "student",
           "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the teacher a student?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c053",
+      "line": [
+        "人",
+        "は",
+        "先生",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "ひと",
+        "わ",
+        "せんせい",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "person",
+        "topic marker",
+        "teacher",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "namae"
         },
         {
           "surface": "は",
@@ -2029,33 +2715,58 @@
           "explain": "topic marker"
         },
         {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
         }
       ],
-      "english": "The student eats",
+      "english": "Is the person a teacher?",
       "grammarTags": [
-        "early Vます action"
+        "AはBです",
+        "か"
       ]
     },
     {
-      "id": "u001-c041",
+      "id": "u001-c054",
       "line": [
         "友達",
         "は",
-        "食べます"
+        "先生",
+        "です",
+        "か",
+        "？"
       ],
       "tts": [
         "ともだち",
         "わ",
-        "たべます"
+        "せんせい",
+        "です",
+        "か",
+        "？"
       ],
       "explain": [
         "friend",
         "topic marker",
-        "eat"
+        "teacher",
+        "polite identity marker",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
         {
@@ -2070,19 +2781,827 @@
           "explain": "topic marker"
         },
         {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
         }
       ],
-      "english": "The friend eats",
+      "english": "Is the friend a teacher?",
       "grammarTags": [
-        "early Vます action"
+        "AはBです",
+        "か"
       ]
     },
     {
-      "id": "u001-c042",
+      "id": "u001-c055",
+      "line": [
+        "学生",
+        "は",
+        "友達",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "ともだち",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "friend",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the student a friend?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c056",
+      "line": [
+        "私",
+        "は",
+        "友達",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ともだち",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "friend",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Am I a friend?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c057",
+      "line": [
+        "彼女",
+        "は",
+        "先生",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "かのじょ",
+        "わ",
+        "せんせい",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "she; her",
+        "topic marker",
+        "teacher",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is she a teacher?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c058",
+      "line": [
+        "人",
+        "は",
+        "友達",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "ひと",
+        "わ",
+        "ともだち",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "person",
+        "topic marker",
+        "friend",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "namae"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the person a friend?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c059",
+      "line": [
+        "あなた",
+        "は",
+        "先生",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "せんせい",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "teacher",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Are you a teacher?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c060",
+      "line": [
+        "彼",
+        "は",
+        "学生",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "かれ",
+        "わ",
+        "がくせい",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "he; him",
+        "topic marker",
+        "student",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "explain": "he; him",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is he a student?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c061",
+      "line": [
+        "先生",
+        "は",
+        "先生",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "せんせい",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "teacher",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the teacher a teacher?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c062",
+      "line": [
+        "学生",
+        "は",
+        "学生",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "がくせい",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "student",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the student a student?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c063",
+      "line": [
+        "友達",
+        "は",
+        "友達",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "ともだち",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "friend",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the friend a friend?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c064",
+      "line": [
+        "私",
+        "は",
+        "学生",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "がくせい",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "student",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Am I a student?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c065",
+      "line": [
+        "あなた",
+        "は",
+        "友達",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "ともだち",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "friend",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Are you a friend?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c066",
+      "line": [
+        "彼",
+        "は",
+        "先生",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "かれ",
+        "わ",
+        "せんせい",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "he; him",
+        "topic marker",
+        "teacher",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "explain": "he; him",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is he a teacher?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c067",
       "line": [
         "私",
         "は",
@@ -2123,335 +3642,7 @@
       ]
     },
     {
-      "id": "u001-c043",
-      "line": [
-        "あなた",
-        "は",
-        "食べます"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "たべます"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "eat"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu"
-        }
-      ],
-      "english": "You eat",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c044",
-      "line": [
-        "彼",
-        "は",
-        "食べます"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "たべます"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "eat"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu"
-        }
-      ],
-      "english": "He eats",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c045",
-      "line": [
-        "彼女",
-        "は",
-        "食べます"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "たべます"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "eat"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu"
-        }
-      ],
-      "english": "She eats",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c046",
-      "line": [
-        "先生",
-        "は",
-        "食べます"
-      ],
-      "tts": [
-        "せんせい",
-        "わ",
-        "たべます"
-      ],
-      "explain": [
-        "teacher",
-        "topic marker",
-        "eat"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu"
-        }
-      ],
-      "english": "The teacher eats",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c047",
-      "line": [
-        "私",
-        "は",
-        "飲みます"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "のみます"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "drink"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu"
-        }
-      ],
-      "english": "I drink",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c048",
-      "line": [
-        "あなた",
-        "は",
-        "飲みます"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "のみます"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "drink"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu"
-        }
-      ],
-      "english": "You drink",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c049",
-      "line": [
-        "彼",
-        "は",
-        "飲みます"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "のみます"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "drink"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu"
-        }
-      ],
-      "english": "He drinks",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c050",
-      "line": [
-        "彼女",
-        "は",
-        "飲みます"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "のみます"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "drink"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu"
-        }
-      ],
-      "english": "She drinks",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c051",
+      "id": "u001-c068",
       "line": [
         "先生",
         "は",
@@ -2492,28 +3683,34 @@
       ]
     },
     {
-      "id": "u001-c052",
+      "id": "u001-c069",
       "line": [
-        "学生",
+        "彼",
         "は",
-        "飲みます"
+        "食べます",
+        "か",
+        "？"
       ],
       "tts": [
-        "がくせい",
+        "かれ",
         "わ",
-        "のみます"
+        "たべます",
+        "か",
+        "？"
       ],
       "explain": [
-        "student",
+        "he; him",
         "topic marker",
-        "drink"
+        "eat",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
         {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
+          "surface": "彼",
+          "reading": "かれ",
+          "explain": "he; him",
+          "wordId": "yuki"
         },
         {
           "surface": "は",
@@ -2521,19 +3718,30 @@
           "explain": "topic marker"
         },
         {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu"
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
         }
       ],
-      "english": "The student drinks",
+      "english": "Does he eat?",
       "grammarTags": [
-        "early Vます action"
+        "early Vます action",
+        "か"
       ]
     },
     {
-      "id": "u001-c053",
+      "id": "u001-c070",
       "line": [
         "友達",
         "は",
@@ -2574,824 +3782,34 @@
       ]
     },
     {
-      "id": "u001-c054",
-      "line": [
-        "私",
-        "は",
-        "飲みます"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "のみます"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "drink"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu"
-        }
-      ],
-      "english": "I drink",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c055",
-      "line": [
-        "あなた",
-        "は",
-        "飲みます"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "のみます"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "drink"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu"
-        }
-      ],
-      "english": "You drink",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c056",
-      "line": [
-        "彼",
-        "は",
-        "飲みます"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "のみます"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "drink"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu"
-        }
-      ],
-      "english": "He drinks",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c057",
-      "line": [
-        "彼女",
-        "は",
-        "飲みます"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "のみます"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "drink"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu"
-        }
-      ],
-      "english": "She drinks",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c058",
-      "line": [
-        "先生",
-        "は",
-        "飲みます"
-      ],
-      "tts": [
-        "せんせい",
-        "わ",
-        "のみます"
-      ],
-      "explain": [
-        "teacher",
-        "topic marker",
-        "drink"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu"
-        }
-      ],
-      "english": "The teacher drinks",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u001-c059",
-      "line": [
-        "私",
-        "は",
-        "学生",
-        "です"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "がくせい",
-        "です"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "student",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "I am a student",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c060",
-      "line": [
-        "あなた",
-        "は",
-        "先生",
-        "です"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "せんせい",
-        "です"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "teacher",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "You are a teacher",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c061",
-      "line": [
-        "彼",
-        "は",
-        "友達",
-        "です"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "ともだち",
-        "です"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "friend",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "He is a friend",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c062",
-      "line": [
-        "彼女",
-        "は",
-        "学生",
-        "です"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "がくせい",
-        "です"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "student",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "She is a student",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c063",
-      "line": [
-        "私",
-        "は",
-        "先生",
-        "です"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "せんせい",
-        "です"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "teacher",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "I am a teacher",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c064",
-      "line": [
-        "あなた",
-        "は",
-        "友達",
-        "です"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "ともだち",
-        "です"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "friend",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "You are a friend",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c065",
-      "line": [
-        "彼",
-        "は",
-        "学生",
-        "です"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "がくせい",
-        "です"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "student",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "He is a student",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c066",
-      "line": [
-        "彼女",
-        "は",
-        "先生",
-        "です"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "せんせい",
-        "です"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "teacher",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "She is a teacher",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c067",
-      "line": [
-        "私",
-        "は",
-        "友達",
-        "です"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "ともだち",
-        "です"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "friend",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "I am a friend",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c068",
-      "line": [
-        "あなた",
-        "は",
-        "学生",
-        "です"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "がくせい",
-        "です"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "student",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "You are a student",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c069",
-      "line": [
-        "彼",
-        "は",
-        "先生",
-        "です"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "せんせい",
-        "です"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "teacher",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "He is a teacher",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c070",
-      "line": [
-        "彼女",
-        "は",
-        "友達",
-        "です"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "ともだち",
-        "です"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "friend",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "She is a friend",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
       "id": "u001-c071",
       "line": [
-        "私",
+        "あなた",
         "は",
-        "学生",
-        "です"
+        "食べます",
+        "か",
+        "？"
       ],
       "tts": [
-        "わたし",
+        "あなた",
         "わ",
-        "がくせい",
-        "です"
+        "たべます",
+        "か",
+        "？"
       ],
       "explain": [
-        "I; me",
+        "you",
         "topic marker",
-        "student",
-        "polite identity marker"
+        "eat",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
         {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "sakura"
         },
         {
           "surface": "は",
@@ -3399,48 +3817,57 @@
           "explain": "topic marker"
         },
         {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
         }
       ],
-      "english": "I am a student",
+      "english": "Do you eat?",
       "grammarTags": [
-        "AはBです"
+        "early Vます action",
+        "か"
       ]
     },
     {
       "id": "u001-c072",
       "line": [
-        "あなた",
+        "学生",
         "は",
-        "先生",
-        "です"
+        "飲みます",
+        "か",
+        "？"
       ],
       "tts": [
-        "あなた",
+        "がくせい",
         "わ",
-        "せんせい",
-        "です"
+        "のみます",
+        "か",
+        "？"
       ],
       "explain": [
-        "you",
+        "student",
         "topic marker",
-        "teacher",
-        "polite identity marker"
+        "drink",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
         {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
         },
         {
           "surface": "は",
@@ -3448,90 +3875,44 @@
           "explain": "topic marker"
         },
         {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
         }
       ],
-      "english": "You are a teacher",
+      "english": "Does the student drink?",
       "grammarTags": [
-        "AはBです"
+        "early Vます action",
+        "か"
       ]
     },
     {
       "id": "u001-c073",
       "line": [
-        "彼",
-        "は",
-        "友達",
-        "です"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "ともだち",
-        "です"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "friend",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "He is a friend",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c074",
-      "line": [
         "彼女",
         "は",
-        "学生",
-        "です"
+        "食べます"
       ],
       "tts": [
         "かのじょ",
         "わ",
-        "がくせい",
-        "です"
+        "たべます"
       ],
       "explain": [
         "she; her",
         "topic marker",
-        "student",
-        "polite identity marker"
+        "eat"
       ],
       "tokens": [
         {
@@ -3546,41 +3927,39 @@
           "explain": "topic marker"
         },
         {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
         }
       ],
-      "english": "She is a student",
+      "english": "She eats",
       "grammarTags": [
-        "AはBです"
+        "early Vます action"
       ]
     },
     {
-      "id": "u001-c075",
+      "id": "u001-c074",
       "line": [
         "私",
         "は",
-        "先生",
-        "です"
+        "飲みます",
+        "か",
+        "？"
       ],
       "tts": [
         "わたし",
         "わ",
-        "せんせい",
-        "です"
+        "のみます",
+        "か",
+        "？"
       ],
       "explain": [
         "I; me",
         "topic marker",
-        "teacher",
-        "polite identity marker"
+        "drink",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
         {
@@ -3595,20 +3974,67 @@
           "explain": "topic marker"
         },
         {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Do I drink?",
+      "grammarTags": [
+        "early Vます action",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c075",
+      "line": [
+        "先生",
+        "は",
+        "食べます"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "たべます"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "eat"
+      ],
+      "tokens": [
+        {
           "surface": "先生",
           "reading": "せんせい",
           "explain": "teacher",
           "wordId": "sensei"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
         }
       ],
-      "english": "I am a teacher",
+      "english": "The teacher eats",
       "grammarTags": [
-        "AはBです"
+        "early Vます action"
       ]
     },
     {
@@ -3616,20 +4042,23 @@
       "line": [
         "あなた",
         "は",
-        "友達",
-        "です"
+        "飲みます",
+        "か",
+        "？"
       ],
       "tts": [
         "あなた",
         "わ",
-        "ともだち",
-        "です"
+        "のみます",
+        "か",
+        "？"
       ],
       "explain": [
         "you",
         "topic marker",
-        "friend",
-        "polite identity marker"
+        "drink",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
         {
@@ -3644,41 +4073,91 @@
           "explain": "topic marker"
         },
         {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Do you drink?",
+      "grammarTags": [
+        "early Vます action",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c077",
+      "line": [
+        "友達",
+        "は",
+        "食べます"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "たべます"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "eat"
+      ],
+      "tokens": [
+        {
           "surface": "友達",
           "reading": "ともだち",
           "explain": "friend",
           "wordId": "tomodachi"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
         }
       ],
-      "english": "You are a friend",
+      "english": "The friend eats",
       "grammarTags": [
-        "AはBです"
+        "early Vます action"
       ]
     },
     {
-      "id": "u001-c077",
+      "id": "u001-c078",
       "line": [
         "彼",
         "は",
-        "学生",
-        "です"
+        "飲みます",
+        "か",
+        "？"
       ],
       "tts": [
         "かれ",
         "わ",
-        "がくせい",
-        "です"
+        "のみます",
+        "か",
+        "？"
       ],
       "explain": [
         "he; him",
         "topic marker",
-        "student",
-        "polite identity marker"
+        "drink",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
         {
@@ -3693,41 +4172,91 @@
           "explain": "topic marker"
         },
         {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Does he drink?",
+      "grammarTags": [
+        "early Vます action",
+        "か"
+      ]
+    },
+    {
+      "id": "u001-c079",
+      "line": [
+        "学生",
+        "は",
+        "食べます"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "たべます"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "eat"
+      ],
+      "tokens": [
+        {
           "surface": "学生",
           "reading": "がくせい",
           "explain": "student",
           "wordId": "gakusei"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
         }
       ],
-      "english": "He is a student",
+      "english": "The student eats",
       "grammarTags": [
-        "AはBです"
+        "early Vます action"
       ]
     },
     {
-      "id": "u001-c078",
+      "id": "u001-c080",
       "line": [
         "彼女",
         "は",
-        "先生",
-        "です"
+        "飲みます",
+        "か",
+        "？"
       ],
       "tts": [
         "かのじょ",
         "わ",
-        "せんせい",
-        "です"
+        "のみます",
+        "か",
+        "？"
       ],
       "explain": [
         "she; her",
         "topic marker",
-        "teacher",
-        "polite identity marker"
+        "drink",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
         {
@@ -3742,118 +4271,26 @@
           "explain": "topic marker"
         },
         {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
         }
       ],
-      "english": "She is a teacher",
+      "english": "Does she drink?",
       "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c079",
-      "line": [
-        "私",
-        "は",
-        "友達",
-        "です"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "ともだち",
-        "です"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "friend",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "I am a friend",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u001-c080",
-      "line": [
-        "あなた",
-        "は",
-        "学生",
-        "です"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "がくせい",
-        "です"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "student",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "You are a student",
-      "grammarTags": [
-        "AはBです"
+        "early Vます action",
+        "か"
       ]
     }
   ],

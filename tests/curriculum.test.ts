@@ -215,7 +215,7 @@ describe("curriculum word bins", () => {
       "It's me",
       "It's a student",
       "It's a teacher",
-      "It's a name",
+      "It's a person",
       "It's you",
       "It's him",
       "It's her",
@@ -223,11 +223,39 @@ describe("curriculum word bins", () => {
       "I eat",
       "You drink",
     ]);
-    expect(unit.cards.slice(10, 14).map((card) => card.english)).toEqual([
+    expect(unit.cards.slice(10, 18).map((card) => card.english)).toEqual([
       "I am a student",
-      "You are a student",
-      "He is a student",
+      "He is a teacher",
+      "You are a friend",
       "She is a student",
+      "It's a person",
+      "The teacher is a friend",
+      "The student is a teacher",
+      "The friend is a student",
+    ]);
+  });
+
+  it("opens Unit 2 with current material in familiar frames", () => {
+    const unit = unitModules[unitModulePath(2)].default;
+    const currentWordIds = new Set(unit.newWords.map((word) => word.id));
+
+    expect(unit.cards[0].tokens?.some((token) => token.wordId && currentWordIds.has(token.wordId))).toBe(true);
+    expect(unit.cards.slice(0, 14).every((card) => card.tokens?.some((token) => token.wordId && currentWordIds.has(token.wordId)))).toBe(true);
+    expect(unit.cards.slice(0, 14).map((card) => card.english)).toEqual([
+      "It's a cat",
+      "The cat is an animal",
+      "It's a dog",
+      "The dog is an animal",
+      "It's a book",
+      "I read a book",
+      "It's a house",
+      "The house is a place",
+      "It's a school",
+      "The school is a place",
+      "It's a doctor",
+      "The doctor is a teacher",
+      "It's a place",
+      "You write a book",
     ]);
   });
 
@@ -355,8 +383,11 @@ describe("curriculum word bins", () => {
       for (const card of questionCards) {
         const desuIndex = card.line.indexOf("です");
         const kaIndex = card.line.indexOf("か", Math.max(desuIndex, 0));
-        expect(desuIndex).toBeGreaterThanOrEqual(0);
-        expect(kaIndex).toBeGreaterThan(desuIndex);
+        if (desuIndex >= 0) {
+          expect(kaIndex).toBeGreaterThan(desuIndex);
+        } else {
+          expect(card.line.indexOf("か")).toBeGreaterThanOrEqual(0);
+        }
       }
     }
     expect(allQuestionCards.length).toBeGreaterThan(0);
