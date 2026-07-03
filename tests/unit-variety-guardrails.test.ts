@@ -44,6 +44,54 @@ describe("unit variety guardrails", () => {
     );
   });
 
+  it("disallows exact duplicate cards by default", async () => {
+    // @ts-expect-error Node authoring scripts live outside the app TypeScript module graph.
+    const { exactDuplicateFindings } = await import("../scripts/lib/unit-variety-guardrails.mjs");
+    const unit = {
+      id: 99,
+      cards: [
+        { id: "c001", line: ["watashi", "wa", "tabemasu"], english: "I eat", tokens: [] },
+        { id: "c002", line: ["watashi", "wa", "tabemasu"], english: "I eat", tokens: [] },
+      ],
+    };
+
+    expect(exactDuplicateFindings(unit)).toEqual(
+      expect.arrayContaining([
+        { kind: "japanese-line", text: "watashiwatabemasu", count: 2, ids: ["c001", "c002"] },
+        { kind: "english", text: "I eat", count: 2, ids: ["c001", "c002"] },
+      ]),
+    );
+  });
+
+  it("flags long gaps between current-word exposures", async () => {
+    // @ts-expect-error Node authoring scripts live outside the app TypeScript module graph.
+    const { wordExposureGapFindings } = await import("../scripts/lib/unit-variety-guardrails.mjs");
+    const unit = {
+      id: 99,
+      newWords: [{ id: "taberu" }],
+      cards: [
+        { id: "c001", line: ["watashi", "wa", "tabemasu"], english: "I eat", tokens: [{ surface: "tabemasu", wordId: "taberu" }] },
+        ...Array.from({ length: 30 }, (_, index) => ({
+          id: `f${index + 1}`,
+          line: ["gakusei", "desu"],
+          english: `student filler ${index + 1}`,
+          tokens: [{ surface: "gakusei", wordId: "gakusei" }],
+        })),
+        { id: "c032", line: ["sensei", "wa", "tabemasu"], english: "The teacher eats", tokens: [{ surface: "tabemasu", wordId: "taberu" }] },
+      ],
+    };
+
+    expect(wordExposureGapFindings(unit)).toMatchObject([
+      {
+        kind: "word-exposure-gap",
+        wordId: "taberu",
+        startCard: 1,
+        endCard: 32,
+        gap: 31,
+      },
+    ]);
+  });
+
   it("flags predictable single-slot learner-axis cycles", async () => {
     // @ts-expect-error Node authoring scripts live outside the app TypeScript module graph.
     const { lockstepAxisFindings } = await import("../scripts/lib/unit-variety-guardrails.mjs");

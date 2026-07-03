@@ -226,12 +226,12 @@ describe("curriculum word bins", () => {
     expect(unit.cards.slice(10, 18).map((card) => card.english)).toEqual([
       "I am a student",
       "He is a teacher",
+      "The teacher drinks",
       "You are a friend",
       "She is a student",
-      "It's a person",
+      "I am a person",
       "The teacher is a friend",
-      "The student is a teacher",
-      "The friend is a student",
+      "Does he eat?",
     ]);
   });
 

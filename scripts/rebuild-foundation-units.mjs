@@ -436,7 +436,7 @@ function buildUnit1(spec) {
   subjectAction(cards, 1, w(words, "watashi"), w(words, "taberu"));
   subjectAction(cards, 1, w(words, "sakura"), w(words, "nomu"));
   const personPractice = [
-    () => identity(cards, 1, w(words, "namae")),
+    () => topic(cards, 1, w(words, "watashi"), w(words, "namae")),
     () => identityQuestion(cards, 1, w(words, "namae")),
     () => topic(cards, 1, w(words, "namae"), w(words, "gakusei")),
     () => topic(cards, 1, w(words, "namae"), w(words, "sensei")),
@@ -472,21 +472,11 @@ function buildUnit1(spec) {
     ["sensei", "sensei"],
     ["gakusei", "gakusei"],
     ["tomodachi", "tomodachi"],
-    ["watashi", "gakusei"],
-    ["sakura", "tomodachi"],
-    ["yuki", "sensei"],
+    ["sakura", "namae"],
+    ["yuki", "namae"],
+    ["tanaka", "namae"],
   ];
-  for (const [index, [subjectId, role]] of topicRows.entries()) {
-    topic(cards, 1, w(words, subjectId), w(words, role));
-    if ([3, 7, 11, 15].includes(index)) addPersonPractice();
-  }
-  for (const [index, [subjectId, role]] of topicRows.entries()) {
-    topicQuestion(cards, 1, w(words, subjectId), w(words, role));
-    if ([3, 7, 11, 15].includes(index)) addPersonPractice();
-  }
-
   const actionRows = [
-    ["watashi", "taberu", false],
     ["sensei", "nomu", false],
     ["yuki", "taberu", true],
     ["tomodachi", "nomu", false],
@@ -501,18 +491,25 @@ function buildUnit1(spec) {
     ["gakusei", "taberu", false],
     ["tanaka", "nomu", true],
     ["watashi", "taberu", true],
-    ["sensei", "nomu", true],
-    ["sakura", "taberu", false],
-    ["yuki", "nomu", false],
-    ["tomodachi", "taberu", true],
-    ["gakusei", "nomu", false],
-    ["tanaka", "taberu", true],
-    ["watashi", "nomu", false],
   ];
-  for (const [subjectId, verbId, question] of actionRows) {
-    if (cards.length >= 80) break;
+  const addActionPractice = () => {
+    const next = actionRows.shift();
+    if (!next) return;
+    const [subjectId, verbId, question] = next;
     if (question) subjectActionQuestion(cards, 1, w(words, subjectId), w(words, verbId));
     else subjectAction(cards, 1, w(words, subjectId), w(words, verbId));
+  };
+  const actionInsertIndexes = new Set([1, 4, 7, 10, 13, 16, 20]);
+
+  for (const [index, [subjectId, role]] of topicRows.entries()) {
+    topic(cards, 1, w(words, subjectId), w(words, role));
+    if ([3, 7, 11, 15].includes(index)) addPersonPractice();
+    if (actionInsertIndexes.has(index)) addActionPractice();
+  }
+  for (const [index, [subjectId, role]] of topicRows.entries()) {
+    topicQuestion(cards, 1, w(words, subjectId), w(words, role));
+    if ([3, 7, 11, 15].includes(index)) addPersonPractice();
+    if (actionInsertIndexes.has(index)) addActionPractice();
   }
   return cards;
 }
@@ -522,7 +519,7 @@ function buildUnit2(spec, previousWords) {
   const words = byId([...previousWords, ...spec.newWords]);
   const cards = [];
 
-  const openingRows = [
+  const rows = [
     ["identity", "neko"],
     ["topic", "neko", "doubutsu"],
     ["identity", "inu"],
@@ -537,72 +534,86 @@ function buildUnit2(spec, previousWords) {
     ["topic", "isha", "sensei"],
     ["identity", "basho"],
     ["object", "sakura", "hon", "kaku"],
+    ["subjectAction", "sensei", "yomu"],
+    ["identityQuestion", "neko"],
+    ["subjectAction", "yuki", "kaku"],
+    ["identityQuestion", "inu"],
+    ["topicQuestion", "neko", "doubutsu"],
+    ["subjectAction", "tomodachi", "yomu"],
+    ["identityQuestion", "doubutsu"],
+    ["object", "sensei", "hon", "kaku"],
+    ["topicQuestion", "inu", "doubutsu"],
+    ["identityQuestion", "hon"],
+    ["subjectAction", "gakusei", "kaku"],
+    ["topic", "doubutsu", "neko"],
+    ["identityQuestion", "ie"],
+    ["object", "yuki", "hon", "yomu"],
+    ["topicQuestion", "ie", "basho"],
+    ["identityQuestion", "gakkou"],
+    ["subjectAction", "tanaka", "yomu"],
+    ["topic", "doubutsu", "inu"],
+    ["identityQuestion", "basho"],
+    ["object", "tomodachi", "hon", "kaku"],
+    ["topicQuestion", "gakkou", "basho"],
+    ["identityQuestion", "isha"],
+    ["subjectAction", "isha", "kaku"],
+    ["topic", "basho", "ie"],
+    ["object", "gakusei", "hon", "yomu"],
+    ["compound", "neko", "inu", "doubutsu", "animals"],
+    ["subjectAction", "watashi", "kaku"],
+    ["topic", "basho", "gakkou"],
+    ["object", "tanaka", "hon", "kaku"],
+    ["compound", "ie", "gakkou", "basho", "places"],
+    ["subjectAction", "sakura", "yomu"],
+    ["topicQuestion", "doubutsu", "neko"],
+    ["object", "isha", "hon", "yomu"],
+    ["compound", "inu", "neko", "doubutsu", "animals"],
+    ["subjectActionQuestion", "sensei", "yomu"],
+    ["topicQuestion", "doubutsu", "inu"],
+    ["object", "watashi", "hon", "kaku"],
+    ["compound", "gakkou", "ie", "basho", "places"],
+    ["subjectActionQuestion", "yuki", "kaku"],
+    ["topicQuestion", "basho", "ie"],
+    ["object", "sakura", "hon", "yomu"],
+    ["topic", "isha", "namae"],
+    ["subjectActionQuestion", "tomodachi", "yomu"],
+    ["topicQuestion", "basho", "gakkou"],
+    ["objectQuestion", "sensei", "hon", "kaku"],
+    ["topicQuestion", "isha", "namae"],
+    ["subjectActionQuestion", "gakusei", "kaku"],
+    ["topicQuestion", "neko", "inu"],
+    ["objectQuestion", "yuki", "hon", "yomu"],
+    ["topicQuestion", "inu", "neko"],
+    ["subjectActionQuestion", "tanaka", "yomu"],
+    ["topicQuestion", "ie", "gakkou"],
+    ["objectQuestion", "tomodachi", "hon", "kaku"],
+    ["topicQuestion", "gakkou", "ie"],
+    ["subjectActionQuestion", "isha", "kaku"],
+    ["topicQuestion", "doubutsu", "basho"],
+    ["objectQuestion", "gakusei", "hon", "yomu"],
+    ["topicQuestion", "isha", "tomodachi"],
+    ["subjectActionQuestion", "watashi", "yomu"],
+    ["topicQuestion", "neko", "namae"],
+    ["objectQuestion", "tanaka", "hon", "kaku"],
+    ["topicQuestion", "inu", "namae"],
+    ["subjectActionQuestion", "sakura", "kaku"],
+    ["topic", "isha", "gakusei"],
+    ["subjectActionQuestion", "watashi", "kaku"],
+    ["topicQuestion", "gakkou", "namae"],
   ];
-  for (const row of openingRows) {
-    if (row[0] === "identity") identity(cards, 2, w(words, row[1]));
-    else if (row[0] === "topic") topic(cards, 2, w(words, row[1]), w(words, row[2]));
-    else subjectObjectAction(cards, 2, w(words, row[1]), w(words, row[2]), w(words, row[3]));
-  }
 
-  const statements = [
-    ["neko", "doubutsu"],
-    ["inu", "doubutsu"],
-    ["ie", "basho"],
-    ["gakkou", "basho"],
-    ["basho", "gakkou"],
-    ["isha", "sensei"],
-    ["sensei", "gakusei"],
-    ["tomodachi", "gakusei"],
-  ];
-  for (const [a, b] of statements) topic(cards, 2, w(words, a), w(words, b));
-  for (const [a, b] of statements) topicQuestion(cards, 2, w(words, a), w(words, b));
-  compound(cards, 2, w(words, "neko"), w(words, "inu"), w(words, "doubutsu"), "animals");
-  compound(cards, 2, w(words, "ie"), w(words, "gakkou"), w(words, "basho"), "places");
-  topicQuestion(cards, 2, w(words, "neko"), w(words, "doubutsu"));
-  topicQuestion(cards, 2, w(words, "inu"), w(words, "doubutsu"));
-  topicQuestion(cards, 2, w(words, "ie"), w(words, "basho"));
-  topicQuestion(cards, 2, w(words, "gakkou"), w(words, "basho"));
-  compound(cards, 2, w(words, "neko"), w(words, "inu"), w(words, "doubutsu"), "animals");
-  compound(cards, 2, w(words, "ie"), w(words, "gakkou"), w(words, "basho"), "places");
-  topic(cards, 2, w(words, "doubutsu"), w(words, "neko"));
-  topic(cards, 2, w(words, "doubutsu"), w(words, "inu"));
-  topic(cards, 2, w(words, "basho"), w(words, "ie"));
-  topic(cards, 2, w(words, "basho"), w(words, "gakkou"));
-
-  const actionActors = ["sensei", "yuki", "tomodachi", "gakusei", "tanaka", "isha", "watashi", "sakura"];
-  const actionRows = [];
-  for (const question of [false, true]) {
-    for (const actor of actionActors) {
-      for (const verb of ["yomu", "kaku"]) {
-        if (!question && ((actor === "watashi" && verb === "yomu") || (actor === "sakura" && verb === "kaku"))) continue;
-        actionRows.push([actor, "hon", verb, question]);
-      }
-    }
-  }
-  actionRows.push(...[
-    ["watashi", "hon", "yomu", false],
-    ["sakura", "hon", "kaku", false],
-    ["sensei", "hon", "yomu", false],
-    ["yuki", "hon", "kaku", false],
-    ["tomodachi", "hon", "yomu", false],
-    ["gakusei", "hon", "kaku", false],
-    ["tanaka", "hon", "yomu", false],
-    ["isha", "hon", "kaku", false],
-    ["watashi", "hon", "kaku", false],
-    ["sakura", "hon", "yomu", false],
-    ["sensei", "hon", "kaku", false],
-    ["yuki", "hon", "yomu", false],
-    ["tomodachi", "hon", "kaku", false],
-    ["gakusei", "hon", "yomu", false],
-    ["tanaka", "hon", "kaku", false],
-    ["isha", "hon", "yomu", false],
-    ["watashi", "hon", "yomu", true],
-    ["sakura", "hon", "kaku", true],
-  ]);
-  for (const [actor, object, verb, question] of actionRows) {
-    if (cards.length >= 80) break;
-    if (question) subjectObjectActionQuestion(cards, 2, w(words, actor), w(words, object), w(words, verb));
-    else subjectObjectAction(cards, 2, w(words, actor), w(words, object), w(words, verb));
+  for (const row of rows) {
+    const [type, ...args] = row;
+    if (type === "identity") identity(cards, 2, w(words, args[0]));
+    else if (type === "identityQuestion") identityQuestion(cards, 2, w(words, args[0]));
+    else if (type === "topic") topic(cards, 2, w(words, args[0]), w(words, args[1]));
+    else if (type === "topicQuestion") topicQuestion(cards, 2, w(words, args[0]), w(words, args[1]));
+    else if (type === "compound") compound(cards, 2, w(words, args[0]), w(words, args[1]), w(words, args[2]), args[3]);
+    else if (type === "subjectAction") subjectAction(cards, 2, w(words, args[0]), w(words, args[1]));
+    else if (type === "subjectActionQuestion") subjectActionQuestion(cards, 2, w(words, args[0]), w(words, args[1]));
+    else if (type === "object") subjectObjectAction(cards, 2, w(words, args[0]), w(words, args[1]), w(words, args[2]));
+    else if (type === "objectQuestion") subjectObjectActionQuestion(cards, 2, w(words, args[0]), w(words, args[1]), w(words, args[2]));
+    else throw new Error(`Unknown Unit 2 row type ${type}`);
   }
   return cards;
 }
