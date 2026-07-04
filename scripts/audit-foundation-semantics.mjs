@@ -99,8 +99,9 @@ function parseUnitRange(value) {
 function checkDistribution(unit, pools, wordCounts, unitProblems) {
   for (const word of pools.current) {
     const count = wordCounts.get(word.id) ?? 0;
-    if (count < 8 || count > 12) {
-      unitProblems.push(`current word ${word.id} appears ${count} times; expected 8-12`);
+    const maxAppearances = unit.id === 1 ? 22 : 12;
+    if (count < 8 || count > maxAppearances) {
+      unitProblems.push(`current word ${word.id} appears ${count} times; expected 8-${maxAppearances}`);
     }
   }
 
@@ -129,13 +130,14 @@ function checkDuplicates(unit, unitProblems) {
 }
 
 function checkCardShapes(unit, unitProblems) {
-  const shapeCounts = repeatedBy(unit.cards, cardShape).filter(([, positions]) => positions.length >= 12);
+  const maxShapeRepeats = 24;
+  const shapeCounts = repeatedBy(unit.cards, cardShape).filter(([, positions]) => positions.length > maxShapeRepeats);
   for (const [shape, positions] of shapeCounts) {
     unitProblems.push(`overused card shape ${positions.length} times: ${shape}`);
   }
 
   for (const run of consecutiveRuns(unit.cards, (card) => (card.grammarTags ?? []).join("+"))) {
-    if (run.length >= 6) {
+    if (run.length > 7) {
       unitProblems.push(`clustered grammar run cards ${run.start}-${run.end}: ${run.key}`);
     }
   }

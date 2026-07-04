@@ -416,24 +416,35 @@
     {
       "id": "u002-c008",
       "line": [
+        "彼",
+        "の",
         "家",
-        "は",
-        "場所",
         "です"
       ],
       "tts": [
+        "かれ",
+        "の",
         "いえ",
-        "わ",
-        "ばしょ",
         "です"
       ],
       "explain": [
+        "he; him",
+        "possession or description marker",
         "house; home",
-        "topic marker",
-        "place",
         "polite identity marker"
       ],
       "tokens": [
+        {
+          "surface": "彼",
+          "reading": "かれ",
+          "explain": "he; him",
+          "wordId": "yuki"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
         {
           "surface": "家",
           "reading": "いえ",
@@ -441,25 +452,14 @@
           "wordId": "ie"
         },
         {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
         }
       ],
-      "english": "The house is a place",
+      "english": "It's his house",
       "grammarTags": [
-        "AはBです"
+        "AのB"
       ]
     },
     {
@@ -514,24 +514,35 @@
     {
       "id": "u002-c010",
       "line": [
+        "彼女",
+        "の",
         "学校",
-        "は",
-        "場所",
         "です"
       ],
       "tts": [
+        "かのじょ",
+        "の",
         "がっこう",
-        "わ",
-        "ばしょ",
         "です"
       ],
       "explain": [
+        "she; her",
+        "possession or description marker",
         "school",
-        "topic marker",
-        "place",
         "polite identity marker"
       ],
       "tokens": [
+        {
+          "surface": "彼女",
+          "reading": "かのじょ",
+          "explain": "she; her",
+          "wordId": "tanaka"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession or description marker"
+        },
         {
           "surface": "学校",
           "reading": "がっこう",
@@ -539,25 +550,14 @@
           "wordId": "gakkou"
         },
         {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
         }
       ],
-      "english": "The school is a place",
+      "english": "It's her school",
       "grammarTags": [
-        "AはBです"
+        "AのB"
       ]
     },
     {
@@ -565,20 +565,17 @@
       "line": [
         "医者",
         "は",
-        "人",
-        "です"
+        "食べます"
       ],
       "tts": [
         "いしゃ",
         "わ",
-        "ひと",
-        "です"
+        "たべます"
       ],
       "explain": [
         "doctor",
         "topic marker",
-        "person",
-        "polite identity marker"
+        "eat"
       ],
       "tokens": [
         {
@@ -593,20 +590,15 @@
           "explain": "topic marker"
         },
         {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "namae"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
         }
       ],
-      "english": "The doctor is a person",
+      "english": "The doctor eats",
       "grammarTags": [
-        "AはBです"
+        "early Vます action"
       ]
     },
     {
@@ -1167,23 +1159,17 @@
       "line": [
         "先生",
         "は",
-        "本",
-        "を",
-        "書きます"
+        "飲みます"
       ],
       "tts": [
         "せんせい",
         "わ",
-        "ほん",
-        "を",
-        "かきます"
+        "のみます"
       ],
       "explain": [
         "teacher",
         "topic marker",
-        "book",
-        "direct object marker",
-        "write"
+        "drink"
       ],
       "tokens": [
         {
@@ -1198,27 +1184,15 @@
           "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku"
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
         }
       ],
-      "english": "The teacher writes a book",
+      "english": "The teacher drinks",
       "grammarTags": [
-        "early Vます action",
-        "NをVます"
+        "early Vます action"
       ]
     },
     {
@@ -1472,23 +1446,17 @@
       "line": [
         "彼",
         "は",
-        "本",
-        "を",
-        "読みます"
+        "食べます"
       ],
       "tts": [
         "かれ",
         "わ",
-        "ほん",
-        "を",
-        "よみます"
+        "たべます"
       ],
       "explain": [
         "he; him",
         "topic marker",
-        "book",
-        "direct object marker",
-        "read"
+        "eat"
       ],
       "tokens": [
         {
@@ -1503,27 +1471,15 @@
           "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu"
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
         }
       ],
-      "english": "He reads a book",
+      "english": "He eats",
       "grammarTags": [
-        "early Vます action",
-        "NをVます"
+        "early Vます action"
       ]
     },
     {
@@ -1802,23 +1758,17 @@
       "line": [
         "友達",
         "は",
-        "本",
-        "を",
-        "書きます"
+        "飲みます"
       ],
       "tts": [
         "ともだち",
         "わ",
-        "ほん",
-        "を",
-        "かきます"
+        "のみます"
       ],
       "explain": [
         "friend",
         "topic marker",
-        "book",
-        "direct object marker",
-        "write"
+        "drink"
       ],
       "tokens": [
         {
@@ -1833,27 +1783,15 @@
           "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku"
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
         }
       ],
-      "english": "The friend writes a book",
+      "english": "The friend drinks",
       "grammarTags": [
-        "early Vます action",
-        "NをVます"
+        "early Vます action"
       ]
     },
     {
@@ -2298,23 +2236,17 @@
       "line": [
         "彼女",
         "は",
-        "本",
-        "を",
-        "書きます"
+        "食べます"
       ],
       "tts": [
         "かのじょ",
         "わ",
-        "ほん",
-        "を",
-        "かきます"
+        "たべます"
       ],
       "explain": [
         "she; her",
         "topic marker",
-        "book",
-        "direct object marker",
-        "write"
+        "eat"
       ],
       "tokens": [
         {
@@ -2329,27 +2261,15 @@
           "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku"
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
         }
       ],
-      "english": "She writes a book",
+      "english": "She eats",
       "grammarTags": [
-        "early Vます action",
-        "NをVます"
+        "early Vます action"
       ]
     },
     {
@@ -2530,23 +2450,17 @@
       "line": [
         "医者",
         "は",
-        "本",
-        "を",
-        "読みます"
+        "飲みます"
       ],
       "tts": [
         "いしゃ",
         "わ",
-        "ほん",
-        "を",
-        "よみます"
+        "のみます"
       ],
       "explain": [
         "doctor",
         "topic marker",
-        "book",
-        "direct object marker",
-        "read"
+        "drink"
       ],
       "tokens": [
         {
@@ -2561,27 +2475,15 @@
           "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu"
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
         }
       ],
-      "english": "The doctor reads a book",
+      "english": "The doctor drinks",
       "grammarTags": [
-        "early Vます action",
-        "NをVます"
+        "early Vます action"
       ]
     },
     {
@@ -2779,23 +2681,17 @@
       "line": [
         "私",
         "は",
-        "本",
-        "を",
-        "書きます"
+        "食べます"
       ],
       "tts": [
         "わたし",
         "わ",
-        "ほん",
-        "を",
-        "かきます"
+        "たべます"
       ],
       "explain": [
         "I; me",
         "topic marker",
-        "book",
-        "direct object marker",
-        "write"
+        "eat"
       ],
       "tokens": [
         {
@@ -2810,27 +2706,15 @@
           "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku"
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "eat",
+          "wordId": "taberu"
         }
       ],
-      "english": "I write a book",
+      "english": "I eat",
       "grammarTags": [
-        "early Vます action",
-        "NをVます"
+        "early Vます action"
       ]
     },
     {
@@ -3028,23 +2912,17 @@
       "line": [
         "あなた",
         "は",
-        "本",
-        "を",
-        "読みます"
+        "飲みます"
       ],
       "tts": [
         "あなた",
         "わ",
-        "ほん",
-        "を",
-        "よみます"
+        "のみます"
       ],
       "explain": [
         "you",
         "topic marker",
-        "book",
-        "direct object marker",
-        "read"
+        "drink"
       ],
       "tokens": [
         {
@@ -3059,27 +2937,15 @@
           "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu"
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
         }
       ],
-      "english": "You read a book",
+      "english": "You drink",
       "grammarTags": [
-        "early Vます action",
-        "NをVます"
+        "early Vます action"
       ]
     },
     {
@@ -3260,27 +3126,21 @@
       "line": [
         "先生",
         "は",
-        "本",
-        "を",
-        "書きます",
+        "飲みます",
         "か",
         "？"
       ],
       "tts": [
         "せんせい",
         "わ",
-        "ほん",
-        "を",
-        "かきます",
+        "のみます",
         "か",
         "？"
       ],
       "explain": [
         "teacher",
         "topic marker",
-        "book",
-        "direct object marker",
-        "write",
+        "drink",
         "question marker",
         "question mark"
       ],
@@ -3297,21 +3157,10 @@
           "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku"
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "drink",
+          "wordId": "nomu"
         },
         {
           "surface": "か",
@@ -3324,10 +3173,9 @@
           "explain": "question mark"
         }
       ],
-      "english": "Does the teacher write a book?",
+      "english": "Does the teacher drink?",
       "grammarTags": [
         "early Vます action",
-        "NをVます",
         "か"
       ]
     },

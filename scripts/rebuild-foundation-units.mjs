@@ -459,98 +459,41 @@ function addReview(cards, unitId, words, reviewWords, repeatsOverride) {
 function buildUnit1(spec) {
   const words = byId(spec.newWords);
   const cards = [];
-  identity(cards, 1, w(words, "watashi"));
-  topic(cards, 1, w(words, "watashi"), w(words, "gakusei"));
-  topic(cards, 1, w(words, "watashi"), w(words, "sensei"));
-  topic(cards, 1, w(words, "watashi"), w(words, "namae"));
-  identity(cards, 1, w(words, "sakura"));
-  identity(cards, 1, w(words, "yuki"));
-  identity(cards, 1, w(words, "tanaka"));
-  topic(cards, 1, w(words, "watashi"), w(words, "tomodachi"));
-  subjectAction(cards, 1, w(words, "watashi"), w(words, "taberu"));
-  subjectAction(cards, 1, w(words, "sakura"), w(words, "nomu"));
-  const personPractice = [
-    () => topic(cards, 1, w(words, "sakura"), w(words, "namae")),
-    () => topicQuestion(cards, 1, w(words, "sakura"), w(words, "namae")),
-    () => topic(cards, 1, w(words, "namae"), w(words, "gakusei")),
-    () => topic(cards, 1, w(words, "namae"), w(words, "sensei")),
-    () => topic(cards, 1, w(words, "namae"), w(words, "tomodachi")),
-    () => topicQuestion(cards, 1, w(words, "namae"), w(words, "gakusei")),
-    () => topicQuestion(cards, 1, w(words, "namae"), w(words, "sensei")),
-    () => topicQuestion(cards, 1, w(words, "namae"), w(words, "tomodachi")),
-  ];
-  const addPersonPractice = () => {
-    const next = personPractice.shift();
-    if (next) next();
-  };
 
-  const topicRows = [
-    ["yuki", "sensei"],
-    ["sakura", "tomodachi"],
-    ["tanaka", "gakusei"],
-    ["sensei", "tomodachi"],
-    ["gakusei", "sensei"],
-    ["tomodachi", "gakusei"],
-    ["tanaka", "tomodachi"],
-    ["sakura", "gakusei"],
-    ["yuki", "tomodachi"],
-    ["sensei", "gakusei"],
-    ["tomodachi", "sensei"],
-    ["gakusei", "tomodachi"],
-    ["tanaka", "sensei"],
-    ["sakura", "sensei"],
-    ["yuki", "gakusei"],
-    ["yuki", "namae"],
-    ["tanaka", "namae"],
-    ["gakusei", "namae"],
-    ["sensei", "namae"],
-    ["tomodachi", "namae"],
-  ];
-  const actionRows = [
-    ["sensei", "nomu", false],
-    ["yuki", "taberu", true],
-    ["tomodachi", "nomu", false],
-    ["sakura", "taberu", true],
-    ["gakusei", "nomu", true],
-    ["tanaka", "taberu", false],
-    ["watashi", "nomu", true],
-    ["sensei", "taberu", false],
-    ["sakura", "nomu", true],
-    ["tomodachi", "taberu", false],
-    ["yuki", "nomu", true],
-    ["gakusei", "taberu", false],
-    ["tanaka", "nomu", true],
-    ["watashi", "taberu", true],
-    ["yuki", "taberu", false],
-    ["sakura", "taberu", false],
-    ["sensei", "nomu", true],
-    ["tomodachi", "taberu", true],
-    ["gakusei", "taberu", true],
-    ["tanaka", "taberu", true],
-  ];
-  const addActionPractice = () => {
-    const next = actionRows.shift();
-    if (!next) return;
-    const [subjectId, verbId, question] = next;
-    if (question) subjectActionQuestion(cards, 1, w(words, subjectId), w(words, verbId));
-    else subjectAction(cards, 1, w(words, subjectId), w(words, verbId));
-  };
-  const actionInsertIndexes = new Set([1, 3, 5, 7, 9, 11, 13, 15, 17, 19]);
+  for (const id of ["watashi", "yuki", "sakura", "tanaka"]) identity(cards, 1, w(words, id));
+  for (const id of ["tanaka", "sakura", "yuki"]) identityQuestion(cards, 1, w(words, id));
 
-  for (const [index, [subjectId, role]] of topicRows.entries()) {
-    topic(cards, 1, w(words, subjectId), w(words, role));
-    if ([3, 7, 11, 15].includes(index)) addPersonPractice();
-    if (actionInsertIndexes.has(index)) addActionPractice();
-    if (index === 8) subjectAction(cards, 1, w(words, "watashi"), w(words, "nomu"));
+  const subjects = ["watashi", "yuki", "sakura", "tanaka", "namae", "sensei", "gakusei", "tomodachi"];
+  const complements = ["gakusei", "tomodachi", "sensei"];
+  const topicPairs = [];
+  for (const subjectId of subjects) {
+    for (const complementId of complements) {
+      if (subjectId !== complementId) topicPairs.push([subjectId, complementId]);
+    }
   }
-  for (const [index, [subjectId, role]] of topicRows.entries()) {
-    topicQuestion(cards, 1, w(words, subjectId), w(words, role));
-    if ([3, 7, 11, 15].includes(index)) addPersonPractice();
-    if (actionInsertIndexes.has(index)) addActionPractice();
-    if (index === 8) topicQuestion(cards, 1, w(words, "watashi"), w(words, "namae"));
+
+  const topicRows = topicPairs.slice(0, 21);
+  const questionRows = [...topicPairs.slice(7), ...topicPairs.slice(0, 7)].slice(0, 20);
+  const actionRows = [];
+  const actionSubjects = ["watashi", "tanaka", "sensei", "sakura", "namae", "gakusei", "yuki", "tomodachi"];
+  const actionCombos = [
+    ["subjectAction", "taberu"],
+    ["subjectActionQuestion", "nomu"],
+    ["subjectAction", "nomu"],
+    ["subjectActionQuestion", "taberu"],
+  ];
+  for (let round = 0; round < actionCombos.length; round += 1) {
+    for (const [subjectIndex, subjectId] of actionSubjects.entries()) {
+      const [type, verbId] = actionCombos[(round + subjectIndex) % actionCombos.length];
+      actionRows.push([type, subjectId, verbId]);
+    }
   }
-  subjectActionQuestion(cards, 1, w(words, "tomodachi"), w(words, "nomu"));
-  subjectAction(cards, 1, w(words, "gakusei"), w(words, "nomu"));
+
+  for (let index = 0; index < 32; index += 1) {
+    if (index < topicRows.length) addFoundationRow(cards, 1, words, ["topic", ...topicRows[index]]);
+    if (index < actionRows.length) addFoundationRow(cards, 1, words, actionRows[index]);
+    if (index < questionRows.length) addFoundationRow(cards, 1, words, ["topicQuestion", ...questionRows[index]]);
+  }
   return cards;
 }
 
@@ -567,10 +510,10 @@ function buildUnit2(spec, previousWords) {
     ["possession", "watashi", "hon"],
     ["object", "watashi", "hon", "yomu"],
     ["possession", "watashi", "ie"],
-    ["topic", "ie", "basho"],
+    ["possession", "yuki", "ie"],
     ["possession", "sensei", "gakkou"],
-    ["topic", "gakkou", "basho"],
-    ["topic", "isha", "namae"],
+    ["possession", "tanaka", "gakkou"],
+    ["subjectAction", "isha", "taberu"],
     ["topic", "isha", "sensei"],
     ["topicQuestion", "ie", "basho"],
     ["object", "sakura", "hon", "kaku"],
@@ -581,19 +524,19 @@ function buildUnit2(spec, previousWords) {
     ["subjectActionQuestion", "neko", "taberu"],
     ["subjectAction", "tomodachi", "yomu"],
     ["topicQuestion", "doubutsu", "namae"],
-    ["object", "sensei", "hon", "kaku"],
+    ["subjectAction", "sensei", "nomu"],
     ["subjectActionQuestion", "inu", "nomu"],
     ["possession", "sakura", "hon"],
     ["subjectAction", "gakusei", "kaku"],
     ["topic", "doubutsu", "neko"],
     ["possession", "sakura", "ie"],
-    ["object", "yuki", "hon", "yomu"],
+    ["subjectAction", "yuki", "taberu"],
     ["topicQuestion", "ie", "gakkou"],
     ["possession", "gakusei", "gakkou"],
     ["subjectAction", "tanaka", "yomu"],
     ["topic", "doubutsu", "inu"],
     ["topicQuestion", "basho", "gakkou"],
-    ["object", "tomodachi", "hon", "kaku"],
+    ["subjectAction", "tomodachi", "nomu"],
     ["topicQuestion", "gakkou", "basho"],
     ["topicQuestion", "isha", "sensei"],
     ["subjectAction", "isha", "kaku"],
@@ -602,23 +545,23 @@ function buildUnit2(spec, previousWords) {
     ["compound", "neko", "inu", "doubutsu", "animals"],
     ["subjectAction", "watashi", "kaku"],
     ["topic", "basho", "gakkou"],
-    ["object", "tanaka", "hon", "kaku"],
+    ["subjectAction", "tanaka", "taberu"],
     ["compound", "ie", "gakkou", "basho", "places"],
     ["subjectAction", "sakura", "yomu"],
     ["topicQuestion", "doubutsu", "neko"],
-    ["object", "isha", "hon", "yomu"],
+    ["subjectAction", "isha", "nomu"],
     ["compound", "inu", "neko", "doubutsu", "animals"],
     ["subjectActionQuestion", "sensei", "yomu"],
     ["topicQuestion", "doubutsu", "inu"],
-    ["object", "watashi", "hon", "kaku"],
+    ["subjectAction", "watashi", "taberu"],
     ["compound", "gakkou", "ie", "basho", "places"],
     ["subjectActionQuestion", "yuki", "kaku"],
     ["topicQuestion", "basho", "ie"],
-    ["object", "sakura", "hon", "yomu"],
+    ["subjectAction", "sakura", "nomu"],
     ["topic", "isha", "tomodachi"],
     ["subjectActionQuestion", "tomodachi", "yomu"],
     ["topicQuestion", "basho", "namae"],
-    ["objectQuestion", "sensei", "hon", "kaku"],
+    ["subjectActionQuestion", "sensei", "nomu"],
     ["topicQuestion", "isha", "namae"],
     ["subjectActionQuestion", "gakusei", "kaku"],
     ["topicQuestion", "neko", "inu"],
@@ -666,15 +609,15 @@ function buildUnit3(spec, previousWords, reviewWords) {
 
   const rows = [
     ["possession", "watashi", "kazoku"],
-    ["topic", "haha", "namae"],
-    ["topic", "chichi", "namae"],
+    ["topicQuestion", "namae", "haha"],
+    ["topicQuestion", "namae", "chichi"],
     ["possession", "watashi", "shashin"],
     ["possession", "sakura", "kaban"],
-    ["topic", "heya", "basho"],
+    ["topicQuestion", "basho", "heya"],
     ["object", "shashin", "miru"],
     ["subjectAction", "sensei", "kiku"],
-    ["topic", "ane", "namae"],
-    ["topic", "otouto", "namae"],
+    ["topicQuestion", "namae", "ane"],
+    ["topicQuestion", "namae", "otouto"],
     ["also", "haha", "sensei"],
     ["subjectAction", "chichi", "taberu"],
     ["possession", "yuki", "shashin"],
@@ -775,20 +718,20 @@ function buildUnit4(spec, previousWords, reviewWords) {
 
   const introRows = [
     ["negative", "mise", "heya"],
+    ["subjectPlace", "yuki", "mise", "iku", "ni"],
     ["negative", "byouin", "heya"],
+    ["subjectPlace", "tanaka", "byouin", "kuru", "ni"],
     ["negative", "eki", "heya"],
+    ["subjectPlace", "watashi", "mise", "iku", "ni"],
     ["negative", "kaisha", "heya"],
+    ["subjectPlace", "sakura", "byouin", "kuru", "ni"],
     ["negative", "kodomo", "sensei"],
     ["negative", "otona", "gakusei"],
     ["negative", "isu", "kaban"],
     ["negative", "tsukue", "kaban"],
-    ["subjectPlace", "watashi", "gakkou", "iku", "ni"],
-    ["subjectPlace", "sakura", "ie", "kuru", "ni"],
   ];
   const currentRows = [
-    ["subjectPlace", "watashi", "mise", "iku", "ni"],
     ["negative", "mise", "shashin"],
-    ["subjectPlace", "sakura", "byouin", "kuru", "ni"],
     ["negative", "byouin", "kaban"],
     ["subjectPlace", "yuki", "eki", "iku", "ni"],
     ["negative", "eki", "shashin"],
@@ -814,7 +757,7 @@ function buildUnit4(spec, previousWords, reviewWords) {
     ["subjectPlace", "sakura", "mise", "kuru", "ni"],
     ["negative", "kodomo", "tomodachi"],
     ["negative", "otona", "sensei"],
-    ["negative", "isu", "heya"],
+    ["negative", "tsukue", "neko"],
     ["negative", "tsukue", "heya"],
     ["subjectPlace", "yuki", "kaisha", "iku", "ni"],
     ["subjectPlace", "tanaka", "eki", "kuru", "ni"],
@@ -828,7 +771,7 @@ function buildUnit4(spec, previousWords, reviewWords) {
     ["topicQuestion", "inu", "doubutsu"],
     ["subjectObject", "watashi", "hon", "yomu"],
     ["subjectObject", "sakura", "hon", "kaku"],
-    ["topic", "ie", "basho"],
+    ["topicQuestion", "basho", "ie"],
     ["topicQuestion", "gakkou", "basho"],
     ["topic", "isha", "sensei"],
     ["negative", "neko", "isu"],
@@ -842,8 +785,8 @@ function buildUnit4(spec, previousWords, reviewWords) {
     ["topic", "inu", "doubutsu"],
     ["subjectObjectQuestion", "sensei", "hon", "yomu"],
     ["subjectObjectQuestion", "gakusei", "hon", "kaku"],
-    ["negative", "basho", "mise"],
-    ["negative", "basho", "eki"],
+    ["topicQuestion", "basho", "gakkou"],
+    ["topic", "basho", "ie"],
     ["subjectPlace", "isha", "byouin", "iku", "ni"],
     ["subjectPlace", "sensei", "gakkou", "kuru", "ni"],
     ["topicQuestion", "isha", "sensei"],
@@ -867,7 +810,7 @@ function buildUnit4(spec, previousWords, reviewWords) {
     ["negative", "otona", "inu"],
     ["subjectPlace", "sensei", "kaisha", "iku", "ni"],
     ["subjectPlace", "gakusei", "mise", "kuru", "ni"],
-    ["negative", "isu", "basho"],
+    ["negative", "isu", "heya"],
     ["negative", "tsukue", "shashin"],
     ["negative", "otona", "neko"],
     ["negative", "kaisha", "ie"],
@@ -904,7 +847,9 @@ function particleById(id) {
 
 function addFoundationRow(cards, unitId, words, row) {
   const [type, ...args] = row;
-  if (type === "topic") topic(cards, unitId, w(words, args[0]), w(words, args[1]));
+  if (type === "identity") identity(cards, unitId, w(words, args[0]));
+  else if (type === "identityQuestion") identityQuestion(cards, unitId, w(words, args[0]));
+  else if (type === "topic") topic(cards, unitId, w(words, args[0]), w(words, args[1]));
   else if (type === "topicQuestion") topicQuestion(cards, unitId, w(words, args[0]), w(words, args[1]));
   else if (type === "negative") negativeTopic(cards, unitId, w(words, args[0]), w(words, args[1]));
   else if (type === "past") pastTopic(cards, unitId, w(words, args[0]), w(words, args[1]));
@@ -1021,10 +966,38 @@ function buildUnit5(spec, previousWords, reviewWords) {
     ["subjectPlace", "gakusei", "ie", "iku", "ni"],
     ["subjectPlace", "tomodachi", "gakkou", "kuru", "ni"],
   ];
+  const reviewTopUpRows = [
+    ["possession", "watashi", "kazoku"],
+    ["possession", "sakura", "heya"],
+    ["possession", "yuki", "kaban"],
+    ["possession", "tanaka", "shashin"],
+    ["possession", "namae", "kazoku"],
+    ["possession", "tomodachi", "heya"],
+    ["subjectAction", "haha", "taberu"],
+    ["subjectAction", "chichi", "nomu"],
+    ["subjectAction", "ane", "miru"],
+    ["subjectAction", "otouto", "kiku"],
+    ["subjectActionQuestion", "namae", "taberu"],
+    ["subjectActionQuestion", "haha", "nomu"],
+    ["subjectActionQuestion", "chichi", "miru"],
+    ["subjectActionQuestion", "ane", "kiku"],
+    ["subjectAction", "otouto", "taberu"],
+    ["subjectAction", "namae", "nomu"],
+    ["object", "kaban", "miru"],
+    ["subjectActionQuestion", "sakura", "kiku"],
+    ["possession", "watashi", "heya"],
+    ["possession", "namae", "shashin"],
+    ["possession", "kazoku", "kaban"],
+    ["possession", "kazoku", "heya"],
+    ["subjectActionQuestion", "haha", "taberu"],
+    ["subjectActionQuestion", "chichi", "nomu"],
+    ["subjectActionQuestion", "ane", "taberu"],
+    ["subjectActionQuestion", "otouto", "nomu"],
+  ];
 
   const closingCurrentRows = currentRows.slice(-8);
   const openingCurrentRows = currentRows.slice(0, -8);
-  for (const row of [...interleaveRows(openingCurrentRows, reviewRows, 2), ...closingCurrentRows]) addFoundationRow(cards, 5, words, row);
+  for (const row of [...interleaveRows(openingCurrentRows, reviewRows, 2), ...reviewTopUpRows, ...closingCurrentRows]) addFoundationRow(cards, 5, words, row);
   return cards;
 }
 
@@ -1045,7 +1018,7 @@ function buildUnit6(spec, previousWords, reviewWords) {
   const cards = [];
 
   const currentRows = [
-    ["demonstrative", "kore", "hon"],
+    ["demonstrative", "kore", "heya"],
     ["demonstrative", "sore", "byouin"],
     ["demonstrative", "are", "kaban"],
     ["determiner", "kono", "hon"],
@@ -1053,7 +1026,7 @@ function buildUnit6(spec, previousWords, reviewWords) {
     ["determiner", "ano", "kaban"],
     ["demonstrative", "kore", "mizu"],
     ["demonstrative", "sore", "ocha"],
-    ["subjectObject", "watashi", "hon", "kau"],
+    ["subjectObject", "watashi", "mizu", "kau"],
     ["subjectObject", "sakura", "kaban", "tsukau"],
     ["subjectObject", "yuki", "ocha", "kau"],
     ["demonstrative", "sore", "mizu"],
@@ -1062,7 +1035,7 @@ function buildUnit6(spec, previousWords, reviewWords) {
     ["demonstrative", "are", "ocha"],
     ["subjectObjectQuestion", "sensei", "shashin", "kau"],
     ["determiner", "sono", "kaban"],
-    ["determiner", "ano", "hon"],
+    ["determiner", "ano", "gakkou"],
     ["subjectObjectQuestion", "gakusei", "mizu", "tsukau"],
     ["demonstrative", "kore", "kaban"],
     ["demonstrative", "sore", "shashin"],
@@ -1070,7 +1043,7 @@ function buildUnit6(spec, previousWords, reviewWords) {
     ["determiner", "kono", "ocha"],
     ["demonstrative", "are", "mizu"],
     ["subjectObject", "isha", "hon", "tsukau"],
-    ["determiner", "sono", "hon"],
+    ["determiner", "sono", "ocha"],
     ["determiner", "ano", "ocha"],
     ["subjectObjectQuestion", "watashi", "mizu", "kau"],
     ["demonstrative", "kore", "ocha"],
@@ -1087,7 +1060,7 @@ function buildUnit6(spec, previousWords, reviewWords) {
     ["subjectObjectQuestion", "sensei", "ocha", "kau"],
     ["determiner", "kono", "shashin"],
     ["demonstrative", "are", "isu"],
-    ["subjectObjectQuestion", "gakusei", "kaban", "tsukau"],
+    ["subjectObjectQuestion", "isha", "kaban", "tsukau"],
     ["determiner", "sono", "byouin"],
     ["determiner", "ano", "isu"],
     ["subjectObject", "tomodachi", "ocha", "kau"],
@@ -1109,7 +1082,7 @@ function buildUnit6(spec, previousWords, reviewWords) {
     ["determiner", "sono", "eki"],
     ["determiner", "ano", "byouin"],
     ["subjectObjectQuestion", "sensei", "mizu", "kau"],
-    ["subjectObjectQuestion", "gakusei", "hon", "tsukau"],
+    ["subjectObjectQuestion", "gakusei", "kaban", "tsukau"],
     ["demonstrative", "kore", "tsukue"],
     ["demonstrative", "sore", "isu"],
     ["demonstrative", "are", "tsukue"],
@@ -1124,7 +1097,7 @@ function buildUnit6(spec, previousWords, reviewWords) {
     ["negative", "eki", "kaisha"],
     ["subjectPlace", "watashi", "mise", "iku", "ni"],
     ["subjectPlace", "sakura", "byouin", "kuru", "ni"],
-    ["topic", "ie", "basho"],
+    ["topic", "basho", "ie"],
     ["topicQuestion", "gakkou", "basho"],
     ["negative", "kodomo", "otona"],
     ["negative", "isu", "tsukue"],
@@ -1135,8 +1108,43 @@ function buildUnit6(spec, previousWords, reviewWords) {
     ["subjectObject", "sensei", "hon", "kaku"],
     ["negative", "tsukue", "kaban"],
   ];
+  const reviewTopUpRows = [
+    ["negative", "mise", "gakkou"],
+    ["negative", "eki", "ie"],
+    ["negative", "kaisha", "gakkou"],
+    ["negative", "kodomo", "isha"],
+    ["negative", "otona", "sensei"],
+    ["subjectPlace", "kodomo", "mise", "iku", "ni"],
+    ["subjectPlace", "otona", "eki", "kuru", "ni"],
+    ["subjectPlace", "isha", "kaisha", "iku", "ni"],
+    ["topicQuestion", "neko", "doubutsu"],
+    ["topic", "inu", "doubutsu"],
+    ["topicQuestion", "basho", "ie"],
+    ["topic", "basho", "gakkou"],
+    ["subjectAction", "isha", "yomu"],
+    ["subjectActionQuestion", "sakura", "kaku"],
+    ["subjectAction", "yuki", "yomu"],
+    ["subjectActionQuestion", "watashi", "kaku"],
+    ["negative", "kodomo", "kaisha"],
+    ["negative", "otona", "kaisha"],
+    ["subjectPlace", "kodomo", "eki", "iku", "ni"],
+    ["subjectPlace", "otona", "mise", "kuru", "ni"],
+    ["subjectPlace", "kodomo", "kaisha", "kuru", "ni"],
+    ["topic", "doubutsu", "neko"],
+    ["topicQuestion", "doubutsu", "inu"],
+    ["topic", "doubutsu", "inu"],
+    ["subjectActionQuestion", "isha", "yomu"],
+    ["subjectAction", "tanaka", "kaku"],
+    ["topicQuestion", "basho", "gakkou"],
+    ["topicQuestion", "doubutsu", "neko"],
+    ["negative", "neko", "inu"],
+    ["subjectActionQuestion", "yuki", "yomu"],
+    ["subjectActionQuestion", "tanaka", "kaku"],
+  ];
 
-  for (const row of interleaveRows(currentRows, reviewRows, 4)) addFoundationRow(cards, 6, words, row);
+  const closingCurrentRows = currentRows.slice(-10);
+  const openingCurrentRows = currentRows.slice(0, -10);
+  for (const row of [...interleaveRows(openingCurrentRows, reviewRows, 4), ...reviewTopUpRows, ...closingCurrentRows]) addFoundationRow(cards, 6, words, row);
   return cards;
 }
 
@@ -1259,8 +1267,50 @@ function buildUnit7(spec, previousWords, reviewWords) {
     ["negative", "kodomo", "otona"],
     ["subjectPlace", "gakusei", "mise", "iku", "ni"],
   ];
+  const reviewTopUpRows = [
+    ["pastQuestion", "kinou", "yasumi"],
+    ["past", "sengetsu", "ryokou"],
+    ["past", "kyonen", "shigoto"],
+    ["past", "yasumi", "kinou"],
+    ["past", "ryokou", "sengetsu"],
+    ["past", "shigoto", "kyonen"],
+    ["past", "kinou", "shigoto"],
+    ["pastQuestion", "sengetsu", "yasumi"],
+    ["pastQuestion", "kyonen", "ryokou"],
+    ["pastQuestion", "kinou", "ryokou"],
+    ["pastQuestion", "sengetsu", "shigoto"],
+    ["pastQuestion", "kyonen", "yasumi"],
+    ["past", "ryokou", "kinou"],
+    ["subjectTime", "haha", "asa", "hataraku"],
+    ["subjectTime", "chichi", "yoru", "benkyou_suru"],
+    ["subjectTime", "ane", "asa", "benkyou_suru"],
+    ["subjectTime", "otouto", "yoru", "hataraku"],
+    ["possession", "kazoku", "shashin"],
+    ["subjectTime", "kazoku", "asa", "hataraku"],
+    ["subjectTime", "tomodachi", "yoru", "benkyou_suru"],
+    ["subjectTime", "watashi", "asa", "benkyou_suru"],
+    ["subjectTime", "sakura", "yoru", "hataraku"],
+    ["subjectAction", "kazoku", "kiku"],
+    ["possession", "haha", "kaban"],
+    ["subjectAction", "haha", "miru"],
+    ["possession", "chichi", "heya"],
+    ["subjectAction", "chichi", "kiku"],
+    ["possession", "ane", "shashin"],
+    ["subjectAction", "ane", "miru"],
+    ["possession", "otouto", "kaban"],
+    ["subjectAction", "otouto", "kiku"],
+    ["possession", "ane", "heya"],
+    ["subjectActionQuestion", "ane", "kiku"],
+    ["possession", "otouto", "heya"],
+    ["object", "shashin", "miru"],
+    ["possession", "kazoku", "heya"],
+    ["object", "kaban", "miru"],
+    ["subjectActionQuestion", "otouto", "miru"],
+  ];
 
-  for (const row of interleaveRows(currentRows, reviewRows, 2)) addFoundationRow(cards, 7, words, row);
+  const closingCurrentRows = currentRows.slice(-10);
+  const openingCurrentRows = currentRows.slice(0, -10);
+  for (const row of [...interleaveRows(openingCurrentRows, reviewRows, 2), ...reviewTopUpRows, ...closingCurrentRows]) addFoundationRow(cards, 7, words, row);
   return cards;
 }
 

@@ -128,24 +128,41 @@
     {
       "id": "u003-c002",
       "line": [
-        "母",
-        "は",
         "人",
-        "です"
+        "は",
+        "母",
+        "です",
+        "か",
+        "？"
       ],
       "tts": [
-        "はは",
-        "わ",
         "ひと",
-        "です"
+        "わ",
+        "はは",
+        "です",
+        "か",
+        "？"
       ],
       "explain": [
-        "mother",
-        "topic marker",
         "person",
-        "polite identity marker"
+        "topic marker",
+        "mother",
+        "polite identity marker",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "namae"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
         {
           "surface": "母",
           "reading": "はは",
@@ -153,10 +170,54 @@
           "wordId": "haha"
         },
         {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
         },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the person my mother?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u003-c003",
+      "line": [
+        "人",
+        "は",
+        "父",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "ひと",
+        "わ",
+        "ちち",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "person",
+        "topic marker",
+        "father",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
         {
           "surface": "人",
           "reading": "ひと",
@@ -164,37 +225,10 @@
           "wordId": "namae"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "My mother is a person",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u003-c003",
-      "line": [
-        "父",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "ちち",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "father",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
         {
           "surface": "父",
           "reading": "ちち",
@@ -202,25 +236,25 @@
           "wordId": "chichi"
         },
         {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "namae"
-        },
-        {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
         }
       ],
-      "english": "My father is a person",
+      "english": "Is the person my father?",
       "grammarTags": [
-        "AはBです"
+        "AはBです",
+        "か"
       ]
     },
     {
@@ -324,35 +358,30 @@
     {
       "id": "u003-c006",
       "line": [
-        "部屋",
-        "は",
         "場所",
-        "です"
+        "は",
+        "部屋",
+        "です",
+        "か",
+        "？"
       ],
       "tts": [
-        "へや",
-        "わ",
         "ばしょ",
-        "です"
+        "わ",
+        "へや",
+        "です",
+        "か",
+        "？"
       ],
       "explain": [
-        "room",
-        "topic marker",
         "place",
-        "polite identity marker"
+        "topic marker",
+        "room",
+        "polite identity marker",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
-        {
-          "surface": "部屋",
-          "reading": "へや",
-          "explain": "room",
-          "wordId": "heya"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
         {
           "surface": "場所",
           "reading": "ばしょ",
@@ -360,14 +389,36 @@
           "wordId": "basho"
         },
         {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
         }
       ],
-      "english": "The room is a place",
+      "english": "Is the place a room?",
       "grammarTags": [
-        "AはBです"
+        "AはBです",
+        "か"
       ]
     },
     {
@@ -456,24 +507,41 @@
     {
       "id": "u003-c009",
       "line": [
-        "姉",
-        "は",
         "人",
-        "です"
+        "は",
+        "姉",
+        "です",
+        "か",
+        "？"
       ],
       "tts": [
-        "あね",
-        "わ",
         "ひと",
-        "です"
+        "わ",
+        "あね",
+        "です",
+        "か",
+        "？"
       ],
       "explain": [
-        "older sister",
-        "topic marker",
         "person",
-        "polite identity marker"
+        "topic marker",
+        "older sister",
+        "polite identity marker",
+        "question marker",
+        "question mark"
       ],
       "tokens": [
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "namae"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
         {
           "surface": "姉",
           "reading": "あね",
@@ -481,10 +549,54 @@
           "wordId": "ane"
         },
         {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite identity marker"
         },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
+        }
+      ],
+      "english": "Is the person my older sister?",
+      "grammarTags": [
+        "AはBです",
+        "か"
+      ]
+    },
+    {
+      "id": "u003-c010",
+      "line": [
+        "人",
+        "は",
+        "弟",
+        "です",
+        "か",
+        "？"
+      ],
+      "tts": [
+        "ひと",
+        "わ",
+        "おとうと",
+        "です",
+        "か",
+        "？"
+      ],
+      "explain": [
+        "person",
+        "topic marker",
+        "younger brother",
+        "polite identity marker",
+        "question marker",
+        "question mark"
+      ],
+      "tokens": [
         {
           "surface": "人",
           "reading": "ひと",
@@ -492,37 +604,10 @@
           "wordId": "namae"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "My older sister is a person",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u003-c010",
-      "line": [
-        "弟",
-        "は",
-        "人",
-        "です"
-      ],
-      "tts": [
-        "おとうと",
-        "わ",
-        "ひと",
-        "です"
-      ],
-      "explain": [
-        "younger brother",
-        "topic marker",
-        "person",
-        "polite identity marker"
-      ],
-      "tokens": [
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
         {
           "surface": "弟",
           "reading": "おとうと",
@@ -530,25 +615,25 @@
           "wordId": "otouto"
         },
         {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "namae"
-        },
-        {
           "surface": "です",
           "reading": "です",
           "explain": "polite identity marker"
+        },
+        {
+          "surface": "か",
+          "reading": "か",
+          "explain": "question marker"
+        },
+        {
+          "surface": "？",
+          "reading": "？",
+          "explain": "question mark"
         }
       ],
-      "english": "My younger brother is a person",
+      "english": "Is the person my younger brother?",
       "grammarTags": [
-        "AはBです"
+        "AはBです",
+        "か"
       ]
     },
     {
