@@ -35,13 +35,17 @@ of truth. This file remains the everyday quality checklist.
 - Lesson order is intentional.
 - Target-language text, pronunciation hints, explanations, and translations agree with each other.
 - Curriculum planning docs explain sequencing decisions well enough for Codex to continue the work.
-- For authored curriculum units, confirm the unit has one grammar focus and 10 new words.
+- For authored curriculum units, confirm the unit has one grammar focus, about 10 core new words, and SRS entries for any learner-facing lexical grammar words.
 - Check the unit's new words against `data/jp/curriculum/word_selection_rules.md`.
 - For authored curriculum units, confirm current words from `N` are drilled and review-due words from `N-2`, `N-4`, `N-8`, `N-16`, `N-32`, and so on return.
 - Do not treat older vocabulary bins as isolated review prompts; they should be woven into natural sentence drilling.
 - All introduced vocabulary is available as helper vocabulary, but current-unit and review-due words should dominate the unit.
 - Current-unit words need enough contact to stick: balanced or regenerated units should give each current word at least 8 card appearances, usually landing in an 8-12 appearance band.
-- Review-due words should usually return 5-8 times. Lexicon/helper words have no appearance quota and may vary freely.
+- Review-due words should usually return 5-8 times. Crowded review units may
+  use lower floors: 4-8 for roughly 18-27 due words and 1-8 for 28+ due words.
+  Late-A1 existence, location, and quantity units may allow repeated scaffold
+  words up to 12 appearances when the repeated grammar shape is the point.
+  Lexicon/helper words have no appearance quota and may vary freely.
 - Guard against exact duplicate-card floods and predictable slot cycles such as `I -> you -> he -> she` with every other sentence element frozen.
 - Check that new grammar appears after the unit's new words have been introduced with previously available grammar.
 - Check for sterile card drift: too many `X is an object/person/place` cards means the unit needs more possession, contrast, time, social context, or practical questions.

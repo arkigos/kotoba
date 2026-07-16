@@ -24,7 +24,7 @@ npm run validate:curriculum
 - A unit file is invalid JSON.
 - Unit ids are duplicated or out of order.
 - A standard unit lacks a grammar focus.
-- A standard unit has fewer or more than 10 new words.
+- A standard unit has fewer than 10 SRS words, or has more than 12 without a documented lexical-grammar reason.
 - A new word duplicates a word introduced in any earlier unit.
 - A card has missing required fields.
 - A card's `line`, `tts`, and `explain` arrays have different lengths.
@@ -69,7 +69,7 @@ but review-due words must return.
 For each standard unit, tests or validators confirm:
 
 - exactly one grammar focus is declared
-- exactly 10 new words are declared
+- about 10 core new words are declared, with extra SRS entries only for lexical grammar words introduced by the unit
 - new words have surface form, reading, meaning, and function/category
 - the new word set follows the functional-spread rules in `word_selection_rules.md`
 - the grammar focus appears after the unit has already introduced new words with older grammar

@@ -24,6 +24,8 @@ Expected unit index fields:
 - `title`: learner-visible unit title.
 - `grammarFocus`: the grammar focus for the unit.
 - `path`: path to the unit JSON file.
+- `kind`: optional unit kind. Omit or use `standard` for sentence-drill
+  units. Use `kana` or `kanji` for pre-A1 recognition units.
 
 ## Course Levels
 
@@ -40,15 +42,19 @@ Expected course level file fields:
 
 Each level entry has:
 
-- `code`: learner-facing level code, such as `A1`, `A2`, `B1`, or `B2`.
+- `code`: learner-facing level code, such as `Kana`, `A1`, `A2`, `B1`, or `B2`.
 - `title`: learner-facing level title.
 - `unitStart`: first planned unit id in this level.
 - `unitEnd`: final planned unit id in this level.
 - `canDoSummary`: short Can-do outcome summary for the level.
+- `courseStage`: optional stage marker. Use `prelude` for pre-A1 recognition
+  levels and `core` for A1-B2 course levels.
 
-Level ranges must be contiguous, non-overlapping, and cover every planned unit
-exactly once. The authored unit index may contain only a prefix of these planned
-units.
+Core A1-B2 level ranges must be contiguous, non-overlapping, and cover every
+planned unit exactly once. The authored unit index may contain only a prefix of
+these planned units. Prelude levels live outside the canonical 1-96 course map
+and use the 100+ unit id range so they can appear before A1 without changing
+the A1-B2 grammar sequence.
 
 ## Unit Files
 
@@ -63,8 +69,21 @@ Expected unit fields:
 - `slug`: stable unit slug.
 - `title`: learner-visible unit title.
 - `grammarFocus`: one grammar focus or tightly bundled focus.
-- `newWords`: exactly 10 new vocabulary entries for a standard unit.
-- `cards`: 80-150 sentence cards for a standard unit.
+- `kind`: optional `standard`, `kana`, or `kanji`.
+- `newWords`: usually 10 core vocabulary entries for a standard unit, plus any
+  learner-facing lexical grammar words introduced by that unit. Every learned
+  non-function word must be SRS vocabulary.
+- `cards`: 80-100 sentence cards is the target for rebuilt standard units.
+  Units with very crowded review pools may extend to 115 cards, or 135 in late
+  A1 units with 40 due review words, when needed to
+  keep current words in the 8-12 band while still returning every due review
+  word. Older units may remain above this until they are regenerated under the
+  newer pacing rules.
+
+Prelude recognition units are intentionally different: `kind: "kana"` or
+`kind: "kanji"`, any useful number of recognition items, no review/lexicon
+obligations, and cards that can be single-symbol prompts rather than full
+sentences.
 
 ## New Words
 
@@ -85,6 +104,37 @@ card references do not split across two vocabulary identities. Unit 1 currently
 keeps the legacy ids `sakura`, `yuki`, and `tanaka` as stable keys for the
 learner-facing pronouns `あなた`, `彼`, and `彼女`.
 
+## Function Words
+
+`data/{lang}/curriculum/function_words.json` contains particles, copula chunks,
+and sentence endings that learners should be able to inspect separately from
+new/review/known vocabulary. These entries use the same basic fields as
+`newWords`: `id`, `surface`, `reading`, `meaning`, and `function`.
+
+Function words are not counted as the unit's 10 new vocabulary words and do not
+participate in SRS vocabulary bins. The practice UI derives the active unit's
+Function list from grammar tokens whose `surface` and `reading` match this
+central file.
+
+Do not put lexical verbs, nouns, adjectives, or pronouns in the function-word
+file. In particular, polite existence verbs such as `あります`, `います`,
+`ありません`, and `いません` should be modeled as vocabulary or grammar focus
+material, not as function words.
+
+## Grammar Tokens
+
+`data/{lang}/curriculum/grammar_tokens.json` contains documented grammar-focus
+chunks that are learner-facing but not part of the unit's SRS vocabulary. Use
+this for phrase-level connectors such as `ください`, `もいいです`,
+`はいけません`, and `しています`.
+
+Grammar tokens use the same basic fields as `newWords`: `id`, `surface`,
+`reading`, `meaning`, and `function`. A card token without `wordId` must match
+either `function_words.json`, `grammar_tokens.json`, or an allowed punctuation
+mark. If a learner-facing lexical item should participate in SRS, give it a
+`wordId` instead of placing it here. Lexical grammar words such as `ある`,
+`いる`, `好き`, `必要`, and `どう` are SRS vocabulary, not grammar tokens.
+
 ## Cards
 
 Each card has:
@@ -99,7 +149,22 @@ Each card has:
   tense, relationship, or scene detail that is not present in the Japanese.
   Single-card translations do not end with a plain period.
 - `audioRef`: optional audio reference.
+- `audioText`: optional production-TTS override when the displayed text or
+  aligned `tts` text is visually correct but too ambiguous for an external TTS
+  model. This is mainly for recognition cards such as standalone kana.
 - `grammarTags`: grammar patterns used by the card.
+
+Each `tokens` entry has:
+
+- `surface`: the displayed Japanese token.
+- `reading`: the kana reading used for token playback fallback.
+- `explain`: short learner-facing explanation.
+- `wordId`: optional vocabulary id when the token represents a tracked word.
+- `audioRef`: optional production token audio reference. Token audio refs should
+  point at the shared `/media/jp/audio/tokens/` cache so repeated elements reuse
+  one file across units.
+- `audioText`: optional production-TTS override when the token reading is not
+  explicit enough for external TTS.
 
 ## Alignment Rule
 
@@ -114,7 +179,7 @@ Productive particles should remain visible as their own tokens. In foundation
 questions, write `です` and `か` as separate parts rather than a single `ですか`
 chunk so learners can recognize `か` as the question marker.
 
-Early negative copula forms are intentionally chunked:
+Negative copula forms are intentionally chunked when they appear:
 
 - `ではありません`: reading `でわありません`, explained as polite negative identity
 - `じゃありません`: explained as contracted polite negative identity
@@ -190,11 +255,16 @@ These fields must match the app-facing unit index and frozen unit files. Use
 - review-due vocabulary returns somewhere in the unit without fake intro cards
 - no learner-facing first exposure appears after card 60
 - current-unit words should appear at least 8 times in a balanced or regenerated unit, with 8-12 appearances as the usual target band
-- scheduled review-due words should aim for 5-8 appearances in a standard unit, bending only when the due review pool gets too crowded
+- scheduled review-due words should aim for 5-8 appearances in a standard unit,
+  bending when the due review pool gets crowded: 4-8 for roughly 18-27 due
+  words, 1-8 for 28+ due words, and up to 12 for naturally repeated late-A1
+  existence/location/quantity scaffolding
 - lexicon helper words have no appearance quota
 
 Foundation units should stay under 100 cards when the 8-12 current-word band
-and review obligations can both be met without rushing new material.
+and review obligations can both be met without rushing new material. Crowded
+review units may reach 115 cards, or 135 for late-A1 40-word review pools, but
+should still close with current-unit material and avoid detached review tails.
 
 Existing frozen units may temporarily violate these pacing rules while the
 generator is being adopted. Use `npm run audit:curriculum-pacing` for

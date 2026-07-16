@@ -1,686 +1,1122 @@
 {
   "unitId": 5,
   "unitSlug": "unit_005",
-  "generatedAt": "2026-07-04T01:02:14.494Z",
-  "audioPolicy": "audio is queued; app uses browser speech fallback until production audio exists",
+  "generatedAt": "2026-07-06T16:33:23.098Z",
+  "audioPolicy": "production audio is generated for cards with audioRef; app uses browser speech fallback otherwise",
   "audio": [
     {
       "cardId": "u005-c001",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c001.mp3",
-      "text": "昨日でした"
+      "text": "昨日でした",
+      "speechText": "きのうでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c002",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c002.mp3",
-      "text": "先月でした"
+      "text": "私は食べます",
+      "speechText": "わたしわたべます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c003",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c003.mp3",
-      "text": "猫は動物です"
+      "text": "先月でした",
+      "speechText": "せんげつでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c004",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c004.mp3",
-      "text": "去年でした"
+      "text": "私は勉強します",
+      "speechText": "わたしわべんきょうします",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c005",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c005.mp3",
-      "text": "朝でした"
+      "text": "去年でした",
+      "speechText": "きょねんでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c006",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c006.mp3",
-      "text": "犬は動物ですか？"
+      "text": "あなたは飲みますか？",
+      "speechText": "あなたわのみますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c007",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c007.mp3",
-      "text": "夜でした"
+      "text": "朝でした",
+      "speechText": "あさでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c008",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c008.mp3",
-      "text": "休みでした"
+      "text": "あなたは働きます",
+      "speechText": "あなたわはたらきます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c009",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c009.mp3",
-      "text": "本を読みます"
+      "text": "夜でした",
+      "speechText": "よるでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c010",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c010.mp3",
-      "text": "旅行でした"
+      "text": "母の写真です",
+      "speechText": "ははのしゃしんです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c011",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c011.mp3",
-      "text": "仕事でした"
+      "text": "休みでした",
+      "speechText": "やすみでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c012",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c012.mp3",
-      "text": "彼女は本を書きますか？"
+      "text": "彼は朝に働きます",
+      "speechText": "かれわあさにはたらきます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c013",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c013.mp3",
-      "text": "先生は働きます"
+      "text": "旅行でした",
+      "speechText": "りょこうでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c014",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c014.mp3",
-      "text": "学生は勉強します"
+      "text": "父のかばんです",
+      "speechText": "ちちのかばんです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c015",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c015.mp3",
-      "text": "私の写真です"
+      "text": "仕事でした",
+      "speechText": "しごとでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c016",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c016.mp3",
-      "text": "朝は仕事でした"
+      "text": "彼女は夜に勉強します",
+      "speechText": "かのじょわよるにべんきょうします",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c017",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c017.mp3",
-      "text": "夜は休みでした"
+      "text": "先月は仕事でした",
+      "speechText": "せんげつわしごとでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c018",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c018.mp3",
-      "text": "彼女は見ます"
+      "text": "先生は聞きますか？",
+      "speechText": "せんせいわききますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c019",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c019.mp3",
-      "text": "昨日は旅行でした"
+      "text": "去年は旅行でした",
+      "speechText": "きょねんわりょこうでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c020",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c020.mp3",
-      "text": "彼は朝に勉強します"
+      "text": "友達は見ます",
+      "speechText": "ともだちわみます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c021",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c021.mp3",
-      "text": "彼は聞きますか？"
+      "text": "旅行は昨日でした",
+      "speechText": "りょこうわきのうでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c022",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c022.mp3",
-      "text": "彼女は夜に働きます"
+      "text": "姉の部屋です",
+      "speechText": "あねのへやです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c023",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c023.mp3",
-      "text": "先月は仕事でした"
+      "text": "母は朝に働きます",
+      "speechText": "ははわあさにはたらきます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c024",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c024.mp3",
-      "text": "子供は先生じゃありません"
+      "text": "弟は食べます",
+      "speechText": "おとうとわたべます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c025",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c025.mp3",
-      "text": "去年は休みでした"
+      "text": "仕事は先月でした",
+      "speechText": "しごとわせんげつでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c026",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c026.mp3",
-      "text": "旅行は昨日でした"
+      "text": "私の家族です",
+      "speechText": "わたしのかぞくです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c027",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c027.mp3",
-      "text": "大人は学生じゃありません"
+      "text": "父は夜に勉強します",
+      "speechText": "ちちわよるにべんきょうします",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c028",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c028.mp3",
-      "text": "友達は店で働きます"
+      "text": "人は飲みますか？",
+      "speechText": "ひとわのみますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c029",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c029.mp3",
-      "text": "母は家で勉強します"
+      "text": "休みは去年でした",
+      "speechText": "やすみわきょねんでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c030",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c030.mp3",
-      "text": "私は店に行きます"
+      "text": "あなたの写真です",
+      "speechText": "あなたのしゃしんです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c031",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c031.mp3",
-      "text": "仕事は先月でした"
+      "text": "姉は朝に勉強します",
+      "speechText": "あねわあさにべんきょうします",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c032",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c032.mp3",
-      "text": "休みは去年でした"
+      "text": "かばんを見ます",
+      "speechText": "かばんをみます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c033",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c033.mp3",
-      "text": "あなたは駅に来ます"
+      "text": "旅行は昨日でしたか？",
+      "speechText": "りょこうわきのうでしたか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c034",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c034.mp3",
-      "text": "朝は旅行でした"
+      "text": "彼の部屋です",
+      "speechText": "かれのへやです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c035",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c035.mp3",
-      "text": "父は朝に働きます"
+      "text": "弟は夜に働きます",
+      "speechText": "おとうとわよるにはたらきます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c036",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c036.mp3",
-      "text": "母のかばんです"
+      "text": "彼女は聞きますか？",
+      "speechText": "かのじょわききますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c037",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c037.mp3",
-      "text": "姉は夜に勉強します"
+      "text": "仕事は先月でしたか？",
+      "speechText": "しごとわせんげつでしたか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c038",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c038.mp3",
-      "text": "夜は仕事でした"
+      "text": "友達のかばんです",
+      "speechText": "ともだちのかばんです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c039",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c039.mp3",
-      "text": "父の部屋です"
+      "text": "学生は朝に勉強します",
+      "speechText": "がくせいわあさにべんきょうします",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c040",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c040.mp3",
-      "text": "昨日は仕事でした"
+      "text": "写真を見ます",
+      "speechText": "しゃしんをみます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c041",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c041.mp3",
-      "text": "先月は休みでした"
+      "text": "休みは去年でしたか？",
+      "speechText": "やすみわきょねんでしたか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c042",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c042.mp3",
-      "text": "学校は場所ですか？"
+      "text": "家族の写真です",
+      "speechText": "かぞくのしゃしんです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c043",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c043.mp3",
-      "text": "医者は病院で働きます"
+      "text": "昨日は休みでしたか？",
+      "speechText": "きのうわやすみでしたか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c044",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c044.mp3",
-      "text": "弟は部屋で勉強します"
+      "text": "先生は飲みます",
+      "speechText": "せんせいわのみます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c045",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c045.mp3",
-      "text": "椅子は机じゃありません"
+      "text": "旅行は先月でした",
+      "speechText": "りょこうわせんげつでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c046",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c046.mp3",
-      "text": "去年は旅行でした"
+      "text": "彼女の部屋です",
+      "speechText": "かのじょのへやです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c047",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c047.mp3",
-      "text": "旅行は朝でした"
+      "text": "あなたは朝に勉強します",
+      "speechText": "あなたわあさにべんきょうします",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c048",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c048.mp3",
-      "text": "机は椅子じゃありません"
+      "text": "母は聞きますか？",
+      "speechText": "ははわききますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c049",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c049.mp3",
-      "text": "仕事は夜でした"
+      "text": "仕事は去年でした",
+      "speechText": "しごとわきょねんでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c050",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c050.mp3",
-      "text": "私は夜に勉強します"
+      "text": "人のかばんです",
+      "speechText": "ひとのかばんです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c051",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c051.mp3",
-      "text": "友達は食べます"
+      "text": "去年は仕事でしたか？",
+      "speechText": "きょねんわしごとでしたか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c052",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c052.mp3",
-      "text": "あなたは朝に働きます"
+      "text": "父は見ます",
+      "speechText": "ちちわみます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c053",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c053.mp3",
-      "text": "休みは先月でした"
+      "text": "休みは昨日でした",
+      "speechText": "やすみわきのうでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c054",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c054.mp3",
-      "text": "学生は飲みますか？"
+      "text": "弟の写真です",
+      "speechText": "おとうとのしゃしんです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c055",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c055.mp3",
-      "text": "朝は昨日でした"
+      "text": "去年は旅行でしたか？",
+      "speechText": "きょねんわりょこうでしたか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c056",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c056.mp3",
-      "text": "夜は去年でした"
+      "text": "姉は飲みますか？",
+      "speechText": "あねわのみますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c057",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c057.mp3",
-      "text": "医者は先生です"
+      "text": "旅行は先月でしたか？",
+      "speechText": "りょこうわせんげつでしたか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c058",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c058.mp3",
-      "text": "先生は学校で勉強します"
+      "text": "学生の部屋です",
+      "speechText": "がくせいのへやです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c059",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c059.mp3",
-      "text": "学生は会社で働きます"
+      "text": "友達は夜に働きます",
+      "speechText": "ともだちわよるにはたらきます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c060",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c060.mp3",
-      "text": "家は場所ですか？"
+      "text": "先生は食べます",
+      "speechText": "せんせいわたべます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c061",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c061.mp3",
-      "text": "昨日は休みでしたか？"
+      "text": "仕事は去年でしたか？",
+      "speechText": "しごとわきょねんでしたか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c062",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c062.mp3",
-      "text": "先月は旅行でしたか？"
+      "text": "家族のかばんです",
+      "speechText": "かぞくのかばんです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c063",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c063.mp3",
-      "text": "彼女は病院に行きます"
+      "text": "人の部屋です",
+      "speechText": "ひとのへやです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c064",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c064.mp3",
-      "text": "去年は仕事でしたか？"
+      "text": "弟は見ますか？",
+      "speechText": "おとうとわみますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c065",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c065.mp3",
-      "text": "休みは仕事でした"
+      "text": "休みは昨日でしたか？",
+      "speechText": "やすみわきのうでしたか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c066",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c066.mp3",
-      "text": "彼は会社に来ます"
+      "text": "私の部屋です",
+      "speechText": "わたしのへやです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c067",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c067.mp3",
-      "text": "姉の写真です"
+      "text": "父は会社で働きます",
+      "speechText": "ちちわかいしゃではたらきます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c068",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c068.mp3",
-      "text": "弟のかばんです"
+      "text": "あなたは食べます",
+      "speechText": "あなたわたべます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c069",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c069.mp3",
-      "text": "写真を見ます"
+      "text": "旅行は去年でした",
+      "speechText": "りょこうわきょねんでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c070",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c070.mp3",
-      "text": "先生は聞きますか？"
+      "text": "あなたの家族です",
+      "speechText": "あなたのかぞくです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c071",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c071.mp3",
-      "text": "病院は駅じゃありません"
+      "text": "姉は学校で勉強します",
+      "speechText": "あねわがっこうでべんきょうします",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c072",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c072.mp3",
-      "text": "店は会社じゃありません"
+      "text": "彼は聞きますか？",
+      "speechText": "かれわききますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c073",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c073.mp3",
-      "text": "彼は本を読みます"
+      "text": "仕事は昨日でした",
+      "speechText": "しごとわきのうでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c074",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c074.mp3",
-      "text": "あなたは本を書きますか？"
+      "text": "彼女の写真です",
+      "speechText": "かのじょのしゃしんです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c075",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c075.mp3",
-      "text": "家族は友達です"
+      "text": "弟は部屋で勉強します",
+      "speechText": "おとうとわへやでべんきょうします",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c076",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c076.mp3",
-      "text": "人は先生ですか？"
+      "text": "友達は飲みます",
+      "speechText": "ともだちわのみます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c077",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c077.mp3",
-      "text": "かばんは写真ですか？"
+      "text": "休みは先月でした",
+      "speechText": "やすみわせんげつでした",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c078",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c078.mp3",
-      "text": "学生は家に行きます"
+      "text": "彼のかばんです",
+      "speechText": "かれのかばんです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c079",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c079.mp3",
-      "text": "友達は学校に来ます"
+      "text": "私は家で働きます",
+      "speechText": "わたしわいえではたらきます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c080",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c080.mp3",
-      "text": "私の家族です"
+      "text": "学生は食べますか？",
+      "speechText": "がくせいわたべますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c081",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c081.mp3",
-      "text": "あなたの部屋です"
+      "text": "旅行は去年でしたか？",
+      "speechText": "りょこうわきょねんでしたか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c082",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c082.mp3",
-      "text": "彼のかばんです"
+      "text": "あなたは店で働きます",
+      "speechText": "あなたわみせではたらきます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c083",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c083.mp3",
-      "text": "彼女の写真です"
+      "text": "先生は夜に勉強します",
+      "speechText": "せんせいわよるにべんきょうします",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c084",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c084.mp3",
-      "text": "人の家族です"
+      "text": "父は聞きます",
+      "speechText": "ちちわききます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c085",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c085.mp3",
-      "text": "友達の部屋です"
+      "text": "仕事は昨日でしたか？",
+      "speechText": "しごとわきのうでしたか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c086",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c086.mp3",
-      "text": "母は食べます"
+      "text": "彼は会社で働きます",
+      "speechText": "かれわかいしゃではたらきます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c087",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c087.mp3",
-      "text": "父は飲みます"
+      "text": "友達は朝に勉強します",
+      "speechText": "ともだちわあさにべんきょうします",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c088",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c088.mp3",
-      "text": "姉は見ます"
+      "text": "人の家族です",
+      "speechText": "ひとのかぞくです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c089",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c089.mp3",
-      "text": "弟は聞きます"
+      "text": "休みは先月でしたか？",
+      "speechText": "やすみわせんげつでしたか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c090",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c090.mp3",
-      "text": "人は食べますか？"
+      "text": "彼女は学校で勉強します",
+      "speechText": "かのじょわがっこうでべんきょうします",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c091",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c091.mp3",
-      "text": "母は飲みますか？"
+      "text": "家族は夜に働きます",
+      "speechText": "かぞくわよるにはたらきます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c092",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c092.mp3",
-      "text": "父は見ますか？"
+      "text": "人は夜に飲みます",
+      "speechText": "ひとわよるにのみます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c093",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c093.mp3",
-      "text": "姉は聞きますか？"
+      "text": "母は食べます",
+      "speechText": "ははわたべます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c094",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c094.mp3",
-      "text": "弟は食べます"
+      "text": "先月は旅行でしたか？",
+      "speechText": "せんげつわりょこうでしたか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c095",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c095.mp3",
-      "text": "人は飲みます"
+      "text": "学生は家で勉強します",
+      "speechText": "がくせいわいえでべんきょうします",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c096",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c096.mp3",
-      "text": "かばんを見ます"
+      "text": "弟は朝に働きます",
+      "speechText": "おとうとわあさにはたらきます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u005-c097",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_005/u005-c097.mp3",
-      "text": "あなたは聞きますか？"
+      "text": "彼は飲みますか？",
+      "speechText": "かれわのみますか？",
+      "provider": "elevenlabs"
+    }
+  ],
+  "tokenAudio": [
+    {
+      "key": "昨日|きのう|きのう",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/3639b57c09b2.mp3",
+      "text": "昨日",
+      "speechText": "きのう",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c098",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c098.mp3",
-      "text": "私の部屋です"
+      "key": "でした|でした|でした",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/101136f6b28e.mp3",
+      "text": "でした",
+      "speechText": "でした",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c099",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c099.mp3",
-      "text": "人の写真です"
+      "key": "私|わたし|わたし",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/66c3aae1e695.mp3",
+      "text": "私",
+      "speechText": "わたし",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c100",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c100.mp3",
-      "text": "家族のかばんです"
+      "key": "は|わ|わ",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/72a1cd6703a6.mp3",
+      "text": "は",
+      "speechText": "わ",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c101",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c101.mp3",
-      "text": "家族の部屋です"
+      "key": "食べます|たべます|たべます",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/a4c20cfa2181.mp3",
+      "text": "食べます",
+      "speechText": "たべます",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c102",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c102.mp3",
-      "text": "母は食べますか？"
+      "key": "先月|せんげつ|せんげつ",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/c58482f915aa.mp3",
+      "text": "先月",
+      "speechText": "せんげつ",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c103",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c103.mp3",
-      "text": "父は飲みますか？"
+      "key": "勉強します|べんきょうします|べんきょうします",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/5525d8d407c2.mp3",
+      "text": "勉強します",
+      "speechText": "べんきょうします",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c104",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c104.mp3",
-      "text": "姉は食べますか？"
+      "key": "去年|きょねん|きょねん",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/70f6e7605ba0.mp3",
+      "text": "去年",
+      "speechText": "きょねん",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c105",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c105.mp3",
-      "text": "弟は飲みますか？"
+      "key": "あなた|あなた|あなた",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/76f54e9c9180.mp3",
+      "text": "あなた",
+      "speechText": "あなた",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c106",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c106.mp3",
-      "text": "旅行は先月でしたか？"
+      "key": "飲みます|のみます|のみます",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/ef63c1d1098b.mp3",
+      "text": "飲みます",
+      "speechText": "のみます",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c107",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c107.mp3",
-      "text": "仕事は去年でしたか？"
+      "key": "か|か|か",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3",
+      "text": "か",
+      "speechText": "か",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c108",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c108.mp3",
-      "text": "昨日は仕事でしたか？"
+      "key": "朝|あさ|あさ",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/f66d469d181a.mp3",
+      "text": "朝",
+      "speechText": "あさ",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c109",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c109.mp3",
-      "text": "休みは昨日でしたか？"
+      "key": "働きます|はたらきます|はたらきます",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/d10c8689e5ed.mp3",
+      "text": "働きます",
+      "speechText": "はたらきます",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c110",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c110.mp3",
-      "text": "先月は休みでしたか？"
+      "key": "夜|よる|よる",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/2a580bbbe1a0.mp3",
+      "text": "夜",
+      "speechText": "よる",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c111",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c111.mp3",
-      "text": "去年は旅行でしたか？"
+      "key": "母|はは|はは",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/d3167e40ea87.mp3",
+      "text": "母",
+      "speechText": "はは",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c112",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c112.mp3",
-      "text": "先生は会社で働きます"
+      "key": "の|の|の",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/2e9ebb1636e0.mp3",
+      "text": "の",
+      "speechText": "の",
+      "provider": "elevenlabs"
     },
     {
-      "cardId": "u005-c113",
-      "status": "queued",
-      "path": "/media/jp/audio/unit_005/u005-c113.mp3",
-      "text": "学生は学校で勉強します"
+      "key": "写真|しゃしん|しゃしん",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/188dfdedbf73.mp3",
+      "text": "写真",
+      "speechText": "しゃしん",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "です|です|です",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/84f3cb7d46c6.mp3",
+      "text": "です",
+      "speechText": "です",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "休み|やすみ|やすみ",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/24dda9dc6518.mp3",
+      "text": "休み",
+      "speechText": "やすみ",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "彼|かれ|かれ",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/d632512a56c9.mp3",
+      "text": "彼",
+      "speechText": "かれ",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "に|に|に",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/34749fddc046.mp3",
+      "text": "に",
+      "speechText": "に",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "旅行|りょこう|りょこう",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/38a43e8eeb4a.mp3",
+      "text": "旅行",
+      "speechText": "りょこう",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "父|ちち|ちち",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/f937460bfdfa.mp3",
+      "text": "父",
+      "speechText": "ちち",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "かばん|かばん|かばん",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/09e3544f4e6d.mp3",
+      "text": "かばん",
+      "speechText": "かばん",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "仕事|しごと|しごと",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/b5a7cc3f18e9.mp3",
+      "text": "仕事",
+      "speechText": "しごと",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "彼女|かのじょ|かのじょ",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/bb76cb0913c5.mp3",
+      "text": "彼女",
+      "speechText": "かのじょ",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "先生|せんせい|せんせい",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/be6776382409.mp3",
+      "text": "先生",
+      "speechText": "せんせい",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "聞きます|ききます|ききます",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/f6c07ae09f9c.mp3",
+      "text": "聞きます",
+      "speechText": "ききます",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "友達|ともだち|ともだち",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/97d7c19ce9ab.mp3",
+      "text": "友達",
+      "speechText": "ともだち",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "見ます|みます|みます",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/f02880acda34.mp3",
+      "text": "見ます",
+      "speechText": "みます",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "姉|あね|あね",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/9103d9214b64.mp3",
+      "text": "姉",
+      "speechText": "あね",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "部屋|へや|へや",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/ddda8756389e.mp3",
+      "text": "部屋",
+      "speechText": "へや",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "弟|おとうと|おとうと",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/9bec70aa2270.mp3",
+      "text": "弟",
+      "speechText": "おとうと",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "家族|かぞく|かぞく",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/37a4c41a4c41.mp3",
+      "text": "家族",
+      "speechText": "かぞく",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "人|ひと|ひと",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/bfa1459a9646.mp3",
+      "text": "人",
+      "speechText": "ひと",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "を|を|を",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/c6246763badf.mp3",
+      "text": "を",
+      "speechText": "を",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "学生|がくせい|がくせい",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/2cf38773dd94.mp3",
+      "text": "学生",
+      "speechText": "がくせい",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "会社|かいしゃ|かいしゃ",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/8aec2e41957b.mp3",
+      "text": "会社",
+      "speechText": "かいしゃ",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "で|で|で",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/0319d5208718.mp3",
+      "text": "で",
+      "speechText": "で",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "学校|がっこう|がっこう",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/c4161a3ca267.mp3",
+      "text": "学校",
+      "speechText": "がっこう",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "家|いえ|いえ",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/66937f6a5154.mp3",
+      "text": "家",
+      "speechText": "いえ",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "店|みせ|みせ",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/a4d8b1a80cce.mp3",
+      "text": "店",
+      "speechText": "みせ",
+      "provider": "elevenlabs"
     }
   ]
 }

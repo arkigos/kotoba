@@ -14,10 +14,14 @@ const source = await readJson("data/jp/curriculum/source/unit_specs.json");
 const index = await readJson("data/jp/curriculum/unit_index.json");
 const authoredIds = authoredUnitIds(source);
 
+function isSpecialCurriculumUnit(unit) {
+  return unit?.kind === "kana" || unit?.kind === "kanji" || unit?.id >= 100;
+}
+
 for (const entry of index.units) {
   const unit = await readJson(`data/jp/curriculum/units/unit_${pad(entry.id)}.json`);
-  const reviewWordIds = wordsForUnits(source, reviewVocabularyUnitIds(entry.id)).map((word) => word.id);
-  const lexiconWordIds = wordsForUnits(source, lexiconVocabularyUnitIds(entry.id, authoredIds)).map((word) => word.id);
+  const reviewWordIds = isSpecialCurriculumUnit(unit) ? [] : wordsForUnits(source, reviewVocabularyUnitIds(entry.id)).map((word) => word.id);
+  const lexiconWordIds = isSpecialCurriculumUnit(unit) ? [] : wordsForUnits(source, lexiconVocabularyUnitIds(entry.id, authoredIds)).map((word) => word.id);
   await writeJson(`data/jp/curriculum/units/unit_${pad(entry.id)}.json`, { ...unit, reviewWordIds, lexiconWordIds });
 }
 

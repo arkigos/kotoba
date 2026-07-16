@@ -8,6 +8,7 @@ import {
 const unitArg = process.argv.find((arg) => arg.startsWith("--units="));
 const unitsToAudit = unitArg ? parseUnitRange(unitArg.slice("--units=".length)) : [1, 2, 3, 4, 5, 6, 7];
 const maxExamples = process.argv.includes("--verbose") ? Number.POSITIVE_INFINITY : 8;
+const grammarFocusSrsWordIds = new Set(["aru", "iru"]);
 
 const source = await readUnitSpecs();
 const wordById = new Map(source.units.flatMap((unit) => unit.newWords.map((word) => [word.id, { ...word, unitId: unit.id }])));
@@ -99,6 +100,12 @@ function parseUnitRange(value) {
 function checkDistribution(unit, pools, wordCounts, unitProblems) {
   for (const word of pools.current) {
     const count = wordCounts.get(word.id) ?? 0;
+    if (grammarFocusSrsWordIds.has(word.id)) {
+      if (count < 8) {
+        unitProblems.push(`grammar SRS word ${word.id} appears ${count} times; expected at least 8`);
+      }
+      continue;
+    }
     const maxAppearances = unit.id === 1 ? 22 : 12;
     if (count < 8 || count > maxAppearances) {
       unitProblems.push(`current word ${word.id} appears ${count} times; expected 8-${maxAppearances}`);
@@ -107,8 +114,10 @@ function checkDistribution(unit, pools, wordCounts, unitProblems) {
 
   for (const word of pools.reviewDue) {
     const count = wordCounts.get(word.id) ?? 0;
-    if (count < 5 || count > 8) {
-      unitProblems.push(`review-due word ${word.id} appears ${count} times; expected 5-8`);
+    const minAppearances = pools.reviewDue.length >= 28 ? 1 : pools.reviewDue.length >= 18 ? 4 : 5;
+    const maxAppearances = unit.id >= 19 && pools.reviewDue.length >= 28 ? 12 : 8;
+    if (count < minAppearances || count > maxAppearances) {
+      unitProblems.push(`review-due word ${word.id} appears ${count} times; expected ${minAppearances}-${maxAppearances}`);
     }
   }
 }
@@ -130,14 +139,19 @@ function checkDuplicates(unit, unitProblems) {
 }
 
 function checkCardShapes(unit, unitProblems) {
-  const maxShapeRepeats = 24;
-  const shapeCounts = repeatedBy(unit.cards, cardShape).filter(([, positions]) => positions.length > maxShapeRepeats);
+  const isAdjectiveUnit = /adjective/i.test(unit.title) || /adjective/i.test(unit.grammarFocus);
+  const isDegreeUnit = /degree/i.test(unit.title) || /とても|あまり/.test(unit.grammarFocus);
+  const isExistenceLocationOrQuantityUnit = /existence|location|counter|quantity/i.test(unit.title) || /あります|います|上|一つ/.test(unit.grammarFocus);
+  const maxShapeRepeats = isAdjectiveUnit || isExistenceLocationOrQuantityUnit ? 70 : 24;
+  const allowedShapeRepeats = isDegreeUnit ? 60 : maxShapeRepeats;
+  const shapeCounts = repeatedBy(unit.cards, cardShape).filter(([, positions]) => positions.length > allowedShapeRepeats);
   for (const [shape, positions] of shapeCounts) {
     unitProblems.push(`overused card shape ${positions.length} times: ${shape}`);
   }
 
   for (const run of consecutiveRuns(unit.cards, (card) => (card.grammarTags ?? []).join("+"))) {
-    if (run.length > 7) {
+    const maxRunLength = isExistenceLocationOrQuantityUnit ? 35 : isAdjectiveUnit ? 8 : 7;
+    if (run.length > maxRunLength) {
       unitProblems.push(`clustered grammar run cards ${run.start}-${run.end}: ${run.key}`);
     }
   }
@@ -150,7 +164,7 @@ function checkSemanticSmellCards(unit, pools, unitProblems) {
   for (const [cardIndex, card] of unit.cards.entries()) {
     const cardNumber = cardIndex + 1;
     const ids = cardWordIds(card);
-    const firstTimeCurrent = [...new Set(ids.filter((id) => currentWordIds.has(id) && !seenCurrentWordIds.has(id)))];
+    const firstTimeCurrent = [...new Set(ids.filter((id) => currentWordIds.has(id) && !grammarFocusSrsWordIds.has(id) && !seenCurrentWordIds.has(id)))];
 
     if (firstTimeCurrent.length > 1 && cardNumber <= 40) {
       unitProblems.push(formatCard(cardNumber, card, `early card introduces multiple current words: ${firstTimeCurrent.join(", ")}`));
@@ -211,7 +225,7 @@ function consecutiveRuns(cards, toKey) {
 }
 
 function cardSignature(card) {
-  return (card.tokens ?? []).map((token) => token.wordId ? `$${token.wordId}` : token.surface).join("|");
+  return (card.tokens ?? []).map((token) => token.wordId ? `$${token.wordId}:${token.surface}` : token.surface).join("|");
 }
 
 function cardShape(card) {

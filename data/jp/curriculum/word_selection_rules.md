@@ -26,7 +26,7 @@ legacy ids `sakura`, `yuki`, and `tanaka` are intentionally retained as stable
 keys for `あなた`, `彼`, and `彼女`.
 
 Productive particles should stay visible. Prefer `です` + `か` as separate card
-parts over a single `ですか` token. Keep early negative copula forms such as
+parts over a single `ですか` token. Keep negative copula forms such as
 `ではありません` chunked as set phrases until the course intentionally teaches
 their internal structure.
 
@@ -186,10 +186,16 @@ Before authoring cards for a unit, confirm:
 - Older known helper words can combine naturally with the new words.
 - Current-unit and review-due words have enough repetition to feel intentionally drilled.
 - Current-unit words usually land in an 8-12 appearance band, and rebuilt
-  foundation units stay under 100 cards when that can be done without rushing
-  new material or skipping due review.
-- Review-due SRS words usually land in a 5-8 appearance band. Lexicon helper
-  words have no appearance quota; use as many or as few as the sentence needs.
+  standard units should stay in the 80-100 card range when review load allows.
+  Units with 28+ scheduled review words may reach 115 cards, or 135 in late A1
+  units with 40 due review words, if the extra cards are doing real review work
+  and the unit still closes on current material.
+- Review-due SRS words usually land in a 5-8 appearance band. When the due pool
+  is crowded, such as 20 review words, 4-8 is acceptable to keep the unit from
+  bloating. At 28+ due words, 1-8 is acceptable; late-A1 existence, location,
+  and quantity scaffolds may allow up to 12 appearances for naturally repeated
+  review words. Every due word must still return. Lexicon helper words have no
+  appearance quota; use as many or as few as the sentence needs.
 - The set is common and useful enough for a beginner-to-intermediate journey.
 - Current-unit words are introduced before card 40.
 - Current-unit words first appear in sentence context rather than single-token

@@ -2,487 +2,753 @@
   "unitId": 1,
   "unitSlug": "unit_001",
   "generatedAt": "2026-07-04T01:02:14.479Z",
-  "audioPolicy": "audio is queued; app uses browser speech fallback until production audio exists",
+  "audioPolicy": "production audio is generated for cards with audioRef; app uses browser speech fallback otherwise",
   "audio": [
     {
       "cardId": "u001-c001",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c001.mp3",
-      "text": "私です"
+      "text": "私です",
+      "speechText": "わたしです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c002",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c002.mp3",
-      "text": "彼です"
+      "text": "彼です",
+      "speechText": "かれです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c003",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c003.mp3",
-      "text": "あなたです"
+      "text": "あなたです",
+      "speechText": "あなたです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c004",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c004.mp3",
-      "text": "彼女です"
+      "text": "彼女です",
+      "speechText": "かのじょです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c005",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c005.mp3",
-      "text": "彼女ですか？"
+      "text": "彼女ですか？",
+      "speechText": "かのじょですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c006",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c006.mp3",
-      "text": "あなたですか？"
+      "text": "あなたですか？",
+      "speechText": "あなたですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c007",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c007.mp3",
-      "text": "彼ですか？"
+      "text": "彼ですか？",
+      "speechText": "かれですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c008",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c008.mp3",
-      "text": "私は学生です"
+      "text": "私は学生です",
+      "speechText": "わたしわがくせいです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c009",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c009.mp3",
-      "text": "私は食べます"
+      "text": "私は食べます",
+      "speechText": "わたしわたべます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c010",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c010.mp3",
-      "text": "あなたは友達ですか？"
+      "text": "あなたは友達ですか？",
+      "speechText": "あなたわともだちですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c011",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c011.mp3",
-      "text": "私は友達です"
+      "text": "私は友達です",
+      "speechText": "わたしわともだちです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c012",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c012.mp3",
-      "text": "彼女は飲みますか？"
+      "text": "彼女は飲みますか？",
+      "speechText": "かのじょわのみますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c013",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c013.mp3",
-      "text": "あなたは先生ですか？"
+      "text": "あなたは先生ですか？",
+      "speechText": "あなたわせんせいですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c014",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c014.mp3",
-      "text": "私は先生です"
+      "text": "私は先生です",
+      "speechText": "わたしわせんせいです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c015",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c015.mp3",
-      "text": "先生は飲みます"
+      "text": "先生は飲みます",
+      "speechText": "せんせいわのみます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c016",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c016.mp3",
-      "text": "彼女は学生ですか？"
+      "text": "彼女は学生ですか？",
+      "speechText": "かのじょわがくせいですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c017",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c017.mp3",
-      "text": "彼は学生です"
+      "text": "彼は学生です",
+      "speechText": "かれわがくせいです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c018",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c018.mp3",
-      "text": "あなたは食べますか？"
+      "text": "あなたは食べますか？",
+      "speechText": "あなたわたべますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c019",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c019.mp3",
-      "text": "彼女は友達ですか？"
+      "text": "彼女は友達ですか？",
+      "speechText": "かのじょわともだちですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c020",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c020.mp3",
-      "text": "彼は友達です"
+      "text": "彼は友達です",
+      "speechText": "かれわともだちです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c021",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c021.mp3",
-      "text": "人は食べます"
+      "text": "人は食べます",
+      "speechText": "ひとわたべます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c022",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c022.mp3",
-      "text": "彼女は先生ですか？"
+      "text": "彼女は先生ですか？",
+      "speechText": "かのじょわせんせいですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c023",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c023.mp3",
-      "text": "彼は先生です"
+      "text": "彼は先生です",
+      "speechText": "かれわせんせいです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c024",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c024.mp3",
-      "text": "学生は飲みますか？"
+      "text": "学生は飲みますか？",
+      "speechText": "がくせいわのみますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c025",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c025.mp3",
-      "text": "人は学生ですか？"
+      "text": "人は学生ですか？",
+      "speechText": "ひとわがくせいですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c026",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c026.mp3",
-      "text": "あなたは学生です"
+      "text": "あなたは学生です",
+      "speechText": "あなたわがくせいです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c027",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c027.mp3",
-      "text": "彼は飲みます"
+      "text": "彼は飲みます",
+      "speechText": "かれわのみます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c028",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c028.mp3",
-      "text": "人は友達ですか？"
+      "text": "人は友達ですか？",
+      "speechText": "ひとわともだちですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c029",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c029.mp3",
-      "text": "あなたは友達です"
+      "text": "あなたは友達です",
+      "speechText": "あなたわともだちです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c030",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c030.mp3",
-      "text": "友達は食べますか？"
+      "text": "友達は食べますか？",
+      "speechText": "ともだちわたべますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c031",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c031.mp3",
-      "text": "人は先生ですか？"
+      "text": "人は先生ですか？",
+      "speechText": "ひとわせんせいですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c032",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c032.mp3",
-      "text": "あなたは先生です"
+      "text": "あなたは先生です",
+      "speechText": "あなたわせんせいです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c033",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c033.mp3",
-      "text": "私は飲みますか？"
+      "text": "私は飲みますか？",
+      "speechText": "わたしわのみますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c034",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c034.mp3",
-      "text": "先生は学生ですか？"
+      "text": "先生は学生ですか？",
+      "speechText": "せんせいわがくせいですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c035",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c035.mp3",
-      "text": "彼女は学生です"
+      "text": "彼女は学生です",
+      "speechText": "かのじょわがくせいです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c036",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c036.mp3",
-      "text": "彼女は飲みます"
+      "text": "彼女は飲みます",
+      "speechText": "かのじょわのみます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c037",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c037.mp3",
-      "text": "先生は友達ですか？"
+      "text": "先生は友達ですか？",
+      "speechText": "せんせいわともだちですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c038",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c038.mp3",
-      "text": "彼女は友達です"
+      "text": "彼女は友達です",
+      "speechText": "かのじょわともだちです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c039",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c039.mp3",
-      "text": "先生は食べますか？"
+      "text": "先生は食べますか？",
+      "speechText": "せんせいわたべますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c040",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c040.mp3",
-      "text": "学生は友達ですか？"
+      "text": "学生は友達ですか？",
+      "speechText": "がくせいわともだちですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c041",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c041.mp3",
-      "text": "彼女は先生です"
+      "text": "彼女は先生です",
+      "speechText": "かのじょわせんせいです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c042",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c042.mp3",
-      "text": "あなたは食べます"
+      "text": "あなたは食べます",
+      "speechText": "あなたわたべます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c043",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c043.mp3",
-      "text": "学生は先生ですか？"
+      "text": "学生は先生ですか？",
+      "speechText": "がくせいわせんせいですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c044",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c044.mp3",
-      "text": "人は学生です"
+      "text": "人は学生です",
+      "speechText": "ひとわがくせいです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c045",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c045.mp3",
-      "text": "人は飲みますか？"
+      "text": "人は飲みますか？",
+      "speechText": "ひとわのみますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c046",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c046.mp3",
-      "text": "友達は学生ですか？"
+      "text": "友達は学生ですか？",
+      "speechText": "ともだちわがくせいですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c047",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c047.mp3",
-      "text": "人は友達です"
+      "text": "人は友達です",
+      "speechText": "ひとわともだちです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c048",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c048.mp3",
-      "text": "学生は飲みます"
+      "text": "学生は飲みます",
+      "speechText": "がくせいわのみます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c049",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c049.mp3",
-      "text": "友達は先生ですか？"
+      "text": "友達は先生ですか？",
+      "speechText": "ともだちわせんせいですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c050",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c050.mp3",
-      "text": "人は先生です"
+      "text": "人は先生です",
+      "speechText": "ひとわせんせいです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c051",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c051.mp3",
-      "text": "彼は食べますか？"
+      "text": "彼は食べますか？",
+      "speechText": "かれわたべますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c052",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c052.mp3",
-      "text": "私は学生ですか？"
+      "text": "私は学生ですか？",
+      "speechText": "わたしわがくせいですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c053",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c053.mp3",
-      "text": "先生は学生です"
+      "text": "先生は学生です",
+      "speechText": "せんせいわがくせいです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c054",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c054.mp3",
-      "text": "友達は食べます"
+      "text": "友達は食べます",
+      "speechText": "ともだちわたべます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c055",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c055.mp3",
-      "text": "私は友達ですか？"
+      "text": "私は友達ですか？",
+      "speechText": "わたしわともだちですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c056",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c056.mp3",
-      "text": "先生は友達です"
+      "text": "先生は友達です",
+      "speechText": "せんせいわともだちです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c057",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c057.mp3",
-      "text": "私は飲みます"
+      "text": "私は飲みます",
+      "speechText": "わたしわのみます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c058",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c058.mp3",
-      "text": "私は先生ですか？"
+      "text": "私は先生ですか？",
+      "speechText": "わたしわせんせいですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c059",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c059.mp3",
-      "text": "学生は友達です"
+      "text": "学生は友達です",
+      "speechText": "がくせいわともだちです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c060",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c060.mp3",
-      "text": "彼女は食べますか？"
+      "text": "彼女は食べますか？",
+      "speechText": "かのじょわたべますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c061",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c061.mp3",
-      "text": "彼は学生ですか？"
+      "text": "彼は学生ですか？",
+      "speechText": "かれわがくせいですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c062",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c062.mp3",
-      "text": "学生は先生です"
+      "text": "学生は先生です",
+      "speechText": "がくせいわせんせいです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c063",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c063.mp3",
-      "text": "先生は食べます"
+      "text": "先生は食べます",
+      "speechText": "せんせいわたべます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c064",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c064.mp3",
-      "text": "彼は友達ですか？"
+      "text": "彼は友達ですか？",
+      "speechText": "かれわともだちですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c065",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c065.mp3",
-      "text": "友達は学生です"
+      "text": "友達は学生です",
+      "speechText": "ともだちわがくせいです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c066",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c066.mp3",
-      "text": "あなたは飲みますか？"
+      "text": "あなたは飲みますか？",
+      "speechText": "あなたわのみますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c067",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c067.mp3",
-      "text": "彼は先生ですか？"
+      "text": "彼は先生ですか？",
+      "speechText": "かれわせんせいですか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c068",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c068.mp3",
-      "text": "友達は先生です"
+      "text": "友達は先生です",
+      "speechText": "ともだちわせんせいです",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c069",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c069.mp3",
-      "text": "人は飲みます"
+      "text": "人は飲みます",
+      "speechText": "ひとわのみます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c070",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c070.mp3",
-      "text": "学生は食べますか？"
+      "text": "学生は食べますか？",
+      "speechText": "がくせいわたべますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c071",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c071.mp3",
-      "text": "彼は食べます"
+      "text": "彼は食べます",
+      "speechText": "かれわたべます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c072",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c072.mp3",
-      "text": "友達は飲みますか？"
+      "text": "友達は飲みますか？",
+      "speechText": "ともだちわのみますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c073",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c073.mp3",
-      "text": "私は食べますか？"
+      "text": "私は食べますか？",
+      "speechText": "わたしわたべますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c074",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c074.mp3",
-      "text": "彼女は食べます"
+      "text": "彼女は食べます",
+      "speechText": "かのじょわたべます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c075",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c075.mp3",
-      "text": "先生は飲みますか？"
+      "text": "先生は飲みますか？",
+      "speechText": "せんせいわのみますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c076",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c076.mp3",
-      "text": "あなたは飲みます"
+      "text": "あなたは飲みます",
+      "speechText": "あなたわのみます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c077",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c077.mp3",
-      "text": "人は食べますか？"
+      "text": "人は食べますか？",
+      "speechText": "ひとわたべますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c078",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c078.mp3",
-      "text": "学生は食べます"
+      "text": "学生は食べます",
+      "speechText": "がくせいわたべます",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c079",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c079.mp3",
-      "text": "彼は飲みますか？"
+      "text": "彼は飲みますか？",
+      "speechText": "かれわのみますか？",
+      "provider": "elevenlabs"
     },
     {
       "cardId": "u001-c080",
-      "status": "queued",
+      "status": "complete",
       "path": "/media/jp/audio/unit_001/u001-c080.mp3",
-      "text": "友達は飲みます"
+      "text": "友達は飲みます",
+      "speechText": "ともだちわのみます",
+      "provider": "elevenlabs"
+    }
+  ],
+  "tokenAudio": [
+    {
+      "key": "私|わたし|わたし",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/66c3aae1e695.mp3",
+      "text": "私",
+      "speechText": "わたし",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "です|です|です",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/84f3cb7d46c6.mp3",
+      "text": "です",
+      "speechText": "です",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "彼|かれ|かれ",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/d632512a56c9.mp3",
+      "text": "彼",
+      "speechText": "かれ",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "あなた|あなた|あなた",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/76f54e9c9180.mp3",
+      "text": "あなた",
+      "speechText": "あなた",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "彼女|かのじょ|かのじょ",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/bb76cb0913c5.mp3",
+      "text": "彼女",
+      "speechText": "かのじょ",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "か|か|か",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3",
+      "text": "か",
+      "speechText": "か",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "は|わ|わ",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/72a1cd6703a6.mp3",
+      "text": "は",
+      "speechText": "わ",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "学生|がくせい|がくせい",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/2cf38773dd94.mp3",
+      "text": "学生",
+      "speechText": "がくせい",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "食べます|たべます|たべます",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/a4c20cfa2181.mp3",
+      "text": "食べます",
+      "speechText": "たべます",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "友達|ともだち|ともだち",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/97d7c19ce9ab.mp3",
+      "text": "友達",
+      "speechText": "ともだち",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "飲みます|のみます|のみます",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/ef63c1d1098b.mp3",
+      "text": "飲みます",
+      "speechText": "のみます",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "先生|せんせい|せんせい",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/be6776382409.mp3",
+      "text": "先生",
+      "speechText": "せんせい",
+      "provider": "elevenlabs"
+    },
+    {
+      "key": "人|ひと|ひと",
+      "status": "complete",
+      "path": "/media/jp/audio/tokens/bfa1459a9646.mp3",
+      "text": "人",
+      "speechText": "ひと",
+      "provider": "elevenlabs"
     }
   ]
 }

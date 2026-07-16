@@ -21,8 +21,17 @@ function publicPathFromRef(ref) {
   return ref.replace(/^\//, "public/");
 }
 
+function speechTextForToken(token) {
+  return token.audioText ?? token.reading ?? token.surface;
+}
+
+function tokenAudioKey(token) {
+  return `${token.surface}|${token.reading ?? token.surface}|${speechTextForToken(token)}`;
+}
+
 const failures = [];
 const index = await readJson("data/jp/curriculum/unit_index.json");
+const tokenAudioRefsByKey = new Map();
 
 for (const entry of index.units) {
   const unitSlug = `unit_${String(entry.id).padStart(3, "0")}`;
@@ -46,6 +55,21 @@ for (const entry of index.units) {
 
     if (card.audioRef && !(await exists(publicPathFromRef(card.audioRef)))) {
       failures.push(`${unitSlug} ${card.id}: audioRef does not exist: ${card.audioRef}`);
+    }
+
+    for (const token of card.tokens ?? []) {
+      if (!token.audioRef) continue;
+      if (!(await exists(publicPathFromRef(token.audioRef)))) {
+        failures.push(`${unitSlug} ${card.id}: token audioRef does not exist: ${token.audioRef}`);
+      }
+
+      const key = tokenAudioKey(token);
+      const existingRef = tokenAudioRefsByKey.get(key);
+      if (existingRef && existingRef !== token.audioRef) {
+        failures.push(`${unitSlug} ${card.id}: token audio key ${key} uses both ${existingRef} and ${token.audioRef}`);
+      } else {
+        tokenAudioRefsByKey.set(key, token.audioRef);
+      }
     }
   }
 }

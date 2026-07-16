@@ -104,7 +104,8 @@ Kotoba now keeps a curriculum source layer under
 `data/jp/curriculum/source/`. This layer is the editable model that future
 generators should use before writing frozen unit JSON:
 
-- `unit_specs.json`: unit metadata, grammar focus, and the 10 planned new words
+- `unit_specs.json`: unit metadata, grammar focus, the planned core new words,
+  and any lexical grammar words that must participate in SRS
   for each authored unit
 - `pacing.json`: card-band rules and first-exposure cutoffs
 
@@ -194,7 +195,7 @@ A standard unit defines:
 - unit id
 - title
 - grammar focus
-- 10 new words
+- about 10 core new words, plus any learned lexical grammar words that need SRS
 - cards
 - validation notes
 

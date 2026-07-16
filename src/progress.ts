@@ -20,6 +20,7 @@ export const defaultProgress: Progress = {
   unitId: 1,
   cardIndex: 0,
   cardPositions: { "1": 0 },
+  cardCounts: {},
   completedUnits: [],
   settings: defaultSettings,
 };
@@ -35,6 +36,16 @@ function cleanCardPositions(value: unknown): Record<string, number> {
     Object.entries(value)
       .filter(([unitId, cardIndex]) => /^\d+$/.test(unitId) && typeof cardIndex === "number" && Number.isFinite(cardIndex))
       .map(([unitId, cardIndex]) => [unitId, Math.max(0, Math.floor(cardIndex as number))])
+  );
+}
+
+function cleanCardCounts(value: unknown): Record<string, number> {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return {};
+
+  return Object.fromEntries(
+    Object.entries(value)
+      .filter(([unitId, cardCount]) => /^\d+$/.test(unitId) && typeof cardCount === "number" && Number.isFinite(cardCount) && cardCount > 0)
+      .map(([unitId, cardCount]) => [unitId, Math.max(1, Math.floor(cardCount as number))])
   );
 }
 
@@ -71,12 +82,14 @@ export function readProgress(): Progress {
     const unitId = numberOrDefault(parsed.unitId, defaultProgress.unitId);
     const cardIndex = Math.max(0, Math.floor(numberOrDefault(parsed.cardIndex, defaultProgress.cardIndex)));
     const cardPositions = cleanCardPositions(parsed.cardPositions);
+    const cardCounts = cleanCardCounts(parsed.cardCounts);
     cardPositions[String(unitId)] = cardPositions[String(unitId)] ?? cardIndex;
 
     return {
       unitId,
       cardIndex,
       cardPositions,
+      cardCounts,
       completedUnits: Array.isArray(parsed.completedUnits)
         ? parsed.completedUnits.filter((id): id is number => typeof id === "number" && Number.isInteger(id))
         : [],

@@ -32,8 +32,8 @@
         },
         {
           "id": "namae",
-          "surface": "\u4eba",
-          "reading": "\u3072\u3068",
+          "surface": "人",
+          "reading": "ひと",
           "meaning": "person",
           "function": "person"
         },
@@ -239,9 +239,9 @@
     },
     {
       "id": 4,
-      "slug": "negative-identity",
-      "title": "Unit 4: Saying What It Is Not",
-      "grammarFocus": "Aじゃありません",
+      "slug": "basic-existence-and-absence",
+      "title": "Unit 4: There Is And There Is Not",
+      "grammarFocus": "N????? / N???? / N?????? / N?????",
       "newWords": [
         {
           "id": "mise",
@@ -311,6 +311,20 @@
           "surface": "来る",
           "reading": "くる",
           "meaning": "come",
+          "function": "verb"
+        },
+        {
+          "id": "aru",
+          "surface": "ある",
+          "reading": "ある",
+          "meaning": "exist; there is for things",
+          "function": "verb"
+        },
+        {
+          "id": "iru",
+          "surface": "いる",
+          "reading": "いる",
+          "meaning": "exist; there is for living things",
           "function": "verb"
         }
       ]
@@ -1564,1874 +1578,1985 @@
       ]
     },
     {
-      "id": 21,
-      "slug": "polite-verbs-non-past",
-      "title": "Unit 21: Polite Verbs, Non-Past",
-      "grammarFocus": "Vます / polite non-past actions",
+      "id": 101,
+      "slug": "hiragana",
+      "title": "Kana 1: Hiragana",
+      "grammarFocus": "Hiragana sound recognition",
+      "kind": "kana",
       "newWords": [
         {
-          "id": "kaeru_verb",
-          "surface": "帰る",
-          "reading": "かえる",
-          "meaning": "return; go home",
-          "function": "verb"
-        },
-        {
-          "id": "utau",
-          "surface": "歌う",
-          "reading": "うたう",
-          "meaning": "sing",
-          "function": "verb"
-        },
-        {
-          "id": "odoru",
-          "surface": "踊る",
-          "reading": "おどる",
-          "meaning": "dance",
-          "function": "verb"
-        },
-        {
-          "id": "warau",
-          "surface": "笑う",
-          "reading": "わらう",
-          "meaning": "laugh",
-          "function": "verb"
-        },
-        {
-          "id": "naku",
-          "surface": "泣く",
-          "reading": "なく",
-          "meaning": "cry",
-          "function": "verb"
-        },
-        {
-          "id": "wakaru",
-          "surface": "分かる",
-          "reading": "わかる",
-          "meaning": "understand",
-          "function": "verb"
-        },
-        {
-          "id": "ganbaru",
-          "surface": "頑張る",
-          "reading": "がんばる",
-          "meaning": "do one's best",
-          "function": "verb"
-        },
-        {
-          "id": "komaru",
-          "surface": "困る",
-          "reading": "こまる",
-          "meaning": "be troubled",
-          "function": "verb"
-        },
-        {
-          "id": "modoru",
-          "surface": "戻る",
-          "reading": "もどる",
-          "meaning": "return; go back",
-          "function": "verb"
-        },
-        {
-          "id": "tomaru",
-          "surface": "止まる",
-          "reading": "とまる",
-          "meaning": "stop; stay",
-          "function": "verb"
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "slug": "polite-verb-negatives",
-      "title": "Unit 22: Polite Verb Negatives",
-      "grammarFocus": "Vません",
-      "newWords": [
-        {
-          "id": "au",
-          "surface": "会う",
-          "reading": "あう",
-          "meaning": "meet",
-          "function": "verb"
-        },
-        {
-          "id": "tsukuru",
-          "surface": "作る",
-          "reading": "つくる",
-          "meaning": "make",
-          "function": "verb"
-        },
-        {
-          "id": "neru",
-          "surface": "寝る",
-          "reading": "ねる",
-          "meaning": "sleep",
-          "function": "verb"
-        },
-        {
-          "id": "okiru",
-          "surface": "起きる",
-          "reading": "おきる",
-          "meaning": "wake up",
-          "function": "verb"
-        },
-        {
-          "id": "yasumu_verb",
-          "surface": "休む",
-          "reading": "やすむ",
-          "meaning": "rest; take a day off",
-          "function": "verb"
-        },
-        {
-          "id": "yorokobu",
-          "surface": "喜ぶ",
-          "reading": "よろこぶ",
-          "meaning": "be glad",
-          "function": "verb"
-        },
-        {
-          "id": "kanashimu",
-          "surface": "悲しむ",
-          "reading": "かなしむ",
-          "meaning": "be sad",
-          "function": "verb"
-        },
-        {
-          "id": "kuraberu",
-          "surface": "比べる",
-          "reading": "くらべる",
-          "meaning": "compare",
-          "function": "verb"
-        },
-        {
-          "id": "naoru",
-          "surface": "治る",
-          "reading": "なおる",
-          "meaning": "get better",
-          "function": "verb"
-        },
-        {
-          "id": "saguru",
-          "surface": "探る",
-          "reading": "さぐる",
-          "meaning": "explore; probe",
-          "function": "verb"
-        }
-      ]
-    },
-    {
-      "id": 23,
-      "slug": "polite-verbs-past",
-      "title": "Unit 23: Polite Verbs, Past",
-      "grammarFocus": "Vました / Vませんでした",
-      "newWords": [
-        {
-          "id": "aruku",
-          "surface": "歩く",
-          "reading": "あるく",
-          "meaning": "walk",
-          "function": "verb"
-        },
-        {
-          "id": "hashiru",
-          "surface": "走る",
-          "reading": "はしる",
-          "meaning": "run",
-          "function": "verb"
-        },
-        {
-          "id": "oyogu",
-          "surface": "泳ぐ",
-          "reading": "およぐ",
-          "meaning": "swim",
-          "function": "verb"
-        },
-        {
-          "id": "asobu",
-          "surface": "遊ぶ",
-          "reading": "あそぶ",
-          "meaning": "play",
-          "function": "verb"
-        },
-        {
-          "id": "hairu",
-          "surface": "入る",
-          "reading": "はいる",
-          "meaning": "enter",
-          "function": "verb"
-        },
-        {
-          "id": "deru",
-          "surface": "出る",
-          "reading": "でる",
-          "meaning": "leave; exit",
-          "function": "verb"
-        },
-        {
-          "id": "akeru",
-          "surface": "開ける",
-          "reading": "あける",
-          "meaning": "open",
-          "function": "verb"
-        },
-        {
-          "id": "shimeru",
-          "surface": "閉める",
-          "reading": "しめる",
-          "meaning": "close",
-          "function": "verb"
-        },
-        {
-          "id": "arau",
-          "surface": "洗う",
-          "reading": "あらう",
-          "meaning": "wash",
-          "function": "verb"
-        },
-        {
-          "id": "tatsu",
-          "surface": "立つ",
-          "reading": "たつ",
-          "meaning": "stand",
-          "function": "verb"
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "slug": "direct-objects",
-      "title": "Unit 24: Direct Objects",
-      "grammarFocus": "NをVます",
-      "newWords": [
-        {
-          "id": "gohan",
-          "surface": "ご飯",
-          "reading": "ごはん",
-          "meaning": "meal; rice",
-          "function": "noun"
-        },
-        {
-          "id": "pan",
-          "surface": "パン",
-          "reading": "ぱん",
-          "meaning": "bread",
-          "function": "noun"
-        },
-        {
-          "id": "niku",
-          "surface": "肉",
-          "reading": "にく",
-          "meaning": "meat",
-          "function": "noun"
-        },
-        {
-          "id": "yasai",
-          "surface": "野菜",
-          "reading": "やさい",
-          "meaning": "vegetables",
-          "function": "noun"
-        },
-        {
-          "id": "kudamono",
-          "surface": "果物",
-          "reading": "くだもの",
-          "meaning": "fruit",
-          "function": "noun"
-        },
-        {
-          "id": "tegami",
-          "surface": "手紙",
-          "reading": "てがみ",
-          "meaning": "letter",
-          "function": "noun"
-        },
-        {
-          "id": "shinbun",
-          "surface": "新聞",
-          "reading": "しんぶん",
-          "meaning": "newspaper",
-          "function": "noun"
-        },
-        {
-          "id": "ongaku",
-          "surface": "音楽",
-          "reading": "おんがく",
-          "meaning": "music",
-          "function": "noun"
-        },
-        {
-          "id": "eiga",
-          "surface": "映画",
-          "reading": "えいが",
-          "meaning": "movie",
-          "function": "noun"
-        },
-        {
-          "id": "koohii",
-          "surface": "コーヒー",
-          "reading": "こーひー",
-          "meaning": "coffee",
-          "function": "noun"
-        }
-      ]
-    },
-    {
-      "id": 25,
-      "slug": "going-to-places",
-      "title": "Unit 25: Going To Places",
-      "grammarFocus": "場所に行きます / 場所へ行きます",
-      "newWords": [
-        {
-          "id": "jitaku",
-          "surface": "自宅",
-          "reading": "じたく",
-          "meaning": "home",
-          "function": "place"
-        },
-        {
-          "id": "jimusho",
-          "surface": "事務所",
-          "reading": "じむしょ",
-          "meaning": "office",
-          "function": "place"
-        },
-        {
-          "id": "daigaku",
-          "surface": "大学",
-          "reading": "だいがく",
-          "meaning": "university",
-          "function": "place"
-        },
-        {
-          "id": "hakubutsukan",
-          "surface": "博物館",
-          "reading": "はくぶつかん",
-          "meaning": "museum",
-          "function": "place"
-        },
-        {
-          "id": "honya",
-          "surface": "本屋",
-          "reading": "ほんや",
-          "meaning": "bookstore",
-          "function": "place"
-        },
-        {
-          "id": "konbini",
-          "surface": "コンビニ",
-          "reading": "こんびに",
-          "meaning": "convenience store",
-          "function": "place"
-        },
-        {
-          "id": "jinja",
-          "surface": "神社",
-          "reading": "じんじゃ",
-          "meaning": "shrine",
-          "function": "place"
-        },
-        {
-          "id": "tera",
-          "surface": "寺",
-          "reading": "てら",
-          "meaning": "temple",
-          "function": "place"
-        },
-        {
-          "id": "koujou",
-          "surface": "工場",
-          "reading": "こうじょう",
-          "meaning": "factory",
-          "function": "place"
-        },
-        {
-          "id": "taishikan",
-          "surface": "大使館",
-          "reading": "たいしかん",
-          "meaning": "embassy",
-          "function": "place"
-        }
-      ]
-    },
-    {
-      "id": 26,
-      "slug": "action-location",
-      "title": "Unit 26: Action Location",
-      "grammarFocus": "場所でVます",
-      "newWords": [
-        {
-          "id": "taiikukan",
-          "surface": "体育館",
-          "reading": "たいいくかん",
-          "meaning": "gym",
-          "function": "place"
-        },
-        {
-          "id": "puuru",
-          "surface": "プール",
-          "reading": "ぷーる",
-          "meaning": "pool",
-          "function": "place"
-        },
-        {
-          "id": "kaigishitsu",
-          "surface": "会議室",
-          "reading": "かいぎしつ",
-          "meaning": "meeting room",
-          "function": "place"
-        },
-        {
-          "id": "hiroba",
-          "surface": "広場",
-          "reading": "ひろば",
-          "meaning": "plaza",
-          "function": "place"
-        },
-        {
-          "id": "sentou",
-          "surface": "銭湯",
-          "reading": "せんとう",
-          "meaning": "public bath",
-          "function": "place"
-        },
-        {
-          "id": "ryokan",
-          "surface": "旅館",
-          "reading": "りょかん",
-          "meaning": "inn",
-          "function": "place"
-        },
-        {
-          "id": "kaigan",
-          "surface": "海岸",
-          "reading": "かいがん",
-          "meaning": "beach",
-          "function": "place"
-        },
-        {
-          "id": "mori",
-          "surface": "森",
-          "reading": "もり",
-          "meaning": "forest",
-          "function": "place"
-        },
-        {
-          "id": "kissaten",
-          "surface": "喫茶店",
-          "reading": "きっさてん",
-          "meaning": "coffee shop",
-          "function": "place"
-        },
-        {
-          "id": "depaato",
-          "surface": "デパート",
-          "reading": "でぱーと",
-          "meaning": "department store",
-          "function": "place"
-        }
-      ]
-    },
-    {
-      "id": 27,
-      "slug": "time-point",
-      "title": "Unit 27: Time Point",
-      "grammarFocus": "時間にVます",
-      "newWords": [
-        {
-          "id": "getsuyoubi",
-          "surface": "月曜日",
-          "reading": "げつようび",
-          "meaning": "Monday",
-          "function": "time"
-        },
-        {
-          "id": "kayoubi",
-          "surface": "火曜日",
-          "reading": "かようび",
-          "meaning": "Tuesday",
-          "function": "time"
-        },
-        {
-          "id": "suiyoubi",
-          "surface": "水曜日",
-          "reading": "すいようび",
-          "meaning": "Wednesday",
-          "function": "time"
-        },
-        {
-          "id": "mokuyoubi",
-          "surface": "木曜日",
-          "reading": "もくようび",
-          "meaning": "Thursday",
-          "function": "time"
-        },
-        {
-          "id": "kinyoubi",
-          "surface": "金曜日",
-          "reading": "きんようび",
-          "meaning": "Friday",
-          "function": "time"
-        },
-        {
-          "id": "doyoubi",
-          "surface": "土曜日",
-          "reading": "どようび",
-          "meaning": "Saturday",
-          "function": "time"
-        },
-        {
-          "id": "nichiyoubi",
-          "surface": "日曜日",
-          "reading": "にちようび",
-          "meaning": "Sunday",
-          "function": "time"
-        },
-        {
-          "id": "hiru",
-          "surface": "昼",
-          "reading": "ひる",
-          "meaning": "noon; daytime",
-          "function": "time"
-        },
-        {
-          "id": "gogo",
-          "surface": "午後",
-          "reading": "ごご",
-          "meaning": "afternoon; p.m.",
-          "function": "time"
-        },
-        {
-          "id": "gozen",
-          "surface": "午前",
-          "reading": "ごぜん",
-          "meaning": "morning; a.m.",
-          "function": "time"
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "slug": "from-and-until",
-      "title": "Unit 28: From And Until",
-      "grammarFocus": "AからBまで",
-      "newWords": [
-        {
-          "id": "ichiji",
-          "surface": "一時",
-          "reading": "いちじ",
-          "meaning": "one o'clock",
-          "function": "time"
-        },
-        {
-          "id": "niji",
-          "surface": "二時",
-          "reading": "にじ",
-          "meaning": "two o'clock",
-          "function": "time"
-        },
-        {
-          "id": "sanji",
-          "surface": "三時",
-          "reading": "さんじ",
-          "meaning": "three o'clock",
-          "function": "time"
-        },
-        {
-          "id": "yoji",
-          "surface": "四時",
-          "reading": "よじ",
-          "meaning": "four o'clock",
-          "function": "time"
-        },
-        {
-          "id": "goji",
-          "surface": "五時",
-          "reading": "ごじ",
-          "meaning": "five o'clock",
-          "function": "time"
-        },
-        {
-          "id": "rokuji",
-          "surface": "六時",
-          "reading": "ろくじ",
-          "meaning": "six o'clock",
-          "function": "time"
-        },
-        {
-          "id": "shichiji",
-          "surface": "七時",
-          "reading": "しちじ",
-          "meaning": "seven o'clock",
-          "function": "time"
-        },
-        {
-          "id": "hachiji",
-          "surface": "八時",
-          "reading": "はちじ",
-          "meaning": "eight o'clock",
-          "function": "time"
-        },
-        {
-          "id": "kuji",
-          "surface": "九時",
-          "reading": "くじ",
-          "meaning": "nine o'clock",
-          "function": "time"
-        },
-        {
-          "id": "juuji",
-          "surface": "十時",
-          "reading": "じゅうじ",
-          "meaning": "ten o'clock",
-          "function": "time"
-        }
-      ]
-    },
-    {
-      "id": 29,
-      "slug": "with-someone",
-      "title": "Unit 29: With Someone",
-      "grammarFocus": "人とVます",
-      "newWords": [
-        {
-          "id": "senpai",
-          "surface": "先輩",
-          "reading": "せんぱい",
-          "meaning": "senior; mentor",
-          "function": "person"
-        },
-        {
-          "id": "kouhai",
-          "surface": "後輩",
-          "reading": "こうはい",
-          "meaning": "junior colleague",
-          "function": "person"
-        },
-        {
-          "id": "douryou",
-          "surface": "同僚",
-          "reading": "どうりょう",
-          "meaning": "coworker",
-          "function": "person"
-        },
-        {
-          "id": "joushi",
-          "surface": "上司",
-          "reading": "じょうし",
-          "meaning": "boss",
-          "function": "person"
-        },
-        {
-          "id": "ryoushin",
-          "surface": "両親",
-          "reading": "りょうしん",
-          "meaning": "parents",
-          "function": "person"
-        },
-        {
-          "id": "musuko",
-          "surface": "息子",
-          "reading": "むすこ",
-          "meaning": "son",
-          "function": "person"
-        },
-        {
-          "id": "musume",
-          "surface": "娘",
-          "reading": "むすめ",
-          "meaning": "daughter",
-          "function": "person"
-        },
-        {
-          "id": "koibito",
-          "surface": "恋人",
-          "reading": "こいびと",
-          "meaning": "partner; sweetheart",
-          "function": "person"
-        },
-        {
-          "id": "okusan",
-          "surface": "奥さん",
-          "reading": "おくさん",
-          "meaning": "wife",
-          "function": "person"
-        },
-        {
-          "id": "goshujin",
-          "surface": "ご主人",
-          "reading": "ごしゅじん",
-          "meaning": "husband",
-          "function": "person"
-        }
-      ]
-    },
-    {
-      "id": 30,
-      "slug": "frequency",
-      "title": "Unit 30: Frequency",
-      "grammarFocus": "毎日 / よく / 時々 / あまり...ません",
-      "newWords": [
-        {
-          "id": "mainichi",
-          "surface": "毎日",
-          "reading": "まいにち",
-          "meaning": "every day",
-          "function": "adverb"
-        },
-        {
-          "id": "maiasa",
-          "surface": "毎朝",
-          "reading": "まいあさ",
-          "meaning": "every morning",
-          "function": "adverb"
-        },
-        {
-          "id": "maiban",
-          "surface": "毎晩",
-          "reading": "まいばん",
-          "meaning": "every night",
-          "function": "adverb"
-        },
-        {
-          "id": "yoku_adv",
-          "surface": "よく",
-          "reading": "よく",
-          "meaning": "often",
-          "function": "adverb"
-        },
-        {
-          "id": "tokidoki",
-          "surface": "時々",
-          "reading": "ときどき",
-          "meaning": "sometimes",
-          "function": "adverb"
-        },
-        {
-          "id": "itsumo",
-          "surface": "いつも",
-          "reading": "いつも",
-          "meaning": "always",
-          "function": "adverb"
-        },
-        {
-          "id": "taitei",
-          "surface": "たいてい",
-          "reading": "たいてい",
-          "meaning": "usually",
-          "function": "adverb"
-        },
-        {
-          "id": "tamani",
-          "surface": "たまに",
-          "reading": "たまに",
-          "meaning": "occasionally",
-          "function": "adverb"
-        },
-        {
-          "id": "hotondo",
-          "surface": "ほとんど",
-          "reading": "ほとんど",
-          "meaning": "almost never",
-          "function": "adverb"
-        },
-        {
-          "id": "mettani",
-          "surface": "めったに",
-          "reading": "めったに",
-          "meaning": "rarely",
-          "function": "adverb"
-        }
-      ]
-    },
-    {
-      "id": 31,
-      "slug": "likes-and-dislikes",
-      "title": "Unit 31: Likes And Dislikes",
-      "grammarFocus": "Nが好きです / Nが嫌いです",
-      "newWords": [
-        {
-          "id": "sushi",
-          "surface": "寿司",
-          "reading": "すし",
-          "meaning": "sushi",
-          "function": "noun"
-        },
-        {
-          "id": "raamen",
-          "surface": "ラーメン",
-          "reading": "らーめん",
-          "meaning": "ramen",
-          "function": "noun"
-        },
-        {
-          "id": "manga",
-          "surface": "漫画",
-          "reading": "まんが",
-          "meaning": "manga",
-          "function": "noun"
-        },
-        {
-          "id": "anime",
-          "surface": "アニメ",
-          "reading": "あにめ",
-          "meaning": "anime",
-          "function": "noun"
-        },
-        {
-          "id": "supootsu",
-          "surface": "スポーツ",
-          "reading": "すぽーつ",
-          "meaning": "sports",
-          "function": "noun"
-        },
-        {
-          "id": "sakkaa",
-          "surface": "サッカー",
-          "reading": "さっかー",
-          "meaning": "soccer",
-          "function": "noun"
-        },
-        {
-          "id": "okashi",
-          "surface": "お菓子",
-          "reading": "おかし",
-          "meaning": "sweets; snacks",
-          "function": "noun"
-        },
-        {
-          "id": "ryouri",
-          "surface": "料理",
-          "reading": "りょうり",
-          "meaning": "cooking; cuisine",
-          "function": "noun"
-        },
-        {
-          "id": "nihongo",
-          "surface": "日本語",
-          "reading": "にほんご",
-          "meaning": "Japanese language",
-          "function": "noun"
-        },
-        {
-          "id": "shumi",
-          "surface": "趣味",
-          "reading": "しゅみ",
-          "meaning": "hobby",
-          "function": "noun"
-        }
-      ]
-    },
-    {
-      "id": 32,
-      "slug": "skill-as-description",
-      "title": "Unit 32: Skill As Description",
-      "grammarFocus": "Nが上手です / Nが下手です",
-      "newWords": [
-        {
-          "id": "piano",
-          "surface": "ピアノ",
-          "reading": "ぴあの",
-          "meaning": "piano",
-          "function": "noun"
-        },
-        {
-          "id": "gitaa",
-          "surface": "ギター",
-          "reading": "ぎたー",
-          "meaning": "guitar",
-          "function": "noun"
-        },
-        {
-          "id": "uta",
-          "surface": "歌",
-          "reading": "うた",
-          "meaning": "singing; song",
-          "function": "noun"
-        },
-        {
-          "id": "dansu",
-          "surface": "ダンス",
-          "reading": "だんす",
-          "meaning": "dance",
-          "function": "noun"
-        },
-        {
-          "id": "e_drawing",
-          "surface": "絵",
+          "id": "hiragana_a",
+          "surface": "あ",
+          "reading": "あ",
+          "audioText": "あ",
+          "meaning": "a",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_i",
+          "surface": "い",
+          "reading": "い",
+          "audioText": "い",
+          "meaning": "i",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_u",
+          "surface": "う",
+          "reading": "う",
+          "audioText": "う",
+          "meaning": "u",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_e",
+          "surface": "え",
           "reading": "え",
-          "meaning": "drawing; picture",
-          "function": "noun"
+          "audioText": "え",
+          "meaning": "e",
+          "function": "hiragana"
         },
         {
-          "id": "unten",
-          "surface": "運転",
-          "reading": "うんてん",
-          "meaning": "driving",
-          "function": "noun"
+          "id": "hiragana_o",
+          "surface": "お",
+          "reading": "お",
+          "audioText": "お",
+          "meaning": "o",
+          "function": "hiragana"
         },
         {
-          "id": "souji",
-          "surface": "掃除",
-          "reading": "そうじ",
-          "meaning": "cleaning",
-          "function": "noun"
+          "id": "hiragana_ka",
+          "surface": "か",
+          "reading": "か",
+          "audioText": "か",
+          "meaning": "ka",
+          "function": "hiragana"
         },
         {
-          "id": "keisan",
-          "surface": "計算",
-          "reading": "けいさん",
-          "meaning": "calculation",
-          "function": "noun"
+          "id": "hiragana_ki",
+          "surface": "き",
+          "reading": "き",
+          "audioText": "き",
+          "meaning": "ki",
+          "function": "hiragana"
         },
         {
-          "id": "eigo",
-          "surface": "英語",
-          "reading": "えいご",
-          "meaning": "English language",
-          "function": "noun"
+          "id": "hiragana_ku",
+          "surface": "く",
+          "reading": "く",
+          "audioText": "く",
+          "meaning": "ku",
+          "function": "hiragana"
         },
         {
-          "id": "kanji",
-          "surface": "漢字",
-          "reading": "かんじ",
-          "meaning": "kanji",
-          "function": "noun"
+          "id": "hiragana_ke",
+          "surface": "け",
+          "reading": "け",
+          "audioText": "け",
+          "meaning": "ke",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ko",
+          "surface": "こ",
+          "reading": "こ",
+          "audioText": "こ",
+          "meaning": "ko",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_sa",
+          "surface": "さ",
+          "reading": "さ",
+          "audioText": "さ",
+          "meaning": "sa",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_shi",
+          "surface": "し",
+          "reading": "し",
+          "audioText": "し",
+          "meaning": "shi",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_su",
+          "surface": "す",
+          "reading": "す",
+          "audioText": "す",
+          "meaning": "su",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_se",
+          "surface": "せ",
+          "reading": "せ",
+          "audioText": "せ",
+          "meaning": "se",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_so",
+          "surface": "そ",
+          "reading": "そ",
+          "audioText": "そ",
+          "meaning": "so",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ta",
+          "surface": "た",
+          "reading": "た",
+          "audioText": "た",
+          "meaning": "ta",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_chi",
+          "surface": "ち",
+          "reading": "ち",
+          "audioText": "ち",
+          "meaning": "chi",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_tsu",
+          "surface": "つ",
+          "reading": "つ",
+          "audioText": "つ",
+          "meaning": "tsu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_te",
+          "surface": "て",
+          "reading": "て",
+          "audioText": "て",
+          "meaning": "te",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_to",
+          "surface": "と",
+          "reading": "と",
+          "audioText": "と",
+          "meaning": "to",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_na",
+          "surface": "な",
+          "reading": "な",
+          "audioText": "な",
+          "meaning": "na",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ni",
+          "surface": "に",
+          "reading": "に",
+          "audioText": "に",
+          "meaning": "ni",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_nu",
+          "surface": "ぬ",
+          "reading": "ぬ",
+          "audioText": "ぬ",
+          "meaning": "nu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ne",
+          "surface": "ね",
+          "reading": "ね",
+          "audioText": "ね",
+          "meaning": "ne",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_no",
+          "surface": "の",
+          "reading": "の",
+          "audioText": "の",
+          "meaning": "no",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ha",
+          "surface": "は",
+          "reading": "は",
+          "audioText": "は",
+          "meaning": "ha",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_hi",
+          "surface": "ひ",
+          "reading": "ひ",
+          "audioText": "ひ",
+          "meaning": "hi",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_fu",
+          "surface": "ふ",
+          "reading": "ふ",
+          "audioText": "ふ",
+          "meaning": "fu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_he",
+          "surface": "へ",
+          "reading": "へ",
+          "audioText": "へ",
+          "meaning": "he",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ho",
+          "surface": "ほ",
+          "reading": "ほ",
+          "audioText": "ほ",
+          "meaning": "ho",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ma",
+          "surface": "ま",
+          "reading": "ま",
+          "audioText": "ま",
+          "meaning": "ma",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_mi",
+          "surface": "み",
+          "reading": "み",
+          "audioText": "み",
+          "meaning": "mi",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_mu",
+          "surface": "む",
+          "reading": "む",
+          "audioText": "む",
+          "meaning": "mu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_me",
+          "surface": "め",
+          "reading": "め",
+          "audioText": "め",
+          "meaning": "me",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_mo",
+          "surface": "も",
+          "reading": "も",
+          "audioText": "も",
+          "meaning": "mo",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ya",
+          "surface": "や",
+          "reading": "や",
+          "audioText": "や",
+          "meaning": "ya",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_yu",
+          "surface": "ゆ",
+          "reading": "ゆ",
+          "audioText": "ゆ",
+          "meaning": "yu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_yo",
+          "surface": "よ",
+          "reading": "よ",
+          "audioText": "よ",
+          "meaning": "yo",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ra",
+          "surface": "ら",
+          "reading": "ら",
+          "audioText": "ら",
+          "meaning": "ra",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ri",
+          "surface": "り",
+          "reading": "り",
+          "audioText": "り",
+          "meaning": "ri",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ru",
+          "surface": "る",
+          "reading": "る",
+          "audioText": "る",
+          "meaning": "ru",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_re",
+          "surface": "れ",
+          "reading": "れ",
+          "audioText": "れ",
+          "meaning": "re",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ro",
+          "surface": "ろ",
+          "reading": "ろ",
+          "audioText": "ろ",
+          "meaning": "ro",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_wa",
+          "surface": "わ",
+          "reading": "わ",
+          "audioText": "わ",
+          "meaning": "wa",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_wo",
+          "surface": "を",
+          "reading": "を",
+          "audioText": "を",
+          "meaning": "wo",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_n",
+          "surface": "ん",
+          "reading": "ん",
+          "audioText": "ん",
+          "meaning": "n",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_small_a",
+          "surface": "ぁ",
+          "reading": "あ",
+          "audioText": "ちいさいあ",
+          "meaning": "small a",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_small_i",
+          "surface": "ぃ",
+          "reading": "い",
+          "audioText": "ちいさいい",
+          "meaning": "small i",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_small_u",
+          "surface": "ぅ",
+          "reading": "う",
+          "audioText": "ちいさいう",
+          "meaning": "small u",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_small_e",
+          "surface": "ぇ",
+          "reading": "え",
+          "audioText": "ちいさいえ",
+          "meaning": "small e",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_small_o",
+          "surface": "ぉ",
+          "reading": "お",
+          "audioText": "ちいさいお",
+          "meaning": "small o",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_small_tsu",
+          "surface": "っ",
+          "reading": "つ",
+          "audioText": "ちいさいつ",
+          "meaning": "small tsu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_small_ya",
+          "surface": "ゃ",
+          "reading": "や",
+          "audioText": "ちいさいや",
+          "meaning": "small ya",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_small_yu",
+          "surface": "ゅ",
+          "reading": "ゆ",
+          "audioText": "ちいさいゆ",
+          "meaning": "small yu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_small_yo",
+          "surface": "ょ",
+          "reading": "よ",
+          "audioText": "ちいさいよ",
+          "meaning": "small yo",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ga",
+          "surface": "が",
+          "reading": "が",
+          "audioText": "が",
+          "meaning": "ga",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_gi",
+          "surface": "ぎ",
+          "reading": "ぎ",
+          "audioText": "ぎ",
+          "meaning": "gi",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_gu",
+          "surface": "ぐ",
+          "reading": "ぐ",
+          "audioText": "ぐ",
+          "meaning": "gu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ge",
+          "surface": "げ",
+          "reading": "げ",
+          "audioText": "げ",
+          "meaning": "ge",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_go",
+          "surface": "ご",
+          "reading": "ご",
+          "audioText": "ご",
+          "meaning": "go",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_za",
+          "surface": "ざ",
+          "reading": "ざ",
+          "audioText": "ざ",
+          "meaning": "za",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ji_zi",
+          "surface": "じ",
+          "reading": "じ",
+          "audioText": "じ",
+          "meaning": "ji",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_zu",
+          "surface": "ず",
+          "reading": "ず",
+          "audioText": "ず",
+          "meaning": "zu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ze",
+          "surface": "ぜ",
+          "reading": "ぜ",
+          "audioText": "ぜ",
+          "meaning": "ze",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_zo",
+          "surface": "ぞ",
+          "reading": "ぞ",
+          "audioText": "ぞ",
+          "meaning": "zo",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_da",
+          "surface": "だ",
+          "reading": "だ",
+          "audioText": "だ",
+          "meaning": "da",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ji_di",
+          "surface": "ぢ",
+          "reading": "ぢ",
+          "audioText": "ぢ",
+          "meaning": "ji",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_zu_du",
+          "surface": "づ",
+          "reading": "づ",
+          "audioText": "づ",
+          "meaning": "zu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_de",
+          "surface": "で",
+          "reading": "で",
+          "audioText": "で",
+          "meaning": "de",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_do",
+          "surface": "ど",
+          "reading": "ど",
+          "audioText": "ど",
+          "meaning": "do",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ba",
+          "surface": "ば",
+          "reading": "ば",
+          "audioText": "ば",
+          "meaning": "ba",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_bi",
+          "surface": "び",
+          "reading": "び",
+          "audioText": "び",
+          "meaning": "bi",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_bu",
+          "surface": "ぶ",
+          "reading": "ぶ",
+          "audioText": "ぶ",
+          "meaning": "bu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_be",
+          "surface": "べ",
+          "reading": "べ",
+          "audioText": "べ",
+          "meaning": "be",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_bo",
+          "surface": "ぼ",
+          "reading": "ぼ",
+          "audioText": "ぼ",
+          "meaning": "bo",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_pa",
+          "surface": "ぱ",
+          "reading": "ぱ",
+          "audioText": "ぱ",
+          "meaning": "pa",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_pi",
+          "surface": "ぴ",
+          "reading": "ぴ",
+          "audioText": "ぴ",
+          "meaning": "pi",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_pu",
+          "surface": "ぷ",
+          "reading": "ぷ",
+          "audioText": "ぷ",
+          "meaning": "pu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_pe",
+          "surface": "ぺ",
+          "reading": "ぺ",
+          "audioText": "ぺ",
+          "meaning": "pe",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_po",
+          "surface": "ぽ",
+          "reading": "ぽ",
+          "audioText": "ぽ",
+          "meaning": "po",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_kya",
+          "surface": "きゃ",
+          "reading": "きゃ",
+          "audioText": "きゃ",
+          "meaning": "kya",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_kyu",
+          "surface": "きゅ",
+          "reading": "きゅ",
+          "audioText": "きゅ",
+          "meaning": "kyu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_kyo",
+          "surface": "きょ",
+          "reading": "きょ",
+          "audioText": "きょ",
+          "meaning": "kyo",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_gya",
+          "surface": "ぎゃ",
+          "reading": "ぎゃ",
+          "audioText": "ぎゃ",
+          "meaning": "gya",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_gyu",
+          "surface": "ぎゅ",
+          "reading": "ぎゅ",
+          "audioText": "ぎゅ",
+          "meaning": "gyu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_gyo",
+          "surface": "ぎょ",
+          "reading": "ぎょ",
+          "audioText": "ぎょ",
+          "meaning": "gyo",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_sha",
+          "surface": "しゃ",
+          "reading": "しゃ",
+          "audioText": "しゃ",
+          "meaning": "sha",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_shu",
+          "surface": "しゅ",
+          "reading": "しゅ",
+          "audioText": "しゅ",
+          "meaning": "shu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_sho",
+          "surface": "しょ",
+          "reading": "しょ",
+          "audioText": "しょ",
+          "meaning": "sho",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ja",
+          "surface": "じゃ",
+          "reading": "じゃ",
+          "audioText": "じゃ",
+          "meaning": "ja",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ju",
+          "surface": "じゅ",
+          "reading": "じゅ",
+          "audioText": "じゅ",
+          "meaning": "ju",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_jo",
+          "surface": "じょ",
+          "reading": "じょ",
+          "audioText": "じょ",
+          "meaning": "jo",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_cha",
+          "surface": "ちゃ",
+          "reading": "ちゃ",
+          "audioText": "ちゃ",
+          "meaning": "cha",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_chu",
+          "surface": "ちゅ",
+          "reading": "ちゅ",
+          "audioText": "ちゅ",
+          "meaning": "chu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_cho",
+          "surface": "ちょ",
+          "reading": "ちょ",
+          "audioText": "ちょ",
+          "meaning": "cho",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_nya",
+          "surface": "にゃ",
+          "reading": "にゃ",
+          "audioText": "にゃ",
+          "meaning": "nya",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_nyu",
+          "surface": "にゅ",
+          "reading": "にゅ",
+          "audioText": "にゅ",
+          "meaning": "nyu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_nyo",
+          "surface": "にょ",
+          "reading": "にょ",
+          "audioText": "にょ",
+          "meaning": "nyo",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_hya",
+          "surface": "ひゃ",
+          "reading": "ひゃ",
+          "audioText": "ひゃ",
+          "meaning": "hya",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_hyu",
+          "surface": "ひゅ",
+          "reading": "ひゅ",
+          "audioText": "ひゅ",
+          "meaning": "hyu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_hyo",
+          "surface": "ひょ",
+          "reading": "ひょ",
+          "audioText": "ひょ",
+          "meaning": "hyo",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_bya",
+          "surface": "びゃ",
+          "reading": "びゃ",
+          "audioText": "びゃ",
+          "meaning": "bya",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_byu",
+          "surface": "びゅ",
+          "reading": "びゅ",
+          "audioText": "びゅ",
+          "meaning": "byu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_byo",
+          "surface": "びょ",
+          "reading": "びょ",
+          "audioText": "びょ",
+          "meaning": "byo",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_pya",
+          "surface": "ぴゃ",
+          "reading": "ぴゃ",
+          "audioText": "ぴゃ",
+          "meaning": "pya",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_pyu",
+          "surface": "ぴゅ",
+          "reading": "ぴゅ",
+          "audioText": "ぴゅ",
+          "meaning": "pyu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_pyo",
+          "surface": "ぴょ",
+          "reading": "ぴょ",
+          "audioText": "ぴょ",
+          "meaning": "pyo",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_mya",
+          "surface": "みゃ",
+          "reading": "みゃ",
+          "audioText": "みゃ",
+          "meaning": "mya",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_myu",
+          "surface": "みゅ",
+          "reading": "みゅ",
+          "audioText": "みゅ",
+          "meaning": "myu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_myo",
+          "surface": "みょ",
+          "reading": "みょ",
+          "audioText": "みょ",
+          "meaning": "myo",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_rya",
+          "surface": "りゃ",
+          "reading": "りゃ",
+          "audioText": "りゃ",
+          "meaning": "rya",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ryu",
+          "surface": "りゅ",
+          "reading": "りゅ",
+          "audioText": "りゅ",
+          "meaning": "ryu",
+          "function": "hiragana"
+        },
+        {
+          "id": "hiragana_ryo",
+          "surface": "りょ",
+          "reading": "りょ",
+          "audioText": "りょ",
+          "meaning": "ryo",
+          "function": "hiragana"
         }
       ]
     },
     {
-      "id": 33,
-      "slug": "wanting-things",
-      "title": "Unit 33: Wanting Things",
-      "grammarFocus": "Nが欲しいです",
+      "id": 102,
+      "slug": "katakana",
+      "title": "Kana 2: Katakana",
+      "grammarFocus": "Katakana sound recognition",
+      "kind": "kana",
       "newWords": [
         {
-          "id": "okane",
-          "surface": "お金",
-          "reading": "おかね",
-          "meaning": "money",
-          "function": "noun"
+          "id": "katakana_a",
+          "surface": "ア",
+          "reading": "あ",
+          "audioText": "あ",
+          "meaning": "a",
+          "function": "katakana"
         },
         {
-          "id": "jikan",
-          "surface": "時間",
-          "reading": "じかん",
-          "meaning": "time",
-          "function": "noun"
+          "id": "katakana_i",
+          "surface": "イ",
+          "reading": "い",
+          "audioText": "い",
+          "meaning": "i",
+          "function": "katakana"
         },
         {
-          "id": "kasa",
-          "surface": "傘",
-          "reading": "かさ",
-          "meaning": "umbrella",
-          "function": "noun"
+          "id": "katakana_u",
+          "surface": "ウ",
+          "reading": "う",
+          "audioText": "う",
+          "meaning": "u",
+          "function": "katakana"
         },
         {
-          "id": "fuku",
-          "surface": "服",
-          "reading": "ふく",
-          "meaning": "clothes",
-          "function": "noun"
+          "id": "katakana_e",
+          "surface": "エ",
+          "reading": "え",
+          "audioText": "え",
+          "meaning": "e",
+          "function": "katakana"
         },
         {
-          "id": "kutsu",
-          "surface": "靴",
-          "reading": "くつ",
-          "meaning": "shoes",
-          "function": "noun"
+          "id": "katakana_o",
+          "surface": "オ",
+          "reading": "お",
+          "audioText": "お",
+          "meaning": "o",
+          "function": "katakana"
         },
         {
-          "id": "keitai",
-          "surface": "携帯",
-          "reading": "けいたい",
-          "meaning": "mobile phone",
-          "function": "noun"
+          "id": "katakana_ka",
+          "surface": "カ",
+          "reading": "か",
+          "audioText": "か",
+          "meaning": "ka",
+          "function": "katakana"
         },
         {
-          "id": "pasokon",
-          "surface": "パソコン",
-          "reading": "ぱそこん",
-          "meaning": "computer",
-          "function": "noun"
+          "id": "katakana_ki",
+          "surface": "キ",
+          "reading": "き",
+          "audioText": "き",
+          "meaning": "ki",
+          "function": "katakana"
         },
         {
-          "id": "kusuri",
-          "surface": "薬",
-          "reading": "くすり",
-          "meaning": "medicine",
-          "function": "noun"
+          "id": "katakana_ku",
+          "surface": "ク",
+          "reading": "く",
+          "audioText": "く",
+          "meaning": "ku",
+          "function": "katakana"
         },
         {
-          "id": "purezento",
-          "surface": "プレゼント",
-          "reading": "ぷれぜんと",
-          "meaning": "present; gift",
-          "function": "noun"
+          "id": "katakana_ke",
+          "surface": "ケ",
+          "reading": "け",
+          "audioText": "け",
+          "meaning": "ke",
+          "function": "katakana"
         },
         {
-          "id": "jouhou",
-          "surface": "情報",
-          "reading": "じょうほう",
-          "meaning": "information",
-          "function": "noun"
+          "id": "katakana_ko",
+          "surface": "コ",
+          "reading": "こ",
+          "audioText": "こ",
+          "meaning": "ko",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_sa",
+          "surface": "サ",
+          "reading": "さ",
+          "audioText": "さ",
+          "meaning": "sa",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_shi",
+          "surface": "シ",
+          "reading": "し",
+          "audioText": "し",
+          "meaning": "shi",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_su",
+          "surface": "ス",
+          "reading": "す",
+          "audioText": "す",
+          "meaning": "su",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_se",
+          "surface": "セ",
+          "reading": "せ",
+          "audioText": "せ",
+          "meaning": "se",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_so",
+          "surface": "ソ",
+          "reading": "そ",
+          "audioText": "そ",
+          "meaning": "so",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ta",
+          "surface": "タ",
+          "reading": "た",
+          "audioText": "た",
+          "meaning": "ta",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_chi",
+          "surface": "チ",
+          "reading": "ち",
+          "audioText": "ち",
+          "meaning": "chi",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_tsu",
+          "surface": "ツ",
+          "reading": "つ",
+          "audioText": "つ",
+          "meaning": "tsu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_te",
+          "surface": "テ",
+          "reading": "て",
+          "audioText": "て",
+          "meaning": "te",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_to",
+          "surface": "ト",
+          "reading": "と",
+          "audioText": "と",
+          "meaning": "to",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_na",
+          "surface": "ナ",
+          "reading": "な",
+          "audioText": "な",
+          "meaning": "na",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ni",
+          "surface": "ニ",
+          "reading": "に",
+          "audioText": "に",
+          "meaning": "ni",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_nu",
+          "surface": "ヌ",
+          "reading": "ぬ",
+          "audioText": "ぬ",
+          "meaning": "nu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ne",
+          "surface": "ネ",
+          "reading": "ね",
+          "audioText": "ね",
+          "meaning": "ne",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_no",
+          "surface": "ノ",
+          "reading": "の",
+          "audioText": "の",
+          "meaning": "no",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ha",
+          "surface": "ハ",
+          "reading": "は",
+          "audioText": "は",
+          "meaning": "ha",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_hi",
+          "surface": "ヒ",
+          "reading": "ひ",
+          "audioText": "ひ",
+          "meaning": "hi",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_fu",
+          "surface": "フ",
+          "reading": "ふ",
+          "audioText": "ふ",
+          "meaning": "fu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_he",
+          "surface": "ヘ",
+          "reading": "へ",
+          "audioText": "へ",
+          "meaning": "he",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ho",
+          "surface": "ホ",
+          "reading": "ほ",
+          "audioText": "ほ",
+          "meaning": "ho",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ma",
+          "surface": "マ",
+          "reading": "ま",
+          "audioText": "ま",
+          "meaning": "ma",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_mi",
+          "surface": "ミ",
+          "reading": "み",
+          "audioText": "み",
+          "meaning": "mi",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_mu",
+          "surface": "ム",
+          "reading": "む",
+          "audioText": "む",
+          "meaning": "mu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_me",
+          "surface": "メ",
+          "reading": "め",
+          "audioText": "め",
+          "meaning": "me",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_mo",
+          "surface": "モ",
+          "reading": "も",
+          "audioText": "も",
+          "meaning": "mo",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ya",
+          "surface": "ヤ",
+          "reading": "や",
+          "audioText": "や",
+          "meaning": "ya",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_yu",
+          "surface": "ユ",
+          "reading": "ゆ",
+          "audioText": "ゆ",
+          "meaning": "yu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_yo",
+          "surface": "ヨ",
+          "reading": "よ",
+          "audioText": "よ",
+          "meaning": "yo",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ra",
+          "surface": "ラ",
+          "reading": "ら",
+          "audioText": "ら",
+          "meaning": "ra",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ri",
+          "surface": "リ",
+          "reading": "り",
+          "audioText": "り",
+          "meaning": "ri",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ru",
+          "surface": "ル",
+          "reading": "る",
+          "audioText": "る",
+          "meaning": "ru",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_re",
+          "surface": "レ",
+          "reading": "れ",
+          "audioText": "れ",
+          "meaning": "re",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ro",
+          "surface": "ロ",
+          "reading": "ろ",
+          "audioText": "ろ",
+          "meaning": "ro",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_wa",
+          "surface": "ワ",
+          "reading": "わ",
+          "audioText": "わ",
+          "meaning": "wa",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_wo",
+          "surface": "ヲ",
+          "reading": "を",
+          "audioText": "を",
+          "meaning": "wo",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_n",
+          "surface": "ン",
+          "reading": "ん",
+          "audioText": "ん",
+          "meaning": "n",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_small_a",
+          "surface": "ァ",
+          "reading": "あ",
+          "audioText": "ちいさいあ",
+          "meaning": "small a",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_small_i",
+          "surface": "ィ",
+          "reading": "い",
+          "audioText": "ちいさいい",
+          "meaning": "small i",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_small_u",
+          "surface": "ゥ",
+          "reading": "う",
+          "audioText": "ちいさいう",
+          "meaning": "small u",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_small_e",
+          "surface": "ェ",
+          "reading": "え",
+          "audioText": "ちいさいえ",
+          "meaning": "small e",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_small_o",
+          "surface": "ォ",
+          "reading": "お",
+          "audioText": "ちいさいお",
+          "meaning": "small o",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_small_tsu",
+          "surface": "ッ",
+          "reading": "つ",
+          "audioText": "ちいさいつ",
+          "meaning": "small tsu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_small_ya",
+          "surface": "ャ",
+          "reading": "や",
+          "audioText": "ちいさいや",
+          "meaning": "small ya",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_small_yu",
+          "surface": "ュ",
+          "reading": "ゆ",
+          "audioText": "ちいさいゆ",
+          "meaning": "small yu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_small_yo",
+          "surface": "ョ",
+          "reading": "よ",
+          "audioText": "ちいさいよ",
+          "meaning": "small yo",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_long_mark",
+          "surface": "ー",
+          "reading": "ちょうおんぷ",
+          "audioText": "ちょうおんぷ",
+          "meaning": "long vowel mark",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ga",
+          "surface": "ガ",
+          "reading": "が",
+          "audioText": "が",
+          "meaning": "ga",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_gi",
+          "surface": "ギ",
+          "reading": "ぎ",
+          "audioText": "ぎ",
+          "meaning": "gi",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_gu",
+          "surface": "グ",
+          "reading": "ぐ",
+          "audioText": "ぐ",
+          "meaning": "gu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ge",
+          "surface": "ゲ",
+          "reading": "げ",
+          "audioText": "げ",
+          "meaning": "ge",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_go",
+          "surface": "ゴ",
+          "reading": "ご",
+          "audioText": "ご",
+          "meaning": "go",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_za",
+          "surface": "ザ",
+          "reading": "ざ",
+          "audioText": "ざ",
+          "meaning": "za",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ji_zi",
+          "surface": "ジ",
+          "reading": "じ",
+          "audioText": "じ",
+          "meaning": "ji",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_zu",
+          "surface": "ズ",
+          "reading": "ず",
+          "audioText": "ず",
+          "meaning": "zu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ze",
+          "surface": "ゼ",
+          "reading": "ぜ",
+          "audioText": "ぜ",
+          "meaning": "ze",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_zo",
+          "surface": "ゾ",
+          "reading": "ぞ",
+          "audioText": "ぞ",
+          "meaning": "zo",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_da",
+          "surface": "ダ",
+          "reading": "だ",
+          "audioText": "だ",
+          "meaning": "da",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ji_di",
+          "surface": "ヂ",
+          "reading": "ぢ",
+          "audioText": "ぢ",
+          "meaning": "ji",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_zu_du",
+          "surface": "ヅ",
+          "reading": "づ",
+          "audioText": "づ",
+          "meaning": "zu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_de",
+          "surface": "デ",
+          "reading": "で",
+          "audioText": "で",
+          "meaning": "de",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_do",
+          "surface": "ド",
+          "reading": "ど",
+          "audioText": "ど",
+          "meaning": "do",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ba",
+          "surface": "バ",
+          "reading": "ば",
+          "audioText": "ば",
+          "meaning": "ba",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_bi",
+          "surface": "ビ",
+          "reading": "び",
+          "audioText": "び",
+          "meaning": "bi",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_bu",
+          "surface": "ブ",
+          "reading": "ぶ",
+          "audioText": "ぶ",
+          "meaning": "bu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_be",
+          "surface": "ベ",
+          "reading": "べ",
+          "audioText": "べ",
+          "meaning": "be",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_bo",
+          "surface": "ボ",
+          "reading": "ぼ",
+          "audioText": "ぼ",
+          "meaning": "bo",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_pa",
+          "surface": "パ",
+          "reading": "ぱ",
+          "audioText": "ぱ",
+          "meaning": "pa",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_pi",
+          "surface": "ピ",
+          "reading": "ぴ",
+          "audioText": "ぴ",
+          "meaning": "pi",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_pu",
+          "surface": "プ",
+          "reading": "ぷ",
+          "audioText": "ぷ",
+          "meaning": "pu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_pe",
+          "surface": "ペ",
+          "reading": "ぺ",
+          "audioText": "ぺ",
+          "meaning": "pe",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_po",
+          "surface": "ポ",
+          "reading": "ぽ",
+          "audioText": "ぽ",
+          "meaning": "po",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_kya",
+          "surface": "キャ",
+          "reading": "きゃ",
+          "audioText": "きゃ",
+          "meaning": "kya",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_kyu",
+          "surface": "キュ",
+          "reading": "きゅ",
+          "audioText": "きゅ",
+          "meaning": "kyu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_kyo",
+          "surface": "キョ",
+          "reading": "きょ",
+          "audioText": "きょ",
+          "meaning": "kyo",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_gya",
+          "surface": "ギャ",
+          "reading": "ぎゃ",
+          "audioText": "ぎゃ",
+          "meaning": "gya",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_gyu",
+          "surface": "ギュ",
+          "reading": "ぎゅ",
+          "audioText": "ぎゅ",
+          "meaning": "gyu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_gyo",
+          "surface": "ギョ",
+          "reading": "ぎょ",
+          "audioText": "ぎょ",
+          "meaning": "gyo",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_sha",
+          "surface": "シャ",
+          "reading": "しゃ",
+          "audioText": "しゃ",
+          "meaning": "sha",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_shu",
+          "surface": "シュ",
+          "reading": "しゅ",
+          "audioText": "しゅ",
+          "meaning": "shu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_sho",
+          "surface": "ショ",
+          "reading": "しょ",
+          "audioText": "しょ",
+          "meaning": "sho",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ja",
+          "surface": "ジャ",
+          "reading": "じゃ",
+          "audioText": "じゃ",
+          "meaning": "ja",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ju",
+          "surface": "ジュ",
+          "reading": "じゅ",
+          "audioText": "じゅ",
+          "meaning": "ju",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_jo",
+          "surface": "ジョ",
+          "reading": "じょ",
+          "audioText": "じょ",
+          "meaning": "jo",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_cha",
+          "surface": "チャ",
+          "reading": "ちゃ",
+          "audioText": "ちゃ",
+          "meaning": "cha",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_chu",
+          "surface": "チュ",
+          "reading": "ちゅ",
+          "audioText": "ちゅ",
+          "meaning": "chu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_cho",
+          "surface": "チョ",
+          "reading": "ちょ",
+          "audioText": "ちょ",
+          "meaning": "cho",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_nya",
+          "surface": "ニャ",
+          "reading": "にゃ",
+          "audioText": "にゃ",
+          "meaning": "nya",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_nyu",
+          "surface": "ニュ",
+          "reading": "にゅ",
+          "audioText": "にゅ",
+          "meaning": "nyu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_nyo",
+          "surface": "ニョ",
+          "reading": "にょ",
+          "audioText": "にょ",
+          "meaning": "nyo",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_hya",
+          "surface": "ヒャ",
+          "reading": "ひゃ",
+          "audioText": "ひゃ",
+          "meaning": "hya",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_hyu",
+          "surface": "ヒュ",
+          "reading": "ひゅ",
+          "audioText": "ひゅ",
+          "meaning": "hyu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_hyo",
+          "surface": "ヒョ",
+          "reading": "ひょ",
+          "audioText": "ひょ",
+          "meaning": "hyo",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_bya",
+          "surface": "ビャ",
+          "reading": "びゃ",
+          "audioText": "びゃ",
+          "meaning": "bya",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_byu",
+          "surface": "ビュ",
+          "reading": "びゅ",
+          "audioText": "びゅ",
+          "meaning": "byu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_byo",
+          "surface": "ビョ",
+          "reading": "びょ",
+          "audioText": "びょ",
+          "meaning": "byo",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_pya",
+          "surface": "ピャ",
+          "reading": "ぴゃ",
+          "audioText": "ぴゃ",
+          "meaning": "pya",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_pyu",
+          "surface": "ピュ",
+          "reading": "ぴゅ",
+          "audioText": "ぴゅ",
+          "meaning": "pyu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_pyo",
+          "surface": "ピョ",
+          "reading": "ぴょ",
+          "audioText": "ぴょ",
+          "meaning": "pyo",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_mya",
+          "surface": "ミャ",
+          "reading": "みゃ",
+          "audioText": "みゃ",
+          "meaning": "mya",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_myu",
+          "surface": "ミュ",
+          "reading": "みゅ",
+          "audioText": "みゅ",
+          "meaning": "myu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_myo",
+          "surface": "ミョ",
+          "reading": "みょ",
+          "audioText": "みょ",
+          "meaning": "myo",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_rya",
+          "surface": "リャ",
+          "reading": "りゃ",
+          "audioText": "りゃ",
+          "meaning": "rya",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ryu",
+          "surface": "リュ",
+          "reading": "りゅ",
+          "audioText": "りゅ",
+          "meaning": "ryu",
+          "function": "katakana"
+        },
+        {
+          "id": "katakana_ryo",
+          "surface": "リョ",
+          "reading": "りょ",
+          "audioText": "りょ",
+          "meaning": "ryo",
+          "function": "katakana"
         }
       ]
     },
     {
-      "id": 34,
-      "slug": "wanting-to-do",
-      "title": "Unit 34: Wanting To Do",
-      "grammarFocus": "Vたいです / Vたくないです",
+      "id": 103,
+      "slug": "first-kanji-symbols",
+      "title": "Kana 3: First Kanji Symbols",
+      "grammarFocus": "Common kanji symbol recognition",
+      "kind": "kanji",
       "newWords": [
         {
-          "id": "noru",
-          "surface": "乗る",
-          "reading": "のる",
-          "meaning": "ride; get on",
-          "function": "verb"
+          "id": "kanji_hito",
+          "surface": "人",
+          "reading": "ひと",
+          "meaning": "person",
+          "function": "kanji"
         },
         {
-          "id": "toru",
-          "surface": "取る",
-          "reading": "とる",
-          "meaning": "take",
-          "function": "verb"
+          "id": "kanji_hi",
+          "surface": "日",
+          "reading": "ひ",
+          "meaning": "sun; day",
+          "function": "kanji"
         },
         {
-          "id": "shaberu",
-          "surface": "しゃべる",
-          "reading": "しゃべる",
-          "meaning": "chat",
-          "function": "verb"
+          "id": "kanji_tsuki",
+          "surface": "月",
+          "reading": "つき",
+          "meaning": "moon; month",
+          "function": "kanji"
         },
         {
-          "id": "suwaru",
-          "surface": "座る",
-          "reading": "すわる",
-          "meaning": "sit",
-          "function": "verb"
+          "id": "kanji_hi_fire",
+          "surface": "火",
+          "reading": "ひ",
+          "meaning": "fire",
+          "function": "kanji"
         },
         {
-          "id": "shiru",
-          "surface": "知る",
-          "reading": "しる",
-          "meaning": "know",
-          "function": "verb"
+          "id": "kanji_mizu",
+          "surface": "水",
+          "reading": "みず",
+          "meaning": "water",
+          "function": "kanji"
         },
         {
-          "id": "narau",
-          "surface": "習う",
-          "reading": "ならう",
-          "meaning": "learn",
-          "function": "verb"
+          "id": "kanji_ki",
+          "surface": "木",
+          "reading": "き",
+          "meaning": "tree",
+          "function": "kanji"
         },
         {
-          "id": "erabu",
-          "surface": "選ぶ",
-          "reading": "えらぶ",
-          "meaning": "choose",
-          "function": "verb"
+          "id": "kanji_kane",
+          "surface": "金",
+          "reading": "かね",
+          "meaning": "gold; money",
+          "function": "kanji"
         },
         {
-          "id": "tasukeru",
-          "surface": "助ける",
-          "reading": "たすける",
-          "meaning": "help; save",
-          "function": "verb"
+          "id": "kanji_tsuchi",
+          "surface": "土",
+          "reading": "つち",
+          "meaning": "earth; soil",
+          "function": "kanji"
         },
         {
-          "id": "hakobu",
-          "surface": "運ぶ",
-          "reading": "はこぶ",
-          "meaning": "carry",
-          "function": "verb"
+          "id": "kanji_yama",
+          "surface": "山",
+          "reading": "やま",
+          "meaning": "mountain",
+          "function": "kanji"
         },
         {
-          "id": "sagasu",
-          "surface": "探す",
-          "reading": "さがす",
-          "meaning": "search for",
-          "function": "verb"
-        }
-      ]
-    },
-    {
-      "id": 35,
-      "slug": "suggestions",
-      "title": "Unit 35: Suggestions",
-      "grammarFocus": "Vましょう / Vましょうか",
-      "newWords": [
-        {
-          "id": "hajimeru",
-          "surface": "始める",
-          "reading": "はじめる",
-          "meaning": "begin",
-          "function": "verb"
-        },
-        {
-          "id": "owaru",
-          "surface": "終わる",
-          "reading": "おわる",
-          "meaning": "finish",
-          "function": "verb"
-        },
-        {
-          "id": "kaimono_suru",
-          "surface": "買い物する",
-          "reading": "かいものする",
-          "meaning": "shop",
-          "function": "verb"
-        },
-        {
-          "id": "sanpo_suru",
-          "surface": "散歩する",
-          "reading": "さんぽする",
-          "meaning": "take a walk",
-          "function": "verb"
-        },
-        {
-          "id": "renshuu_suru",
-          "surface": "練習する",
-          "reading": "れんしゅうする",
-          "meaning": "practice",
-          "function": "verb"
-        },
-        {
-          "id": "junbi_suru",
-          "surface": "準備する",
-          "reading": "じゅんびする",
-          "meaning": "prepare",
-          "function": "verb"
-        },
-        {
-          "id": "denwa_suru",
-          "surface": "電話する",
-          "reading": "でんわする",
-          "meaning": "call by phone",
-          "function": "verb"
-        },
-        {
-          "id": "yoyaku_suru",
-          "surface": "予約する",
-          "reading": "よやくする",
-          "meaning": "reserve",
-          "function": "verb"
-        },
-        {
-          "id": "annai_suru",
-          "surface": "案内する",
-          "reading": "あんないする",
-          "meaning": "guide; show around",
-          "function": "verb"
-        },
-        {
-          "id": "setsumei_suru",
-          "surface": "説明する",
-          "reading": "せつめいする",
-          "meaning": "explain",
-          "function": "verb"
-        }
-      ]
-    },
-    {
-      "id": 36,
-      "slug": "please-do",
-      "title": "Unit 36: Please Do",
-      "grammarFocus": "Vてください",
-      "newWords": [
-        {
-          "id": "miseru",
-          "surface": "見せる",
-          "reading": "みせる",
-          "meaning": "show",
-          "function": "verb"
-        },
-        {
-          "id": "oshieru",
-          "surface": "教える",
-          "reading": "おしえる",
-          "meaning": "teach; tell",
-          "function": "verb"
-        },
-        {
-          "id": "kasu",
-          "surface": "貸す",
-          "reading": "かす",
-          "meaning": "lend",
-          "function": "verb"
-        },
-        {
-          "id": "tetsudau",
-          "surface": "手伝う",
-          "reading": "てつだう",
-          "meaning": "help",
-          "function": "verb"
-        },
-        {
-          "id": "yobu",
-          "surface": "呼ぶ",
-          "reading": "よぶ",
-          "meaning": "call",
-          "function": "verb"
-        },
-        {
-          "id": "hakaru",
-          "surface": "測る",
-          "reading": "はかる",
-          "meaning": "measure",
-          "function": "verb"
-        },
-        {
-          "id": "oku",
-          "surface": "置く",
-          "reading": "おく",
-          "meaning": "put; place",
-          "function": "verb"
-        },
-        {
-          "id": "dasu",
-          "surface": "出す",
-          "reading": "だす",
-          "meaning": "take out; submit",
-          "function": "verb"
-        },
-        {
-          "id": "ireru",
-          "surface": "入れる",
-          "reading": "いれる",
-          "meaning": "put in",
-          "function": "verb"
-        },
-        {
-          "id": "motsu",
-          "surface": "持つ",
-          "reading": "もつ",
-          "meaning": "hold; carry",
-          "function": "verb"
-        }
-      ]
-    },
-    {
-      "id": 37,
-      "slug": "please-do-not",
-      "title": "Unit 37: Please Do Not",
-      "grammarFocus": "Vないでください",
-      "newWords": [
-        {
-          "id": "sawaru",
-          "surface": "触る",
-          "reading": "さわる",
-          "meaning": "touch",
-          "function": "verb"
-        },
-        {
-          "id": "wasureu",
-          "surface": "忘れる",
-          "reading": "わすれる",
-          "meaning": "forget",
-          "function": "verb"
-        },
-        {
-          "id": "nakusu",
-          "surface": "なくす",
-          "reading": "なくす",
-          "meaning": "lose",
-          "function": "verb"
-        },
-        {
-          "id": "okureru",
-          "surface": "遅れる",
-          "reading": "おくれる",
-          "meaning": "be late",
-          "function": "verb"
-        },
-        {
-          "id": "kowasu",
-          "surface": "壊す",
-          "reading": "こわす",
-          "meaning": "break",
-          "function": "verb"
-        },
-        {
-          "id": "suteru",
-          "surface": "捨てる",
-          "reading": "すてる",
-          "meaning": "throw away",
-          "function": "verb"
-        },
-        {
-          "id": "tomeru",
-          "surface": "止める",
-          "reading": "とめる",
-          "meaning": "stop",
-          "function": "verb"
-        },
-        {
-          "id": "akirameru",
-          "surface": "諦める",
-          "reading": "あきらめる",
-          "meaning": "give up",
-          "function": "verb"
-        },
-        {
-          "id": "shinpai_suru",
-          "surface": "心配する",
-          "reading": "しんぱいする",
-          "meaning": "worry",
-          "function": "verb"
-        },
-        {
-          "id": "muri_suru",
-          "surface": "無理する",
-          "reading": "むりする",
-          "meaning": "overdo it",
-          "function": "verb"
-        }
-      ]
-    },
-    {
-      "id": 38,
-      "slug": "permission",
-      "title": "Unit 38: Permission",
-      "grammarFocus": "Vてもいいですか / Vてもいいです",
-      "newWords": [
-        {
-          "id": "kariru",
-          "surface": "借りる",
-          "reading": "かりる",
-          "meaning": "borrow",
-          "function": "verb"
-        },
-        {
-          "id": "kaburu",
-          "surface": "かぶる",
-          "reading": "かぶる",
-          "meaning": "wear on the head",
-          "function": "verb"
-        },
-        {
-          "id": "haku",
-          "surface": "履く",
-          "reading": "はく",
-          "meaning": "wear on the feet",
-          "function": "verb"
-        },
-        {
-          "id": "kiru_wear",
-          "surface": "着る",
-          "reading": "きる",
-          "meaning": "wear clothes",
-          "function": "verb"
-        },
-        {
-          "id": "nugu",
-          "surface": "脱ぐ",
-          "reading": "ぬぐ",
-          "meaning": "take off clothes",
-          "function": "verb"
-        },
-        {
-          "id": "ireru_perm",
-          "surface": "入れる",
-          "reading": "いれる",
-          "meaning": "put in; let in",
-          "function": "verb"
-        },
-        {
-          "id": "tsukeru",
-          "surface": "つける",
-          "reading": "つける",
-          "meaning": "turn on; attach",
-          "function": "verb"
-        },
-        {
-          "id": "kesu",
-          "surface": "消す",
-          "reading": "けす",
-          "meaning": "turn off; erase",
-          "function": "verb"
-        },
-        {
-          "id": "shitsumon_suru",
-          "surface": "質問する",
-          "reading": "しつもんする",
-          "meaning": "ask a question",
-          "function": "verb"
-        },
-        {
-          "id": "ryokou_suru",
-          "surface": "旅行する",
-          "reading": "りょこうする",
-          "meaning": "travel",
-          "function": "verb"
-        }
-      ]
-    },
-    {
-      "id": 39,
-      "slug": "prohibition",
-      "title": "Unit 39: Prohibition",
-      "grammarFocus": "Vてはいけません",
-      "newWords": [
-        {
-          "id": "nageru",
-          "surface": "投げる",
-          "reading": "なげる",
-          "meaning": "throw",
-          "function": "verb"
-        },
-        {
-          "id": "sawagu",
-          "surface": "騒ぐ",
-          "reading": "さわぐ",
-          "meaning": "make noise",
-          "function": "verb"
-        },
-        {
-          "id": "tobikomu",
-          "surface": "飛び込む",
-          "reading": "とびこむ",
-          "meaning": "jump in",
-          "function": "verb"
-        },
-        {
-          "id": "noboru",
-          "surface": "登る",
-          "reading": "のぼる",
-          "meaning": "climb",
-          "function": "verb"
-        },
-        {
-          "id": "oriru",
-          "surface": "降りる",
-          "reading": "おりる",
-          "meaning": "get off; descend",
-          "function": "verb"
+          "id": "kanji_kawa",
+          "surface": "川",
+          "reading": "かわ",
+          "meaning": "river",
+          "function": "kanji"
         },
-        {
-          "id": "watashu",
-          "surface": "渡す",
-          "reading": "わたす",
-          "meaning": "hand over",
-          "function": "verb"
-        },
-        {
-          "id": "akiramenaide",
-          "surface": "諦めない",
-          "reading": "あきらめない",
-          "meaning": "not giving up",
-          "function": "phrase"
-        },
-        {
-          "id": "ruuru",
-          "surface": "ルール",
-          "reading": "るーる",
-          "meaning": "rule",
-          "function": "noun"
-        },
-        {
-          "id": "kinshi",
-          "surface": "禁止",
-          "reading": "きんし",
-          "meaning": "prohibition",
-          "function": "noun"
-        },
-        {
-          "id": "anzen_ni",
-          "surface": "安全に",
-          "reading": "あんぜんに",
-          "meaning": "safely",
-          "function": "adverb"
-        }
-      ]
-    },
-    {
-      "id": 40,
-      "slug": "need-and-suggestions",
-      "title": "Unit 40: Need And Suggestions",
-      "grammarFocus": "Nが必要です / Nはどうですか",
-      "newWords": [
-        {
-          "id": "shorui",
-          "surface": "書類",
-          "reading": "しょるい",
-          "meaning": "documents",
-          "function": "noun"
-        },
-        {
-          "id": "menkyo",
-          "surface": "免許",
-          "reading": "めんきょ",
-          "meaning": "license",
-          "function": "noun"
-        },
-        {
-          "id": "jisho",
-          "surface": "辞書",
-          "reading": "じしょ",
-          "meaning": "dictionary",
-          "function": "noun"
-        },
-        {
-          "id": "shukudai",
-          "surface": "宿題",
-          "reading": "しゅくだい",
-          "meaning": "homework",
-          "function": "noun"
-        },
-        {
-          "id": "mondai",
-          "surface": "問題",
-          "reading": "もんだい",
-          "meaning": "problem",
-          "function": "noun"
-        },
-        {
-          "id": "kotae",
-          "surface": "答え",
-          "reading": "こたえ",
-          "meaning": "answer",
-          "function": "noun"
-        },
-        {
-          "id": "shitsumon",
-          "surface": "質問",
-          "reading": "しつもん",
-          "meaning": "question",
-          "function": "noun"
-        },
-        {
-          "id": "yotei",
-          "surface": "予定",
-          "reading": "よてい",
-          "meaning": "plan; schedule",
-          "function": "noun"
-        },
-        {
-          "id": "juusho",
-          "surface": "住所",
-          "reading": "じゅうしょ",
-          "meaning": "address",
-          "function": "noun"
-        },
-        {
-          "id": "setsumei",
-          "surface": "説明",
-          "reading": "せつめい",
-          "meaning": "explanation",
-          "function": "noun"
-        }
-      ]
-    },
-    {
-      "id": 41,
-      "slug": "te-form-ichidan-irregular",
-      "title": "Unit 41: Te-Form Shape, Ichidan And Irregular",
-      "grammarFocus": "食べて / 見て / して / 来て",
-      "newWords": [
-        {
-          "id": "ageru",
-          "surface": "あげる",
-          "reading": "あげる",
-          "meaning": "give",
-          "function": "verb"
-        },
-        {
-          "id": "kangaeru",
-          "surface": "考える",
-          "reading": "かんがえる",
-          "meaning": "think",
-          "function": "verb"
-        },
-        {
-          "id": "oboeru",
-          "surface": "覚える",
-          "reading": "おぼえる",
-          "meaning": "remember; memorize",
-          "function": "verb"
-        },
-        {
-          "id": "dekakeru",
-          "surface": "出かける",
-          "reading": "でかける",
-          "meaning": "go out",
-          "function": "verb"
-        },
-        {
-          "id": "tsukameru",
-          "surface": "つかめる",
-          "reading": "つかめる",
-          "meaning": "grasp",
-          "function": "verb"
-        },
-        {
-          "id": "shiraberu",
-          "surface": "調べる",
-          "reading": "しらべる",
-          "meaning": "look up; investigate",
-          "function": "verb"
-        },
-        {
-          "id": "katazukeru",
-          "surface": "片付ける",
-          "reading": "かたづける",
-          "meaning": "tidy up",
-          "function": "verb"
-        },
-        {
-          "id": "tsutaeru",
-          "surface": "伝える",
-          "reading": "つたえる",
-          "meaning": "tell; convey",
-          "function": "verb"
-        },
-        {
-          "id": "yameru",
-          "surface": "やめる",
-          "reading": "やめる",
-          "meaning": "quit; stop",
-          "function": "verb"
-        },
-        {
-          "id": "tsuzukeru",
-          "surface": "続ける",
-          "reading": "つづける",
-          "meaning": "continue",
-          "function": "verb"
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "slug": "te-form-godan",
-      "title": "Unit 42: Te-Form Shape, Godan",
-      "grammarFocus": "飲んで / 行って / 書いて / 話して",
-      "newWords": [
-        {
-          "id": "isogu",
-          "surface": "急ぐ",
-          "reading": "いそぐ",
-          "meaning": "hurry",
-          "function": "verb"
-        },
-        {
-          "id": "kaesu",
-          "surface": "返す",
-          "reading": "かえす",
-          "meaning": "return something",
-          "function": "verb"
-        },
-        {
-          "id": "magaru",
-          "surface": "曲がる",
-          "reading": "まがる",
-          "meaning": "turn",
-          "function": "verb"
-        },
-        {
-          "id": "wataru",
-          "surface": "渡る",
-          "reading": "わたる",
-          "meaning": "cross",
-          "function": "verb"
-        },
-        {
-          "id": "fumu",
-          "surface": "踏む",
-          "reading": "ふむ",
-          "meaning": "step on",
-          "function": "verb"
-        },
-        {
-          "id": "ugoku",
-          "surface": "動く",
-          "reading": "うごく",
-          "meaning": "move",
-          "function": "verb"
-        },
-        {
-          "id": "naosu",
-          "surface": "直す",
-          "reading": "なおす",
-          "meaning": "fix",
-          "function": "verb"
-        },
-        {
-          "id": "morau",
-          "surface": "もらう",
-          "reading": "もらう",
-          "meaning": "receive",
-          "function": "verb"
-        },
-        {
-          "id": "sumu_finish",
-          "surface": "済む",
-          "reading": "すむ",
-          "meaning": "be finished",
-          "function": "verb"
-        },
-        {
-          "id": "yoru_stop",
-          "surface": "寄る",
-          "reading": "よる",
-          "meaning": "stop by",
-          "function": "verb"
-        }
-      ]
-    },
-    {
-      "id": 43,
-      "slug": "connecting-actions",
-      "title": "Unit 43: Connecting Actions",
-      "grammarFocus": "Vて、Vます",
-      "newWords": [
-        {
-          "id": "sorekara",
-          "surface": "それから",
-          "reading": "それから",
-          "meaning": "and then",
-          "function": "adverb"
-        },
-        {
-          "id": "saisho",
-          "surface": "最初",
-          "reading": "さいしょ",
-          "meaning": "first",
-          "function": "adverb"
-        },
-        {
-          "id": "tsugi",
-          "surface": "次",
-          "reading": "つぎ",
-          "meaning": "next",
-          "function": "adverb"
-        },
-        {
-          "id": "saigo",
-          "surface": "最後",
-          "reading": "さいご",
-          "meaning": "last",
-          "function": "adverb"
-        },
-        {
-          "id": "ato",
-          "surface": "あと",
-          "reading": "あと",
-          "meaning": "afterward",
-          "function": "adverb"
-        },
-        {
-          "id": "shokuji",
-          "surface": "食事",
-          "reading": "しょくじ",
-          "meaning": "meal",
-          "function": "noun"
-        },
-        {
-          "id": "kaimono",
-          "surface": "買い物",
-          "reading": "かいもの",
-          "meaning": "shopping",
-          "function": "noun"
-        },
-        {
-          "id": "sanpo",
-          "surface": "散歩",
-          "reading": "さんぽ",
-          "meaning": "walk; stroll",
-          "function": "noun"
-        },
-        {
-          "id": "renshuu",
-          "surface": "練習",
-          "reading": "れんしゅう",
-          "meaning": "practice",
-          "function": "noun"
-        },
-        {
-          "id": "junbi",
-          "surface": "準備",
-          "reading": "じゅんび",
-          "meaning": "preparation",
-          "function": "noun"
-        }
-      ]
-    },
-    {
-      "id": 44,
-      "slug": "ongoing-resulting-state",
-      "title": "Unit 44: Ongoing And Resulting State",
-      "grammarFocus": "Vています",
-      "newWords": [
         {
-          "id": "kaigi",
-          "surface": "会議",
-          "reading": "かいぎ",
-          "meaning": "meeting",
-          "function": "noun"
+          "id": "kanji_ta",
+          "surface": "田",
+          "reading": "た",
+          "meaning": "rice field",
+          "function": "kanji"
         },
         {
-          "id": "jugyou",
-          "surface": "授業",
-          "reading": "じゅぎょう",
-          "meaning": "class; lesson",
-          "function": "noun"
+          "id": "kanji_kuchi",
+          "surface": "口",
+          "reading": "くち",
+          "meaning": "mouth",
+          "function": "kanji"
         },
         {
-          "id": "shiken",
-          "surface": "試験",
-          "reading": "しけん",
-          "meaning": "exam",
-          "function": "noun"
+          "id": "kanji_me",
+          "surface": "目",
+          "reading": "め",
+          "meaning": "eye",
+          "function": "kanji"
         },
         {
-          "id": "sentaku",
-          "surface": "洗濯",
-          "reading": "せんたく",
-          "meaning": "laundry",
-          "function": "noun"
+          "id": "kanji_mimi",
+          "surface": "耳",
+          "reading": "みみ",
+          "meaning": "ear",
+          "function": "kanji"
         },
         {
-          "id": "undou",
-          "surface": "運動",
-          "reading": "うんどう",
-          "meaning": "exercise",
-          "function": "noun"
+          "id": "kanji_te",
+          "surface": "手",
+          "reading": "て",
+          "meaning": "hand",
+          "function": "kanji"
         },
         {
-          "id": "kenkyuu",
-          "surface": "研究",
-          "reading": "けんきゅう",
-          "meaning": "research",
-          "function": "noun"
+          "id": "kanji_ashi",
+          "surface": "足",
+          "reading": "あし",
+          "meaning": "foot; leg",
+          "function": "kanji"
         },
         {
-          "id": "sagyou",
-          "surface": "作業",
-          "reading": "さぎょう",
-          "meaning": "task; work",
-          "function": "noun"
+          "id": "kanji_ookii",
+          "surface": "大",
+          "reading": "おお",
+          "meaning": "big",
+          "function": "kanji"
         },
         {
-          "id": "renraku",
-          "surface": "連絡",
-          "reading": "れんらく",
-          "meaning": "contact; message",
-          "function": "noun"
+          "id": "kanji_chiisai",
+          "surface": "小",
+          "reading": "しょう",
+          "meaning": "small",
+          "function": "kanji"
         },
         {
-          "id": "houkoku",
-          "surface": "報告",
-          "reading": "ほうこく",
-          "meaning": "report",
-          "function": "noun"
+          "id": "kanji_naka",
+          "surface": "中",
+          "reading": "なか",
+          "meaning": "middle; inside",
+          "function": "kanji"
         },
         {
-          "id": "seikatsu",
-          "surface": "生活",
-          "reading": "せいかつ",
-          "meaning": "daily life",
-          "function": "noun"
+          "id": "kanji_ue",
+          "surface": "上",
+          "reading": "うえ",
+          "meaning": "up; above",
+          "function": "kanji"
         }
       ]
     }

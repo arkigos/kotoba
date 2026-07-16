@@ -30,7 +30,8 @@ For the bigger product picture, see `docs/APP_VISION.md`.
 ## Durable Priorities
 
 - Lesson data quality matters as much as code quality.
-- Default curriculum units introduce one grammar focus and 10 new words chosen to support that grammar focus.
+- Default curriculum units introduce one grammar focus and about 10 core new words chosen to support that grammar focus.
+- Any learner-facing lexical grammar word introduced by a unit is also SRS vocabulary; only function words and documented phrase-level grammar chunks stay outside SRS.
 - New words follow the Japanese word-selection rules in `data/jp/curriculum/word_selection_rules.md`: useful functional spread, strong sentence compatibility, and no duplicates from earlier units.
 - Vocabulary spacing is curriculum-level, not learner-specific: for unit `N`, words from units `N`, `N-2`, `N-4`, `N-8`, `N-16`, `N-32`, and so on are review-due and must return.
 - Any already introduced word may be used as known helper vocabulary, but only the current unit's `newWords` are the unit's drilled vocabulary.

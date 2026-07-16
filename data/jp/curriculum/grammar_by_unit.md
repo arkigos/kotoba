@@ -19,7 +19,8 @@ static scenes; talk about simple past and time.
 Units 1-7 include two real verb `newWords` each, drilled through short `Vます`
 action sentences while the main grammar remains simple. Units 8-14 may include
 one or two fixed `Vます` action-preview cards that reuse those known verb
-identities. Unit 21 still introduces polite verbs as a productive system.
+identities. The future Unit 21 rebuild should introduce polite verbs as a
+productive system without reusing the deleted generated A2 cards.
 
 001. First Sentences
     - `Aです`
@@ -36,9 +37,11 @@ identities. Unit 21 still introduces polite verbs as a productive system.
     - `AのB`
     - `AもBです`
 
-004. Saying What It Is Not
-    - `Aではありません`
-    - `Aじゃありません`
+004. There Is And There Is Not
+    - `Nがあります`
+    - `Nがいます`
+    - `Nがありません`
+    - `Nがいません`
 
 005. Talking About The Past
     - `Aでした`

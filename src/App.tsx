@@ -12,13 +12,17 @@ import {
   List,
   RotateCcw,
   Settings,
+  Shuffle,
   Sparkles,
   Volume2,
 } from "lucide-react";
+import functionWordsJson from "../data/jp/curriculum/function_words.json";
+import grammarTokensJson from "../data/jp/curriculum/grammar_tokens.json";
+import unitSpecsJson from "../data/jp/curriculum/source/unit_specs.json";
 import { courseLevels, getUnit, initialUnit, unitIndex } from "./data";
 import { toRomaji } from "./japanese";
 import { defaultProgress, readProgress, writeProgress } from "./progress";
-import type { CourseLevel, JapaneseDisplayMode, PracticeCard, PracticeSettings, Progress, UnitIndexEntry } from "./types";
+import type { CardToken, CourseLevel, FunctionWordEntry, GrammarTokenEntry, JapaneseDisplayMode, PracticeCard, PracticeSettings, Progress, UnitIndexEntry, WordEntry } from "./types";
 
 const studyPresets: Array<{ id: string; label: string; settings: Partial<PracticeSettings> }> = [
   {
@@ -73,6 +77,23 @@ const studyPresets: Array<{ id: string; label: string; settings: Partial<Practic
   },
 ];
 
+type VocabularyTab = "new" | "review" | "known" | "function" | "grammar";
+type SourceUnitSpec = { id: number; newWords: WordEntry[] };
+const unitSpecs = unitSpecsJson as { units: SourceUnitSpec[] };
+const functionWords = functionWordsJson as FunctionWordEntry[];
+const grammarTokens = grammarTokensJson as GrammarTokenEntry[];
+const sourceWordsById = new Map(unitSpecs.units.flatMap((spec) => spec.newWords.map((word) => [word.id, word])));
+const functionWordsByToken = new Map(functionWords.map((word) => [`${word.surface}|${word.reading}`, word]));
+const grammarTokensByToken = new Map(grammarTokens.map((word) => [`${word.surface}|${word.reading}`, word]));
+
+const vocabularyTabs: Array<{ id: VocabularyTab; label: string }> = [
+  { id: "new", label: "New" },
+  { id: "review", label: "Review" },
+  { id: "known", label: "Known" },
+  { id: "function", label: "Function" },
+  { id: "grammar", label: "Grammar" },
+];
+
 function clampCardIndex(index: number, cards: PracticeCard[]) {
   if (cards.length === 0) return 0;
   return Math.min(Math.max(index, 0), cards.length - 1);
@@ -80,7 +101,7 @@ function clampCardIndex(index: number, cards: PracticeCard[]) {
 
 function isFormTarget(target: EventTarget | null) {
   if (!(target instanceof HTMLElement)) return false;
-  return ["BUTTON", "INPUT", "SELECT", "TEXTAREA"].includes(target.tagName) || target.isContentEditable;
+  return ["INPUT", "SELECT", "TEXTAREA"].includes(target.tagName) || target.isContentEditable;
 }
 
 function nextJapaneseDisplayMode(mode: JapaneseDisplayMode): JapaneseDisplayMode {
@@ -133,6 +154,216 @@ function progressColorForPercent(percent: number) {
   return `hsl(${Math.round(hue)} 70% ${lightness}%)`;
 }
 
+function mediaUrl(path: string) {
+  if (/^(?:[a-z]+:)?\/\//i.test(path) || path.startsWith("data:") || path.startsWith("blob:")) {
+    return path;
+  }
+
+  const normalizedPath = path.startsWith("/") ? path.slice(1) : path;
+  return `${import.meta.env.BASE_URL}${normalizedPath}`;
+}
+
+function knownWordsForUnit(unitId: number) {
+  if (unitId >= 100) {
+    return unitSpecs.units.find((spec) => spec.id === unitId)?.newWords ?? [];
+  }
+  return unitSpecs.units.filter((spec) => spec.id >= 1 && spec.id <= unitId && spec.id < 100).flatMap((spec) => spec.newWords);
+}
+
+function reviewWordsForUnit(unit: { reviewWordIds: string[] }) {
+  return unit.reviewWordIds.map((wordId) => sourceWordsById.get(wordId)).filter((word): word is WordEntry => Boolean(word));
+}
+
+function functionWordsForUnit(unit: { cards: PracticeCard[] }) {
+  const words = new Map<string, FunctionWordEntry>();
+  for (const card of unit.cards) {
+    for (const token of card.tokens ?? []) {
+      if (token.wordId) continue;
+      const functionWord = functionWordsByToken.get(`${token.surface}|${token.reading}`);
+      if (functionWord) words.set(functionWord.id, functionWord);
+    }
+  }
+  return [...words.values()];
+}
+
+function grammarTokensForUnit(unit: { cards: PracticeCard[] }) {
+  const words = new Map<string, GrammarTokenEntry>();
+  for (const card of unit.cards) {
+    for (const token of card.tokens ?? []) {
+      if (token.wordId) continue;
+      const grammarToken = grammarTokensByToken.get(`${token.surface}|${token.reading}`);
+      if (grammarToken) words.set(grammarToken.id, grammarToken);
+    }
+  }
+  return [...words.values()];
+}
+
+function VocabularyPanel({
+  unitId,
+  newWords,
+  reviewWords,
+  knownWords,
+  functionWords,
+  grammarTokens,
+}: {
+  unitId: number;
+  newWords: WordEntry[];
+  reviewWords: WordEntry[];
+  knownWords: WordEntry[];
+  functionWords: FunctionWordEntry[];
+  grammarTokens: GrammarTokenEntry[];
+}) {
+  const [activeTab, setActiveTab] = useState<VocabularyTab>("new");
+  const [showTranslations, setShowTranslations] = useState(false);
+  const [revealedWordIds, setRevealedWordIds] = useState<Set<string>>(() => new Set());
+  const [drillActive, setDrillActive] = useState(false);
+  const [drillIndex, setDrillIndex] = useState(0);
+  const [drillRevealed, setDrillRevealed] = useState(false);
+  const drillWords = useMemo(() => {
+    const words = [...newWords, ...reviewWords];
+    return words.filter((word, index) => words.findIndex((candidate) => candidate.id === word.id) === index);
+  }, [newWords, reviewWords]);
+  const drillWord = drillWords[drillIndex] ?? drillWords[0];
+  const wordsByTab = {
+    new: newWords,
+    review: reviewWords,
+    known: knownWords,
+    function: functionWords,
+    grammar: grammarTokens,
+  };
+  const activeWords = wordsByTab[activeTab];
+
+  useEffect(() => {
+    setActiveTab("new");
+    setShowTranslations(false);
+    setRevealedWordIds(new Set());
+    setDrillActive(false);
+    setDrillIndex(0);
+    setDrillRevealed(false);
+  }, [unitId]);
+
+  useEffect(() => {
+    if (drillIndex >= drillWords.length) {
+      setDrillIndex(0);
+      setDrillRevealed(false);
+    }
+  }, [drillIndex, drillWords.length]);
+
+  const toggleWord = (wordId: string) => {
+    setRevealedWordIds((current) => {
+      const next = new Set(current);
+      if (next.has(wordId)) next.delete(wordId);
+      else next.add(wordId);
+      return next;
+    });
+  };
+
+  const startDrill = () => {
+    setDrillActive(true);
+    setDrillIndex(0);
+    setDrillRevealed(false);
+  };
+
+  const moveDrill = (step: number) => {
+    if (drillWords.length === 0) return;
+    setDrillIndex((current) => (current + step + drillWords.length) % drillWords.length);
+    setDrillRevealed(false);
+  };
+
+  return (
+    <section className="vocabulary-panel" aria-label="Unit vocabulary">
+      <div className="vocabulary-topline">
+        <div>
+          <p className="eyebrow">Vocabulary</p>
+          <strong>{newWords.length} new words</strong>
+          <span>
+            {reviewWords.length} scheduled review · {functionWords.length} function · {grammarTokens.length} grammar · {knownWords.length} known total
+          </span>
+        </div>
+        <button type="button" className="translation-toggle" onClick={() => setShowTranslations((visible) => !visible)}>
+          {showTranslations ? "Hide translations" : "Show translations"}
+        </button>
+      </div>
+
+      <div className="vocabulary-tabs" role="tablist" aria-label="Vocabulary groups">
+        {vocabularyTabs.map((tab) => (
+          <button
+            key={tab.id}
+            type="button"
+            role="tab"
+            aria-selected={activeTab === tab.id}
+            onClick={() => setActiveTab(tab.id)}
+          >
+            {tab.label}
+            <span>{wordsByTab[tab.id].length}</span>
+          </button>
+        ))}
+      </div>
+
+      {drillWords.length > 0 && (
+        <div className="vocabulary-drill" aria-label="Vocabulary drill">
+          {!drillActive || !drillWord ? (
+            <button type="button" className="drill-start" onClick={startDrill}>
+              Drill new + review
+              <span>{drillWords.length} words</span>
+            </button>
+          ) : (
+            <>
+              <div className="drill-card">
+                <span>
+                  Word {drillIndex + 1} / {drillWords.length}
+                </span>
+                <strong>{drillWord.surface}</strong>
+                <small>{drillWord.reading}</small>
+                {drillRevealed ? <em>{drillWord.meaning}</em> : <em className="drill-hidden">English hidden</em>}
+              </div>
+              <div className="drill-controls">
+                <button type="button" onClick={() => moveDrill(-1)}>
+                  Previous
+                </button>
+                <button type="button" onClick={() => setDrillRevealed((revealed) => !revealed)}>
+                  {drillRevealed ? "Hide English" : "Show English"}
+                </button>
+                <button type="button" onClick={() => moveDrill(1)}>
+                  Next
+                </button>
+                <button type="button" onClick={() => setDrillActive(false)}>
+                  Close
+                </button>
+              </div>
+            </>
+          )}
+        </div>
+      )}
+
+      {activeWords.length > 0 ? (
+        <div className="word-grid">
+          {activeWords.map((word) => {
+            const isRevealed = showTranslations || revealedWordIds.has(word.id);
+            return (
+              <button
+                key={`${activeTab}-${word.id}`}
+                type="button"
+                className="word-tile"
+                onClick={() => toggleWord(word.id)}
+                aria-expanded={isRevealed}
+                aria-label={`${isRevealed ? "Hide" : "Reveal"} translation for ${word.surface}`}
+              >
+                <span className="word-surface">{word.surface}</span>
+                <span className="word-reading">{word.reading}</span>
+                <span className="word-function">{word.function}</span>
+                {isRevealed ? <strong>{word.meaning}</strong> : <em>Tap for English</em>}
+              </button>
+            );
+          })}
+        </div>
+      ) : (
+        <p className="empty-vocabulary">No scheduled review words for this unit.</p>
+      )}
+    </section>
+  );
+}
+
 function JapaneseLine({
   card,
   mode,
@@ -142,7 +373,7 @@ function JapaneseLine({
   card: PracticeCard;
   mode: JapaneseDisplayMode;
   muted?: boolean;
-  onSpeakPart: (text: string) => void;
+  onSpeakPart: (part: CardToken, fallbackText: string) => void;
 }) {
   if (muted) return <div className="japanese-line muted-line">Japanese hidden</div>;
 
@@ -159,7 +390,7 @@ function JapaneseLine({
           className={part.wordId ? "token lexical" : "token grammar"}
           aria-label={`Play ${part.surface}`}
           onMouseDown={(event) => event.preventDefault()}
-          onClick={() => onSpeakPart(card.tts[index] ?? part.reading ?? part.surface)}
+          onClick={() => onSpeakPart(part, card.tts[index] ?? part.reading ?? part.surface)}
         >
           {displayedPart(card, index, mode)}
           <span className="token-tip">
@@ -181,9 +412,10 @@ export function App() {
   const [unit, setUnit] = useState(initialUnit);
   const [loadingUnitId, setLoadingUnitId] = useState<number | null>(null);
   const [unitLoadError, setUnitLoadError] = useState("");
-  const [expandedLevels, setExpandedLevels] = useState<Record<string, boolean>>(() => ({ A1: true }));
+  const [expandedLevels, setExpandedLevels] = useState<Record<string, boolean>>(() => ({ Kana: true, A1: true }));
   const [showBack, setShowBack] = useState(() => progress.settings.revealByDefault);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [vocabularyOpen, setVocabularyOpen] = useState(false);
   const [message, setMessage] = useState("");
   const queuedAudioTimeout = useRef<number | undefined>();
   const audioRunId = useRef(0);
@@ -196,6 +428,10 @@ export function App() {
   const completed = progress.completedUnits.includes(unit.id);
   const progressPercent = unit.cards.length > 0 ? Math.round(((cardIndex + 1) / unit.cards.length) * 100) : 0;
   const progressColor = progressColorForPercent(progressPercent);
+  const reviewWords = useMemo(() => reviewWordsForUnit(unit), [unit.id, unit.reviewWordIds]);
+  const knownWords = useMemo(() => knownWordsForUnit(unit.id), [unit.id]);
+  const activeFunctionWords = useMemo(() => functionWordsForUnit(unit), [unit.id, unit.cards]);
+  const activeGrammarTokens = useMemo(() => grammarTokensForUnit(unit), [unit.id, unit.cards]);
 
   useEffect(() => {
     if (unit.id === progress.unitId) {
@@ -218,6 +454,7 @@ export function App() {
             ...current,
             cardIndex: nextCardIndex,
             cardPositions: { ...current.cardPositions, [String(loadedUnit.id)]: nextCardIndex },
+            cardCounts: { ...current.cardCounts, [String(loadedUnit.id)]: loadedUnit.cards.length },
           };
         });
       })
@@ -243,6 +480,7 @@ export function App() {
       ...progress,
       cardIndex,
       cardPositions: { ...progress.cardPositions, [String(unit.id)]: cardIndex },
+      cardCounts: { ...progress.cardCounts, [String(unit.id)]: unit.cards.length },
     };
     writeProgress(nextProgress);
   }, [cardIndex, progress, unit.id]);
@@ -271,6 +509,7 @@ export function App() {
         ...current,
         cardIndex: clampedIndex,
         cardPositions: { ...current.cardPositions, [String(unit.id)]: clampedIndex },
+        cardCounts: { ...current.cardCounts, [String(unit.id)]: unit.cards.length },
       }));
       setShowBack(settings.revealByDefault);
     },
@@ -324,8 +563,10 @@ export function App() {
 
     const savedPosition = progress.cardPositions[String(entry.id)];
     if (typeof savedPosition !== "number") return 0;
+    const cardCount = entry.id === unit.id ? unit.cards.length : progress.cardCounts[String(entry.id)];
+    if (typeof cardCount !== "number" || cardCount <= 0) return 0;
 
-    return Math.min(99, Math.max(1, Math.round(((savedPosition + 1) / unit.cards.length) * 100)));
+    return Math.min(99, Math.max(1, Math.round(((savedPosition + 1) / cardCount) * 100)));
   };
 
   const renderUnitButton = (entry: UnitIndexEntry) => {
@@ -412,25 +653,40 @@ export function App() {
     setMessage("Audio queued");
   }, [clearQueuedAudio]);
 
+  const playAudioRef = useCallback((audioRef: string, messageText = "Japanese audio") => {
+    try {
+      const audio = new Audio(mediaUrl(audioRef));
+      const playResult = audio.play();
+      if (playResult && "catch" in playResult) {
+        playResult.catch(() => setMessage("Audio could not play"));
+      }
+      setMessage(messageText);
+      return true;
+    } catch {
+      setMessage("Audio could not play");
+      return false;
+    }
+  }, []);
+
   const playJapaneseAudio = useCallback(() => {
     if (card.audioRef) {
-      const audio = new Audio(card.audioRef);
-      audio.play().catch(() => setMessage("Audio could not play"));
+      playAudioRef(card.audioRef);
       return;
     }
 
     speakText(card.line.join(""), "ja-JP", "Japanese audio");
-  }, [card, speakText]);
+  }, [card, playAudioRef, speakText]);
 
   const playEnglishAudio = useCallback(() => {
     speakText(card.english, "en-US", "English audio");
   }, [card.english, speakText]);
 
   const playJapanesePart = useCallback(
-    (text: string) => {
-      speakText(text, "ja-JP", "Japanese audio");
+    (part: CardToken, fallbackText: string) => {
+      if (part.audioRef && playAudioRef(part.audioRef)) return;
+      speakText(fallbackText, "ja-JP", "Japanese audio");
     },
-    [speakText]
+    [playAudioRef, speakText]
   );
 
   const replayAudio = useCallback(() => {
@@ -626,6 +882,15 @@ export function App() {
               {completed ? <CircleMinus aria-hidden="true" /> : <CheckCircle2 aria-hidden="true" />}
               <span>{completed ? "Mark Incomplete" : "Mark Unit Complete"}</span>
             </button>
+            <button
+              className="icon-button"
+              title="Open vocabulary"
+              onClick={() => setVocabularyOpen((open) => !open)}
+              aria-expanded={vocabularyOpen}
+            >
+              <BookOpen aria-hidden="true" />
+              <span>Words</span>
+            </button>
             <button className="icon-button" title="Open settings" onClick={() => setSettingsOpen((open) => !open)} aria-expanded={settingsOpen}>
               <Settings aria-hidden="true" />
               <span>Settings</span>
@@ -643,6 +908,19 @@ export function App() {
               } as CSSProperties
             }
           />
+        </div>
+
+        <div className="vocabulary-slot">
+          {vocabularyOpen && (
+            <VocabularyPanel
+              unitId={unit.id}
+              newWords={unit.newWords}
+              reviewWords={reviewWords}
+              knownWords={knownWords}
+              functionWords={activeFunctionWords}
+              grammarTokens={activeGrammarTokens}
+            />
+          )}
         </div>
 
         {settingsOpen && (
@@ -776,10 +1054,14 @@ export function App() {
             <span>Play Audio</span>
             <Keycap>2</Keycap>
           </button>
-          <button title="Next card" onClick={nextCard} disabled={cardIndex === unit.cards.length - 1 && !settings.autoAdvanceLoop}>
+          <button title="Next card" onClick={nextCard} aria-disabled={cardIndex === unit.cards.length - 1 && !settings.autoAdvanceLoop}>
             <ChevronRight aria-hidden="true" />
             <span>Next</span>
             <Keycap>Space</Keycap>
+          </button>
+          <button title="Random card" onClick={randomCard} disabled={unit.cards.length <= 1}>
+            <Shuffle aria-hidden="true" />
+            <span>Randomize</span>
           </button>
           <button title="Restart this unit" onClick={restartUnit}>
             <RotateCcw aria-hidden="true" />

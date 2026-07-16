@@ -4,6 +4,7 @@ export type UnitIndexEntry = {
   title: string;
   grammarFocus: string;
   path: string;
+  kind?: "standard" | "kana" | "kanji";
 };
 
 export type UnitIndex = {
@@ -12,11 +13,12 @@ export type UnitIndex = {
 };
 
 export type CourseLevel = {
-  code: "A1" | "A2" | "B1" | "B2";
+  code: "Kana" | "A1" | "A2" | "B1" | "B2";
   title: string;
   unitStart: number;
   unitEnd: number;
   canDoSummary: string;
+  courseStage?: "prelude" | "core";
 };
 
 export type CourseLevels = {
@@ -35,11 +37,17 @@ export type WordEntry = {
   function: string;
 };
 
+export type FunctionWordEntry = WordEntry;
+
+export type GrammarTokenEntry = WordEntry;
+
 export type CardToken = {
   surface: string;
   reading: string;
   explain: string;
   wordId?: string;
+  audioRef?: string;
+  audioText?: string;
 };
 
 export type PracticeCard = {
@@ -50,6 +58,7 @@ export type PracticeCard = {
   tokens: CardToken[];
   english: string;
   audioRef?: string;
+  audioText?: string;
   grammarTags: string[];
 };
 
@@ -58,6 +67,7 @@ export type CurriculumUnit = {
   slug: string;
   title: string;
   grammarFocus: string;
+  kind?: "standard" | "kana" | "kanji";
   newWords: WordEntry[];
   reviewWordIds: string[];
   lexiconWordIds: string[];
@@ -92,6 +102,7 @@ export type Progress = {
   unitId: number;
   cardIndex: number;
   cardPositions: Record<string, number>;
+  cardCounts: Record<string, number>;
   completedUnits: number[];
   settings: PracticeSettings;
 };

@@ -36,11 +36,16 @@ The planned Japanese path is CEFR-inspired / JF-aligned from A1 through B2, but
 it is not an official certification claim. Levels are defined by practical
 Can-do outcomes and supported by grammar sequencing.
 
+A short pre-A1 Kana level can precede the core path. These recognition units
+teach hiragana, katakana, and a small set of common kanji symbols without
+counting against the 96-unit A1-B2 grammar map.
+
 Each standard unit has:
 
 - one grammar focus
 - 10 new words selected to support that grammar focus
-- 80-150 cards
+- 80-100 cards for rebuilt standard units, with crowded-review units allowed up
+  to 115 when every extra card is doing real SRS work
 
 The unit title is learner-facing, such as `Unit 6: This And That`.
 The grammar focus remains visible as supporting text, such as:
@@ -126,6 +131,7 @@ Supporting modes:
 - unit overview
 - curriculum map
 - word lookup from introduced words
+- quick vocab + scheduled-review drills from the unit Words panel
 - grammar focus summary
 - audio generation workflow
 - local progress tracking

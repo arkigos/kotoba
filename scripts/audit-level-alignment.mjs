@@ -214,20 +214,22 @@ if (lateA1ExistenceAverage < 25) {
   warnings.push(`late A1 existence/location practice is only ${lateA1ExistenceAverage}%; keep Units 15-20 from collapsing back into pure desu drills.`);
 }
 
-const a2VerbCount = a2Rows.reduce((sum, row) => sum + row.newVerbCount, 0);
-if (a2VerbCount < 80) {
-  failures.push(`A2 has only ${a2VerbCount} new verb words; expected at least 80 across the authored A2 everyday-action band.`);
-}
+if (a2Rows.length > 0) {
+  const a2VerbCount = a2Rows.reduce((sum, row) => sum + row.newVerbCount, 0);
+  if (a2VerbCount < 80) {
+    failures.push(`A2 has only ${a2VerbCount} new verb words; expected at least 80 across the authored A2 everyday-action band.`);
+  }
 
-const a2ActionMasuAverage = a2ActionRows.length === 0 ? 0 : Math.round(a2ActionRows.reduce((sum, row) => sum + row.productiveMasuPct, 0) / a2ActionRows.length);
-if (a2ActionMasuAverage < 45) {
-  failures.push(`A2 Units 21-30 average only ${a2ActionMasuAverage}% productive polite-verb cards; A2 should visibly shift into everyday actions.`);
-}
+  const a2ActionMasuAverage = a2ActionRows.length === 0 ? 0 : Math.round(a2ActionRows.reduce((sum, row) => sum + row.productiveMasuPct, 0) / a2ActionRows.length);
+  if (a2ActionMasuAverage < 45) {
+    failures.push(`A2 Units 21-30 average only ${a2ActionMasuAverage}% productive polite-verb cards; A2 should visibly shift into everyday actions.`);
+  }
 
-const staticA2Units = new Set([31, 32, 33, 34, 38, 40]);
-for (const row of a2Rows) {
-  if (row.desuPct >= 65 && row.productiveMasuPct < 25 && !staticA2Units.has(row.id)) {
-    warnings.push(`unit ${row.id}: high desu-family use (${row.desuPct}%) after A2 action forms are available; check for sterile static drift.`);
+  const staticA2Units = new Set([31, 32, 33, 34, 38, 40]);
+  for (const row of a2Rows) {
+    if (row.desuPct >= 65 && row.productiveMasuPct < 25 && !staticA2Units.has(row.id)) {
+      warnings.push(`unit ${row.id}: high desu-family use (${row.desuPct}%) after A2 action forms are available; check for sterile static drift.`);
+    }
   }
 }
 

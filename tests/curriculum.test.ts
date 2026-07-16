@@ -1,19 +1,22 @@
 import { describe, expect, it } from "vitest";
 import { courseLevels, unitIndex } from "../src/data";
 import { helperVocabularyUnitIds, knownVocabularyUnitIds, lexiconVocabularyUnitIds, reviewVocabularyUnitIds, vocabularyPoolsForUnit } from "../src/curriculum/bin";
+import functionWords from "../data/jp/curriculum/function_words.json";
+import grammarTokens from "../data/jp/curriculum/grammar_tokens.json";
 import pacingRules from "../data/jp/curriculum/source/pacing.json";
 import unitSpecs from "../data/jp/curriculum/source/unit_specs.json";
 
 const unitModules = import.meta.glob<{
   default: {
     cards: Array<{
+      id: string;
       english: string;
       grammarTags?: string[];
       line: string[];
       tokens?: Array<{ surface: string; reading: string; explain?: string; wordId?: string }>;
       tts: string[];
     }>;
-    newWords: Array<{ id: string; function?: string }>;
+    newWords: Array<{ id: string; surface: string; function?: string }>;
     reviewWordIds: string[];
     lexiconWordIds: string[];
   };
@@ -114,6 +117,67 @@ describe("curriculum word bins", () => {
     });
   });
 
+  it("keeps prelude recognition units out of standard SRS bins", () => {
+    expect(reviewVocabularyUnitIds(101)).toEqual([]);
+    expect(knownVocabularyUnitIds(101)).toEqual([101]);
+    expect(lexiconVocabularyUnitIds(101)).toEqual([]);
+    expect(vocabularyPoolsForUnit(101)).toEqual({
+      current: [101],
+      reviewDue: [],
+      lexicon: [],
+      helpers: [101],
+    });
+  });
+
+  it("tracks particles and copula chunks as function words while keeping existence verbs in SRS vocabulary", () => {
+    expect(functionWords.map((word) => word.surface)).toEqual(expect.arrayContaining(["は", "が", "を", "に", "か", "です"]));
+    expect(functionWords.map((word) => word.surface)).not.toEqual(expect.arrayContaining(["あります", "います", "ありません", "いません"]));
+    expect(grammarTokens.map((word) => word.surface)).not.toEqual(expect.arrayContaining(["あります", "います", "ありません", "いません"]));
+    expect(wordsForUnitIds([4]).map((word) => word.id)).toEqual(expect.arrayContaining(["aru", "iru"]));
+  });
+
+  it("documents every anonymous learner-facing token as function, grammar, or punctuation", () => {
+    const documentedTokenKeys = new Set([...functionWords, ...grammarTokens].map((word) => `${word.surface}|${word.reading}`));
+    const punctuationTokenKeys = new Set(["\uFF1F|\uFF1F", "\u3001|\u3001"]);
+    const offenders: string[] = [];
+
+    for (const [modulePath, module] of Object.entries(unitModules)) {
+      for (const card of module.default.cards) {
+        for (const token of card.tokens ?? []) {
+          if (token.wordId) continue;
+
+          const key = `${token.surface}|${token.reading}`;
+          if (!documentedTokenKeys.has(key) && !punctuationTokenKeys.has(key)) {
+            offenders.push(`${modulePath} ${card.id}: ${key}`);
+          }
+        }
+      }
+    }
+
+    expect(offenders).toEqual([]);
+  });
+
+  it("keeps kana recognition units complete and non-repeating", () => {
+    const hiragana = unitModules[unitModulePath(101)].default;
+    const katakana = unitModules[unitModulePath(102)].default;
+    const hiraganaSurfaces = new Set(hiragana.newWords.map((word) => word.surface));
+    const katakanaSurfaces = new Set(katakana.newWords.map((word) => word.surface));
+
+    expect(hiragana.cards).toHaveLength(hiragana.newWords.length);
+    expect(katakana.cards).toHaveLength(katakana.newWords.length);
+    expect(hiragana.newWords).toHaveLength(113);
+    expect(katakana.newWords).toHaveLength(114);
+    expect(new Set(hiragana.cards.map((card) => card.tokens?.[0]?.wordId)).size).toBe(hiragana.cards.length);
+    expect(new Set(katakana.cards.map((card) => card.tokens?.[0]?.wordId)).size).toBe(katakana.cards.length);
+
+    for (const surface of ["\u304c", "\u3071", "\u304d\u3083", "\u3058\u3083", "\u3063"]) {
+      expect(hiraganaSurfaces.has(surface), `missing hiragana ${surface}`).toBe(true);
+    }
+    for (const surface of ["\u30ac", "\u30d1", "\u30ad\u30e3", "\u30b8\u30e3", "\u30c3", "\u30fc"]) {
+      expect(katakanaSurfaces.has(surface), `missing katakana ${surface}`).toBe(true);
+    }
+  });
+
   it("stores SRS review words separately from free lexicon helpers", () => {
     const unit = unitModules[unitModulePath(4)].default;
 
@@ -125,10 +189,11 @@ describe("curriculum word bins", () => {
     expect(courseLevels.framework).toBe("CEFR-inspired / JF-aligned");
     expect(courseLevels.certificationClaim).toBe(false);
     expect(courseLevels.plannedUnitCount).toBe(96);
-    expect(courseLevels.levels.map((level) => level.code)).toEqual(["A1", "A2", "B1", "B2"]);
+    expect(courseLevels.levels.map((level) => level.code)).toEqual(["Kana", "A1", "A2", "B1", "B2"]);
 
+    expect(unitIndex.units.filter((entry) => entry.id >= 101 && entry.id <= 103).every((entry) => levelForUnit(entry.id)?.code === "Kana")).toBe(true);
     expect(unitIndex.units.filter((entry) => entry.id <= 20).every((entry) => levelForUnit(entry.id)?.code === "A1")).toBe(true);
-    expect(unitIndex.units.filter((entry) => entry.id >= 21 && entry.id <= 44).every((entry) => levelForUnit(entry.id)?.code === "A2")).toBe(true);
+    expect(unitIndex.units.some((entry) => entry.id >= 21 && entry.id < 100)).toBe(false);
   });
 
   it("keeps current authored unit IDs and slugs stable", () => {
@@ -136,7 +201,7 @@ describe("curriculum word bins", () => {
       [1, "simple-identity"],
       [2, "topic-comment"],
       [3, "possession-and-also"],
-      [4, "negative-identity"],
+      [4, "basic-existence-and-absence"],
       [5, "past-identity"],
       [6, "basic-demonstratives"],
       [7, "basic-question-words"],
@@ -153,40 +218,20 @@ describe("curriculum word bins", () => {
       [18, "location-words"],
       [19, "basic-numbers-counters"],
       [20, "a1-scene-review"],
-      [21, "polite-verbs-non-past"],
-      [22, "polite-verb-negatives"],
-      [23, "polite-verbs-past"],
-      [24, "direct-objects"],
-      [25, "going-to-places"],
-      [26, "action-location"],
-      [27, "time-point"],
-      [28, "from-and-until"],
-      [29, "with-someone"],
-      [30, "frequency"],
-      [31, "likes-and-dislikes"],
-      [32, "skill-as-description"],
-      [33, "wanting-things"],
-      [34, "wanting-to-do"],
-      [35, "suggestions"],
-      [36, "please-do"],
-      [37, "please-do-not"],
-      [38, "permission"],
-      [39, "prohibition"],
-      [40, "need-and-suggestions"],
-      [41, "te-form-ichidan-irregular"],
-      [42, "te-form-godan"],
-      [43, "connecting-actions"],
-      [44, "ongoing-resulting-state"],
+      [101, "hiragana"],
+      [102, "katakana"],
+      [103, "first-kanji-symbols"],
     ]);
   });
 
   it("keeps an action or existence lane in every A1 unit", () => {
     const previewTag = "early masu action preview";
     const foundationActionTag = "early V\u307e\u3059 action";
+    const objectActionTag = "N\u3092V\u307e\u3059";
     const existenceForms = new Set(["\u3042\u308a\u307e\u3059", "\u3044\u307e\u3059", "\u3042\u308a\u307e\u305b\u3093", "\u3044\u307e\u305b\u3093"]);
     for (let unitId = 1; unitId <= 7; unitId += 1) {
       const unit = unitModules[unitModulePath(unitId)].default;
-      const currentVerbs = unit.newWords.filter((word) => word.function === "verb");
+      const currentVerbs = unit.newWords.filter((word) => word.function === "verb" && !["aru", "iru"].includes(word.id));
       expect(currentVerbs, `unit ${unitId} current verbs`).toHaveLength(2);
       for (const verb of currentVerbs) {
         const verbActionCards = unit.cards.filter(
@@ -198,7 +243,12 @@ describe("curriculum word bins", () => {
 
     for (let unitId = 8; unitId <= 14; unitId += 1) {
       const unit = unitModules[unitModulePath(unitId)].default;
-      expect(unit.cards.filter((card) => card.grammarTags?.includes(previewTag))).toHaveLength(2);
+      const actionOrExistenceCards = unit.cards.filter(
+        (card) =>
+          card.grammarTags?.some((tag) => [previewTag, foundationActionTag, objectActionTag].includes(tag)) ||
+          card.line.some((part) => existenceForms.has(part)),
+      );
+      expect(actionOrExistenceCards.length, `unit ${unitId}`).toBeGreaterThanOrEqual(2);
     }
 
     for (let unitId = 15; unitId <= 20; unitId += 1) {
@@ -267,23 +317,34 @@ describe("curriculum word bins", () => {
     }
   });
 
-  it("interleaves Unit 4 negative identity with movement verbs", () => {
+  it("introduces Unit 4 existence before absence while keeping movement verbs", () => {
     const unit = unitModules[unitModulePath(4)].default;
     const firstSeen = firstWordPositions(4);
     const firstMovementCards = unit.cards.slice(0, 40).filter((card) => card.tokens?.some((token) => token.wordId === "iku" || token.wordId === "kuru"));
+    const firstAbsenceCard = unit.cards.findIndex((card) => card.tokens?.some((token) => token.surface === "\u3042\u308a\u307e\u305b\u3093" || token.surface === "\u3044\u307e\u305b\u3093"));
 
     expect(firstSeen.get("iku")).toBeLessThanOrEqual(20);
     expect(firstSeen.get("kuru")).toBeLessThanOrEqual(20);
     expect(firstMovementCards.length).toBeGreaterThanOrEqual(4);
-    expect(unit.cards.slice(0, 40).some((card) => card.english.includes("not"))).toBe(true);
+    expect(unit.cards[0].tokens?.some((token) => token.surface === "\u3042\u308a\u307e\u3059")).toBe(true);
+    expect(unit.cards.slice(0, 20).some((card) => card.tokens?.some((token) => token.surface === "\u3042\u308a\u307e\u305b\u3093" || token.surface === "\u3044\u307e\u305b\u3093"))).toBe(false);
+    expect(firstAbsenceCard).toBeGreaterThan(20);
+    expect(unit.cards.some((card) => card.tokens?.some((token) => token.surface === "\u3042\u308a\u307e\u305b\u3093"))).toBe(true);
+    expect(unit.cards.some((card) => card.tokens?.some((token) => token.surface === "\u3044\u307e\u305b\u3093"))).toBe(true);
+    expect(unit.cards.some((card) => card.tokens?.some((token) => token.surface === "\u3058\u3083\u3042\u308a\u307e\u305b\u3093"))).toBe(false);
   });
 
-  it("keeps Unit 4 current vocabulary in a tight 8-12 appearance band", () => {
+  it("keeps Unit 4 ordinary current vocabulary in a tight 8-12 appearance band", () => {
     const unit = unitModules[unitModulePath(4)].default;
     const counts = wordAppearanceCounts(4);
+    const grammarFocusWordIds = new Set(["aru", "iru"]);
 
     expect(unit.cards.length).toBeLessThan(100);
     for (const word of unit.newWords) {
+      if (grammarFocusWordIds.has(word.id)) {
+        expect(counts.get(word.id), `unit 4 grammar word ${word.id}`).toBeGreaterThanOrEqual(8);
+        continue;
+      }
       expect(counts.get(word.id), `unit 4 current word ${word.id}`).toBeGreaterThanOrEqual(8);
       expect(counts.get(word.id), `unit 4 current word ${word.id}`).toBeLessThanOrEqual(12);
     }
@@ -410,58 +471,6 @@ describe("curriculum word bins", () => {
     }
   });
 
-  it("keeps productive question markers visible across A2", () => {
-    const questionMark = "\uff1f";
-    const questionMarker = "\u304b";
-    const hiddenQuestionEndings = [
-      "\u3042\u308a\u307e\u305b\u3093\u3067\u3057\u305f\u304b",
-      "\u3042\u308a\u307e\u305b\u3093\u304b",
-      "\u3042\u308a\u307e\u3059\u304b",
-      "\u3044\u307e\u305b\u3093\u3067\u3057\u305f\u304b",
-      "\u3044\u307e\u305b\u3093\u304b",
-      "\u3044\u307e\u3059\u304b",
-      "\u307e\u305b\u3093\u3067\u3057\u305f\u304b",
-      "\u307e\u3057\u305f\u304b",
-      "\u307e\u305b\u3093\u304b",
-      "\u307e\u3057\u3087\u3046\u304b",
-      "\u307e\u3059\u304b",
-      "\u3067\u3057\u305f\u304b",
-      "\u3067\u3059\u304b",
-    ];
-
-    for (let unitId = 21; unitId <= 44; unitId += 1) {
-      const unit = unitModules[unitModulePath(unitId)].default;
-      for (const card of unit.cards) {
-        expect(card.line.some((part) => hiddenQuestionEndings.some((ending) => part.endsWith(ending)))).toBe(false);
-
-        const questionIndex = card.line.indexOf(questionMark);
-        if (questionIndex >= 0) {
-          const kaIndex = card.line.indexOf(questionMarker);
-          expect(kaIndex).toBeGreaterThanOrEqual(0);
-          expect(kaIndex).toBeLessThan(questionIndex);
-        }
-      }
-    }
-  });
-
-  it("keeps A2 current vocabulary early and review-due vocabulary present", () => {
-    for (let unitId = 21; unitId <= 44; unitId += 1) {
-      const firstSeen = firstWordPositions(unitId);
-      const unitSpec = unitSpecs.units.find((unit) => unit.id === unitId);
-      expect(unitSpec).toBeDefined();
-
-      for (const word of unitSpec?.newWords ?? []) {
-        expect(firstSeen.get(word.id) ?? Number.POSITIVE_INFINITY, `unit ${unitId} current word ${word.id}`).toBeLessThanOrEqual(
-          pacingRules.cutoffs.currentWordFirstSeenBy,
-        );
-      }
-
-      for (const word of wordsForUnitIds(reviewVocabularyUnitIds(unitId))) {
-        expect(firstSeen.get(word.id), `unit ${unitId} review word ${word.id}`).toBeDefined();
-      }
-    }
-  });
-
   it("does not use intro cards for review-due vocabulary", () => {
     for (const unit of Object.values(unitModules).map((module) => module.default)) {
       for (const card of unit.cards) {
@@ -472,6 +481,7 @@ describe("curriculum word bins", () => {
   });
 
   it("does not first-introduce multiple current-unit words on one card", () => {
+    const grammarFocusSrsWordIds = new Set(["aru", "iru", "suki", "kirai", "jouzu", "heta", "hoshii", "hitsuyou", "dou", "ukeru"]);
     for (const entry of unitIndex.units) {
       const unit = unitModules[unitModulePath(entry.id)].default;
       const firstSeen = firstWordPositions(entry.id);
@@ -480,7 +490,10 @@ describe("curriculum word bins", () => {
           const wordId = token.wordId;
           return wordId && unit.newWords.some((word) => word.id === wordId) && firstSeen.get(wordId) === cardIndex + 1;
         });
-        expect(newWordsFirstSeenHere.length, `unit ${entry.id} card ${cardIndex + 1}`).toBeLessThanOrEqual(1);
+        const ordinaryNewWords = newWordsFirstSeenHere.filter((token) => token.wordId && !grammarFocusSrsWordIds.has(token.wordId));
+        const grammarNewWords = newWordsFirstSeenHere.filter((token) => token.wordId && grammarFocusSrsWordIds.has(token.wordId));
+        expect(ordinaryNewWords.length, `unit ${entry.id} card ${cardIndex + 1}`).toBeLessThanOrEqual(1);
+        expect(grammarNewWords.length, `unit ${entry.id} card ${cardIndex + 1}`).toBeLessThanOrEqual(1);
       }
     }
   });

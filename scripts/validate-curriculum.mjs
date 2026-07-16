@@ -38,6 +38,14 @@ function levelForUnit(levels, unitId) {
   return levels.find((level) => unitId >= level.unitStart && unitId <= level.unitEnd);
 }
 
+function isPreludeLevel(level) {
+  return level?.courseStage === "prelude" || level?.code === "Kana";
+}
+
+function isSpecialCurriculumUnit(unit) {
+  return unit?.kind === "kana" || unit?.kind === "kanji" || unit?.id >= 100;
+}
+
 function plannedUnitIdsFromGrammarMap(markdown) {
   return [...markdown.matchAll(/^(\d{3})\.\s+/gm)].map((match) => Number(match[1]));
 }
@@ -57,17 +65,41 @@ function collectWordIdList(unit, unitById, unitIds) {
 }
 
 function knownVocabularyUnitIds(unit, unitById) {
-  return [...unitById.keys()].filter((sourceUnitId) => sourceUnitId <= unit.id).sort((a, b) => a - b);
+  if (isSpecialCurriculumUnit(unit)) return [unit.id];
+  return [...unitById.keys()].filter((sourceUnitId) => sourceUnitId >= 1 && sourceUnitId <= unit.id && sourceUnitId < 100).sort((a, b) => a - b);
 }
 
 function lexiconVocabularyUnitIds(unit, unitById) {
+  if (isSpecialCurriculumUnit(unit)) return [];
   const reviewUnitIds = new Set(reviewVocabularyUnitIds(unit.id));
-  return [...unitById.keys()].filter((sourceUnitId) => sourceUnitId < unit.id && !reviewUnitIds.has(sourceUnitId)).sort((a, b) => a - b);
+  return [...unitById.keys()].filter((sourceUnitId) => sourceUnitId >= 1 && sourceUnitId < unit.id && sourceUnitId < 100 && !reviewUnitIds.has(sourceUnitId)).sort((a, b) => a - b);
 }
 
 function sameList(left, right) {
   return JSON.stringify(left) === JSON.stringify(right);
 }
+
+function isAllowedFunctionWordKind(kind) {
+  return ["particle", "copula", "sentence ending", "grammar"].includes(kind);
+}
+
+function isAllowedGrammarTokenKind(kind) {
+  return ["existence verb", "predicate adjective", "question word", "request phrase", "permission phrase", "prohibition phrase", "ongoing action phrase", "grammar"].includes(kind);
+}
+
+function looksLikeLexicalPoliteVerb(word) {
+  const surface = word.surface ?? "";
+  const reading = word.reading ?? "";
+  const blockedExistenceForms = new Set(["あります", "ありません", "います", "いません"]);
+  if (blockedExistenceForms.has(surface) || blockedExistenceForms.has(reading)) return true;
+  return (surface.endsWith("ます") || reading.endsWith("ます")) && word.function !== "copula";
+}
+
+function tokenKey(token) {
+  return `${token.surface}|${token.reading}`;
+}
+
+const punctuationTokenKeys = new Set(["\uFF1F|\uFF1F", "\u3001|\u3001"]);
 
 export async function validateCurriculum() {
   const failures = [];
@@ -84,18 +116,23 @@ export async function validateCurriculum() {
   assert(courseLevels.language === "jp", "Japanese course levels must declare language jp", failures);
   assert(courseLevels.certificationClaim === false, "course levels must not claim official certification", failures);
   assert(courseLevels.plannedUnitCount === 96, `expected 96 planned units, found ${courseLevels.plannedUnitCount}`, failures);
-  assert(Array.isArray(courseLevels.levels) && courseLevels.levels.length === 4, "course levels must contain four levels", failures);
+  assert(Array.isArray(courseLevels.levels) && courseLevels.levels.length === 5, "course levels must contain one prelude plus four core levels", failures);
 
-  const expectedLevelCodes = ["A1", "A2", "B1", "B2"];
+  const expectedLevelCodes = ["Kana", "A1", "A2", "B1", "B2"];
   const coveredPlannedUnits = new Set();
   let expectedNextUnit = 1;
   for (const [levelIndex, level] of (courseLevels.levels ?? []).entries()) {
     assert(level.code === expectedLevelCodes[levelIndex], `course level ${levelIndex + 1}: expected code ${expectedLevelCodes[levelIndex]}, found ${level.code}`, failures);
     assert(level.title && typeof level.title === "string", `course level ${level.code ?? levelIndex + 1}: missing title`, failures);
     assert(level.canDoSummary && typeof level.canDoSummary === "string", `course level ${level.code ?? levelIndex + 1}: missing canDoSummary`, failures);
-    assert(level.unitStart === expectedNextUnit, `course level ${level.code}: expected unitStart ${expectedNextUnit}, found ${level.unitStart}`, failures);
     assert(Number.isInteger(level.unitEnd) && level.unitEnd >= level.unitStart, `course level ${level.code}: invalid unit range`, failures);
 
+    if (isPreludeLevel(level)) {
+      assert(level.unitStart >= 100, `prelude level ${level.code}: unitStart should use the 100+ special range`, failures);
+      continue;
+    }
+
+    assert(level.unitStart === expectedNextUnit, `course level ${level.code}: expected unitStart ${expectedNextUnit}, found ${level.unitStart}`, failures);
     for (let unitId = level.unitStart; unitId <= level.unitEnd; unitId += 1) {
       assert(!coveredPlannedUnits.has(unitId), `planned unit ${unitId} appears in multiple levels`, failures);
       coveredPlannedUnits.add(unitId);
@@ -104,6 +141,43 @@ export async function validateCurriculum() {
   }
   assert(coveredPlannedUnits.size === courseLevels.plannedUnitCount, `course levels cover ${coveredPlannedUnits.size} planned units, expected ${courseLevels.plannedUnitCount}`, failures);
   assert(expectedNextUnit === courseLevels.plannedUnitCount + 1, `course levels must end at planned unit ${courseLevels.plannedUnitCount}`, failures);
+
+  const functionWords = await readJson("data/jp/curriculum/function_words.json");
+  assert(Array.isArray(functionWords), "function_words.json must be an array", failures);
+  const functionWordIds = new Set();
+  const functionWordKeys = new Set();
+  for (const word of functionWords ?? []) {
+    const label = `function word ${word?.id ?? "(missing id)"}`;
+    assert(word.id && word.surface && word.reading && word.meaning && word.function, `${label}: needs id, surface, reading, meaning, function`, failures);
+    assert(!functionWordIds.has(word.id), `${label}: duplicate id`, failures);
+    functionWordIds.add(word.id);
+
+    const key = `${word.surface}|${word.reading}`;
+    assert(!functionWordKeys.has(key), `${label}: duplicate surface/reading ${key}`, failures);
+    functionWordKeys.add(key);
+
+    assert(isAllowedFunctionWordKind(word.function), `${label}: invalid function kind ${word.function}`, failures);
+    assert(!looksLikeLexicalPoliteVerb(word), `${label}: lexical polite verbs such as あります/います must be tracked as vocabulary, not function words`, failures);
+  }
+
+  const grammarTokens = await readJson("data/jp/curriculum/grammar_tokens.json");
+  assert(Array.isArray(grammarTokens), "grammar_tokens.json must be an array", failures);
+  const grammarTokenIds = new Set();
+  const grammarTokenKeys = new Set();
+  for (const word of grammarTokens ?? []) {
+    const label = `grammar token ${word?.id ?? "(missing id)"}`;
+    assert(word.id && word.surface && word.reading && word.meaning && word.function, `${label}: needs id, surface, reading, meaning, function`, failures);
+    assert(!grammarTokenIds.has(word.id), `${label}: duplicate id`, failures);
+    grammarTokenIds.add(word.id);
+
+    const key = `${word.surface}|${word.reading}`;
+    assert(!grammarTokenKeys.has(key), `${label}: duplicate surface/reading ${key}`, failures);
+    assert(!functionWordKeys.has(key), `${label}: duplicates function word surface/reading ${key}`, failures);
+    grammarTokenKeys.add(key);
+
+    assert(isAllowedGrammarTokenKind(word.function), `${label}: invalid function kind ${word.function}`, failures);
+  }
+  const documentedAnonymousTokenKeys = new Set([...functionWordKeys, ...grammarTokenKeys, ...punctuationTokenKeys]);
 
   const grammarMap = await readText("data/jp/curriculum/grammar_by_unit.md");
   const plannedUnitIds = plannedUnitIdsFromGrammarMap(grammarMap);
@@ -147,12 +221,35 @@ export async function validateCurriculum() {
   }
 
   const unitById = new Map(units.map((unit) => [unit.id, unit]));
+  const vocabularySurfaceReadings = new Map();
+  for (const unit of units) {
+    if (isSpecialCurriculumUnit(unit)) continue;
+    for (const word of unit.newWords ?? []) {
+      vocabularySurfaceReadings.set(`${word.surface}|${word.reading}`, `unit ${unit.id} word ${word.id}`);
+    }
+  }
+  for (const word of functionWords ?? []) {
+    const vocabularyOwner = vocabularySurfaceReadings.get(`${word.surface}|${word.reading}`);
+    assert(!vocabularyOwner, `function word ${word.id}: ${word.surface}/${word.reading} duplicates tracked vocabulary in ${vocabularyOwner}`, failures);
+  }
+  for (const word of grammarTokens ?? []) {
+    const vocabularyOwner = vocabularySurfaceReadings.get(`${word.surface}|${word.reading}`);
+    assert(!vocabularyOwner, `grammar token ${word.id}: ${word.surface}/${word.reading} duplicates tracked vocabulary in ${vocabularyOwner}; use wordId on card tokens instead`, failures);
+  }
+
   const introducedWords = new Map();
 
   for (const unit of units) {
+    const isSpecialUnit = isSpecialCurriculumUnit(unit);
     assert(unit.grammarFocus && typeof unit.grammarFocus === "string", `unit ${unit.id}: missing grammarFocus`, failures);
     assert(Array.isArray(unit.newWords), `unit ${unit.id}: newWords must be an array`, failures);
-    assert(unit.newWords.length === 10, `unit ${unit.id}: expected exactly 10 new words, found ${unit.newWords?.length ?? 0}`, failures);
+    if (isSpecialUnit) {
+      assert(unit.newWords.length > 0, `unit ${unit.id}: special units must define recognition items`, failures);
+      assert(unit.kind === "kana" || unit.kind === "kanji", `unit ${unit.id}: special units must declare kind kana or kanji`, failures);
+    } else {
+      assert(unit.newWords.length >= 10, `unit ${unit.id}: expected at least 10 SRS words, found ${unit.newWords?.length ?? 0}`, failures);
+      assert(unit.newWords.length <= 12, `unit ${unit.id}: expected no more than 12 SRS words without a documented exception, found ${unit.newWords?.length ?? 0}`, failures);
+    }
 
     const unitWordIds = new Set();
     for (const word of unit.newWords ?? []) {
@@ -161,8 +258,10 @@ export async function validateCurriculum() {
       unitWordIds.add(word.id);
 
       const duplicateKey = `${word.surface}|${word.reading}|${word.meaning}`;
-      assert(!introducedWords.has(duplicateKey), `unit ${unit.id}: word ${word.surface} duplicates earlier unit ${introducedWords.get(duplicateKey)}`, failures);
-      introducedWords.set(duplicateKey, unit.id);
+      if (!isSpecialUnit) {
+        assert(!introducedWords.has(duplicateKey), `unit ${unit.id}: word ${word.surface} duplicates earlier unit ${introducedWords.get(duplicateKey)}`, failures);
+        introducedWords.set(duplicateKey, unit.id);
+      }
     }
 
     if (!Array.isArray(unit.cards) || unit.cards.length === 0) {
@@ -170,13 +269,13 @@ export async function validateCurriculum() {
       continue;
     }
 
-    if (unit.cards.length < 80 || unit.cards.length > 150) {
+    if (!isSpecialUnit && (unit.cards.length < 80 || unit.cards.length > 150)) {
       warnings.push(`unit ${unit.id}: expected 80-150 cards for a standard unit, found ${unit.cards.length}`);
     }
 
     const currentWordIds = collectWordIds(unit, unitById, [unit.id]);
-    const requiredReviewWordIds = collectWordIds(unit, unitById, reviewVocabularyUnitIds(unit.id));
-    const expectedReviewWordIds = collectWordIdList(unit, unitById, reviewVocabularyUnitIds(unit.id));
+    const requiredReviewWordIds = isSpecialUnit ? new Set() : collectWordIds(unit, unitById, reviewVocabularyUnitIds(unit.id));
+    const expectedReviewWordIds = isSpecialUnit ? [] : collectWordIdList(unit, unitById, reviewVocabularyUnitIds(unit.id));
     const expectedLexiconWordIds = collectWordIdList(unit, unitById, lexiconVocabularyUnitIds(unit, unitById));
     const allowedWordIds = collectWordIds(unit, unitById, knownVocabularyUnitIds(unit, unitById));
     const usedWordIds = new Set();
@@ -207,6 +306,8 @@ export async function validateCurriculum() {
         if (part.wordId) {
           usedWordIds.add(part.wordId);
           assert(allowedWordIds.has(part.wordId), `${label}: wordId ${part.wordId} has not been introduced yet`, failures);
+        } else {
+          assert(documentedAnonymousTokenKeys.has(tokenKey(part)), `${label}: anonymous token ${part.surface}/${part.reading} is not documented as a function word, grammar token, or punctuation`, failures);
         }
       }
     }

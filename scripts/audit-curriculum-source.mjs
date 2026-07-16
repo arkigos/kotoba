@@ -8,6 +8,10 @@ function sameWords(left, right) {
   return JSON.stringify(left.map(wordKey)) === JSON.stringify(right.map(wordKey));
 }
 
+function isSpecialUnit(unit) {
+  return unit?.kind === "kana" || unit?.kind === "kanji" || unit?.id >= 100;
+}
+
 const failures = [];
 const source = await readUnitSpecs();
 const index = await readUnitIndex();
@@ -44,8 +48,10 @@ for (const entry of index.units) {
     seenWordIds.set(word.id, spec.id);
 
     const duplicateKey = `${word.surface}|${word.reading}|${word.meaning}`;
-    assert(!seenWordKeys.has(duplicateKey), `word ${word.surface}/${word.reading}/${word.meaning} appears in both unit ${seenWordKeys.get(duplicateKey)} and unit ${spec.id}`, failures);
-    seenWordKeys.set(duplicateKey, spec.id);
+    if (!isSpecialUnit(spec)) {
+      assert(!seenWordKeys.has(duplicateKey), `word ${word.surface}/${word.reading}/${word.meaning} appears in both unit ${seenWordKeys.get(duplicateKey)} and unit ${spec.id}`, failures);
+      seenWordKeys.set(duplicateKey, spec.id);
+    }
   }
 }
 

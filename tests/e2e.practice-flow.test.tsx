@@ -13,6 +13,7 @@ describe("practice flow e2e", () => {
         speak: vi.fn(),
       },
     });
+    vi.spyOn(window.HTMLMediaElement.prototype, "play").mockResolvedValue(undefined);
   });
 
   it("drills a Japanese unit end to end without blank states", async () => {
