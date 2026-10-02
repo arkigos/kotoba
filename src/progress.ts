@@ -3,15 +3,12 @@ import type { PracticeSettings, Progress } from "./types";
 const key = "kotoba.progress.v1";
 
 export const defaultSettings: PracticeSettings = {
-  showPromptText: true,
-  cardFront: "japanese",
+  defaultDisplay: "japanese",
   japaneseDisplay: "surface",
-  revealByDefault: false,
   autoPlayAudio: true,
   audioLanguage: "japanese",
   autoAdvance: false,
   autoAdvanceOrder: "sequential",
-  autoAdvanceLoop: false,
   autoAdvanceDelayMs: 5000,
   theme: "light",
 };
@@ -49,24 +46,36 @@ function cleanCardCounts(value: unknown): Record<string, number> {
   );
 }
 
+type LegacySettings = Partial<PracticeSettings> & {
+  cardFront?: unknown;
+  showPromptText?: unknown;
+};
+
 function cleanSettings(value: unknown, oldShowJapanese: unknown): PracticeSettings {
-  const partial = value && typeof value === "object" && !Array.isArray(value) ? (value as Partial<PracticeSettings>) : {};
-  const migratedFront = oldShowJapanese === false ? "english" : defaultSettings.cardFront;
+  const partial = value && typeof value === "object" && !Array.isArray(value) ? (value as LegacySettings) : {};
+  const migratedDefaultDisplay =
+    partial.defaultDisplay === "japanese" || partial.defaultDisplay === "english" || partial.defaultDisplay === "hidden"
+      ? partial.defaultDisplay
+      : partial.showPromptText === false
+        ? "hidden"
+        : partial.cardFront === "english" || oldShowJapanese === false
+          ? "english"
+          : defaultSettings.defaultDisplay;
   const autoAdvanceDelayMs = Math.min(30000, Math.max(2000, numberOrDefault(partial.autoAdvanceDelayMs, defaultSettings.autoAdvanceDelayMs)));
   const audioLanguage =
-    partial.audioLanguage === "english" || partial.audioLanguage === "both" || partial.audioLanguage === "japanese"
+    partial.audioLanguage === "english" || partial.audioLanguage === "same" || partial.audioLanguage === "opposite" || partial.audioLanguage === "japanese"
       ? partial.audioLanguage
       : defaultSettings.audioLanguage;
 
   return {
-    ...defaultSettings,
-    ...partial,
-    cardFront: partial.cardFront === "english" || partial.cardFront === "japanese" ? partial.cardFront : migratedFront,
+    defaultDisplay: migratedDefaultDisplay,
     japaneseDisplay:
       partial.japaneseDisplay === "kana" || partial.japaneseDisplay === "romaji" || partial.japaneseDisplay === "surface"
         ? partial.japaneseDisplay
         : defaultSettings.japaneseDisplay,
+    autoPlayAudio: typeof partial.autoPlayAudio === "boolean" ? partial.autoPlayAudio : defaultSettings.autoPlayAudio,
     audioLanguage,
+    autoAdvance: typeof partial.autoAdvance === "boolean" ? partial.autoAdvance : defaultSettings.autoAdvance,
     autoAdvanceOrder: partial.autoAdvanceOrder === "random" ? "random" : "sequential",
     autoAdvanceDelayMs,
     theme: partial.theme === "dark" ? "dark" : "light",

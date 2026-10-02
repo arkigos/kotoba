@@ -1,0 +1,1246 @@
+{
+  "version": 1,
+  "scope": "Shared starters precede independent A1 tracks. Additional A1 grammar has one owning track. Completed lower-level grammar is inherited without reintroduction; later levels currently retain their authored chapter order.",
+  "foundations": {
+    "starter-identity": [
+      {
+        "start": 1,
+        "teaches": [
+          "topic",
+          "copula"
+        ],
+        "evidence": "は marks who or what you are talking about. It is written は but pronounced wa. Put the person’s role next, then です. In this pattern, です makes the statement polite and corresponds to am, is or are."
+      },
+      {
+        "start": 10,
+        "teaches": [
+          "question"
+        ],
+        "evidence": "Put か after です to ask a question. あなた means you, but in conversation people often use a name or leave out the person when it is clear who they mean."
+      }
+    ],
+    "starter-descriptions": [
+      {
+        "start": 1,
+        "teaches": [
+          "adjective"
+        ],
+        "evidence": "Put an adjective after は to describe something, then finish with です. These adjectives end in い; keep that ending before です."
+      }
+    ],
+    "starter-existence": [
+      {
+        "start": 1,
+        "teaches": [
+          "subject",
+          "polite"
+        ],
+        "evidence": "が marks the thing whose existence you describe. ある becomes あります in polite speech. Use this verb for things and plants; Japanese often leaves out the location when it is clear."
+      },
+      {
+        "start": 7,
+        "teaches": [
+          "politeNegative"
+        ],
+        "evidence": "The polite negative of あります is ありません. It means that the thing is not there, or that you do not have it."
+      }
+    ],
+    "starter-belongings-also": [
+      {
+        "start": 1,
+        "teaches": [
+          "nounLink"
+        ],
+        "evidence": "Put の between the owner and the thing: 私の本 is my book; あなたの本 is your book. Keep this phrase together in the familiar これは…です sentence."
+      },
+      {
+        "start": 7,
+        "teaches": [
+          "also"
+        ],
+        "evidence": "Use も when the same description applies to another person. Put it directly after the person you are talking about, in place of は."
+      }
+    ],
+    "starter-actions": [
+      {
+        "start": 1,
+        "teaches": [
+          "object"
+        ],
+        "evidence": "を (pronounced o) marks the object of an action. Put it after the thing being acted on and before the verb."
+      },
+      {
+        "start": 13,
+        "teaches": [
+          "suru"
+        ],
+        "evidence": "勉強 (benkyō) means “studying.” します (shimasu) means “do.” Together, they describe doing that activity: studying."
+      }
+    ],
+    "starter-places": [
+      {
+        "start": 1,
+        "teaches": [
+          "ni"
+        ],
+        "evidence": "Start with the place, followed by に (ni), then say who or what is there with が (ga) and います or あります."
+      },
+      {
+        "start": 7,
+        "teaches": [
+          "de"
+        ],
+        "evidence": "Use で for the place where you read, write, or study."
+      },
+      {
+        "start": 13,
+        "teaches": [
+          "to"
+        ],
+        "evidence": "と after a person means with that person. Between two nouns, it joins them: 私と友達."
+      }
+    ],
+    "starter-time-forms": [
+      {
+        "start": 1,
+        "teaches": [
+          "copulaNegative"
+        ],
+        "evidence": "はい means yes; いいえ means no. After a noun, use ではありません for am not, is not, or are not. は in this ending is pronounced wa."
+      },
+      {
+        "start": 7,
+        "teaches": [
+          "copulaPast",
+          "copulaPastNegative"
+        ],
+        "evidence": "Use でした after a noun to describe the past. Its negative is ではありませんでした."
+      },
+      {
+        "start": 13,
+        "teaches": [
+          "past"
+        ],
+        "evidence": "Change ます to ました for a completed action. Change ません to ませんでした for an action you did not do."
+      }
+    ]
+  },
+  "lessons": {
+    "A1-food-first-meal": [
+      {
+        "start": 1,
+        "cardId": "A1-food-first-meal-v1-001",
+        "teaches": [
+          "object"
+        ],
+        "existing": true,
+        "evidence": "を marks what you eat or drink. 食べる becomes 食べます; 飲む becomes 飲みます in polite speech. Japanese often leaves out an obvious “I” or “you”."
+      }
+    ],
+    "A1-food-drinks": [
+      {
+        "start": 1,
+        "cardId": "A1-food-drinks-v1-001",
+        "teaches": [
+          "itemRequest"
+        ],
+        "existing": true,
+        "evidence": "Nをください is a practical way to ask for an item. With は in the negative, you single out that drink: “As for coffee, I do not drink it.”"
+      }
+    ],
+    "A1-food-more-dishes": [
+      {
+        "start": 1,
+        "cardId": "A1-food-more-dishes-v1-001",
+        "teaches": [
+          "to"
+        ],
+        "existing": true,
+        "evidence": "と joins nouns in a list. A meal can have several parts. は marks the dish you are commenting on; these statements do not require an explicit subject pronoun."
+      }
+    ],
+    "A1-food-cooking": [
+      {
+        "start": 1,
+        "cardId": "A1-food-cooking-v1-001",
+        "teaches": [
+          "de"
+        ],
+        "existing": true,
+        "evidence": "作る becomes 作ります. で can mark the tool used for an action. 料理 can mean cooking or a prepared dish. With おいしい it means the prepared food. A pan and a kitchen knife are tools, not things to eat."
+      }
+    ],
+    "A1-food-eating-out": [
+      {
+        "start": 1,
+        "cardId": "A1-food-eating-out-v1-001",
+        "teaches": [
+          "adjectivePast"
+        ],
+        "existing": true,
+        "evidence": "一杯 counts one cup or glass. 注文 is an order. いただきます is said before eating; ごちそうさま is said after a meal. These expressions are complete social phrases. おいしかったです is the polite past of おいしいです: replace the final い with かった and keep です."
+      }
+    ],
+    "A1-food-grammar-wants": [
+      {
+        "start": 1,
+        "cardId": "A1-food-grammar-wants-v1-001",
+        "teaches": [
+          "desire"
+        ],
+        "existing": true,
+        "evidence": "Take off ます and add たいです to say what you want to do: 食べます → 食べたいです; 飲みます → 飲みたいです. The negative is たくないです. With these verbs, を can still mark the food or drink. These statements describe your own wishes."
+      }
+    ],
+    "A1-people-partners": [
+      {
+        "start": 1,
+        "cardId": "A1-people-partners-v1-001",
+        "teaches": [
+          "progressive"
+        ],
+        "existing": true,
+        "evidence": "妻 and 夫 refer to your own spouse. 彼 and 彼女 can mean he/she or boyfriend/girlfriend, depending on context. 結婚しています describes the continuing state “is married”, not a wedding happening now."
+      },
+      {
+        "start": 9,
+        "cardId": "A1-people-partners-v1-009",
+        "teaches": [
+          "suru"
+        ],
+        "explanation": "結婚 is the noun marriage. It combines with する to form a verb; 結婚しています describes being married."
+      }
+    ],
+    "A1-people-people-count": [
+      {
+        "start": 14,
+        "cardId": "A1-people-people-count-v1-014",
+        "teaches": [
+          "iAttribute"
+        ]
+      }
+    ],
+    "A1-people-life-feelings": [
+      {
+        "start": 1,
+        "cardId": "A1-people-life-feelings-v1-001",
+        "teaches": [
+          "past"
+        ],
+        "existing": true,
+        "evidence": "The polite past ends in ました. 泣いています and 笑っています describe actions happening now; 怒っています describes being angry. 生まれました means “was born”. 死にました means “died”; use care with this direct expression about people."
+      }
+    ],
+    "A1-people-grammar-past": [
+      {
+        "start": 1,
+        "cardId": "A1-people-grammar-past-v1-001",
+        "teaches": [
+          "copulaPast",
+          "copulaPastNegative"
+        ],
+        "existing": true,
+        "evidence": "です becomes でした when a noun describes the past. Its polite past negative is ではありませんでした. For an い-adjective, replace the final い with かった before です: 若い → 若かったです. A past role does not say what the person does now."
+      }
+    ],
+    "A1-home-rooms": [
+      {
+        "start": 1,
+        "cardId": "A1-home-rooms-v1-001",
+        "teaches": [
+          "ni"
+        ],
+        "existing": true,
+        "evidence": "あります says that a thing exists. Put its location before に, and the thing before が. For people and animals Japanese uses a different verb, います. は marks the thing you want to locate. それ points near the listener and あれ farther from both of you. あなたの asks about the listener’s belongings; use their name instead when it is known."
+      }
+    ],
+    "A1-home-moving-things": [
+      {
+        "start": 1,
+        "cardId": "A1-home-moving-things-v1-001",
+        "teaches": [
+          "origin"
+        ],
+        "existing": true,
+        "evidence": "を marks the object you move. に marks where you put it; から marks where you take it from. 置きます means put or place, while 捨てます means throw away."
+      }
+    ],
+    "A1-home-push-pull": [
+      {
+        "start": 1,
+        "cardId": "A1-home-push-pull-v1-001",
+        "teaches": [
+          "request"
+        ],
+        "existing": true,
+        "evidence": "A polite request uses the て-form and ください. 押す becomes 押して; 引く becomes 引いて. These verbs commonly appear in instructions for doors."
+      }
+    ],
+    "A1-shopping-checkout": [
+      {
+        "start": 1,
+        "cardId": "A1-shopping-checkout-v1-001",
+        "teaches": [
+          "adverbNi"
+        ],
+        "existing": true,
+        "evidence": "払います means pay. で marks a payment method, such as 現金で or カードで. お釣り is change returned after a purchase. 別々に means separately."
+      }
+    ],
+    "A1-shopping-grammar-describing": [
+      {
+        "start": 1,
+        "cardId": "A1-shopping-grammar-describing-v1-001",
+        "teaches": [
+          "copulaNegative"
+        ],
+        "existing": true,
+        "evidence": "For an い-adjective, replace い with くないです: 高い → 高くないです. Keep です after the negative adjective. A な-adjective does use ではありません: 綺麗ではありません. This distinction matters even when the dictionary spelling ends in い."
+      }
+    ],
+    "A1-time-minutes": [
+      {
+        "start": 11,
+        "cardId": "A1-time-minutes-v1-011",
+        "teaches": [
+          "until"
+        ]
+      }
+    ],
+    "A1-time-grammar-arrangements": [
+      {
+        "start": 1,
+        "cardId": "A1-time-grammar-arrangements-v1-001",
+        "teaches": [
+          "invitation",
+          "suggestion"
+        ],
+        "existing": true,
+        "evidence": "Use に after a clock time or a named weekday. Do not normally add に after 今日, 明日 or 昨日. Combine a day, a time and a person in the same sentence. 会いませんか invites someone to meet; 会いましょう suggests that you meet."
+      }
+    ],
+    "A1-routine-busy-days": [
+      {
+        "start": 1,
+        "cardId": "A1-routine-busy-days-v1-001",
+        "teaches": [
+          "adjectiveAdverb"
+        ],
+        "existing": true,
+        "evidence": "早い means early in these time contexts; 遅い means late. 忙しい is busy. 楽 describes something easy or comfortable, while 大変 describes something demanding. 生活 means everyday life or one’s way of life. Change the final い to く when describing how an action happens: 早く起きます, get up early."
+      }
+    ],
+    "A1-nature-describing-nature": [
+      {
+        "start": 1,
+        "cardId": "A1-nature-describing-nature-v2-001",
+        "teaches": [
+          "naAttribute"
+        ],
+        "existing": true,
+        "evidence": "とても strengthens an adjective. 低い means low; 強い and 弱い strong and weak. 太い and 細い describe thickness, such as a tree trunk. 静か is a な-adjective; use な before a noun."
+      }
+    ],
+    "A1-nature-grammar-weather": [
+      {
+        "start": 1,
+        "cardId": "A1-nature-grammar-weather-v1-001",
+        "teaches": [
+          "adjectiveNegative",
+          "agreement"
+        ],
+        "existing": true,
+        "evidence": "Use the same adjective in different time frames: 暑いです, 暑くないです, 暑かったです. Only the adjective ending changes; do not say 暑いでした. A season can be the topic, and ね can invite agreement."
+      }
+    ],
+    "A1-quantity-grammar-borrowing": [
+      {
+        "start": 1,
+        "cardId": "A1-quantity-grammar-borrowing-v2-001",
+        "teaches": [
+          "permission"
+        ],
+        "existing": true,
+        "evidence": "Learn 借りてもいいですか as a complete polite question: “May I borrow it?” Put the item before を. For requests, reuse 貸してください, please lend it, and 返してください, please return it. に marks the person you return it to. Broader permission patterns come in A2."
+      }
+    ],
+    "A1-conversation-grammar-reasons": [
+      {
+        "start": 1,
+        "cardId": "A1-conversation-grammar-reasons-v1-001",
+        "teaches": [
+          "reason"
+        ],
+        "existing": true,
+        "evidence": "Put から after a complete clause to give a reason. Keep です before から after a noun or adjective in this polite pattern. The reason can come before a request. Japanese often leaves out the consequence when it is already clear from the conversation."
+      }
+    ],
+    "A2-cooking-finishing": [
+      {
+        "start": 1,
+        "cardId": "A2-cooking-finishing-v2-001",
+        "teaches": [
+          "try"
+        ],
+        "existing": true,
+        "evidence": "The て-form plus みます means try doing something. 漬けてみます means “I will try pickling it”. 噛んでください asks someone to chew. 一切れ is one slice or piece; the reading is ひときれ."
+      }
+    ],
+    "A2-cooking-food-words": [
+      {
+        "start": 6,
+        "cardId": "A2-cooking-food-words-v3-006",
+        "teaches": [
+          "potential"
+        ],
+        "explanation": "飲む becomes 飲める for “can drink”; the polite negative is 飲めません, cannot drink. This differs from 飲みません, do not drink."
+      },
+      {
+        "start": 7,
+        "cardId": "A2-cooking-food-words-v3-007",
+        "teaches": [],
+        "title": "A casual word for a meal",
+        "pattern": "飯を食べる",
+        "explanation": "In casual speech, the dictionary form 食べる can end a statement where polite speech uses 食べます. 飯 is a casual, sometimes rough word for a meal. Recognize it, but prefer ご飯 when speaking politely. The next question is asked while waiting for the meal to be ready."
+      }
+    ],
+    "A2-care-recovery": [
+      {
+        "start": 1,
+        "cardId": "A2-care-recovery-v2-001",
+        "teaches": [
+          "approaching"
+        ],
+        "existing": true,
+        "evidence": "治りました means recovered or healed. 回復してきました describes recovery developing up to now. 健康 means health; 健康のために means “for the sake of my health”. 眠る means sleep and emphasizes being asleep."
+      }
+    ],
+    "A2-home-breakages": [
+      {
+        "start": 1,
+        "cardId": "A2-home-breakages-v2-001",
+        "teaches": [
+          "regretted"
+        ]
+      }
+    ],
+    "A2-travel-journey": [
+      {
+        "start": 12,
+        "cardId": "A2-travel-journey-v2-012",
+        "teaches": [
+          "teAfter"
+        ]
+      }
+    ],
+    "A2-shopping-prices": [
+      {
+        "start": 1,
+        "cardId": "A2-shopping-prices-v2-001",
+        "teaches": [
+          "comparison",
+          "comparisonSide"
+        ],
+        "existing": true,
+        "evidence": "より marks the comparison baseline. AよりBのほうが安いです means B is cheaper than A. 値段 is the everyday word for price; 価格 is common in price information. 両方 means both alternatives."
+      },
+      {
+        "start": 9,
+        "cardId": "A2-shopping-prices-v2-009",
+        "teaches": [
+          "both"
+        ]
+      }
+    ],
+    "A2-study-ability": [
+      {
+        "start": 1,
+        "cardId": "A2-study-ability-v2-001",
+        "teaches": [
+          "ability"
+        ],
+        "existing": true,
+        "evidence": "A dictionary-form verb plus ことができます states ability. こと turns the action into a noun-like phrase. 得意 means a strength and 苦手 an area of difficulty; neither is an absolute statement that you can or cannot do it. 知識 means knowledge."
+      },
+      {
+        "start": 1,
+        "cardId": "A2-study-ability-v2-001",
+        "teaches": [
+          "nominalThing"
+        ],
+        "existing": true,
+        "evidence": "こと turns the action into a noun-like phrase."
+      }
+    ],
+    "A2-people-giving": [
+      {
+        "start": 1,
+        "cardId": "A2-people-giving-v2-001",
+        "teaches": [
+          "benefactive"
+        ],
+        "existing": true,
+        "evidence": "くれる describes someone giving something to you or your group. Compare 友達に本をもらいました, “I received a book from my friend”, with 友達が本をくれました, “my friend gave me a book”. After a て-form, くれる describes a favor done for you."
+      }
+    ],
+    "A2-time-when": [
+      {
+        "start": 2,
+        "cardId": "A2-time-when-v2-002",
+        "teaches": [
+          "plainClause"
+        ],
+        "title": "When you do something",
+        "pattern": "dictionary-form verb + 時",
+        "explanation": "Use the dictionary form before 時: 読みます becomes 読む, so 本を読む時 means “when I read a book”. Keep 本を with its verb. The whole expression tells when you use your glasses. A plain verb can also describe a following noun; Japanese does not insert “that” or “which”."
+      }
+    ],
+    "A2-time-frequency": [
+      {
+        "start": 4,
+        "cardId": "A2-time-frequency-v3-004",
+        "teaches": [
+          "teSequence"
+        ],
+        "explanation": "歩いて行きます combines the て-form of 歩く with 行く: go on foot. The first action describes how you go."
+      }
+    ],
+    "A2-time-past-future": [
+      {
+        "start": 3,
+        "cardId": "A2-time-past-future-v2-003",
+        "teaches": [
+          "about"
+        ]
+      }
+    ],
+    "A2-conversation-asking": [
+      {
+        "start": 12,
+        "cardId": "A2-conversation-asking-v2-012",
+        "teaches": [
+          "so"
+        ]
+      }
+    ],
+    "A2-conversation-respect": [
+      {
+        "start": 8,
+        "cardId": "A2-conversation-respect-v2-008",
+        "teaches": [
+          "benefactiveRespect"
+        ]
+      },
+      {
+        "start": 2,
+        "cardId": "A2-conversation-respect-v2-002",
+        "teaches": [
+          "reportedSpeech",
+          "quote"
+        ],
+        "title": "Report what someone says",
+        "pattern": "words / clause + と + speech verb",
+        "explanation": "と marks the content of speech or thought. A reported statement uses a plain clause; a noun statement ends in だ: 学生だと言いました. An exact quotation keeps the words as spoken, including polite endings. 何とおっしゃいましたか asks what the person said."
+      }
+    ],
+    "A2-conversation-apologies": [
+      {
+        "start": 1,
+        "cardId": "A2-conversation-apologies-v2-001",
+        "teaches": [
+          "nominalize"
+        ],
+        "existing": true,
+        "evidence": "謝る apologizes to someone; 褒める praises them. しかる is scold; いじめる is bully. 迷惑 describes trouble or inconvenience to someone. のは turns an action into the topic. 申し訳ありません is a formal apology."
+      },
+      {
+        "start": 6,
+        "cardId": "A2-conversation-apologies-v2-006",
+        "teaches": [
+          "plainNegative"
+        ],
+        "title": "A negative description",
+        "pattern": "Vない + N"
+      }
+    ],
+    "A2-culture-publishing": [
+      {
+        "start": 1,
+        "cardId": "A2-culture-publishing-v2-001",
+        "teaches": [
+          "passive"
+        ],
+        "existing": true,
+        "evidence": "出版する publishes a book; 発行する issues a publication. 記者 is a reporter. 人気がある means popular, with に for the group who likes it. 注目する pays attention to someone or something. 注目されています is passive: is receiving attention. 大勢 is many people, not a large amount of an object."
+      }
+    ],
+    "A2-sports-practice": [
+      {
+        "start": 1,
+        "cardId": "A2-sports-practice-v2-001",
+        "teaches": [
+          "goal"
+        ],
+        "existing": true,
+        "evidence": "一生懸命 means with all your effort; できるだけ means as much as possible. 頑張る is persevere. 挑戦する takes に for the challenge. 努力する means make an effort; Vように expresses the goal of that effort; 勝てる is the potential form of 勝つ, “can win”."
+      }
+    ],
+    "A2-descriptions-degree": [
+      {
+        "start": 12,
+        "cardId": "A2-descriptions-degree-v2-012",
+        "teaches": [
+          "necessity"
+        ]
+      }
+    ],
+    "A2-changes-becoming": [
+      {
+        "start": 1,
+        "cardId": "A2-changes-becoming-v2-001",
+        "teaches": [
+          "change"
+        ],
+        "existing": true,
+        "evidence": "なる means become. Change the final い of an い-adjective to く before なる: 暖かくなります. Nouns and な-adjectives use に: 先生になります, 静かになります. The past form なりました reports a completed change."
+      }
+    ],
+    "A2-changes-conditions": [
+      {
+        "start": 1,
+        "cardId": "A2-changes-conditions-v2-001",
+        "teaches": [
+          "condition"
+        ],
+        "existing": true,
+        "evidence": "もし introduces a hypothetical condition. A past plain form plus ら gives the condition: 時間があったら, “if I have time”. For a noun, use だったら. The condition need not have happened; it describes a possible situation."
+      }
+    ],
+    "B1-housing-rental": [
+      {
+        "start": 8,
+        "cardId": "B1-housing-rental-v1-008",
+        "teaches": [
+          "whether"
+        ]
+      }
+    ],
+    "B1-housing-dwellings": [
+      {
+        "start": 1,
+        "cardId": "B1-housing-dwellings-v1-001",
+        "teaches": [
+          "role"
+        ],
+        "existing": true,
+        "evidence": "住まい is a home; 住居 a dwelling in a more formal register; 家屋 a house as a building. 貸家 is a house offered for rent, 別荘 a holiday home, and 高層 high-rise. ビルディング is the full borrowed form of ビル. として marks the role something serves."
+      }
+    ],
+    "B1-household-laundry": [
+      {
+        "start": 1,
+        "cardId": "B1-household-laundry-v1-001",
+        "teaches": [
+          "explanation"
+        ],
+        "existing": true,
+        "evidence": "湿る describes something becoming damp; 乾かす means dry something. 乾燥 names dryness or drying. 湿度 is the measured humidity; 湿気 moisture in the air. 蒸し暑い is muggy and hot. たたむ means fold. A plain clause followed by ので gives an explanatory reason, often more gently than から. かかる here takes time or money; it is a different dictionary identity from the homophone meaning catch a disease."
+      },
+      {
+        "start": 11,
+        "cardId": "B1-household-laundry-v1-011",
+        "teaches": [
+          "adjectiveTe"
+        ]
+      },
+      {
+        "start": 6,
+        "cardId": "B1-household-laundry-v1-006",
+        "teaches": [
+          "resourceFor"
+        ],
+        "title": "How long it takes"
+      }
+    ],
+    "B1-work-applications": [
+      {
+        "start": 1,
+        "cardId": "B1-work-applications-v1-001",
+        "teaches": [
+          "occasion"
+        ],
+        "existing": true,
+        "evidence": "応募 is applying for an advertised opportunity; 就職 is finding employment. 履歴書 is a résumé, and 面接 a job interview here. 雇う means employ someone; 仕事に就く means take up a job. V-dictionary にあたって introduces preparations or considerations when undertaking something, as in 応募するにあたって. It is more formal than a simple time expression."
+      }
+    ],
+    "B1-work-recommendations": [
+      {
+        "start": 1,
+        "cardId": "B1-work-recommendations-v1-001",
+        "teaches": [
+          "advice"
+        ],
+        "existing": true,
+        "evidence": "推薦 recommends a person or thing for selection. 勧める encourages someone to do something or recommends an option. V-dictionary よう勧める reports advice, with に marking the person advised. 正式な means formal or official; 正式に describes an action performed officially."
+      }
+    ],
+    "B1-work-documents": [
+      {
+        "start": 1,
+        "cardId": "B1-work-documents-v1-001",
+        "teaches": [
+          "deadline"
+        ],
+        "existing": true,
+        "evidence": "書類 refers to papers or documents; 文書 to a written document or text, often formal. 提出 means submit. 締め切り is a deadline; 期限 is a time limit or period of validity. までに marks a deadline for completing an action. 記載されています is a passive state: information is written or listed in a document."
+      }
+    ],
+    "B1-work-meetings": [
+      {
+        "start": 1,
+        "cardId": "B1-work-meetings-v1-001",
+        "teaches": [
+          "arrangement"
+        ],
+        "existing": true,
+        "evidence": "打ち合わせ is a meeting to coordinate or prepare something; 会合 is a gathering or meeting. 日時 combines date and time. 延期 means postponement. V-dictionary ことになりました reports a decision or arrangement that has been made, rather than simply stating your own intention."
+      }
+    ],
+    "B1-sports-training": [
+      {
+        "start": 1,
+        "cardId": "B1-sports-training-v1-001",
+        "teaches": [
+          "eachTime"
+        ],
+        "existing": true,
+        "evidence": "コーチ is a coach, トレーニング training, and ランニング running as exercise. 体操 can mean gymnastics or simple physical exercises, depending on context. 技 is a technique or skill. Nのたびに means each time something happens; V-dictionary たびに means each time someone does something."
+      }
+    ],
+    "B1-sports-progress": [
+      {
+        "start": 1,
+        "cardId": "B1-sports-progress-v1-001",
+        "teaches": [
+          "parallelChange"
+        ],
+        "existing": true,
+        "evidence": "上達 is improvement in a skill; マスターする mastering it. 継続 is continuation, 目標 a goal, and 達成 achieving it. 体力 is physical strength or fitness; 全力 all one’s effort. V-dictionary につれて links developing changes: as one thing changes, another changes with it. 全力で means with all one’s effort."
+      }
+    ],
+    "B1-education-school-day": [
+      {
+        "start": 1,
+        "cardId": "B1-education-school-day-v1-001",
+        "teaches": [
+          "notOnly"
+        ],
+        "existing": true,
+        "evidence": "通学 is commuting to school, 時間割 a timetable, and 学期 a school term. 曜日 is a day of the week. 科目 is a subject on the timetable; 学級 a school class as a group of students. Nによって違う means differ depending on N. だけでなく…も adds a second item: not only one thing but another as well."
+      }
+    ],
+    "B1-education-school-places": [
+      {
+        "start": 1,
+        "cardId": "B1-education-school-places-v1-001",
+        "teaches": [
+          "sometimes"
+        ],
+        "existing": true,
+        "evidence": "校舎 is a school building and 校庭 a schoolyard. 遠足 is a school outing, often for a day. サークル is a club or group sharing an interest, especially at university. V-dictionary ことがあります can describe something that sometimes happens; past-form ことがあります instead describes past experience."
+      }
+    ],
+    "B1-education-independent-study": [
+      {
+        "start": 1,
+        "cardId": "B1-education-independent-study-v1-001",
+        "teaches": [
+          "accordingTo"
+        ],
+        "existing": true,
+        "evidence": "学力 is academic ability or attainment. 自習 is independent study, including studying without a teacher during a school period. 休講 means a scheduled lecture or class is canceled. Nに応じて means according to N; here the material changes according to a learner’s ability."
+      }
+    ],
+    "B1-language-words": [
+      {
+        "start": 1,
+        "cardId": "B1-language-words-v1-001",
+        "teaches": [
+          "definition"
+        ],
+        "existing": true,
+        "evidence": "語学 is the study of languages, especially foreign languages. 単語 is an individual word; 語句 words or phrases. 国語 can mean a country’s national language, and in Japanese schools it means the Japanese-language subject. Nとは introduces a definition or explanation of a term."
+      }
+    ],
+    "B1-cooking-ingredients": [
+      {
+        "start": 1,
+        "cardId": "B1-cooking-ingredients-v1-001",
+        "teaches": [
+          "prepare"
+        ],
+        "existing": true,
+        "evidence": "豆 includes beans and other edible legumes. 粉 is powder or flour; the context tells you which. 酢 is vinegar, 食塩 table salt, クリーム cream, and 乳 milk, here specifically from a cow. 加える means add. V-te + おきます means do something in advance for a later purpose, as in 用意しておきます."
+      }
+    ],
+    "B1-cooking-steam": [
+      {
+        "start": 1,
+        "cardId": "B1-cooking-steam-v1-001",
+        "teaches": [
+          "whileStill"
+        ],
+        "existing": true,
+        "evidence": "蒸気 is vapor or steam as a physical substance; 湯気 is the visible mist rising from hot water or food. The mist is made of tiny droplets formed as water vapor cools. Adjective + うちに means while the condition still holds, as in 熱いうちに, while it is still hot."
+      }
+    ],
+    "B1-travel-tickets": [
+      {
+        "start": 1,
+        "cardId": "B1-travel-tickets-v1-001",
+        "teaches": [
+          "only"
+        ],
+        "existing": true,
+        "evidence": "往復 is a round trip; 片道 one way. 回数券 is a set of tickets for several journeys or uses. 乗り換え is a transfer between services. 乗り越し means traveling beyond the station covered by your ticket or intended journey. 気づく means notice or realize, with に marking what you notice. だけ limits the scope: 片道だけ means only one direction."
+      }
+    ],
+    "B1-travel-staying": [
+      {
+        "start": 1,
+        "cardId": "B1-travel-staying-v1-001",
+        "teaches": [
+          "depending"
+        ],
+        "existing": true,
+        "evidence": "宿泊 is staying overnight. 夜行 describes travel or a service operating through the night. 日帰り means returning on the same day. 土産 is a souvenir or gift brought back from a trip, commonly お土産 in conversation. 交通機関 means a transport service or means of transportation. によって means depending on: the fare varies with the means of transport."
+      }
+    ],
+    "B1-travel-air-and-water": [
+      {
+        "start": 1,
+        "cardId": "B1-travel-air-and-water-v2-001",
+        "teaches": [
+          "byMeans"
+        ],
+        "existing": true,
+        "evidence": "飛行 is flight or flying, and ジェット機 a jet aircraft. ボート is a small boat; ヨット usually a sailing boat in Japanese. 輸送 is transportation of people or goods. 浮く means float. Nによる identifies the means used in a more formal noun phrase, such as 船による輸送, transport by ship."
+      },
+      {
+        "start": 2,
+        "cardId": "B1-travel-air-and-water-v2-002",
+        "teaches": [
+          "duringActivity"
+        ],
+        "title": "An activity in progress",
+        "pattern": "Activity noun + 中（ちゅう）",
+        "explanation": "Add 中（ちゅう） directly to an activity or state noun to say it is in progress: 飛行中 means in flight. Do not insert の. This suffix differs from the earlier location noun 中（なか） in 箱の中, inside the box."
+      }
+    ],
+    "A2-sports-results": [
+      {
+        "start": 2,
+        "cardId": "A2-sports-results-v2-002",
+        "teaches": [
+          "quote"
+        ],
+        "title": "Say what you think",
+        "pattern": "plain clause + と思います",
+        "explanation": "Put a plain statement before と思います to say what you think. 勝つ is the plain form of 勝ちます, so 勝つと思います means “I think we will win.” The quoted thought does not end in ます. Nouns and な-adjectives take だ before と; い-adjectives keep their ending."
+      },
+      {
+        "start": 8,
+        "cardId": "A2-sports-results-v2-008",
+        "teaches": [
+          "contrast"
+        ],
+        "title": "A contrasting result",
+        "pattern": "clause + が、clause"
+      }
+    ],
+    "A2-cooking-cutting": [
+      {
+        "start": 2,
+        "cardId": "A2-cooking-cutting-v2-002",
+        "teaches": [
+          "negativeRequest"
+        ],
+        "title": "Ask someone not to do something",
+        "pattern": "Vないでください",
+        "explanation": "Use the plain negative form followed by でください for “please do not”. 切る becomes 切らない, so 切らないでください means “Please do not cut it.” This is different from the polite statement 切りません. Learn the negative form with each verb."
+      }
+    ],
+    "A1-conversation-name": [
+      {
+        "start": 6,
+        "cardId": "A1-conversation-name-v1-006",
+        "teaches": [
+          "copulaNegative"
+        ],
+        "existing": true,
+        "evidence": "はい means yes; いいえ means no. For a negative statement about who someone is, replace です with ではありません."
+      }
+    ],
+    "A1-conversation-courtesy": [
+      {
+        "start": 6,
+        "cardId": "A1-conversation-courtesy-v1-006",
+        "teaches": [
+          "object"
+        ],
+        "title": "Ask for this one",
+        "pattern": "これをお願いします",
+        "explanation": "Put を after the item you ask for. を is pronounced o. Keep お願いします together as the polite request."
+      }
+    ],
+    "A1-routine-shower-shopping": [
+      {
+        "start": 1,
+        "cardId": "A1-routine-shower-shopping-v1-001",
+        "teaches": [
+          "nounAbility"
+        ],
+        "existing": true,
+        "evidence": "できます means can do; in these examples it takes a noun with が."
+      }
+    ],
+    "A2-time-recent": [
+      {
+        "start": 8,
+        "cardId": "A2-time-recent-v2-008",
+        "teaches": [
+          "plainPast"
+        ],
+        "title": "The book I bought",
+        "pattern": "買った本",
+        "explanation": "Before a noun, use a plain verb form. For a completed purchase, 買う becomes 買った, not 買いました: 買った本 is “the book I bought”. この間 tells when you bought it. The final です keeps the whole sentence polite. Other verbs have their own plain past forms."
+      }
+    ],
+    "A2-quantity-comparison": [
+      {
+        "start": 11,
+        "cardId": "A2-quantity-comparison-v2-011",
+        "teaches": [
+          "adjectiveFormalNegative"
+        ],
+        "title": "Not as expensive",
+        "pattern": "Aほど高くありません",
+        "explanation": "ほど with a negative compares one thing with another: あれほど高くありません means “not as expensive as that”. 高くありません is a more formal version of 高くないです. Replace the final い with くありません; 寒い becomes 寒くありません."
+      }
+    ],
+    "A2-nature-weather": [
+      {
+        "start": 1,
+        "cardId": "A2-nature-weather-v2-001",
+        "teaches": [
+          "verbAppearance"
+        ],
+        "existing": true,
+        "evidence": "A verb stem plus そうです describes an appearance"
+      }
+    ],
+    "A2-study-research": [
+      {
+        "start": 4,
+        "cardId": "A2-study-research-v3-004",
+        "teaches": [],
+        "title": "An action or a fact",
+        "pattern": "plain clause + こと",
+        "explanation": "こと can name a fact as well as an action. 答えが正しいこと means the fact that the answer is correct. Keep が inside that clause, then use を after こと to mark what you prove."
+      }
+    ],
+    "A2-conversation-introductions": [
+      {
+        "start": 7,
+        "cardId": "A2-conversation-introductions-v2-007",
+        "teaches": [
+          "plainProgressive"
+        ],
+        "title": "Describe what someone is doing",
+        "pattern": "Vている + N"
+      }
+    ],
+    "A2-practical-problems": [
+      {
+        "start": 1,
+        "cardId": "A2-practical-problems-v3-001",
+        "teaches": [
+          "concession"
+        ],
+        "title": "Even if it goes wrong",
+        "pattern": "Vても、clause"
+      }
+    ],
+    "A2-conversation-register": [
+      {
+        "start": 1,
+        "cardId": "A2-conversation-register-v2-001",
+        "teaches": [
+          "plainPastNegative",
+          "explanatoryNo"
+        ],
+        "existing": true,
+        "evidence": "行かない is the plain negative of 行く, and 来なかった the plain past negative of 来る; のですか asks for an explanation."
+      }
+    ],
+    "A2-changes-intention": [
+      {
+        "start": 1,
+        "cardId": "A2-changes-intention-v2-001",
+        "teaches": [
+          "intention"
+        ],
+        "existing": true,
+        "evidence": "つもり expresses your intention."
+      }
+    ],
+    "A2-changes-expectations": [
+      {
+        "start": 1,
+        "cardId": "A2-changes-expectations-v2-001",
+        "teaches": [
+          "expectation"
+        ],
+        "existing": true,
+        "evidence": "はず describes an expectation"
+      }
+    ],
+    "A2-changes-unchanged": [
+      {
+        "start": 1,
+        "cardId": "A2-changes-unchanged-v2-001",
+        "teaches": [
+          "unchanged"
+        ],
+        "existing": true,
+        "evidence": "まま describes a state continuing unchanged."
+      }
+    ],
+    "B1-household-power": [
+      {
+        "start": 1,
+        "cardId": "B1-household-power-v1-001",
+        "teaches": [
+          "conditionalTo"
+        ],
+        "title": "An action and its result"
+      }
+    ],
+    "B1-language-examples": [
+      {
+        "start": 7,
+        "cardId": "B1-language-examples-v1-007",
+        "teaches": [
+          "relativeSubjectNo"
+        ],
+        "title": "Another subject marker inside a description"
+      }
+    ],
+    "B1-housing-comparison": [
+      {
+        "start": 9,
+        "cardId": "B1-housing-comparison-v2-009",
+        "teaches": [
+          "nounConcession"
+        ],
+        "title": "Even though it is secondhand"
+      }
+    ],
+    "B1-household-repairs": [
+      {
+        "start": 1,
+        "cardId": "B1-household-repairs-v1-001",
+        "teaches": [
+          "withoutDoing"
+        ],
+        "existing": true,
+        "evidence": "replace the plain negative ない with ずに"
+      }
+    ],
+    "B1-housing-agreement": [
+      {
+        "start": 1,
+        "cardId": "B1-housing-agreement-v1-001",
+        "teaches": [
+          "standingArrangement"
+        ],
+        "existing": true,
+        "evidence": "Vことになっています describes an arrangement or rule already in place."
+      }
+    ],
+    "B1-health-rest": [
+      {
+        "start": 1,
+        "cardId": "B1-health-rest-v1-001",
+        "teaches": [
+          "recommendation"
+        ],
+        "existing": true,
+        "evidence": "Use the plain past form followed by ほうがいいです to recommend an action."
+      }
+    ],
+    "B1-technology-printing": [
+      {
+        "start": 1,
+        "cardId": "B1-technology-printing-v1-001",
+        "teaches": [
+          "preparedState"
+        ],
+        "existing": true,
+        "evidence": "A transitive verb’s て-form plus あります describes a state resulting from someone’s deliberate action:"
+      }
+    ],
+    "B1-weather-forecast": [
+      {
+        "start": 1,
+        "cardId": "B1-weather-forecast-v1-001",
+        "teaches": [
+          "informationSource",
+          "hearsay"
+        ],
+        "existing": true,
+        "evidence": "によると names an information source. Put a complete plain clause before そうです to report what you heard or read:"
+      }
+    ],
+    "A2-work-obligations": [
+      {
+        "start": 1,
+        "cardId": "A2-work-obligations-v2-001",
+        "teaches": [
+          "obligation"
+        ],
+        "existing": true,
+        "evidence": "なければなりません expresses something you must or need to do."
+      }
+    ],
+    "A2-shopping-ease": [
+      {
+        "start": 1,
+        "cardId": "A2-shopping-ease-v2-001",
+        "teaches": [
+          "ease"
+        ],
+        "existing": true,
+        "evidence": "Remove ます and add やすい for easy to do, or にくい for difficult to do"
+      }
+    ],
+    "A2-changes-changing-wishes": [
+      {
+        "start": 1,
+        "cardId": "A2-changes-changing-wishes-v2-001",
+        "teaches": [
+          "pastDesire"
+        ],
+        "existing": true,
+        "evidence": "Change たい to たかった to describe a past wish"
+      },
+      {
+        "start": 4,
+        "cardId": "A2-changes-changing-wishes-v2-004",
+        "teaches": [
+          "changingDesire"
+        ],
+        "pattern": "Vたくなりました",
+        "explanation": "Change たい to たく before なる: 行きたい → 行きたくなる. 行きたくなりました means you came to want to go, often after seeing or hearing something. It describes a change in your wish, not the trip itself."
+      }
+    ],
+    "A2-home-simultaneous": [
+      {
+        "start": 1,
+        "cardId": "A2-home-simultaneous-v2-001",
+        "teaches": [
+          "simultaneous"
+        ],
+        "existing": true,
+        "evidence": "Remove ます and add ながら to describe two actions by the same person at the same time"
+      }
+    ],
+    "A2-time-until": [
+      {
+        "start": 1,
+        "cardId": "A2-time-until-v2-001",
+        "teaches": [
+          "untilClause"
+        ],
+        "existing": true,
+        "evidence": "Put a plain non-past verb before まで to show the event that ends an action or state"
+      }
+    ],
+    "B1-time-sudden": [
+      {
+        "start": 1,
+        "cardId": "B1-time-sudden-v1-001",
+        "teaches": [
+          "suddenSequence"
+        ],
+        "existing": true,
+        "evidence": "Put the plain past verb before 途端に to describe something sudden"
+      },
+      {
+        "start": 3,
+        "cardId": "B1-time-sudden-v1-003",
+        "teaches": [
+          "immediateAfter"
+        ],
+        "pattern": "Vた直後に / Nの直後に",
+        "explanation": "直後に means immediately after, without implying surprise. Put a plain past verb before it, or の after an event noun: 終わった直後に / 出発の直後に. Unlike 途端に, this also suits a planned next action."
+      }
+    ],
+    "B1-visits-respectful-presence": [
+      {
+        "start": 1,
+        "cardId": "B1-visits-respectful-presence-v1-001",
+        "teaches": [
+          "respectfulPresence"
+        ],
+        "existing": true,
+        "evidence": "いらっしゃいます respectfully describes someone else being somewhere, coming or going."
+      }
+    ],
+    "A2-cooking-naming-food": [
+      {
+        "start": 1,
+        "cardId": "A2-cooking-naming-food-v2-001",
+        "teaches": [
+          "namedTerm"
+        ],
+        "existing": true,
+        "evidence": "Put a name before という and its category after it"
+      }
+    ],
+    "B1-science-measurement": [
+      {
+        "start": 1,
+        "cardId": "B1-science-measurement-v1-001",
+        "teaches": [
+          "adjectiveQuantity"
+        ],
+        "existing": true,
+        "evidence": "Replace the final い of an い-adjective with さ to name a measurable quality: 深い becomes 深さ, depth."
+      }
+    ],
+    "A2-descriptions-context": [
+      {
+        "start": 1,
+        "cardId": "A2-descriptions-context-v2-001",
+        "teaches": [
+          "purpose",
+          "causePurpose"
+        ],
+        "existing": true,
+        "evidence": "ため expresses purpose or cause."
+      }
+    ],
+    "B1-household-too-much": [
+      {
+        "start": 1,
+        "cardId": "B1-household-too-much-v1-001",
+        "teaches": [
+          "excess"
+        ],
+        "existing": true,
+        "evidence": "Add すぎます to the stem before ます to say an action goes too far"
+      }
+    ]
+  }
+}

@@ -35,17 +35,21 @@ export type WordEntry = {
   reading: string;
   meaning: string;
   function: string;
+  dictionaryEntryId?: string;
+  dictionarySenseIds?: string[];
+  audioText?: string;
+  level?: import("../packages/dictionary/types").DictionaryLevel;
+  introducedInUnit?: number;
 };
 
 export type FunctionWordEntry = WordEntry;
-
-export type GrammarTokenEntry = WordEntry;
 
 export type CardToken = {
   surface: string;
   reading: string;
   explain: string;
   wordId?: string;
+  dictionaryEntryId?: string;
   audioRef?: string;
   audioText?: string;
 };
@@ -60,6 +64,9 @@ export type PracticeCard = {
   audioRef?: string;
   audioText?: string;
   grammarTags: string[];
+  /** Reviewed construction retained in personalized materialized cards. */
+  constructionKey?: string;
+  practiceGrammar?: string[];
 };
 
 export type CurriculumUnit = {
@@ -74,26 +81,23 @@ export type CurriculumUnit = {
   cards: PracticeCard[];
 };
 
-export type CardFront = "japanese" | "english";
-
 export type JapaneseDisplayMode = "surface" | "kana" | "romaji";
+
+export type PromptDisplay = "japanese" | "english" | "hidden";
 
 export type AutoAdvanceOrder = "sequential" | "random";
 
-export type AudioLanguage = "japanese" | "english" | "both";
+export type AudioLanguage = "japanese" | "english" | "same" | "opposite";
 
 export type ThemeMode = "light" | "dark";
 
 export type PracticeSettings = {
-  showPromptText: boolean;
-  cardFront: CardFront;
+  defaultDisplay: PromptDisplay;
   japaneseDisplay: JapaneseDisplayMode;
-  revealByDefault: boolean;
   autoPlayAudio: boolean;
   audioLanguage: AudioLanguage;
   autoAdvance: boolean;
   autoAdvanceOrder: AutoAdvanceOrder;
-  autoAdvanceLoop: boolean;
   autoAdvanceDelayMs: number;
   theme: ThemeMode;
 };

@@ -10,6 +10,10 @@ Each unit introduces:
 - one new grammar concept or tightly bundled grammar focus
 - 10 new words selected to support that grammar concept
 
+Generated Marugoto Starter supplemental units may use 10-13 words when the
+extra capacity preserves a coherent source-topic bucket. Prefer one 13-word
+unit over a 9-word orphan unit if the words clearly belong together.
+
 The new words must work well together in many short, natural sentences. They
 should not be a random theme list, and they should not duplicate words already
 introduced in earlier units.
@@ -37,15 +41,28 @@ Before choosing words for unit `N`:
 1. Read the grammar focus for unit `N`.
 2. Read previous unit word lists, especially all earlier units, to avoid
    introducing duplicates.
-3. Compute the review-due bins for unit `N`: words from units `N`, `N-2`,
+3. Group candidate words into semantic micro-worlds before authoring cards:
+   language learning, family talk, food ordering, home location, town movement,
+   calendar plans, hobbies, shopping, travel, and social phrases. A unit should
+   feel like one usable situation, not a sorted vocabulary index.
+4. Attach natural affordances to the words in that micro-world. Scripts and
+   languages pair with understand, read, write, and study; foods pair with eat,
+   drink, buy, want, and like; places and events pair with go, arrive, stay, and
+   meet; media pair with watch, listen, read, and choose; people pair with meet,
+   speak, ask, work, and live. Prefer these compatible pairings over generic
+   `N is N` or `N is here` frames.
+5. Compute the review-due bins for unit `N`: words from units `N`, `N-2`,
    `N-4`, `N-8`, `N-16`, `N-32`, and so on.
-4. Treat all previously introduced words as available helper vocabulary, while
-   strongly prioritizing current-unit words and review-due words.
-5. Choose 10 new words that pair naturally with the grammar focus and with the
+6. Treat all previously introduced words as available helper vocabulary, while
+   strongly prioritizing current-unit words and review-due words. Current words
+   still need gentle first exposure, but review-due words should be used boldly
+   with other known material instead of being reintroduced in one-word-safe
+   frames.
+7. Choose 10 new words that pair naturally with the grammar focus and with the
    known helper words.
-5. Prefer words that can appear in multiple sentence molds, not words that only
+8. Prefer words that can appear in multiple sentence molds, not words that only
    work in one example.
-6. Prefer common, concrete, reusable words unless the grammar concept requires
+9. Prefer common, concrete, reusable words unless the grammar concept requires
    a more specific word.
 
 ## Default Functional Mix
@@ -68,12 +85,33 @@ short `Vます` action practice with known people, objects, places, or time word
 Keep the frames modular: one stable sentence shape, one swapped noun/person/place
 slot, and one current or already-known high-value verb.
 
+Unit 1 should introduce a few high-value polite action verbs immediately, but
+those verbs must do real work with the nouns already present. Language and
+script words should appear in frames such as "understand Japanese", "read
+hiragana", and "write kanji", not only as `N desu` identity cards. Keep early
+cards gentle, but let the unit show from the start that nouns have actions they
+naturally invite.
+
 Do not open rebuilt foundation units with isolated vocabulary atoms or pure
 review runs. Start with immediate sentence context: current-unit material appears
 right away inside familiar grammar, and review-due or lexicon words scaffold the
 same card when they make the sentence clearer. First exposures should still be
 gentle and mostly one new learner-facing element at a time, but the card should
 feel like Japanese, not a glossary row.
+
+Forced SRS coverage should use contextual review cards whenever possible. Avoid
+covering review-due words by falling back to plain identity cards unless that
+frame is the natural choice for the word and unit.
+
+Exact duplicate Japanese card lines are not allowed inside a unit. Do not fix a
+duplicate by appending `ne`, `yo`, `ka`, punctuation, or an English-only gloss
+change. The replacement must change the semantic work of the card: a different
+compatible action, object, place, time, role, polarity, or discourse purpose.
+
+Use `ne` and `yo` only when the unit or source phrase is actually teaching that
+discourse particle. Marugoto-style phrases such as "ii desu ne" can be taught as
+phrases, but `ne` and `yo` should not be sprinkled through generated sentences
+as a variety mechanism.
 
 Units 8-14 may still include one or two fixed `Vます` action-preview cards. Those
 preview cards should reuse known verb identities from Units 1-7 rather than
@@ -185,6 +223,9 @@ Before authoring cards for a unit, confirm:
 - The set has a useful spread of nouns, verbs, descriptors, and support words.
 - Older known helper words can combine naturally with the new words.
 - Current-unit and review-due words have enough repetition to feel intentionally drilled.
+  Review-due words can appear in denser known-word constructions with older
+  nouns, places, time words, verbs, and particles; do not make review cards act
+  like cautious first introductions.
 - Current-unit words usually land in an 8-12 appearance band, and rebuilt
   standard units should stay in the 80-100 card range when review load allows.
   Units with 28+ scheduled review words may reach 115 cards, or 135 in late A1

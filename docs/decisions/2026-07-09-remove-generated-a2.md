@@ -2,6 +2,11 @@
 
 Date: 2026-07-09
 
+Status: Superseded in part by the 2026-07-16 Marugoto Starter A1 rebuild. The
+old generated A2 removal decision still stands, but Units 21-49 are now active
+Marugoto Starter A1 supplemental units. Future A2 currently starts at Unit 50 in
+`data/jp/curriculum/course_levels.json`.
+
 ## Decision
 
 Remove authored Units 21-44 from the active curriculum and source specs.
@@ -17,8 +22,11 @@ risks letting their patterns color future rebuilds.
 
 ## Consequences
 
-- The live authored curriculum is Kana 101-103 and A1 Units 1-20.
-- Unit IDs 21-44 are available for a future A2 rebuild from the current rules.
+- The old generated A2 Units 21-44 remain removed as A2 material.
+- Unit IDs 21-49 are now active A1 supplemental units from the Marugoto Starter
+  rebuild.
+- Future A2 work should use the current planned A2 range from
+  `data/jp/curriculum/course_levels.json`.
 - Old A2 authoring scripts are removed from the active toolchain.
 - Future A2 work should start from rules, vocabulary choices, and acceptance
   checks rather than from deleted frozen card JSON.

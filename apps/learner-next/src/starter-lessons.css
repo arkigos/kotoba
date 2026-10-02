@@ -1,0 +1,20 @@
+.starter-lessons { margin: 22px 0 30px; }
+.starter-lessons > p { max-width: 760px; color: var(--ink-soft); line-height: 1.7; font-size: 14px; }
+.starter-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 20px; }
+.starter-grid article { padding: 22px; border: 1px solid var(--line-strong); border-radius: 14px; background: var(--surface); min-width: 0; }
+.starter-grid h3 { font-size: 19px; line-height: 1.4; margin: 12px 0; }
+.starter-grid p, .starter-grid li { font-size: 13px; line-height: 1.7; }
+.starter-grid small { display: block; color: var(--ink-soft); }
+.starter-grid button { display: block; width: 100%; margin: 10px 0; padding: 12px; color: white; background: var(--coral-deep); border: 0; border-radius: 8px; font: inherit; cursor: pointer; }
+.starter-grid button.starter-known { background: transparent; color: var(--ink); border: 1px solid var(--line-strong); font-size: 12px; }
+.starter-grid button:disabled { opacity: .45; cursor: not-allowed; }
+.starter-grid details { margin-top: 18px; font-size: 12px; }
+.starter-grid summary { cursor: pointer; }
+.starter-grid ol { padding-left: 22px; }
+.starter-grid li { margin-bottom: 12px; }
+.starter-note { margin: 12px 0; padding: 16px 20px; border: 1px solid var(--line-strong); border-radius: 12px; background: var(--surface); text-align: left; }
+.starter-note p { font-size: 13px; line-height: 1.7; margin: 8px 0 0; }
+@media (max-width: 850px) { .starter-grid { grid-template-columns: 1fr; } }
+
+.lesson-card > .starter-note { margin: 0 16px 12px; padding: 14px 16px; }
+.lesson-shell .lesson-card.has-lesson-note { grid-template-rows: auto auto minmax(160px, 1fr) auto; }

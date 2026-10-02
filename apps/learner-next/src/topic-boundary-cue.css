@@ -1,0 +1,17 @@
+.topic-boundary-cue,
+.lesson-card-head > .topic-boundary-cue,
+.topic-preview-cards .topic-boundary-cue {
+  display: inline-flex;
+  width: fit-content;
+  align-self: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--teal-soft);
+  color: var(--teal);
+  font: 600 11px/1.4 var(--font-body);
+  letter-spacing: normal;
+  text-transform: none;
+}
+.lesson-card-head > .topic-boundary-cue { margin: 6px 8px; }
+.explorer-sentence .topic-boundary-cue { align-self: flex-start; }
+.topic-preview-cards .topic-boundary-cue { margin-bottom: 5px; }

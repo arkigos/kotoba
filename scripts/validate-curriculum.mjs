@@ -247,8 +247,9 @@ export async function validateCurriculum() {
       assert(unit.newWords.length > 0, `unit ${unit.id}: special units must define recognition items`, failures);
       assert(unit.kind === "kana" || unit.kind === "kanji", `unit ${unit.id}: special units must declare kind kana or kanji`, failures);
     } else {
+      const maxNewWords = unit.slug?.startsWith("starter-full-index-") ? 13 : 12;
       assert(unit.newWords.length >= 10, `unit ${unit.id}: expected at least 10 SRS words, found ${unit.newWords?.length ?? 0}`, failures);
-      assert(unit.newWords.length <= 12, `unit ${unit.id}: expected no more than 12 SRS words without a documented exception, found ${unit.newWords?.length ?? 0}`, failures);
+      assert(unit.newWords.length <= maxNewWords, `unit ${unit.id}: expected no more than ${maxNewWords} SRS words without a documented exception, found ${unit.newWords?.length ?? 0}`, failures);
     }
 
     const unitWordIds = new Set();

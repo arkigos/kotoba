@@ -1,6 +1,153 @@
 # Architecture
 
-This document defines the greenfield Kotoba app architecture.
+Current direction: [independent A1 tracks](decisions/2026-10-01-independent-a1-tracks.md) and
+[independent A2 tracks](decisions/2026-10-01-independent-a2-tracks.md). Shared starters
+lead to A1 tracks; completed A1 opens all five A2 tracks. Frozen authored lessons
+and review stay local to each track. Completing A2 opens eight
+[independent B1 tracks](decisions/2026-10-01-independent-b1-tracks.md).
+Older procedural/custom rules below are historical.
+
+## Focused Home and Learn
+
+`apps/learner-next/` is the active learner surface. `App.tsx` presents Home, Learn,
+Dictionary, My lessons, Activities, and Progress; Settings is separate. Historical
+internal keys remain: Home uses `today`, Learn Topics uses `course`, Learn Custom
+uses `build`, and Progress uses `goals`. `#home` and `#learn` are accepted aliases.
+Removing a navigation label does not invalidate stored sessions or unit links.
+
+Settings includes a confirmed **Reset all data** action for a true new-learner
+start. `state.ts::resetState` replaces the complete profile with fresh defaults
+and removes both older migration snapshots. This clears vocabulary and grammar
+practice, review cards, saved/cleared lessons, activities, goals, and preferences;
+removing lessons alone is not a fresh profile. The app reloads on Home to discard
+in-memory session state. Unrelated browser storage and dictionary content remain.
+`reset-profile.test.tsx` covers complete replacement, legacy migration, storage
+failure, and cancellation/confirmation.
+
+`TodayView.tsx` implements Home's single next action, actual coverage/week/streak,
+and compact shortcuts. `TopicCourseView.tsx` hosts Learn's Topics/Custom switch.
+`CustomLessonBuilder.tsx` owns explicit selection, dictionary search, Priority
+suggestions, card count, and a collapsed name/preview/save panel. `GoalsView.tsx`
+hosts `A1Milestones.tsx`; detailed standards and self-checks no longer crowd Learn.
+`SessionShelf.tsx` supplies My lessons and compact continuity surfaces, with
+resume/bookmark actions and a menu for browse/remake/rename/remove. See the
+[focused learner decision](decisions/2026-09-13-focused-home-and-learn.md).
+
+## Topic-driven A1 and full Dictionary
+
+The Next app now opens A1 as overlapping, independently active topics. Authored
+`data/jp/dictionary/a1_scope.json` and `packages/dictionary/a1.ts` define 450 core
+concepts, aliases for progress, 12 topics, and 10 practical self-checks.
+`topic-course.ts` projects progress from actual word history and composes bounded
+personal sessions. `TopicCourseView.tsx` owns topic selection and launches
+`TopicLessonDialog.tsx`; complete preview and word selection live in disclosures.
+Home and Learn show compact A1 signals, with the full goal and self-checks on
+Progress. Original frozen units remain available through existing reference links.
+
+Topics supply overlapping pools with 1–30 exact targets (default 12). Automatic
+selection chooses fresh targets. `topic-sequence.ts` chooses unique contextual
+cards with complete target coverage, up to 24 core cards. Requested lengths are
+ceilings; repeated sentences and one-word fallback cards are forbidden.
+`lesson-card-quality.ts` enforces this across the entire assembled lesson.
+`lesson-vocabulary.ts` admits only selected targets, actual practiced vocabulary,
+and explicitly authored function forms. Topic cores use scenario-relevant familiar
+scaffolding; review urgency never changes their vocabulary selection.
+
+`custom-lesson.ts` shares the planner for exact user selections. Both adapters use
+reviewed senses/frames from `packages/learning-engine/personalized.ts`; unsupported
+reference entries fail with a contextual-support error. `sentence-review.ts` then
+appends exact previously consumed cards: at most 16 due and 8 recent, 48 total.
+It owns the persistent review bank, original provenance, and cross-section dedup.
+`review.ts` ranks relative interval urgency using actual encounters and spaced
+occasions. Consumption updates dates; preview and navigation never grant credit.
+The separation supports future curated cores without changing review assembly.
+See `docs/decisions/2026-09-21-unique-sentences-and-card-review.md`.
+
+Topic and planned custom launches save exact snapshots automatically. Home can
+resume them, Learn offers a compact saved-lesson shortcut, and My lessons manages
+the collection. Existing `#course`, `#build`, `#lessons`, and `#lesson/...` routes
+remain compatible. Old snapshots keep their original size until the explicit
+Remake action calls the current engine with the same targets. Remake preserves
+the shelf identity, title, saved status, and practice history, resets the lesson
+cursor, and uses a fresh recommended size. It awards no credit. See the
+[engine/remake decision](decisions/2026-09-16-personalized-engine-remake.md).
+
+`topic` and `vocabulary` session sources own `savedCards` and are resolved and
+validated by the shared player adapter. Both retain exact resume, saved lesson
+support, and word-practice credit without inventing frozen-unit progress.
+`savedMaterializedCards` preserves individual saved cards independently of Recent.
+
+Dictionary replaces the Library navigation label; old `#library` links resolve
+to `#dictionary`. Full browsing lazily loads the complete index including common,
+word type, and specialist metadata. Any entry can enter Priority without needing
+a prior encounter. New lesson in both full Dictionary and My words passes the
+complete selected IDs to Learn Custom, including unsupported reference words.
+The current Custom limit is 30; an oversized incoming selection stays visible
+with an error. The lower-level `vocabularySession` quick-review/compatibility
+adapter still accepts up to 120 explicit targets, independently of that UI limit.
+Priority itself has no size limit and grants no practice credit or permission to
+generate unreviewed sentences. See the
+[A1 decision](decisions/2026-09-13-topic-driven-a1.md) for standards and completion.
+
+## Procedural engine transition
+
+Word identity now comes from `packages/dictionary/`, backed by a pinned complete
+JMdict edition and authored course bindings. Read
+`docs/decisions/2026-09-12-canonical-dictionary.md` before editing word source or
+audio identity. `index.ts` resolves teaching words/canonical entries and lazy full
+lookup; `audio.ts` resolves exact pronunciation assets. Both players and the
+procedural overlay use these adapters. `DictionaryView.tsx` owns full search and
+entry detail; My words and practice reuse its entry panel.
+
+The September 12 direction unifies future Course, Library, and custom lessons as
+recipes over one grammar and sequence engine. Its initial pure TypeScript kernel
+is `packages/learning-engine/`. Read
+`docs/decisions/2026-09-12-procedural-lessons.md` before expanding generation or
+migrating a player. The former curated recipe catalog and `LessonBuilder.tsx`
+remain available to compatibility tests, not the main product navigation.
+`#build` now opens Learn Custom and requires no `SessionSnapshot`. Previously
+generated snapshots still use the reviewed engine's types and exact replay path.
+The original app and existing reference entries still consume frozen units.
+
+`LessonExplorer.tsx` owns the full bilingual sentence page at `#lesson/<unitId>`
+and the active generated/review list at `#lesson/session`. App routing preserves
+the snapshot and exact selected index. `saved-session.ts` materializes replay of
+separately saved generated sentences. See
+`docs/decisions/2026-09-12-lesson-exploration.md` for navigation and unique-view
+progress rules. Library course reviews can resolve a saved authored word's
+introducing unit even before it has an encounter history.
+
+`session-history.ts` owns saved/recent lessons, stable lesson identity across
+replays, and actual daily practice counts. `SessionShelf.tsx` provides the Lessons
+destination, while `TodayView.tsx` presents the focused Home described above.
+`saved-session.ts` also creates independent materialized saved-sentence decks;
+`quick-review.ts` selects feasible procedural reviews with explicit exclusions.
+Settings is separate from Home; Dictionary has no lesson-list Grammar facade.
+Read `docs/decisions/2026-09-13-practice-continuity.md` for persistence rules and
+`docs/decisions/2026-09-13-sentence-semantic-quality.md` for semantic constraints.
+
+In `apps/learner-next/src/`, `generated.ts` owns input adapters, materialized
+session creation/validation/resolution, and saved generated sentences;
+`LessonBuilder.tsx` retains the legacy recipe selection/preview implementation.
+`PracticeSession.tsx`
+uses the shared resolver and records generated word encounters by recipe without
+inventing unit progress. `audio.ts` owns cancellable cache lookup and device
+speech. All Japanese card playback sequences exact realized word recordings,
+with device speech for missing words and synchronized token highlights. Old
+sentence recordings are bypassed because stable card IDs can outlive their text.
+Generated and frozen practice use the same sequence. Reloads use the stored cards
+without running the generator again.
+
+`review.ts` owns automatic word review timing, spaced-occasion tracking, priority,
+and seeded candidate ranking. `LibraryWords.tsx` presents the pool and its simple
+priority control. `generated.ts` admits at most two suggested additions only
+after checking the complete sequence. `packages/learning-engine/levels.ts` owns
+authored word/grammar ceilings; it contains no learner history. See
+`docs/decisions/2026-09-12-word-review-and-levels.md` for timing, compatibility,
+and the current A1 grammar boundary.
+
+The remaining sections describe the frozen curriculum/reference architecture
+that the current learner continues to reuse.
 
 The current CRA/Express prototype is archived for reference. The new app is
 built from the product model in `docs/APP_VISION.md`.
@@ -52,6 +199,8 @@ Owns the main drill loop:
 - show/hide Japanese text
 - word-part explanation display
 - audio replay
+- persistent in-lesson controls for default card face, Japanese display, audio
+  autoplay and language, auto-advance order and timing, and appearance
 
 The practice player is the primary screen.
 
@@ -113,6 +262,10 @@ Frozen files under `data/jp/curriculum/units/` are still what the app consumes,
 but they should increasingly be treated as generated artifacts. If a unit's
 vocabulary, grammar focus, or SRS rules change, rebuild affected units from the
 source model instead of hand-editing downstream JSON card by card.
+
+The browser app should not import the authoring source model directly. Runtime
+lookup data that the app needs, such as vocabulary metadata for the dictionary
+panel, is generated into checked-in runtime JSON.
 
 Authoring scripts should compute:
 
@@ -181,6 +334,7 @@ data/
       grammar_by_unit.md
       word_selection_rules.md
       unit_index.json
+      runtime_lexicon.json
       units/
         unit_001.json
         unit_002.json
@@ -209,6 +363,12 @@ Each card defines:
 - grammar tags
 
 ## Build Outputs
+
+Dictionary study pools are a separate, versioned content artifact. The policy in
+`data/jp/dictionary/study-pool-policy.json` and deterministic Python builder
+produce 25,000 disjoint A1–C2 entries and a lazy-loaded public index. Pool levels
+do not overwrite historical course scope, reference placement, or generation
+eligibility. See `docs/decisions/2026-09-21-bounded-level-pools.md`.
 
 The app exposes these checks:
 

@@ -1,4980 +1,4416 @@
 {
   "id": 2,
-  "slug": "topic-comment",
-  "title": "Unit 2: Talking About Things",
-  "grammarFocus": "AはBです / AはBですか / AとBはCです / AかBかCですか",
+  "slug": "starter-countries-jobs",
+  "title": "Unit 2: Countries And Jobs",
+  "grammarFocus": "AはBです / AはBですか",
   "newWords": [
     {
-      "id": "neko",
-      "surface": "猫",
-      "reading": "ねこ",
-      "meaning": "cat",
-      "function": "noun"
-    },
-    {
-      "id": "inu",
-      "surface": "犬",
-      "reading": "いぬ",
-      "meaning": "dog",
-      "function": "noun"
-    },
-    {
-      "id": "doubutsu",
-      "surface": "動物",
-      "reading": "どうぶつ",
-      "meaning": "animal",
-      "function": "noun"
-    },
-    {
-      "id": "hon",
-      "surface": "本",
-      "reading": "ほん",
-      "meaning": "book",
-      "function": "noun"
-    },
-    {
-      "id": "ie",
-      "surface": "家",
-      "reading": "いえ",
-      "meaning": "house; home",
+      "id": "kuni",
+      "surface": "国",
+      "reading": "くに",
+      "meaning": "country",
       "function": "place"
     },
     {
-      "id": "gakkou",
-      "surface": "学校",
-      "reading": "がっこう",
-      "meaning": "school",
-      "function": "place"
+      "id": "nihon",
+      "surface": "日本",
+      "reading": "にほん",
+      "meaning": "Japan",
+      "function": "proper"
     },
     {
-      "id": "basho",
-      "surface": "場所",
-      "reading": "ばしょ",
-      "meaning": "place",
-      "function": "noun"
+      "id": "oosutoraria",
+      "surface": "オーストラリア",
+      "reading": "おーすとらりあ",
+      "meaning": "Australia",
+      "function": "proper"
     },
     {
-      "id": "isha",
-      "surface": "医者",
-      "reading": "いしゃ",
-      "meaning": "doctor",
+      "id": "supein",
+      "surface": "スペイン",
+      "reading": "すぺいん",
+      "meaning": "Spain",
+      "function": "proper"
+    },
+    {
+      "id": "tai",
+      "surface": "タイ",
+      "reading": "たい",
+      "meaning": "Thailand",
+      "function": "proper"
+    },
+    {
+      "id": "firipin",
+      "surface": "フィリピン",
+      "reading": "ふぃりぴん",
+      "meaning": "the Philippines",
+      "function": "proper"
+    },
+    {
+      "id": "roshia",
+      "surface": "ロシア",
+      "reading": "ろしあ",
+      "meaning": "Russia",
+      "function": "proper"
+    },
+    {
+      "id": "kaishain",
+      "surface": "会社員",
+      "reading": "かいしゃいん",
+      "meaning": "company employee",
       "function": "person"
     },
     {
-      "id": "yomu",
-      "surface": "読む",
-      "reading": "よむ",
-      "meaning": "read",
+      "id": "enjinia",
+      "surface": "エンジニア",
+      "reading": "えんじにあ",
+      "meaning": "engineer",
+      "function": "person"
+    },
+    {
+      "id": "shufu",
+      "surface": "主婦",
+      "reading": "しゅふ",
+      "meaning": "homemaker",
+      "function": "person"
+    },
+    {
+      "id": "hataraku",
+      "surface": "働く",
+      "reading": "はたらく",
+      "meaning": "work",
       "function": "verb"
     },
     {
-      "id": "kaku",
-      "surface": "書く",
-      "reading": "かく",
-      "meaning": "write",
+      "id": "sumu",
+      "surface": "住む",
+      "reading": "すむ",
+      "meaning": "live",
       "function": "verb"
     }
+  ],
+  "reviewWordIds": [],
+  "lexiconWordIds": [
+    "watashi",
+    "anata",
+    "gakusei",
+    "sensei",
+    "nihongo",
+    "eigo",
+    "hiragana",
+    "katakana",
+    "kanji",
+    "yomu",
+    "kaku",
+    "wakaru"
   ],
   "cards": [
     {
       "id": "u002-c001",
       "line": [
-        "猫",
-        "は",
-        "食べます"
+        "国",
+        "です"
       ],
       "tts": [
-        "ねこ",
-        "わ",
-        "たべます"
+        "くに",
+        "です"
       ],
       "explain": [
-        "cat",
-        "topic marker",
-        "eat"
+        "country",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko",
-          "audioRef": "/media/jp/audio/tokens/4d1216af6b7e.mp3"
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
         },
         {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu",
-          "audioRef": "/media/jp/audio/tokens/a4c20cfa2181.mp3"
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "The cat eats",
+      "english": "It's the country",
       "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c001.mp3"
+        "AはBです / AはBですか",
+        "です"
+      ]
     },
     {
       "id": "u002-c002",
       "line": [
-        "猫",
+        "日本",
         "は",
-        "動物",
+        "国",
         "です"
       ],
       "tts": [
-        "ねこ",
+        "にほん",
         "わ",
-        "どうぶつ",
+        "くに",
         "です"
       ],
       "explain": [
-        "cat",
+        "Japan",
         "topic marker",
-        "animal",
-        "polite identity marker"
+        "country",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko",
-          "audioRef": "/media/jp/audio/tokens/4d1216af6b7e.mp3"
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu",
-          "audioRef": "/media/jp/audio/tokens/1bf7ff031952.mp3"
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
         },
         {
           "surface": "です",
           "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "The cat is an animal",
+      "english": "Japan is a country",
       "grammarTags": [
+        "AはBです / AはBですか",
         "AはBです"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c002.mp3"
+      ]
     },
     {
       "id": "u002-c003",
       "line": [
-        "犬",
+        "オーストラリア",
         "は",
-        "飲みます"
+        "国",
+        "です"
       ],
       "tts": [
-        "いぬ",
+        "おーすとらりあ",
         "わ",
-        "のみます"
+        "くに",
+        "です"
       ],
       "explain": [
-        "dog",
+        "Australia",
         "topic marker",
-        "drink"
+        "country",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu",
-          "audioRef": "/media/jp/audio/tokens/25e70021f3cd.mp3"
+          "surface": "オーストラリア",
+          "reading": "おーすとらりあ",
+          "explain": "Australia",
+          "wordId": "oosutoraria"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu",
-          "audioRef": "/media/jp/audio/tokens/ef63c1d1098b.mp3"
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "The dog drinks",
+      "english": "Australia is a country",
       "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c003.mp3"
+        "AはBです / AはBですか",
+        "AはBです"
+      ]
     },
     {
       "id": "u002-c004",
       "line": [
-        "犬",
+        "スペイン",
         "は",
-        "動物",
+        "国",
         "です"
       ],
       "tts": [
-        "いぬ",
+        "すぺいん",
         "わ",
-        "どうぶつ",
+        "くに",
         "です"
       ],
       "explain": [
-        "dog",
+        "Spain",
         "topic marker",
-        "animal",
-        "polite identity marker"
+        "country",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu",
-          "audioRef": "/media/jp/audio/tokens/25e70021f3cd.mp3"
+          "surface": "スペイン",
+          "reading": "すぺいん",
+          "explain": "Spain",
+          "wordId": "supein"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu",
-          "audioRef": "/media/jp/audio/tokens/1bf7ff031952.mp3"
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
         },
         {
           "surface": "です",
           "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "The dog is an animal",
+      "english": "Spain is a country",
       "grammarTags": [
+        "AはBです / AはBですか",
         "AはBです"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c004.mp3"
+      ]
     },
     {
       "id": "u002-c005",
       "line": [
-        "私",
-        "の",
-        "本",
+        "タイ",
+        "は",
+        "国",
         "です"
       ],
       "tts": [
-        "わたし",
-        "の",
-        "ほん",
+        "たい",
+        "わ",
+        "くに",
         "です"
       ],
       "explain": [
-        "I; me",
-        "possession or description marker",
-        "book",
-        "polite identity marker"
+        "Thailand",
+        "topic marker",
+        "country",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi",
-          "audioRef": "/media/jp/audio/tokens/66c3aae1e695.mp3"
+          "surface": "タイ",
+          "reading": "たい",
+          "explain": "Thailand",
+          "wordId": "tai"
         },
         {
-          "surface": "の",
-          "reading": "の",
-          "explain": "possession or description marker",
-          "audioRef": "/media/jp/audio/tokens/2e9ebb1636e0.mp3"
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon",
-          "audioRef": "/media/jp/audio/tokens/08bb4a3de196.mp3"
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
         },
         {
           "surface": "です",
           "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "It's my book",
+      "english": "Thailand is a country",
       "grammarTags": [
-        "AのB"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c005.mp3"
+        "AはBです / AはBですか",
+        "AはBです"
+      ]
     },
     {
       "id": "u002-c006",
       "line": [
-        "私",
+        "フィリピン",
         "は",
-        "本",
-        "を",
-        "読みます"
+        "国",
+        "です"
       ],
       "tts": [
-        "わたし",
+        "ふぃりぴん",
         "わ",
-        "ほん",
-        "を",
-        "よみます"
+        "くに",
+        "です"
       ],
       "explain": [
-        "I; me",
+        "the Philippines",
         "topic marker",
-        "book",
-        "direct object marker",
-        "read"
+        "country",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi",
-          "audioRef": "/media/jp/audio/tokens/66c3aae1e695.mp3"
+          "surface": "フィリピン",
+          "reading": "ふぃりぴん",
+          "explain": "the Philippines",
+          "wordId": "firipin"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon",
-          "audioRef": "/media/jp/audio/tokens/08bb4a3de196.mp3"
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
         },
         {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker",
-          "audioRef": "/media/jp/audio/tokens/c6246763badf.mp3"
-        },
-        {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu",
-          "audioRef": "/media/jp/audio/tokens/cbd985f6606d.mp3"
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "I read a book",
+      "english": "The Philippines is a country",
       "grammarTags": [
-        "early Vます action",
-        "NをVます"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c006.mp3"
+        "AはBです / AはBですか",
+        "AはBです"
+      ]
     },
     {
       "id": "u002-c007",
       "line": [
+        "ロシア",
+        "は",
+        "国",
+        "です"
+      ],
+      "tts": [
+        "ろしあ",
+        "わ",
+        "くに",
+        "です"
+      ],
+      "explain": [
+        "Russia",
+        "topic marker",
+        "country",
+        "polite copula: is/am/are"
+      ],
+      "tokens": [
+        {
+          "surface": "ロシア",
+          "reading": "ろしあ",
+          "explain": "Russia",
+          "wordId": "roshia"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite copula: is/am/are"
+        }
+      ],
+      "english": "Russia is a country",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "AはBです"
+      ]
+    },
+    {
+      "id": "u002-c008",
+      "line": [
         "私",
-        "の",
-        "家",
+        "は",
+        "会社員",
         "です"
       ],
       "tts": [
         "わたし",
-        "の",
-        "いえ",
+        "わ",
+        "かいしゃいん",
         "です"
       ],
       "explain": [
         "I; me",
-        "possession or description marker",
-        "house; home",
-        "polite identity marker"
+        "topic marker",
+        "company employee",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
           "surface": "私",
           "reading": "わたし",
           "explain": "I; me",
-          "wordId": "watashi",
-          "audioRef": "/media/jp/audio/tokens/66c3aae1e695.mp3"
+          "wordId": "watashi"
         },
         {
-          "surface": "の",
-          "reading": "の",
-          "explain": "possession or description marker",
-          "audioRef": "/media/jp/audio/tokens/2e9ebb1636e0.mp3"
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
         },
         {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie",
-          "audioRef": "/media/jp/audio/tokens/66937f6a5154.mp3"
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
         },
         {
           "surface": "です",
           "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "It's my house",
+      "english": "I am a company employee",
       "grammarTags": [
-        "AのB"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c007.mp3"
-    },
-    {
-      "id": "u002-c008",
-      "line": [
-        "彼",
-        "の",
-        "家",
-        "です"
-      ],
-      "tts": [
-        "かれ",
-        "の",
-        "いえ",
-        "です"
-      ],
-      "explain": [
-        "he; him",
-        "possession or description marker",
-        "house; home",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki",
-          "audioRef": "/media/jp/audio/tokens/d632512a56c9.mp3"
-        },
-        {
-          "surface": "の",
-          "reading": "の",
-          "explain": "possession or description marker",
-          "audioRef": "/media/jp/audio/tokens/2e9ebb1636e0.mp3"
-        },
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie",
-          "audioRef": "/media/jp/audio/tokens/66937f6a5154.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        }
-      ],
-      "english": "It's his house",
-      "grammarTags": [
-        "AのB"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c008.mp3"
+        "AはBです / AはBですか",
+        "AはBです"
+      ]
     },
     {
       "id": "u002-c009",
       "line": [
-        "先生",
-        "の",
-        "学校",
+        "私",
+        "は",
+        "エンジニア",
         "です"
       ],
       "tts": [
-        "せんせい",
-        "の",
-        "がっこう",
+        "わたし",
+        "わ",
+        "えんじにあ",
         "です"
       ],
       "explain": [
-        "teacher",
-        "possession or description marker",
-        "school",
-        "polite identity marker"
+        "I; me",
+        "topic marker",
+        "engineer",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei",
-          "audioRef": "/media/jp/audio/tokens/be6776382409.mp3"
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
         },
         {
-          "surface": "の",
-          "reading": "の",
-          "explain": "possession or description marker",
-          "audioRef": "/media/jp/audio/tokens/2e9ebb1636e0.mp3"
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
         },
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou",
-          "audioRef": "/media/jp/audio/tokens/c4161a3ca267.mp3"
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
         },
         {
           "surface": "です",
           "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "It's the teacher's school",
+      "english": "I am an engineer",
       "grammarTags": [
-        "AのB"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c009.mp3"
+        "AはBです / AはBですか",
+        "AはBです"
+      ]
     },
     {
       "id": "u002-c010",
       "line": [
-        "彼女",
-        "の",
-        "学校",
+        "私",
+        "は",
+        "主婦",
         "です"
       ],
       "tts": [
-        "かのじょ",
-        "の",
-        "がっこう",
+        "わたし",
+        "わ",
+        "しゅふ",
         "です"
       ],
       "explain": [
-        "she; her",
-        "possession or description marker",
-        "school",
-        "polite identity marker"
+        "I; me",
+        "topic marker",
+        "homemaker",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka",
-          "audioRef": "/media/jp/audio/tokens/bb76cb0913c5.mp3"
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
         },
         {
-          "surface": "の",
-          "reading": "の",
-          "explain": "possession or description marker",
-          "audioRef": "/media/jp/audio/tokens/2e9ebb1636e0.mp3"
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
         },
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou",
-          "audioRef": "/media/jp/audio/tokens/c4161a3ca267.mp3"
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
           "surface": "です",
           "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "It's her school",
+      "english": "I am a homemaker",
       "grammarTags": [
-        "AのB"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c010.mp3"
+        "AはBです / AはBですか",
+        "AはBです"
+      ]
     },
     {
       "id": "u002-c011",
       "line": [
-        "医者",
+        "会社員",
         "は",
-        "食べます"
+        "働きます"
       ],
       "tts": [
-        "いしゃ",
+        "かいしゃいん",
         "わ",
-        "たべます"
+        "はたらきます"
       ],
       "explain": [
-        "doctor",
+        "company employee",
         "topic marker",
-        "eat"
+        "polite form of work"
       ],
       "tokens": [
         {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha",
-          "audioRef": "/media/jp/audio/tokens/7d57254d70ec.mp3"
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu",
-          "audioRef": "/media/jp/audio/tokens/a4c20cfa2181.mp3"
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
         }
       ],
-      "english": "The doctor eats",
+      "english": "The company employee works",
       "grammarTags": [
+        "AはBです / AはBですか",
         "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c011.mp3"
+      ]
     },
     {
       "id": "u002-c012",
       "line": [
-        "医者",
+        "エンジニア",
         "は",
-        "先生",
-        "です"
+        "フィリピン",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "いしゃ",
+        "えんじにあ",
         "わ",
-        "せんせい",
-        "です"
+        "ふぃりぴん",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "doctor",
+        "engineer",
         "topic marker",
-        "teacher",
-        "polite identity marker"
+        "the Philippines",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha",
-          "audioRef": "/media/jp/audio/tokens/7d57254d70ec.mp3"
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei",
-          "audioRef": "/media/jp/audio/tokens/be6776382409.mp3"
+          "surface": "フィリピン",
+          "reading": "ふぃりぴん",
+          "explain": "the Philippines",
+          "wordId": "firipin"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "The doctor is a teacher",
+      "english": "The engineer lives in the Philippines",
       "grammarTags": [
-        "AはBです"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c012.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c013",
       "line": [
-        "家",
+        "エンジニア",
         "は",
-        "場所",
-        "です",
-        "か",
-        "？"
+        "国",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "いえ",
+        "えんじにあ",
         "わ",
-        "ばしょ",
-        "です",
-        "か",
-        "？"
+        "くに",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "house; home",
+        "engineer",
         "topic marker",
-        "place",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "country",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie",
-          "audioRef": "/media/jp/audio/tokens/66937f6a5154.mp3"
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho",
-          "audioRef": "/media/jp/audio/tokens/5972a823a38f.mp3"
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
         },
         {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "Is the house a place?",
+      "english": "The engineer lives in the country",
       "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c013.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c014",
       "line": [
-        "あなた",
+        "主婦",
         "は",
-        "本",
-        "を",
-        "書きます"
+        "日本",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "あなた",
+        "しゅふ",
         "わ",
-        "ほん",
-        "を",
-        "かきます"
+        "にほん",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "you",
+        "homemaker",
         "topic marker",
-        "book",
-        "direct object marker",
-        "write"
+        "Japan",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura",
-          "audioRef": "/media/jp/audio/tokens/76f54e9c9180.mp3"
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon",
-          "audioRef": "/media/jp/audio/tokens/08bb4a3de196.mp3"
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
         },
         {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker",
-          "audioRef": "/media/jp/audio/tokens/c6246763badf.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
         },
         {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku",
-          "audioRef": "/media/jp/audio/tokens/2a0a471b4a50.mp3"
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "You write a book",
+      "english": "The homemaker lives in Japan",
       "grammarTags": [
-        "early Vます action",
-        "NをVます"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c014.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c015",
       "line": [
-        "先生",
+        "私",
         "は",
-        "読みます"
+        "オーストラリア",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "せんせい",
+        "わたし",
         "わ",
-        "よみます"
+        "おーすとらりあ",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "teacher",
+        "I; me",
         "topic marker",
-        "read"
+        "Australia",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei",
-          "audioRef": "/media/jp/audio/tokens/be6776382409.mp3"
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu",
-          "audioRef": "/media/jp/audio/tokens/cbd985f6606d.mp3"
+          "surface": "オーストラリア",
+          "reading": "おーすとらりあ",
+          "explain": "Australia",
+          "wordId": "oosutoraria"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "The teacher reads",
+      "english": "I live in Australia",
       "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c015.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c016",
       "line": [
-        "猫",
-        "は",
-        "動物",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "ねこ",
-        "わ",
-        "どうぶつ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "cat",
-        "topic marker",
-        "animal",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko",
-          "audioRef": "/media/jp/audio/tokens/4d1216af6b7e.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu",
-          "audioRef": "/media/jp/audio/tokens/1bf7ff031952.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the cat an animal?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c016.mp3"
-    },
-    {
-      "id": "u002-c017",
-      "line": [
-        "彼",
-        "は",
-        "書きます"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "かきます"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "write"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki",
-          "audioRef": "/media/jp/audio/tokens/d632512a56c9.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku",
-          "audioRef": "/media/jp/audio/tokens/2a0a471b4a50.mp3"
-        }
-      ],
-      "english": "He writes",
-      "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c017.mp3"
-    },
-    {
-      "id": "u002-c018",
-      "line": [
-        "犬",
-        "は",
-        "動物",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "いぬ",
-        "わ",
-        "どうぶつ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "dog",
-        "topic marker",
-        "animal",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu",
-          "audioRef": "/media/jp/audio/tokens/25e70021f3cd.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu",
-          "audioRef": "/media/jp/audio/tokens/1bf7ff031952.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the dog an animal?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c018.mp3"
-    },
-    {
-      "id": "u002-c019",
-      "line": [
-        "猫",
-        "は",
-        "食べます",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "ねこ",
-        "わ",
-        "たべます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "cat",
-        "topic marker",
-        "eat",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko",
-          "audioRef": "/media/jp/audio/tokens/4d1216af6b7e.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu",
-          "audioRef": "/media/jp/audio/tokens/a4c20cfa2181.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Does the cat eat?",
-      "grammarTags": [
-        "early Vます action",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c019.mp3"
-    },
-    {
-      "id": "u002-c020",
-      "line": [
-        "友達",
-        "は",
-        "読みます"
-      ],
-      "tts": [
-        "ともだち",
-        "わ",
-        "よみます"
-      ],
-      "explain": [
-        "friend",
-        "topic marker",
-        "read"
-      ],
-      "tokens": [
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi",
-          "audioRef": "/media/jp/audio/tokens/97d7c19ce9ab.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu",
-          "audioRef": "/media/jp/audio/tokens/cbd985f6606d.mp3"
-        }
-      ],
-      "english": "The friend reads",
-      "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c020.mp3"
-    },
-    {
-      "id": "u002-c021",
-      "line": [
-        "動物",
-        "は",
-        "人",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "どうぶつ",
-        "わ",
-        "ひと",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "animal",
-        "topic marker",
-        "person",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu",
-          "audioRef": "/media/jp/audio/tokens/1bf7ff031952.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "namae",
-          "audioRef": "/media/jp/audio/tokens/bfa1459a9646.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the animal a person?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c021.mp3"
-    },
-    {
-      "id": "u002-c022",
-      "line": [
-        "先生",
-        "は",
-        "飲みます"
-      ],
-      "tts": [
-        "せんせい",
-        "わ",
-        "のみます"
-      ],
-      "explain": [
-        "teacher",
-        "topic marker",
-        "drink"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei",
-          "audioRef": "/media/jp/audio/tokens/be6776382409.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu",
-          "audioRef": "/media/jp/audio/tokens/ef63c1d1098b.mp3"
-        }
-      ],
-      "english": "The teacher drinks",
-      "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c022.mp3"
-    },
-    {
-      "id": "u002-c023",
-      "line": [
-        "犬",
-        "は",
-        "飲みます",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "いぬ",
-        "わ",
-        "のみます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "dog",
-        "topic marker",
-        "drink",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu",
-          "audioRef": "/media/jp/audio/tokens/25e70021f3cd.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu",
-          "audioRef": "/media/jp/audio/tokens/ef63c1d1098b.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Does the dog drink?",
-      "grammarTags": [
-        "early Vます action",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c023.mp3"
-    },
-    {
-      "id": "u002-c024",
-      "line": [
         "あなた",
-        "の",
-        "本",
-        "です"
+        "は",
+        "スペイン",
+        "に",
+        "住みます"
       ],
       "tts": [
         "あなた",
-        "の",
-        "ほん",
-        "です"
+        "わ",
+        "すぺいん",
+        "に",
+        "すみます"
       ],
       "explain": [
         "you",
-        "possession or description marker",
-        "book",
-        "polite identity marker"
+        "topic marker",
+        "Spain",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
           "surface": "あなた",
           "reading": "あなた",
           "explain": "you",
-          "wordId": "sakura",
-          "audioRef": "/media/jp/audio/tokens/76f54e9c9180.mp3"
+          "wordId": "anata"
         },
         {
-          "surface": "の",
-          "reading": "の",
-          "explain": "possession or description marker",
-          "audioRef": "/media/jp/audio/tokens/2e9ebb1636e0.mp3"
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon",
-          "audioRef": "/media/jp/audio/tokens/08bb4a3de196.mp3"
+          "surface": "スペイン",
+          "reading": "すぺいん",
+          "explain": "Spain",
+          "wordId": "supein"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "It's your book",
+      "english": "You live in Spain",
       "grammarTags": [
-        "AのB"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u002-c017",
+      "line": [
+        "学生",
+        "は",
+        "タイ",
+        "に",
+        "住みます"
       ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c024.mp3"
+      "tts": [
+        "がくせい",
+        "わ",
+        "たい",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "Thailand",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "タイ",
+          "reading": "たい",
+          "explain": "Thailand",
+          "wordId": "tai"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The student lives in Thailand",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u002-c018",
+      "line": [
+        "先生",
+        "は",
+        "フィリピン",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "ふぃりぴん",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "the Philippines",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "フィリピン",
+          "reading": "ふぃりぴん",
+          "explain": "the Philippines",
+          "wordId": "firipin"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The teacher lives in the Philippines",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u002-c019",
+      "line": [
+        "会社員",
+        "は",
+        "ロシア",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "かいしゃいん",
+        "わ",
+        "ろしあ",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "company employee",
+        "topic marker",
+        "Russia",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ロシア",
+          "reading": "ろしあ",
+          "explain": "Russia",
+          "wordId": "roshia"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The company employee lives in Russia",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u002-c020",
+      "line": [
+        "会社員",
+        "は",
+        "書きます"
+      ],
+      "tts": [
+        "かいしゃいん",
+        "わ",
+        "かきます"
+      ],
+      "explain": [
+        "company employee",
+        "topic marker",
+        "polite form of write"
+      ],
+      "tokens": [
+        {
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "polite form of write",
+          "wordId": "kaku"
+        }
+      ],
+      "english": "The company employee writes",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c021",
+      "line": [
+        "エンジニア",
+        "は",
+        "分かります"
+      ],
+      "tts": [
+        "えんじにあ",
+        "わ",
+        "わかります"
+      ],
+      "explain": [
+        "engineer",
+        "topic marker",
+        "polite form of understand"
+      ],
+      "tokens": [
+        {
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "分かります",
+          "reading": "わかります",
+          "explain": "polite form of understand",
+          "wordId": "wakaru"
+        }
+      ],
+      "english": "The engineer understands",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c022",
+      "line": [
+        "主婦",
+        "は",
+        "フィリピン",
+        "で",
+        "働きます"
+      ],
+      "tts": [
+        "しゅふ",
+        "わ",
+        "ふぃりぴん",
+        "で",
+        "はたらきます"
+      ],
+      "explain": [
+        "homemaker",
+        "topic marker",
+        "the Philippines",
+        "action location marker",
+        "polite form of work"
+      ],
+      "tokens": [
+        {
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "フィリピン",
+          "reading": "ふぃりぴん",
+          "explain": "the Philippines",
+          "wordId": "firipin"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
+        }
+      ],
+      "english": "The homemaker works in the Philippines",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
+    },
+    {
+      "id": "u002-c023",
+      "line": [
+        "先生",
+        "は",
+        "働きます"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "はたらきます"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "polite form of work"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
+        }
+      ],
+      "english": "The teacher works",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c024",
+      "line": [
+        "会社員",
+        "は",
+        "タイ",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "かいしゃいん",
+        "わ",
+        "たい",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "company employee",
+        "topic marker",
+        "Thailand",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "タイ",
+          "reading": "たい",
+          "explain": "Thailand",
+          "wordId": "tai"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The company employee lives in Thailand",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c025",
       "line": [
         "学生",
         "は",
+        "ひらがな",
+        "を",
         "書きます"
       ],
       "tts": [
         "がくせい",
         "わ",
+        "ひらがな",
+        "を",
         "かきます"
       ],
       "explain": [
         "student",
         "topic marker",
-        "write"
+        "hiragana",
+        "object marker",
+        "polite form of write"
       ],
       "tokens": [
         {
           "surface": "学生",
           "reading": "がくせい",
           "explain": "student",
-          "wordId": "gakusei",
-          "audioRef": "/media/jp/audio/tokens/2cf38773dd94.mp3"
+          "wordId": "gakusei"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ひらがな",
+          "reading": "ひらがな",
+          "explain": "hiragana",
+          "wordId": "hiragana"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
         },
         {
           "surface": "書きます",
           "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku",
-          "audioRef": "/media/jp/audio/tokens/2a0a471b4a50.mp3"
+          "explain": "polite form of write",
+          "wordId": "kaku"
         }
       ],
-      "english": "The student writes",
+      "english": "The student writes hiragana",
       "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c025.mp3"
+        "AはBです / AはBですか",
+        "NをVます"
+      ]
     },
     {
       "id": "u002-c026",
       "line": [
-        "動物",
+        "あなた",
         "は",
-        "猫",
-        "です"
+        "日本",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "どうぶつ",
+        "あなた",
         "わ",
-        "ねこ",
-        "です"
+        "にほん",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "animal",
+        "you",
         "topic marker",
-        "cat",
-        "polite identity marker"
+        "Japan",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu",
-          "audioRef": "/media/jp/audio/tokens/1bf7ff031952.mp3"
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "anata"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko",
-          "audioRef": "/media/jp/audio/tokens/4d1216af6b7e.mp3"
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "The animal is a cat",
+      "english": "You live in Japan",
       "grammarTags": [
-        "AはBです"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c026.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c027",
       "line": [
-        "あなた",
-        "の",
-        "家",
-        "です"
+        "主婦",
+        "は",
+        "スペイン",
+        "で",
+        "働きます"
       ],
       "tts": [
-        "あなた",
-        "の",
-        "いえ",
-        "です"
+        "しゅふ",
+        "わ",
+        "すぺいん",
+        "で",
+        "はたらきます"
       ],
       "explain": [
-        "you",
-        "possession or description marker",
-        "house; home",
-        "polite identity marker"
+        "homemaker",
+        "topic marker",
+        "Spain",
+        "action location marker",
+        "polite form of work"
       ],
       "tokens": [
         {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura",
-          "audioRef": "/media/jp/audio/tokens/76f54e9c9180.mp3"
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
-          "surface": "の",
-          "reading": "の",
-          "explain": "possession or description marker",
-          "audioRef": "/media/jp/audio/tokens/2e9ebb1636e0.mp3"
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
         },
         {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie",
-          "audioRef": "/media/jp/audio/tokens/66937f6a5154.mp3"
+          "surface": "スペイン",
+          "reading": "すぺいん",
+          "explain": "Spain",
+          "wordId": "supein"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
         }
       ],
-      "english": "It's your house",
+      "english": "The homemaker works in Spain",
       "grammarTags": [
-        "AのB"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c027.mp3"
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
     },
     {
       "id": "u002-c028",
       "line": [
-        "彼",
+        "先生",
         "は",
-        "食べます"
+        "スペイン",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "かれ",
+        "せんせい",
         "わ",
-        "たべます"
+        "すぺいん",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "he; him",
+        "teacher",
         "topic marker",
-        "eat"
+        "Spain",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki",
-          "audioRef": "/media/jp/audio/tokens/d632512a56c9.mp3"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu",
-          "audioRef": "/media/jp/audio/tokens/a4c20cfa2181.mp3"
+          "surface": "スペイン",
+          "reading": "すぺいん",
+          "explain": "Spain",
+          "wordId": "supein"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "He eats",
+      "english": "The teacher lives in Spain",
       "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c028.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c029",
       "line": [
-        "家",
+        "主婦",
         "は",
-        "学校",
-        "です",
-        "か",
-        "？"
+        "英語",
+        "が",
+        "分かります"
       ],
       "tts": [
-        "いえ",
+        "しゅふ",
         "わ",
-        "がっこう",
-        "です",
-        "か",
-        "？"
+        "えいご",
+        "が",
+        "わかります"
       ],
       "explain": [
-        "house; home",
+        "homemaker",
         "topic marker",
-        "school",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "English language",
+        "subject marker",
+        "polite form of understand"
       ],
       "tokens": [
         {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie",
-          "audioRef": "/media/jp/audio/tokens/66937f6a5154.mp3"
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou",
-          "audioRef": "/media/jp/audio/tokens/c4161a3ca267.mp3"
+          "surface": "英語",
+          "reading": "えいご",
+          "explain": "English language",
+          "wordId": "eigo"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
         },
         {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "分かります",
+          "reading": "わかります",
+          "explain": "polite form of understand",
+          "wordId": "wakaru"
         }
       ],
-      "english": "Is the house a school?",
+      "english": "The homemaker understands English",
       "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c029.mp3"
+        "AはBです / AはBですか",
+        "Nが分かります"
+      ]
     },
     {
       "id": "u002-c030",
       "line": [
-        "学生",
-        "の",
-        "学校",
-        "です"
+        "先生",
+        "は",
+        "オーストラリア",
+        "で",
+        "分かります"
       ],
       "tts": [
-        "がくせい",
-        "の",
-        "がっこう",
-        "です"
+        "せんせい",
+        "わ",
+        "おーすとらりあ",
+        "で",
+        "わかります"
       ],
       "explain": [
-        "student",
-        "possession or description marker",
-        "school",
-        "polite identity marker"
+        "teacher",
+        "topic marker",
+        "Australia",
+        "action location marker",
+        "polite form of understand"
       ],
       "tokens": [
         {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei",
-          "audioRef": "/media/jp/audio/tokens/2cf38773dd94.mp3"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
         },
         {
-          "surface": "の",
-          "reading": "の",
-          "explain": "possession or description marker",
-          "audioRef": "/media/jp/audio/tokens/2e9ebb1636e0.mp3"
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
         },
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou",
-          "audioRef": "/media/jp/audio/tokens/c4161a3ca267.mp3"
+          "surface": "オーストラリア",
+          "reading": "おーすとらりあ",
+          "explain": "Australia",
+          "wordId": "oosutoraria"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "分かります",
+          "reading": "わかります",
+          "explain": "polite form of understand",
+          "wordId": "wakaru"
         }
       ],
-      "english": "It's the student's school",
+      "english": "The teacher understands in Australia",
       "grammarTags": [
-        "AのB"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c030.mp3"
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
     },
     {
       "id": "u002-c031",
       "line": [
-        "彼女",
+        "主婦",
         "は",
-        "読みます"
+        "ロシア",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "かのじょ",
+        "しゅふ",
         "わ",
-        "よみます"
+        "ろしあ",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "she; her",
+        "homemaker",
         "topic marker",
-        "read"
+        "Russia",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka",
-          "audioRef": "/media/jp/audio/tokens/bb76cb0913c5.mp3"
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu",
-          "audioRef": "/media/jp/audio/tokens/cbd985f6606d.mp3"
+          "surface": "ロシア",
+          "reading": "ろしあ",
+          "explain": "Russia",
+          "wordId": "roshia"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "She reads",
+      "english": "The homemaker lives in Russia",
       "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c031.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c032",
       "line": [
-        "動物",
+        "エンジニア",
         "は",
-        "犬",
-        "です"
+        "タイ",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "どうぶつ",
+        "えんじにあ",
         "わ",
-        "いぬ",
-        "です"
+        "たい",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "animal",
+        "engineer",
         "topic marker",
-        "dog",
-        "polite identity marker"
+        "Thailand",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu",
-          "audioRef": "/media/jp/audio/tokens/1bf7ff031952.mp3"
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu",
-          "audioRef": "/media/jp/audio/tokens/25e70021f3cd.mp3"
+          "surface": "タイ",
+          "reading": "たい",
+          "explain": "Thailand",
+          "wordId": "tai"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "The animal is a dog",
+      "english": "The engineer lives in Thailand",
       "grammarTags": [
-        "AはBです"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c032.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c033",
       "line": [
-        "場所",
+        "エンジニア",
         "は",
-        "学校",
-        "です",
-        "か",
-        "？"
+        "読みます"
       ],
       "tts": [
-        "ばしょ",
+        "えんじにあ",
         "わ",
-        "がっこう",
-        "です",
-        "か",
-        "？"
+        "よみます"
       ],
       "explain": [
-        "place",
+        "engineer",
         "topic marker",
-        "school",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "polite form of read"
       ],
       "tokens": [
         {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho",
-          "audioRef": "/media/jp/audio/tokens/5972a823a38f.mp3"
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou",
-          "audioRef": "/media/jp/audio/tokens/c4161a3ca267.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "polite form of read",
+          "wordId": "yomu"
         }
       ],
-      "english": "Is the place a school?",
+      "english": "The engineer reads",
       "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c033.mp3"
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
     },
     {
       "id": "u002-c034",
       "line": [
-        "友達",
+        "主婦",
         "は",
-        "飲みます"
+        "書きます"
       ],
       "tts": [
-        "ともだち",
+        "しゅふ",
         "わ",
-        "のみます"
+        "かきます"
       ],
       "explain": [
-        "friend",
+        "homemaker",
         "topic marker",
-        "drink"
+        "polite form of write"
       ],
       "tokens": [
         {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi",
-          "audioRef": "/media/jp/audio/tokens/97d7c19ce9ab.mp3"
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu",
-          "audioRef": "/media/jp/audio/tokens/ef63c1d1098b.mp3"
+          "surface": "書きます",
+          "reading": "かきます",
+          "explain": "polite form of write",
+          "wordId": "kaku"
         }
       ],
-      "english": "The friend drinks",
+      "english": "The homemaker writes",
       "grammarTags": [
+        "AはBです / AはBですか",
         "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c034.mp3"
+      ]
     },
     {
       "id": "u002-c035",
       "line": [
-        "学校",
+        "主婦",
         "は",
-        "場所",
-        "です",
-        "か",
-        "？"
+        "働きます"
       ],
       "tts": [
-        "がっこう",
+        "しゅふ",
         "わ",
-        "ばしょ",
-        "です",
-        "か",
-        "？"
+        "はたらきます"
       ],
       "explain": [
-        "school",
+        "homemaker",
         "topic marker",
-        "place",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "polite form of work"
       ],
       "tokens": [
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou",
-          "audioRef": "/media/jp/audio/tokens/c4161a3ca267.mp3"
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho",
-          "audioRef": "/media/jp/audio/tokens/5972a823a38f.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
         }
       ],
-      "english": "Is the school a place?",
+      "english": "The homemaker works",
       "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c035.mp3"
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
     },
     {
       "id": "u002-c036",
       "line": [
-        "医者",
+        "私",
         "は",
-        "先生",
-        "です",
-        "か",
-        "？"
+        "日本",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "いしゃ",
+        "わたし",
         "わ",
-        "せんせい",
-        "です",
-        "か",
-        "？"
+        "にほん",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "doctor",
+        "I; me",
         "topic marker",
-        "teacher",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "Japan",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha",
-          "audioRef": "/media/jp/audio/tokens/7d57254d70ec.mp3"
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei",
-          "audioRef": "/media/jp/audio/tokens/be6776382409.mp3"
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
         },
         {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "Is the doctor a teacher?",
+      "english": "I live in Japan",
       "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c036.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c037",
       "line": [
-        "医者",
+        "会社員",
         "は",
-        "書きます"
+        "国",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "いしゃ",
+        "かいしゃいん",
         "わ",
-        "かきます"
+        "くに",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "doctor",
+        "company employee",
         "topic marker",
-        "write"
+        "country",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha",
-          "audioRef": "/media/jp/audio/tokens/7d57254d70ec.mp3"
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku",
-          "audioRef": "/media/jp/audio/tokens/2a0a471b4a50.mp3"
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "The doctor writes",
+      "english": "The company employee lives in the country",
       "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c037.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c038",
       "line": [
-        "場所",
+        "エンジニア",
         "は",
-        "家",
-        "です"
+        "日本",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "ばしょ",
+        "えんじにあ",
         "わ",
-        "いえ",
-        "です"
+        "にほん",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "place",
+        "engineer",
         "topic marker",
-        "house; home",
-        "polite identity marker"
+        "Japan",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho",
-          "audioRef": "/media/jp/audio/tokens/5972a823a38f.mp3"
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie",
-          "audioRef": "/media/jp/audio/tokens/66937f6a5154.mp3"
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "The place is a house",
+      "english": "The engineer lives in Japan",
       "grammarTags": [
-        "AはBです"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c038.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c039",
       "line": [
-        "学生",
+        "主婦",
         "は",
-        "本",
-        "を",
-        "読みます"
+        "オーストラリア",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "がくせい",
+        "しゅふ",
         "わ",
-        "ほん",
-        "を",
-        "よみます"
+        "おーすとらりあ",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "student",
+        "homemaker",
         "topic marker",
-        "book",
-        "direct object marker",
-        "read"
+        "Australia",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei",
-          "audioRef": "/media/jp/audio/tokens/2cf38773dd94.mp3"
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon",
-          "audioRef": "/media/jp/audio/tokens/08bb4a3de196.mp3"
+          "surface": "オーストラリア",
+          "reading": "おーすとらりあ",
+          "explain": "Australia",
+          "wordId": "oosutoraria"
         },
         {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker",
-          "audioRef": "/media/jp/audio/tokens/c6246763badf.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
         },
         {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu",
-          "audioRef": "/media/jp/audio/tokens/cbd985f6606d.mp3"
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "The student reads a book",
+      "english": "The homemaker lives in Australia",
       "grammarTags": [
-        "early Vます action",
-        "NをVます"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c039.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c040",
       "line": [
-        "猫",
-        "と",
-        "犬",
+        "会社員",
         "は",
-        "動物",
-        "です"
+        "スペイン",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "ねこ",
-        "と",
-        "いぬ",
+        "かいしゃいん",
         "わ",
-        "どうぶつ",
-        "です"
+        "すぺいん",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "cat",
-        "and; with",
-        "dog",
+        "company employee",
         "topic marker",
-        "animal",
-        "polite identity marker"
+        "Spain",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko",
-          "audioRef": "/media/jp/audio/tokens/4d1216af6b7e.mp3"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and; with",
-          "audioRef": "/media/jp/audio/tokens/41d617abfa4b.mp3"
-        },
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu",
-          "audioRef": "/media/jp/audio/tokens/25e70021f3cd.mp3"
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu",
-          "audioRef": "/media/jp/audio/tokens/1bf7ff031952.mp3"
+          "surface": "スペイン",
+          "reading": "すぺいん",
+          "explain": "Spain",
+          "wordId": "supein"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "The cat and the dog are animals",
+      "english": "The company employee lives in Spain",
       "grammarTags": [
-        "AとBはCです"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c040.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c041",
       "line": [
-        "私",
+        "エンジニア",
         "は",
-        "書きます"
+        "タイ",
+        "で",
+        "働きます"
       ],
       "tts": [
-        "わたし",
+        "えんじにあ",
         "わ",
-        "かきます"
+        "たい",
+        "で",
+        "はたらきます"
       ],
       "explain": [
-        "I; me",
+        "engineer",
         "topic marker",
-        "write"
+        "Thailand",
+        "action location marker",
+        "polite form of work"
       ],
       "tokens": [
         {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi",
-          "audioRef": "/media/jp/audio/tokens/66c3aae1e695.mp3"
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku",
-          "audioRef": "/media/jp/audio/tokens/2a0a471b4a50.mp3"
+          "surface": "タイ",
+          "reading": "たい",
+          "explain": "Thailand",
+          "wordId": "tai"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
         }
       ],
-      "english": "I write",
+      "english": "The engineer works in Thailand",
       "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c041.mp3"
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
     },
     {
       "id": "u002-c042",
       "line": [
-        "場所",
+        "主婦",
         "は",
-        "学校",
-        "です"
+        "フィリピン",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "ばしょ",
+        "しゅふ",
         "わ",
-        "がっこう",
-        "です"
+        "ふぃりぴん",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "place",
+        "homemaker",
         "topic marker",
-        "school",
-        "polite identity marker"
+        "the Philippines",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho",
-          "audioRef": "/media/jp/audio/tokens/5972a823a38f.mp3"
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou",
-          "audioRef": "/media/jp/audio/tokens/c4161a3ca267.mp3"
+          "surface": "フィリピン",
+          "reading": "ふぃりぴん",
+          "explain": "the Philippines",
+          "wordId": "firipin"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "The place is a school",
+      "english": "The homemaker lives in the Philippines",
       "grammarTags": [
-        "AはBです"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c042.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c043",
       "line": [
-        "彼女",
-        "は",
-        "食べます"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "たべます"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "eat"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka",
-          "audioRef": "/media/jp/audio/tokens/bb76cb0913c5.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu",
-          "audioRef": "/media/jp/audio/tokens/a4c20cfa2181.mp3"
-        }
-      ],
-      "english": "She eats",
-      "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c043.mp3"
-    },
-    {
-      "id": "u002-c044",
-      "line": [
-        "家",
-        "と",
-        "学校",
-        "は",
-        "場所",
-        "です"
-      ],
-      "tts": [
-        "いえ",
-        "と",
-        "がっこう",
-        "わ",
-        "ばしょ",
-        "です"
-      ],
-      "explain": [
-        "house; home",
-        "and; with",
-        "school",
-        "topic marker",
-        "place",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie",
-          "audioRef": "/media/jp/audio/tokens/66937f6a5154.mp3"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and; with",
-          "audioRef": "/media/jp/audio/tokens/41d617abfa4b.mp3"
-        },
-        {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou",
-          "audioRef": "/media/jp/audio/tokens/c4161a3ca267.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho",
-          "audioRef": "/media/jp/audio/tokens/5972a823a38f.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        }
-      ],
-      "english": "The house and the school are places",
-      "grammarTags": [
-        "AとBはCです"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c044.mp3"
-    },
-    {
-      "id": "u002-c045",
-      "line": [
-        "あなた",
-        "は",
-        "読みます"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "よみます"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "read"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura",
-          "audioRef": "/media/jp/audio/tokens/76f54e9c9180.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu",
-          "audioRef": "/media/jp/audio/tokens/cbd985f6606d.mp3"
-        }
-      ],
-      "english": "You read",
-      "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c045.mp3"
-    },
-    {
-      "id": "u002-c046",
-      "line": [
-        "動物",
-        "は",
-        "猫",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "どうぶつ",
-        "わ",
-        "ねこ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "animal",
-        "topic marker",
-        "cat",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu",
-          "audioRef": "/media/jp/audio/tokens/1bf7ff031952.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko",
-          "audioRef": "/media/jp/audio/tokens/4d1216af6b7e.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the animal a cat?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c046.mp3"
-    },
-    {
-      "id": "u002-c047",
-      "line": [
-        "医者",
-        "は",
-        "飲みます"
-      ],
-      "tts": [
-        "いしゃ",
-        "わ",
-        "のみます"
-      ],
-      "explain": [
-        "doctor",
-        "topic marker",
-        "drink"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha",
-          "audioRef": "/media/jp/audio/tokens/7d57254d70ec.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu",
-          "audioRef": "/media/jp/audio/tokens/ef63c1d1098b.mp3"
-        }
-      ],
-      "english": "The doctor drinks",
-      "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c047.mp3"
-    },
-    {
-      "id": "u002-c048",
-      "line": [
-        "犬",
-        "と",
-        "猫",
-        "は",
-        "動物",
-        "です"
-      ],
-      "tts": [
-        "いぬ",
-        "と",
-        "ねこ",
-        "わ",
-        "どうぶつ",
-        "です"
-      ],
-      "explain": [
-        "dog",
-        "and; with",
-        "cat",
-        "topic marker",
-        "animal",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu",
-          "audioRef": "/media/jp/audio/tokens/25e70021f3cd.mp3"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and; with",
-          "audioRef": "/media/jp/audio/tokens/41d617abfa4b.mp3"
-        },
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko",
-          "audioRef": "/media/jp/audio/tokens/4d1216af6b7e.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu",
-          "audioRef": "/media/jp/audio/tokens/1bf7ff031952.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        }
-      ],
-      "english": "The dog and the cat are animals",
-      "grammarTags": [
-        "AとBはCです"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c048.mp3"
-    },
-    {
-      "id": "u002-c049",
-      "line": [
-        "先生",
-        "は",
-        "読みます",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "せんせい",
-        "わ",
-        "よみます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "teacher",
-        "topic marker",
-        "read",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei",
-          "audioRef": "/media/jp/audio/tokens/be6776382409.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu",
-          "audioRef": "/media/jp/audio/tokens/cbd985f6606d.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Does the teacher read?",
-      "grammarTags": [
-        "early Vます action",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c049.mp3"
-    },
-    {
-      "id": "u002-c050",
-      "line": [
-        "動物",
-        "は",
-        "犬",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "どうぶつ",
-        "わ",
-        "いぬ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "animal",
-        "topic marker",
-        "dog",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu",
-          "audioRef": "/media/jp/audio/tokens/1bf7ff031952.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu",
-          "audioRef": "/media/jp/audio/tokens/25e70021f3cd.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the animal a dog?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c050.mp3"
-    },
-    {
-      "id": "u002-c051",
-      "line": [
         "私",
         "は",
-        "食べます"
+        "ロシア",
+        "に",
+        "住みます"
       ],
       "tts": [
         "わたし",
         "わ",
-        "たべます"
+        "ろしあ",
+        "に",
+        "すみます"
       ],
       "explain": [
         "I; me",
         "topic marker",
-        "eat"
+        "Russia",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
           "surface": "私",
           "reading": "わたし",
           "explain": "I; me",
-          "wordId": "watashi",
-          "audioRef": "/media/jp/audio/tokens/66c3aae1e695.mp3"
+          "wordId": "watashi"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "食べます",
-          "reading": "たべます",
-          "explain": "eat",
-          "wordId": "taberu",
-          "audioRef": "/media/jp/audio/tokens/a4c20cfa2181.mp3"
+          "surface": "ロシア",
+          "reading": "ろしあ",
+          "explain": "Russia",
+          "wordId": "roshia"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "I eat",
+      "english": "I live in Russia",
       "grammarTags": [
-        "early Vます action"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u002-c044",
+      "line": [
+        "会社員",
+        "は",
+        "読みます"
       ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c051.mp3"
+      "tts": [
+        "かいしゃいん",
+        "わ",
+        "よみます"
+      ],
+      "explain": [
+        "company employee",
+        "topic marker",
+        "polite form of read"
+      ],
+      "tokens": [
+        {
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "polite form of read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "The company employee reads",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c045",
+      "line": [
+        "エンジニア",
+        "は",
+        "住みます"
+      ],
+      "tts": [
+        "えんじにあ",
+        "わ",
+        "すみます"
+      ],
+      "explain": [
+        "engineer",
+        "topic marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The engineer lives",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c046",
+      "line": [
+        "主婦",
+        "は",
+        "読みます"
+      ],
+      "tts": [
+        "しゅふ",
+        "わ",
+        "よみます"
+      ],
+      "explain": [
+        "homemaker",
+        "topic marker",
+        "polite form of read"
+      ],
+      "tokens": [
+        {
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "読みます",
+          "reading": "よみます",
+          "explain": "polite form of read",
+          "wordId": "yomu"
+        }
+      ],
+      "english": "The homemaker reads",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c047",
+      "line": [
+        "私",
+        "は",
+        "働きます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "はたらきます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "polite form of work"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
+        }
+      ],
+      "english": "I work",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c048",
+      "line": [
+        "会社員",
+        "は",
+        "分かります"
+      ],
+      "tts": [
+        "かいしゃいん",
+        "わ",
+        "わかります"
+      ],
+      "explain": [
+        "company employee",
+        "topic marker",
+        "polite form of understand"
+      ],
+      "tokens": [
+        {
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "分かります",
+          "reading": "わかります",
+          "explain": "polite form of understand",
+          "wordId": "wakaru"
+        }
+      ],
+      "english": "The company employee understands",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c049",
+      "line": [
+        "主婦",
+        "は",
+        "国",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "しゅふ",
+        "わ",
+        "くに",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "homemaker",
+        "topic marker",
+        "country",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The homemaker lives in the country",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u002-c050",
+      "line": [
+        "会社員",
+        "は",
+        "日本",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "かいしゃいん",
+        "わ",
+        "にほん",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "company employee",
+        "topic marker",
+        "Japan",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The company employee lives in Japan",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u002-c051",
+      "line": [
+        "エンジニア",
+        "は",
+        "オーストラリア",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "えんじにあ",
+        "わ",
+        "おーすとらりあ",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "engineer",
+        "topic marker",
+        "Australia",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "オーストラリア",
+          "reading": "おーすとらりあ",
+          "explain": "Australia",
+          "wordId": "oosutoraria"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The engineer lives in Australia",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c052",
       "line": [
-        "学校",
-        "と",
-        "家",
+        "主婦",
         "は",
-        "場所",
-        "です"
+        "スペイン",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "がっこう",
-        "と",
-        "いえ",
+        "しゅふ",
         "わ",
-        "ばしょ",
-        "です"
+        "すぺいん",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "school",
-        "and; with",
-        "house; home",
+        "homemaker",
         "topic marker",
-        "place",
-        "polite identity marker"
+        "Spain",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou",
-          "audioRef": "/media/jp/audio/tokens/c4161a3ca267.mp3"
-        },
-        {
-          "surface": "と",
-          "reading": "と",
-          "explain": "and; with",
-          "audioRef": "/media/jp/audio/tokens/41d617abfa4b.mp3"
-        },
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie",
-          "audioRef": "/media/jp/audio/tokens/66937f6a5154.mp3"
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho",
-          "audioRef": "/media/jp/audio/tokens/5972a823a38f.mp3"
+          "surface": "スペイン",
+          "reading": "すぺいん",
+          "explain": "Spain",
+          "wordId": "supein"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "The school and the house are places",
+      "english": "The homemaker lives in Spain",
       "grammarTags": [
-        "AとBはCです"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c052.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c053",
       "line": [
-        "彼",
+        "私",
         "は",
-        "書きます",
-        "か",
-        "？"
+        "タイ",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "かれ",
+        "わたし",
         "わ",
-        "かきます",
-        "か",
-        "？"
+        "たい",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "he; him",
+        "I; me",
         "topic marker",
-        "write",
-        "question marker",
-        "question mark"
+        "Thailand",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki",
-          "audioRef": "/media/jp/audio/tokens/d632512a56c9.mp3"
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku",
-          "audioRef": "/media/jp/audio/tokens/2a0a471b4a50.mp3"
+          "surface": "タイ",
+          "reading": "たい",
+          "explain": "Thailand",
+          "wordId": "tai"
         },
         {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
         },
         {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "Does he write?",
+      "english": "I live in Thailand",
       "grammarTags": [
-        "early Vます action",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c053.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c054",
       "line": [
-        "場所",
-        "は",
-        "家",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "ばしょ",
-        "わ",
-        "いえ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "place",
-        "topic marker",
-        "house; home",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho",
-          "audioRef": "/media/jp/audio/tokens/5972a823a38f.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie",
-          "audioRef": "/media/jp/audio/tokens/66937f6a5154.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the place a house?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c054.mp3"
-    },
-    {
-      "id": "u002-c055",
-      "line": [
         "あなた",
         "は",
-        "飲みます"
+        "フィリピン",
+        "に",
+        "住みます"
       ],
       "tts": [
         "あなた",
         "わ",
-        "のみます"
+        "ふぃりぴん",
+        "に",
+        "すみます"
       ],
       "explain": [
         "you",
         "topic marker",
-        "drink"
+        "the Philippines",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
           "surface": "あなた",
           "reading": "あなた",
           "explain": "you",
-          "wordId": "sakura",
-          "audioRef": "/media/jp/audio/tokens/76f54e9c9180.mp3"
+          "wordId": "anata"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu",
-          "audioRef": "/media/jp/audio/tokens/ef63c1d1098b.mp3"
+          "surface": "フィリピン",
+          "reading": "ふぃりぴん",
+          "explain": "the Philippines",
+          "wordId": "firipin"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "You drink",
+      "english": "You live in the Philippines",
       "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c055.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
-      "id": "u002-c056",
-      "line": [
-        "医者",
-        "は",
-        "友達",
-        "です"
-      ],
-      "tts": [
-        "いしゃ",
-        "わ",
-        "ともだち",
-        "です"
-      ],
-      "explain": [
-        "doctor",
-        "topic marker",
-        "friend",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha",
-          "audioRef": "/media/jp/audio/tokens/7d57254d70ec.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi",
-          "audioRef": "/media/jp/audio/tokens/97d7c19ce9ab.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        }
-      ],
-      "english": "The doctor is a friend",
-      "grammarTags": [
-        "AはBです"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c056.mp3"
-    },
-    {
-      "id": "u002-c057",
-      "line": [
-        "友達",
-        "は",
-        "読みます",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "ともだち",
-        "わ",
-        "よみます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "friend",
-        "topic marker",
-        "read",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi",
-          "audioRef": "/media/jp/audio/tokens/97d7c19ce9ab.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu",
-          "audioRef": "/media/jp/audio/tokens/cbd985f6606d.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Does the friend read?",
-      "grammarTags": [
-        "early Vます action",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c057.mp3"
-    },
-    {
-      "id": "u002-c058",
-      "line": [
-        "場所",
-        "は",
-        "人",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "ばしょ",
-        "わ",
-        "ひと",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "place",
-        "topic marker",
-        "person",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho",
-          "audioRef": "/media/jp/audio/tokens/5972a823a38f.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "namae",
-          "audioRef": "/media/jp/audio/tokens/bfa1459a9646.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the place a person?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c058.mp3"
-    },
-    {
-      "id": "u002-c059",
-      "line": [
-        "先生",
-        "は",
-        "飲みます",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "せんせい",
-        "わ",
-        "のみます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "teacher",
-        "topic marker",
-        "drink",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei",
-          "audioRef": "/media/jp/audio/tokens/be6776382409.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "飲みます",
-          "reading": "のみます",
-          "explain": "drink",
-          "wordId": "nomu",
-          "audioRef": "/media/jp/audio/tokens/ef63c1d1098b.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Does the teacher drink?",
-      "grammarTags": [
-        "early Vます action",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c059.mp3"
-    },
-    {
-      "id": "u002-c060",
-      "line": [
-        "医者",
-        "は",
-        "人",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "いしゃ",
-        "わ",
-        "ひと",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "doctor",
-        "topic marker",
-        "person",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha",
-          "audioRef": "/media/jp/audio/tokens/7d57254d70ec.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "namae",
-          "audioRef": "/media/jp/audio/tokens/bfa1459a9646.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the doctor a person?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c060.mp3"
-    },
-    {
-      "id": "u002-c061",
+      "id": "u002-c055",
       "line": [
         "学生",
         "は",
-        "書きます",
-        "か",
-        "？"
+        "ロシア",
+        "に",
+        "住みます"
       ],
       "tts": [
         "がくせい",
         "わ",
-        "かきます",
-        "か",
-        "？"
+        "ろしあ",
+        "に",
+        "すみます"
       ],
       "explain": [
         "student",
         "topic marker",
-        "write",
-        "question marker",
-        "question mark"
+        "Russia",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
           "surface": "学生",
           "reading": "がくせい",
           "explain": "student",
-          "wordId": "gakusei",
-          "audioRef": "/media/jp/audio/tokens/2cf38773dd94.mp3"
+          "wordId": "gakusei"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku",
-          "audioRef": "/media/jp/audio/tokens/2a0a471b4a50.mp3"
+          "surface": "ロシア",
+          "reading": "ろしあ",
+          "explain": "Russia",
+          "wordId": "roshia"
         },
         {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
         },
         {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "Does the student write?",
+      "english": "The student lives in Russia",
       "grammarTags": [
-        "early Vます action",
-        "か"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u002-c056",
+      "line": [
+        "会社員",
+        "は",
+        "フィリピン",
+        "で",
+        "働きます"
       ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c061.mp3"
+      "tts": [
+        "かいしゃいん",
+        "わ",
+        "ふぃりぴん",
+        "で",
+        "はたらきます"
+      ],
+      "explain": [
+        "company employee",
+        "topic marker",
+        "the Philippines",
+        "action location marker",
+        "polite form of work"
+      ],
+      "tokens": [
+        {
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "フィリピン",
+          "reading": "ふぃりぴん",
+          "explain": "the Philippines",
+          "wordId": "firipin"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
+        }
+      ],
+      "english": "The company employee works in the Philippines",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
+    },
+    {
+      "id": "u002-c057",
+      "line": [
+        "エンジニア",
+        "は",
+        "働きます"
+      ],
+      "tts": [
+        "えんじにあ",
+        "わ",
+        "はたらきます"
+      ],
+      "explain": [
+        "engineer",
+        "topic marker",
+        "polite form of work"
+      ],
+      "tokens": [
+        {
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
+        }
+      ],
+      "english": "The engineer works",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c058",
+      "line": [
+        "主婦",
+        "は",
+        "住みます"
+      ],
+      "tts": [
+        "しゅふ",
+        "わ",
+        "すみます"
+      ],
+      "explain": [
+        "homemaker",
+        "topic marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The homemaker lives",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u002-c059",
+      "line": [
+        "会社員",
+        "は",
+        "タイ",
+        "で",
+        "働きます"
+      ],
+      "tts": [
+        "かいしゃいん",
+        "わ",
+        "たい",
+        "で",
+        "はたらきます"
+      ],
+      "explain": [
+        "company employee",
+        "topic marker",
+        "Thailand",
+        "action location marker",
+        "polite form of work"
+      ],
+      "tokens": [
+        {
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "タイ",
+          "reading": "たい",
+          "explain": "Thailand",
+          "wordId": "tai"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
+        }
+      ],
+      "english": "The company employee works in Thailand",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
+    },
+    {
+      "id": "u002-c060",
+      "line": [
+        "主婦",
+        "は",
+        "タイ",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "しゅふ",
+        "わ",
+        "たい",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "homemaker",
+        "topic marker",
+        "Thailand",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "タイ",
+          "reading": "たい",
+          "explain": "Thailand",
+          "wordId": "tai"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The homemaker lives in Thailand",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u002-c061",
+      "line": [
+        "エンジニア",
+        "は",
+        "スペイン",
+        "で",
+        "働きます"
+      ],
+      "tts": [
+        "えんじにあ",
+        "わ",
+        "すぺいん",
+        "で",
+        "はたらきます"
+      ],
+      "explain": [
+        "engineer",
+        "topic marker",
+        "Spain",
+        "action location marker",
+        "polite form of work"
+      ],
+      "tokens": [
+        {
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "スペイン",
+          "reading": "すぺいん",
+          "explain": "Spain",
+          "wordId": "supein"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
+        }
+      ],
+      "english": "The engineer works in Spain",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
     },
     {
       "id": "u002-c062",
       "line": [
-        "猫",
+        "主婦",
         "は",
-        "犬",
-        "です",
-        "か",
-        "？"
+        "分かります"
       ],
       "tts": [
-        "ねこ",
+        "しゅふ",
         "わ",
-        "いぬ",
-        "です",
-        "か",
-        "？"
+        "わかります"
       ],
       "explain": [
-        "cat",
+        "homemaker",
         "topic marker",
-        "dog",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "polite form of understand"
       ],
       "tokens": [
         {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko",
-          "audioRef": "/media/jp/audio/tokens/4d1216af6b7e.mp3"
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu",
-          "audioRef": "/media/jp/audio/tokens/25e70021f3cd.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "分かります",
+          "reading": "わかります",
+          "explain": "polite form of understand",
+          "wordId": "wakaru"
         }
       ],
-      "english": "Is the cat a dog?",
+      "english": "The homemaker understands",
       "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c062.mp3"
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
     },
     {
       "id": "u002-c063",
       "line": [
-        "彼",
+        "会社員",
         "は",
-        "本",
-        "を",
-        "読みます",
-        "か",
-        "？"
+        "オーストラリア",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "かれ",
+        "かいしゃいん",
         "わ",
-        "ほん",
-        "を",
-        "よみます",
-        "か",
-        "？"
+        "おーすとらりあ",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "he; him",
+        "company employee",
         "topic marker",
-        "book",
-        "direct object marker",
-        "read",
-        "question marker",
-        "question mark"
+        "Australia",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki",
-          "audioRef": "/media/jp/audio/tokens/d632512a56c9.mp3"
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon",
-          "audioRef": "/media/jp/audio/tokens/08bb4a3de196.mp3"
+          "surface": "オーストラリア",
+          "reading": "おーすとらりあ",
+          "explain": "Australia",
+          "wordId": "oosutoraria"
         },
         {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker",
-          "audioRef": "/media/jp/audio/tokens/c6246763badf.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
         },
         {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu",
-          "audioRef": "/media/jp/audio/tokens/cbd985f6606d.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "Does he read a book?",
+      "english": "The company employee lives in Australia",
       "grammarTags": [
-        "early Vます action",
-        "NをVます",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c063.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c064",
       "line": [
-        "犬",
+        "エンジニア",
         "は",
-        "猫",
-        "です",
-        "か",
-        "？"
+        "スペイン",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "いぬ",
+        "えんじにあ",
         "わ",
-        "ねこ",
-        "です",
-        "か",
-        "？"
+        "すぺいん",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "dog",
+        "engineer",
         "topic marker",
-        "cat",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "Spain",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu",
-          "audioRef": "/media/jp/audio/tokens/25e70021f3cd.mp3"
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko",
-          "audioRef": "/media/jp/audio/tokens/4d1216af6b7e.mp3"
+          "surface": "スペイン",
+          "reading": "すぺいん",
+          "explain": "Spain",
+          "wordId": "supein"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
         },
         {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "Is the dog a cat?",
+      "english": "The engineer lives in Spain",
       "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c064.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c065",
       "line": [
-        "彼女",
+        "学生",
         "は",
-        "読みます",
-        "か",
-        "？"
+        "フィリピン",
+        "で",
+        "働きます"
       ],
       "tts": [
-        "かのじょ",
+        "がくせい",
         "わ",
-        "よみます",
-        "か",
-        "？"
+        "ふぃりぴん",
+        "で",
+        "はたらきます"
       ],
       "explain": [
-        "she; her",
+        "student",
         "topic marker",
-        "read",
-        "question marker",
-        "question mark"
+        "the Philippines",
+        "action location marker",
+        "polite form of work"
       ],
       "tokens": [
         {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka",
-          "audioRef": "/media/jp/audio/tokens/bb76cb0913c5.mp3"
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu",
-          "audioRef": "/media/jp/audio/tokens/cbd985f6606d.mp3"
+          "surface": "フィリピン",
+          "reading": "ふぃりぴん",
+          "explain": "the Philippines",
+          "wordId": "firipin"
         },
         {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
         },
         {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
         }
       ],
-      "english": "Does she read?",
+      "english": "The student works in the Philippines",
       "grammarTags": [
-        "early Vます action",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c065.mp3"
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
     },
     {
       "id": "u002-c066",
       "line": [
-        "家",
+        "会社員",
         "は",
-        "人",
-        "です",
-        "か",
-        "？"
+        "フィリピン",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "いえ",
+        "かいしゃいん",
         "わ",
-        "ひと",
-        "です",
-        "か",
-        "？"
+        "ふぃりぴん",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "house; home",
+        "company employee",
         "topic marker",
-        "person",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "the Philippines",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie",
-          "audioRef": "/media/jp/audio/tokens/66937f6a5154.mp3"
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "namae",
-          "audioRef": "/media/jp/audio/tokens/bfa1459a9646.mp3"
+          "surface": "フィリピン",
+          "reading": "ふぃりぴん",
+          "explain": "the Philippines",
+          "wordId": "firipin"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
         },
         {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "Is the house a person?",
+      "english": "The company employee lives in the Philippines",
       "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c066.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c067",
       "line": [
-        "友達",
+        "会社員",
         "は",
-        "本",
-        "を",
-        "書きます",
-        "か",
-        "？"
+        "日本",
+        "で",
+        "働きます"
       ],
       "tts": [
-        "ともだち",
+        "かいしゃいん",
         "わ",
-        "ほん",
-        "を",
-        "かきます",
-        "か",
-        "？"
+        "にほん",
+        "で",
+        "はたらきます"
       ],
       "explain": [
-        "friend",
+        "company employee",
         "topic marker",
-        "book",
-        "direct object marker",
-        "write",
-        "question marker",
-        "question mark"
+        "Japan",
+        "action location marker",
+        "polite form of work"
       ],
       "tokens": [
         {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi",
-          "audioRef": "/media/jp/audio/tokens/97d7c19ce9ab.mp3"
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon",
-          "audioRef": "/media/jp/audio/tokens/08bb4a3de196.mp3"
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
         },
         {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker",
-          "audioRef": "/media/jp/audio/tokens/c6246763badf.mp3"
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
         },
         {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku",
-          "audioRef": "/media/jp/audio/tokens/2a0a471b4a50.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
         }
       ],
-      "english": "Does the friend write a book?",
+      "english": "The company employee works in Japan",
       "grammarTags": [
-        "early Vます action",
-        "NをVます",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c067.mp3"
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
     },
     {
       "id": "u002-c068",
       "line": [
-        "学校",
+        "会社員",
         "は",
-        "家",
-        "です",
-        "か",
-        "？"
+        "国",
+        "で",
+        "働きます"
       ],
       "tts": [
-        "がっこう",
+        "かいしゃいん",
         "わ",
-        "いえ",
-        "です",
-        "か",
-        "？"
+        "くに",
+        "で",
+        "はたらきます"
       ],
       "explain": [
-        "school",
+        "company employee",
         "topic marker",
-        "house; home",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "country",
+        "action location marker",
+        "polite form of work"
       ],
       "tokens": [
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou",
-          "audioRef": "/media/jp/audio/tokens/c4161a3ca267.mp3"
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie",
-          "audioRef": "/media/jp/audio/tokens/66937f6a5154.mp3"
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
         },
         {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
         }
       ],
-      "english": "Is the school a house?",
+      "english": "The company employee works in the country",
       "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c068.mp3"
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
     },
     {
       "id": "u002-c069",
       "line": [
-        "医者",
+        "エンジニア",
         "は",
-        "書きます",
-        "か",
-        "？"
+        "書きます"
       ],
       "tts": [
-        "いしゃ",
+        "えんじにあ",
         "わ",
-        "かきます",
-        "か",
-        "？"
+        "かきます"
       ],
       "explain": [
-        "doctor",
+        "engineer",
         "topic marker",
-        "write",
-        "question marker",
-        "question mark"
+        "polite form of write"
       ],
       "tokens": [
         {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha",
-          "audioRef": "/media/jp/audio/tokens/7d57254d70ec.mp3"
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
           "surface": "書きます",
           "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku",
-          "audioRef": "/media/jp/audio/tokens/2a0a471b4a50.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "explain": "polite form of write",
+          "wordId": "kaku"
         }
       ],
-      "english": "Does the doctor write?",
+      "english": "The engineer writes",
       "grammarTags": [
-        "early Vます action",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c069.mp3"
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
     },
     {
       "id": "u002-c070",
       "line": [
-        "動物",
+        "主婦",
         "は",
-        "場所",
-        "です",
-        "か",
-        "？"
+        "ロシア",
+        "で",
+        "働きます"
       ],
       "tts": [
-        "どうぶつ",
+        "しゅふ",
         "わ",
-        "ばしょ",
-        "です",
-        "か",
-        "？"
+        "ろしあ",
+        "で",
+        "はたらきます"
       ],
       "explain": [
-        "animal",
+        "homemaker",
         "topic marker",
-        "place",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "Russia",
+        "action location marker",
+        "polite form of work"
       ],
       "tokens": [
         {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu",
-          "audioRef": "/media/jp/audio/tokens/1bf7ff031952.mp3"
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho",
-          "audioRef": "/media/jp/audio/tokens/5972a823a38f.mp3"
+          "surface": "ロシア",
+          "reading": "ろしあ",
+          "explain": "Russia",
+          "wordId": "roshia"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
         },
         {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
         }
       ],
-      "english": "Is the animal a place?",
+      "english": "The homemaker works in Russia",
       "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c070.mp3"
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
     },
     {
       "id": "u002-c071",
       "line": [
         "学生",
         "は",
-        "本",
-        "を",
-        "読みます",
-        "か",
-        "？"
+        "働きます"
       ],
       "tts": [
         "がくせい",
         "わ",
-        "ほん",
-        "を",
-        "よみます",
-        "か",
-        "？"
+        "はたらきます"
       ],
       "explain": [
         "student",
         "topic marker",
-        "book",
-        "direct object marker",
-        "read",
-        "question marker",
-        "question mark"
+        "polite form of work"
       ],
       "tokens": [
         {
           "surface": "学生",
           "reading": "がくせい",
           "explain": "student",
-          "wordId": "gakusei",
-          "audioRef": "/media/jp/audio/tokens/2cf38773dd94.mp3"
+          "wordId": "gakusei"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon",
-          "audioRef": "/media/jp/audio/tokens/08bb4a3de196.mp3"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker",
-          "audioRef": "/media/jp/audio/tokens/c6246763badf.mp3"
-        },
-        {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu",
-          "audioRef": "/media/jp/audio/tokens/cbd985f6606d.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
         }
       ],
-      "english": "Does the student read a book?",
+      "english": "The student works",
       "grammarTags": [
-        "early Vます action",
-        "NをVます",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c071.mp3"
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
     },
     {
       "id": "u002-c072",
       "line": [
-        "医者",
+        "先生",
         "は",
-        "友達",
-        "です",
-        "か",
-        "？"
+        "オーストラリア",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "いしゃ",
+        "せんせい",
         "わ",
-        "ともだち",
-        "です",
-        "か",
-        "？"
+        "おーすとらりあ",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "doctor",
+        "teacher",
         "topic marker",
-        "friend",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "Australia",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha",
-          "audioRef": "/media/jp/audio/tokens/7d57254d70ec.mp3"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi",
-          "audioRef": "/media/jp/audio/tokens/97d7c19ce9ab.mp3"
+          "surface": "オーストラリア",
+          "reading": "おーすとらりあ",
+          "explain": "Australia",
+          "wordId": "oosutoraria"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
         },
         {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "Is the doctor a friend?",
+      "english": "The teacher lives in Australia",
       "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c072.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c073",
       "line": [
         "私",
         "は",
-        "読みます",
-        "か",
-        "？"
+        "国",
+        "に",
+        "住みます"
       ],
       "tts": [
         "わたし",
         "わ",
-        "よみます",
-        "か",
-        "？"
+        "くに",
+        "に",
+        "すみます"
       ],
       "explain": [
         "I; me",
         "topic marker",
-        "read",
-        "question marker",
-        "question mark"
+        "country",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
           "surface": "私",
           "reading": "わたし",
           "explain": "I; me",
-          "wordId": "watashi",
-          "audioRef": "/media/jp/audio/tokens/66c3aae1e695.mp3"
+          "wordId": "watashi"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu",
-          "audioRef": "/media/jp/audio/tokens/cbd985f6606d.mp3"
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
         },
         {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
         },
         {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "Do I read?",
+      "english": "I live in the country",
       "grammarTags": [
-        "early Vます action",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c073.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c074",
       "line": [
-        "猫",
+        "先生",
         "は",
-        "人",
-        "です",
-        "か",
-        "？"
+        "日本",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "ねこ",
+        "せんせい",
         "わ",
-        "ひと",
-        "です",
-        "か",
-        "？"
+        "にほん",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "cat",
+        "teacher",
         "topic marker",
-        "person",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "Japan",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko",
-          "audioRef": "/media/jp/audio/tokens/4d1216af6b7e.mp3"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "namae",
-          "audioRef": "/media/jp/audio/tokens/bfa1459a9646.mp3"
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
         },
         {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "Is the cat a person?",
+      "english": "The teacher lives in Japan",
       "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c074.mp3"
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
     },
     {
       "id": "u002-c075",
       "line": [
-        "彼女",
-        "は",
-        "本",
-        "を",
-        "書きます",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "ほん",
-        "を",
-        "かきます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "book",
-        "direct object marker",
-        "write",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka",
-          "audioRef": "/media/jp/audio/tokens/bb76cb0913c5.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon",
-          "audioRef": "/media/jp/audio/tokens/08bb4a3de196.mp3"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker",
-          "audioRef": "/media/jp/audio/tokens/c6246763badf.mp3"
-        },
-        {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku",
-          "audioRef": "/media/jp/audio/tokens/2a0a471b4a50.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Does she write a book?",
-      "grammarTags": [
-        "early Vます action",
-        "NをVます",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c075.mp3"
-    },
-    {
-      "id": "u002-c076",
-      "line": [
-        "犬",
-        "は",
-        "人",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "いぬ",
-        "わ",
-        "ひと",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "dog",
-        "topic marker",
-        "person",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu",
-          "audioRef": "/media/jp/audio/tokens/25e70021f3cd.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "人",
-          "reading": "ひと",
-          "explain": "person",
-          "wordId": "namae",
-          "audioRef": "/media/jp/audio/tokens/bfa1459a9646.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the dog a person?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c076.mp3"
-    },
-    {
-      "id": "u002-c077",
-      "line": [
-        "あなた",
-        "は",
-        "書きます",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "かきます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "write",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura",
-          "audioRef": "/media/jp/audio/tokens/76f54e9c9180.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
-        {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku",
-          "audioRef": "/media/jp/audio/tokens/2a0a471b4a50.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Do you write?",
-      "grammarTags": [
-        "early Vます action",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c077.mp3"
-    },
-    {
-      "id": "u002-c078",
-      "line": [
-        "医者",
-        "は",
         "学生",
-        "です"
+        "は",
+        "オーストラリア",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "いしゃ",
-        "わ",
         "がくせい",
-        "です"
+        "わ",
+        "おーすとらりあ",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "doctor",
-        "topic marker",
         "student",
-        "polite identity marker"
+        "topic marker",
+        "Australia",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha",
-          "audioRef": "/media/jp/audio/tokens/7d57254d70ec.mp3"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
-        },
         {
           "surface": "学生",
           "reading": "がくせい",
           "explain": "student",
-          "wordId": "gakusei",
-          "audioRef": "/media/jp/audio/tokens/2cf38773dd94.mp3"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
-        }
-      ],
-      "english": "The doctor is a student",
-      "grammarTags": [
-        "AはBです"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c078.mp3"
-    },
-    {
-      "id": "u002-c079",
-      "line": [
-        "私",
-        "は",
-        "書きます",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "かきます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "write",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi",
-          "audioRef": "/media/jp/audio/tokens/66c3aae1e695.mp3"
+          "wordId": "gakusei"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
+        },
+        {
+          "surface": "オーストラリア",
+          "reading": "おーすとらりあ",
+          "explain": "Australia",
+          "wordId": "oosutoraria"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The student lives in Australia",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u002-c076",
+      "line": [
+        "エンジニア",
+        "は",
+        "タイ",
+        "で",
+        "書きます"
+      ],
+      "tts": [
+        "えんじにあ",
+        "わ",
+        "たい",
+        "で",
+        "かきます"
+      ],
+      "explain": [
+        "engineer",
+        "topic marker",
+        "Thailand",
+        "action location marker",
+        "polite form of write"
+      ],
+      "tokens": [
+        {
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "タイ",
+          "reading": "たい",
+          "explain": "Thailand",
+          "wordId": "tai"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
         },
         {
           "surface": "書きます",
           "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku",
-          "audioRef": "/media/jp/audio/tokens/2a0a471b4a50.mp3"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "explain": "polite form of write",
+          "wordId": "kaku"
         }
       ],
-      "english": "Do I write?",
+      "english": "The engineer writes in Thailand",
       "grammarTags": [
-        "early Vます action",
-        "か"
-      ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c079.mp3"
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
     },
     {
-      "id": "u002-c080",
+      "id": "u002-c077",
       "line": [
-        "学校",
+        "会社員",
         "は",
-        "友達",
-        "です",
-        "か",
-        "？"
+        "スペイン",
+        "で",
+        "働きます"
       ],
       "tts": [
-        "がっこう",
+        "かいしゃいん",
         "わ",
-        "ともだち",
-        "です",
-        "か",
-        "？"
+        "すぺいん",
+        "で",
+        "はたらきます"
       ],
       "explain": [
-        "school",
+        "company employee",
         "topic marker",
-        "friend",
-        "polite identity marker",
-        "question marker",
-        "question mark"
+        "Spain",
+        "action location marker",
+        "polite form of work"
       ],
       "tokens": [
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou",
-          "audioRef": "/media/jp/audio/tokens/c4161a3ca267.mp3"
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
         },
         {
           "surface": "は",
           "reading": "わ",
-          "explain": "topic marker",
-          "audioRef": "/media/jp/audio/tokens/72a1cd6703a6.mp3"
+          "explain": "topic marker"
         },
         {
-          "surface": "友達",
-          "reading": "ともだち",
-          "explain": "friend",
-          "wordId": "tomodachi",
-          "audioRef": "/media/jp/audio/tokens/97d7c19ce9ab.mp3"
+          "surface": "スペイン",
+          "reading": "すぺいん",
+          "explain": "Spain",
+          "wordId": "supein"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker",
-          "audioRef": "/media/jp/audio/tokens/84f3cb7d46c6.mp3"
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
         },
         {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker",
-          "audioRef": "/media/jp/audio/tokens/4e5aaee7e7e2.mp3"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
         }
       ],
-      "english": "Is the school a friend?",
+      "english": "The company employee works in Spain",
       "grammarTags": [
-        "AはBです",
-        "か"
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
+    },
+    {
+      "id": "u002-c078",
+      "line": [
+        "エンジニア",
+        "は",
+        "オーストラリア",
+        "で",
+        "働きます"
       ],
-      "audioRef": "/media/jp/audio/unit_002/u002-c080.mp3"
+      "tts": [
+        "えんじにあ",
+        "わ",
+        "おーすとらりあ",
+        "で",
+        "はたらきます"
+      ],
+      "explain": [
+        "engineer",
+        "topic marker",
+        "Australia",
+        "action location marker",
+        "polite form of work"
+      ],
+      "tokens": [
+        {
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "オーストラリア",
+          "reading": "おーすとらりあ",
+          "explain": "Australia",
+          "wordId": "oosutoraria"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
+        }
+      ],
+      "english": "The engineer works in Australia",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
+    },
+    {
+      "id": "u002-c079",
+      "line": [
+        "主婦",
+        "は",
+        "オーストラリア",
+        "で",
+        "働きます"
+      ],
+      "tts": [
+        "しゅふ",
+        "わ",
+        "おーすとらりあ",
+        "で",
+        "はたらきます"
+      ],
+      "explain": [
+        "homemaker",
+        "topic marker",
+        "Australia",
+        "action location marker",
+        "polite form of work"
+      ],
+      "tokens": [
+        {
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "オーストラリア",
+          "reading": "おーすとらりあ",
+          "explain": "Australia",
+          "wordId": "oosutoraria"
+        },
+        {
+          "surface": "で",
+          "reading": "で",
+          "explain": "action location marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
+        }
+      ],
+      "english": "The homemaker works in Australia",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "場所でVます"
+      ]
+    },
+    {
+      "id": "u002-c080",
+      "line": [
+        "会社員",
+        "は",
+        "住みます"
+      ],
+      "tts": [
+        "かいしゃいん",
+        "わ",
+        "すみます"
+      ],
+      "explain": [
+        "company employee",
+        "topic marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The company employee lives",
+      "grammarTags": [
+        "AはBです / AはBですか",
+        "early Vます action"
+      ]
     }
-  ],
-  "reviewWordIds": [],
-  "lexiconWordIds": [
-    "watashi",
-    "gakusei",
-    "sensei",
-    "namae",
-    "sakura",
-    "yuki",
-    "tanaka",
-    "tomodachi",
-    "taberu",
-    "nomu"
   ]
 }

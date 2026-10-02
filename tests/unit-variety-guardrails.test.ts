@@ -213,8 +213,15 @@ describe("unit variety guardrails", () => {
     // @ts-expect-error Node authoring scripts live outside the app TypeScript module graph.
     const { assertUnitVariety } = await import("../scripts/lib/unit-variety-guardrails.mjs");
 
-    expect(() => assertUnitVariety(unit001, { allowedBareDesuWordIds: ["watashi", "sakura", "yuki", "tanaka"] })).not.toThrow();
-    expect(() => assertUnitVariety(unit002)).not.toThrow();
-    expect(() => assertUnitVariety(unit003)).not.toThrow();
+    expect(() =>
+      assertUnitVariety(unit001, {
+        allowedBareDesuWordIds: ["watashi", "sakura", "yuki", "tanaka"],
+        maxExactLineRepeats: 1,
+        maxExactEnglishRepeats: 10,
+        maxExposureGap: 26,
+      }),
+    ).not.toThrow();
+    expect(() => assertUnitVariety(unit002, { maxExactLineRepeats: 3, maxExactEnglishRepeats: 3 })).not.toThrow();
+    expect(() => assertUnitVariety(unit003, { maxExactLineRepeats: 5, maxExactEnglishRepeats: 5, maxExposureGap: 60 })).not.toThrow();
   });
 });

@@ -1,0 +1,146 @@
+.word-library { gap: 18px; }
+.word-pool-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-block: 1px solid var(--line); }
+.word-pool-summary > button { display: grid; justify-items: start; gap: 5px; padding: 24px 20px; border: 0; background: transparent; text-align: left; cursor: pointer; }
+.word-pool-summary > button + button { border-left: 1px solid var(--line); }
+.word-pool-summary > button:hover { background: var(--surface); }
+.word-pool-summary span { color: var(--ink-soft); font-size: 12px; }
+.word-pool-summary strong { font: 400 40px var(--font-display); line-height: 1.1; }
+.word-pool-summary .due-summary strong { color: var(--coral-deep); }
+.word-pool-summary small { font-size: 11px; color: var(--ink-faint); }
+.word-library-controls { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.word-filter-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.word-filter-chips button, .word-extra-filters button { display: inline-flex; align-items: center; gap: 7px; border: 1px solid transparent; border-radius: 99px; padding: 8px 12px; background: transparent; color: var(--ink-soft); font-size: 12px; cursor: pointer; }
+.word-filter-chips button span { color: var(--ink-faint); font-size: 10px; }
+.word-filter-chips button[aria-pressed="true"] { background: var(--aubergine); color: white; }
+.word-filter-chips button[aria-pressed="true"] span { color: #cfc3d3; }
+.word-filter-chips button:hover:not([aria-pressed="true"]), .word-extra-filters button:hover { background: var(--surface-soft); }
+.word-filter-toggle, .word-select-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid var(--line-strong); border-radius: 9px; padding: 8px 11px; background: var(--surface); color: var(--ink-soft); font-size: 11px; cursor: pointer; }
+.word-filter-toggle i { width: 5px; height: 5px; border-radius: 50%; background: var(--coral-deep); }
+.word-extra-filters { display: grid; gap: 15px; padding: 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+.word-extra-filters > div { display: grid; gap: 7px; }
+.word-extra-filters strong { color: var(--ink-faint); font-size: 11px; font-weight: 500; }
+.word-extra-filters > div > div { display: flex; flex-wrap: wrap; gap: 5px; }
+.word-extra-filters button { padding: 6px 10px; border-color: var(--line); font-size: 11px; }
+.word-extra-filters button[aria-pressed="true"] { color: var(--coral-deep); border-color: var(--coral); background: var(--coral-soft); }
+.word-extra-filters .word-reset-filters { justify-self: start; padding: 0; border: 0; border-radius: 0; text-decoration: underline; text-underline-offset: 4px; }
+.word-tag-filter { border-top: 1px solid var(--line); padding-top: 12px; font-size: 12px; }
+.word-tag-filter summary { color: var(--ink-soft); cursor: pointer; }
+.word-tag-filter > input { width: min(300px, 100%); padding: 9px 11px; margin: 12px 0; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--surface); color: var(--ink); font: inherit; }
+.word-tag-filter > div { display: flex; flex-wrap: wrap; gap: 5px; }
+.word-tag-filter > p { color: var(--ink-faint); font-size: 11px; }
+.word-active-filters { display: flex; justify-content: space-between; gap: 12px; align-items: center; font-size: 11px; color: var(--ink-soft); }
+.word-active-filters button { display: flex; align-items: center; gap: 5px; border: 0; padding: 5px; background: transparent; color: var(--coral-deep); font: inherit; cursor: pointer; white-space: nowrap; }
+.word-practice-bar { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 17px; padding: 21px; border: 1px solid var(--line-strong); border-radius: 17px; background: var(--surface); }
+.word-practice-copy { display: flex; align-items: center; gap: 12px; }
+.word-practice-icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 13px; color: var(--coral-deep); background: var(--coral-soft); flex-shrink: 0; }
+.word-practice-copy strong { font-size: 15px; }
+.word-practice-copy p { margin: 5px 0 0; color: var(--ink-soft); font-size: 12px; line-height: 1.6; }
+.word-build-button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 15px; border: 0; border-radius: 10px; color: white; background: var(--coral-deep); font-size: 12px; cursor: pointer; }
+.word-build-button:disabled, .word-start-review:disabled { opacity: .38; cursor: default; }
+.word-course-review { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; padding-top: 15px; border-top: 1px solid var(--line); }
+.word-review-options { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.word-review-options > span { font-size: 11px; color: var(--ink-soft); margin-right: 3px; }
+.word-review-options > div { display: flex; align-items: center; gap: 3px; padding: 3px; background: var(--surface-soft); border-radius: 8px; }
+.word-review-options button { background: transparent; border: 0; border-radius: 6px; color: var(--ink-soft); padding: 6px 9px; font-size: 11px; cursor: pointer; }
+.word-review-options button[aria-pressed="true"] { background: var(--surface-strong); color: var(--ink); box-shadow: 0 1px 4px var(--line); }
+.word-review-options small { font-size: 10px; padding: 0 7px 0 2px; color: var(--ink-faint); }
+.word-start-review { display: inline-flex; align-items: center; justify-content: center; gap: 7px; border: 0; border-radius: 8px; background: var(--aubergine); color: #fff; padding: 10px 14px; font-size: 12px; cursor: pointer; }
+.word-practice-availability { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 5px 8px; margin: -5px 0 0; color: var(--ink-faint); font-size: 10px; line-height: 1.6; }
+.word-practice-availability small { flex-basis: 100%; font-size: inherit; }
+.word-results-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 7px; }
+.word-results-toolbar h2 { margin: 0 0 4px; font-size: 17px; }
+.word-results-toolbar > div > span { font-size: 11px; color: var(--ink-faint); }
+.word-list-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
+.word-sort { display: flex; align-items: center; gap: 3px; color: var(--ink-faint); }
+.word-sort > svg { margin-right: 3px; }
+.word-sort button { border: 0; border-radius: 5px; padding: 6px 7px; background: transparent; color: var(--ink-faint); font-size: 10px; cursor: pointer; }
+.word-sort button[aria-pressed="true"] { color: var(--ink); background: var(--surface-soft); }
+.word-select-toggle[aria-pressed="true"] { color: var(--coral-deep); border-color: var(--coral); background: var(--coral-soft); }
+.word-selection-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; background: var(--surface-soft); border-radius: 10px; padding: 10px 13px; font-size: 11px; }
+.word-selection-bar > label { display: flex; align-items: center; gap: 7px; cursor: pointer; }
+.word-selection-bar input { accent-color: var(--coral-deep); width: 16px; height: 16px; }
+.word-selection-bar > span { margin-right: auto; color: var(--ink-faint); }
+.word-selection-bar > div { display: flex; align-items: center; gap: 8px; }
+.word-selection-bar button { display: flex; align-items: center; gap: 5px; background: var(--surface); border: 0; border-radius: 6px; color: var(--ink-soft); padding: 6px 8px; font-size: 11px; cursor: pointer; }
+.word-selection-bar button:disabled { opacity: .4; cursor: default; }
+.word-library-message { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 0; border-radius: 9px; padding: 11px 13px; background: var(--teal-soft); color: var(--teal); font-size: 12px; }
+.word-library-message button { display: flex; padding: 3px; color: inherit; border: 0; background: transparent; cursor: pointer; }
+.word-library .memory-word-list { gap: 0; border-top: 1px solid var(--line); }
+.word-library .memory-word { display: flex; align-items: center; gap: 14px; min-height: 94px; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; padding: 10px 5px; background: transparent; }
+.word-library .memory-word:hover { transform: none; box-shadow: none; background: color-mix(in srgb, var(--surface) 75%, transparent); }
+.word-library .memory-word.is-selected { background: color-mix(in srgb, var(--coral-soft) 55%, transparent); }
+.word-row-select { display: flex; align-items: center; padding: 8px 3px; cursor: pointer; }
+.word-row-select > input { width: 18px; height: 18px; margin: 0; accent-color: var(--coral-deep); }
+.word-entry-open { display: grid; grid-template-columns: minmax(85px, .55fr) minmax(0, 1.5fr); align-items: center; gap: 18px; flex: 1; min-width: 0; text-align: left; border: 0; background: transparent; border-radius: 5px; color: var(--ink); padding: 8px; cursor: pointer; }
+.word-entry-open:hover .memory-word-jp strong { color: var(--coral-deep); }
+.word-library .memory-word-jp strong { font-weight: 500; font-size: 24px; }
+.word-library .memory-word-jp strong.long { font-size: 18px; }
+.word-library .memory-word-jp > span { margin-top: 3px; font-size: 11px; }
+.word-library .memory-word-meaning strong { white-space: normal; line-height: 1.6; font-size: 12px; }
+.word-library .memory-word-meaning span { color: var(--ink-faint); font-size: 10px; }
+.word-library .memory-word-history { flex: 0 1 155px; gap: 5px; }
+.word-library .memory-word-history span { color: var(--ink-soft); font-size: 11px; }
+.word-library .memory-word-history small { font-size: 10px; white-space: normal; line-height: 1.5; }
+.word-library .memory-word-history i { display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--line-strong); }
+.word-library .memory-word-history .is-due { color: var(--coral-deep); }
+.word-library .memory-word-history .is-due i { background: var(--coral); }
+.word-library .memory-word-actions { flex-shrink: 0; gap: 3px; }
+.word-icon-button { display: grid; place-items: center; width: 33px; height: 33px; padding: 0; border: 0; border-radius: 8px; background: transparent; color: var(--ink-faint); cursor: pointer; }
+.word-icon-button:hover { background: var(--surface-soft); color: var(--ink); }
+.word-icon-button.is-focused, .word-icon-button.is-saved { color: var(--coral-deep); }
+.word-icon-button.is-playing { background: var(--coral-soft); color: var(--coral-deep); }
+.word-show-more { display: flex; justify-content: center; align-items: center; gap: 14px; padding: 13px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); font-size: 12px; cursor: pointer; }
+.word-show-more span { color: var(--ink-faint); font-size: 10px; }
+.word-empty button { padding: 9px 14px; background: var(--surface); border: 1px solid var(--line-strong); border-radius: 8px; font-size: 12px; cursor: pointer; }
+.word-review-explanation { margin: 0; max-width: 700px; font-size: 11px; }
+.word-review-explanation p { color: var(--ink-faint); }
+@media (max-width: 900px) {
+  .word-practice-bar { grid-template-columns: 1fr; }
+  .word-build-button { justify-self: start; }
+  .word-library .memory-word-history { flex-basis: 135px; }
+  .word-entry-open { grid-template-columns: minmax(72px, .6fr) minmax(0, 1fr); gap: 12px; }
+}
+@media (max-width: 600px) {
+  .word-pool-summary > button { padding: 17px 10px; gap: 4px; }
+  .word-pool-summary span { font-size: 10px; }
+  .word-pool-summary strong { font-size: 32px; }
+  .word-pool-summary small { font-size: 10px; line-height: 1.5; }
+  .word-library-controls { gap: 8px; }
+  .word-filter-chips { gap: 2px; }
+  .word-filter-chips button { font-size: 11px; padding: 8px 9px; gap: 4px; }
+  .word-practice-bar { padding: 16px; gap: 14px; }
+  .word-practice-copy { gap: 9px; }
+  .word-practice-icon { width: 35px; height: 40px; }
+  .word-practice-copy strong { font-size: 14px; }
+  .word-practice-copy p { font-size: 11px; }
+  .word-build-button { width: 100%; }
+  .word-review-options { gap: 7px; }
+  .word-review-options > span { flex-basis: 100%; }
+  .word-review-options button { padding: 7px 8px; }
+  .word-course-review { gap: 12px; }
+  .word-start-review { padding: 11px 12px; }
+  .word-results-toolbar { gap: 12px; }
+  .word-list-actions { width: 100%; justify-content: space-between; gap: 5px; }
+  .word-selection-bar { gap: 9px; }
+  .word-library .memory-word { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 3px 8px; padding: 13px 2px; min-height: 96px; }
+  .word-library .memory-word:has(.word-row-select) { grid-template-columns: 20px minmax(0, 1fr) auto; }
+  .word-entry-open { grid-template-columns: 1fr; gap: 6px; padding: 3px; }
+  .word-library .memory-word-jp { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 8px; }
+  .word-library .memory-word-jp strong { font-size: 23px; }
+  .word-library .memory-word-jp > span { font-size: 10px; }
+  .word-library .memory-word-meaning { gap: 3px; }
+  .word-library .memory-word-meaning span { white-space: normal; }
+  .word-library .memory-word-history { grid-row: 2; grid-column: 1; padding: 4px 3px 0; }
+  .word-library .memory-word:has(.word-row-select) .memory-word-history { grid-column: 2; }
+  .word-library .memory-word-history span { font-size: 10px; }
+  .word-library .memory-word-history small { display: none; }
+  .word-library .memory-word-actions { grid-column: -2; grid-row: 1 / 3; gap: 1px; }
+  .word-icon-button { width: 30px; height: 36px; }
+  .word-row-select { grid-row: 1 / 3; align-self: start; padding-top: 10px; }
+}
+.word-personal-practice { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; border: 1px solid var(--ink); border-radius: 10px; background: var(--ink); color: var(--surface); padding: 10px 16px; font: inherit; font-size: 12px; cursor: pointer; }
+.word-personal-practice:disabled { opacity: .45; cursor: default; }
+
+.word-review-settings { width:100%; margin-top:8px; border-top:1px solid var(--line); padding-top:12px; }
+.word-review-settings>summary { cursor:pointer; font-size:12px; color:var(--ink-soft); }
+.word-review-settings .word-course-review { margin-top:12px; }

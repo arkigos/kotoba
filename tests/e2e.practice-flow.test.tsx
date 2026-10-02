@@ -20,15 +20,15 @@ describe("practice flow e2e", () => {
     const user = userEvent.setup();
     const { unmount } = render(<App />);
 
-    expect(screen.getByRole("heading", { name: "Unit 1: First Sentences" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Unit 1: Classroom Japanese" })).toBeInTheDocument();
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[0].line.join(""));
     expect(screen.queryByLabelText(/image/i)).not.toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /show english/i }));
     expect(screen.getByText(unit001.cards[0].english)).toBeVisible();
 
-    await user.click(screen.getByRole("button", { name: /hide english/i }));
-    expect(screen.queryByText(unit001.cards[0].english)).not.toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: /show japanese/i }));
+    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[0].line.join(""));
 
     await user.click(screen.getByRole("button", { name: /^next$/i }));
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[1].line.join(""));
@@ -55,7 +55,7 @@ describe("practice flow e2e", () => {
 
     unmount();
     render(<App />);
-    expect(screen.getByRole("heading", { name: "Unit 1: First Sentences" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Unit 1: Classroom Japanese" })).toBeInTheDocument();
     expect(screen.getByLabelText("Japanese sentence").textContent?.length).toBeGreaterThan(0);
   });
 });

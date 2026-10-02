@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "jmdict",
+  "name": "JMdict (Japanese-English)",
+  "publisher": "Electronic Dictionary Research and Development Group",
+  "url": "https://www.edrdg.org/pub/Nihongo/JMdict_e.gz",
+  "documentationUrl": "https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project",
+  "sourceDate": "2026-09-12",
+  "sha256": "1349ec95590e48bcc1262b2f8368bf63bb0564c03c7c4c87c0e9fa266ff4acc3",
+  "payloadBytes": 10572113,
+  "archivePath": "data/jp/dictionary/upstream/JMdict_e-2026-09-12.xml.gz",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "noticeUrl": "https://www.edrdg.org/edrdg/licence.html",
+  "attribution": "This application uses JMdict dictionary data, copyright James William Breen and the Electronic Dictionary Research and Development Group (EDRDG), under CC BY-SA 4.0.",
+  "modifications": "English-only export converted to JSON shards; entity codes retained with labels; effective inherited POS expanded; compact search index added. No proficiency levels inferred.",
+  "updateCommand": "python scripts/import-japanese-dictionary.py",
+  "updatePolicy": "Refresh before releases and at least monthly for a deployed dictionary service; preserve local authored IDs and reviewed sense mappings across updates.",
+  "reproduction": "Original source payloads are archived in data/jp/dictionary/upstream. Use --source ARCHIVE_PATH --expect-sha256 SHA256 to reproduce this export. The upstream daily URL is not a historical archive.",
+  "entryCount": 218765,
+  "senseCount": 253581
+}

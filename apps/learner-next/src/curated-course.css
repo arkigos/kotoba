@@ -1,0 +1,33 @@
+.curated-intro,.curated-level-count { color:var(--ink-soft); margin:.4rem 0 1rem; }
+.curated-level { display:flex; align-items:center; gap:.65rem; }
+.curated-level select { background:var(--surface); color:var(--ink); border:1px solid var(--line); border-radius:.6rem; padding:.6rem; font:inherit; }
+.curated-foundations { margin:1rem 0 1.5rem; }
+.curated-foundations>summary { display:flex; align-items:center; gap:.5rem; cursor:pointer; }
+.curated-view .learn-topic-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; }
+.curated-view .learn-topic-main { padding:1.25rem; text-align:left; width:100%; }
+.curated-view .learn-topic-main h2 { font-size:1.2rem; margin:.75rem 0 .5rem; }
+.curated-view .learn-topic-main p { line-height:1.5; margin:0 0 1rem; }
+.curated-view .learn-topic-main small { display:block; margin-top:.8rem; }
+.curated-topic-mark { display:flex; align-items:center; justify-content:space-between; color:var(--panel-ink); }
+.curated-lesson-list>li>.build-entry:not(:disabled) { background:var(--panel-red); color:var(--on-pigment); }
+.curated-topic-detail { background:var(--surface); border:1px solid var(--line); border-radius:1rem; padding:clamp(.85rem,2vw,1.5rem); }
+.curated-topic-detail>header { display:flex; justify-content:space-between; align-items:center; gap:1rem; margin:1rem 0; }
+.curated-lesson-list { list-style:none; padding:0; }
+.curated-lesson-list>li { display:flex; gap:1rem; align-items:flex-start; padding:1.2rem 0; border-top:1px solid var(--line); }
+.curated-step { flex-shrink:0; border:1px solid var(--line); border-radius:50%; width:2rem; height:2rem; display:grid; place-items:center; }
+.curated-lesson-copy { flex:1; min-width:0; }
+.curated-lesson-copy h3 { margin:.2rem 0; }
+.curated-lesson-copy p { line-height:1.6; margin:.5rem 0; }
+.curated-lesson-copy details { margin-top:.8rem; }
+.curated-lesson-copy summary { cursor:pointer; }
+.curated-lesson-copy details ol { padding-left:1.3rem; }
+.curated-lesson-copy details li { margin:1rem 0; }
+.curated-lesson-copy details small { display:block; margin-top:.3rem; }
+.curated-known { margin-top:1rem; }
+.curated-authoring,.curated-coming { padding:1rem; margin:1rem 0; border:1px solid var(--line); border-radius:1rem; line-height:1.6; }
+@media(max-width:600px) {
+ .curated-topic-detail>header { display:block; }
+ .curated-lesson-list>li { display:grid; grid-template-columns:2rem minmax(0,1fr); gap:.6rem; }
+ .curated-lesson-list>li>.build-entry { grid-column:2; justify-self:start; }
+ .curated-level { font-size:.85rem; }
+}

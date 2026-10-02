@@ -3,12 +3,10 @@ import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { App } from "../src/App";
 import unit001 from "../data/jp/curriculum/units/unit_001.json";
-import unit002 from "../data/jp/curriculum/units/unit_002.json";
 import unit003 from "../data/jp/curriculum/units/unit_003.json";
-import unit004 from "../data/jp/curriculum/units/unit_004.json";
 import unit005 from "../data/jp/curriculum/units/unit_005.json";
 import unit006 from "../data/jp/curriculum/units/unit_006.json";
-import unit007 from "../data/jp/curriculum/units/unit_007.json";
+import { recordingForToken } from "../packages/dictionary/audio";
 
 function spokenCalls() {
   return (window.speechSynthesis.speak as unknown as { mock: { calls: Array<[SpeechSynthesisUtterance]> } }).mock.calls;
@@ -18,20 +16,44 @@ function lastSpoken() {
   return spokenCalls().at(-1)?.[0];
 }
 
-function mediaPlayCalls() {
-  return (window.HTMLMediaElement.prototype.play as unknown as { mock: { calls: unknown[][] } }).mock.calls;
-}
-
 function expectEnglishMeaning(text: string) {
   expect(screen.getAllByText(text).length).toBeGreaterThan(0);
+}
+
+async function openUnitBrowser(user: ReturnType<typeof userEvent.setup>, levelName?: RegExp) {
+  await user.click(screen.getByRole("button", { name: /browse units/i }));
+  const browser = screen.getByRole("dialog", { name: /choose unit/i });
+  if (levelName) {
+    await user.click(within(browser).getByRole("tab", { name: levelName }));
+  }
+  return browser;
+}
+
+async function chooseUnit(user: ReturnType<typeof userEvent.setup>, unitName: RegExp, levelName?: RegExp) {
+  const browser = await openUnitBrowser(user, levelName);
+  await user.click(within(browser).getByRole("button", { name: unitName }));
 }
 
 describe("practice player", () => {
   beforeEach(() => {
     vi.useRealTimers();
     window.localStorage.clear();
-    Object.assign(window, {
-      speechSynthesis: {
+    class MockSpeechSynthesisUtterance {
+      text: string;
+      lang = "";
+      onend: (() => void) | null = null;
+
+      constructor(text: string) {
+        this.text = text;
+      }
+    }
+    Object.defineProperty(window, "SpeechSynthesisUtterance", {
+      configurable: true,
+      value: MockSpeechSynthesisUtterance,
+    });
+    Object.defineProperty(window, "speechSynthesis", {
+      configurable: true,
+      value: {
         cancel: vi.fn(),
         speak: vi.fn(),
       },
@@ -41,135 +63,146 @@ describe("practice player", () => {
 
   it("opens directly into the learner-titled practice experience", () => {
     render(<App />);
-    expect(screen.getByRole("heading", { name: "Unit 1: First Sentences" })).toBeInTheDocument();
-    expect(screen.getByText(/Aです/)).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Unit 1: Classroom Japanese" })).toBeInTheDocument();
+    expect(screen.getByText(unit001.grammarFocus)).toBeInTheDocument();
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[0].line.join(""));
     expect(screen.queryByLabelText(/language/i)).not.toBeInTheDocument();
     expect(screen.queryByLabelText(/image/i)).not.toBeInTheDocument();
   });
 
-  it("groups units under expandable course levels", async () => {
+  it("opens a modern unit browser from compact course levels", async () => {
     const user = userEvent.setup();
     render(<App />);
 
-    expect(screen.getByText("Levels")).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Kana And First Symbols.*0\/3 complete/i })).toHaveAttribute("aria-expanded", "true");
-    expect(screen.getByRole("button", { name: /Kana 1: Hiragana/i })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /A1 Survival Foundations/i })).toHaveAttribute("aria-expanded", "true");
-    expect(screen.getByRole("button", { name: /A1 Survival Foundations.*0\/20 complete/i })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /A2 Everyday Control.*0\/24 complete/i })).toHaveAttribute("aria-expanded", "false");
+    expect(screen.getByText("Course")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Current unit.*001.*Unit 1: Classroom Japanese/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Kana And First Symbols.*0\/3/i })).not.toHaveAttribute("aria-expanded");
+    expect(screen.getByRole("button", { name: /A1 Marugoto Starter Foundations.*0\/49/i })).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /Kana 1: Hiragana/i })).not.toBeInTheDocument();
 
-    await user.click(screen.getByRole("button", { name: /A2 Everyday Control/i }));
+    const browser = await openUnitBrowser(user);
+    expect(within(browser).getByRole("tab", { name: /A1.*0\/49/i })).toHaveAttribute("aria-selected", "true");
+    expect(within(browser).getByRole("button", { name: /Unit 1: Classroom Japanese/i })).toBeInTheDocument();
 
-    expect(screen.getByText("Planned")).toBeInTheDocument();
-    expect(screen.queryByRole("button", { name: /Unit 21/i })).not.toBeInTheDocument();
+    await user.click(within(browser).getByRole("tab", { name: /A2.*0\/19/i }));
+
+    expect(within(browser).getByText("Planned")).toBeInTheDocument();
+    expect(within(browser).queryByRole("button", { name: /Unit 50/i })).not.toBeInTheDocument();
   });
 
-  it("opens pre-A1 kana recognition units from the sidebar", async () => {
+  it("opens pre-A1 kana recognition units from the unit browser", async () => {
     const user = userEvent.setup();
     render(<App />);
 
-    await user.click(screen.getByRole("button", { name: /Kana 1: Hiragana/i }));
+    await chooseUnit(user, /Kana 1: Hiragana/i, /Kana.*0\/3/i);
 
     expect(await screen.findByRole("heading", { name: "Kana 1: Hiragana" })).toBeInTheDocument();
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", "あ");
   });
 
-  it("opens an interactive vocabulary panel for new, review, function, grammar, and known words", async () => {
+  it("opens a visible unit dictionary for new, review, known-here, and function words", async () => {
     const user = userEvent.setup();
     render(<App />);
 
-    await user.click(screen.getByRole("button", { name: /Unit 3: People And Possession/i }));
-    expect(await screen.findByRole("heading", { name: "Unit 3: People And Possession" })).toBeInTheDocument();
+    await chooseUnit(user, /Unit 3: Family And People/i);
+    expect(await screen.findByRole("heading", { name: "Unit 3: Family And People" })).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /^words$/i }));
     const vocabulary = screen.getByLabelText("Unit vocabulary");
 
-    expect(within(vocabulary).getByRole("tab", { name: /New 10/i })).toHaveAttribute("aria-selected", "true");
-    expect(within(vocabulary).getByRole("tab", { name: /Review 10/i })).toBeInTheDocument();
-    expect(within(vocabulary).getByRole("tab", { name: /Known 30/i })).toBeInTheDocument();
+    expect(within(vocabulary).getByRole("tab", { name: /Dictionary \d+/i })).toHaveAttribute("aria-selected", "true");
+    expect(within(vocabulary).getByText(unit003.newWords[0].meaning)).toBeInTheDocument();
+    expect(within(vocabulary).getByRole("tab", { name: new RegExp(`Review ${unit003.reviewWordIds.length}`, "i") })).toBeInTheDocument();
+    expect(within(vocabulary).getByRole("tab", { name: /Known \d+/i })).toBeInTheDocument();
     expect(within(vocabulary).getByRole("tab", { name: /Function 6/i })).toBeInTheDocument();
-    expect(within(vocabulary).getByRole("tab", { name: /Grammar 0/i })).toBeInTheDocument();
-    expect(within(vocabulary).queryByText(unit003.newWords[0].meaning)).not.toBeInTheDocument();
+    expect(within(vocabulary).queryByRole("tab", { name: /Grammar/i })).not.toBeInTheDocument();
+    expect(within(vocabulary).queryByRole("button", { name: /Show translations/i })).not.toBeInTheDocument();
+    expect(within(vocabulary).queryByRole("button", { name: /Drill new \+ review/i })).not.toBeInTheDocument();
 
-    await user.click(within(vocabulary).getByRole("button", { name: /Drill new \+ review/i }));
-    expect(within(vocabulary).getByLabelText("Vocabulary drill")).toHaveTextContent(`Word 1 / ${unit003.newWords.length + unit001.newWords.length}`);
-    expect(within(vocabulary).getByText("English hidden")).toBeInTheDocument();
-    await user.click(within(vocabulary).getByRole("button", { name: /Show English/i }));
-    expect(within(vocabulary).getByText(unit003.newWords[0].meaning)).toBeInTheDocument();
-    await user.click(within(vocabulary).getByRole("button", { name: "Next" }));
-    expect(within(vocabulary).getByText("Word 2 / 20")).toBeInTheDocument();
-    await user.click(within(vocabulary).getByRole("button", { name: "Close" }));
+    await user.click(within(vocabulary).getByRole("button", { name: `Open ${unit003.newWords[0].surface}` }));
+    expect(screen.getByRole("dialog", { name: `${unit003.newWords[0].surface} dictionary entry` })).toHaveTextContent(unit003.newWords[0].meaning);
+    fireEvent.click(screen.getByRole("dialog", { name: `${unit003.newWords[0].surface} dictionary entry` }).parentElement as HTMLElement);
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
 
-    await user.click(within(vocabulary).getByRole("button", { name: `Reveal translation for ${unit003.newWords[0].surface}` }));
-    expect(within(vocabulary).getByText(unit003.newWords[0].meaning)).toBeInTheDocument();
+    await user.click(within(vocabulary).getByRole("tab", { name: new RegExp(`Review ${unit003.reviewWordIds.length}`, "i") }));
+    expect(within(vocabulary).getByText(unit001.newWords[0].meaning)).toBeInTheDocument();
 
-    await user.click(within(vocabulary).getByRole("tab", { name: /Review 10/i }));
-    expect(within(vocabulary).getByRole("button", { name: `Reveal translation for ${unit001.newWords[0].surface}` })).toBeInTheDocument();
-
-    await user.click(within(vocabulary).getByRole("tab", { name: /Known 30/i }));
-    await user.click(within(vocabulary).getByRole("button", { name: /Show translations/i }));
-    expect(within(vocabulary).getByText(unit002.newWords[0].meaning)).toBeInTheDocument();
+    await user.click(within(vocabulary).getByRole("tab", { name: /Known \d+/i }));
+    expect(within(vocabulary).getByText("homemaker")).toBeInTheDocument();
+    expect(within(vocabulary).getByText("work")).toBeInTheDocument();
+    expect(within(vocabulary).queryByText(unit001.newWords[0].meaning)).not.toBeInTheDocument();
 
     await user.click(within(vocabulary).getByRole("tab", { name: /Function 6/i }));
-    expect(within(vocabulary).getByRole("button", { name: /translation for は/ })).toBeInTheDocument();
-    expect(within(vocabulary).queryByRole("button", { name: "Reveal translation for あります" })).not.toBeInTheDocument();
+    expect(within(vocabulary).getByText("topic marker")).toBeInTheDocument();
+    expect(within(vocabulary).queryByText("polite copula: is/am/are")).not.toBeInTheDocument();
   });
 
   it("keeps existence verbs out of the function word panel and shows them as SRS vocabulary", async () => {
     const user = userEvent.setup();
     render(<App />);
 
-    await user.click(screen.getByRole("button", { name: /Unit 4: There Is And There Is Not/i }));
-    expect(await screen.findByRole("heading", { name: "Unit 4: There Is And There Is Not" })).toBeInTheDocument();
+    await chooseUnit(user, /Unit 6: Home And Rooms/i);
+    expect(await screen.findByRole("heading", { name: unit006.title })).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /^words$/i }));
     const vocabulary = screen.getByLabelText("Unit vocabulary");
     await user.click(within(vocabulary).getByRole("tab", { name: /Function/i }));
 
-    expect(within(vocabulary).getByRole("button", { name: "Reveal translation for が" })).toBeInTheDocument();
-    expect(within(vocabulary).queryByRole("button", { name: "Reveal translation for あります" })).not.toBeInTheDocument();
-    expect(within(vocabulary).queryByRole("button", { name: "Reveal translation for います" })).not.toBeInTheDocument();
+    expect(within(vocabulary).getByText("subject marker")).toBeInTheDocument();
+    expect(within(vocabulary).queryByText("to exist; to have (inanimate)")).not.toBeInTheDocument();
+    expect(within(vocabulary).queryByText("to exist; to be (animate)")).not.toBeInTheDocument();
 
     await user.click(within(vocabulary).getByRole("tab", { name: /New 12/i }));
-    expect(within(vocabulary).getByRole("button", { name: "Reveal translation for ある" })).toBeInTheDocument();
-    expect(within(vocabulary).getByRole("button", { name: "Reveal translation for いる" })).toBeInTheDocument();
-    expect(within(vocabulary).getByRole("tab", { name: /Grammar 0/i })).toBeInTheDocument();
+    expect(within(vocabulary).getByText("exist; there is for things")).toBeInTheDocument();
+    expect(within(vocabulary).getByText("exist; there is for living things")).toBeInTheDocument();
+    expect(within(vocabulary).queryByRole("tab", { name: /Grammar/i })).not.toBeInTheDocument();
   });
 
   it("defaults to Japanese autoplay audio", () => {
     render(<App />);
-    expect(mediaPlayCalls()).toHaveLength(1);
-    expect(lastSpoken()).toBeUndefined();
-  });
-
-  it("supports English and both-language audio modes", () => {
-    vi.useFakeTimers();
-    render(<App />);
-
-    fireEvent.click(screen.getByRole("button", { name: /settings/i }));
-    fireEvent.change(screen.getByRole("combobox", { name: /audio/i }), { target: { value: "english" } });
-    fireEvent.click(screen.getByRole("button", { name: /^play audio$/i }));
-    expect(lastSpoken()).toMatchObject({ text: unit001.cards[0].english, lang: "en-US" });
-
-    fireEvent.change(screen.getByRole("combobox", { name: /audio/i }), { target: { value: "both" } });
-    fireEvent.click(screen.getByRole("button", { name: /^play audio$/i }));
     expect(lastSpoken()).toMatchObject({ text: unit001.cards[0].line.join(""), lang: "ja-JP" });
-    (lastSpoken() as SpeechSynthesisUtterance & { onend: () => void }).onend();
-    act(() => {
-      vi.advanceTimersByTime(450);
-    });
-    expect(lastSpoken()).toMatchObject({ text: unit001.cards[0].english, lang: "en-US" });
-    vi.useRealTimers();
   });
 
-  it("plays the clicked Japanese word piece", async () => {
+  it("supports English and contextual audio modes", async () => {
     const user = userEvent.setup();
     render(<App />);
 
-    const playCount = mediaPlayCalls().length;
+    await user.click(screen.getByRole("button", { name: /settings/i }));
+    await user.click(screen.getByRole("button", { name: /audio: japanese/i }));
+    fireEvent.click(screen.getByRole("button", { name: /^play audio$/i }));
+    expect(lastSpoken()).toMatchObject({ text: unit001.cards[0].english, lang: "en-US" });
+
+    await user.click(screen.getByRole("button", { name: /audio: english/i }));
+    await user.click(screen.getByRole("button", { name: /audio: same/i }));
+    fireEvent.click(screen.getByRole("button", { name: /^play audio$/i }));
+    expect(lastSpoken()).toMatchObject({ text: unit001.cards[0].english, lang: "en-US" });
+
+    await user.click(screen.getByRole("button", { name: /show english/i }));
+    await user.click(screen.getByRole("button", { name: /audio: opposite/i }));
+    await user.click(screen.getByRole("button", { name: /audio: japanese/i }));
+    await user.click(screen.getByRole("button", { name: /audio: english/i }));
+    fireEvent.click(screen.getByRole("button", { name: /^play audio$/i }));
+    expect(lastSpoken()).toMatchObject({ text: unit001.cards[0].english, lang: "en-US" });
+
+    await user.click(screen.getByRole("button", { name: /default shown: japanese/i }));
+    await user.click(screen.getByRole("button", { name: /default shown: english/i }));
+    const playCount = spokenCalls().length;
+    fireEvent.click(screen.getByRole("button", { name: /^play audio$/i }));
+    expect(spokenCalls()).toHaveLength(playCount + 1);
+    expect(lastSpoken()).toMatchObject({ text: unit001.cards[0].line.join(""), lang: "ja-JP" });
+  });
+
+  it("plays the clicked Japanese word from its shared dictionary recording", async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    const playCount = spokenCalls().length;
+    const mediaPlay = vi.mocked(HTMLMediaElement.prototype.play);
+    const recordedCount = mediaPlay.mock.calls.length;
     await user.click(screen.getByRole("button", { name: "Play 私" }));
-    expect(mediaPlayCalls()).toHaveLength(playCount + 1);
+    expect(mediaPlay).toHaveBeenCalledTimes(recordedCount + 1);
+    expect((mediaPlay.mock.contexts.at(-1) as HTMLAudioElement).src).toContain(recordingForToken(unit001.cards[0].tokens[0]));
+    expect(spokenCalls()).toHaveLength(playCount);
   });
 
   it("lets Space advance after a mouse-clicked Japanese token", async () => {
@@ -177,9 +210,7 @@ describe("practice player", () => {
     render(<App />);
 
     const token = screen.getByRole("button", { name: `Play ${unit001.cards[0].tokens[0].surface}` });
-    const playCount = mediaPlayCalls().length;
     await user.click(token);
-    expect(mediaPlayCalls()).toHaveLength(playCount + 1);
     expect(document.activeElement).not.toBe(token);
 
     fireEvent.keyDown(document.activeElement ?? window, { key: " " });
@@ -225,7 +256,7 @@ describe("practice player", () => {
     render(<App />);
 
     await user.click(screen.getByRole("button", { name: /settings/i }));
-    await user.selectOptions(screen.getByRole("combobox", { name: /japanese display/i }), "kana");
+    await user.click(screen.getByRole("button", { name: /japanese display: kanji\/kana/i }));
     await user.click(screen.getByRole("button", { name: /^next$/i }));
 
     const saved = window.localStorage.getItem("kotoba.progress.v1");
@@ -234,12 +265,12 @@ describe("practice player", () => {
     expect(saved).not.toContain("languageCode");
   });
 
-  it("can start cards revealed by default", async () => {
+  it("can default cards to English", async () => {
     const user = userEvent.setup();
     render(<App />);
 
     await user.click(screen.getByRole("button", { name: /settings/i }));
-    await user.click(screen.getByLabelText(/start revealed/i));
+    await user.click(screen.getByRole("button", { name: /default shown: japanese/i }));
     expectEnglishMeaning(unit001.cards[0].english);
 
     await user.click(screen.getByRole("button", { name: /^next$/i }));
@@ -255,22 +286,30 @@ describe("practice player", () => {
     expect(screen.getByLabelText("Prompt text hidden")).toBeInTheDocument();
     expect(screen.getByText("Listening mode")).toBeInTheDocument();
     expect(screen.queryByRole("button", { name: /hide image/i })).not.toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: /show japanese/i }));
+    expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[0].line.join(""));
+    await user.click(screen.getByRole("button", { name: /^next$/i }));
+    expect(screen.getByLabelText("Prompt text hidden")).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: "Recall" }));
-    expectEnglishMeaning(unit001.cards[0].english);
+    expectEnglishMeaning(unit001.cards[1].english);
     expect(screen.queryByLabelText(/image/i)).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: /show japanese/i })).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: "Rapid" }));
+    expect(screen.getByRole("button", { name: /auto advance on/i })).toHaveAttribute("aria-pressed", "true");
+    expect(screen.getByRole("button", { name: /default shown: japanese/i })).toBeInTheDocument();
   });
 
-  it("supports English-first cards and romaji readings", async () => {
+  it("swaps the main card display between English, Japanese, and romaji readings", async () => {
     const user = userEvent.setup();
     render(<App />);
 
     await user.click(screen.getByRole("button", { name: /settings/i }));
-    expect(screen.getByRole("option", { name: "Kanji/kana" })).toBeInTheDocument();
-    expect(screen.getByRole("option", { name: "Hiragana" })).toBeInTheDocument();
-    await user.selectOptions(screen.getByRole("combobox", { name: /front side/i }), "english");
-    await user.selectOptions(screen.getByRole("combobox", { name: /japanese display/i }), "romaji");
+    expect(screen.getByRole("button", { name: /japanese display: kanji\/kana/i })).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: /default shown: japanese/i }));
+    await user.click(screen.getByRole("button", { name: /japanese display: kanji\/kana/i }));
+    await user.click(screen.getByRole("button", { name: /japanese display: hiragana/i }));
 
     expectEnglishMeaning(unit001.cards[0].english);
     await user.click(screen.getByRole("button", { name: /show japanese/i }));
@@ -282,8 +321,8 @@ describe("practice player", () => {
     render(<App />);
 
     await user.click(screen.getByRole("button", { name: /^next$/i }));
-    await user.click(screen.getByRole("button", { name: /Unit 2: Talking About Things/i }));
-    await user.click(screen.getByRole("button", { name: /Unit 1: First Sentences/i }));
+    await chooseUnit(user, /Unit 2: Countries And Jobs/i);
+    await chooseUnit(user, /Unit 1: Classroom Japanese/i);
 
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[1].line.join(""));
 
@@ -299,23 +338,29 @@ describe("practice player", () => {
     expect(screen.getByLabelText(/card number/i)).toHaveValue("10");
     expect(screen.getByRole("progressbar", { name: /unit progress/i })).toHaveAttribute("aria-valuenow", "13");
     expect(screen.getByText(/Card 10 \/ 80 .* 13% complete/)).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Unit 1: First Sentences/i })).toHaveStyle("--unit-progress: 13%; --progress-color: hsl(15 70% 47%)");
+    let browser = await openUnitBrowser(user);
+    expect(within(browser).getByRole("button", { name: /Unit 1: Classroom Japanese/i })).toHaveStyle("--unit-progress: 13%; --progress-color: hsl(15 70% 47%)");
+    await user.click(within(browser).getByRole("button", { name: /close/i }));
 
     await user.click(screen.getByRole("button", { name: /mark unit complete/i }));
     expect(screen.getByText("Completed")).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Unit 1: First Sentences.*Complete/i })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /A1 Survival Foundations.*1\/20 complete/i })).toHaveStyle("--level-progress: 5%; --progress-color: hsl(8 70% 47%)");
+    expect(screen.getByRole("button", { name: /A1 Marugoto Starter Foundations.*1\/49/i })).toHaveStyle("--level-progress: 2%; --progress-color: hsl(6 70% 47%)");
+    browser = await openUnitBrowser(user);
+    expect(within(browser).getByRole("button", { name: /Unit 1: Classroom Japanese.*Complete/i })).toBeInTheDocument();
+    await user.click(within(browser).getByRole("button", { name: /close/i }));
     expect(screen.getByRole("button", { name: /mark incomplete/i })).toHaveClass("incomplete-action");
     await user.click(screen.getByRole("button", { name: /mark incomplete/i }));
     expect(screen.getByText(/cards left/i)).toBeInTheDocument();
   });
 
-  it("can jump to a random card in any unit", async () => {
+  it("can use random order for card movement", async () => {
     const user = userEvent.setup();
     const randomSpy = vi.spyOn(Math, "random").mockReturnValue(0.5);
     render(<App />);
 
-    await user.click(screen.getByRole("button", { name: /^randomize$/i }));
+    await user.click(screen.getByRole("button", { name: /settings/i }));
+    await user.click(screen.getByRole("button", { name: /order: sequential/i }));
+    await user.click(screen.getByRole("button", { name: /^next$/i }));
 
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards[40].line.join(""));
     randomSpy.mockRestore();
@@ -334,20 +379,22 @@ describe("practice player", () => {
     expect(screen.getByLabelText("Japanese sentence")).toHaveAttribute("data-sentence", unit001.cards.at(-1)?.line.join(""));
   });
 
-  it("keeps sidebar unit progress stable when switching between different length units", async () => {
+  it("keeps unit browser progress stable when switching between different length units", async () => {
     const user = userEvent.setup();
     render(<App />);
 
-    await user.click(screen.getByRole("button", { name: /Unit 5: Talking About The Past/i }));
-    expect(await screen.findByRole("heading", { name: "Unit 5: Talking About The Past" })).toBeInTheDocument();
+    await chooseUnit(user, /Unit 5: Restaurants And Taste/i);
+    expect(await screen.findByRole("heading", { name: "Unit 5: Restaurants And Taste" })).toBeInTheDocument();
 
     await user.selectOptions(screen.getByLabelText(/card number/i), "49");
     const unitFiveProgress = Math.round((49 / unit005.cards.length) * 100);
-    expect(screen.getByRole("button", { name: /Unit 5: Talking About The Past/i })).toHaveStyle(`--unit-progress: ${unitFiveProgress}%`);
+    let browser = await openUnitBrowser(user);
+    expect(within(browser).getByRole("button", { name: /Unit 5: Restaurants And Taste/i })).toHaveStyle(`--unit-progress: ${unitFiveProgress}%`);
 
-    await user.click(screen.getByRole("button", { name: /Unit 7: Asking What And Who/i }));
-    expect(await screen.findByRole("heading", { name: "Unit 7: Asking What And Who" })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Unit 5: Talking About The Past/i })).toHaveStyle(`--unit-progress: ${unitFiveProgress}%`);
+    await user.click(within(browser).getByRole("button", { name: /Unit 7: Neighborhood Places/i }));
+    expect(await screen.findByRole("heading", { name: "Unit 7: Neighborhood Places" })).toBeInTheDocument();
+    browser = await openUnitBrowser(user);
+    expect(within(browser).getByRole("button", { name: /Unit 5: Restaurants And Taste/i })).toHaveStyle(`--unit-progress: ${unitFiveProgress}%`);
   });
 
   it("persists dark mode from settings", async () => {
@@ -355,7 +402,7 @@ describe("practice player", () => {
     const { container, unmount } = render(<App />);
 
     await user.click(screen.getByRole("button", { name: /settings/i }));
-    await user.click(screen.getByLabelText(/dark mode/i));
+    await user.click(screen.getByRole("button", { name: /dark mode off/i }));
 
     expect(container.querySelector(".app-shell")).toHaveAttribute("data-theme", "dark");
     expect(window.localStorage.getItem("kotoba.progress.v1")).toContain('"theme":"dark"');
@@ -369,16 +416,15 @@ describe("practice player", () => {
     const user = userEvent.setup();
     render(<App />);
 
-    expect(screen.getByRole("button", { name: /^randomize$/i })).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /^randomize$/i })).not.toBeInTheDocument();
     expect(screen.queryByRole("button", { name: /hide image/i })).not.toBeInTheDocument();
     expect(screen.queryByLabelText("Media area")).not.toBeInTheDocument();
-    expect(screen.getByLabelText("Front card area")).toBeInTheDocument();
-    expect(screen.getByLabelText("Reveal card area")).toBeInTheDocument();
+    expect(screen.getByLabelText("Card display area")).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /settings/i }));
 
-    expect(screen.getByLabelText("Front card area")).toBeInTheDocument();
-    expect(screen.getByLabelText("Reveal card area")).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /^randomize$/i })).not.toBeInTheDocument();
+    expect(screen.getByLabelText("Card display area")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /show english/i })).toBeInTheDocument();
   });
 
@@ -399,12 +445,12 @@ describe("practice player", () => {
     expectEnglishMeaning(unit001.cards[1].english);
     expect(screen.getByRole("button", { name: /^play audio$/i })).toBeInTheDocument();
 
-    const playCount = mediaPlayCalls().length;
+    const playCount = spokenCalls().length;
     fireEvent.keyDown(window, { key: "2" });
-    expect(mediaPlayCalls()).toHaveLength(playCount + 1);
+    expect(spokenCalls()).toHaveLength(playCount + 1);
 
     fireEvent.keyDown(window, { key: "s" });
-    fireEvent.click(screen.getByLabelText(/auto advance/i));
+    fireEvent.click(screen.getByRole("button", { name: /auto advance off/i }));
     act(() => {
       vi.advanceTimersByTime(5000);
     });

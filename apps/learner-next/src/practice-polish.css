@@ -1,0 +1,53 @@
+.lesson-shell .lesson-quick-tools { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 0 0 13px; }
+.lesson-script-chips, .lesson-quick-actions, .lesson-speed-chips, .lesson-audio-tools { display: flex; align-items: center; gap: 4px; }
+.lesson-script-chips { padding: 3px; border: 1px solid var(--line); border-radius: 11px; background: var(--surface); }
+.lesson-script-chips button, .lesson-quick-actions button, .lesson-speed-chips button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 32px; border: 0; border-radius: 8px; padding: 5px 11px; background: transparent; color: var(--ink-soft); font-size: 12px; cursor: pointer; }
+.lesson-script-chips button[aria-pressed="true"], .lesson-speed-chips button[aria-pressed="true"] { background: var(--violet-soft); color: var(--violet); font-weight: 700; }
+.lesson-quick-actions button:hover, .lesson-speed-chips button:hover { background: var(--surface-soft); color: var(--ink); }
+.lesson-shell .lesson-japanese button.speaking-token { background: var(--coral-soft); color: var(--coral-deep); box-shadow: 0 3px 0 var(--coral); transform: translateY(-2px); }
+.lesson-companion-translation { width: 100%; margin: 28px 0 0; color: var(--ink-soft); text-align: center; font: 600 clamp(22px, 3vw, 32px)/1.35 var(--font-display); text-wrap: balance; }
+.lesson-shell .lesson-card-foot .lesson-translation-toggle { flex: 0 0 auto; min-height: 33px; border: 0; border-radius: 8px; background: var(--surface-soft); padding: 6px 10px; color: var(--ink-soft); font-size: 11px; cursor: pointer; }
+.lesson-shell .lesson-card-foot .lesson-translation-toggle[aria-pressed="true"] { background: var(--violet-soft); color: var(--violet); }
+.lesson-below-card { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 18px; padding: 12px 3px 0; }
+.lesson-shell .lesson-position-dots { display: flex; height: auto; gap: 5px; }
+.lesson-shell .lesson-position-dots button { width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid transparent; border-radius: 9px; background: transparent; color: var(--ink-faint); font-size: 12px; cursor: pointer; }
+.lesson-shell .lesson-position-dots button:hover { border-color: var(--line); background: var(--surface); color: var(--ink); }
+.lesson-shell .lesson-position-dots button.active { background: var(--aubergine); color: white; }
+.lesson-shell .lesson-position-dots > span { width: 30px; }
+.lesson-audio-tools { gap: 12px; margin-left: auto; }
+.lesson-audio-source { color: var(--ink-faint); font-size: 11px; }
+.lesson-speed-chips { gap: 2px; padding: 2px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.lesson-speed-chips button { min-height: 28px; min-width: 42px; padding: 3px 7px; font-size: 11px; }
+.lesson-shell .lesson-audio.is-playing { border-color: var(--coral); color: var(--coral-deep); background: var(--coral-soft); }
+.lesson-shell .lesson-card { min-height: min(530px, calc(100svh - 290px)); }
+.lesson-shell .lesson-card-body { gap: 0; }
+.lesson-shell .lesson-setting-options.mode-options > button:last-child { grid-column: 1 / -1; }
+.lesson-shell .lesson-script-chips button:focus-visible, .lesson-shell .lesson-speed-chips button:focus-visible, .lesson-shell .lesson-position-dots button:focus-visible, .lesson-shell .lesson-quick-actions button:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
+@media (max-width: 720px) {
+  .lesson-shell .lesson-topbar { grid-template-columns: 34px minmax(85px, 1fr) auto; }
+  .lesson-shell .lesson-topbar .practice-icon-button { width: 33px; height: 36px; }
+  .lesson-shell .lesson-quick-tools { gap: 6px; margin-bottom: 9px; }
+  .lesson-script-chips button { min-height: 29px; padding: 4px 10px; font-size: 11px; }
+  .lesson-quick-actions button { padding: 4px 6px; }
+  .lesson-quick-actions button span { display: none; }
+  .lesson-shell .lesson-card { min-height: max(350px, calc(100svh - 283px)); grid-template-rows: auto minmax(230px, 1fr) auto; }
+  .lesson-shell .lesson-card-foot { gap: 8px; padding: 5px 12px; }
+  .lesson-shell .lesson-card-foot > span { font-size: 10px; line-height: 1.4; }
+  .lesson-below-card { gap: 5px; padding: 9px 0 0; }
+  .lesson-shell .lesson-position-dots { gap: 0; }
+  .lesson-shell .lesson-position-dots button, .lesson-shell .lesson-position-dots > span { width: 25px; height: 27px; }
+  .lesson-audio-source { display: none; }
+  .lesson-companion-translation { margin-top: 21px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lesson-shell .lesson-listen.playing > i, .lesson-shell .rapid-timer { animation: none; }
+  .lesson-shell .lesson-japanese button { transition: none; }
+}
+
+@media (min-width: 721px) and (max-height: 850px) {
+  .lesson-shell .lesson-card { min-height: max(340px, calc(100svh - 345px)); grid-template-rows: auto minmax(210px, 1fr) auto; }
+  .lesson-shell .lesson-card-body { padding: 26px 35px; }
+  .lesson-shell .lesson-japanese button span { font-size: clamp(38px, 5vw, 60px); }
+}

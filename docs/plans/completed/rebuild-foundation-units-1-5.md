@@ -2,6 +2,10 @@
 
 Completed: 2026-06-29
 
+Status: Historical. The deterministic foundation script from this pass is now
+archived under `archive/pre-marugoto-a1-generation-2026-07-17/`; current A1
+rebuild work goes through `npm run curriculum:rebuild-a1`.
+
 ## Summary
 
 Rebuilt Units 1-5 from a deterministic generator so the foundation band follows

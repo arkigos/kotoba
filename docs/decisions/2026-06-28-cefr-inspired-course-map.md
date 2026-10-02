@@ -2,6 +2,10 @@
 
 Date: 2026-06-28
 
+Status: Historical baseline. The level concept remains, but the exact unit
+ranges were updated by the 2026-07-16 Marugoto Starter A1 rebuild. The canonical
+current ranges live in `data/jp/curriculum/course_levels.json`.
+
 ## Context
 
 Kotoba needs a learner-facing course shape that feels coherent at full size. The
@@ -14,7 +18,7 @@ equals a certified level.
 
 ## Decision
 
-Kotoba uses a CEFR-inspired, JF-aligned four-level path:
+Kotoba originally used this CEFR-inspired, JF-aligned four-level path:
 
 - A1: Survival Foundations, units 001-020
 - A2: Everyday Control, units 021-044

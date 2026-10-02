@@ -1,0 +1,170 @@
+export function authorObjectActions({useTopic,lesson:authorLesson,course}) {
+const glosses={
+ 'B1@磁器':'porcelain; chinaware','B1@精巧':'finely made; intricate',
+ 'B1@欠陥':'defect; flaw','B1@縁':'rim; edge',
+ 'B1@鎖':'chain','B1@パイプ':'pipe; tube','B1@カバー':'cover; protective covering',
+ 'B1@通す':'to pass something through','B1@抜ける':'to come out; to come loose',
+ 'B1@挿す':'to insert; to place flowers in a vase',
+ 'B1@刺す':'to pierce; to stick something sharp into','B1@刺さる':'to be stuck in; to pierce into',
+ 'B1@倒す':'to knock over; to lay on its side','B1@向ける':'to turn or point something toward',
+ 'B1@当てる':'to put against; to direct onto',
+ 'B1@割る':'to break; to split','B1@破る':'to tear; to rip',
+ 'B1@綴じる':'to bind pages together','B1@埋める':'to bury; to fill a hole',
+ 'B1@埋まる':'to be buried; to become filled',
+ 'B1@つぐ':'to pour into a cup or other container','B1@さす':'to add or apply a liquid',
+ 'B1@灰':'ash; ashes','B1@真っ赤':'bright red; deep red','B1@粗い':'coarse; rough',
+};
+const lesson=(...args)=>{
+ authorLesson(...args,glosses);
+ course.lessons.at(-1).notes[0].title=args[2].length?'Word usage':'In this passage';
+};
+useTopic('materials');
+lesson('porcelain-and-details','Porcelain and the details of an object',['B1@磁器','B1@精巧','B1@欠陥','B1@縁'],
+ '磁器 / 精巧な時計 / 欠陥 / コップの縁',
+ '磁器 (jiki) is porcelain. 精巧 (seikō) describes fine, intricate workmanship; 欠陥 (kekkan) is a defect. 縁 is read fuchi here and means the rim or edge of an object.',[
+ ['B1@磁器 の @皿 を @棚 に @並べる~並べました~ならべました','I arranged the porcelain plates on the shelf.'],
+ ['@この @白い @花瓶 は B1@磁器 です','This white vase is made of porcelain.'],
+ ['@母 は B1@磁器 の @コップ を @大切 に @使う~使っています~つかっています','My mother takes good care of her porcelain cup when using it.'],
+ ['@店 で B1@精巧 な @時計 を @見る~見ました~みました','I saw an intricately made clock in the shop.'],
+ ['@この @人形 は @小さい です が B1@精巧 です','This doll is small but finely made.'],
+ ['B1@精巧 な B1@作り の @箱 を @買う~買いました~かいました','I bought a finely crafted box.'],
+ ['@新しい @製品 に B1@欠陥 が @ある~ありました~ありました','The new product had a defect.'],
+ ['B1@欠陥 が @ある B1@部品 を @取り替える~取り替えました~とりかえました','I replaced the defective part.'],
+ ['@使う @前 に B1@欠陥 が @ある かどうか @調べる~調べます~しらべます','We check whether there are any defects before using it.'],
+ ['@コップ の B1@縁 に @小さい @傷 が @ある~あります~あります','There is a small scratch on the rim of the cup.'],
+ ['@皿 の B1@縁 を B1@拭く~拭きました~ふきました','I wiped the rim of the plate.'],
+ ['@帽子 の B1@縁 を @持つ~持って~もって @脱ぐ~脱ぎました~ぬぎました','I took off the hat by its brim.'],
+]);
+lesson('chains-pipes-and-covers','Chains, pipes and covers',['B1@鎖','B1@パイプ','B1@カバー'],
+ '鎖 / パイプ / カバー',
+ '鎖 (kusari) is a chain. パイプ is a pipe or tube. カバー names a covering, such as a protective cover for a chair or a book.',[
+ ['@自転車 に @太い B1@鎖 を @つける~つけました~つけました','I attached a thick chain to the bicycle.'],
+ ['@古い B1@鎖 が B1@錆びる~錆びています~さびています','The old chain is rusty.'],
+ ['@この B1@鎖 は @前 の B1@鎖 より @長い です','This chain is longer than the previous one.'],
+ ['B1@パイプ の @中 を @水 が B1@流れる~流れています~ながれています','Water is flowing through the pipe.'],
+ ['@細い B1@パイプ を @壁 に @つける~つけました~つけました','I attached a thin pipe to the wall.'],
+ ['@この B1@パイプ は B1@金属 です','This pipe is made of metal.'],
+ ['@椅子 に B1@カバー を @かける~かけました~かけました','I put a cover on the chair.'],
+ ['@汚れる~汚れた~よごれた B1@カバー を @洗う~洗いました~あらいました','I washed the dirty cover.'],
+ ['@本 の B1@カバー を B1@外す~外しました~はずしました','I took the cover off the book.'],
+]);
+lesson('passing-through-and-inserting','Passing things through and inserting them',['B1@通す','B1@抜ける','B1@挿す'],
+ '糸を通します / 糸が抜けます / 花を挿します',
+ '通す (tōsu) moves something through an opening. 抜ける (nukeru) describes something coming out or loose. 挿す (sasu) places something into a space, as when arranging flowers in a vase.',[
+ ['B1@針 の @穴 に @糸 を B1@通す~通しました~とおしました','I passed the thread through the eye of the needle.'],
+ ['@小さい @穴 に B1@ひも を B1@通す~通します~とおします','I pass a cord through the small hole.'],
+ ['B1@パイプ に @水 を B1@通す~通して~とおして @中 を @洗う~洗いました~あらいました','I ran water through the pipe to wash the inside.'],
+ ['B1@針 から @糸 が B1@抜ける~抜けました~ぬけました','The thread came out of the needle.'],
+ ['@袋 の @穴 から B1@ひも が B1@抜ける~抜けてしまいました~ぬけてしまいました','The cord slipped out of the hole in the bag.'],
+ ['B1@釘 が B1@抜ける~抜けた~ぬけた @場所 を @調べる~調べました~しらべました','I checked the place where the nail had come out.'],
+ ['@花瓶 に @赤い @花 を B1@挿す~挿しました~さしました','I put red flowers in the vase.'],
+ ['@短い @枝 を @土 に B1@挿す~挿しました~さしました','I inserted a short branch into the soil.'],
+ ['@花 を B1@挿す @前 に @花瓶 を @洗う~洗いました~あらいました','I washed the vase before putting flowers in it.'],
+]);
+lesson('mending-bag-account','Mending a cloth bag',[],
+ '糸を通す / 糸が抜ける / カバー',
+ 'Follow a small repair from preparing the thread to putting the tools away.',[
+ ['B1@布 の @袋 に @小さい @穴 が @ある~ありました~ありました','There was a small hole in the cloth bag.'],
+ ['B1@針 の @穴 に @白い @糸 を B1@通す~通しました~とおしました','I threaded white thread through the needle.'],
+ ['B1@縫う~縫っている~ぬっている @時 に @糸 が B1@抜ける~抜けてしまいました~ぬけてしまいました','The thread slipped out while I was sewing.'],
+ ['@もう一度 @糸 を B1@通す~通して~とおして @穴 を B1@縫う~縫いました~ぬいました','I threaded the needle again and sewed up the hole.'],
+ ['@袋 の @中 に B1@針 が @ある~ない~ない かどうか @確認 @する~しました~しました','I checked that there was no needle inside the bag.'],
+ ['@道具 を @箱 に B1@戻す~戻して~もどして B1@カバー を @かける~かけました~かけました','I put the tools back in the box and covered it.'],
+]);
+lesson('piercing-and-getting-stuck','Piercing and getting stuck',['B1@刺す','B1@刺さる'],
+ '針を刺します / 針が刺さっています',
+ '刺す (sasu) means putting something sharp into something else. 刺さる (sasaru) describes the sharp object going in or being stuck there. 挿す, also sasu, is the spelling used for putting flowers into a vase.',[
+ ['@厚い B1@布 に B1@針 を B1@刺す~刺しました~さしました','I stuck the needle into the thick cloth.'],
+ ['B1@針 を B1@刺す @場所 を @決める~決めました~きめました','I decided where to insert the needle.'],
+ ['B1@針 を B1@刺す @前 に B1@布 を @机 に @置く~置きました~おきました','I put the cloth on the desk before inserting the needle.'],
+ ['B1@布 に B1@針 が B1@刺さる~刺さっています~ささっています','A needle is stuck in the cloth.'],
+ ['@木 に B1@釘 が B1@刺さる~刺さっていました~ささっていました','A nail was stuck in the wood.'],
+ ['@何 が B1@刺さる~刺さっている~ささっている か @よく @見る~見てください~みてください','Please look carefully to see what is stuck there.'],
+ ['B1@針 が B1@刺さる~刺さっている~ささっている B1@布 に @触る~触らないでください~さわらないでください','Please do not touch the cloth with the needle in it.'],
+]);
+lesson('turning-and-directing','Laying things down and directing them',['B1@倒す','B1@向ける','B1@当てる'],
+ '倒します / 向けます / 当てます',
+ '倒す (taosu) can mean knocking something over or deliberately laying it on its side. 向ける (mukeru) directs something toward a place. 当てる (ateru) can put one thing against another or direct light onto it.',[
+ ['@掃除 の @時 に @花瓶 を B1@倒す~倒してしまいました~たおしてしまいました','I accidentally knocked over the vase while cleaning.'],
+ ['@長い B1@棒 を @静か に B1@倒す~倒しました~たおしました','I gently laid the long pole down.'],
+ ['@箱 を B1@倒す~倒さないでください~たおさないでください','Please do not knock the box over.'],
+ ['@カメラ を @庭 に B1@向ける~向けました~むけました','I pointed the camera toward the garden.'],
+ ['@顔 を @窓 の A2:1264 に B1@向ける~向けました~むけました','I turned my face toward the window.'],
+ ['@椅子 を @机 の A2:1264 に B1@向ける~向けてください~むけてください','Please turn the chair toward the desk.'],
+ ['@壁 に @耳 を B1@当てる~当てました~あてました','I put my ear against the wall.'],
+ ['@手 に @冷たい @タオル を B1@当てる~当てました~あてました','I held a cold towel against my hand.'],
+ ['@箱 の @中 に @光 を B1@当てる~当てて~あてて @調べる~調べました~しらべました','I shone light inside the box to examine it.'],
+]);
+lesson('breaking-tearing-binding','Breaking, tearing and binding',['B1@割る','B1@破る','B1@綴じる'],
+ '割ります / 破ります / 綴じます',
+ '割る (waru) breaks or splits something hard. 破る (yaburu) tears something such as paper. 綴じる (tojiru) binds pages together, for example with thread.',[
+ ['@卵 を @二つ B1@割る~割りました~わりました','I cracked two eggs.'],
+ ['@コップ を B1@割る~割ってしまいました~わってしまいました','I accidentally broke the cup.'],
+ ['@硬い @チョコレート を B1@割る~割って~わって @子供 に @渡す~渡しました~わたしました','I broke the hard chocolate into pieces and gave them to the child.'],
+ ['@古い @紙 を @手 で B1@破る~破りました~やぶりました','I tore the old paper by hand.'],
+ ['@袋 を B1@破る~破らずに~やぶらずに @開ける~開けてください~あけてください','Please open the bag without tearing it.'],
+ ['@大切 な @手紙 を B1@破る~破ってしまいました~やぶってしまいました','I accidentally tore an important letter.'],
+ ['@紙 を @糸 で B1@綴じる~綴じました~とじました','I bound the sheets of paper with thread.'],
+ ['@紙 を B1@綴じる @前 に @もう一度 @全部 @読む~読みます~よみます','I read everything once more before binding the sheets.'],
+ ['B1@綴じる~綴じた~とじた @ノート に @名前 を @書く~書きました~かきました','I wrote my name in the notebook I had bound.'],
+]);
+lesson('making-notebook-account','Making a small notebook',[],
+ '紙を破る / 穴に通す / 綴じる / カバー',
+ 'Follow the paper and thread as they become a notebook.',[
+ ['@使う~使わない~つかわない @大きい @紙 を @半分 に B1@破る~破りました~やぶりました','I tore a large unused sheet of paper in half.'],
+ ['@同じ @形 の @紙 を B1@重ねる~重ねました~かさねました','I stacked sheets of the same shape.'],
+ ['@紙 に @小さい @穴 を @開ける~開けました~あけました','I made small holes in the paper.'],
+ ['@穴 に @糸 を B1@通す~通して~とおして @紙 を B1@綴じる~綴じました~とじました','I passed thread through the holes and bound the sheets together.'],
+ ['@厚い @紙 で B1@カバー を @作る~作りました~つくりました','I made a cover from thick paper.'],
+ ['@できる~できた~できた @ノート を @友達 に @見せる~見せました~みせました','I showed the finished notebook to my friend.'],
+ ['@友達 は @ノート の B1@カバー を @褒める~褒めてくれました~ほめてくれました','My friend praised the notebook’s cover.'],
+]);
+lesson('burying-and-filling','Burying and filling spaces',['B1@埋める','B1@埋まる'],
+ '穴を埋めます / 穴が埋まります',
+ '埋める (umeru) describes someone burying something or filling a space. 埋まる (umaru) describes something being buried or a space becoming filled.',[
+ ['@庭 の @穴 を @土 で B1@埋める~埋めました~うめました','I filled the hole in the garden with soil.'],
+ ['@子供 が @砂 に @足 を B1@埋める~埋めています~うめています','The child is burying their feet in the sand.'],
+ ['@小さい @箱 を @木 の @下 に B1@埋める~埋めました~うめました','I buried a small box beneath the tree.'],
+ ['@穴 が @砂 で B1@埋まる~埋まりました~うまりました','The hole filled with sand.'],
+ ['@大きい @石 が @土 に B1@埋まる~埋まっています~うまっています','A large stone is buried in the soil.'],
+ ['@雪 で @庭 の @道 が B1@埋まる~埋まっていました~うまっていました','The garden path was buried in snow.'],
+ ['@土 に B1@埋まる~埋まっていた~うまっていた @箱 を @見つける~見つけました~みつけました','I found a box that had been buried in the soil.'],
+ ['@箱 を @取る~取った~とった @後 で @穴 を B1@埋める~埋めました~うめました','I filled the hole after taking out the box.'],
+]);
+lesson('pouring-and-oiling','Pouring drinks and applying oil',['B1@つぐ','B1@さす'],
+ 'お茶をつぎます / 油をさします',
+ 'つぐ (tsugu) pours a drink into a container. さす (sasu) can mean adding a little liquid, as in 油をさす, applying oil. This is a different verb from 刺す and 挿す.',[
+ ['@客 の @コップ に @水 を B1@つぐ~つぎました~つぎました','I poured water into the guest’s cup.'],
+ ['B1@湯のみ に @お茶 を B1@つぐ~ついでください~ついでください','Please pour tea into the teacup.'],
+ ['@父 は @母 に @お茶 を B1@つぐ~ついでいます~ついでいます','My father is pouring tea for my mother.'],
+ ['@お茶 を B1@つぐ @前 に B1@湯のみ を B1@温める~温めました~あたためました','I warmed the teacup before pouring tea.'],
+ ['@自転車 の B1@鎖 に @油 を B1@さす~さしました~さしました','I oiled the bicycle chain.'],
+ ['@古い @機械 に @少し @油 を B1@さす~さしました~さしました','I applied a little oil to the old machine.'],
+ ['@油 を B1@さす @場所 を @説明 @する~してください~してください','Please explain where to apply the oil.'],
+ ['@油 を B1@さす~さした~さした @後 で B1@鎖 を B1@動かす~動かしました~うごかしました','I moved the chain after oiling it.'],
+]);
+lesson('ash-colour-and-texture','Ash, colour and texture',['B1@灰','B1@真っ赤','B1@粗い'],
+ '灰 / 真っ赤な花 / 粗い砂',
+ '灰 (hai) is the ash left after something burns. 真っ赤 (makka) is an intense red. 粗い (arai) describes a coarse texture or large, uneven particles.',[
+ ['@火 が @消える~消えた~きえた @後 に B1@灰 が @残る~残りました~のこりました','Ash remained after the fire went out.'],
+ ['@冷たい B1@灰 を @集める~集めました~あつめました','I collected the cold ashes.'],
+ ['@風 で B1@灰 が @飛ぶ~飛びました~とびました','The wind blew the ash away.'],
+ ['@庭 に B1@真っ赤 な @花 が @咲く~咲いています~さいています','Bright red flowers are blooming in the garden.'],
+ ['@夕方 の @空 が B1@真っ赤 に @なる~なりました~なりました','The evening sky turned deep red.'],
+ ['B1@真っ赤 な B1@カバー を @椅子 に @かける~かけました~かけました','I put a bright red cover on the chair.'],
+ ['@この @砂 は B1@粗い です','This sand is coarse.'],
+ ['B1@粗い B1@布 で @大切 な B1@磁器 を B1@拭く~拭かないでください~ふかないでください','Please do not wipe valuable porcelain with a rough cloth.'],
+ ['@細かい @砂 と B1@粗い @砂 を @比べる~比べました~くらべました','I compared fine sand with coarse sand.'],
+]);
+lesson('garden-and-table-account','From the garden to the table',[],
+ '穴を埋める / 花を挿す / 縁 / お茶をつぐ',
+ 'Follow the preparation of a table after a little work in the garden.',[
+ ['@庭 で @土 に B1@埋まる~埋まっていた~うまっていた @古い B1@瓶 を @見つける~見つけました~みつけました','I found an old bottle buried in the garden soil.'],
+ ['B1@瓶 を @取る~取って~とって @穴 を B1@埋める~埋めました~うめました','I took out the bottle and filled the hole.'],
+ ['B1@瓶 を @よく @洗う~洗って~あらって @中 に @水 を @入れる~入れました~いれました','I washed the bottle well and put water in it.'],
+ ['@庭 の B1@真っ赤 な @花 を B1@瓶 に B1@挿す~挿しました~さしました','I put bright red flowers from the garden in the bottle.'],
+ ['@机 に B1@磁器 の @コップ を @二つ @並べる~並べました~ならべました','I set out two porcelain cups on the table.'],
+ ['@一つ の @コップ の B1@縁 に @傷 が @ある~あった~あった から @別 の @コップ に @取り替える~取り替えました~とりかえました','One cup had a scratch on its rim, so I replaced it with another.'],
+ ['@最後 に @コップ に @お茶 を B1@つぐ~つぎました~つぎました','Finally, I poured tea into the cups.'],
+]);
+}

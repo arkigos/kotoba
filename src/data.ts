@@ -2,6 +2,7 @@ import courseLevelsJson from "../data/jp/curriculum/course_levels.json";
 import unitIndexJson from "../data/jp/curriculum/unit_index.json";
 import unit001Json from "../data/jp/curriculum/units/unit_001.json";
 import type { CourseLevels, CurriculumUnit, UnitIndex } from "./types";
+import { hydrateUnitWords } from "../packages/dictionary";
 
 type UnitModule = { default: CurriculumUnit };
 
@@ -9,12 +10,12 @@ const unitModules = import.meta.glob<UnitModule>([
   "../data/jp/curriculum/units/unit_*.json",
   "!../data/jp/curriculum/units/unit_001.json",
 ]);
-const unitCache = new Map<number, CurriculumUnit>([[1, unit001Json as CurriculumUnit]]);
+const unitCache = new Map<number, CurriculumUnit>([[1, hydrateUnitWords(unit001Json as CurriculumUnit)]]);
 const transientImportErrorPattern = /Failed to fetch dynamically imported module|Importing a module script failed|error loading dynamically imported module/i;
 
 export const courseLevels = courseLevelsJson as CourseLevels;
 export const unitIndex = unitIndexJson as UnitIndex;
-export const initialUnit = unit001Json as CurriculumUnit;
+export const initialUnit = unitCache.get(1)!;
 
 function padUnitId(unitId: number) {
   return String(unitId).padStart(3, "0");
@@ -57,6 +58,7 @@ export async function getUnit(unitId: number): Promise<CurriculumUnit> {
   }
 
   const module = await loadUnitModule(loadModule);
-  unitCache.set(unitId, module.default);
-  return module.default;
+  const unit = hydrateUnitWords(module.default);
+  unitCache.set(unitId, unit);
+  return unit;
 }

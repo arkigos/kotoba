@@ -1,5 +1,7 @@
 # Acceptance Tests
 
+Current primary acceptance is the [curated course contract](decisions/2026-09-26-curated-topic-course.md) and [Quality](QUALITY.md). The frozen-unit expectations below remain compatibility checks. New main-path lessons must pass `npm run validate:curated` and `npm run next:test`.
+
 This file defines the checks Codex implements and runs after building the
 greenfield Kotoba app.
 
@@ -24,7 +26,7 @@ npm run validate:curriculum
 - A unit file is invalid JSON.
 - Unit ids are duplicated or out of order.
 - A standard unit lacks a grammar focus.
-- A standard unit has fewer than 10 SRS words, or has more than 12 without a documented lexical-grammar reason.
+- A standard unit has fewer than 10 SRS words, or exceeds the word-count allowance documented in `docs/DATA_CONTRACTS.md`.
 - A new word duplicates a word introduced in any earlier unit.
 - A card has missing required fields.
 - A card's `line`, `tts`, and `explain` arrays have different lengths.
@@ -69,7 +71,7 @@ but review-due words must return.
 For each standard unit, tests or validators confirm:
 
 - exactly one grammar focus is declared
-- about 10 core new words are declared, with extra SRS entries only for lexical grammar words introduced by the unit
+- about 10 core new words are declared, with documented exceptions for lexical grammar words or generated Marugoto Starter supplemental units
 - new words have surface form, reading, meaning, and function/category
 - the new word set follows the functional-spread rules in `word_selection_rules.md`
 - the grammar focus appears after the unit has already introduced new words with older grammar
@@ -87,9 +89,17 @@ Automated component or logic tests cover:
 - selecting first card by default
 - next card navigation
 - previous card navigation
-- random card navigation
+- random-order card navigation
 - reveal/hide English
 - show/hide Japanese text
+- complete authored unit order is preserved rather than sampled into a quiz
+- an interrupted unit resumes at the exact saved card
+- Reading, Listening, Recall, and Rapid are presentation modes over one deck
+- Japanese display switches between surface, kana, and romaji
+- lesson settings are accessible directly inside the player and persist
+- audio autoplay can be disabled independently of the selected preset
+- audio language supports Japanese, English, same-as-card, and opposite-card
+- auto advance has independent on/off, sequential/random, and delay controls
 - aligned tooltip/explanation display
 - missing audio fallback
 - local progress read/write
@@ -107,13 +117,16 @@ Automated component or logic tests cover:
 7. Random navigation changes or intentionally reselects a card without crashing.
 8. Missing audio does not break replay.
 9. Progress persists after reload.
+10. A Course unit exposes its complete authored card count and order.
+11. No typed-Japanese or generated multiple-choice gate blocks card navigation.
 
-The e2e test fails on blank screens, uncaught runtime errors, overlapping
-critical controls, or cards with missing required text.
+The e2e test fails on blank screens, uncaught runtime errors, broken core
+navigation, or cards with missing required text.
 
 ## Visual/UX Acceptance
 
-The implementation is checked at desktop and mobile widths.
+The implementation should be checked at desktop and mobile widths after layout
+or interaction changes.
 
 Codex verifies:
 
@@ -124,8 +137,9 @@ Codex verifies:
 - The app remains text-first with no image panel or image controls.
 - The primary screen is the practice tool, not a marketing page.
 
-Automated screenshot testing is part of the e2e suite. Manual viewport checks
-are documented in the final response when screenshot testing is unavailable.
+The current automated e2e suite is jsdom-based interaction coverage. Manual or
+browser screenshot checks should be documented in the final response when visual
+layout changes are made.
 
 ## Build Acceptance
 

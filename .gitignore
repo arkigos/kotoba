@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+**/node_modules/
 /.pnp
 .pnp.js
 
@@ -10,6 +11,7 @@
 
 # production
 /build
+**/dist/
 
 # misc
 .DS_Store
@@ -23,5 +25,17 @@ yarn-debug.log*
 yarn-error.log*
 .vite-dev*.log
 .vite-lan*.log
+.codex-vite*.log
 /dist
 *.tsbuildinfo
+
+# generated curriculum review packets
+/docs/reviews/
+/data/jp/dictionary/.audio-generation.lock
+/data/jp/dictionary/*.json.tmp
+/.cache/
+/.codex-*
+__pycache__/
+
+# Local paid-generation receipts (not runtime assets)
+/data/jp/dictionary/audio_requests.json

@@ -79,28 +79,12 @@ const KATAKANA_YOON = [
   ["rya", "\u30ea\u30e3"], ["ryu", "\u30ea\u30e5"], ["ryo", "\u30ea\u30e7"],
 ];
 
-const kanji = [
-  ["hito", "\u4eba", "\u3072\u3068", "person"],
-  ["hi", "\u65e5", "\u3072", "sun; day"],
-  ["tsuki", "\u6708", "\u3064\u304d", "moon; month"],
-  ["hi_fire", "\u706b", "\u3072", "fire"],
-  ["mizu", "\u6c34", "\u307f\u305a", "water"],
-  ["ki", "\u6728", "\u304d", "tree"],
-  ["kane", "\u91d1", "\u304b\u306d", "gold; money"],
-  ["tsuchi", "\u571f", "\u3064\u3061", "earth; soil"],
-  ["yama", "\u5c71", "\u3084\u307e", "mountain"],
-  ["kawa", "\u5ddd", "\u304b\u308f", "river"],
-  ["ta", "\u7530", "\u305f", "rice field"],
-  ["kuchi", "\u53e3", "\u304f\u3061", "mouth"],
-  ["me", "\u76ee", "\u3081", "eye"],
-  ["mimi", "\u8033", "\u307f\u307f", "ear"],
-  ["te", "\u624b", "\u3066", "hand"],
-  ["ashi", "\u8db3", "\u3042\u3057", "foot; leg"],
-  ["ookii", "\u5927", "\u304a\u304a", "big"],
-  ["chiisai", "\u5c0f", "\u3057\u3087\u3046", "small"],
-  ["naka", "\u4e2d", "\u306a\u304b", "middle; inside"],
-  ["ue", "\u4e0a", "\u3046\u3048", "up; above"],
-];
+const coreKanji = await readJson("data/jp/kanji/core_kanji.json");
+// Existing learners and recordings refer to these first twenty positions.
+// Append new symbols without renumbering or reordering the original cards.
+const originalKanjiIds = ["hito", "hi", "tsuki", "hi_fire", "mizu", "ki", "kane", "tsuchi", "yama", "kawa", "ta", "kuchi", "me", "mimi", "te", "ashi", "ookii", "chiisai", "naka", "ue"].map(id => `kanji_${id}`);
+const kanji = [...originalKanjiIds.map(id => coreKanji.entries.find(entry => entry.id === id)), ...coreKanji.entries.filter(entry => !originalKanjiIds.includes(entry.id))]
+  .map(entry => [entry.id.replace(/^kanji_/, ""), entry.character, entry.reading, entry.meaning]);
 
 const preludeLevel = {
   code: "Kana",
@@ -245,6 +229,9 @@ function sourceEntry(spec) {
 }
 
 async function main() {
+  const requestedUnit = process.argv.includes("--unit") ? Number(process.argv[process.argv.indexOf("--unit") + 1]) : undefined;
+  const selectedSpecs = requestedUnit === undefined ? preludeSpecs : preludeSpecs.filter(spec => spec.id === requestedUnit);
+  if (!selectedSpecs.length) throw new Error("Use --unit 101, 102, or 103.");
   const courseLevels = await readJson("data/jp/curriculum/course_levels.json");
   courseLevels.levels = [preludeLevel, ...courseLevels.levels.filter((level) => level.code !== preludeLevel.code)];
   for (const level of courseLevels.levels) {
@@ -255,15 +242,15 @@ async function main() {
   await writeJson("data/jp/curriculum/course_levels.json", courseLevels);
 
   const unitIndex = await readJson("data/jp/curriculum/unit_index.json");
-  const preludeIds = new Set(preludeSpecs.map((spec) => spec.id));
-  unitIndex.units = [...unitIndex.units.filter((entry) => !preludeIds.has(entry.id)), ...preludeSpecs.map(indexEntry)].sort((a, b) => a.id - b.id);
+  const preludeIds = new Set(selectedSpecs.map((spec) => spec.id));
+  unitIndex.units = [...unitIndex.units.filter((entry) => !preludeIds.has(entry.id)), ...selectedSpecs.map(indexEntry)].sort((a, b) => a.id - b.id);
   await writeJson("data/jp/curriculum/unit_index.json", unitIndex);
 
   const unitSpecs = await readJson("data/jp/curriculum/source/unit_specs.json");
-  unitSpecs.units = [...unitSpecs.units.filter((entry) => !preludeIds.has(entry.id)), ...preludeSpecs.map(sourceEntry)].sort((a, b) => a.id - b.id);
+  unitSpecs.units = [...unitSpecs.units.filter((entry) => !preludeIds.has(entry.id)), ...selectedSpecs.map(sourceEntry)].sort((a, b) => a.id - b.id);
   await writeJson("data/jp/curriculum/source/unit_specs.json", unitSpecs);
 
-  for (const spec of preludeSpecs) {
+  for (const spec of selectedSpecs) {
     const unit = {
       id: spec.id,
       slug: spec.slug,
@@ -280,4 +267,4 @@ async function main() {
 }
 
 await main();
-console.log("Authored Kana prelude units 101-103.");
+console.log(process.argv.includes("--unit") ? `Authored prelude unit ${process.argv[process.argv.indexOf("--unit") + 1]}.` : "Authored Kana prelude units 101-103.");

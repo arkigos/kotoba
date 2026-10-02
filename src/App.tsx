@@ -3,35 +3,32 @@ import type { CSSProperties } from "react";
 import {
   BookOpen,
   CheckCircle2,
-  ChevronDown,
   ChevronLeft,
   ChevronRight,
   CircleMinus,
   Eye,
-  EyeOff,
+  Layers3,
   List,
   RotateCcw,
   Settings,
-  Shuffle,
   Sparkles,
   Volume2,
+  X,
 } from "lucide-react";
 import functionWordsJson from "../data/jp/curriculum/function_words.json";
-import grammarTokensJson from "../data/jp/curriculum/grammar_tokens.json";
-import unitSpecsJson from "../data/jp/curriculum/source/unit_specs.json";
+import { courseDictionaryWords, dictionaryWord } from "../packages/dictionary";
+import { recordingForToken, speechForToken } from "../packages/dictionary/audio";
 import { courseLevels, getUnit, initialUnit, unitIndex } from "./data";
 import { toRomaji } from "./japanese";
 import { defaultProgress, readProgress, writeProgress } from "./progress";
-import type { CardToken, CourseLevel, FunctionWordEntry, GrammarTokenEntry, JapaneseDisplayMode, PracticeCard, PracticeSettings, Progress, UnitIndexEntry, WordEntry } from "./types";
+import type { CardToken, CourseLevel, FunctionWordEntry, JapaneseDisplayMode, PracticeCard, PracticeSettings, Progress, PromptDisplay, UnitIndexEntry, WordEntry } from "./types";
 
 const studyPresets: Array<{ id: string; label: string; settings: Partial<PracticeSettings> }> = [
   {
     id: "reading",
     label: "Reading",
     settings: {
-      showPromptText: true,
-      cardFront: "japanese",
-      revealByDefault: false,
+      defaultDisplay: "japanese",
       autoPlayAudio: true,
       audioLanguage: "japanese",
       autoAdvance: false,
@@ -41,9 +38,7 @@ const studyPresets: Array<{ id: string; label: string; settings: Partial<Practic
     id: "listening",
     label: "Listening",
     settings: {
-      showPromptText: false,
-      cardFront: "japanese",
-      revealByDefault: false,
+      defaultDisplay: "hidden",
       autoPlayAudio: true,
       audioLanguage: "japanese",
       autoAdvance: false,
@@ -53,9 +48,7 @@ const studyPresets: Array<{ id: string; label: string; settings: Partial<Practic
     id: "recall",
     label: "Recall",
     settings: {
-      showPromptText: true,
-      cardFront: "english",
-      revealByDefault: false,
+      defaultDisplay: "english",
       autoPlayAudio: false,
       audioLanguage: "japanese",
       autoAdvance: false,
@@ -65,9 +58,7 @@ const studyPresets: Array<{ id: string; label: string; settings: Partial<Practic
     id: "rapid",
     label: "Rapid",
     settings: {
-      showPromptText: true,
-      cardFront: "japanese",
-      revealByDefault: false,
+      defaultDisplay: "japanese",
       autoPlayAudio: true,
       audioLanguage: "japanese",
       autoAdvance: true,
@@ -77,21 +68,42 @@ const studyPresets: Array<{ id: string; label: string; settings: Partial<Practic
   },
 ];
 
-type VocabularyTab = "new" | "review" | "known" | "function" | "grammar";
-type SourceUnitSpec = { id: number; newWords: WordEntry[] };
-const unitSpecs = unitSpecsJson as { units: SourceUnitSpec[] };
-const functionWords = functionWordsJson as FunctionWordEntry[];
-const grammarTokens = grammarTokensJson as GrammarTokenEntry[];
-const sourceWordsById = new Map(unitSpecs.units.flatMap((spec) => spec.newWords.map((word) => [word.id, word])));
+const promptDisplayOptions: Array<{ value: PromptDisplay; label: string }> = [
+  { value: "japanese", label: "Japanese" },
+  { value: "english", label: "English" },
+  { value: "hidden", label: "Hidden" },
+];
+
+const japaneseDisplayOptions: Array<{ value: JapaneseDisplayMode; label: string }> = [
+  { value: "surface", label: "Kanji/kana" },
+  { value: "kana", label: "Hiragana" },
+  { value: "romaji", label: "Romaji" },
+];
+
+const audioLanguageOptions: Array<{ value: PracticeSettings["audioLanguage"]; label: string }> = [
+  { value: "japanese", label: "Japanese" },
+  { value: "english", label: "English" },
+  { value: "same", label: "Same" },
+  { value: "opposite", label: "Opposite" },
+];
+
+const autoAdvanceOrderOptions: Array<{ value: PracticeSettings["autoAdvanceOrder"]; label: string }> = [
+  { value: "sequential", label: "Sequential" },
+  { value: "random", label: "Random" },
+];
+
+type VocabularyTab = "dictionary" | "new" | "review" | "known" | "function";
+const functionWords = (functionWordsJson as FunctionWordEntry[]).map(word => dictionaryWord(word.id) ?? word);
+const sourceWordsById = new Map<string, WordEntry>(courseDictionaryWords().map(word => [word.id, word]));
 const functionWordsByToken = new Map(functionWords.map((word) => [`${word.surface}|${word.reading}`, word]));
-const grammarTokensByToken = new Map(grammarTokens.map((word) => [`${word.surface}|${word.reading}`, word]));
+const functionWordTypes = new Set(["particle", "sentence ending"]);
 
 const vocabularyTabs: Array<{ id: VocabularyTab; label: string }> = [
+  { id: "dictionary", label: "Dictionary" },
   { id: "new", label: "New" },
   { id: "review", label: "Review" },
   { id: "known", label: "Known" },
   { id: "function", label: "Function" },
-  { id: "grammar", label: "Grammar" },
 ];
 
 function clampCardIndex(index: number, cards: PracticeCard[]) {
@@ -108,6 +120,15 @@ function nextJapaneseDisplayMode(mode: JapaneseDisplayMode): JapaneseDisplayMode
   if (mode === "surface") return "kana";
   if (mode === "kana") return "romaji";
   return "surface";
+}
+
+function nextOption<T>(options: Array<{ value: T }>, currentValue: T) {
+  const currentIndex = options.findIndex((option) => option.value === currentValue);
+  return options[(currentIndex + 1) % options.length].value;
+}
+
+function optionLabel<T>(options: Array<{ value: T; label: string }>, currentValue: T) {
+  return options.find((option) => option.value === currentValue)?.label ?? String(currentValue);
 }
 
 function displayedPart(card: PracticeCard, index: number, mode: JapaneseDisplayMode) {
@@ -163,15 +184,30 @@ function mediaUrl(path: string) {
   return `${import.meta.env.BASE_URL}${normalizedPath}`;
 }
 
-function knownWordsForUnit(unitId: number) {
-  if (unitId >= 100) {
-    return unitSpecs.units.find((spec) => spec.id === unitId)?.newWords ?? [];
+function lexicalWordsUsedInUnit(unit: { cards: PracticeCard[] }) {
+  const words = new Map<string, WordEntry>();
+  for (const card of unit.cards) {
+    for (const token of card.tokens ?? []) {
+      if (!token.wordId) continue;
+      const word = sourceWordsById.get(token.wordId);
+      if (word) words.set(word.id, word);
+    }
   }
-  return unitSpecs.units.filter((spec) => spec.id >= 1 && spec.id <= unitId && spec.id < 100).flatMap((spec) => spec.newWords);
+  return [...words.values()];
+}
+
+function knownWordsForUnit(unit: { newWords: WordEntry[]; reviewWordIds: string[]; cards: PracticeCard[] }) {
+  const currentIds = new Set(unit.newWords.map((word) => word.id));
+  const reviewIds = new Set(unit.reviewWordIds);
+  return lexicalWordsUsedInUnit(unit).filter((word) => !currentIds.has(word.id) && !reviewIds.has(word.id));
 }
 
 function reviewWordsForUnit(unit: { reviewWordIds: string[] }) {
   return unit.reviewWordIds.map((wordId) => sourceWordsById.get(wordId)).filter((word): word is WordEntry => Boolean(word));
+}
+
+function uniqueWords(words: WordEntry[]) {
+  return words.filter((word, index) => words.findIndex((candidate) => candidate.id === word.id) === index);
 }
 
 function functionWordsForUnit(unit: { cards: PracticeCard[] }) {
@@ -180,19 +216,7 @@ function functionWordsForUnit(unit: { cards: PracticeCard[] }) {
     for (const token of card.tokens ?? []) {
       if (token.wordId) continue;
       const functionWord = functionWordsByToken.get(`${token.surface}|${token.reading}`);
-      if (functionWord) words.set(functionWord.id, functionWord);
-    }
-  }
-  return [...words.values()];
-}
-
-function grammarTokensForUnit(unit: { cards: PracticeCard[] }) {
-  const words = new Map<string, GrammarTokenEntry>();
-  for (const card of unit.cards) {
-    for (const token of card.tokens ?? []) {
-      if (token.wordId) continue;
-      const grammarToken = grammarTokensByToken.get(`${token.surface}|${token.reading}`);
-      if (grammarToken) words.set(grammarToken.id, grammarToken);
+      if (functionWord && functionWordTypes.has(functionWord.function)) words.set(functionWord.id, functionWord);
     }
   }
   return [...words.values()];
@@ -200,89 +224,45 @@ function grammarTokensForUnit(unit: { cards: PracticeCard[] }) {
 
 function VocabularyPanel({
   unitId,
+  dictionaryWords,
   newWords,
   reviewWords,
   knownWords,
   functionWords,
-  grammarTokens,
 }: {
   unitId: number;
+  dictionaryWords: WordEntry[];
   newWords: WordEntry[];
   reviewWords: WordEntry[];
   knownWords: WordEntry[];
   functionWords: FunctionWordEntry[];
-  grammarTokens: GrammarTokenEntry[];
 }) {
-  const [activeTab, setActiveTab] = useState<VocabularyTab>("new");
-  const [showTranslations, setShowTranslations] = useState(false);
-  const [revealedWordIds, setRevealedWordIds] = useState<Set<string>>(() => new Set());
-  const [drillActive, setDrillActive] = useState(false);
-  const [drillIndex, setDrillIndex] = useState(0);
-  const [drillRevealed, setDrillRevealed] = useState(false);
-  const drillWords = useMemo(() => {
-    const words = [...newWords, ...reviewWords];
-    return words.filter((word, index) => words.findIndex((candidate) => candidate.id === word.id) === index);
-  }, [newWords, reviewWords]);
-  const drillWord = drillWords[drillIndex] ?? drillWords[0];
+  const [activeTab, setActiveTab] = useState<VocabularyTab>("dictionary");
+  const [selectedWord, setSelectedWord] = useState<WordEntry | null>(null);
   const wordsByTab = {
+    dictionary: dictionaryWords,
     new: newWords,
     review: reviewWords,
     known: knownWords,
     function: functionWords,
-    grammar: grammarTokens,
   };
   const activeWords = wordsByTab[activeTab];
 
   useEffect(() => {
-    setActiveTab("new");
-    setShowTranslations(false);
-    setRevealedWordIds(new Set());
-    setDrillActive(false);
-    setDrillIndex(0);
-    setDrillRevealed(false);
+    setActiveTab("dictionary");
+    setSelectedWord(null);
   }, [unitId]);
-
-  useEffect(() => {
-    if (drillIndex >= drillWords.length) {
-      setDrillIndex(0);
-      setDrillRevealed(false);
-    }
-  }, [drillIndex, drillWords.length]);
-
-  const toggleWord = (wordId: string) => {
-    setRevealedWordIds((current) => {
-      const next = new Set(current);
-      if (next.has(wordId)) next.delete(wordId);
-      else next.add(wordId);
-      return next;
-    });
-  };
-
-  const startDrill = () => {
-    setDrillActive(true);
-    setDrillIndex(0);
-    setDrillRevealed(false);
-  };
-
-  const moveDrill = (step: number) => {
-    if (drillWords.length === 0) return;
-    setDrillIndex((current) => (current + step + drillWords.length) % drillWords.length);
-    setDrillRevealed(false);
-  };
 
   return (
     <section className="vocabulary-panel" aria-label="Unit vocabulary">
       <div className="vocabulary-topline">
         <div>
           <p className="eyebrow">Vocabulary</p>
-          <strong>{newWords.length} new words</strong>
+          <strong>{dictionaryWords.length} unit dictionary entries</strong>
           <span>
-            {reviewWords.length} scheduled review · {functionWords.length} function · {grammarTokens.length} grammar · {knownWords.length} known total
+            {newWords.length} new / {reviewWords.length} review / {knownWords.length} known here / {functionWords.length} function
           </span>
         </div>
-        <button type="button" className="translation-toggle" onClick={() => setShowTranslations((visible) => !visible)}>
-          {showTranslations ? "Hide translations" : "Show translations"}
-        </button>
       </div>
 
       <div className="vocabulary-tabs" role="tablist" aria-label="Vocabulary groups">
@@ -300,65 +280,42 @@ function VocabularyPanel({
         ))}
       </div>
 
-      {drillWords.length > 0 && (
-        <div className="vocabulary-drill" aria-label="Vocabulary drill">
-          {!drillActive || !drillWord ? (
-            <button type="button" className="drill-start" onClick={startDrill}>
-              Drill new + review
-              <span>{drillWords.length} words</span>
-            </button>
-          ) : (
-            <>
-              <div className="drill-card">
-                <span>
-                  Word {drillIndex + 1} / {drillWords.length}
-                </span>
-                <strong>{drillWord.surface}</strong>
-                <small>{drillWord.reading}</small>
-                {drillRevealed ? <em>{drillWord.meaning}</em> : <em className="drill-hidden">English hidden</em>}
-              </div>
-              <div className="drill-controls">
-                <button type="button" onClick={() => moveDrill(-1)}>
-                  Previous
-                </button>
-                <button type="button" onClick={() => setDrillRevealed((revealed) => !revealed)}>
-                  {drillRevealed ? "Hide English" : "Show English"}
-                </button>
-                <button type="button" onClick={() => moveDrill(1)}>
-                  Next
-                </button>
-                <button type="button" onClick={() => setDrillActive(false)}>
-                  Close
-                </button>
-              </div>
-            </>
-          )}
-        </div>
-      )}
-
       {activeWords.length > 0 ? (
         <div className="word-grid">
-          {activeWords.map((word) => {
-            const isRevealed = showTranslations || revealedWordIds.has(word.id);
-            return (
-              <button
-                key={`${activeTab}-${word.id}`}
-                type="button"
-                className="word-tile"
-                onClick={() => toggleWord(word.id)}
-                aria-expanded={isRevealed}
-                aria-label={`${isRevealed ? "Hide" : "Reveal"} translation for ${word.surface}`}
-              >
-                <span className="word-surface">{word.surface}</span>
-                <span className="word-reading">{word.reading}</span>
-                <span className="word-function">{word.function}</span>
-                {isRevealed ? <strong>{word.meaning}</strong> : <em>Tap for English</em>}
-              </button>
-            );
-          })}
+          {activeWords.map((word) => (
+            <button
+              key={`${activeTab}-${word.id}`}
+              type="button"
+              className="word-tile"
+              onClick={() => setSelectedWord(word)}
+              aria-label={`Open ${word.surface}`}
+            >
+              <span className="word-surface">{word.surface}</span>
+              <span className="word-reading">{word.reading}</span>
+              <span className="word-function">{word.function}</span>
+              <strong>{word.meaning}</strong>
+            </button>
+          ))}
         </div>
       ) : (
-        <p className="empty-vocabulary">No scheduled review words for this unit.</p>
+        <p className="empty-vocabulary">No words in this group yet.</p>
+      )}
+
+      {selectedWord && (
+        <div className="word-modal-backdrop" role="presentation" onClick={() => setSelectedWord(null)}>
+          <article
+            className="word-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-label={`${selectedWord.surface} dictionary entry`}
+            onClick={(event) => event.stopPropagation()}
+          >
+            <span className="word-surface">{selectedWord.surface}</span>
+            <span className="word-reading">{selectedWord.reading}</span>
+            <span className="word-function">{selectedWord.function}</span>
+            <strong>{selectedWord.meaning}</strong>
+          </article>
+        </div>
       )}
     </section>
   );
@@ -412,8 +369,9 @@ export function App() {
   const [unit, setUnit] = useState(initialUnit);
   const [loadingUnitId, setLoadingUnitId] = useState<number | null>(null);
   const [unitLoadError, setUnitLoadError] = useState("");
-  const [expandedLevels, setExpandedLevels] = useState<Record<string, boolean>>(() => ({ Kana: true, A1: true }));
-  const [showBack, setShowBack] = useState(() => progress.settings.revealByDefault);
+  const [unitMapOpen, setUnitMapOpen] = useState(false);
+  const [activeBrowseLevel, setActiveBrowseLevel] = useState("A1");
+  const [currentDisplay, setCurrentDisplay] = useState<PromptDisplay>(() => progress.settings.defaultDisplay);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [vocabularyOpen, setVocabularyOpen] = useState(false);
   const [message, setMessage] = useState("");
@@ -422,6 +380,7 @@ export function App() {
 
   const levelGroups = useMemo(groupedUnitsByLevel, []);
   const currentLevel = levelForUnit(progress.unitId);
+  const activeBrowseGroup = levelGroups.find(({ level }) => level.code === activeBrowseLevel) ?? levelGroups.find(({ level }) => level.code === currentLevel?.code) ?? levelGroups[0];
   const cardIndex = clampCardIndex(progress.cardIndex, unit.cards);
   const card = unit.cards[cardIndex];
   const settings = progress.settings;
@@ -429,9 +388,9 @@ export function App() {
   const progressPercent = unit.cards.length > 0 ? Math.round(((cardIndex + 1) / unit.cards.length) * 100) : 0;
   const progressColor = progressColorForPercent(progressPercent);
   const reviewWords = useMemo(() => reviewWordsForUnit(unit), [unit.id, unit.reviewWordIds]);
-  const knownWords = useMemo(() => knownWordsForUnit(unit.id), [unit.id]);
+  const knownWords = useMemo(() => knownWordsForUnit(unit), [unit.id, unit.cards, unit.newWords, unit.reviewWordIds]);
+  const dictionaryWords = useMemo(() => uniqueWords([...unit.newWords, ...reviewWords, ...knownWords]), [knownWords, reviewWords, unit.newWords]);
   const activeFunctionWords = useMemo(() => functionWordsForUnit(unit), [unit.id, unit.cards]);
-  const activeGrammarTokens = useMemo(() => grammarTokensForUnit(unit), [unit.id, unit.cards]);
 
   useEffect(() => {
     if (unit.id === progress.unitId) {
@@ -470,11 +429,6 @@ export function App() {
   }, [progress.unitId, unit.id]);
 
   useEffect(() => {
-    if (!currentLevel) return;
-    setExpandedLevels((current) => ({ ...current, [currentLevel.code]: true }));
-  }, [currentLevel?.code]);
-
-  useEffect(() => {
     if (unit.id !== progress.unitId) return;
     const nextProgress = {
       ...progress,
@@ -485,6 +439,11 @@ export function App() {
     writeProgress(nextProgress);
   }, [cardIndex, progress, unit.id]);
 
+  useEffect(() => {
+    if (!currentLevel || unitMapOpen) return;
+    setActiveBrowseLevel(currentLevel.code);
+  }, [currentLevel?.code, unitMapOpen]);
+
   const updateProgress = useCallback((patch: Partial<Progress>) => {
     setProgress((current) => ({ ...current, ...patch }));
   }, []);
@@ -493,10 +452,22 @@ export function App() {
     setProgress((current) => ({ ...current, settings: { ...current.settings, ...patch } }));
   }, []);
 
+  const updateDefaultDisplay = useCallback(
+    (defaultDisplay: PromptDisplay) => {
+      updateSettings({ defaultDisplay });
+      setCurrentDisplay(defaultDisplay);
+    },
+    [updateSettings]
+  );
+
+  const toggleDisplayLanguage = useCallback(() => {
+    setCurrentDisplay((display) => (display === "japanese" ? "english" : "japanese"));
+  }, []);
+
   const applyStudyPreset = useCallback(
     (preset: (typeof studyPresets)[number]) => {
       updateSettings(preset.settings);
-      setShowBack(Boolean(preset.settings.revealByDefault));
+      setCurrentDisplay(preset.settings.defaultDisplay ?? "japanese");
       setMessage(`${preset.label} mode`);
     },
     [updateSettings]
@@ -511,9 +482,9 @@ export function App() {
         cardPositions: { ...current.cardPositions, [String(unit.id)]: clampedIndex },
         cardCounts: { ...current.cardCounts, [String(unit.id)]: unit.cards.length },
       }));
-      setShowBack(settings.revealByDefault);
+      setCurrentDisplay(settings.defaultDisplay);
     },
-    [settings.revealByDefault, unit.cards, unit.id]
+    [settings.defaultDisplay, unit.cards, unit.id]
   );
 
   const randomCard = useCallback(() => {
@@ -534,13 +505,9 @@ export function App() {
       goToCard(cardIndex + 1);
       return true;
     }
-    if (settings.autoAdvanceLoop && unit.cards.length > 0) {
-      goToCard(0);
-      return true;
-    }
     setMessage("End of unit");
     return false;
-  }, [cardIndex, goToCard, randomCard, settings.autoAdvanceLoop, settings.autoAdvanceOrder, unit.cards.length]);
+  }, [cardIndex, goToCard, randomCard, settings.autoAdvanceOrder, unit.cards.length]);
 
   const previousCard = useCallback(() => {
     if (cardIndex > 0) goToCard(cardIndex - 1);
@@ -549,12 +516,10 @@ export function App() {
   const selectUnit = (unitId: number) => {
     const resumedIndex = progress.cardPositions[String(unitId)] ?? 0;
     updateProgress({ unitId, cardIndex: resumedIndex });
-    setShowBack(settings.revealByDefault);
+    setCurrentDisplay(settings.defaultDisplay);
+    setActiveBrowseLevel(levelForUnit(unitId)?.code ?? activeBrowseLevel);
+    setUnitMapOpen(false);
     setMessage(`Loading unit ${String(unitId).padStart(3, "0")}`);
-  };
-
-  const toggleLevel = (level: CourseLevel) => {
-    setExpandedLevels((current) => ({ ...current, [level.code]: !current[level.code] }));
   };
 
   const getUnitProgressPercent = (entry: UnitIndexEntry) => {
@@ -589,6 +554,7 @@ export function App() {
           } as CSSProperties
         }
         onClick={() => selectUnit(entry.id)}
+        type="button"
       >
         <span className="unit-number">{String(entry.id).padStart(3, "0")}</span>
         <strong>{entry.title}</strong>
@@ -601,6 +567,18 @@ export function App() {
         )}
       </button>
     );
+  };
+
+  const levelStats = (level: CourseLevel, units: UnitIndexEntry[]) => {
+    const completedInLevel = units.filter((entry) => progress.completedUnits.includes(entry.id)).length;
+    const levelTotal = units.length || level.unitEnd - level.unitStart + 1;
+    const levelProgressPercent = levelTotal > 0 ? Math.round((completedInLevel / levelTotal) * 100) : 0;
+    return { completedInLevel, levelTotal, levelProgressPercent };
+  };
+
+  const openUnitMap = (levelCode = currentLevel?.code ?? activeBrowseLevel) => {
+    setActiveBrowseLevel(levelCode);
+    setUnitMapOpen(true);
   };
 
   const restartUnit = () => {
@@ -683,33 +661,33 @@ export function App() {
 
   const playJapanesePart = useCallback(
     (part: CardToken, fallbackText: string) => {
-      if (part.audioRef && playAudioRef(part.audioRef)) return;
-      speakText(fallbackText, "ja-JP", "Japanese audio");
+      const recording = recordingForToken(part) ?? part.audioRef;
+      if (recording && playAudioRef(recording)) return;
+      speakText(speechForToken(part) || fallbackText, "ja-JP", "Japanese audio");
     },
     [playAudioRef, speakText]
   );
 
+  const resolvedAudioLanguage = useMemo(() => {
+    if (settings.audioLanguage === "same") {
+      return currentDisplay === "english" ? "english" : "japanese";
+    }
+
+    if (settings.audioLanguage === "opposite") {
+      return currentDisplay === "japanese" ? "english" : "japanese";
+    }
+
+    return settings.audioLanguage;
+  }, [currentDisplay, settings.audioLanguage]);
+
   const replayAudio = useCallback(() => {
-    if (settings.audioLanguage === "english") {
+    if (resolvedAudioLanguage === "english") {
       playEnglishAudio();
       return;
     }
 
-    if (settings.audioLanguage === "both") {
-      const runId = audioRunId.current + 1;
-      audioRunId.current = runId;
-      clearQueuedAudio();
-      window.speechSynthesis?.cancel();
-      speakText(card.line.join(""), "ja-JP", "Japanese audio", {
-        cancel: false,
-        runId,
-        afterEnd: () => speakText(card.english, "en-US", "English audio", { cancel: false, runId }),
-      });
-      return;
-    }
-
     playJapaneseAudio();
-  }, [card.english, card.line, clearQueuedAudio, playEnglishAudio, playJapaneseAudio, settings.audioLanguage, speakText]);
+  }, [playEnglishAudio, playJapaneseAudio, resolvedAudioLanguage]);
 
   useEffect(() => {
     if (settings.autoPlayAudio) replayAudio();
@@ -740,7 +718,7 @@ export function App() {
         previousCard();
       } else if (event.key === "1") {
         event.preventDefault();
-        setShowBack((visible) => !visible);
+        toggleDisplayLanguage();
       } else if (event.key === "2") {
         event.preventDefault();
         replayAudio();
@@ -748,38 +726,32 @@ export function App() {
         setSettingsOpen((open) => !open);
       } else if (event.key.toLowerCase() === "j") {
         updateSettings({ japaneseDisplay: nextJapaneseDisplayMode(settings.japaneseDisplay) });
+      } else if (event.key === "Escape") {
+        setUnitMapOpen(false);
       }
     };
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [nextCard, previousCard, replayAudio, settings.japaneseDisplay, updateSettings]);
+  }, [nextCard, previousCard, replayAudio, settings.japaneseDisplay, toggleDisplayLanguage, updateSettings]);
 
-  const primaryIsJapanese = settings.cardFront === "japanese";
-  const frontContent = !settings.showPromptText ? (
+  const cardContent = currentDisplay === "hidden" ? (
     <div className="prompt-placeholder" aria-label="Prompt text hidden">
       Listen and guess
     </div>
-  ) : primaryIsJapanese ? (
+  ) : currentDisplay === "japanese" ? (
     <JapaneseLine card={card} mode={settings.japaneseDisplay} onSpeakPart={playJapanesePart} />
   ) : (
     <p className="english-front">{card.english}</p>
   );
-  const backContent = primaryIsJapanese ? (
-    <p className="english-meaning">{card.english}</p>
-  ) : (
-    <JapaneseLine card={card} mode={settings.japaneseDisplay} onSpeakPart={playJapanesePart} />
-  );
-  const revealLabel = primaryIsJapanese
-    ? showBack
-      ? "Hide English"
-      : "Show English"
-    : showBack
-      ? "Hide Japanese"
-      : "Show Japanese";
+  const languageToggleLabel = currentDisplay === "japanese" ? "Show English" : "Show Japanese";
 
   return (
-    <main className="app-shell" data-theme={settings.theme}>
+    <main
+      className="app-shell"
+      data-theme={settings.theme}
+      style={{ "--app-background-image": `url("${mediaUrl("kotoba-background.png")}")` } as CSSProperties}
+    >
       <aside className="unit-rail" aria-label="Curriculum map">
         <div className="brand-lockup">
           <span className="brand-mark" aria-hidden="true">
@@ -793,58 +765,122 @@ export function App() {
         </div>
 
         <div className="rail-heading">
-          <List aria-hidden="true" />
-          <span>Levels</span>
+          <Layers3 aria-hidden="true" />
+          <span>Course</span>
         </div>
 
-        <div className="level-list">
-          {levelGroups.map(({ level, units }) => {
-            const isExpanded = Boolean(expandedLevels[level.code]);
-            const isCurrentLevel = currentLevel?.code === level.code;
-            const completedInLevel = units.filter((entry) => progress.completedUnits.includes(entry.id)).length;
-            const levelTotal = units.length || level.unitEnd - level.unitStart + 1;
-            const levelProgressPercent = levelTotal > 0 ? Math.round((completedInLevel / levelTotal) * 100) : 0;
-            return (
-              <section key={level.code} className="level-section">
-                <button
-                  type="button"
-                  className={isCurrentLevel ? "level-toggle active" : "level-toggle"}
-                  style={
-                    {
-                      "--level-progress": `${levelProgressPercent}%`,
-                      "--progress-color": progressColorForPercent(levelProgressPercent),
-                    } as CSSProperties
-                  }
-                  onClick={() => toggleLevel(level)}
-                  aria-expanded={isExpanded}
-                >
-                  {isExpanded ? <ChevronDown aria-hidden="true" /> : <ChevronRight aria-hidden="true" />}
-                  <span>
-                    <strong>{level.code}</strong>
-                    <small>{level.title}</small>
-                  </span>
-                  <em>
-                    {completedInLevel}/{levelTotal} complete
-                  </em>
-                </button>
+        <button type="button" className="current-unit-card" onClick={() => openUnitMap(currentLevel?.code)}>
+          <span className="eyebrow">Current unit</span>
+          <strong>{String(unit.id).padStart(3, "0")}</strong>
+          <span>{unit.title}</span>
+          <em>{progressPercent}% complete</em>
+        </button>
 
-                {isExpanded && (
-                  <div className="level-body">
-                    {units.length > 0 ? (
-                      units.map(renderUnitButton)
-                    ) : (
-                      <div className="planned-level">
-                        <strong>Planned</strong>
-                        <small>{level.canDoSummary}</small>
-                      </div>
-                    )}
-                  </div>
-                )}
-              </section>
+        <div className="level-summary-list">
+          {levelGroups.map(({ level, units }) => {
+            const isCurrentLevel = currentLevel?.code === level.code;
+            const { completedInLevel, levelTotal, levelProgressPercent } = levelStats(level, units);
+            return (
+              <button
+                key={level.code}
+                type="button"
+                className={isCurrentLevel ? "level-summary active" : "level-summary"}
+                style={
+                  {
+                    "--level-progress": `${levelProgressPercent}%`,
+                    "--progress-color": progressColorForPercent(levelProgressPercent),
+                  } as CSSProperties
+                }
+                onClick={() => openUnitMap(level.code)}
+              >
+                <strong>{level.code}</strong>
+                <span>{level.title}</span>
+                <em>
+                  {completedInLevel}/{levelTotal}
+                </em>
+              </button>
             );
           })}
         </div>
+
+        <button type="button" className="browse-units-button" onClick={() => openUnitMap()}>
+          <List aria-hidden="true" />
+          <span>Browse units</span>
+        </button>
       </aside>
+
+      {unitMapOpen && (
+        <div className="unit-map-backdrop" role="presentation" onClick={() => setUnitMapOpen(false)}>
+          <section
+            className="unit-map-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Choose unit"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <header className="unit-map-header">
+              <div>
+                <p className="eyebrow">Curriculum map</p>
+                <h2>Choose a unit</h2>
+              </div>
+              <button type="button" className="icon-button" title="Close unit browser" onClick={() => setUnitMapOpen(false)}>
+                <X aria-hidden="true" />
+                <span>Close</span>
+              </button>
+            </header>
+
+            <div className="level-tabs" role="tablist" aria-label="Course levels">
+              {levelGroups.map(({ level, units }) => {
+                const { completedInLevel, levelTotal, levelProgressPercent } = levelStats(level, units);
+                const selected = activeBrowseGroup?.level.code === level.code;
+                return (
+                  <button
+                    key={level.code}
+                    type="button"
+                    role="tab"
+                    aria-selected={selected}
+                    onClick={() => setActiveBrowseLevel(level.code)}
+                    style={
+                      {
+                        "--level-progress": `${levelProgressPercent}%`,
+                        "--progress-color": progressColorForPercent(levelProgressPercent),
+                      } as CSSProperties
+                    }
+                  >
+                    <strong>{level.code}</strong>
+                    <span>
+                      {completedInLevel}/{levelTotal}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+
+            {activeBrowseGroup && (
+              <div className="unit-map-content">
+                <div className="unit-map-intro">
+                  <div>
+                    <strong>{activeBrowseGroup.level.title}</strong>
+                    <span>{activeBrowseGroup.level.canDoSummary}</span>
+                  </div>
+                  <em>{activeBrowseGroup.units.length || `${activeBrowseGroup.level.unitStart}-${activeBrowseGroup.level.unitEnd}`} units</em>
+                </div>
+
+                {activeBrowseGroup.units.length > 0 ? (
+                  <div className="unit-grid" aria-label={`${activeBrowseGroup.level.code} units`}>
+                    {activeBrowseGroup.units.map(renderUnitButton)}
+                  </div>
+                ) : (
+                  <div className="planned-level large">
+                    <strong>Planned</strong>
+                    <small>{activeBrowseGroup.level.canDoSummary}</small>
+                  </div>
+                )}
+              </div>
+            )}
+          </section>
+        </div>
+      )}
 
       <section className="practice-panel" aria-label="Practice player">
         {unitLoadError && <div className="load-state error">{unitLoadError}</div>}
@@ -914,126 +950,129 @@ export function App() {
           {vocabularyOpen && (
             <VocabularyPanel
               unitId={unit.id}
+              dictionaryWords={dictionaryWords}
               newWords={unit.newWords}
               reviewWords={reviewWords}
               knownWords={knownWords}
               functionWords={activeFunctionWords}
-              grammarTokens={activeGrammarTokens}
             />
           )}
         </div>
 
         {settingsOpen && (
           <section className="settings-panel" aria-label="Practice settings">
-            <div className="mode-strip" aria-label="Study modes">
-              {studyPresets.map((preset) => (
-                <button key={preset.id} type="button" onClick={() => applyStudyPreset(preset)}>
-                  {preset.label}
-                </button>
-              ))}
+            <div className="settings-section settings-section-wide">
+              <h2>Modes</h2>
+              <div className="mode-strip" aria-label="Study modes">
+                {studyPresets.map((preset) => (
+                  <button key={preset.id} type="button" onClick={() => applyStudyPreset(preset)}>
+                    {preset.label}
+                  </button>
+                ))}
+              </div>
             </div>
-            <label>
-              <input
-                type="checkbox"
-                checked={settings.showPromptText}
-                onChange={(event) => updateSettings({ showPromptText: event.target.checked })}
-              />
-              Prompt text
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                checked={settings.revealByDefault}
-                onChange={(event) => {
-                  updateSettings({ revealByDefault: event.target.checked });
-                  setShowBack(event.target.checked);
-                }}
-              />
-              Start revealed
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                checked={settings.theme === "dark"}
-                onChange={(event) => updateSettings({ theme: event.target.checked ? "dark" : "light" })}
-              />
-              Dark mode
-            </label>
-            <label>
-              Front side
-              <select value={settings.cardFront} onChange={(event) => updateSettings({ cardFront: event.target.value as PracticeSettings["cardFront"] })}>
-                <option value="japanese">Japanese</option>
-                <option value="english">English</option>
-              </select>
-            </label>
-            <label>
-              Japanese display
-              <select
-                value={settings.japaneseDisplay}
-                onChange={(event) => updateSettings({ japaneseDisplay: event.target.value as JapaneseDisplayMode })}
+
+            <div className="settings-section">
+              <h2>Card</h2>
+              <button
+                className="setting-button"
+                type="button"
+                aria-label={`Default shown: ${optionLabel(promptDisplayOptions, settings.defaultDisplay)}`}
+                onClick={() => updateDefaultDisplay(nextOption(promptDisplayOptions, settings.defaultDisplay))}
               >
-                <option value="surface">Kanji/kana</option>
-                <option value="kana">Hiragana</option>
-                <option value="romaji">Romaji</option>
-              </select>
-            </label>
-            <label>
-              Audio
-              <select
-                value={settings.audioLanguage}
-                onChange={(event) => updateSettings({ audioLanguage: event.target.value as PracticeSettings["audioLanguage"] })}
+                {optionLabel(promptDisplayOptions, settings.defaultDisplay)}
+              </button>
+              <button
+                className="setting-button"
+                type="button"
+                aria-label={`Japanese display: ${optionLabel(japaneseDisplayOptions, settings.japaneseDisplay)}`}
+                onClick={() => updateSettings({ japaneseDisplay: nextOption(japaneseDisplayOptions, settings.japaneseDisplay) })}
               >
-                <option value="japanese">Japanese</option>
-                <option value="english">English</option>
-                <option value="both">Japanese + English</option>
-              </select>
-            </label>
-            <label>
-              <input type="checkbox" checked={settings.autoPlayAudio} onChange={(event) => updateSettings({ autoPlayAudio: event.target.checked })} />
-              Auto audio
-            </label>
-            <label>
-              <input type="checkbox" checked={settings.autoAdvance} onChange={(event) => updateSettings({ autoAdvance: event.target.checked })} />
-              Auto advance
-            </label>
-            <label>
-              Order
-              <select
-                value={settings.autoAdvanceOrder}
-                onChange={(event) => updateSettings({ autoAdvanceOrder: event.target.value as PracticeSettings["autoAdvanceOrder"] })}
+                {optionLabel(japaneseDisplayOptions, settings.japaneseDisplay)}
+              </button>
+            </div>
+
+            <div className="settings-section">
+              <h2>Audio</h2>
+              <button
+                className="setting-button"
+                type="button"
+                aria-label={`Audio: ${optionLabel(audioLanguageOptions, settings.audioLanguage)}`}
+                onClick={() => updateSettings({ audioLanguage: nextOption(audioLanguageOptions, settings.audioLanguage) })}
               >
-                <option value="sequential">Sequential</option>
-                <option value="random">Random</option>
-              </select>
-            </label>
-            <label>
-              <input type="checkbox" checked={settings.autoAdvanceLoop} onChange={(event) => updateSettings({ autoAdvanceLoop: event.target.checked })} />
-              Loop
-            </label>
-            <label>
-              Delay seconds
-              <input
-                type="number"
-                min="2"
-                max="30"
-                value={settings.autoAdvanceDelayMs / 1000}
-                onChange={(event) => updateSettings({ autoAdvanceDelayMs: Number(event.target.value) * 1000 })}
-              />
-            </label>
+                {optionLabel(audioLanguageOptions, settings.audioLanguage)}
+              </button>
+              <button
+                className={settings.autoPlayAudio ? "setting-button active" : "setting-button"}
+                type="button"
+                aria-pressed={settings.autoPlayAudio}
+                aria-label={`Auto audio ${settings.autoPlayAudio ? "on" : "off"}`}
+                onClick={() => updateSettings({ autoPlayAudio: !settings.autoPlayAudio })}
+              >
+                Auto
+              </button>
+            </div>
+
+            <div className="settings-section">
+              <h2>Flow</h2>
+              <button
+                className={settings.autoAdvance ? "setting-button active" : "setting-button"}
+                type="button"
+                aria-pressed={settings.autoAdvance}
+                aria-label={`Auto advance ${settings.autoAdvance ? "on" : "off"}`}
+                onClick={() => updateSettings({ autoAdvance: !settings.autoAdvance })}
+              >
+                Auto
+              </button>
+              <button
+                className="setting-button"
+                type="button"
+                aria-label={`Order: ${optionLabel(autoAdvanceOrderOptions, settings.autoAdvanceOrder)}`}
+                onClick={() => updateSettings({ autoAdvanceOrder: nextOption(autoAdvanceOrderOptions, settings.autoAdvanceOrder) })}
+              >
+                {optionLabel(autoAdvanceOrderOptions, settings.autoAdvanceOrder)}
+              </button>
+              <div className="setting-stepper" role="group" aria-label={`Delay: ${settings.autoAdvanceDelayMs / 1000} seconds`}>
+                <button
+                  type="button"
+                  aria-label="Decrease delay"
+                  onClick={() => updateSettings({ autoAdvanceDelayMs: Math.max(2000, settings.autoAdvanceDelayMs - 1000) })}
+                >
+                  -
+                </button>
+                <span>{settings.autoAdvanceDelayMs / 1000}s</span>
+                <button
+                  type="button"
+                  aria-label="Increase delay"
+                  onClick={() => updateSettings({ autoAdvanceDelayMs: Math.min(30000, settings.autoAdvanceDelayMs + 1000) })}
+                >
+                  +
+                </button>
+              </div>
+            </div>
+
+            <div className="settings-section">
+              <h2>Display</h2>
+              <button
+                className={settings.theme === "dark" ? "setting-button active" : "setting-button"}
+                type="button"
+                aria-pressed={settings.theme === "dark"}
+                aria-label={`Dark mode ${settings.theme === "dark" ? "on" : "off"}`}
+                onClick={() => updateSettings({ theme: settings.theme === "dark" ? "light" : "dark" })}
+              >
+                Dark
+              </button>
+            </div>
           </section>
         )}
 
         <article className="card-stage">
-          <div key={`front-${card.id}-${settings.cardFront}-${settings.japaneseDisplay}`} className="stage-slot front-slot" aria-label="Front card area">
-            {frontContent}
-          </div>
-
           <div
-            key={`back-${card.id}-${settings.cardFront}-${settings.japaneseDisplay}-${showBack ? "shown" : "hidden"}`}
-            className={`stage-slot back-slot ${showBack ? "is-revealed" : "is-hidden"}`}
-            aria-label="Reveal card area"
+            key={`card-${card.id}-${currentDisplay}-${settings.japaneseDisplay}`}
+            className={`stage-slot card-slot ${currentDisplay === "hidden" ? "is-hidden" : ""}`}
+            aria-label="Card display area"
           >
-            {showBack ? backContent : <span> </span>}
+            {cardContent}
           </div>
 
         </article>
@@ -1044,9 +1083,9 @@ export function App() {
             <span>Previous</span>
             <Keycap>Shift Space</Keycap>
           </button>
-          <button title={revealLabel} onClick={() => setShowBack((visible) => !visible)}>
-            {showBack ? <EyeOff aria-hidden="true" /> : <Eye aria-hidden="true" />}
-            <span>{revealLabel}</span>
+          <button title={languageToggleLabel} onClick={toggleDisplayLanguage}>
+            <Eye aria-hidden="true" />
+            <span>{languageToggleLabel}</span>
             <Keycap>1</Keycap>
           </button>
           <button title="Play audio" onClick={replayAudio}>
@@ -1054,14 +1093,10 @@ export function App() {
             <span>Play Audio</span>
             <Keycap>2</Keycap>
           </button>
-          <button title="Next card" onClick={nextCard} aria-disabled={cardIndex === unit.cards.length - 1 && !settings.autoAdvanceLoop}>
+          <button title="Next card" onClick={nextCard} aria-disabled={cardIndex === unit.cards.length - 1}>
             <ChevronRight aria-hidden="true" />
             <span>Next</span>
             <Keycap>Space</Keycap>
-          </button>
-          <button title="Random card" onClick={randomCard} disabled={unit.cards.length <= 1}>
-            <Shuffle aria-hidden="true" />
-            <span>Randomize</span>
           </button>
           <button title="Restart this unit" onClick={restartUnit}>
             <RotateCcw aria-hidden="true" />

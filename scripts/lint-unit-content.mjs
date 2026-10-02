@@ -44,6 +44,7 @@ const englishQuestionWithExtraSentencePattern = /\?\s+\S/;
 for (const entry of index.units) {
   const unit = await readJson(`data/jp/curriculum/units/unit_${String(entry.id).padStart(3, "0")}.json`);
   const seenEnglish = new Map();
+  const seenJapanese = new Map();
   let sterileCategoryCount = 0;
   let bareIdentityIntroCount = 0;
 
@@ -70,9 +71,17 @@ for (const entry of index.units) {
     }
     const count = seenEnglish.get(card.english) ?? 0;
     seenEnglish.set(card.english, count + 1);
+
+    const japaneseCount = seenJapanese.get(japaneseLine) ?? [];
+    seenJapanese.set(japaneseLine, [...japaneseCount, card.id]);
   }
   for (const [english, count] of seenEnglish) {
-    if (count > 2) warnings.push(`unit ${unit.id}: repeated English ${count} times: ${english}`);
+    if (count > 2) failures.push(`unit ${unit.id}: repeated English ${count} times: ${english}`);
+  }
+  for (const [japaneseLine, cardIds] of seenJapanese) {
+    if (cardIds.length > 1) {
+      failures.push(`unit ${unit.id}: duplicate Japanese line ${cardIds.length} times: ${japaneseLine} [${cardIds.join(", ")}]`);
+    }
   }
 
   if (sterileCategoryCount > 18) {

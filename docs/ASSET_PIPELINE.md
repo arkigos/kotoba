@@ -1,5 +1,84 @@
 # Asset Pipeline
 
+## Canonical dictionary audio
+
+New word audio is owned by dictionary entries and exact pronunciations, through
+`data/jp/dictionary/audio.json`; spelling and lesson aliases reuse the same file.
+The Next Library, dictionary, and both players' word controls use the shared
+resolver. Existing sentence audio and legacy clips remain available. See
+`docs/decisions/2026-09-12-canonical-dictionary.md` for identity and licensing.
+
+```sh
+npm run dictionary:audio-forms
+npm run dictionary:audio -- --sync
+npm run dictionary:audio -- --dry-run
+npm run dictionary:audio -- --dry-run --curated-only
+npm run dictionary:audio -- --status
+npm run dictionary:audio -- --generate --max-characters=6000 --max-requests=1200
+```
+
+`--sync` only adopts existing exact recordings; it never makes paid requests.
+The inventory includes exact tokens from the eight starters and every authored
+curated level, including inflections and grammar forms. `--curated-only` limits
+the plan to those actual course pronunciations, excluding unused legacy or
+procedural forms; use it for curated-course production. It works with dry-run,
+sync and capped generation. Completed assets remain retained in either scope.
+`audio_function_forms.json` is compiled from authored function forms and provides
+stable local recording identities for forms without historical word bindings.
+Punctuation is excluded. Runtime lookup uses the same registry and gives existing
+bindings precedence. No inflection is synthesized or replaced by lemma audio.
+The generation command reads the secret from ignored `.env.local` and needs
+Text to Speech plus User Read permission for its quota check. Provider key IDs
+are not secret API keys. No credentials enter frontend code.
+
+The catalog and `audio_requests.json` persist each successful response. If a run
+stops with an unresolved paid request, reconcile the saved file/temp catalog and
+provider receipt first; do not delete its journal and rerun blindly. The writer
+lock normally removes itself on exit. After a crash, confirm no writer remains
+and reconcile pending receipts before removing that lock. Retrying a transient
+local file rename must never resend the paid synthesis call. Completed clips are
+immutable; subsequent normal runs skip them. Larger optional dictionary-audio
+coverage should be selected deliberately rather than generating every lookup.
+
+For a large authorized batch, `--concurrency=3` can overlap up to three provider
+requests (the default remains one). Confirm the account supports that many
+simultaneous requests. Catalog and request-journal writes remain serialized under
+one writer lock. A failure stops new requests and lets already-sent requests save
+their results before releasing the lock; it never automatically retries them.
+Use `--skip-unresolved` to generate other pronunciations while leaving previously
+interrupted requests untouched. The dry run lists every skipped pronunciation;
+all reading aliases of the same spoken identity are protected. Without this
+explicit option, a plan containing an unresolved request still fails before any
+paid generation. Skipping does not resolve or remove the saved receipt.
+
+Pronunciation repairs need more than a successful MP3 decode. The provider's
+[current TTS documentation](https://elevenlabs.io/docs/api-reference/text-to-speech/convert-with-timestamps)
+states that `eleven_multilingual_v2` does not enforce `language_code`. Do not
+treat the configured `ja` value as proof of Japanese pronunciation, particularly
+for isolated kana. For a reported syllable defect, a contextual utterance with
+character alignment can supply an extracted syllable. Preserve the source,
+alignment, paid receipt, original clip and trim boundaries; use a new file URL
+so the player cannot reuse a cached defective clip. Do not claim listening-based
+verification from file/decode checks alone.
+
+The October 2 と particle repair retains the displayed reading と and the authored
+audio prompt ト. Its replacement clip extracts the initial aligned `t`/`o` from
+`と。これは日本語の助詞です。` (0–0.480 seconds, including padding). The catalog records
+the source utterance, request ID and prior recording; other と dictionary senses
+and kana lessons retain their own identities.
+
+The September 12 player refresh adds full-sentence playback to generated cards
+by sequencing exact realized-token recordings in sentence order. Missing words
+use device pronunciation for that exact reading, never a dictionary-form
+substitute. The player labels word clips/device voice, highlights the current
+token, and cancels the remaining sequence on navigation or Stop. As of the
+September 13 correction, both generated and frozen cards always use this word
+sequence. Legacy sentence recordings are bypassed, including explicit card refs:
+their filenames use stable card IDs that do not verify the current sentence text.
+Verified single-token kana recordings remain reusable pronunciation assets in the
+dictionary registry. English uses device speech.
+No new paid requests are made by playback.
+
 Kotoba is text-first. The practice app does not display card images, ship image assets, or require image metadata in curriculum cards.
 
 ## Current Policy
@@ -7,10 +86,16 @@ Kotoba is text-first. The practice app does not display card images, ship image 
 - Every card has Japanese line data, token explanations, an English meaning, and grammar tags.
 - Audio manifest entries are maintained for every card.
 - Audio starts as `queued` until production TTS is generated.
-- The app uses browser speech synthesis as an immediate fallback when `audioRef` is not present.
-- Japanese + English playback is sequenced in the browser fallback by waiting for the Japanese utterance to end before starting English.
+- The Next learner first resolves the deterministic checked-in card path when
+  `audioRef` is not stamped, then sequences exact word recordings if that file is
+  unavailable. Each missing word uses browser speech. If playback fails, it gives
+  explicit feedback. The original player retains its full-sentence speech fallback.
+- The app plays one full-card audio language at a time: Japanese, English, or a contextual same/opposite language choice.
 - Clicking a Japanese token plays production token audio when `audioRef` exists,
   otherwise it falls back to that token's Japanese reading through browser speech.
+- The open language inspector always exposes a contextual Play pronunciation
+  control. Single-token cards reuse their checked-in card audio; longer-card
+  tokens resolve the shared token cache before speech fallback.
 - Token audio is shared globally by spoken Japanese prompt. Do not generate
   per-unit copies of repeated particles, words, kana, or grammar chunks.
 - Images are intentionally out of scope: no image prompts, image refs, placeholders, manifests, or public image assets.

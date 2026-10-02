@@ -1,0 +1,183 @@
+/* Japanese print materials: warm washi by day, sumi paper by night.
+   Legacy color names remain aliases so every view shares the restrained palette. */
+:root {
+  --canvas: #f3eddf;
+  --canvas-deep: #e5ddce;
+  --surface: #faf6ed;
+  --surface-soft: #e9e4d9;
+  --surface-strong: #fffaf1;
+  --ink: #202b31;
+  --ink-soft: #50595a;
+  --ink-faint: #656b67;
+  --line: #29343c29;
+  --line-strong: #29343c4d;
+  --panel-ink: #233440;
+  --panel-red: #783d38;
+  --on-pigment: #f7edda;
+  --paint-teal: #354f60;
+  --paint-coral: #8e4940;
+  --paint-violet: #3f464c;
+  --paint-gold: #84704a;
+  --wash-teal: #dde1df;
+  --wash-coral: #e8ded4;
+  --wash-violet: #deded9;
+  --wash-gold: #e7e1d2;
+  --coral: #8e4940;
+  --coral-deep: #783d38;
+  --coral-soft: var(--wash-coral);
+  --aubergine: #233440;
+  --aubergine-soft: #354b59;
+  --violet: #455563;
+  --violet-soft: var(--wash-violet);
+  --lime: #6b694e;
+  --lime-soft: #e5e3d8;
+  --teal: #354f60;
+  --teal-soft: var(--wash-teal);
+  --success: #455f55;
+  --danger: #8e4940;
+  --paper-image: url("/art/edo-paper-day.png");
+  --paper-blend: multiply;
+  --paper-opacity: .92;
+  --action-bg: var(--panel-ink);
+  --action-ink: var(--on-pigment);
+  --nav-selected: var(--panel-ink);
+  --shadow-sm: 0 4px 15px #314f3910, inset 0 1px #ffffffc0;
+  --shadow-md: 0 20px 65px #263e3626;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --canvas: #171d23;
+  --canvas-deep: #11171c;
+  --surface: #222a32;
+  --surface-soft: #2d3740;
+  --surface-strong: #36424b;
+  --ink: #f3edde;
+  --ink-soft: #c7c8c2;
+  --ink-faint: #a9b0b1;
+  --line: #c4cec72b;
+  --line-strong: #c4cec750;
+  --paint-teal: #a7bac4;
+  --paint-coral: #cf9788;
+  --paint-violet: #afb8bb;
+  --paint-gold: #baa77c;
+  --wash-teal: #2d3b46;
+  --wash-coral: #41302f;
+  --wash-violet: #30353a;
+  --wash-gold: #3b3930;
+  --coral: #cf9788;
+  --coral-deep: #ba8175;
+  --coral-soft: var(--wash-coral);
+  --aubergine: #233440;
+  --aubergine-soft: #354b59;
+  --violet: #afb8bb;
+  --violet-soft: var(--wash-violet);
+  --lime: #b7b69d;
+  --lime-soft: #3a3d34;
+  --teal: #a7bac4;
+  --teal-soft: var(--wash-teal);
+  --success: #a7b8a9;
+  --danger: #cf9788;
+  --paper-image: url("/art/edo-paper-night.png");
+  --paper-blend: soft-light;
+  --paper-opacity: .94;
+  --action-bg: #2b414f;
+  --action-ink: var(--on-pigment);
+  --nav-selected: #2b414f;
+  --shadow-sm: 0 7px 23px #030c192e, inset 0 1px #c1d8ef13;
+  --shadow-md: 0 24px 72px #02091473;
+}
+.app, .practice-shell { position: relative; isolation: isolate; }
+.app::before, .practice-shell::before {
+  content: ""; position: fixed; z-index: -1; inset: 0; pointer-events: none;
+  background: var(--paper-image) center / cover no-repeat; opacity: var(--paper-opacity);
+}
+:root[data-theme="dark"] .app::before, :root[data-theme="dark"] .practice-shell::before { mix-blend-mode: normal; }
+/* Translucent paper chrome keeps the paint visible beyond the working surface. */
+.desktop-sidebar { background: linear-gradient(#f5efe3ef,#f5efe3e8), var(--paper-image) 10% 50% / 850px auto; box-shadow: 8px 0 32px #29333d10; }
+.desktop-sidebar nav { margin-top:35px; }
+.global-topbar { background:color-mix(in srgb,var(--canvas) 78%,transparent); }
+:root[data-theme="dark"] .desktop-sidebar { background:linear-gradient(#1b232beb,#1b232bf2),var(--paper-image) 10% 60% / 1050px auto; box-shadow:8px 0 35px #02081724; }
+.desktop-sidebar nav button.active {
+  background-color:var(--nav-selected);
+  background-image:linear-gradient(110deg,#8399a318,transparent 70%),var(--paper-image);
+  background-size:auto,750px auto;
+  background-position:center,5% 92%;
+  background-blend-mode:soft-light,soft-light;
+  box-shadow:0 7px 19px #18383b21,inset 0 1px #ffffff20;
+  color:#fffaf0;
+}
+:root[data-theme="dark"] .desktop-sidebar nav button.active { box-shadow:0 6px 22px #030e2033,inset 0 0 0 1px #a7bac442; }
+.desktop-sidebar nav button.active i { background:var(--paint-coral); }
+.brand-symbol { border-radius:5px 7px 4px 6px; background:var(--panel-red) var(--paper-image) 5% 100% / 480px auto; background-blend-mode:soft-light; color:var(--on-pigment); box-shadow:0 4px 13px #7f352328; }
+.brand-symbol i { background:linear-gradient(135deg,#c57f5b33,transparent); }
+:root[data-theme="dark"] .brand-symbol { background-color:var(--panel-red); background-blend-mode:soft-light; }
+:is(.hero-start,.summary-primary,.map-start,.goal-save,.game-primary,.kanji-primary,.topic-launch,.custom-start,.lesson-nav.primary,.lesson-settings-done,.practice-primary,.dictionary-practice-selection,.word-build-button) {
+  background-color:var(--action-bg);
+  background-image:linear-gradient(110deg,#ffffff10,#00000006),var(--paper-image);
+  background-size:auto,900px auto;
+  background-position:center,0 80%;
+  background-blend-mode:soft-light,soft-light;
+  color:var(--action-ink);
+  border-color:color-mix(in srgb,var(--action-bg) 75%,var(--paint-teal));
+  box-shadow:0 4px 14px #1439301c,inset 0 1px #ffffff24;
+}
+:is(.hero-start,.summary-primary,.map-start,.goal-save,.game-primary,.kanji-primary,.topic-launch,.custom-start,.lesson-nav.primary,.lesson-settings-done,.practice-primary,.dictionary-practice-selection,.word-build-button):hover:not(:disabled) { filter:brightness(1.07); }
+.build-entry,.filter-button,.builder-back,.review-count button,.session-filters button,.kanji-group-chips button {
+  background-image:linear-gradient(color-mix(in srgb,var(--surface) 91%,transparent),color-mix(in srgb,var(--surface) 91%,transparent)),var(--paper-image);
+  background-size:auto,800px auto;
+  background-position:center,20% 70%;
+  background-blend-mode:normal,var(--paper-blend);
+}
+:root[data-theme="dark"] :is(.lesson-listen>span,.lesson-settings-note>span,.resume-icon,.summary-next>span,.auto-advance>span,.heatmap>span.intensity-1,.toggle.is-on) { color:var(--canvas); }
+:root[data-theme="dark"] .lesson-position-dots span.active { background:var(--wash-teal); color:var(--paint-teal); }
+.lesson-shell .lesson-position-dots button { background:var(--surface); color:var(--ink-soft); border-color:var(--line); }
+.lesson-shell .lesson-position-dots button.active { background:var(--panel-ink); color:var(--on-pigment); border-color:var(--line-strong); }
+.lesson-context>span:nth-child(2) { width:fit-content; max-width:100%; background:color-mix(in srgb,var(--surface) 90%,transparent); box-shadow:0 0 7px 4px color-mix(in srgb,var(--surface) 75%,transparent); border-radius:3px; color:var(--ink-soft); }
+.lesson-setting-options button.active { background:var(--panel-red); color:var(--on-pigment); border-color:var(--paint-coral); }
+.lesson-setting-options button.active small { color:var(--on-pigment); opacity:.8; }
+.lesson-script-chips button[aria-pressed="true"],.lesson-speed-chips button[aria-pressed="true"] { background:var(--panel-ink); color:var(--on-pigment); }
+.lesson-listen>span,.audio-pulse>span { background:var(--panel-red); color:var(--on-pigment); box-shadow:0 18px 45px #783d3829; }
+:root[data-theme="dark"] .lesson-listen>span { color:var(--on-pigment); }
+::selection { background:var(--wash-coral); color:var(--ink); }
+:root :is(button,input,select,textarea,summary,a):focus-visible { outline:2px solid var(--paint-coral); outline-offset:4px; }
+
+/* Keep the language itself on a quiet paper face. */
+.lesson-card { background:linear-gradient(125deg,color-mix(in srgb,var(--surface) 94%,transparent),color-mix(in srgb,var(--surface) 98%,transparent)),var(--paper-image) center/cover; border-color:var(--line-strong); box-shadow:var(--shadow-md); }
+.lesson-card::before { width:260px; height:190px; top:-132px; right:-70px; border:0; background:radial-gradient(ellipse,var(--wash-violet),transparent 70%); }
+.lesson-card-head { background:linear-gradient(105deg,color-mix(in srgb,var(--wash-teal) 26%,transparent),transparent 70%); }
+.lesson-card-foot { background:color-mix(in srgb,var(--surface-soft) 32%,transparent); }
+:is(.topic-preview,.command-palette,.dictionary-entry-panel,.lesson-settings) { box-shadow:var(--shadow-md); border-color:var(--line-strong); }
+:is(.theme-button,.command-search) { box-shadow:inset 0 1px color-mix(in srgb,var(--surface-strong) 70%,transparent); }
+.mobile-nav { background:color-mix(in srgb,var(--surface) 94%,transparent); box-shadow:0 -8px 24px #20352d0d; }
+.mobile-nav button.active { color:var(--teal); }
+.mobile-nav button.active::before { background:var(--paint-coral); }
+:root[data-theme="dark"] .mobile-nav { box-shadow:0 -8px 28px #020b1b33; }
+
+.streak-hero { position: relative; overflow: hidden; }
+.streak-hero::after { content: ""; position: absolute; width: 160px; height: 200px; right: -50px; top: -60px; background: var(--paper-image) right top / 540px auto; mix-blend-mode: var(--paper-blend); opacity: .46; transform: rotate(14deg); pointer-events: none; border-radius: 45%; }
+:root[data-theme="dark"] .streak-hero::after { opacity: .3; }
+.today-activities { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 24px 0; }
+.today-activities > button { display: flex; align-items: center; gap: 14px; padding: 20px; border: 1px solid var(--line); border-radius: 16px; text-align: left; background: color-mix(in srgb, var(--surface) 88%, transparent); cursor: pointer; }
+.today-activities > button:hover { border-color: var(--teal); }
+.today-activities > button > span:nth-child(2) { display: grid; gap: 5px; flex: 1; }
+.today-activities small { color: var(--ink-soft); line-height: 1.5; }
+.today-activity-icon { display: grid; place-items: center; color: var(--teal); background: var(--teal-soft); border-radius: 45% 38% 44% 39%; width: 49px; height: 49px; flex-shrink: 0; }
+.mobile-more-wrap { display: none; }
+.explorer-kanji-link { display: flex; width: 100%; gap: 15px; align-items: center; padding: 18px 20px; margin: 6px 0 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--teal-soft); color: var(--ink); text-align: left; cursor: pointer; }
+.explorer-kanji-link > span { display: grid; gap: 5px; flex: 1; }
+.explorer-kanji-link strong { font-size: 14px; font-weight: 600; }
+.explorer-kanji-link small { color: var(--ink-soft); font-size: 12px; line-height: 1.6; }
+#kanji-detail { scroll-margin-top: 90px; }
+.goal-metric-options button { min-height: 44px; }
+@media (max-height: 740px) and (min-width: 981px) { .desktop-sidebar nav { margin-top: 18px; gap: 3px; } .desktop-sidebar { padding-top: 20px; } }
+@media (max-width: 980px) {
+  .mobile-nav { grid-template-columns: repeat(5, 1fr); }
+  .mobile-more-wrap { display: block; position: fixed; z-index: 45; inset: 0; }
+  .mobile-more-dismiss { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #16271c30; backdrop-filter: blur(3px); }
+  .mobile-more { position: absolute; bottom: calc(76px + env(safe-area-inset-bottom)); left: 14px; right: 14px; max-width: 430px; margin-left: auto; background: var(--surface); border: 1px solid var(--line-strong); border-radius: 18px; padding: 9px; box-shadow: var(--shadow-md); }
+  .mobile-more button { width: 100%; display: flex; align-items: center; gap: 15px; min-height: 55px; padding: 12px; border: 0; border-radius: 12px; background: transparent; text-align: left; cursor: pointer; }
+  .mobile-more button:hover { background: var(--surface-soft); }
+  .mobile-more button span { flex: 1; }
+}
+@media (max-width: 600px) { .today-activities { grid-template-columns: 1fr; gap: 10px; } .today-activities > button { padding: 16px; } }
+@media (prefers-reduced-motion: reduce) { .hero-start:hover { transform: none; } }

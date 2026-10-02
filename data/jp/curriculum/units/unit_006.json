@@ -1,271 +1,438 @@
 {
   "id": 6,
-  "slug": "basic-demonstratives",
-  "title": "Unit 6: This And That",
-  "grammarFocus": "これ / それ / あれ / このN / そのN / あのN",
+  "slug": "starter-home-rooms",
+  "title": "Unit 6: Home And Rooms",
+  "grammarFocus": "Nがあります / Nがいます",
   "newWords": [
     {
-      "id": "kore",
-      "surface": "これ",
-      "reading": "これ",
-      "meaning": "this one",
-      "function": "demonstrative"
+      "id": "ie",
+      "surface": "家",
+      "reading": "いえ",
+      "meaning": "house",
+      "function": "place"
     },
     {
-      "id": "sore",
-      "surface": "それ",
-      "reading": "それ",
-      "meaning": "that one near you",
-      "function": "demonstrative"
+      "id": "uchi",
+      "surface": "うち",
+      "reading": "うち",
+      "meaning": "home",
+      "function": "place"
     },
     {
-      "id": "are",
-      "surface": "あれ",
-      "reading": "あれ",
-      "meaning": "that one over there",
-      "function": "demonstrative"
+      "id": "heya",
+      "surface": "部屋",
+      "reading": "へや",
+      "meaning": "room",
+      "function": "place"
     },
     {
-      "id": "kono",
-      "surface": "この",
-      "reading": "この",
-      "meaning": "this",
-      "function": "determiner"
+      "id": "apaato",
+      "surface": "アパート",
+      "reading": "あぱーと",
+      "meaning": "apartment",
+      "function": "place"
     },
     {
-      "id": "sono",
-      "surface": "その",
-      "reading": "その",
-      "meaning": "that near you",
-      "function": "determiner"
+      "id": "manshon",
+      "surface": "マンション",
+      "reading": "まんしょん",
+      "meaning": "apartment building",
+      "function": "place"
     },
     {
-      "id": "ano",
-      "surface": "あの",
-      "reading": "あの",
-      "meaning": "that over there",
-      "function": "determiner"
-    },
-    {
-      "id": "mizu",
-      "surface": "水",
-      "reading": "みず",
-      "meaning": "water",
+      "id": "isu",
+      "surface": "いす",
+      "reading": "いす",
+      "meaning": "chair",
       "function": "noun"
     },
     {
-      "id": "ocha",
-      "surface": "お茶",
-      "reading": "おちゃ",
-      "meaning": "tea",
+      "id": "teeburu",
+      "surface": "テーブル",
+      "reading": "てーぶる",
+      "meaning": "table",
       "function": "noun"
     },
     {
-      "id": "kau",
-      "surface": "買う",
-      "reading": "かう",
-      "meaning": "buy",
+      "id": "beddo",
+      "surface": "ベッド",
+      "reading": "べっど",
+      "meaning": "bed",
+      "function": "noun"
+    },
+    {
+      "id": "terebi",
+      "surface": "テレビ",
+      "reading": "てれび",
+      "meaning": "television",
+      "function": "noun"
+    },
+    {
+      "id": "eakon",
+      "surface": "エアコン",
+      "reading": "えあこん",
+      "meaning": "air conditioner",
+      "function": "noun"
+    },
+    {
+      "id": "aru",
+      "surface": "ある",
+      "reading": "ある",
+      "meaning": "exist; there is for things",
       "function": "verb"
     },
     {
-      "id": "tsukau",
-      "surface": "使う",
-      "reading": "つかう",
-      "meaning": "use",
+      "id": "iru",
+      "surface": "いる",
+      "reading": "いる",
+      "meaning": "exist; there is for living things",
       "function": "verb"
     }
+  ],
+  "reviewWordIds": [
+    "gohan",
+    "asagohan",
+    "pan",
+    "mizu",
+    "ocha",
+    "koohii",
+    "gyuunyuu",
+    "sakana",
+    "niku",
+    "yasai",
+    "taberu",
+    "nomu",
+    "kuni",
+    "nihon",
+    "oosutoraria",
+    "supein",
+    "tai",
+    "firipin",
+    "roshia",
+    "kaishain",
+    "enjinia",
+    "shufu",
+    "hataraku",
+    "sumu"
+  ],
+  "lexiconWordIds": [
+    "watashi",
+    "anata",
+    "gakusei",
+    "sensei",
+    "nihongo",
+    "eigo",
+    "hiragana",
+    "katakana",
+    "kanji",
+    "yomu",
+    "kaku",
+    "wakaru",
+    "kazoku",
+    "chichi",
+    "haha",
+    "ani",
+    "ane",
+    "otouto",
+    "imouto",
+    "kodomo",
+    "tomodachi",
+    "hito",
+    "au",
+    "hanasu",
+    "mise",
+    "resutoran",
+    "menyuu",
+    "sushi",
+    "raamen",
+    "karee",
+    "udon",
+    "piza",
+    "oishii",
+    "hayai",
+    "erabu",
+    "hairu"
   ],
   "cards": [
     {
       "id": "u006-c001",
       "line": [
-        "これ",
-        "は",
-        "本",
+        "あなた",
+        "の",
+        "家",
         "です"
       ],
       "tts": [
-        "これ",
-        "わ",
-        "ほん",
+        "あなた",
+        "の",
+        "いえ",
         "です"
       ],
       "explain": [
-        "this one",
-        "topic marker",
-        "book",
-        "polite identity marker"
+        "you",
+        "possession marker",
+        "house",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "これ",
-          "reading": "これ",
-          "explain": "this one",
-          "wordId": "kore"
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "anata"
         },
         {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house",
+          "wordId": "ie"
         },
         {
           "surface": "です",
           "reading": "です",
-          "explain": "polite identity marker"
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "This is a book",
+      "english": "It's your house",
       "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
+        "Nがあります / Nがいます",
+        "AのB"
       ]
     },
     {
       "id": "u006-c002",
       "line": [
-        "水",
+        "学生",
+        "の",
+        "うち",
         "です"
       ],
       "tts": [
-        "みず",
+        "がくせい",
+        "の",
+        "うち",
         "です"
       ],
       "explain": [
-        "water",
-        "polite identity marker"
+        "student",
+        "possession marker",
+        "home",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "水",
-          "reading": "みず",
-          "explain": "water",
-          "wordId": "mizu"
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession marker"
+        },
+        {
+          "surface": "うち",
+          "reading": "うち",
+          "explain": "home",
+          "wordId": "uchi"
         },
         {
           "surface": "です",
           "reading": "です",
-          "explain": "polite identity marker"
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "It's water",
+      "english": "It's the student's home",
       "grammarTags": [
-        "Aです"
+        "Nがあります / Nがいます",
+        "AのB"
       ]
     },
     {
       "id": "u006-c003",
       "line": [
-        "それ",
-        "は",
-        "かばん",
+        "先生",
+        "の",
+        "部屋",
         "です"
       ],
       "tts": [
-        "それ",
-        "わ",
-        "かばん",
+        "せんせい",
+        "の",
+        "へや",
         "です"
       ],
       "explain": [
-        "that one near you",
-        "topic marker",
-        "bag",
-        "polite identity marker"
+        "teacher",
+        "possession marker",
+        "room",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "それ",
-          "reading": "それ",
-          "explain": "that one near you",
-          "wordId": "sore"
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
         },
         {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession marker"
         },
         {
-          "surface": "かばん",
-          "reading": "かばん",
-          "explain": "bag",
-          "wordId": "kaban"
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
         },
         {
           "surface": "です",
           "reading": "です",
-          "explain": "polite identity marker"
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "That near you is a bag",
+      "english": "It's the teacher's room",
       "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
+        "Nがあります / Nがいます",
+        "AのB"
       ]
     },
     {
       "id": "u006-c004",
       "line": [
-        "お茶",
+        "会社員",
+        "の",
+        "アパート",
         "です"
       ],
       "tts": [
-        "おちゃ",
+        "かいしゃいん",
+        "の",
+        "あぱーと",
         "です"
       ],
       "explain": [
-        "tea",
-        "polite identity marker"
+        "company employee",
+        "possession marker",
+        "apartment",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "お茶",
-          "reading": "おちゃ",
-          "explain": "tea",
-          "wordId": "ocha"
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession marker"
+        },
+        {
+          "surface": "アパート",
+          "reading": "あぱーと",
+          "explain": "apartment",
+          "wordId": "apaato"
         },
         {
           "surface": "です",
           "reading": "です",
-          "explain": "polite identity marker"
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "It's tea",
+      "english": "It's the company employee's apartment",
       "grammarTags": [
-        "Aです"
+        "Nがあります / Nがいます",
+        "AのB"
       ]
     },
     {
       "id": "u006-c005",
       "line": [
-        "あれ",
-        "は",
-        "学校",
+        "エンジニア",
+        "の",
+        "マンション",
         "です"
       ],
       "tts": [
-        "あれ",
-        "わ",
-        "がっこう",
+        "えんじにあ",
+        "の",
+        "まんしょん",
         "です"
       ],
       "explain": [
-        "that one over there",
-        "topic marker",
-        "school",
-        "polite identity marker"
+        "engineer",
+        "possession marker",
+        "apartment building",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "あれ",
-          "reading": "あれ",
-          "explain": "that one over there",
-          "wordId": "are"
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
+        },
+        {
+          "surface": "の",
+          "reading": "の",
+          "explain": "possession marker"
+        },
+        {
+          "surface": "マンション",
+          "reading": "まんしょん",
+          "explain": "apartment building",
+          "wordId": "manshon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite copula: is/am/are"
+        }
+      ],
+      "english": "It's the engineer's apartment building",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "AのB"
+      ]
+    },
+    {
+      "id": "u006-c006",
+      "line": [
+        "主婦",
+        "は",
+        "いす",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "しゅふ",
+        "わ",
+        "いす",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "homemaker",
+        "topic marker",
+        "chair",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
           "surface": "は",
@@ -273,352 +440,279 @@
           "explain": "topic marker"
         },
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "That over there is a school",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c006",
-      "line": [
-        "本",
-        "を",
-        "買います"
-      ],
-      "tts": [
-        "ほん",
-        "を",
-        "かいます"
-      ],
-      "explain": [
-        "book",
-        "direct object marker",
-        "buy"
-      ],
-      "tokens": [
-        {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
+          "surface": "いす",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
         },
         {
           "surface": "を",
           "reading": "を",
-          "explain": "direct object marker"
+          "explain": "object marker"
         },
         {
-          "surface": "買います",
-          "reading": "かいます",
-          "explain": "buy",
-          "wordId": "kau"
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
         }
       ],
-      "english": "I buy a book",
+      "english": "The homemaker chooses the chair",
       "grammarTags": [
-        "early Vます action",
+        "Nがあります / Nがいます",
         "NをVます"
       ]
     },
     {
       "id": "u006-c007",
       "line": [
-        "この",
-        "本",
-        "です"
+        "家族",
+        "は",
+        "テーブル",
+        "を",
+        "選びます"
       ],
       "tts": [
-        "この",
-        "ほん",
-        "です"
+        "かぞく",
+        "わ",
+        "てーぶる",
+        "を",
+        "えらびます"
       ],
       "explain": [
-        "this",
-        "book",
-        "polite identity marker"
+        "family",
+        "topic marker",
+        "table",
+        "object marker",
+        "polite form of choose"
       ],
       "tokens": [
         {
-          "surface": "この",
-          "reading": "この",
-          "explain": "this",
-          "wordId": "kono"
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "テーブル",
+          "reading": "てーぶる",
+          "explain": "table",
+          "wordId": "teeburu"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
         }
       ],
-      "english": "It is this book",
+      "english": "The family chooses the table",
       "grammarTags": [
-        "kono/sono/ano N"
+        "Nがあります / Nがいます",
+        "NをVます"
       ]
     },
     {
       "id": "u006-c008",
       "line": [
-        "机",
+        "父",
+        "は",
+        "ベッド",
         "を",
-        "使います"
+        "選びます"
       ],
       "tts": [
-        "つくえ",
+        "ちち",
+        "わ",
+        "べっど",
         "を",
-        "つかいます"
+        "えらびます"
       ],
       "explain": [
-        "desk",
-        "direct object marker",
-        "use"
+        "father",
+        "topic marker",
+        "bed",
+        "object marker",
+        "polite form of choose"
       ],
       "tokens": [
         {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ベッド",
+          "reading": "べっど",
+          "explain": "bed",
+          "wordId": "beddo"
         },
         {
           "surface": "を",
           "reading": "を",
-          "explain": "direct object marker"
+          "explain": "object marker"
         },
         {
-          "surface": "使います",
-          "reading": "つかいます",
-          "explain": "use",
-          "wordId": "tsukau"
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
         }
       ],
-      "english": "I use a desk",
+      "english": "The father chooses the bed",
       "grammarTags": [
-        "early Vます action",
+        "Nがあります / Nがいます",
         "NをVます"
       ]
     },
     {
       "id": "u006-c009",
       "line": [
-        "その",
-        "学校",
+        "テレビ",
         "です"
       ],
       "tts": [
-        "その",
-        "がっこう",
+        "てれび",
         "です"
       ],
       "explain": [
-        "that near you",
-        "school",
-        "polite identity marker"
+        "television",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "その",
-          "reading": "その",
-          "explain": "that near you",
-          "wordId": "sono"
-        },
-        {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou"
+          "surface": "テレビ",
+          "reading": "てれび",
+          "explain": "television",
+          "wordId": "terebi"
         },
         {
           "surface": "です",
           "reading": "です",
-          "explain": "polite identity marker"
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "It is that school near you",
+      "english": "It's the television",
       "grammarTags": [
-        "kono/sono/ano N"
+        "Nがあります / Nがいます",
+        "です"
       ]
     },
     {
       "id": "u006-c010",
       "line": [
-        "あの",
-        "家",
-        "です"
+        "兄",
+        "は",
+        "エアコン",
+        "を",
+        "選びます"
       ],
       "tts": [
-        "あの",
-        "いえ",
-        "です"
+        "あに",
+        "わ",
+        "えあこん",
+        "を",
+        "えらびます"
       ],
       "explain": [
-        "that over there",
-        "house; home",
-        "polite identity marker"
+        "older brother",
+        "topic marker",
+        "air conditioner",
+        "object marker",
+        "polite form of choose"
       ],
       "tokens": [
         {
-          "surface": "あの",
-          "reading": "あの",
-          "explain": "that over there",
-          "wordId": "ano"
+          "surface": "兄",
+          "reading": "あに",
+          "explain": "older brother",
+          "wordId": "ani"
         },
         {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie"
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "エアコン",
+          "reading": "えあこん",
+          "explain": "air conditioner",
+          "wordId": "eakon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
         }
       ],
-      "english": "It is that house over there",
+      "english": "The older brother chooses the air conditioner",
       "grammarTags": [
-        "kono/sono/ano N"
+        "Nがあります / Nがいます",
+        "NをVます"
       ]
     },
     {
       "id": "u006-c011",
       "line": [
-        "猫",
-        "は",
-        "動物",
-        "です"
-      ],
-      "tts": [
-        "ねこ",
-        "わ",
-        "どうぶつ",
-        "です"
-      ],
-      "explain": [
-        "cat",
-        "topic marker",
-        "animal",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The cat is an animal",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c012",
-      "line": [
-        "これ",
-        "は",
-        "水",
-        "です"
-      ],
-      "tts": [
-        "これ",
-        "わ",
-        "みず",
-        "です"
-      ],
-      "explain": [
-        "this one",
-        "topic marker",
-        "water",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "これ",
-          "reading": "これ",
-          "explain": "this one",
-          "wordId": "kore"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "水",
-          "reading": "みず",
-          "explain": "water",
-          "wordId": "mizu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "This is water",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c013",
-      "line": [
-        "店",
+        "部屋",
+        "に",
+        "牛乳",
         "が",
         "あります"
       ],
       "tts": [
-        "みせ",
+        "へや",
+        "に",
+        "ぎゅうにゅう",
         "が",
         "あります"
       ],
       "explain": [
-        "shop",
+        "room",
+        "location or time marker",
+        "milk",
         "subject marker",
-        "exists; there is"
+        "polite form of exist; there is for things"
       ],
       "tokens": [
         {
-          "surface": "店",
-          "reading": "みせ",
-          "explain": "shop",
-          "wordId": "mise"
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "牛乳",
+          "reading": "ぎゅうにゅう",
+          "explain": "milk",
+          "wordId": "gyuunyuu"
         },
         {
           "surface": "が",
@@ -628,206 +722,56 @@
         {
           "surface": "あります",
           "reading": "あります",
-          "explain": "exists; there is",
+          "explain": "polite form of exist; there is for things",
           "wordId": "aru"
         }
       ],
-      "english": "There is a shop",
+      "english": "There is the milk in the room",
       "grammarTags": [
-        "Nがあります",
-        "basic existence"
-      ],
-      "audioRef": "/media/jp/audio/unit_006/u006-c013.mp3"
-    },
-    {
-      "id": "u006-c014",
-      "line": [
-        "この",
-        "お茶",
-        "です"
-      ],
-      "tts": [
-        "この",
-        "おちゃ",
-        "です"
-      ],
-      "explain": [
-        "this",
-        "tea",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "この",
-          "reading": "この",
-          "explain": "this",
-          "wordId": "kono"
-        },
-        {
-          "surface": "お茶",
-          "reading": "おちゃ",
-          "explain": "tea",
-          "wordId": "ocha"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is this tea",
-      "grammarTags": [
-        "kono/sono/ano N"
+        "Nがあります / Nがいます",
+        "Nがあります"
       ]
     },
     {
-      "id": "u006-c015",
+      "id": "u006-c012",
       "line": [
-        "犬",
-        "は",
-        "動物",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "いぬ",
-        "わ",
-        "どうぶつ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "dog",
-        "topic marker",
-        "animal",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the dog an animal?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u006-c016",
-      "line": [
-        "あなた",
-        "は",
-        "水",
-        "を",
-        "買います"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "みず",
-        "を",
-        "かいます"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "water",
-        "direct object marker",
-        "buy"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "水",
-          "reading": "みず",
-          "explain": "water",
-          "wordId": "mizu"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "買います",
-          "reading": "かいます",
-          "explain": "buy",
-          "wordId": "kau"
-        }
-      ],
-      "english": "You buy water",
-      "grammarTags": [
-        "early Vます action",
-        "NをVます"
-      ]
-    },
-    {
-      "id": "u006-c017",
-      "line": [
-        "子供",
+        "アパート",
+        "に",
+        "弟",
         "が",
         "います"
       ],
       "tts": [
-        "こども",
+        "あぱーと",
+        "に",
+        "おとうと",
         "が",
         "います"
       ],
       "explain": [
-        "child",
+        "apartment",
+        "location or time marker",
+        "younger brother",
         "subject marker",
-        "exists for living things; there is"
+        "polite form of exist; there is for living things"
       ],
       "tokens": [
         {
-          "surface": "子供",
-          "reading": "こども",
-          "explain": "child",
-          "wordId": "kodomo"
+          "surface": "アパート",
+          "reading": "あぱーと",
+          "explain": "apartment",
+          "wordId": "apaato"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
         },
         {
           "surface": "が",
@@ -837,96 +781,210 @@
         {
           "surface": "います",
           "reading": "います",
-          "explain": "exists for living things; there is",
+          "explain": "polite form of exist; there is for living things",
           "wordId": "iru"
         }
       ],
-      "english": "There is a child",
+      "english": "There is the younger brother in the apartment",
       "grammarTags": [
-        "Nがいます",
-        "basic existence"
-      ],
-      "audioRef": "/media/jp/audio/unit_006/u006-c017.mp3"
+        "Nがあります / Nがいます",
+        "Nがいます"
+      ]
     },
     {
-      "id": "u006-c018",
+      "id": "u006-c013",
       "line": [
-        "それ",
-        "は",
-        "お茶",
+        "家",
         "です"
       ],
       "tts": [
-        "それ",
-        "わ",
-        "おちゃ",
+        "いえ",
         "です"
       ],
       "explain": [
-        "that one near you",
-        "topic marker",
-        "tea",
-        "polite identity marker"
+        "house",
+        "polite copula: is/am/are"
       ],
       "tokens": [
         {
-          "surface": "それ",
-          "reading": "それ",
-          "explain": "that one near you",
-          "wordId": "sore"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "お茶",
-          "reading": "おちゃ",
-          "explain": "tea",
-          "wordId": "ocha"
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house",
+          "wordId": "ie"
         },
         {
           "surface": "です",
           "reading": "です",
-          "explain": "polite identity marker"
+          "explain": "polite copula: is/am/are"
         }
       ],
-      "english": "That near you is tea",
+      "english": "It's the house",
       "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
+        "Nがあります / Nがいます",
+        "です"
       ]
     },
     {
-      "id": "u006-c019",
+      "id": "u006-c014",
+      "line": [
+        "うち",
+        "です"
+      ],
+      "tts": [
+        "うち",
+        "です"
+      ],
+      "explain": [
+        "home",
+        "polite copula: is/am/are"
+      ],
+      "tokens": [
+        {
+          "surface": "うち",
+          "reading": "うち",
+          "explain": "home",
+          "wordId": "uchi"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite copula: is/am/are"
+        }
+      ],
+      "english": "It's the home",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "です"
+      ]
+    },
+    {
+      "id": "u006-c015",
+      "line": [
+        "部屋",
+        "です"
+      ],
+      "tts": [
+        "へや",
+        "です"
+      ],
+      "explain": [
+        "room",
+        "polite copula: is/am/are"
+      ],
+      "tokens": [
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite copula: is/am/are"
+        }
+      ],
+      "english": "It's the room",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "です"
+      ]
+    },
+    {
+      "id": "u006-c016",
+      "line": [
+        "アパート",
+        "です"
+      ],
+      "tts": [
+        "あぱーと",
+        "です"
+      ],
+      "explain": [
+        "apartment",
+        "polite copula: is/am/are"
+      ],
+      "tokens": [
+        {
+          "surface": "アパート",
+          "reading": "あぱーと",
+          "explain": "apartment",
+          "wordId": "apaato"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite copula: is/am/are"
+        }
+      ],
+      "english": "It's the apartment",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "です"
+      ]
+    },
+    {
+      "id": "u006-c017",
+      "line": [
+        "マンション",
+        "です"
+      ],
+      "tts": [
+        "まんしょん",
+        "です"
+      ],
+      "explain": [
+        "apartment building",
+        "polite copula: is/am/are"
+      ],
+      "tokens": [
+        {
+          "surface": "マンション",
+          "reading": "まんしょん",
+          "explain": "apartment building",
+          "wordId": "manshon"
+        },
+        {
+          "surface": "です",
+          "reading": "です",
+          "explain": "polite copula: is/am/are"
+        }
+      ],
+      "english": "It's the apartment building",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "です"
+      ]
+    },
+    {
+      "id": "u006-c018",
       "line": [
         "あなた",
         "は",
-        "病院",
-        "に",
-        "来ます"
+        "いす",
+        "を",
+        "選びます"
       ],
       "tts": [
         "あなた",
         "わ",
-        "びょういん",
-        "に",
-        "きます"
+        "いす",
+        "を",
+        "えらびます"
       ],
       "explain": [
         "you",
         "topic marker",
-        "hospital",
-        "destination or time marker",
-        "come"
+        "chair",
+        "object marker",
+        "polite form of choose"
       ],
       "tokens": [
         {
           "surface": "あなた",
           "reading": "あなた",
           "explain": "you",
-          "wordId": "sakura"
+          "wordId": "anata"
         },
         {
           "surface": "は",
@@ -934,576 +992,51 @@
           "explain": "topic marker"
         },
         {
-          "surface": "病院",
-          "reading": "びょういん",
-          "explain": "hospital",
-          "wordId": "byouin"
-        },
-        {
-          "surface": "に",
-          "reading": "に",
-          "explain": "destination or time marker"
-        },
-        {
-          "surface": "来ます",
-          "reading": "きます",
-          "explain": "come",
-          "wordId": "kuru"
-        }
-      ],
-      "english": "You come to a hospital",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u006-c020",
-      "line": [
-        "その",
-        "水",
-        "です"
-      ],
-      "tts": [
-        "その",
-        "みず",
-        "です"
-      ],
-      "explain": [
-        "that near you",
-        "water",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "その",
-          "reading": "その",
-          "explain": "that near you",
-          "wordId": "sono"
-        },
-        {
-          "surface": "水",
-          "reading": "みず",
-          "explain": "water",
-          "wordId": "mizu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is that water near you",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c021",
-      "line": [
-        "家",
-        "が",
-        "あります"
-      ],
-      "tts": [
-        "いえ",
-        "が",
-        "あります"
-      ],
-      "explain": [
-        "house; home",
-        "subject marker",
-        "exists; there is"
-      ],
-      "tokens": [
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie"
-        },
-        {
-          "surface": "が",
-          "reading": "が",
-          "explain": "subject marker"
-        },
-        {
-          "surface": "あります",
-          "reading": "あります",
-          "explain": "exists; there is",
-          "wordId": "aru"
-        }
-      ],
-      "english": "There is a house",
-      "grammarTags": [
-        "Nがあります",
-        "basic existence"
-      ],
-      "audioRef": "/media/jp/audio/unit_006/u006-c021.mp3"
-    },
-    {
-      "id": "u006-c022",
-      "line": [
-        "これ",
-        "は",
-        "猫",
-        "です"
-      ],
-      "tts": [
-        "これ",
-        "わ",
-        "ねこ",
-        "です"
-      ],
-      "explain": [
-        "this one",
-        "topic marker",
-        "cat",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "これ",
-          "reading": "これ",
-          "explain": "this one",
-          "wordId": "kore"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "This is a cat",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c023",
-      "line": [
-        "大人",
-        "が",
-        "いません"
-      ],
-      "tts": [
-        "おとな",
-        "が",
-        "いません"
-      ],
-      "explain": [
-        "adult",
-        "subject marker",
-        "does not exist for living things; there is not"
-      ],
-      "tokens": [
-        {
-          "surface": "大人",
-          "reading": "おとな",
-          "explain": "adult",
-          "wordId": "otona"
-        },
-        {
-          "surface": "が",
-          "reading": "が",
-          "explain": "subject marker"
-        },
-        {
-          "surface": "いません",
-          "reading": "いません",
-          "explain": "does not exist for living things; there is not",
-          "wordId": "iru"
-        }
-      ],
-      "english": "There is no adult",
-      "grammarTags": [
-        "Nがいます",
-        "negative existence"
-      ],
-      "audioRef": "/media/jp/audio/unit_006/u006-c023.mp3"
-    },
-    {
-      "id": "u006-c024",
-      "line": [
-        "あれ",
-        "は",
-        "水",
-        "です"
-      ],
-      "tts": [
-        "あれ",
-        "わ",
-        "みず",
-        "です"
-      ],
-      "explain": [
-        "that one over there",
-        "topic marker",
-        "water",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あれ",
-          "reading": "あれ",
-          "explain": "that one over there",
-          "wordId": "are"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "水",
-          "reading": "みず",
-          "explain": "water",
-          "wordId": "mizu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "That over there is water",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c025",
-      "line": [
-        "彼女",
-        "は",
-        "かばん",
-        "を",
-        "使います"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "かばん",
-        "を",
-        "つかいます"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "bag",
-        "direct object marker",
-        "use"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "かばん",
-          "reading": "かばん",
-          "explain": "bag",
-          "wordId": "kaban"
+          "surface": "いす",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
         },
         {
           "surface": "を",
           "reading": "を",
-          "explain": "direct object marker"
+          "explain": "object marker"
         },
         {
-          "surface": "使います",
-          "reading": "つかいます",
-          "explain": "use",
-          "wordId": "tsukau"
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
         }
       ],
-      "english": "She uses a bag",
+      "english": "You choose the chair",
       "grammarTags": [
-        "early Vます action",
+        "Nがあります / Nがいます",
         "NをVます"
       ]
     },
     {
-      "id": "u006-c026",
-      "line": [
-        "あの",
-        "お茶",
-        "です"
-      ],
-      "tts": [
-        "あの",
-        "おちゃ",
-        "です"
-      ],
-      "explain": [
-        "that over there",
-        "tea",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あの",
-          "reading": "あの",
-          "explain": "that over there",
-          "wordId": "ano"
-        },
-        {
-          "surface": "お茶",
-          "reading": "おちゃ",
-          "explain": "tea",
-          "wordId": "ocha"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is that tea over there",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ],
-      "audioRef": "/media/jp/audio/unit_006/u006-c026.mp3"
-    },
-    {
-      "id": "u006-c027",
-      "line": [
-        "場所",
-        "は",
-        "家",
-        "です"
-      ],
-      "tts": [
-        "ばしょ",
-        "わ",
-        "いえ",
-        "です"
-      ],
-      "explain": [
-        "place",
-        "topic marker",
-        "house; home",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The place is a house",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c028",
-      "line": [
-        "その",
-        "猫",
-        "です"
-      ],
-      "tts": [
-        "その",
-        "ねこ",
-        "です"
-      ],
-      "explain": [
-        "that near you",
-        "cat",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "その",
-          "reading": "その",
-          "explain": "that near you",
-          "wordId": "sono"
-        },
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is that cat near you",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c029",
-      "line": [
-        "彼",
-        "は",
-        "駅",
-        "に",
-        "行きます"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "えき",
-        "に",
-        "いきます"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "station",
-        "destination or time marker",
-        "go"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "駅",
-          "reading": "えき",
-          "explain": "station",
-          "wordId": "eki"
-        },
-        {
-          "surface": "に",
-          "reading": "に",
-          "explain": "destination or time marker"
-        },
-        {
-          "surface": "行きます",
-          "reading": "いきます",
-          "explain": "go",
-          "wordId": "iku"
-        }
-      ],
-      "english": "He goes to a station",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u006-c030",
-      "line": [
-        "これ",
-        "は",
-        "お茶",
-        "です"
-      ],
-      "tts": [
-        "これ",
-        "わ",
-        "おちゃ",
-        "です"
-      ],
-      "explain": [
-        "this one",
-        "topic marker",
-        "tea",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "これ",
-          "reading": "これ",
-          "explain": "this one",
-          "wordId": "kore"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "お茶",
-          "reading": "おちゃ",
-          "explain": "tea",
-          "wordId": "ocha"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "This is tea",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c031",
+      "id": "u006-c019",
       "line": [
         "学生",
         "は",
-        "机",
+        "テーブル",
         "を",
-        "買います"
+        "選びます"
       ],
       "tts": [
         "がくせい",
         "わ",
-        "つくえ",
+        "てーぶる",
         "を",
-        "かいます"
+        "えらびます"
       ],
       "explain": [
         "student",
         "topic marker",
-        "desk",
-        "direct object marker",
-        "buy"
+        "table",
+        "object marker",
+        "polite form of choose"
       ],
       "tokens": [
         {
@@ -1518,1003 +1051,51 @@
           "explain": "topic marker"
         },
         {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
+          "surface": "テーブル",
+          "reading": "てーぶる",
+          "explain": "table",
+          "wordId": "teeburu"
         },
         {
           "surface": "を",
           "reading": "を",
-          "explain": "direct object marker"
+          "explain": "object marker"
         },
         {
-          "surface": "買います",
-          "reading": "かいます",
-          "explain": "buy",
-          "wordId": "kau"
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
         }
       ],
-      "english": "The student buys a desk",
+      "english": "The student chooses the table",
       "grammarTags": [
-        "early Vます action",
-        "NをVます"
-      ],
-      "audioRef": "/media/jp/audio/unit_006/u006-c031.mp3"
-    },
-    {
-      "id": "u006-c032",
-      "line": [
-        "この",
-        "水",
-        "です"
-      ],
-      "tts": [
-        "この",
-        "みず",
-        "です"
-      ],
-      "explain": [
-        "this",
-        "water",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "この",
-          "reading": "この",
-          "explain": "this",
-          "wordId": "kono"
-        },
-        {
-          "surface": "水",
-          "reading": "みず",
-          "explain": "water",
-          "wordId": "mizu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is this water",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c033",
-      "line": [
-        "学校",
-        "は",
-        "場所",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "がっこう",
-        "わ",
-        "ばしょ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "school",
-        "topic marker",
-        "place",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the school a place?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u006-c034",
-      "line": [
-        "あの",
-        "場所",
-        "です"
-      ],
-      "tts": [
-        "あの",
-        "ばしょ",
-        "です"
-      ],
-      "explain": [
-        "that over there",
-        "place",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あの",
-          "reading": "あの",
-          "explain": "that over there",
-          "wordId": "ano"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is that place over there",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c035",
-      "line": [
-        "彼女",
-        "は",
-        "会社",
-        "に",
-        "来ます"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "かいしゃ",
-        "に",
-        "きます"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "company",
-        "destination or time marker",
-        "come"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "会社",
-          "reading": "かいしゃ",
-          "explain": "company",
-          "wordId": "kaisha"
-        },
-        {
-          "surface": "に",
-          "reading": "に",
-          "explain": "destination or time marker"
-        },
-        {
-          "surface": "来ます",
-          "reading": "きます",
-          "explain": "come",
-          "wordId": "kuru"
-        }
-      ],
-      "english": "She comes to a company",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u006-c036",
-      "line": [
-        "それ",
-        "は",
-        "机",
-        "です"
-      ],
-      "tts": [
-        "それ",
-        "わ",
-        "つくえ",
-        "です"
-      ],
-      "explain": [
-        "that one near you",
-        "topic marker",
-        "desk",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "それ",
-          "reading": "それ",
-          "explain": "that one near you",
-          "wordId": "sore"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "That near you is a desk",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ],
-      "audioRef": "/media/jp/audio/unit_006/u006-c036.mp3"
-    },
-    {
-      "id": "u006-c037",
-      "line": [
-        "医者",
-        "は",
-        "机",
-        "を",
-        "使います"
-      ],
-      "tts": [
-        "いしゃ",
-        "わ",
-        "つくえ",
-        "を",
-        "つかいます"
-      ],
-      "explain": [
-        "doctor",
-        "topic marker",
-        "desk",
-        "direct object marker",
-        "use"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "使います",
-          "reading": "つかいます",
-          "explain": "use",
-          "wordId": "tsukau"
-        }
-      ],
-      "english": "The doctor uses a desk",
-      "grammarTags": [
-        "early Vます action",
+        "Nがあります / Nがいます",
         "NをVます"
       ]
     },
     {
-      "id": "u006-c038",
-      "line": [
-        "その",
-        "お茶",
-        "です"
-      ],
-      "tts": [
-        "その",
-        "おちゃ",
-        "です"
-      ],
-      "explain": [
-        "that near you",
-        "tea",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "その",
-          "reading": "その",
-          "explain": "that near you",
-          "wordId": "sono"
-        },
-        {
-          "surface": "お茶",
-          "reading": "おちゃ",
-          "explain": "tea",
-          "wordId": "ocha"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is that tea near you",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c039",
-      "line": [
-        "あの",
-        "子供",
-        "です"
-      ],
-      "tts": [
-        "あの",
-        "こども",
-        "です"
-      ],
-      "explain": [
-        "that over there",
-        "child",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あの",
-          "reading": "あの",
-          "explain": "that over there",
-          "wordId": "ano"
-        },
-        {
-          "surface": "子供",
-          "reading": "こども",
-          "explain": "child",
-          "wordId": "kodomo"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is that child over there",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ],
-      "audioRef": "/media/jp/audio/unit_006/u006-c039.mp3"
-    },
-    {
-      "id": "u006-c040",
-      "line": [
-        "これ",
-        "は",
-        "医者",
-        "です"
-      ],
-      "tts": [
-        "これ",
-        "わ",
-        "いしゃ",
-        "です"
-      ],
-      "explain": [
-        "this one",
-        "topic marker",
-        "doctor",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "これ",
-          "reading": "これ",
-          "explain": "this one",
-          "wordId": "kore"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "This is a doctor",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c041",
-      "line": [
-        "子供",
-        "が",
-        "いません"
-      ],
-      "tts": [
-        "こども",
-        "が",
-        "いません"
-      ],
-      "explain": [
-        "child",
-        "subject marker",
-        "does not exist for living things; there is not"
-      ],
-      "tokens": [
-        {
-          "surface": "子供",
-          "reading": "こども",
-          "explain": "child",
-          "wordId": "kodomo"
-        },
-        {
-          "surface": "が",
-          "reading": "が",
-          "explain": "subject marker"
-        },
-        {
-          "surface": "いません",
-          "reading": "いません",
-          "explain": "does not exist for living things; there is not",
-          "wordId": "iru"
-        }
-      ],
-      "english": "There is no child",
-      "grammarTags": [
-        "Nがいます",
-        "negative existence"
-      ],
-      "audioRef": "/media/jp/audio/unit_006/u006-c041.mp3"
-    },
-    {
-      "id": "u006-c042",
-      "line": [
-        "あれ",
-        "は",
-        "お茶",
-        "です"
-      ],
-      "tts": [
-        "あれ",
-        "わ",
-        "おちゃ",
-        "です"
-      ],
-      "explain": [
-        "that one over there",
-        "topic marker",
-        "tea",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あれ",
-          "reading": "あれ",
-          "explain": "that one over there",
-          "wordId": "are"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "お茶",
-          "reading": "おちゃ",
-          "explain": "tea",
-          "wordId": "ocha"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "That over there is tea",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c043",
-      "line": [
-        "あなた",
-        "は",
-        "かばん",
-        "を",
-        "使います",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "かばん",
-        "を",
-        "つかいます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "bag",
-        "direct object marker",
-        "use",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "かばん",
-          "reading": "かばん",
-          "explain": "bag",
-          "wordId": "kaban"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "使います",
-          "reading": "つかいます",
-          "explain": "use",
-          "wordId": "tsukau"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Do you use a bag?",
-      "grammarTags": [
-        "early Vます action",
-        "NをVます",
-        "か"
-      ]
-    },
-    {
-      "id": "u006-c044",
-      "line": [
-        "あの",
-        "水",
-        "です"
-      ],
-      "tts": [
-        "あの",
-        "みず",
-        "です"
-      ],
-      "explain": [
-        "that over there",
-        "water",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あの",
-          "reading": "あの",
-          "explain": "that over there",
-          "wordId": "ano"
-        },
-        {
-          "surface": "水",
-          "reading": "みず",
-          "explain": "water",
-          "wordId": "mizu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is that water over there",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c045",
-      "line": [
-        "大人",
-        "は",
-        "書きます"
-      ],
-      "tts": [
-        "おとな",
-        "わ",
-        "かきます"
-      ],
-      "explain": [
-        "adult",
-        "topic marker",
-        "write"
-      ],
-      "tokens": [
-        {
-          "surface": "大人",
-          "reading": "おとな",
-          "explain": "adult",
-          "wordId": "otona"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku"
-        }
-      ],
-      "english": "The adult writes",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u006-c046",
-      "line": [
-        "彼",
-        "は",
-        "店",
-        "に",
-        "行きます"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "みせ",
-        "に",
-        "いきます"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "shop",
-        "destination or time marker",
-        "go"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "店",
-          "reading": "みせ",
-          "explain": "shop",
-          "wordId": "mise"
-        },
-        {
-          "surface": "に",
-          "reading": "に",
-          "explain": "destination or time marker"
-        },
-        {
-          "surface": "行きます",
-          "reading": "いきます",
-          "explain": "go",
-          "wordId": "iku"
-        }
-      ],
-      "english": "He goes to a shop",
-      "grammarTags": [
-        "early Vます action"
-      ],
-      "audioRef": "/media/jp/audio/unit_006/u006-c046.mp3"
-    },
-    {
-      "id": "u006-c047",
-      "line": [
-        "大人",
-        "は",
-        "駅",
-        "に",
-        "来ます"
-      ],
-      "tts": [
-        "おとな",
-        "わ",
-        "えき",
-        "に",
-        "きます"
-      ],
-      "explain": [
-        "adult",
-        "topic marker",
-        "station",
-        "destination or time marker",
-        "come"
-      ],
-      "tokens": [
-        {
-          "surface": "大人",
-          "reading": "おとな",
-          "explain": "adult",
-          "wordId": "otona"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "駅",
-          "reading": "えき",
-          "explain": "station",
-          "wordId": "eki"
-        },
-        {
-          "surface": "に",
-          "reading": "に",
-          "explain": "destination or time marker"
-        },
-        {
-          "surface": "来ます",
-          "reading": "きます",
-          "explain": "come",
-          "wordId": "kuru"
-        }
-      ],
-      "english": "The adult comes to a station",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u006-c048",
-      "line": [
-        "これ",
-        "は",
-        "店",
-        "です"
-      ],
-      "tts": [
-        "これ",
-        "わ",
-        "みせ",
-        "です"
-      ],
-      "explain": [
-        "this one",
-        "topic marker",
-        "shop",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "これ",
-          "reading": "これ",
-          "explain": "this one",
-          "wordId": "kore"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "店",
-          "reading": "みせ",
-          "explain": "shop",
-          "wordId": "mise"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "This is a shop",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c049",
-      "line": [
-        "椅子",
-        "が",
-        "あります"
-      ],
-      "tts": [
-        "いす",
-        "が",
-        "あります"
-      ],
-      "explain": [
-        "chair",
-        "subject marker",
-        "exists; there is"
-      ],
-      "tokens": [
-        {
-          "surface": "椅子",
-          "reading": "いす",
-          "explain": "chair",
-          "wordId": "isu"
-        },
-        {
-          "surface": "が",
-          "reading": "が",
-          "explain": "subject marker"
-        },
-        {
-          "surface": "あります",
-          "reading": "あります",
-          "explain": "exists; there is",
-          "wordId": "aru"
-        }
-      ],
-      "english": "There is a chair",
-      "grammarTags": [
-        "Nがあります",
-        "basic existence"
-      ],
-      "audioRef": "/media/jp/audio/unit_006/u006-c049.mp3"
-    },
-    {
-      "id": "u006-c050",
-      "line": [
-        "この",
-        "かばん",
-        "です"
-      ],
-      "tts": [
-        "この",
-        "かばん",
-        "です"
-      ],
-      "explain": [
-        "this",
-        "bag",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "この",
-          "reading": "この",
-          "explain": "this",
-          "wordId": "kono"
-        },
-        {
-          "surface": "かばん",
-          "reading": "かばん",
-          "explain": "bag",
-          "wordId": "kaban"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is this bag",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c051",
+      "id": "u006-c020",
       "line": [
         "先生",
         "は",
-        "本",
+        "ベッド",
         "を",
-        "書きます"
+        "選びます"
       ],
       "tts": [
         "せんせい",
         "わ",
-        "ほん",
+        "べっど",
         "を",
-        "かきます"
+        "えらびます"
       ],
       "explain": [
         "teacher",
         "topic marker",
-        "book",
-        "direct object marker",
-        "write"
+        "bed",
+        "object marker",
+        "polite form of choose"
       ],
       "tokens": [
         {
@@ -2529,57 +1110,939 @@
           "explain": "topic marker"
         },
         {
-          "surface": "本",
-          "reading": "ほん",
-          "explain": "book",
-          "wordId": "hon"
+          "surface": "ベッド",
+          "reading": "べっど",
+          "explain": "bed",
+          "wordId": "beddo"
         },
         {
           "surface": "を",
           "reading": "を",
-          "explain": "direct object marker"
+          "explain": "object marker"
         },
         {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku"
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
         }
       ],
-      "english": "The teacher writes a book",
+      "english": "The teacher chooses the bed",
       "grammarTags": [
-        "early Vます action",
+        "Nがあります / Nがいます",
         "NをVます"
       ]
     },
     {
-      "id": "u006-c052",
+      "id": "u006-c021",
+      "line": [
+        "部屋",
+        "に",
+        "テレビ",
+        "が",
+        "あります"
+      ],
+      "tts": [
+        "へや",
+        "に",
+        "てれび",
+        "が",
+        "あります"
+      ],
+      "explain": [
+        "room",
+        "location or time marker",
+        "television",
+        "subject marker",
+        "polite form of exist; there is for things"
+      ],
+      "tokens": [
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "テレビ",
+          "reading": "てれび",
+          "explain": "television",
+          "wordId": "terebi"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "polite form of exist; there is for things",
+          "wordId": "aru"
+        }
+      ],
+      "english": "There is the television in the room",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "Nがあります"
+      ]
+    },
+    {
+      "id": "u006-c022",
+      "line": [
+        "エンジニア",
+        "は",
+        "エアコン",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "えんじにあ",
+        "わ",
+        "えあこん",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "engineer",
+        "topic marker",
+        "air conditioner",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "エアコン",
+          "reading": "えあこん",
+          "explain": "air conditioner",
+          "wordId": "eakon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "The engineer chooses the air conditioner",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u006-c023",
+      "line": [
+        "フィリピン",
+        "に",
+        "テレビ",
+        "が",
+        "あります"
+      ],
+      "tts": [
+        "ふぃりぴん",
+        "に",
+        "てれび",
+        "が",
+        "あります"
+      ],
+      "explain": [
+        "the Philippines",
+        "location or time marker",
+        "television",
+        "subject marker",
+        "polite form of exist; there is for things"
+      ],
+      "tokens": [
+        {
+          "surface": "フィリピン",
+          "reading": "ふぃりぴん",
+          "explain": "the Philippines",
+          "wordId": "firipin"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "テレビ",
+          "reading": "てれび",
+          "explain": "television",
+          "wordId": "terebi"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "あります",
+          "reading": "あります",
+          "explain": "polite form of exist; there is for things",
+          "wordId": "aru"
+        }
+      ],
+      "english": "There is the television in the Philippines",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "Nがあります"
+      ]
+    },
+    {
+      "id": "u006-c024",
+      "line": [
+        "国",
+        "に",
+        "家族",
+        "が",
+        "います"
+      ],
+      "tts": [
+        "くに",
+        "に",
+        "かぞく",
+        "が",
+        "います"
+      ],
+      "explain": [
+        "country",
+        "location or time marker",
+        "family",
+        "subject marker",
+        "polite form of exist; there is for living things"
+      ],
+      "tokens": [
+        {
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "polite form of exist; there is for living things",
+          "wordId": "iru"
+        }
+      ],
+      "english": "There is the family in the country",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "Nがいます"
+      ]
+    },
+    {
+      "id": "u006-c025",
+      "line": [
+        "母",
+        "は",
+        "家",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "はは",
+        "わ",
+        "いえ",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "mother",
+        "topic marker",
+        "house",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house",
+          "wordId": "ie"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The mother lives in the house",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u006-c026",
+      "line": [
+        "兄",
+        "は",
+        "うち",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "あに",
+        "わ",
+        "うち",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "older brother",
+        "topic marker",
+        "home",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "兄",
+          "reading": "あに",
+          "explain": "older brother",
+          "wordId": "ani"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "うち",
+          "reading": "うち",
+          "explain": "home",
+          "wordId": "uchi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The older brother lives in the home",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u006-c027",
+      "line": [
+        "姉",
+        "は",
+        "部屋",
+        "に",
+        "入ります"
+      ],
+      "tts": [
+        "あね",
+        "わ",
+        "へや",
+        "に",
+        "はいります"
+      ],
+      "explain": [
+        "older sister",
+        "topic marker",
+        "room",
+        "location or time marker",
+        "polite form of enter"
+      ],
+      "tokens": [
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "部屋",
+          "reading": "へや",
+          "explain": "room",
+          "wordId": "heya"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "入ります",
+          "reading": "はいります",
+          "explain": "polite form of enter",
+          "wordId": "hairu"
+        }
+      ],
+      "english": "The older sister enters the room",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u006-c028",
+      "line": [
+        "弟",
+        "は",
+        "アパート",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "おとうと",
+        "わ",
+        "あぱーと",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "younger brother",
+        "topic marker",
+        "apartment",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "アパート",
+          "reading": "あぱーと",
+          "explain": "apartment",
+          "wordId": "apaato"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The younger brother lives in the apartment",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u006-c029",
+      "line": [
+        "妹",
+        "は",
+        "マンション",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "いもうと",
+        "わ",
+        "まんしょん",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "younger sister",
+        "topic marker",
+        "apartment building",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "妹",
+          "reading": "いもうと",
+          "explain": "younger sister",
+          "wordId": "imouto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "マンション",
+          "reading": "まんしょん",
+          "explain": "apartment building",
+          "wordId": "manshon"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The younger sister lives in the apartment building",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u006-c030",
+      "line": [
+        "妹",
+        "は",
+        "いす",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "いもうと",
+        "わ",
+        "いす",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "younger sister",
+        "topic marker",
+        "chair",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "妹",
+          "reading": "いもうと",
+          "explain": "younger sister",
+          "wordId": "imouto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いす",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "The younger sister chooses the chair",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u006-c031",
+      "line": [
+        "子ども",
+        "は",
+        "テーブル",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "こども",
+        "わ",
+        "てーぶる",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "child",
+        "topic marker",
+        "table",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "子ども",
+          "reading": "こども",
+          "explain": "child",
+          "wordId": "kodomo"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "テーブル",
+          "reading": "てーぶる",
+          "explain": "table",
+          "wordId": "teeburu"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "The child chooses the table",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u006-c032",
+      "line": [
+        "友達",
+        "は",
+        "ベッド",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "べっど",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "bed",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ベッド",
+          "reading": "べっど",
+          "explain": "bed",
+          "wordId": "beddo"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "The friend chooses the bed",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u006-c033",
+      "line": [
+        "人",
+        "は",
+        "ご飯",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "ひと",
+        "わ",
+        "ごはん",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "person",
+        "topic marker",
+        "meal; rice",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ご飯",
+          "reading": "ごはん",
+          "explain": "meal; rice",
+          "wordId": "gohan"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "The person chooses the meal",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c034",
+      "line": [
+        "私",
+        "は",
+        "朝ご飯",
+        "を",
+        "食べます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "あさごはん",
+        "を",
+        "たべます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "breakfast",
+        "object marker",
+        "polite form of eat"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "朝ご飯",
+          "reading": "あさごはん",
+          "explain": "breakfast",
+          "wordId": "asagohan"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "polite form of eat",
+          "wordId": "taberu"
+        }
+      ],
+      "english": "I eat the breakfast",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c035",
+      "line": [
+        "あなた",
+        "は",
+        "パン",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "ぱん",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "bread",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "anata"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "パン",
+          "reading": "ぱん",
+          "explain": "bread",
+          "wordId": "pan"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "You choose the bread",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c036",
       "line": [
         "学生",
         "は",
-        "お茶",
+        "水",
         "を",
-        "買います",
-        "か",
-        "？"
+        "飲みます"
       ],
       "tts": [
         "がくせい",
         "わ",
-        "おちゃ",
+        "みず",
         "を",
-        "かいます",
-        "か",
-        "？"
+        "のみます"
       ],
       "explain": [
         "student",
         "topic marker",
-        "tea",
-        "direct object marker",
-        "buy",
-        "question marker",
-        "question mark"
+        "water",
+        "object marker",
+        "polite form of drink"
       ],
       "tokens": [
         {
@@ -2587,6 +2050,66 @@
           "reading": "がくせい",
           "explain": "student",
           "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "水",
+          "reading": "みず",
+          "explain": "water",
+          "wordId": "mizu"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "polite form of drink",
+          "wordId": "nomu"
+        }
+      ],
+      "english": "The student drinks the water",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c037",
+      "line": [
+        "先生",
+        "は",
+        "お茶",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "せんせい",
+        "わ",
+        "おちゃ",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "teacher",
+        "topic marker",
+        "tea",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "先生",
+          "reading": "せんせい",
+          "explain": "teacher",
+          "wordId": "sensei"
         },
         {
           "surface": "は",
@@ -2602,58 +2125,934 @@
         {
           "surface": "を",
           "reading": "を",
-          "explain": "direct object marker"
+          "explain": "object marker"
         },
         {
-          "surface": "買います",
-          "reading": "かいます",
-          "explain": "buy",
-          "wordId": "kau"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
         }
       ],
-      "english": "Does the student buy tea?",
+      "english": "The teacher chooses the tea",
       "grammarTags": [
-        "early Vます action",
+        "Nがあります / Nがいます",
         "NをVます",
-        "か"
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c038",
+      "line": [
+        "会社員",
+        "は",
+        "コーヒー",
+        "を",
+        "飲みます"
+      ],
+      "tts": [
+        "かいしゃいん",
+        "わ",
+        "こーひー",
+        "を",
+        "のみます"
+      ],
+      "explain": [
+        "company employee",
+        "topic marker",
+        "coffee",
+        "object marker",
+        "polite form of drink"
+      ],
+      "tokens": [
+        {
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "コーヒー",
+          "reading": "こーひー",
+          "explain": "coffee",
+          "wordId": "koohii"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "polite form of drink",
+          "wordId": "nomu"
+        }
+      ],
+      "english": "The company employee drinks the coffee",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c039",
+      "line": [
+        "エンジニア",
+        "は",
+        "牛乳",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "えんじにあ",
+        "わ",
+        "ぎゅうにゅう",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "engineer",
+        "topic marker",
+        "milk",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "牛乳",
+          "reading": "ぎゅうにゅう",
+          "explain": "milk",
+          "wordId": "gyuunyuu"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "The engineer chooses the milk",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c040",
+      "line": [
+        "主婦",
+        "は",
+        "魚",
+        "を",
+        "食べます"
+      ],
+      "tts": [
+        "しゅふ",
+        "わ",
+        "さかな",
+        "を",
+        "たべます"
+      ],
+      "explain": [
+        "homemaker",
+        "topic marker",
+        "fish",
+        "object marker",
+        "polite form of eat"
+      ],
+      "tokens": [
+        {
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "魚",
+          "reading": "さかな",
+          "explain": "fish",
+          "wordId": "sakana"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "polite form of eat",
+          "wordId": "taberu"
+        }
+      ],
+      "english": "The homemaker eats the fish",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c041",
+      "line": [
+        "家族",
+        "は",
+        "肉",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "かぞく",
+        "わ",
+        "にく",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "family",
+        "topic marker",
+        "meat",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "肉",
+          "reading": "にく",
+          "explain": "meat",
+          "wordId": "niku"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "The family chooses the meat",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c042",
+      "line": [
+        "父",
+        "は",
+        "野菜",
+        "を",
+        "食べます"
+      ],
+      "tts": [
+        "ちち",
+        "わ",
+        "やさい",
+        "を",
+        "たべます"
+      ],
+      "explain": [
+        "father",
+        "topic marker",
+        "vegetables",
+        "object marker",
+        "polite form of eat"
+      ],
+      "tokens": [
+        {
+          "surface": "父",
+          "reading": "ちち",
+          "explain": "father",
+          "wordId": "chichi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "野菜",
+          "reading": "やさい",
+          "explain": "vegetables",
+          "wordId": "yasai"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "polite form of eat",
+          "wordId": "taberu"
+        }
+      ],
+      "english": "The father eats the vegetables",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c043",
+      "line": [
+        "私",
+        "は",
+        "ピザ",
+        "を",
+        "食べます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ぴざ",
+        "を",
+        "たべます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "pizza",
+        "object marker",
+        "polite form of eat"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ピザ",
+          "reading": "ぴざ",
+          "explain": "pizza",
+          "wordId": "piza"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "食べます",
+          "reading": "たべます",
+          "explain": "polite form of eat",
+          "wordId": "taberu"
+        }
+      ],
+      "english": "I eat the pizza",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c044",
+      "line": [
+        "あなた",
+        "は",
+        "水",
+        "を",
+        "飲みます"
+      ],
+      "tts": [
+        "あなた",
+        "わ",
+        "みず",
+        "を",
+        "のみます"
+      ],
+      "explain": [
+        "you",
+        "topic marker",
+        "water",
+        "object marker",
+        "polite form of drink"
+      ],
+      "tokens": [
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "anata"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "水",
+          "reading": "みず",
+          "explain": "water",
+          "wordId": "mizu"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "飲みます",
+          "reading": "のみます",
+          "explain": "polite form of drink",
+          "wordId": "nomu"
+        }
+      ],
+      "english": "You drink the water",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c045",
+      "line": [
+        "姉",
+        "は",
+        "国",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "あね",
+        "わ",
+        "くに",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "older sister",
+        "topic marker",
+        "country",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The older sister lives in the country",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c046",
+      "line": [
+        "弟",
+        "は",
+        "日本",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "おとうと",
+        "わ",
+        "にほん",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "younger brother",
+        "topic marker",
+        "Japan",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The younger brother lives in Japan",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c047",
+      "line": [
+        "妹",
+        "は",
+        "オーストラリア",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "いもうと",
+        "わ",
+        "おーすとらりあ",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "younger sister",
+        "topic marker",
+        "Australia",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "妹",
+          "reading": "いもうと",
+          "explain": "younger sister",
+          "wordId": "imouto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "オーストラリア",
+          "reading": "おーすとらりあ",
+          "explain": "Australia",
+          "wordId": "oosutoraria"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The younger sister lives in Australia",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c048",
+      "line": [
+        "子ども",
+        "は",
+        "スペイン",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "こども",
+        "わ",
+        "すぺいん",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "child",
+        "topic marker",
+        "Spain",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "子ども",
+          "reading": "こども",
+          "explain": "child",
+          "wordId": "kodomo"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "スペイン",
+          "reading": "すぺいん",
+          "explain": "Spain",
+          "wordId": "supein"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The child lives in Spain",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c049",
+      "line": [
+        "友達",
+        "は",
+        "タイ",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "たい",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "Thailand",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "タイ",
+          "reading": "たい",
+          "explain": "Thailand",
+          "wordId": "tai"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The friend lives in Thailand",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c050",
+      "line": [
+        "人",
+        "は",
+        "フィリピン",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "ひと",
+        "わ",
+        "ふぃりぴん",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "person",
+        "topic marker",
+        "the Philippines",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "フィリピン",
+          "reading": "ふぃりぴん",
+          "explain": "the Philippines",
+          "wordId": "firipin"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The person lives in the Philippines",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c051",
+      "line": [
+        "私",
+        "は",
+        "ロシア",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "ろしあ",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "Russia",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ロシア",
+          "reading": "ろしあ",
+          "explain": "Russia",
+          "wordId": "roshia"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "I live in Russia",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます",
+        "forced review coverage"
+      ]
+    },
+    {
+      "id": "u006-c052",
+      "line": [
+        "会社員",
+        "は",
+        "住みます"
+      ],
+      "tts": [
+        "かいしゃいん",
+        "わ",
+        "すみます"
+      ],
+      "explain": [
+        "company employee",
+        "topic marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The company employee lives",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "early Vます action",
+        "forced review coverage"
       ]
     },
     {
       "id": "u006-c053",
       "line": [
-        "それ",
+        "エンジニア",
         "は",
-        "学校",
-        "です"
+        "私",
+        "に",
+        "会います"
       ],
       "tts": [
-        "それ",
+        "えんじにあ",
         "わ",
-        "がっこう",
-        "です"
+        "わたし",
+        "に",
+        "あいます"
       ],
       "explain": [
-        "that one near you",
+        "engineer",
         "topic marker",
-        "school",
-        "polite identity marker"
+        "I; me",
+        "location or time marker",
+        "polite form of meet"
       ],
       "tokens": [
         {
-          "surface": "それ",
-          "reading": "それ",
-          "explain": "that one near you",
-          "wordId": "sore"
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
         },
         {
           "surface": "は",
@@ -2661,50 +3060,53 @@
           "explain": "topic marker"
         },
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou"
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "会います",
+          "reading": "あいます",
+          "explain": "polite form of meet",
+          "wordId": "au"
         }
       ],
-      "english": "That near you is a school",
+      "english": "The engineer meets me",
       "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ],
-      "audioRef": "/media/jp/audio/unit_006/u006-c053.mp3"
+        "Nがあります / Nがいます",
+        "人に会います",
+        "forced review coverage"
+      ]
     },
     {
       "id": "u006-c054",
       "line": [
-        "それ",
+        "主婦",
         "は",
-        "病院",
-        "です"
+        "話します"
       ],
       "tts": [
-        "それ",
+        "しゅふ",
         "わ",
-        "びょういん",
-        "です"
+        "はなします"
       ],
       "explain": [
-        "that one near you",
+        "homemaker",
         "topic marker",
-        "hospital",
-        "polite identity marker"
+        "polite form of speak; talk"
       ],
       "tokens": [
         {
-          "surface": "それ",
-          "reading": "それ",
-          "explain": "that one near you",
-          "wordId": "sore"
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
           "surface": "は",
@@ -2712,21 +3114,17 @@
           "explain": "topic marker"
         },
         {
-          "surface": "病院",
-          "reading": "びょういん",
-          "explain": "hospital",
-          "wordId": "byouin"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "話します",
+          "reading": "はなします",
+          "explain": "polite form of speak; talk",
+          "wordId": "hanasu"
         }
       ],
-      "english": "That near you is a hospital",
+      "english": "The homemaker speaks",
       "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
+        "Nがあります / Nがいます",
+        "early Vます action",
+        "forced review coverage"
       ]
     },
     {
@@ -2734,29 +3132,17 @@
       "line": [
         "友達",
         "は",
-        "椅子",
-        "を",
-        "使います",
-        "か",
-        "？"
+        "働きます"
       ],
       "tts": [
         "ともだち",
         "わ",
-        "いす",
-        "を",
-        "つかいます",
-        "か",
-        "？"
+        "はたらきます"
       ],
       "explain": [
         "friend",
         "topic marker",
-        "chair",
-        "direct object marker",
-        "use",
-        "question marker",
-        "question mark"
+        "polite form of work"
       ],
       "tokens": [
         {
@@ -2771,463 +3157,119 @@
           "explain": "topic marker"
         },
         {
-          "surface": "椅子",
-          "reading": "いす",
-          "explain": "chair",
-          "wordId": "isu"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "使います",
-          "reading": "つかいます",
-          "explain": "use",
-          "wordId": "tsukau"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
         }
       ],
-      "english": "Does the friend use a chair?",
+      "english": "The friend works",
       "grammarTags": [
+        "Nがあります / Nがいます",
         "early Vます action",
-        "NをVます",
-        "か"
+        "forced review coverage"
       ]
     },
     {
       "id": "u006-c056",
       "line": [
-        "その",
-        "店",
-        "です"
+        "人",
+        "は",
+        "日本",
+        "に",
+        "住みます"
       ],
       "tts": [
-        "その",
-        "みせ",
-        "です"
+        "ひと",
+        "わ",
+        "にほん",
+        "に",
+        "すみます"
       ],
       "explain": [
-        "that near you",
-        "shop",
-        "polite identity marker"
+        "person",
+        "topic marker",
+        "Japan",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "その",
-          "reading": "その",
-          "explain": "that near you",
-          "wordId": "sono"
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
         },
         {
-          "surface": "店",
-          "reading": "みせ",
-          "explain": "shop",
-          "wordId": "mise"
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "日本",
+          "reading": "にほん",
+          "explain": "Japan",
+          "wordId": "nihon"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "It is that shop near you",
+      "english": "The person lives in Japan",
       "grammarTags": [
-        "kono/sono/ano N"
+        "Nがあります / Nがいます",
+        "場所にVます",
+        "forced review coverage"
       ]
     },
     {
       "id": "u006-c057",
       "line": [
-        "医者",
-        "は",
-        "会社",
+        "家",
         "に",
-        "行きます"
-      ],
-      "tts": [
-        "いしゃ",
-        "わ",
-        "かいしゃ",
-        "に",
-        "いきます"
-      ],
-      "explain": [
-        "doctor",
-        "topic marker",
-        "company",
-        "destination or time marker",
-        "go"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "会社",
-          "reading": "かいしゃ",
-          "explain": "company",
-          "wordId": "kaisha"
-        },
-        {
-          "surface": "に",
-          "reading": "に",
-          "explain": "destination or time marker"
-        },
-        {
-          "surface": "行きます",
-          "reading": "いきます",
-          "explain": "go",
-          "wordId": "iku"
-        }
-      ],
-      "english": "The doctor goes to a company",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u006-c058",
-      "line": [
-        "医者",
-        "は",
-        "読みます"
-      ],
-      "tts": [
-        "いしゃ",
-        "わ",
-        "よみます"
-      ],
-      "explain": [
-        "doctor",
-        "topic marker",
-        "read"
-      ],
-      "tokens": [
-        {
-          "surface": "医者",
-          "reading": "いしゃ",
-          "explain": "doctor",
-          "wordId": "isha"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu"
-        }
-      ],
-      "english": "The doctor reads",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u006-c059",
-      "line": [
-        "あれ",
-        "は",
-        "駅",
-        "です"
-      ],
-      "tts": [
-        "あれ",
-        "わ",
-        "えき",
-        "です"
-      ],
-      "explain": [
-        "that one over there",
-        "topic marker",
-        "station",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あれ",
-          "reading": "あれ",
-          "explain": "that one over there",
-          "wordId": "are"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "駅",
-          "reading": "えき",
-          "explain": "station",
-          "wordId": "eki"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "That over there is a station",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c060",
-      "line": [
-        "私",
-        "は",
-        "お茶",
-        "を",
-        "買います",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "おちゃ",
-        "を",
-        "かいます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "tea",
-        "direct object marker",
-        "buy",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "お茶",
-          "reading": "おちゃ",
-          "explain": "tea",
-          "wordId": "ocha"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "買います",
-          "reading": "かいます",
-          "explain": "buy",
-          "wordId": "kau"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Do I buy tea?",
-      "grammarTags": [
-        "early Vます action",
-        "NをVます",
-        "か"
-      ]
-    },
-    {
-      "id": "u006-c061",
-      "line": [
-        "あの",
-        "机",
-        "です"
-      ],
-      "tts": [
-        "あの",
-        "つくえ",
-        "です"
-      ],
-      "explain": [
-        "that over there",
-        "desk",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あの",
-          "reading": "あの",
-          "explain": "that over there",
-          "wordId": "ano"
-        },
-        {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is that desk over there",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c062",
-      "line": [
-        "私",
-        "は",
-        "水",
-        "を",
-        "使います",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "みず",
-        "を",
-        "つかいます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "water",
-        "direct object marker",
-        "use",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "水",
-          "reading": "みず",
-          "explain": "water",
-          "wordId": "mizu"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "使います",
-          "reading": "つかいます",
-          "explain": "use",
-          "wordId": "tsukau"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Do I use water?",
-      "grammarTags": [
-        "early Vます action",
-        "NをVます",
-        "か"
-      ]
-    },
-    {
-      "id": "u006-c063",
-      "line": [
-        "学校",
-        "に",
-        "猫",
+        "主婦",
         "が",
         "います"
       ],
       "tts": [
-        "がっこう",
+        "いえ",
         "に",
-        "ねこ",
+        "しゅふ",
         "が",
         "います"
       ],
       "explain": [
-        "school",
-        "destination or time marker",
-        "cat",
+        "house",
+        "location or time marker",
+        "homemaker",
         "subject marker",
-        "exists for living things; there is"
+        "polite form of exist; there is for living things"
       ],
       "tokens": [
         {
-          "surface": "学校",
-          "reading": "がっこう",
-          "explain": "school",
-          "wordId": "gakkou"
+          "surface": "家",
+          "reading": "いえ",
+          "explain": "house",
+          "wordId": "ie"
         },
         {
           "surface": "に",
           "reading": "に",
-          "explain": "destination or time marker"
+          "explain": "location or time marker"
         },
         {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
+          "surface": "主婦",
+          "reading": "しゅふ",
+          "explain": "homemaker",
+          "wordId": "shufu"
         },
         {
           "surface": "が",
@@ -3237,40 +3279,45 @@
         {
           "surface": "います",
           "reading": "います",
-          "explain": "exists for living things; there is",
+          "explain": "polite form of exist; there is for living things",
           "wordId": "iru"
         }
       ],
-      "english": "There is a cat at a school",
+      "english": "There is the homemaker in the house",
       "grammarTags": [
-        "located living existence",
-        "basic existence"
-      ],
-      "audioRef": "/media/jp/audio/unit_006/u006-c063.mp3"
+        "Nがあります / Nがいます",
+        "Nがいます"
+      ]
     },
     {
-      "id": "u006-c064",
+      "id": "u006-c058",
       "line": [
-        "子供",
+        "家族",
         "は",
-        "読みます"
+        "エアコン",
+        "を",
+        "選びます"
       ],
       "tts": [
-        "こども",
+        "かぞく",
         "わ",
-        "よみます"
+        "えあこん",
+        "を",
+        "えらびます"
       ],
       "explain": [
-        "child",
+        "family",
         "topic marker",
-        "read"
+        "air conditioner",
+        "object marker",
+        "polite form of choose"
       ],
       "tokens": [
         {
-          "surface": "子供",
-          "reading": "こども",
-          "explain": "child",
-          "wordId": "kodomo"
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
         },
         {
           "surface": "は",
@@ -3278,230 +3325,69 @@
           "explain": "topic marker"
         },
         {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu"
+          "surface": "エアコン",
+          "reading": "えあこん",
+          "explain": "air conditioner",
+          "wordId": "eakon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
         }
       ],
-      "english": "The child reads",
+      "english": "The family chooses the air conditioner",
       "grammarTags": [
-        "early Vます action"
+        "Nがあります / Nがいます",
+        "NをVます"
       ]
     },
     {
-      "id": "u006-c065",
+      "id": "u006-c059",
       "line": [
-        "これ",
-        "は",
-        "机",
-        "です"
-      ],
-      "tts": [
-        "これ",
-        "わ",
-        "つくえ",
-        "です"
-      ],
-      "explain": [
-        "this one",
-        "topic marker",
-        "desk",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "これ",
-          "reading": "これ",
-          "explain": "this one",
-          "wordId": "kore"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "This is a desk",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c066",
-      "line": [
-        "子供",
-        "は",
-        "読みます",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "こども",
-        "わ",
-        "よみます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "child",
-        "topic marker",
-        "read",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "子供",
-          "reading": "こども",
-          "explain": "child",
-          "wordId": "kodomo"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Does the child read?",
-      "grammarTags": [
-        "early Vます action",
-        "か"
-      ]
-    },
-    {
-      "id": "u006-c067",
-      "line": [
-        "この",
-        "椅子",
-        "です"
-      ],
-      "tts": [
-        "この",
-        "いす",
-        "です"
-      ],
-      "explain": [
-        "this",
-        "chair",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "この",
-          "reading": "この",
-          "explain": "this",
-          "wordId": "kono"
-        },
-        {
-          "surface": "椅子",
-          "reading": "いす",
-          "explain": "chair",
-          "wordId": "isu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is this chair",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c068",
-      "line": [
-        "この",
-        "会社",
-        "です"
-      ],
-      "tts": [
-        "この",
-        "かいしゃ",
-        "です"
-      ],
-      "explain": [
-        "this",
-        "company",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "この",
-          "reading": "この",
-          "explain": "this",
-          "wordId": "kono"
-        },
-        {
-          "surface": "会社",
-          "reading": "かいしゃ",
-          "explain": "company",
-          "wordId": "kaisha"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is this company",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c069",
-      "line": [
-        "机",
+        "スペイン",
+        "に",
+        "水",
         "が",
         "あります"
       ],
       "tts": [
-        "つくえ",
+        "すぺいん",
+        "に",
+        "みず",
         "が",
         "あります"
       ],
       "explain": [
-        "desk",
+        "Spain",
+        "location or time marker",
+        "water",
         "subject marker",
-        "exists; there is"
+        "polite form of exist; there is for things"
       ],
       "tokens": [
         {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
+          "surface": "スペイン",
+          "reading": "すぺいん",
+          "explain": "Spain",
+          "wordId": "supein"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "水",
+          "reading": "みず",
+          "explain": "water",
+          "wordId": "mizu"
         },
         {
           "surface": "が",
@@ -3511,234 +3397,278 @@
         {
           "surface": "あります",
           "reading": "あります",
-          "explain": "exists; there is",
+          "explain": "polite form of exist; there is for things",
           "wordId": "aru"
         }
       ],
-      "english": "There is a desk",
+      "english": "There is the water in Spain",
       "grammarTags": [
-        "Nがあります",
-        "basic existence"
-      ],
-      "audioRef": "/media/jp/audio/unit_006/u006-c069.mp3"
-    },
-    {
-      "id": "u006-c070",
-      "line": [
-        "その",
-        "大人",
-        "です"
-      ],
-      "tts": [
-        "その",
-        "おとな",
-        "です"
-      ],
-      "explain": [
-        "that near you",
-        "adult",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "その",
-          "reading": "その",
-          "explain": "that near you",
-          "wordId": "sono"
-        },
-        {
-          "surface": "大人",
-          "reading": "おとな",
-          "explain": "adult",
-          "wordId": "otona"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is that adult near you",
-      "grammarTags": [
-        "kono/sono/ano N"
+        "Nがあります / Nがいます",
+        "Nがあります"
       ]
     },
     {
-      "id": "u006-c071",
+      "id": "u006-c060",
       "line": [
-        "それ",
-        "は",
-        "椅子",
-        "です"
-      ],
-      "tts": [
-        "それ",
-        "わ",
-        "いす",
-        "です"
-      ],
-      "explain": [
-        "that one near you",
-        "topic marker",
-        "chair",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "それ",
-          "reading": "それ",
-          "explain": "that one near you",
-          "wordId": "sore"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "椅子",
-          "reading": "いす",
-          "explain": "chair",
-          "wordId": "isu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "That near you is a chair",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c072",
-      "line": [
-        "先生",
-        "は",
-        "水",
-        "を",
-        "買います"
-      ],
-      "tts": [
-        "せんせい",
-        "わ",
-        "みず",
-        "を",
-        "かいます"
-      ],
-      "explain": [
-        "teacher",
-        "topic marker",
-        "water",
-        "direct object marker",
-        "buy"
-      ],
-      "tokens": [
-        {
-          "surface": "先生",
-          "reading": "せんせい",
-          "explain": "teacher",
-          "wordId": "sensei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "水",
-          "reading": "みず",
-          "explain": "water",
-          "wordId": "mizu"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "買います",
-          "reading": "かいます",
-          "explain": "buy",
-          "wordId": "kau"
-        }
-      ],
-      "english": "The teacher buys water",
-      "grammarTags": [
-        "early Vます action",
-        "NをVます"
-      ]
-    },
-    {
-      "id": "u006-c073",
-      "line": [
-        "その",
-        "病院",
-        "です"
-      ],
-      "tts": [
-        "その",
-        "びょういん",
-        "です"
-      ],
-      "explain": [
-        "that near you",
-        "hospital",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "その",
-          "reading": "その",
-          "explain": "that near you",
-          "wordId": "sono"
-        },
-        {
-          "surface": "病院",
-          "reading": "びょういん",
-          "explain": "hospital",
-          "wordId": "byouin"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is that hospital near you",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c074",
-      "line": [
-        "子供",
-        "は",
-        "駅",
+        "アパート",
         "に",
-        "行きます"
+        "母",
+        "が",
+        "います"
+      ],
+      "tts": [
+        "あぱーと",
+        "に",
+        "はは",
+        "が",
+        "います"
+      ],
+      "explain": [
+        "apartment",
+        "location or time marker",
+        "mother",
+        "subject marker",
+        "polite form of exist; there is for living things"
+      ],
+      "tokens": [
+        {
+          "surface": "アパート",
+          "reading": "あぱーと",
+          "explain": "apartment",
+          "wordId": "apaato"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "polite form of exist; there is for living things",
+          "wordId": "iru"
+        }
+      ],
+      "english": "There is the mother in the apartment",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "Nがいます"
+      ]
+    },
+    {
+      "id": "u006-c061",
+      "line": [
+        "兄",
+        "は",
+        "国",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "あに",
+        "わ",
+        "くに",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "older brother",
+        "topic marker",
+        "country",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "兄",
+          "reading": "あに",
+          "explain": "older brother",
+          "wordId": "ani"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "国",
+          "reading": "くに",
+          "explain": "country",
+          "wordId": "kuni"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The older brother lives in the country",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u006-c062",
+      "line": [
+        "弟",
+        "は",
+        "うち",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "おとうと",
+        "わ",
+        "うち",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "younger brother",
+        "topic marker",
+        "home",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "うち",
+          "reading": "うち",
+          "explain": "home",
+          "wordId": "uchi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The younger brother lives in the home",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u006-c063",
+      "line": [
+        "弟",
+        "は",
+        "オーストラリア",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "おとうと",
+        "わ",
+        "おーすとらりあ",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "younger brother",
+        "topic marker",
+        "Australia",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "オーストラリア",
+          "reading": "おーすとらりあ",
+          "explain": "Australia",
+          "wordId": "oosutoraria"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The younger brother lives in Australia",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u006-c064",
+      "line": [
+        "子ども",
+        "は",
+        "アパート",
+        "に",
+        "住みます"
       ],
       "tts": [
         "こども",
         "わ",
-        "えき",
+        "あぱーと",
         "に",
-        "いきます"
+        "すみます"
       ],
       "explain": [
         "child",
         "topic marker",
-        "station",
-        "destination or time marker",
-        "go"
+        "apartment",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
-          "surface": "子供",
+          "surface": "子ども",
           "reading": "こども",
           "explain": "child",
           "wordId": "kodomo"
@@ -3749,1164 +3679,51 @@
           "explain": "topic marker"
         },
         {
-          "surface": "駅",
-          "reading": "えき",
-          "explain": "station",
-          "wordId": "eki"
+          "surface": "アパート",
+          "reading": "あぱーと",
+          "explain": "apartment",
+          "wordId": "apaato"
         },
         {
           "surface": "に",
           "reading": "に",
-          "explain": "destination or time marker"
+          "explain": "location or time marker"
         },
         {
-          "surface": "行きます",
-          "reading": "いきます",
-          "explain": "go",
-          "wordId": "iku"
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
         }
       ],
-      "english": "The child goes to a station",
+      "english": "The child lives in the apartment",
       "grammarTags": [
-        "early Vます action"
+        "Nがあります / Nがいます",
+        "場所にVます"
       ]
     },
     {
-      "id": "u006-c075",
-      "line": [
-        "学生",
-        "は",
-        "かばん",
-        "を",
-        "使います",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "がくせい",
-        "わ",
-        "かばん",
-        "を",
-        "つかいます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "student",
-        "topic marker",
-        "bag",
-        "direct object marker",
-        "use",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "かばん",
-          "reading": "かばん",
-          "explain": "bag",
-          "wordId": "kaban"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "使います",
-          "reading": "つかいます",
-          "explain": "use",
-          "wordId": "tsukau"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Does the student use a bag?",
-      "grammarTags": [
-        "early Vます action",
-        "NをVます",
-        "か"
-      ]
-    },
-    {
-      "id": "u006-c076",
-      "line": [
-        "犬",
-        "は",
-        "動物",
-        "です"
-      ],
-      "tts": [
-        "いぬ",
-        "わ",
-        "どうぶつ",
-        "です"
-      ],
-      "explain": [
-        "dog",
-        "topic marker",
-        "animal",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "The dog is an animal",
-      "grammarTags": [
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c077",
-      "line": [
-        "あれ",
-        "は",
-        "机",
-        "です"
-      ],
-      "tts": [
-        "あれ",
-        "わ",
-        "つくえ",
-        "です"
-      ],
-      "explain": [
-        "that one over there",
-        "topic marker",
-        "desk",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あれ",
-          "reading": "あれ",
-          "explain": "that one over there",
-          "wordId": "are"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "机",
-          "reading": "つくえ",
-          "explain": "desk",
-          "wordId": "tsukue"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "That over there is a desk",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c078",
-      "line": [
-        "あれ",
-        "は",
-        "猫",
-        "です"
-      ],
-      "tts": [
-        "あれ",
-        "わ",
-        "ねこ",
-        "です"
-      ],
-      "explain": [
-        "that one over there",
-        "topic marker",
-        "cat",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あれ",
-          "reading": "あれ",
-          "explain": "that one over there",
-          "wordId": "are"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "That over there is a cat",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c079",
-      "line": [
-        "あの",
-        "駅",
-        "です"
-      ],
-      "tts": [
-        "あの",
-        "えき",
-        "です"
-      ],
-      "explain": [
-        "that over there",
-        "station",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あの",
-          "reading": "あの",
-          "explain": "that over there",
-          "wordId": "ano"
-        },
-        {
-          "surface": "駅",
-          "reading": "えき",
-          "explain": "station",
-          "wordId": "eki"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is that station over there",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c080",
-      "line": [
-        "大人",
-        "は",
-        "店",
-        "に",
-        "来ます"
-      ],
-      "tts": [
-        "おとな",
-        "わ",
-        "みせ",
-        "に",
-        "きます"
-      ],
-      "explain": [
-        "adult",
-        "topic marker",
-        "shop",
-        "destination or time marker",
-        "come"
-      ],
-      "tokens": [
-        {
-          "surface": "大人",
-          "reading": "おとな",
-          "explain": "adult",
-          "wordId": "otona"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "店",
-          "reading": "みせ",
-          "explain": "shop",
-          "wordId": "mise"
-        },
-        {
-          "surface": "に",
-          "reading": "に",
-          "explain": "destination or time marker"
-        },
-        {
-          "surface": "来ます",
-          "reading": "きます",
-          "explain": "come",
-          "wordId": "kuru"
-        }
-      ],
-      "english": "The adult comes to a shop",
-      "grammarTags": [
-        "early Vます action"
-      ]
-    },
-    {
-      "id": "u006-c081",
-      "line": [
-        "私",
-        "は",
-        "水",
-        "を",
-        "使います"
-      ],
-      "tts": [
-        "わたし",
-        "わ",
-        "みず",
-        "を",
-        "つかいます"
-      ],
-      "explain": [
-        "I; me",
-        "topic marker",
-        "water",
-        "direct object marker",
-        "use"
-      ],
-      "tokens": [
-        {
-          "surface": "私",
-          "reading": "わたし",
-          "explain": "I; me",
-          "wordId": "watashi"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "水",
-          "reading": "みず",
-          "explain": "water",
-          "wordId": "mizu"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "使います",
-          "reading": "つかいます",
-          "explain": "use",
-          "wordId": "tsukau"
-        }
-      ],
-      "english": "I use water",
-      "grammarTags": [
-        "early Vます action",
-        "NをVます"
-      ]
-    },
-    {
-      "id": "u006-c082",
-      "line": [
-        "猫",
-        "は",
-        "動物",
-        "です",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "ねこ",
-        "わ",
-        "どうぶつ",
-        "です",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "cat",
-        "topic marker",
-        "animal",
-        "polite identity marker",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "猫",
-          "reading": "ねこ",
-          "explain": "cat",
-          "wordId": "neko"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "動物",
-          "reading": "どうぶつ",
-          "explain": "animal",
-          "wordId": "doubutsu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Is the cat an animal?",
-      "grammarTags": [
-        "AはBです",
-        "か"
-      ]
-    },
-    {
-      "id": "u006-c083",
-      "line": [
-        "これ",
-        "は",
-        "病院",
-        "です"
-      ],
-      "tts": [
-        "これ",
-        "わ",
-        "びょういん",
-        "です"
-      ],
-      "explain": [
-        "this one",
-        "topic marker",
-        "hospital",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "これ",
-          "reading": "これ",
-          "explain": "this one",
-          "wordId": "kore"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "病院",
-          "reading": "びょういん",
-          "explain": "hospital",
-          "wordId": "byouin"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "This is a hospital",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c084",
-      "line": [
-        "あなた",
-        "は",
-        "お茶",
-        "を",
-        "買います"
-      ],
-      "tts": [
-        "あなた",
-        "わ",
-        "おちゃ",
-        "を",
-        "かいます"
-      ],
-      "explain": [
-        "you",
-        "topic marker",
-        "tea",
-        "direct object marker",
-        "buy"
-      ],
-      "tokens": [
-        {
-          "surface": "あなた",
-          "reading": "あなた",
-          "explain": "you",
-          "wordId": "sakura"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "お茶",
-          "reading": "おちゃ",
-          "explain": "tea",
-          "wordId": "ocha"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "買います",
-          "reading": "かいます",
-          "explain": "buy",
-          "wordId": "kau"
-        }
-      ],
-      "english": "You buy tea",
-      "grammarTags": [
-        "early Vます action",
-        "NをVます"
-      ]
-    },
-    {
-      "id": "u006-c085",
-      "line": [
-        "この",
-        "店",
-        "です"
-      ],
-      "tts": [
-        "この",
-        "みせ",
-        "です"
-      ],
-      "explain": [
-        "this",
-        "shop",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "この",
-          "reading": "この",
-          "explain": "this",
-          "wordId": "kono"
-        },
-        {
-          "surface": "店",
-          "reading": "みせ",
-          "explain": "shop",
-          "wordId": "mise"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is this shop",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c086",
-      "line": [
-        "彼",
-        "は",
-        "読みます",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "かれ",
-        "わ",
-        "よみます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "he; him",
-        "topic marker",
-        "read",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "彼",
-          "reading": "かれ",
-          "explain": "he; him",
-          "wordId": "yuki"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "読みます",
-          "reading": "よみます",
-          "explain": "read",
-          "wordId": "yomu"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Does he read?",
-      "grammarTags": [
-        "early Vます action",
-        "か"
-      ]
-    },
-    {
-      "id": "u006-c087",
-      "line": [
-        "彼女",
-        "は",
-        "書きます",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "かのじょ",
-        "わ",
-        "かきます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "she; her",
-        "topic marker",
-        "write",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "彼女",
-          "reading": "かのじょ",
-          "explain": "she; her",
-          "wordId": "tanaka"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Does she write?",
-      "grammarTags": [
-        "early Vます action",
-        "か"
-      ]
-    },
-    {
-      "id": "u006-c088",
-      "line": [
-        "あれ",
-        "は",
-        "犬",
-        "です"
-      ],
-      "tts": [
-        "あれ",
-        "わ",
-        "いぬ",
-        "です"
-      ],
-      "explain": [
-        "that one over there",
-        "topic marker",
-        "dog",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あれ",
-          "reading": "あれ",
-          "explain": "that one over there",
-          "wordId": "are"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "That over there is a dog",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c089",
-      "line": [
-        "それ",
-        "は",
-        "会社",
-        "です"
-      ],
-      "tts": [
-        "それ",
-        "わ",
-        "かいしゃ",
-        "です"
-      ],
-      "explain": [
-        "that one near you",
-        "topic marker",
-        "company",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "それ",
-          "reading": "それ",
-          "explain": "that one near you",
-          "wordId": "sore"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "会社",
-          "reading": "かいしゃ",
-          "explain": "company",
-          "wordId": "kaisha"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "That near you is a company",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c090",
-      "line": [
-        "この",
-        "場所",
-        "です"
-      ],
-      "tts": [
-        "この",
-        "ばしょ",
-        "です"
-      ],
-      "explain": [
-        "this",
-        "place",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "この",
-          "reading": "この",
-          "explain": "this",
-          "wordId": "kono"
-        },
-        {
-          "surface": "場所",
-          "reading": "ばしょ",
-          "explain": "place",
-          "wordId": "basho"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is this place",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c091",
-      "line": [
-        "その",
-        "会社",
-        "です"
-      ],
-      "tts": [
-        "その",
-        "かいしゃ",
-        "です"
-      ],
-      "explain": [
-        "that near you",
-        "company",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "その",
-          "reading": "その",
-          "explain": "that near you",
-          "wordId": "sono"
-        },
-        {
-          "surface": "会社",
-          "reading": "かいしゃ",
-          "explain": "company",
-          "wordId": "kaisha"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "It is that company near you",
-      "grammarTags": [
-        "kono/sono/ano N"
-      ]
-    },
-    {
-      "id": "u006-c092",
-      "line": [
-        "それ",
-        "は",
-        "犬",
-        "です"
-      ],
-      "tts": [
-        "それ",
-        "わ",
-        "いぬ",
-        "です"
-      ],
-      "explain": [
-        "that one near you",
-        "topic marker",
-        "dog",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "それ",
-          "reading": "それ",
-          "explain": "that one near you",
-          "wordId": "sore"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "犬",
-          "reading": "いぬ",
-          "explain": "dog",
-          "wordId": "inu"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "That near you is a dog",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c093",
-      "line": [
-        "学生",
-        "は",
-        "椅子",
-        "を",
-        "使います"
-      ],
-      "tts": [
-        "がくせい",
-        "わ",
-        "いす",
-        "を",
-        "つかいます"
-      ],
-      "explain": [
-        "student",
-        "topic marker",
-        "chair",
-        "direct object marker",
-        "use"
-      ],
-      "tokens": [
-        {
-          "surface": "学生",
-          "reading": "がくせい",
-          "explain": "student",
-          "wordId": "gakusei"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "椅子",
-          "reading": "いす",
-          "explain": "chair",
-          "wordId": "isu"
-        },
-        {
-          "surface": "を",
-          "reading": "を",
-          "explain": "direct object marker"
-        },
-        {
-          "surface": "使います",
-          "reading": "つかいます",
-          "explain": "use",
-          "wordId": "tsukau"
-        }
-      ],
-      "english": "The student uses a chair",
-      "grammarTags": [
-        "early Vます action",
-        "NをVます"
-      ]
-    },
-    {
-      "id": "u006-c094",
-      "line": [
-        "子供",
-        "は",
-        "書きます",
-        "か",
-        "？"
-      ],
-      "tts": [
-        "こども",
-        "わ",
-        "かきます",
-        "か",
-        "？"
-      ],
-      "explain": [
-        "child",
-        "topic marker",
-        "write",
-        "question marker",
-        "question mark"
-      ],
-      "tokens": [
-        {
-          "surface": "子供",
-          "reading": "こども",
-          "explain": "child",
-          "wordId": "kodomo"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "書きます",
-          "reading": "かきます",
-          "explain": "write",
-          "wordId": "kaku"
-        },
-        {
-          "surface": "か",
-          "reading": "か",
-          "explain": "question marker"
-        },
-        {
-          "surface": "？",
-          "reading": "？",
-          "explain": "question mark"
-        }
-      ],
-      "english": "Does the child write?",
-      "grammarTags": [
-        "early Vます action",
-        "か"
-      ]
-    },
-    {
-      "id": "u006-c095",
-      "line": [
-        "あれ",
-        "は",
-        "家",
-        "です"
-      ],
-      "tts": [
-        "あれ",
-        "わ",
-        "いえ",
-        "です"
-      ],
-      "explain": [
-        "that one over there",
-        "topic marker",
-        "house; home",
-        "polite identity marker"
-      ],
-      "tokens": [
-        {
-          "surface": "あれ",
-          "reading": "あれ",
-          "explain": "that one over there",
-          "wordId": "are"
-        },
-        {
-          "surface": "は",
-          "reading": "わ",
-          "explain": "topic marker"
-        },
-        {
-          "surface": "家",
-          "reading": "いえ",
-          "explain": "house; home",
-          "wordId": "ie"
-        },
-        {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
-        }
-      ],
-      "english": "That over there is a house",
-      "grammarTags": [
-        "kore/sore/are",
-        "AはBです"
-      ]
-    },
-    {
-      "id": "u006-c096",
+      "id": "u006-c065",
       "line": [
         "友達",
         "は",
-        "お茶",
-        "を",
-        "買います"
+        "マンション",
+        "に",
+        "住みます"
       ],
       "tts": [
         "ともだち",
         "わ",
-        "おちゃ",
-        "を",
-        "かいます"
+        "まんしょん",
+        "に",
+        "すみます"
       ],
       "explain": [
         "friend",
         "topic marker",
-        "tea",
-        "direct object marker",
-        "buy"
+        "apartment building",
+        "location or time marker",
+        "polite form of live"
       ],
       "tokens": [
         {
@@ -4921,125 +3738,896 @@
           "explain": "topic marker"
         },
         {
-          "surface": "お茶",
-          "reading": "おちゃ",
-          "explain": "tea",
-          "wordId": "ocha"
+          "surface": "マンション",
+          "reading": "まんしょん",
+          "explain": "apartment building",
+          "wordId": "manshon"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The friend lives in the apartment building",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u006-c066",
+      "line": [
+        "友達",
+        "は",
+        "いす",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "ともだち",
+        "わ",
+        "いす",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "friend",
+        "topic marker",
+        "chair",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "友達",
+          "reading": "ともだち",
+          "explain": "friend",
+          "wordId": "tomodachi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いす",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
         },
         {
           "surface": "を",
           "reading": "を",
-          "explain": "direct object marker"
+          "explain": "object marker"
         },
         {
-          "surface": "買います",
-          "reading": "かいます",
-          "explain": "buy",
-          "wordId": "kau"
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
         }
       ],
-      "english": "The friend buys tea",
+      "english": "The friend chooses the chair",
       "grammarTags": [
-        "early Vます action",
+        "Nがあります / Nがいます",
         "NをVます"
       ]
     },
     {
-      "id": "u006-c097",
+      "id": "u006-c067",
       "line": [
-        "あの",
-        "病院",
-        "です"
+        "人",
+        "は",
+        "テーブル",
+        "を",
+        "選びます"
       ],
       "tts": [
-        "あの",
-        "びょういん",
-        "です"
+        "ひと",
+        "わ",
+        "てーぶる",
+        "を",
+        "えらびます"
       ],
       "explain": [
-        "that over there",
-        "hospital",
-        "polite identity marker"
+        "person",
+        "topic marker",
+        "table",
+        "object marker",
+        "polite form of choose"
       ],
       "tokens": [
         {
-          "surface": "あの",
-          "reading": "あの",
-          "explain": "that over there",
-          "wordId": "ano"
+          "surface": "人",
+          "reading": "ひと",
+          "explain": "person",
+          "wordId": "hito"
         },
         {
-          "surface": "病院",
-          "reading": "びょういん",
-          "explain": "hospital",
-          "wordId": "byouin"
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
         },
         {
-          "surface": "です",
-          "reading": "です",
-          "explain": "polite identity marker"
+          "surface": "テーブル",
+          "reading": "てーぶる",
+          "explain": "table",
+          "wordId": "teeburu"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
         }
       ],
-      "english": "It is that hospital over there",
+      "english": "The person chooses the table",
       "grammarTags": [
-        "kono/sono/ano N"
+        "Nがあります / Nがいます",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u006-c068",
+      "line": [
+        "私",
+        "は",
+        "ベッド",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "べっど",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "bed",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ベッド",
+          "reading": "べっど",
+          "explain": "bed",
+          "wordId": "beddo"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "I choose the bed",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u006-c069",
+      "line": [
+        "店",
+        "に",
+        "あなた",
+        "が",
+        "います"
+      ],
+      "tts": [
+        "みせ",
+        "に",
+        "あなた",
+        "が",
+        "います"
+      ],
+      "explain": [
+        "shop; restaurant",
+        "location or time marker",
+        "you",
+        "subject marker",
+        "polite form of exist; there is for living things"
+      ],
+      "tokens": [
+        {
+          "surface": "店",
+          "reading": "みせ",
+          "explain": "shop; restaurant",
+          "wordId": "mise"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "あなた",
+          "reading": "あなた",
+          "explain": "you",
+          "wordId": "anata"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "polite form of exist; there is for living things",
+          "wordId": "iru"
+        }
+      ],
+      "english": "You are in the shop",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "Nがいます"
+      ]
+    },
+    {
+      "id": "u006-c070",
+      "line": [
+        "学生",
+        "は",
+        "エアコン",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "がくせい",
+        "わ",
+        "えあこん",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "student",
+        "topic marker",
+        "air conditioner",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "学生",
+          "reading": "がくせい",
+          "explain": "student",
+          "wordId": "gakusei"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "エアコン",
+          "reading": "えあこん",
+          "explain": "air conditioner",
+          "wordId": "eakon"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "The student chooses the air conditioner",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u006-c071",
+      "line": [
+        "私",
+        "は",
+        "働きます"
+      ],
+      "tts": [
+        "わたし",
+        "わ",
+        "はたらきます"
+      ],
+      "explain": [
+        "I; me",
+        "topic marker",
+        "polite form of work"
+      ],
+      "tokens": [
+        {
+          "surface": "私",
+          "reading": "わたし",
+          "explain": "I; me",
+          "wordId": "watashi"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "働きます",
+          "reading": "はたらきます",
+          "explain": "polite form of work",
+          "wordId": "hataraku"
+        }
+      ],
+      "english": "I work",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "early Vます action"
+      ]
+    },
+    {
+      "id": "u006-c072",
+      "line": [
+        "うち",
+        "に",
+        "会社員",
+        "が",
+        "います"
+      ],
+      "tts": [
+        "うち",
+        "に",
+        "かいしゃいん",
+        "が",
+        "います"
+      ],
+      "explain": [
+        "home",
+        "location or time marker",
+        "company employee",
+        "subject marker",
+        "polite form of exist; there is for living things"
+      ],
+      "tokens": [
+        {
+          "surface": "うち",
+          "reading": "うち",
+          "explain": "home",
+          "wordId": "uchi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "会社員",
+          "reading": "かいしゃいん",
+          "explain": "company employee",
+          "wordId": "kaishain"
+        },
+        {
+          "surface": "が",
+          "reading": "が",
+          "explain": "subject marker"
+        },
+        {
+          "surface": "います",
+          "reading": "います",
+          "explain": "polite form of exist; there is for living things",
+          "wordId": "iru"
+        }
+      ],
+      "english": "There is the company employee in the home",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "Nがいます"
+      ]
+    },
+    {
+      "id": "u006-c073",
+      "line": [
+        "エンジニア",
+        "は",
+        "ご飯",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "えんじにあ",
+        "わ",
+        "ごはん",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "engineer",
+        "topic marker",
+        "meal; rice",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "エンジニア",
+          "reading": "えんじにあ",
+          "explain": "engineer",
+          "wordId": "enjinia"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ご飯",
+          "reading": "ごはん",
+          "explain": "meal; rice",
+          "wordId": "gohan"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "The engineer chooses the meal",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u006-c074",
+      "line": [
+        "家族",
+        "は",
+        "うち",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "かぞく",
+        "わ",
+        "うち",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "family",
+        "topic marker",
+        "home",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "うち",
+          "reading": "うち",
+          "explain": "home",
+          "wordId": "uchi"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The family lives in the home",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u006-c075",
+      "line": [
+        "家族",
+        "は",
+        "パン",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "かぞく",
+        "わ",
+        "ぱん",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "family",
+        "topic marker",
+        "bread",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "家族",
+          "reading": "かぞく",
+          "explain": "family",
+          "wordId": "kazoku"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "パン",
+          "reading": "ぱん",
+          "explain": "bread",
+          "wordId": "pan"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "The family chooses the bread",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u006-c076",
+      "line": [
+        "母",
+        "は",
+        "アパート",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "はは",
+        "わ",
+        "あぱーと",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "mother",
+        "topic marker",
+        "apartment",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "母",
+          "reading": "はは",
+          "explain": "mother",
+          "wordId": "haha"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "アパート",
+          "reading": "あぱーと",
+          "explain": "apartment",
+          "wordId": "apaato"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The mother lives in the apartment",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u006-c077",
+      "line": [
+        "兄",
+        "は",
+        "マンション",
+        "に",
+        "住みます"
+      ],
+      "tts": [
+        "あに",
+        "わ",
+        "まんしょん",
+        "に",
+        "すみます"
+      ],
+      "explain": [
+        "older brother",
+        "topic marker",
+        "apartment building",
+        "location or time marker",
+        "polite form of live"
+      ],
+      "tokens": [
+        {
+          "surface": "兄",
+          "reading": "あに",
+          "explain": "older brother",
+          "wordId": "ani"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "マンション",
+          "reading": "まんしょん",
+          "explain": "apartment building",
+          "wordId": "manshon"
+        },
+        {
+          "surface": "に",
+          "reading": "に",
+          "explain": "location or time marker"
+        },
+        {
+          "surface": "住みます",
+          "reading": "すみます",
+          "explain": "polite form of live",
+          "wordId": "sumu"
+        }
+      ],
+      "english": "The older brother lives in the apartment building",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "場所にVます"
+      ]
+    },
+    {
+      "id": "u006-c078",
+      "line": [
+        "兄",
+        "は",
+        "いす",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "あに",
+        "わ",
+        "いす",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "older brother",
+        "topic marker",
+        "chair",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "兄",
+          "reading": "あに",
+          "explain": "older brother",
+          "wordId": "ani"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "いす",
+          "reading": "いす",
+          "explain": "chair",
+          "wordId": "isu"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "The older brother chooses the chair",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u006-c079",
+      "line": [
+        "姉",
+        "は",
+        "テーブル",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "あね",
+        "わ",
+        "てーぶる",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "older sister",
+        "topic marker",
+        "table",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "姉",
+          "reading": "あね",
+          "explain": "older sister",
+          "wordId": "ane"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "テーブル",
+          "reading": "てーぶる",
+          "explain": "table",
+          "wordId": "teeburu"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "The older sister chooses the table",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます"
+      ]
+    },
+    {
+      "id": "u006-c080",
+      "line": [
+        "弟",
+        "は",
+        "ベッド",
+        "を",
+        "選びます"
+      ],
+      "tts": [
+        "おとうと",
+        "わ",
+        "べっど",
+        "を",
+        "えらびます"
+      ],
+      "explain": [
+        "younger brother",
+        "topic marker",
+        "bed",
+        "object marker",
+        "polite form of choose"
+      ],
+      "tokens": [
+        {
+          "surface": "弟",
+          "reading": "おとうと",
+          "explain": "younger brother",
+          "wordId": "otouto"
+        },
+        {
+          "surface": "は",
+          "reading": "わ",
+          "explain": "topic marker"
+        },
+        {
+          "surface": "ベッド",
+          "reading": "べっど",
+          "explain": "bed",
+          "wordId": "beddo"
+        },
+        {
+          "surface": "を",
+          "reading": "を",
+          "explain": "object marker"
+        },
+        {
+          "surface": "選びます",
+          "reading": "えらびます",
+          "explain": "polite form of choose",
+          "wordId": "erabu"
+        }
+      ],
+      "english": "The younger brother chooses the bed",
+      "grammarTags": [
+        "Nがあります / Nがいます",
+        "NをVます"
       ]
     }
-  ],
-  "reviewWordIds": [
-    "mise",
-    "byouin",
-    "eki",
-    "kaisha",
-    "kodomo",
-    "otona",
-    "isu",
-    "tsukue",
-    "iku",
-    "kuru",
-    "aru",
-    "iru",
-    "neko",
-    "inu",
-    "doubutsu",
-    "hon",
-    "ie",
-    "gakkou",
-    "basho",
-    "isha",
-    "yomu",
-    "kaku"
-  ],
-  "lexiconWordIds": [
-    "watashi",
-    "gakusei",
-    "sensei",
-    "namae",
-    "sakura",
-    "yuki",
-    "tanaka",
-    "tomodachi",
-    "taberu",
-    "nomu",
-    "kazoku",
-    "haha",
-    "chichi",
-    "ane",
-    "otouto",
-    "shashin",
-    "kaban",
-    "heya",
-    "miru",
-    "kiku",
-    "kinou",
-    "sengetsu",
-    "kyonen",
-    "asa",
-    "yoru",
-    "yasumi",
-    "ryokou",
-    "shigoto",
-    "hataraku",
-    "benkyou_suru"
   ]
 }

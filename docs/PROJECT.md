@@ -1,40 +1,54 @@
 # Project
 
-Kotoba is a curriculum-driven Japanese sentence drilling app.
+Kotoba teaches Japanese through a fixed, curated course in `apps/learner-next/`.
+Run `npm run dev` for the active learner. `npm run build` builds it. The original
+unit player remains available with `npm run reference:dev` for compatibility checks.
 
-Its purpose is to teach vocabulary and grammar through long, repetitive,
-naturalistic sentence streams. Words are not learned as isolated list items; they
-live inside controlled sentence worlds where modular substitutions make meaning
-and grammar gradually obvious.
+The [independent A1 tracks decision](decisions/2026-10-01-independent-a1-tracks.md) and
+[A2 extension](decisions/2026-10-01-independent-a2-tracks.md), with the
+[B1 extension](decisions/2026-10-01-independent-b1-tracks.md), are the current
+product contract. Earlier procedural/custom and overlapping 450-word-core
+plans are historical. They must not reintroduce generation into the main flow.
 
-For the bigger product picture, see `docs/APP_VISION.md`.
+## Learning path
 
-## Product Intent
+- Shared foundations introduce stable sentence patterns and essential helpers.
+- After the shared starters, learners freely choose an A1 track. Each contains
+  fixed, ordered lessons, its own additional grammar and a finite completion point.
+- Completing A1 opens five independent A2 tracks without a second starter suite.
+  Completing A2 opens eight independent B1 tracks; B1 vocabulary coverage is still in progress.
+- A word has one owning topic or foundation. Topic completion requires every
+  lesson, including grammar consolidation. All topics complete means every word
+  in the level has been covered; it is not a claim of tested language mastery.
+- A1 sentences use current targets, earlier words in the same track, and shared
+  foundations. Completed lower levels become available as helpers in later levels.
+- Review replays only consumed cards from the selected topic. There is no global
+  generated review mix. Previewing, bookmarking and skipping ahead earn no credit.
+- Explicit declarations of prior knowledge advance the course without inventing
+  practice, XP, streaks or review encounters.
 
-- Make sentence exposure feel fast, visual, repeatable, and contextual.
-- Teach through long, naturalistic sentence drilling where words live in context rather than isolated memorization.
-- Keep unit vocabulary cumulative, while using a simple relative bin rule to guarantee older words return.
-- Build frozen authored curriculum units with Codex as the curriculum author.
-- Keep curriculum data easy to inspect, validate, and edit directly in the repository.
-- Prefer simple, predictable behavior over elaborate personalization.
+The bounded dictionary contains 25,000 disjoint study entries across A1–C2.
+The much larger JMdict reference remains available for lookup. Word identity,
+readings, source attribution and audio belong to `packages/dictionary/` and
+`data/jp/dictionary/`. Reviewed aliases reconcile old learning IDs without
+rewriting saved cards or substituting lemma audio for an inflected form.
 
-## Current Shape
+A1 currently has five foundations and 14 chapters, covering all 750 entries through
+146 instructional lessons, 263 fixed recall checkpoints and 1,511 distinct topic cards. A2 covers 1,250 entries in 23 topics,
+209 lessons and 2,451 cards. B1 is being authored; B2–C2 still need content. Only actual reviewed sentences
+and progression are published. See the
+[editorial packet](reviews/2026-09-26-curated-course/README.md) and
+[active plan](plans/active/2026-09-26-curated-topic-course.md).
 
-- The CRA/Express prototype is archived under `archive/prototype-cra-express-2026-06-27/`.
-- The active app is a Vite React TypeScript practice player.
-- Existing lesson data and media conventions are reference material in the archive.
-- Planning docs under `data/jp/curriculum/` define the curriculum model.
-- The planned Japanese course is a CEFR-inspired / JF-aligned 96-unit A1-B2 path;
-  the authored `unit_index.json` contains only units that already have JSON files.
+## Runtime and continuity
 
-## Durable Priorities
+The browser loads a lightweight catalog, then the exact cards for the selected
+topic. There is no sentence synthesis, word substitution or candidate search.
+Completion and consumed-card history survive removal or clearing of the recent
+lesson shelf. Started lessons save their content and cursor for exact replay.
+Historical generated snapshots and old frozen-unit links remain readable.
 
-- Lesson data quality matters as much as code quality.
-- Default curriculum units introduce one grammar focus and about 10 core new words chosen to support that grammar focus.
-- Any learner-facing lexical grammar word introduced by a unit is also SRS vocabulary; only function words and documented phrase-level grammar chunks stay outside SRS.
-- New words follow the Japanese word-selection rules in `data/jp/curriculum/word_selection_rules.md`: useful functional spread, strong sentence compatibility, and no duplicates from earlier units.
-- Vocabulary spacing is curriculum-level, not learner-specific: for unit `N`, words from units `N`, `N-2`, `N-4`, `N-8`, `N-16`, `N-32`, and so on are review-due and must return.
-- Any already introduced word may be used as known helper vocabulary, but only the current unit's `newWords` are the unit's drilled vocabulary.
-- Grammar is cumulative: a unit uses grammar introduced in previous units, while its new grammar focus appears only after the unit's new words have been warmed up with familiar grammar.
-- Changes preserve a lightweight, inspectable, single-user/small-project feel.
-- Structure exists to help Codex continue authoring and to help humans skim the project.
+Home provides one next action. Learn holds the course; Progress holds goals and
+can-do reflection; Dictionary provides lookup and links to owning topics.
+Activities remain optional practice. Old procedural code is retained only for
+historical compatibility and authoring reference, not as a new-lesson fallback.

@@ -1,0 +1,5729 @@
+{
+  "schemaVersion": 1,
+  "version": "a1-core-2026-09-13",
+  "description": "Authored Kotoba A1 scope: stable learning IDs, reviewed overlapping topics, and an explicit bounded denominator. CEFR/JF alignment is based on communicative tasks, never an official word quota.",
+  "completion": {
+    "coreWordCount": 450,
+    "learnedPracticeOccasions": 3,
+    "minimumHoursBetweenOccasions": 24,
+    "requiresAllMilestones": true,
+    "certificationClaim": false,
+    "label": "Kotoba A1 foundation",
+    "explanation": "Core vocabulary practice plus practical Can-do self-checks. Three spaced practice occasions are a progress signal, not proof of recall or an official CEFR result."
+  },
+  "topics": [
+    {
+      "id": "greetings",
+      "title": "Greetings & pleasantries",
+      "description": "Say hello, thank someone, apologize, say goodbye, and use everyday polite phrases.",
+      "milestoneIds": [
+        "introductions"
+      ],
+      "introductionWordIds": [
+        "konnichiwa",
+        "arigatou",
+        "sumimasen",
+        "ohayou",
+        "konbanwa",
+        "sayounara",
+        "hajimemashite",
+        "onegaishimasu",
+        "douzo",
+        "ohayoo-gozaimasu",
+        "doomo-arigatoo-gozaimasu",
+        "doozo-yoroshiku"
+      ]
+    },
+    {
+      "id": "family",
+      "title": "Family & people",
+      "description": "Describe the people in your life and share a little about yourself.",
+      "milestoneIds": [
+        "people"
+      ]
+    },
+    {
+      "id": "food",
+      "title": "Food & eating out",
+      "description": "Meals, preferences, menus, and ordering something you enjoy.",
+      "milestoneIds": [
+        "food"
+      ]
+    },
+    {
+      "id": "home",
+      "title": "Home & surroundings",
+      "description": "Rooms, belongings, and welcoming someone into your home.",
+      "milestoneIds": [
+        "home"
+      ]
+    },
+    {
+      "id": "routine",
+      "title": "Daily life & plans",
+      "description": "Your day, the time, and making simple plans together.",
+      "milestoneIds": [
+        "plans"
+      ]
+    },
+    {
+      "id": "school",
+      "title": "School & learning",
+      "description": "Classroom language, reading, writing, and asking for help.",
+      "milestoneIds": [
+        "classroom",
+        "messages"
+      ]
+    },
+    {
+      "id": "work",
+      "title": "Work & introductions",
+      "description": "Your job, working hours, and everyday workplace greetings.",
+      "milestoneIds": [
+        "introductions",
+        "plans"
+      ]
+    },
+    {
+      "id": "travel",
+      "title": "Around town & travel",
+      "description": "Places, transport, directions, and simple travel experiences.",
+      "milestoneIds": [
+        "travel"
+      ]
+    },
+    {
+      "id": "shopping",
+      "title": "Shopping & clothes",
+      "description": "Find things you need and ask about prices, colors, and sizes.",
+      "milestoneIds": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "leisure",
+      "title": "Hobbies & time off",
+      "description": "Share interests, arrange an outing, and talk about a day off.",
+      "milestoneIds": [
+        "leisure"
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Culture & events",
+      "description": "Explore festivals, familiar cultural activities, and things to see.",
+      "milestoneIds": [
+        "leisure"
+      ]
+    },
+    {
+      "id": "everyday-objects",
+      "title": "Everyday objects",
+      "description": "Books, household items, useful belongings, and where to find them.",
+      "milestoneIds": [
+        "home",
+        "shopping"
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "id": "introductions",
+      "title": "Meet someone",
+      "description": "Exchange greetings and introduce yourself simply.",
+      "task": "Greet someone, give your name, respond politely, and say goodbye.",
+      "topicIds": [
+        "greetings",
+        "work"
+      ],
+      "skills": [
+        "listening",
+        "spoken-interaction",
+        "spoken-production"
+      ],
+      "sourceUrl": "https://marugoto.jpf.go.jp/assets/docs/download/starter_a/MarugotoStarterActivitiesCan-doCheck_EN.pdf",
+      "sourceCanDoIds": [
+        1,
+        5
+      ],
+      "practiceUnitIds": [
+        20,
+        23,
+        26
+      ],
+      "evidenceNote": "Self-assessment after trying the task. Related sentence practice prepares vocabulary; it does not assess this complete communicative skill."
+    },
+    {
+      "id": "classroom",
+      "title": "Ask for help",
+      "description": "Keep a simple exchange going.",
+      "task": "Ask someone to repeat slowly, then follow their short instruction.",
+      "topicIds": [
+        "school"
+      ],
+      "skills": [
+        "listening",
+        "spoken-interaction"
+      ],
+      "sourceUrl": "https://marugoto.jpf.go.jp/assets/docs/download/starter_a/MarugotoStarterActivitiesCan-doCheck_EN.pdf",
+      "sourceCanDoIds": [
+        2,
+        3
+      ],
+      "practiceUnitIds": [
+        1,
+        20,
+        21,
+        22,
+        23
+      ],
+      "evidenceNote": "Self-assessment after trying the task. Related sentence practice prepares vocabulary; it does not assess this complete communicative skill."
+    },
+    {
+      "id": "people",
+      "title": "Introduce your family",
+      "description": "Talk about familiar people.",
+      "task": "Use a photo to introduce two relatives and answer simple questions.",
+      "topicIds": [
+        "family"
+      ],
+      "skills": [
+        "listening",
+        "spoken-interaction",
+        "spoken-production"
+      ],
+      "sourceUrl": "https://marugoto.jpf.go.jp/assets/docs/download/starter_a/MarugotoStarterActivitiesCan-doCheck_EN.pdf",
+      "sourceCanDoIds": [
+        7,
+        8
+      ],
+      "practiceUnitIds": [
+        3,
+        25,
+        26
+      ],
+      "evidenceNote": "Self-assessment after trying the task. Related sentence practice prepares vocabulary; it does not assess this complete communicative skill."
+    },
+    {
+      "id": "food",
+      "title": "Order a meal",
+      "description": "Handle a simple food order.",
+      "task": "Choose from a menu, order a drink, and check the price.",
+      "topicIds": [
+        "food"
+      ],
+      "skills": [
+        "reading",
+        "listening",
+        "spoken-interaction"
+      ],
+      "sourceUrl": "https://marugoto.jpf.go.jp/assets/docs/download/starter_a/MarugotoStarterActivitiesCan-doCheck_EN.pdf",
+      "sourceCanDoIds": [
+        9,
+        10,
+        14,
+        15
+      ],
+      "practiceUnitIds": [
+        4,
+        5,
+        27,
+        28,
+        29
+      ],
+      "evidenceNote": "Self-assessment after trying the task. Related sentence practice prepares vocabulary; it does not assess this complete communicative skill."
+    },
+    {
+      "id": "home",
+      "title": "Welcome a visitor",
+      "description": "Describe your immediate surroundings.",
+      "task": "Welcome a friend; describe your room and locate three belongings.",
+      "topicIds": [
+        "home",
+        "everyday-objects"
+      ],
+      "skills": [
+        "spoken-interaction",
+        "spoken-production"
+      ],
+      "sourceUrl": "https://marugoto.jpf.go.jp/assets/docs/download/starter_a/MarugotoStarterActivitiesCan-doCheck_EN.pdf",
+      "sourceCanDoIds": [
+        16,
+        17,
+        19,
+        20,
+        21
+      ],
+      "practiceUnitIds": [
+        6,
+        30,
+        31,
+        32,
+        34
+      ],
+      "evidenceNote": "Self-assessment after trying the task. Related sentence practice prepares vocabulary; it does not assess this complete communicative skill."
+    },
+    {
+      "id": "plans",
+      "title": "Arrange a time",
+      "description": "Explain your day and availability.",
+      "task": "Describe your morning, then agree on a day and meeting time.",
+      "topicIds": [
+        "routine",
+        "work"
+      ],
+      "skills": [
+        "listening",
+        "spoken-interaction",
+        "spoken-production"
+      ],
+      "sourceUrl": "https://marugoto.jpf.go.jp/assets/docs/download/starter_a/MarugotoStarterActivitiesCan-doCheck_EN.pdf",
+      "sourceCanDoIds": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "practiceUnitIds": [
+        8,
+        9,
+        33,
+        34,
+        35,
+        36
+      ],
+      "evidenceNote": "Self-assessment after trying the task. Related sentence practice prepares vocabulary; it does not assess this complete communicative skill."
+    },
+    {
+      "id": "leisure",
+      "title": "Make an outing",
+      "description": "Share interests and simple plans.",
+      "task": "Name an interest, invite a friend, and describe yesterday briefly.",
+      "topicIds": [
+        "leisure",
+        "culture"
+      ],
+      "skills": [
+        "reading",
+        "spoken-interaction",
+        "spoken-production"
+      ],
+      "sourceUrl": "https://marugoto.jpf.go.jp/assets/docs/download/starter_a/MarugotoStarterActivitiesCan-doCheck_EN.pdf",
+      "sourceCanDoIds": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        45,
+        46
+      ],
+      "practiceUnitIds": [
+        10,
+        11,
+        18,
+        37,
+        38,
+        39,
+        40,
+        47,
+        48
+      ],
+      "evidenceNote": "Self-assessment after trying the task. Related sentence practice prepares vocabulary; it does not assess this complete communicative skill."
+    },
+    {
+      "id": "travel",
+      "title": "Find your way",
+      "description": "Navigate a familiar local journey.",
+      "task": "Read a station sign; ask how to reach a nearby destination.",
+      "topicIds": [
+        "travel"
+      ],
+      "skills": [
+        "reading",
+        "listening",
+        "spoken-interaction"
+      ],
+      "sourceUrl": "https://marugoto.jpf.go.jp/assets/docs/download/starter_a/MarugotoStarterActivitiesCan-doCheck_EN.pdf",
+      "sourceCanDoIds": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "practiceUnitIds": [
+        7,
+        12,
+        13,
+        17,
+        41,
+        42,
+        43
+      ],
+      "evidenceNote": "Self-assessment after trying the task. Related sentence practice prepares vocabulary; it does not assess this complete communicative skill."
+    },
+    {
+      "id": "shopping",
+      "title": "Buy something",
+      "description": "Complete a small purchase.",
+      "task": "Find your size, read the price, and request the item.",
+      "topicIds": [
+        "shopping",
+        "everyday-objects"
+      ],
+      "skills": [
+        "reading",
+        "listening",
+        "spoken-interaction"
+      ],
+      "sourceUrl": "https://marugoto.jpf.go.jp/assets/docs/download/starter_a/MarugotoStarterActivitiesCan-doCheck_EN.pdf",
+      "sourceCanDoIds": [
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "practiceUnitIds": [
+        14,
+        15,
+        16,
+        19,
+        44,
+        45,
+        46
+      ],
+      "evidenceNote": "Self-assessment after trying the task. Related sentence practice prepares vocabulary; it does not assess this complete communicative skill."
+    },
+    {
+      "id": "messages",
+      "title": "Read & write basics",
+      "description": "Use brief everyday written language.",
+      "task": "Read a short personal message, fill in your name and country on a form, and write a simple greeting or invitation.",
+      "topicIds": [
+        "school",
+        "routine"
+      ],
+      "skills": [
+        "reading",
+        "writing"
+      ],
+      "sourceUrl": "https://www.coe.int/en/web/common-european-framework-reference-languages/table-2-cefr-3.3-common-reference-levels-self-assessment-grid",
+      "sourceCanDoIds": [],
+      "practiceUnitIds": [
+        1,
+        2,
+        9,
+        20,
+        24,
+        34,
+        35
+      ],
+      "evidenceNote": "Self-assessment after trying the task. Related sentence practice prepares vocabulary; it does not assess this complete communicative skill."
+    }
+  ],
+  "coreWordIds": [
+    "anata",
+    "eigo",
+    "gakusei",
+    "hiragana",
+    "kaku",
+    "kanji",
+    "katakana",
+    "nihongo",
+    "sensei",
+    "wakaru",
+    "watashi",
+    "yomu",
+    "enjinia",
+    "hataraku",
+    "kaishain",
+    "kuni",
+    "nihon",
+    "shufu",
+    "sumu",
+    "ane",
+    "ani",
+    "au",
+    "chichi",
+    "haha",
+    "hanasu",
+    "hito",
+    "imouto",
+    "kazoku",
+    "kodomo",
+    "otouto",
+    "tomodachi",
+    "asagohan",
+    "gohan",
+    "gyuunyuu",
+    "koohii",
+    "mizu",
+    "niku",
+    "nomu",
+    "ocha",
+    "pan",
+    "sakana",
+    "taberu",
+    "yasai",
+    "erabu",
+    "hairu",
+    "hayai",
+    "karee",
+    "menyuu",
+    "mise",
+    "oishii",
+    "piza",
+    "raamen",
+    "resutoran",
+    "sushi",
+    "udon",
+    "apaato",
+    "aru",
+    "beddo",
+    "eakon",
+    "heya",
+    "ie",
+    "iru",
+    "isu",
+    "manshon",
+    "teeburu",
+    "terebi",
+    "uchi",
+    "byouin",
+    "chikai",
+    "depaato",
+    "eki",
+    "gakkou",
+    "ginkou",
+    "iku",
+    "kouen",
+    "kuru",
+    "machi",
+    "toire",
+    "tooi",
+    "asa",
+    "gogo",
+    "gozen",
+    "hiru",
+    "jugyou",
+    "kaeru",
+    "mainichi",
+    "neru",
+    "okiru",
+    "shigoto",
+    "suru",
+    "yoru",
+    "ashita",
+    "daijoubu",
+    "getsuyoubi",
+    "kayoubi",
+    "kinou",
+    "konsaato",
+    "kyou",
+    "paatii",
+    "tanjoubi",
+    "yasumi",
+    "yasumu",
+    "anime",
+    "eiga",
+    "gitaa",
+    "kiku",
+    "manga",
+    "miru",
+    "ongaku",
+    "piano",
+    "sakkaa",
+    "shumi",
+    "supootsu",
+    "yakyuu",
+    "hanabi",
+    "kimono",
+    "matsuri",
+    "toru",
+    "utau",
+    "yuumei",
+    "basu",
+    "benri",
+    "chikatetsu",
+    "densha",
+    "hoteru",
+    "jitensha",
+    "kuukou",
+    "nimotsu",
+    "noru",
+    "oriru",
+    "raku",
+    "takushii",
+    "jinja",
+    "tsuku",
+    "ageru",
+    "ehagaki",
+    "hankachi",
+    "hashi",
+    "hoshii",
+    "kaado",
+    "kasa",
+    "omiyage",
+    "tiishatsu",
+    "aka",
+    "ao",
+    "baggu",
+    "jaketto",
+    "jiinzu",
+    "kiru",
+    "kutsu",
+    "kutsushita",
+    "niau",
+    "shatsu",
+    "shiro",
+    "sukaato",
+    "atarashii",
+    "chiisai",
+    "en",
+    "furui",
+    "ii",
+    "iro",
+    "miseru",
+    "ookii",
+    "saizu",
+    "suteki",
+    "takai",
+    "tsukau",
+    "biichi",
+    "fune",
+    "hikouki",
+    "kuruma",
+    "nagai",
+    "tomaru",
+    "tsukareru",
+    "yuki_snow",
+    "asobu",
+    "boku",
+    "demo",
+    "hontou",
+    "issho",
+    "mata",
+    "matsu",
+    "sorekara",
+    "subarashii",
+    "taihen",
+    "ureshii",
+    "watashitachi",
+    "futatsu",
+    "go",
+    "hachi",
+    "hitotsu",
+    "ichi",
+    "juu",
+    "kyuu",
+    "nana",
+    "ni",
+    "roku",
+    "san",
+    "yon",
+    "arigatou",
+    "douzo",
+    "gochisousama",
+    "hajimemashite",
+    "itadakimasu",
+    "konnichiwa",
+    "mouichido",
+    "ohayou",
+    "onegaishimasu",
+    "sayounara",
+    "sumimasen",
+    "wakarimasen",
+    "hai",
+    "ichido",
+    "iie",
+    "okuremasu",
+    "owarimasu",
+    "roomaji",
+    "shinbun",
+    "suuji",
+    "zasshi",
+    "chotto",
+    "hajimemasu",
+    "kyooshitsu",
+    "mada",
+    "moo",
+    "namae",
+    "pea",
+    "sukoshi",
+    "konbanwa",
+    "moo-sukoshi",
+    "ohayoo-gozaimasu",
+    "osaki-ni-shitsureeshimasu",
+    "otsukaresama",
+    "shitsureeshimasu",
+    "wakarimashita",
+    "yukkuri",
+    "anoo",
+    "dekimasu",
+    "e",
+    "koomuin",
+    "kyooshi",
+    "meeshi",
+    "dare",
+    "kakkoii",
+    "kawaii",
+    "kiree-na",
+    "kono",
+    "otto",
+    "tsuma",
+    "benkyoo-chuu",
+    "dochira-kara",
+    "doko",
+    "doozo-yoroshiku",
+    "doozo-yoroshiku-onegaishimasu",
+    "futari",
+    "hitori",
+    "oikutsu-desu-ka",
+    "soo-desu-ka",
+    "wakai",
+    "ankeeto",
+    "itsumo",
+    "juusu",
+    "koocha",
+    "kudamono",
+    "nani-nan",
+    "suki-na",
+    "tabemono",
+    "tamago",
+    "aisu",
+    "ano",
+    "doomo",
+    "ichiban",
+    "koora",
+    "misoshiru",
+    "nomimono",
+    "soba",
+    "yoku",
+    "doomo-arigatoo-gozaimasu",
+    "hanbaagaa",
+    "hotto",
+    "hyaku-byaku-pyaku",
+    "irasshaimase",
+    "kekkoo-desu",
+    "mittsu",
+    "ryoori",
+    "yasui",
+    "akarui",
+    "chikaku",
+    "ikkodate",
+    "ikutsu",
+    "itsutsu",
+    "kurai",
+    "semai",
+    "sofa",
+    "tokoro",
+    "a",
+    "genkan",
+    "hiroi",
+    "kappu",
+    "kochira",
+    "koko",
+    "kore",
+    "muttsu",
+    "ofuro-furo",
+    "ue",
+    "yottsu",
+    "abimasu",
+    "daidokoro",
+    "hako",
+    "hon",
+    "naka",
+    "niwa",
+    "shashin",
+    "shita",
+    "tana",
+    "tokee",
+    "yoko",
+    "isogashii",
+    "kaisha",
+    "osoi",
+    "seikatsu",
+    "shawaa",
+    "ban-gohan",
+    "burogu",
+    "doozo-agatte-kudasai",
+    "gomenkudasai",
+    "hiru-gohan",
+    "irasshai",
+    "nan-ji",
+    "nikki",
+    "ojamashimasu",
+    "itsu",
+    "kaimono",
+    "kin-yoobi",
+    "konshuu",
+    "senshuu",
+    "shokuji",
+    "suiyoobi",
+    "bijutsukan",
+    "dame",
+    "doyoobi",
+    "hakubutsukan",
+    "mokuyoobi",
+    "nichiyoobi",
+    "raishuu",
+    "tenisu",
+    "uta",
+    "e_2",
+    "gaikokugo",
+    "sanpo",
+    "shoosetsu",
+    "soto",
+    "benkyooshimasu",
+    "dansu",
+    "dokusho",
+    "donna",
+    "hi",
+    "tokidoki",
+    "ibento",
+    "ikura",
+    "karendaa",
+    "shoo",
+    "yukkurishimasu",
+    "zannen-na",
+    "fesuthibaru",
+    "ii-desu-ne",
+    "itsu-de-mo-iidesu",
+    "kanpai",
+    "mata-kondo",
+    "mochiron",
+    "moshimoshi",
+    "muryoo",
+    "omedetoo",
+    "tabun",
+    "tanoshimi-desu",
+    "dochira",
+    "doo-yatte",
+    "iimasu",
+    "norimono",
+    "okyakusan",
+    "uun-uun",
+    "baiku",
+    "eegyoo-jikan",
+    "ima",
+    "otera-tera",
+    "shukujitsu",
+    "soshite",
+    "tonari",
+    "toori",
+    "ushiro",
+    "aruite",
+    "biru",
+    "heejitsu",
+    "hidari",
+    "ikura-desu-ka",
+    "ki-o-tsukete",
+    "mae",
+    "massugu-na",
+    "migi",
+    "nigiyaka-na",
+    "soo-desu-ne",
+    "are",
+    "kaemasu",
+    "kaimasu",
+    "omoshiroi",
+    "oshare-na",
+    "risuto",
+    "chairo",
+    "emu",
+    "eru",
+    "esu",
+    "guree",
+    "jaa",
+    "kiiro",
+    "kooto",
+    "kuro",
+    "orenji",
+    "sen-zen",
+    "hoka",
+    "koo-yatte",
+    "maamaa-na",
+    "man",
+    "midori",
+    "motto",
+    "pantsu",
+    "pinku",
+    "waa",
+    "wanpiisu",
+    "arubaito",
+    "karaoke",
+    "koohii-shoppu",
+    "ooi",
+    "osake-sake",
+    "sentaku",
+    "sooji",
+    "doo",
+    "ichinichime",
+    "kaimonoshimasu",
+    "kotoshi",
+    "kyonen",
+    "obaachan",
+    "tanoshii",
+    "doko-nimo-ikimasendeshita",
+    "doo-deshita-ka",
+    "futsukame",
+    "mikkame",
+    "nani-mo-shimasendeshita",
+    "tenpura",
+    "tsugi",
+    "yokkame"
+  ],
+  "words": {
+    "a": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "a"
+    },
+    "abimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "routine"
+      ],
+      "coreWordId": "abimasu"
+    },
+    "agemasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "shopping"
+      ],
+      "coreWordId": "ageru"
+    },
+    "ageru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "shopping"
+      ],
+      "coreWordId": "ageru"
+    },
+    "aimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "leisure",
+        "work"
+      ],
+      "coreWordId": "au"
+    },
+    "aisu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "aisu"
+    },
+    "aka": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "aka"
+    },
+    "akarui": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "akarui"
+    },
+    "akihabara": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "akushon": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "leisure"
+      ]
+    },
+    "anata": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "anata"
+    },
+    "ane": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "ane"
+    },
+    "ani": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "ani"
+    },
+    "anime": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ],
+      "coreWordId": "anime"
+    },
+    "ankeeto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "school"
+      ],
+      "coreWordId": "ankeeto"
+    },
+    "ano": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "food"
+      ],
+      "coreWordId": "ano"
+    },
+    "anoo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "anoo"
+    },
+    "ao": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "ao"
+    },
+    "apaato": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "apaato"
+    },
+    "are": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "shopping"
+      ],
+      "coreWordId": "are"
+    },
+    "arigatou": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings"
+      ],
+      "coreWordId": "arigatou"
+    },
+    "arimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "aru"
+    },
+    "aru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "aru"
+    },
+    "arubaito": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "work"
+      ],
+      "coreWordId": "arubaito"
+    },
+    "aruite": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "aruite"
+    },
+    "asa": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "work"
+      ],
+      "coreWordId": "asa"
+    },
+    "asa-gohan": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "routine"
+      ],
+      "coreWordId": "asagohan"
+    },
+    "asagohan": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "routine"
+      ],
+      "coreWordId": "asagohan"
+    },
+    "asakusa": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "ashita": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "ashita"
+    },
+    "asobimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "asobu"
+    },
+    "asobu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "asobu"
+    },
+    "atarashii": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home",
+        "shopping"
+      ],
+      "coreWordId": "atarashii"
+    },
+    "au": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "leisure",
+        "work"
+      ],
+      "coreWordId": "au"
+    },
+    "baasudee": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "tanjoubi"
+    },
+    "baggu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "shopping"
+      ],
+      "coreWordId": "baggu"
+    },
+    "baiku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "baiku"
+    },
+    "ban-gohan": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "routine"
+      ],
+      "coreWordId": "ban-gohan"
+    },
+    "basu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "basu"
+    },
+    "beddo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home"
+      ],
+      "coreWordId": "beddo"
+    },
+    "benkyoo-chuu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "benkyoo-chuu"
+    },
+    "benkyooshimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "benkyooshimasu"
+    },
+    "benri": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "benri"
+    },
+    "benri-na": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "benri"
+    },
+    "biichi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "biichi"
+    },
+    "biitoruzu": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "bijutsukan": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ],
+      "coreWordId": "bijutsukan"
+    },
+    "biru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "biru"
+    },
+    "boku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "leisure"
+      ],
+      "coreWordId": "boku"
+    },
+    "bungaku": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "leisure"
+      ]
+    },
+    "burogu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "burogu"
+    },
+    "byooin": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "byouin"
+    },
+    "byouin": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "byouin"
+    },
+    "chairo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "chairo"
+    },
+    "chichi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "chichi"
+    },
+    "chiisai": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home",
+        "shopping"
+      ],
+      "coreWordId": "chiisai"
+    },
+    "chiizu-baagaa": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "food"
+      ]
+    },
+    "chikai": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "chikai"
+    },
+    "chikaku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "chikaku"
+    },
+    "chikatetsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "chikatetsu"
+    },
+    "chotto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "chotto"
+    },
+    "daidokoro": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "daidokoro"
+    },
+    "daijoobu-na": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "daijoubu"
+    },
+    "daijoubu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "daijoubu"
+    },
+    "dame": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "dame"
+    },
+    "dansu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "dansu"
+    },
+    "dare": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "dare"
+    },
+    "dekimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "dekimasu"
+    },
+    "demo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "demo"
+    },
+    "densha": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "densha"
+    },
+    "depaato": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping",
+        "travel"
+      ],
+      "coreWordId": "depaato"
+    },
+    "dochira": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "dochira"
+    },
+    "dochira-kara": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "dochira-kara"
+    },
+    "doko": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "travel"
+      ],
+      "coreWordId": "doko"
+    },
+    "doko-nimo-ikimasendeshita": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "travel"
+      ],
+      "coreWordId": "doko-nimo-ikimasendeshita"
+    },
+    "dokusho": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "dokusho"
+    },
+    "donna": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "donna"
+    },
+    "doo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "doo"
+    },
+    "doo-deshita-ka": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "travel"
+      ],
+      "coreWordId": "doo-deshita-ka"
+    },
+    "doo-yatte": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "doo-yatte"
+    },
+    "doomo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "greetings"
+      ],
+      "coreWordId": "doomo"
+    },
+    "doomo-arigatoo-gozaimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "greetings"
+      ],
+      "coreWordId": "doomo-arigatoo-gozaimasu"
+    },
+    "doozo-agatte-kudasai": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "home"
+      ],
+      "coreWordId": "doozo-agatte-kudasai"
+    },
+    "doozo-yoroshiku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings"
+      ],
+      "coreWordId": "doozo-yoroshiku"
+    },
+    "doozo-yoroshiku-onegaishimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings"
+      ],
+      "coreWordId": "doozo-yoroshiku-onegaishimasu"
+    },
+    "douzo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "greetings"
+      ],
+      "coreWordId": "douzo"
+    },
+    "doyoobi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "doyoobi"
+    },
+    "e": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "e"
+    },
+    "e_2": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "e_2"
+    },
+    "eakon": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home"
+      ],
+      "coreWordId": "eakon"
+    },
+    "eega": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "eiga"
+    },
+    "eegyoo-jikan": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "eegyoo-jikan"
+    },
+    "ehagaki": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "shopping"
+      ],
+      "coreWordId": "ehagaki"
+    },
+    "eiga": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "eiga"
+    },
+    "eigo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "eigo"
+    },
+    "eki": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "eki"
+    },
+    "emu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "emu"
+    },
+    "en": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "en"
+    },
+    "enjinia": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "work"
+      ],
+      "coreWordId": "enjinia"
+    },
+    "erabu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "food",
+        "shopping"
+      ],
+      "coreWordId": "erabu"
+    },
+    "eru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "eru"
+    },
+    "esu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "esu"
+    },
+    "esuefu": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "leisure"
+      ]
+    },
+    "fantajii": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "leisure"
+      ]
+    },
+    "fasshon": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "leisure"
+      ]
+    },
+    "fesuthibaru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ],
+      "coreWordId": "fesuthibaru"
+    },
+    "firipin": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "fune": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "fune"
+    },
+    "furaido-poteto": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "food"
+      ]
+    },
+    "furui": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home",
+        "shopping"
+      ],
+      "coreWordId": "furui"
+    },
+    "futari": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "futari"
+    },
+    "futatsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "futatsu"
+    },
+    "futsukame": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "futsukame"
+    },
+    "gaikokugo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "school"
+      ],
+      "coreWordId": "gaikokugo"
+    },
+    "gakkoo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "school",
+        "travel"
+      ],
+      "coreWordId": "gakkou"
+    },
+    "gakkou": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "school",
+        "travel"
+      ],
+      "coreWordId": "gakkou"
+    },
+    "gakusee": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "gakusei"
+    },
+    "gakusei": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "gakusei"
+    },
+    "genkan": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "genkan"
+    },
+    "getsuyoobi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "work"
+      ],
+      "coreWordId": "getsuyoubi"
+    },
+    "getsuyoubi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "work"
+      ],
+      "coreWordId": "getsuyoubi"
+    },
+    "ginkoo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "ginkou"
+    },
+    "ginkou": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "ginkou"
+    },
+    "ginza": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "gitaa": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "leisure"
+      ],
+      "coreWordId": "gitaa"
+    },
+    "go": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "go"
+    },
+    "gochisousama": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "greetings"
+      ],
+      "coreWordId": "gochisousama"
+    },
+    "gogo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "work"
+      ],
+      "coreWordId": "gogo"
+    },
+    "gohan": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "gohan"
+    },
+    "gomenkudasai": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "home"
+      ],
+      "coreWordId": "gomenkudasai"
+    },
+    "gozen": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "work"
+      ],
+      "coreWordId": "gozen"
+    },
+    "guree": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "guree"
+    },
+    "gyuunyuu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "gyuunyuu"
+    },
+    "hachi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "hachi"
+    },
+    "haha": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "haha"
+    },
+    "hai": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "school"
+      ],
+      "coreWordId": "hai"
+    },
+    "haiku": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ]
+    },
+    "hairimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "home",
+        "routine"
+      ],
+      "coreWordId": "hairu"
+    },
+    "hairu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "home",
+        "routine"
+      ],
+      "coreWordId": "hairu"
+    },
+    "hajimemashite": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings"
+      ],
+      "coreWordId": "hajimemashite"
+    },
+    "hajimemasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "school",
+        "work"
+      ],
+      "coreWordId": "hajimemasu"
+    },
+    "hako": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home"
+      ],
+      "coreWordId": "hako"
+    },
+    "hakubutsukan": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ],
+      "coreWordId": "hakubutsukan"
+    },
+    "hanabi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ],
+      "coreWordId": "hanabi"
+    },
+    "hanabi-taikai": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ]
+    },
+    "hanasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "school",
+        "work"
+      ],
+      "coreWordId": "hanasu"
+    },
+    "hanbaagaa": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "hanbaagaa"
+    },
+    "hankachi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "shopping"
+      ],
+      "coreWordId": "hankachi"
+    },
+    "harajuku": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "hashi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "everyday-objects",
+        "food",
+        "shopping"
+      ],
+      "coreWordId": "hashi"
+    },
+    "hashioki": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "everyday-objects",
+        "shopping"
+      ]
+    },
+    "hataraku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "work"
+      ],
+      "coreWordId": "hataraku"
+    },
+    "hayai": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "routine"
+      ],
+      "coreWordId": "hayai"
+    },
+    "heejitsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel",
+        "work"
+      ],
+      "coreWordId": "heejitsu"
+    },
+    "heya": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "heya"
+    },
+    "hi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "hi"
+    },
+    "hidari": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "hidari"
+    },
+    "hikooki": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "hikouki"
+    },
+    "hikouki": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "hikouki"
+    },
+    "hiragana": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "hiragana"
+    },
+    "hiroi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "hiroi"
+    },
+    "hiroshima": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "hiru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "hiru"
+    },
+    "hiru-gohan": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "routine"
+      ],
+      "coreWordId": "hiru-gohan"
+    },
+    "hito": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "hito"
+    },
+    "hitori": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "hitori"
+    },
+    "hitotsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "hitotsu"
+    },
+    "hoka": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "hoka"
+    },
+    "hokkaidoo": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "hon": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home",
+        "leisure",
+        "school"
+      ],
+      "coreWordId": "hon"
+    },
+    "hontou": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "hontou"
+    },
+    "horaa": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "leisure"
+      ]
+    },
+    "hoshii": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "hoshii"
+    },
+    "hoteru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "hoteru"
+    },
+    "hotto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "hotto"
+    },
+    "hottodoggu": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "food"
+      ]
+    },
+    "hyaku-byaku-pyaku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "shopping"
+      ],
+      "coreWordId": "hyaku-byaku-pyaku"
+    },
+    "ibento": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "ibento"
+    },
+    "ichi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "ichi"
+    },
+    "ichiban": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "ichiban"
+    },
+    "ichido": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "ichido"
+    },
+    "ichinichime": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "ichinichime"
+    },
+    "ie": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "ie"
+    },
+    "ii": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "ii"
+    },
+    "ii-desu-ne": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "leisure"
+      ],
+      "coreWordId": "ii-desu-ne"
+    },
+    "iie": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "school"
+      ],
+      "coreWordId": "iie"
+    },
+    "iimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "iimasu"
+    },
+    "ikebana": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture"
+      ]
+    },
+    "ikimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "iku"
+    },
+    "ikkodate": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "ikkodate"
+    },
+    "iku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "iku"
+    },
+    "ikura": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "leisure",
+        "shopping"
+      ],
+      "coreWordId": "ikura"
+    },
+    "ikura-desu-ka": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "shopping",
+        "travel"
+      ],
+      "coreWordId": "ikura-desu-ka"
+    },
+    "ikutsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "shopping"
+      ],
+      "coreWordId": "ikutsu"
+    },
+    "ima": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "ima"
+    },
+    "imasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "school"
+      ],
+      "coreWordId": "iru"
+    },
+    "imooto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "imouto"
+    },
+    "imouto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "imouto"
+    },
+    "irasshai": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "home"
+      ],
+      "coreWordId": "irasshai"
+    },
+    "irasshaimase": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "greetings"
+      ],
+      "coreWordId": "irasshaimase"
+    },
+    "iro": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "shopping"
+      ],
+      "coreWordId": "iro"
+    },
+    "iru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "school"
+      ],
+      "coreWordId": "iru"
+    },
+    "isogashii": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "work"
+      ],
+      "coreWordId": "isogashii"
+    },
+    "issho": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "issho"
+    },
+    "issho-ni": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "issho"
+    },
+    "isu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home"
+      ],
+      "coreWordId": "isu"
+    },
+    "itadakimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "greetings"
+      ],
+      "coreWordId": "itadakimasu"
+    },
+    "itsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "itsu"
+    },
+    "itsu-de-mo-iidesu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "itsu-de-mo-iidesu"
+    },
+    "itsumo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "routine"
+      ],
+      "coreWordId": "itsumo"
+    },
+    "itsutsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "shopping"
+      ],
+      "coreWordId": "itsutsu"
+    },
+    "jaa": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "jaa"
+    },
+    "jaketto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "jaketto"
+    },
+    "japan": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture"
+      ],
+      "coreWordId": "nihon"
+    },
+    "jazu": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "leisure"
+      ]
+    },
+    "jei-poppu": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "leisure"
+      ]
+    },
+    "jiinzu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "jiinzu"
+    },
+    "jinja": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "travel"
+      ],
+      "coreWordId": "jinja"
+    },
+    "jitensha": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "jitensha"
+    },
+    "jugyoo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "school"
+      ],
+      "coreWordId": "jugyou"
+    },
+    "jugyou": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "school"
+      ],
+      "coreWordId": "jugyou"
+    },
+    "juu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "juu"
+    },
+    "juudoo": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ]
+    },
+    "juusu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "juusu"
+    },
+    "kaado": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "shopping"
+      ],
+      "coreWordId": "kaado"
+    },
+    "kabuki": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture"
+      ]
+    },
+    "kaemasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "kaemasu"
+    },
+    "kaerimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel",
+        "work"
+      ],
+      "coreWordId": "kaeru"
+    },
+    "kaeru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel",
+        "work"
+      ],
+      "coreWordId": "kaeru"
+    },
+    "kaimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "kaimasu"
+    },
+    "kaimono": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "kaimono"
+    },
+    "kaimonoshimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping",
+        "travel"
+      ],
+      "coreWordId": "kaimonoshimasu"
+    },
+    "kaisha": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "work"
+      ],
+      "coreWordId": "kaisha"
+    },
+    "kaishain": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "work"
+      ],
+      "coreWordId": "kaishain"
+    },
+    "kakkoii": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "shopping"
+      ],
+      "coreWordId": "kakkoii"
+    },
+    "kaku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school",
+        "work"
+      ],
+      "coreWordId": "kaku"
+    },
+    "kanji": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "kanji"
+    },
+    "kankoku": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "kankokugo": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "school"
+      ]
+    },
+    "kankokujin": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "family"
+      ]
+    },
+    "kanpai": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "leisure"
+      ],
+      "coreWordId": "kanpai"
+    },
+    "kappu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "food",
+        "home"
+      ],
+      "coreWordId": "kappu"
+    },
+    "karaoke": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "karaoke"
+    },
+    "karee": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "karee"
+    },
+    "karendaa": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "karendaa"
+    },
+    "kasa": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "shopping"
+      ],
+      "coreWordId": "kasa"
+    },
+    "katakana": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "katakana"
+    },
+    "kawaii": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "shopping"
+      ],
+      "coreWordId": "kawaii"
+    },
+    "kayoobi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "work"
+      ],
+      "coreWordId": "kayoubi"
+    },
+    "kayoubi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "work"
+      ],
+      "coreWordId": "kayoubi"
+    },
+    "kazoku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "kazoku"
+    },
+    "kekkoo-desu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "greetings"
+      ],
+      "coreWordId": "kekkoo-desu"
+    },
+    "ki-o-tsukete": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "ki-o-tsukete"
+    },
+    "kiiro": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "kiiro"
+    },
+    "kikimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "school",
+        "work"
+      ],
+      "coreWordId": "kiku"
+    },
+    "kiku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "school",
+        "work"
+      ],
+      "coreWordId": "kiku"
+    },
+    "kimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "kuru"
+    },
+    "kimono": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture"
+      ],
+      "coreWordId": "kimono"
+    },
+    "kin-yoobi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "work"
+      ],
+      "coreWordId": "kin-yoobi"
+    },
+    "kinoo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "kinou"
+    },
+    "kinou": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "kinou"
+    },
+    "kiree-na": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "home"
+      ],
+      "coreWordId": "kiree-na"
+    },
+    "kiru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "kiru"
+    },
+    "kochira": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "travel"
+      ],
+      "coreWordId": "kochira"
+    },
+    "kodomo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "kodomo"
+    },
+    "koko": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "travel"
+      ],
+      "coreWordId": "koko"
+    },
+    "komedhi": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "leisure"
+      ]
+    },
+    "konbanwa": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings"
+      ],
+      "coreWordId": "konbanwa"
+    },
+    "konnichiwa": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings"
+      ],
+      "coreWordId": "konnichiwa"
+    },
+    "kono": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "family"
+      ],
+      "coreWordId": "kono"
+    },
+    "konsaato": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "konsaato"
+    },
+    "konshuu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "konshuu"
+    },
+    "koo-yatte": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "koo-yatte"
+    },
+    "koocha": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "koocha"
+    },
+    "kooen": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "travel"
+      ],
+      "coreWordId": "kouen"
+    },
+    "koohii": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "koohii"
+    },
+    "koohii-shoppu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "leisure"
+      ],
+      "coreWordId": "koohii-shoppu"
+    },
+    "koomuin": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "work"
+      ],
+      "coreWordId": "koomuin"
+    },
+    "koora": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "koora"
+    },
+    "kooto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "kooto"
+    },
+    "kore": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home"
+      ],
+      "coreWordId": "kore"
+    },
+    "kotoshi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "kotoshi"
+    },
+    "kouen": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "travel"
+      ],
+      "coreWordId": "kouen"
+    },
+    "ku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "kyuu"
+    },
+    "kudamono": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "kudamono"
+    },
+    "kuni": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "kuni"
+    },
+    "kurai": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "kurai"
+    },
+    "kurashikku": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "leisure"
+      ]
+    },
+    "kuro": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "kuro"
+    },
+    "kuru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "kuru"
+    },
+    "kuruma": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "kuruma"
+    },
+    "kutsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "kutsu"
+    },
+    "kutsushita": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "kutsushita"
+    },
+    "kuukoo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "kuukou"
+    },
+    "kuukou": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "kuukou"
+    },
+    "kuusha": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "kyonen": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "kyonen"
+    },
+    "kyoo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "kyou"
+    },
+    "kyooshi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school",
+        "work"
+      ],
+      "coreWordId": "kyooshi"
+    },
+    "kyooshitsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "kyooshitsu"
+    },
+    "kyooto": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "kyou": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "kyou"
+    },
+    "kyouto": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "kyuu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "kyuu"
+    },
+    "maamaa-na": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "maamaa-na"
+    },
+    "machi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "machi"
+    },
+    "mada": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "mada"
+    },
+    "mae": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "travel"
+      ],
+      "coreWordId": "mae"
+    },
+    "mainichi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "mainichi"
+    },
+    "man": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "man"
+    },
+    "manga": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ],
+      "coreWordId": "manga"
+    },
+    "manshon": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "manshon"
+    },
+    "massugu-na": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "massugu-na"
+    },
+    "mata": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "mata"
+    },
+    "mata-kondo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "mata-kondo"
+    },
+    "matsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "matsu"
+    },
+    "matsuri": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ],
+      "coreWordId": "matsuri"
+    },
+    "meeshi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "work"
+      ],
+      "coreWordId": "meeshi"
+    },
+    "menyuu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "menyuu"
+    },
+    "midori": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "midori"
+    },
+    "migi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "migi"
+    },
+    "mikkame": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "mikkame"
+    },
+    "mimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "miru"
+    },
+    "mimikaki": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "shopping"
+      ]
+    },
+    "miru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "miru"
+    },
+    "mise": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "shopping"
+      ],
+      "coreWordId": "mise"
+    },
+    "miseru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "shopping"
+      ],
+      "coreWordId": "miseru"
+    },
+    "misoshiru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "misoshiru"
+    },
+    "misuterii": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "leisure"
+      ]
+    },
+    "mittsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "shopping"
+      ],
+      "coreWordId": "mittsu"
+    },
+    "mizu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "mizu"
+    },
+    "mochiron": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "mochiron"
+    },
+    "mokuyoobi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "routine",
+        "work"
+      ],
+      "coreWordId": "mokuyoobi"
+    },
+    "monoreeru": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "moo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "moo"
+    },
+    "moo-ichido": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "mouichido"
+    },
+    "moo-sukoshi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "moo-sukoshi"
+    },
+    "moshimoshi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "leisure",
+        "travel"
+      ],
+      "coreWordId": "moshimoshi"
+    },
+    "motto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "motto"
+    },
+    "mouichido": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "mouichido"
+    },
+    "muryoo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "muryoo"
+    },
+    "muttsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "shopping"
+      ],
+      "coreWordId": "muttsu"
+    },
+    "nagai": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "travel"
+      ],
+      "coreWordId": "nagai"
+    },
+    "naka": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "naka"
+    },
+    "namae": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "school",
+        "work"
+      ],
+      "coreWordId": "namae"
+    },
+    "nan-ji": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "nan-ji"
+    },
+    "nana": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "nana"
+    },
+    "nani-mo-shimasendeshita": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "travel"
+      ],
+      "coreWordId": "nani-mo-shimasendeshita"
+    },
+    "nani-nan": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "nani-nan"
+    },
+    "nemasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "neru"
+    },
+    "nenjuu-mukyuu": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "neru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "neru"
+    },
+    "ni": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "ni"
+    },
+    "niaimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "niau"
+    },
+    "niau": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "niau"
+    },
+    "nichiyoobi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "nichiyoobi"
+    },
+    "nigiyaka-na": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "nigiyaka-na"
+    },
+    "nihon": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture"
+      ],
+      "coreWordId": "nihon"
+    },
+    "nihongo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "nihongo"
+    },
+    "nihonteki-na": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture"
+      ]
+    },
+    "nikki": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "nikki"
+    },
+    "niku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "niku"
+    },
+    "nimotsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "travel"
+      ],
+      "coreWordId": "nimotsu"
+    },
+    "ningyoo": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture",
+        "everyday-objects",
+        "home"
+      ]
+    },
+    "ninja": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture",
+        "shopping"
+      ]
+    },
+    "niwa": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "niwa"
+    },
+    "nomimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "nomu"
+    },
+    "nomimono": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "nomimono"
+    },
+    "nomu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "nomu"
+    },
+    "norimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "noru"
+    },
+    "norimono": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "norimono"
+    },
+    "noru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "noru"
+    },
+    "obaachan": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "obaachan"
+    },
+    "ocha": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "ocha"
+    },
+    "ocha-cha": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "ocha"
+    },
+    "ofuro-furo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "ofuro-furo"
+    },
+    "ohayoo-gozaimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings"
+      ],
+      "coreWordId": "ohayoo-gozaimasu"
+    },
+    "ohayou": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings"
+      ],
+      "coreWordId": "ohayou"
+    },
+    "oikutsu-desu-ka": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "oikutsu-desu-ka"
+    },
+    "oishii": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "oishii"
+    },
+    "ojamashimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "home"
+      ],
+      "coreWordId": "ojamashimasu"
+    },
+    "okimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "okiru"
+    },
+    "okinawa": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "okiru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "okiru"
+    },
+    "okuremasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "school",
+        "work"
+      ],
+      "coreWordId": "okuremasu"
+    },
+    "okyakusan": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "okyakusan"
+    },
+    "omedetoo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "greetings",
+        "leisure"
+      ],
+      "coreWordId": "omedetoo"
+    },
+    "omiyage": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "shopping"
+      ],
+      "coreWordId": "omiyage"
+    },
+    "omiyage-miyage": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "shopping"
+      ],
+      "coreWordId": "omiyage"
+    },
+    "omoshiroi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "shopping"
+      ],
+      "coreWordId": "omoshiroi"
+    },
+    "onamae-namae": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "school",
+        "work"
+      ],
+      "coreWordId": "namae"
+    },
+    "onegaishimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "greetings"
+      ],
+      "coreWordId": "onegaishimasu"
+    },
+    "ongaku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "ongaku"
+    },
+    "ooi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "ooi"
+    },
+    "ookii": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home",
+        "shopping"
+      ],
+      "coreWordId": "ookii"
+    },
+    "oosaka": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "oosutoraria": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "orenji": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "orenji"
+    },
+    "origami": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture"
+      ]
+    },
+    "orimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "oriru"
+    },
+    "oriru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "oriru"
+    },
+    "osake-sake": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "leisure"
+      ],
+      "coreWordId": "osake-sake"
+    },
+    "osaki-ni-shitsureeshimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "work"
+      ],
+      "coreWordId": "osaki-ni-shitsureeshimasu"
+    },
+    "oshare-na": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "oshare-na"
+    },
+    "oshigoto-shigoto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "work"
+      ],
+      "coreWordId": "shigoto"
+    },
+    "osoi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "osoi"
+    },
+    "otanjoobi-tanjoobi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "tanjoubi"
+    },
+    "otera-tera": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "travel"
+      ],
+      "coreWordId": "otera-tera"
+    },
+    "otooto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "otouto"
+    },
+    "otouto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "otouto"
+    },
+    "otsukaresama": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "work"
+      ],
+      "coreWordId": "otsukaresama"
+    },
+    "otto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "otto"
+    },
+    "owarimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "school",
+        "work"
+      ],
+      "coreWordId": "owarimasu"
+    },
+    "paatii": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "paatii"
+    },
+    "pan": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "pan"
+    },
+    "pantsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "pantsu"
+    },
+    "pea": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "pea"
+    },
+    "piano": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "leisure"
+      ],
+      "coreWordId": "piano"
+    },
+    "pinku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "pinku"
+    },
+    "piza": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "piza"
+    },
+    "poppusu": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "leisure"
+      ]
+    },
+    "raamen": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "raamen"
+    },
+    "raishuu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "raishuu"
+    },
+    "raku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "raku"
+    },
+    "raku-na": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "raku"
+    },
+    "ren-ai": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "leisure"
+      ]
+    },
+    "resutoran": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "resutoran"
+    },
+    "risuto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "school",
+        "shopping"
+      ],
+      "coreWordId": "risuto"
+    },
+    "rokku": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "leisure"
+      ]
+    },
+    "roku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "roku"
+    },
+    "roomaji": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "roomaji"
+    },
+    "roshia": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "ryoori": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "ryoori"
+    },
+    "sadoo": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ]
+    },
+    "sadou": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ]
+    },
+    "saizu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "saizu"
+    },
+    "sakana": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "sakana"
+    },
+    "sakkaa": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "sakkaa"
+    },
+    "san": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "san"
+    },
+    "sanpo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "sanpo"
+    },
+    "sayounara": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings"
+      ],
+      "coreWordId": "sayounara"
+    },
+    "seikatsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "seikatsu"
+    },
+    "semai": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "semai"
+    },
+    "sen-zen": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "sen-zen"
+    },
+    "sensee": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school",
+        "work"
+      ],
+      "coreWordId": "sensei"
+    },
+    "sensei": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school",
+        "work"
+      ],
+      "coreWordId": "sensei"
+    },
+    "senshuu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "senshuu"
+    },
+    "sensooji": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "sensouji": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "sentaku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "sentaku"
+    },
+    "shashin": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "family",
+        "home",
+        "travel"
+      ],
+      "coreWordId": "shashin"
+    },
+    "shatsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "shatsu"
+    },
+    "shawaa": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home",
+        "routine"
+      ],
+      "coreWordId": "shawaa"
+    },
+    "shibuya": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "shichi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "nana"
+    },
+    "shigoto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "work"
+      ],
+      "coreWordId": "shigoto"
+    },
+    "shimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "suru"
+    },
+    "shinbun": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "school"
+      ],
+      "coreWordId": "shinbun"
+    },
+    "shinjuku": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "shiro": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "shiro"
+    },
+    "shita": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "shita"
+    },
+    "shitsureeshimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "work"
+      ],
+      "coreWordId": "shitsureeshimasu"
+    },
+    "shokuji": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "routine"
+      ],
+      "coreWordId": "shokuji"
+    },
+    "shoo": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ],
+      "coreWordId": "shoo"
+    },
+    "shoosetsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "shoosetsu"
+    },
+    "shufu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "work"
+      ],
+      "coreWordId": "shufu"
+    },
+    "shukujitsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "shukujitsu"
+    },
+    "shumi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "shumi"
+    },
+    "shuriken": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture",
+        "shopping"
+      ]
+    },
+    "soba": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "soba"
+    },
+    "sofa": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home"
+      ],
+      "coreWordId": "sofa"
+    },
+    "soo-desu-ka": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "greetings"
+      ],
+      "coreWordId": "soo-desu-ka"
+    },
+    "soo-desu-ne": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "travel"
+      ],
+      "coreWordId": "soo-desu-ne"
+    },
+    "sooji": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "sooji"
+    },
+    "sooru": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "sorekara": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "sorekara"
+    },
+    "soshite": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "soshite"
+    },
+    "soto": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "leisure",
+        "travel"
+      ],
+      "coreWordId": "soto"
+    },
+    "subarashii": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "subarashii"
+    },
+    "suiyoobi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "work"
+      ],
+      "coreWordId": "suiyoobi"
+    },
+    "sukaato": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "sukaato"
+    },
+    "sukaitsuri": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "suki-na": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "suki-na"
+    },
+    "sukoshi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "sukoshi"
+    },
+    "sumimasen": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "greetings",
+        "travel"
+      ],
+      "coreWordId": "sumimasen"
+    },
+    "sumimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "home"
+      ],
+      "coreWordId": "sumu"
+    },
+    "sumoo": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ]
+    },
+    "sumou": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ]
+    },
+    "sumu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "home"
+      ],
+      "coreWordId": "sumu"
+    },
+    "supein": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "supootsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "supootsu"
+    },
+    "suru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "suru"
+    },
+    "sushi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "sushi"
+    },
+    "suteki": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "suteki"
+    },
+    "suuji": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "suuji"
+    },
+    "tabemasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "taberu"
+    },
+    "tabemono": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "tabemono"
+    },
+    "taberu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "taberu"
+    },
+    "tabun": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "tabun"
+    },
+    "tai": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "taihen": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "taihen"
+    },
+    "taihen-na": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "taihen"
+    },
+    "taiko": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "culture"
+      ]
+    },
+    "takai": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "takai"
+    },
+    "takushii": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "takushii"
+    },
+    "tamago": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "tamago"
+    },
+    "tana": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home"
+      ],
+      "coreWordId": "tana"
+    },
+    "tanjoobi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "tanjoubi"
+    },
+    "tanjoubi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "tanjoubi"
+    },
+    "tanoshii": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "travel"
+      ],
+      "coreWordId": "tanoshii"
+    },
+    "tanoshimi-desu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "tanoshimi-desu"
+    },
+    "teeburu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home"
+      ],
+      "coreWordId": "teeburu"
+    },
+    "teekyuubi": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "tenisu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "tenisu"
+    },
+    "tenpura": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "tenpura"
+    },
+    "terebi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home"
+      ],
+      "coreWordId": "terebi"
+    },
+    "thii-shatsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "tiishatsu"
+    },
+    "tiishatsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "tiishatsu"
+    },
+    "toire": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "toire"
+    },
+    "tokee": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "home"
+      ],
+      "coreWordId": "tokee"
+    },
+    "tokidoki": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "routine"
+      ],
+      "coreWordId": "tokidoki"
+    },
+    "tokoro": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "travel"
+      ],
+      "coreWordId": "tokoro"
+    },
+    "tomarimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "tomaru"
+    },
+    "tomaru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "tomaru"
+    },
+    "tomodachi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "tomodachi"
+    },
+    "tonari": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "travel"
+      ],
+      "coreWordId": "tonari"
+    },
+    "tooi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "tooi"
+    },
+    "tookyoo": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "tookyoo-tawaa": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "toori": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "toori"
+    },
+    "torimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "leisure",
+        "travel"
+      ],
+      "coreWordId": "toru"
+    },
+    "toru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "leisure",
+        "travel"
+      ],
+      "coreWordId": "toru"
+    },
+    "toukyou_tower": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "tsugi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "tsugi"
+    },
+    "tsukaremasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "tsukareru"
+    },
+    "tsukareru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "tsukareru"
+    },
+    "tsukau": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "shopping",
+        "work"
+      ],
+      "coreWordId": "tsukau"
+    },
+    "tsukimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "tsuku"
+    },
+    "tsuku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "tsuku"
+    },
+    "tsuma": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "tsuma"
+    },
+    "uchi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "uchi"
+    },
+    "udon": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "udon"
+    },
+    "ue": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "ue"
+    },
+    "ueno": {
+      "level": "A1",
+      "core": false,
+      "topicIds": [
+        "travel"
+      ]
+    },
+    "ureshii": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "leisure"
+      ],
+      "coreWordId": "ureshii"
+    },
+    "ushiro": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "travel"
+      ],
+      "coreWordId": "ushiro"
+    },
+    "uta": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "uta"
+    },
+    "utaimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ],
+      "coreWordId": "utau"
+    },
+    "utau": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "leisure"
+      ],
+      "coreWordId": "utau"
+    },
+    "uun-uun": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "uun-uun"
+    },
+    "waa": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "waa"
+    },
+    "wakai": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "wakai"
+    },
+    "wakarimasen": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "wakarimasen"
+    },
+    "wakarimashita": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "wakarimashita"
+    },
+    "wakaru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "wakaru"
+    },
+    "wanpiisu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "shopping"
+      ],
+      "coreWordId": "wanpiisu"
+    },
+    "watashi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family"
+      ],
+      "coreWordId": "watashi"
+    },
+    "watashitachi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "family",
+        "leisure"
+      ],
+      "coreWordId": "watashitachi"
+    },
+    "yakyuu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "yakyuu"
+    },
+    "yasai": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food"
+      ],
+      "coreWordId": "yasai"
+    },
+    "yasui": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "shopping"
+      ],
+      "coreWordId": "yasui"
+    },
+    "yasumi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure",
+        "routine",
+        "work"
+      ],
+      "coreWordId": "yasumi"
+    },
+    "yasumimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "school",
+        "work"
+      ],
+      "coreWordId": "yasumu"
+    },
+    "yasumu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "school",
+        "work"
+      ],
+      "coreWordId": "yasumu"
+    },
+    "yokkame": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "travel"
+      ],
+      "coreWordId": "yokkame"
+    },
+    "yoko": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home"
+      ],
+      "coreWordId": "yoko"
+    },
+    "yoku": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "food",
+        "routine"
+      ],
+      "coreWordId": "yoku"
+    },
+    "yomu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school",
+        "work"
+      ],
+      "coreWordId": "yomu"
+    },
+    "yon": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine",
+        "shopping"
+      ],
+      "coreWordId": "yon"
+    },
+    "yoru": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "routine"
+      ],
+      "coreWordId": "yoru"
+    },
+    "yottsu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "home",
+        "shopping"
+      ],
+      "coreWordId": "yottsu"
+    },
+    "yuki_snow": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "travel"
+      ],
+      "coreWordId": "yuki_snow"
+    },
+    "yukkuri": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "school"
+      ],
+      "coreWordId": "yukkuri"
+    },
+    "yukkurishimasu": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "yukkurishimasu"
+    },
+    "yuumee-na": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "travel"
+      ],
+      "coreWordId": "yuumei"
+    },
+    "yuumei": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "culture",
+        "travel"
+      ],
+      "coreWordId": "yuumei"
+    },
+    "zannen-na": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "leisure"
+      ],
+      "coreWordId": "zannen-na"
+    },
+    "zasshi": {
+      "level": "A1",
+      "core": true,
+      "topicIds": [
+        "everyday-objects",
+        "school"
+      ],
+      "coreWordId": "zasshi"
+    }
+  }
+}

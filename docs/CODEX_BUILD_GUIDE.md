@@ -1,6 +1,9 @@
 # Codex Build Guide
 
 This document is the operating manual for Codex rebuilding Kotoba from scratch.
+It is historical scaffolding for the greenfield rebuild. For current day-to-day
+work, use `docs/PROJECT.md`, `docs/ARCHITECTURE.md`, `docs/DATA_CONTRACTS.md`,
+and `docs/QUALITY.md` as the active contract.
 
 Codex builds the app, authors seed curriculum, writes validators, writes tests,
 runs the checks, and iterates until the documented contract passes.
@@ -22,12 +25,13 @@ Codex reads:
 
 ## Rebuild Contract
 
-The greenfield app has:
+The current app has:
 
-- frozen authored curriculum units
+- frozen authored curriculum units generated from the source model
 - a fast card-drilling player
 - local progress
 - file-backed data
+- a generated runtime vocabulary lexicon
 - validation scripts
 - automated app tests
 - end-to-end practice-flow tests
@@ -114,15 +118,20 @@ Expose the validator through:
 npm run validate:curriculum
 ```
 
-### 5. Author Seed Curriculum
+### 5. Author Or Rebuild Curriculum
 
-Author 3-5 real Japanese units.
+Use the source model and rebuild scripts for curriculum changes. The active A1
+rebuild command is:
 
-Each seed unit:
+```text
+npm run curriculum:rebuild-a1
+```
+
+Each standard unit:
 
 - follows `grammar_by_unit.md`
 - has one grammar focus
-- has 10 new words
+- has about 10 new words, with documented exceptions in `docs/DATA_CONTRACTS.md`
 - follows `word_selection_rules.md`
 - contains enough cards to demonstrate long repetitive modular flow
 

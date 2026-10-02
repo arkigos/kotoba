@@ -18,6 +18,12 @@ would require card scoring, due dates, review queues, and missed-card practice.
 
 ## Taste Rules
 
+Helper notes teach one immediate point in plain language. They must not require
+unknown vocabulary, kanji readings or grammar to understand the explanation.
+Examples should use familiar language or the current card; any essential new
+term needs its reading and meaning. Avoid incidental conjugation comparisons
+or later-lesson material in a note about a particle or sentence role.
+
 Prefer sentences that do at least one useful job:
 
 - identify something a person would actually ask about
@@ -92,8 +98,11 @@ Generic `person is object/place/time` review cards are quality failures even if
 they satisfy the data contract.
 
 SRS review and lexicon helpers are different data pools. Review-due words should
-return deliberately, usually 5-8 times in a balanced unit. Lexicon helpers are
-free scaffolding and should not be counted as review debt.
+return deliberately, usually 5-8 times in a balanced unit. Once a word is in the
+review pool, do not protect it with first-exposure caution: combine it with
+other known words, cumulative particles, places, time words, and verbs so review
+cards feel like real sentence practice. Lexicon helpers are free scaffolding and
+should not be counted as review debt.
 
 Do not add more units by volume alone. Units 1-7 are the taste baseline: new
 units should be at least as natural as Unit 6 after its polish pass.

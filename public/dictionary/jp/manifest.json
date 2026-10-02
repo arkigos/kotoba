@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 1,
+  "language": "jp",
+  "source": {
+    "id": "jmdict",
+    "name": "JMdict (Japanese-English)",
+    "publisher": "Electronic Dictionary Research and Development Group",
+    "url": "https://www.edrdg.org/pub/Nihongo/JMdict_e.gz",
+    "documentationUrl": "https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project",
+    "sourceDate": "2026-09-12",
+    "sha256": "1349ec95590e48bcc1262b2f8368bf63bb0564c03c7c4c87c0e9fa266ff4acc3",
+    "payloadBytes": 10572113,
+    "archivePath": "data/jp/dictionary/upstream/JMdict_e-2026-09-12.xml.gz",
+    "license": "CC-BY-SA-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "noticeUrl": "https://www.edrdg.org/edrdg/licence.html",
+    "attribution": "This application uses JMdict dictionary data, copyright James William Breen and the Electronic Dictionary Research and Development Group (EDRDG), under CC BY-SA 4.0.",
+    "modifications": "English-only export converted to JSON shards; entity codes retained with labels; effective inherited POS expanded; compact search index added. No proficiency levels inferred.",
+    "updateCommand": "python scripts/import-japanese-dictionary.py",
+    "updatePolicy": "Refresh before releases and at least monthly for a deployed dictionary service; preserve local authored IDs and reviewed sense mappings across updates.",
+    "reproduction": "Original source payloads are archived in data/jp/dictionary/upstream. Use --source ARCHIVE_PATH --expect-sha256 SHA256 to reproduce this export. The upstream daily URL is not a historical archive."
+  },
+  "entryCount": 218765,
+  "senseCount": 253581,
+  "shardCount": 64,
+  "shardAlgorithm": "numeric JMdict sequence modulo 64, formatted as two lowercase hexadecimal digits",
+  "shardPath": "/dictionary/jp/entries/{shard}.json",
+  "indexPath": "/dictionary/jp/index.json",
+  "indexColumns": [
+    "id",
+    "headword",
+    "reading",
+    "firstGloss",
+    "additionalSearchText",
+    "common(0|1)",
+    "partsOfSpeech(pipe-delimited)",
+    "fields(pipe-delimited)",
+    "kotobaLevel",
+    "placementMethod",
+    "frequencyBand"
+  ],
+  "tagLabelsPath": "/dictionary/jp/tags.json",
+  "attributionPath": "/dictionary/jp/ATTRIBUTION.md",
+  "identityPolicy": "JMdict sequence IDs are durable entry identities. Sense IDs use source-order positions and are scoped to sourceDate; never use them alone as permanent learner-history keys.",
+  "shards": [
+    {
+      "path": "/dictionary/jp/entries/00.json",
+      "entries": 6039,
+      "bytes": 3922512,
+      "sha256": "a49663136f2e932200d7f068bd8a6757a9f80b37cc1616e4b7025f0baed225c7"
+    },
+    {
+      "path": "/dictionary/jp/entries/01.json",
+      "entries": 830,
+      "bytes": 538098,
+      "sha256": "9e1a77ef73d944fc35dc6fd6d133268f1b1df6fd371693a74f4c87149396ca66"
+    },
+    {
+      "path": "/dictionary/jp/entries/02.json",
+      "entries": 6030,
+      "bytes": 3917895,
+      "sha256": "90dfbb48776faac5a91ea427033086ce620f3a1d656de0d3b0b782820868e785"
+    },
+    {
+      "path": "/dictionary/jp/entries/03.json",
+      "entries": 803,
+      "bytes": 523181,
+      "sha256": "66da5643a23027f8a4d9f5a40b08ed9b2f16acd6caefad7da2aea83498d0ef61"
+    },
+    {
+      "path": "/dictionary/jp/entries/04.json",
+      "entries": 6034,
+      "bytes": 3902020,
+      "sha256": "a23cba38e5d8771d7e4fe0277514a3b632e1f48a756909606bb811b1fa28a684"
+    },
+    {
+      "path": "/dictionary/jp/entries/05.json",
+      "entries": 807,
+      "bytes": 526343,
+      "sha256": "34180f438652618bb594c4da2b5e4f3862a1730867604baaa39b2ff877811951"
+    },
+    {
+      "path": "/dictionary/jp/entries/06.json",
+      "entries": 6036,
+      "bytes": 3925691,
+      "sha256": "21165629ed7da2135baa164513a7808dbb6d3eef9ac39179d6fc21f676eac7c6"
+    },
+    {
+      "path": "/dictionary/jp/entries/07.json",
+      "entries": 795,
+      "bytes": 515915,
+      "sha256": "21385cc20fa1ee4088e0d8ec96a4408c941cf1770714a7635efe80338b5af05b"
+    },
+    {
+      "path": "/dictionary/jp/entries/08.json",
+      "entries": 6082,
+      "bytes": 3956180,
+      "sha256": "a6351f673ca0d3113b14b5ab1301cbfb077eb1741f36a37a679dbf49a338404f"
+    },
+    {
+      "path": "/dictionary/jp/entries/09.json",
+      "entries": 811,
+      "bytes": 516443,
+      "sha256": "acf0b78842af65506a1d2f416a6738ba709f508a0f8424d6e6868104070b35ff"
+    },
+    {
+      "path": "/dictionary/jp/entries/0a.json",
+      "entries": 6020,
+      "bytes": 3902374,
+      "sha256": "d8d855a06ffa4854055a366c0863a061527b06e7e5c785b68e0dc9df47db9b97"
+    },
+    {
+      "path": "/dictionary/jp/entries/0b.json",
+      "entries": 826,
+      "bytes": 536876,
+      "sha256": "99c96adc8a2da4165e16665155dd281208b709b6ef92c6b3dcdf2d3085692197"
+    },
+    {
+      "path": "/dictionary/jp/entries/0c.json",
+      "entries": 6041,
+      "bytes": 3922321,
+      "sha256": "a6229d2541fff7975f25051853a1ebe06f6cce1de05a11d04017f1ed01ccd7a2"
+    },
+    {
+      "path": "/dictionary/jp/entries/0d.json",
+      "entries": 810,
+      "bytes": 521295,
+      "sha256": "3b935466a9437443f127c4f473c6d22bd54fa44cd99f493ce75fdeb1063d63d9"
+    },
+    {
+      "path": "/dictionary/jp/entries/0e.json",
+      "entries": 6029,
+      "bytes": 3908434,
+      "sha256": "f236ab8fd02fe9702dfc8bbc87b81a7c14edf0debba9ab0db08cf2e571216952"
+    },
+    {
+      "path": "/dictionary/jp/entries/0f.json",
+      "entries": 812,
+      "bytes": 526442,
+      "sha256": "d63c122d7282066093423bf75095ab6b7307d1f0ef0bdf3031d88f1124cdcc7e"
+    },
+    {
+      "path": "/dictionary/jp/entries/10.json",
+      "entries": 5995,
+      "bytes": 3907877,
+      "sha256": "b60fbd0130f17d425bb34d040ba4a834901bca0fc83c086de3b4edf1426db450"
+    },
+    {
+      "path": "/dictionary/jp/entries/11.json",
+      "entries": 805,
+      "bytes": 526801,
+      "sha256": "df9996906f760ff05f0ab785edff93d47572e4fd33a4fbef9c1e107a0aa497d2"
+    },
+    {
+      "path": "/dictionary/jp/entries/12.json",
+      "entries": 6009,
+      "bytes": 3911233,
+      "sha256": "4ee7d50d8bdf837dfd9411ae3cc4bac1c99d268e0323a66632ff07067677603b"
+    },
+    {
+      "path": "/dictionary/jp/entries/13.json",
+      "entries": 807,
+      "bytes": 518858,
+      "sha256": "1173e897e55543e34f51bc048a9f54034da73213449a88c974ef18533ffcfcb2"
+    },
+    {
+      "path": "/dictionary/jp/entries/14.json",
+      "entries": 6040,
+      "bytes": 3924137,
+      "sha256": "5377562b92be6f8d0eaad726a35822eae86a0ad8a599e301df3463e7ffdef01e"
+    },
+    {
+      "path": "/dictionary/jp/entries/15.json",
+      "entries": 810,
+      "bytes": 521717,
+      "sha256": "8845936e3cb4eea08833cc3a9c9c2f18b9d758d19509ce111636c166f4cadeb4"
+    },
+    {
+      "path": "/dictionary/jp/entries/16.json",
+      "entries": 6015,
+      "bytes": 3909839,
+      "sha256": "00d6ca3976ee3ec00c0a83c1de666f9d69ab049bb2564bcaf6df73e8fcf5037b"
+    },
+    {
+      "path": "/dictionary/jp/entries/17.json",
+      "entries": 804,
+      "bytes": 521446,
+      "sha256": "fea9253c4eea2e904239483709a78389e1caf1cefc09b74785d62fa14bf2c732"
+    },
+    {
+      "path": "/dictionary/jp/entries/18.json",
+      "entries": 6043,
+      "bytes": 3910240,
+      "sha256": "f46b2840f167754eb10c59e5e3020a32ec973bb5b442c25087b4ef8edcbbcaee"
+    },
+    {
+      "path": "/dictionary/jp/entries/19.json",
+      "entries": 825,
+      "bytes": 531220,
+      "sha256": "f1350667440208bd45961dee8e197d254b8cf124869f511e62209ff0172eeb5c"
+    },
+    {
+      "path": "/dictionary/jp/entries/1a.json",
+      "entries": 6011,
+      "bytes": 3896173,
+      "sha256": "fc32e94beede4d7029b54cd887b0cc5ec1b19bbdf8f3168985eb9da31e1aad47"
+    },
+    {
+      "path": "/dictionary/jp/entries/1b.json",
+      "entries": 806,
+      "bytes": 521026,
+      "sha256": "7ec82559a7d4a331515fbfd66c407df0bbde03a95ba0cd6a47bdddadce281c85"
+    },
+    {
+      "path": "/dictionary/jp/entries/1c.json",
+      "entries": 6007,
+      "bytes": 3907281,
+      "sha256": "fb62d90d0c9daba99931a05bea32fae5c224a9f1ab9b0055894a7d1a67c916ae"
+    },
+    {
+      "path": "/dictionary/jp/entries/1d.json",
+      "entries": 812,
+      "bytes": 525109,
+      "sha256": "73465387ec9b65892ed282014109840023c41a93aa2425827eb286b991a06602"
+    },
+    {
+      "path": "/dictionary/jp/entries/1e.json",
+      "entries": 6008,
+      "bytes": 3902250,
+      "sha256": "a843d27578494d6898d757ec3f837a1eab397a64cd36066ce6235465ba2449fa"
+    },
+    {
+      "path": "/dictionary/jp/entries/1f.json",
+      "entries": 801,
+      "bytes": 517712,
+      "sha256": "42a133348442965c4ad01db80e4c12472b9dc54f5ae549ad3c6f14a02f6225fd"
+    },
+    {
+      "path": "/dictionary/jp/entries/20.json",
+      "entries": 6023,
+      "bytes": 3906040,
+      "sha256": "df88b4afc5839b919213bc6baf4deaf360d1f19e449bd2d4b8e2c9aad13e350e"
+    },
+    {
+      "path": "/dictionary/jp/entries/21.json",
+      "entries": 816,
+      "bytes": 525855,
+      "sha256": "249c26223a937851d686ce1f7225313f1f2547ee0dfdac50aa4754fa733855aa"
+    },
+    {
+      "path": "/dictionary/jp/entries/22.json",
+      "entries": 6032,
+      "bytes": 3935916,
+      "sha256": "245f1ad361fe426c6aa1f9c5eeaf377b1fe4b5c2b2b918b17f504ae1385d06e7"
+    },
+    {
+      "path": "/dictionary/jp/entries/23.json",
+      "entries": 812,
+      "bytes": 525656,
+      "sha256": "bd8028381ecaf018e79524fa6f479b1f9566d4f37c8e66b01f38eba7b794da82"
+    },
+    {
+      "path": "/dictionary/jp/entries/24.json",
+      "entries": 6026,
+      "bytes": 3905754,
+      "sha256": "9fe19fe4ed558c79048a483bd94931e8aa8bd854e71bcfb9d2c297199afb71d3"
+    },
+    {
+      "path": "/dictionary/jp/entries/25.json",
+      "entries": 815,
+      "bytes": 529023,
+      "sha256": "a2bd4938c316d5ed3470b11012094eb5d4158f020ddfc698549c04e1b3a46aea"
+    },
+    {
+      "path": "/dictionary/jp/entries/26.json",
+      "entries": 6032,
+      "bytes": 3925109,
+      "sha256": "7bff2d023a93a04820536dfab51826b5d5f588f3e79cd64a658ab57f8214addb"
+    },
+    {
+      "path": "/dictionary/jp/entries/27.json",
+      "entries": 812,
+      "bytes": 528874,
+      "sha256": "7865397cbc709dd7bb55b33d2b542c2795dbdba564753fdbbb22ff50f315b0e0"
+    },
+    {
+      "path": "/dictionary/jp/entries/28.json",
+      "entries": 6003,
+      "bytes": 3881871,
+      "sha256": "964d07ea4af318b5a7dedc16f9d575e80f5e47aa54af74439bc302fadc0993da"
+    },
+    {
+      "path": "/dictionary/jp/entries/29.json",
+      "entries": 794,
+      "bytes": 511719,
+      "sha256": "cb9c89941d17091ce2c1461abe93ab3e82b2995b4de00626cd9869c1c6fa1eb6"
+    },
+    {
+      "path": "/dictionary/jp/entries/2a.json",
+      "entries": 6014,
+      "bytes": 3916371,
+      "sha256": "8be6c45ab7605023db4679ed9fb31bb4a5ae4e3e624777412e28194637a71b6c"
+    },
+    {
+      "path": "/dictionary/jp/entries/2b.json",
+      "entries": 800,
+      "bytes": 512783,
+      "sha256": "c984f6d1a30f6a66e1e7e689fa60bb6389b60150bedcdf1f2d78e77fb1cc27eb"
+    },
+    {
+      "path": "/dictionary/jp/entries/2c.json",
+      "entries": 6007,
+      "bytes": 3898289,
+      "sha256": "d1177d521acc54d30950d599733e5b02f0934bc519eab3a84539a28d92a8eebf"
+    },
+    {
+      "path": "/dictionary/jp/entries/2d.json",
+      "entries": 804,
+      "bytes": 520559,
+      "sha256": "b19a68a6d6473b77cf634de569ce5d5afefcff88b30f08501f174049df466277"
+    },
+    {
+      "path": "/dictionary/jp/entries/2e.json",
+      "entries": 6021,
+      "bytes": 3899881,
+      "sha256": "6d7409c4145a1430fcbfa902f98b16b39f2955958ff59aad09d623ef794a1c2a"
+    },
+    {
+      "path": "/dictionary/jp/entries/2f.json",
+      "entries": 801,
+      "bytes": 520022,
+      "sha256": "f3dfcc43f09d1cc792f4cfa12ecfae0593cb6442b02aab73469c89216172410a"
+    },
+    {
+      "path": "/dictionary/jp/entries/30.json",
+      "entries": 6039,
+      "bytes": 3931625,
+      "sha256": "cf4356095d7324ce117d6f30cf96e79990be19853e4bde16431eaf9e827a27d8"
+    },
+    {
+      "path": "/dictionary/jp/entries/31.json",
+      "entries": 802,
+      "bytes": 518482,
+      "sha256": "fcb3377d1c522d66469f4c86f62d459e184ae0e8d4c702661f93d85967949ac4"
+    },
+    {
+      "path": "/dictionary/jp/entries/32.json",
+      "entries": 6046,
+      "bytes": 3914335,
+      "sha256": "67dace304ab35f453561e2992fc6e6cf3ed1ef24df9bf979d47be7a969c2b26d"
+    },
+    {
+      "path": "/dictionary/jp/entries/33.json",
+      "entries": 801,
+      "bytes": 513667,
+      "sha256": "74742f114e2922461560bc4d3877ac95540b67fae9f0740547b768278bc95f8a"
+    },
+    {
+      "path": "/dictionary/jp/entries/34.json",
+      "entries": 6001,
+      "bytes": 3894264,
+      "sha256": "f0ad4b87b5b213c216162a2a5dc0383d083c36778b52094c2dc524bb23615f3b"
+    },
+    {
+      "path": "/dictionary/jp/entries/35.json",
+      "entries": 826,
+      "bytes": 533719,
+      "sha256": "7a44e70dba29cf119beab54c8784431ad4bd01b0d82fd74a6200e4d51942d5f2"
+    },
+    {
+      "path": "/dictionary/jp/entries/36.json",
+      "entries": 6018,
+      "bytes": 3902683,
+      "sha256": "b7388e927f3ab68fcd7c4f9bcf0335b923ed12990821efddd9c67843b7827e7c"
+    },
+    {
+      "path": "/dictionary/jp/entries/37.json",
+      "entries": 844,
+      "bytes": 552498,
+      "sha256": "49c6693f72cee9ffa3b335d6f91cc35e9201c512bab3fe4a87996343378e41f5"
+    },
+    {
+      "path": "/dictionary/jp/entries/38.json",
+      "entries": 6020,
+      "bytes": 3911664,
+      "sha256": "565988d301483a607dc71ad6e970c89440ca13a01f4deb557af27a9e619aa101"
+    },
+    {
+      "path": "/dictionary/jp/entries/39.json",
+      "entries": 815,
+      "bytes": 532120,
+      "sha256": "8d422592fc8bd5aa9e6e94e58baf20d45a067a27edd87ad8e970132161ce10f2"
+    },
+    {
+      "path": "/dictionary/jp/entries/3a.json",
+      "entries": 6032,
+      "bytes": 3923691,
+      "sha256": "874241253bb5e5b11190ddd8e2a06ff3d2587fca380449b40f71f19da76122f1"
+    },
+    {
+      "path": "/dictionary/jp/entries/3b.json",
+      "entries": 824,
+      "bytes": 535856,
+      "sha256": "162043447182d53b587a45e29611e8c6b97c180c12b46330871fa680dd679a96"
+    },
+    {
+      "path": "/dictionary/jp/entries/3c.json",
+      "entries": 6017,
+      "bytes": 3917839,
+      "sha256": "56bda4f6b84eb158df931902c28a9968570b906b53514c1517b8d2b409a461ea"
+    },
+    {
+      "path": "/dictionary/jp/entries/3d.json",
+      "entries": 836,
+      "bytes": 547047,
+      "sha256": "cfc809b34a0482f78d9b87619b91848ed929702aea99f3b1f47dfa3193d9ed40"
+    },
+    {
+      "path": "/dictionary/jp/entries/3e.json",
+      "entries": 6017,
+      "bytes": 3903997,
+      "sha256": "9bf9b0d018c1e91dbede6f522728a301a6b15348f679ec817eb0df39bf4ccded"
+    },
+    {
+      "path": "/dictionary/jp/entries/3f.json",
+      "entries": 812,
+      "bytes": 526944,
+      "sha256": "4b9ff76b2d1817c345648b7e3dcdc60366329356e0cc6f35dfe077f0538853c9"
+    }
+  ],
+  "studyEntryCount": 50000,
+  "referenceIndexPath": "/dictionary/jp/reference-index.json",
+  "placementVersion": "kotoba-placement-2026-09-20-v1"
+}

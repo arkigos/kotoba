@@ -1,0 +1,18 @@
+.grammar-lessons > p { color: var(--text-secondary, #65706a); max-width: 62ch; }
+.grammar-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 24px 0; }
+.grammar-grid > button { text-align: left; display: flex; flex-direction: column; gap: 14px; padding: 24px; border: 1px solid #bdcec7; border-radius: 20px; background: var(--surface, #f3f8f4); color: inherit; }
+.grammar-grid > button[aria-pressed=true] { outline: 2px solid #477969; }
+.grammar-grid strong { font-size: 1.15rem; }
+.grammar-grid small { color: var(--ink-soft); }
+.grammar-preview { max-width: 850px; padding: 24px; border: 1px solid var(--line-strong); border-radius: 20px; background: var(--surface); color: var(--ink); }
+.grammar-preview > p { line-height: 1.7; }
+.grammar-preview summary { cursor: pointer; padding: 14px 0; }
+.grammar-actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 20px 0; }
+.grammar-actions button { display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border: 1px solid var(--line-strong); border-radius: 12px; background: var(--surface-soft); color: var(--ink); font: inherit; }
+.grammar-word-choices { display: flex; flex-wrap: wrap; gap: 14px; }
+.grammar-word-choices label { display: inline-flex; align-items: center; gap: 6px; }
+.grammar-word-choices small { color: var(--ink-soft); }
+.grammar-preview li { padding: 12px 8px; border-bottom: 1px solid #c8d4cd; }
+.grammar-preview li span, .grammar-preview li small { display: block; }
+.grammar-preview li span { font-size: 1.2rem; margin-bottom: 5px; }
+@media (max-width: 720px) { .grammar-grid { grid-template-columns: 1fr; } .grammar-preview { padding: 16px; } }

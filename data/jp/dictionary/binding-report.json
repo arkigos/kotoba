@@ -1,0 +1,2165 @@
+{
+  "schemaVersion": 1,
+  "dictionarySourceDate": "2026-09-12",
+  "dictionarySourceSha256": "1349ec95590e48bcc1262b2f8368bf63bb0564c03c7c4c87c0e9fa266ff4acc3",
+  "policy": "Exact authored form and reading plus compatible POS and a matching complete English gloss; ambiguity stays local. Explicit reviewed form aliases preserve legacy word IDs. No proficiency level inferred from JMdict.",
+  "audioPolicy": "Use authored audioText when present; otherwise voice only the primary form before parenthetical notation or slash alternatives. This does not deconjugate or combine alternate readings.",
+  "counts": {
+    "bindings": 879,
+    "curriculumWords": 855,
+    "grammarEntries": 24,
+    "canonicalEntries": 827,
+    "linkedBindings": 401,
+    "localBindings": 478,
+    "sharedEntryGroups": 52,
+    "methods": {
+      "kana-reading-gloss-pos": 238,
+      "unmatched": 172,
+      "reviewed-form-alias": 26,
+      "ambiguous": 1,
+      "spelling-reading-gloss-pos": 141,
+      "grammar": 24,
+      "recognition": 277
+    }
+  },
+  "sharedEntries": [
+    {
+      "entryId": "kotoba:ageru",
+      "wordIds": [
+        "agemasu",
+        "ageru"
+      ]
+    },
+    {
+      "entryId": "jmdict:1198180",
+      "wordIds": [
+        "aimasu",
+        "au"
+      ]
+    },
+    {
+      "entryId": "jmdict:1296400",
+      "wordIds": [
+        "arimasu",
+        "aru"
+      ]
+    },
+    {
+      "entryId": "jmdict:1586330",
+      "wordIds": [
+        "asa-gohan",
+        "asagohan"
+      ]
+    },
+    {
+      "entryId": "jmdict:1542160",
+      "wordIds": [
+        "asobimasu",
+        "asobu"
+      ]
+    },
+    {
+      "entryId": "jmdict:1490220",
+      "wordIds": [
+        "byooin",
+        "byouin"
+      ]
+    },
+    {
+      "entryId": "jmdict:1173720",
+      "wordIds": [
+        "eega",
+        "eiga"
+      ]
+    },
+    {
+      "entryId": "jmdict:1206730",
+      "wordIds": [
+        "gakkoo",
+        "gakkou"
+      ]
+    },
+    {
+      "entryId": "jmdict:1206900",
+      "wordIds": [
+        "gakusee",
+        "gakusei"
+      ]
+    },
+    {
+      "entryId": "jmdict:1255890",
+      "wordIds": [
+        "getsuyoobi",
+        "getsuyoubi"
+      ]
+    },
+    {
+      "entryId": "jmdict:1243490",
+      "wordIds": [
+        "ginkoo",
+        "ginkou"
+      ]
+    },
+    {
+      "entryId": "jmdict:1465590",
+      "wordIds": [
+        "hairimasu",
+        "hairu"
+      ]
+    },
+    {
+      "entryId": "jmdict:1485470",
+      "wordIds": [
+        "hikooki",
+        "hikouki"
+      ]
+    },
+    {
+      "entryId": "jmdict:1578850",
+      "wordIds": [
+        "ikimasu",
+        "iku"
+      ]
+    },
+    {
+      "entryId": "jmdict:1577980",
+      "wordIds": [
+        "imasu",
+        "iru"
+      ]
+    },
+    {
+      "entryId": "jmdict:1524590",
+      "wordIds": [
+        "imooto",
+        "imouto"
+      ]
+    },
+    {
+      "entryId": "jmdict:1330290",
+      "wordIds": [
+        "jugyoo",
+        "jugyou"
+      ]
+    },
+    {
+      "entryId": "jmdict:1221270",
+      "wordIds": [
+        "kaerimasu",
+        "kaeru"
+      ]
+    },
+    {
+      "entryId": "jmdict:1194290",
+      "wordIds": [
+        "kayoobi",
+        "kayoubi"
+      ]
+    },
+    {
+      "entryId": "jmdict:1591110",
+      "wordIds": [
+        "kikimasu",
+        "kiku"
+      ]
+    },
+    {
+      "entryId": "jmdict:1547720",
+      "wordIds": [
+        "kimasu",
+        "kuru"
+      ]
+    },
+    {
+      "entryId": "jmdict:1579260",
+      "wordIds": [
+        "kinoo",
+        "kinou"
+      ]
+    },
+    {
+      "entryId": "jmdict:1273270",
+      "wordIds": [
+        "kooen",
+        "kouen"
+      ]
+    },
+    {
+      "entryId": "jmdict:1578150",
+      "wordIds": [
+        "ku",
+        "kyuu"
+      ]
+    },
+    {
+      "entryId": "jmdict:1245570",
+      "wordIds": [
+        "kuukoo",
+        "kuukou"
+      ]
+    },
+    {
+      "entryId": "jmdict:1579110",
+      "wordIds": [
+        "kyoo",
+        "kyou"
+      ]
+    },
+    {
+      "entryId": "jmdict:1652350",
+      "wordIds": [
+        "kyooto",
+        "kyouto"
+      ]
+    },
+    {
+      "entryId": "jmdict:1259290",
+      "wordIds": [
+        "mimasu",
+        "miru"
+      ]
+    },
+    {
+      "entryId": "jmdict:1319210",
+      "wordIds": [
+        "nana",
+        "shichi"
+      ]
+    },
+    {
+      "entryId": "jmdict:1360010",
+      "wordIds": [
+        "nemasu",
+        "neru"
+      ]
+    },
+    {
+      "entryId": "jmdict:1314680",
+      "wordIds": [
+        "niaimasu",
+        "niau"
+      ]
+    },
+    {
+      "entryId": "jmdict:1169870",
+      "wordIds": [
+        "nomimasu",
+        "nomu"
+      ]
+    },
+    {
+      "entryId": "jmdict:1355120",
+      "wordIds": [
+        "norimasu",
+        "noru"
+      ]
+    },
+    {
+      "entryId": "jmdict:1002430",
+      "wordIds": [
+        "ocha",
+        "ocha-cha"
+      ]
+    },
+    {
+      "entryId": "jmdict:1223640",
+      "wordIds": [
+        "okimasu",
+        "okiru"
+      ]
+    },
+    {
+      "entryId": "jmdict:1589500",
+      "wordIds": [
+        "orimasu",
+        "oriru"
+      ]
+    },
+    {
+      "entryId": "jmdict:1581930",
+      "wordIds": [
+        "otooto",
+        "otouto"
+      ]
+    },
+    {
+      "entryId": "jmdict:1207230",
+      "wordIds": [
+        "raku",
+        "raku-na"
+      ]
+    },
+    {
+      "entryId": "jmdict:1422770",
+      "wordIds": [
+        "sadoo",
+        "sadou"
+      ]
+    },
+    {
+      "entryId": "jmdict:1387990",
+      "wordIds": [
+        "sensee",
+        "sensei"
+      ]
+    },
+    {
+      "entryId": "jmdict:1157170",
+      "wordIds": [
+        "shimasu",
+        "suru"
+      ]
+    },
+    {
+      "entryId": "jmdict:1334040",
+      "wordIds": [
+        "sumimasu",
+        "sumu"
+      ]
+    },
+    {
+      "entryId": "jmdict:1401360",
+      "wordIds": [
+        "sumoo",
+        "sumou"
+      ]
+    },
+    {
+      "entryId": "jmdict:1358280",
+      "wordIds": [
+        "tabemasu",
+        "taberu"
+      ]
+    },
+    {
+      "entryId": "jmdict:1419110",
+      "wordIds": [
+        "tanjoobi",
+        "tanjoubi"
+      ]
+    },
+    {
+      "entryId": "kotoba:tomaru",
+      "wordIds": [
+        "tomarimasu",
+        "tomaru"
+      ]
+    },
+    {
+      "entryId": "kotoba:toru",
+      "wordIds": [
+        "torimasu",
+        "toru"
+      ]
+    },
+    {
+      "entryId": "jmdict:1483740",
+      "wordIds": [
+        "tsukaremasu",
+        "tsukareru"
+      ]
+    },
+    {
+      "entryId": "kotoba:tsuku",
+      "wordIds": [
+        "tsukimasu",
+        "tsuku"
+      ]
+    },
+    {
+      "entryId": "jmdict:1588120",
+      "wordIds": [
+        "utaimasu",
+        "utau"
+      ]
+    },
+    {
+      "entryId": "jmdict:1227560",
+      "wordIds": [
+        "yasumimasu",
+        "yasumu"
+      ]
+    },
+    {
+      "entryId": "jmdict:1541620",
+      "wordIds": [
+        "yuumee-na",
+        "yuumei"
+      ]
+    }
+  ],
+  "ambiguous": [
+    {
+      "wordId": "ageru",
+      "surface": "あげる",
+      "reading": "あげる",
+      "meaning": "give",
+      "candidates": [
+        {
+          "entryId": "jmdict:1352320",
+          "headword": "上げる",
+          "senseIds": [
+            "jmdict:1352320:sense:5"
+          ]
+        },
+        {
+          "entryId": "jmdict:2864818",
+          "headword": "挙げる",
+          "senseIds": [
+            "jmdict:2864818:sense:1"
+          ]
+        }
+      ]
+    }
+  ],
+  "unmatched": [
+    {
+      "wordId": "abimasu",
+      "surface": "あびます",
+      "reading": "あびます",
+      "meaning": "bathe in (water)/to pour (water) over oneself",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "aisu",
+      "surface": "アイス",
+      "reading": "アイス",
+      "meaning": "iced (coffee/tea)",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "akihabara",
+      "surface": "秋葉原",
+      "reading": "あきはばら",
+      "meaning": "Akihabara",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "anime",
+      "surface": "アニメ",
+      "reading": "あにめ",
+      "meaning": "anime",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "ano",
+      "surface": "あの",
+      "reading": "あの",
+      "meaning": "that",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "apaato",
+      "surface": "アパート",
+      "reading": "あぱーと",
+      "meaning": "apartment",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "are",
+      "surface": "あれ",
+      "reading": "あれ",
+      "meaning": "that",
+      "readingCandidateCount": 5
+    },
+    {
+      "wordId": "aruite",
+      "surface": "あるいて",
+      "reading": "あるいて",
+      "meaning": "on foot; by walking",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "asakusa",
+      "surface": "浅草",
+      "reading": "あさくさ",
+      "meaning": "Asakusa",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "baggu",
+      "surface": "バッグ",
+      "reading": "ばっぐ",
+      "meaning": "bag",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "basu",
+      "surface": "バス",
+      "reading": "ばす",
+      "meaning": "bus",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "beddo",
+      "surface": "ベッド",
+      "reading": "べっど",
+      "meaning": "bed",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "benkyoo-chuu",
+      "surface": "べんきょうちゅう",
+      "reading": "べんきょうちゅう",
+      "meaning": "studying; in the middle of studying",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "benkyooshimasu",
+      "surface": "べんきょうします",
+      "reading": "べんきょうします",
+      "meaning": "study",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "benri-na",
+      "surface": "べんり（な）",
+      "reading": "べんり（な）",
+      "meaning": "convenient",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "biichi",
+      "surface": "ビーチ",
+      "reading": "びーち",
+      "meaning": "beach",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "biru",
+      "surface": "ビル",
+      "reading": "ビル",
+      "meaning": "building",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "chiizu-baagaa",
+      "surface": "チーズバーガー",
+      "reading": "チーズバーガー",
+      "meaning": "cheese burger",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "chikaku",
+      "surface": "ちかく",
+      "reading": "ちかく",
+      "meaning": "nearby",
+      "readingCandidateCount": 4
+    },
+    {
+      "wordId": "daijoobu-na",
+      "surface": "だいじょうぶ（な）",
+      "reading": "だいじょうぶ（な）",
+      "meaning": "okay/all right",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "dare",
+      "surface": "だれ",
+      "reading": "だれ",
+      "meaning": "who",
+      "readingCandidateCount": 3
+    },
+    {
+      "wordId": "dekimasu",
+      "surface": "できます",
+      "reading": "できます",
+      "meaning": "can do/to be able to do",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "depaato",
+      "surface": "デパート",
+      "reading": "でぱーと",
+      "meaning": "department store",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "dochira",
+      "surface": "どちら",
+      "reading": "どちら",
+      "meaning": "which (out of two)",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "dochira-kara",
+      "surface": "どちらから？",
+      "reading": "どちらから？",
+      "meaning": "Where are you from?",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "doko",
+      "surface": "どこ",
+      "reading": "どこ",
+      "meaning": "where",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "doko-nimo-ikimasendeshita",
+      "surface": "どこにも いきませんでした",
+      "reading": "どこにも いきませんでした",
+      "meaning": "I didn't go anywhere",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "donna",
+      "surface": "どんな",
+      "reading": "どんな",
+      "meaning": "What kind of",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "doo-deshita-ka",
+      "surface": "どうでしたか",
+      "reading": "どうでしたか",
+      "meaning": "How was it?",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "doo-yatte",
+      "surface": "どうやって",
+      "reading": "どうやって",
+      "meaning": "how",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "doomo",
+      "surface": "どうも",
+      "reading": "どうも",
+      "meaning": "very much",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "doozo-agatte-kudasai",
+      "surface": "どうぞ あがってください",
+      "reading": "どうぞ あがってください",
+      "meaning": "Please come in",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "doozo-yoroshiku",
+      "surface": "どうぞ よろしく",
+      "reading": "どうぞ よろしく",
+      "meaning": "Nice to meet you",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "doozo-yoroshiku-onegaishimasu",
+      "surface": "どうぞ よろしくおねがいします",
+      "reading": "どうぞ よろしくおねがいします",
+      "meaning": "Please treat me well; nice to meet you",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "eakon",
+      "surface": "エアコン",
+      "reading": "えあこん",
+      "meaning": "air conditioner",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "eki",
+      "surface": "駅",
+      "reading": "えき",
+      "meaning": "station",
+      "readingCandidateCount": 6
+    },
+    {
+      "wordId": "emu",
+      "surface": "エム／Ｍ",
+      "reading": "エム／Ｍ",
+      "meaning": "M-size",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "enjinia",
+      "surface": "エンジニア",
+      "reading": "えんじにあ",
+      "meaning": "engineer",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "eru",
+      "surface": "エル／Ｌ",
+      "reading": "エル／Ｌ",
+      "meaning": "L-size",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "esu",
+      "surface": "エス／Ｓ",
+      "reading": "エス／Ｓ",
+      "meaning": "S-size",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "fantajii",
+      "surface": "ファンタジー",
+      "reading": "ファンタジー",
+      "meaning": "fantasy fiction",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "firipin",
+      "surface": "フィリピン",
+      "reading": "ふぃりぴん",
+      "meaning": "the Philippines",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "futatsu",
+      "surface": "二つ",
+      "reading": "ふたつ",
+      "meaning": "two things",
+      "readingCandidateCount": 4
+    },
+    {
+      "wordId": "futsukame",
+      "surface": "ふつかめ",
+      "reading": "ふつかめ",
+      "meaning": "the second day",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "gitaa",
+      "surface": "ギター",
+      "reading": "ぎたー",
+      "meaning": "guitar",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "gochisousama",
+      "surface": "ごちそうさま",
+      "reading": "ごちそうさま",
+      "meaning": "said after eating",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "gomenkudasai",
+      "surface": "ごめんください",
+      "reading": "ごめんください",
+      "meaning": "Excuse me; is anyone home?",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "hai",
+      "surface": "はい",
+      "reading": "はい",
+      "meaning": "yes",
+      "readingCandidateCount": 14
+    },
+    {
+      "wordId": "hajimemasu",
+      "surface": "はじめます",
+      "reading": "はじめます",
+      "meaning": "start",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "hanabi-taikai",
+      "surface": "はなびたいかい",
+      "reading": "はなびたいかい",
+      "meaning": "fireworks display",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "hankachi",
+      "surface": "ハンカチ",
+      "reading": "はんかち",
+      "meaning": "handkerchief",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "hashioki",
+      "surface": "箸罭き",
+      "reading": "はしおき",
+      "meaning": "chopstick rest",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "hidari",
+      "surface": "ひだり",
+      "reading": "ひだり",
+      "meaning": "left",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "hitotsu",
+      "surface": "一つ",
+      "reading": "ひとつ",
+      "meaning": "one thing",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "hontou",
+      "surface": "本当",
+      "reading": "ほんとう",
+      "meaning": "really; truth",
+      "readingCandidateCount": 6
+    },
+    {
+      "wordId": "hoshii",
+      "surface": "ほしい",
+      "reading": "ほしい",
+      "meaning": "want; wanted",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "hoteru",
+      "surface": "ホテル",
+      "reading": "ほてる",
+      "meaning": "hotel",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "ii-desu-ne",
+      "surface": "いいですね",
+      "reading": "いいですね",
+      "meaning": "That's nice, isn't it?",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "iimasu",
+      "surface": "いいます",
+      "reading": "いいます",
+      "meaning": "say/to tell",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "ikebana",
+      "surface": "生け花",
+      "reading": "いけばな",
+      "meaning": "flower arrangement",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "ikura-desu-ka",
+      "surface": "いくらですか",
+      "reading": "いくらですか",
+      "meaning": "How much is it?",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "issho",
+      "surface": "一緒",
+      "reading": "いっしょ",
+      "meaning": "together",
+      "readingCandidateCount": 4
+    },
+    {
+      "wordId": "itadakimasu",
+      "surface": "いただきます",
+      "reading": "いただきます",
+      "meaning": "said before eating",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "itsu",
+      "surface": "いつ",
+      "reading": "いつ",
+      "meaning": "when",
+      "readingCandidateCount": 5
+    },
+    {
+      "wordId": "itsu-de-mo-iidesu",
+      "surface": "いつでも いいです",
+      "reading": "いつでも いいです",
+      "meaning": "Anytime is fine",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "jaketto",
+      "surface": "ジャケット",
+      "reading": "じゃけっと",
+      "meaning": "jacket",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "jei-poppu",
+      "surface": "ジェイポップ／Ｊポップ",
+      "reading": "ジェイポップ／Ｊポップ",
+      "meaning": "Japanese pop music",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "jiinzu",
+      "surface": "ジーンズ",
+      "reading": "じーんず",
+      "meaning": "jeans",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "jinja",
+      "surface": "神社",
+      "reading": "じんじゃ",
+      "meaning": "shrine",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "kaado",
+      "surface": "カード",
+      "reading": "かーど",
+      "meaning": "card; credit card",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "kaemasu",
+      "surface": "かえます（かいます）",
+      "reading": "かえます（かいます）",
+      "meaning": "can buy/to be able to buy",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "kaimasu",
+      "surface": "かいます",
+      "reading": "かいます",
+      "meaning": "buy",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "kaimonoshimasu",
+      "surface": "かいものします",
+      "reading": "かいものします",
+      "meaning": "go shopping",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "kankokujin",
+      "surface": "かんこくじん",
+      "reading": "かんこくじん",
+      "meaning": "Korean people",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "karee",
+      "surface": "カレー",
+      "reading": "かれー",
+      "meaning": "curry",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "kekkoo-desu",
+      "surface": "けっこうです",
+      "reading": "けっこうです",
+      "meaning": "No thank you; that's fine",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "kochira",
+      "surface": "こちら",
+      "reading": "こちら",
+      "meaning": "this way/this place",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "koko",
+      "surface": "ここ",
+      "reading": "ここ",
+      "meaning": "(this) here",
+      "readingCandidateCount": 5
+    },
+    {
+      "wordId": "kono",
+      "surface": "この",
+      "reading": "この",
+      "meaning": "this",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "konsaato",
+      "surface": "コンサート",
+      "reading": "こんさーと",
+      "meaning": "concert",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "koo-yatte",
+      "surface": "こうやって",
+      "reading": "こうやって",
+      "meaning": "like this; this way",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "koocha",
+      "surface": "こうちゃ",
+      "reading": "こうちゃ",
+      "meaning": "English tea",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "koohii",
+      "surface": "コーヒー",
+      "reading": "こーひー",
+      "meaning": "coffee",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "kore",
+      "surface": "これ",
+      "reading": "これ",
+      "meaning": "this",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "kuusha",
+      "surface": "くうしゃ",
+      "reading": "くうしゃ",
+      "meaning": "vacant taxi",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "maamaa-na",
+      "surface": "まあまあ（な）",
+      "reading": "まあまあ（な）",
+      "meaning": "so so",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "manshon",
+      "surface": "マンション",
+      "reading": "まんしょん",
+      "meaning": "apartment building",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "mata-kondo",
+      "surface": "また こんど",
+      "reading": "また こんど",
+      "meaning": "Maybe another time",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "menyuu",
+      "surface": "メニュー",
+      "reading": "めにゅー",
+      "meaning": "menu",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "migi",
+      "surface": "みぎ",
+      "reading": "みぎ",
+      "meaning": "right",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "mikkame",
+      "surface": "みっかめ",
+      "reading": "みっかめ",
+      "meaning": "the third day",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "monoreeru",
+      "surface": "モノレール",
+      "reading": "ものれーる",
+      "meaning": "monorail",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "moo-ichido",
+      "surface": "もういちど",
+      "reading": "もういちど",
+      "meaning": "One more time",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "moo-sukoshi",
+      "surface": "もうすこし",
+      "reading": "もうすこし",
+      "meaning": "A little more",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "moshimoshi",
+      "surface": "もしもし",
+      "reading": "もしもし",
+      "meaning": "Hello, on the phone",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "mouichido",
+      "surface": "もう一度",
+      "reading": "もういちど",
+      "meaning": "one more time",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "naka",
+      "surface": "なか",
+      "reading": "なか",
+      "meaning": "in/inside",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "nan-ji",
+      "surface": "なんじ",
+      "reading": "なんじ",
+      "meaning": "what time",
+      "readingCandidateCount": 5
+    },
+    {
+      "wordId": "nani-mo-shimasendeshita",
+      "surface": "なにも しませんでした",
+      "reading": "なにも しませんでした",
+      "meaning": "I didn't do anything",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "nenjuu-mukyuu",
+      "surface": "ねんじゅうむきゅう",
+      "reading": "ねんじゅうむきゅう",
+      "meaning": "Open throughout the year",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "nihonteki-na",
+      "surface": "にほんてき（な）",
+      "reading": "にほんてき（な）",
+      "meaning": "Japanese",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "oikutsu-desu-ka",
+      "surface": "おいくつですか",
+      "reading": "おいくつですか",
+      "meaning": "How old are you?",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "ojamashimasu",
+      "surface": "おじゃまします",
+      "reading": "おじゃまします",
+      "meaning": "Excuse me for coming in",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "okuremasu",
+      "surface": "おくれます",
+      "reading": "おくれます",
+      "meaning": "be late/be delayed",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "okyakusan",
+      "surface": "おきゃくさん",
+      "reading": "おきゃくさん",
+      "meaning": "customer/Sir/Madam",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "omiyage",
+      "surface": "お土産",
+      "reading": "おみやげ",
+      "meaning": "souvenir",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "omiyage-miyage",
+      "surface": "おみやげ（みやげ）",
+      "reading": "おみやげ（みやげ）",
+      "meaning": "souvenir",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "ooi",
+      "surface": "おおい",
+      "reading": "おおい",
+      "meaning": "lots of/crowded with",
+      "readingCandidateCount": 5
+    },
+    {
+      "wordId": "oosutoraria",
+      "surface": "オーストラリア",
+      "reading": "おーすとらりあ",
+      "meaning": "Australia",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "osaki-ni-shitsureeshimasu",
+      "surface": "おさきに しつれいします",
+      "reading": "おさきに しつれいします",
+      "meaning": "Excuse me for leaving first",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "oshare-na",
+      "surface": "おしゃれ（な）",
+      "reading": "おしゃれ（な）",
+      "meaning": "fashionable/stylish",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "otsukaresama",
+      "surface": "おつかれさまでした",
+      "reading": "おつかれさまでした",
+      "meaning": "Thank you for your hard work",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "owarimasu",
+      "surface": "おわります",
+      "reading": "おわります",
+      "meaning": "finish",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "paatii",
+      "surface": "パーティー",
+      "reading": "ぱーてぃー",
+      "meaning": "party",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "pan",
+      "surface": "パン",
+      "reading": "ぱん",
+      "meaning": "bread",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "piano",
+      "surface": "ピアノ",
+      "reading": "ぴあの",
+      "meaning": "piano",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "piza",
+      "surface": "ピザ",
+      "reading": "ぴざ",
+      "meaning": "pizza",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "resutoran",
+      "surface": "レストラン",
+      "reading": "れすとらん",
+      "meaning": "restaurant",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "roshia",
+      "surface": "ロシア",
+      "reading": "ろしあ",
+      "meaning": "Russia",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "saizu",
+      "surface": "サイズ",
+      "reading": "さいず",
+      "meaning": "size",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "sakkaa",
+      "surface": "サッカー",
+      "reading": "さっかー",
+      "meaning": "soccer",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "sensooji",
+      "surface": "せんそうじ",
+      "reading": "せんそうじ",
+      "meaning": "Senso-ji temple",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "sensouji",
+      "surface": "浅草寺",
+      "reading": "せんそうじ",
+      "meaning": "Senso-ji Temple",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "sentaku",
+      "surface": "せんたく",
+      "reading": "せんたく",
+      "meaning": "washing clothes",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "shatsu",
+      "surface": "シャツ",
+      "reading": "しゃつ",
+      "meaning": "shirt",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "shinjuku",
+      "surface": "新宿",
+      "reading": "しんじゅく",
+      "meaning": "Shinjuku",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "shita",
+      "surface": "した",
+      "reading": "した",
+      "meaning": "under/below",
+      "readingCandidateCount": 3
+    },
+    {
+      "wordId": "shuriken",
+      "surface": "手裏剣",
+      "reading": "しゅりけん",
+      "meaning": "ninja star",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "soba",
+      "surface": "そば",
+      "reading": "そば",
+      "meaning": "soba noodles",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "soo-desu-ka",
+      "surface": "そうですか",
+      "reading": "そうですか",
+      "meaning": "Is that so?",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "soo-desu-ne",
+      "surface": "そうですね",
+      "reading": "そうですね",
+      "meaning": "That's right; let me see",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "sooji",
+      "surface": "そうじ",
+      "reading": "そうじ",
+      "meaning": "cleaning",
+      "readingCandidateCount": 9
+    },
+    {
+      "wordId": "sorekara",
+      "surface": "それから",
+      "reading": "それから",
+      "meaning": "and then",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "soshite",
+      "surface": "そして",
+      "reading": "そして",
+      "meaning": "and",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "sukaato",
+      "surface": "スカート",
+      "reading": "すかーと",
+      "meaning": "skirt",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "sukaitsuri",
+      "surface": "スカイツリー",
+      "reading": "すかいつりー",
+      "meaning": "Tokyo Skytree",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "suki-na",
+      "surface": "すき",
+      "reading": "すき",
+      "meaning": "like",
+      "readingCandidateCount": 5
+    },
+    {
+      "wordId": "supein",
+      "surface": "スペイン",
+      "reading": "すぺいん",
+      "meaning": "Spain",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "supootsu",
+      "surface": "スポーツ",
+      "reading": "すぽーつ",
+      "meaning": "sports",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "suuji",
+      "surface": "すうじ",
+      "reading": "すうじ",
+      "meaning": "numbers",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "taihen-na",
+      "surface": "たいへん",
+      "reading": "たいへん",
+      "meaning": "tough",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "taiko",
+      "surface": "太鼓",
+      "reading": "たいこ",
+      "meaning": "taiko drum",
+      "readingCandidateCount": 3
+    },
+    {
+      "wordId": "takushii",
+      "surface": "タクシー",
+      "reading": "たくしー",
+      "meaning": "taxi",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "tanoshimi-desu",
+      "surface": "たのしみです",
+      "reading": "たのしみです",
+      "meaning": "I'm looking forward to it",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "teeburu",
+      "surface": "テーブル",
+      "reading": "てーぶる",
+      "meaning": "table",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "teekyuubi",
+      "surface": "ていきゅうび",
+      "reading": "ていきゅうび",
+      "meaning": "shop holiday/fixed holiday",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "terebi",
+      "surface": "テレビ",
+      "reading": "てれび",
+      "meaning": "television",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "tiishatsu",
+      "surface": "Tシャツ",
+      "reading": "てぃーしゃつ",
+      "meaning": "T-shirt",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "toire",
+      "surface": "トイレ",
+      "reading": "といれ",
+      "meaning": "toilet; restroom",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "tomaru",
+      "surface": "泊まる",
+      "reading": "とまる",
+      "meaning": "stay overnight",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "tonari",
+      "surface": "となり",
+      "reading": "となり",
+      "meaning": "next to/beside",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "tookyoo-tawaa",
+      "surface": "とうきょうタワー",
+      "reading": "とうきょうタワー",
+      "meaning": "Tokyo Tower",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "toru",
+      "surface": "撮る",
+      "reading": "とる",
+      "meaning": "take a photo",
+      "readingCandidateCount": 11
+    },
+    {
+      "wordId": "toukyou_tower",
+      "surface": "東京タワー",
+      "reading": "とうきょうたわー",
+      "meaning": "Tokyo Tower",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "tsugi",
+      "surface": "つぎ",
+      "reading": "つぎ",
+      "meaning": "next",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "tsuku",
+      "surface": "着く",
+      "reading": "つく",
+      "meaning": "arrive",
+      "readingCandidateCount": 10
+    },
+    {
+      "wordId": "tsuma",
+      "surface": "つま",
+      "reading": "つま",
+      "meaning": "wife/(my)wife",
+      "readingCandidateCount": 4
+    },
+    {
+      "wordId": "uchi",
+      "surface": "うち",
+      "reading": "うち",
+      "meaning": "home",
+      "readingCandidateCount": 3
+    },
+    {
+      "wordId": "udon",
+      "surface": "うどん",
+      "reading": "うどん",
+      "meaning": "udon noodles",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "ue",
+      "surface": "うえ",
+      "reading": "うえ",
+      "meaning": "on/above",
+      "readingCandidateCount": 3
+    },
+    {
+      "wordId": "ueno",
+      "surface": "上野",
+      "reading": "うえの",
+      "meaning": "Ueno",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "uta",
+      "surface": "うた",
+      "reading": "うた",
+      "meaning": "song",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "uun-uun",
+      "surface": "ううん／うーん",
+      "reading": "ううん／うーん",
+      "meaning": "well…/hmm…",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "waa",
+      "surface": "わあ",
+      "reading": "わあ",
+      "meaning": "Wao",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "wakarimasen",
+      "surface": "分かりません",
+      "reading": "わかりません",
+      "meaning": "I do not understand",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "wakarimashita",
+      "surface": "わかりました",
+      "reading": "わかりました",
+      "meaning": "I understand",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "wanpiisu",
+      "surface": "ワンピース",
+      "reading": "ワンピース",
+      "meaning": "one-piece dress",
+      "readingCandidateCount": 2
+    },
+    {
+      "wordId": "yasai",
+      "surface": "野菜",
+      "reading": "やさい",
+      "meaning": "vegetables",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "yasumi",
+      "surface": "休み",
+      "reading": "やすみ",
+      "meaning": "day off; break",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "yokkame",
+      "surface": "よっかめ",
+      "reading": "よっかめ",
+      "meaning": "the fourth day",
+      "readingCandidateCount": 0
+    },
+    {
+      "wordId": "yoko",
+      "surface": "よこ",
+      "reading": "よこ",
+      "meaning": "beside",
+      "readingCandidateCount": 1
+    },
+    {
+      "wordId": "yukkurishimasu",
+      "surface": "ゆっくりします",
+      "reading": "ゆっくりします",
+      "meaning": "relax",
+      "readingCandidateCount": 0
+    }
+  ],
+  "primaryPronunciations": [
+    {
+      "wordId": "a",
+      "authoredReading": "あ／あっ",
+      "audioText": "あ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "benri-na",
+      "authoredReading": "べんり（な）",
+      "audioText": "べんり",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "daijoobu-na",
+      "authoredReading": "だいじょうぶ（な）",
+      "audioText": "だいじょうぶ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "dame",
+      "authoredReading": "だめ（な）",
+      "audioText": "だめ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "dochira-kara",
+      "authoredReading": "どちらから？",
+      "audioText": "どちらから",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "doko-nimo-ikimasendeshita",
+      "authoredReading": "どこにも いきませんでした",
+      "audioText": "どこにもいきませんでした",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "doomo-arigatoo-gozaimasu",
+      "authoredReading": "どうも ありがとうございます",
+      "audioText": "どうもありがとうございます",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "doozo-agatte-kudasai",
+      "authoredReading": "どうぞ あがってください",
+      "audioText": "どうぞあがってください",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "doozo-yoroshiku",
+      "authoredReading": "どうぞ よろしく",
+      "audioText": "どうぞよろしく",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "doozo-yoroshiku-onegaishimasu",
+      "authoredReading": "どうぞ よろしくおねがいします",
+      "audioText": "どうぞよろしくおねがいします",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "e",
+      "authoredReading": "え／えっ",
+      "audioText": "え",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "emu",
+      "authoredReading": "エム／Ｍ",
+      "audioText": "エム",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "eru",
+      "authoredReading": "エル／Ｌ",
+      "audioText": "エル",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "esu",
+      "authoredReading": "エス／Ｓ",
+      "audioText": "エス",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "esuefu",
+      "authoredReading": "エスエフ／ＳＦ",
+      "audioText": "エスエフ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "fw_o_object",
+      "authoredReading": "を",
+      "audioText": "お",
+      "method": "particle-pronunciation"
+    },
+    {
+      "wordId": "fw_to",
+      "authoredReading": "と",
+      "audioText": "ト",
+      "method": "particle-pronunciation"
+    },
+    {
+      "wordId": "hiragana_small_a",
+      "authoredReading": "あ",
+      "audioText": "ちいさいあ",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "hiragana_small_e",
+      "authoredReading": "え",
+      "audioText": "ちいさいえ",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "hiragana_small_i",
+      "authoredReading": "い",
+      "audioText": "ちいさいい",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "hiragana_small_o",
+      "authoredReading": "お",
+      "audioText": "ちいさいお",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "hiragana_small_tsu",
+      "authoredReading": "つ",
+      "audioText": "ちいさいつ",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "hiragana_small_u",
+      "authoredReading": "う",
+      "audioText": "ちいさいう",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "hiragana_small_ya",
+      "authoredReading": "や",
+      "audioText": "ちいさいや",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "hiragana_small_yo",
+      "authoredReading": "よ",
+      "audioText": "ちいさいよ",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "hiragana_small_yu",
+      "authoredReading": "ゆ",
+      "audioText": "ちいさいゆ",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "hyaku-byaku-pyaku",
+      "authoredReading": "ひゃく／びゃく／ぴゃく",
+      "audioText": "ひゃく",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "itsu-de-mo-iidesu",
+      "authoredReading": "いつでも いいです",
+      "audioText": "いつでもいいです",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "itsutsu",
+      "authoredReading": "いつつ／５つ",
+      "audioText": "いつつ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "jei-poppu",
+      "authoredReading": "ジェイポップ／Ｊポップ",
+      "audioText": "ジェイポップ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "kaemasu",
+      "authoredReading": "かえます（かいます）",
+      "audioText": "かえます",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "katakana_small_a",
+      "authoredReading": "あ",
+      "audioText": "ちいさいあ",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "katakana_small_e",
+      "authoredReading": "え",
+      "audioText": "ちいさいえ",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "katakana_small_i",
+      "authoredReading": "い",
+      "audioText": "ちいさいい",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "katakana_small_o",
+      "authoredReading": "お",
+      "audioText": "ちいさいお",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "katakana_small_tsu",
+      "authoredReading": "つ",
+      "audioText": "ちいさいつ",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "katakana_small_u",
+      "authoredReading": "う",
+      "audioText": "ちいさいう",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "katakana_small_ya",
+      "authoredReading": "や",
+      "audioText": "ちいさいや",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "katakana_small_yo",
+      "authoredReading": "よ",
+      "audioText": "ちいさいよ",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "katakana_small_yu",
+      "authoredReading": "ゆ",
+      "audioText": "ちいさいゆ",
+      "method": "authored-audio-override"
+    },
+    {
+      "wordId": "ki-o-tsukete",
+      "authoredReading": "きを つけて",
+      "audioText": "きをつけて",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "maamaa-na",
+      "authoredReading": "まあまあ（な）",
+      "audioText": "まあまあ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "massugu-na",
+      "authoredReading": "まっすぐ（な）",
+      "audioText": "まっすぐ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "mata-kondo",
+      "authoredReading": "また こんど",
+      "audioText": "またこんど",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "mittsu",
+      "authoredReading": "みっつ／３つ",
+      "audioText": "みっつ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "muttsu",
+      "authoredReading": "むっつ／６つ",
+      "audioText": "むっつ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "nani-mo-shimasendeshita",
+      "authoredReading": "なにも しませんでした",
+      "audioText": "なにもしませんでした",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "nani-nan",
+      "authoredReading": "なに／なん",
+      "audioText": "なに",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "nihonteki-na",
+      "authoredReading": "にほんてき（な）",
+      "audioText": "にほんてき",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "ocha-cha",
+      "authoredReading": "おちゃ（ちゃ）",
+      "audioText": "おちゃ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "ofuro-furo",
+      "authoredReading": "おふろ(ふろ）",
+      "audioText": "おふろ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "omiyage-miyage",
+      "authoredReading": "おみやげ（みやげ）",
+      "audioText": "おみやげ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "onamae-namae",
+      "authoredReading": "おなまえ（なまえ）",
+      "audioText": "おなまえ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "osake-sake",
+      "authoredReading": "おさけ（さけ）",
+      "audioText": "おさけ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "osaki-ni-shitsureeshimasu",
+      "authoredReading": "おさきに しつれいします",
+      "audioText": "おさきにしつれいします",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "oshare-na",
+      "authoredReading": "おしゃれ（な）",
+      "audioText": "おしゃれ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "oshigoto-shigoto",
+      "authoredReading": "おしごと（しごと）",
+      "audioText": "おしごと",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "otanjoobi-tanjoobi",
+      "authoredReading": "おたんじょうび（たんじょうび）",
+      "audioText": "おたんじょうび",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "otera-tera",
+      "authoredReading": "おてら（てら）",
+      "audioText": "おてら",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "raku-na",
+      "authoredReading": "らく（な）",
+      "audioText": "らく",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "sen-zen",
+      "authoredReading": "せん／ぜん",
+      "audioText": "せん",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "thii-shatsu",
+      "authoredReading": "ティーシャツ／Tシャツ",
+      "audioText": "ティーシャツ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "uun-uun",
+      "authoredReading": "ううん／うーん",
+      "audioText": "ううん",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "yottsu",
+      "authoredReading": "よっつ／４つ",
+      "audioText": "よっつ",
+      "method": "primary-display-form"
+    },
+    {
+      "wordId": "zannen-na",
+      "authoredReading": "ざんねん（な）",
+      "audioText": "ざんねん",
+      "method": "primary-display-form"
+    }
+  ],
+  "alternativeFormsForReview": [
+    {
+      "wordId": "a",
+      "authoredReading": "あ／あっ",
+      "audioText": "あ",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "e",
+      "authoredReading": "え／えっ",
+      "audioText": "え",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "emu",
+      "authoredReading": "エム／Ｍ",
+      "audioText": "エム",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "eru",
+      "authoredReading": "エル／Ｌ",
+      "audioText": "エル",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "esu",
+      "authoredReading": "エス／Ｓ",
+      "audioText": "エス",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "esuefu",
+      "authoredReading": "エスエフ／ＳＦ",
+      "audioText": "エスエフ",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "hyaku-byaku-pyaku",
+      "authoredReading": "ひゃく／びゃく／ぴゃく",
+      "audioText": "ひゃく",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "itsutsu",
+      "authoredReading": "いつつ／５つ",
+      "audioText": "いつつ",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "jei-poppu",
+      "authoredReading": "ジェイポップ／Ｊポップ",
+      "audioText": "ジェイポップ",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "kaemasu",
+      "authoredReading": "かえます（かいます）",
+      "audioText": "かえます",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "mittsu",
+      "authoredReading": "みっつ／３つ",
+      "audioText": "みっつ",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "muttsu",
+      "authoredReading": "むっつ／６つ",
+      "audioText": "むっつ",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "nani-nan",
+      "authoredReading": "なに／なん",
+      "audioText": "なに",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "ocha-cha",
+      "authoredReading": "おちゃ（ちゃ）",
+      "audioText": "おちゃ",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "ofuro-furo",
+      "authoredReading": "おふろ(ふろ）",
+      "audioText": "おふろ",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "omiyage-miyage",
+      "authoredReading": "おみやげ（みやげ）",
+      "audioText": "おみやげ",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "onamae-namae",
+      "authoredReading": "おなまえ（なまえ）",
+      "audioText": "おなまえ",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "osake-sake",
+      "authoredReading": "おさけ（さけ）",
+      "audioText": "おさけ",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "oshigoto-shigoto",
+      "authoredReading": "おしごと（しごと）",
+      "audioText": "おしごと",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "otanjoobi-tanjoobi",
+      "authoredReading": "おたんじょうび（たんじょうび）",
+      "audioText": "おたんじょうび",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "otera-tera",
+      "authoredReading": "おてら（てら）",
+      "audioText": "おてら",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "sen-zen",
+      "authoredReading": "せん／ぜん",
+      "audioText": "せん",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "thii-shatsu",
+      "authoredReading": "ティーシャツ／Tシャツ",
+      "audioText": "ティーシャツ",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "uun-uun",
+      "authoredReading": "ううん／うーん",
+      "audioText": "ううん",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    },
+    {
+      "wordId": "yottsu",
+      "authoredReading": "よっつ／４つ",
+      "audioText": "よっつ",
+      "note": "Only the primary displayed form is voiced; alternative forms need separate pronunciation records."
+    }
+  ]
+}

@@ -1,5 +1,9 @@
 # A1 Rebuild Rules Pass
 
+Status: Historical. The command name `npm run curriculum:rebuild-a1` remains
+current, but it now points at the Marugoto Starter A1 rebuild path rather than
+the earlier 1-20 A1 generation pipeline.
+
 ## Goal
 
 Regenerate the full A1 band with the current curriculum rules:

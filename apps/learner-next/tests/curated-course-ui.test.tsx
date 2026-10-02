@@ -1,0 +1,65 @@
+import { fireEvent, render, screen, waitFor, within, cleanup } from "@testing-library/react";
+import { App } from "../src/App";
+import { readState, writeState } from "../src/state";
+import { buildStarterLesson, starterLessons } from "../src/starter-lessons";
+import { markLessonAlreadyKnown } from "../src/known-lesson";
+import { curatedLessons, loadCuratedLesson } from "../src/curated-course";
+beforeEach(()=>{localStorage.clear(); window.location.hash="course"; let state=readState(); for(const lesson of starterLessons) state=markLessonAlreadyKnown(state,buildStarterLesson(state,lesson.id)); writeState({...state,onboardingComplete:true,settings:{...state.settings,autoplay:false,sound:false}});});
+it("opens fixed topics and keeps later levels visibly unavailable", async()=>{
+ render(<App/>);
+ expect(await screen.findByRole("heading",{name:"Learn Japanese"})).toBeInTheDocument();
+ expect(screen.queryByRole("tab",{name:"Custom"})).not.toBeInTheDocument();
+ fireEvent.change(screen.getByRole("combobox",{name:"Course level"}),{target:{value:"B2"}});
+ expect(screen.getByRole("heading",{name:"B2 lessons are being authored"})).toBeInTheDocument();
+ expect(screen.getByText(/4,998-word scope/)).toBeInTheDocument();
+ expect(readState().curatedProgress).toBeUndefined();
+});
+it("shows the complete A2 scope and explains the preceding-level prerequisite", async()=>{
+ render(<App/>);
+ fireEvent.change(await screen.findByRole("combobox",{name:"Course level"}),{target:{value:"A2"}});
+ expect(screen.getByText("0 / 1267 words completed")).toBeInTheDocument();
+ expect(screen.queryByText(/A2 words have authored lessons so far/)).not.toBeInTheDocument();
+ fireEvent.click(screen.getByRole("button",{name:/Home, food, and getting things done Manage everyday tasks/}));
+ expect(screen.getByRole("button",{name:"Start At a café"})).toBeDisabled();
+ expect(screen.getAllByText("After A1").length).toBeGreaterThan(0);
+});
+it("previews without credit, plays exact cards, resumes, and unlocks the next lesson only after consumption",async()=>{
+ render(<App/>);
+ const topic = await screen.findByRole("button",{name:/People and communication Meet people/});
+ fireEvent.click(topic);
+ expect(screen.getByRole("button",{name:"Start Asking who and what"})).toBeDisabled();
+ const first=await loadCuratedLesson(curatedLessons[0].id);
+ const section=screen.getByRole("region",{name:"People and communication"});
+ fireEvent.click(within(section).getAllByText("Grammar and lesson preview")[0]);
+ expect(await screen.findByText(first.notes[0].explanation)).toBeInTheDocument();
+ expect(readState().curatedProgress).toBeUndefined();
+ fireEvent.click(screen.getByRole("button",{name:`Start ${first.title}`}));
+ await waitFor(()=>expect(readState().activeSession?.curatedLessonId).toBe(first.id));
+ expect(readState().activeSession!.savedCards).toEqual(first.cards);
+ fireEvent.click(await screen.findByRole("button",{name:"Next card"}));
+ await waitFor(()=>expect(readState().activeSession?.cursor).toBe(1));
+ expect(readState().curatedProgress?.completions[first.id]).toBeUndefined();
+ fireEvent.click(screen.getByRole("button",{name:"Pause and leave lesson"}));
+ expect(await screen.findByRole("region",{name:"People and communication"})).toBeInTheDocument();
+ expect(window.location.hash).toBe("#course");
+ expect(readState().activeSession?.cursor).toBe(1);
+ fireEvent.click(within(screen.getByRole("region",{name:"People and communication"})).getByRole("button",{name:`Resume ${first.title}`}));
+ await screen.findByRole("button",{name:"Pause and leave lesson"});
+ cleanup();window.location.hash="practice";render(<App/>);
+ await waitFor(()=>expect(readState().activeSession?.cursor).toBe(1));
+ for(let i=1;i<first.cards.length;i++) fireEvent.click(await screen.findByRole("button",{name:i===first.cards.length-1 ? "Complete lesson" : "Next card"}));
+ await waitFor(()=>expect(readState().curatedProgress?.completions[first.id]?.method).toBe("practiced"));
+ expect(readState().curatedProgress?.cards).toHaveProperty(first.cards[0].id);
+ expect(await screen.findByRole("button",{name:"Next lesson"})).toBeInTheDocument();
+});
+
+it("returns a refreshed practice link to its topic with the saved position intact",async()=>{
+ const {buildCuratedLesson}=await import("../src/curated-course");
+ const state=readState(),session=await buildCuratedLesson(state,"A1-conversation-hello");
+ writeState({...state,activeSession:{...session,cursor:2}});
+ window.location.hash="practice";render(<App/>);
+ fireEvent.click(await screen.findByRole("button",{name:"Pause and leave lesson"}));
+ expect(await screen.findByRole("region",{name:"People and communication"})).toBeInTheDocument();
+ expect(window.location.hash).toBe("#course");
+ expect(readState().activeSession?.cursor).toBe(2);
+});

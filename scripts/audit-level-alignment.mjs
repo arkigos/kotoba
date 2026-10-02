@@ -200,7 +200,7 @@ const levelSummaries = [...byLevel.entries()].map(([level, summary]) => ({
 const a1Rows = rows.filter((row) => row.level === "A1");
 const a2Rows = rows.filter((row) => row.level === "A2");
 const lateA1Rows = a1Rows.filter((row) => row.id >= 15);
-const a2ActionRows = a2Rows.filter((row) => row.id >= 21 && row.id <= 30);
+const a2ActionRows = a2Rows.slice(0, 10);
 
 for (const row of a1Rows) {
   const minimumVerbLaneCards = row.id <= 7 ? 10 : 2;
@@ -222,7 +222,7 @@ if (a2Rows.length > 0) {
 
   const a2ActionMasuAverage = a2ActionRows.length === 0 ? 0 : Math.round(a2ActionRows.reduce((sum, row) => sum + row.productiveMasuPct, 0) / a2ActionRows.length);
   if (a2ActionMasuAverage < 45) {
-    failures.push(`A2 Units 21-30 average only ${a2ActionMasuAverage}% productive polite-verb cards; A2 should visibly shift into everyday actions.`);
+    failures.push(`The opening authored A2 band averages only ${a2ActionMasuAverage}% productive polite-verb cards; A2 should visibly shift into everyday actions.`);
   }
 
   const staticA2Units = new Set([31, 32, 33, 34, 38, 40]);

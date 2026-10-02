@@ -1,0 +1,9 @@
+# Greetings means everyday pleasantries
+
+The Greetings topic teaches hellos, thanks, apologies, goodbyes, introductions by name, and familiar polite phrases. Its vocabulary is an explicit reviewed allowlist, independent of the old countries/jobs unit placement. The first topic words are hello, thank you, and excuse me, followed by morning/evening greetings and goodbye. `introductionWordIds` supplies this scenario-specific opening order without reordering the global core list.
+
+Professions remain available in Work. Countries, languages, and general verbs retain appropriate topic coverage elsewhere. This is a change to topic membership and presentation: the 450 core representatives, all 578 authored learning IDs, approved alias identities, level labels, completion policy, and existing audio remain unchanged. `scripts/author-a1-scope.py` records the allowlist and opening order so regeneration cannot restore the inherited occupation pool.
+
+The existing `introductions` self-check keeps its ID and now asks the learner to greet someone, give their name, respond politely, and say goodbye. Its references are Marugoto Starter A1 Can-do 1 for greeting exchanges and Can-do 5 for a simple self-introduction. The ten-check denominator and prior saved check identities remain unchanged. [Japan Foundation's official Can-do checklist](https://marugoto.jpf.go.jp/assets/docs/download/starter_a/MarugotoStarterActivitiesCan-doCheck_EN.pdf).
+
+Many greeting targets are complete authored one-token phrases. They count as real practice without invented sentence context. Opening-selection tests require pleasantry-first targets and reject occupations even as incidental helpers for a learner who already knows those occupations. Corpus helper tests require coverage of every target that actually has an available multi-token context; they do not demand longer sentences for complete greeting phrases.
