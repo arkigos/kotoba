@@ -27,4 +27,14 @@ that required step to the dictionary maintenance instructions.
 
 Release verification: all 541 tests / 53 files and the curated-course and frozen
 vocabulary-pool audits pass. The production build uses `/kotoba/`; existing
-bundle-size advisory remains. Publish this tested source and verify Pages.
+bundle-size advisory remains. Production build completed successfully.
+
+Released app commit `b9338d7150d16ad8df0b30260c704bde80017eee` to master.
+GitHub Pages run 36981295706 completed both build and deployment successfully:
+https://github.com/arkigos/kotoba/actions/runs/36981295706
+
+Verified https://arkigos.github.io/kotoba/ renders Home and the A1 course,
+switches the shared theme, and serves the exact locally built JavaScript and
+CSS bundle names with HTTP 200. A published dictionary audio sample also
+returns HTTP 200. Progress is local to each origin; no localhost progress was
+reset or migrated. Task complete.
